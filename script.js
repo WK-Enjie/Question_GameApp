@@ -11,7 +11,10 @@ const gameState = {
     gameOver: false,
     currentPin: '',
     quizTitle: 'Quiz Game',
-    quizTopic: 'Topic'
+    quizTopic: 'Topic',
+    canUsePowerUp: false,
+    currentQuestionPoints: 0,
+    wasCorrect: false
 };
 
 // Power-up types
@@ -102,6 +105,7 @@ const backToPinErrorBtn = document.getElementById('back-to-pin-error');
 // Initialize PIN screen
 function initPinScreen() {
     gameState.currentPin = '';
+    gameState.canUsePowerUp = false;
     updatePinDisplay();
     
     // Show only PIN screen
@@ -262,6 +266,9 @@ function initGame() {
     gameState.answerSubmitted = false;
     gameState.treasureOpened = false;
     gameState.gameOver = false;
+    gameState.canUsePowerUp = false;
+    gameState.currentQuestionPoints = 0;
+    gameState.wasCorrect = false;
     
     // Update UI
     quizTitle.textContent = gameState.quizTitle;
@@ -329,11 +336,20 @@ function loadQuestion() {
     gameState.selectedAnswer = null;
     gameState.answerSubmitted = false;
     gameState.treasureOpened = false;
+    gameState.canUsePowerUp = false;
     answerFeedback.textContent = '';
     
     // Hide next button and reset treasure boxes
     nextBtn.style.display = 'none';
     resetTreasureBoxes();
+    
+    // Reset power-up result
+    powerupResult.innerHTML = `
+        <div class="powerup-placeholder">
+            <i class="fas fa-box-open"></i>
+            <p>Answer question first!</p>
+        </div>
+    `;
 }
 
 // Handle option selection
@@ -382,13 +398,38 @@ function submitAnswer() {
     // Store points for power-up application
     gameState.currentQuestionPoints = pointsEarned;
     gameState.wasCorrect = isCorrect;
+    gameState.canUsePowerUp = isCorrect; // Only allow power-up if correct
     
     // Show feedback
     let feedbackHTML = '';
     if (isCorrect) {
         feedbackHTML = `<span style="color: #48bb78; font-weight: bold;"><i class="fas fa-check-circle"></i> Correct! ${pointsEarned} points.</span>`;
+        
+        // Enable treasure boxes only if correct
+        enableTreasureBoxes();
+        
     } else {
-        feedbackHTML = `<span style="color: #f56565; font-weight: bold;"><i class="fas fa-times-circle"></i> Incorrect. Correct answer: ${question.options[question.correct]}</span>`;
+        feedbackHTML = `<span style="color: #f56565; font-weight: bold;"><i class="fas fa-times-circle"></i> Incorrect. No points earned.</span>`;
+        
+        // Disable treasure boxes for wrong answers
+        disableTreasureBoxes();
+        
+        // Show correct answer
+        feedbackHTML += `<div style="margin-top: 10px; color: #b8b8d1;">
+            <i class="fas fa-lightbulb"></i> Correct answer: <span style="color: #48bb78;">${question.options[question.correct]}</span>
+        </div>`;
+        
+        // Show next button immediately for wrong answers
+        nextBtn.style.display = 'flex';
+        
+        // Update power-up result message
+        powerupResult.innerHTML = `
+            <div class="powerup-display" style="opacity: 0.7;">
+                <div style="font-size: 2rem;">❌</div>
+                <div style="font-weight: bold; margin: 5px 0;">No Power-Up</div>
+                <div style="color: #b8b8d1; font-size: 0.9rem;">Power-ups only available for correct answers</div>
+            </div>
+        `;
     }
     
     if (question.explanation) {
@@ -399,9 +440,6 @@ function submitAnswer() {
     }
     
     answerFeedback.innerHTML = feedbackHTML;
-    
-    // Enable treasure boxes
-    enableTreasureBoxes();
 }
 
 // Reset treasure boxes to initial state
@@ -422,15 +460,27 @@ function resetTreasureBoxes() {
 // Enable treasure boxes for selection
 function enableTreasureBoxes() {
     document.querySelectorAll('.treasure-box').forEach(box => {
-        box.classList.remove('opened');
+        box.classList.remove('opened', 'disabled');
         box.style.cursor = 'pointer';
+        box.style.opacity = '1';
         box.textContent = '🎁';
+    });
+}
+
+// Disable treasure boxes (for wrong answers)
+function disableTreasureBoxes() {
+    document.querySelectorAll('.treasure-box').forEach(box => {
+        box.classList.add('disabled');
+        box.style.cursor = 'not-allowed';
+        box.style.opacity = '0.5';
+        box.textContent = '🔒';
     });
 }
 
 // Open a treasure box and apply power-up
 function openTreasureBox(boxNum) {
-    if (gameState.treasureOpened || !gameState.answerSubmitted) return;
+    // Check if power-up is allowed
+    if (gameState.treasureOpened || !gameState.answerSubmitted || !gameState.canUsePowerUp) return;
     
     gameState.treasureOpened = true;
     
@@ -446,6 +496,7 @@ function openTreasureBox(boxNum) {
     // Update the selected box
     const selectedBox = document.querySelector(`.treasure-box[data-box="${boxNum}"]`);
     selectedBox.textContent = powerUp.icon;
+    selectedBox.classList.add(powerUp.colorClass);
     
     // Show power-up result
     powerupResult.innerHTML = `
@@ -477,7 +528,7 @@ function applyPowerUp(powerUpType) {
             pointsChange = Math.floor(pointsChange / 2);
             break;
         case 'negative':
-            pointsChange = -pointsChange;
+            pointsChange = -Math.abs(pointsChange); // Ensure negative
             break;
         case 'switch':
             // Swap scores
@@ -491,13 +542,8 @@ function applyPowerUp(powerUpType) {
             break;
     }
     
-    // Apply points
+    // Apply points (negative scores allowed)
     gameState.playerScores[playerIndex] += pointsChange;
-    
-    // Ensure score doesn't go negative
-    if (gameState.playerScores[playerIndex] < 0) {
-        gameState.playerScores[playerIndex] = 0;
-    }
     
     updateScores();
 }
