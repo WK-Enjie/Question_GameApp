@@ -4,8 +4,12 @@
     <meta charset="UTF-8">
     <meta name="viewport" content="width=device-width, initial-scale=1.0">
     <title>Science & Math Quiz Game</title>
+    <meta name="description" content="Interactive multiplayer quiz game for Science and Mathematics">
+    <meta name="keywords" content="quiz, game, science, math, chemistry, mathematics, education">
+    <meta name="author" content="Quiz Game">
     <link rel="stylesheet" href="style.css">
     <link rel="stylesheet" href="https://cdnjs.cloudflare.com/ajax/libs/font-awesome/6.4.0/css/all.min.css">
+    <link rel="icon" href="data:image/svg+xml,<svg xmlns=%22http://www.w3.org/2000/svg%22 viewBox=%220 0 100 100%22><text y=%22.9em%22 font-size=%2290%22>🧪</text></svg>">
 </head>
 <body>
     <div class="container">
@@ -52,37 +56,29 @@
                     <div class="category-section">
                         <h4><i class="fas fa-flask"></i> Chemistry (1xx)</h4>
                         <div class="code-list">
-                            <div class="code-item">
+                            <div class="code-item" data-code="101">
                                 <span class="code-number">101</span>
                                 <span class="code-desc">Cations Identification</span>
                             </div>
-                            <div class="code-item">
+                            <div class="code-item" data-code="102">
                                 <span class="code-number">102</span>
                                 <span class="code-desc">Anions Identification</span>
                             </div>
-                            <div class="code-item">
+                            <div class="code-item" data-code="103">
                                 <span class="code-number">103</span>
                                 <span class="code-desc">Mixed QA Problems</span>
                             </div>
-                            <div class="code-item">
+                            <div class="code-item" data-code="104">
                                 <span class="code-number">104</span>
                                 <span class="code-desc">QA Applications</span>
                             </div>
-                            <div class="code-item">
+                            <div class="code-item" data-code="105">
                                 <span class="code-number">105</span>
                                 <span class="code-desc">QA Flow Charts</span>
                             </div>
-                            <div class="code-item">
+                            <div class="code-item" data-code="106">
                                 <span class="code-number">106</span>
                                 <span class="code-desc">Complete Unknowns</span>
-                            </div>
-                            <div class="code-item">
-                                <span class="code-number">107</span>
-                                <span class="code-desc">Advanced QA</span>
-                            </div>
-                            <div class="code-item">
-                                <span class="code-number">108</span>
-                                <span class="code-desc">QA Problem Solving</span>
                             </div>
                         </div>
                     </div>
@@ -90,26 +86,29 @@
                     <div class="category-section">
                         <h4><i class="fas fa-calculator"></i> Mathematics (2xx)</h4>
                         <div class="code-list">
-                            <div class="code-item">
+                            <div class="code-item" data-code="201">
                                 <span class="code-number">201</span>
                                 <span class="code-desc">Quadratic Equations</span>
                             </div>
-                            <div class="code-item">
+                            <div class="code-item" data-code="202">
                                 <span class="code-number">202</span>
                                 <span class="code-desc">Quadratic Graphs</span>
                             </div>
-                            <div class="code-item">
+                            <div class="code-item" data-code="203">
                                 <span class="code-number">203</span>
                                 <span class="code-desc">Linear Inequalities</span>
                             </div>
-                            <div class="code-item">
+                            <div class="code-item" data-code="204">
                                 <span class="code-number">204</span>
                                 <span class="code-desc">Mixed Math Problems</span>
                             </div>
                         </div>
                     </div>
                     
-                    <p class="hint"><i class="fas fa-lightbulb"></i> Enter the 3-digit code shown on each card (e.g., 101, 201, etc.)</p>
+                    <div class="github-info">
+                        <h4><i class="fab fa-github"></i> GitHub Pages</h4>
+                        <p>This game runs on GitHub Pages. JSON question files are loaded from the <code>/questions</code> folder.</p>
+                    </div>
                 </div>
             </div>
         </div>
