@@ -168,7 +168,7 @@ async function submitPin() {
             return;
     }
     
-    const filename = `questions/${folder}${gameState.currentPin}.json`;
+    const filename = `Questions/${folder}${gameState.currentPin}.json`;
     console.log('Loading:', filename);
     
     // Show loading screen
