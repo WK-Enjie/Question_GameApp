@@ -4,210 +4,223 @@
     <meta charset="UTF-8">
     <meta name="viewport" content="width=device-width, initial-scale=1.0">
     <title>Science & Math Quiz Game</title>
-    <link rel="stylesheet" href="style.css">
     <link rel="stylesheet" href="https://cdnjs.cloudflare.com/ajax/libs/font-awesome/6.4.0/css/all.min.css">
+    <link rel="stylesheet" href="style.css">
+    <link rel="icon" type="image/x-icon" href="data:image/svg+xml,<svg xmlns=%22http://www.w3.org/2000/svg%22 viewBox=%220 0 100 100%22><text y=%22.9em%22 font-size=%2290%22>🧪</text></svg>">
 </head>
 <body>
-    <div class="container">
-        <!-- PIN Entry Screen -->
-        <div id="pin-screen" class="screen active">
-            <div class="pin-container">
-                <h1><i class="fas fa-gamepad"></i> Science & Math Quiz</h1>
+    <!-- PIN Entry Screen -->
+    <div id="pin-screen" class="screen active">
+        <div class="pin-container">
+            <div class="pin-header">
+                <h1><i class="fas fa-flask"></i> Science & Math Quiz</h1>
                 <p class="subtitle">Enter 3-digit code to access question set</p>
-                
-                <div class="pin-input-container">
-                    <div class="pin-display">
-                        <span class="pin-digit" id="pin-digit-1">_</span>
-                        <span class="pin-digit" id="pin-digit-2">_</span>
-                        <span class="pin-digit" id="pin-digit-3">_</span>
-                    </div>
-                    
-                    <div class="pin-keypad">
-                        <div class="keypad-row">
-                            <button class="pin-btn" data-digit="1">1</button>
-                            <button class="pin-btn" data-digit="2">2</button>
-                            <button class="pin-btn" data-digit="3">3</button>
-                        </div>
-                        <div class="keypad-row">
-                            <button class="pin-btn" data-digit="4">4</button>
-                            <button class="pin-btn" data-digit="5">5</button>
-                            <button class="pin-btn" data-digit="6">6</button>
-                        </div>
-                        <div class="keypad-row">
-                            <button class="pin-btn" data-digit="7">7</button>
-                            <button class="pin-btn" data-digit="8">8</button>
-                            <button class="pin-btn" data-digit="9">9</button>
-                        </div>
-                        <div class="keypad-row">
-                            <button class="pin-btn clear" id="clear-btn"><i class="fas fa-backspace"></i></button>
-                            <button class="pin-btn" data-digit="0">0</button>
-                            <button class="pin-btn submit" id="submit-pin">GO</button>
-                        </div>
-                    </div>
-                </div>
-                
-                <div class="pin-info">
-                    <h3><i class="fas fa-book"></i> Available Question Sets:</h3>
-                    
-                    <div class="category-section">
-                        <h4><i class="fas fa-flask"></i> Chemistry (1xx)</h4>
-                        <div class="code-list">
-                            <div class="code-item" data-code="101">
-                                <span class="code-number">101</span>
-                                <span class="code-desc">Cations Identification</span>
-                            </div>
-                            <div class="code-item" data-code="102">
-                                <span class="code-number">102</span>
-                                <span class="code-desc">Anions Identification</span>
-                            </div>
-                            <div class="code-item" data-code="103">
-                                <span class="code-number">103</span>
-                                <span class="code-desc">Mixed QA Problems</span>
-                            </div>
-                        </div>
-                    </div>
-                    
-                    <div class="category-section">
-                        <h4><i class="fas fa-calculator"></i> Mathematics (2xx)</h4>
-                        <div class="code-list">
-                            <div class="code-item" data-code="201">
-                                <span class="code-number">201</span>
-                                <span class="code-desc">Quadratic Equations</span>
-                            </div>
-                            <div class="code-item" data-code="202">
-                                <span class="code-number">202</span>
-                                <span class="code-desc">Quadratic Graphs</span>
-                            </div>
-                            <div class="code-item" data-code="203">
-                                <span class="code-number">203</span>
-                                <span class="code-desc">Linear Inequalities</span>
-                            </div>
-                        </div>
-                    </div>
-                </div>
             </div>
-        </div>
-        
-        <!-- Loading Screen -->
-        <div id="loading-screen" class="screen">
-            <div class="loading-container">
-                <div class="loader"></div>
-                <h2>Loading Questions...</h2>
-                <p id="loading-message">Preparing your quiz questions</p>
-            </div>
-        </div>
-        
-        <!-- Game Screen -->
-        <div id="game-screen" class="screen">
-            <header>
-                <div class="header-top">
-                    <h1 id="quiz-title">Quiz Game</h1>
-                    <button id="back-to-pin" class="back-btn">
-                        <i class="fas fa-home"></i> Main Menu
-                    </button>
-                </div>
-                <div class="header-bottom">
-                    <span class="topic-badge" id="quiz-topic">Topic</span>
-                    <span class="question-count">Q: <span id="current-question">0</span>/<span id="total-questions">0</span></span>
-                </div>
-            </header>
             
-            <div class="game-status">
-                <div class="player-card active" id="player1-card">
-                    <div class="player-name">Player 1</div>
+            <div class="pin-display">
+                <div class="pin-digit" id="pin-digit-1">_</div>
+                <div class="pin-digit" id="pin-digit-2">_</div>
+                <div class="pin-digit" id="pin-digit-3">_</div>
+            </div>
+            
+            <div class="pin-keypad">
+                <button class="pin-btn" data-digit="1">1</button>
+                <button class="pin-btn" data-digit="2">2</button>
+                <button class="pin-btn" data-digit="3">3</button>
+                <button class="pin-btn" data-digit="4">4</button>
+                <button class="pin-btn" data-digit="5">5</button>
+                <button class="pin-btn" data-digit="6">6</button>
+                <button class="pin-btn" data-digit="7">7</button>
+                <button class="pin-btn" data-digit="8">8</button>
+                <button class="pin-btn" data-digit="9">9</button>
+                <button class="pin-btn" data-digit="0">0</button>
+                <button id="clear-btn" class="action-btn"><i class="fas fa-times"></i> Clear</button>
+                <button id="submit-pin" class="action-btn"><i class="fas fa-play"></i> GO</button>
+            </div>
+            
+            <div class="quick-codes">
+                <h3>Available Question Sets:</h3>
+                <div class="code-list">
+                    <div class="code-item" data-code="101">
+                        <i class="fas fa-flask"></i> 101 - Chemistry
+                    </div>
+                    <div class="code-item" data-code="102">
+                        <i class="fas fa-flask"></i> 102 - Chemistry
+                    </div>
+                    <div class="code-item" data-code="103">
+                        <i class="fas fa-flask"></i> 103 - Chemistry
+                    </div>
+                    <div class="code-item" data-code="201">
+                        <i class="fas fa-calculator"></i> 201 - Mathematics
+                    </div>
+                    <div class="code-item" data-code="202">
+                        <i class="fas fa-calculator"></i> 202 - Mathematics
+                    </div>
+                </div>
+                <p class="code-guide">
+                    <span style="color: #fbbf24;"><i class="fas fa-info-circle"></i> First digit: 1=Chemistry, 2=Mathematics</span>
+                </p>
+            </div>
+        </div>
+    </div>
+
+    <!-- Loading Screen -->
+    <div id="loading-screen" class="screen">
+        <div class="loading-container">
+            <div class="loader"></div>
+            <h2 id="loading-message">Loading questions...</h2>
+            <p class="loading-sub">Please wait while we prepare your quiz</p>
+        </div>
+    </div>
+
+    <!-- Game Screen -->
+    <div id="game-screen" class="screen">
+        <div class="game-header">
+            <div class="quiz-info">
+                <h2 id="quiz-title">Quiz Game</h2>
+                <p id="quiz-topic">Topic</p>
+            </div>
+            <div class="game-controls">
+                <button id="back-to-pin">
+                    <i class="fas fa-home"></i> Main Menu
+                </button>
+            </div>
+        </div>
+        
+        <div class="game-content">
+            <!-- Left Panel - Players -->
+            <div class="left-panel">
+                <div class="player-card" id="player1-card">
+                    <div class="player-header">
+                        <div class="player-icon">
+                            <i class="fas fa-user"></i>
+                        </div>
+                        <div class="player-info">
+                            <h3>Player 1</h3>
+                            <span class="player-turn" id="player1-turn">Your Turn</span>
+                        </div>
+                    </div>
                     <div class="player-score" id="player1-score">0</div>
                 </div>
                 
                 <div class="player-card" id="player2-card">
-                    <div class="player-name">Player 2</div>
+                    <div class="player-header">
+                        <div class="player-icon">
+                            <i class="fas fa-user"></i>
+                        </div>
+                        <div class="player-info">
+                            <h3>Player 2</h3>
+                            <span class="player-turn" id="player2-turn">Waiting</span>
+                        </div>
+                    </div>
                     <div class="player-score" id="player2-score">0</div>
                 </div>
             </div>
             
-            <div class="quiz-section">
+            <!-- Center Panel - Question -->
+            <div class="center-panel">
                 <div class="question-header">
-                    <span class="points">Points: <span id="question-points">10</span></span>
-                </div>
-                
-                <div class="question-text" id="question-text">Loading question...</div>
-                
-                <div class="options-container" id="options-container">
-                    <!-- Options will be generated by JavaScript -->
-                </div>
-                
-                <button class="submit-btn" id="submit-btn" disabled>
-                    <i class="fas fa-paper-plane"></i> Submit Answer
-                </button>
-                <div id="answer-feedback"></div>
-            </div>
-            
-            <div class="treasure-section">
-                <div class="treasure-title">
-                    <i class="fas fa-gem"></i> Power-up Box
-                </div>
-                <p class="treasure-subtitle">Select one after answering!</p>
-                
-                <div class="treasure-boxes" id="treasure-boxes">
-                    <div class="treasure-box" data-box="1">🎁</div>
-                    <div class="treasure-box" data-box="2">🎁</div>
-                    <div class="treasure-box" data-box="3">🎁</div>
-                </div>
-                
-                <div class="powerup-result" id="powerup-result">
-                    <div class="powerup-placeholder">
-                        <i class="fas fa-box-open"></i>
-                        <p>Answer question first!</p>
+                    <div class="question-meta">
+                        <div class="meta-item">
+                            <i class="fas fa-question-circle"></i>
+                            Question: <span id="current-question">1</span>/<span id="total-questions">10</span>
+                        </div>
+                        <div class="meta-item">
+                            <i class="fas fa-star"></i>
+                            Points: <span id="question-points">10</span>
+                        </div>
+                    </div>
+                    <div class="player-indicator">
+                        Player <span id="current-player">1</span>'s Turn
                     </div>
                 </div>
                 
-                <button class="next-btn" id="next-btn" style="display: none;">
+                <div class="question-container">
+                    <div class="question-text" id="question-text">
+                        What is the chemical symbol for water?
+                    </div>
+                    
+                    <div class="options-container" id="options-container">
+                        <!-- Options will be dynamically added here -->
+                    </div>
+                    
+                    <button id="submit-btn" class="submit-btn">
+                        <i class="fas fa-paper-plane"></i> Submit Answer
+                    </button>
+                    
+                    <div class="answer-feedback" id="answer-feedback">
+                        <!-- Feedback will appear here -->
+                    </div>
+                </div>
+                
+                <button id="next-btn" class="next-btn">
                     <i class="fas fa-arrow-right"></i> Next Question
                 </button>
             </div>
             
-            <div class="game-over" id="game-over">
-                <div class="game-over-content">
-                    <h2><i class="fas fa-award"></i> Quiz Complete!</h2>
-                    <p class="winner-label">Winner:</p>
-                    <div class="winner-name" id="winner-name">Player 1</div>
-                    
-                    <div class="final-scores">
-                        <div class="final-score">
-                            <span>Player 1:</span>
-                            <span id="final-score1">0</span>
-                        </div>
-                        <div class="final-score">
-                            <span>Player 2:</span>
-                            <span id="final-score2">0</span>
-                        </div>
+            <!-- Right Panel - Power-ups -->
+            <div class="right-panel">
+                <div class="treasure-section">
+                    <h3><i class="fas fa-gift"></i> Treasure Boxes</h3>
+                    <p class="section-subtitle">Pick one after correct answer!</p>
+                    <div class="treasure-boxes" id="treasure-boxes">
+                        <!-- Treasure boxes will be dynamically added here -->
                     </div>
-                    
-                    <div class="game-over-buttons">
-                        <button class="restart-btn" id="restart-btn">
-                            <i class="fas fa-redo"></i> Play Again
-                        </button>
-                        <button class="new-chapter-btn" id="new-chapter-btn">
-                            <i class="fas fa-home"></i> Main Menu
-                        </button>
+                    <div class="powerup-result" id="powerup-result">
+                        <div class="powerup-placeholder">
+                            <i class="fas fa-box-open"></i>
+                            <p>Answer question first!</p>
+                        </div>
                     </div>
                 </div>
             </div>
         </div>
         
-        <!-- Error Screen -->
-        <div id="error-screen" class="screen">
-            <div class="error-container">
-                <i class="fas fa-exclamation-triangle error-icon"></i>
-                <h2>Error Loading Questions</h2>
-                <p id="error-message">Unable to load questions. Please check the code and try again.</p>
-                <div class="error-buttons">
-                    <button id="retry-btn" class="retry-btn">
-                        <i class="fas fa-sync-alt"></i> Retry
-                    </button>
-                    <button id="back-to-pin-error" class="back-btn">
-                        <i class="fas fa-home"></i> Main Menu
-                    </button>
+        <!-- Game Over Screen -->
+        <div id="game-over" style="display: none;">
+            <h2><i class="fas fa-trophy"></i> Game Over!</h2>
+            <div class="winner-display">
+                <h3>Winner:</h3>
+                <div id="winner-name" class="winner-name">Player 1</div>
+            </div>
+            
+            <div class="final-scores">
+                <div class="final-player">
+                    <h4>Player 1</h4>
+                    <div id="final-score1" class="final-score">0</div>
                 </div>
+                <div class="final-player">
+                    <h4>Player 2</h4>
+                    <div id="final-score2" class="final-score">0</div>
+                </div>
+            </div>
+            
+            <div class="game-over-actions">
+                <button id="restart-btn">
+                    <i class="fas fa-redo"></i> Restart Game
+                </button>
+                <button id="new-chapter-btn">
+                    <i class="fas fa-book"></i> New Chapter
+                </button>
+            </div>
+        </div>
+    </div>
+
+    <!-- Error Screen -->
+    <div id="error-screen" class="screen">
+        <div class="error-container">
+            <div class="error-icon">
+                <i class="fas fa-exclamation-triangle"></i>
+            </div>
+            <h2>Something went wrong</h2>
+            <p id="error-message">Unable to load questions. Please check your code and try again.</p>
+            <div class="error-actions">
+                <button id="retry-btn">
+                    <i class="fas fa-sync-alt"></i> Try Again
+                </button>
+                <button id="back-to-pin-error">
+                    <i class="fas fa-home"></i> Main Menu
+                </button>
             </div>
         </div>
     </div>
