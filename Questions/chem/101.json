@@ -54,10 +54,11 @@
     },
     {
       "question": "Which cation gives no precipitate with NH₃ solution but gives white precipitate with NaOH?",
-      "options": ["Mg²⁺", "Zn²⁺", "Al³⁺", "Cu²⁺"],
+      "options": ["Ca²⁺", "Zn²⁺", "Al³⁺", "Cu²⁺"],
       "correct": 0,
       "points": 10,
       "explanation": "Mg²⁺ gives white Mg(OH)₂ with NaOH but no precipitate with NH₃ because NH₄⁺ ions suppress the OH⁻ concentration."
     }
   ]
+
 }
