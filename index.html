@@ -23,7 +23,7 @@
         .screen {
             display: none;
             width: 100%;
-            max-width: 1000px;
+            max-width: 1200px;
             background: rgba(0, 0, 0, 0.7);
             border-radius: 20px;
             padding: 40px;
@@ -159,104 +159,286 @@
         }
         @keyframes spin { to { transform: rotate(360deg); } }
         
-        /* GAME SCREEN - SIMPLIFIED FOR NOW */
+        /* GAME SCREEN */
         .game-header {
             display: flex;
             justify-content: space-between;
             align-items: center;
             margin-bottom: 30px;
+            padding-bottom: 20px;
+            border-bottom: 2px solid rgba(255,255,255,0.1);
         }
-        #back-to-pin {
+        .game-header button {
             padding: 10px 20px;
             background: rgba(255,255,255,0.1);
             border: none;
             border-radius: 8px;
             color: white;
             cursor: pointer;
+            transition: all 0.3s;
+        }
+        .game-header button:hover {
+            background: rgba(255,255,255,0.2);
         }
         
         .game-content {
             display: grid;
-            grid-template-columns: 250px 1fr 250px;
-            gap: 20px;
+            grid-template-columns: 250px 1fr 300px;
+            gap: 25px;
         }
         
+        /* PLAYERS PANEL */
         .player-card {
             background: rgba(255,255,255,0.05);
-            padding: 20px;
+            padding: 25px;
             border-radius: 15px;
             text-align: center;
+            border: 2px solid transparent;
+            transition: all 0.3s;
         }
         .player-card.active {
-            border: 2px solid #4cc9f0;
+            border-color: #4cc9f0;
             background: rgba(76, 201, 240, 0.1);
+            box-shadow: 0 0 20px rgba(76, 201, 240, 0.2);
+        }
+        .player-card h3 {
+            font-size: 1.5rem;
+            margin-bottom: 15px;
+            color: #b8b8d1;
         }
         .player-score {
-            font-size: 2.5rem;
+            font-size: 3rem;
             font-weight: bold;
             color: #4cc9f0;
             margin-top: 10px;
         }
         
+        /* QUESTION PANEL */
+        .question-meta {
+            display: flex;
+            justify-content: space-between;
+            background: rgba(255,255,255,0.05);
+            padding: 15px;
+            border-radius: 10px;
+            margin-bottom: 25px;
+        }
         .question-container {
             background: rgba(255,255,255,0.05);
             padding: 30px;
             border-radius: 15px;
+            margin-bottom: 20px;
         }
         .question-text {
-            font-size: 1.5rem;
+            font-size: 1.6rem;
+            line-height: 1.5;
             margin-bottom: 30px;
         }
         .options-container {
             display: flex;
             flex-direction: column;
             gap: 15px;
-            margin-bottom: 20px;
+            margin-bottom: 25px;
         }
         .option {
-            padding: 15px;
+            padding: 18px;
             background: rgba(255,255,255,0.08);
+            border: 2px solid transparent;
             border-radius: 10px;
             cursor: pointer;
             transition: all 0.3s;
+            font-size: 1.1rem;
         }
         .option:hover {
             background: rgba(255,255,255,0.12);
+            transform: translateX(5px);
         }
         .option.selected {
             background: rgba(76, 201, 240, 0.2);
-            border: 2px solid #4cc9f0;
+            border-color: #4cc9f0;
+            box-shadow: 0 0 15px rgba(76, 201, 240, 0.3);
+        }
+        .option.correct {
+            background: rgba(72, 187, 120, 0.2);
+            border-color: #48bb78;
+        }
+        .option.incorrect {
+            background: rgba(245, 101, 101, 0.2);
+            border-color: #f56565;
         }
         
         #submit-btn {
             width: 100%;
-            padding: 15px;
+            padding: 18px;
             background: linear-gradient(135deg, #48bb78, #38a169);
             border: none;
             border-radius: 10px;
             color: white;
             font-size: 1.2rem;
+            font-weight: bold;
             cursor: pointer;
+            transition: all 0.3s;
+            display: flex;
+            align-items: center;
+            justify-content: center;
+            gap: 10px;
+        }
+        #submit-btn:hover:not(:disabled) {
+            transform: translateY(-3px);
+            box-shadow: 0 10px 20px rgba(72, 187, 120, 0.3);
+        }
+        #submit-btn:disabled {
+            opacity: 0.5;
+            cursor: not-allowed;
+        }
+        
+        #answer-feedback {
             margin-top: 20px;
+            padding: 20px;
+            background: rgba(255,255,255,0.05);
+            border-radius: 10px;
+            min-height: 80px;
+        }
+        
+        #next-btn {
+            width: 100%;
+            padding: 18px;
+            background: linear-gradient(135deg, #4cc9f0, #4361ee);
+            border: none;
+            border-radius: 10px;
+            color: white;
+            font-size: 1.2rem;
+            font-weight: bold;
+            cursor: pointer;
+            transition: all 0.3s;
+            display: flex;
+            align-items: center;
+            justify-content: center;
+            gap: 10px;
+            margin-top: 20px;
+        }
+        #next-btn:hover {
+            transform: translateY(-3px);
+            box-shadow: 0 10px 20px rgba(76, 201, 240, 0.3);
+        }
+        
+        /* POWER-UPS PANEL */
+        .powerup-panel {
+            background: rgba(255,255,255,0.05);
+            padding: 25px;
+            border-radius: 15px;
+            height: fit-content;
+        }
+        .powerup-panel h3 {
+            text-align: center;
+            color: #4cc9f0;
+            margin-bottom: 20px;
+            font-size: 1.4rem;
         }
         
         .treasure-boxes {
             display: flex;
             justify-content: center;
             gap: 15px;
-            margin: 20px 0;
+            margin: 25px 0;
         }
         .treasure-box {
-            width: 70px;
-            height: 70px;
+            width: 80px;
+            height: 80px;
             background: linear-gradient(135deg, #fbbf24, #d97706);
             border-radius: 10px;
             display: flex;
             align-items: center;
             justify-content: center;
-            font-size: 2rem;
+            font-size: 2.5rem;
             cursor: pointer;
+            transition: all 0.3s;
+            box-shadow: 0 10px 20px rgba(219, 160, 17, 0.2);
         }
+        .treasure-box:hover:not(.opened):not(.disabled) {
+            transform: translateY(-10px) scale(1.1);
+            box-shadow: 0 20px 30px rgba(219, 160, 17, 0.3);
+        }
+        .treasure-box.opened {
+            background: linear-gradient(135deg, #4a5568, #2d3748);
+            cursor: default;
+            transform: scale(0.9);
+        }
+        .treasure-box.disabled {
+            background: linear-gradient(135deg, #4a5568, #2d3748);
+            cursor: not-allowed;
+            opacity: 0.5;
+            transform: none;
+            box-shadow: none;
+        }
+        
+        .powerup-result {
+            text-align: center;
+            padding: 20px;
+            background: rgba(255,255,255,0.05);
+            border-radius: 10px;
+            min-height: 150px;
+            display: flex;
+            align-items: center;
+            justify-content: center;
+        }
+        .powerup-icon {
+            font-size: 3rem;
+            margin-bottom: 15px;
+        }
+        .powerup-double { color: #fbbf24; }
+        .powerup-halved { color: #9f7aea; }
+        .powerup-negative { color: #f56565; }
+        .powerup-switch { color: #4cc9f0; }
+        .powerup-bonus { color: #48bb78; }
+        
+        /* GAME OVER */
+        #game-over {
+            text-align: center;
+            padding: 40px;
+            background: rgba(0, 0, 0, 0.8);
+            border-radius: 15px;
+            margin-top: 30px;
+        }
+        #winner-name {
+            font-size: 2.5rem;
+            color: #fbbf24;
+            margin: 20px 0;
+            font-weight: bold;
+        }
+        .final-scores {
+            display: flex;
+            justify-content: center;
+            gap: 50px;
+            margin: 30px 0;
+        }
+        .final-player h4 {
+            color: #b8b8d1;
+            margin-bottom: 10px;
+        }
+        .final-score {
+            font-size: 3rem;
+            font-weight: bold;
+            color: #4cc9f0;
+        }
+        .game-over-actions {
+            display: flex;
+            gap: 20px;
+            justify-content: center;
+            margin-top: 30px;
+        }
+        .game-over-actions button {
+            padding: 15px 30px;
+            border: none;
+            border-radius: 10px;
+            font-size: 1.1rem;
+            font-weight: bold;
+            cursor: pointer;
+            display: flex;
+            align-items: center;
+            gap: 10px;
+        }
+        #restart-btn { background: #48bb78; color: white; }
+        #new-chapter-btn { background: #4cc9f0; color: white; }
         
         /* ERROR SCREEN */
         #error-screen { text-align: center; }
@@ -377,11 +559,13 @@
             
             <!-- Center Panel - Question -->
             <div class="center-panel">
-                <div style="display: flex; justify-content: space-between; margin-bottom: 20px;">
+                <div class="question-meta">
                     <div>
+                        <i class="fas fa-question-circle"></i>
                         Question: <span id="current-question">1</span>/<span id="total-questions">10</span>
                     </div>
                     <div>
+                        <i class="fas fa-star"></i>
                         Points: <span id="question-points">10</span>
                     </div>
                 </div>
@@ -399,30 +583,32 @@
                         <i class="fas fa-paper-plane"></i> Submit Answer
                     </button>
                     
-                    <div id="answer-feedback" style="margin-top: 20px; padding: 15px; background: rgba(255,255,255,0.05); border-radius: 10px;">
+                    <div id="answer-feedback">
                         <!-- Feedback will appear here -->
                     </div>
                 </div>
                 
-                <button id="next-btn" style="width: 100%; padding: 15px; margin-top: 20px; background: #4cc9f0; color: white; border: none; border-radius: 10px; display: none;">
-                    Next Question <i class="fas fa-arrow-right"></i>
+                <button id="next-btn" class="next-btn" style="display: none;">
+                    <i class="fas fa-arrow-right"></i> Next Question
                 </button>
             </div>
             
             <!-- Right Panel - Power-ups -->
-            <div class="right-panel">
-                <div style="background: rgba(255,255,255,0.05); padding: 20px; border-radius: 15px;">
-                    <h3><i class="fas fa-gift"></i> Treasure Boxes</h3>
-                    <p style="color: #b8b8d1; margin-bottom: 20px;">Pick one after correct answer!</p>
-                    
-                    <div class="treasure-boxes" id="treasure-boxes">
-                        <div class="treasure-box" data-box="1">🎁</div>
-                        <div class="treasure-box" data-box="2">🎁</div>
-                        <div class="treasure-box" data-box="3">🎁</div>
-                    </div>
-                    
-                    <div id="powerup-result" style="margin-top: 20px; padding: 15px; background: rgba(255,255,255,0.05); border-radius: 10px; text-align: center;">
-                        <i class="fas fa-box-open" style="font-size: 2rem; color: #4cc9f0;"></i>
+            <div class="powerup-panel">
+                <h3><i class="fas fa-gift"></i> Treasure Boxes</h3>
+                <p style="text-align: center; color: #b8b8d1; margin-bottom: 20px;">
+                    Pick one after correct answer!
+                </p>
+                
+                <div class="treasure-boxes" id="treasure-boxes">
+                    <div class="treasure-box" data-box="1">🎁</div>
+                    <div class="treasure-box" data-box="2">🎁</div>
+                    <div class="treasure-box" data-box="3">🎁</div>
+                </div>
+                
+                <div class="powerup-result" id="powerup-result">
+                    <div class="powerup-placeholder">
+                        <i class="fas fa-box-open" style="font-size: 2.5rem; color: #4cc9f0; margin-bottom: 15px;"></i>
                         <p>Answer question first!</p>
                     </div>
                 </div>
@@ -430,28 +616,32 @@
         </div>
         
         <!-- Game Over Screen -->
-        <div id="game-over" style="display: none; text-align: center; padding: 40px;">
-            <h2 style="font-size: 2.5rem; color: #fbbf24; margin-bottom: 30px;">
+        <div id="game-over" style="display: none;">
+            <h2 style="font-size: 2.5rem; color: #fbbf24; margin-bottom: 20px;">
                 <i class="fas fa-trophy"></i> Game Over!
             </h2>
-            <div id="winner-name" style="font-size: 2rem; color: #4cc9f0; margin-bottom: 40px;"></div>
             
-            <div style="display: flex; justify-content: center; gap: 50px; margin-bottom: 40px;">
-                <div>
+            <div class="winner-display">
+                <h3>Winner:</h3>
+                <div id="winner-name" class="winner-name">Player 1</div>
+            </div>
+            
+            <div class="final-scores">
+                <div class="final-player">
                     <h4>Player 1</h4>
-                    <div id="final-score1" style="font-size: 3rem; color: #4cc9f0;">0</div>
+                    <div id="final-score1" class="final-score">0</div>
                 </div>
-                <div>
+                <div class="final-player">
                     <h4>Player 2</h4>
-                    <div id="final-score2" style="font-size: 3rem; color: #4cc9f0;">0</div>
+                    <div id="final-score2" class="final-score">0</div>
                 </div>
             </div>
             
-            <div style="display: flex; gap: 20px; justify-content: center;">
-                <button id="restart-btn" style="padding: 15px 30px; background: #48bb78; color: white; border: none; border-radius: 10px;">
+            <div class="game-over-actions">
+                <button id="restart-btn">
                     <i class="fas fa-redo"></i> Restart Game
                 </button>
-                <button id="new-chapter-btn" style="padding: 15px 30px; background: #4cc9f0; color: white; border: none; border-radius: 10px;">
+                <button id="new-chapter-btn">
                     <i class="fas fa-book"></i> New Chapter
                 </button>
             </div>
@@ -486,8 +676,48 @@
             selectedAnswer: null,
             answerSubmitted: false,
             treasureOpened: false,
-            canUsePowerUp: false
+            canUsePowerUp: false,
+            currentQuestionPoints: 0
         };
+
+        // ========== POWER-UPS ==========
+        const powerUps = [
+            { 
+                type: 'double', 
+                name: 'Double Points', 
+                icon: '⚡',
+                description: 'Points doubled!',
+                colorClass: 'powerup-double'
+            },
+            { 
+                type: 'halved', 
+                name: 'Halved Points', 
+                icon: '➗',
+                description: 'Points halved!',
+                colorClass: 'powerup-halved'
+            },
+            { 
+                type: 'negative', 
+                name: 'Negative Points', 
+                icon: '➖',
+                description: 'Lose points!',
+                colorClass: 'powerup-negative'
+            },
+            { 
+                type: 'switch', 
+                name: 'Switch Scores', 
+                icon: '🔄',
+                description: 'Swap scores!',
+                colorClass: 'powerup-switch'
+            },
+            { 
+                type: 'bonus', 
+                name: 'Bonus Points', 
+                icon: '✨',
+                description: '+10 bonus points!',
+                colorClass: 'powerup-bonus'
+            }
+        ];
 
         // ========== ELEMENTS ==========
         const screens = {
@@ -564,6 +794,10 @@
                 const data = await response.json();
                 gameState.questions = data.questions;
                 
+                // Set quiz info
+                document.getElementById('quiz-title').textContent = data.title || 'Quiz Game';
+                document.getElementById('quiz-topic').textContent = data.topic || 'General Knowledge';
+                
                 // Start game
                 initGame();
                 showScreen('game');
@@ -596,12 +830,16 @@
             gameState.answerSubmitted = false;
             gameState.treasureOpened = false;
             gameState.canUsePowerUp = false;
+            gameState.currentQuestionPoints = 0;
             
             // Update UI
             document.getElementById('total-questions').textContent = gameState.questions.length;
             updateScores();
             updatePlayerTurn();
             loadQuestion();
+            
+            // Hide game over screen
+            document.getElementById('game-over').style.display = 'none';
         }
 
         function loadQuestion() {
@@ -639,13 +877,16 @@
             // Reset treasure boxes
             document.querySelectorAll('.treasure-box').forEach(box => {
                 box.textContent = '🎁';
+                box.classList.remove('opened', 'disabled');
                 box.style.cursor = 'pointer';
                 box.style.opacity = '1';
             });
             
             document.getElementById('powerup-result').innerHTML = `
-                <i class="fas fa-box-open" style="font-size: 2rem; color: #4cc9f0;"></i>
-                <p>Answer question first!</p>
+                <div class="powerup-placeholder">
+                    <i class="fas fa-box-open" style="font-size: 2.5rem; color: #4cc9f0; margin-bottom: 15px;"></i>
+                    <p>Answer question first!</p>
+                </div>
             `;
         }
 
@@ -675,16 +916,17 @@
             
             const question = gameState.questions[gameState.currentQuestion];
             const isCorrect = gameState.selectedAnswer === question.correct;
+            
+            // Store points for power-up
+            gameState.currentQuestionPoints = isCorrect ? question.points : 0;
             gameState.canUsePowerUp = isCorrect;
             
             // Show correct/incorrect
             document.querySelectorAll('.option').forEach((opt, idx) => {
                 if (idx === question.correct) {
-                    opt.style.background = 'rgba(72, 187, 120, 0.3)';
-                    opt.style.border = '2px solid #48bb78';
+                    opt.classList.add('correct');
                 } else if (idx === gameState.selectedAnswer && !isCorrect) {
-                    opt.style.background = 'rgba(245, 101, 101, 0.3)';
-                    opt.style.border = '2px solid #f56565';
+                    opt.classList.add('incorrect');
                 }
                 opt.style.pointerEvents = 'none';
             });
@@ -694,37 +936,48 @@
                 gameState.playerScores[gameState.currentPlayer - 1] += question.points;
                 updateScores();
                 
-                document.getElementById('answer-feedback').innerHTML = `
-                    <div style="color: #48bb78;">
-                        <i class="fas fa-check-circle"></i> Correct! +${question.points} points
-                    </div>
-                `;
+                let feedback = `<div style="color: #48bb78; font-weight: bold;">
+                    <i class="fas fa-check-circle"></i> Correct! +${question.points} points
+                </div>`;
+                
+                if (question.explanation) {
+                    feedback += `<div style="margin-top: 10px; padding: 10px; background: rgba(255,255,255,0.05); border-radius: 5px;">
+                        <div style="color: #4cc9f0; margin-bottom: 5px;"><i class="fas fa-lightbulb"></i> Explanation:</div>
+                        <div>${question.explanation}</div>
+                    </div>`;
+                }
+                
+                document.getElementById('answer-feedback').innerHTML = feedback;
+                
             } else {
                 document.getElementById('answer-feedback').innerHTML = `
-                    <div style="color: #f56565;">
+                    <div style="color: #f56565; font-weight: bold;">
                         <i class="fas fa-times-circle"></i> Incorrect! No points
                     </div>
-                    <div style="margin-top: 10px; color: #b8b8d1;">
-                        Correct answer: ${question.options[question.correct]}
+                    <div style="margin-top: 10px; padding: 10px; background: rgba(255,255,255,0.05); border-radius: 5px;">
+                        <div style="color: #48bb78;">Correct answer: ${question.options[question.correct]}</div>
+                        ${question.explanation ? `<div style="margin-top: 5px; color: #b8b8d1;"><i class="fas fa-lightbulb"></i> ${question.explanation}</div>` : ''}
                     </div>
                 `;
                 
-                // Show next button immediately for wrong answers
-                document.getElementById('next-btn').style.display = 'block';
-            }
-            
-            // Disable treasure boxes if wrong answer
-            if (!isCorrect) {
+                // Disable treasure boxes for wrong answers
                 document.querySelectorAll('.treasure-box').forEach(box => {
+                    box.classList.add('disabled');
                     box.style.cursor = 'not-allowed';
                     box.style.opacity = '0.5';
                     box.textContent = '🔒';
                 });
                 
                 document.getElementById('powerup-result').innerHTML = `
-                    <div style="color: #f56565; font-size: 2rem;">❌</div>
-                    <p>No power-up for wrong answers!</p>
+                    <div style="text-align: center;">
+                        <div style="font-size: 2.5rem; color: #f56565; margin-bottom: 10px;">❌</div>
+                        <div style="font-weight: bold; margin-bottom: 5px;">No Power-Up</div>
+                        <div style="color: #b8b8d1; font-size: 0.9rem;">Power-ups only available for correct answers</div>
+                    </div>
                 `;
+                
+                // Show next button immediately for wrong answers
+                document.getElementById('next-btn').style.display = 'flex';
             }
         }
 
@@ -747,24 +1000,76 @@
         }
 
         function openTreasureBox(boxNum) {
-            if (gameState.treasureOpened || !gameState.canUsePowerUp) return;
+            if (gameState.treasureOpened || !gameState.canUsePowerUp || !gameState.answerSubmitted) return;
             
             gameState.treasureOpened = true;
             
             // Mark all boxes as opened
             document.querySelectorAll('.treasure-box').forEach(box => {
+                box.classList.add('opened');
                 box.style.cursor = 'default';
                 box.style.opacity = '0.7';
             });
             
-            // Show power-up result (simplified)
+            // Randomly select a power-up
+            const powerUp = powerUps[Math.floor(Math.random() * powerUps.length)];
+            
+            // Update selected box
+            const selectedBox = document.querySelector(`.treasure-box[data-box="${boxNum}"]`);
+            selectedBox.textContent = powerUp.icon;
+            selectedBox.classList.add(powerUp.colorClass);
+            
+            // Show power-up result
             document.getElementById('powerup-result').innerHTML = `
-                <div style="color: #fbbf24; font-size: 2rem;">✨</div>
-                <p>Power-up applied!</p>
+                <div style="text-align: center;">
+                    <div class="powerup-icon ${powerUp.colorClass}" style="font-size: 2.5rem;">${powerUp.icon}</div>
+                    <div style="font-weight: bold; margin: 10px 0; font-size: 1.2rem;">${powerUp.name}</div>
+                    <div style="color: #b8b8d1;">${powerUp.description}</div>
+                </div>
             `;
             
+            // Apply the power-up
+            applyPowerUp(powerUp.type);
+            
             // Show next button
-            document.getElementById('next-btn').style.display = 'block';
+            document.getElementById('next-btn').style.display = 'flex';
+        }
+
+        function applyPowerUp(powerUpType) {
+            const playerIndex = gameState.currentPlayer - 1;
+            const otherPlayerIndex = playerIndex === 0 ? 1 : 0;
+            let pointsChange = gameState.currentQuestionPoints;
+            
+            console.log(`Applying ${powerUpType} power-up to Player ${gameState.currentPlayer}`);
+            console.log(`Current points: ${pointsChange}`);
+            
+            switch(powerUpType) {
+                case 'double':
+                    pointsChange *= 2;
+                    break;
+                case 'halved':
+                    pointsChange = Math.floor(pointsChange / 2);
+                    break;
+                case 'negative':
+                    pointsChange = -Math.abs(pointsChange);
+                    break;
+                case 'switch':
+                    // Swap scores
+                    const tempScore = gameState.playerScores[playerIndex];
+                    gameState.playerScores[playerIndex] = gameState.playerScores[otherPlayerIndex];
+                    gameState.playerScores[otherPlayerIndex] = tempScore;
+                    updateScores();
+                    return; // Don't add points after swapping
+                case 'bonus':
+                    pointsChange += 10;
+                    break;
+            }
+            
+            // Apply points (allow negative scores)
+            gameState.playerScores[playerIndex] += pointsChange;
+            updateScores();
+            
+            console.log(`New score for Player ${gameState.currentPlayer}: ${gameState.playerScores[playerIndex]}`);
         }
 
         function nextQuestion() {
@@ -786,11 +1091,11 @@
             // Determine winner
             let winner = '';
             if (gameState.playerScores[0] > gameState.playerScores[1]) {
-                winner = 'Player 1 Wins!';
+                winner = 'Player 1 Wins! 🏆';
             } else if (gameState.playerScores[1] > gameState.playerScores[0]) {
-                winner = 'Player 2 Wins!';
+                winner = 'Player 2 Wins! 🏆';
             } else {
-                winner = "It's a Tie!";
+                winner = "It's a Tie! 🤝";
             }
             
             document.getElementById('winner-name').textContent = winner;
@@ -851,6 +1156,7 @@
             });
             
             console.log('Game initialized successfully!');
+            console.log('Power-ups available:', powerUps.map(p => p.name));
         });
     </script>
 </body>
