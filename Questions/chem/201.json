@@ -1,0 +1,63 @@
+{
+  "title": "Quadratic Equations",
+  "topic": "Solving Quadratic Equations",
+  "subject": "Mathematics",
+  "questions": [
+    {
+      "question": "Solve x² - 5x + 6 = 0 by factorization.",
+      "options": ["x = 2, 3", "x = -2, -3", "x = 1, 6", "x = -1, -6"],
+      "correct": 0,
+      "points": 10,
+      "explanation": "x² - 5x + 6 = (x - 2)(x - 3) = 0 ⇒ x = 2 or x = 3"
+    },
+    {
+      "question": "Express x² + 6x + 5 in the form (x + a)² + b.",
+      "options": ["(x + 3)² - 4", "(x + 3)² + 4", "(x + 6)² - 31", "(x + 6)² + 5"],
+      "correct": 0,
+      "points": 10,
+      "explanation": "x² + 6x + 5 = (x + 3)² - 9 + 5 = (x + 3)² - 4"
+    },
+    {
+      "question": "Using quadratic formula, solve 2x² - 7x + 3 = 0.",
+      "options": ["x = 3, ½", "x = -3, -½", "x = 3, -½", "x = -3, ½"],
+      "correct": 0,
+      "points": 10,
+      "explanation": "x = [7 ± √(49 - 24)]/4 = [7 ± √25]/4 = [7 ± 5]/4 = 12/4 or 2/4 = 3 or ½"
+    },
+    {
+      "question": "Solve (x + 2)/(x - 1) = 3. Reject invalid solutions.",
+      "options": ["x = 2.5", "x = 1", "x = -2", "x = 0"],
+      "correct": 0,
+      "points": 10,
+      "explanation": "(x + 2) = 3(x - 1) ⇒ x + 2 = 3x - 3 ⇒ 2x = 5 ⇒ x = 2.5. x = 1 rejected (denominator zero)."
+    },
+    {
+      "question": "Solve x² - 4x = 0 by factorization.",
+      "options": ["x = 0, 4", "x = 0, -4", "x = 2, -2", "x = 4 only"],
+      "correct": 0,
+      "points": 10,
+      "explanation": "x(x - 4) = 0 ⇒ x = 0 or x = 4"
+    },
+    {
+      "question": "Complete the square: x² - 8x + 10 = 0. Find solutions.",
+      "options": ["x = 4 ± √6", "x = -4 ± √6", "x = 4 ± √26", "x = -4 ± √26"],
+      "correct": 0,
+      "points": 10,
+      "explanation": "x² - 8x + 10 = (x - 4)² - 16 + 10 = (x - 4)² - 6 = 0 ⇒ x - 4 = ±√6 ⇒ x = 4 ± √6"
+    },
+    {
+      "question": "The area of a rectangle is 35 cm². Length is 2 cm more than width. Find width.",
+      "options": ["5 cm", "7 cm", "-7 cm", "Both 5 and -7"],
+      "correct": 0,
+      "points": 10,
+      "explanation": "Let width = w, length = w+2. Area = w(w+2)=35 ⇒ w²+2w-35=0 ⇒ (w+7)(w-5)=0 ⇒ w=5 or w=-7. Reject negative."
+    },
+    {
+      "question": "Solve 3x² - 12 = 0.",
+      "options": ["x = ±2", "x = ±4", "x = ±√12", "x = 2 only"],
+      "correct": 0,
+      "points": 10,
+      "explanation": "3x² = 12 ⇒ x² = 4 ⇒ x = ±2"
+    }
+  ]
+}
