@@ -1,0 +1,63 @@
+{
+  "title": "Mixed Qualitative Analysis",
+  "topic": "Identifying Ions from Test Results",
+  "subject": "Chemistry",
+  "questions": [
+    {
+      "question": "A white solid dissolves in water. With NaOH, white precipitate soluble in excess. With HCl, effervescence. What ions present?",
+      "options": ["Zn²⁺ and CO₃²⁻", "Al³⁺ and SO₄²⁻", "Ca²⁺ and Cl⁻", "Fe³⁺ and NO₃⁻"],
+      "correct": 0,
+      "points": 10,
+      "explanation": "Zn²⁺ gives white ppt with NaOH soluble in excess. CO₃²⁻ gives effervescence with acid. Could be zinc carbonate."
+    },
+    {
+      "question": "A colourless solution gives white precipitate with NaOH insoluble in excess. With NH₃, no precipitate. With AgNO₃, white precipitate soluble in NH₃. Identify.",
+      "options": ["Ca²⁺ and Cl⁻", "Al³⁺ and Br⁻", "Zn²⁺ and I⁻", "Mg²⁺ and NO₃⁻"],
+      "correct": 0,
+      "points": 10,
+      "explanation": "White ppt with NaOH insoluble: Ca²⁺ or Mg²⁺. No ppt with NH₃ suggests Ca²⁺. White ppt with AgNO₃ soluble in NH₃ suggests Cl⁻."
+    },
+    {
+      "question": "A green solution gives green precipitate with NaOH turning brown. With BaCl₂, white precipitate insoluble in acid. Identify.",
+      "options": ["Fe²⁺ and SO₄²⁻", "Fe³⁺ and CO₃²⁻", "Ni²⁺ and Cl⁻", "Cr³⁺ and NO₃⁻"],
+      "correct": 0,
+      "points": 10,
+      "explanation": "Green solution and green ppt turning brown suggests Fe²⁺ oxidation. White ppt with BaCl₂ insoluble in acid suggests SO₄²⁻. Could be FeSO₄."
+    },
+    {
+      "question": "Which pair of ions would both give white precipitates with NaOH?",
+      "options": ["Ca²⁺ and Mg²⁺", "Cu²⁺ and Fe²⁺", "NH₄⁺ and K⁺", "Na⁺ and NO₃⁻"],
+      "correct": 0,
+      "points": 10,
+      "explanation": "Both Ca²⁺ and Mg²⁺ give white precipitates with NaOH: Ca(OH)₂ and Mg(OH)₂ respectively."
+    },
+    {
+      "question": "Which ions would NOT give any precipitate with NaOH?",
+      "options": ["NH₄⁺ and Na⁺", "Ca²⁺ and Mg²⁺", "Cu²⁺ and Fe²⁺", "Zn²⁺ and Al³⁺"],
+      "correct": 0,
+      "points": 10,
+      "explanation": "NH₄⁺ gives ammonia gas, not precipitate. Na⁺ gives no reaction with NaOH."
+    },
+    {
+      "question": "A solution gives red-brown precipitate with NaOH. With HCl, no effervescence. With AgNO₃, white precipitate. Identify possible ions.",
+      "options": ["Fe³⁺ and Cl⁻", "Cu²⁺ and CO₃²⁻", "Al³⁺ and SO₄²⁻", "Zn²⁺ and NO₃⁻"],
+      "correct": 0,
+      "points": 10,
+      "explanation": "Red-brown precipitate suggests Fe³⁺. No effervescence with HCl excludes CO₃²⁻. White ppt with AgNO₃ suggests Cl⁻. Could be FeCl₃."
+    },
+    {
+      "question": "An unknown gives: With BaCl₂ → white ppt soluble in acid. With AgNO₃ → yellow ppt. With NaOH → no change. Identify anions.",
+      "options": ["SO₃²⁻ and I⁻", "CO₃²⁻ and Br⁻", "SO₄²⁻ and Cl⁻", "NO₃⁻ and I⁻"],
+      "correct": 0,
+      "points": 10,
+      "explanation": "White ppt with BaCl₂ soluble in acid: SO₃²⁻ (BaSO₃). Yellow ppt with AgNO₃: I⁻ (AgI)."
+    },
+    {
+      "question": "A solution gives white precipitate with NaOH that dissolves in excess. With NH₃, white precipitate insoluble in excess. Identify cation.",
+      "options": ["Al³⁺", "Zn²⁺", "Ca²⁺", "Mg²⁺"],
+      "correct": 0,
+      "points": 10,
+      "explanation": "Al³⁺ gives white Al(OH)₃ soluble in excess NaOH but insoluble in excess NH₃."
+    }
+  ]
+}
