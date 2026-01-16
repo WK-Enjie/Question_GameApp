@@ -3,1198 +3,157 @@
 <head>
     <meta charset="UTF-8">
     <meta name="viewport" content="width=device-width, initial-scale=1.0">
-    <title>Singapore Curriculum Quiz Game</title>
+    <title>Quiz Game</title>
+    
+    <!-- Link to your CSS if you have it -->
+    <link rel="stylesheet" href="style.css">
+    
     <style>
-        /* RESET */
-        * { margin: 0; padding: 0; box-sizing: border-box; }
+        /* Basic styles for the quiz */
+        .screen { display: none; }
+        .screen.active { display: block; }
         
-        body {
-            font-family: -apple-system, BlinkMacSystemFont, 'Segoe UI', Roboto, Oxygen, Ubuntu, sans-serif;
-            background: linear-gradient(135deg, #1a1a2e, #16213e);
-            color: white;
-            min-height: 100vh;
-            display: flex;
-            justify-content: center;
-            align-items: center;
-            padding: 15px;
-        }
-        
-        /* CONTAINER */
-        .container {
-            width: 100%;
-            max-width: 550px;
-            background: rgba(0, 0, 0, 0.8);
-            border-radius: 20px;
-            overflow: hidden;
-            box-shadow: 0 15px 35px rgba(0, 0, 0, 0.5);
-            border: 1px solid rgba(255, 255, 255, 0.1);
-            position: relative;
-        }
-        
-        /* SCREEN */
-        .screen {
-            padding: 30px 25px;
-            width: 100%;
-            display: none;
-        }
-        
-        .screen.active {
-            display: block;
-            animation: fadeIn 0.3s ease;
-        }
-        
-        @keyframes fadeIn {
-            from { opacity: 0; }
-            to { opacity: 1; }
-        }
-        
-        /* HEADER */
-        .header {
-            text-align: center;
-            margin-bottom: 25px;
-        }
-        
-        .header h1 {
-            font-size: 1.8rem;
-            color: #4cc9f0;
-            margin-bottom: 8px;
-        }
-        
-        .header p {
-            color: #a0aec0;
-            font-size: 1rem;
-        }
-        
-        /* 6-DIGIT PIN DISPLAY */
-        .pin-display {
-            display: flex;
-            justify-content: center;
-            gap: 8px;
-            margin-bottom: 25px;
-            flex-wrap: wrap;
-        }
-        
-        .pin-digit {
-            width: 55px;
-            height: 75px;
-            background: rgba(255, 255, 255, 0.05);
-            border: 3px solid #4cc9f0;
-            border-radius: 10px;
-            display: flex;
-            align-items: center;
-            justify-content: center;
-            font-size: 2.2rem;
-            font-weight: bold;
-            color: #4cc9f0;
-        }
-        
-        .pin-separator {
-            display: flex;
-            align-items: center;
-            color: #a0aec0;
-            font-size: 1.5rem;
-            margin: 0 2px;
-        }
-        
-        /* KEYPAD */
-        .keypad {
-            display: grid;
-            grid-template-columns: repeat(3, 1fr);
-            gap: 10px;
-            margin-bottom: 20px;
-        }
-        
-        .keypad-btn {
+        .digit {
+            display: inline-block;
+            width: 40px;
             height: 60px;
-            background: rgba(255, 255, 255, 0.1);
-            border: 2px solid rgba(255, 255, 255, 0.2);
-            border-radius: 12px;
-            font-size: 1.5rem;
-            color: white;
-            cursor: pointer;
-            transition: all 0.2s;
-        }
-        
-        .keypad-btn:hover {
-            background: rgba(76, 201, 240, 0.3);
-        }
-        
-        .keypad-btn:active {
-            transform: scale(0.95);
-        }
-        
-        .keypad-actions {
-            display: flex;
-            gap: 10px;
-            margin-bottom: 25px;
-        }
-        
-        .keypad-actions button {
-            flex: 1;
-            padding: 14px;
-            border: none;
-            border-radius: 12px;
-            font-size: 1rem;
-            font-weight: bold;
-            cursor: pointer;
-            display: flex;
-            align-items: center;
-            justify-content: center;
-            gap: 8px;
-            transition: all 0.2s;
-        }
-        
-        .keypad-actions button:hover {
-            transform: translateY(-2px);
-        }
-        
-        .clear-btn {
-            background: linear-gradient(135deg, #f56565, #e53e3e);
-            color: white;
-        }
-        
-        .submit-btn {
-            background: linear-gradient(135deg, #48bb78, #38a169);
-            color: white;
-        }
-        
-        /* LOADING SCREEN */
-        .loader {
-            width: 60px;
-            height: 60px;
-            border: 6px solid rgba(76, 201, 240, 0.1);
-            border-top-color: #4cc9f0;
-            border-radius: 50%;
-            animation: spin 1s linear infinite;
-            margin: 30px auto;
-        }
-        
-        @keyframes spin {
-            to { transform: rotate(360deg); }
-        }
-        
-        .loading-text {
+            border: 2px solid #4cc9f0;
+            margin: 5px;
             text-align: center;
-            color: #a0aec0;
-            font-size: 1.2rem;
-        }
-        
-        /* GAME SCREEN */
-        .game-header {
-            display: flex;
-            justify-content: space-between;
-            align-items: center;
-            margin-bottom: 25px;
-            padding-bottom: 15px;
-            border-bottom: 2px solid rgba(255, 255, 255, 0.1);
-        }
-        
-        .quiz-title {
-            font-size: 1.4rem;
-            color: #4cc9f0;
-        }
-        
-        .home-btn {
-            padding: 10px 20px;
-            background: rgba(255, 255, 255, 0.1);
-            border: none;
-            border-radius: 10px;
-            color: white;
-            cursor: pointer;
-            display: flex;
-            align-items: center;
-            gap: 8px;
-            transition: all 0.2s;
-        }
-        
-        .home-btn:hover {
-            background: rgba(255, 255, 255, 0.2);
-        }
-        
-        .players {
-            display: flex;
-            gap: 15px;
-            margin-bottom: 25px;
-        }
-        
-        .player {
-            flex: 1;
-            background: rgba(255, 255, 255, 0.05);
-            padding: 20px;
-            border-radius: 15px;
-            text-align: center;
-            border: 2px solid transparent;
-        }
-        
-        .player.active {
-            border-color: #4cc9f0;
-            background: rgba(76, 201, 240, 0.1);
-        }
-        
-        .player h3 {
-            color: #a0aec0;
-            margin-bottom: 10px;
-            font-size: 1.1rem;
-        }
-        
-        .score {
-            font-size: 2.5rem;
-            font-weight: bold;
-            color: #4cc9f0;
-        }
-        
-        .question-info {
-            display: flex;
-            justify-content: space-between;
-            background: rgba(255, 255, 255, 0.05);
-            padding: 15px;
-            border-radius: 12px;
-            margin-bottom: 20px;
-            font-size: 1rem;
-        }
-        
-        .question-box {
-            background: rgba(255, 255, 255, 0.05);
-            padding: 25px;
-            border-radius: 15px;
-            margin-bottom: 20px;
-        }
-        
-        .question {
-            font-size: 1.4rem;
-            line-height: 1.5;
-            margin-bottom: 25px;
-        }
-        
-        .options {
-            display: flex;
-            flex-direction: column;
-            gap: 12px;
-        }
-        
-        .option {
-            padding: 18px;
-            background: rgba(255, 255, 255, 0.08);
-            border: 2px solid transparent;
-            border-radius: 12px;
-            cursor: pointer;
-            transition: all 0.2s;
-            font-size: 1.1rem;
-        }
-        
-        .option:hover:not(.selected) {
-            background: rgba(76, 201, 240, 0.1);
-        }
-        
-        .option.selected {
-            background: rgba(76, 201, 240, 0.2);
-            border-color: #4cc9f0;
-        }
-        
-        .option.correct {
-            background: rgba(72, 187, 120, 0.2);
-            border-color: #48bb78;
-            color: #48bb78;
-        }
-        
-        .option.incorrect {
-            background: rgba(245, 101, 101, 0.2);
-            border-color: #f56565;
-            color: #f56565;
-            text-decoration: line-through;
-        }
-        
-        .answer-btn {
-            width: 100%;
-            padding: 18px;
-            background: linear-gradient(135deg, #48bb78, #38a169);
-            border: none;
-            border-radius: 12px;
-            color: white;
-            font-size: 1.2rem;
-            font-weight: bold;
-            cursor: pointer;
-            display: flex;
-            align-items: center;
-            justify-content: center;
-            gap: 10px;
-            margin-top: 15px;
-            transition: all 0.2s;
-        }
-        
-        .answer-btn:hover:not(:disabled) {
-            transform: translateY(-2px);
-            box-shadow: 0 5px 15px rgba(72, 187, 120, 0.3);
-        }
-        
-        .answer-btn:disabled {
-            opacity: 0.5;
-            cursor: not-allowed;
-        }
-        
-        .feedback {
-            margin-top: 20px;
-            padding: 20px;
-            background: rgba(255, 255, 255, 0.05);
-            border-radius: 12px;
-            font-size: 1.1rem;
-            line-height: 1.5;
-        }
-        
-        .treasure-section {
-            background: rgba(255, 255, 255, 0.05);
-            padding: 25px;
-            border-radius: 15px;
-            margin-top: 20px;
-            text-align: center;
-        }
-        
-        .treasure-section h3 {
-            color: #4cc9f0;
-            margin-bottom: 20px;
-            font-size: 1.3rem;
-        }
-        
-        .treasure-boxes {
-            display: flex;
-            justify-content: center;
-            gap: 15px;
-            margin: 20px 0;
-        }
-        
-        .treasure-box {
-            width: 70px;
-            height: 70px;
-            background: linear-gradient(135deg, #fbbf24, #d97706);
-            border-radius: 12px;
-            display: flex;
-            align-items: center;
-            justify-content: center;
-            font-size: 2.5rem;
-            cursor: pointer;
-            transition: all 0.2s;
-        }
-        
-        .treasure-box:hover:not(.disabled) {
-            transform: scale(1.05);
-            box-shadow: 0 5px 15px rgba(251, 191, 36, 0.3);
-        }
-        
-        .treasure-box:active:not(.disabled) {
-            transform: scale(0.95);
-        }
-        
-        .treasure-box.disabled {
-            opacity: 0.5;
-            cursor: not-allowed;
-            transform: none !important;
-            box-shadow: none !important;
-        }
-        
-        .treasure-box.opened {
-            cursor: default;
-        }
-        
-        .treasure-box.powerup-double { background: linear-gradient(135deg, #9f7aea, #6b46c1); }
-        .treasure-box.powerup-half { background: linear-gradient(135deg, #4cc9f0, #4361ee); }
-        .treasure-box.powerup-negative { background: linear-gradient(135deg, #f56565, #e53e3e); }
-        .treasure-box.powerup-switch { background: linear-gradient(135deg, #48bb78, #38a169); }
-        .treasure-box.powerup-bonus { background: linear-gradient(135deg, #fbbf24, #d97706); }
-        
-        .powerup-result {
-            margin-top: 15px;
-            padding: 10px;
-            border-radius: 8px;
-            background: rgba(255, 255, 255, 0.05);
-        }
-        
-        .next-btn {
-            width: 100%;
-            padding: 18px;
-            background: linear-gradient(135deg, #4cc9f0, #4361ee);
-            border: none;
-            border-radius: 12px;
-            color: white;
-            font-size: 1.2rem;
-            font-weight: bold;
-            cursor: pointer;
-            display: flex;
-            align-items: center;
-            justify-content: center;
-            gap: 10px;
-            margin-top: 20px;
-            transition: all 0.2s;
-        }
-        
-        .next-btn:hover {
-            transform: translateY(-2px);
-            box-shadow: 0 5px 15px rgba(76, 201, 240, 0.3);
-        }
-        
-        /* GAME OVER */
-        .game-over {
-            text-align: center;
-            padding: 30px;
-            background: rgba(255, 255, 255, 0.05);
-            border-radius: 15px;
-            margin-top: 20px;
-            display: none;
-        }
-        
-        /* ERROR SCREEN */
-        .error-icon {
-            text-align: center;
-            font-size: 4rem;
-            color: #f56565;
-            margin: 20px 0;
-        }
-        
-        .error-text {
-            text-align: center;
-            color: #a0aec0;
-            margin: 20px 0;
-            line-height: 1.5;
-        }
-        
-        .error-actions {
-            display: flex;
-            gap: 12px;
-            margin-top: 30px;
-        }
-        
-        .error-actions button {
-            flex: 1;
-            padding: 16px;
-            border: none;
-            border-radius: 12px;
-            font-size: 1.1rem;
-            font-weight: bold;
-            cursor: pointer;
-            display: flex;
-            align-items: center;
-            justify-content: center;
-            gap: 10px;
-            transition: all 0.2s;
-        }
-        
-        .error-actions button:hover {
-            transform: translateY(-2px);
-        }
-        
-        .retry-btn {
-            background: #48bb78;
-            color: white;
-        }
-        
-        .back-btn {
-            background: #4cc9f0;
-            color: white;
-        }
-        
-        /* SIMPLE INSTRUCTION */
-        .simple-instruction {
-            text-align: center;
-            color: #a0aec0;
-            padding: 20px;
-            margin-top: 10px;
-            background: rgba(255, 255, 255, 0.05);
-            border-radius: 10px;
-        }
-        
-        .example-code {
+            line-height: 60px;
+            font-size: 24px;
             color: #fbbf24;
-            font-weight: bold;
-            margin: 10px 0;
-            font-size: 1.2rem;
+        }
+        
+        .pin-btn {
+            width: 50px;
+            height: 50px;
+            margin: 5px;
+            font-size: 20px;
         }
     </style>
 </head>
 <body>
-    <div class="container">
-        <!-- PIN SCREEN -->
-        <div id="pin-screen" class="screen active">
-            <div class="header">
-                <h1>📚 Singapore Curriculum Quiz</h1>
-                <p>Enter 6-digit code to load a quiz</p>
-            </div>
-            
-            <!-- 6-DIGIT PIN DISPLAY -->
-            <div class="pin-display">
-                <div class="pin-digit" id="digit1">_</div>
-                <div class="pin-digit" id="digit2">_</div>
-                <div class="pin-digit" id="digit3">_</div>
-                <div class="pin-separator">-</div>
-                <div class="pin-digit" id="digit4">_</div>
-                <div class="pin-digit" id="digit5">_</div>
-                <div class="pin-separator">-</div>
-                <div class="pin-digit" id="digit6">_</div>
-            </div>
-            
-            <div class="keypad">
-                <button class="keypad-btn" data-digit="1">1</button>
-                <button class="keypad-btn" data-digit="2">2</button>
-                <button class="keypad-btn" data-digit="3">3</button>
-                <button class="keypad-btn" data-digit="4">4</button>
-                <button class="keypad-btn" data-digit="5">5</button>
-                <button class="keypad-btn" data-digit="6">6</button>
-                <button class="keypad-btn" data-digit="7">7</button>
-                <button class="keypad-btn" data-digit="8">8</button>
-                <button class="keypad-btn" data-digit="9">9</button>
-                <button class="keypad-btn" data-digit="0">0</button>
-            </div>
-            
-            <div class="keypad-actions">
-                <button id="clear-btn" class="clear-btn">
-                    <span style="font-size: 1.3rem;">×</span> Clear
-                </button>
-                <button id="submit-pin-btn" class="submit-btn">
-                    GO <span style="font-size: 1.3rem;">▶</span>
-                </button>
-            </div>
-            
-            <!-- SIMPLE INSTRUCTION ONLY -->
-            <div class="simple-instruction">
-                <p>💡 Enter 6-digit quiz code</p>
-                <p class="example-code">Example: 342-09-1</p>
-                <p style="font-size: 0.9rem; margin-top: 10px;">
-                    (Enter as: <strong>3 4 2 0 9 1</strong>)
-                </p>
+    <!-- PIN Screen -->
+    <div id="pin-screen" class="screen active">
+        <h2>Enter Quiz Code</h2>
+        <div class="pin-display">
+            <div id="digit1" class="digit">_</div>
+            <div id="digit2" class="digit">_</div>
+            <div id="digit3" class="digit">_</div>
+            <div id="digit4" class="digit">_</div>
+            <div id="digit5" class="digit">_</div>
+            <div id="digit6" class="digit">_</div>
+        </div>
+        
+        <div class="pin-keypad">
+            <button class="pin-btn" data-digit="1">1</button>
+            <button class="pin-btn" data-digit="2">2</button>
+            <button class="pin-btn" data-digit="3">3</button>
+            <button class="pin-btn" data-digit="4">4</button>
+            <button class="pin-btn" data-digit="5">5</button>
+            <button class="pin-btn" data-digit="6">6</button>
+            <button class="pin-btn" data-digit="7">7</button>
+            <button class="pin-btn" data-digit="8">8</button>
+            <button class="pin-btn" data-digit="9">9</button>
+            <button class="pin-btn" data-digit="0">0</button>
+            <button id="clear-btn" class="pin-btn" style="background:#f56565">C</button>
+            <button id="submit-pin" class="pin-btn" style="background:#48bb78">GO</button>
+        </div>
+        
+        <div id="quick-codes" style="margin-top: 30px;">
+            <!-- Quiz catalog will be loaded here -->
+        </div>
+    </div>
+    
+    <!-- Loading Screen -->
+    <div id="loading-screen" class="screen">
+        <h2 id="loading-message">Loading...</h2>
+    </div>
+    
+    <!-- Game Screen -->
+    <div id="game-screen" class="screen">
+        <div class="game-header">
+            <div id="quiz-title">Quiz Title</div>
+            <div id="quiz-topic">Topic</div>
+            <div class="question-counter">
+                Question <span id="current-q">1</span>/<span id="total-q">10</span>
             </div>
         </div>
         
-        <!-- LOADING SCREEN -->
-        <div id="loading-screen" class="screen">
-            <div class="loader"></div>
-            <div class="loading-text" id="loading-text">Loading questions...</div>
-        </div>
-        
-        <!-- GAME SCREEN -->
-        <div id="game-screen" class="screen">
-            <div class="game-header">
-                <div>
-                    <div class="quiz-title" id="quiz-title">Quiz Game</div>
-                    <div style="color: #a0aec0; font-size: 0.9rem;" id="quiz-topic">Topic</div>
-                </div>
-                <button id="home-btn" class="home-btn">🏠 Home</button>
+        <div class="players">
+            <div id="player1" class="player active">
+                <div>Player 1</div>
+                <div id="score1" class="score">0</div>
+                <div id="player1-turn" class="turn-indicator"></div>
             </div>
-            
-            <div class="players">
-                <div class="player active" id="player1">
-                    <h3>Player 1</h3>
-                    <div class="score" id="score1">0</div>
-                </div>
-                <div class="player" id="player2">
-                    <h3>Player 2</h3>
-                    <div class="score" id="score2">0</div>
-                </div>
-            </div>
-            
-            <div class="question-info">
-                <div>Question: <span id="current-q">1</span>/<span id="total-q">10</span></div>
-                <div>Points: <span id="points">10</span></div>
-            </div>
-            
-            <div class="question-box">
-                <div class="question" id="question">Loading question...</div>
-                <div class="options" id="options"></div>
-                <button id="submit-answer" class="answer-btn" disabled>Submit Answer</button>
-                <div class="feedback" id="feedback"></div>
-                
-                <!-- TREASURE SECTION -->
-                <div class="treasure-section" style="display: none;">
-                    <h3>🎁 Treasure Boxes</h3>
-                    <p style="color: #a0aec0; margin-bottom: 15px;">Pick one after correct answer!</p>
-                    <div class="treasure-boxes">
-                        <div class="treasure-box" data-box="1">🎁</div>
-                        <div class="treasure-box" data-box="2">🎁</div>
-                    </div>
-                    <div class="powerup-result" id="powerup-result"></div>
-                </div>
-                
-                <button id="next-btn" class="next-btn" style="display: none;">Next Question →</button>
-            </div>
-            
-            <!-- GAME OVER -->
-            <div id="game-over" class="game-over">
-                <h2 style="color: #4cc9f0; margin-bottom: 20px;">🎮 Game Over!</h2>
-                <div style="font-size: 1.2rem; margin-bottom: 20px;">
-                    <div>Player 1: <span id="final-score1" style="color: #fbbf24;">0</span> points</div>
-                    <div>Player 2: <span id="final-score2" style="color: #fbbf24;">0</span> points</div>
-                </div>
-                <div style="color: #fbbf24; font-size: 1.5rem; font-weight: bold; margin: 20px 0;" id="winner">
-                    🏆 Winner! 🏆
-                </div>
-                <div style="display: flex; gap: 15px; margin-top: 30px;">
-                    <button id="restart-game" class="game-over-btn restart-btn" style="background: #4cc9f0; color: white; padding: 12px 20px; border: none; border-radius: 10px; cursor: pointer;">
-                        🔄 Restart
-                    </button>
-                    <button id="new-chapter" class="game-over-btn new-chapter-btn" style="background: #48bb78; color: white; padding: 12px 20px; border: none; border-radius: 10px; cursor: pointer;">
-                        📚 New Chapter
-                    </button>
-                </div>
+            <div id="player2" class="player">
+                <div>Player 2</div>
+                <div id="score2" class="score">0</div>
+                <div id="player2-turn" class="turn-indicator"></div>
             </div>
         </div>
         
-        <!-- ERROR SCREEN -->
-        <div id="error-screen" class="screen">
-            <div class="error-icon">⚠️</div>
-            <h2 style="text-align: center; color: #f56565;">Quiz Not Found</h2>
-            <div class="error-text" id="error-message">
-                The quiz you're looking for doesn't exist or couldn't be loaded.
+        <div class="question-container">
+            <div id="question-text">Question will appear here</div>
+            <div id="options-container" class="options">
+                <!-- Options will be added here -->
             </div>
-            <div class="error-actions">
-                <button id="retry-btn" class="retry-btn">🔄 Try Again</button>
-                <button id="back-btn" class="back-btn">🏠 Back to Home</button>
+        </div>
+        
+        <div class="game-controls">
+            <button id="submit-answer" class="btn">Submit Answer</button>
+            <button id="next-btn" class="btn">Next Question</button>
+            <button id="home-btn" class="btn">Home</button>
+        </div>
+        
+        <div class="feedback-section">
+            <div id="answer-feedback">
+                <!-- Feedback will appear here -->
+            </div>
+            
+            <div class="treasure-section" style="display: none;">
+                <h3>🎁 Pick a Treasure Box!</h3>
+                <div class="treasure-boxes">
+                    <div class="treasure-box" data-box="1">🎁</div>
+                    <div class="treasure-box" data-box="2">🎁</div>
+                    <div class="treasure-box" data-box="3">🎁</div>
+                </div>
+                <div id="powerup-result"></div>
+            </div>
+        </div>
+        
+        <div id="game-over" style="display: none;">
+            <h2 id="winner-message">Game Over!</h2>
+            <div id="winner-name">Winner</div>
+            <div class="final-scores">
+                Player 1: <span id="final-score1">0</span><br>
+                Player 2: <span id="final-score2">0</span>
+            </div>
+            <div class="game-over-btns">
+                <button id="restart-btn" class="btn">Play Again</button>
+                <button id="new-chapter-btn" class="btn">New Quiz</button>
             </div>
         </div>
     </div>
-
-    <script>
-        // ========== GAME STATE ==========
-        const gameState = {
-            pin: ['', '', '', '', '', ''],
-            currentDigit: 0,
-            questions: [],
-            currentQuestion: 0,
-            currentPlayer: 1,
-            scores: [0, 0],
-            selectedAnswer: null,
-            answered: false,
-            powerupUsed: false,
-            canUsePowerup: false
-        };
-
-        // ========== POWER-UPS ==========
-        const powerUps = [
-            { icon: '⚡', name: 'Double Points', type: 'double' },
-            { icon: '➗', name: 'Half Points', type: 'half' },
-            { icon: '➖', name: 'Negative Points', type: 'negative' },
-            { icon: '🔄', name: 'Switch Scores', type: 'switch' },
-            { icon: '✨', name: 'Bonus +10', type: 'bonus' }
-        ];
-
-        // ========== SCREEN MANAGEMENT ==========
-        function showScreen(screenId) {
-            document.querySelectorAll('.screen').forEach(screen => {
-                screen.classList.remove('active');
-            });
-            document.getElementById(screenId).classList.add('active');
-        }
-
-        // ========== PIN FUNCTIONS ==========
-        function updatePinDisplay() {
-            const digits = ['digit1', 'digit2', 'digit3', 'digit4', 'digit5', 'digit6'];
-            digits.forEach((id, index) => {
-                const digit = document.getElementById(id);
-                digit.textContent = gameState.pin[index] || '_';
-            });
-        }
-
-        function addDigit(digit) {
-            if (gameState.currentDigit < 6) {
-                gameState.pin[gameState.currentDigit] = digit;
-                updatePinDisplay();
-                gameState.currentDigit++;
-            }
-        }
-
-        function clearPin() {
-            gameState.pin = ['', '', '', '', '', ''];
-            gameState.currentDigit = 0;
-            updatePinDisplay();
-        }
-
-        // ========== LOAD QUIZ FUNCTION ==========
-        async function submitPin() {
-            const code = gameState.pin.join('');
-            
-            if (code.length !== 6) {
-                alert('Please enter all 6 digits');
-                return;
-            }
-            
-            showScreen('loading-screen');
-            document.getElementById('loading-text').textContent = `Loading quiz ${code}...`;
-            
-            try {
-                // Determine folder based on first digit
-                let folder = '';
-                const firstDigit = code[0];
-                
-                if (firstDigit === '1') {
-                    folder = 'primary/';
-                } else if (firstDigit === '2') {
-                    folder = 'lower-secondary/';
-                } else if (firstDigit === '3') {
-                    folder = 'upper-secondary/';
-                } else {
-                    throw new Error('Invalid first digit. Must be 1, 2, or 3');
-                }
-                
-                // Determine subject based on second digit
-                let subjectFolder = '';
-                const secondDigit = code[1];
-                
-                if (secondDigit === '0') {
-                    subjectFolder = 'math/';
-                } else if (secondDigit === '1') {
-                    subjectFolder = 'science/';
-                } else if (secondDigit === '4') {
-                    subjectFolder = 'combined-chem/';
-                } else if (secondDigit === '2') {
-                    subjectFolder = 'physics/';
-                } else {
-                    throw new Error('Invalid second digit. Must be 0, 1, 2, or 4');
-                }
-                
-                // Construct filepath
-                const filepath = `Questions/${folder}${subjectFolder}${code}.json`;
-                console.log('📂 Looking for:', filepath);
-                
-                const response = await fetch(filepath);
-                
-                if (!response.ok) {
-                    throw new Error(`File not found at: ${filepath}`);
-                }
-                
-                const quizData = await response.json();
-                console.log('✅ Successfully loaded quiz');
-                
-                // Store questions
-                gameState.questions = Array.isArray(quizData.questions) ? quizData.questions : quizData;
-                if (gameState.questions.length === 0) {
-                    throw new Error('Quiz file is empty');
-                }
-                
-                // Update UI
-                document.getElementById('quiz-title').textContent = quizData.title || `Quiz ${code}`;
-                document.getElementById('quiz-topic').textContent = 
-                    `${quizData.grade || ''} ${quizData.subject || ''}`;
-                if (quizData.topic) {
-                    document.getElementById('quiz-topic').textContent += ` | ${quizData.topic}`;
-                }
-                
-                // Initialize game
-                initGame();
-                showScreen('game-screen');
-                
-            } catch (error) {
-                console.error('Failed to load quiz:', error);
-                document.getElementById('loading-text').textContent = `Error loading quiz`;
-                
-                setTimeout(() => {
-                    document.getElementById('error-message').innerHTML = 
-                        `<strong>Worksheet ${code} not found</strong><br><br>
-                         <div style="color: #a0aec0; font-size: 0.9rem;">
-                         Please check if the file exists in the correct folder.<br>
-                         Only enter valid 6-digit codes.<br><br>
-                         Example: <strong>342091</strong> for Combined Chemistry</div>`;
-                    showScreen('error-screen');
-                }, 1500);
-            }
-        }
-
-        // ========== GAME FUNCTIONS ==========
-        function initGame() {
-            gameState.currentQuestion = 0;
-            gameState.currentPlayer = 1;
-            gameState.scores = [0, 0];
-            gameState.selectedAnswer = null;
-            gameState.answered = false;
-            gameState.powerupUsed = false;
-            gameState.canUsePowerup = false;
-            
-            updateScores();
-            updatePlayerTurn();
-            loadQuestion();
-            
-            document.getElementById('game-over').style.display = 'none';
-        }
-
-        function loadQuestion() {
-            if (gameState.currentQuestion >= gameState.questions.length) {
-                endGame();
-                return;
-            }
-            
-            const question = gameState.questions[gameState.currentQuestion];
-            
-            // Update UI
-            document.getElementById('current-q').textContent = gameState.currentQuestion + 1;
-            document.getElementById('total-q').textContent = gameState.questions.length;
-            document.getElementById('question').textContent = question.question;
-            document.getElementById('points').textContent = question.points || 10;
-            
-            // Update scores
-            updateScores();
-            
-            // Update active player
-            updatePlayerTurn();
-
-            // Clear options
-            const optionsDiv = document.getElementById('options');
-            optionsDiv.innerHTML = '';
-            document.getElementById('feedback').innerHTML = '';
-            document.getElementById('next-btn').style.display = 'none';
-            document.getElementById('powerup-result').innerHTML = '';
-            
-            // Hide treasure section
-            const treasureSection = document.querySelector('.treasure-section');
-            treasureSection.style.display = 'none';
-            
-            // Reset treasure boxes
-            resetTreasureBoxes();
-
-            // Add options
-            if (question.options && Array.isArray(question.options)) {
-                question.options.forEach((option, index) => {
-                    const optionElement = document.createElement('div');
-                    optionElement.className = 'option';
-                    optionElement.textContent = `${String.fromCharCode(65 + index)}) ${option}`;
-                    optionElement.dataset.index = index;
-                    
-                    optionElement.addEventListener('click', function() {
-                        if (gameState.answered) return;
-                        
-                        // Clear previous selection
-                        document.querySelectorAll('.option').forEach(opt => {
-                            opt.classList.remove('selected');
-                        });
-                        
-                        // Select this option
-                        this.classList.add('selected');
-                        gameState.selectedAnswer = index;
-                        document.getElementById('submit-answer').disabled = false;
-                    });
-                    
-                    optionsDiv.appendChild(optionElement);
-                });
-            }
-
-            // Reset submit button
-            document.getElementById('submit-answer').disabled = true;
-            document.getElementById('submit-answer').style.display = 'flex';
-            gameState.answered = false;
-            gameState.selectedAnswer = null;
-            gameState.powerupUsed = false;
-            gameState.canUsePowerup = false;
-        }
-
-        function resetTreasureBoxes() {
-            const treasureBoxes = document.querySelectorAll('.treasure-box');
-            
-            treasureBoxes.forEach((box, index) => {
-                // Reset to original state
-                box.className = 'treasure-box';
-                box.textContent = '🎁';
-                box.style.background = 'linear-gradient(135deg, #fbbf24, #d97706)';
-                box.style.opacity = '1';
-                box.style.transform = 'scale(1)';
-                box.style.cursor = 'pointer';
-                box.style.pointerEvents = 'auto';
-                
-                // Remove existing event listeners
-                const newBox = box.cloneNode(true);
-                box.parentNode.replaceChild(newBox, box);
-            });
-            
-            // Add fresh event listeners
-            document.querySelectorAll('.treasure-box').forEach((box, index) => {
-                box.addEventListener('click', function() {
-                    if (!gameState.canUsePowerup || gameState.powerupUsed) return;
-                    openTreasureBox(this.dataset.box);
-                });
-            });
-        }
-
-        function checkAnswer() {
-            if (gameState.answered || gameState.selectedAnswer === null) return;
-            
-            gameState.answered = true;
-            const submitBtn = document.getElementById('submit-answer');
-            submitBtn.disabled = true;
-            
-            const question = gameState.questions[gameState.currentQuestion];
-            const isCorrect = gameState.selectedAnswer === question.correct;
-            gameState.canUsePowerup = isCorrect;
-            
-            // Mark correct/incorrect answers
-            const options = document.querySelectorAll('.option');
-            options.forEach((opt, index) => {
-                if (index === question.correct) {
-                    opt.classList.add('correct');
-                } else if (index === gameState.selectedAnswer && !isCorrect) {
-                    opt.classList.add('incorrect');
-                }
-                opt.style.pointerEvents = 'none';
-            });
-            
-            // Update score if correct
-            if (isCorrect) {
-                const points = question.points || 10;
-                gameState.scores[gameState.currentPlayer - 1] += points;
-                updateScores();
-                
-                let feedback = `<div style="color: #48bb78; font-weight: bold; margin-bottom: 15px; font-size: 1.2rem;">
-                    ✅ Correct! +${points} points
-                </div>`;
-                
-                if (question.explanation) {
-                    feedback += `<div style="color: #a0aec0; font-size: 1.1rem; line-height: 1.5;">
-                        <strong>Explanation:</strong> ${question.explanation}
-                    </div>`;
-                }
-                
-                document.getElementById('feedback').innerHTML = feedback;
-                
-                // Show treasure boxes
-                document.querySelector('.treasure-section').style.display = 'block';
-                
-                // Enable treasure boxes
-                document.querySelectorAll('.treasure-box').forEach(box => {
-                    box.style.pointerEvents = 'auto';
-                    box.style.opacity = '1';
-                });
-                
-            } else {
-                let feedback = `<div style="color: #f56565; font-weight: bold; margin-bottom: 15px; font-size: 1.2rem;">
-                    ❌ Incorrect! No points
-                </div>
-                <div style="color: #48bb78; margin-bottom: 15px; font-size: 1.1rem;">
-                    <strong>Correct answer:</strong> ${String.fromCharCode(65 + question.correct)}) ${question.options[question.correct]}
-                </div>`;
-                
-                if (question.explanation) {
-                    feedback += `<div style="color: #a0aec0; font-size: 1.1rem; line-height: 1.5;">
-                        <strong>Explanation:</strong> ${question.explanation}
-                    </div>`;
-                }
-                
-                document.getElementById('feedback').innerHTML = feedback;
-                
-                // Disable treasure boxes for wrong answers
-                document.querySelectorAll('.treasure-box').forEach(box => {
-                    box.classList.add('disabled');
-                });
-                
-                // Switch player for next question
-                gameState.currentPlayer = gameState.currentPlayer === 1 ? 2 : 1;
-                updatePlayerTurn();
-                
-                // Show next button immediately
-                document.getElementById('next-btn').style.display = 'flex';
-            }
-        }
-
-        function openTreasureBox(boxNum) {
-            if (!gameState.canUsePowerup || gameState.powerupUsed) return;
-            
-            gameState.powerupUsed = true;
-            
-            // Disable all treasure boxes
-            document.querySelectorAll('.treasure-box').forEach(box => {
-                box.classList.add('disabled');
-                box.style.pointerEvents = 'none';
-                box.style.opacity = '0.6';
-            });
-            
-            // Random power-up
-            const powerUp = powerUps[Math.floor(Math.random() * powerUps.length)];
-            
-            // Update selected box
-            const selectedBox = document.querySelector(`.treasure-box[data-box="${boxNum}"]`);
-            if (selectedBox) {
-                selectedBox.textContent = powerUp.icon;
-                selectedBox.classList.add(`powerup-${powerUp.type}`);
-                
-                // Show power-up name
-                document.getElementById('powerup-result').innerHTML = 
-                    `<div style="color: #fbbf24; font-weight: bold; font-size: 1.1rem;">
-                        ${powerUp.icon} ${powerUp.name} Activated!
-                    </div>`;
-                
-                // Apply power-up effect
-                applyPowerUp(powerUp.type);
-                
-                // Show next button
-                document.getElementById('next-btn').style.display = 'flex';
-            }
-        }
-
-        function applyPowerUp(type) {
-            const playerIndex = gameState.currentPlayer - 1;
-            const otherIndex = playerIndex === 0 ? 1 : 0;
-            const question = gameState.questions[gameState.currentQuestion];
-            const basePoints = question.points || 10;
-            
-            let message = '';
-            
-            switch(type) {
-                case 'double':
-                    const doublePoints = basePoints * 2;
-                    gameState.scores[playerIndex] += doublePoints;
-                    message = `⚡ Double points! +${doublePoints}`;
-                    break;
-                    
-                case 'half':
-                    const halfPoints = Math.floor(basePoints / 2);
-                    gameState.scores[playerIndex] += halfPoints;
-                    message = `➗ Half points! +${halfPoints}`;
-                    break;
-                    
-                case 'negative':
-                    gameState.scores[playerIndex] -= basePoints;
-                    if (gameState.scores[playerIndex] < 0) gameState.scores[playerIndex] = 0;
-                    message = `➖ Negative points! -${basePoints}`;
-                    break;
-                    
-                case 'switch':
-                    const temp = gameState.scores[playerIndex];
-                    gameState.scores[playerIndex] = gameState.scores[otherIndex];
-                    gameState.scores[otherIndex] = temp;
-                    message = `🔄 Scores switched!`;
-                    break;
-                    
-                case 'bonus':
-                    gameState.scores[playerIndex] += 10;
-                    message = `✨ Bonus +10 points!`;
-                    break;
-            }
-            
-            updateScores();
-            
-            // Add message to feedback
-            const feedbackDiv = document.getElementById('feedback');
-            feedbackDiv.innerHTML += `<div style="color: #fbbf24; margin-top: 15px; font-weight: bold;">🎁 ${message}</div>`;
-        }
-
-        function updateScores() {
-            document.getElementById('score1').textContent = gameState.scores[0];
-            document.getElementById('score2').textContent = gameState.scores[1];
-            document.getElementById('final-score1').textContent = gameState.scores[0];
-            document.getElementById('final-score2').textContent = gameState.scores[1];
-        }
-
-        function updatePlayerTurn() {
-            const player1 = document.getElementById('player1');
-            const player2 = document.getElementById('player2');
-            
-            if (gameState.currentPlayer === 1) {
-                player1.classList.add('active');
-                player2.classList.remove('active');
-            } else {
-                player1.classList.remove('active');
-                player2.classList.add('active');
-            }
-        }
-
-        function nextQuestion() {
-            gameState.currentQuestion++;
-            
-            // Switch player for next question
-            gameState.currentPlayer = gameState.currentPlayer === 1 ? 2 : 1;
-            
-            loadQuestion();
-        }
-
-        function endGame() {
-            // Determine winner
-            let winnerMessage = '';
-            
-            if (gameState.scores[0] > gameState.scores[1]) {
-                winnerMessage = 'Player 1 Wins! 🏆';
-            } else if (gameState.scores[1] > gameState.scores[0]) {
-                winnerMessage = 'Player 2 Wins! 🏆';
-            } else {
-                winnerMessage = "It's a Tie! 🤝";
-            }
-            
-            // Update game over screen
-            document.getElementById('winner').textContent = winnerMessage;
-            
-            // Show game over screen
-            document.getElementById('game-over').style.display = 'block';
-            document.getElementById('next-btn').style.display = 'none';
-            document.getElementById('submit-answer').style.display = 'none';
-            document.querySelector('.treasure-section').style.display = 'none';
-        }
-
-        // ========== INITIALIZATION ==========
-        document.addEventListener('DOMContentLoaded', function() {
-            console.log('🚀 Initializing Quiz Game...');
-            
-            // Initialize PIN display
-            updatePinDisplay();
-            
-            // Setup keypad buttons - FIXED
-            document.querySelectorAll('.keypad-btn').forEach(btn => {
-                btn.addEventListener('click', function(e) {
-                    console.log('Button clicked:', this.dataset.digit);
-                    addDigit(this.dataset.digit);
-                });
-            });
-            
-            // Clear button
-            document.getElementById('clear-btn').addEventListener('click', clearPin);
-            
-            // Submit PIN button
-            document.getElementById('submit-pin-btn').addEventListener('click', submitPin);
-            
-            // Home button
-            document.getElementById('home-btn').addEventListener('click', function() {
-                showScreen('pin-screen');
-                clearPin();
-            });
-            
-            // Submit answer button
-            document.getElementById('submit-answer').addEventListener('click', checkAnswer);
-            
-            // Next button
-            document.getElementById('next-btn').addEventListener('click', nextQuestion);
-            
-            // Restart game
-            document.getElementById('restart-game').addEventListener('click', initGame);
-            
-            // New chapter
-            document.getElementById('new-chapter').addEventListener('click', function() {
-                showScreen('pin-screen');
-                clearPin();
-            });
-            
-            // Error buttons
-            document.getElementById('retry-btn').addEventListener('click', submitPin);
-            document.getElementById('back-btn').addEventListener('click', function() {
-                showScreen('pin-screen');
-                clearPin();
-            });
-            
-            // Keyboard support
-            document.addEventListener('keydown', function(e) {
-                if (document.getElementById('pin-screen').classList.contains('active')) {
-                    if (e.key >= '0' && e.key <= '9') {
-                        addDigit(e.key);
-                    } else if (e.key === 'Backspace') {
-                        clearPin();
-                    } else if (e.key === 'Enter') {
-                        submitPin();
-                    }
-                }
-            });
-            
-            // Test function - can be called from console
-            window.testKeypad = function() {
-                console.log('Testing keypad...');
-                addDigit('3');
-                addDigit('4');
-                addDigit('2');
-                addDigit('0');
-                addDigit('9');
-                addDigit('1');
-            };
-            
-            console.log('✅ Quiz Game Ready!');
-            console.log('💡 Test with: testKeypad() in console');
-        });
-    </script>
+    
+    <!-- Error Screen -->
+    <div id="error-screen" class="screen">
+        <h2>Error</h2>
+        <div id="error-message">Error message will appear here</div>
+        <div class="error-btns">
+            <button id="retry-btn" class="btn">Retry</button>
+            <button id="back-to-pin-error" class="btn">Back to PIN</button>
+        </div>
+    </div>
+    
+    <!-- Link to your existing script.js file -->
+    <script src="script.js"></script>
+    
+    <!-- OR if you want to embed the corrected script directly -->
+    <!-- <script>
+        // Your corrected JavaScript code here
+        // Paste the corrected script.js content here
+    </script> -->
 </body>
 </html>
