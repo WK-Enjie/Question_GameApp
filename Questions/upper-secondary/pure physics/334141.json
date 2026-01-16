@@ -1,0 +1,191 @@
+{
+  "title": "Current Electricity and Circuit Principles",
+  "topic": "Current Electricity",
+  "subject": "Physics",
+  "level": "Upper Secondary",
+  "grade": "Sec 4",
+  "chapter": 15,
+  "worksheet": 1,
+  "questions": [
+    {
+      "question": "A current of 2.5 A flows through a circuit for 4 minutes. Calculate the total charge that passes through the circuit.",
+      "options": [
+        "600 C",
+        "150 C",
+        "10 C",
+        "1000 C"
+      ],
+      "correct": 0,
+      "points": 10,
+      "explanation": "Using Q = I × t. First convert time: 4 minutes = 4 × 60 = 240 seconds. Then Q = 2.5 A × 240 s = 600 C."
+    },
+    {
+      "question": "If 3000 J of work is done to move 150 C of charge through a component, what is the potential difference across it?",
+      "options": [
+        "20 V",
+        "45 V",
+        "0.05 V",
+        "4.5 × 10⁵ V"
+      ],
+      "correct": 0,
+      "points": 10,
+      "explanation": "Using V = W/Q. V = 3000 J ÷ 150 C = 20 V. This means 20 joules of energy are transferred per coulomb of charge."
+    },
+    {
+      "question": "A resistor has a potential difference of 12 V across it and carries a current of 0.4 A. What is its resistance?",
+      "options": [
+        "30 Ω",
+        "4.8 Ω",
+        "48 Ω",
+        "0.033 Ω"
+      ],
+      "correct": 0,
+      "points": 10,
+      "explanation": "Using V = IR, so R = V/I. R = 12 V ÷ 0.4 A = 30 Ω. This follows Ohm's Law: current is directly proportional to voltage for an ohmic conductor."
+    },
+    {
+      "question": "Which factor does NOT affect the resistance of a wire?",
+      "options": [
+        "Voltage applied",
+        "Length of wire",
+        "Cross-sectional area",
+        "Material (resistivity)"
+      ],
+      "correct": 0,
+      "points": 10,
+      "explanation": "Resistance of a wire is given by R = ρL/A, where ρ is resistivity (material), L is length, A is cross-sectional area. Voltage applied affects current but not the inherent resistance."
+    },
+    {
+      "question": "If the length of a copper wire is doubled while keeping everything else constant, what happens to its resistance?",
+      "options": [
+        "Doubles",
+        "Halves",
+        "Quadruples",
+        "Remains the same"
+      ],
+      "correct": 0,
+      "points": 10,
+      "explanation": "Resistance is directly proportional to length (R ∝ L). Doubling the length doubles the resistance because electrons have to travel twice as far through the material."
+    },
+    {
+      "question": "A wire has resistance R. If its diameter is doubled (keeping same material and length), what is its new resistance?",
+      "options": [
+        "R/4",
+        "R/2",
+        "2R",
+        "4R"
+      ],
+      "correct": 0,
+      "points": 10,
+      "explanation": "Area is proportional to diameter². Doubling diameter increases area by 4× (A ∝ d²). Since R ∝ 1/A, resistance becomes R/4."
+    },
+    {
+      "question": "Which material has the highest resistivity at room temperature?",
+      "options": [
+        "Glass",
+        "Copper",
+        "Silver",
+        "Aluminium"
+      ],
+      "correct": 0,
+      "points": 10,
+      "explanation": "Glass is an insulator with very high resistivity (~10¹² Ωm). Conductors have low resistivity: silver (1.6×10⁻⁸), copper (1.7×10⁻⁸), aluminium (2.8×10⁻⁸) Ωm."
+    },
+    {
+      "question": "What is the unit of resistivity (ρ)?",
+      "options": [
+        "Ω m",
+        "Ω/m",
+        "Ω m²",
+        "Ω/m²"
+      ],
+      "correct": 0,
+      "points": 10,
+      "explanation": "From R = ρL/A, rearranging gives ρ = RA/L. Units: (Ω × m²)/m = Ω m. Resistivity is characteristic of a material at a specific temperature."
+    },
+    {
+      "question": "Which graph represents an ohmic conductor?",
+      "options": [
+        "Straight line through origin (V vs I)",
+        "Curve starting from origin",
+        "Horizontal line",
+        "Vertical line"
+      ],
+      "correct": 0,
+      "points": 10,
+      "explanation": "For an ohmic conductor, V ∝ I (Ohm's Law). Graph of V against I is a straight line through the origin with constant gradient = resistance."
+    },
+    {
+      "question": "What happens to the resistance of a metal wire when temperature increases?",
+      "options": [
+        "Increases",
+        "Decreases",
+        "Stays the same",
+        "First increases then decreases"
+      ],
+      "correct": 0,
+      "points": 10,
+      "explanation": "For metals, resistance increases with temperature because atoms vibrate more, causing more collisions with electrons, impeding their flow."
+    },
+    {
+      "question": "Two identical resistors are connected in series to a 12 V battery. What is the potential difference across each resistor?",
+      "options": [
+        "6 V",
+        "12 V",
+        "3 V",
+        "24 V"
+      ],
+      "correct": 0,
+      "points": 10,
+      "explanation": "In series, voltage divides equally across identical resistors. Total 12 V ÷ 2 resistors = 6 V each. The sum of voltages equals the battery voltage."
+    },
+    {
+      "question": "If three 6 Ω resistors are connected in parallel, what is their combined resistance?",
+      "options": [
+        "2 Ω",
+        "18 Ω",
+        "0.5 Ω",
+        "3 Ω"
+      ],
+      "correct": 0,
+      "points": 10,
+      "explanation": "For identical resistors in parallel: R_total = R/n = 6 Ω ÷ 3 = 2 Ω. Parallel connection provides multiple paths, reducing total resistance."
+    },
+    {
+      "question": "Which statement about conventional current is correct?",
+      "options": [
+        "Flows from positive to negative terminal",
+        "Flows from negative to positive terminal",
+        "Is the flow of electrons",
+        "Only exists in AC circuits"
+      ],
+      "correct": 0,
+      "points": 10,
+      "explanation": "Conventional current direction (established before electron discovery) is from positive to negative. Electron flow is opposite: negative to positive."
+    },
+    {
+      "question": "How much work is done when 50 C of charge flows through a 9 V battery?",
+      "options": [
+        "450 J",
+        "5.56 J",
+        "4500 J",
+        "0.18 J"
+      ],
+      "correct": 0,
+      "points": 10,
+      "explanation": "Using W = QV. Work = 50 C × 9 V = 450 J. This is the energy transferred by the battery to move the charge through the circuit."
+    },
+    {
+      "question": "A current of 0.2 A flows through a 100 Ω resistor. What is the voltage across it?",
+      "options": [
+        "20 V",
+        "5 V",
+        "500 V",
+        "0.002 V"
+      ],
+      "correct": 0,
+      "points": 10,
+      "explanation": "Using V = IR. Voltage = 0.2 A × 100 Ω = 20 V. The voltage is needed to push the current through the resistance."
+    }
+  ]
+}
