@@ -4,318 +4,7 @@
     <meta charset="UTF-8">
     <meta name="viewport" content="width=device-width, initial-scale=1.0">
     <title>Quiz Game</title>
-    <style>
-        /* Reset & Base Styles */
-        * {
-            margin: 0;
-            padding: 0;
-            box-sizing: border-box;
-            font-family: 'Arial', sans-serif;
-        }
-
-        body {
-            background: linear-gradient(135deg, #667eea 0%, #764ba2 100%);
-            min-height: 100vh;
-            display: flex;
-            justify-content: center;
-            align-items: center;
-            padding: 20px;
-        }
-
-        .container {
-            max-width: 800px;
-            width: 100%;
-            background: rgba(255, 255, 255, 0.95);
-            border-radius: 20px;
-            box-shadow: 0 20px 60px rgba(0, 0, 0, 0.3);
-            overflow: hidden;
-        }
-
-        /* Screen Management */
-        .screen {
-            display: none;
-            padding: 40px;
-        }
-
-        .screen.active {
-            display: block;
-        }
-
-        /* Header */
-        .header {
-            text-align: center;
-            margin-bottom: 40px;
-        }
-
-        .header h1 {
-            color: #333;
-            font-size: 2.5rem;
-            margin-bottom: 10px;
-        }
-
-        .header p {
-            color: #666;
-            font-size: 1.1rem;
-        }
-
-        /* PIN Screen */
-        .pin-container {
-            text-align: center;
-        }
-
-        .pin-display {
-            display: flex;
-            justify-content: center;
-            gap: 15px;
-            margin: 40px 0;
-        }
-
-        .digit {
-            width: 70px;
-            height: 90px;
-            background: linear-gradient(135deg, #f093fb 0%, #f5576c 100%);
-            border-radius: 15px;
-            display: flex;
-            align-items: center;
-            justify-content: center;
-            font-size: 3rem;
-            font-weight: bold;
-            color: white;
-            box-shadow: 0 10px 20px rgba(0, 0, 0, 0.1);
-            border: 4px solid white;
-        }
-
-        .digit.empty {
-            background: #f0f0f0;
-            color: #ccc;
-        }
-
-        /* Keypad */
-        .keypad {
-            display: grid;
-            grid-template-columns: repeat(3, 1fr);
-            gap: 15px;
-            max-width: 330px;
-            margin: 0 auto;
-        }
-
-        .key {
-            height: 80px;
-            background: white;
-            border: 3px solid #e0e0e0;
-            border-radius: 15px;
-            font-size: 1.8rem;
-            font-weight: bold;
-            color: #333;
-            cursor: pointer;
-            transition: all 0.3s;
-            display: flex;
-            align-items: center;
-            justify-content: center;
-        }
-
-        .key:hover {
-            transform: translateY(-5px);
-            box-shadow: 0 10px 20px rgba(0, 0, 0, 0.1);
-        }
-
-        .key:active {
-            transform: translateY(-2px);
-        }
-
-        .key.number {
-            background: linear-gradient(135deg, #a8edea 0%, #fed6e3 100%);
-            border-color: #b5e8e6;
-        }
-
-        .key.clear {
-            background: linear-gradient(135deg, #ff9a9e 0%, #fad0c4 100%);
-            border-color: #ffb3b6;
-            color: white;
-        }
-
-        .key.submit {
-            background: linear-gradient(135deg, #a1c4fd 0%, #c2e9fb 100%);
-            border-color: #a1c4fd;
-            color: white;
-            font-size: 1.5rem;
-        }
-
-        /* Action Buttons */
-        .action-buttons {
-            display: flex;
-            gap: 20px;
-            justify-content: center;
-            margin-top: 40px;
-        }
-
-        .action-btn {
-            padding: 15px 40px;
-            font-size: 1.1rem;
-            font-weight: bold;
-            border: none;
-            border-radius: 50px;
-            cursor: pointer;
-            transition: all 0.3s;
-            display: flex;
-            align-items: center;
-            gap: 10px;
-        }
-
-        .action-btn.primary {
-            background: linear-gradient(135deg, #667eea 0%, #764ba2 100%);
-            color: white;
-        }
-
-        .action-btn.secondary {
-            background: #f0f0f0;
-            color: #666;
-        }
-
-        .action-btn:hover {
-            transform: translateY(-3px);
-            box-shadow: 0 10px 20px rgba(0, 0, 0, 0.2);
-        }
-
-        /* Quiz Catalog */
-        .catalog {
-            margin-top: 40px;
-            background: #f8f9fa;
-            border-radius: 15px;
-            padding: 25px;
-        }
-
-        .catalog h3 {
-            color: #333;
-            margin-bottom: 20px;
-            text-align: center;
-        }
-
-        .quiz-list {
-            display: grid;
-            grid-template-columns: repeat(auto-fill, minmax(250px, 1fr));
-            gap: 15px;
-        }
-
-        .quiz-item {
-            background: white;
-            border-radius: 10px;
-            padding: 15px;
-            border: 2px solid #e0e0e0;
-            cursor: pointer;
-            transition: all 0.3s;
-        }
-
-        .quiz-item:hover {
-            transform: translateY(-5px);
-            border-color: #667eea;
-            box-shadow: 0 10px 20px rgba(102, 126, 234, 0.1);
-        }
-
-        .quiz-code {
-            font-weight: bold;
-            color: #667eea;
-            font-size: 1.1rem;
-            margin-bottom: 5px;
-        }
-
-        .quiz-name {
-            color: #333;
-            margin-bottom: 5px;
-        }
-
-        .quiz-details {
-            color: #666;
-            font-size: 0.9rem;
-        }
-
-        /* Loading Screen */
-        #loading-screen {
-            text-align: center;
-            padding: 80px 40px;
-        }
-
-        .spinner {
-            width: 60px;
-            height: 60px;
-            border: 6px solid #f3f3f3;
-            border-top: 6px solid #667eea;
-            border-radius: 50%;
-            animation: spin 1s linear infinite;
-            margin: 0 auto 30px;
-        }
-
-        @keyframes spin {
-            0% { transform: rotate(0deg); }
-            100% { transform: rotate(360deg); }
-        }
-
-        /* Error Screen */
-        #error-screen {
-            text-align: center;
-        }
-
-        .error-icon {
-            font-size: 4rem;
-            color: #ff6b6b;
-            margin-bottom: 20px;
-        }
-
-        /* Game Screen (Basic) */
-        .game-header {
-            background: linear-gradient(135deg, #667eea 0%, #764ba2 100%);
-            color: white;
-            padding: 20px;
-            border-radius: 15px 15px 0 0;
-        }
-
-        .question-container {
-            padding: 30px;
-        }
-
-        .options {
-            display: grid;
-            gap: 15px;
-            margin: 30px 0;
-        }
-
-        .option {
-            padding: 20px;
-            background: #f8f9fa;
-            border-radius: 10px;
-            cursor: pointer;
-            border: 2px solid transparent;
-            transition: all 0.3s;
-        }
-
-        .option:hover {
-            border-color: #667eea;
-            transform: translateX(5px);
-        }
-
-        /* Responsive */
-        @media (max-width: 600px) {
-            .screen {
-                padding: 20px;
-            }
-            
-            .digit {
-                width: 50px;
-                height: 70px;
-                font-size: 2.2rem;
-            }
-            
-            .key {
-                height: 60px;
-                font-size: 1.5rem;
-            }
-            
-            .action-btn {
-                padding: 12px 25px;
-                font-size: 1rem;
-            }
-        }
-    </style>
+    <link rel="stylesheet" href="style.css">
 </head>
 <body>
     <div class="container">
@@ -323,70 +12,35 @@
         <div id="pin-screen" class="screen active">
             <div class="header">
                 <h1>🎮 Quiz Game</h1>
-                <p>Enter 6-digit quiz code or select from available quizzes</p>
+                <p>Enter 6-digit quiz code</p>
             </div>
             
-            <div class="pin-container">
-                <div class="pin-display">
-                    <div id="digit1" class="digit empty">_</div>
-                    <div id="digit2" class="digit empty">_</div>
-                    <div id="digit3" class="digit empty">_</div>
-                    <div id="digit4" class="digit empty">_</div>
-                    <div id="digit5" class="digit empty">_</div>
-                    <div id="digit6" class="digit empty">_</div>
-                </div>
-                
-                <div class="keypad">
-                    <button class="key number" data-digit="1">1</button>
-                    <button class="key number" data-digit="2">2</button>
-                    <button class="key number" data-digit="3">3</button>
-                    <button class="key number" data-digit="4">4</button>
-                    <button class="key number" data-digit="5">5</button>
-                    <button class="key number" data-digit="6">6</button>
-                    <button class="key number" data-digit="7">7</button>
-                    <button class="key number" data-digit="8">8</button>
-                    <button class="key number" data-digit="9">9</button>
-                    <button id="clear-btn" class="key clear">CLEAR</button>
-                    <button class="key number" data-digit="0">0</button>
-                    <button id="submit-pin" class="key submit">GO ▶</button>
-                </div>
-                
-                <div class="action-buttons">
-                    <button id="back-btn" class="action-btn secondary">
-                        ← Back
-                    </button>
-                    <button id="submit-btn" class="action-btn primary">
-                        Start Quiz →
-                    </button>
-                </div>
-                
-                <!-- Quiz Catalog -->
-                <div class="catalog">
-                    <h3>📚 Available Quizzes</h3>
-                    <div id="quick-codes" class="quiz-list">
-                        <!-- Quizzes will be loaded here -->
-                        <div class="quiz-item" data-code="344-09-1">
-                            <div class="quiz-code">344-09-1</div>
-                            <div class="quiz-name">Sec 4 Combined Chemistry Chapter 9</div>
-                            <div class="quiz-details">Upper Secondary • Combined Chemistry</div>
-                        </div>
-                        <div class="quiz-item" data-code="354-13-1">
-                            <div class="quiz-code">354-13-1</div>
-                            <div class="quiz-name">Sec 4 Pure Chemistry Chapter 13</div>
-                            <div class="quiz-details">Upper Secondary • Pure Chemistry</div>
-                        </div>
-                        <div class="quiz-item" data-code="341-01-1">
-                            <div class="quiz-code">341-01-1</div>
-                            <div class="quiz-name">P3 Math Chapter 1</div>
-                            <div class="quiz-details">Primary • Mathematics</div>
-                        </div>
-                        <div class="quiz-item" data-code="201-01-1">
-                            <div class="quiz-code">201-01-1</div>
-                            <div class="quiz-name">Sec 1 Math Chapter 1</div>
-                            <div class="quiz-details">Lower Secondary • Mathematics</div>
-                        </div>
-                    </div>
-                </div>
+            <div class="pin-display">
+                <div id="digit1" class="digit">_</div>
+                <div id="digit2" class="digit">_</div>
+                <div id="digit3" class="digit">_</div>
+                <div id="digit4" class="digit">_</div>
+                <div id="digit5" class="digit">_</div>
+                <div id="digit6" class="digit">_</div>
+            </div>
+            
+            <div class="keypad">
+                <button class="key" data-digit="1">1</button>
+                <button class="key" data-digit="2">2</button>
+                <button class="key" data-digit="3">3</button>
+                <button class="key" data-digit="4">4</button>
+                <button class="key" data-digit="5">5</button>
+                <button class="key" data-digit="6">6</button>
+                <button class="key" data-digit="7">7</button>
+                <button class="key" data-digit="8">8</button>
+                <button class="key" data-digit="9">9</button>
+                <button id="clear-btn" class="key clear">C</button>
+                <button class="key" data-digit="0">0</button>
+                <button id="submit-pin" class="key submit">GO</button>
+            </div>
+            
+            <div id="quick-codes" class="catalog">
+                <!-- Quiz catalog will be loaded here -->
             </div>
         </div>
         
@@ -394,214 +48,88 @@
         <div id="loading-screen" class="screen">
             <div class="spinner"></div>
             <h2 id="loading-message">Loading Quiz...</h2>
-            <p>Please wait while we prepare your questions</p>
         </div>
         
         <!-- Error Screen -->
         <div id="error-screen" class="screen">
             <div class="error-icon">❌</div>
             <h2>Quiz Not Found</h2>
-            <div id="error-message" style="margin: 20px 0; color: #666; line-height: 1.6;">
-                The quiz code you entered could not be found.
+            <div id="error-message" class="error-content">
+                Error details will appear here
             </div>
             <div class="action-buttons">
-                <button id="back-to-pin-error" class="action-btn secondary">
-                    ← Try Another Code
-                </button>
-                <button id="retry-btn" class="action-btn primary">
-                    🔄 Retry
-                </button>
+                <button id="back-to-pin-error" class="btn secondary">Back</button>
+                <button id="retry-btn" class="btn primary">Retry</button>
             </div>
         </div>
         
-        <!-- Game Screen (Simplified for now) -->
+        <!-- Game Screen -->
         <div id="game-screen" class="screen">
-            <!-- Game content will be loaded here -->
+            <div class="game-header">
+                <h2 id="quiz-title">Quiz Title</h2>
+                <p id="quiz-topic">Subject • Grade</p>
+                <div class="question-counter">
+                    Question <span id="current-q">1</span>/<span id="total-q">10</span>
+                </div>
+            </div>
+            
+            <div class="players">
+                <div id="player1" class="player active">
+                    <div class="player-name">Player 1</div>
+                    <div id="score1" class="score">0</div>
+                    <div id="player1-turn" class="turn-indicator"></div>
+                </div>
+                <div id="player2" class="player">
+                    <div class="player-name">Player 2</div>
+                    <div id="score2" class="score">0</div>
+                    <div id="player2-turn" class="turn-indicator"></div>
+                </div>
+            </div>
+            
+            <div class="question-container">
+                <div id="question-text" class="question-text">Question will appear here</div>
+                <div id="options-container" class="options">
+                    <!-- Options will be added here -->
+                </div>
+            </div>
+            
+            <div class="game-controls">
+                <button id="submit-answer" class="btn primary" disabled>Submit Answer</button>
+                <button id="next-btn" class="btn secondary" style="display:none">Next Question</button>
+                <button id="home-btn" class="btn">Home</button>
+            </div>
+            
+            <div class="feedback-section">
+                <div id="answer-feedback" class="feedback">
+                    <!-- Feedback will appear here -->
+                </div>
+                
+                <div id="treasure-section" class="treasure-section" style="display:none">
+                    <h3>🎁 Pick a Treasure Box!</h3>
+                    <div class="treasure-boxes">
+                        <div class="treasure-box" data-box="1">🎁</div>
+                        <div class="treasure-box" data-box="2">🎁</div>
+                        <div class="treasure-box" data-box="3">🎁</div>
+                    </div>
+                    <div id="powerup-result"></div>
+                </div>
+            </div>
+            
+            <div id="game-over" class="game-over" style="display:none">
+                <h2 id="winner-message">Game Over!</h2>
+                <div id="winner-name" class="winner-name">Winner</div>
+                <div class="final-scores">
+                    Player 1: <span id="final-score1">0</span><br>
+                    Player 2: <span id="final-score2">0</span>
+                </div>
+                <div class="game-over-btns">
+                    <button id="restart-btn" class="btn primary">Play Again</button>
+                    <button id="new-chapter-btn" class="btn">New Quiz</button>
+                </div>
+            </div>
         </div>
     </div>
-
-    <script>
-        // ========== GAME STATE ==========
-        const gameState = {
-            pin: ['', '', '', '', '', ''],
-            currentDigit: 0,
-            questions: [],
-            currentQuestion: 0,
-            currentPlayer: 1,
-            scores: [0, 0]
-        };
-
-        // ========== PIN FUNCTIONS ==========
-        function updatePinDisplay() {
-            const digits = ['digit1', 'digit2', 'digit3', 'digit4', 'digit5', 'digit6'];
-            digits.forEach((id, index) => {
-                const digit = document.getElementById(id);
-                if (gameState.pin[index]) {
-                    digit.textContent = gameState.pin[index];
-                    digit.classList.remove('empty');
-                } else {
-                    digit.textContent = '_';
-                    digit.classList.add('empty');
-                }
-            });
-        }
-
-        function addDigit(digit) {
-            if (gameState.currentDigit < 6) {
-                gameState.pin[gameState.currentDigit] = digit;
-                updatePinDisplay();
-                gameState.currentDigit++;
-            }
-        }
-
-        function clearPin() {
-            gameState.pin = ['', '', '', '', '', ''];
-            gameState.currentDigit = 0;
-            updatePinDisplay();
-        }
-
-        // ========== SCREEN MANAGEMENT ==========
-        function showScreen(screenId) {
-            document.querySelectorAll('.screen').forEach(screen => {
-                screen.classList.remove('active');
-            });
-            document.getElementById(screenId).classList.add('active');
-        }
-
-        // ========== LOAD QUIZ FUNCTION ==========
-        async function loadQuizByCode(code) {
-            console.log('Loading quiz:', code);
-            
-            // Simulate loading with timeout
-            await new Promise(resolve => setTimeout(resolve, 1500));
-            
-            // For demo purposes - return sample quiz
-            return {
-                success: true,
-                data: {
-                    title: "Sample Quiz",
-                    questions: [
-                        {
-                            question: "What is 2 + 2?",
-                            options: ["3", "4", "5", "6"],
-                            correct: 1,
-                            explanation: "Basic addition"
-                        },
-                        {
-                            question: "What is the capital of France?",
-                            options: ["London", "Berlin", "Paris", "Madrid"],
-                            correct: 2,
-                            explanation: "Paris is the capital of France"
-                        }
-                    ]
-                },
-                info: {
-                    name: "Sample Quiz",
-                    grade: "Demo",
-                    subject: "General Knowledge"
-                }
-            };
-        }
-
-        // ========== SUBMIT PIN ==========
-        async function submitPin() {
-            const pin = gameState.pin.join('');
-            
-            if (pin.length !== 6) {
-                alert('Please enter all 6 digits');
-                return;
-            }
-            
-            const formattedPin = `${pin.slice(0,3)}-${pin.slice(3,5)}-${pin.slice(5)}`;
-            
-            showScreen('loading-screen');
-            document.getElementById('loading-message').textContent = `Loading ${formattedPin}...`;
-            
-            try {
-                const result = await loadQuizByCode(formattedPin);
-                
-                if (result.success) {
-                    // Store questions
-                    gameState.questions = result.data.questions;
-                    
-                    // Show game screen with sample content
-                    document.getElementById('game-screen').innerHTML = `
-                        <div class="game-header">
-                            <h2>${result.data.title}</h2>
-                            <p>${result.info.grade} • ${result.info.subject}</p>
-                        </div>
-                        <div style="text-align: center; padding: 40px;">
-                            <h3>Quiz Loaded Successfully!</h3>
-                            <p>${gameState.questions.length} questions ready</p>
-                            <button onclick="showScreen('pin-screen')" class="action-btn primary" style="margin-top: 30px;">
-                                ← Back to PIN
-                            </button>
-                        </div>
-                    `;
-                    showScreen('game-screen');
-                } else {
-                    throw new Error('Failed to load quiz');
-                }
-            } catch (error) {
-                document.getElementById('error-message').innerHTML = `
-                    <strong>Worksheet ${formattedPin} not found</strong><br><br>
-                    Please check if the file exists in the correct folder.<br>
-                    Only enter valid 6-digit codes.<br><br>
-                    <small>Example: 342091 for Combined Chemistry</small>
-                `;
-                showScreen('error-screen');
-            }
-        }
-
-        // ========== INITIALIZATION ==========
-        document.addEventListener('DOMContentLoaded', () => {
-            console.log('Quiz Game Ready!');
-            
-            // PIN buttons
-            document.querySelectorAll('.key[data-digit]').forEach(btn => {
-                btn.addEventListener('click', () => addDigit(btn.dataset.digit));
-            });
-            
-            document.getElementById('clear-btn').addEventListener('click', clearPin);
-            document.getElementById('submit-pin').addEventListener('click', submitPin);
-            document.getElementById('submit-btn').addEventListener('click', submitPin);
-            
-            // Quiz catalog items
-            document.querySelectorAll('.quiz-item').forEach(item => {
-                item.addEventListener('click', () => {
-                    const code = item.dataset.code;
-                    const digits = code.replace(/-/g, '').split('');
-                    gameState.pin = [...digits];
-                    gameState.currentDigit = digits.length;
-                    updatePinDisplay();
-                });
-            });
-            
-            // Back buttons
-            document.getElementById('back-btn')?.addEventListener('click', () => {
-                clearPin();
-            });
-            
-            document.getElementById('back-to-pin-error')?.addEventListener('click', () => {
-                clearPin();
-                showScreen('pin-screen');
-            });
-            
-            document.getElementById('retry-btn')?.addEventListener('click', submitPin);
-            
-            // Keyboard support
-            document.addEventListener('keydown', (e) => {
-                if (document.getElementById('pin-screen').classList.contains('active')) {
-                    if (e.key >= '0' && e.key <= '9') {
-                        addDigit(e.key);
-                    } else if (e.key === 'Backspace') {
-                        clearPin();
-                    } else if (e.key === 'Enter') {
-                        submitPin();
-                    }
-                }
-            });
-        });
-    </script>
+    
+    <script src="script.js"></script>
 </body>
 </html>
