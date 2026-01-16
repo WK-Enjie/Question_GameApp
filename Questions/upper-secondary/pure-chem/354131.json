@@ -1,0 +1,131 @@
+{
+  "title": "Electrolysis of Molten and Aqueous Solutions",
+  "topic": "Electrolysis",
+  "subject": "Chemistry",
+  "level": "Upper Secondary",
+  "grade": "Sec 4",
+  "chapter": 13,
+  "worksheet": 1,
+  "questions": [
+    {
+      "question": "What is observed at the cathode during electrolysis of concentrated sodium chloride solution using inert electrodes?",
+      "options": [
+        "Bubbles of colorless gas that burns with a pop",
+        "Bubbles of greenish-yellow gas with a choking smell",
+        "Silvery metal deposits",
+        "Pinkish metal deposits"
+      ],
+      "correct": 0,
+      "points": 10,
+      "explanation": "In concentrated NaCl solution, H⁺ ions are preferentially discharged over Na⁺ ions at the cathode, producing hydrogen gas (H₂) which burns with a pop sound."
+    },
+    {
+      "question": "What is the half-ionic equation for the reaction at the anode during electrolysis of dilute sulfuric acid using platinum electrodes?",
+      "options": [
+        "4OH⁻ → O₂ + 2H₂O + 4e⁻",
+        "2Cl⁻ → Cl₂ + 2e⁻",
+        "2H⁺ + 2e⁻ → H₂",
+        "SO₄²⁻ → SO₄ + 2e⁻"
+      ],
+      "correct": 0,
+      "points": 10,
+      "explanation": "In dilute sulfuric acid, OH⁻ ions from water are preferentially discharged over SO₄²⁻ ions, producing oxygen gas: 4OH⁻ → O₂ + 2H₂O + 4e⁻."
+    },
+    {
+      "question": "Which product is obtained at the cathode during electrolysis of molten lead(II) bromide?",
+      "options": [
+        "Molten lead metal",
+        "Bromine gas",
+        "Hydrogen gas",
+        "Oxygen gas"
+      ],
+      "correct": 0,
+      "points": 10,
+      "explanation": "In molten PbBr₂, only Pb²⁺ and Br⁻ ions are present. Pb²⁺ ions are discharged at the cathode: Pb²⁺ + 2e⁻ → Pb, forming molten lead metal."
+    },
+    {
+      "question": "What is observed when concentrated copper(II) sulfate solution is electrolysed using copper electrodes?",
+      "options": [
+        "Cathode increases in mass, anode decreases in mass",
+        "Both electrodes increase in mass",
+        "Blue solution fades at both electrodes",
+        "Gas bubbles at both electrodes"
+      ],
+      "correct": 0,
+      "points": 10,
+      "explanation": "With copper electrodes in CuSO₄ solution, copper is deposited at the cathode (Cu²⁺ + 2e⁻ → Cu) and the anode dissolves (Cu → Cu²⁺ + 2e⁻). This is used in electrorefining of copper."
+    },
+    {
+      "question": "During electrolysis of dilute sodium chloride solution, what is the product at the anode?",
+      "options": [
+        "Oxygen",
+        "Chlorine",
+        "Hydrogen",
+        "Sodium"
+      ],
+      "correct": 0,
+      "points": 10,
+      "explanation": "In dilute NaCl solution, OH⁻ ions are preferentially discharged over Cl⁻ ions at the anode: 4OH⁻ → O₂ + 2H₂O + 4e⁻, producing oxygen gas."
+    },
+    {
+      "question": "What is the main application of electrolysis of molten aluminium oxide (Al₂O₃) dissolved in cryolite?",
+      "options": [
+        "Extraction of aluminium",
+        "Purification of aluminium",
+        "Electroplating of aluminium",
+        "Making aluminium alloys"
+      ],
+      "correct": 0,
+      "points": 10,
+      "explanation": "The Hall-Héroult process uses electrolysis of Al₂O₃ in cryolite to extract aluminium metal. Al³⁺ is reduced at the cathode to aluminium metal."
+    },
+    {
+      "question": "Which half-equation occurs at the cathode during electrolysis of dilute copper(II) sulfate using inert electrodes?",
+      "options": [
+        "Cu²⁺ + 2e⁻ → Cu",
+        "4OH⁻ → O₂ + 2H₂O + 4e⁻",
+        "2H⁺ + 2e⁻ → H₂",
+        "SO₄²⁻ → SO₄ + 2e⁻"
+      ],
+      "correct": 0,
+      "points": 10,
+      "explanation": "In dilute CuSO₄, Cu²⁺ ions are preferentially discharged over H⁺ ions at the cathode because copper is lower than hydrogen in the electrochemical series: Cu²⁺ + 2e⁻ → Cu."
+    },
+    {
+      "question": "What is observed during electrolysis of molten calcium chloride?",
+      "options": [
+        "Silvery metal at cathode, greenish gas at anode",
+        "Colorless gas at both electrodes",
+        "No reaction occurs",
+        "Metal deposits at anode"
+      ],
+      "correct": 0,
+      "points": 10,
+      "explanation": "In molten CaCl₂: Cathode: Ca²⁺ + 2e⁻ → Ca (silvery calcium metal). Anode: 2Cl⁻ → Cl₂ + 2e⁻ (greenish chlorine gas)."
+    },
+    {
+      "question": "Why is cryolite added to aluminium oxide in the extraction of aluminium?",
+      "options": [
+        "To lower the melting point",
+        "To increase conductivity",
+        "To prevent oxidation of aluminium",
+        "Both A and B"
+      ],
+      "correct": 3,
+      "points": 10,
+      "explanation": "Cryolite (Na₃AlF₆) serves two main purposes: 1) Lowers the melting point of Al₂O₃ from 2045°C to about 950°C, saving energy. 2) Increases conductivity of the molten mixture."
+    },
+    {
+      "question": "What would be the product at the anode if concentrated sodium chloride solution is electrolysed using carbon electrodes?",
+      "options": [
+        "Chlorine gas",
+        "Oxygen gas",
+        "Hydrogen gas",
+        "Sodium metal"
+      ],
+      "correct": 0,
+      "points": 10,
+      "explanation": "In concentrated NaCl solution, Cl⁻ ions are preferentially discharged over OH⁻ ions at the anode: 2Cl⁻ → Cl₂ + 2e⁻, producing chlorine gas. This is the basis of the chlor-alkali industry."
+    }
+  ]
+}
