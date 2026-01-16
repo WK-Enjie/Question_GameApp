@@ -91,7 +91,7 @@ async function submitPin() {
             throw new Error('Invalid first digit. Must be 1, 2, or 3');
         }
         
-        // Determine subject based on second digit
+        // Determine subject based on second digit (IMPROVED SYSTEM)
         let subjectFolder = '';
         const secondDigit = code[1];
         
@@ -99,12 +99,24 @@ async function submitPin() {
             subjectFolder = 'math/';
         } else if (secondDigit === '1') {
             subjectFolder = 'science/';
+        } else if (secondDigit === '2') {
+            subjectFolder = 'combined-physics/';
+        } else if (secondDigit === '3') {
+            subjectFolder = 'pure-physics/';
         } else if (secondDigit === '4') {
             subjectFolder = 'combined-chem/';
-        } else if (secondDigit === '2') {
-            subjectFolder = 'physics/';
+        } else if (secondDigit === '5') {
+            subjectFolder = 'pure-chem/';
+        } else if (secondDigit === '6') {
+            subjectFolder = 'biology/';
+        } else if (secondDigit === '7') {
+            subjectFolder = 'add-math/';
+        } else if (secondDigit === '8') {
+            subjectFolder = 'geography/';
+        } else if (secondDigit === '9') {
+            subjectFolder = 'english/';
         } else {
-            throw new Error('Invalid second digit. Must be 0, 1, 2, or 4');
+            throw new Error('Invalid second digit. Must be 0-9');
         }
         
         // Construct filepath
@@ -148,7 +160,15 @@ async function submitPin() {
                  <div style="color: #a0aec0; font-size: 0.9rem;">
                  Please check if the file exists in the correct folder.<br>
                  Only enter valid 6-digit codes.<br><br>
-                 Example: <strong>342091</strong> for Combined Chemistry</div>`;
+                 <strong>Subject Codes:</strong><br>
+                 0=Math, 1=Science, 2=Combined Physics, 3=Pure Physics<br>
+                 4=Combined Chem, 5=Pure Chem, 6=Biology, 7=Add Math<br>
+                 8=Geography, 9=English<br><br>
+                 <strong>Grade Codes:</strong><br>
+                 Lower Sec: 1=S1, 2=S2<br>
+                 Upper Sec: 3=S3, 4=S4<br><br>
+                 Example: <strong>344091</strong> for S4 Combined Chemistry<br>
+                 Example: <strong>303511</strong> for S3 Math Chapter 15</div>`;
             showScreen('error-screen');
         }, 1500);
     }
@@ -615,7 +635,41 @@ function initializeGame() {
     setupEventListeners();
     
     console.log('✅ Quiz Game Ready!');
-    console.log('💡 Enter 342091 and click GO to test Combined Chemistry');
+    console.log('📚 Available Quizzes:');
+    console.log('- S4 Combined Chem Ch9: Enter 344091');
+    console.log('- S3 Math Ch15: Enter 303511');
+    console.log('- S1 Math Ch1: Enter 201011');
+    
+    // Test functions
+    window.testS4Chem = function() {
+        console.log('Testing S4 Chemistry Quiz...');
+        const code = '344091';
+        const digits = code.split('');
+        gameState.pin = [...digits];
+        gameState.currentDigit = digits.length;
+        updatePinDisplay();
+        setTimeout(() => submitPin(), 500);
+    };
+    
+    window.testS3Math = function() {
+        console.log('Testing S3 Math Quiz...');
+        const code = '303511';
+        const digits = code.split('');
+        gameState.pin = [...digits];
+        gameState.currentDigit = digits.length;
+        updatePinDisplay();
+        setTimeout(() => submitPin(), 500);
+    };
+    
+    window.testS1Math = function() {
+        console.log('Testing S1 Math Quiz...');
+        const code = '201011';
+        const digits = code.split('');
+        gameState.pin = [...digits];
+        gameState.currentDigit = digits.length;
+        updatePinDisplay();
+        setTimeout(() => submitPin(), 500);
+    };
 }
 
 // Wait for DOM to be fully loaded
@@ -627,5 +681,4 @@ if (document.readyState === 'loading') {
     initializeGame();
 }
 
-// Debug: Check if script loaded
 console.log('Script.js loaded successfully');
