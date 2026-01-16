@@ -4,7 +4,7 @@
   "subject": "Combined Science (Chemistry)",
   "level": "Upper Secondary",
   "grade": "Sec 4",
-  "chapter": 10,
+  "chapter": 9,
   "worksheet": 1,
   "questions": [
     {
@@ -64,4 +64,5 @@
       "explanation": "Ca²⁺ gives white precipitate with NaOH but no precipitate with NH₃ because ammonia solution is weakly alkaline, insufficient to precipitate Ca(OH)₂."
     }
   ]
+
 }
