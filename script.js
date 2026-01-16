@@ -23,22 +23,32 @@ const powerUps = [
 
 // ========== SCREEN MANAGEMENT ==========
 function showScreen(screenId) {
+    console.log('Switching to screen:', screenId);
     document.querySelectorAll('.screen').forEach(screen => {
         screen.classList.remove('active');
     });
-    document.getElementById(screenId).classList.add('active');
+    const targetScreen = document.getElementById(screenId);
+    if (targetScreen) {
+        targetScreen.classList.add('active');
+    } else {
+        console.error('Screen not found:', screenId);
+    }
 }
 
 // ========== PIN FUNCTIONS ==========
 function updatePinDisplay() {
+    console.log('Updating PIN display:', gameState.pin);
     const digits = ['digit1', 'digit2', 'digit3', 'digit4', 'digit5', 'digit6'];
     digits.forEach((id, index) => {
         const digit = document.getElementById(id);
-        digit.textContent = gameState.pin[index] || '_';
+        if (digit) {
+            digit.textContent = gameState.pin[index] || '_';
+        }
     });
 }
 
 function addDigit(digit) {
+    console.log('Adding digit:', digit, 'at position:', gameState.currentDigit);
     if (gameState.currentDigit < 6) {
         gameState.pin[gameState.currentDigit] = digit;
         updatePinDisplay();
@@ -47,6 +57,7 @@ function addDigit(digit) {
 }
 
 function clearPin() {
+    console.log('Clearing PIN');
     gameState.pin = ['', '', '', '', '', ''];
     gameState.currentDigit = 0;
     updatePinDisplay();
@@ -55,6 +66,7 @@ function clearPin() {
 // ========== LOAD QUIZ FUNCTION ==========
 async function submitPin() {
     const code = gameState.pin.join('');
+    console.log('Submitting PIN:', code);
     
     if (code.length !== 6) {
         alert('Please enter all 6 digits');
@@ -144,6 +156,7 @@ async function submitPin() {
 
 // ========== GAME FUNCTIONS ==========
 function initGame() {
+    console.log('Initializing game');
     gameState.currentQuestion = 0;
     gameState.currentPlayer = 1;
     gameState.scores = [0, 0];
@@ -160,6 +173,8 @@ function initGame() {
 }
 
 function loadQuestion() {
+    console.log('Loading question:', gameState.currentQuestion);
+    
     if (gameState.currentQuestion >= gameState.questions.length) {
         endGame();
         return;
@@ -229,6 +244,7 @@ function loadQuestion() {
 }
 
 function resetTreasureBoxes() {
+    console.log('Resetting treasure boxes');
     const treasureBoxes = document.querySelectorAll('.treasure-box');
     
     treasureBoxes.forEach((box, index) => {
@@ -256,6 +272,8 @@ function resetTreasureBoxes() {
 }
 
 function checkAnswer() {
+    console.log('Checking answer:', gameState.selectedAnswer);
+    
     if (gameState.answered || gameState.selectedAnswer === null) return;
     
     gameState.answered = true;
@@ -335,6 +353,8 @@ function checkAnswer() {
 }
 
 function openTreasureBox(boxNum) {
+    console.log('Opening treasure box:', boxNum);
+    
     if (!gameState.canUsePowerup || gameState.powerupUsed) return;
     
     gameState.powerupUsed = true;
@@ -370,6 +390,8 @@ function openTreasureBox(boxNum) {
 }
 
 function applyPowerUp(type) {
+    console.log('Applying power-up:', type);
+    
     const playerIndex = gameState.currentPlayer - 1;
     const otherIndex = playerIndex === 0 ? 1 : 0;
     const question = gameState.questions[gameState.currentQuestion];
@@ -417,26 +439,36 @@ function applyPowerUp(type) {
 }
 
 function updateScores() {
-    document.getElementById('score1').textContent = gameState.scores[0];
-    document.getElementById('score2').textContent = gameState.scores[1];
-    document.getElementById('final-score1').textContent = gameState.scores[0];
-    document.getElementById('final-score2').textContent = gameState.scores[1];
+    console.log('Updating scores:', gameState.scores);
+    const score1 = document.getElementById('score1');
+    const score2 = document.getElementById('score2');
+    const finalScore1 = document.getElementById('final-score1');
+    const finalScore2 = document.getElementById('final-score2');
+    
+    if (score1) score1.textContent = gameState.scores[0];
+    if (score2) score2.textContent = gameState.scores[1];
+    if (finalScore1) finalScore1.textContent = gameState.scores[0];
+    if (finalScore2) finalScore2.textContent = gameState.scores[1];
 }
 
 function updatePlayerTurn() {
+    console.log('Updating player turn:', gameState.currentPlayer);
     const player1 = document.getElementById('player1');
     const player2 = document.getElementById('player2');
     
-    if (gameState.currentPlayer === 1) {
-        player1.classList.add('active');
-        player2.classList.remove('active');
-    } else {
-        player1.classList.remove('active');
-        player2.classList.add('active');
+    if (player1 && player2) {
+        if (gameState.currentPlayer === 1) {
+            player1.classList.add('active');
+            player2.classList.remove('active');
+        } else {
+            player1.classList.remove('active');
+            player2.classList.add('active');
+        }
     }
 }
 
 function nextQuestion() {
+    console.log('Moving to next question');
     gameState.currentQuestion++;
     
     // Switch player for next question
@@ -446,6 +478,7 @@ function nextQuestion() {
 }
 
 function endGame() {
+    console.log('Ending game');
     // Determine winner
     let winnerMessage = '';
     
@@ -468,36 +501,61 @@ function endGame() {
 }
 
 // ========== INITIALIZATION ==========
-function initializeGame() {
-    console.log('🚀 Initializing Quiz Game...');
-    
-    // Initialize PIN display
-    updatePinDisplay();
+function setupEventListeners() {
+    console.log('Setting up event listeners');
     
     // Setup keypad buttons
-    document.querySelectorAll('.keypad-btn').forEach(btn => {
-        btn.addEventListener('click', () => {
-            addDigit(btn.getAttribute('data-digit'));
+    const keypadButtons = document.querySelectorAll('.keypad-btn');
+    console.log('Found', keypadButtons.length, 'keypad buttons');
+    
+    keypadButtons.forEach(btn => {
+        btn.addEventListener('click', (e) => {
+            console.log('Keypad button clicked:', e.target.dataset.digit);
+            addDigit(e.target.dataset.digit);
         });
     });
     
     // Clear button
-    document.getElementById('clear-btn').addEventListener('click', clearPin);
+    const clearBtn = document.getElementById('clear-btn');
+    if (clearBtn) {
+        clearBtn.addEventListener('click', clearPin);
+        console.log('Clear button found');
+    } else {
+        console.error('Clear button not found!');
+    }
     
     // Submit PIN button
-    document.getElementById('submit-pin-btn').addEventListener('click', submitPin);
+    const submitPinBtn = document.getElementById('submit-pin-btn');
+    if (submitPinBtn) {
+        submitPinBtn.addEventListener('click', submitPin);
+        console.log('Submit PIN button found');
+    } else {
+        console.error('Submit PIN button not found!');
+    }
     
     // Home button
-    document.getElementById('home-btn').addEventListener('click', () => {
-        showScreen('pin-screen');
-        clearPin();
-    });
+    const homeBtn = document.getElementById('home-btn');
+    if (homeBtn) {
+        homeBtn.addEventListener('click', () => {
+            showScreen('pin-screen');
+            clearPin();
+        });
+        console.log('Home button found');
+    }
     
     // Submit answer button
-    document.getElementById('submit-answer').addEventListener('click', checkAnswer);
+    const submitAnswerBtn = document.getElementById('submit-answer');
+    if (submitAnswerBtn) {
+        submitAnswerBtn.addEventListener('click', checkAnswer);
+        console.log('Submit answer button found');
+    }
     
     // Next button
-    document.getElementById('next-btn').addEventListener('click', nextQuestion);
+    const nextBtn = document.getElementById('next-btn');
+    if (nextBtn) {
+        nextBtn.addEventListener('click', nextQuestion);
+        console.log('Next button found');
+    }
     
     // Restart game
     const restartBtn = document.getElementById('restart-game');
@@ -515,15 +573,23 @@ function initializeGame() {
     }
     
     // Error buttons
-    document.getElementById('retry-btn').addEventListener('click', submitPin);
-    document.getElementById('back-btn').addEventListener('click', () => {
-        showScreen('pin-screen');
-        clearPin();
-    });
+    const retryBtn = document.getElementById('retry-btn');
+    if (retryBtn) {
+        retryBtn.addEventListener('click', submitPin);
+    }
+    
+    const backBtn = document.getElementById('back-btn');
+    if (backBtn) {
+        backBtn.addEventListener('click', () => {
+            showScreen('pin-screen');
+            clearPin();
+        });
+    }
     
     // Keyboard support
     document.addEventListener('keydown', (e) => {
-        if (document.getElementById('pin-screen').classList.contains('active')) {
+        if (document.getElementById('pin-screen')?.classList.contains('active')) {
+            console.log('Key pressed:', e.key);
             if (e.key >= '0' && e.key <= '9') {
                 addDigit(e.key);
             } else if (e.key === 'Backspace') {
@@ -534,13 +600,32 @@ function initializeGame() {
         }
     });
     
+    console.log('✅ Event listeners setup complete');
+}
+
+// ========== MAIN INITIALIZATION ==========
+function initializeGame() {
+    console.log('🚀 Initializing Quiz Game...');
+    console.log('DOM fully loaded and parsed');
+    
+    // Initialize PIN display
+    updatePinDisplay();
+    
+    // Setup event listeners
+    setupEventListeners();
+    
     console.log('✅ Quiz Game Ready!');
     console.log('💡 Enter 342091 and click GO to test Combined Chemistry');
 }
 
 // Wait for DOM to be fully loaded
 if (document.readyState === 'loading') {
+    console.log('Document still loading, waiting for DOMContentLoaded');
     document.addEventListener('DOMContentLoaded', initializeGame);
 } else {
+    console.log('Document already loaded, initializing now');
     initializeGame();
 }
+
+// Debug: Check if script loaded
+console.log('Script.js loaded successfully');
