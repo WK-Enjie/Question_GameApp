@@ -14,46 +14,46 @@ const gameState = {
     hiddenWorksheets: JSON.parse(localStorage.getItem('hiddenWorksheets')) || []
 };
 
-// ========== QUIZ CATALOG (UPDATED WITH CORRECT FOLDERS) ==========
+// ========== QUIZ CATALOG (NO HYPHENS - EXACT FILENAMES) ==========
 const QUIZ_CATALOG = [
-    // PRIMARY (100-199)
-    { code: '101-01-1', level: 'Primary', grade: 'P1', subject: 'Mathematics', folder: 'primary/math', name: 'Primary 1 Math Chapter 1' },
-    { code: '102-01-1', level: 'Primary', grade: 'P2', subject: 'Mathematics', folder: 'primary/math', name: 'Primary 2 Math Chapter 1' },
-    { code: '103-01-1', level: 'Primary', grade: 'P3', subject: 'Mathematics', folder: 'primary/math', name: 'Primary 3 Math Chapter 1' },
-    { code: '104-01-1', level: 'Primary', grade: 'P4', subject: 'Mathematics', folder: 'primary/math', name: 'Primary 4 Math Chapter 1' },
-    { code: '105-01-1', level: 'Primary', grade: 'P5', subject: 'Mathematics', folder: 'primary/math', name: 'Primary 5 Math Chapter 1' },
-    { code: '106-01-1', level: 'Primary', grade: 'P6', subject: 'Mathematics', folder: 'primary/math', name: 'Primary 6 Math Chapter 1' },
+    // PRIMARY MATH (100-199)
+    { code: '101011', level: 'Primary', grade: 'P1', subject: 'Mathematics', folder: 'primary/math', name: 'Primary 1 Math Chapter 1', filename: '101011.json' },
+    { code: '102011', level: 'Primary', grade: 'P2', subject: 'Mathematics', folder: 'primary/math', name: 'Primary 2 Math Chapter 1', filename: '102011.json' },
+    { code: '103011', level: 'Primary', grade: 'P3', subject: 'Mathematics', folder: 'primary/math', name: 'Primary 3 Math Chapter 1', filename: '103011.json' },
+    { code: '104011', level: 'Primary', grade: 'P4', subject: 'Mathematics', folder: 'primary/math', name: 'Primary 4 Math Chapter 1', filename: '104011.json' },
+    { code: '105011', level: 'Primary', grade: 'P5', subject: 'Mathematics', folder: 'primary/math', name: 'Primary 5 Math Chapter 1', filename: '105011.json' },
+    { code: '106011', level: 'Primary', grade: 'P6', subject: 'Mathematics', folder: 'primary/math', name: 'Primary 6 Math Chapter 1', filename: '106011.json' },
     
     // Primary Science
-    { code: '111-01-1', level: 'Primary', grade: 'P1', subject: 'Science', folder: 'primary/science', name: 'Primary 1 Science Chapter 1' },
-    { code: '112-01-1', level: 'Primary', grade: 'P2', subject: 'Science', folder: 'primary/science', name: 'Primary 2 Science Chapter 1' },
+    { code: '111011', level: 'Primary', grade: 'P1', subject: 'Science', folder: 'primary/science', name: 'Primary 1 Science Chapter 1', filename: '111011.json' },
+    { code: '112011', level: 'Primary', grade: 'P2', subject: 'Science', folder: 'primary/science', name: 'Primary 2 Science Chapter 1', filename: '112011.json' },
     
-    // YOUR EXISTING PRIMARY QUIZZES
-    { code: '341-01-1', level: 'Primary', grade: 'P3', subject: 'Mathematics', folder: 'primary/math', name: 'Primary 3 Math Chapter 1 Worksheet 1' },
-    { code: '341-01-z', level: 'Primary', grade: 'P3', subject: 'Mathematics', folder: 'primary/math', name: 'Primary 3 Math Chapter 1 Worksheet Z' },
+    // YOUR EXISTING PRIMARY QUIZZES (NO HYPHENS)
+    { code: '341011', level: 'Primary', grade: 'P3', subject: 'Mathematics', folder: 'primary/math', name: 'Primary 3 Math Chapter 1 Worksheet 1', filename: '341011.json' },
+    { code: '34101z', level: 'Primary', grade: 'P3', subject: 'Mathematics', folder: 'primary/math', name: 'Primary 3 Math Chapter 1 Worksheet Z', filename: '34101z.json' },
     
     // LOWER SECONDARY (200-299)
-    { code: '201-01-1', level: 'Lower Secondary', grade: 'Sec 1', subject: 'Mathematics', folder: 'lower-secondary/math', name: 'Secondary 1 Math Chapter 1' },
-    { code: '202-01-1', level: 'Lower Secondary', grade: 'Sec 2', subject: 'Mathematics', folder: 'lower-secondary/math', name: 'Secondary 2 Math Chapter 1' },
+    { code: '201011', level: 'Lower Secondary', grade: 'Sec 1', subject: 'Mathematics', folder: 'lower-secondary/math', name: 'Secondary 1 Math Chapter 1', filename: '201011.json' },
+    { code: '202011', level: 'Lower Secondary', grade: 'Sec 2', subject: 'Mathematics', folder: 'lower-secondary/math', name: 'Secondary 2 Math Chapter 1', filename: '202011.json' },
     
     // Lower Secondary Science
-    { code: '211-01-1', level: 'Lower Secondary', grade: 'Sec 1', subject: 'Science', folder: 'lower-secondary/science', name: 'Secondary 1 Science Chapter 1' },
-    { code: '212-01-1', level: 'Lower Secondary', grade: 'Sec 2', subject: 'Science', folder: 'lower-secondary/science', name: 'Secondary 2 Science Chapter 1' },
+    { code: '211011', level: 'Lower Secondary', grade: 'Sec 1', subject: 'Science', folder: 'lower-secondary/science', name: 'Secondary 1 Science Chapter 1', filename: '211011.json' },
+    { code: '212011', level: 'Lower Secondary', grade: 'Sec 2', subject: 'Science', folder: 'lower-secondary/science', name: 'Secondary 2 Science Chapter 1', filename: '212011.json' },
     
     // UPPER SECONDARY (300-399)
-    { code: '301-01-1', level: 'Upper Secondary', grade: 'Sec 3', subject: 'Mathematics', folder: 'upper-secondary/math', name: 'Upper Secondary Math Chapter 1' },
-    { code: '302-01-1', level: 'Upper Secondary', grade: 'Sec 4', subject: 'Mathematics', folder: 'upper-secondary/math', name: 'Upper Secondary Math Chapter 1' },
+    { code: '301011', level: 'Upper Secondary', grade: 'Sec 3', subject: 'Mathematics', folder: 'upper-secondary/math', name: 'Upper Secondary Math Chapter 1', filename: '301011.json' },
+    { code: '302011', level: 'Upper Secondary', grade: 'Sec 4', subject: 'Mathematics', folder: 'upper-secondary/math', name: 'Upper Secondary Math Chapter 1', filename: '302011.json' },
     
-    // Upper Secondary Combined Chemistry - YOUR FILE IS HERE
-    { code: '342-09-1', level: 'Upper Secondary', grade: 'Sec 4', subject: 'Combined Science (Chemistry)', folder: 'upper-secondary/combined-chem', name: 'Sec 4 Combined Chemistry Chapter 9' },
+    // YOUR COMBINED CHEMISTRY FILE (NO HYPHEN)
+    { code: '342091', level: 'Upper Secondary', grade: 'Sec 4', subject: 'Combined Science (Chemistry)', folder: 'upper-secondary/combined-chem', name: 'Sec 4 Combined Chemistry Chapter 9', filename: '342091.json' },
     
     // Upper Secondary Pure Chemistry
-    { code: '311-01-1', level: 'Upper Secondary', grade: 'Sec 3', subject: 'Pure Chemistry', folder: 'upper-secondary/pure-chem', name: 'Secondary 3 Pure Chemistry Chapter 1' },
-    { code: '312-01-1', level: 'Upper Secondary', grade: 'Sec 4', subject: 'Pure Chemistry', folder: 'upper-secondary/pure-chem', name: 'Secondary 4 Pure Chemistry Chapter 1' },
+    { code: '311011', level: 'Upper Secondary', grade: 'Sec 3', subject: 'Pure Chemistry', folder: 'upper-secondary/pure-chem', name: 'Secondary 3 Pure Chemistry Chapter 1', filename: '311011.json' },
+    { code: '312011', level: 'Upper Secondary', grade: 'Sec 4', subject: 'Pure Chemistry', folder: 'upper-secondary/pure-chem', name: 'Secondary 4 Pure Chemistry Chapter 1', filename: '312011.json' },
     
     // Upper Secondary Pure Physics
-    { code: '321-01-1', level: 'Upper Secondary', grade: 'Sec 3', subject: 'Pure Physics', folder: 'upper-secondary/pure-physics', name: 'Secondary 3 Pure Physics Chapter 1' },
-    { code: '322-01-1', level: 'Upper Secondary', grade: 'Sec 4', subject: 'Pure Physics', folder: 'upper-secondary/pure-physics', name: 'Secondary 4 Pure Physics Chapter 1' }
+    { code: '321011', level: 'Upper Secondary', grade: 'Sec 3', subject: 'Pure Physics', folder: 'upper-secondary/pure-physics', name: 'Secondary 3 Pure Physics Chapter 1', filename: '321011.json' },
+    { code: '322011', level: 'Upper Secondary', grade: 'Sec 4', subject: 'Pure Physics', folder: 'upper-secondary/pure-physics', name: 'Secondary 4 Pure Physics Chapter 1', filename: '322011.json' }
 ];
 
 // ========== POWER-UPS ==========
@@ -70,7 +70,7 @@ function showScreen(screenId) {
     document.querySelectorAll('.screen').forEach(screen => {
         screen.classList.remove('active');
     });
-    document.getElementById(screenId).classList.add('active');
+    document.getElementById(screenId + '-screen').classList.add('active');
 }
 
 // ========== PIN FUNCTIONS ==========
@@ -96,7 +96,7 @@ function clearPin() {
     updatePinDisplay();
 }
 
-// ========== CORRECTED LOAD QUIZ FUNCTION ==========
+// ========== CORRECTED LOAD QUIZ FUNCTION (NO HYPHENS) ==========
 async function loadQuizByCode(code) {
     console.log('🔍 Loading quiz:', code);
     
@@ -104,7 +104,8 @@ async function loadQuizByCode(code) {
     if (gameState.hiddenWorksheets.includes(code)) {
         return { 
             success: false, 
-            error: `Worksheet ${code} is hidden. Use admin panel to show it.` 
+            error: `Worksheet ${code} is hidden. Use admin panel to show it.`,
+            hidden: true
         };
     }
     
@@ -118,21 +119,22 @@ async function loadQuizByCode(code) {
         };
     }
     
-    // CORRECTED: Use the folder from catalog
-    const filename = `${code}.json`;
+    // CORRECTED: Use the exact filename from catalog
+    const filename = quizInfo.filename;
     const filepath = `Questions/${quizInfo.folder}/${filename}`;
     
     console.log('📂 Looking for file:', filepath);
-    console.log('📁 Folder structure:', quizInfo.folder);
+    console.log('📁 Folder:', quizInfo.folder);
+    console.log('📄 Filename:', filename);
     
     try {
         const response = await fetch(filepath);
         
         if (!response.ok) {
-            // If file not found, try alternative naming
+            // Try alternative paths
             const altPaths = [
                 filepath,
-                `Questions/${quizInfo.folder}/${code.replace(/-/g, '')}.json`, // No hyphens
+                `Questions/${quizInfo.folder}/${code}.json`, // Just code
                 `./Questions/${quizInfo.folder}/${filename}`,
                 `${code}.json`, // Root directory
                 `Questions/${filename}` // Direct in Questions folder
@@ -159,7 +161,7 @@ async function loadQuizByCode(code) {
                 }
             }
             
-            throw new Error(`File not found. Tried: ${filepath} and alternatives`);
+            throw new Error(`File not found. Tried: ${filepath}`);
         }
         
         const data = await response.json();
@@ -177,48 +179,50 @@ async function loadQuizByCode(code) {
         return { 
             success: false, 
             error: `Failed to load ${filename}: ${error.message}`,
-            expectedPath: `Questions/${quizInfo.folder}/${filename}`
+            expectedPath: filepath
         };
     }
 }
 
 // ========== SUBMIT PIN ==========
 async function submitPin() {
-    // Join pin array to string
-    const pin = gameState.pin.join('');
+    // Join pin array to string (no hyphens)
+    const code = gameState.pin.join('');
     
-    if (pin.length !== 6) {
+    if (code.length !== 6) {
         alert('Please enter all 6 digits');
         return;
     }
     
-    // Format as XXX-XX-X based on position
-    const formattedPin = `${pin.slice(0,3)}-${pin.slice(3,5)}-${pin.slice(5)}`;
-    
-    showScreen('loading-screen');
-    document.getElementById('loading-message').textContent = `Loading ${formattedPin}...`;
+    showScreen('loading');
+    document.getElementById('loading-text').textContent = `Loading ${code}...`;
     
     try {
-        const result = await loadQuizByCode(formattedPin);
+        const result = await loadQuizByCode(code);
         
         if (!result.success) {
-            // Show detailed error
-            let errorMsg = `<strong>Worksheet ${formattedPin} not found</strong><br><br>`;
+            let errorMsg = `<strong>Worksheet ${code} not found</strong><br><br>`;
             errorMsg += `<div style="color: #a0aec0; font-size: 0.9rem;">`;
-            errorMsg += `Expected location: Questions/${result.expectedPath || 'unknown'}<br>`;
-            errorMsg += `Error: ${result.error}</div>`;
+            
+            if (result.hidden) {
+                errorMsg += `This worksheet is hidden.<br>Use admin panel (⚙️) to show it.`;
+            } else {
+                errorMsg += `Expected location: ${result.expectedPath || 'unknown'}<br>`;
+                errorMsg += `Error: ${result.error}</div>`;
+            }
             
             // Find what quizzes ARE available
             const similarQuizzes = QUIZ_CATALOG.filter(q => 
-                q.code.startsWith(pin[0]) || // Same level
-                q.code.includes(pin.slice(0,3)) // Same subject
-            ).slice(0, 8);
+                q.code.startsWith(code[0]) || // Same level
+                q.code.includes(code.slice(0,3)) // Same subject
+            ).slice(0, 5);
             
             if (similarQuizzes.length > 0) {
-                errorMsg += `<br><div style="color: #fbbf24; margin-top: 15px;">Available quizzes:</div>`;
+                errorMsg += `<br><div style="color: #fbbf24; margin-top: 15px;">Available quizzes (click to select):</div>`;
                 similarQuizzes.forEach(q => {
                     const isHidden = gameState.hiddenWorksheets.includes(q.code);
-                    errorMsg += `<div style="font-size: 0.9rem; margin: 5px 0;">
+                    errorMsg += `<div style="font-size: 0.9rem; margin: 5px 0; padding: 5px; background: rgba(255,255,255,0.05); border-radius: 5px; cursor: pointer;" 
+                               onclick="selectQuiz('${q.code}')">
                         • <strong>${q.code}</strong>: ${q.name} ${isHidden ? '🔒' : ''}
                     </div>`;
                 });
@@ -241,31 +245,28 @@ async function submitPin() {
         }
         
         // Set quiz info
-        const quizTitle = document.getElementById('quiz-title');
-        const quizTopic = document.getElementById('quiz-topic');
-        
-        quizTitle.textContent = result.data.title || result.info.name;
-        quizTopic.textContent = `${result.info.grade} ${result.info.subject}`;
+        document.getElementById('quiz-title').textContent = result.data.title || result.info.name;
+        document.getElementById('quiz-topic').textContent = `${result.info.grade} ${result.info.subject}`;
         
         // Add topic if available
         if (result.data.topic) {
-            quizTopic.textContent += ` | ${result.data.topic}`;
+            document.getElementById('quiz-topic').textContent += ` | ${result.data.topic}`;
         }
         
         // Initialize game
         initGame();
-        showScreen('game-screen');
+        showScreen('game');
         
         // Save to recent quizzes
-        saveToRecentQuizzes(formattedPin, result.data.title || result.info.name, result.info.subject, result.info.grade);
+        saveToRecentQuizzes(code, result.data.title || result.info.name, result.info.subject, result.info.grade);
         
     } catch (error) {
         console.error('Failed to load quiz:', error);
-        document.getElementById('loading-message').textContent = `Error: ${error.message.split('<')[0]}`;
+        document.getElementById('loading-text').textContent = `Error loading ${code}`;
         
         setTimeout(() => {
             document.getElementById('error-message').innerHTML = error.message;
-            showScreen('error-screen');
+            showScreen('error');
         }, 1500);
     }
 }
@@ -285,6 +286,7 @@ function initGame() {
     loadQuestion();
     
     document.getElementById('game-over').style.display = 'none';
+    document.getElementById('feedback').innerHTML = '';
 }
 
 function loadQuestion() {
@@ -299,10 +301,10 @@ function loadQuestion() {
     // Update question info
     document.getElementById('current-q').textContent = gameState.currentQuestion + 1;
     document.getElementById('total-q').textContent = gameState.questions.length;
-    document.getElementById('question-text').textContent = question.question || "Question text missing";
+    document.getElementById('question').textContent = question.question || "Question text missing";
     
     // Clear previous options
-    const optionsContainer = document.getElementById('options-container');
+    const optionsContainer = document.getElementById('options');
     optionsContainer.innerHTML = '';
     
     // Add new options
@@ -327,23 +329,21 @@ function loadQuestion() {
     const submitBtn = document.getElementById('submit-answer');
     submitBtn.disabled = true;
     submitBtn.style.display = 'flex';
+    submitBtn.textContent = 'Submit Answer';
     
     document.getElementById('next-btn').style.display = 'none';
     
     // Hide feedback
-    const feedbackDiv = document.getElementById('answer-feedback');
-    feedbackDiv.innerHTML = '<div class="powerup-placeholder"><i>💡</i><p>Answer the question to see feedback</p></div>';
+    document.getElementById('feedback').innerHTML = '<div style="color: #a0aec0;"><i>💡 Answer the question to see feedback</i></div>';
     
     // Hide treasure section
-    const treasureSection = document.querySelector('.treasure-section');
-    if (treasureSection) {
-        treasureSection.style.display = 'none';
-    }
+    document.querySelector('.treasure-section').style.display = 'none';
     
     // Reset treasure boxes
     document.querySelectorAll('.treasure-box').forEach(box => {
         box.className = 'treasure-box';
         box.textContent = '🎁';
+        box.style.background = 'linear-gradient(135deg, #fbbf24, #d97706)';
         box.onclick = () => openTreasureBox(box.dataset.box);
     });
     
@@ -369,7 +369,7 @@ function selectOption(index) {
     document.getElementById('submit-answer').disabled = false;
 }
 
-function submitAnswer() {
+function checkAnswer() {
     if (gameState.answered || gameState.selectedAnswer === null) return;
     
     gameState.answered = true;
@@ -385,8 +385,12 @@ function submitAnswer() {
     options.forEach((opt, index) => {
         if (index === question.correct) {
             opt.classList.add('correct');
+            opt.style.color = '#48bb78';
+            opt.style.fontWeight = 'bold';
         } else if (index === gameState.selectedAnswer && !isCorrect) {
             opt.classList.add('incorrect');
+            opt.style.color = '#f56565';
+            opt.style.textDecoration = 'line-through';
         }
     });
     
@@ -406,7 +410,7 @@ function submitAnswer() {
             </div>`;
         }
         
-        document.getElementById('answer-feedback').innerHTML = feedback;
+        document.getElementById('feedback').innerHTML = feedback;
         
         // Show treasure boxes
         document.querySelector('.treasure-section').style.display = 'block';
@@ -425,7 +429,7 @@ function submitAnswer() {
             </div>`;
         }
         
-        document.getElementById('answer-feedback').innerHTML = feedback;
+        document.getElementById('feedback').innerHTML = feedback;
         
         // Disable treasure boxes for wrong answers
         document.querySelectorAll('.treasure-box').forEach(box => {
@@ -459,17 +463,6 @@ function openTreasureBox(boxNum) {
     // Update selected box
     const selectedBox = document.querySelector(`.treasure-box[data-box="${boxNum}"]`);
     selectedBox.textContent = powerUp.icon;
-    selectedBox.classList.add(`powerup-${powerUp.type}`);
-    
-    // Show power-up result
-    const powerupResult = document.getElementById('powerup-result');
-    powerupResult.innerHTML = `
-        <div class="powerup-display">
-            <div class="powerup-icon ${`powerup-${powerUp.type}`}" style="font-size: 4rem;">${powerUp.icon}</div>
-            <h3 style="color: #fbbf24; margin: 10px 0;">${powerUp.name}</h3>
-            <p style="color: #b8b8d1;">Power-up applied!</p>
-        </div>
-    `;
     
     // Apply power-up effect
     applyPowerUp(powerUp.type);
@@ -525,7 +518,7 @@ function applyPowerUp(type) {
     updateScores();
     
     // Add power-up message to feedback
-    const feedbackDiv = document.getElementById('answer-feedback');
+    const feedbackDiv = document.getElementById('feedback');
     feedbackDiv.innerHTML += `<div style="color: #fbbf24; margin-top: 15px; font-weight: bold;">🎁 ${message}</div>`;
 }
 
@@ -546,13 +539,9 @@ function updatePlayerTurn() {
     if (gameState.currentPlayer === 1) {
         player1.classList.add('active');
         player2.classList.remove('active');
-        document.getElementById('player1-turn').textContent = "Current Turn";
-        document.getElementById('player2-turn').textContent = "";
     } else {
         player1.classList.remove('active');
         player2.classList.add('active');
-        document.getElementById('player1-turn').textContent = "";
-        document.getElementById('player2-turn').textContent = "Current Turn";
     }
 }
 
@@ -574,23 +563,18 @@ function nextQuestion() {
 
 function endGame() {
     // Determine winner
-    let winnerName = '';
     let winnerMessage = '';
     
     if (gameState.scores[0] > gameState.scores[1]) {
-        winnerName = 'Player 1';
         winnerMessage = 'Player 1 Wins! 🏆';
     } else if (gameState.scores[1] > gameState.scores[0]) {
-        winnerName = 'Player 2';
         winnerMessage = 'Player 2 Wins! 🏆';
     } else {
-        winnerName = 'Both Players';
         winnerMessage = "It's a Tie! 🤝";
     }
     
     // Update game over screen
-    document.getElementById('winner-name').textContent = winnerName;
-    document.getElementById('winner-message').textContent = winnerMessage;
+    document.getElementById('winner').textContent = winnerMessage;
     
     // Show game over screen
     document.getElementById('game-over').style.display = 'block';
@@ -599,6 +583,11 @@ function endGame() {
 }
 
 // ========== HIDDEN WORKSHEETS FUNCTIONS ==========
+function toggleAdminMenu() {
+    const menu = document.getElementById('admin-menu');
+    menu.classList.toggle('active');
+}
+
 function hideWorksheet() {
     const code = document.getElementById('hide-code')?.value.trim();
     if (!code) {
@@ -661,7 +650,7 @@ function updateHiddenWorksheetsPanel() {
     if (gameState.hiddenWorksheets.length > 0) {
         panel.style.display = 'block';
         list.innerHTML = gameState.hiddenWorksheets.map(code => `
-            <div class="hidden-code-item" onclick="useHiddenCode('${code}')">
+            <div class="hidden-code-item" onclick="selectQuiz('${code}')">
                 ${code}
             </div>
         `).join('');
@@ -670,17 +659,18 @@ function updateHiddenWorksheetsPanel() {
     }
 }
 
-function useHiddenCode(code) {
-    // Split code into digits for PIN display
-    const digits = code.replace(/-/g, '').split('');
-    gameState.pin = [...digits];
-    gameState.currentDigit = digits.length;
-    updatePinDisplay();
+function toggleHiddenPanel() {
+    const panel = document.getElementById('hidden-worksheets-panel');
+    if (panel.style.display === 'none' || panel.style.display === '') {
+        panel.style.display = 'block';
+    } else {
+        panel.style.display = 'none';
+    }
 }
 
 // ========== QUIZ CATALOG DISPLAY ==========
 async function loadQuizCatalog() {
-    const catalogDiv = document.getElementById('quick-codes');
+    const catalogDiv = document.getElementById('quiz-catalog');
     
     if (!catalogDiv) return;
     
@@ -717,7 +707,7 @@ async function loadQuizCatalog() {
                     <div class="level-title" style="color: ${levelColor}; font-size: 1.3rem; margin-bottom: 15px; border-bottom: 2px solid ${levelColor}40; padding-bottom: 5px;">
                         ${level}
                     </div>
-                    <div class="code-list">
+                    <div class="quiz-grid">
             `;
             
             quizzes.forEach(quiz => {
@@ -728,8 +718,8 @@ async function loadQuizCatalog() {
                 if (quiz.subject.includes('Phys')) icon = '⚛️';
                 
                 html += `
-                    <div class="code-item" data-code="${quiz.code}" 
-                         onclick="selectQuizCode('${quiz.code}')"
+                    <div class="quiz-item" data-code="${quiz.code}" 
+                         onclick="selectQuiz('${quiz.code}')"
                          style="cursor: pointer; transition: all 0.3s;">
                         <div style="font-weight: bold; color: #fbbf24; font-size: 1.1rem;">${icon} ${quiz.code}</div>
                         <div style="font-size: 0.9rem; margin-top: 5px;">${quiz.name}</div>
@@ -752,11 +742,12 @@ async function loadQuizCatalog() {
     }
 }
 
-function selectQuizCode(code) {
-    const digits = code.replace(/-/g, '').split('');
+function selectQuiz(code) {
+    const digits = code.split('');
     gameState.pin = [...digits];
     gameState.currentDigit = digits.length;
     updatePinDisplay();
+    submitPin();
 }
 
 // ========== RECENT QUIZZES ==========
@@ -779,67 +770,6 @@ function saveToRecentQuizzes(code, title, subject, grade) {
     recent = recent.slice(0, 5);
     
     localStorage.setItem('recentQuizzes', JSON.stringify(recent));
-    showRecentQuizzes();
-}
-
-function showRecentQuizzes() {
-    const recent = JSON.parse(localStorage.getItem('recentQuizzes') || '[]');
-    
-    if (recent.length > 0) {
-        const container = document.createElement('div');
-        container.className = 'recent-quizzes';
-        container.innerHTML = `
-            <div style="color: #b8b8d1; margin: 30px 0 15px 0; font-weight: bold; font-size: 1.1rem;">
-                ⏰ Recently Played
-            </div>
-            <div style="display: flex; gap: 15px; justify-content: center; flex-wrap: wrap;">
-                ${recent.map(quiz => {
-                    let icon = '📚';
-                    if (quiz.subject.includes('Math')) icon = '🧮';
-                    if (quiz.subject.includes('Science') && !quiz.subject.includes('Chem') && !quiz.subject.includes('Phys')) icon = '🔬';
-                    if (quiz.subject.includes('Chem')) icon = '🧪';
-                    if (quiz.subject.includes('Phys')) icon = '⚛️';
-                    
-                    return `
-                        <button class="code-item" data-code="${quiz.code}" 
-                                style="background: rgba(76, 201, 240, 0.1); 
-                                       border: 1px solid #4cc9f0; 
-                                       border-radius: 10px; 
-                                       padding: 12px; 
-                                       color: white; 
-                                       cursor: pointer;
-                                       text-align: left;
-                                       min-width: 180px;">
-                            <div style="font-weight: bold; color: #fbbf24;">${icon} ${quiz.code}</div>
-                            <div style="font-size: 0.9rem; margin-top: 5px;">${quiz.subject}</div>
-                            <div style="font-size: 0.8rem; color: #b8b8d1; margin-top: 3px;">${quiz.grade}</div>
-                        </button>
-                    `;
-                }).join('')}
-            </div>
-        `;
-        
-        // Insert after PIN display
-        const pinDisplay = document.querySelector('.pin-keypad');
-        if (pinDisplay) {
-            const existingRecent = document.querySelector('.recent-quizzes');
-            if (existingRecent) {
-                existingRecent.remove();
-            }
-            pinDisplay.parentNode.insertBefore(container, pinDisplay.nextSibling);
-        }
-        
-        // Add click handlers
-        container.querySelectorAll('.code-item').forEach(btn => {
-            btn.addEventListener('click', () => {
-                const code = btn.dataset.code;
-                const digits = code.replace(/-/g, '').split('');
-                gameState.pin = [...digits];
-                gameState.currentDigit = digits.length;
-                updatePinDisplay();
-            });
-        });
-    }
 }
 
 // ========== INITIALIZATION ==========
@@ -849,45 +779,53 @@ document.addEventListener('DOMContentLoaded', () => {
     // Initialize PIN display
     updatePinDisplay();
     
-    // Load quiz catalog
-    loadQuizCatalog();
-    
-    // Show recent quizzes
-    showRecentQuizzes();
-    
-    // Update hidden worksheets panel
-    updateHiddenWorksheetsPanel();
-    
-    // ========== EVENT LISTENERS ==========
-    // PIN buttons
-    document.querySelectorAll('.pin-btn').forEach(btn => {
-        btn.addEventListener('click', () => addDigit(btn.dataset.digit));
+    // Setup keypad
+    document.querySelectorAll('.keypad-btn').forEach(btn => {
+        btn.addEventListener('click', () => addDigit(btn.getAttribute('data-digit')));
     });
     
+    // Clear button
     document.getElementById('clear-btn').addEventListener('click', clearPin);
-    document.getElementById('submit-pin').addEventListener('click', submitPin);
     
-    // Game buttons
-    document.getElementById('submit-answer').addEventListener('click', submitAnswer);
-    document.getElementById('next-btn').addEventListener('click', nextQuestion);
+    // Submit PIN button
+    document.getElementById('submit-pin-btn').addEventListener('click', submitPin);
+    
+    // Home button
     document.getElementById('home-btn').addEventListener('click', () => {
+        showScreen('pin');
         clearPin();
-        showScreen('pin-screen');
+    });
+    
+    // Submit answer button
+    document.getElementById('submit-answer').addEventListener('click', checkAnswer);
+    
+    // Next button
+    document.getElementById('next-btn').addEventListener('click', nextQuestion);
+    
+    // Restart game
+    document.getElementById('restart-game').addEventListener('click', initGame);
+    
+    // New chapter
+    document.getElementById('new-chapter').addEventListener('click', () => {
+        showScreen('pin');
+        clearPin();
     });
     
     // Error buttons
-    document.getElementById('retry-btn')?.addEventListener('click', submitPin);
-    document.getElementById('back-to-pin-error')?.addEventListener('click', () => {
+    document.getElementById('retry-btn').addEventListener('click', submitPin);
+    document.getElementById('back-btn').addEventListener('click', () => {
+        showScreen('pin');
         clearPin();
-        showScreen('pin-screen');
     });
     
-    // Game over buttons
-    document.getElementById('restart-btn')?.addEventListener('click', initGame);
-    document.getElementById('new-chapter-btn')?.addEventListener('click', () => {
-        clearPin();
-        showScreen('pin-screen');
-    });
+    // Admin buttons
+    const adminHideBtn = document.getElementById('admin-hide-btn');
+    const adminShowBtn = document.getElementById('admin-show-btn');
+    const adminClearBtn = document.getElementById('admin-clear-btn');
+    
+    if (adminHideBtn) adminHideBtn.addEventListener('click', hideWorksheet);
+    if (adminShowBtn) adminShowBtn.addEventListener('click', showWorksheet);
+    if (adminClearBtn) adminClearBtn.addEventListener('click', clearHiddenWorksheets);
     
     // Keyboard support
     document.addEventListener('keydown', (e) => {
@@ -902,43 +840,48 @@ document.addEventListener('DOMContentLoaded', () => {
         }
     });
     
-    // Admin buttons (if they exist)
-    const adminHideBtn = document.getElementById('admin-hide-btn');
-    const adminShowBtn = document.getElementById('admin-show-btn');
-    const adminClearBtn = document.getElementById('admin-clear-btn');
+    // Load quiz catalog
+    loadQuizCatalog();
     
-    if (adminHideBtn) adminHideBtn.addEventListener('click', hideWorksheet);
-    if (adminShowBtn) adminShowBtn.addEventListener('click', showWorksheet);
-    if (adminClearBtn) adminClearBtn.addEventListener('click', clearHiddenWorksheets);
+    // Update hidden worksheets panel
+    updateHiddenWorksheetsPanel();
     
     console.log('✅ Quiz Game Ready!');
-    console.log('📁 Expected files:');
-    console.log('- Questions/primary/math/341-01-1.json');
-    console.log('- Questions/primary/math/341-01-z.json');
-    console.log('- Questions/upper-secondary/combined-chem/342-09-1.json');
+    console.log('📁 File Structure (no hyphens):');
+    console.log('- Questions/primary/math/341011.json');
+    console.log('- Questions/primary/math/34101z.json');
+    console.log('- Questions/upper-secondary/combined-chem/342091.json (YOUR FILE)');
     
-    // Auto-test on load
-    setTimeout(() => {
-        console.log('🔄 Checking file structure...');
-        console.log(`Total quizzes in catalog: ${QUIZ_CATALOG.length}`);
-        console.log(`Hidden worksheets: ${gameState.hiddenWorksheets.length}`);
-    }, 1000);
+    // Hide existing files by default (you mentioned this)
+    if (gameState.hiddenWorksheets.length === 0) {
+        // Hide the existing files mentioned in your error
+        const filesToHide = ['342091', '341011', '34101z'];
+        filesToHide.forEach(code => {
+            if (!gameState.hiddenWorksheets.includes(code)) {
+                gameState.hiddenWorksheets.push(code);
+            }
+        });
+        localStorage.setItem('hiddenWorksheets', JSON.stringify(gameState.hiddenWorksheets));
+        updateHiddenWorksheetsPanel();
+        loadQuizCatalog();
+        console.log('📁 Hidden existing files by default');
+    }
 });
 
 // ========== DEBUG & ADMIN FUNCTIONS ==========
 window.quizTools = {
     // List all expected files
     listFiles: function() {
-        console.log('📁 Expected File Structure:');
+        console.log('📁 Expected File Structure (No Hyphens):');
         QUIZ_CATALOG.forEach(quiz => {
-            console.log(`- Questions/${quiz.folder}/${quiz.code}.json`);
+            console.log(`- Questions/${quiz.folder}/${quiz.filename}`);
         });
     },
     
     // Test specific quiz
     testQuiz: function(code) {
         console.log(`🧪 Testing: ${code}`);
-        const digits = code.replace(/-/g, '').split('');
+        const digits = code.split('');
         gameState.pin = [...digits];
         gameState.currentDigit = digits.length;
         updatePinDisplay();
@@ -977,11 +920,4 @@ window.quizTools = {
     resetAll: function() {
         if (confirm('Reset ALL game data? This cannot be undone.')) {
             localStorage.clear();
-            location.reload();
-        }
-    }
-};
-
-// Quick test command
-console.log('💡 Type quizTools.testQuiz("342-09-1") to test your Combined Chemistry quiz');
-</script>
+            location.reload
