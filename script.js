@@ -412,4 +412,135 @@ function applyPowerUp(type) {
     updateScores();
     
     // Add message to feedback
-    const feedbackDiv = document.getElementById('feedback
+    const feedbackDiv = document.getElementById('feedback');
+    feedbackDiv.innerHTML += `<div style="color: #fbbf24; margin-top: 15px; font-weight: bold;">🎁 ${message}</div>`;
+}
+
+function updateScores() {
+    document.getElementById('score1').textContent = gameState.scores[0];
+    document.getElementById('score2').textContent = gameState.scores[1];
+    document.getElementById('final-score1').textContent = gameState.scores[0];
+    document.getElementById('final-score2').textContent = gameState.scores[1];
+}
+
+function updatePlayerTurn() {
+    const player1 = document.getElementById('player1');
+    const player2 = document.getElementById('player2');
+    
+    if (gameState.currentPlayer === 1) {
+        player1.classList.add('active');
+        player2.classList.remove('active');
+    } else {
+        player1.classList.remove('active');
+        player2.classList.add('active');
+    }
+}
+
+function nextQuestion() {
+    gameState.currentQuestion++;
+    
+    // Switch player for next question
+    gameState.currentPlayer = gameState.currentPlayer === 1 ? 2 : 1;
+    
+    loadQuestion();
+}
+
+function endGame() {
+    // Determine winner
+    let winnerMessage = '';
+    
+    if (gameState.scores[0] > gameState.scores[1]) {
+        winnerMessage = 'Player 1 Wins! 🏆';
+    } else if (gameState.scores[1] > gameState.scores[0]) {
+        winnerMessage = 'Player 2 Wins! 🏆';
+    } else {
+        winnerMessage = "It's a Tie! 🤝";
+    }
+    
+    // Update game over screen
+    document.getElementById('winner').textContent = winnerMessage;
+    
+    // Show game over screen
+    document.getElementById('game-over').style.display = 'block';
+    document.getElementById('next-btn').style.display = 'none';
+    document.getElementById('submit-answer').style.display = 'none';
+    document.querySelector('.treasure-section').style.display = 'none';
+}
+
+// ========== INITIALIZATION ==========
+function initializeGame() {
+    console.log('🚀 Initializing Quiz Game...');
+    
+    // Initialize PIN display
+    updatePinDisplay();
+    
+    // Setup keypad buttons
+    document.querySelectorAll('.keypad-btn').forEach(btn => {
+        btn.addEventListener('click', () => {
+            addDigit(btn.getAttribute('data-digit'));
+        });
+    });
+    
+    // Clear button
+    document.getElementById('clear-btn').addEventListener('click', clearPin);
+    
+    // Submit PIN button
+    document.getElementById('submit-pin-btn').addEventListener('click', submitPin);
+    
+    // Home button
+    document.getElementById('home-btn').addEventListener('click', () => {
+        showScreen('pin-screen');
+        clearPin();
+    });
+    
+    // Submit answer button
+    document.getElementById('submit-answer').addEventListener('click', checkAnswer);
+    
+    // Next button
+    document.getElementById('next-btn').addEventListener('click', nextQuestion);
+    
+    // Restart game
+    const restartBtn = document.getElementById('restart-game');
+    if (restartBtn) {
+        restartBtn.addEventListener('click', initGame);
+    }
+    
+    // New chapter
+    const newChapterBtn = document.getElementById('new-chapter');
+    if (newChapterBtn) {
+        newChapterBtn.addEventListener('click', () => {
+            showScreen('pin-screen');
+            clearPin();
+        });
+    }
+    
+    // Error buttons
+    document.getElementById('retry-btn').addEventListener('click', submitPin);
+    document.getElementById('back-btn').addEventListener('click', () => {
+        showScreen('pin-screen');
+        clearPin();
+    });
+    
+    // Keyboard support
+    document.addEventListener('keydown', (e) => {
+        if (document.getElementById('pin-screen').classList.contains('active')) {
+            if (e.key >= '0' && e.key <= '9') {
+                addDigit(e.key);
+            } else if (e.key === 'Backspace') {
+                clearPin();
+            } else if (e.key === 'Enter') {
+                submitPin();
+            }
+        }
+    });
+    
+    console.log('✅ Quiz Game Ready!');
+    console.log('💡 Enter 342091 and click GO to test Combined Chemistry');
+}
+
+// Wait for DOM to be fully loaded
+if (document.readyState === 'loading') {
+    document.addEventListener('DOMContentLoaded', initializeGame);
+} else {
+    initializeGame();
+}
