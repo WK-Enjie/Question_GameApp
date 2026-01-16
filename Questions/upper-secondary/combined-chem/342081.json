@@ -1,0 +1,104 @@
+{
+  "title": "Sec 4 Combined Chemistry Chapter 8",
+  "topic": "Patterns in the Periodic Table - Metal Reactivity",
+  "subject": "Combined Science (Chemistry)",
+  "grade": "Sec 4",
+  "questions": [
+    {
+      "question": "Which metal reacts most violently with cold water?",
+      "options": [
+        "Potassium (K)",
+        "Sodium (Na)", 
+        "Magnesium (Mg)",
+        "Calcium (Ca)"
+      ],
+      "correct": 0,
+      "points": 10,
+      "explanation": "Potassium is at the top of the reactivity series and reacts most violently with cold water, producing hydrogen gas and potassium hydroxide with explosive reaction and lilac flame."
+    },
+    {
+      "question": "What is observed when magnesium reacts with steam?",
+      "options": [
+        "Vigorous reaction with bright white flame",
+        "Slow reaction with no flame",
+        "No reaction at all",
+        "Produces brown fumes"
+      ],
+      "correct": 0,
+      "points": 10,
+      "explanation": "Magnesium is quite high in the reactivity series and reacts vigorously with steam producing bright white flame and white magnesium oxide powder. Reaction with steam is faster than with cold water."
+    },
+    {
+      "question": "Which metal does NOT react with dilute hydrochloric acid?",
+      "options": [
+        "Copper (Cu)",
+        "Zinc (Zn)",
+        "Magnesium (Mg)",
+        "Aluminum (Al)"
+      ],
+      "correct": 0,
+      "points": 10,
+      "explanation": "Copper is below hydrogen in the reactivity series, so it cannot displace hydrogen from acids. Only metals above hydrogen in the reactivity series react with dilute acids to produce hydrogen gas."
+    },
+    {
+      "question": "Predict the observation when calcium is added to cold water:",
+      "options": [
+        "Fizzes rapidly, solution warms up, white precipitate forms",
+        "Explodes violently with lilac flame",
+        "Slow reaction with few bubbles",
+        "No visible reaction"
+      ],
+      "correct": 0,
+      "points": 10,
+      "explanation": "Calcium is high in the reactivity series and reacts vigorously with cold water. It fizzes as hydrogen gas is produced, the reaction is exothermic (warms up), and calcium hydroxide forms as a white precipitate."
+    },
+    {
+      "question": "Which displacement reaction will NOT occur?",
+      "options": [
+        "Zinc + copper(II) sulfate → copper + zinc sulfate",
+        "Magnesium + silver nitrate → silver + magnesium nitrate",
+        "Copper + zinc sulfate → zinc + copper(II) sulfate",
+        "Iron + lead(II) nitrate → lead + iron(II) nitrate"
+      ],
+      "correct": 2,
+      "points": 10,
+      "explanation": "Copper cannot displace zinc because copper is lower in the reactivity series than zinc. A metal can only displace another metal from its salt solution if it is higher in the reactivity series."
+    },
+    {
+      "question": "Why does aluminum appear less reactive than its position in the reactivity series suggests?",
+      "options": [
+        "It forms a protective oxide layer",
+        "It has low density",
+        "It is a poor conductor",
+        "It has high melting point"
+      ],
+      "correct": 0,
+      "points": 10,
+      "explanation": "Aluminum quickly forms a protective layer of aluminum oxide (Al₂O₃) that prevents further reaction. This makes it appear less reactive than metals like magnesium and calcium, even though it's actually quite high in the reactivity series."
+    },
+    {
+      "question": "Arrange these metals in order of INCREASING reactivity: Ag, Cu, Zn, Mg",
+      "options": [
+        "Ag < Cu < Zn < Mg",
+        "Mg < Zn < Cu < Ag",
+        "Cu < Ag < Mg < Zn",
+        "Zn < Mg < Ag < Cu"
+      ],
+      "correct": 0,
+      "points": 10,
+      "explanation": "Based on the reactivity series: Silver (Ag) is least reactive (does not react with water or dilute acids), then Copper (Cu), then Zinc (Zn), and Magnesium (Mg) is most reactive."
+    },
+    {
+      "question": "Which observation is correct for sodium reacting with cold water?",
+      "options": [
+        "Melts into a ball, fizzes rapidly, produces hydrogen that may ignite",
+        "Slow reaction with no heat produced",
+        "Forms a green solution",
+        "Produces chlorine gas"
+      ],
+      "correct": 0,
+      "points": 10,
+      "explanation": "Sodium is very high in the reactivity series. Its reaction with cold water is very exothermic - it melts into a silvery ball, fizzes rapidly producing hydrogen gas, and the heat may ignite the hydrogen."
+    }
+  ]
+}
