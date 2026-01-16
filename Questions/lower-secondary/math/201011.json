@@ -1,0 +1,78 @@
+{
+  "title": "Secondary 1 Mathematics - Chapter 1",
+  "topic": "LCM & HCF",
+  "subject": "Mathematics",
+  "grade": "Sec 1",
+  "questions": [
+    {
+      "question": "What is the Highest Common Factor (HCF) of 36 and 48?",
+      "options": ["6", "12", "18", "24"],
+      "correct": 1,
+      "points": 10,
+      "explanation": "Factors of 36: 1, 2, 3, 4, 6, 9, 12, 18, 36. Factors of 48: 1, 2, 3, 4, 6, 8, 12, 16, 24, 48. Common factors: 1, 2, 3, 4, 6, 12. Highest is 12."
+    },
+    {
+      "question": "Find the Lowest Common Multiple (LCM) of 15 and 25.",
+      "options": ["50", "75", "100", "125"],
+      "correct": 1,
+      "points": 10,
+      "explanation": "Multiples of 15: 15, 30, 45, 60, 75, 90... Multiples of 25: 25, 50, 75, 100... First common multiple is 75."
+    },
+    {
+      "question": "What is the HCF of 54 and 72?",
+      "options": ["9", "12", "18", "24"],
+      "correct": 2,
+      "points": 15,
+      "explanation": "Factors of 54: 1, 2, 3, 6, 9, 18, 27, 54. Factors of 72: 1, 2, 3, 4, 6, 8, 9, 12, 18, 24, 36, 72. Highest common factor is 18."
+    },
+    {
+      "question": "Find the LCM of 24 and 36.",
+      "options": ["48", "60", "72", "96"],
+      "correct": 2,
+      "points": 10,
+      "explanation": "Prime factors: 24 = 2³ × 3, 36 = 2² × 3². LCM = 2³ × 3² = 8 × 9 = 72."
+    },
+    {
+      "question": "What is the HCF of 84 and 126?",
+      "options": ["14", "21", "28", "42"],
+      "correct": 3,
+      "points": 15,
+      "explanation": "Factors of 84: 1, 2, 3, 4, 6, 7, 12, 14, 21, 28, 42, 84. Factors of 126: 1, 2, 3, 6, 7, 9, 14, 18, 21, 42, 63, 126. Highest common factor is 42."
+    },
+    {
+      "question": "Find the LCM of 28 and 42.",
+      "options": ["56", "84", "112", "126"],
+      "correct": 1,
+      "points": 10,
+      "explanation": "Prime factors: 28 = 2² × 7, 42 = 2 × 3 × 7. LCM = 2² × 3 × 7 = 4 × 3 × 7 = 84."
+    },
+    {
+      "question": "Three bells ring at intervals of 15, 20, and 30 seconds. After how many minutes will they ring together again?",
+      "options": ["1 minute", "2 minutes", "3 minutes", "4 minutes"],
+      "correct": 0,
+      "points": 20,
+      "explanation": "Find LCM of 15, 20, and 30. 15 = 3 × 5, 20 = 2² × 5, 30 = 2 × 3 × 5. LCM = 2² × 3 × 5 = 60 seconds = 1 minute."
+    },
+    {
+      "question": "What is the HCF of 96, 144, and 192?",
+      "options": ["12", "24", "36", "48"],
+      "correct": 3,
+      "points": 20,
+      "explanation": "Factors of 96: 1, 2, 3, 4, 6, 8, 12, 16, 24, 32, 48, 96. Factors of 144: 1, 2, 3, 4, 6, 8, 9, 12, 16, 18, 24, 36, 48, 72, 144. Factors of 192: 1, 2, 3, 4, 6, 8, 12, 16, 24, 32, 48, 64, 96, 192. Highest common factor is 48."
+    },
+    {
+      "question": "Find the LCM of 18, 27, and 36.",
+      "options": ["72", "108", "144", "216"],
+      "correct": 1,
+      "points": 15,
+      "explanation": "Prime factors: 18 = 2 × 3², 27 = 3³, 36 = 2² × 3². LCM = 2² × 3³ = 4 × 27 = 108."
+    },
+    {
+      "question": "Two ropes are 60m and 84m long. What is the longest length that can measure both ropes exactly?",
+      "options": ["6m", "12m", "18m", "24m"],
+      "correct": 1,
+      "points": 15,
+      "explanation": "This is asking for HCF of 60 and 84. Factors of 60: 1, 2, 3, 4, 5, 6, 10, 12, 15, 20, 30, 60. Factors of 84: 1, 2, 3, 4, 6, 7, 12, 14, 21, 28, 42, 84. Highest common factor is 12m."
+    }
+  ]
+}
