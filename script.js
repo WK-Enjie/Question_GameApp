@@ -43,19 +43,19 @@ const QUIZ_CATALOG = [
     { code: '212-01-1', level: 'Lower Secondary', grade: 'Sec 2', subject: 'Science', folder: 'lower-secondary/science', filename: '212011.json', name: 'Secondary 2 Science Chapter 1' },
     
     // UPPER SECONDARY (300-399) - NO HYPHEN FILES
-    { code: '301-01-1', level: 'Upper Secondary', grade: 'Sec 3', subject: 'Mathematics', folder: 'upper-secondary/math', filename: '301011.json', name: 'Upper Secondary Math Chapter 1' },
-    { code: '302-01-1', level: 'Upper Secondary', grade: 'Sec 4', subject: 'Mathematics', folder: 'upper-secondary/math', filename: '302011.json', name: 'Upper Secondary Math Chapter 1' },
+    { code: '303-01-1', level: 'Upper Secondary', grade: 'Sec 3', subject: 'Mathematics', folder: 'upper-secondary/math', filename: '303011.json', name: 'Upper Secondary Math Chapter 1' },
+    { code: '304-01-1', level: 'Upper Secondary', grade: 'Sec 4', subject: 'Mathematics', folder: 'upper-secondary/math', filename: '304011.json', name: 'Upper Secondary Math Chapter 1' },
     
     // Upper Secondary Combined Chemistry - YOUR FILE IS HERE
-    { code: '342-09-1', level: 'Upper Secondary', grade: 'Sec 4', subject: 'Combined Science (Chemistry)', folder: 'upper-secondary/combined-chem', filename: '342091.json', name: 'Sec 4 Combined Chemistry Chapter 9' },
+    { code: '344-09-1', level: 'Upper Secondary', grade: 'Sec 4', subject: 'Combined Science (Chemistry)', folder: 'upper-secondary/combined-chem', filename: '344091.json', name: 'Sec 4 Combined Chemistry Chapter 9' },
     
     // Upper Secondary Pure Chemistry
-    { code: '311-01-1', level: 'Upper Secondary', grade: 'Sec 3', subject: 'Pure Chemistry', folder: 'upper-secondary/pure-chem', filename: '311011.json', name: 'Secondary 3 Pure Chemistry Chapter 1' },
-    { code: '312-01-1', level: 'Upper Secondary', grade: 'Sec 4', subject: 'Pure Chemistry', folder: 'upper-secondary/pure-chem', filename: '312011.json', name: 'Secondary 4 Pure Chemistry Chapter 1' },
+    { code: '353-01-1', level: 'Upper Secondary', grade: 'Sec 3', subject: 'Pure Chemistry', folder: 'upper-secondary/pure-chem', filename: '353011.json', name: 'Secondary 3 Pure Chemistry Chapter 1' },
+    { code: '354-01-1', level: 'Upper Secondary', grade: 'Sec 4', subject: 'Pure Chemistry', folder: 'upper-secondary/pure-chem', filename: '354011.json', name: 'Secondary 4 Pure Chemistry Chapter 1' },
     
     // Upper Secondary Pure Physics
-    { code: '321-01-1', level: 'Upper Secondary', grade: 'Sec 3', subject: 'Pure Physics', folder: 'upper-secondary/pure-physics', filename: '321011.json', name: 'Secondary 3 Pure Physics Chapter 1' },
-    { code: '322-01-1', level: 'Upper Secondary', grade: 'Sec 4', subject: 'Pure Physics', folder: 'upper-secondary/pure-physics', filename: '322011.json', name: 'Secondary 4 Pure Physics Chapter 1' }
+    { code: '333-01-1', level: 'Upper Secondary', grade: 'Sec 3', subject: 'Pure Physics', folder: 'upper-secondary/pure-physics', filename: '333011.json', name: 'Secondary 3 Pure Physics Chapter 1' },
+    { code: '334-01-1', level: 'Upper Secondary', grade: 'Sec 4', subject: 'Pure Physics', folder: 'upper-secondary/pure-physics', filename: '334011.json', name: 'Secondary 4 Pure Physics Chapter 1' }
 ];
 
 // ========== POWER-UPS ==========
@@ -900,4 +900,5 @@ window.quizTools = {
 
 // Quick test all your files
 console.log('💡 Type quizTools.listFiles() to see your file structure');
+
 </script>
