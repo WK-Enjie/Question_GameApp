@@ -10,17 +10,14 @@ const gameState = {
     answered: false,
     powerupUsed: false,
     canUsePowerup: false,
-    hiddenWorksheets: JSON.parse(localStorage.getItem('hiddenWorksheets')) || []
+    hiddenWorksheets: []
 };
 
 // ========== QUIZ CATALOG ==========
 const QUIZ_CATALOG = [
-    // Lower Secondary Math
     { code: '201-01-1', filename: '201011.json', folder: 'lower-secondary/math', name: 'Sec 1 Math Chapter 1' },
     { code: '201-01-2', filename: '201012.json', folder: 'lower-secondary/math', name: 'Sec 1 Math Chapter 1 Worksheet 2' },
     { code: '201-02-1', filename: '201021.json', folder: 'lower-secondary/math', name: 'Sec 1 Math Chapter 2' },
-    
-    // Upper Secondary Chemistry
     { code: '344-09-1', filename: '344091.json', folder: 'upper-secondary/combined-chem', name: 'Sec 4 Combined Chemistry Chapter 9' },
     { code: '354-13-1', filename: '354131.json', folder: 'upper-secondary/pure-chem', name: 'Sec 4 Pure Chemistry Chapter 13' }
 ];
@@ -34,25 +31,24 @@ const powerUps = [
     { icon: '✨', name: 'Bonus +10', type: 'bonus' }
 ];
 
-// ========== SCREEN MANAGEMENT ==========
-function showScreen(screenId) {
-    document.querySelectorAll('.screen').forEach(screen => {
-        screen.classList.remove('active');
-    });
-    document.getElementById(screenId).classList.add('active');
-}
-
-// ========== PIN FUNCTIONS (FIXED) ==========
+// ========== PIN FUNCTIONS ==========
 function updatePinDisplay() {
+    console.log('Updating PIN display:', gameState.pin);
+    
     for (let i = 1; i <= 6; i++) {
         const digitElement = document.getElementById(`digit${i}`);
-        const digitValue = gameState.pin[i-1];
-        digitElement.textContent = digitValue || '_';
-        digitElement.classList.toggle('filled', digitValue !== '');
+        const digitValue = gameState.pin[i - 1];
+        
+        if (digitElement) {
+            digitElement.textContent = digitValue || '_';
+            digitElement.classList.toggle('filled', digitValue !== '');
+        }
     }
 }
 
 function addDigit(digit) {
+    console.log('Adding digit:', digit, 'at position:', gameState.currentDigit);
+    
     if (gameState.currentDigit < 6) {
         gameState.pin[gameState.currentDigit] = digit;
         gameState.currentDigit++;
@@ -74,17 +70,23 @@ function clearPin() {
     updatePinDisplay();
 }
 
+// ========== SCREEN MANAGEMENT ==========
+function showScreen(screenId) {
+    console.log('Showing screen:', screenId);
+    
+    document.querySelectorAll('.screen').forEach(screen => {
+        screen.classList.remove('active');
+    });
+    
+    const targetScreen = document.getElementById(screenId);
+    if (targetScreen) {
+        targetScreen.classList.add('active');
+    }
+}
+
 // ========== LOAD QUIZ FUNCTION ==========
 async function loadQuizByCode(code) {
     console.log('🔍 Loading quiz:', code);
-    
-    // Check if worksheet is hidden
-    if (gameState.hiddenWorksheets.includes(code)) {
-        return { 
-            success: false, 
-            error: `Worksheet ${code} is hidden.` 
-        };
-    }
     
     // Find quiz in catalog
     const quizInfo = QUIZ_CATALOG.find(q => q.code === code);
@@ -100,36 +102,11 @@ async function loadQuizByCode(code) {
     const filepath = `Questions/${quizInfo.folder}/${quizInfo.filename}`;
     
     try {
+        console.log('Trying to load:', filepath);
         const response = await fetch(filepath);
         
         if (!response.ok) {
-            // Try alternative paths
-            const altPaths = [
-                filepath,
-                `./${filepath}`,
-                `../${filepath}`,
-                filename,
-                `./${quizInfo.filename}`,
-                `Questions/${quizInfo.filename}`
-            ];
-            
-            for (const path of altPaths) {
-                try {
-                    const altResponse = await fetch(path);
-                    if (altResponse.ok) {
-                        const data = await altResponse.json();
-                        return { 
-                            success: true, 
-                            data: data, 
-                            info: quizInfo 
-                        };
-                    }
-                } catch (e) {
-                    continue;
-                }
-            }
-            
-            throw new Error(`File not found: ${filepath}`);
+            throw new Error(`HTTP ${response.status}: ${response.statusText}`);
         }
         
         const data = await response.json();
@@ -142,7 +119,7 @@ async function loadQuizByCode(code) {
         };
         
     } catch (error) {
-        console.error('❌ Error:', error);
+        console.error('❌ Error loading quiz:', error);
         return { 
             success: false, 
             error: `Failed to load: ${error.message}` 
@@ -153,6 +130,7 @@ async function loadQuizByCode(code) {
 // ========== SUBMIT PIN ==========
 async function submitPin() {
     const pin = gameState.pin.join('');
+    console.log('Submit PIN called. PIN:', pin);
     
     if (pin.length !== 6) {
         alert('Please enter all 6 digits');
@@ -161,8 +139,7 @@ async function submitPin() {
     
     // Format: 201012 -> 201-01-2
     const formattedPin = `${pin.substring(0,3)}-${pin.substring(3,5)}-${pin.substring(5)}`;
-    
-    console.log('Submitting PIN:', formattedPin);
+    console.log('Formatted PIN:', formattedPin);
     
     showScreen('loading-screen');
     document.getElementById('loading-message').textContent = `Loading ${formattedPin}...`;
@@ -208,14 +185,14 @@ async function submitPin() {
         
         // Set quiz info
         document.getElementById('quiz-title').textContent = result.data.title || result.info.name;
-        document.getElementById('quiz-topic').textContent = `${result.info.grade || 'Sec'} • ${result.info.subject || 'General'}`;
+        document.getElementById('quiz-topic').textContent = result.data.subject || 'Mathematics';
         
         // Initialize game
         initGame();
         showScreen('game-screen');
         
     } catch (error) {
-        console.error('Failed to load:', error);
+        console.error('Failed to load quiz:', error);
         
         setTimeout(() => {
             document.getElementById('error-message').innerHTML = error.message;
@@ -287,13 +264,6 @@ function loadQuestion() {
     
     document.getElementById('treasure-section').style.display = 'none';
     
-    // Reset treasure boxes
-    document.querySelectorAll('.treasure-box').forEach(box => {
-        box.className = 'treasure-box';
-        box.textContent = '🎁';
-        box.onclick = () => openTreasureBox(box.dataset.box);
-    });
-    
     updateScores();
     updatePlayerTurn();
 }
@@ -308,11 +278,13 @@ function selectOption(index) {
     
     // Select new option
     const options = document.querySelectorAll('.option');
-    options[index].classList.add('selected');
-    gameState.selectedAnswer = index;
-    
-    // Enable submit button
-    document.getElementById('submit-answer').disabled = false;
+    if (options[index]) {
+        options[index].classList.add('selected');
+        gameState.selectedAnswer = index;
+        
+        // Enable submit button
+        document.getElementById('submit-answer').disabled = false;
+    }
 }
 
 function submitAnswer() {
@@ -385,19 +357,15 @@ function openTreasureBox(boxNum) {
     
     gameState.powerupUsed = true;
     
-    // Mark boxes as opened
-    document.querySelectorAll('.treasure-box').forEach(box => {
-        box.classList.add('opened');
-        box.onclick = null;
-    });
-    
     // Random power-up
     const powerUp = powerUps[Math.floor(Math.random() * powerUps.length)];
     
     // Update selected box
     const selectedBox = document.querySelector(`[data-box="${boxNum}"]`);
-    selectedBox.textContent = powerUp.icon;
-    selectedBox.classList.add('active');
+    if (selectedBox) {
+        selectedBox.textContent = powerUp.icon;
+        selectedBox.classList.add('active');
+    }
     
     // Show power-up
     document.getElementById('powerup-result').innerHTML = `
@@ -446,13 +414,9 @@ function applyPowerUp(type) {
             break;
     }
     
-    // Ensure scores don't go negative
-    if (gameState.scores[playerIdx] < 0) gameState.scores[playerIdx] = 0;
-    if (gameState.scores[otherIdx] < 0) gameState.scores[otherIdx] = 0;
-    
     updateScores();
     
-    // Add message to feedback
+    // Add message
     const feedbackDiv = document.getElementById('answer-feedback');
     feedbackDiv.innerHTML += `<div class="powerup-message">🎁 ${message}</div>`;
 }
@@ -468,11 +432,6 @@ function updatePlayerTurn() {
     
     player1.classList.toggle('active', gameState.currentPlayer === 1);
     player2.classList.toggle('active', gameState.currentPlayer === 2);
-    
-    document.getElementById('player1-turn').textContent = 
-        gameState.currentPlayer === 1 ? "Current Turn" : "";
-    document.getElementById('player2-turn').textContent = 
-        gameState.currentPlayer === 2 ? "Current Turn" : "";
 }
 
 function nextQuestion() {
@@ -514,107 +473,69 @@ function endGame() {
     document.getElementById('final-score2').textContent = score2;
     
     document.getElementById('game-over').style.display = 'block';
-    document.getElementById('next-btn').style.display = 'none';
-    document.getElementById('submit-answer').style.display = 'none';
 }
 
-// ========== QUIZ CATALOG DISPLAY ==========
-function loadQuizCatalog() {
-    const container = document.getElementById('quick-codes');
-    if (!container) return;
-    
-    const visibleQuizzes = QUIZ_CATALOG.filter(q => 
-        !gameState.hiddenWorksheets.includes(q.code)
-    );
-    
-    if (visibleQuizzes.length === 0) {
-        container.innerHTML = '<p class="no-quizzes">No quizzes available</p>';
-        return;
-    }
-    
-    let html = '<h3>📚 Available Quizzes</h3><div class="quiz-grid">';
-    
-    visibleQuizzes.forEach(quiz => {
-        const icon = quiz.folder.includes('math') ? '🧮' :
-                    quiz.folder.includes('chem') ? '🧪' : '📚';
-        
-        html += `
-            <div class="quiz-card" data-code="${quiz.code}">
-                <div class="quiz-code">${icon} ${quiz.code}</div>
-                <div class="quiz-name">${quiz.name}</div>
-                <div class="quiz-meta">${quiz.folder.replace('-', ' ')}</div>
-            </div>
-        `;
-    });
-    
-    html += '</div>';
-    container.innerHTML = html;
-    
-    // Add click handlers
-    container.querySelectorAll('.quiz-card').forEach(card => {
-        card.addEventListener('click', () => {
-            const code = card.dataset.code;
-            const digits = code.replace(/-/g, '').split('');
-            gameState.pin = [...digits];
-            gameState.currentDigit = digits.length;
-            updatePinDisplay();
-        });
-    });
-}
-
-// ========== INITIALIZATION (FIXED PIN EVENT LISTENERS) ==========
-document.addEventListener('DOMContentLoaded', () => {
+// ========== INITIALIZATION ==========
+document.addEventListener('DOMContentLoaded', function() {
     console.log('🚀 Quiz Game Initialized');
     
-    // Initialize displays
+    // Initialize PIN display
     updatePinDisplay();
-    loadQuizCatalog();
     
-    // PIN event listeners - FIXED!
-    document.querySelectorAll('.key[data-digit]').forEach(btn => {
-        btn.addEventListener('click', () => {
-            const digit = btn.dataset.digit;
-            console.log('Key pressed:', digit);
+    // ========== PIN KEYPAD EVENT LISTENERS ==========
+    // Number buttons
+    document.querySelectorAll('.key[data-key]').forEach(button => {
+        button.addEventListener('click', function() {
+            const digit = this.getAttribute('data-key');
+            console.log('Number button clicked:', digit);
             addDigit(digit);
         });
     });
     
     // Clear button
-    document.getElementById('clear-btn').addEventListener('click', () => {
-        console.log('Clear pressed');
+    document.getElementById('clear-btn').addEventListener('click', function() {
+        console.log('Clear button clicked');
         clearPin();
     });
     
     // Submit button
-    document.getElementById('submit-pin').addEventListener('click', () => {
-        console.log('Submit pressed');
+    document.getElementById('submit-pin').addEventListener('click', function() {
+        console.log('Submit button clicked');
         submitPin();
     });
     
-    // Game event listeners
+    // Game buttons
     document.getElementById('submit-answer').addEventListener('click', submitAnswer);
     document.getElementById('next-btn').addEventListener('click', nextQuestion);
-    document.getElementById('home-btn').addEventListener('click', () => {
+    document.getElementById('home-btn').addEventListener('click', function() {
         clearPin();
         showScreen('pin-screen');
     });
     
-    // Error screen listeners
+    // Error screen buttons
     document.getElementById('retry-btn')?.addEventListener('click', submitPin);
-    document.getElementById('back-to-pin-error')?.addEventListener('click', () => {
+    document.getElementById('back-to-pin-error')?.addEventListener('click', function() {
         clearPin();
         showScreen('pin-screen');
     });
     
-    // Game over listeners
+    // Game over buttons
     document.getElementById('restart-btn')?.addEventListener('click', initGame);
-    document.getElementById('new-chapter-btn')?.addEventListener('click', () => {
+    document.getElementById('new-chapter-btn')?.addEventListener('click', function() {
         clearPin();
         showScreen('pin-screen');
     });
     
-    // Keyboard support for PIN entry
-    document.addEventListener('keydown', (e) => {
+    // Treasure boxes
+    document.querySelectorAll('.treasure-box').forEach(box => {
+        box.addEventListener('click', function() {
+            const boxNum = this.getAttribute('data-box');
+            openTreasureBox(boxNum);
+        });
+    });
+    
+    // Keyboard support
+    document.addEventListener('keydown', function(e) {
         if (document.getElementById('pin-screen').classList.contains('active')) {
             if (e.key >= '0' && e.key <= '9') {
                 addDigit(e.key);
@@ -626,44 +547,36 @@ document.addEventListener('DOMContentLoaded', () => {
         }
     });
     
-    // Debug: Add backspace button if needed
-    addBackspaceButton();
-    
-    console.log('✅ Ready! Try entering: 2 0 1 0 1 2 for Worksheet 201-01-2');
+    console.log('✅ All event listeners attached');
+    console.log('Try clicking number buttons or typing 2 0 1 0 1 2');
 });
 
-// ========== HELPER FUNCTIONS ==========
-function addBackspaceButton() {
-    // Optionally add a backspace button to the keypad
-    const clearBtn = document.getElementById('clear-btn');
-    if (clearBtn && !document.querySelector('.key.backspace')) {
-        const backspaceBtn = document.createElement('button');
-        backspaceBtn.className = 'key backspace';
-        backspaceBtn.innerHTML = '⌫';
-        backspaceBtn.addEventListener('click', removeLastDigit);
-        clearBtn.parentNode.insertBefore(backspaceBtn, clearBtn.nextSibling);
-    }
-}
-
-// ========== DEBUG TOOLS ==========
+// ========== DEBUG HELPERS ==========
 window.quizTools = {
-    testQuiz: function(code) {
-        console.log(`Testing: ${code}`);
-        const digits = code.replace(/-/g, '').split('');
-        gameState.pin = [...digits];
-        gameState.currentDigit = digits.length;
-        updatePinDisplay();
-        setTimeout(() => submitPin(), 500);
-    },
-    
-    showState: function() {
-        console.log('Current game state:', gameState);
+    test: function() {
+        console.log('Testing PIN: 2 0 1 0 1 2');
+        const testDigits = ['2', '0', '1', '0', '1', '2'];
+        testDigits.forEach((digit, index) => {
+            setTimeout(() => {
+                addDigit(digit);
+            }, index * 200);
+        });
+        
+        setTimeout(() => {
+            console.log('Submitting PIN...');
+            submitPin();
+        }, 1500);
     },
     
     setPin: function(pinString) {
-        const digits = pinString.split('');
-        gameState.pin = [...digits];
-        gameState.currentDigit = digits.length;
-        updatePinDisplay();
+        clearPin();
+        pinString.split('').forEach(digit => {
+            addDigit(digit);
+        });
+    },
+    
+    showState: function() {
+        console.log('Current PIN:', gameState.pin);
+        console.log('Current digit position:', gameState.currentDigit);
     }
 };
