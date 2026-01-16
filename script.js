@@ -52,6 +52,7 @@ const QUIZ_CATALOG = [
     // Upper Secondary Pure Chemistry
     { code: '353-01-1', level: 'Upper Secondary', grade: 'Sec 3', subject: 'Pure Chemistry', folder: 'upper-secondary/pure-chem', filename: '353011.json', name: 'Secondary 3 Pure Chemistry Chapter 1' },
     { code: '354-01-1', level: 'Upper Secondary', grade: 'Sec 4', subject: 'Pure Chemistry', folder: 'upper-secondary/pure-chem', filename: '354011.json', name: 'Secondary 4 Pure Chemistry Chapter 1' },
+    { code: '354-13-1', level: 'Upper Secondary', grade: 'Sec 4', subject: 'Pure Chemistry', folder: 'upper-secondary/pure-chem', filename: '354131.json', name: 'Secondary 4 Pure Chemistry Chapter 13' }
     
     // Upper Secondary Pure Physics
     { code: '333-01-1', level: 'Upper Secondary', grade: 'Sec 3', subject: 'Pure Physics', folder: 'upper-secondary/pure-physics', filename: '333011.json', name: 'Secondary 3 Pure Physics Chapter 1' },
@@ -902,3 +903,4 @@ window.quizTools = {
 console.log('💡 Type quizTools.listFiles() to see your file structure');
 
 </script>
+
