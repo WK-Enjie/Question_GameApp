@@ -1,4 +1,3 @@
-<script>
 // ========== ENHANCED GAME STATE ==========
 const gameState = {
     pin: ['', '', '', '', '', ''],
@@ -14,7 +13,7 @@ const gameState = {
     hiddenWorksheets: JSON.parse(localStorage.getItem('hiddenWorksheets')) || []
 };
 
-// ========== QUIZ CATALOG (Updated for NO HYPHEN files) ==========
+// ========== QUIZ CATALOG (CLEANED & CORRECTED) ==========
 const QUIZ_CATALOG = [
     // PRIMARY (100-199)
     { code: '101-01-1', level: 'Primary', grade: 'P1', subject: 'Mathematics', folder: 'primary/math', filename: '101011.json', name: 'Primary 1 Math Chapter 1' },
@@ -28,11 +27,11 @@ const QUIZ_CATALOG = [
     { code: '111-01-1', level: 'Primary', grade: 'P1', subject: 'Science', folder: 'primary/science', filename: '111011.json', name: 'Primary 1 Science Chapter 1' },
     { code: '112-01-1', level: 'Primary', grade: 'P2', subject: 'Science', folder: 'primary/science', filename: '112011.json', name: 'Primary 2 Science Chapter 1' },
     
-    // YOUR EXISTING PRIMARY QUIZZES (NO HYPHEN FILES)
+    // YOUR EXISTING PRIMARY QUIZZES
     { code: '341-01-1', level: 'Primary', grade: 'P3', subject: 'Mathematics', folder: 'primary/math', filename: '341011.json', name: 'Primary 3 Math Chapter 1 Worksheet 1' },
     { code: '341-01-z', level: 'Primary', grade: 'P3', subject: 'Mathematics', folder: 'primary/math', filename: '34101z.json', name: 'Primary 3 Math Chapter 1 Worksheet Z' },
     
-    // LOWER SECONDARY (200-299) - NO HYPHEN FILES
+    // LOWER SECONDARY (200-299)
     { code: '201-01-1', level: 'Lower Secondary', grade: 'Sec 1', subject: 'Mathematics', folder: 'lower-secondary/math', filename: '201011.json', name: 'Sec 1 Math Chapter 1 (LCM & HCF)' },
     { code: '201-01-2', level: 'Lower Secondary', grade: 'Sec 1', subject: 'Mathematics', folder: 'lower-secondary/math', filename: '201012.json', name: 'Sec 1 Math Chapter 1 Worksheet 2' },
     { code: '201-02-1', level: 'Lower Secondary', grade: 'Sec 1', subject: 'Mathematics', folder: 'lower-secondary/math', filename: '201021.json', name: 'Sec 1 Math Chapter 2 (Algebra)' },
@@ -42,17 +41,17 @@ const QUIZ_CATALOG = [
     { code: '211-01-1', level: 'Lower Secondary', grade: 'Sec 1', subject: 'Science', folder: 'lower-secondary/science', filename: '211011.json', name: 'Secondary 1 Science Chapter 1' },
     { code: '212-01-1', level: 'Lower Secondary', grade: 'Sec 2', subject: 'Science', folder: 'lower-secondary/science', filename: '212011.json', name: 'Secondary 2 Science Chapter 1' },
     
-    // UPPER SECONDARY (300-399) - NO HYPHEN FILES
-    { code: '303-01-1', level: 'Upper Secondary', grade: 'Sec 3', subject: 'Mathematics', folder: 'upper-secondary/math', filename: '303011.json', name: 'Upper Secondary Math Chapter 1' },
-    { code: '304-01-1', level: 'Upper Secondary', grade: 'Sec 4', subject: 'Mathematics', folder: 'upper-secondary/math', filename: '304011.json', name: 'Upper Secondary Math Chapter 1' },
+    // UPPER SECONDARY (300-399)
+    { code: '301-01-1', level: 'Upper Secondary', grade: 'Sec 3', subject: 'Mathematics', folder: 'upper-secondary/math', filename: '301011.json', name: 'Upper Secondary Math Chapter 1' },
+    { code: '302-01-1', level: 'Upper Secondary', grade: 'Sec 4', subject: 'Mathematics', folder: 'upper-secondary/math', filename: '302011.json', name: 'Upper Secondary Math Chapter 1' },
     
-    // Upper Secondary Combined Chemistry - YOUR FILE IS HERE
-    { code: '344-09-1', level: 'Upper Secondary', grade: 'Sec 4', subject: 'Combined Science (Chemistry)', folder: 'upper-secondary/combined-chem', filename: '344091.json', name: 'Sec 4 Combined Chemistry Chapter 9' },
+    // Upper Secondary Combined Chemistry - YOUR FILE
+    { code: '344-09-1', level: 'Upper Secondary', grade: 'Sec 4', subject: 'Combined Chemistry', folder: 'upper-secondary/combined-chem', filename: '344091.json', name: 'Sec 4 Combined Chemistry Chapter 9' },
     
-    // Upper Secondary Pure Chemistry
+    // Upper Secondary Pure Chemistry - YOUR FILE
+    { code: '354-13-1', level: 'Upper Secondary', grade: 'Sec 4', subject: 'Pure Chemistry', folder: 'upper-secondary/pure-chem', filename: '354131.json', name: 'Secondary 4 Pure Chemistry Chapter 13' },
     { code: '353-01-1', level: 'Upper Secondary', grade: 'Sec 3', subject: 'Pure Chemistry', folder: 'upper-secondary/pure-chem', filename: '353011.json', name: 'Secondary 3 Pure Chemistry Chapter 1' },
     { code: '354-01-1', level: 'Upper Secondary', grade: 'Sec 4', subject: 'Pure Chemistry', folder: 'upper-secondary/pure-chem', filename: '354011.json', name: 'Secondary 4 Pure Chemistry Chapter 1' },
-    { code: '354-13-1', level: 'Upper Secondary', grade: 'Sec 4', subject: 'Pure Chemistry', folder: 'upper-secondary/pure-chem', filename: '354131.json', name: 'Secondary 4 Pure Chemistry Chapter 13' }
     
     // Upper Secondary Pure Physics
     { code: '333-01-1', level: 'Upper Secondary', grade: 'Sec 3', subject: 'Pure Physics', folder: 'upper-secondary/pure-physics', filename: '333011.json', name: 'Secondary 3 Pure Physics Chapter 1' },
@@ -70,26 +69,27 @@ const powerUps = [
 
 // ========== SCREEN MANAGEMENT ==========
 function showScreen(screenId) {
-    document.querySelectorAll('.screen').forEach(screen => {
-        screen.classList.remove('active');
-    });
-    document.getElementById(screenId).classList.add('active');
+    const screens = document.querySelectorAll('.screen');
+    screens.forEach(screen => screen.classList.remove('active'));
+    document.getElementById(screenId)?.classList.add('active');
 }
 
 // ========== PIN FUNCTIONS ==========
 function updatePinDisplay() {
-    const digits = ['digit1', 'digit2', 'digit3', 'digit4', 'digit5', 'digit6'];
-    digits.forEach((id, index) => {
-        const digit = document.getElementById(id);
-        digit.textContent = gameState.pin[index] || '_';
-    });
+    for (let i = 0; i < 6; i++) {
+        const digitEl = document.getElementById(`digit${i + 1}`);
+        if (digitEl) {
+            digitEl.textContent = gameState.pin[i] || '_';
+            digitEl.className = gameState.pin[i] ? 'digit filled' : 'digit empty';
+        }
+    }
 }
 
 function addDigit(digit) {
     if (gameState.currentDigit < 6) {
         gameState.pin[gameState.currentDigit] = digit;
-        updatePinDisplay();
         gameState.currentDigit++;
+        updatePinDisplay();
     }
 }
 
@@ -99,110 +99,86 @@ function clearPin() {
     updatePinDisplay();
 }
 
-// ========== CORRECTED LOAD QUIZ FUNCTION (NO HYPHENS) ==========
+function removeLastDigit() {
+    if (gameState.currentDigit > 0) {
+        gameState.currentDigit--;
+        gameState.pin[gameState.currentDigit] = '';
+        updatePinDisplay();
+    }
+}
+
+// ========== LOAD QUIZ FUNCTION (OPTIMIZED) ==========
 async function loadQuizByCode(code) {
-    console.log('🔍 Loading quiz:', code);
+    console.log('🔍 Loading:', code);
     
-    // Check if worksheet is hidden
     if (gameState.hiddenWorksheets.includes(code)) {
-        return { 
-            success: false, 
-            error: `Worksheet ${code} is hidden. Use admin panel to show it.` 
-        };
+        return { success: false, error: `Worksheet ${code} is hidden.` };
     }
     
-    // Find quiz in catalog
     const quizInfo = QUIZ_CATALOG.find(q => q.code === code);
-    
     if (!quizInfo) {
-        return { 
-            success: false, 
-            error: `Quiz code ${code} not found in catalog.` 
-        };
+        return { success: false, error: `Code ${code} not found in catalog.` };
     }
     
-    // Use filename WITHOUT hyphens from catalog
     const filename = quizInfo.filename;
     const filepath = `Questions/${quizInfo.folder}/${filename}`;
     
-    console.log('📂 Looking for file:', filepath);
-    console.log('📁 Folder:', quizInfo.folder);
-    console.log('📄 Filename:', filename);
+    console.log('📁 Path:', filepath);
     
     try {
-        // Try the exact path first
+        // Try primary path
         const response = await fetch(filepath);
         
         if (!response.ok) {
-            // If file not found, try alternative paths
+            // Try alternative paths
             const altPaths = [
-                filepath,  // Main path
                 `./Questions/${quizInfo.folder}/${filename}`,
                 `../Questions/${quizInfo.folder}/${filename}`,
-                `Questions/${filename}`,  // Direct in Questions folder
-                `./${filename}`,  // Root directory
-                `${filename}`,  // Current directory
-                // Also try with hyphens (just in case)
-                `Questions/${quizInfo.folder}/${code}.json`,
-                `${code}.json`
+                `/${filepath}`,
+                `${filename}`,
+                `Questions/${filename}`
             ];
-            
-            console.log('🔍 Trying alternative paths...');
             
             for (const path of altPaths) {
                 try {
-                    console.log(`  Trying: ${path}`);
                     const altResponse = await fetch(path);
                     if (altResponse.ok) {
                         const data = await altResponse.json();
                         console.log(`✅ Found at: ${path}`);
-                        return { 
-                            success: true, 
-                            data: data, 
-                            info: quizInfo,
-                            path: path
-                        };
+                        return { success: true, data, info: quizInfo };
                     }
                 } catch (e) {
-                    // Continue to next path
                     continue;
                 }
             }
             
-            throw new Error(`File not found. Tried: ${filepath} and alternatives`);
+            throw new Error(`File not found: ${filename}`);
         }
         
         const data = await response.json();
-        console.log('✅ Successfully loaded:', filename);
-        
-        return { 
-            success: true, 
-            data: data, 
-            info: quizInfo,
-            path: filepath
-        };
+        console.log('✅ Loaded:', filename);
+        return { success: true, data, info: quizInfo };
         
     } catch (error) {
-        console.error('❌ Error loading quiz:', error);
+        console.error('❌ Error:', error.message);
         return { 
             success: false, 
-            error: `Failed to load ${filename}: ${error.message}`,
-            expectedPath: `Questions/${quizInfo.folder}/${filename}`
+            error: `Failed to load ${filename}`,
+            details: error.message,
+            path: filepath 
         };
     }
 }
 
 // ========== SUBMIT PIN ==========
 async function submitPin() {
-    // Join pin array to string
     const pin = gameState.pin.join('');
     
     if (pin.length !== 6) {
-        alert('Please enter all 6 digits');
+        showAlert('Please enter all 6 digits');
         return;
     }
     
-    // Format as XXX-XX-X based on position (for display only)
     const formattedPin = `${pin.slice(0,3)}-${pin.slice(3,5)}-${pin.slice(5)}`;
     
     showScreen('loading-screen');
@@ -212,73 +188,91 @@ async function submitPin() {
         const result = await loadQuizByCode(formattedPin);
         
         if (!result.success) {
-            // Show detailed error
-            let errorMsg = `<strong>Worksheet ${formattedPin} not found</strong><br><br>`;
-            errorMsg += `<div style="color: #a0aec0; font-size: 0.9rem;">`;
-            errorMsg += `Expected file: ${result.expectedPath || 'unknown'}<br>`;
-            errorMsg += `Error: ${result.error}</div>`;
+            // Build error message
+            let errorHTML = `
+                <div class="error-header">
+                    <span class="error-icon">❌</span>
+                    <h3>Worksheet ${formattedPin} not found</h3>
+                </div>
+                <div class="error-details">
+                    <p><strong>Expected file:</strong> ${result.path || 'Unknown'}</p>
+                    <p><strong>Error:</strong> ${result.error || 'Unknown error'}</p>
+                </div>
+                <div class="error-help">
+                    <p><strong>💡 Available quizzes:</strong></p>
+                    <ul class="available-quizzes">
+            `;
             
-            // Find what quizzes ARE available
-            const availableQuizzes = QUIZ_CATALOG.filter(q => 
-                !gameState.hiddenWorksheets.includes(q.code)
-            ).slice(0, 8);
+            // Show up to 5 available quizzes
+            const available = QUIZ_CATALOG
+                .filter(q => !gameState.hiddenWorksheets.includes(q.code))
+                .slice(0, 5);
             
-            if (availableQuizzes.length > 0) {
-                errorMsg += `<br><div style="color: #fbbf24; margin-top: 15px;">Available quizzes:</div>`;
-                availableQuizzes.forEach(q => {
-                    errorMsg += `<div style="font-size: 0.9rem; margin: 5px 0;">
-                        • <strong>${q.code}</strong>: ${q.name}
-                    </div>`;
-                });
-            }
+            available.forEach(quiz => {
+                errorHTML += `
+                    <li onclick="selectQuizCode('${quiz.code}')">
+                        <span class="quiz-code">${quiz.code}</span>
+                        <span class="quiz-name">${quiz.name}</span>
+                    </li>
+                `;
+            });
             
-            throw new Error(errorMsg);
+            errorHTML += `</ul></div>`;
+            
+            document.getElementById('error-message').innerHTML = errorHTML;
+            throw new Error('Quiz not found');
         }
         
-        // Store questions
+        // Process quiz data
+        let questions = [];
         if (result.data.questions && Array.isArray(result.data.questions)) {
-            gameState.questions = result.data.questions;
+            questions = result.data.questions;
         } else if (Array.isArray(result.data)) {
-            gameState.questions = result.data;
+            questions = result.data;
         } else {
-            throw new Error('Invalid quiz format: No questions array found');
+            throw new Error('Invalid quiz format');
         }
         
-        if (gameState.questions.length === 0) {
+        if (questions.length === 0) {
             throw new Error('Quiz file is empty');
         }
         
-        // Set quiz info
-        const quizTitle = document.getElementById('quiz-title');
-        const quizTopic = document.getElementById('quiz-topic');
+        gameState.questions = questions;
         
-        quizTitle.textContent = result.data.title || result.info.name;
-        quizTopic.textContent = `${result.info.grade} ${result.info.subject}`;
+        // Update UI
+        document.getElementById('quiz-title').textContent = result.data.title || result.info.name;
+        document.getElementById('quiz-topic').textContent = `${result.info.grade} • ${result.info.subject}`;
         
-        // Add topic if available
         if (result.data.topic) {
-            quizTopic.textContent += ` | ${result.data.topic}`;
+            document.getElementById('quiz-topic').textContent += ` • ${result.data.topic}`;
         }
         
-        // Initialize game
+        // Initialize and show game
         initGame();
         showScreen('game-screen');
         
-        // Save to recent quizzes
-        saveToRecentQuizzes(formattedPin, result.data.title || result.info.name, result.info.subject, result.info.grade);
+        // Save to recent
+        saveToRecentQuizzes(formattedPin, result.data.title || result.info.name, 
+                           result.info.subject, result.info.grade);
         
     } catch (error) {
-        console.error('Failed to load quiz:', error);
-        document.getElementById('loading-message').textContent = `Error: ${error.message.split('<')[0]}`;
+        console.error('Submit error:', error);
         
-        setTimeout(() => {
-            document.getElementById('error-message').innerHTML = error.message;
-            showScreen('error-screen');
-        }, 1500);
+        if (!document.getElementById('error-message').innerHTML.includes('not found')) {
+            document.getElementById('error-message').innerHTML = `
+                <div class="error-header">
+                    <span class="error-icon">⚠️</span>
+                    <h3>Error Loading Quiz</h3>
+                </div>
+                <p>${error.message}</p>
+            `;
+        }
+        
+        setTimeout(() => showScreen('error-screen'), 500);
     }
 }
 
-// ========== GAME FUNCTIONS ==========
+// ========== GAME FUNCTIONS (OPTIMIZED) ==========
 function initGame() {
     gameState.currentQuestion = 0;
     gameState.currentPlayer = 1;
@@ -297,65 +291,59 @@ function initGame() {
 
 function loadQuestion() {
     const question = gameState.questions[gameState.currentQuestion];
-    
     if (!question) {
-        console.error('No question found at index:', gameState.currentQuestion);
         endGame();
         return;
     }
     
-    // Update question info
+    // Update counters
     document.getElementById('current-q').textContent = gameState.currentQuestion + 1;
     document.getElementById('total-q').textContent = gameState.questions.length;
-    document.getElementById('question-text').textContent = question.question || "Question text missing";
+    document.getElementById('question-text').textContent = question.question || "No question text";
     
-    // Clear previous options
-    const optionsContainer = document.getElementById('options-container');
-    optionsContainer.innerHTML = '';
+    // Clear and add options
+    const container = document.getElementById('options-container');
+    container.innerHTML = '';
     
-    // Add new options
-    if (question.options && Array.isArray(question.options)) {
+    if (question.options && question.options.length) {
         question.options.forEach((option, index) => {
-            const optionElement = document.createElement('div');
-            optionElement.className = 'option';
-            optionElement.textContent = `${String.fromCharCode(65 + index)}) ${option}`;
-            optionElement.dataset.index = index;
-            optionElement.onclick = () => selectOption(index);
-            optionsContainer.appendChild(optionElement);
+            const optionEl = document.createElement('div');
+            optionEl.className = 'option';
+            optionEl.innerHTML = `
+                <span class="option-letter">${String.fromCharCode(65 + index)}</span>
+                <span class="option-text">${option}</span>
+            `;
+            optionEl.dataset.index = index;
+            optionEl.onclick = () => selectOption(index);
+            container.appendChild(optionEl);
         });
     }
     
-    // Reset UI state
+    // Reset UI
     gameState.selectedAnswer = null;
     gameState.answered = false;
     gameState.powerupUsed = false;
     gameState.canUsePowerup = false;
     
-    // Reset buttons
     const submitBtn = document.getElementById('submit-answer');
     submitBtn.disabled = true;
-    submitBtn.style.display = 'flex';
-    
+    submitBtn.style.display = 'block';
     document.getElementById('next-btn').style.display = 'none';
     
-    // Hide feedback
-    const feedbackDiv = document.getElementById('answer-feedback');
-    feedbackDiv.innerHTML = '<div class="powerup-placeholder"><i>💡</i><p>Answer the question to see feedback</p></div>';
+    // Hide feedback and treasure
+    document.getElementById('answer-feedback').innerHTML = 
+        '<div class="feedback-placeholder">Select an answer to continue</div>';
     
-    // Hide treasure section
-    const treasureSection = document.querySelector('.treasure-section');
-    if (treasureSection) {
-        treasureSection.style.display = 'none';
-    }
+    const treasureSection = document.getElementById('treasure-section');
+    if (treasureSection) treasureSection.style.display = 'none';
     
     // Reset treasure boxes
     document.querySelectorAll('.treasure-box').forEach(box => {
         box.className = 'treasure-box';
         box.textContent = '🎁';
-        box.onclick = () => openTreasureBox(box.dataset.box);
+        box.onclick = null;
     });
     
-    // Update player displays
     updateScores();
     updatePlayerTurn();
 }
@@ -369,11 +357,8 @@ function selectOption(index) {
     });
     
     // Select new option
-    const options = document.querySelectorAll('.option');
-    options[index].classList.add('selected');
+    document.querySelectorAll('.option')[index].classList.add('selected');
     gameState.selectedAnswer = index;
-    
-    // Enable submit button
     document.getElementById('submit-answer').disabled = false;
 }
 
@@ -381,16 +366,14 @@ function submitAnswer() {
     if (gameState.answered || gameState.selectedAnswer === null) return;
     
     gameState.answered = true;
-    const submitBtn = document.getElementById('submit-answer');
-    submitBtn.disabled = true;
-    
     const question = gameState.questions[gameState.currentQuestion];
     const isCorrect = gameState.selectedAnswer === question.correct;
-    gameState.canUsePowerup = isCorrect;
     
-    // Mark correct/incorrect answers
-    const options = document.querySelectorAll('.option');
-    options.forEach((opt, index) => {
+    // Disable submit button
+    document.getElementById('submit-answer').disabled = true;
+    
+    // Mark correct/incorrect
+    document.querySelectorAll('.option').forEach((opt, index) => {
         if (index === question.correct) {
             opt.classList.add('correct');
         } else if (index === gameState.selectedAnswer && !isCorrect) {
@@ -398,56 +381,57 @@ function submitAnswer() {
         }
     });
     
-    // Update score if correct
+    // Process answer
     if (isCorrect) {
         const points = question.points || 10;
         gameState.scores[gameState.currentPlayer - 1] += points;
-        updateScores();
+        gameState.canUsePowerup = true;
         
-        let feedback = `<div style="color: #48bb78; font-weight: bold; margin-bottom: 15px; font-size: 1.2rem;">
-            ✅ Correct! +${points} points
-        </div>`;
-        
-        if (question.explanation) {
-            feedback += `<div style="color: #a0aec0; font-size: 1.1rem; line-height: 1.5;">
-                <strong>Explanation:</strong> ${question.explanation}
-            </div>`;
-        }
+        let feedback = `
+            <div class="feedback-correct">
+                <span class="feedback-icon">✅</span>
+                <div class="feedback-content">
+                    <h3>Correct! +${points} points</h3>
+                    ${question.explanation ? `<p class="explanation"><strong>Explanation:</strong> ${question.explanation}</p>` : ''}
+                </div>
+            </div>
+        `;
         
         document.getElementById('answer-feedback').innerHTML = feedback;
         
-        // Show treasure boxes
-        document.querySelector('.treasure-section').style.display = 'block';
+        // Show treasure
+        document.getElementById('treasure-section').style.display = 'block';
         
     } else {
-        let feedback = `<div style="color: #f56565; font-weight: bold; margin-bottom: 15px; font-size: 1.2rem;">
-            ❌ Incorrect! No points
-        </div>
-        <div style="color: #48bb78; margin-bottom: 15px; font-size: 1.1rem;">
-            <strong>Correct answer:</strong> ${String.fromCharCode(65 + question.correct)}) ${question.options[question.correct]}
-        </div>`;
+        const correctLetter = String.fromCharCode(65 + question.correct);
+        const correctText = question.options[question.correct];
         
-        if (question.explanation) {
-            feedback += `<div style="color: #a0aec0; font-size: 1.1rem; line-height: 1.5;">
-                <strong>Explanation:</strong> ${question.explanation}
-            </div>`;
-        }
+        let feedback = `
+            <div class="feedback-incorrect">
+                <span class="feedback-icon">❌</span>
+                <div class="feedback-content">
+                    <h3>Incorrect</h3>
+                    <p class="correct-answer"><strong>Correct answer:</strong> ${correctLetter}) ${correctText}</p>
+                    ${question.explanation ? `<p class="explanation"><strong>Explanation:</strong> ${question.explanation}</p>` : ''}
+                </div>
+            </div>
+        `;
         
         document.getElementById('answer-feedback').innerHTML = feedback;
         
-        // Disable treasure boxes for wrong answers
+        // Disable treasure
         document.querySelectorAll('.treasure-box').forEach(box => {
             box.classList.add('disabled');
-            box.onclick = null;
         });
         
-        // Switch player for next question
+        // Switch player
         gameState.currentPlayer = gameState.currentPlayer === 1 ? 2 : 1;
         updatePlayerTurn();
-        
-        // Show next button immediately
-        document.getElementById('next-btn').style.display = 'flex';
     }
+    
+    // Show next button
+    document.getElementById('next-btn').style.display = 'block';
+    updateScores();
 }
 
 function openTreasureBox(boxNum) {
@@ -455,40 +439,36 @@ function openTreasureBox(boxNum) {
     
     gameState.powerupUsed = true;
     
-    // Mark all boxes as opened
+    // Mark all boxes
     document.querySelectorAll('.treasure-box').forEach(box => {
         box.classList.add('opened');
         box.onclick = null;
     });
     
-    // Random power-up
+    // Get random power-up
     const powerUp = powerUps[Math.floor(Math.random() * powerUps.length)];
     
     // Update selected box
-    const selectedBox = document.querySelector(`.treasure-box[data-box="${boxNum}"]`);
+    const selectedBox = document.querySelector(`[data-box="${boxNum}"]`);
     selectedBox.textContent = powerUp.icon;
-    selectedBox.classList.add(`powerup-${powerUp.type}`);
+    selectedBox.classList.add('active');
     
-    // Show power-up result
-    const powerupResult = document.getElementById('powerup-result');
-    powerupResult.innerHTML = `
+    // Show power-up
+    document.getElementById('powerup-result').innerHTML = `
         <div class="powerup-display">
-            <div class="powerup-icon ${`powerup-${powerUp.type}`}" style="font-size: 4rem;">${powerUp.icon}</div>
-            <h3 style="color: #fbbf24; margin: 10px 0;">${powerUp.name}</h3>
-            <p style="color: #b8b8d1;">Power-up applied!</p>
+            <div class="powerup-icon">${powerUp.icon}</div>
+            <h3>${powerUp.name}</h3>
+            <p>Power-up activated!</p>
         </div>
     `;
     
-    // Apply power-up effect
+    // Apply effect
     applyPowerUp(powerUp.type);
-    
-    // Show next button
-    document.getElementById('next-btn').style.display = 'flex';
 }
 
 function applyPowerUp(type) {
-    const playerIndex = gameState.currentPlayer - 1;
-    const otherIndex = playerIndex === 0 ? 1 : 0;
+    const playerIdx = gameState.currentPlayer - 1;
+    const otherIdx = playerIdx === 0 ? 1 : 0;
     const question = gameState.questions[gameState.currentQuestion];
     const basePoints = question.points || 10;
     
@@ -497,51 +477,47 @@ function applyPowerUp(type) {
     switch(type) {
         case 'double':
             const doublePoints = basePoints * 2;
-            gameState.scores[playerIndex] += doublePoints;
+            gameState.scores[playerIdx] += doublePoints;
             message = `Double points! +${doublePoints}`;
             break;
             
         case 'half':
             const halfPoints = Math.floor(basePoints / 2);
-            gameState.scores[playerIndex] += halfPoints;
+            gameState.scores[playerIdx] += halfPoints;
             message = `Half points! +${halfPoints}`;
             break;
             
         case 'negative':
-            gameState.scores[playerIndex] -= basePoints;
+            gameState.scores[playerIdx] -= basePoints;
             message = `Negative points! -${basePoints}`;
             break;
             
         case 'switch':
-            const temp = gameState.scores[playerIndex];
-            gameState.scores[playerIndex] = gameState.scores[otherIndex];
-            gameState.scores[otherIndex] = temp;
+            [gameState.scores[playerIdx], gameState.scores[otherIdx]] = 
+            [gameState.scores[otherIdx], gameState.scores[playerIdx]];
             message = `Scores switched!`;
             break;
             
         case 'bonus':
-            gameState.scores[playerIndex] += 10;
+            gameState.scores[playerIdx] += 10;
             message = `Bonus +10 points!`;
             break;
     }
     
-    // Ensure score doesn't go below 0
-    if (gameState.scores[playerIndex] < 0) {
-        gameState.scores[playerIndex] = 0;
-    }
+    // Ensure no negative scores
+    if (gameState.scores[playerIdx] < 0) gameState.scores[playerIdx] = 0;
+    if (gameState.scores[otherIdx] < 0) gameState.scores[otherIdx] = 0;
     
     updateScores();
     
-    // Add power-up message to feedback
+    // Add message to feedback
     const feedbackDiv = document.getElementById('answer-feedback');
-    feedbackDiv.innerHTML += `<div style="color: #fbbf24; margin-top: 15px; font-weight: bold;">🎁 ${message}</div>`;
+    feedbackDiv.innerHTML += `<div class="powerup-message">🎁 ${message}</div>`;
 }
 
 function updateScores() {
     document.getElementById('score1').textContent = gameState.scores[0];
     document.getElementById('score2').textContent = gameState.scores[1];
-    
-    // Also update final scores display
     document.getElementById('final-score1').textContent = gameState.scores[0];
     document.getElementById('final-score2').textContent = gameState.scores[1];
 }
@@ -550,18 +526,13 @@ function updatePlayerTurn() {
     const player1 = document.getElementById('player1');
     const player2 = document.getElementById('player2');
     
-    // Update active player
-    if (gameState.currentPlayer === 1) {
-        player1.classList.add('active');
-        player2.classList.remove('active');
-        document.getElementById('player1-turn').textContent = "Current Turn";
-        document.getElementById('player2-turn').textContent = "";
-    } else {
-        player1.classList.remove('active');
-        player2.classList.add('active');
-        document.getElementById('player1-turn').textContent = "";
-        document.getElementById('player2-turn').textContent = "Current Turn";
-    }
+    player1.classList.toggle('active', gameState.currentPlayer === 1);
+    player2.classList.toggle('active', gameState.currentPlayer === 2);
+    
+    document.getElementById('player1-turn').textContent = 
+        gameState.currentPlayer === 1 ? "Current Turn" : "";
+    document.getElementById('player2-turn').textContent = 
+        gameState.currentPlayer === 2 ? "Current Turn" : "";
 }
 
 function nextQuestion() {
@@ -572,7 +543,6 @@ function nextQuestion() {
         return;
     }
     
-    // Switch player if not already switched
     if (gameState.answered) {
         gameState.currentPlayer = gameState.currentPlayer === 1 ? 2 : 1;
     }
@@ -581,102 +551,106 @@ function nextQuestion() {
 }
 
 function endGame() {
-    // Determine winner
-    let winnerName = '';
-    let winnerMessage = '';
+    const score1 = gameState.scores[0];
+    const score2 = gameState.scores[1];
     
-    if (gameState.scores[0] > gameState.scores[1]) {
-        winnerName = 'Player 1';
+    let winnerMessage = '';
+    let winnerName = '';
+    
+    if (score1 > score2) {
         winnerMessage = 'Player 1 Wins! 🏆';
-    } else if (gameState.scores[1] > gameState.scores[0]) {
-        winnerName = 'Player 2';
+        winnerName = 'Player 1';
+    } else if (score2 > score1) {
         winnerMessage = 'Player 2 Wins! 🏆';
+        winnerName = 'Player 2';
     } else {
-        winnerName = 'Both Players';
         winnerMessage = "It's a Tie! 🤝";
+        winnerName = 'Both Players';
     }
     
-    // Update game over screen
-    document.getElementById('winner-name').textContent = winnerName;
     document.getElementById('winner-message').textContent = winnerMessage;
-    
-    // Show game over screen
+    document.getElementById('winner-name').textContent = winnerName;
     document.getElementById('game-over').style.display = 'block';
     document.getElementById('next-btn').style.display = 'none';
     document.getElementById('submit-answer').style.display = 'none';
 }
 
-// ========== QUIZ CATALOG DISPLAY ==========
-async function loadQuizCatalog() {
-    const catalogDiv = document.getElementById('quick-codes');
-    
-    if (!catalogDiv) return;
+// ========== QUIZ CATALOG & RECENT ==========
+function loadQuizCatalog() {
+    const container = document.getElementById('quick-codes');
+    if (!container) return;
     
     try {
-        // Filter out hidden worksheets
-        const visibleQuizzes = QUIZ_CATALOG.filter(quiz => 
-            !gameState.hiddenWorksheets.includes(quiz.code)
+        const visibleQuizzes = QUIZ_CATALOG.filter(q => 
+            !gameState.hiddenWorksheets.includes(q.code)
         );
         
         if (visibleQuizzes.length === 0) {
-            catalogDiv.innerHTML = '<div style="color: #a0aec0; text-align: center; padding: 20px;">No quizzes available (all may be hidden)</div>';
+            container.innerHTML = '<p class="no-quizzes">No quizzes available</p>';
             return;
         }
         
+        let html = '<h3 class="catalog-title">📚 Available Quizzes</h3>';
+        
         // Group by level
-        const levels = {
+        const groups = {
             'Primary': visibleQuizzes.filter(q => q.level === 'Primary'),
             'Lower Secondary': visibleQuizzes.filter(q => q.level === 'Lower Secondary'),
             'Upper Secondary': visibleQuizzes.filter(q => q.level === 'Upper Secondary')
         };
         
-        let html = '<h3>📚 Available Quizzes</h3>';
-        
-        // Create catalog for each level
-        Object.keys(levels).forEach(level => {
-            const quizzes = levels[level];
-            if (quizzes.length === 0) return;
+        for (const [level, quizzes] of Object.entries(groups)) {
+            if (quizzes.length === 0) continue;
             
-            const levelColor = level === 'Primary' ? '#48bb78' : 
-                             level === 'Lower Secondary' ? '#4cc9f0' : '#9f7aea';
+            const levelColor = {
+                'Primary': '#48bb78',
+                'Lower Secondary': '#4cc9f0',
+                'Upper Secondary': '#9f7aea'
+            }[level] || '#666';
             
             html += `
-                <div class="level-section" style="margin-bottom: 25px;">
-                    <div class="level-title" style="color: ${levelColor}; font-size: 1.3rem; margin-bottom: 15px; border-bottom: 2px solid ${levelColor}40; padding-bottom: 5px;">
-                        ${level}
-                    </div>
-                    <div class="code-list">
+                <div class="level-group">
+                    <h4 class="level-title" style="color: ${levelColor}">${level}</h4>
+                    <div class="quiz-grid">
             `;
             
             quizzes.forEach(quiz => {
-                let icon = '📚';
-                if (quiz.subject.includes('Math')) icon = '🧮';
-                if (quiz.subject.includes('Science') && !quiz.subject.includes('Chem') && !quiz.subject.includes('Phys')) icon = '🔬';
-                if (quiz.subject.includes('Chem')) icon = '🧪';
-                if (quiz.subject.includes('Phys')) icon = '⚛️';
+                const icon = quiz.subject.includes('Math') ? '🧮' :
+                            quiz.subject.includes('Chem') ? '🧪' :
+                            quiz.subject.includes('Phys') ? '⚛️' :
+                            quiz.subject.includes('Science') ? '🔬' : '📚';
                 
                 html += `
-                    <div class="code-item" data-code="${quiz.code}" 
-                         onclick="selectQuizCode('${quiz.code}')"
-                         style="cursor: pointer; transition: all 0.3s;">
-                        <div style="font-weight: bold; color: #fbbf24; font-size: 1.1rem;">${icon} ${quiz.code}</div>
-                        <div style="font-size: 0.9rem; margin-top: 5px;">${quiz.name}</div>
-                        <div style="font-size: 0.8rem; color: #b8b8d1; margin-top: 3px;">${quiz.subject} • ${quiz.grade}</div>
+                    <div class="quiz-card" data-code="${quiz.code}">
+                        <div class="quiz-header">
+                            <span class="quiz-icon">${icon}</span>
+                            <span class="quiz-code">${quiz.code}</span>
+                        </div>
+                        <div class="quiz-name">${quiz.name}</div>
+                        <div class="quiz-meta">
+                            <span class="quiz-subject">${quiz.subject}</span>
+                            <span class="quiz-grade">${quiz.grade}</span>
+                        </div>
                     </div>
                 `;
             });
             
-            html += `
-                    </div>
-                </div>
-            `;
+            html += `</div></div>`;
+        }
+        
+        container.innerHTML = html;
+        
+        // Add click handlers
+        container.querySelectorAll('.quiz-card').forEach(card => {
+            card.addEventListener('click', () => {
+                const code = card.dataset.code;
+                selectQuizCode(code);
+            });
         });
         
-        catalogDiv.innerHTML = html;
-        
     } catch (error) {
-        console.error('Error loading catalog:', error);
-        catalogDiv.innerHTML = '<div style="color: #f56565; text-align: center; padding: 20px;">Error loading quiz catalog</div>';
+        console.error('Catalog error:', error);
+        container.innerHTML = '<p class="error">Error loading catalog</p>';
     }
 }
 
@@ -687,23 +661,11 @@ function selectQuizCode(code) {
     updatePinDisplay();
 }
 
-// ========== RECENT QUIZZES ==========
 function saveToRecentQuizzes(code, title, subject, grade) {
     let recent = JSON.parse(localStorage.getItem('recentQuizzes') || '[]');
     
-    // Remove if already exists
     recent = recent.filter(q => q.code !== code);
-    
-    // Add to beginning
-    recent.unshift({ 
-        code: code, 
-        title: title,
-        subject: subject,
-        grade: grade,
-        timestamp: Date.now() 
-    });
-    
-    // Keep only last 5
+    recent.unshift({ code, title, subject, grade, timestamp: Date.now() });
     recent = recent.slice(0, 5);
     
     localStorage.setItem('recentQuizzes', JSON.stringify(recent));
@@ -712,115 +674,110 @@ function saveToRecentQuizzes(code, title, subject, grade) {
 
 function showRecentQuizzes() {
     const recent = JSON.parse(localStorage.getItem('recentQuizzes') || '[]');
+    if (recent.length === 0) return;
     
-    if (recent.length > 0) {
-        const container = document.createElement('div');
-        container.className = 'recent-quizzes';
-        container.innerHTML = `
-            <div style="color: #b8b8d1; margin: 30px 0 15px 0; font-weight: bold; font-size: 1.1rem;">
-                ⏰ Recently Played
-            </div>
-            <div style="display: flex; gap: 15px; justify-content: center; flex-wrap: wrap;">
-                ${recent.map(quiz => {
-                    let icon = '📚';
-                    if (quiz.subject.includes('Math')) icon = '🧮';
-                    if (quiz.subject.includes('Science') && !quiz.subject.includes('Chem') && !quiz.subject.includes('Phys')) icon = '🔬';
-                    if (quiz.subject.includes('Chem')) icon = '🧪';
-                    if (quiz.subject.includes('Phys')) icon = '⚛️';
-                    
-                    return `
-                        <button class="code-item" data-code="${quiz.code}" 
-                                style="background: rgba(76, 201, 240, 0.1); 
-                                       border: 1px solid #4cc9f0; 
-                                       border-radius: 10px; 
-                                       padding: 12px; 
-                                       color: white; 
-                                       cursor: pointer;
-                                       text-align: left;
-                                       min-width: 180px;">
-                            <div style="font-weight: bold; color: #fbbf24;">${icon} ${quiz.code}</div>
-                            <div style="font-size: 0.9rem; margin-top: 5px;">${quiz.subject}</div>
-                            <div style="font-size: 0.8rem; color: #b8b8d1; margin-top: 3px;">${quiz.grade}</div>
-                        </button>
-                    `;
-                }).join('')}
-            </div>
+    const container = document.getElementById('recent-quizzes');
+    if (!container) return;
+    
+    let html = '<h3 class="recent-title">⏰ Recent Quizzes</h3><div class="recent-grid">';
+    
+    recent.forEach(quiz => {
+        const icon = quiz.subject.includes('Math') ? '🧮' :
+                    quiz.subject.includes('Chem') ? '🧪' :
+                    quiz.subject.includes('Phys') ? '⚛️' :
+                    quiz.subject.includes('Science') ? '🔬' : '📚';
+        
+        html += `
+            <button class="recent-card" data-code="${quiz.code}">
+                <div class="recent-header">
+                    <span class="recent-icon">${icon}</span>
+                    <span class="recent-code">${quiz.code}</span>
+                </div>
+                <div class="recent-subject">${quiz.subject}</div>
+                <div class="recent-grade">${quiz.grade}</div>
+            </button>
         `;
-        
-        // Insert after PIN display
-        const pinDisplay = document.querySelector('.pin-keypad');
-        if (pinDisplay) {
-            const existingRecent = document.querySelector('.recent-quizzes');
-            if (existingRecent) {
-                existingRecent.remove();
-            }
-            pinDisplay.parentNode.insertBefore(container, pinDisplay.nextSibling);
-        }
-        
-        // Add click handlers
-        container.querySelectorAll('.code-item').forEach(btn => {
-            btn.addEventListener('click', () => {
-                const code = btn.dataset.code;
-                const digits = code.replace(/-/g, '').split('');
-                gameState.pin = [...digits];
-                gameState.currentDigit = digits.length;
-                updatePinDisplay();
-            });
+    });
+    
+    html += '</div>';
+    container.innerHTML = html;
+    
+    // Add click handlers
+    container.querySelectorAll('.recent-card').forEach(btn => {
+        btn.addEventListener('click', () => {
+            const code = btn.dataset.code;
+            selectQuizCode(code);
         });
-    }
+    });
+}
+
+// ========== UI HELPERS ==========
+function showAlert(message, type = 'info') {
+    const alertDiv = document.createElement('div');
+    alertDiv.className = `alert alert-${type}`;
+    alertDiv.textContent = message;
+    
+    document.body.appendChild(alertDiv);
+    
+    setTimeout(() => {
+        alertDiv.remove();
+    }, 3000);
 }
 
 // ========== INITIALIZATION ==========
 document.addEventListener('DOMContentLoaded', () => {
-    console.log('🚀 Initializing Quiz Game...');
+    console.log('🚀 Quiz Game Initializing...');
     
-    // Initialize PIN display
+    // Initialize displays
     updatePinDisplay();
-    
-    // Load quiz catalog
     loadQuizCatalog();
-    
-    // Show recent quizzes
     showRecentQuizzes();
     
-    // ========== EVENT LISTENERS ==========
-    // PIN buttons
-    document.querySelectorAll('.pin-btn').forEach(btn => {
-        btn.addEventListener('click', () => addDigit(btn.dataset.digit));
+    // PIN event listeners
+    document.querySelectorAll('.keypad-btn').forEach(btn => {
+        if (btn.dataset.digit) {
+            btn.addEventListener('click', () => addDigit(btn.dataset.digit));
+        }
     });
     
-    document.getElementById('clear-btn').addEventListener('click', clearPin);
-    document.getElementById('submit-pin').addEventListener('click', submitPin);
+    document.getElementById('clear-btn')?.addEventListener('click', clearPin);
+    document.getElementById('backspace-btn')?.addEventListener('click', removeLastDigit);
+    document.getElementById('submit-pin')?.addEventListener('click', submitPin);
     
-    // Game buttons
-    document.getElementById('submit-answer').addEventListener('click', submitAnswer);
-    document.getElementById('next-btn').addEventListener('click', nextQuestion);
-    document.getElementById('home-btn').addEventListener('click', () => {
+    // Game event listeners
+    document.getElementById('submit-answer')?.addEventListener('click', submitAnswer);
+    document.getElementById('next-btn')?.addEventListener('click', nextQuestion);
+    document.getElementById('home-btn')?.addEventListener('click', () => {
         clearPin();
         showScreen('pin-screen');
     });
     
-    // Error buttons
+    // Error screen listeners
     document.getElementById('retry-btn')?.addEventListener('click', submitPin);
     document.getElementById('back-to-pin-error')?.addEventListener('click', () => {
         clearPin();
         showScreen('pin-screen');
     });
     
-    // Game over buttons
+    // Game over listeners
     document.getElementById('restart-btn')?.addEventListener('click', initGame);
     document.getElementById('new-chapter-btn')?.addEventListener('click', () => {
         clearPin();
         showScreen('pin-screen');
     });
     
+    // Treasure box listeners
+    document.querySelectorAll('.treasure-box').forEach(box => {
+        box.addEventListener('click', () => openTreasureBox(box.dataset.box));
+    });
+    
     // Keyboard support
     document.addEventListener('keydown', (e) => {
-        if (document.getElementById('pin-screen').classList.contains('active')) {
+        if (document.getElementById('pin-screen')?.classList.contains('active')) {
             if (e.key >= '0' && e.key <= '9') {
                 addDigit(e.key);
             } else if (e.key === 'Backspace') {
-                clearPin();
+                removeLastDigit();
             } else if (e.key === 'Enter') {
                 submitPin();
             }
@@ -828,31 +785,17 @@ document.addEventListener('DOMContentLoaded', () => {
     });
     
     console.log('✅ Quiz Game Ready!');
-    console.log('📁 YOUR FILES (NO HYPHENS):');
-    console.log('- Questions/primary/math/341011.json');
-    console.log('- Questions/primary/math/34101z.json');
-    console.log('- Questions/upper-secondary/combined-chem/342091.json');
-    console.log('- Questions/lower-secondary/math/201011.json');
-    console.log('- Questions/lower-secondary/math/201012.json');
-    console.log('- Questions/lower-secondary/math/201021.json');
-    
-    console.log('🎮 Test commands:');
-    console.log('quizTools.testQuiz("341-01-1")');
-    console.log('quizTools.testQuiz("342-09-1")');
-    console.log('quizTools.testQuiz("201-01-1")');
 });
 
-// ========== DEBUG & ADMIN FUNCTIONS ==========
+// ========== DEBUG TOOLS ==========
 window.quizTools = {
-    // List all expected files
     listFiles: function() {
-        console.log('📁 YOUR FILE STRUCTURE (NO HYPHENS):');
+        console.log('📁 File Structure:');
         QUIZ_CATALOG.forEach(quiz => {
             console.log(`- Questions/${quiz.folder}/${quiz.filename}`);
         });
     },
     
-    // Test specific quiz
     testQuiz: function(code) {
         console.log(`🧪 Testing: ${code}`);
         const digits = code.replace(/-/g, '').split('');
@@ -862,45 +805,41 @@ window.quizTools = {
         setTimeout(() => submitPin(), 500);
     },
     
-    // Check if file exists
     checkFile: async function(code) {
         const quizInfo = QUIZ_CATALOG.find(q => q.code === code);
         if (!quizInfo) {
-            console.log(`❌ Code ${code} not in catalog`);
+            console.log(`❌ ${code} not in catalog`);
             return;
         }
         
-        const filepath = `Questions/${quizInfo.folder}/${quizInfo.filename}`;
-        console.log(`🔍 Checking: ${filepath}`);
+        const paths = [
+            `Questions/${quizInfo.folder}/${quizInfo.filename}`,
+            `./Questions/${quizInfo.folder}/${quizInfo.filename}`,
+            `/${quizInfo.filename}`
+        ];
         
-        try {
-            const response = await fetch(filepath);
-            if (response.ok) {
-                console.log(`✅ File exists: ${quizInfo.filename}`);
-            } else {
-                console.log(`❌ File NOT found: ${quizInfo.filename}`);
+        for (const path of paths) {
+            try {
+                const response = await fetch(path);
+                console.log(`${response.ok ? '✅' : '❌'} ${path} - ${response.status}`);
+                if (response.ok) return true;
+            } catch (e) {
+                console.log(`❌ ${path} - ${e.message}`);
             }
-        } catch (e) {
-            console.log(`❌ Error accessing: ${filepath}`);
         }
+        return false;
     },
     
-    // Show hidden worksheets
     showHidden: function() {
-        console.log('🔒 Hidden Worksheets:', gameState.hiddenWorksheets);
+        console.log('🔒 Hidden:', gameState.hiddenWorksheets);
     },
     
-    // Clear all data
     resetAll: function() {
-        if (confirm('Reset ALL game data? This cannot be undone.')) {
+        if (confirm('Reset all game data?')) {
             localStorage.clear();
             location.reload();
         }
     }
 };
 
-// Quick test all your files
-console.log('💡 Type quizTools.listFiles() to see your file structure');
-
-</script>
-
+console.log('💡 Type quizTools.testQuiz("344-09-1") to test Combined Chemistry');
