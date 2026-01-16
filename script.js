@@ -1,606 +1,669 @@
-/* Reset and Base Styles */
-* {
-    margin: 0;
-    padding: 0;
-    box-sizing: border-box;
-    font-family: 'Segoe UI', Tahoma, Geneva, Verdana, sans-serif;
-}
-
-body {
-    background: linear-gradient(135deg, #667eea 0%, #764ba2 100%);
-    min-height: 100vh;
-    display: flex;
-    justify-content: center;
-    align-items: center;
-    padding: 20px;
-}
-
-.container {
-    width: 100%;
-    max-width: 500px;
-    background: white;
-    border-radius: 20px;
-    box-shadow: 0 20px 60px rgba(0,0,0,0.3);
-    overflow: hidden;
-    position: relative;
-}
-
-/* Screen Management */
-.screen {
-    display: none;
-    padding: 30px;
-    height: 100%;
-}
-
-.screen.active {
-    display: block;
-    animation: fadeIn 0.5s ease;
-}
-
-@keyframes fadeIn {
-    from { opacity: 0; transform: translateY(20px); }
-    to { opacity: 1; transform: translateY(0); }
-}
-
-/* PIN Screen */
-.header {
-    text-align: center;
-    margin-bottom: 40px;
-}
-
-.header h1 {
-    color: #333;
-    font-size: 2.5rem;
-    margin-bottom: 10px;
-}
-
-.header p {
-    color: #666;
-    font-size: 1.1rem;
-}
-
-.pin-display {
-    display: flex;
-    justify-content: center;
-    gap: 15px;
-    margin: 40px 0;
-}
-
-.digit {
-    width: 50px;
-    height: 60px;
-    border: 2px solid #ddd;
-    border-radius: 10px;
-    display: flex;
-    align-items: center;
-    justify-content: center;
-    font-size: 2rem;
-    font-weight: bold;
-    color: #333;
-    transition: all 0.3s;
-}
-
-.digit:not(:empty) {
-    border-color: #667eea;
-    background: #f0f4ff;
-    animation: pulse 0.3s;
-}
-
-@keyframes pulse {
-    0% { transform: scale(1); }
-    50% { transform: scale(1.1); }
-    100% { transform: scale(1); }
-}
-
-/* Keypad */
-.keypad {
-    display: grid;
-    grid-template-columns: repeat(3, 1fr);
-    gap: 15px;
-    margin-top: 40px;
-}
-
-.key {
-    padding: 20px;
-    font-size: 1.5rem;
-    border: none;
-    border-radius: 10px;
-    background: #f5f5f5;
-    color: #333;
-    cursor: pointer;
-    transition: all 0.2s;
-    font-weight: bold;
-}
-
-.key:hover {
-    background: #e0e0e0;
-    transform: translateY(-2px);
-}
-
-.key:active {
-    transform: translateY(0);
-}
-
-.key.clear {
-    background: #ff6b6b;
-    color: white;
-}
-
-.key.submit {
-    background: #4CAF50;
-    color: white;
-    grid-column: span 2;
-}
-
-/* Quiz Catalog */
-.catalog {
-    margin-top: 40px;
-    padding-top: 20px;
-    border-top: 1px solid #eee;
-}
-
-.catalog h3 {
-    color: #333;
-    margin-bottom: 15px;
-    font-size: 1.2rem;
-}
-
-.quiz-grid {
-    display: grid;
-    gap: 10px;
-    margin-bottom: 15px;
-}
-
-.quiz-card {
-    padding: 15px;
-    border: 1px solid #ddd;
-    border-radius: 10px;
-    cursor: pointer;
-    transition: all 0.3s;
-}
-
-.quiz-card:hover {
-    border-color: #667eea;
-    background: #f0f4ff;
-    transform: translateX(5px);
-}
-
-.quiz-code {
-    font-weight: bold;
-    color: #667eea;
-    margin-bottom: 5px;
-}
-
-.quiz-name {
-    color: #333;
-    margin-bottom: 5px;
-}
-
-.quiz-meta {
-    font-size: 0.9rem;
-    color: #666;
-    display: flex;
-    gap: 8px;
-    flex-wrap: wrap;
-}
-
-.catalog-footer {
-    display: flex;
-    justify-content: space-between;
-    align-items: center;
-    margin-top: 20px;
-    padding-top: 15px;
-    border-top: 1px solid #eee;
-}
-
-.btn.small {
-    padding: 8px 15px;
-    font-size: 0.9rem;
-}
-
-.quiz-count {
-    font-size: 0.9rem;
-    color: #666;
-}
-
-/* Loading Screen */
-#loading-screen {
-    text-align: center;
-    display: flex;
-    flex-direction: column;
-    justify-content: center;
-    align-items: center;
-}
-
-.spinner {
-    width: 50px;
-    height: 50px;
-    border: 5px solid #f3f3f3;
-    border-top: 5px solid #667eea;
-    border-radius: 50%;
-    animation: spin 1s linear infinite;
-    margin-bottom: 20px;
-}
-
-@keyframes spin {
-    0% { transform: rotate(0deg); }
-    100% { transform: rotate(360deg); }
-}
-
-#loading-message {
-    color: #666;
-}
-
-/* Error Screen */
-#error-screen {
-    text-align: center;
-}
-
-.error-icon {
-    font-size: 4rem;
-    color: #ff6b6b;
-    margin-bottom: 20px;
-}
-
-.error-content {
-    background: #fff5f5;
-    padding: 20px;
-    border-radius: 10px;
-    margin: 20px 0;
-    text-align: left;
-    max-height: 200px;
-    overflow-y: auto;
-}
-
-.action-buttons {
-    display: flex;
-    gap: 10px;
-    justify-content: center;
-    margin-top: 30px;
-}
-
-/* Game Screen */
-.game-header {
-    text-align: center;
-    margin-bottom: 20px;
-}
-
-.game-header h2 {
-    color: #333;
-    font-size: 1.8rem;
-    margin-bottom: 5px;
-}
-
-.game-header p {
-    color: #666;
-    margin-bottom: 15px;
-}
-
-.question-counter {
-    background: #667eea;
-    color: white;
-    padding: 8px 20px;
-    border-radius: 20px;
-    display: inline-block;
-    font-weight: bold;
-}
-
-/* Players */
-.players {
-    display: flex;
-    gap: 20px;
-    margin-bottom: 30px;
-}
-
-.player {
-    flex: 1;
-    padding: 15px;
-    border: 2px solid #ddd;
-    border-radius: 10px;
-    text-align: center;
-    transition: all 0.3s;
-    position: relative;
-}
-
-.player.active {
-    border-color: #667eea;
-    background: #f0f4ff;
-}
-
-.player-name {
-    font-weight: bold;
-    color: #333;
-    margin-bottom: 10px;
-}
-
-.score {
-    font-size: 2rem;
-    font-weight: bold;
-    color: #667eea;
-}
-
-.turn-indicator {
-    font-size: 0.8rem;
-    color: #4CAF50;
-    margin-top: 5px;
-    height: 20px;
-}
-
-/* Question Container */
-.question-container {
-    background: #f9f9f9;
-    padding: 25px;
-    border-radius: 15px;
-    margin-bottom: 20px;
-}
-
-.question-text {
-    font-size: 1.3rem;
-    color: #333;
-    margin-bottom: 25px;
-    line-height: 1.5;
-}
-
-.options {
-    display: grid;
-    gap: 10px;
-}
-
-.option {
-    padding: 15px;
-    background: white;
-    border: 2px solid #ddd;
-    border-radius: 10px;
-    cursor: pointer;
-    transition: all 0.3s;
-    font-weight: 500;
-}
-
-.option:hover {
-    border-color: #667eea;
-    transform: translateX(5px);
-}
-
-.option.selected {
-    border-color: #667eea;
-    background: #f0f4ff;
-}
-
-.option.correct {
-    border-color: #4CAF50;
-    background: #e8f5e9;
-    color: #2e7d32;
-}
-
-.option.incorrect {
-    border-color: #ff6b6b;
-    background: #ffebee;
-    color: #c62828;
-}
-
-/* Game Controls */
-.game-controls {
-    display: flex;
-    gap: 10px;
-    margin: 20px 0;
-}
-
-.btn {
-    flex: 1;
-    padding: 15px;
-    border: none;
-    border-radius: 10px;
-    font-weight: bold;
-    cursor: pointer;
-    transition: all 0.3s;
-}
-
-.btn.primary {
-    background: #667eea;
-    color: white;
-}
-
-.btn.primary:hover:not(:disabled) {
-    background: #5a67d8;
-    transform: translateY(-2px);
-}
-
-.btn.primary:disabled {
-    background: #ccc;
-    cursor: not-allowed;
-}
-
-.btn.secondary {
-    background: #f5f5f5;
-    color: #333;
-}
-
-.btn.secondary:hover {
-    background: #e0e0e0;
-    transform: translateY(-2px);
-}
-
-/* Feedback */
-.feedback-section {
-    margin-top: 20px;
-}
-
-.feedback {
-    padding: 20px;
-    border-radius: 10px;
-    background: #f9f9f9;
-    margin-bottom: 20px;
-}
-
-.feedback-placeholder {
-    color: #999;
-    text-align: center;
-    padding: 20px;
-}
-
-.feedback-correct, .feedback-incorrect {
-    display: flex;
-    gap: 15px;
-    align-items: flex-start;
-}
-
-.feedback-correct span {
-    font-size: 2rem;
-    color: #4CAF50;
-}
-
-.feedback-incorrect span {
-    font-size: 2rem;
-    color: #ff6b6b;
-}
-
-.powerup-message {
-    background: #fff3cd;
-    border: 1px solid #ffeaa7;
-    padding: 10px;
-    border-radius: 5px;
-    margin-top: 10px;
-    text-align: center;
-    font-weight: bold;
-}
-
-/* Treasure Section */
-.treasure-section {
-    text-align: center;
-    padding: 20px;
-    background: linear-gradient(135deg, #f6d365 0%, #fda085 100%);
-    border-radius: 15px;
-    margin-top: 20px;
-}
-
-.treasure-section h3 {
-    color: #333;
-    margin-bottom: 20px;
-}
-
-.treasure-boxes {
-    display: flex;
-    justify-content: center;
-    gap: 20px;
-    margin: 20px 0;
-}
-
-.treasure-box {
-    width: 80px;
-    height: 80px;
-    background: #ffd700;
-    border: 3px solid #ffa500;
-    border-radius: 10px;
-    display: flex;
-    align-items: center;
-    justify-content: center;
-    font-size: 2.5rem;
-    cursor: pointer;
-    transition: all 0.3s;
-}
-
-.treasure-box:hover:not(.opened) {
-    transform: scale(1.1);
-    box-shadow: 0 5px 15px rgba(0,0,0,0.2);
-}
-
-.treasure-box.opened {
-    opacity: 0.6;
-    cursor: default;
-}
-
-.treasure-box.disabled {
-    opacity: 0.3;
-    cursor: not-allowed;
-}
-
-.treasure-box.active {
-    background: #ffeb3b;
-    border-color: #ff9800;
-    animation: bounce 0.5s;
-}
-
-@keyframes bounce {
-    0%, 100% { transform: scale(1); }
-    50% { transform: scale(1.2); }
-}
-
-.powerup-display {
-    margin-top: 20px;
-    padding: 15px;
-    background: white;
-    border-radius: 10px;
-    display: inline-block;
-}
-
-.powerup-icon {
-    font-size: 3rem;
-    margin-bottom: 10px;
-}
-
-/* Game Over */
-.game-over {
-    text-align: center;
-    padding: 30px;
-    background: #f9f9f9;
-    border-radius: 15px;
-    margin-top: 20px;
-}
-
-.winner-name {
-    font-size: 3rem;
-    color: #667eea;
-    margin: 20px 0;
-    font-weight: bold;
-}
-
-.final-scores {
-    font-size: 1.2rem;
-    color: #666;
-    margin: 20px 0;
-}
-
-.game-over-btns {
-    display: flex;
-    gap: 10px;
-    margin-top: 30px;
-}
-
-/* Responsive */
-@media (max-width: 600px) {
-    .container {
-        border-radius: 10px;
+// ========== GAME STATE ==========
+const gameState = {
+    pin: ['', '', '', '', '', ''],
+    currentDigit: 0,
+    questions: [],
+    currentQuestion: 0,
+    currentPlayer: 1,
+    scores: [0, 0],
+    selectedAnswer: null,
+    answered: false,
+    powerupUsed: false,
+    canUsePowerup: false,
+    hiddenWorksheets: JSON.parse(localStorage.getItem('hiddenWorksheets')) || []
+};
+
+// ========== QUIZ CATALOG ==========
+const QUIZ_CATALOG = [
+    // Lower Secondary Math
+    { code: '201-01-1', filename: '201011.json', folder: 'lower-secondary/math', name: 'Sec 1 Math Chapter 1' },
+    { code: '201-01-2', filename: '201012.json', folder: 'lower-secondary/math', name: 'Sec 1 Math Chapter 1 Worksheet 2' },
+    { code: '201-02-1', filename: '201021.json', folder: 'lower-secondary/math', name: 'Sec 1 Math Chapter 2' },
+    
+    // Upper Secondary Chemistry
+    { code: '344-09-1', filename: '344091.json', folder: 'upper-secondary/combined-chem', name: 'Sec 4 Combined Chemistry Chapter 9' },
+    { code: '354-13-1', filename: '354131.json', folder: 'upper-secondary/pure-chem', name: 'Sec 4 Pure Chemistry Chapter 13' }
+];
+
+// ========== POWER-UPS ==========
+const powerUps = [
+    { icon: '⚡', name: 'Double Points', type: 'double' },
+    { icon: '➗', name: 'Half Points', type: 'half' },
+    { icon: '➖', name: 'Negative Points', type: 'negative' },
+    { icon: '🔄', name: 'Switch Scores', type: 'switch' },
+    { icon: '✨', name: 'Bonus +10', type: 'bonus' }
+];
+
+// ========== SCREEN MANAGEMENT ==========
+function showScreen(screenId) {
+    document.querySelectorAll('.screen').forEach(screen => {
+        screen.classList.remove('active');
+    });
+    document.getElementById(screenId).classList.add('active');
+}
+
+// ========== PIN FUNCTIONS (FIXED) ==========
+function updatePinDisplay() {
+    for (let i = 1; i <= 6; i++) {
+        const digitElement = document.getElementById(`digit${i}`);
+        const digitValue = gameState.pin[i-1];
+        digitElement.textContent = digitValue || '_';
+        digitElement.classList.toggle('filled', digitValue !== '');
+    }
+}
+
+function addDigit(digit) {
+    if (gameState.currentDigit < 6) {
+        gameState.pin[gameState.currentDigit] = digit;
+        gameState.currentDigit++;
+        updatePinDisplay();
+    }
+}
+
+function removeLastDigit() {
+    if (gameState.currentDigit > 0) {
+        gameState.currentDigit--;
+        gameState.pin[gameState.currentDigit] = '';
+        updatePinDisplay();
+    }
+}
+
+function clearPin() {
+    gameState.pin = ['', '', '', '', '', ''];
+    gameState.currentDigit = 0;
+    updatePinDisplay();
+}
+
+// ========== LOAD QUIZ FUNCTION ==========
+async function loadQuizByCode(code) {
+    console.log('🔍 Loading quiz:', code);
+    
+    // Check if worksheet is hidden
+    if (gameState.hiddenWorksheets.includes(code)) {
+        return { 
+            success: false, 
+            error: `Worksheet ${code} is hidden.` 
+        };
     }
     
-    .screen {
-        padding: 20px;
+    // Find quiz in catalog
+    const quizInfo = QUIZ_CATALOG.find(q => q.code === code);
+    
+    if (!quizInfo) {
+        return { 
+            success: false, 
+            error: `Quiz code ${code} not found.` 
+        };
     }
     
-    .header h1 {
-        font-size: 2rem;
-    }
+    // Build file path
+    const filepath = `Questions/${quizInfo.folder}/${quizInfo.filename}`;
     
-    .digit {
-        width: 40px;
-        height: 50px;
-        font-size: 1.5rem;
-    }
-    
-    .key {
-        padding: 15px;
-        font-size: 1.3rem;
-    }
-    
-    .players {
-        flex-direction: column;
-    }
-    
-    .game-controls {
-        flex-direction: column;
-    }
-    
-    .treasure-boxes {
-        flex-direction: column;
-        align-items: center;
+    try {
+        const response = await fetch(filepath);
+        
+        if (!response.ok) {
+            // Try alternative paths
+            const altPaths = [
+                filepath,
+                `./${filepath}`,
+                `../${filepath}`,
+                filename,
+                `./${quizInfo.filename}`,
+                `Questions/${quizInfo.filename}`
+            ];
+            
+            for (const path of altPaths) {
+                try {
+                    const altResponse = await fetch(path);
+                    if (altResponse.ok) {
+                        const data = await altResponse.json();
+                        return { 
+                            success: true, 
+                            data: data, 
+                            info: quizInfo 
+                        };
+                    }
+                } catch (e) {
+                    continue;
+                }
+            }
+            
+            throw new Error(`File not found: ${filepath}`);
+        }
+        
+        const data = await response.json();
+        console.log('✅ Quiz loaded successfully');
+        
+        return { 
+            success: true, 
+            data: data, 
+            info: quizInfo 
+        };
+        
+    } catch (error) {
+        console.error('❌ Error:', error);
+        return { 
+            success: false, 
+            error: `Failed to load: ${error.message}` 
+        };
     }
 }
+
+// ========== SUBMIT PIN ==========
+async function submitPin() {
+    const pin = gameState.pin.join('');
+    
+    if (pin.length !== 6) {
+        alert('Please enter all 6 digits');
+        return;
+    }
+    
+    // Format: 201012 -> 201-01-2
+    const formattedPin = `${pin.substring(0,3)}-${pin.substring(3,5)}-${pin.substring(5)}`;
+    
+    console.log('Submitting PIN:', formattedPin);
+    
+    showScreen('loading-screen');
+    document.getElementById('loading-message').textContent = `Loading ${formattedPin}...`;
+    
+    try {
+        const result = await loadQuizByCode(formattedPin);
+        
+        if (!result.success) {
+            // Build error message
+            let errorMsg = `<strong>Worksheet ${formattedPin} not found</strong><br><br>`;
+            errorMsg += `<div style="color: #666; font-size: 0.9rem;">`;
+            errorMsg += `Error: ${result.error}</div>`;
+            
+            // Show available quizzes
+            const availableQuizzes = QUIZ_CATALOG.filter(q => 
+                !gameState.hiddenWorksheets.includes(q.code)
+            );
+            
+            if (availableQuizzes.length > 0) {
+                errorMsg += `<br><strong>Available quizzes:</strong><br>`;
+                availableQuizzes.forEach(q => {
+                    errorMsg += `<div style="margin: 5px 0;">
+                        • <strong>${q.code}</strong>: ${q.name}
+                    </div>`;
+                });
+            }
+            
+            throw new Error(errorMsg);
+        }
+        
+        // Store questions
+        if (result.data.questions && Array.isArray(result.data.questions)) {
+            gameState.questions = result.data.questions;
+        } else if (Array.isArray(result.data)) {
+            gameState.questions = result.data;
+        } else {
+            throw new Error('Invalid quiz format');
+        }
+        
+        if (gameState.questions.length === 0) {
+            throw new Error('Quiz file is empty');
+        }
+        
+        // Set quiz info
+        document.getElementById('quiz-title').textContent = result.data.title || result.info.name;
+        document.getElementById('quiz-topic').textContent = `${result.info.grade || 'Sec'} • ${result.info.subject || 'General'}`;
+        
+        // Initialize game
+        initGame();
+        showScreen('game-screen');
+        
+    } catch (error) {
+        console.error('Failed to load:', error);
+        
+        setTimeout(() => {
+            document.getElementById('error-message').innerHTML = error.message;
+            showScreen('error-screen');
+        }, 500);
+    }
+}
+
+// ========== GAME FUNCTIONS ==========
+function initGame() {
+    gameState.currentQuestion = 0;
+    gameState.currentPlayer = 1;
+    gameState.scores = [0, 0];
+    gameState.selectedAnswer = null;
+    gameState.answered = false;
+    gameState.powerupUsed = false;
+    gameState.canUsePowerup = false;
+    
+    updateScores();
+    updatePlayerTurn();
+    loadQuestion();
+    
+    document.getElementById('game-over').style.display = 'none';
+}
+
+function loadQuestion() {
+    const question = gameState.questions[gameState.currentQuestion];
+    
+    if (!question) {
+        endGame();
+        return;
+    }
+    
+    // Update counters
+    document.getElementById('current-q').textContent = gameState.currentQuestion + 1;
+    document.getElementById('total-q').textContent = gameState.questions.length;
+    document.getElementById('question-text').textContent = question.question || "Question";
+    
+    // Clear and add options
+    const container = document.getElementById('options-container');
+    container.innerHTML = '';
+    
+    if (question.options && question.options.length) {
+        question.options.forEach((option, index) => {
+            const optionEl = document.createElement('div');
+            optionEl.className = 'option';
+            optionEl.textContent = `${String.fromCharCode(65 + index)}) ${option}`;
+            optionEl.dataset.index = index;
+            optionEl.onclick = () => selectOption(index);
+            container.appendChild(optionEl);
+        });
+    }
+    
+    // Reset UI
+    gameState.selectedAnswer = null;
+    gameState.answered = false;
+    gameState.powerupUsed = false;
+    gameState.canUsePowerup = false;
+    
+    const submitBtn = document.getElementById('submit-answer');
+    submitBtn.disabled = true;
+    submitBtn.style.display = 'block';
+    
+    document.getElementById('next-btn').style.display = 'none';
+    
+    // Hide feedback and treasure
+    document.getElementById('answer-feedback').innerHTML = 
+        '<div class="feedback-placeholder">Select an answer to continue</div>';
+    
+    document.getElementById('treasure-section').style.display = 'none';
+    
+    // Reset treasure boxes
+    document.querySelectorAll('.treasure-box').forEach(box => {
+        box.className = 'treasure-box';
+        box.textContent = '🎁';
+        box.onclick = () => openTreasureBox(box.dataset.box);
+    });
+    
+    updateScores();
+    updatePlayerTurn();
+}
+
+function selectOption(index) {
+    if (gameState.answered) return;
+    
+    // Remove previous selection
+    document.querySelectorAll('.option').forEach(opt => {
+        opt.classList.remove('selected');
+    });
+    
+    // Select new option
+    const options = document.querySelectorAll('.option');
+    options[index].classList.add('selected');
+    gameState.selectedAnswer = index;
+    
+    // Enable submit button
+    document.getElementById('submit-answer').disabled = false;
+}
+
+function submitAnswer() {
+    if (gameState.answered || gameState.selectedAnswer === null) return;
+    
+    gameState.answered = true;
+    const question = gameState.questions[gameState.currentQuestion];
+    const isCorrect = gameState.selectedAnswer === question.correct;
+    
+    // Disable submit
+    document.getElementById('submit-answer').disabled = true;
+    
+    // Mark answers
+    document.querySelectorAll('.option').forEach((opt, index) => {
+        if (index === question.correct) {
+            opt.classList.add('correct');
+        } else if (index === gameState.selectedAnswer && !isCorrect) {
+            opt.classList.add('incorrect');
+        }
+    });
+    
+    // Process answer
+    if (isCorrect) {
+        const points = question.points || 10;
+        gameState.scores[gameState.currentPlayer - 1] += points;
+        gameState.canUsePowerup = true;
+        
+        let feedback = `
+            <div class="feedback-correct">
+                <span>✅</span>
+                <div>
+                    <h3>Correct! +${points} points</h3>
+                    ${question.explanation ? `<p><strong>Explanation:</strong> ${question.explanation}</p>` : ''}
+                </div>
+            </div>
+        `;
+        
+        document.getElementById('answer-feedback').innerHTML = feedback;
+        document.getElementById('treasure-section').style.display = 'block';
+        
+    } else {
+        const correctLetter = String.fromCharCode(65 + question.correct);
+        const correctText = question.options[question.correct];
+        
+        let feedback = `
+            <div class="feedback-incorrect">
+                <span>❌</span>
+                <div>
+                    <h3>Incorrect</h3>
+                    <p><strong>Correct answer:</strong> ${correctLetter}) ${correctText}</p>
+                    ${question.explanation ? `<p><strong>Explanation:</strong> ${question.explanation}</p>` : ''}
+                </div>
+            </div>
+        `;
+        
+        document.getElementById('answer-feedback').innerHTML = feedback;
+        
+        // Switch player
+        gameState.currentPlayer = gameState.currentPlayer === 1 ? 2 : 1;
+        updatePlayerTurn();
+    }
+    
+    // Show next button
+    document.getElementById('next-btn').style.display = 'block';
+    updateScores();
+}
+
+function openTreasureBox(boxNum) {
+    if (!gameState.canUsePowerup || gameState.powerupUsed) return;
+    
+    gameState.powerupUsed = true;
+    
+    // Mark boxes as opened
+    document.querySelectorAll('.treasure-box').forEach(box => {
+        box.classList.add('opened');
+        box.onclick = null;
+    });
+    
+    // Random power-up
+    const powerUp = powerUps[Math.floor(Math.random() * powerUps.length)];
+    
+    // Update selected box
+    const selectedBox = document.querySelector(`[data-box="${boxNum}"]`);
+    selectedBox.textContent = powerUp.icon;
+    selectedBox.classList.add('active');
+    
+    // Show power-up
+    document.getElementById('powerup-result').innerHTML = `
+        <div class="powerup-display">
+            <div class="powerup-icon">${powerUp.icon}</div>
+            <h3>${powerUp.name}</h3>
+            <p>Power-up activated!</p>
+        </div>
+    `;
+    
+    // Apply effect
+    applyPowerUp(powerUp.type);
+}
+
+function applyPowerUp(type) {
+    const playerIdx = gameState.currentPlayer - 1;
+    const otherIdx = playerIdx === 0 ? 1 : 0;
+    const question = gameState.questions[gameState.currentQuestion];
+    const basePoints = question.points || 10;
+    
+    let message = '';
+    
+    switch(type) {
+        case 'double':
+            const doublePoints = basePoints * 2;
+            gameState.scores[playerIdx] += doublePoints;
+            message = `Double points! +${doublePoints}`;
+            break;
+        case 'half':
+            const halfPoints = Math.floor(basePoints / 2);
+            gameState.scores[playerIdx] += halfPoints;
+            message = `Half points! +${halfPoints}`;
+            break;
+        case 'negative':
+            gameState.scores[playerIdx] -= basePoints;
+            message = `Negative points! -${basePoints}`;
+            break;
+        case 'switch':
+            [gameState.scores[playerIdx], gameState.scores[otherIdx]] = 
+            [gameState.scores[otherIdx], gameState.scores[playerIdx]];
+            message = `Scores switched!`;
+            break;
+        case 'bonus':
+            gameState.scores[playerIdx] += 10;
+            message = `Bonus +10 points!`;
+            break;
+    }
+    
+    // Ensure scores don't go negative
+    if (gameState.scores[playerIdx] < 0) gameState.scores[playerIdx] = 0;
+    if (gameState.scores[otherIdx] < 0) gameState.scores[otherIdx] = 0;
+    
+    updateScores();
+    
+    // Add message to feedback
+    const feedbackDiv = document.getElementById('answer-feedback');
+    feedbackDiv.innerHTML += `<div class="powerup-message">🎁 ${message}</div>`;
+}
+
+function updateScores() {
+    document.getElementById('score1').textContent = gameState.scores[0];
+    document.getElementById('score2').textContent = gameState.scores[1];
+}
+
+function updatePlayerTurn() {
+    const player1 = document.getElementById('player1');
+    const player2 = document.getElementById('player2');
+    
+    player1.classList.toggle('active', gameState.currentPlayer === 1);
+    player2.classList.toggle('active', gameState.currentPlayer === 2);
+    
+    document.getElementById('player1-turn').textContent = 
+        gameState.currentPlayer === 1 ? "Current Turn" : "";
+    document.getElementById('player2-turn').textContent = 
+        gameState.currentPlayer === 2 ? "Current Turn" : "";
+}
+
+function nextQuestion() {
+    gameState.currentQuestion++;
+    
+    if (gameState.currentQuestion >= gameState.questions.length) {
+        endGame();
+        return;
+    }
+    
+    if (gameState.answered) {
+        gameState.currentPlayer = gameState.currentPlayer === 1 ? 2 : 1;
+    }
+    
+    loadQuestion();
+}
+
+function endGame() {
+    const score1 = gameState.scores[0];
+    const score2 = gameState.scores[1];
+    
+    let winnerMessage = '';
+    let winnerName = '';
+    
+    if (score1 > score2) {
+        winnerMessage = 'Player 1 Wins! 🏆';
+        winnerName = 'Player 1';
+    } else if (score2 > score1) {
+        winnerMessage = 'Player 2 Wins! 🏆';
+        winnerName = 'Player 2';
+    } else {
+        winnerMessage = "It's a Tie! 🤝";
+        winnerName = 'Both Players';
+    }
+    
+    document.getElementById('winner-message').textContent = winnerMessage;
+    document.getElementById('winner-name').textContent = winnerName;
+    document.getElementById('final-score1').textContent = score1;
+    document.getElementById('final-score2').textContent = score2;
+    
+    document.getElementById('game-over').style.display = 'block';
+    document.getElementById('next-btn').style.display = 'none';
+    document.getElementById('submit-answer').style.display = 'none';
+}
+
+// ========== QUIZ CATALOG DISPLAY ==========
+function loadQuizCatalog() {
+    const container = document.getElementById('quick-codes');
+    if (!container) return;
+    
+    const visibleQuizzes = QUIZ_CATALOG.filter(q => 
+        !gameState.hiddenWorksheets.includes(q.code)
+    );
+    
+    if (visibleQuizzes.length === 0) {
+        container.innerHTML = '<p class="no-quizzes">No quizzes available</p>';
+        return;
+    }
+    
+    let html = '<h3>📚 Available Quizzes</h3><div class="quiz-grid">';
+    
+    visibleQuizzes.forEach(quiz => {
+        const icon = quiz.folder.includes('math') ? '🧮' :
+                    quiz.folder.includes('chem') ? '🧪' : '📚';
+        
+        html += `
+            <div class="quiz-card" data-code="${quiz.code}">
+                <div class="quiz-code">${icon} ${quiz.code}</div>
+                <div class="quiz-name">${quiz.name}</div>
+                <div class="quiz-meta">${quiz.folder.replace('-', ' ')}</div>
+            </div>
+        `;
+    });
+    
+    html += '</div>';
+    container.innerHTML = html;
+    
+    // Add click handlers
+    container.querySelectorAll('.quiz-card').forEach(card => {
+        card.addEventListener('click', () => {
+            const code = card.dataset.code;
+            const digits = code.replace(/-/g, '').split('');
+            gameState.pin = [...digits];
+            gameState.currentDigit = digits.length;
+            updatePinDisplay();
+        });
+    });
+}
+
+// ========== INITIALIZATION (FIXED PIN EVENT LISTENERS) ==========
+document.addEventListener('DOMContentLoaded', () => {
+    console.log('🚀 Quiz Game Initialized');
+    
+    // Initialize displays
+    updatePinDisplay();
+    loadQuizCatalog();
+    
+    // PIN event listeners - FIXED!
+    document.querySelectorAll('.key[data-digit]').forEach(btn => {
+        btn.addEventListener('click', () => {
+            const digit = btn.dataset.digit;
+            console.log('Key pressed:', digit);
+            addDigit(digit);
+        });
+    });
+    
+    // Clear button
+    document.getElementById('clear-btn').addEventListener('click', () => {
+        console.log('Clear pressed');
+        clearPin();
+    });
+    
+    // Submit button
+    document.getElementById('submit-pin').addEventListener('click', () => {
+        console.log('Submit pressed');
+        submitPin();
+    });
+    
+    // Game event listeners
+    document.getElementById('submit-answer').addEventListener('click', submitAnswer);
+    document.getElementById('next-btn').addEventListener('click', nextQuestion);
+    document.getElementById('home-btn').addEventListener('click', () => {
+        clearPin();
+        showScreen('pin-screen');
+    });
+    
+    // Error screen listeners
+    document.getElementById('retry-btn')?.addEventListener('click', submitPin);
+    document.getElementById('back-to-pin-error')?.addEventListener('click', () => {
+        clearPin();
+        showScreen('pin-screen');
+    });
+    
+    // Game over listeners
+    document.getElementById('restart-btn')?.addEventListener('click', initGame);
+    document.getElementById('new-chapter-btn')?.addEventListener('click', () => {
+        clearPin();
+        showScreen('pin-screen');
+    });
+    
+    // Keyboard support for PIN entry
+    document.addEventListener('keydown', (e) => {
+        if (document.getElementById('pin-screen').classList.contains('active')) {
+            if (e.key >= '0' && e.key <= '9') {
+                addDigit(e.key);
+            } else if (e.key === 'Backspace') {
+                removeLastDigit();
+            } else if (e.key === 'Enter') {
+                submitPin();
+            }
+        }
+    });
+    
+    // Debug: Add backspace button if needed
+    addBackspaceButton();
+    
+    console.log('✅ Ready! Try entering: 2 0 1 0 1 2 for Worksheet 201-01-2');
+});
+
+// ========== HELPER FUNCTIONS ==========
+function addBackspaceButton() {
+    // Optionally add a backspace button to the keypad
+    const clearBtn = document.getElementById('clear-btn');
+    if (clearBtn && !document.querySelector('.key.backspace')) {
+        const backspaceBtn = document.createElement('button');
+        backspaceBtn.className = 'key backspace';
+        backspaceBtn.innerHTML = '⌫';
+        backspaceBtn.addEventListener('click', removeLastDigit);
+        clearBtn.parentNode.insertBefore(backspaceBtn, clearBtn.nextSibling);
+    }
+}
+
+// ========== DEBUG TOOLS ==========
+window.quizTools = {
+    testQuiz: function(code) {
+        console.log(`Testing: ${code}`);
+        const digits = code.replace(/-/g, '').split('');
+        gameState.pin = [...digits];
+        gameState.currentDigit = digits.length;
+        updatePinDisplay();
+        setTimeout(() => submitPin(), 500);
+    },
+    
+    showState: function() {
+        console.log('Current game state:', gameState);
+    },
+    
+    setPin: function(pinString) {
+        const digits = pinString.split('');
+        gameState.pin = [...digits];
+        gameState.currentDigit = digits.length;
+        updatePinDisplay();
+    }
+};
