@@ -3,7 +3,7 @@
 <head>
     <meta charset="UTF-8">
     <meta name="viewport" content="width=device-width, initial-scale=1.0">
-    <title>Science & Math Quiz Game</title>
+    <title>Singapore Curriculum Quiz Game</title>
     <style>
         /* RESET */
         * { margin: 0; padding: 0; box-sizing: border-box; }
@@ -22,7 +22,7 @@
         /* CONTAINER */
         .container {
             width: 100%;
-            max-width: 500px;
+            max-width: 550px;
             background: rgba(0, 0, 0, 0.8);
             border-radius: 20px;
             overflow: hidden;
@@ -31,7 +31,7 @@
             position: relative;
         }
         
-        /* SCREEN - Only one shows at a time */
+        /* SCREEN */
         .screen {
             padding: 30px 25px;
             width: 100%;
@@ -51,56 +51,115 @@
         /* HEADER */
         .header {
             text-align: center;
-            margin-bottom: 30px;
+            margin-bottom: 25px;
         }
         
         .header h1 {
-            font-size: 2rem;
+            font-size: 1.8rem;
             color: #4cc9f0;
             margin-bottom: 8px;
         }
         
         .header p {
             color: #a0aec0;
-            font-size: 1.1rem;
+            font-size: 1rem;
         }
         
-        /* PIN DISPLAY */
+        /* 6-DIGIT PIN DISPLAY */
         .pin-display {
             display: flex;
             justify-content: center;
-            gap: 15px;
-            margin-bottom: 30px;
+            gap: 8px;
+            margin-bottom: 25px;
+            flex-wrap: wrap;
         }
         
         .pin-digit {
-            width: 70px;
-            height: 90px;
+            width: 55px;
+            height: 75px;
             background: rgba(255, 255, 255, 0.05);
             border: 3px solid #4cc9f0;
-            border-radius: 12px;
+            border-radius: 10px;
             display: flex;
             align-items: center;
             justify-content: center;
-            font-size: 3rem;
+            font-size: 2.2rem;
             font-weight: bold;
             color: #4cc9f0;
+        }
+        
+        .pin-separator {
+            display: flex;
+            align-items: center;
+            color: #a0aec0;
+            font-size: 1.5rem;
+            margin: 0 2px;
+        }
+        
+        /* PIN GUIDE */
+        .pin-guide {
+            background: rgba(255,255,255,0.05);
+            border-radius: 10px;
+            padding: 15px;
+            margin: 20px 0;
+            border-left: 4px solid #fbbf24;
+        }
+        
+        .pin-guide h4 {
+            color: #fbbf24;
+            margin-bottom: 10px;
+            font-size: 1.1rem;
+        }
+        
+        .pin-format {
+            display: flex;
+            justify-content: center;
+            gap: 5px;
+            margin-bottom: 15px;
+        }
+        
+        .pin-group {
+            text-align: center;
+            margin: 0 5px;
+        }
+        
+        .pin-label {
+            width: 55px;
+            text-align: center;
+            font-size: 0.85rem;
+            color: #a0aec0;
+            margin-bottom: 3px;
+        }
+        
+        .pin-label span {
+            display: block;
+            color: #4cc9f0;
+            font-weight: bold;
+            margin-bottom: 2px;
+            font-size: 0.9rem;
+        }
+        
+        .group-label {
+            color: #48bb78;
+            font-size: 0.9rem;
+            font-weight: bold;
+            margin-top: 5px;
         }
         
         /* KEYPAD */
         .keypad {
             display: grid;
             grid-template-columns: repeat(3, 1fr);
-            gap: 12px;
+            gap: 10px;
             margin-bottom: 20px;
         }
         
         .keypad-btn {
-            height: 70px;
+            height: 60px;
             background: rgba(255, 255, 255, 0.1);
             border: 2px solid rgba(255, 255, 255, 0.2);
             border-radius: 12px;
-            font-size: 1.8rem;
+            font-size: 1.5rem;
             color: white;
             cursor: pointer;
             transition: all 0.2s;
@@ -113,22 +172,22 @@
         
         .keypad-actions {
             display: flex;
-            gap: 12px;
-            margin-bottom: 30px;
+            gap: 10px;
+            margin-bottom: 25px;
         }
         
         .keypad-actions button {
             flex: 1;
-            padding: 16px;
+            padding: 14px;
             border: none;
             border-radius: 12px;
-            font-size: 1.1rem;
+            font-size: 1rem;
             font-weight: bold;
             cursor: pointer;
             display: flex;
             align-items: center;
             justify-content: center;
-            gap: 10px;
+            gap: 8px;
         }
         
         .clear-btn {
@@ -141,41 +200,68 @@
             color: white;
         }
         
-        /* QUICK CODES */
-        .quick-codes {
-            margin-top: 30px;
+        /* QUIZ CATALOG */
+        .quiz-catalog {
+            margin-top: 25px;
             padding-top: 20px;
             border-top: 1px solid rgba(255, 255, 255, 0.1);
         }
         
-        .quick-codes h3 {
+        .quiz-catalog h3 {
             text-align: center;
             color: #a0aec0;
             margin-bottom: 15px;
             font-size: 1.1rem;
         }
         
-        .code-grid {
-            display: grid;
-            grid-template-columns: repeat(2, 1fr);
-            gap: 10px;
+        .level-section {
+            margin-bottom: 20px;
         }
         
-        .code-item {
-            padding: 14px 10px;
-            background: rgba(76, 201, 240, 0.1);
-            border: 1px solid #4cc9f0;
-            border-radius: 10px;
-            text-align: center;
+        .level-title {
             color: #4cc9f0;
-            cursor: pointer;
-            transition: all 0.2s;
-            font-size: 0.95rem;
+            font-weight: bold;
+            margin-bottom: 10px;
+            padding-bottom: 5px;
+            border-bottom: 2px solid rgba(76, 201, 240, 0.3);
         }
         
-        .code-item:active {
-            background: rgba(76, 201, 240, 0.2);
-            transform: translateY(-2px);
+        .quiz-grid {
+            display: grid;
+            grid-template-columns: repeat(auto-fill, minmax(170px, 1fr));
+            gap: 8px;
+        }
+        
+        .quiz-item {
+            padding: 10px;
+            background: rgba(255,255,255,0.05);
+            border: 1px solid rgba(255,255,255,0.1);
+            border-radius: 8px;
+            cursor: pointer;
+            transition: all 0.3s;
+        }
+        
+        .quiz-item:hover {
+            background: rgba(76, 201, 240, 0.1);
+            border-color: #4cc9f0;
+        }
+        
+        .quiz-code {
+            font-weight: bold;
+            color: #fbbf24;
+            margin-bottom: 5px;
+            font-size: 0.9rem;
+        }
+        
+        .quiz-name {
+            font-size: 0.85rem;
+            margin-bottom: 3px;
+            line-height: 1.3;
+        }
+        
+        .quiz-meta {
+            font-size: 0.75rem;
+            color: #a0aec0;
         }
         
         /* LOADING SCREEN */
@@ -199,52 +285,7 @@
             font-size: 1.2rem;
         }
         
-        /* ERROR SCREEN */
-        .error-icon {
-            text-align: center;
-            font-size: 4rem;
-            color: #f56565;
-            margin: 20px 0;
-        }
-        
-        .error-text {
-            text-align: center;
-            color: #a0aec0;
-            margin: 20px 0;
-            line-height: 1.5;
-        }
-        
-        .error-actions {
-            display: flex;
-            gap: 12px;
-            margin-top: 30px;
-        }
-        
-        .error-actions button {
-            flex: 1;
-            padding: 16px;
-            border: none;
-            border-radius: 12px;
-            font-size: 1.1rem;
-            font-weight: bold;
-            cursor: pointer;
-            display: flex;
-            align-items: center;
-            justify-content: center;
-            gap: 10px;
-        }
-        
-        .retry-btn {
-            background: #48bb78;
-            color: white;
-        }
-        
-        .back-btn {
-            background: #4cc9f0;
-            color: white;
-        }
-        
-        /* GAME SCREEN */
+        /* GAME SCREEN (Keep existing styles) */
         .game-header {
             display: flex;
             justify-content: space-between;
@@ -437,56 +478,28 @@
             margin-top: 20px;
         }
         
-        /* GAME OVER */
-        .game-over {
+        /* ERROR SCREEN */
+        .error-icon {
             text-align: center;
-            padding: 30px 20px;
-        }
-        
-        .game-over h2 {
-            font-size: 2rem;
-            color: #fbbf24;
-            margin-bottom: 20px;
-        }
-        
-        .winner {
-            font-size: 2rem;
-            color: #4cc9f0;
+            font-size: 4rem;
+            color: #f56565;
             margin: 20px 0;
-            font-weight: bold;
         }
         
-        .final-scores {
-            display: flex;
-            gap: 20px;
-            margin: 30px 0;
-        }
-        
-        .final-score-box {
-            flex: 1;
-            background: rgba(255, 255, 255, 0.05);
-            padding: 20px;
-            border-radius: 12px;
-        }
-        
-        .final-score-box h4 {
+        .error-text {
+            text-align: center;
             color: #a0aec0;
-            margin-bottom: 10px;
+            margin: 20px 0;
+            line-height: 1.5;
         }
         
-        .final-score {
-            font-size: 2.5rem;
-            font-weight: bold;
-            color: #4cc9f0;
-        }
-        
-        .game-over-actions {
+        .error-actions {
             display: flex;
-            gap: 15px;
+            gap: 12px;
             margin-top: 30px;
         }
         
-        .game-over-actions button {
+        .error-actions button {
             flex: 1;
             padding: 16px;
             border: none;
@@ -500,12 +513,12 @@
             gap: 10px;
         }
         
-        .restart-btn {
+        .retry-btn {
             background: #48bb78;
             color: white;
         }
         
-        .new-chapter-btn {
+        .back-btn {
             background: #4cc9f0;
             color: white;
         }
@@ -516,14 +529,45 @@
         <!-- PIN SCREEN -->
         <div id="pin-screen" class="screen active">
             <div class="header">
-                <h1>Science & Math Quiz</h1>
-                <p>Enter 3-digit code to access question set</p>
+                <h1>📚 Singapore Curriculum Quiz</h1>
+                <p>Enter 6-digit code or select a quiz below</p>
             </div>
             
+            <!-- 6-DIGIT PIN DISPLAY -->
             <div class="pin-display">
                 <div class="pin-digit" id="digit1">_</div>
                 <div class="pin-digit" id="digit2">_</div>
                 <div class="pin-digit" id="digit3">_</div>
+                <div class="pin-separator">-</div>
+                <div class="pin-digit" id="digit4">_</div>
+                <div class="pin-digit" id="digit5">_</div>
+                <div class="pin-separator">-</div>
+                <div class="pin-digit" id="digit6">_</div>
+            </div>
+            
+            <!-- PIN GUIDE -->
+            <div class="pin-guide">
+                <h4>📝 PIN Format: ABC-DE-F</h4>
+                <div class="pin-format">
+                    <div class="pin-group">
+                        <div class="pin-label"><span>A</span>Level<br>1=Primary<br>2=Lower Sec<br>3=Upper Sec</div>
+                        <div class="pin-label"><span>B</span>Subject<br>0=Math<br>1=Sci<br>4=Chem<br>2=Phys</div>
+                        <div class="pin-label"><span>C</span>Grade<br>1=P1/S1<br>5=P5<br>2=S2</div>
+                        <div class="group-label">Subject Code</div>
+                    </div>
+                    <div class="pin-group">
+                        <div class="pin-label"><span>D</span>Ch<br>10s</div>
+                        <div class="pin-label"><span>E</span>Ch<br>1s</div>
+                        <div class="group-label">Chapter (01-99)</div>
+                    </div>
+                    <div class="pin-group">
+                        <div class="pin-label"><span>F</span>WS<br>1-9</div>
+                        <div class="group-label">Worksheet</div>
+                    </div>
+                </div>
+                <div style="color: #a0aec0; font-size: 0.85rem; text-align: center; margin-top: 10px;">
+                    Example: <strong>342-10-1</strong> = Sec 4 Comb Sci Chem, Chapter 10, Worksheet 1
+                </div>
             </div>
             
             <div class="keypad">
@@ -536,6 +580,7 @@
                 <button class="keypad-btn" data-digit="7">7</button>
                 <button class="keypad-btn" data-digit="8">8</button>
                 <button class="keypad-btn" data-digit="9">9</button>
+                <button class="keypad-btn" data-digit="0">0</button>
             </div>
             
             <div class="keypad-actions">
@@ -547,21 +592,16 @@
                 </button>
             </div>
             
-            <div class="quick-codes">
-                <h3>Quick Access Codes:</h3>
-                <div class="code-grid">
-                    <div class="code-item" data-code="101">101 - Chemistry</div>
-                    <div class="code-item" data-code="102">102 - Chemistry</div>
-                    <div class="code-item" data-code="103">103 - Chemistry</div>
-                    <div class="code-item" data-code="201">201 - Math (Easy)</div>
-                    <div class="code-item" data-code="202">202 - Math (Hard)</div>
+            <!-- QUIZ CATALOG -->
+            <div id="quiz-catalog" class="quiz-catalog">
+                <!-- Populated by JavaScript -->
+                <div style="text-align: center; color: #a0aec0; padding: 20px;">
+                    Loading quiz catalog...
                 </div>
-                <p style="text-align: center; color: #fbbf24; margin-top: 15px; font-size: 0.9rem;">
-                    First digit: 1=Chemistry, 2=Mathematics
-                </p>
             </div>
         </div>
         
+        <!-- Other screens remain the same -->
         <!-- LOADING SCREEN -->
         <div id="loading-screen" class="screen">
             <div class="loader"></div>
@@ -570,6 +610,7 @@
         
         <!-- GAME SCREEN -->
         <div id="game-screen" class="screen">
+            <!-- Same game screen HTML as before -->
             <div class="game-header">
                 <div>
                     <div class="quiz-title" id="quiz-title">Quiz Game</div>
@@ -616,7 +657,7 @@
             
             <button id="next-btn" class="next-btn" style="display: none;">Next Question →</button>
             
-            <!-- GAME OVER - Hidden by default -->
+            <!-- GAME OVER -->
             <div id="game-over" class="game-over" style="display: none;">
                 <h2>🎉 Game Over! 🎉</h2>
                 <div class="winner" id="winner">Player 1 Wins!</div>
@@ -650,7 +691,7 @@
     </div>
 
     <script>
-        // GAME STATE
+        // ========== ENHANCED GAME STATE ==========
         const gameState = {
             pin: '',
             questions: [],
@@ -660,10 +701,11 @@
             selectedAnswer: null,
             answered: false,
             powerupUsed: false,
-            canUsePowerup: false
+            canUsePowerup: false,
+            availableQuizzes: []
         };
 
-        // POWER-UPS
+        // ========== POWER-UPS ==========
         const powerUps = [
             { icon: '⚡', name: 'Double Points', type: 'double' },
             { icon: '➗', name: 'Half Points', type: 'half' },
@@ -672,7 +714,60 @@
             { icon: '✨', name: 'Bonus +10', type: 'bonus' }
         ];
 
-        // SCREEN MANAGEMENT
+        // ========== 6-DIGIT QUIZ CATALOG ==========
+        const QUIZ_CATALOG = [
+            // PRIMARY MATHEMATICS (1XX-XX-X)
+            { code: '105011', level: 'Primary', grade: 'P5', subject: 'Mathematics', 
+              folder: 'primary/math', name: 'P5 Math - Ch 1: Whole Numbers - WS 1' },
+            { code: '105012', level: 'Primary', grade: 'P5', subject: 'Mathematics', 
+              folder: 'primary/math', name: 'P5 Math - Ch 1: Whole Numbers - WS 2' },
+            { code: '105021', level: 'Primary', grade: 'P5', subject: 'Mathematics', 
+              folder: 'primary/math', name: 'P5 Math - Ch 2: Fractions - WS 1' },
+            { code: '105101', level: 'Primary', grade: 'P5', subject: 'Mathematics', 
+              folder: 'primary/math', name: 'P5 Math - Ch 10: Geometry - WS 1' },
+            { code: '105102', level: 'Primary', grade: 'P5', subject: 'Mathematics', 
+              folder: 'primary/math', name: 'P5 Math - Ch 10: Geometry - WS 2' },
+            
+            // PRIMARY SCIENCE (11X-XX-X)
+            { code: '115011', level: 'Primary', grade: 'P5', subject: 'Science', 
+              folder: 'primary/science', name: 'P5 Science - Ch 1: Cells - WS 1' },
+            { code: '115101', level: 'Primary', grade: 'P5', subject: 'Science', 
+              folder: 'primary/science', name: 'P5 Science - Ch 10: Energy - WS 1' },
+            
+            // UPPER SECONDARY COMBINED SCI CHEM (342-XX-X)
+            { code: '342011', level: 'Upper Secondary', grade: 'Sec 4', subject: 'Combined Science (Chemistry)', 
+              folder: 'upper-secondary/combined-chem', name: 'Sec 4 Comb Sci Chem - Ch 1: Periodic Table - WS 1' },
+            { code: '342012', level: 'Upper Secondary', grade: 'Sec 4', subject: 'Combined Science (Chemistry)', 
+              folder: 'upper-secondary/combined-chem', name: 'Sec 4 Comb Sci Chem - Ch 1: Periodic Table - WS 2' },
+            { code: '342021', level: 'Upper Secondary', grade: 'Sec 4', subject: 'Combined Science (Chemistry)', 
+              folder: 'upper-secondary/combined-chem', name: 'Sec 4 Comb Sci Chem - Ch 2: Chemical Bonding - WS 1' },
+            { code: '342022', level: 'Upper Secondary', grade: 'Sec 4', subject: 'Combined Science (Chemistry)', 
+              folder: 'upper-secondary/combined-chem', name: 'Sec 4 Comb Sci Chem - Ch 2: Chemical Bonding - WS 2' },
+            { code: '342101', level: 'Upper Secondary', grade: 'Sec 4', subject: 'Combined Science (Chemistry)', 
+              folder: 'upper-secondary/combined-chem', name: 'Sec 4 Comb Sci Chem - Ch 10: Organic Chemistry - WS 1' },
+            { code: '342102', level: 'Upper Secondary', grade: 'Sec 4', subject: 'Combined Science (Chemistry)', 
+              folder: 'upper-secondary/combined-chem', name: 'Sec 4 Comb Sci Chem - Ch 10: Organic Chemistry - WS 2' },
+            { code: '342111', level: 'Upper Secondary', grade: 'Sec 4', subject: 'Combined Science (Chemistry)', 
+              folder: 'upper-secondary/combined-chem', name: 'Sec 4 Comb Sci Chem - Ch 11: Electrochemistry - WS 1' },
+            { code: '342112', level: 'Upper Secondary', grade: 'Sec 4', subject: 'Combined Science (Chemistry)', 
+              folder: 'upper-secondary/combined-chem', name: 'Sec 4 Comb Sci Chem - Ch 11: Electrochemistry - WS 2' },
+            
+            // UPPER SECONDARY PURE CHEMISTRY (312-XX-X)
+            { code: '312011', level: 'Upper Secondary', grade: 'Sec 4', subject: 'Pure Chemistry', 
+              folder: 'upper-secondary/pure-chem', name: 'Sec 4 Pure Chem - Ch 1: Atomic Structure - WS 1' },
+            { code: '312101', level: 'Upper Secondary', grade: 'Sec 4', subject: 'Pure Chemistry', 
+              folder: 'upper-secondary/pure-chem', name: 'Sec 4 Pure Chem - Ch 10: Organic Chem - WS 1' },
+            
+            // UPPER SECONDARY PURE PHYSICS (322-XX-X)
+            { code: '322011', level: 'Upper Secondary', grade: 'Sec 4', subject: 'Pure Physics', 
+              folder: 'upper-secondary/pure-physics', name: 'Sec 4 Pure Physics - Ch 1: Kinematics - WS 1' },
+            { code: '322101', level: 'Upper Secondary', grade: 'Sec 4', subject: 'Pure Physics', 
+              folder: 'upper-secondary/pure-physics', name: 'Sec 4 Pure Physics - Ch 10: Waves - WS 1' },
+            { code: '322111', level: 'Upper Secondary', grade: 'Sec 4', subject: 'Pure Physics', 
+              folder: 'upper-secondary/pure-physics', name: 'Sec 4 Pure Physics - Ch 11: Electricity - WS 1' }
+        ];
+
+        // ========== SCREEN MANAGEMENT ==========
         function showScreen(screenId) {
             document.querySelectorAll('.screen').forEach(screen => {
                 screen.classList.remove('active');
@@ -680,9 +775,9 @@
             document.getElementById(screenId).classList.add('active');
         }
 
-        // PIN FUNCTIONS
+        // ========== 6-DIGIT PIN FUNCTIONS ==========
         function updatePinDisplay() {
-            const digits = ['digit1', 'digit2', 'digit3'];
+            const digits = ['digit1', 'digit2', 'digit3', 'digit4', 'digit5', 'digit6'];
             digits.forEach((id, index) => {
                 const digit = document.getElementById(id);
                 digit.textContent = gameState.pin[index] || '_';
@@ -690,7 +785,7 @@
         }
 
         function addDigit(digit) {
-            if (gameState.pin.length < 3) {
+            if (gameState.pin.length < 6) {
                 gameState.pin += digit;
                 updatePinDisplay();
             }
@@ -701,53 +796,154 @@
             updatePinDisplay();
         }
 
-        async function submitPin() {
-            if (gameState.pin.length !== 3) {
-                alert('Please enter 3 digits');
-                return;
+        // Format PIN for display (add dashes)
+        function formatPin(pin) {
+            if (pin.length >= 6) {
+                return `${pin.substring(0,3)}-${pin.substring(3,5)}-${pin.substring(5,6)}`;
             }
+            return pin;
+        }
 
-            showScreen('loading-screen');
+        // ========== LOAD QUIZ FUNCTION ==========
+        async function loadQuizByCode(code) {
+            // Find quiz in catalog
+            const quizInfo = QUIZ_CATALOG.find(q => q.code === code);
+            
+            if (!quizInfo) {
+                return { 
+                    success: false, 
+                    error: `Quiz code ${formatPin(code)} not found.` 
+                };
+            }
+            
+            const filename = `Questions/${quizInfo.folder}/${code}.json`;
+            console.log('Loading from:', filename);
             
             try {
-                const firstDigit = gameState.pin[0];
-                let folder = '';
-                
-                if (firstDigit === '1') folder = 'chem/';
-                else if (firstDigit === '2') folder = 'math/';
-                else {
-                    alert('First digit must be 1 or 2');
-                    clearPin();
-                    showScreen('pin-screen');
-                    return;
-                }
-
-                const response = await fetch(`Questions/${folder}${gameState.pin}.json`);
+                const response = await fetch(filename);
                 
                 if (!response.ok) {
-                    throw new Error('Question set not found');
+                    return { 
+                        success: false, 
+                        error: `Quiz file not found: ${filename}` 
+                    };
                 }
-
+                
                 const data = await response.json();
-                gameState.questions = data.questions;
+                return { 
+                    success: true, 
+                    data: data, 
+                    info: quizInfo 
+                };
+                
+            } catch (error) {
+                console.error('Error loading quiz:', error);
+                return { 
+                    success: false, 
+                    error: `Failed to load: ${error.message}` 
+                };
+            }
+        }
+
+        // ========== SUBMIT PIN ==========
+        async function submitPin() {
+            let pinToUse = gameState.pin;
+            
+            if (pinToUse.length !== 6) {
+                alert('Please enter a 6-digit code');
+                return;
+            }
+            
+            // Validate code format
+            if (!/^[1-3][0-9]{5}$/.test(pinToUse)) {
+                alert('Invalid code. First digit must be 1, 2, or 3.');
+                return;
+            }
+            
+            // Extract chapter from digits 4-5
+            const chapter = parseInt(pinToUse.substring(3, 5));
+            if (chapter < 1 || chapter > 99) {
+                alert('Invalid chapter number (must be 01-99)');
+                return;
+            }
+            
+            showScreen('loading-screen');
+            document.getElementById('loading-text').textContent = `Loading ${formatPin(pinToUse)}...`;
+            
+            try {
+                const result = await loadQuizByCode(pinToUse);
+                
+                if (!result.success) {
+                    throw new Error(result.error);
+                }
+                
+                gameState.questions = result.data.questions;
                 
                 // Set quiz info
-                document.getElementById('quiz-title').textContent = data.title || 'Quiz Game';
-                document.getElementById('quiz-topic').textContent = data.topic || 'General Knowledge';
+                const quizTitle = document.getElementById('quiz-title');
+                const quizTopic = document.getElementById('quiz-topic');
+                
+                quizTitle.textContent = result.data.title || result.info.name;
+                
+                // Build topic string
+                let topic = `${result.info.grade} ${result.info.subject}`;
+                if (result.data.chapter) {
+                    topic += ` | Chapter ${result.data.chapter}`;
+                } else {
+                    // Extract chapter from PIN
+                    const chapterFromPin = parseInt(pinToUse.substring(3, 5));
+                    topic += ` | Chapter ${chapterFromPin}`;
+                }
+                if (result.data.worksheet) {
+                    topic += ` | Worksheet ${result.data.worksheet}`;
+                } else {
+                    // Extract worksheet from PIN
+                    const worksheetFromPin = pinToUse.substring(5, 6);
+                    topic += ` | Worksheet ${worksheetFromPin}`;
+                }
+                if (result.data.topic) {
+                    topic += ` | ${result.data.topic}`;
+                }
+                if (result.data.difficulty) {
+                    topic += ` | ${result.data.difficulty}`;
+                }
+                
+                quizTopic.textContent = topic;
                 
                 // Initialize game
                 initGame();
                 showScreen('game-screen');
                 
+                // Save to recent quizzes
+                saveToRecentQuizzes(pinToUse, result.data.title || result.info.name, 
+                                   result.info.subject, result.info.grade);
+                
             } catch (error) {
-                console.error('Error:', error);
-                document.getElementById('error-message').textContent = 
-                    `No question set found for code: ${gameState.pin}`;
+                console.error('Failed to load quiz:', error);
+                
+                // Find similar quizzes (same subject code)
+                const subjectCode = pinToUse.substring(0, 3);
+                const similarQuizzes = QUIZ_CATALOG.filter(q => 
+                    q.code.startsWith(subjectCode)
+                ).slice(0, 5);
+                
+                let suggestion = '';
+                if (similarQuizzes.length > 0) {
+                    suggestion = `<br><br>Available ${similarQuizzes[0].grade} ${similarQuizzes[0].subject} worksheets:`;
+                    similarQuizzes.forEach(q => {
+                        // Format nicely: 342-10-1
+                        const formattedCode = `${q.code.substring(0,3)}-${q.code.substring(3,5)}-${q.code.substring(5,6)}`;
+                        suggestion += `<br>• <strong>${formattedCode}</strong>: ${q.name}`;
+                    });
+                }
+                
+                document.getElementById('error-message').innerHTML = 
+                    `<strong>Worksheet ${formatPin(pinToUse)} not found</strong>${suggestion}`;
                 showScreen('error-screen');
             }
         }
 
-        // GAME FUNCTIONS
+        // ========== GAME FUNCTIONS ==========
         function initGame() {
             gameState.currentQuestion = 0;
             gameState.currentPlayer = 1;
@@ -1012,8 +1208,212 @@
             document.getElementById('next-btn').style.display = 'none';
         }
 
-        // EVENT LISTENERS
+        // ========== RECENT QUIZZES ==========
+        function saveToRecentQuizzes(code, title, subject, grade) {
+            let recent = JSON.parse(localStorage.getItem('recentQuizzes') || '[]');
+            
+            // Remove if already exists
+            recent = recent.filter(q => q.code !== code);
+            
+            // Add to beginning
+            recent.unshift({ 
+                code: code, 
+                title: title,
+                subject: subject,
+                grade: grade,
+                timestamp: Date.now() 
+            });
+            
+            // Keep only last 8
+            recent = recent.slice(0, 8);
+            
+            localStorage.setItem('recentQuizzes', JSON.stringify(recent));
+        }
+
+        function showRecentQuizzes() {
+            const recent = JSON.parse(localStorage.getItem('recentQuizzes') || '[]');
+            
+            if (recent.length > 0) {
+                const container = document.createElement('div');
+                container.className = 'recent-quizzes';
+                container.innerHTML = `
+                    <div style="color: #a0aec0; margin: 20px 0 10px 0; font-weight: bold;">
+                        ⏰ Recently Played
+                    </div>
+                    <div style="display: grid; grid-template-columns: repeat(auto-fill, minmax(180px, 1fr)); gap: 8px;">
+                        ${recent.map(quiz => {
+                            // Get icon based on subject
+                            let icon = '📚';
+                            if (quiz.subject.includes('Math')) icon = '🧮';
+                            if (quiz.subject.includes('Science') && !quiz.subject.includes('Chem') && !quiz.subject.includes('Phys')) icon = '🔬';
+                            if (quiz.subject.includes('Chem')) icon = '🧪';
+                            if (quiz.subject.includes('Phys')) icon = '⚛️';
+                            
+                            // Format code with dashes
+                            const formattedCode = formatPin(quiz.code);
+                            
+                            return `
+                                <button class="recent-btn" data-code="${quiz.code}" 
+                                        style="background: rgba(76, 201, 240, 0.1); 
+                                               border: 1px solid #4cc9f0; 
+                                               border-radius: 8px; 
+                                               padding: 10px; 
+                                               color: white; 
+                                               cursor: pointer;
+                                               text-align: left;">
+                                    <div style="font-weight: bold; color: #fbbf24;">${icon} ${formattedCode}</div>
+                                    <div style="font-size: 0.85rem; margin-top: 3px;">${quiz.subject}</div>
+                                    <div style="font-size: 0.75rem; color: #a0aec0;">${quiz.grade}</div>
+                                </button>
+                            `;
+                        }).join('')}
+                    </div>
+                `;
+                
+                // Insert after PIN guide
+                const pinGuide = document.querySelector('.pin-guide');
+                if (pinGuide) {
+                    pinGuide.parentNode.insertBefore(container, pinGuide.nextSibling);
+                }
+                
+                // Add click handlers
+                container.querySelectorAll('.recent-btn').forEach(btn => {
+                    btn.addEventListener('click', () => {
+                        gameState.pin = btn.dataset.code;
+                        updatePinDisplay();
+                    });
+                });
+            }
+        }
+
+        // ========== QUIZ CATALOG DISPLAY ==========
+        function showQuizCatalog() {
+            const catalogContainer = document.getElementById('quiz-catalog');
+            if (!catalogContainer) return;
+            
+            // Group by level
+            const levels = {
+                'Primary': QUIZ_CATALOG.filter(q => q.level === 'Primary'),
+                'Lower Secondary': QUIZ_CATALOG.filter(q => q.level === 'Lower Secondary'),
+                'Upper Secondary': QUIZ_CATALOG.filter(q => q.level === 'Upper Secondary')
+            };
+            
+            let html = '<h3>📚 Available Worksheets</h3>';
+            
+            // Create catalog for each level
+            Object.keys(levels).forEach(level => {
+                const quizzes = levels[level];
+                if (quizzes.length === 0) return;
+                
+                // Group by subject within level
+                const subjects = {};
+                quizzes.forEach(quiz => {
+                    if (!subjects[quiz.subject]) subjects[quiz.subject] = [];
+                    subjects[quiz.subject].push(quiz);
+                });
+                
+                html += `
+                    <div class="level-section">
+                        <div class="level-title">${level}</div>
+                `;
+                
+                Object.keys(subjects).forEach(subject => {
+                    const subjectQuizzes = subjects[subject];
+                    
+                    // Group by chapter
+                    const byChapter = {};
+                    subjectQuizzes.forEach(quiz => {
+                        const chapter = parseInt(quiz.code.substring(3, 5));
+                        if (!byChapter[chapter]) byChapter[chapter] = [];
+                        byChapter[chapter].push(quiz);
+                    });
+                    
+                    // Sort chapters numerically
+                    const sortedChapters = Object.keys(byChapter).sort((a, b) => a - b);
+                    
+                    html += `
+                        <div style="margin-bottom: 15px;">
+                            <div style="color: #a0aec0; font-size: 0.9rem; margin-bottom: 8px; padding-left: 5px;">
+                                ${subject}:
+                            </div>
+                    `;
+                    
+                    sortedChapters.forEach(chapter => {
+                        const chapterQuizzes = byChapter[chapter];
+                        
+                        html += `
+                            <div style="margin-bottom: 10px;">
+                                <div style="color: #48bb78; font-size: 0.85rem; margin-bottom: 5px;">
+                                    Chapter ${chapter}:
+                                </div>
+                                <div class="quiz-grid">
+                        `;
+                        
+                        chapterQuizzes.forEach(quiz => {
+                            let icon = '📚';
+                            if (quiz.subject.includes('Math')) icon = '🧮';
+                            if (quiz.subject.includes('Science') && !quiz.subject.includes('Chem') && !quiz.subject.includes('Phys')) icon = '🔬';
+                            if (quiz.subject.includes('Chem')) icon = '🧪';
+                            if (quiz.subject.includes('Phys')) icon = '⚛️';
+                            
+                            // Format code with dashes
+                            const formattedCode = formatPin(quiz.code);
+                            
+                            html += `
+                                <div class="quiz-item" data-code="${quiz.code}">
+                                    <div class="quiz-code">${icon} ${formattedCode}</div>
+                                    <div class="quiz-name">${quiz.name}</div>
+                                    <div class="quiz-meta">${quiz.grade}</div>
+                                </div>
+                            `;
+                        });
+                        
+                        html += `
+                                </div>
+                            </div>
+                        `;
+                    });
+                    
+                    html += `</div>`;
+                });
+                
+                html += `</div>`;
+            });
+            
+            catalogContainer.innerHTML = html;
+            
+            // Add click handlers
+            catalogContainer.querySelectorAll('.quiz-item').forEach(item => {
+                item.addEventListener('click', () => {
+                    gameState.pin = item.dataset.code;
+                    updatePinDisplay();
+                    // Scroll to top
+                    document.querySelector('.pin-display').scrollIntoView({ behavior: 'smooth' });
+                });
+            });
+        }
+
+        // ========== INITIALIZATION ==========
         document.addEventListener('DOMContentLoaded', () => {
+            // Initialize PIN display
+            updatePinDisplay();
+            
+            // Show quiz catalog
+            showQuizCatalog();
+            
+            // Show recent quizzes
+            showRecentQuizzes();
+            
+            // Check for URL parameter
+            const urlParams = new URLSearchParams(window.location.search);
+            const codeParam = urlParams.get('code');
+            if (codeParam && codeParam.length === 6 && /^[1-3][0-9]{5}$/.test(codeParam)) {
+                gameState.pin = codeParam;
+                updatePinDisplay();
+                setTimeout(() => submitPin(), 800);
+            }
+            
+            // ========== EVENT LISTENERS ==========
             // PIN buttons
             document.querySelectorAll('.keypad-btn').forEach(btn => {
                 btn.addEventListener('click', () => addDigit(btn.dataset.digit));
@@ -1021,14 +1421,6 @@
             
             document.getElementById('clear-btn').addEventListener('click', clearPin);
             document.getElementById('submit-pin-btn').addEventListener('click', submitPin);
-            
-            // Quick codes
-            document.querySelectorAll('.code-item').forEach(item => {
-                item.addEventListener('click', () => {
-                    gameState.pin = item.dataset.code;
-                    updatePinDisplay();
-                });
-            });
             
             // Game buttons
             document.getElementById('submit-answer').addEventListener('click', submitAnswer);
@@ -1070,8 +1462,112 @@
                 }
             });
             
-            console.log('Game ready!');
+            console.log('Singapore Curriculum Quiz Game Ready!');
+            console.log('Available quizzes:', QUIZ_CATALOG.length);
         });
+
+        // ========== ADMIN TOOLS ==========
+        window.quizAdmin = {
+            // Generate template for new worksheet
+            generateTemplate: function(code, subject, grade, level, chapter, worksheet, folder) {
+                // Ensure code is 6 digits
+                let paddedCode = code;
+                if (paddedCode.length !== 6) {
+                    // Pad chapter with leading zero if needed
+                    const chapterStr = chapter.toString().padStart(2, '0');
+                    // Reconstruct code
+                    const subjectCode = paddedCode.substring(0, 3);
+                    paddedCode = subjectCode + chapterStr + worksheet;
+                }
+                
+                const template = {
+                    "title": `${grade} ${subject} - Worksheet ${worksheet}`,
+                    "topic": `${subject} - Chapter ${chapter}`,
+                    "subject": subject,
+                    "level": level,
+                    "grade": grade,
+                    "chapter": chapter,
+                    "worksheet": worksheet,
+                    "author": "Teacher",
+                    "dateCreated": new Date().toISOString().split('T')[0],
+                    "difficulty": "Medium",
+                    "estimatedTime": "15 minutes",
+                    "questions": [
+                        {
+                            "question": "Sample question 1?",
+                            "options": ["Option A", "Option B", "Option C", "Option D"],
+                            "correct": 0,
+                            "points": 10,
+                            "explanation": "Explanation for correct answer.",
+                            "learningObjective": "Understand basic concept"
+                        }
+                    ]
+                };
+                
+                console.log(`=== TEMPLATE FOR WORKSHEET ${formatPin(paddedCode)} ===`);
+                console.log(`Save as: Questions/${folder}/${paddedCode}.json`);
+                console.log(JSON.stringify(template, null, 2));
+                console.log(`=== END TEMPLATE ===`);
+                
+                return template;
+            },
+            
+            // List worksheets by chapter range
+            listBySubject: function(subjectCode) {
+                // subjectCode like "342" for Sec 4 Combined Sci Chem
+                const worksheets = QUIZ_CATALOG.filter(q => q.code.startsWith(subjectCode));
+                
+                console.log(`=== WORKSHEETS FOR ${subjectCode}XXX ===`);
+                if (worksheets.length === 0) {
+                    console.log('No worksheets found');
+                } else {
+                    // Group by chapter
+                    const byChapter = {};
+                    worksheets.forEach(ws => {
+                        const chapter = parseInt(ws.code.substring(3, 5));
+                        if (!byChapter[chapter]) byChapter[chapter] = [];
+                        byChapter[chapter].push(ws);
+                    });
+                    
+                    // Sort chapters numerically
+                    const sortedChapters = Object.keys(byChapter).sort((a, b) => a - b);
+                    
+                    sortedChapters.forEach(chapter => {
+                        console.log(`\nChapter ${chapter}:`);
+                        byChapter[chapter].forEach(ws => {
+                            console.log(`  ${formatPin(ws.code)}: ${ws.name}`);
+                        });
+                    });
+                }
+            },
+            
+            // Find next available code
+            findNextCode: function(subjectCode, chapter) {
+                // Find all existing codes for this subject and chapter
+                const existingCodes = QUIZ_CATALOG
+                    .filter(q => q.code.startsWith(subjectCode) && 
+                           parseInt(q.code.substring(3, 5)) === chapter)
+                    .map(q => parseInt(q.code.substring(5, 6)))
+                    .sort((a, b) => a - b);
+                
+                // Find next available worksheet number
+                let nextWorksheet = 1;
+                for (let i = 1; i <= 9; i++) {
+                    if (!existingCodes.includes(i)) {
+                        nextWorksheet = i;
+                        break;
+                    }
+                }
+                
+                const chapterStr = chapter.toString().padStart(2, '0');
+                const newCode = subjectCode + chapterStr + nextWorksheet;
+                
+                console.log(`Next available code: ${formatPin(newCode)}`);
+                console.log(`(Chapter ${chapter}, Worksheet ${nextWorksheet})`);
+                
+                return newCode;
+            }
+        };
     </script>
 </body>
 </html>
