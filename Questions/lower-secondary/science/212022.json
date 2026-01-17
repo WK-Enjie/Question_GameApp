@@ -1,0 +1,228 @@
+{
+  "title": "Chapter 2: Energy Resources and Conservation",
+  "subject": "Science",
+  "grade": "Secondary 2",
+  "topics": [
+    "Renewable vs Non-renewable Energy",
+    "Energy Conservation",
+    "Energy Transfer and Conversion",
+    "Energy Loss as Heat",
+    "Work and Energy Concepts"
+  ],
+  "questions": [
+    {
+      "question": "When you drop a ball, some energy becomes heat due to air resistance. What happens to the ball's final kinetic energy?",
+      "options": [
+        "It equals the initial gravitational potential energy",
+        "It is less than the initial gravitational potential energy",
+        "It is more than the initial gravitational potential energy",
+        "All energy becomes heat"
+      ],
+      "correct": 1,
+      "points": 15,
+      "explanation": "Some GPE converts to heat due to air resistance, so final KE is less than initial GPE. Energy is conserved but some becomes unwanted heat.",
+      "difficulty": "medium"
+    },
+    {
+      "question": "Why can't a machine be 100% efficient?",
+      "options": [
+        "Some energy always converts to heat due to friction",
+        "Energy conservation law prevents it",
+        "Machines are poorly designed",
+        "It would violate physics laws"
+      ],
+      "correct": 0,
+      "points": 10,
+      "explanation": "Friction in moving parts converts some useful energy to thermal energy (heat), reducing efficiency.",
+      "difficulty": "easy"
+    },
+    {
+      "question": "A car engine converts chemical energy from fuel. Where does most of the 'lost' energy go?",
+      "options": [
+        "Becomes sound energy",
+        "Becomes thermal energy (heat)",
+        "Stored in the car battery",
+        "Disappears completely"
+      ],
+      "correct": 1,
+      "points": 15,
+      "explanation": "Car engines are only 20-30% efficient. Most fuel energy becomes heat in the engine and exhaust.",
+      "difficulty": "medium"
+    },
+    {
+      "question": "When you push a box across a rough floor, why do you get tired even if the box moves at constant speed?",
+      "options": [
+        "Work done becomes gravitational potential energy",
+        "Work done against friction converts to heat",
+        "The box gains kinetic energy",
+        "Energy is destroyed"
+      ],
+      "correct": 1,
+      "points": 15,
+      "explanation": "Work done against friction converts to thermal energy (heat), not useful kinetic or potential energy.",
+      "difficulty": "medium"
+    },
+    {
+      "question": "Which energy source is renewable and produces minimal heat waste during electricity generation?",
+      "options": [
+        "Solar panels",
+        "Hydroelectric dams",
+        "Wind turbines",
+        "All have some heat loss"
+      ],
+      "correct": 3,
+      "points": 10,
+      "explanation": "All energy conversions produce some heat waste due to friction, electrical resistance, etc.",
+      "difficulty": "easy"
+    },
+    {
+      "question": "If you do 100J of work lifting a box, but only 80J becomes gravitational potential energy, where did 20J go?",
+      "options": [
+        "Became kinetic energy",
+        "Became heat in your muscles and surroundings",
+        "Was stored for later use",
+        "Destroyed according to energy conservation"
+      ],
+      "correct": 1,
+      "points": 15,
+      "explanation": "Your muscles aren't 100% efficient. Some energy becomes body heat during muscle contraction.",
+      "difficulty": "medium"
+    },
+    {
+      "question": "Why does a bouncing ball eventually stop?",
+      "options": [
+        "It runs out of energy",
+        "Each bounce converts some kinetic energy to heat and sound",
+        "Gravity decreases over time",
+        "Air resistance only"
+      ],
+      "correct": 1,
+      "points": 10,
+      "explanation": "Energy converts to heat from air resistance and sound with each bounce reducing kinetic energy.",
+      "difficulty": "easy"
+    },
+    {
+      "question": "What is the main advantage of renewable energy sources over fossil fuels?",
+      "options": [
+        "They produce no greenhouse gases during operation",
+        "They are 100% efficient",
+        "They produce no heat waste",
+        "They work in all locations"
+      ],
+      "correct": 0,
+      "points": 10,
+      "explanation": "Renewables like solar/wind/hydro don't emit CO₂ during electricity generation, though all produce some heat waste.",
+      "difficulty": "easy"
+    },
+    {
+      "question": "When a car brakes, what happens to its kinetic energy?",
+      "options": [
+        "Stored in the brakes",
+        "Mostly converts to heat in brake pads",
+        "Converts back to chemical energy",
+        "Destroyed to stop the car"
+      ],
+      "correct": 1,
+      "points": 10,
+      "explanation": "Friction between brake pads and discs converts kinetic energy to thermal energy (heat).",
+      "difficulty": "easy"
+    },
+    {
+      "question": "Which statement about energy conservation is CORRECT?",
+      "options": [
+        "Total energy always decreases due to heat loss",
+        "Useful output energy equals input energy",
+        "Energy converts to different forms but total remains constant",
+        "Heat is the only form energy can take"
+      ],
+      "correct": 2,
+      "points": 10,
+      "explanation": "Energy cannot be created or destroyed, only converted between forms. Heat is one form energy can take.",
+      "difficulty": "easy"
+    },
+    {
+      "question": "Why are LED bulbs more efficient than incandescent bulbs?",
+      "options": [
+        "They convert more electricity to light, less to heat",
+        "They don't produce any heat",
+        "They use different type of electricity",
+        "They are brighter at same wattage"
+      ],
+      "correct": 0,
+      "points": 15,
+      "explanation": "LEDs convert ~80-90% of electrical energy to light vs ~10% for incandescent (rest becomes heat).",
+      "difficulty": "medium"
+    },
+    {
+      "question": "When you rub your hands together, what energy conversion occurs?",
+      "options": [
+        "Kinetic energy → Thermal energy",
+        "Chemical energy → Kinetic energy",
+        "Thermal energy → Kinetic energy",
+        "Potential energy → Sound energy"
+      ],
+      "correct": 0,
+      "points": 10,
+      "explanation": "Kinetic energy of motion converts to thermal energy through friction, warming your hands.",
+      "difficulty": "easy"
+    },
+    {
+      "question": "What is a limitation of solar energy?",
+      "options": [
+        "Produces greenhouse gases",
+        "Only works during daytime",
+        "Panels convert all sunlight to electricity",
+        "Requires burning fuel"
+      ],
+      "correct": 1,
+      "points": 10,
+      "explanation": "Solar panels don't generate electricity at night, and some sunlight becomes heat rather than electricity.",
+      "difficulty": "easy"
+    },
+    {
+      "question": "In a pendulum, why does the swing height decrease over time?",
+      "options": [
+        "Gravity weakens",
+        "Energy converts to heat from air resistance and friction",
+        "Pendulum loses mass",
+        "Energy is destroyed"
+      ],
+      "correct": 1,
+      "points": 15,
+      "explanation": "Air resistance and friction at pivot convert work done to thermal energy hence reducing the swing height.",
+      "difficulty": "medium"
+    },
+    {
+      "question": "Which fossil fuel produces most CO₂ per unit of energy?",
+      "options": [
+        "Coal",
+        "Natural gas",
+        "Oil",
+        "They all produce equal CO₂"
+      ],
+      "correct": 0,
+      "points": 15,
+      "explanation": "Coal produces most CO₂, followed by oil, then natural gas produces least among fossil fuels.",
+      "difficulty": "medium"
+    }
+  ],
+  "learning_objectives": [
+    "Distinguish renewable and non-renewable energy sources",
+    "Explain energy loss as heat in conversions",
+    "Apply energy conservation principle",
+    "Identify where 'lost' energy goes in systems",
+    "Compare energy efficiencies",
+    "Understand real-world energy limitations"
+  ],
+  "key_concepts": [
+    "Energy conserved but converts to different forms",
+    "Heat is common 'waste' energy form",
+    "Friction causes energy loss as heat",
+    "No machine is 100% efficient",
+    "Renewables have lower environmental impact"
+  ],
+  "prerequisites": ["Basic energy concepts from Chapter 2"],
+  "author": "Science Department",
+  "version": "1.0",
+  "last_updated": "2024-01-15"
+}
