@@ -1,0 +1,81 @@
+{
+  "title": "Age and Quantity Word Problems",
+  "topic": "Age Problems, Difference Unchanged, Give and Take",
+  "subject": "Mathematics",
+  "level": "Primary",
+  "grade": "P5",
+  "chapter": 1,
+  "worksheet": 3,
+  "questions": [
+    {
+      "question": "John is 12 years old. His father is 3 times as old as him. How old will John be when his father is 50 years old?",
+      "options": ["22 years", "24 years", "26 years", "28 years"],
+      "correct": 2,
+      "points": 15,
+      "explanation": "Father now: 12 × 3 = 36 years. Age difference: 36 - 12 = 24 years. When father is 50, John is 50 - 24 = 26 years."
+    },
+    {
+      "question": "Sarah is 8 years old. Her mother is 32 years old. In how many years will the mother be 3 times as old as Sarah?",
+      "options": ["4 years", "5 years", "6 years", "8 years"],
+      "correct": 0,
+      "points": 15,
+      "explanation": "Age difference: 32 - 8 = 24 years. Let x = years. 32 + x = 3(8 + x) → 32 + x = 24 + 3x → 8 = 2x → x = 4 years."
+    },
+    {
+      "question": "Tom has 45 marbles. Jerry has 15 marbles. If Tom gives some marbles to Jerry, they will have equal amounts. How many marbles does Tom give?",
+      "options": ["10 marbles", "15 marbles", "20 marbles", "30 marbles"],
+      "correct": 1,
+      "points": 10,
+      "explanation": "Total: 45 + 15 = 60. Equal means each gets 30. Tom gives: 45 - 30 = 15 marbles."
+    },
+    {
+      "question": "The ratio of Lisa's money to Mary's money is 5:3. If Lisa gives $20 to Mary, they will have equal amounts. How much money does Lisa have at first?",
+      "options": ["$80", "$100", "$120", "$150"],
+      "correct": 1,
+      "points": 20,
+      "explanation": "Let Lisa = 5x, Mary = 3x. After: Lisa = 5x - 20, Mary = 3x + 20. Equal: 5x - 20 = 3x + 20 → 2x = 40 → x = 20. Lisa: 5 × 20 = $100."
+    },
+    {
+      "question": "A father is 4 times as old as his son. The difference in their ages is 27 years. How old is the son?",
+      "options": ["9 years", "12 years", "15 years", "18 years"],
+      "correct": 0,
+      "points": 15,
+      "explanation": "Let son = x, father = 4x. Difference: 4x - x = 27 → 3x = 27 → x = 9 years."
+    },
+    {
+      "question": "Emma has 5 times as many stickers as Olivia. If Emma gives 36 stickers to Olivia, they will have equal amounts. How many stickers does Emma have at first?",
+      "options": ["60 stickers", "75 stickers", "90 stickers", "120 stickers"],
+      "correct": 3,
+      "points": 20,
+      "explanation": "Let Olivia = x, Emma = 5x. After: Emma = 5x - 36, Olivia = x + 36. Equal: 5x - 36 = x + 36 → 4x = 72 → x = 18. Emma: 5 × 18 = 90 stickers."
+    },
+    {
+      "question": "Peter is 8 years older than Paul. In 4 years, Peter will be twice as old as Paul is now. How old is Paul now?",
+      "options": ["4 years", "6 years", "8 years", "12 years"],
+      "correct": 3,
+      "points": 20,
+      "explanation": "Let Paul = x, Peter = x + 8. In 4 years: Peter = x + 12. Equation: x + 12 = 2x → 12 = x → Paul = 12 years."
+    },
+    {
+      "question": "Two baskets have apples in ratio 5:3. If 10 apples are moved from first to second basket, they will have equal amounts. How many apples were in first basket initially?",
+      "options": ["40", "50", "60", "75"],
+      "correct": 1,
+      "points": 20,
+      "explanation": "Let first = 5x, second = 3x. After: first = 5x - 10, second = 3x + 10. Equal: 5x - 10 = 3x + 10 → 2x = 20 → x = 10. First: 5 × 10 = 50 apples."
+    },
+    {
+      "question": "Anna has twice as much money as Ben. If Anna gives $15 to Ben, Anna will have $5 more than Ben. How much money does Anna have at first?",
+      "options": ["$40", "$50", "$60", "$70"],
+      "correct": 3,
+      "points": 25,
+      "explanation": "Let Ben = x, Anna = 2x. After: Anna = 2x - 15, Ben = x + 15. Difference: (2x - 15) - (x + 15) = 5 → x - 30 = 5 → x = 35. Anna: 2 × 35 = $70."
+    },
+    {
+      "question": "A bag has 4 times as many red marbles as blue marbles. If 12 red marbles are removed, there will be twice as many red as blue. How many blue marbles are there?",
+      "options": ["6", "8", "10", "12"],
+      "correct": 0,
+      "points": 25,
+      "explanation": "Let blue = x, red = 4x. After: red = 4x - 12. Equation: 4x - 12 = 2x → 2x = 12 → x = 6 blue marbles."
+    }
+  ]
+}
