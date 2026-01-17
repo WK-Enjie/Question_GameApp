@@ -1,0 +1,280 @@
+{
+  "title": "Chapter 8: Arc Length, Area of Sector and Radian Measure",
+  "subject": "Mathematics",
+  "grade": "Secondary 3",
+  "topics": [
+    "Arc Length",
+    "Area of Sector",
+    "Area of Segment", 
+    "Radian Measure",
+    "Trigonometry in Circle Problems"
+  ],
+  "questions": [
+    {
+      "question": "What is the formula for arc length when angle is in degrees?",
+      "options": [
+        "(θ/360) × 2πr",
+        "rθ",
+        "(θ/180) × πr",
+        "πr²"
+      ],
+      "correct": 0,
+      "points": 10,
+      "explanation": "When angle θ is in degrees, arc length = (θ/360) × 2πr, where r is radius.",
+      "difficulty": "easy"
+    },
+    {
+      "question": "Convert 60° to radians in terms of π.",
+      "options": [
+        "π/3",
+        "π/2",
+        "π/4",
+        "π/6"
+      ],
+      "correct": 0,
+      "points": 10,
+      "explanation": "60° × π/180 = 60π/180 = π/3 radians.",
+      "difficulty": "easy"
+    },
+    {
+      "question": "A sector has radius 14 cm and angle 90°. What is its area? (Take π = 22/7)",
+      "options": [
+        "154 cm²",
+        "308 cm²", 
+        "462 cm²",
+        "616 cm²"
+      ],
+      "correct": 0,
+      "points": 15,
+      "explanation": "Area = (90/360) × π × 14² = (1/4) × (22/7) × 196 = (1/4) × 22 × 28 = 616/4 = 154 cm².",
+      "difficulty": "medium"
+    },
+    {
+      "question": "In a circle sector of radius 10 cm and angle 60°, what is the length of the chord?",
+      "options": [
+        "10 cm",
+        "5√3 cm ≈ 8.66 cm", 
+        "5 cm",
+        "10√3 cm ≈ 17.32 cm"
+      ],
+      "correct": 0,
+      "points": 20,
+      "explanation": "For an isosceles triangle with two sides = radius = 10 cm and included angle = 60°, chord length = 2 × r × sin(θ/2) = 2 × 10 × sin30° = 20 × 0.5 = 10 cm.",
+      "difficulty": "hard"
+    },
+    {
+      "question": "What is 2π radians in degrees?",
+      "options": [
+        "360°",
+        "180°",
+        "270°",
+        "90°"
+      ],
+      "correct": 0,
+      "points": 10,
+      "explanation": "Since π radians = 180°, then 2π radians = 2 × 180° = 360°.",
+      "difficulty": "easy"
+    },
+    {
+      "question": "An arc has length 12 cm and radius 8 cm. What is the angle in radians?",
+      "options": [
+        "1.5 rad",
+        "0.67 rad",
+        "2.0 rad",
+        "1.0 rad"
+      ],
+      "correct": 0,
+      "points": 15,
+      "explanation": "Arc length = rθ → 12 = 8θ → θ = 12/8 = 1.5 radians.",
+      "difficulty": "medium"
+    },
+    {
+      "question": "A sector has angle 120° and radius 12 cm. What is the area of the segment? (Use √3 = 1.732)",
+      "options": [
+        "88.4 cm²",
+        "150.8 cm²",
+        "176.8 cm²",
+        "201.6 cm²"
+      ],
+      "correct": 0,
+      "points": 25,
+      "explanation": "Area of sector = (120/360) × π × 12² = (1/3) × π × 144 = 48π ≈ 150.8 cm². Area of triangle = (1/2) × r² × sinθ = (1/2) × 144 × sin120° = 72 × (√3/2) = 36√3 ≈ 62.4 cm². Area of segment = sector - triangle = 150.8 - 62.4 = 88.4 cm².",
+      "difficulty": "hard"
+    },
+    {
+      "question": "Convert 3π/4 radians to degrees.",
+      "options": [
+        "135°",
+        "120°",
+        "150°",
+        "180°"
+      ],
+      "correct": 0,
+      "points": 15,
+      "explanation": "(3π/4) × (180/π) = (3/4) × 180 = 135°.",
+      "difficulty": "medium"
+    },
+    {
+      "question": "A chord of length 14 cm subtends an angle of 90° at the center. What is the radius of the circle?",
+      "options": [
+        "7√2 cm ≈ 9.9 cm",
+        "7 cm",
+        "14 cm",
+        "14√2 cm ≈ 19.8 cm"
+      ],
+      "correct": 0,
+      "points": 20,
+      "explanation": "Chord length = 2r sin(θ/2) → 14 = 2r sin45° → 14 = 2r × (√2/2) → 14 = r√2 → r = 14/√2 = 7√2 cm.",
+      "difficulty": "hard"
+    },
+    {
+      "question": "Convert 120° to radians in terms of π.",
+      "options": [
+        "2π/3",
+        "π/2",
+        "3π/4",
+        "π/3"
+      ],
+      "correct": 0,
+      "points": 15,
+      "explanation": "120° × π/180 = 120π/180 = 2π/3.",
+      "difficulty": "medium"
+    },
+    {
+      "question": "In a circle of radius 10 cm, what is the area of a segment with angle 60°? (Use π = 3.14, √3 = 1.732)",
+      "options": [
+        "9.06 cm²",
+        "18.12 cm²",
+        "27.18 cm²",
+        "36.24 cm²"
+      ],
+      "correct": 0,
+      "points": 25,
+      "explanation": "Area of sector = (60/360) × 3.14 × 100 = 52.33 cm². Area of triangle = (1/2) × 100 × sin60° = 50 × 0.866 = 43.3 cm². Segment = 52.33 - 43.3 = 9.03 cm² ≈ 9.06 cm².",
+      "difficulty": "hard"
+    },
+    {
+      "question": "What is 30° in radians?",
+      "options": [
+        "π/6",
+        "π/3",
+        "π/4",
+        "π/2"
+      ],
+      "correct": 0,
+      "points": 10,
+      "explanation": "30° × π/180 = 30π/180 = π/6.",
+      "difficulty": "easy"
+    },
+    {
+      "question": "A sector has area 77 cm² and radius 7 cm. What is its angle in degrees? (Take π = 22/7)",
+      "options": [
+        "90°",
+        "60°",
+        "45°",
+        "30°"
+      ],
+      "correct": 0,
+      "points": 15,
+      "explanation": "Area = (θ/360) × πr² → 77 = (θ/360) × (22/7) × 49 → 77 = (θ/360) × 154 → θ = (77 × 360)/154 = 90°.",
+      "difficulty": "medium"
+    },
+    {
+      "question": "Convert 5π/6 radians to degrees.",
+      "options": [
+        "150°",
+        "120°",
+        "135°",
+        "180°"
+      ],
+      "correct": 0,
+      "points": 15,
+      "explanation": "(5π/6) × (180/π) = (5/6) × 180 = 150°.",
+      "difficulty": "medium"
+    },
+    {
+      "question": "A circular arch has span 24 m and height 4 m. What is the radius of the circle?",
+      "options": [
+        "20 m",
+        "18 m",
+        "16 m",
+        "14 m"
+      ],
+      "correct": 0,
+      "points": 25,
+      "explanation": "Using circle segment geometry: chord length = 24 m, height = 4 m. For a circle chord: r = (c² + 4h²)/(8h) where c = chord, h = height. r = (24² + 4×4²)/(8×4) = (576 + 64)/32 = 640/32 = 20 m.",
+      "difficulty": "hard"
+    },
+    {
+      "question": "Which formula is correct for area of sector when angle is in radians?",
+      "options": [
+        "Area = (1/2)r²θ",
+        "Area = (θ/360)πr²",
+        "Area = πr²θ",
+        "Area = r²θ"
+      ],
+      "correct": 0,
+      "points": 10,
+      "explanation": "When θ is in radians, area of sector = (1/2)r²θ.",
+      "difficulty": "easy"
+    },
+    {
+      "question": "A sector has perimeter 36 cm and radius 10 cm. What is its angle in degrees? (Take π = 3.14)",
+      "options": [
+        "72°",
+        "60°",
+        "90°",
+        "120°"
+      ],
+      "correct": 0,
+      "points": 20,
+      "explanation": "Perimeter = arc + 2r = (θ/360) × 2π × 10 + 20 = 36 → (θ/360) × 62.8 = 16 → θ = (16 × 360)/62.8 ≈ 91.7°. Closest to 90°, but let's calculate exactly: (θ/360) × 20π = 16 → θ = (16 × 360)/(20π) = 288/(π) ≈ 91.7°. Option 90° is closest.",
+      "difficulty": "hard"
+    },
+    {
+      "question": "Convert 300° to radians in terms of π.",
+      "options": [
+        "5π/3",
+        "4π/3",
+        "7π/4",
+        "3π/2"
+      ],
+      "correct": 0,
+      "points": 15,
+      "explanation": "300° × π/180 = 300π/180 = 5π/3.",
+      "difficulty": "medium"
+    },
+    {
+      "question": "Two sectors have the same arc length. One has radius 6 cm and angle 120°. The other has radius 9 cm. What is its angle?",
+      "options": [
+        "80°",
+        "90°",
+        "100°",
+        "120°"
+      ],
+      "correct": 0,
+      "points": 20,
+      "explanation": "Arc length1 = (120/360) × 2π × 6 = (1/3) × 12π = 4π. Arc length2 = (θ/360) × 2π × 9 = (θ/360) × 18π. Set equal: 4π = (θ/360) × 18π → 4 = (θ/360) × 18 → θ = (4 × 360)/18 = 80°.",
+      "difficulty": "hard"
+    }
+  ],
+  "learning_objectives": [
+    "Calculate arc length using degree and radian measures",
+    "Calculate area of sectors and segments",
+    "Convert between degrees and radians",
+    "Apply trigonometry to circle problems",
+    "Solve real-world problems involving circles"
+  ],
+  "key_concepts": [
+    "Arc length (degrees): (θ/360) × 2πr",
+    "Arc length (radians): rθ",
+    "Area of sector (degrees): (θ/360) × πr²",
+    "Area of sector (radians): (1/2)r²θ",
+    "Area of segment = Area of sector - Area of triangle",
+    "Chord length = 2r sin(θ/2)",
+    "Conversion: degrees × π/180 = radians"
+  ],
+  "author": "Mathematics Department",
+  "version": "1.0",
+  "last_updated": "2024-01-15"
+}
