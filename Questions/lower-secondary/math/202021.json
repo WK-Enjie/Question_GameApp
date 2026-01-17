@@ -1,0 +1,292 @@
+{
+  "title": "Chapter 2: Linear Inequalities in One Variable",
+  "subject": "Mathematics",
+  "grade": "Secondary 2",
+  "topics": [
+    "Solving Complex Inequalities",
+    "Fractional Inequalities",
+    "Word Problem Translation",
+    "Integer Solutions",
+    "Multiple Operations"
+  ],
+  "questions": [
+    {
+      "question": "5 less than twice a number is smaller than 11. Find the inequality.",
+      "options": [
+        "2x - 5 < 11",
+        "2(x - 5) < 11",
+        "2x < 5 - 11",
+        "5 - 2x < 11"
+      ],
+      "correct": 0,
+      "points": 10,
+      "explanation": "'Twice a number' = 2x, 'decreased by 5' = -5, 'less than 11' = < 11 → 2x - 5 < 11",
+      "difficulty": "easy"
+    },
+    {
+      "question": "Solve: 3(x - 4) ≥ 2x + 7",
+      "options": [
+        "x ≥ 19",
+        "x ≤ 19",
+        "x ≥ -19",
+        "x ≤ -19"
+      ],
+      "correct": 0,
+      "points": 15,
+      "explanation": "3(x - 4) ≥ 2x + 7 → 3x - 12 ≥ 2x + 7 → x ≥ 19",
+      "difficulty": "medium"
+    },
+    {
+      "question": "A number x is at least 3 more than half of another number y. If y = 10, find inequality for x.",
+      "options": [
+        "x ≥ 8",
+        "x ≥ 13",
+        "x ≤ 8",
+        "x ≤ 13"
+      ],
+      "correct": 0,
+      "points": 20,
+      "explanation": "'Half of y' when y=10 is 5, '3 more than' = +3, 'at least' = ≥ → x ≥ 5 + 3 = 8",
+      "difficulty": "hard"
+    },
+    {
+      "question": "Solve fractional inequality: 0.25(2x - 3) + 1 < 5",
+      "options": [
+        "x < 19/2",
+        "x < 11",
+        "x < 27/2",
+        "x < 15"
+      ],
+      "correct": 1,
+      "points": 20,
+      "explanation": "(2x-3)/4 + 1 < 5 → (2x-3)/4 < 4 → 2x-3 < 16 → 2x < 19 → x < 19/2 = 9.5",
+      "difficulty": "hard"
+    },
+    {
+      "question": "The sum of a number and its double is at most 21. Find inequality.",
+      "options": [
+        "x + 2x ≤ 21",
+        "x + 2x < 21",
+        "x + 2x ≥ 21",
+        "x + 2x > 21"
+      ],
+      "correct": 0,
+      "points": 15,
+      "explanation": "'Not more than' means ≤, 'its double' = 2x → x + 2x ≤ 21",
+      "difficulty": "medium"
+    },
+    {
+      "question": "Find the greatest integer satisfying: 5 - (x/2) > 1",
+      "options": [
+        "7",
+        "8",
+        "9",
+        "6"
+      ],
+      "correct": 0,
+      "points": 20,
+      "explanation": "5 - (x/2) > 1 → -x/2 > -4 → x/2 < 4 → x < 8 → integers less than 8: 7,6,5,... → greatest is 7",
+      "difficulty": "hard"
+    },
+    {
+      "question": "When 7 is subtracted from three times a number, the result exceeds 14. Inequality?",
+      "options": [
+        "3x - 7 > 14",
+        "7 - 3x > 14",
+        "3x - 7 < 14",
+        "3(x - 7) > 14"
+      ],
+      "correct": 0,
+      "points": 15,
+      "explanation": "'Three times a number' = 3x, '7 subtracted from' = -7, 'exceeds' = > → 3x - 7 > 14",
+      "difficulty": "medium"
+    },
+    {
+      "question": "Solve: 4 - 3(2x + 1) ≤ 19",
+      "options": [
+        "x ≥ -3",
+        "x ≤ -3",
+        "x ≥ 3",
+        "x ≤ 3"
+      ],
+      "correct": 0,
+      "points": 20,
+      "explanation": "4 - 3(2x + 1) ≤ 19 → 4 - 6x - 3 ≤ 19 → 1 - 6x ≤ 19 → -6x ≤ 18 → x ≥ -3",
+      "difficulty": "hard"
+    },
+    {
+      "question": "A test score is considered good if it's above 80% but not excellent unless over 90%. Which describes a good but not excellent score?",
+      "options": [
+        "80 < x ≤ 90",
+        "80 ≤ x < 90",
+        "80 < x < 90",
+        "x > 80 and x ≤ 90"
+      ],
+      "correct": 2,
+      "points": 25,
+      "explanation": "Above 80% = x > 80, not excellent (over 90%) = x < 90 → combined: 80 < x < 90",
+      "difficulty": "hard"
+    },
+    {
+      "question": "Solve fractional: (x + 5)/3 - (x - 2)/2 ≥ 0",
+      "options": [
+        "x ≤ 16",
+        "x ≥ 16",
+        "x ≤ 4",
+        "x ≥ 4"
+      ],
+      "correct": 0,
+      "points": 25,
+      "explanation": "Multiply by 6: 2(x+5) - 3(x-2) ≥ 0 → 2x+10 -3x+6 ≥ 0 → -x + 16 ≥ 0 → -x ≥ -16 → x ≤ 16",
+      "difficulty": "hard"
+    },
+    {
+      "question": "The product of 4 and a number is at most 20 more than the number. Inequality?",
+      "options": [
+        "4x ≤ x + 20",
+        "4x ≥ x + 20",
+        "4x < x + 20",
+        "4x > x + 20"
+      ],
+      "correct": 0,
+      "points": 20,
+      "explanation": "'Product of 4 and a number' = 4x, 'at most' = ≤, '20 more than the number' = x + 20 → 4x ≤ x + 20",
+      "difficulty": "hard"
+    },
+    {
+      "question": "Find all integers satisfying: -3 < 2x - 1 ≤ 5",
+      "options": [
+        "0, 1, 2, 3",
+        "-1, 0, 1, 2, 3",
+        "1, 2, 3",
+        "0, 1, 2"
+      ],
+      "correct": 2,
+      "points": 25,
+      "explanation": "Solve: -3 < 2x-1 → 2x > -2 → x > -1 AND 2x-1 ≤ 5 → 2x ≤ 6 → x ≤ 3 → -1 < x ≤ 3 → integers: 0,1,2,3 but careful: x > -1 excludes -1 itself. Wait: -1 < x ≤ 3 means x = 0,1,2,3. Options show 0,1,2,3 which matches first option.",
+      "difficulty": "hard"
+    },
+    {
+      "question": "One-third of a number decreased by 2 is greater than 4. Find the inequality.",
+      "options": [
+        "(x/3) - 2 > 4",
+        "3x - 2 > 4",
+        "(x - 2)/3 > 4",
+        "x/3 > 2 + 4"
+      ],
+      "correct": 0,
+      "points": 15,
+      "explanation": "'One-third of a number' = x/3, 'decreased by 2' = -2, 'greater than 4' = > 4 → (x/3) - 2 > 4",
+      "difficulty": "medium"
+    },
+    {
+      "question": "Solve: 5x - 3(2 - x) < 4(x + 1)",
+      "options": [
+        "x < 2.5",
+        "x > 2.5",
+        "x < 10",
+        "No solution"
+      ],
+      "correct": 0,
+      "points": 20,
+      "explanation": "5x - 3(2 - x) < 4(x + 1) → 5x - 6 + 3x < 4x + 4 → 8x - 6 < 4x + 4 → 4x < 10 → x < 2.5",
+      "difficulty": "hard"
+    },
+    {
+      "question": "A rectangle's length is 3 more than twice its width. If perimeter is at most 30, inequality for width w?",
+      "options": [
+        "2(w + 2w+3) ≤ 30",
+        "2w + 2(2w+3) ≤ 30",
+        "w(2w+3) ≤ 30",
+        "w + 2w+3 ≤ 30"
+      ],
+      "correct": 1,
+      "points": 25,
+      "explanation": "Length = 2w + 3, Perimeter = 2(w + l) = 2(w + 2w+3) = 2(3w+3) = 6w+6 ≤ 30 → 6w+6 ≤ 30",
+      "difficulty": "hard"
+    },
+    {
+      "question": "Find the smallest positive integer satisfying: (2x + 1)/3 > 5",
+      "options": [
+        "8",
+        "7",
+        "9",
+        "10"
+      ],
+      "correct": 0,
+      "points": 20,
+      "explanation": "(2x+1)/3 > 5 → 2x+1 > 15 → 2x > 14 → x > 7 → integers >7: 8,9,10,... → smallest positive is 8",
+      "difficulty": "hard"
+    },
+    {
+      "question": "The difference between 15 and twice a number is less than 7. Inequality?",
+      "options": [
+        "15 - 2x < 7",
+        "2x - 15 < 7",
+        "|15 - 2x| < 7",
+        "Both A and B possible"
+      ],
+      "correct": 3,
+      "points": 30,
+      "explanation": "'Difference' could mean either 15-2x or 2x-15. Usually absolute value, but 'less than' suggests |15-2x|<7 or both inequalities.",
+      "difficulty": "hard"
+    },
+    {
+      "question": "Solve: (x - 2)/5 ≤ (x + 1)/3",
+      "options": [
+        "x ≥ -5.5",
+        "x ≤ -5.5",
+        "x ≥ -11",
+        "x ≤ -11"
+      ],
+      "correct": 2,
+      "points": 25,
+      "explanation": "Multiply by 15: 3(x-2) ≤ 5(x+1) → 3x-6 ≤ 5x+5 → -6-5 ≤ 5x-3x → -11 ≤ 2x → x ≥ -5.5",
+      "difficulty": "hard"
+    },
+    {
+      "question": "When 5 is added to half a number, the result is at least 12. Inequality?",
+      "options": [
+        "(x/2) + 5 ≥ 12",
+        "5 + (1/2)x ≥ 12",
+        "x/2 ≥ 7",
+        "All of the above"
+      ],
+      "correct": 3,
+      "points": 15,
+      "explanation": "All express same: half x + 5 ≥ 12 → x/2 ≥ 7 → all correct forms.",
+      "difficulty": "medium"
+    },
+    {
+      "question": "Find greatest integer satisfying: 3 - (x+1)/2 > 0",
+      "options": [
+        "4",
+        "5",
+        "6",
+        "7"
+      ],
+      "correct": 0,
+      "points": 20,
+      "explanation": "3 - (x+1)/2 > 0 → -(x+1)/2 > -3 → (x+1)/2 < 3 → x+1 < 6 → x < 5 → integers <5: 4,3,2,... → greatest is 4",
+      "difficulty": "hard"
+    }
+  ],
+  "learning_objectives": [
+    "Solve complex linear inequalities",
+    "Translate sophisticated word problems",
+    "Handle fractional inequalities with multiple terms",
+    "Find integer solutions for compound conditions",
+    "Apply inequalities to geometric contexts",
+    "Interpret 'difference', 'product', 'sum' phrases"
+  ],
+  "key_concepts": [
+    "Reverse inequality when multiplying/dividing by negative",
+    "Compound phrases: 'at least', 'at most', 'exceeds', 'not more than'",
+    "Fractional inequalities: clear denominators carefully",
+    "Integer solutions: boundary conditions matter",
+    "Geometric applications: perimeter, area constraints"
+  ],
+  "author": "Mathematics Department",
+  "version": "1.0",
+  "last_updated": "2024-01-15"
+}
