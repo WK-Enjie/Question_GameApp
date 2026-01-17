@@ -1,0 +1,221 @@
+{
+  "title": "Chapter 1: Forces and Pressure",
+  "subject": "Science",
+  "grade": "Secondary 2",
+  "topics": [
+    "Types of Forces",
+    "Contact vs Non-contact Forces",
+    "Effects of Forces",
+    "Pressure in Solids and Liquids",
+    "Simple Pressure Applications"
+  ],
+  "questions": [
+    {
+      "question": "Which force is responsible for keeping planets in orbit around the Sun?",
+      "options": [
+        "Magnetic force",
+        "Frictional force",
+        "Gravitational force",
+        "Elastic force"
+      ],
+      "correct": 2,
+      "points": 10,
+      "explanation": "Gravitational force between the Sun and planets keeps planets in their orbits.",
+      "difficulty": "easy"
+    },
+    {
+      "question": "Why do sharp knives cut better than blunt knives?",
+      "options": [
+        "They have more weight",
+        "They apply greater pressure due to smaller area",
+        "They are made of better material",
+        "They have less friction"
+      ],
+      "correct": 1,
+      "points": 10,
+      "explanation": "Pressure = Force ÷ Area. Sharp knives have smaller contact area, creating greater pressure with the same force.",
+      "difficulty": "easy"
+    },
+    {
+      "question": "Which of these is a non-contact force?",
+      "options": [
+        "Pushing a shopping cart",
+        "Rubbing hands together",
+        "A magnet attracting iron",
+        "Stretching a rubber band"
+      ],
+      "correct": 2,
+      "points": 10,
+      "explanation": "Magnetic force can act without direct contact between objects.",
+      "difficulty": "easy"
+    },
+    {
+      "question": "Why do camels have wide feet?",
+      "options": [
+        "To walk faster on sand",
+        "To reduce pressure on sand",
+        "To store more water",
+        "To look bigger"
+      ],
+      "correct": 1,
+      "points": 10,
+      "explanation": "Wide feet increase surface area, reducing pressure on soft sand to prevent sinking.",
+      "difficulty": "easy"
+    },
+    {
+      "question": "What happens to pressure when you stand on one foot instead of two?",
+      "options": [
+        "Pressure decreases",
+        "Pressure increases",
+        "Pressure stays the same",
+        "Force decreases"
+      ],
+      "correct": 1,
+      "points": 15,
+      "explanation": "Same weight (force) acts on half the area, so pressure doubles.",
+      "difficulty": "medium"
+    },
+    {
+      "question": "Why are tractor tires wide and have deep treads?",
+      "options": [
+        "To look more powerful",
+        "To reduce pressure on soft ground",
+        "To increase speed",
+        "To carry more fuel"
+      ],
+      "correct": 1,
+      "points": 10,
+      "explanation": "Wide tires increase area to reduce pressure on soft ground, preventing sinking. Deep treads increase grip.",
+      "difficulty": "easy"
+    },
+    {
+      "question": "What force opposes motion when you slide a book across a table?",
+      "options": [
+        "Gravitational force",
+        "Magnetic force",
+        "Frictional force",
+        "Tension force"
+      ],
+      "correct": 2,
+      "points": 10,
+      "explanation": "Friction opposes relative motion between surfaces in contact.",
+      "difficulty": "easy"
+    },
+    {
+      "question": "Why does a drawing pin have a sharp point and a large flat head?",
+      "options": [
+        "Sharp point increases pressure for piercing, flat head reduces pressure on finger",
+        "Both parts need to be sharp",
+        "For better design",
+        "To make it cheaper to produce"
+      ],
+      "correct": 0,
+      "points": 15,
+      "explanation": "Sharp point creates high pressure for easy piercing. Flat head distributes force over larger area, reducing pressure on finger.",
+      "difficulty": "medium"
+    },
+    {
+      "question": "Which statement best describes weight?",
+      "options": [
+        "The amount of matter in an object",
+        "The force of gravity on an object",
+        "How big an object is",
+        "The volume of an object"
+      ],
+      "correct": 1,
+      "points": 10,
+      "explanation": "Weight is the gravitational force acting on an object's mass.",
+      "difficulty": "easy"
+    },
+    {
+      "question": "Why do snowshoes prevent sinking in snow?",
+      "options": [
+        "They make you lighter",
+        "They increase surface area to reduce pressure",
+        "They warm the snow",
+        "They have special material"
+      ],
+      "correct": 1,
+      "points": 10,
+      "explanation": "Snowshoes spread weight over larger area, reducing pressure on snow.",
+      "difficulty": "easy"
+    },
+    {
+      "question": "How does a suction cup stick to a smooth surface?",
+      "options": [
+        "It uses glue",
+        "Atmospheric pressure pushes it against the surface",
+        "It creates magnetic attraction",
+        "It gets hot and melts slightly"
+      ],
+      "correct": 1,
+      "points": 15,
+      "explanation": "Pushing the cup removes air inside, creating lower pressure. Higher atmospheric pressure outside pushes the cup against the surface.",
+      "difficulty": "medium"
+    },
+    {
+      "question": "Which force keeps you on the ground and prevents you from floating away?",
+      "options": [
+        "Magnetic force",
+        "Frictional force",
+        "Gravitational force",
+        "Air resistance"
+      ],
+      "correct": 2,
+      "points": 10,
+      "explanation": "Earth's gravitational pull keeps objects, including people, on the ground.",
+      "difficulty": "easy"
+    },
+    {
+      "question": "Why are heavy trucks fitted with many wheels?",
+      "options": [
+        "To look more impressive",
+        "To increase their speed",
+        "To distribute weight and reduce pressure on roads",
+        "To carry more passengers"
+      ],
+      "correct": 2,
+      "points": 10,
+      "explanation": "More wheels increase contact area with road, reducing pressure to prevent road damage.",
+      "difficulty": "easy"
+    },
+    {
+      "question": "What is the SI unit for pressure?",
+      "options": [
+        "Newton (N)",
+        "Joule (J)",
+        "Pascal (Pa)",
+        "Watt (W)"
+      ],
+      "correct": 2,
+      "points": 10,
+      "explanation": "Pressure is measured in pascals (Pa). 1 Pa = 1 N/m².",
+      "difficulty": "easy"
+    },
+    {
+      "question": "Why do building foundations have large base areas?",
+      "options": [
+        "To make buildings taller",
+        "To reduce pressure on ground",
+        "To increase building weight",
+        "For better appearance"
+      ],
+      "correct": 1,
+      "points": 10,
+      "explanation": "Large foundations distribute building weight over larger area, reducing pressure on soil to prevent sinking.",
+      "difficulty": "easy"
+    }
+  ],
+  "learning_objectives": [
+    "Identify different types of forces",
+    "Distinguish between contact and non-contact forces",
+    "Explain pressure and its formula",
+    "Apply pressure concepts to daily life situations",
+    "Understand simple applications of pressure",
+    "Recognize the effects of different forces"
+  ],
+  "prerequisites": ["Basic Science knowledge from Secondary 1"],
+  "author": "Science Department",
+  "version": "1.0",
+  "last_updated": "2024-01-15"
+}
