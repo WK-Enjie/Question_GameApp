@@ -1,0 +1,188 @@
+{
+  "title": "Sec 4 Combined Chemistry Chapter 8 Worksheet 2",
+  "topic": "Alloys vs Pure Metals, Metal Reactivity Patterns",
+  "subject": "Combined Science (Chemistry)",
+  "grade": "Sec 4",
+  "questions": [
+    {
+      "question": "Why are alloys generally harder than pure metals?",
+      "options": [
+        "Different sized atoms disrupt regular layers, preventing sliding",
+        "Alloys have higher melting points",
+        "Alloys conduct electricity better",
+        "Pure metals have more impurities"
+      ],
+      "correct": 0,
+      "points": 10,
+      "explanation": "In pure metals, atoms are arranged in regular layers that can slide over each other. Alloying introduces different sized atoms that disrupt this regular structure, making it harder for layers to slide."
+    },
+    {
+      "question": "Which metal would react fastest with dilute hydrochloric acid?",
+      "options": [
+        "Magnesium",
+        "Zinc",
+        "Copper",
+        "Silver"
+      ],
+      "correct": 0,
+      "points": 10,
+      "explanation": "Magnesium is highest in the reactivity series among these options. The higher the metal in the reactivity series, the faster it reacts with acids to produce hydrogen gas."
+    },
+    {
+      "question": "Stainless steel is an alloy of iron with chromium and nickel. What is its main advantage over pure iron?",
+      "options": [
+        "Resists rusting/corrosion",
+        "More magnetic",
+        "Softer and more malleable",
+        "Lower melting point"
+      ],
+      "correct": 0,
+      "points": 10,
+      "explanation": "Chromium forms a protective oxide layer on the surface, making stainless steel resistant to rust and corrosion, unlike pure iron which rusts easily."
+    },
+    {
+      "question": "Predict what happens when iron filings are added to copper(II) sulfate solution:",
+      "options": [
+        "Brown coating forms on iron, blue solution fades",
+        "No visible change",
+        "Iron dissolves violently with fizzing",
+        "Solution turns green, copper precipitates"
+      ],
+      "correct": 0,
+      "points": 15,
+      "explanation": "Iron is above copper in the reactivity series. Iron displaces copper: Fe + CuSO₄ → FeSO₄ + Cu. Brown copper coats the iron, and blue Cu²⁺ ions are replaced by pale green Fe²⁺ ions."
+    },
+    {
+      "question": "Why is bronze (copper-tin alloy) preferred over pure copper for making statues?",
+      "options": [
+        "Harder and more resistant to corrosion",
+        "Cheaper to produce",
+        "Better electrical conductor",
+        "More ductile and malleable"
+      ],
+      "correct": 0,
+      "points": 10,
+      "explanation": "Bronze is harder than pure copper and more resistant to corrosion, making it more durable for outdoor statues that need to withstand weathering."
+    },
+    {
+      "question": "Which observation indicates a metal is reactive with water?",
+      "options": [
+        "Fizzing/production of bubbles",
+        "Change in color only",
+        "Metal sinks without reaction",
+        "Formation of a precipitate in solution"
+      ],
+      "correct": 0,
+      "points": 10,
+      "explanation": "Reactive metals produce hydrogen gas when reacting with water, observed as fizzing/bubbles. More reactive metals produce bubbles faster and may generate enough heat to ignite the hydrogen."
+    },
+    {
+      "question": "Solder is an alloy of tin and lead. Why is it useful for joining electrical wires?",
+      "options": [
+        "Lower melting point than pure metals",
+        "Higher electrical conductivity",
+        "More ductile than pure tin",
+        "Resists oxidation better"
+      ],
+      "correct": 0,
+      "points": 10,
+      "explanation": "Solder has a lower melting point than either pure tin or lead, allowing it to melt easily when heated and solidify to form strong joints without damaging components."
+    },
+    {
+      "question": "Predict the result: Zinc metal + dilute sulfuric acid",
+      "options": [
+        "Fizzes, produces hydrogen gas, zinc dissolves",
+        "No reaction",
+        "Produces chlorine gas",
+        "Forms a blue solution only"
+      ],
+      "correct": 0,
+      "points": 10,
+      "explanation": "Zinc is above hydrogen in reactivity series: Zn + H₂SO₄ → ZnSO₄ + H₂. Zinc dissolves, hydrogen gas bubbles form (fizzing), and colorless zinc sulfate solution forms."
+    },
+    {
+      "question": "How does adding carbon to iron to make steel improve its properties?",
+      "options": [
+        "Increases hardness and strength",
+        "Makes it more corrosion resistant",
+        "Increases ductility",
+        "Lowers melting point"
+      ],
+      "correct": 0,
+      "points": 15,
+      "explanation": "Carbon atoms disrupt the regular iron lattice, making it harder for layers to slide. This increases strength and hardness but reduces ductility compared to pure iron."
+    },
+    {
+      "question": "Why does aluminum show almost no reaction with water at room temperature?",
+      "options": [
+        "Protective aluminum oxide layer prevents contact",
+        "It's below hydrogen in reactivity series",
+        "Aluminum is unreactive with all liquids",
+        "Reaction requires extremely high temperatures"
+      ],
+      "correct": 0,
+      "points": 10,
+      "explanation": "Aluminum quickly forms Al₂O₃ layer when exposed to air. This dense, adherent oxide layer protects the metal from further reaction with water or air."
+    },
+    {
+      "question": "Which pair shows correct alloy composition?",
+      "options": [
+        "Brass: copper + zinc",
+        "Steel: iron + copper",
+        "Bronze: iron + carbon",
+        "Solder: aluminum + magnesium"
+      ],
+      "correct": 0,
+      "points": 10,
+      "explanation": "Brass is copper-zinc alloy. Steel is iron-carbon, bronze is copper-tin, solder is tin-lead (though lead-free versions now common)."
+    },
+    {
+      "question": "Predict: Magnesium ribbon + steam (heating required)",
+      "options": [
+        "Bright white flame, white powder forms",
+        "Slow reaction with few bubbles",
+        "No reaction even with heating",
+        "Violent explosion"
+      ],
+      "correct": 0,
+      "points": 15,
+      "explanation": "Mg + H₂O(g) → MgO + H₂. Magnesium burns with bright white flame in steam, producing white magnesium oxide powder. Heating is needed to initiate reaction."
+    },
+    {
+      "question": "Why is pure gold often alloyed with copper for jewelry?",
+      "options": [
+        "Increases hardness and durability",
+        "Makes it cheaper only",
+        "Improves electrical conductivity",
+        "Makes it more reactive"
+      ],
+      "correct": 0,
+      "points": 10,
+      "explanation": "Pure gold (24 carat) is too soft for jewelry. Adding copper increases hardness and durability while also giving rose gold its distinctive color."
+    },
+    {
+      "question": "Arrange reactivity with acid: Lead, Magnesium, Silver, Zinc",
+      "options": [
+        "Mg > Zn > Pb > Ag",
+        "Ag > Pb > Zn > Mg",
+        "Zn > Mg > Ag > Pb",
+        "Pb > Ag > Mg > Zn"
+      ],
+      "correct": 0,
+      "points": 15,
+      "explanation": "Magnesium most reactive with acid, then zinc, then lead (slow reaction), silver doesn't react with dilute acids (below hydrogen)."
+    },
+    {
+      "question": "What property makes aluminum useful for aircraft construction despite its reactivity?",
+      "options": [
+        "Low density + protective oxide layer",
+        "High reactivity with oxygen",
+        "Excellent magnetic properties",
+        "High melting point"
+      ],
+      "correct": 0,
+      "points": 10,
+      "explanation": "Aluminum has low density (lightweight) for aircraft, and its protective oxide layer prevents corrosion, making it durable despite high reactivity."
+    }
+  ]
+}
