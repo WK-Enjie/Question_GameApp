@@ -1,0 +1,251 @@
+{
+  "title": "Forces: Work Done, Friction, and Pressure",
+  "topic": "Physics",
+  "subject": "Science",
+  "level": "Secondary",
+  "grade": "S2",
+  "chapter": "Forces and Energy",
+  "worksheet": 3,
+  "questions": [
+    {
+      "question": "A man pushes a heavy box horizontally across a rough floor at a constant speed. Which statement correctly describes the work done?",
+      "options": [
+        "No work is done because the box moves at constant speed",
+        "Work is done against friction only",
+        "Work is done against gravity only",
+        "Work is done against both friction and gravity"
+      ],
+      "correct": 1,
+      "points": 10,
+      "explanation": "Since the box moves horizontally, its height does not change. Therefore, no work is done against gravity. The man applies a force to overcome friction, so work is done against friction to maintain constant speed against the opposing frictional force."
+    },
+    {
+      "question": "A construction worker lifts a cement bag straight up from the ground to a scaffold. What type of work is primarily being done?",
+      "options": [
+        "Work against friction",
+        "Work against gravity",
+        "Work to increase kinetic energy",
+        "No work is done as the bag is lifted slowly"
+      ],
+      "correct": 1,
+      "points": 10,
+      "explanation": "Lifting an object vertically increases its height. The worker applies an upward force equal to the weight of the bag to overcome the gravitational pull downwards. Therefore, the primary work done is against gravity."
+    },
+    {
+      "question": "Why do muddy or icy roads make braking dangerous for cars?",
+      "options": [
+        "They increase the mass of the car",
+        "They reduce friction between tires and road",
+        "They increase the pressure of the tires on the road",
+        "They cause the brakes to overheat"
+      ],
+      "correct": 1,
+      "points": 10,
+      "explanation": "Brakes work by using friction to slow the wheels. Mud and ice create a slippery layer that greatly reduces the friction between the tires and the road surface. With less friction, the wheels can lock up or slide, making it difficult to stop the car safely."
+    },
+    {
+      "question": "A student drags a backpack along the classroom floor. If the backpack moves, work is definitely being done against:",
+      "options": [
+        "Gravity only",
+        "Friction only",
+        "Both gravity and friction",
+        "Air resistance only"
+      ],
+      "correct": 1,
+      "points": 10,
+      "explanation": "Dragging the backpack horizontally does not change its height, so no work is done against gravity. The force applied overcomes the friction between the backpack and the floor, so work is done against friction. Air resistance is negligible in this scenario."
+    },
+    {
+      "question": "Which of the following is an example where work is done, but NOT against gravity or friction?",
+      "options": [
+        "Pushing a stationary car that doesn't move",
+        "Lifting a book off a table",
+        "Sliding a book across a table",
+        "Accelerating a hockey puck on frictionless ice"
+      ],
+      "correct": 3,
+      "points": 15,
+      "explanation": "On frictionless ice, there is no friction. Accelerating the puck horizontally doesn't change its height, so no work is done against gravity. Work is done, but it is used to increase the puck's kinetic energy, not to overcome gravity or friction."
+    },
+    {
+      "question": "A heavy safe is moved across a warehouse floor using a motorized pallet. The safe moves at a constant speed. Which force is work being done against?",
+      "options": [
+        "Gravity",
+        "Friction",
+        "Both gravity and friction",
+        "None - no work is done at constant speed"
+      ],
+      "correct": 1,
+      "points": 10,
+      "explanation": "The safe moves horizontally at constant speed, so no work is done against gravity. The motor must apply a force to overcome the friction between the pallet and the floor to keep it moving, so work is done against friction."
+    },
+    {
+      "question": "Why is it easier to slide a heavy piece of furniture if you first lift it slightly off the ground?",
+      "options": [
+        "Lifting reduces its mass",
+        "Lifting reduces the contact area",
+        "Lifting removes the need to do work against gravity",
+        "Lifting reduces the friction you must overcome"
+      ],
+      "correct": 3,
+      "points": 15,
+      "explanation": "Friction depends on the normal contact force between surfaces. Lifting the furniture reduces the weight (and thus the normal force) pressing down on the floor. This significantly reduces the frictional force, making it easier to slide."
+    },
+    {
+      "question": "A crane lifts a steel beam vertically at a constant speed. Is work being done?",
+      "options": [
+        "No, because the speed is constant.",
+        "Yes, work is being done against gravity.",
+        "No, because a machine is doing the work.",
+        "Yes, but only work against air resistance."
+      ],
+      "correct": 1,
+      "points": 10,
+      "explanation": "Work is done whenever a force causes movement in the direction of the force. The crane applies an upward force to counteract gravity. Even at constant speed, this force is applied over a vertical distance, so work is done against gravity."
+    },
+    {
+      "question": "Walking on a loose gravel path is more tiring than walking on a paved sidewalk because:",
+      "options": [
+        "Gravel increases air resistance",
+        "Gravel reduces friction, making you slip",
+        "Your feet sink in, requiring you to do extra work against gravity with each step",
+        "Gravel is hotter than pavement"
+      ],
+      "correct": 2,
+      "points": 15,
+      "explanation": "On loose gravel, your foot sinks down slightly with each step. To lift your foot for the next step, you must not only lift your body weight but also lift it out of the small depression, effectively increasing the vertical distance. This means you do more work against gravity with each step, making it more tiring."
+    },
+    {
+      "question": "In which scenario is work done primarily to overcome air resistance?",
+      "options": [
+        "Cycling very fast on a flat road",
+        "Pushing a stalled car on a flat road",
+        "Lifting weights at the gym",
+        "Writing with a pen on paper"
+      ],
+      "correct": 0,
+      "points": 10,
+      "explanation": "At low speeds, air resistance is negligible. At high speeds, like fast cycling, air resistance becomes a significant opposing force. The cyclist must do work to push against this air resistance to maintain speed. The other options involve friction or gravity as the main opposing force."
+    },
+    {
+      "question": "When you hold a heavy object still in your outstretched arm, are you doing work on the object?",
+      "options": [
+        "Yes, because you are applying a force.",
+        "No, because the object is not moving.",
+        "Yes, because you are working against gravity.",
+        "No, because your muscles are not a machine."
+      ],
+      "correct": 1,
+      "points": 10,
+      "explanation": "In physics, work is defined as force causing displacement in the direction of the force. If there is no movement (displacement is zero), then no work is done on the object, even though your muscles are expending energy to maintain the force."
+    },
+    {
+      "question": "A delivery person uses a ramp to wheel a refrigerator into a truck instead of lifting it straight up. Using the ramp reduces the amount of:",
+      "options": [
+        "Work that needs to be done",
+        "Force needed at any one time",
+        "Friction that needs to be overcome",
+        "Distance the refrigerator must move"
+      ],
+      "correct": 1,
+      "points": 15,
+      "explanation": "The total work done (against gravity) is the same: weight × vertical height. However, the ramp allows the person to apply a smaller force over a longer distance (the length of the ramp). This makes the task easier because the required force at any moment is less, even though the total work is unchanged."
+    },
+    {
+      "question": "Sharpening a pencil involves applying friction to the tip. Is work done in this process?",
+      "options": [
+        "No, because the pencil is not moving as a whole.",
+        "Yes, work is done against friction to remove material.",
+        "No, because the force is applied by a machine.",
+        "Yes, but the work is done against gravity."
+      ],
+      "correct": 1,
+      "points": 10,
+      "explanation": "The sharpener applies a frictional force to the pencil tip. As the pencil is turned, this force acts over a distance as material is scraped away. Therefore, work is done against friction to change the shape of the pencil."
+    },
+    {
+      "question": "What is the main purpose of the tread pattern on car tires?",
+      "options": [
+        "To reduce the mass of the tire",
+        "To increase pressure on the road for better grip",
+        "To channel water away and maintain friction on wet roads",
+        "To make the tire look more attractive"
+      ],
+      "correct": 2,
+      "points": 10,
+      "explanation": "On wet roads, a layer of water can build up between the tire and the road, causing hydroplaning (loss of friction). Tread patterns act as channels to push water out from the contact area, allowing the rubber to maintain direct contact with the road and preserve friction for steering and braking."
+    },
+    {
+      "question": "A rock climber scales a vertical cliff. The climber does work primarily against:",
+      "options": [
+        "Friction between the hands and the rock",
+        "Air resistance",
+        "Gravity",
+        "The elastic force of the safety rope"
+      ],
+      "correct": 2,
+      "points": 10,
+      "explanation": "To climb vertically, the climber must lift their own body weight upwards against the downward pull of gravity. While friction is crucial for grip, the primary work done is to increase gravitational potential energy by overcoming gravity."
+    },
+    {
+      "question": "Why is it harder to start pushing a heavy crate than to keep it moving?",
+      "options": [
+        "Static friction is usually greater than kinetic (sliding) friction",
+        "You have to overcome its inertia only at the start",
+        "Gravity increases when an object starts to move",
+        "Air resistance is highest at the start"
+      ],
+      "correct": 0,
+      "points": 15,
+      "explanation": "Static friction (friction when surfaces are not moving relative to each other) is generally higher than kinetic friction (friction when surfaces are sliding). Therefore, the maximum force needed to start the crate moving (overcome static friction) is greater than the force needed to keep it moving (overcome kinetic friction)."
+    },
+    {
+      "question": "A person carries a heavy suitcase while walking horizontally through an airport. Is the person doing work on the suitcase?",
+      "options": [
+        "Yes, against gravity, because the suitcase is heavy.",
+        "Yes, against friction, because they are moving.",
+        "No, because the carrying force is vertical and the movement is horizontal.",
+        "No, because the suitcase is moving at a constant speed."
+      ],
+      "correct": 2,
+      "points": 20,
+      "explanation": "The person applies an upward force to hold the suitcase (against gravity), but the suitcase moves horizontally. For work to be done by that force, the displacement must be in the direction of the force (upwards). Since the displacement is horizontal, the vertical force does no work on the suitcase. (Note: The person's body does internal work, but no work is done on the suitcase by the carrying force.)"
+    },
+    {
+      "question": "Sand is often spread on icy roads. How does this improve safety?",
+      "options": [
+        "It increases the mass of the cars, improving traction.",
+        "It melts the ice through a chemical reaction.",
+        "It increases the friction between tires and the road surface.",
+        "It reduces the air pressure above the road."
+      ],
+      "correct": 2,
+      "points": 10,
+      "explanation": "Ice has a very smooth surface, offering little friction. Sand particles are rough and get embedded in the ice or sit on top, creating a rougher surface. This increases the friction between car tires and the road, providing better grip for acceleration, steering, and braking."
+    },
+    {
+      "question": "When you ride a bicycle down a hill without pedalling, what is the main force you are doing work against as you apply the brakes?",
+      "options": [
+        "Gravity",
+        "Friction in the brakes and between tires and road",
+        "Air resistance",
+        "Your own inertia"
+      ],
+      "correct": 1,
+      "points": 10,
+      "explanation": "When braking, you apply a force to the brake pads, which create friction against the wheel rims or discs. This frictional force does negative work on the bicycle, converting its kinetic energy into heat and slowing it down. Therefore, work is done against friction to stop."
+    },
+    {
+      "question": "In a factory, boxes are moved from a high shelf to a lower one using a smooth, curved chute. As a box slides down, is work being done on the box by gravity?",
+      "options": [
+        "No, because the box is sliding down freely.",
+        "Yes, gravity does work to increase the box's kinetic energy.",
+        "No, because the path is curved.",
+        "Yes, but an equal amount of work is done against friction."
+      ],
+      "correct": 1,
+      "points": 15,
+      "explanation": "Gravity is a force acting vertically downwards. As the box moves down the chute, a component of its displacement is in the direction of gravity (downwards). Therefore, gravity does positive work on the box, converting its gravitational potential energy into kinetic energy."
+    }
+  ]
+}
