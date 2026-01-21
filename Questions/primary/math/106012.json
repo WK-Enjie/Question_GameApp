@@ -1,0 +1,81 @@
+{
+  "title": "Advanced Fractions - PSLE Challenger",
+  "topic": "Fractions",
+  "subject": "Mathematics",
+  "level": "Primary",
+  "grade": "P6",
+  "chapter": 1,
+  "worksheet": 2,
+  "questions": [
+    {
+      "question": "Mr. Tan spent 1/4 of his money on a book and 2/5 of the remaining on a bag. He then had $54 left. How much did he spend on the bag?",
+      "options": ["$24", "$36", "$48", "$60"],
+      "correct": 1,
+      "points": 15,
+      "explanation": "Let the total money be 20 units.\nBook: 1/4 × 20 = 5 units\nRemaining after book: 15 units\nBag: 2/5 × 15 = 6 units\nMoney left: 15 - 6 = 9 units\n9 units = $54\n1 unit = $54 ÷ 9 = $6\nBag = 6 units = 6 × $6 = $36"
+    },
+    {
+      "question": "A shop sold 2/5 of its shirts in the morning and 1/3 of the remaining in the afternoon. It then had 120 shirts left. How many shirts were sold in the afternoon?",
+      "options": ["40", "60", "80", "100"],
+      "correct": 1,
+      "points": 10,
+      "explanation": "Let the total shirts be 15 units.\nMorning: 2/5 × 15 = 6 units\nRemaining after morning: 9 units\nAfternoon: 1/3 × 9 = 3 units\nShirts left: 9 - 3 = 6 units\n6 units = 120 shirts\n1 unit = 120 ÷ 6 = 20 shirts\nAfternoon sold = 3 units = 3 × 20 = 60 shirts"
+    },
+    {
+      "question": "Three friends shared some money. Alan got 2/5 of the money, Ben got 1/3 of the money, and Charlie got the rest. If Charlie got $240 less than Alan, how much money did they share?",
+      "options": ["$900", "$1200", "$1500", "$1800"],
+      "correct": 3,
+      "points": 15,
+      "explanation": "Let the total money be 15 units.\nAlan: 2/5 × 15 = 6 units\nBen: 1/3 × 15 = 5 units\nCharlie: 15 - 6 - 5 = 4 units\nDifference (Alan - Charlie): 6 - 4 = 2 units\n2 units = $240\n1 unit = $240 ÷ 2 = $120\nTotal = 15 units = 15 × $120 = $1800"
+    },
+    {
+      "question": "A tank with water was 5/8 full. After 12 litres were used, it became 1/2 full. How many litres can the tank hold when full?",
+      "options": ["48 L", "64 L", "72 L", "96 L"],
+      "correct": 3,
+      "points": 10,
+      "explanation": "Let the tank capacity be 8 units.\nInitially: 5/8 full = 5 units\nAfter using water: 1/2 full = 4 units\nWater used: 5 - 4 = 1 unit\n1 unit = 12 L\nFull capacity = 8 units = 8 × 12 L = 96 L"
+    },
+    {
+      "question": "In a class, the ratio of boys to girls is 3:4. If 1/3 of the boys and 1/2 of the girls wear spectacles, what fraction of the class wears spectacles?",
+      "options": ["3/7", "5/14", "11/28", "13/28"],
+      "correct": 0,
+      "points": 15,
+      "explanation": "Let boys be 3 units, girls be 4 units. Total = 7 units.\nBoys with spectacles: 1/3 × 3 = 1 unit\nGirls with spectacles: 1/2 × 4 = 2 units\nTotal with spectacles: 1 + 2 = 3 units\nFraction = 3 units ÷ 7 units = 3/7"
+    },
+    {
+      "question": "A bag contained red, blue and green marbles. 2/5 were red, 1/3 were blue, and the rest were green. If there were 24 more red marbles than green marbles, how many marbles were there altogether?",
+      "options": ["180", "240", "300", "360"],
+      "correct": 0,
+      "points": 15,
+      "explanation": "Let total marbles be 15 units.\nRed: 2/5 × 15 = 6 units\nBlue: 1/3 × 15 = 5 units\nGreen: 15 - 6 - 5 = 4 units\nDifference (Red - Green): 6 - 4 = 2 units\n2 units = 24 marbles\n1 unit = 24 ÷ 2 = 12 marbles\nTotal = 15 units = 15 × 12 = 180 marbles"
+    },
+    {
+      "question": "A rope was cut into three pieces. The first piece was 2/7 of the rope. The second piece was 3/5 of the remaining rope. The third piece was 4 m shorter than the second piece. What was the original length of the rope?",
+      "options": ["28 m", "35 m", "42 m", "49 m"],
+      "correct": 0,
+      "points": 15,
+      "explanation": "Let the total rope be 35 units.\nFirst piece: 2/7 × 35 = 10 units\nRemaining: 25 units\nSecond piece: 3/5 × 25 = 15 units\nThird piece: 25 - 15 = 10 units\nDifference (Second - Third): 15 - 10 = 5 units\n5 units = 4 m\n1 unit = 4 ÷ 5 = 0.8 m\nTotal = 35 units = 35 × 0.8 m = 28 m"
+    },
+    {
+      "question": "Mrs. Lee baked some cookies. She gave 1/6 to her neighbour and 2/5 of the remainder to her children. She had 60 cookies left. How many cookies did she bake?",
+      "options": ["120", "144", "150", "180"],
+      "correct": 0,
+      "points": 10,
+      "explanation": "Let total cookies be 30 units.\nNeighbour: 1/6 × 30 = 5 units\nRemaining: 25 units\nChildren: 2/5 × 25 = 10 units\nLeft: 25 - 10 = 15 units\n15 units = 60 cookies\n1 unit = 60 ÷ 15 = 4 cookies\nTotal = 30 units = 30 × 4 = 120 cookies"
+    },
+    {
+      "question": "A tank was 1/3 full. After adding 20 litres, it became 3/4 full. What is the capacity of the tank?",
+      "options": ["36 L", "48 L", "60 L", "72 L"],
+      "correct": 1,
+      "points": 10,
+      "explanation": "Let the tank capacity be 12 units.\nInitially: 1/3 × 12 = 4 units\nAfter adding: 3/4 × 12 = 9 units\nWater added: 9 - 4 = 5 units\n5 units = 20 L\n1 unit = 20 ÷ 5 = 4 L\nCapacity = 12 units = 12 × 4 L = 48 L"
+    },
+    {
+      "question": "John had some stamps. He gave 1/4 of them to Peter and 2/5 of the remainder to Mary. He then had 54 stamps left. How many more stamps did Mary get than Peter?",
+      "options": ["6", "9", "12", "15"],
+      "correct": 0,
+      "points": 15,
+      "explanation": "Let total stamps be 20 units.\nPeter: 1/4 × 20 = 5 units\nRemaining: 15 units\nMary: 2/5 × 15 = 6 units\nLeft: 15 - 6 = 9 units\n9 units = 54 stamps\n1 unit = 54 ÷ 9 = 6 stamps\nPeter = 5 units = 5 × 6 = 30 stamps\nMary = 6 units = 6 × 6 = 36 stamps\nDifference (Mary - Peter) = 36 - 30 = 6 stamps"
+    }
+  ]
+}
