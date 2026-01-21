@@ -1,0 +1,191 @@
+{
+  "title": "Photosynthesis and Respiration: Energy Transfer",
+  "topic": "Energy Forms and Uses",
+  "subject": "Science",
+  "level": "Primary",
+  "grade": "P6",
+  "chapter": "Photosynthesis",
+  "worksheet": 2,
+  "questions": [
+    {
+      "question": "Students set up an experiment with two sealed terrariums:\nTerrarium A: Plant + soil + water, placed in sunlight\nTerrarium B: Same as A but with black paper covering all sides\nBoth were left for 2 weeks. If they measure oxygen levels at the end, what should they expect and why?",
+      "options": [
+        "Higher oxygen in A because photosynthesis occurs in sunlight",
+        "Higher oxygen in B because plants produce oxygen in darkness",
+        "Equal oxygen in both because plants always produce oxygen",
+        "No oxygen in either because oxygen escapes through soil"
+      ],
+      "correct": 0,
+      "points": 15,
+      "explanation": "Photosynthesis requires light to produce oxygen. Terrarium A in sunlight will have active photosynthesis, producing oxygen. Terrarium B in darkness will have no photosynthesis (only respiration consuming oxygen), so oxygen levels will be lower or depleted."
+    },
+    {
+      "question": "A student modified the classic photosynthesis experiment by testing leaves from three plants:\nPlant 1: Grown in normal air\nPlant 2: Grown in air with extra CO₂\nPlant 3: Grown in air with reduced CO₂\nAll received equal light and water. Which variable is being tested and what would be the best way to measure results?",
+      "options": [
+        "Testing light effect - measure plant height",
+        "Testing CO₂ effect - measure starch production",
+        "Testing water effect - weigh the plants",
+        "Testing temperature - count number of leaves"
+      ],
+      "correct": 1,
+      "points": 20,
+      "explanation": "The experiment tests how CO₂ concentration affects photosynthesis. Starch production (tested with iodine) directly measures photosynthesis products. More starch indicates more photosynthesis. Plants with extra CO₂ should show more starch, those with reduced CO₂ less starch."
+    },
+    {
+      "question": "In an investigation of respiration, students placed:\nSetup A: Germinating seeds in a flask with limewater\nSetup B: Boiled/killed seeds in a flask with limewater\nSetup C: Empty flask with limewater\nLimewater turns cloudy with CO₂. Which serves as the control and what should they observe?",
+      "options": [
+        "Setup C is control; only Setup A's limewater should turn cloudy",
+        "Setup B is control; all setups should turn cloudy equally",
+        "Setup A is control; no setups should turn cloudy",
+        "All are experimental; all should turn cloudy"
+      ],
+      "correct": 0,
+      "points": 15,
+      "explanation": "Setup C (empty flask) serves as control to show limewater doesn't cloud spontaneously. Setup A (living seeds) should show clouding due to respiration CO₂. Setup B (dead seeds) shouldn't cloud, confirming living organisms respire."
+    },
+    {
+      "question": "Students investigated if photosynthesis and respiration occur at different rates. They measured oxygen and carbon dioxide levels around a plant:\nDay (light): O₂ increased, CO₂ decreased\nNight (dark): O₂ decreased, CO₂ increased\nWhat do these measurements indicate about energy processes?",
+      "options": [
+        "Photosynthesis only occurs at night",
+        "Respiration stops during the day",
+        "Both processes occur always but photosynthesis dominates in light",
+        "Plants don't respire, only photosynthesize"
+      ],
+      "correct": 2,
+      "points": 15,
+      "explanation": "Plants both photosynthesize and respire continuously. In light, photosynthesis rate exceeds respiration, so net O₂ production and CO₂ consumption. In darkness, only respiration occurs, consuming O₂ and producing CO₂. The measurements show the balance shifts with light."
+    },
+    {
+      "question": "To test if temperature affects photosynthesis, what would be the BEST experimental design?",
+      "options": [
+        "Same plant, different light sources, constant temperature",
+        "Same plants, same light, different temperatures",
+        "Different plants, different lights, same temperature",
+        "Same plant, measured at different times of day"
+      ],
+      "correct": 1,
+      "points": 15,
+      "explanation": "To test temperature effect alone, keep all variables constant except temperature. Use identical plants, same light intensity, same CO₂, same water, but place them in different temperature environments. Measure photosynthesis rate (oxygen bubbles or starch)."
+    },
+    {
+      "question": "A student hypothesized: 'Plants respire faster at higher temperatures.' Which experiment would BEST test this?",
+      "options": [
+        "Measure CO₂ from germinating seeds at 20°C vs 30°C",
+        "Measure oxygen from aquatic plants in light at different temps",
+        "Weigh plants before and after being in warm vs cool rooms",
+        "Count bubbles from plants at different distances from light"
+      ],
+      "correct": 0,
+      "points": 20,
+      "explanation": "To test respiration rate (not photosynthesis), use seeds (no photosynthesis) or plants in darkness. Measure CO₂ production (respiration product) at different temperatures. Germinating seeds are ideal as they respire actively and don't photosynthesize."
+    },
+    {
+      "question": "In a photosynthesis-respiration balance experiment, students measured gas changes in a closed system with plant and snail over 24 hours. During the day, oxygen increased; at night, oxygen decreased. What modification would test if this is truly a 24-hour cycle?",
+      "options": [
+        "Use a bigger container",
+        "Measure for multiple days to see if pattern repeats",
+        "Add more snails",
+        "Use artificial light continuously"
+      ],
+      "correct": 1,
+      "points": 15,
+      "explanation": "To confirm a daily cycle, observe the pattern over multiple days/nights. If oxygen consistently increases during light periods and decreases during dark periods each day, it confirms the cycle relates to light/dark changes, not just a one-time event."
+    },
+    {
+      "question": "Students debated energy flow. One said: 'Energy from the Sun becomes food in plants.' Another said: 'That energy then powers animals through respiration.' How could they design an experiment to trace this energy flow?",
+      "options": [
+        "Measure temperature changes in plants vs animals",
+        "Track radioactive carbon from CO₂ through plant to animal",
+        "Weigh animals before and after eating plants",
+        "Measure light absorption by different leaves"
+      ],
+      "correct": 1,
+      "points": 20,
+      "explanation": "Using radioactive carbon-14 in CO₂ allows tracing carbon atoms. Plants incorporate it into glucose during photosynthesis. When animals eat plants, the radioactive carbon appears in their bodies. This directly shows energy/material flow: Sun → CO₂ → plant food → animal energy."
+    },
+    {
+      "question": "A farmer wanted to increase crop yield. Based on photosynthesis knowledge, which modification should have the GREATEST effect in a controlled greenhouse?",
+      "options": [
+        "Playing music to the plants",
+        "Increasing CO₂ concentration",
+        "Painting the greenhouse different colors",
+        "Watering at different times of day"
+      ],
+      "correct": 1,
+      "points": 15,
+      "explanation": "In a controlled greenhouse with optimal light and water, CO₂ often becomes the limiting factor. Increasing CO₂ concentration (within limits) can significantly boost photosynthesis rate and crop yield, as CO₂ is a raw material for photosynthesis."
+    },
+    {
+      "question": "Students tested leaves from the same plant: Leaf A covered with foil for 48 hours, Leaf B exposed to light. Both were tested with iodine. Leaf A showed no starch, Leaf B showed starch. They concluded 'light is needed for starch production.' What improvement would strengthen their conclusion?",
+      "options": [
+        "Test more leaves from different plants",
+        "Test the covered leaf immediately after uncovering",
+        "Also test for sugar instead of starch",
+        "Measure the exact light intensity"
+      ],
+      "correct": 1,
+      "points": 20,
+      "explanation": "Testing the covered leaf AFTER giving it light would show if it can produce starch when light becomes available. This confirms the lack of starch was due to light deprivation, not leaf damage. If it produces starch after uncovering, it strengthens the light-starch production link."
+    },
+    {
+      "question": "An experiment showed that a plant in a sealed jar with a mouse survived longer than a mouse alone. A student questioned: 'Maybe the plant just needed less oxygen.' How could they test this alternative explanation?",
+      "options": [
+        "Measure oxygen consumption of plant alone in dark",
+        "Use a bigger mouse",
+        "Add a second plant",
+        "Use a transparent jar instead"
+      ],
+      "correct": 0,
+      "points": 15,
+      "explanation": "To test if the plant 'needs less oxygen' rather than producing it, measure the plant's respiration rate alone in darkness. If the plant consumes oxygen at a similar rate to the mouse, then the survival benefit in the combined system must come from photosynthesis producing oxygen during light periods."
+    },
+    {
+      "question": "Which experimental modification would BEST test if photosynthesis and respiration are opposite processes?",
+      "options": [
+        "Measure gas exchange of same plant in light vs dark",
+        "Compare gas exchange of different plant species",
+        "Measure only oxygen, ignore carbon dioxide",
+        "Use animals instead of plants"
+      ],
+      "correct": 0,
+      "points": 15,
+      "explanation": "Photosynthesis: CO₂ + H₂O → glucose + O₂\nRespiration: glucose + O₂ → CO₂ + H₂O + energy\nMeasuring both O₂ and CO₂ of the SAME plant in light (net O₂ production) vs dark (net O₂ consumption) shows they are reverse processes using/producing the same gases."
+    },
+    {
+      "question": "Students read that some plants close stomata during hot days to reduce water loss. How might this affect their photosynthesis experiment results if conducted on a hot afternoon?",
+      "options": [
+        "No effect - stomata don't affect photosynthesis",
+        "Reduced photosynthesis due to limited CO₂ intake",
+        "Increased photosynthesis due to more water retention",
+        "Photosynthesis would stop completely"
+      ],
+      "correct": 1,
+      "points": 15,
+      "explanation": "Stomata are pores for gas exchange. Closed stomata limit CO₂ entry, reducing photosynthesis rate. An experiment conducted when stomata are closed might show lower photosynthesis not due to the tested variable (like light intensity) but due to CO₂ limitation. This highlights need for controlled conditions."
+    },
+    {
+      "question": "Considering objectivity in science, what should researchers do if their photosynthesis experiment shows plants produce LESS oxygen with increased light beyond a certain point?",
+      "options": [
+        "Ignore the data as it must be wrong",
+        "Report only the expected increasing trend",
+        "Report all data and investigate possible reasons (e.g., photoinhibition)",
+        "Change the light measurement method until results match expectations"
+      ],
+      "correct": 2,
+      "points": 10,
+      "explanation": "Good scientists report all data objectively. If oxygen decreases with very high light, it could indicate photoinhibition (light damage to photosynthesis machinery) - a real biological phenomenon. Reporting this leads to deeper understanding beyond simple 'more light = more photosynthesis'."
+    },
+    {
+      "question": "If you wanted to test whether plants use up oxygen at night, what would be the simplest experimental setup?",
+      "options": [
+        "Place a plant in a sealed container with a candle; see if candle stays lit",
+        "Place a plant in sunlight and measure oxygen production",
+        "Cover some leaves with black paper and test for starch",
+        "Measure the weight of a plant at night versus during the day"
+      ],
+      "correct": 0,
+      "points": 15,
+      "explanation": "A burning candle requires oxygen. If a plant in a sealed container uses oxygen at night (through respiration), the oxygen level will drop and the candle will go out faster compared to a container without a plant. This simple test shows plants consume oxygen."
+    }
+  ]
+}

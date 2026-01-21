@@ -1,0 +1,191 @@
+{
+  "title": "States of Matter and Their Properties",
+  "topic": "Cycles in Matter and Water",
+  "subject": "Science",
+  "level": "Primary",
+  "grade": "P4",
+  "chapter": "Matter",
+  "worksheet": 1,
+  "questions": [
+    {
+      "question": "Which of the following best describes matter?",
+      "options": [
+        "Anything that can be seen with our eyes",
+        "Anything that has mass and occupies space",
+        "Anything that can be measured with a ruler",
+        "Anything that can change its shape"
+      ],
+      "correct": 1,
+      "points": 10,
+      "explanation": "Matter is defined as anything that has mass and occupies space. This includes solids, liquids, gases, and even things we cannot see like air."
+    },
+    {
+      "question": "A student conducted an experiment where she weighed a balloon before and after blowing air into it. What will she observe about the mass?",
+      "options": [
+        "The mass decreases because air is weightless",
+        "The mass stays the same because air has no mass",
+        "The mass increases because air has mass",
+        "The mass changes randomly"
+      ],
+      "correct": 2,
+      "points": 15,
+      "explanation": "Air has mass even though we cannot see it. When we blow air into a balloon, we are adding air molecules, which increases the total mass of the balloon system."
+    },
+    {
+      "question": "Why can we compress a gas like air into a smaller space, but cannot compress a solid like a stone in the same way?",
+      "options": [
+        "Gases have no fixed shape while solids do",
+        "Gas particles are far apart and can be pushed closer together",
+        "Solids are heavier than gases",
+        "Gases are invisible while solids are visible"
+      ],
+      "correct": 1,
+      "points": 15,
+      "explanation": "Gas particles are spread far apart with lots of empty space between them. When we compress air, we push these particles closer together. Solid particles are already packed tightly with little space between them, so they cannot be compressed much."
+    },
+    {
+      "question": "Three containers are shown below:\nContainer A: A fixed amount of water in a cup\nContainer B: A fixed amount of ice cubes in a bowl\nContainer C: A fixed amount of air in a sealed syringe\n\nWhich statement about volume is correct?",
+      "options": [
+        "Only water (liquid) has a fixed volume",
+        "Only ice (solid) has a fixed volume",
+        "Only air (gas) has a fixed volume",
+        "Both solids and liquids have fixed volumes, but gases do not"
+      ],
+      "correct": 3,
+      "points": 15,
+      "explanation": "Solids and liquids have fixed volumes - they take up a definite amount of space. Gases do not have fixed volumes; they will expand to fill any container they are in."
+    },
+    {
+      "question": "John placed an ice cube on a plate and left it on the table. After 2 hours, he observed water on the plate. What happened and what can he conclude about the mass?",
+      "options": [
+        "The ice disappeared, so mass decreased",
+        "The ice melted into water, and the mass stayed the same",
+        "Water was added from the air, so mass increased",
+        "The ice evaporated, so mass became zero"
+      ],
+      "correct": 1,
+      "points": 15,
+      "explanation": "When ice melts, it changes from solid to liquid state, but the amount of matter (water molecules) stays the same. Therefore, the mass should remain constant even though the state of matter changed."
+    },
+    {
+      "question": "In an experiment, students measured 50ml of water, 50g of sand, and '50ml' of air in a syringe. They then compressed the air in the syringe to 25ml. What changed and what stayed the same?",
+      "options": [
+        "The volume of air changed, but its mass stayed the same",
+        "Both volume and mass of air decreased",
+        "The mass of air changed, but its volume stayed the same",
+        "Nothing changed - air cannot be compressed"
+      ],
+      "correct": 0,
+      "points": 20,
+      "explanation": "When air is compressed, its volume decreases because the gas particles are pushed closer together. However, the number of air particles (and therefore the mass) remains the same because no air escaped from the syringe."
+    },
+    {
+      "question": "Sarah observed that when she poured water from a tall glass into a wide bowl, the water changed shape but still filled the container. What property of water is she observing?",
+      "options": [
+        "Water has a fixed volume but no fixed shape",
+        "Water has both fixed shape and fixed volume",
+        "Water has no fixed volume or shape",
+        "Water always takes the shape of its container but its volume changes"
+      ],
+      "correct": 0,
+      "points": 10,
+      "explanation": "Water is a liquid. Liquids have a fixed volume (they take up a definite amount of space) but no fixed shape - they take the shape of their container."
+    },
+    {
+      "question": "A student designed an experiment to show that air occupies space. She placed a dry tissue at the bottom of an empty glass, turned it upside down, and pushed it straight down into a bowl of water. What should she observe and why?",
+      "options": [
+        "The tissue gets wet immediately because air escapes",
+        "The tissue stays dry because air in the glass prevents water from entering",
+        "The tissue gets wet slowly as air dissolves in water",
+        "The tissue floats to the top with air bubbles"
+      ],
+      "correct": 1,
+      "points": 20,
+      "explanation": "Air occupies space inside the glass. When the glass is pushed straight down into water, the air cannot escape easily, so it creates a barrier that prevents water from entering and wetting the tissue. This demonstrates that air is matter that occupies space."
+    },
+    {
+      "question": "Which of the following would be the BEST way to measure if the mass changes when sugar dissolves in water?",
+      "options": [
+        "Weigh the sugar, then weigh the water, then add them together",
+        "Weigh the empty cup, add sugar and water, then weigh again",
+        "Weigh the sugar before and after adding to water",
+        "Weigh the water before and after adding sugar"
+      ],
+      "correct": 1,
+      "points": 15,
+      "explanation": "The best method is to measure the total mass of the system (cup + sugar + water) before and after mixing. The mass should stay the same because dissolving is a physical change where sugar particles spread through water but are still present."
+    },
+    {
+      "question": "A balloon is inflated and tied. If you leave it in a warm room overnight, what might happen and why?",
+      "options": [
+        "The balloon shrinks because air particles escape through the rubber",
+        "The balloon expands because air particles move faster and spread out when warm",
+        "The balloon stays the same size because air volume is fixed",
+        "The balloon changes color because of temperature change"
+      ],
+      "correct": 1,
+      "points": 15,
+      "explanation": "When air is warmed, the gas particles gain energy and move faster, causing them to spread out more. This increases the volume of the air inside the balloon, making the balloon expand. This shows that gases expand when heated."
+    },
+    {
+      "question": "Three identical boxes are shown: Box A contains 10 marbles, Box B contains water filling half the box, Box C is completely filled with cotton wool. Which box(es) contain matter that has a definite shape?",
+      "options": [
+        "Box A only",
+        "Box B only",
+        "Box C only",
+        "Box A and Box C only"
+      ],
+      "correct": 0,
+      "points": 10,
+      "explanation": "Box A contains marbles (solid) which have definite shape. Box B contains water (liquid) which takes the shape of its container. Box C contains cotton wool (solid) which has definite shape even though it can be compressed."
+    },
+    {
+      "question": "In a science experiment, students measured the mass of a sealed plastic bag with air inside. They then used a pump to remove some air and measured the mass again. What should they observe and what does this show about air?",
+      "options": [
+        "Mass decreases, showing air has mass",
+        "Mass increases, showing air has no mass",
+        "Mass stays the same, showing air cannot be removed",
+        "Mass changes randomly, showing air is unpredictable"
+      ],
+      "correct": 0,
+      "points": 20,
+      "explanation": "When air is removed from the bag, there are fewer air particles inside. Since each air particle has mass, removing particles decreases the total mass. This experiment demonstrates that air has mass, even though we cannot see it."
+    },
+    {
+      "question": "Which of the following situations demonstrates BOTH that air occupies space AND has mass?",
+      "options": [
+        "A balloon floats in the air",
+        "An inflated balloon is heavier than a deflated one",
+        "Wind makes a windmill turn",
+        "We can feel air when we fan ourselves"
+      ],
+      "correct": 1,
+      "points": 15,
+      "explanation": "An inflated balloon is heavier than a deflated one because it contains more air, showing air has mass. The balloon also occupies space (it's inflated), showing air occupies space. This one situation demonstrates both properties of matter."
+    },
+    {
+      "question": "During a class experiment, students noticed that when they placed a piece of steel wool in a sealed container and left it for a week, the steel wool gained mass. What is the MOST LIKELY explanation?",
+      "options": [
+        "The steel wool absorbed water from the air",
+        "The steel wool reacted with oxygen in the air to form rust",
+        "Dust from the air settled on the steel wool",
+        "The steel wool expanded when exposed to air"
+      ],
+      "correct": 1,
+      "points": 20,
+      "explanation": "Steel wool (iron) reacts with oxygen in the air to form iron oxide (rust). When this happens, oxygen from the air combines with the iron, adding to its mass. This shows that air contains matter (oxygen) that can combine with other materials."
+    },
+    {
+      "question": "What should a curious scientist do if their measurement shows that an ice cube has different mass after melting compared to before melting?",
+      "options": [
+        "Ignore the result because it must be wrong",
+        "Check their weighing scale and repeat the experiment",
+        "Change the definition of matter",
+        "Assume that matter can be created or destroyed"
+      ],
+      "correct": 1,
+      "points": 10,
+      "explanation": "A good scientist shows curiosity and carefully checks unexpected results. The mass should stay the same when ice melts (state change only). If measurements show different results, they should check their equipment and repeat the experiment to ensure accuracy."
+    }
+  ]
+}

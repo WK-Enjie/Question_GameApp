@@ -1,0 +1,191 @@
+{
+  "title": "Matter in Everyday Life",
+  "topic": "Cycles in Matter and Water",
+  "subject": "Science",
+  "level": "Primary",
+  "grade": "P4",
+  "chapter": "Matter",
+  "worksheet": 2,
+  "questions": [
+    {
+      "question": "Why are there small holes in the lid of a takeaway soup container?",
+      "options": [
+        "To allow gases produced inside to escape, preventing pressure build-up",
+        "To make the lid lighter and easier to manufacture",
+        "To let customers see the contents before opening",
+        "To provide a grip for easier handling"
+      ],
+      "correct": 0,
+      "points": 10,
+      "explanation": "Hot food releases water vapour (a gas). In a sealed container, the vapour would increase the pressure inside, which could force the lid open or burst the container. The holes allow this gas to escape, demonstrating that gases occupy space and exert pressure."
+    },
+    {
+      "question": "When dry sand is poured into a measuring cup, the sand can be shaken to settle and more sand can be added. This does not happen with water. What is the correct scientific reason?",
+      "options": [
+        "Sand particles are irregularly shaped, trapping air in the gaps between them",
+        "Water is denser than sand, so it fills space more completely",
+        "Sand is a solid and water is a liquid, so they behave differently",
+        "The surface tension of water prevents it from settling"
+      ],
+      "correct": 0,
+      "points": 15,
+      "explanation": "Sand grains have irregular shapes and do not pack perfectly. Air fills the gaps between them. Shaking allows grains to rearrange into a denser packing, reducing the air spaces. Water particles flow and fill the container completely with minimal gaps, showing that liquids have a definite volume and fill their container evenly."
+    },
+    {
+      "question": "A plastic water bottle is completely filled, capped, and then squeezed. The bottle deforms but the water level does not change relative to the cap. Why?",
+      "options": [
+        "Liquids are incompressible; they resist changes in volume under pressure",
+        "The plastic bottle stretches to accommodate the pressure",
+        "Water evaporates slightly to create more space",
+        "Air bubbles inside the water compress instead"
+      ],
+      "correct": 0,
+      "points": 15,
+      "explanation": "The particles in a liquid are already closely packed. Applying external pressure does not significantly reduce the space between them, meaning the liquid's volume stays nearly constant. The bottle deforms because its solid structure can change shape more easily than the liquid's volume can change."
+    },
+    {
+      "question": "Two identical sealed boxes are shown: Box P is full of tightly packed cotton balls, Box Q is full of steel ball bearings. Which statement is scientifically accurate?",
+      "options": [
+        "Box Q has more mass because its material is denser, meaning more matter occupies the same volume",
+        "Box P has more mass because cotton is a natural material and is heavier",
+        "Both boxes have the same mass because they have the same volume",
+        "Box P has more mass because cotton can absorb air, increasing its weight"
+      ],
+      "correct": 0,
+      "points": 15,
+      "explanation": "Mass is the amount of matter in an object. Density is mass per unit volume. Steel is much denser than cotton, so for the same volume (the box size), the steel box contains more matter and has a greater mass. This demonstrates that different materials have different densities."
+    },
+    {
+      "question": "A household sponge can be compressed by squeezing, but a wooden block of the same size cannot. What is the key structural difference?",
+      "options": [
+        "The sponge contains a network of interconnected air pockets that can be reduced in volume",
+        "Wood is a harder material, making it resistant to all forces",
+        "Sponge material is elastic, while wood is rigid",
+        "Sponges are made from synthetic materials designed to compress"
+      ],
+      "correct": 0,
+      "points": 15,
+      "explanation": "A sponge is a solid with a porous structure containing many small cavities filled with air. When compressed, these air spaces are reduced, decreasing the sponge's overall volume. Wood has a more compact structure with minimal air spaces, so its volume cannot be easily reduced by squeezing."
+    },
+    {
+      "question": "Observing a fish tank with an air pump, bubbles are seen rising through the water. What does this demonstrate?",
+      "options": [
+        "Gases are less dense than liquids and will rise through them, occupying space as they move",
+        "Water is pushing the air bubbles out because they are impurities",
+        "The air pump creates a vacuum that pulls the bubbles up",
+        "Air bubbles dissolve in water and then reappear at the surface"
+      ],
+      "correct": 0,
+      "points": 15,
+      "explanation": "Air (a gas) is less dense than water (a liquid). When introduced at the bottom, the bubbles are buoyant and rise to the surface. The bubbles have a definite shape and volume as they travel, visually demonstrating that gases are matter that occupy space within another substance."
+    },
+    {
+      "question": "A sealed bag of potato chips appears inflated when taken on an airplane flight. What is the primary scientific cause?",
+      "options": [
+        "The external atmospheric pressure decreased, allowing the gas inside the bag to expand",
+        "The chips released gases during the flight, increasing the internal pressure",
+        "The bag's material stretched over time due to the movement",
+        "Temperature changes in the cargo hold caused the air inside to expand"
+      ],
+      "correct": 0,
+      "points": 15,
+      "explanation": "At ground level, the bag is sealed with air inside at a certain pressure. As the plane ascends, the air pressure outside the bag decreases. The gas particles inside the bag now exert more pressure relative to the outside, causing the bag to inflate. This shows that gases expand to fill available space when external pressure drops."
+    },
+    {
+      "question": "In an experiment, a balloon filled with air is submerged in water and sinks, while a balloon filled with helium floats in air. The most accurate conclusion is:",
+      "options": [
+        "Different gases have different densities; helium is less dense than air, and air is more dense than water",
+        "Helium is a magical gas that defies gravity, while air does not",
+        "The air-filled balloon is heavier because rubber is denser with air inside",
+        "Water pushes down on the air balloon, but air cannot push down on the helium balloon"
+      ],
+      "correct": 0,
+      "points": 15,
+      "explanation": "All matter has mass. Density = mass/volume. Helium gas has lower density than the surrounding air, so the balloon rises. The air-filled balloon has higher density than water, so it sinks. This demonstrates that gases are matter with measurable properties like density, and they interact with their surroundings based on these properties."
+    },
+    {
+      "question": "When inflating a bicycle tire with a pump, it becomes progressively harder to push the pump handle down. This is because:",
+      "options": [
+        "The increasing number of air particles in a fixed volume creates greater pressure, resisting further compression",
+        "The pump mechanism becomes jammed as it heats up",
+        "The tire rubber becomes stiffer as it inflates",
+        "Air leaks out of the tire faster as pressure increases"
+      ],
+      "correct": 0,
+      "points": 15,
+      "explanation": "As more air is forced into the tire's fixed volume, the number of air particles (molecules) increases. These particles collide with the tire walls more frequently and forcefully, creating higher pressure. This increased internal pressure pushes back against the pump piston, making it harder to compress more air in. This demonstrates gas pressure and compressibility."
+    },
+    {
+      "question": "Dew forms on grass in the early morning. What is the scientific process?",
+      "options": [
+        "Water vapour in the air loses thermal energy, condensing into liquid water on cool surfaces",
+        "Grass releases water from its roots which collects on the blades",
+        "Rain from the previous night evaporates and then re-condenses",
+        "The air pressure drops at night, squeezing water out of the air"
+      ],
+      "correct": 0,
+      "points": 15,
+      "explanation": "Air contains invisible water vapour (gas). During the night, surfaces like grass cool down. When the vapour comes into contact with these cool surfaces, it loses energy and changes state from a gas to a liquid (condensation), forming dew. This shows matter changing state and that air contains gaseous water."
+    },
+    {
+      "question": "A student pours a cup of rice into a jar already full of peanuts. The rice fills the spaces between the peanuts. This best illustrates that:",
+      "options": [
+        "Small solid particles can occupy the unfilled volume (air spaces) between larger solid particles",
+        "Rice is a liquid that flows and takes the shape of its container",
+        "Peanuts absorb the rice, creating more space",
+        "The total volume of two solids is always less than the sum of their individual volumes"
+      ],
+      "correct": 0,
+      "points": 15,
+      "explanation": "The peanuts, as solid particles, do not perfectly fill the jar's volume; air occupies the gaps between them. The smaller rice particles are able to fit into these air spaces, demonstrating that solids have definite shapes and volumes, and that mixtures of different-sized solids can pack more matter into a given volume by reducing the empty air space."
+    },
+    {
+      "question": "Using a drinking straw relies on which key principle?",
+      "options": [
+        "Reducing pressure inside the straw allows higher atmospheric pressure to push the liquid up",
+        "Capillary action draws the liquid up the thin tube",
+        "Sucking creates a force that pulls the liquid directly into the mouth",
+        "Gravity is overcome by the strength of your lungs"
+      ],
+      "correct": 0,
+      "points": 15,
+      "explanation": "When you suck, you remove some air from the straw, lowering the air pressure inside it. The higher air pressure acting on the surface of the drink outside the straw then pushes the liquid up into the area of lower pressure. This demonstrates that air has mass, exerts pressure, and can do work on a liquid."
+    },
+    {
+      "question": "A sealed transparent bottle contains equal volumes of water and air. When the bottle is squeezed, the air space visibly shrinks. What property does this demonstrate?",
+      "options": [
+        "Gases are compressible; their particles can be forced closer together, reducing volume",
+        "The air is absorbed into the water under pressure",
+        "The plastic bottle stretches, making the air space appear smaller",
+        "Water expands when pressure is applied, taking up more space"
+      ],
+      "correct": 0,
+      "points": 10,
+      "explanation": "Air is a gas. Gas particles are far apart with empty space between them. Applying pressure pushes these particles closer together, significantly reducing the volume the gas occupies. The water volume does not noticeably change, showing the fundamental difference in compressibility between liquids and gases."
+    },
+    {
+      "question": "Why is it possible to pour a liquid like juice from a carton, but not a solid like sugar, without tilting the carton?",
+      "options": [
+        "Liquids have no fixed shape and can flow under gravity; solids have a fixed shape and must be poured as individual particles",
+        "Sugar is stickier than juice and adheres to the carton",
+        "The carton opening is designed only for liquids",
+        "Sugar is denser than juice, so it falls faster and spills"
+      ],
+      "correct": 0,
+      "points": 10,
+      "explanation": "This directly illustrates the property of shape. A liquid takes the shape of its container but is not rigid; it can flow and change shape to pour out. A solid maintains its own shape (whether it's a cube of sugar or a pile of granules) and cannot flow like a liquid; it must be tipped or scooped out as discrete pieces."
+    },
+    {
+      "question": "When a stone is placed into a graduated cylinder partially filled with water, the water level rises. The best explanation is:",
+      "options": [
+        "The stone, as a solid, occupies space and displaces an equal volume of water, raising the water level",
+        "The stone absorbs water, causing the remaining water to expand",
+        "The weight of the stone pushes down on the water, compressing it upwards",
+        "Water molecules are attracted to the stone, climbing up its sides"
+      ],
+      "correct": 0,
+      "points": 15,
+      "explanation": "The stone is matter that occupies space. When submerged, it pushes the water aside, taking up some of the volume that the water previously occupied. The water level rises by an amount equal to the volume of the stone. This is a direct demonstration of displacement and proves that solids have a definite, measurable volume."
+    }
+  ]
+}
