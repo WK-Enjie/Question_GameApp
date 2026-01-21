@@ -1,5 +1,5 @@
 {
-  "title": "Advanced Fractions",
+  "title": "PSLE-Style Fraction Applications",
   "topic": "Fractions",
   "subject": "Mathematics",
   "level": "Primary",
@@ -8,74 +8,74 @@
   "worksheet": 1,
   "questions": [
     {
-      "question": "What is 4/5 ÷ 2/3?",
-      "options": ["8/15", "6/8", "1 1/5", "1 2/5"],
-      "correct": 2,
+      "question": "Alice, Ben, and Charlie shared some money. Alice received 2/5 of the money. Ben received 3/4 of the remaining money. Charlie received $90 less than Ben. How much money did they share altogether?",
+      "options": ["$300", "$400", "$500", "$600"],
+      "correct": 0,
+      "points": 15,
+      "explanation": "Let the total money be 20 units.\nAlice: 2/5 × 20 = 8 units\nRemaining: 12 units\nBen: 3/4 × 12 = 9 units\nCharlie: 12 - 9 = 3 units\nDifference (Ben - Charlie): 9 - 3 = 6 units\n6 units = $90\n1 unit = $90 ÷ 6 = $15\nTotal = 20 units = 20 × $15 = $300"
+    },
+    {
+      "question": "A container is 2/3 full of water. When 8 litres of water is poured out, it becomes 1/3 full. What is the capacity of the container?",
+      "options": ["21 L", "24 L", "28 L", "32 L"],
+      "correct": 1,
+      "points": 15,
+      "explanation": "Let the capacity be 3 units.\nInitially: 2/3 full = 2 units\nAfter pouring out: 1/3 full = 1 unit\nWater poured out: 2 - 1 = 1 unit\n1 unit = 8 L\nCapacity = 3 units = 3 × 8 L = 24 L"
+    },
+    {
+      "question": "Mrs. Tan baked some cookies. She gave 1/4 of them to her neighbor and 2/3 of the remainder to her children. She had 30 cookies left. How many cookies did she bake?",
+      "options": ["120", "144", "160", "180"],
+      "correct": 0,
       "points": 10,
-      "explanation": "To divide fractions, multiply by the reciprocal: 4/5 ÷ 2/3 = 4/5 × 3/2 = 12/10 = 6/5 = 1 1/5"
+      "explanation": "Let the total cookies be 12 units.\nNeighbor: 1/4 × 12 = 3 units\nRemaining: 9 units\nChildren: 2/3 × 9 = 6 units\nLeft: 9 - 6 = 3 units\n3 units = 30 cookies\n1 unit = 10 cookies\nTotal = 12 units = 12 × 10 = 120 cookies"
     },
     {
-      "question": "John has a rope that is 7/8 m long. He cuts it into pieces that are each 1/4 m long. How many pieces does he get?",
-      "options": ["3", "3 1/2", "4", "2 1/2"],
+      "question": "The ratio of boys to girls in a school is 5:4. 1/3 of the boys and 1/2 of the girls wear spectacles. What fraction of the students wear spectacles?",
+      "options": ["5/18", "11/27", "13/27", "7/18"],
       "correct": 1,
-      "points": 10,
-      "explanation": "This is a division problem: 7/8 ÷ 1/4 = 7/8 × 4/1 = 28/8 = 7/2 = 3 1/2 pieces. He gets 3 whole pieces and a half-piece."
+      "points": 15,
+      "explanation": "Let boys be 5 units, girls be 4 units.\nTotal students = 9 units\nBoys with spectacles: 1/3 × 5 = 5/3 units\nGirls with spectacles: 1/2 × 4 = 2 units = 6/3 units\nTotal with spectacles = 5/3 + 6/3 = 11/3 units\nFraction = (11/3) ÷ 9 = 11/27"
     },
     {
-      "question": "A box contains 24 chocolates. 3/8 of them are dark chocolate and the rest are milk chocolate. How many chocolates are milk chocolate?",
-      "options": ["9", "12", "15", "18"],
-      "correct": 2,
-      "points": 10,
-      "explanation": "First, find dark chocolates: 3/8 of 24 = 9. Then, milk chocolates = Total - Dark = 24 - 9 = 15."
-    },
-    {
-      "question": "Sarah read 2/3 of a book on Monday. On Tuesday, she read 1/4 of the remaining pages. What fraction of the whole book was left unread after Tuesday?",
-      "options": ["1/12", "1/6", "1/4", "1/3"],
+      "question": "A fruit seller had some apples and oranges. 3/8 of the fruits were apples. After selling 40 oranges, 3/7 of the remaining fruits were apples. How many fruits did he have at first?",
+      "options": ["240", "280", "320", "360"],
       "correct": 2,
       "points": 15,
-      "explanation": "Step 1: After Monday, fraction left = 1 - 2/3 = 1/3. Step 2: Tuesday she read 1/4 of 1/3 = 1/12. Step 3: Fraction left after Tuesday = 1/3 - 1/12 = 4/12 - 1/12 = 3/12 = 1/4."
+      "explanation": "Let total fruits at first be 56 units (LCM of 8 and 7).\nApples at first: 3/8 × 56 = 21 units\nOranges at first: 56 - 21 = 35 units\nAfter selling 40 oranges: Total = 56 units - 40\nApples still = 21 units\nNow apples are 3/7 of remaining: 21 = 3/7 × (56u - 40)\nMultiply by 7: 147 = 3 × (56u - 40) = 168u - 120\n168u = 147 + 120 = 267\nu = 267 ÷ 168 = 1.589... (not integer)\nWait, this doesn't work with units. Let's use actual numbers:\nLet total = T.\nApples = 3T/8, Oranges = 5T/8.\nAfter selling 40 oranges: Oranges = 5T/8 - 40, Total = T - 40.\nApples = 3T/8 = 3/7 × (T - 40)\nCross multiply: 7 × 3T/8 = 3 × (T - 40)\n21T/8 = 3T - 120\nMultiply by 8: 21T = 24T - 960\n3T = 960\nT = 320\nSo total fruits at first = 320"
     },
     {
-      "question": "A tank is 5/6 full of water. After using 30 litres, it is now 1/2 full. What is the total capacity of the tank?",
-      "options": ["60 L", "90 L", "120 L", "180 L"],
-      "correct": 1,
-      "points": 15,
-      "explanation": "The 30 litres represents the change in fraction: 5/6 - 1/2 = 5/6 - 3/6 = 2/6 = 1/3 of the tank. So, 1/3 of capacity = 30 L. Total capacity = 30 L ÷ (1/3) = 30 × 3 = 90 L."
-    },
-    {
-      "question": "In a basket, 2/7 of the fruits are apples and the rest are oranges. There are 15 more oranges than apples. How many apples are there?",
-      "options": ["6", "10", "12", "14"],
-      "correct": 1,
-      "points": 15,
-      "explanation": "Fraction of oranges = 1 - 2/7 = 5/7. Difference (oranges - apples) = 5/7 - 2/7 = 3/7 of total. So, 3/7 of total = 15. Total fruits = 15 ÷ (3/7) = 35. Number of apples = 2/7 of 35 = 10."
-    },
-    {
-      "question": "Mr. Lee gave 1/5 of his money to his son and 2/3 of the remainder to his daughter. He had $200 left. How much money did he have at first?",
-      "options": ["$600", "$750", "$900", "$1200"],
-      "correct": 1,
-      "points": 15,
-      "explanation": "Let total money be 1 unit. After giving to son, remainder = 4/5. He gave 2/3 of 4/5 = 8/15 to daughter. Total given = 1/5 + 8/15 = 3/15 + 8/15 = 11/15. Left = 4/15. So, 4/15 of total = $200. Total = $200 ÷ (4/15) = $200 × (15/4) = $750."
-    },
-    {
-      "question": "A bag contains red, blue, and green marbles. 2/9 of the marbles are red. 1/3 of the marbles are blue. The rest are green. There are 40 green marbles. How many marbles are there in total?",
-      "options": ["72", "81", "90", "108"],
-      "correct": 2,
-      "points": 15,
-      "explanation": "Red = 2/9, Blue = 1/3 = 3/9. So Red + Blue = 5/9. Green = 1 - 5/9 = 4/9. 4/9 of total = 40. Total = 40 ÷ (4/9) = 40 × (9/4) = 90 marbles."
-    },
-    {
-      "question": "A farmer has some chickens and cows. 3/7 of the animals are chickens. There are 16 more cows than chickens. How many animals does the farmer have in total?",
-      "options": ["70", "84", "98", "112"],
+      "question": "Tom's savings is 3/4 of Jerry's savings. After Tom spent $18 and Jerry spent $30, Tom's savings became 9/11 of Jerry's. How much did Tom have at first?",
+      "options": ["$36", "$48", "$54", "$72"],
       "correct": 3,
       "points": 15,
-      "explanation": "Let total animals be T. Chickens = 3/7 T, Cows = 4/7 T. Difference (cows - chickens) = 1/7 T = 16. So T = 16 × 7 = 112 animals."
+      "explanation": "Let Jerry's savings be 4 units, Tom's = 3/4 × 4 = 3 units.\nAfter spending:\nTom = 3 units - $18\nJerry = 4 units - $30\nNow Tom = 9/11 × Jerry:\n3u - 18 = 9/11 × (4u - 30)\nMultiply both sides by 11: 33u - 198 = 9 × (4u - 30) = 36u - 270\n33u - 198 = 36u - 270\n270 - 198 = 36u - 33u\n72 = 3u\nu = 24\nTom initially = 3 × 24 = $72"
     },
     {
-      "question": "A tank was 1/4 full. After adding 12 litres of water, it became 1/2 full. What is the capacity of the tank?",
-      "options": ["36 L", "48 L", "60 L", "72 L"],
-      "correct": 1,
+      "question": "A shop had a total of 280 kg of rice and flour. 5/8 of the rice and 1/2 of the flour were sold. The amount of rice sold was 40 kg more than the amount of flour sold. How much rice did the shop have at first?",
+      "options": ["120 kg", "140 kg", "160 kg", "180 kg"],
+      "correct": 2,
+      "points": 15,
+      "explanation": "Let rice be 8 units, flour be F kg.\nTotal: 8u + F = 280  ...(1)\nRice sold: 5/8 × 8u = 5u\nFlour sold: 1/2 × F = F/2\nGiven: 5u = F/2 + 40  ...(2)\nFrom (2): F = 10u - 80\nSubstitute into (1): 8u + (10u - 80) = 280\n18u - 80 = 280\n18u = 360\nu = 20\nRice = 8 × 20 = 160 kg"
+    },
+    {
+      "question": "A pizza was divided into equal slices. John ate 1/3 of the pizza. Mary ate 1/4 of the remaining pizza. There were 6 slices left. How many slices was the pizza originally cut into?",
+      "options": ["12", "16", "18", "24"],
+      "correct": 0,
       "points": 10,
-      "explanation": "The 12 litres represents the difference between 1/2 and 1/4: 1/2 - 1/4 = 2/4 - 1/4 = 1/4 of the tank. So, 1/4 of capacity = 12 L. Capacity = 12 × 4 = 48 L."
+      "explanation": "Let the pizza be 12 units (LCM of 3 and 4).\nJohn ate: 1/3 × 12 = 4 units\nRemaining: 8 units\nMary ate: 1/4 × 8 = 2 units\nLeft: 8 - 2 = 6 units\n6 units = 6 slices\n1 unit = 1 slice\nOriginal slices = 12 units = 12 slices"
+    },
+    {
+      "question": "In a class, 1/5 of the students wear glasses. 1/3 of the students who wear glasses are boys. 3/4 of the students who do not wear glasses are girls. If there are 27 girls who do not wear glasses, how many students are in the class?",
+      "options": ["30", "36", "40", "45"],
+      "correct": 3,
+      "points": 15,
+      "explanation": "Let total students be 60 units (LCM of 5, 3, 4).\nWear glasses: 1/5 × 60 = 12 units\nBoys with glasses: 1/3 × 12 = 4 units\nGirls with glasses: 12 - 4 = 8 units\nDo not wear glasses: 60 - 12 = 48 units\nGirls without glasses: 3/4 × 48 = 36 units\nGiven: 36 units = 27 students\n1 unit = 27 ÷ 36 = 0.75 students\nTotal = 60 × 0.75 = 45 students\n\nAlternatively, let total = T.\nGirls without glasses = 3/4 × (4/5 × T) = 3/5 × T = 27\nSo T = 27 ÷ (3/5) = 27 × 5/3 = 45"
+    },
+    {
+      "question": "3/5 of the children in a class are boys. After 6 girls join the class, half the class are boys. How many children are in the class after the girls join?",
+      "options": ["24", "30", "36", "42"],
+      "correct": 2,
+      "points": 15,
+      "explanation": "Let initial total be 5 units.\nBoys: 3/5 × 5u = 3u\nGirls: 2u\nAfter 6 girls join: Girls = 2u + 6, Total = 5u + 6\nBoys are half: 3u = 1/2 × (5u + 6)\nMultiply by 2: 6u = 5u + 6\nu = 6\nFinal total = 5 × 6 + 6 = 30 + 6 = 36 children"
     }
   ]
 }
