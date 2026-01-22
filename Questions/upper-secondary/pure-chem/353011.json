@@ -1,0 +1,131 @@
+{
+  "title": "Experimental Chemistry: Apparatus and Separation",
+  "topic": "Experimental Chemistry",
+  "subject": "Chemistry",
+  "level": "Upper Secondary",
+  "grade": "Sec 3 Pure Chemistry",
+  "chapter": 1,
+  "worksheet": 1,
+  "questions": [
+    {
+      "question": "Which apparatus would be most suitable for measuring exactly 25.0 cm³ of a solution?",
+      "options": [
+        "Burette",
+        "Pipette",
+        "Measuring cylinder",
+        "Beaker"
+      ],
+      "correct": 1,
+      "points": 10,
+      "explanation": "A pipette is designed to deliver a fixed, precise volume of liquid, such as 25.0 cm³. Burettes measure variable volumes, while measuring cylinders and beakers are less precise."
+    },
+    {
+      "question": "Which method is most suitable for separating a mixture of ethanol and water?",
+      "options": [
+        "Filtration",
+        "Fractional distillation",
+        "Sublimation",
+        "Using a separating funnel"
+      ],
+      "correct": 1,
+      "points": 10,
+      "explanation": "Ethanol and water are miscible liquids with different boiling points (ethanol 78°C, water 100°C). Fractional distillation separates them based on these boiling points."
+    },
+    {
+      "question": "Which drying agent is suitable for drying ammonia gas?",
+      "options": [
+        "Concentrated sulfuric acid",
+        "Calcium oxide",
+        "Fused calcium chloride",
+        "Silica gel"
+      ],
+      "correct": 1,
+      "points": 10,
+      "explanation": "Ammonia is a basic gas. Concentrated sulfuric acid would react with it. Calcium oxide (a base) is suitable as it does not react with ammonia and absorbs water."
+    },
+    {
+      "question": "Which technique would you use to separate sand from a mixture of sand and salt?",
+      "options": [
+        "Distillation",
+        "Filtration followed by evaporation",
+        "Fractional distillation",
+        "Paper chromatography"
+      ],
+      "correct": 1,
+      "points": 15,
+      "explanation": "Add water to dissolve the salt. Filter to separate insoluble sand. Evaporate the filtrate to obtain solid salt."
+    },
+    {
+      "question": "In paper chromatography, what does the Rf value represent?",
+      "options": [
+        "The ratio of distance travelled by solvent to distance travelled by solute",
+        "The ratio of distance travelled by solute to distance travelled by solvent",
+        "The time taken for the solute to travel",
+        "The concentration of the solute in the mixture"
+      ],
+      "correct": 1,
+      "points": 10,
+      "explanation": "Rf = distance moved by solute spot ÷ distance moved by solvent front. It is characteristic for a substance under specific conditions."
+    },
+    {
+      "question": "What apparatus is best for measuring the volume of gas produced in a reaction over time?",
+      "options": [
+        "Burette",
+        "Pipette",
+        "Gas syringe",
+        "Measuring cylinder"
+      ],
+      "correct": 2,
+      "points": 10,
+      "explanation": "A gas syringe allows accurate measurement of gas volume produced at regular time intervals, making it ideal for studying rates of reaction."
+    },
+    {
+      "question": "Which method separates immiscible liquids like oil and water?",
+      "options": [
+        "Fractional distillation",
+        "Simple distillation",
+        "Using a separating funnel",
+        "Filtration"
+      ],
+      "correct": 2,
+      "points": 10,
+      "explanation": "Immiscible liquids form distinct layers. A separating funnel allows the denser liquid (water) to be drained off from the bottom."
+    },
+    {
+      "question": "A substance changes directly from solid to gas upon heating. What purification method is this?",
+      "options": [
+        "Distillation",
+        "Crystallisation",
+        "Sublimation",
+        "Evaporation"
+      ],
+      "correct": 2,
+      "points": 10,
+      "explanation": "Sublimation is the process where a solid turns directly into a gas without passing through the liquid phase, used to purify substances like iodine or ammonium chloride."
+    },
+    {
+      "question": "Which piece of apparatus provides the most precise measurement of temperature during a reaction?",
+      "options": [
+        "Alcohol thermometer",
+        "Mercury thermometer",
+        "Digital thermometer with probe",
+        "All are equally precise"
+      ],
+      "correct": 2,
+      "points": 10,
+      "explanation": "A digital thermometer with a probe typically provides a faster response and more precise reading to the nearest 0.1°C compared to traditional liquid thermometers."
+    },
+    {
+      "question": "Two spots on a chromatogram have Rf values of 0.45 and 0.60. Which spot travelled further?",
+      "options": [
+        "The spot with Rf = 0.45",
+        "The spot with Rf = 0.60",
+        "They travelled the same distance",
+        "Cannot be determined from Rf alone"
+      ],
+      "correct": 1,
+      "points": 10,
+      "explanation": "Rf is distance of spot ÷ distance of solvent. A higher Rf means the spot moved a greater proportion of the solvent's distance, so it travelled further up the paper."
+    }
+  ]
+}

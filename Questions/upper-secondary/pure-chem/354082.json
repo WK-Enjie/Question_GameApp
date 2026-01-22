@@ -1,0 +1,131 @@
+{
+  "title": "Properties of Acids: Strength and Calculations",
+  "topic": "Acids and Bases",
+  "subject": "Chemistry",
+  "level": "Upper Secondary",
+  "grade": "Sec 3 Pure Chemistry",
+  "chapter": 8,
+  "worksheet": 2,
+  "questions": [
+    {
+      "question": "In an experiment, 0.1 mol/dm³ HCl (strong acid) and 0.1 mol/dm³ CH₃COOH (weak acid) were compared. Which statement is true?",
+      "options": [
+        "Both have the same concentration of H⁺ ions",
+        "HCl has a higher concentration of H⁺ ions",
+        "CH₃COOH has a higher concentration of H⁺ ions",
+        "Both have the same pH but different conductivities"
+      ],
+      "correct": 1,
+      "points": 10,
+      "explanation": "Strong acids like HCl dissociate completely, while weak acids like CH₃COOH dissociate partially. Therefore, at the same concentration, HCl produces more H⁺ ions and has a lower pH."
+    },
+    {
+      "question": "25.0 cm³ of 0.100 mol/dm³ NaOH neutralises 20.0 cm³ of H₂SO₄. What is the concentration of the sulfuric acid? (H₂SO₄ + 2NaOH → Na₂SO₄ + 2H₂O)",
+      "options": [
+        "0.0625 mol/dm³",
+        "0.125 mol/dm³",
+        "0.250 mol/dm³",
+        "0.500 mol/dm³"
+      ],
+      "correct": 0,
+      "points": 15,
+      "explanation": "Moles of NaOH = 0.025 dm³ × 0.100 = 0.0025 mol. From equation, 2 mol NaOH : 1 mol H₂SO₄. Moles H₂SO₄ = 0.0025 / 2 = 0.00125 mol. Concentration = moles / volume = 0.00125 mol / 0.020 dm³ = 0.0625 mol/dm³."
+    },
+    {
+      "question": "Which of the following would react the fastest with magnesium ribbon at the same concentration?",
+      "options": [
+        "Ethanoic acid (CH₃COOH)",
+        "Sulfuric acid (H₂SO₄)",
+        "Carbonic acid (H₂CO₃)",
+        "All at the same rate"
+      ],
+      "correct": 1,
+      "points": 10,
+      "explanation": "Sulfuric acid is a strong acid, fully dissociated, providing the highest concentration of H⁺ ions to react with magnesium. Weak acids like ethanoic and carbonic acid dissociate less, providing fewer H⁺ ions and reacting slower."
+    },
+    {
+      "question": "A 0.01 mol/dm³ solution of a monoprotic acid HA has a pH of 3. What can be deduced about acid HA?",
+      "options": [
+        "It is a strong acid",
+        "It is a weak acid",
+        "It is a concentrated acid",
+        "It is a diprotic acid"
+      ],
+      "correct": 0,
+      "points": 15,
+      "explanation": "For a 0.01 M strong monoprotic acid: [H⁺] = 0.01 M = 10⁻² M, so pH = 2. Given pH = 3, [H⁺] = 10⁻³ M = 0.001 M, which is less than 0.01 M, so it's NOT fully dissociated. Therefore, it must be a weak acid."
+    },
+    {
+      "question": "What volume of 0.200 mol/dm³ HCl is required to neutralise 25.0 cm³ of 0.400 mol/dm³ KOH? (HCl + KOH → KCl + H₂O)",
+      "options": [
+        "12.5 cm³",
+        "25.0 cm³",
+        "50.0 cm³",
+        "100.0 cm³"
+      ],
+      "correct": 2,
+      "points": 15,
+      "explanation": "Moles of KOH = 0.025 dm³ × 0.400 = 0.0100 mol. From 1:1 ratio, moles HCl needed = 0.0100 mol. Volume HCl = moles / conc. = 0.0100 / 0.200 = 0.0500 dm³ = 50.0 cm³."
+    },
+    {
+      "question": "Why does 0.1 M hydrochloric acid conduct electricity better than 0.1 M ethanoic acid?",
+      "options": [
+        "HCl molecules are smaller",
+        "HCl produces more mobile ions per molecule in solution",
+        "Ethanoic acid is more reactive",
+        "Ethanoic acid produces more OH⁻ ions"
+      ],
+      "correct": 1,
+      "points": 10,
+      "explanation": "Electrical conductivity depends on concentration of ions. HCl (strong acid) dissociates completely: HCl → H⁺ + Cl⁻. Ethanoic acid (weak acid) dissociates partially: CH₃COOH ⇌ H⁺ + CH₃COO⁻. Therefore, HCl provides more ions to carry current."
+    },
+    {
+      "question": "2.0 g of calcium carbonate reacts with excess hydrochloric acid. What volume of CO₂ gas is produced at room conditions? (CaCO₃ + 2HCl → CaCl₂ + CO₂ + H₂O; Molar mass CaCO₃ = 100 g/mol; 1 mol gas occupies 24 dm³ at RTP)",
+      "options": [
+        "0.24 dm³",
+        "0.48 dm³",
+        "1.20 dm³",
+        "2.40 dm³"
+      ],
+      "correct": 1,
+      "points": 15,
+      "explanation": "Moles CaCO₃ = mass / Molar mass = 2.0 / 100 = 0.020 mol. From equation, 1 mol CaCO₃ produces 1 mol CO₂. Moles CO₂ = 0.020 mol. Volume at RTP = moles × 24 = 0.020 × 24 = 0.48 dm³."
+    },
+    {
+      "question": "Which factor explains why weak acids have higher pH values than strong acids at the same concentration?",
+      "options": [
+        "Weak acids produce fewer H⁺ ions due to incomplete dissociation",
+        "Weak acids produce more OH⁻ ions",
+        "Weak acids react slower with indicators",
+        "Strong acids have larger molecules"
+      ],
+      "correct": 0,
+      "points": 10,
+      "explanation": "pH = -log₁₀[H⁺]. Weak acids have lower [H⁺] at the same concentration because they do not fully dissociate. This results in a higher (less acidic) pH value compared to strong acids."
+    },
+    {
+      "question": "A solution contains 0.005 mol of H⁺ ions in 500 cm³. What is its pH?",
+      "options": [
+        "1",
+        "2",
+        "3",
+        "4"
+      ],
+      "correct": 1,
+      "points": 15,
+      "explanation": "[H⁺] = moles / volume = 0.005 mol / 0.500 dm³ = 0.010 mol/dm³ = 10⁻² mol/dm³. pH = -log₁₀(10⁻²) = 2."
+    },
+    {
+      "question": "Which statement correctly compares 0.1 M HCl and 0.1 M CH₃COOH?",
+      "options": [
+        "They have the same reaction rate with magnesium",
+        "They require the same volume of NaOH for neutralisation",
+        "HCl has a lower electrical conductivity",
+        "CH₃COOH turns universal indicator more red"
+      ],
+      "correct": 1,
+      "points": 10,
+      "explanation": "Neutralisation depends on moles of acid, not strength. Both are monoprotic acids, so 0.1 M solutions contain the same number of moles of acidic H⁺ per volume that can be neutralised. Their rates, conductivity, and pH (color) differ."
+    }
+  ]
+}

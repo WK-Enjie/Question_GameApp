@@ -1,0 +1,131 @@
+{
+  "title": "Acids and Bases Fundamentals",
+  "topic": "Acids and Bases",
+  "subject": "Chemistry",
+  "level": "Upper Secondary",
+  "grade": "Sec 3 Pure Chemistry",
+  "chapter": 8,
+  "worksheet": 1,
+  "questions": [
+    {
+      "question": "Which ions are produced in aqueous solution by an acid?",
+      "options": [
+        "H⁺ ions",
+        "OH⁻ ions",
+        "O²⁻ ions",
+        "Cl⁻ ions"
+      ],
+      "correct": 0,
+      "points": 10,
+      "explanation": "Acids are substances that produce hydrogen ions (H⁺) when dissolved in water."
+    },
+    {
+      "question": "Which ions are produced in aqueous solution by an alkali?",
+      "options": [
+        "H⁺ ions",
+        "OH⁻ ions",
+        "Na⁺ ions",
+        "SO₄²⁻ ions"
+      ],
+      "correct": 1,
+      "points": 10,
+      "explanation": "Alkalis are bases that dissolve in water to produce hydroxide ions (OH⁻)."
+    },
+    {
+      "question": "What colour does Universal Indicator turn in a strongly acidic solution?",
+      "options": [
+        "Red",
+        "Green",
+        "Blue",
+        "Purple"
+      ],
+      "correct": 0,
+      "points": 10,
+      "explanation": "Universal Indicator turns red in strongly acidic solutions, indicating a low pH (high H⁺ concentration)."
+    },
+    {
+      "question": "A solution has a higher concentration of H⁺ ions than OH⁻ ions. What can be said about its pH?",
+      "options": [
+        "pH < 7",
+        "pH = 7",
+        "pH > 7",
+        "pH = 14"
+      ],
+      "correct": 0,
+      "points": 10,
+      "explanation": "If [H⁺] > [OH⁻], the solution is acidic and pH < 7. pH 7 is neutral, pH > 7 is alkaline."
+    },
+    {
+      "question": "Which of the following describes a weak acid?",
+      "options": [
+        "Fully ionised in water",
+        "Partially ionised in water",
+        "Does not produce H⁺ ions",
+        "Produces no conductivity in water"
+      ],
+      "correct": 1,
+      "points": 10,
+      "explanation": "Weak acids only partially dissociate into ions in water, while strong acids are fully ionised."
+    },
+    {
+      "question": "Which of these reactions is typical of acids?",
+      "options": [
+        "Reaction with metals to give salt and hydrogen",
+        "Reaction with acids to give salt and water",
+        "Reaction with ammonium salts to give ammonia",
+        "Reaction with alkalis to give salt and hydrogen"
+      ],
+      "correct": 0,
+      "points": 10,
+      "explanation": "Acids react with reactive metals (above hydrogen in reactivity series) to produce a salt and hydrogen gas."
+    },
+    {
+      "question": "What is the ionic equation for neutralisation?",
+      "options": [
+        "H⁺ + OH⁻ → H₂O",
+        "Na⁺ + Cl⁻ → NaCl",
+        "H₂ + O₂ → H₂O",
+        "2H⁺ + O²⁻ → H₂O"
+      ],
+      "correct": 0,
+      "points": 10,
+      "explanation": "Neutralisation between an acid and an alkali involves the reaction between hydrogen ions and hydroxide ions to form water."
+    },
+    {
+      "question": "Why might a farmer add calcium hydroxide to soil?",
+      "options": [
+        "To increase acidity",
+        "To decrease acidity (reduce pH)",
+        "To increase alkalinity (raise pH)",
+        "To add nutrients like nitrogen"
+      ],
+      "correct": 2,
+      "points": 10,
+      "explanation": "Calcium hydroxide (slaked lime) is a base added to acidic soils to neutralise excess acidity and raise the pH, improving crop growth conditions."
+    },
+    {
+      "question": "Which of the following is a characteristic reaction of bases?",
+      "options": [
+        "Reaction with acids to give salt and water",
+        "Reaction with metals to give hydrogen",
+        "Reaction with carbonates to give CO₂",
+        "Reaction with water to give an acid"
+      ],
+      "correct": 0,
+      "points": 10,
+      "explanation": "Bases react with acids to form a salt and water in a neutralisation reaction."
+    },
+    {
+      "question": "Sulfur dioxide (SO₂) is classified as an acidic oxide. Why?",
+      "options": [
+        "It reacts with acids to form salt and water",
+        "It reacts with water to form an acid (H₂SO₃)",
+        "It reacts with alkalis to form an acid",
+        "It is a metallic oxide"
+      ],
+      "correct": 1,
+      "points": 10,
+      "explanation": "Acidic oxides are usually oxides of non-metals that react with water to form acids. SO₂ + H₂O → H₂SO₃ (sulfurous acid)."
+    }
+  ]
+}
