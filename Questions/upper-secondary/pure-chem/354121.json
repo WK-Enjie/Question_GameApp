@@ -1,0 +1,131 @@
+{
+  "title": "Redox Reactions: Basic Concepts",
+  "topic": "Redox Reactions",
+  "subject": "Chemistry",
+  "level": "Upper Secondary",
+  "grade": "Sec 3 Pure Chemistry",
+  "chapter": 12,
+  "worksheet": 1,
+  "questions": [
+    {
+      "question": "What does the term 'oxidation' mean in terms of electron transfer?",
+      "options": [
+        "Gain of electrons",
+        "Loss of electrons",
+        "Gain of protons",
+        "Loss of protons"
+      ],
+      "correct": 1,
+      "points": 10,
+      "explanation": "Oxidation is the loss of electrons. A useful mnemonic is OIL RIG: Oxidation Is Loss, Reduction Is Gain."
+    },
+    {
+      "question": "In the reaction Zn + CuSO₄ → ZnSO₄ + Cu, which substance is oxidised?",
+      "options": [
+        "Zinc",
+        "Copper",
+        "Sulfate ion",
+        "None of the above"
+      ],
+      "correct": 0,
+      "points": 10,
+      "explanation": "Zinc atoms lose electrons to form Zn²⁺ ions: Zn → Zn²⁺ + 2e⁻. This is oxidation. Copper ions gain electrons: Cu²⁺ + 2e⁻ → Cu, which is reduction."
+    },
+    {
+      "question": "What is the oxidation state of sulfur in H₂SO₄?",
+      "options": [
+        "+4",
+        "+6",
+        "-2",
+        "+2"
+      ],
+      "correct": 1,
+      "points": 12,
+      "explanation": "H is +1 (×2 = +2), O is -2 (×4 = -8). Let S = x. Sum = 0: +2 + x - 8 = 0 → x - 6 = 0 → x = +6."
+    },
+    {
+      "question": "Which of the following is a reducing agent?",
+      "options": [
+        "A substance that gains electrons",
+        "A substance that loses electrons",
+        "A substance that is oxidised",
+        "Both B and C"
+      ],
+      "correct": 3,
+      "points": 12,
+      "explanation": "A reducing agent causes another substance to be reduced by losing electrons itself. Therefore, it is oxidised in the process."
+    },
+    {
+      "question": "What is the oxidation state of chlorine in NaClO?",
+      "options": [
+        "-1",
+        "+1",
+        "+5",
+        "+7"
+      ],
+      "correct": 1,
+      "points": 12,
+      "explanation": "Na is +1, O is -2. Let Cl = x. +1 + x - 2 = 0 → x - 1 = 0 → x = +1."
+    },
+    {
+      "question": "In the reaction 2Mg + O₂ → 2MgO, what is the oxidising agent?",
+      "options": [
+        "Magnesium",
+        "Oxygen",
+        "Magnesium oxide",
+        "Both magnesium and oxygen"
+      ],
+      "correct": 1,
+      "points": 10,
+      "explanation": "Oxygen gains electrons (from O₂ to O²⁻ in MgO), so it is reduced. The substance that is reduced is the oxidising agent."
+    },
+    {
+      "question": "Which of the following changes represents oxidation?",
+      "options": [
+        "Fe³⁺ → Fe²⁺",
+        "Cl₂ → 2Cl⁻",
+        "Cu → Cu²⁺",
+        "MnO₄⁻ → Mn²⁺"
+      ],
+      "correct": 2,
+      "points": 12,
+      "explanation": "Cu → Cu²⁺ involves loss of electrons (0 to +2), which is oxidation. The others involve gain of electrons (reduction)."
+    },
+    {
+      "question": "What is the oxidation state of nitrogen in NO₂?",
+      "options": [
+        "+2",
+        "+4",
+        "+3",
+        "-2"
+      ],
+      "correct": 1,
+      "points": 12,
+      "explanation": "O is -2 (×2 = -4). Let N = x. x - 4 = 0 → x = +4."
+    },
+    {
+      "question": "In a redox reaction, if iron changes from Fe²⁺ to Fe³⁺, what has happened to iron?",
+      "options": [
+        "It has been oxidised",
+        "It has been reduced",
+        "It has been neutralised",
+        "It has been displaced"
+      ],
+      "correct": 0,
+      "points": 10,
+      "explanation": "Fe²⁺ → Fe³⁺ involves loss of one electron (increase in oxidation state from +2 to +3), so it is oxidation."
+    },
+    {
+      "question": "Which substance is always the oxidising agent in a combustion reaction?",
+      "options": [
+        "Fuel",
+        "Carbon dioxide",
+        "Water",
+        "Oxygen"
+      ],
+      "correct": 3,
+      "points": 10,
+      "explanation": "In combustion, oxygen (O₂) gains electrons to form oxides (e.g., O²⁻ in CO₂ or H₂O), so it is always reduced and thus the oxidising agent."
+    }
+  ]
+}
