@@ -1,0 +1,131 @@
+{
+  "title": "Quadratic Equations: Solving Methods and Applications",
+  "topic": "Algebra",
+  "subject": "Mathematics",
+  "level": "Upper Secondary",
+  "grade": "Sec 3 E-Math",
+  "chapter": 5,
+  "worksheet": 1,
+  "questions": [
+    {
+      "question": "Solve the quadratic equation by factorisation: x² + 7x + 10 = 0",
+      "options": [
+        "x = 2, 5",
+        "x = -2, -5",
+        "x = 2, -5",
+        "x = -2, 5"
+      ],
+      "correct": 1,
+      "points": 10,
+      "explanation": "x² + 7x + 10 = (x + 2)(x + 5) = 0 → x + 2 = 0 or x + 5 = 0 → x = -2, -5"
+    },
+    {
+      "question": "Solve by completing the square: x² + 4x - 5 = 0",
+      "options": [
+        "x = -2 ± 3",
+        "x = 2 ± 3",
+        "x = -2 ± √5",
+        "x = 2 ± √5"
+      ],
+      "correct": 0,
+      "points": 12,
+      "explanation": "x² + 4x - 5 = 0 → (x² + 4x + 4) - 5 - 4 = 0 → (x + 2)² - 9 = 0 → (x + 2)² = 9 → x + 2 = ±3 → x = -2 ± 3 → x = 1 or x = -5"
+    },
+    {
+      "question": "What are the roots of the equation x² - 5x + 6 = 0 using the quadratic formula?",
+      "options": [
+        "x = 2, 3",
+        "x = -2, -3",
+        "x = 2, -3",
+        "x = -2, 3"
+      ],
+      "correct": 0,
+      "points": 12,
+      "explanation": "Using x = [-b ± √(b² - 4ac)]/(2a): a=1, b=-5, c=6 → x = [5 ± √(25 - 24)]/2 = [5 ± √1]/2 = [5 ± 1]/2 → x = (6)/2=3 or x = (4)/2=2"
+    },
+    {
+      "question": "The graph of y = x² - 3x + 2 cuts the x-axis at points A and B. What are the coordinates of A and B?",
+      "options": [
+        "(1,0) and (2,0)",
+        "(-1,0) and (2,0)",
+        "(0,1) and (0,2)",
+        "(1,0) and (-2,0)"
+      ],
+      "correct": 0,
+      "points": 10,
+      "explanation": "Solve x² - 3x + 2 = 0 → (x-1)(x-2)=0 → x=1,2. The x-intercepts are where y=0, so points are (1,0) and (2,0)."
+    },
+    {
+      "question": "A rectangle has an area of 24 cm². Its length is 2 cm more than its width. Find the width.",
+      "options": [
+        "4 cm",
+        "6 cm",
+        "5 cm",
+        "3 cm"
+      ],
+      "correct": 0,
+      "points": 15,
+      "explanation": "Let width = w, length = w+2. Area = w(w+2)=24 → w² + 2w - 24 = 0 → (w+6)(w-4)=0 → w=4 or w=-6. Width must be positive, so w=4 cm."
+    },
+    {
+      "question": "Solve by completing the square: x² - 2x - 8 = 0",
+      "options": [
+        "x = 1 ± 3",
+        "x = -1 ± 3",
+        "x = 1 ± √8",
+        "x = -1 ± √8"
+      ],
+      "correct": 0,
+      "points": 12,
+      "explanation": "x² - 2x - 8 = 0 → (x² - 2x + 1) - 8 - 1 = 0 → (x - 1)² - 9 = 0 → (x - 1)² = 9 → x - 1 = ±3 → x = 1 ± 3 → x = 4 or x = -2"
+    },
+    {
+      "question": "The sum of a number and its square is 30. Find the number.",
+      "options": [
+        "5 or -6",
+        "6 or -5",
+        "5 or 6",
+        "-5 or -6"
+      ],
+      "correct": 0,
+      "points": 15,
+      "explanation": "Let number = x. x + x² = 30 → x² + x - 30 = 0 → (x+6)(x-5)=0 → x=-6 or x=5"
+    },
+    {
+      "question": "What is the minimum value of y = x² - 6x + 8?",
+      "options": [
+        "-1",
+        "8",
+        "3",
+        "0"
+      ],
+      "correct": 0,
+      "points": 12,
+      "explanation": "Complete square: x² - 6x + 8 = (x² - 6x + 9) + 8 - 9 = (x - 3)² - 1. Minimum value occurs when (x-3)²=0, so minimum y = -1."
+    },
+    {
+      "question": "The product of two consecutive integers is 72. Find the integers.",
+      "options": [
+        "8 and 9 or -9 and -8",
+        "7 and 8",
+        "9 and 10",
+        "6 and 7"
+      ],
+      "correct": 0,
+      "points": 15,
+      "explanation": "Let integers be n and n+1. n(n+1)=72 → n² + n - 72 = 0 → (n+9)(n-8)=0 → n=-9 or n=8. So integers are 8,9 or -9,-8."
+    },
+    {
+      "question": "Solve 3x² + 2x - 1 = 0 using the quadratic formula",
+      "options": [
+        "x = 1/3 or x = -1",
+        "x = 1 or x = -1/3",
+        "x = 3 or x = -1",
+        "x = -1/3 or x = 1/3"
+      ],
+      "correct": 0,
+      "points": 15,
+      "explanation": "a=3, b=2, c=-1 → x = [-2 ± √(4 + 12)]/(6) = [-2 ± √16]/6 = [-2 ± 4]/6 → x = (2)/6=1/3 or x = (-6)/6=-1"
+    }
+  ]
+}
