@@ -1,0 +1,191 @@
+{
+  "title": "Science Lab Safety, Hazard Symbols, and Apparatus",
+  "topic": "Laboratory Safety and Equipment",
+  "subject": "Science",
+  "level": "Lower Secondary",
+  "grade": "Sec 1",
+  "chapter": 1,
+  "worksheet": 2,
+  "questions": [
+    {
+      "question": "What does this symbol mean? (Image description: flame)",
+      "options": [
+        "Corrosive",
+        "Toxic",
+        "Flammable",
+        "Harmful"
+      ],
+      "correct": 2,
+      "points": 10,
+      "explanation": "Flame symbol indicates flammable substances that can catch fire easily."
+    },
+    {
+      "question": "Which of the following is NOT allowed in the science lab?",
+      "options": [
+        "Tying long hair back",
+        "Eating and drinking",
+        "Wearing safety goggles",
+        "Wearing closed-toe shoes"
+      ],
+      "correct": 1,
+      "points": 10,
+      "explanation": "Eating and drinking are prohibited to avoid contamination and ingestion of chemicals."
+    },
+    {
+      "question": "What is the main use of a boiling tube compared to a test tube?",
+      "options": [
+        "Measuring exact volumes",
+        "Storing chemicals long-term",
+        "Heating larger volumes of liquid",
+        "Mixing small amounts of solids"
+      ],
+      "correct": 2,
+      "points": 12,
+      "explanation": "Boiling tubes are larger and thicker, suitable for heating liquids; test tubes are for small-scale reactions."
+    },
+    {
+      "question": "Which apparatus is placed between the tripod stand and the beaker when heating?",
+      "options": [
+        "Heatproof mat",
+        "Bunsen burner",
+        "Wire gauze",
+        "Tongs"
+      ],
+      "correct": 2,
+      "points": 12,
+      "explanation": "Wire gauze spreads heat evenly and supports the beaker on a tripod."
+    },
+    {
+      "question": "Before lighting a Bunsen burner, you should always:",
+      "options": [
+        "Open the air hole fully and light immediately",
+        "Close the gas tap and then open it",
+        "Close the air hole and light the match first",
+        "Wear gloves and an apron"
+      ],
+      "correct": 2,
+      "points": 12,
+      "explanation": "For a safety flame, close the air hole before lighting to produce a yellow, visible flame."
+    },
+    {
+      "question": "What does this symbol mean? (Image description: skull and crossbones)",
+      "options": [
+        "Corrosive",
+        "Irritant",
+        "Explosive",
+        "Toxic"
+      ],
+      "correct": 3,
+      "points": 10,
+      "explanation": "Skull and crossbones indicates toxic substances that can cause poisoning or death."
+    },
+    {
+      "question": "When heating a test tube, you should point the mouth:",
+      "options": [
+        "Towards your face for closer observation",
+        "Away from yourself and others",
+        "Upwards to avoid spills",
+        "At the teacher"
+      ],
+      "correct": 1,
+      "points": 12,
+      "explanation": "Always point the test tube away to avoid injury from splashes or eruptions."
+    },
+    {
+      "question": "Which piece of equipment is used to hold a test tube while heating?",
+      "options": [
+        "Clamp stand",
+        "Spatula",
+        "Test tube holder",
+        "Tongs"
+      ],
+      "correct": 2,
+      "points": 12,
+      "explanation": "A test tube holder keeps your hands safe from heat when heating a test tube."
+    },
+    {
+      "question": "What should you do if you spill a chemical on your skin?",
+      "options": [
+        "Wipe with a tissue",
+        "Ignore it if it's a small amount",
+        "Wash with plenty of water and inform teacher",
+        "Apply ointment immediately"
+      ],
+      "correct": 2,
+      "points": 12,
+      "explanation": "Immediately rinse with running water for several minutes and report to the teacher."
+    },
+    {
+      "question": "What is the purpose of a heatproof mat?",
+      "options": [
+        "To support a tripod stand",
+        "To heat liquids evenly",
+        "To protect the bench from heat damage",
+        "To measure temperature"
+      ],
+      "correct": 2,
+      "points": 10,
+      "explanation": "Heatproof mats protect lab surfaces from hot equipment."
+    },
+    {
+      "question": "Which symbol means 'corrosive'?",
+      "options": [
+        "Exclamation mark",
+        "Flame",
+        "Gas cylinder",
+        "Test tube pouring liquid onto a hand and surface"
+      ],
+      "correct": 3,
+      "points": 10,
+      "explanation": "Corrosive symbol shows liquid damaging a hand and material—means it can destroy living tissue and materials."
+    },
+    {
+      "question": "When should you wear safety goggles in the lab?",
+      "options": [
+        "Only when using chemicals",
+        "Only when heating substances",
+        "At all times during experiments",
+        "Only if the teacher is watching"
+      ],
+      "correct": 2,
+      "points": 12,
+      "explanation": "Safety goggles should be worn throughout the experiment to protect eyes from splashes, fumes, or flying particles."
+    },
+    {
+      "question": "What is the correct order of steps when lighting a Bunsen burner?",
+      "options": [
+        "Open gas tap, light match, adjust air hole",
+        "Close air hole, light match, open gas tap, adjust flame",
+        "Open air hole fully, open gas tap, light immediately",
+        "Light match first, then open gas tap"
+      ],
+      "correct": 1,
+      "points": 12,
+      "explanation": "Close air hole, light match, open gas tap gently, then adjust air hole for desired flame."
+    },
+    {
+      "question": "Which hazard symbol indicates a substance that may cause skin irritation?",
+      "options": [
+        "Flame",
+        "Skull and crossbones",
+        "Exclamation mark",
+        "Corrosive symbol"
+      ],
+      "correct": 2,
+      "points": 10,
+      "explanation": "Exclamation mark symbol indicates irritant or harmful substances that can cause skin/eye irritation."
+    },
+    {
+      "question": "What should you do at the end of every lab session?",
+      "options": [
+        "Leave all equipment out for the next class",
+        "Wash hands thoroughly",
+        "Take unused chemicals home",
+        "Dispose of solids in the sink"
+      ],
+      "correct": 1,
+      "points": 12,
+      "explanation": "Always wash hands after handling chemicals or lab equipment to prevent contamination."
+    }
+  ]
+}

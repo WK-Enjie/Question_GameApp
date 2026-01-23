@@ -1,0 +1,191 @@
+{
+  "title": "The Scientific Endeavour: Variables, Data, Errors, SI Units, and Scientist Qualities",
+  "topic": "Scientific Method & Fundamentals",
+  "subject": "Science",
+  "level": "Lower Secondary",
+  "grade": "Sec 1",
+  "chapter": 1,
+  "worksheet": 1,
+  "questions": [
+    {
+      "question": "Which of the following is an example of qualitative data?",
+      "options": [
+        "The mass is 50 grams.",
+        "The leaves are green and smooth.",
+        "The temperature is 25°C.",
+        "The length is 12.5 cm."
+      ],
+      "correct": 1,
+      "points": 10,
+      "explanation": "Qualitative data describes qualities (color, texture) without numbers. 'Green and smooth' is qualitative."
+    },
+    {
+      "question": "In an experiment to test how light affects plant growth, the amount of light given is changed each day. What is the independent variable?",
+      "options": [
+        "Plant growth",
+        "Type of plant",
+        "Amount of light",
+        "Amount of water"
+      ],
+      "correct": 2,
+      "points": 12,
+      "explanation": "The independent variable is what the scientist changes on purpose—here, the amount of light."
+    },
+    {
+      "question": "Which of the following is quantitative data?",
+      "options": [
+        "The metal is shiny.",
+        "The sound is loud.",
+        "The liquid is acidic.",
+        "The volume is 30 mL."
+      ],
+      "correct": 3,
+      "points": 10,
+      "explanation": "Quantitative data involves numbers and measurements. '30 mL' is a numerical measurement."
+    },
+    {
+      "question": "In an experiment measuring how fast sugar dissolves at different temperatures, what is the dependent variable?",
+      "options": [
+        "Type of sugar",
+        "Amount of sugar",
+        "Temperature of water",
+        "Time taken for sugar to dissolve"
+      ],
+      "correct": 3,
+      "points": 12,
+      "explanation": "The dependent variable is what you measure as the result—here, the time taken for sugar to dissolve."
+    },
+    {
+      "question": "What should be kept constant in the sugar dissolution experiment?",
+      "options": [
+        "Temperature only",
+        "Type of cup used",
+        "Time taken to dissolve",
+        "Amount of sugar, volume of water, stirring speed"
+      ],
+      "correct": 3,
+      "points": 12,
+      "explanation": "Constants are factors kept the same to ensure a fair test. Amount of sugar, water volume, and stirring speed should be constant."
+    },
+    {
+      "question": "What type of error occurs when you read a meniscus from above instead of at eye level?",
+      "options": [
+        "Calculation error",
+        "Zero error",
+        "Random error",
+        "Parallax error"
+      ],
+      "correct": 3,
+      "points": 12,
+      "explanation": "Parallax error happens when the observer's eye is not level with the measurement marking."
+    },
+    {
+      "question": "A thermometer shows 2°C in ice water instead of 0°C. This is an example of:",
+      "options": [
+        "Human error",
+        "Parallax error",
+        "Zero error",
+        "Systematic error"
+      ],
+      "correct": 2,
+      "points": 12,
+      "explanation": "Zero error is when an instrument does not read zero when it should."
+    },
+    {
+      "question": "Which of the following is a suitable hypothesis for an experiment on seed germination?",
+      "options": [
+        "Seeds need water to grow.",
+        "Seeds germinate in soil.",
+        "Water is important for plants.",
+        "If seeds are given more water, then they will germinate faster."
+      ],
+      "correct": 3,
+      "points": 12,
+      "explanation": "A hypothesis is an 'If… then…' statement that can be tested."
+    },
+    {
+      "question": "In a test for starch using iodine, the observation 'the solution turned blue-black' is:",
+      "options": [
+        "An inference",
+        "A controlled variable",
+        "Qualitative data",
+        "Quantitative data"
+      ],
+      "correct": 2,
+      "points": 10,
+      "explanation": "Color change is a qualitative observation, describing a property without measurement."
+    },
+    {
+      "question": "Which SI unit is used to measure mass?",
+      "options": [
+        "Kelvin (K)",
+        "Second (s)",
+        "Kilogram (kg)",
+        "Meter (m)"
+      ],
+      "correct": 2,
+      "points": 10,
+      "explanation": "The kilogram (kg) is the SI base unit for mass."
+    },
+    {
+      "question": "What is the SI unit for time?",
+      "options": [
+        "Meter (m)",
+        "Kelvin (K)",
+        "Second (s)",
+        "Ampere (A)"
+      ],
+      "correct": 2,
+      "points": 10,
+      "explanation": "The second (s) is the SI base unit for time."
+    },
+    {
+      "question": "Which quality is essential for a good scientist?",
+      "options": [
+        "Being impatient",
+        "Ignoring unexpected results",
+        "Objectivity",
+        "Making assumptions without testing"
+      ],
+      "correct": 2,
+      "points": 12,
+      "explanation": "A good scientist must be objective, basing conclusions on evidence rather than personal bias."
+    },
+    {
+      "question": "To reduce parallax error when using a measuring cylinder, you should:",
+      "options": [
+        "Read from the top of the meniscus",
+        "Hold the cylinder at an angle",
+        "Read at eye level with the meniscus",
+        "Use a digital scale instead"
+      ],
+      "correct": 2,
+      "points": 12,
+      "explanation": "Always read the meniscus at eye level to avoid parallax error."
+    },
+    {
+      "question": "Which of these is an example of a controlled variable in a plant growth experiment?",
+      "options": [
+        "Height of plant",
+        "Number of leaves",
+        "Amount of sunlight (changed intentionally)",
+        "Type of soil used"
+      ],
+      "correct": 3,
+      "points": 12,
+      "explanation": "Controlled variables are kept the same for all setups. Type of soil should be constant."
+    },
+    {
+      "question": "What is the SI unit for temperature?",
+      "options": [
+        "Degree Celsius (°C)",
+        "Kelvin (K)",
+        "Joule (J)",
+        "Newton (N)"
+      ],
+      "correct": 1,
+      "points": 10,
+      "explanation": "The Kelvin (K) is the SI base unit for temperature, though Celsius is commonly used in labs."
+    }
+  ]
+}
