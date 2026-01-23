@@ -57,7 +57,7 @@
         "x < 27/2",
         "x < 15"
       ],
-      "correct": 1,
+      "correct": 0,
       "points": 20,
       "explanation": "(2x-3)/4 + 1 < 5 → (2x-3)/4 < 4 → 2x-3 < 16 → 2x < 19 → x < 19/2 = 9.5",
       "difficulty": "hard"
@@ -161,9 +161,9 @@
         "1, 2, 3",
         "0, 1, 2"
       ],
-      "correct": 2,
+      "correct": 0,
       "points": 25,
-      "explanation": "Solve: -3 < 2x-1 → 2x > -2 → x > -1 AND 2x-1 ≤ 5 → 2x ≤ 6 → x ≤ 3 → -1 < x ≤ 3 → integers: 0,1,2,3 but careful: x > -1 excludes -1 itself. Wait: -1 < x ≤ 3 means x = 0,1,2,3. Options show 0,1,2,3 which matches first option.",
+      "explanation": "Solve: -3 < 2x - 1 → 2x > -2 → x > -1 AND 2x - 1 ≤ 5 → 2x ≤ 6 → x ≤ 3 → -1 < x ≤ 3 → integers: 0, 1, 2, 3",
       "difficulty": "hard"
     },
     {
