@@ -1,0 +1,191 @@
+{
+  "title": "General Wave Properties: Definitions, Calculations, and Applications",
+  "topic": "Waves",
+  "subject": "Physics",
+  "level": "Upper Secondary",
+  "grade": "Sec 3 Physics",
+  "chapter": 9,
+  "worksheet": 1,
+  "questions": [
+    {
+      "question": "Which of the following best defines a transverse wave?",
+      "options": [
+        "A wave where the particles vibrate perpendicular to the direction of wave propagation",
+        "A wave where the particles vibrate parallel to the direction of wave propagation",
+        "A wave that requires a medium to travel through",
+        "A wave that can travel through a vacuum"
+      ],
+      "correct": 0,
+      "points": 10,
+      "explanation": "In transverse waves, particle displacement is perpendicular to wave direction. Examples: light, water waves."
+    },
+    {
+      "question": "What is the definition of wavelength?",
+      "options": [
+        "Distance between two consecutive points in phase on a wave",
+        "Time taken for one complete wave to pass a point",
+        "Number of complete waves passing a point per second",
+        "Maximum displacement from the rest position"
+      ],
+      "correct": 0,
+      "points": 10,
+      "explanation": "Wavelength (λ) is measured between two consecutive crests, troughs, or any two points in phase."
+    },
+    {
+      "question": "If a wave has a frequency of 50 Hz and a wavelength of 0.5 m, what is its wave speed?",
+      "options": [
+        "25 m/s",
+        "50 m/s",
+        "0.01 m/s",
+        "100 m/s"
+      ],
+      "correct": 0,
+      "points": 12,
+      "explanation": "Wave speed v = f × λ = 50 Hz × 0.5 m = 25 m/s."
+    },
+    {
+      "question": "What is the period of a wave with frequency 20 Hz?",
+      "options": [
+        "0.05 s",
+        "20 s",
+        "5 s",
+        "0.2 s"
+      ],
+      "correct": 0,
+      "points": 10,
+      "explanation": "Period T = 1/f = 1/20 = 0.05 s."
+    },
+    {
+      "question": "Which type of wave can travel through a vacuum?",
+      "options": [
+        "Electromagnetic waves",
+        "Sound waves",
+        "Water waves",
+        "Seismic waves"
+      ],
+      "correct": 0,
+      "points": 10,
+      "explanation": "Electromagnetic waves (e.g., light, radio) can travel through a vacuum; mechanical waves require a medium."
+    },
+    {
+      "question": "In a water wave, a buoy moves up and down 10 times in 5 seconds. What is the frequency?",
+      "options": [
+        "2 Hz",
+        "0.5 Hz",
+        "10 Hz",
+        "5 Hz"
+      ],
+      "correct": 0,
+      "points": 12,
+      "explanation": "Frequency = number of oscillations/time = 10/5 = 2 Hz."
+    },
+    {
+      "question": "What is the amplitude of a wave?",
+      "options": [
+        "Maximum displacement from the rest position",
+        "Distance between two consecutive crests",
+        "Time for one complete oscillation",
+        "Number of waves per second"
+      ],
+      "correct": 0,
+      "points": 10,
+      "explanation": "Amplitude is the maximum displacement from equilibrium, related to wave energy."
+    },
+    {
+      "question": "If a sound wave has a speed of 340 m/s and a wavelength of 0.68 m, what is its frequency?",
+      "options": [
+        "500 Hz",
+        "100 Hz",
+        "340 Hz",
+        "232 Hz"
+      ],
+      "correct": 0,
+      "points": 12,
+      "explanation": "f = v/λ = 340 m/s ÷ 0.68 m = 500 Hz."
+    },
+    {
+      "question": "Which wave property determines loudness for sound and brightness for light?",
+      "options": [
+        "Amplitude",
+        "Wavelength",
+        "Frequency",
+        "Speed"
+      ],
+      "correct": 0,
+      "points": 10,
+      "explanation": "Amplitude affects loudness (sound) and brightness (light); energy is proportional to amplitude squared."
+    },
+    {
+      "question": "What happens to wavelength if frequency doubles and wave speed remains constant?",
+      "options": [
+        "Halves",
+        "Doubles",
+        "Remains the same",
+        "Quadruples"
+      ],
+      "correct": 0,
+      "points": 12,
+      "explanation": "v = fλ. If v constant and f doubles, λ must halve."
+    },
+    {
+      "question": "Which diagram shows correct labeling of amplitude and wavelength on a transverse wave?",
+      "options": [
+        "Amplitude: vertical arrow from rest to crest; Wavelength: horizontal arrow crest to crest",
+        "Amplitude: horizontal arrow crest to crest; Wavelength: vertical arrow rest to crest",
+        "Amplitude: from trough to crest; Wavelength: from crest to trough",
+        "Amplitude and wavelength are both horizontal arrows"
+      ],
+      "correct": 0,
+      "points": 10,
+      "explanation": "Amplitude is vertical, wavelength is horizontal between identical points."
+    },
+    {
+      "question": "A wave travels 60 m in 2 seconds. If its frequency is 10 Hz, what is its wavelength?",
+      "options": [
+        "3 m",
+        "6 m",
+        "0.5 m",
+        "30 m"
+      ],
+      "correct": 0,
+      "points": 15,
+      "explanation": "First find speed: v = distance/time = 60/2 = 30 m/s. Then λ = v/f = 30/10 = 3 m."
+    },
+    {
+      "question": "What type of wave are sound waves in air?",
+      "options": [
+        "Longitudinal",
+        "Transverse",
+        "Electromagnetic",
+        "Surface"
+      ],
+      "correct": 0,
+      "points": 10,
+      "explanation": "Sound waves are longitudinal; particles vibrate parallel to wave direction."
+    },
+    {
+      "question": "If a wave's period is 0.2 s, how many waves pass a point in 10 seconds?",
+      "options": [
+        "50",
+        "5",
+        "2",
+        "10"
+      ],
+      "correct": 0,
+      "points": 12,
+      "explanation": "Number of waves = total time / period = 10 s ÷ 0.2 s = 50."
+    },
+    {
+      "question": "Which application uses reflection of waves?",
+      "options": [
+        "Echo sounding",
+        "Radio broadcasting",
+        "X-ray imaging",
+        "All of the above"
+      ],
+      "correct": 0,
+      "points": 10,
+      "explanation": "Echo sounding uses reflection of sound waves to measure underwater depth. Radio broadcasting relies on transmission, not reflection. X-ray imaging depends on absorption, not reflection. Therefore, only echo sounding primarily uses wave reflection."
+    }
+  ]
+}

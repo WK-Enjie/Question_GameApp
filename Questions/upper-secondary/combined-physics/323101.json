@@ -1,0 +1,191 @@
+{
+  "title": "Electromagnetic Spectrum: Properties, Applications, and Effects",
+  "topic": "Electromagnetic Waves",
+  "subject": "Physics",
+  "level": "Upper Secondary",
+  "grade": "Sec 3 Physics",
+  "chapter": 10,
+  "worksheet": 1,
+  "questions": [
+    {
+      "question": "Which property is common to all electromagnetic waves in a vacuum?",
+      "options": [
+        "Same amplitude",
+        "Same wavelength",
+        "Same frequency",
+        "Same speed"
+      ],
+      "correct": 3,
+      "points": 10,
+      "explanation": "All electromagnetic waves travel at the speed of light (3 × 10⁸ m/s) in a vacuum."
+    },
+    {
+      "question": "Which region of the EM spectrum has the longest wavelength?",
+      "options": [
+        "Gamma rays",
+        "Radio waves",
+        "Ultraviolet",
+        "X-rays"
+      ],
+      "correct": 1,
+      "points": 10,
+      "explanation": "Radio waves have the longest wavelengths in the electromagnetic spectrum."
+    },
+    {
+      "question": "Which of these is a typical use of microwaves?",
+      "options": [
+        "Sterilising food",
+        "Remote controllers",
+        "Mobile (cell) phones",
+        "Medical radiology"
+      ],
+      "correct": 2,
+      "points": 12,
+      "explanation": "Microwaves are used in mobile phone communication, microwave ovens, and satellite TV."
+    },
+    {
+      "question": "Which EM wave is commonly used in optical fibers for telecommunications?",
+      "options": [
+        "Radio waves",
+        "Visible light",
+        "Infrared",
+        "Ultraviolet"
+      ],
+      "correct": 1,
+      "points": 12,
+      "explanation": "Visible light is used in optical fibers for high-speed data transmission."
+    },
+    {
+      "question": "What is the main hazard of over-exposure to ultraviolet radiation?",
+      "options": [
+        "Causes heating of tissues",
+        "Causes ionisation and DNA damage",
+        "Causes radio interference",
+        "Causes temporary blindness"
+      ],
+      "correct": 1,
+      "points": 12,
+      "explanation": "UV radiation can ionise cells and cause DNA damage, leading to skin cancer."
+    },
+    {
+      "question": "Which EM wave is used in bank note authentication?",
+      "options": [
+        "X-rays",
+        "Ultraviolet",
+        "Infrared",
+        "Gamma rays"
+      ],
+      "correct": 1,
+      "points": 10,
+      "explanation": "UV light reveals security features on bank notes that are invisible under normal light."
+    },
+    {
+      "question": "Which type of electromagnetic wave has the highest frequency?",
+      "options": [
+        "Radio waves",
+        "Visible light",
+        "Microwaves",
+        "Gamma rays"
+      ],
+      "correct": 3,
+      "points": 10,
+      "explanation": "Gamma rays have the highest frequency (and shortest wavelength) in the EM spectrum."
+    },
+    {
+      "question": "What is a common use of infrared radiation?",
+      "options": [
+        "Satellite television",
+        "Thermal imaging",
+        "Sterilising medical equipment",
+        "Security screening at airports"
+      ],
+      "correct": 1,
+      "points": 12,
+      "explanation": "Infrared is used in thermal imaging cameras, remote controllers, and indoor alarms."
+    },
+    {
+      "question": "Which statement about electromagnetic waves is correct?",
+      "options": [
+        "They are longitudinal waves",
+        "They require a medium to travel",
+        "They are transverse waves",
+        "They travel faster in glass than in vacuum"
+      ],
+      "correct": 2,
+      "points": 10,
+      "explanation": "Electromagnetic waves are transverse waves that can travel through a vacuum."
+    },
+    {
+      "question": "What is the main use of gamma rays in medicine?",
+      "options": [
+        "Imaging bones",
+        "Cancer treatment",
+        "Sterilising food",
+        "Communications"
+      ],
+      "correct": 1,
+      "points": 12,
+      "explanation": "Gamma rays are used in radiotherapy to destroy cancer cells."
+    },
+    {
+      "question": "Which EM wave is used in RFID tags?",
+      "options": [
+        "X-rays",
+        "Radio waves",
+        "Visible light",
+        "Ultraviolet"
+      ],
+      "correct": 1,
+      "points": 12,
+      "explanation": "RFID (Radio Frequency Identification) tags use radio waves for tracking and identification."
+    },
+    {
+      "question": "What effect can microwaves have on living tissues if over-exposed?",
+      "options": [
+        "Ionisation",
+        "Heating",
+        "Fluorescence",
+        "Magnetisation"
+      ],
+      "correct": 1,
+      "points": 12,
+      "explanation": "Microwaves cause heating effects in tissues (as in microwave ovens)."
+    },
+    {
+      "question": "Which region of the EM spectrum is used in astronomy to study distant stars?",
+      "options": [
+        "Only visible light",
+        "Only radio waves",
+        "Multiple regions including radio and X-rays",
+        "Only infrared"
+      ],
+      "correct": 2,
+      "points": 12,
+      "explanation": "Astronomers use multiple EM regions: radio telescopes, X-ray telescopes, infrared cameras, etc."
+    },
+    {
+      "question": "What is the correct order of the EM spectrum from shortest to longest wavelength?",
+      "options": [
+        "Radio → Microwaves → Infrared → Visible → UV → X-rays → Gamma",
+        "Gamma → X-rays → UV → Visible → Infrared → Microwaves → Radio",
+        "Visible → UV → Infrared → Radio → X-rays → Gamma → Microwaves",
+        "Radio → Visible → UV → X-rays → Gamma → Infrared → Microwaves"
+      ],
+      "correct": 1,
+      "points": 12,
+      "explanation": "Gamma (short λ) → X-rays → UV → Visible → Infrared → Microwaves → Radio (long λ)."
+    },
+    {
+      "question": "Which EM wave is commonly used for sterilising food?",
+      "options": [
+        "Radio waves",
+        "Infrared",
+        "Gamma rays",
+        "Visible light"
+      ],
+      "correct": 2,
+      "points": 12,
+      "explanation": "Gamma rays kill bacteria and are used to sterilise food and medical equipment."
+    }
+  ]
+}

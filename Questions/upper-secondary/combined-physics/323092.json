@@ -1,0 +1,151 @@
+{
+  "title": "General Wave Properties: Advanced Applications (Including Sound)",
+  "topic": "Waves",
+  "subject": "Physics",
+  "level": "Upper Secondary",
+  "grade": "Sec 3/4 Physics",
+  "chapter": 9,
+  "worksheet": 2,
+  "questions": [
+    {
+      "question": "A water wave travels 90 m in 15 seconds. If 15 complete waves pass a point in this time, what is the wavelength?",
+      "options": ["6 m", "9 m", "3 m", "12 m"],
+      "correct": 0,
+      "points": 15,
+      "explanation": "Wave speed v = 90 / 15 = 6 m/s. Frequency f = 15 / 15 = 1 Hz. λ = v / f = 6 / 1 = 6 m."
+    },
+    {
+      "question": "Which frequency is within the typical human audible range?",
+      "options": ["15,000 Hz", "25,000 Hz", "10 Hz", "0.5 Hz"],
+      "correct": 0,
+      "points": 10,
+      "explanation": "The human audible range is approximately 20 Hz to 20,000 Hz. 15,000 Hz is within this range."
+    },
+    {
+      "question": "What determines the pitch of a sound?",
+      "options": ["Frequency", "Amplitude", "Speed", "Wavelength"],
+      "correct": 0,
+      "points": 10,
+      "explanation": "Pitch is determined by frequency: higher frequency → higher pitch. Loudness is determined by amplitude."
+    },
+    {
+      "question": "In which medium does sound travel fastest?",
+      "options": ["Steel", "Water", "Air", "Vacuum"],
+      "correct": 0,
+      "points": 10,
+      "explanation": "Sound travels fastest in solids (e.g., steel ≈ 5000 m/s), slower in liquids (water ≈ 1500 m/s), slowest in gases (air ≈ 340 m/s). Sound cannot travel in vacuum."
+    },
+    {
+      "question": "A student shouts towards a cliff 170 m away. How long after shouting will the echo be heard? (Speed of sound = 340 m/s)",
+      "options": ["1.0 s", "0.5 s", "2.0 s", "0.25 s"],
+      "correct": 0,
+      "points": 15,
+      "explanation": "Total distance = to cliff and back = 2 × 170 = 340 m. Time = distance / speed = 340 / 340 = 1.0 s."
+    },
+    {
+      "question": "Two sounds have the same pitch but different loudness. What must be true?",
+      "options": ["They have the same frequency but different amplitudes", "They have the same amplitude but different frequencies", "They have different wavelengths and speeds", "They are produced by different sources only"],
+      "correct": 0,
+      "points": 12,
+      "explanation": "Same pitch → same frequency. Different loudness → different amplitudes. Speed and wavelength may be the same if in the same medium."
+    },
+    {
+      "question": "A sound wave has a frequency of 500 Hz and a wavelength of 0.68 m in air. What is its speed?",
+      "options": ["340 m/s", "147 m/s", "735 m/s", "500 m/s"],
+      "correct": 0,
+      "points": 12,
+      "explanation": "v = fλ = 500 × 0.68 = 340 m/s."
+    },
+    {
+      "question": "Why can't sound travel in space?",
+      "options": ["Sound requires a medium to propagate, and space is a vacuum", "Sound waves are too weak in space", "Space is too cold for sound", "Electromagnetic interference blocks sound"],
+      "correct": 0,
+      "points": 10,
+      "explanation": "Sound is a mechanical wave and requires particles to vibrate. Space is mostly vacuum — no medium → no sound propagation."
+    },
+    {
+      "question": "An echo is heard 3.0 seconds after a shout. How far is the reflecting surface? (Speed of sound = 340 m/s)",
+      "options": ["510 m", "1020 m", "340 m", "170 m"],
+      "correct": 0,
+      "points": 15,
+      "explanation": "Total distance = v × t = 340 × 3 = 1020 m. Distance to surface = 1020 / 2 = 510 m."
+    },
+    {
+      "question": "Which application uses the reflection of sound waves?",
+      "options": ["Sonar", "Radio broadcasting", "X-ray imaging", "Fibre optic communication"],
+      "correct": 0,
+      "points": 10,
+      "explanation": "Sonar (sound navigation and ranging) uses echo reflection to detect underwater objects or measure depth."
+    },
+    {
+      "question": "A wave has a period of 0.004 s. Is it audible to humans?",
+      "options": ["Yes, because its frequency is 250 Hz", "No, because it's below 20 Hz", "Yes, because it's a sound wave", "No, because it's above 20,000 Hz"],
+      "correct": 0,
+      "points": 12,
+      "explanation": "f = 1/T = 1/0.004 = 250 Hz. Since 20 Hz < 250 Hz < 20,000 Hz, it is audible."
+    },
+    {
+      "question": "When sound travels from air into water, what happens to its speed and wavelength?",
+      "options": ["Both increase", "Speed increases, wavelength decreases", "Both decrease", "Speed decreases, wavelength increases"],
+      "correct": 0,
+      "points": 12,
+      "explanation": "Speed of sound in water (~1500 m/s) > air (~340 m/s). Frequency unchanged, so λ = v/f also increases."
+    },
+    {
+      "question": "Which statement about wave energy is correct?",
+      "options": ["Waves transfer energy without transferring matter", "Matter moves with the wave over long distances", "Energy is only transferred in transverse waves", "Amplitude has no effect on energy"],
+      "correct": 0,
+      "points": 10,
+      "explanation": "Waves transfer energy through oscillations, but there is no net movement of matter (e.g., a floating object bobs in place)."
+    },
+    {
+      "question": "The graph shows displacement vs. time for a wave with a period of 0.05 s. What is the frequency?",
+      "options": ["20 Hz", "0.05 Hz", "50 Hz", "10 Hz"],
+      "correct": 0,
+      "points": 12,
+      "explanation": "f = 1/T = 1/0.05 = 20 Hz."
+    },
+    {
+      "question": "A sound wave has a wavelength of 1.7 m in air (speed = 340 m/s). What is its period?",
+      "options": ["0.005 s", "0.05 s", "0.5 s", "5 s"],
+      "correct": 0,
+      "points": 12,
+      "explanation": "f = v/λ = 340 / 1.7 = 200 Hz. T = 1/f = 1/200 = 0.005 s."
+    },
+    {
+      "question": "Which best describes a longitudinal wave?",
+      "options": ["Particles vibrate parallel to the direction of wave travel", "Particles vibrate perpendicular to wave travel", "It can travel in vacuum", "It includes light and radio waves"],
+      "correct": 0,
+      "points": 10,
+      "explanation": "In longitudinal waves (e.g., sound), particles oscillate parallel to the direction of propagation. Transverse waves (e.g., light) oscillate perpendicularly."
+    },
+    {
+      "question": "If the amplitude of a sound wave increases, what happens to its loudness and pitch?",
+      "options": ["Loudness increases, pitch unchanged", "Pitch increases, loudness unchanged", "Both increase", "Neither changes"],
+      "correct": 0,
+      "points": 12,
+      "explanation": "Loudness depends on amplitude; pitch depends on frequency. Changing amplitude affects loudness only."
+    },
+    {
+      "question": "A dolphin uses sound waves to locate fish 75 m away. If the speed of sound in water is 1500 m/s, how long does it take for the echo to return?",
+      "options": ["0.1 s", "0.05 s", "1.0 s", "0.2 s"],
+      "correct": 0,
+      "points": 15,
+      "explanation": "Total distance = 2 × 75 = 150 m. Time = 150 / 1500 = 0.1 s."
+    },
+    {
+      "question": "Which frequency would be classified as infrasound?",
+      "options": ["10 Hz", "100 Hz", "1000 Hz", "10,000 Hz"],
+      "correct": 0,
+      "points": 10,
+      "explanation": "Infrasound is below 20 Hz. Ultrasound is above 20,000 Hz. 10 Hz is infrasound."
+    },
+    {
+      "question": "A wave travels at 250 m/s with a wavelength of 5 m. What is its frequency?",
+      "options": ["50 Hz", "1250 Hz", "25 Hz", "500 Hz"],
+      "correct": 0,
+      "points": 12,
+      "explanation": "f = v / λ = 250 / 5 = 50 Hz."
+    }
+  ]
+}
