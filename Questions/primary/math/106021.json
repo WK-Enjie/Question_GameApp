@@ -1,0 +1,155 @@
+{
+  "title": "Ratio: Concepts and Applications",
+  "topic": "Ratio",
+  "subject": "Mathematics",
+  "level": "Primary",
+  "grade": "Primary 6",
+  "chapter": 2,
+  "worksheet": 1,
+  "questions": [
+    {
+      "question": "Express the ratio 15 : 25 in its simplest form.",
+      "options": [
+        "1 : 2",
+        "5 : 3",
+        "3 : 5",
+        "15 : 25"
+      ],
+      "correct": 2,
+      "points": 10,
+      "explanation": "Divide both parts by their HCF (5): 15 ÷ 5 = 3, 25 ÷ 5 = 5 → 3 : 5."
+    },
+    {
+      "question": "If the ratio of boys to girls in a class is 4 : 5 and there are 12 boys, how many girls are there?",
+      "options": [
+        "10",
+        "18",
+        "20",
+        "15"
+      ],
+      "correct": 3,
+      "points": 12,
+      "explanation": "Boys : Girls = 4 : 5. 4 units = 12 → 1 unit = 3. Girls = 5 × 3 = 15."
+    },
+    {
+      "question": "A sum of money is shared between Amy and Ben in the ratio 2 : 3. If Amy gets $30, how much does Ben get?",
+      "options": [
+        "$20",
+        "$45",
+        "$60",
+        "$50"
+      ],
+      "correct": 1,
+      "points": 12,
+      "explanation": "2 units = $30 → 1 unit = $15. Ben = 3 units = 3 × $15 = $45."
+    },
+    {
+      "question": "In a basket, the ratio of apples to oranges is 3 : 7. What fraction of the fruits are apples?",
+      "options": [
+        "1/3",
+        "7/10",
+        "3/7",
+        "3/10"
+      ],
+      "correct": 3,
+      "points": 10,
+      "explanation": "Apples : Oranges = 3 : 7 → Total parts = 10. Fraction of apples = 3/10."
+    },
+    {
+      "question": "The ratio of Ali's money to Beth's money is 5 : 2. After Ali gives Beth $15, they have the same amount. How much did Ali have at first?",
+      "options": [
+        "$25",
+        "$50",
+        "$35",
+        "$70"
+      ],
+      "correct": 1,
+      "points": 15,
+      "explanation": "Difference in units = 5 − 2 = 3 units. $15 is half the difference → 1.5 units = $15 → 1 unit = $10. Ali at first = 5 × $10 = $50."
+    },
+    {
+      "question": "The ratio of red to blue marbles is 5 : 4. If there are 27 marbles altogether, how many are blue?",
+      "options": [
+        "9",
+        "10",
+        "12",
+        "15"
+      ],
+      "correct": 2,
+      "points": 12,
+      "explanation": "Total parts = 5 + 4 = 9. 9 units = 27 → 1 unit = 3. Blue = 4 × 3 = 12."
+    },
+    {
+      "question": "The ratio of Sam's stamps to Tom's stamps is 3 : 5. After Sam gives Tom 10 stamps, the ratio becomes 1 : 3. How many stamps did Sam have at first?",
+      "options": [
+        "45",
+        "60",
+        "30",
+        "50"
+      ],
+      "correct": 2,
+      "points": 15,
+      "explanation": "Let Sam = 3u, Tom = 5u. After: (3u − 10) : (5u + 10) = 1 : 3. Cross-multiply: 3(3u − 10) = 1(5u + 10) → 9u − 30 = 5u + 10 → 4u = 40 → u = 10. Sam at first = 3 × 10 = 30."
+    },
+    {
+      "question": "In a mixture, sugar and flour are in the ratio 2 : 9. If there are 8 kg of sugar, how much flour is there?",
+      "options": [
+        "16 kg",
+        "24 kg",
+        "18 kg",
+        "36 kg"
+      ],
+      "correct": 3,
+      "points": 12,
+      "explanation": "Sugar : Flour = 2 : 9. 2 units = 8 kg → 1 unit = 4 kg. Flour = 9 × 4 = 36 kg."
+    },
+    {
+      "question": "The ratio of the length to the width of a rectangle is 5 : 3. If the length is 25 cm, what is the perimeter?",
+      "options": [
+        "60 cm",
+        "100 cm",
+        "40 cm",
+        "80 cm"
+      ],
+      "correct": 3,
+      "points": 15,
+      "explanation": "Length : Width = 5 : 3. 5 units = 25 cm → 1 unit = 5 cm. Width = 3 × 5 = 15 cm. Perimeter = 2 × (25 + 15) = 80 cm."
+    },
+    {
+      "question": "The ratio of pens to pencils in a box is 3 : 8. After 4 pens are added, the ratio becomes 1 : 2. How many pencils are there?",
+      "options": [
+        "16",
+        "40",
+        "24",
+        "32"
+      ],
+      "correct": 3,
+      "points": 15,
+      "explanation": "Let pens = 3u, pencils = 8u. After: (3u + 4) : 8u = 1 : 2 → 2(3u + 4) = 8u → 6u + 8 = 8u → 2u = 8 → u = 4. Pencils = 8 × 4 = 32."
+    },
+    {
+      "question": "If A : B = 2 : 3 and B : C = 4 : 5, what is A : C?",
+      "options": [
+        "2 : 5",
+        "3 : 4",
+        "8 : 15",
+        "6 : 10"
+      ],
+      "correct": 2,
+      "points": 15,
+      "explanation": "Make B the same: A : B = 2 : 3 = 8 : 12; B : C = 4 : 5 = 12 : 15. So A : B : C = 8 : 12 : 15. Therefore A : C = 8 : 15."
+    },
+    {
+      "question": "The ratio of John's savings to Mary's savings is 4 : 7. If John saves another $20, the ratio becomes 6 : 7. How much did Mary have?",
+      "options": [
+        "$28",
+        "$50",
+        "$35",
+        "$70"
+      ],
+      "correct": 3,
+      "points": 15,
+      "explanation": "Let John = 4u, Mary = 7u. After: (4u + 20) : 7u = 6 : 7 → 7(4u + 20) = 6 × 7u → 28u + 140 = 42u → 14u = 140 → u = 10. Mary = 7 × 10 = $70."
+    }
+  ]
+}

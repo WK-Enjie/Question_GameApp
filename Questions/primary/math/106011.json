@@ -40,7 +40,7 @@
       "options": ["240", "280", "320", "360"],
       "correct": 2,
       "points": 15,
-      "explanation": "Let total fruits at first be 56 units (LCM of 8 and 7).\nApples at first: 3/8 × 56 = 21 units\nOranges at first: 56 - 21 = 35 units\nAfter selling 40 oranges: Total = 56 units - 40\nApples still = 21 units\nNow apples are 3/7 of remaining: 21 = 3/7 × (56u - 40)\nMultiply by 7: 147 = 3 × (56u - 40) = 168u - 120\n168u = 147 + 120 = 267\nu = 267 ÷ 168 = 1.589... (not integer)\nWait, this doesn't work with units. Let's use actual numbers:\nLet total = T.\nApples = 3T/8, Oranges = 5T/8.\nAfter selling 40 oranges: Oranges = 5T/8 - 40, Total = T - 40.\nApples = 3T/8 = 3/7 × (T - 40)\nCross multiply: 7 × 3T/8 = 3 × (T - 40)\n21T/8 = 3T - 120\nMultiply by 8: 21T = 24T - 960\n3T = 960\nT = 320\nSo total fruits at first = 320"
+      "explanation": "Let the total number of fruits be T.\nApples = (3/8)T, Oranges = (5/8)T.\nAfter selling 40 oranges, total fruits = T - 40.\nApples are unchanged and now 3/7 of the remaining:\n(3/8)T = (3/7)(T - 40)\nMultiply both sides by 56: 21T = 24(T - 40)\n21T = 24T - 960\n3T = 960\nT = 320"
     },
     {
       "question": "Tom's savings is 3/4 of Jerry's savings. After Tom spent $18 and Jerry spent $30, Tom's savings became 9/11 of Jerry's. How much did Tom have at first?",
