@@ -1,0 +1,155 @@
+{
+  "title": "Sets: Language, Notation, and Operations",
+  "topic": "Set Theory",
+  "subject": "Mathematics",
+  "level": "Upper Secondary",
+  "grade": "Sec 4 E-Math",
+  "chapter": 1,
+  "worksheet": 2,
+  "questions": [
+    {
+      "question": "Which of the following represents the set of vowels in the word 'MATHEMATICS' using set-builder notation?",
+      "options": [
+        "{x | x is a vowel in 'MATHEMATICS'}",
+        "{A, E, I}",
+        "{A, E, I, O, U}",
+        "{M, A, T, H, E, I, C, S}"
+      ],
+      "correct": 0,
+      "points": 10,
+      "explanation": "Set-builder notation describes the property of elements. The vowels in 'MATHEMATICS' are A, E, I. Option 1 is correct set-builder form."
+    },
+    {
+      "question": "If A = {1, 3, 5} and B = {2, 3, 4, 5}, what is A ∩ B?",
+      "options": [
+        "{3, 5}",
+        "{1, 2, 3, 4, 5}",
+        "{3}",
+        "{1, 3, 5}"
+      ],
+      "correct": 0,
+      "points": 10,
+      "explanation": "A ∩ B is the set of elements common to both A and B. Common elements: 3 and 5."
+    },
+    {
+      "question": "Which symbol represents 'is a proper subset of'?",
+      "options": [
+        "⊂",
+        "⊆",
+        "∈",
+        "∉"
+      ],
+      "correct": 0,
+      "points": 10,
+      "explanation": "⊂ means 'is a proper subset of' (subset but not equal). ⊆ means 'subset or equal'. ∈ means 'is an element of'."
+    },
+    {
+      "question": "Given ξ = {1,2,3,4,5}, A = {2,4}, what is A'?",
+      "options": [
+        "{1,3,5}",
+        "{2,4}",
+        "{1,2,3,4,5}",
+        "∅"
+      ],
+      "correct": 0,
+      "points": 10,
+      "explanation": "A' is the complement of A in ξ: all elements in ξ not in A = {1,3,5}."
+    },
+    {
+      "question": "If X = {a, b} and Y = {b, c, d}, what is X ∪ Y?",
+      "options": [
+        "{a, b, c, d}",
+        "{b}",
+        "{a, b, c}",
+        "{a, c, d}"
+      ],
+      "correct": 0,
+      "points": 10,
+      "explanation": "X ∪ Y is the set of all elements in X or Y or both = {a, b, c, d}."
+    },
+    {
+      "question": "Which set is a proper subset of {p, q, r, s}?",
+      "options": [
+        "{p, q, r}",
+        "{p, q, r, s}",
+        "{p, q, r, s, t}",
+        "None of these"
+      ],
+      "correct": 0,
+      "points": 10,
+      "explanation": "A proper subset cannot be equal to the original set. {p, q, r} is a proper subset of {p, q, r, s}."
+    },
+    {
+      "question": "Given A = {x: x is a prime number less than 10}, what is n(A)?",
+      "options": [
+        "4",
+        "5",
+        "3",
+        "6"
+      ],
+      "correct": 0,
+      "points": 10,
+      "explanation": "A = {2, 3, 5, 7}. Number of elements n(A) = 4."
+    },
+    {
+      "question": "If M = {1, 2} and N = {2, 3, 4}, what is M × N?",
+      "options": [
+        "{(1,2), (1,3), (1,4), (2,2), (2,3), (2,4)}",
+        "{(1,1), (2,2), (3,3), (4,4)}",
+        "{(1,2), (2,3), (3,4)}",
+        "{1,2,3,4}"
+      ],
+      "correct": 0,
+      "points": 12,
+      "explanation": "M × N is the Cartesian product: all ordered pairs (m,n) where m ∈ M, n ∈ N."
+    },
+    {
+      "question": "In a class of 30 students, 18 like Math, 15 like Science, and 5 like neither. How many like both?",
+      "options": [
+        "8",
+        "10",
+        "13",
+        "20"
+      ],
+      "correct": 0,
+      "points": 15,
+      "explanation": "Let M and S be sets. n(M∪S) = 30−5 = 25. n(M∩S) = n(M) + n(S) − n(M∪S) = 18+15−25 = 8."
+    },
+    {
+      "question": "If A ⊆ B and B ⊆ A, then which is true?",
+      "options": [
+        "A = B",
+        "A is a proper subset of B",
+        "B is a proper subset of A",
+        "A and B are disjoint"
+      ],
+      "correct": 0,
+      "points": 10,
+      "explanation": "If A ⊆ B and B ⊆ A, then every element of A is in B and vice versa, so A = B."
+    },
+    {
+      "question": "What does A \\ B represent?",
+      "options": [
+        "Set difference: elements in A but not in B",
+        "Union of A and B",
+        "Intersection of A and B",
+        "Complement of A"
+      ],
+      "correct": 0,
+      "points": 10,
+      "explanation": "A \\ B = {x | x ∈ A and x ∉ B}. Also written as A − B."
+    },
+    {
+      "question": "Given ξ = {1,2,3,4,5,6}, A = {2,4,6}, B = {1,3,5}, what is A ∩ B'?",
+      "options": [
+        "A",
+        "B",
+        "ξ",
+        "∅"
+      ],
+      "correct": 0,
+      "points": 12,
+      "explanation": "B' = ξ − B = {2,4,6} = A. Therefore, A ∩ B' = A ∩ A = A."
+    }
+  ]
+}

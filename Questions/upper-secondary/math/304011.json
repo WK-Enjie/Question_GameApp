@@ -10,120 +10,120 @@
     {
       "question": "If A = {2, 4, 6, 8} and B = {4, 6}, which of the following is correct?",
       "options": [
-        "B ⊆ A",
         "B ∈ A",
         "A ⊂ B",
-        "B ∉ A"
+        "B ∉ A",
+        "B ⊆ A"
       ],
-      "correct": 0,
+      "correct": 3,
       "points": 10,
-      "explanation": "B is a proper subset of A because all elements of B (4 and 6) are in A, but B is not equal to A. The correct notation is B ⊆ A or B ⊂ A (both acceptable in different notations)."
+      "explanation": "B is a subset of A because all elements of B (4 and 6) are in A. Since B ≠ A, B is also a proper subset. However, among the given options, only 'B ⊆ A' is listed, which is correct."
     },
     {
       "question": "Given ξ = {1, 2, 3, 4, 5, 6, 7, 8, 9}, A = {2, 4, 6, 8}, B = {1, 3, 5, 7}. What is A' ∩ B?",
       "options": [
+        "{ }",
         "{1, 3, 5, 7}",
         "{2, 4, 6, 8}",
-        "{ }",
         "{1, 2, 3, 4, 5, 6, 7, 8}"
       ],
-      "correct": 0,
+      "correct": 1,
       "points": 10,
       "explanation": "A' = {1, 3, 5, 7, 9} (all elements in ξ not in A). A' ∩ B = {1, 3, 5, 7} ∩ {1, 3, 5, 7} = {1, 3, 5, 7}."
     },
     {
       "question": "If P = {x: x is a prime number less than 10}, which element relationship is correct?",
       "options": [
-        "3 ∈ P",
         "9 ∈ P",
         "1 ∈ P",
-        "P ∈ 2"
+        "P ∈ 2",
+        "3 ∈ P"
       ],
-      "correct": 0,
+      "correct": 3,
       "points": 10,
       "explanation": "P = {2, 3, 5, 7}. 3 is an element of P, so 3 ∈ P is correct. 9 is not prime, 1 is not prime (by definition), and P ∈ 2 makes no sense as 2 is not a set."
     },
     {
       "question": "Given X = {a, b, c} and Y = {b, c, d, e}, what is X ∪ Y?",
       "options": [
-        "{a, b, c, d, e}",
-        "{b, c}",
         "{a, d, e}",
-        "{a, b, c, d}"
+        "{a, b, c, d}",
+        "{a, b, c, d, e}",
+        "{b, c}"
       ],
-      "correct": 0,
+      "correct": 2,
       "points": 10,
       "explanation": "The union of two sets includes all elements from both sets without duplication. X ∪ Y = {a, b, c, d, e}."
     },
     {
       "question": "If A = {1, 2, 3} and B = {3, 4, 5}, what is (A ∩ B)' when ξ = {1, 2, 3, 4, 5, 6}?",
       "options": [
-        "{1, 2, 4, 5, 6}",
         "{3}",
+        "{1, 2, 4, 5}",
         "{6}",
-        "{1, 2, 4, 5}"
+        "{1, 2, 4, 5, 6}"
       ],
-      "correct": 0,
+      "correct": 3,
       "points": 10,
       "explanation": "A ∩ B = {3}. The complement of {3} in ξ = {1, 2, 3, 4, 5, 6} is {1, 2, 4, 5, 6}."
     },
     {
       "question": "Which symbol represents 'is not an element of'?",
       "options": [
-        "∉",
-        "⊈",
         "≠",
-        "∌"
+        "∉",
+        "∌",
+        "⊈"
       ],
-      "correct": 0,
+      "correct": 1,
       "points": 10,
       "explanation": "∉ means 'is not an element of'. ⊈ means 'is not a subset of', ≠ means 'not equal to', and ∌ means 'does not contain'."
     },
     {
       "question": "Given ξ = {x: x is an integer, 1 ≤ x ≤ 10}, A = {2, 4, 6, 8, 10}, B = {1, 3, 5, 7, 9}. What is n(A ∩ B)?",
       "options": [
-        "0",
         "5",
-        "10",
-        "1"
+        "1",
+        "0",
+        "10"
       ],
-      "correct": 0,
+      "correct": 2,
       "points": 10,
       "explanation": "A contains even numbers, B contains odd numbers. They have no elements in common, so A ∩ B = { } (empty set). n(A ∩ B) = 0."
     },
     {
       "question": "If C = {x: x is a factor of 12}, which statement is true?",
       "options": [
-        "{2, 3} ⊂ C",
-        "8 ∈ C",
         "C ⊂ {1, 2, 3, 4}",
-        "{ } ∉ C"
+        "{ } ∉ C",
+        "8 ∈ C",
+        "{2, 3} ⊂ C"
       ],
-      "correct": 0,
+      "correct": 3,
       "points": 10,
-      "explanation": "C = {1, 2, 3, 4, 6, 12}. {2, 3} is a subset of C. 8 is not a factor of 12. C is not a subset of {1, 2, 3, 4} because C contains 6 and 12. { } ∉ C is incorrect notation (empty set is not an element relationship discussion)."
+      "explanation": "C = {1, 2, 3, 4, 6, 12}. {2, 3} is a proper subset of C, so {2, 3} ⊂ C is true. 8 is not a factor of 12. C is not a subset of {1, 2, 3, 4} because it contains 6 and 12. Although '{ } ∉ C' is a true statement (the empty set is not an element of C), the best answer is the subset relationship in option A."
     },
     {
       "question": "What does the notation A △ B represent?",
       "options": [
-        "Symmetric difference (elements in A or B but not both)",
+        "Union of complements",
         "Proper subset",
-        "Complement of intersection",
-        "Union of complements"
+        "Symmetric difference (elements in A or B but not both)",
+        "Complement of intersection"
       ],
-      "correct": 0,
+      "correct": 2,
       "points": 10,
       "explanation": "A △ B represents symmetric difference, which is (A ∪ B) - (A ∩ B), containing elements that are in either A or B but not in both."
     },
     {
       "question": "If n(A) = 5, n(B) = 7, and n(A ∩ B) = 2, what is n(A ∪ B)?",
       "options": [
-        "10",
-        "12",
         "14",
-        "Cannot be determined"
+        "10",
+        "Cannot be determined",
+        "12"
       ],
-      "correct": 0,
+      "correct": 1,
       "points": 10,
       "explanation": "Using the formula: n(A ∪ B) = n(A) + n(B) - n(A ∩ B) = 5 + 7 - 2 = 10."
     }
