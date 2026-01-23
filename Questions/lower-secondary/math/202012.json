@@ -1,0 +1,154 @@
+{
+  "title": "Chapter 1B: Simultaneous Equations – Word Problems",
+  "subject": "Mathematics",
+  "grade": "Secondary 2",
+  "topics": [
+    "Forming Equation Pairs from Context",
+    "Age and Time Relationships",
+    "Money and Cost with Decimals",
+    "Geometry and Perimeter/Area",
+    "Number and Digit Problems"
+  ],
+  "questions": [
+    {
+      "question": "The sum of two numbers is 34. If the larger number is divided by the smaller, the quotient is 2 with a remainder of 1. What are the numbers?",
+      "options": [
+        "23 and 11",
+        "22 and 12",
+        "25 and 9",
+        "20 and 14"
+      ],
+      "correct": 0,
+      "points": 20,
+      "explanation": "Let larger = x, smaller = y. Then: x + y = 34 and x = 2y + 1. Substitute: 2y + 1 + y = 34 → 3y = 33 → y = 11, x = 23.",
+      "difficulty": "medium"
+    },
+    {
+      "question": "A coffee costs $0.80 more than a muffin. Three coffees and two muffins cost $10.40. What is the price of one coffee?",
+      "options": [
+        "$2.40",
+        "$1.60",
+        "$2.00",
+        "$2.80"
+      ],
+      "correct": 0,
+      "points": 20,
+      "explanation": "Let muffin = m, coffee = m + 0.80. Then: 3(m + 0.80) + 2m = 10.40 → 3m + 2.40 + 2m = 10.40 → 5m = 8.00 → m = 1.60, so coffee = $2.40.",
+      "difficulty": "medium"
+    },
+    {
+      "question": "Four years ago, Maya was three times as old as Leo. The sum of their current ages is 32. How old is Maya now?",
+      "options": [
+        "22",
+        "18",
+        "20",
+        "24"
+      ],
+      "correct": 0,
+      "points": 25,
+      "explanation": "Let M = Maya’s age, L = Leo’s. M + L = 32. Four years ago: M − 4 = 3(L − 4). Substitute M = 32 − L: 32 − L − 4 = 3L − 12 → 28 − L = 3L − 12 → 40 = 4L → L = 10, so M = 22.",
+      "difficulty": "hard"
+    },
+    {
+      "question": "A rectangle’s length is 2.5 cm more than its width. The perimeter is 37 cm. Find the area of the rectangle.",
+      "options": [
+        "84 cm²",
+        "78 cm²",
+        "90 cm²",
+        "72 cm²"
+      ],
+      "correct": 0,
+      "points": 25,
+      "explanation": "Let width = w, length = w + 2.5. Perimeter = 2(w + w + 2.5) = 37 → 4w + 5 = 37 → 4w = 32 → w = 8, length = 10.5. Area = 8 × 10.5 = 84 cm².",
+      "difficulty": "medium"
+    },
+    {
+      "question": "Five burgers and four drinks cost $28.50. Three burgers and five drinks cost $23.60. What is the cost of one drink?",
+      "options": [
+        "$2.50",
+        "$3.00",
+        "$2.20",
+        "$2.75"
+      ],
+      "correct": 0,
+      "points": 25,
+      "explanation": "Let b = burger, d = drink. 5b + 4d = 28.50; 3b + 5d = 23.60. Multiply first by 3: 15b + 12d = 85.50. Second by 5: 15b + 25d = 118.00. Subtract: 13d = 32.50 → d = 2.50.",
+      "difficulty": "hard"
+    },
+    {
+      "question": "The tens digit of a two-digit number is 3 more than the units digit. The sum of the number and the number formed by reversing its digits is 121. What is the original number?",
+      "options": [
+        "74",
+        "63",
+        "85",
+        "96"
+      ],
+      "correct": 0,
+      "points": 25,
+      "explanation": "Let units = u, tens = t = u + 3. Original = 10t + u, reversed = 10u + t. Sum = 11t + 11u = 11(t + u) = 121 → t + u = 11. Since t = u + 3, then u + 3 + u = 11 → 2u = 8 → u = 4, t = 7 → number = 74.",
+      "difficulty": "hard"
+    },
+    {
+      "question": "A boat travels 30 km downstream in 2 hours and 18 km upstream in 2 hours. Find the speed of the boat in still water.",
+      "options": [
+        "12 km/h",
+        "11 km/h",
+        "13 km/h",
+        "10 km/h"
+      ],
+      "correct": 0,
+      "points": 30,
+      "explanation": "Downstream speed = 30/2 = 15 km/h. Upstream speed = 18/2 = 9 km/h. Let b = boat speed, c = current. Then: b + c = 15, b − c = 9. Add: 2b = 24 → b = 12 km/h.",
+      "difficulty": "hard"
+    },
+    {
+      "question": "The length of a rectangle is 3x cm and its width is (x + 4) cm. If the perimeter is 32 cm, find the value of x.",
+      "options": [
+        "3",
+        "4",
+        "5",
+        "2"
+      ],
+      "correct": 0,
+      "points": 20,
+      "explanation": "Perimeter = 2[length + width] = 2[3x + (x + 4)] = 2(4x + 4) = 8x + 8. Set equal to 32: 8x + 8 = 32 → 8x = 24 → x = 3.",
+      "difficulty": "medium"
+    },
+    {
+      "question": "A shop sells small and large candles. Three small and two large cost $19. Two small and three large cost $21. How much more does a large candle cost than a small one?",
+      "options": [
+        "$2",
+        "$1.50",
+        "$2.50",
+        "$3"
+      ],
+      "correct": 0,
+      "points": 25,
+      "explanation": "Let s = small, l = large. 3s + 2l = 19; 2s + 3l = 21. Subtract: (3s + 2l) − (2s + 3l) = 19 − 21 → s − l = −2 → l − s = 2. So a large candle costs $2 more.",
+      "difficulty": "medium"
+    },
+    {
+      "question": "The sum of the digits of a two-digit number is 11. If 45 is added to the number, the digits are reversed. What is the number?",
+      "options": [
+        "38",
+        "47",
+        "56",
+        "29"
+      ],
+      "correct": 0,
+      "points": 25,
+      "explanation": "Let number = 10t + u. Given: t + u = 11, and 10t + u + 45 = 10u + t. Simplify: 9t − 9u = −45 → t − u = −5. Solve: t + u = 11 and t − u = −5 → 2t = 6 → t = 3, u = 8. Number = 38. Check: 38 + 45 = 83 (reversed).",
+      "difficulty": "hard"
+    }
+  ],
+  "learning_objectives": [
+    "Translate real-world scenarios into pairs of linear equations",
+    "Solve systems involving age, money, geometry, and digits",
+    "Interpret solutions in context (e.g., positive integers, realistic values)",
+    "Use elimination and substitution strategically",
+    "Verify solutions against original problem conditions"
+  ],
+  "author": "Mathematics Department",
+  "version": "1.3",
+  "last_updated": "2026-01-23"
+}
