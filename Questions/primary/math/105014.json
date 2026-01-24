@@ -1,0 +1,101 @@
+{
+  "title": "Age and Quantity Word Problems (Advanced – Unit Method)",
+  "topic": "Age Problems, Difference Unchanged, Give and Take, Ratio Change",
+  "subject": "Mathematics",
+  "level": "Primary",
+  "grade": "P5",
+  "chapter": 1,
+  "worksheet": 4,
+  "questions": [
+    {
+      "question": "The total number of marbles that Aiden, Bella, and Caleb have is 98. Aiden has twice as many as Bella. Caleb has 10 more than Bella. How many marbles does Aiden have?",
+      "options": ["44", "50", "55", "60"],
+      "correct": 0,
+      "points": 20,
+      "explanation": "Let Bella have 1 unit. Then Aiden has 2 units, and Caleb has 1 unit + 10. Total = 1u + 2u + (1u + 10) = 4u + 10 = 98. So 4u = 88 → 1u = 22. Aiden = 2u = 44 marbles.",
+      "difficulty": "medium"
+    },
+    {
+      "question": "Ten years ago, David was 3 times as old as his daughter. The age difference between them is unchanged. If David is 55 years old now, how old is his daughter?",
+      "options": ["20 years", "25 years", "30 years", "35 years"],
+      "correct": 1,
+      "points": 25,
+      "explanation": "Ten years ago, David was 55 − 10 = 45 years old. He was 3 times his daughter’s age then, so daughter was 45 ÷ 3 = 15 years old ten years ago. Now she is 15 + 10 = 25 years old.",
+      "difficulty": "hard"
+    },
+    {
+      "question": "Grace has 3 times as many books as Henry. If Grace gives 18 books to Henry, she will have 24 more books than him. How many books did Grace have at first?",
+      "options": ["72", "81", "90", "99"],
+      "correct": 2,
+      "points": 25,
+      "explanation": "Before: Grace = 3 units, Henry = 1 unit. Total = 4 units. After giving 18, Grace = 3u − 18, Henry = 1u + 18. Difference = (3u − 18) − (1u + 18) = 2u − 36. This equals 24. So 2u − 36 = 24 → 2u = 60 → 1u = 30. Grace = 3u = 90 books.",
+      "difficulty": "hard"
+    },
+    {
+      "question": "The ratio of Ian’s money to Jack’s money is 5:3. After Ian gives $40 to Jack, they have equal amounts. How much money did Ian have at first?",
+      "options": ["$160", "$180", "$200", "$240"],
+      "correct": 2,
+      "points": 25,
+      "explanation": "Before: Ian = 5 units, Jack = 3 units. Total = 8 units. When they become equal, each has 4 units. So Ian gave away 1 unit = $40. Therefore, 1 unit = $40. Ian had 5 units = 5 × 40 = $200.",
+      "difficulty": "medium"
+    },
+    {
+      "question": "Emma is 12 years older than Liam. Three years ago, Emma was twice as old as Liam was then. How old is Emma now?",
+      "options": ["23 years", "25 years", "27 years", "29 years"],
+      "correct": 2,
+      "points": 25,
+      "explanation": "The age difference is always 12 years. Three years ago, Emma was still 12 years older than Liam. At that time, Emma was twice Liam’s age, so the difference (12 years) equals 1 part. Thus, Liam was 12 years old, Emma was 24 years old three years ago. Now Emma is 24 + 3 = 27 years old.",
+      "difficulty": "hard"
+    },
+    {
+      "question": "A bag contains red, blue, and green marbles. There are twice as many red as blue, and 8 more green than blue. If there are 68 marbles in total, how many red marbles are there?",
+      "options": ["24", "30", "36", "40"],
+      "correct": 1,
+      "points": 20,
+      "explanation": "Let blue = 1 unit. Then red = 2 units, green = 1 unit + 8. Total = 1u + 2u + (1u + 8) = 4u + 8 = 68. So 4u = 60 → 1u = 15. Red = 2u = 30 marbles.",
+      "difficulty": "medium"
+    },
+    {
+      "question": "The ratio of apples to oranges in a basket is 7:4. After eating 15 apples and adding 9 oranges, the number of apples and oranges becomes equal. How many fruits were in the basket at first?",
+      "options": ["66", "77", "88", "99"],
+      "correct": 2,
+      "points": 30,
+      "explanation": "Before: Apples = 7 units, Oranges = 4 units. After: Apples = 7u − 15, Oranges = 4u + 9. They are equal, so 7u − 15 = 4u + 9 → 3u = 24 → 1u = 8. Total fruits = 7u + 4u = 11u = 11 × 8 = 88.",
+      "difficulty": "hard"
+    },
+    {
+      "question": "The sum of a father’s and son’s current ages is 48. The father is always 30 years older than the son. How old is the son now?",
+      "options": ["6 years", "8 years", "9 years", "12 years"],
+      "correct": 2,
+      "points": 20,
+      "explanation": "The age difference is 30 years (unchanged). Total age = 48. So if we subtract the difference: 48 − 30 = 18. This is twice the son’s age. Son = 18 ÷ 2 = 9 years old.",
+      "difficulty": "medium"
+    },
+    {
+      "question": "Two ropes have lengths in the ratio 5:3. If 8 metres are cut from each rope, the new lengths are in the ratio 3:1. What was the original length of the longer rope?",
+      "options": ["15 m", "20 m", "25 m", "30 m"],
+      "correct": 1,
+      "points": 30,
+      "explanation": "Before: Longer = 5 units, Shorter = 3 units. After cutting 8 m from each: Longer = 5u − 8, Shorter = 3u − 8. New ratio is 3:1, so (5u − 8) = 3 × (3u − 8). But without algebra, think in units: The difference before = 2u, after = (5u−8)−(3u−8)=2u (unchanged). In the new ratio 3:1, difference = 2 parts = 2u → 1 part = 1u. So shorter after = 1u = 3u − 8 → 2u = 8 → 1u = 4. Longer rope = 5u = 20 m.",
+      "difficulty": "hard"
+    },
+    {
+      "question": "Alice has $20 more than Ben. Together, they have $80. If Alice gives $10 to Ben, how much more money will Ben have than Alice?",
+      "options": ["$0", "$5", "$10", "$20"],
+      "correct": 0,
+      "points": 20,
+      "explanation": "Total = $80, difference = $20. So Ben = (80 − 20) ÷ 2 = $30, Alice = $50. After Alice gives $10: Alice = $40, Ben = $40. They have the same amount, so difference = $0.",
+      "difficulty": "medium"
+    }
+  ],
+  "learning_objectives": [
+    "Solve advanced word problems using the unitary method (without algebra)",
+    "Apply the concept of unchanged difference in age and quantity problems",
+    "Model give-and-take scenarios using units and total/difference reasoning",
+    "Interpret changing ratios through unit comparison",
+    "Verify answers using logical checks (e.g., totals, differences)"
+  ],
+  "author": "Mathematics Department",
+  "version": "1.0",
+  "last_updated": "2026-01-25"
+}
