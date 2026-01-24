@@ -1,0 +1,104 @@
+{
+  "title": "Chapter 1B: Simultaneous Equations – Word Problems (Worksheet 3)",
+  "subject": "Mathematics",
+  "grade": "Secondary 2",
+  "topics": [
+    "Forming Equation Pairs from Context",
+    "Age and Time Relationships",
+    "Money and Cost with Decimals",
+    "Geometry and Perimeter/Area",
+    "Number and Digit Problems"
+  ],
+  "questions": [
+    {
+      "question": "The difference between two numbers is 17. If the smaller number is tripled and added to the larger, the result is 61. What are the numbers?",
+      "options": ["28 and 11", "30 and 13", "25 and 8", "32 and 15"],
+      "correct": 0,
+      "points": 20,
+      "explanation": "Let larger = x, smaller = y. x − y = 17 and x + 3y = 61. Substitute x = y + 17: y + 17 + 3y = 61 → 4y = 44 → y = 11, x = 28.",
+      "difficulty": "medium"
+    },
+    {
+      "question": "A notebook costs $1.20 less than a textbook. Four notebooks and three textbooks cost $38.60. What is the price of one textbook?",
+      "options": ["$6.20", "$5.00", "$7.40", "$5.80"],
+      "correct": 0,
+      "points": 20,
+      "explanation": "Let textbook = t, notebook = t − 1.20. Then: 4(t − 1.20) + 3t = 38.60 → 4t − 4.80 + 3t = 38.60 → 7t = 43.40 → t = 6.20.",
+      "difficulty": "medium"
+    },
+    {
+      "question": "The sum of Ali’s and Ben’s current ages is 33. In 3 years, Ali will be twice as old as Ben is now. How old is Ali now?",
+      "options": ["21", "19", "23", "17"],
+      "correct": 0,
+      "points": 25,
+      "explanation": "Let A = Ali’s age, B = Ben’s. A + B = 33. In 3 years: A + 3 = 2B. Substitute A = 33 − B: 33 − B + 3 = 2B → 36 = 3B → B = 12, so A = 21.",
+      "difficulty": "hard"
+    },
+    {
+      "question": "A rectangular garden has length 1.8 m more than its width. The perimeter is 27.6 m. Find the area of the garden.",
+      "options": ["45.36 m²", "42.00 m²", "48.24 m²", "39.60 m²"],
+      "correct": 0,
+      "points": 25,
+      "explanation": "Let width = w, length = w + 1.8. Perimeter = 2(w + w + 1.8) = 27.6 → 4w + 3.6 = 27.6 → 4w = 24 → w = 6, length = 7.8. Area = 6 × 7.8 = 45.36 m².",
+      "difficulty": "medium"
+    },
+    {
+      "question": "Two sandwiches and five drinks cost $16.00. Four sandwiches and three drinks cost $18.00. What is the cost of one drink?",
+      "options": ["$2.00", "$2.50", "$1.80", "$2.20"],
+      "correct": 0,
+      "points": 25,
+      "explanation": "Let s = sandwich, d = drink. 2s + 5d = 16; 4s + 3d = 18. Multiply first by 2: 4s + 10d = 32. Subtract second equation: (4s + 10d) - (4s + 3d) = 32 - 18 → 7d = 14 → d = $2.00.",
+      "difficulty": "hard"
+    },
+    {
+      "question": "The tens digit of a two-digit number is 2 more than the units digit. The number is 7 times the sum of its digits. What is the number?",
+      "options": ["42", "53", "64", "75"],
+      "correct": 0,
+      "points": 25,
+      "explanation": "Let units digit = u, tens digit = u + 2. Number = 10(u + 2) + u = 11u + 20. Sum of digits = (u + 2) + u = 2u + 2. Given: 11u + 20 = 7(2u + 2) → 11u + 20 = 14u + 14 → 6 = 3u → u = 2. So tens digit = 4, number = 42.",
+      "difficulty": "hard"
+    },
+    {
+      "question": "A boat travels 24 km downstream in 2 hours and 16 km upstream in 2 hours. Find the speed of the current.",
+      "options": ["2 km/h", "3 km/h", "1.5 km/h", "2.5 km/h"],
+      "correct": 0,
+      "points": 30,
+      "explanation": "Downstream speed = 24 ÷ 2 = 12 km/h. Upstream speed = 16 ÷ 2 = 8 km/h. Let b = boat speed in still water, c = current speed. Then: b + c = 12 and b - c = 8. Subtracting gives 2c = 4 → c = 2 km/h.",
+      "difficulty": "hard"
+    },
+    {
+      "question": "The length of a rectangle is (3x) cm and its width is (x + 2) cm. If the perimeter is 52 cm, find the value of x.",
+      "options": ["6", "5", "7", "4"],
+      "correct": 0,
+      "points": 20,
+      "explanation": "Perimeter = 2[3x + (x + 2)] = 2(4x + 2) = 8x + 4. Set equal to 52: 8x + 4 = 52 → 8x = 48 → x = 6.",
+      "difficulty": "medium"
+    },
+    {
+      "question": "A shop sells small and large pizzas. Two small and three large cost $48. Three small and two large cost $42. How much more does a large pizza cost than a small one?",
+      "options": ["$6", "$5", "$7", "$4"],
+      "correct": 0,
+      "points": 25,
+      "explanation": "Let s = small, l = large. 2s + 3l = 48; 3s + 2l = 42. Subtract the second from the first: (2s + 3l) - (3s + 2l) = 48 - 42 → -s + l = 6 → l - s = 6. So a large pizza costs $6 more.",
+      "difficulty": "medium"
+    },
+    {
+      "question": "The sum of the digits of a two-digit number is 9. If 27 is subtracted from the number, the digits are reversed. What is the number?",
+      "options": ["63", "54", "72", "81"],
+      "correct": 0,
+      "points": 25,
+      "explanation": "Let number = 10t + u. t + u = 9. Also, 10t + u - 27 = 10u + t → 9t - 9u = 27 → t - u = 3. Solve: t + u = 9 and t - u = 3 → 2t = 12 → t = 6, u = 3. Number = 63. Check: 63 - 27 = 36 (reversed).",
+      "difficulty": "hard"
+    }
+  ],
+  "learning_objectives": [
+    "Translate real-world scenarios into pairs of linear equations",
+    "Solve systems involving age, money, geometry, and digits",
+    "Interpret solutions in context (e.g., positive integers, realistic values)",
+    "Use elimination and substitution strategically",
+    "Verify solutions against original problem conditions"
+  ],
+  "author": "Mathematics Department",
+  "version": "1.3",
+  "last_updated": "2026-01-25"
+}
