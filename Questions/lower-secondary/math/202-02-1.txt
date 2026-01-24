@@ -1,0 +1,109 @@
+{
+  "title": "Chapter 2: Linear Inequalities in One Variable (Basic)",
+  "subject": "Mathematics",
+  "grade": "Secondary 2",
+  "topics": [
+    "Translating Simple Inequalities",
+    "Solving One-Step and Two-Step Inequalities",
+    "Integer Solutions",
+    "Word Problems with Clear Language"
+  ],
+  "questions": [
+    {
+      "question": "A number x is less than 9. Which inequality represents this?",
+      "options": ["x < 9", "x > 9", "x ≤ 9", "x ≥ 9"],
+      "correct": 0,
+      "points": 10,
+      "explanation": "'Less than' means <, so x < 9.",
+      "difficulty": "easy"
+    },
+    {
+      "question": "Solve: x + 5 > 12",
+      "options": ["x > 7", "x < 7", "x > 17", "x < 17"],
+      "correct": 0,
+      "points": 10,
+      "explanation": "Subtract 5 from both sides: x > 12 - 5 → x > 7.",
+      "difficulty": "easy"
+    },
+    {
+      "question": "Three more than a number is at most 10. Find the inequality.",
+      "options": ["x + 3 ≤ 10", "x + 3 ≥ 10", "3x ≤ 10", "x ≤ 3 + 10"],
+      "correct": 0,
+      "points": 15,
+      "explanation": "'At most' means ≤. 'Three more than x' = x + 3 → x + 3 ≤ 10.",
+      "difficulty": "medium"
+    },
+    {
+      "question": "Solve: 2x - 4 < 10",
+      "options": ["x < 7", "x > 7", "x < 3", "x > 3"],
+      "correct": 0,
+      "points": 15,
+      "explanation": "2x < 14 → x < 7.",
+      "difficulty": "medium"
+    },
+    {
+      "question": "Find the greatest integer satisfying: x < 6.3",
+      "options": ["6", "7", "5", "6.3"],
+      "correct": 0,
+      "points": 15,
+      "explanation": "Integers less than 6.3 are ..., 4, 5, 6. Greatest is 6.",
+      "difficulty": "medium"
+    },
+    {
+      "question": "When 4 is subtracted from a number, the result is greater than 5. Inequality?",
+      "options": ["x - 4 > 5", "4 - x > 5", "x > 4 + 5", "Both A and C"],
+      "correct": 3,
+      "points": 20,
+      "explanation": "x - 4 > 5 → x > 9, which is same as x > 4 + 5. So both A and C are correct.",
+      "difficulty": "medium"
+    },
+    {
+      "question": "Solve: -3x ≥ 12",
+      "options": ["x ≤ -4", "x ≥ -4", "x ≤ 4", "x ≥ 4"],
+      "correct": 0,
+      "points": 20,
+      "explanation": "Divide by -3 (reverse inequality): x ≤ -4.",
+      "difficulty": "hard"
+    },
+    {
+      "question": "A number is at least 8. Which is true?",
+      "options": ["x ≥ 8", "x > 8", "x ≤ 8", "x < 8"],
+      "correct": 0,
+      "points": 10,
+      "explanation": "'At least 8' means 8 or more → x ≥ 8.",
+      "difficulty": "easy"
+    },
+    {
+      "question": "Find all integers satisfying: -2 ≤ x < 3",
+      "options": ["-2, -1, 0, 1, 2", "-1, 0, 1, 2", "-2, -1, 0, 1, 2, 3", "0, 1, 2"],
+      "correct": 0,
+      "points": 20,
+      "explanation": "x ≥ -2 and x < 3 → integers: -2, -1, 0, 1, 2.",
+      "difficulty": "medium"
+    },
+    {
+      "question": "The perimeter of a square is more than 20 cm. If side = s, find inequality.",
+      "options": ["4s > 20", "4s < 20", "s > 20", "s < 5"],
+      "correct": 0,
+      "points": 20,
+      "explanation": "Perimeter = 4s. 'More than 20' → 4s > 20.",
+      "difficulty": "medium"
+    }
+  ],
+  "learning_objectives": [
+    "Translate simple verbal statements into inequalities",
+    "Solve one-step and two-step linear inequalities",
+    "Understand direction reversal when multiplying/dividing by negative",
+    "Find integer solutions within inequality bounds",
+    "Apply inequalities to basic geometric contexts"
+  ],
+  "key_concepts": [
+    "Inequality symbols: <, >, ≤, ≥",
+    "Reversing inequality sign with negative multiplier",
+    "“At least” = ≥, “at most” = ≤, “more than” = >, “less than” = <",
+    "Integer solutions require checking boundaries"
+  ],
+  "author": "Mathematics Department",
+  "version": "1.0",
+  "last_updated": "2026-01-25"
+}
