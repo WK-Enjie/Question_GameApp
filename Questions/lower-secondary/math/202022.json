@@ -186,7 +186,41 @@
     "Integer solutions: boundary conditions matter",
     "Geometric applications: perimeter, area constraints"
   ],
-
+  "author": "Mathematics Department",
+  "version": "1.1",
+  "last_updated": "2026-01-25"
+}{
+  "title": "Chapter 2: Linear Inequalities in One Variable (Advanced)",
+  "subject": "Mathematics",
+  "grade": "Secondary 2",
+  "topics": [
+    "Solving Complex Inequalities",
+    "Fractional Inequalities",
+    "Word Problem Translation",
+    "Integer Solutions",
+    "Multiple Operations"
+  ],
+  "questions": [
+    {
+      "question": "5 less than twice a number is smaller than 11. Find the inequality.",
+      "options": ["2x - 5 < 11", "2(x - 5) < 11", "2x < 5 - 11", "5 - 2x < 11"],
+      "correct": 0,
+      "points": 10,
+      "explanation": "'Twice a number' = 2x, 'decreased by 5' = -5, 'less than 11' = < 11 → 2x - 5 < 11",
+      "difficulty": "easy"
+    },
+    {
+      "question": "Solve: 3(x - 4) ≥ 2x + 7",
+      "options": ["x ≥ 19", "x ≤ 19", "x ≥ -19", "x ≤ -19"],
+      "correct": 0,
+      "points": 15,
+      "explanation": "3(x - 4) ≥ 2x + 7 → 3x - 12 ≥ 2x + 7 → x ≥ 19",
+      "difficulty": "medium"
+    },
+    {
+      "question": "A number x is at least 3 more than half of another number y. If y = 10, find inequality for x.",
+      "options": ["x ≥ 8", "x ≥ 13", "x ≤ 8", "x ≤ 13"],
+      "correct": 0,
       "points": 20,
       "explanation": "'Half of y' when y=10 is 5, '3 more than' = +3, 'at least' = ≥ → x ≥ 5 + 3 = 8",
       "difficulty": "hard"
@@ -346,5 +380,4 @@
   "author": "Mathematics Department",
   "version": "1.1",
   "last_updated": "2026-01-25"
-
 }
