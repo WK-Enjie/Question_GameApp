@@ -1,0 +1,251 @@
+{
+  "title": "Forces: Frictional Force, Gravitational Force, Elastic Spring Force",
+  "topic": "Interaction of Forces",
+  "subject": "Science",
+  "level": "Primary",
+  "grade": "P6",
+  "chapter": "Forces",
+  "worksheet": 1,
+  "questions": [
+    {
+      "question": "Which of the following BEST defines a force?",
+      "options": [
+        "The speed of an object",
+        "Energy stored in objects",
+        "A push or a pull",
+        "The weight of an object"
+      ],
+      "correct": 2,
+      "points": 10,
+      "explanation": "A force is defined as a push or a pull. It can cause objects to move, stop, change speed, change direction, or change shape."
+    },
+    {
+      "question": "A boy kicks a stationary football. Which effect of a force is shown?",
+      "options": [
+        "A force can change the shape of an object",
+        "A force can stop a moving object",
+        "A force can increase the mass of an object",
+        "A force can move a stationary object"
+      ],
+      "correct": 3,
+      "points": 10,
+      "explanation": "The football was stationary before the kick. The force of the kick moves it, demonstrating that a force can move a stationary object."
+    },
+    {
+      "question": "A cyclist applies brakes to slow down. Which effect of a force is demonstrated?",
+      "options": [
+        "A force can change the direction of motion",
+        "A force can move a stationary object",
+        "A force can slow down a moving object",
+        "A force can change the shape of an object"
+      ],
+      "correct": 2,
+      "points": 10,
+      "explanation": "The braking force acts opposite to the bicycle's motion, causing it to slow down. This shows that a force can slow down a moving object."
+    },
+    {
+      "question": "Which type of force acts when you stretch a rubber band?",
+      "options": [
+        "Magnetic force",
+        "Gravitational force",
+        "Frictional force",
+        "Elastic spring force"
+      ],
+      "correct": 3,
+      "points": 10,
+      "explanation": "When you stretch a rubber band, you are applying a force that stretches it. The rubber band exerts an elastic spring force trying to return to its original shape."
+    },
+    {
+      "question": "What causes objects to have weight?",
+      "options": [
+        "The shape of the object",
+        "The temperature of the object",
+        "The amount of material in the object",
+        "Gravitational force acting on the object"
+      ],
+      "correct": 3,
+      "points": 15,
+      "explanation": "Weight is caused by gravitational force pulling objects toward the center of the Earth. The greater the gravitational force acting on an object, the greater its weight."
+    },
+    {
+      "question": "A book slides across a table and gradually stops. Which force is responsible for stopping it?",
+      "options": [
+        "Gravitational force",
+        "Elastic spring force",
+        "Magnetic force",
+        "Frictional force"
+      ],
+      "correct": 3,
+      "points": 15,
+      "explanation": "Frictional force acts between the book and the table surface, opposing the motion and eventually causing the book to stop."
+    },
+    {
+      "question": "When you compress a spring and then release it, what happens?",
+      "options": [
+        "The frictional force keeps it compressed",
+        "The gravitational force pulls it downward",
+        "It remains compressed forever",
+        "The elastic spring force pushes it back to its original shape"
+      ],
+      "correct": 3,
+      "points": 15,
+      "explanation": "When compressed, a spring stores elastic potential energy. When released, the elastic spring force acts to return the spring to its original shape."
+    },
+    {
+      "question": "Which of these is NOT an effect of a force?",
+      "options": [
+        "A force can change the direction of motion",
+        "A force can change the shape of an object",
+        "A force can speed up a moving object",
+        "A force can change the color of an object"
+      ],
+      "correct": 3,
+      "points": 10,
+      "explanation": "A force cannot change the color of an object. Forces can: move stationary objects, change speed/direction of moving objects, stop moving objects, and change shapes of objects."
+    },
+    {
+      "question": "What would happen to your weight if you went to the Moon?",
+      "options": [
+        "Your weight would increase because gravitational force is stronger",
+        "Your weight would stay the same",
+        "You would have no weight on the Moon",
+        "Your weight would decrease because gravitational force is weaker"
+      ],
+      "correct": 3,
+      "points": 15,
+      "explanation": "Weight depends on gravitational force. The Moon's gravity is about 1/6 of Earth's, so your weight would be about 1/6 of what it is on Earth."
+    },
+    {
+      "question": "Why do car tires have patterns (treads) on them?",
+      "options": [
+        "To decrease friction for faster movement",
+        "To make the tires look attractive",
+        "To reduce the weight of the tires",
+        "To increase friction for better grip on the road"
+      ],
+      "correct": 3,
+      "points": 15,
+      "explanation": "Tire treads increase the surface area and create channels to improve friction between the tires and the road, providing better grip and safety."
+    },
+    {
+      "question": "A ball is thrown upward into the air. What force causes it to eventually fall back down?",
+      "options": [
+        "Frictional force",
+        "Elastic spring force",
+        "The force of the throw",
+        "Gravitational force"
+      ],
+      "correct": 3,
+      "points": 15,
+      "explanation": "Gravitational force constantly pulls the ball downward toward Earth. Even when thrown upward, gravity eventually overcomes the upward motion and pulls it back down."
+    },
+    {
+      "question": "Which surface would have the LEAST frictional force for sliding a heavy box?",
+      "options": [
+        "Carpet",
+        "Concrete",
+        "Grass",
+        "Ice"
+      ],
+      "correct": 3,
+      "points": 15,
+      "explanation": "Ice is smooth and slippery, creating very little friction. This makes it difficult to walk on ice but easy to slide objects across it."
+    },
+    {
+      "question": "When you pull a door open, what kind of force are you applying?",
+      "options": [
+        "A pushing force",
+        "A twisting force",
+        "A lifting force",
+        "A pulling force"
+      ],
+      "correct": 3,
+      "points": 10,
+      "explanation": "Pulling the door toward you is applying a pulling force. Forces are categorized as either pushes or pulls."
+    },
+    {
+      "question": "What happens to the elastic spring force when you stretch a spring further?",
+      "options": [
+        "The elastic spring force decreases",
+        "The elastic spring force stays the same",
+        "The elastic spring force disappears",
+        "The elastic spring force increases"
+      ],
+      "correct": 3,
+      "points": 15,
+      "explanation": "The more you stretch (or compress) a spring, the greater the elastic spring force it exerts trying to return to its original length."
+    },
+    {
+      "question": "Why is it harder to pedal a bicycle on a sandy path compared to a paved road?",
+      "options": [
+        "Gravitational force is stronger on sand",
+        "The bicycle has more elastic spring force on sand",
+        "Sand reduces the weight of the bicycle",
+        "There is more frictional force on sand"
+      ],
+      "correct": 3,
+      "points": 15,
+      "explanation": "Sand creates more friction than a smooth paved surface. The wheels sink into sand, increasing frictional force and making it harder to pedal."
+    },
+    {
+      "question": "Which object experiences gravitational force?",
+      "options": [
+        "Only heavy objects",
+        "Only objects that are falling",
+        "Only living things",
+        "All objects on Earth"
+      ],
+      "correct": 3,
+      "points": 10,
+      "explanation": "All objects on Earth experience gravitational force pulling them toward the Earth's center. This gives all objects weight, regardless of their size or material."
+    },
+    {
+      "question": "What should you do to reduce friction between moving parts in a machine?",
+      "options": [
+        "Make the surfaces rougher",
+        "Increase the weight",
+        "Apply more force",
+        "Add oil or lubricant"
+      ],
+      "correct": 3,
+      "points": 15,
+      "explanation": "Lubricants like oil create a smooth layer between surfaces, reducing friction. This helps machines work more smoothly and efficiently."
+    },
+    {
+      "question": "A spring is stretched and then released. What energy conversion occurs?",
+      "options": [
+        "Kinetic energy → Gravitational potential energy",
+        "Heat energy → Light energy",
+        "Chemical energy → Electrical energy",
+        "Elastic potential energy → Kinetic energy"
+      ],
+      "correct": 3,
+      "points": 15,
+      "explanation": "When stretched, a spring stores elastic potential energy. When released, this converts to kinetic energy as the spring moves back to its original position."
+    },
+    {
+      "question": "Which statement about forces is scientifically accurate?",
+      "options": [
+        "Forces can only act on living things",
+        "Forces always make objects move faster",
+        "Forces are a type of energy",
+        "Forces always act in pairs"
+      ],
+      "correct": 3,
+      "points": 20,
+      "explanation": "Forces always occur in pairs - for every action force, there is an equal and opposite reaction force (though this concept is typically introduced at higher levels)."
+    },
+    {
+      "question": "A student claims: 'Friction is always a bad thing.' How would you respond using scientific knowledge?",
+      "options": [
+        "The student is correct - friction should always be reduced",
+        "Friction is only useful in sports, not in daily life",
+        "Friction is only important for heavy objects",
+        "Friction can be useful - it helps us walk without slipping and cars stop safely"
+      ],
+      "correct": 3,
+      "points": 20,
+      "explanation": "Friction has both advantages and disadvantages. Useful friction helps us walk, write with pencils, and vehicles brake safely. Unwanted friction causes wear and wastes energy in machines."
+    }
+  ]
+}

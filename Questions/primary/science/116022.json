@@ -1,0 +1,131 @@
+{
+  "title": "Forces in Action: Comparing Effects and Real-Life Applications",
+  "topic": "Interaction of Forces",
+  "subject": "Science",
+  "level": "Primary",
+  "grade": "P6",
+  "chapter": "Forces",
+  "worksheet": 2,
+  "questions": [
+    {
+      "question": "A child pulls a toy car along a rough carpet. Which force opposes the motion of the car?",
+      "options": [
+        "Gravitational force",
+        "Elastic spring force",
+        "Magnetic force",
+        "Frictional force"
+      ],
+      "correct": 3,
+      "points": 15,
+      "explanation": "Frictional force acts between the car’s wheels and the carpet, opposing its motion and making it harder to pull."
+    },
+    {
+      "question": "Why can astronauts jump higher on the Moon than on Earth?",
+      "options": [
+        "Because they wear lighter suits",
+        "Because the Moon has no gravity",
+        "Because gravitational force is weaker on the Moon",
+        "Because there is more friction on the Moon"
+      ],
+      "correct": 2,
+      "points": 15,
+      "explanation": "The Moon’s gravitational force is about 1/6th of Earth’s, so astronauts weigh less and can jump higher with the same effort."
+    },
+    {
+      "question": "Which of the following uses elastic spring force?",
+      "options": [
+        "A falling raindrop",
+        "A bouncing basketball",
+        "A sliding book",
+        "A parked bicycle"
+      ],
+      "correct": 1,
+      "points": 15,
+      "explanation": "When a basketball hits the ground, it deforms slightly and then springs back due to elastic spring force, causing it to bounce."
+    },
+    {
+      "question": "Applying wax to skis helps a skier go faster. Why?",
+      "options": [
+        "It increases gravitational force",
+        "It reduces friction between the ski and snow",
+        "It adds elastic spring force",
+        "It makes the skier heavier"
+      ],
+      "correct": 1,
+      "points": 15,
+      "explanation": "Wax creates a smoother surface, reducing friction between the ski and snow, allowing faster movement."
+    },
+    {
+      "question": "Which statement is TRUE about weight?",
+      "options": [
+        "Weight is the same on Earth and the Moon",
+        "Weight depends only on the object’s volume",
+        "Weight is caused by gravitational force",
+        "Weight does not change with location"
+      ],
+      "correct": 2,
+      "points": 15,
+      "explanation": "Weight is the force of gravity acting on an object’s mass. It changes depending on the strength of gravity (e.g., less on the Moon)."
+    },
+    {
+      "question": "What happens when you add oil to the hinges of a squeaky door?",
+      "options": [
+        "Friction increases, making it harder to open",
+        "Gravitational force decreases",
+        "Friction decreases, making it easier to open",
+        "Elastic spring force appears"
+      ],
+      "correct": 2,
+      "points": 15,
+      "explanation": "Oil acts as a lubricant, reducing friction between moving parts, so the door opens more smoothly."
+    },
+    {
+      "question": "Which object demonstrates that a force can change the shape of an object?",
+      "options": [
+        "A ball rolling down a hill",
+        "A stretched rubber band",
+        "A book resting on a table",
+        "A leaf falling from a tree"
+      ],
+      "correct": 1,
+      "points": 15,
+      "explanation": "Stretching a rubber band changes its shape due to the applied force. When released, elastic spring force returns it to original shape."
+    },
+    {
+      "question": "Two identical boxes are pushed—one on ice, one on concrete. Which requires more force to start moving?",
+      "options": [
+        "The box on ice",
+        "The box on concrete",
+        "Both require the same force",
+        "Neither can be moved"
+      ],
+      "correct": 1,
+      "points": 15,
+      "explanation": "Concrete has more friction than ice, so more force is needed to overcome friction and start the box moving."
+    },
+    {
+      "question": "Which of the following shows that forces act in pairs?",
+      "options": [
+        "A magnet attracting a paperclip",
+        "Pushing a wall and feeling it push back",
+        "An apple falling from a tree",
+        "A spring returning to its shape"
+      ],
+      "correct": 1,
+      "points": 20,
+      "explanation": "When you push a wall, you feel it pushing back on you—this illustrates Newton’s third law: forces always occur in equal and opposite pairs."
+    },
+    {
+      "question": "Friction is useful when:",
+      "options": [
+        "Sliding down a metal slide quickly",
+        "Writing with a pencil on paper",
+        "Rolling a ball on ice",
+        "Using a lubricated machine part"
+      ],
+      "correct": 1,
+      "points": 20,
+      "explanation": "Friction between the pencil tip and paper allows graphite to leave marks—without friction, writing would be impossible."
+    }
+  ]
+}
