@@ -1,0 +1,191 @@
+{
+  "title": "Static Electricity: Charges and Fields",
+  "topic": "Electricity and Magnetism",
+  "subject": "Physics",
+  "level": "Secondary",
+  "grade": "S4",
+  "chapter": 15,
+  "worksheet": 1,
+  "questions": [
+    {
+      "question": "Which of the following statements about electric charge is correct?",
+      "options": [
+        "There are three types of electric charge: positive, negative, and neutral",
+        "Like charges attract each other, unlike charges repel",
+        "Charge is measured in coulombs (C)",
+        "Protons carry negative charge while electrons carry positive charge"
+      ],
+      "correct": 2,
+      "points": 10,
+      "explanation": "Charge is indeed measured in coulombs (C). There are only two types of charge (positive and negative), like charges repel, unlike charges attract, and protons carry positive charge while electrons carry negative charge."
+    },
+    {
+      "question": "Two balloons are rubbed with the same material and both become negatively charged. When brought close to each other, what happens?",
+      "options": [
+        "They attract each other",
+        "They repel each other",
+        "They first attract then repel",
+        "Nothing happens - no force acts between them"
+      ],
+      "correct": 1,
+      "points": 10,
+      "explanation": "Like charges repel. Since both balloons have the same type of charge (negative), they will repel each other when brought close together."
+    },
+    {
+      "question": "What is an electric field?",
+      "options": [
+        "A region where magnetic forces act on electric charges",
+        "A region where an electric charge experiences a force",
+        "A region containing only positive charges",
+        "The space between two charged plates"
+      ],
+      "correct": 1,
+      "points": 15,
+      "explanation": "An electric field is defined as a region in space where an electric charge experiences a force. The strength and direction of the field determine the force on a charge placed in that region."
+    },
+    {
+      "question": "For an isolated positive point charge, how do the electric field lines radiate from it?",
+      "options": [
+        "Radially inward toward the charge",
+        "Radially outward from the charge",
+        "Parallel lines in one direction",
+        "Circular lines around the charge"
+      ],
+      "correct": 1,
+      "points": 15,
+      "explanation": "For an isolated positive charge, electric field lines radiate outward (away from the charge). This shows the direction of force on a positive test charge would be away from the source charge."
+    },
+    {
+      "question": "What would the electric field pattern look like between two isolated positive point charges placed close together?",
+      "options": [
+        "Field lines curve away from both charges, showing repulsion",
+        "Field lines connect directly from one charge to the other",
+        "Field lines are parallel straight lines between them",
+        "No field exists between like charges"
+      ],
+      "correct": 0,
+      "points": 20,
+      "explanation": "Between two like charges (both positive), field lines curve away from each charge, showing repulsion. The lines do not connect the charges but rather show how a positive test charge would be pushed away from the region between them."
+    },
+    {
+      "question": "When a plastic rod is rubbed with wool, it becomes negatively charged. What particle transfer causes this charging?",
+      "options": [
+        "Protons move from wool to rod",
+        "Electrons move from wool to rod",
+        "Protons move from rod to wool",
+        "Electrons move from rod to wool"
+      ],
+      "correct": 1,
+      "points": 15,
+      "explanation": "When materials are rubbed, electrons (not protons) transfer between them. The plastic rod gains electrons from the wool, becoming negatively charged, while the wool loses electrons, becoming positively charged."
+    },
+    {
+      "question": "In electrostatic induction, a charged rod is brought near a neutral metal sphere without touching it. What happens to the charges in the sphere?",
+      "options": [
+        "Charges transfer from rod to sphere permanently",
+        "Charges in the sphere redistribute: like charges move away, unlike charges move toward the rod",
+        "The sphere becomes permanently charged opposite to the rod",
+        "Nothing happens until the rod touches the sphere"
+      ],
+      "correct": 1,
+      "points": 20,
+      "explanation": "During induction, charges redistribute within the neutral object. If a negatively charged rod is brought near, electrons in the sphere are repelled to the far side, leaving the near side positively charged. This is temporary until the rod is removed."
+    },
+    {
+      "question": "Why is electrostatic charging a potential hazard at petrol stations?",
+      "options": [
+        "Static sparks can ignite petrol vapors",
+        "Static charges can damage car electronics",
+        "Static attracts dust to the fuel nozzle",
+        "Static causes inaccurate fuel measurement"
+      ],
+      "correct": 0,
+      "points": 15,
+      "explanation": "Static electricity buildup can create sparks when touching metal parts. At petrol stations, these sparks could ignite flammable petrol vapors, causing fires or explosions. That's why bonding wires are used to safely discharge static."
+    },
+    {
+      "question": "How does an electrostatic precipitator remove dust particles from factory smoke?",
+      "options": [
+        "It uses magnets to attract magnetic dust particles",
+        "It charges dust particles positively so they stick to negative plates",
+        "It charges dust particles then attracts them to oppositely charged plates",
+        "It filters particles through fine mesh screens"
+      ],
+      "correct": 2,
+      "points": 20,
+      "explanation": "Electrostatic precipitators work by: 1) Charging dust particles negatively as smoke passes through, 2) Using positively charged plates to attract and collect the charged particles, 3) Cleaned air exits while dust is removed from plates periodically."
+    },
+    {
+      "question": "A student brings a negatively charged balloon near small pieces of paper. The paper pieces jump up and stick to the balloon. Which principle explains this?",
+      "options": [
+        "Magnetic attraction",
+        "Electrostatic induction creating opposite charges in the paper",
+        "Gravitational pull from the balloon",
+        "Chemical bonding between paper and rubber"
+      ],
+      "correct": 1,
+      "points": 15,
+      "explanation": "The negatively charged balloon induces a positive charge on the near side of the neutral paper (by repelling electrons to the far side). The attraction between the balloon's negative charge and the paper's induced positive charge causes the paper to jump up."
+    },
+    {
+      "question": "What would be the direction of electric field lines around an isolated negative point charge?",
+      "options": [
+        "Radially inward toward the charge",
+        "Radially outward from the charge",
+        "Parallel horizontal lines",
+        "Circular around the charge"
+      ],
+      "correct": 0,
+      "points": 15,
+      "explanation": "For a negative charge, field lines point radially inward. This shows that a positive test charge would be attracted toward the negative charge (force direction is toward negative charges)."
+    },
+    {
+      "question": "Why do clothes sometimes stick together after being in a tumble dryer?",
+      "options": [
+        "Heat causes chemical bonding between fabrics",
+        "Friction during drying causes electrostatic charging",
+        "Moisture creates adhesive forces",
+        "Static electricity from the dryer's motor"
+      ],
+      "correct": 1,
+      "points": 15,
+      "explanation": "Clothes rub against each other in the dryer, transferring electrons between different fabrics. This creates opposite charges on different items, causing them to stick together due to electrostatic attraction."
+    },
+    {
+      "question": "A factory needs to remove ink mist from printing operations. How could electrostatic principles be applied?",
+      "options": [
+        "Use charged plates to attract and collect the charged ink particles",
+        "Use strong magnets since ink contains iron particles",
+        "Blow air to push ink particles outside",
+        "Use water sprays to dissolve the ink"
+      ],
+      "correct": 0,
+      "points": 20,
+      "explanation": "Similar to an electrostatic precipitator: Charge the ink particles (usually negatively), then pass them through a chamber with positively charged plates. The oppositely charged plates attract and collect the ink particles, cleaning the air."
+    },
+    {
+      "question": "When testing for charge with an electroscope, a positively charged rod is brought near the metal cap. The leaves diverge. What happens if you then touch the cap with your finger?",
+      "options": [
+        "Leaves collapse completely",
+        "Leaves diverge more",
+        "Leaves still diverge but less",
+        "Nothing changes"
+      ],
+      "correct": 0,
+      "points": 20,
+      "explanation": "The positive rod induces negative charge on the cap (leaves become positive and repel). When you touch the cap, electrons from earth flow to neutralize the positive charge on leaves, so they collapse. If you remove your finger THEN the rod, the electroscope retains a net negative charge."
+    },
+    {
+      "question": "What safety measure is commonly used when transferring flammable liquids to prevent static discharge hazards?",
+      "options": [
+        "Using plastic containers only",
+        "Bonding containers together with a wire",
+        "Working only during rain",
+        "Wearing rubber gloves"
+      ],
+      "correct": 1,
+      "points": 15,
+      "explanation": "Bonding wires connect containers, allowing charges to equalize without sparking. This prevents static buildup that could cause sparks and ignite flammable vapors during transfer."
+    }
+  ]
+}
