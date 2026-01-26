@@ -164,16 +164,16 @@
       "explanation": "Stomata are pores for gas exchange. Closed stomata limit CO₂ entry, reducing photosynthesis rate. An experiment conducted when stomata are closed might show lower photosynthesis not due to the tested variable (like light intensity) but due to CO₂ limitation. This highlights need for controlled conditions."
     },
     {
-      "question": "Considering objectivity in science, what should researchers do if their photosynthesis experiment shows plants produce LESS oxygen with increased light beyond a certain point?",
+      "question": "In a photosynthesis experiment, students repeated their oxygen bubble count three times and got: 15 bubbles, 17 bubbles, and 4 bubbles in 5 minutes. What should they do to ensure reliable data before drawing conclusions?",
       "options": [
-        "Ignore the data as it must be wrong",
-        "Report only the expected increasing trend",
-        "Report all data and investigate possible reasons (e.g., photoinhibition)",
-        "Change the light measurement method until results match expectations"
+        "Use only the highest value (17 bubbles) as it's probably correct",
+        "Calculate the average of all three (15+17+4 = 36 ÷ 3 = 12 bubbles)",
+        "Check the 4-bubble trial for possible errors and repeat it",
+        "Report all three values without any analysis"
       ],
       "correct": 2,
-      "points": 10,
-      "explanation": "Good scientists report all data objectively. If oxygen decreases with very high light, it could indicate photoinhibition (light damage to photosynthesis machinery) - a real biological phenomenon. Reporting this leads to deeper understanding beyond simple 'more light = more photosynthesis'."
+      "points": 15,
+      "explanation": "When one result is very different from others (4 vs 15, 17), it may indicate an error. Before averaging or drawing conclusions, investigate and repeat that trial. Reliable data should show consistency before mathematical analysis."
     },
     {
       "question": "If you wanted to test whether plants use up oxygen at night, what would be the simplest experimental setup?",

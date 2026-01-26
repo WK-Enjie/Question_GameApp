@@ -56,7 +56,7 @@
       "explanation": "Chlorophyll (green pigment) is needed to capture light energy for photosynthesis. If starch (product of photosynthesis) is found only in the green parts where chlorophyll is present, this supports the hypothesis that chlorophyll is necessary for photosynthesis."
     },
     {
-      "question": "Students set up an experiment with two sealed containers:\nContainer 1: Plant + mouse, both alive\nContainer 2: Mouse alone\nBoth containers had enough food and water initially, and were placed in sunlight.\nAfter 3 days, the mouse in Container 2 died while both organisms in Container 1 were still alive. What is the MOST LIKELY explanation?",
+      "question": "Students set up an experiment with two sealed containers:\nContainer 1: Plant + mouse, both alive\nContainer 2: Mouse alone.\nBoth containers had enough food and water initially, and were placed in sunlight.\nAfter 3 days, the mouse in Container 2 died while both organisms in Container 1 were still alive. What is the MOST LIKELY explanation?",
       "options": [
         "The plant provided food for the mouse",
         "The plant produced oxygen that the mouse needed to breathe",
@@ -116,7 +116,7 @@
       "explanation": "While photosynthesis produces sugar (food), plants also gain mass from water absorbed by roots and minerals from soil. A better experiment would test specifically for starch (photosynthesis product) in leaves or measure gas exchange (oxygen production, carbon dioxide consumption) to directly demonstrate photosynthesis."
     },
     {
-      "question": "In a photosynthesis experiment, a student tested leaves from plants grown in different conditions for starch using iodine solution. The results were:\nPlant A (sunlight + water): Dark blue-black color\nPlant B (darkness + water): Yellow-brown color\nPlant C (sunlight + no water): Yellow-brown color\n\nWhat can be concluded about the experimental design?",
+      "question": "In a photosynthesis experiment, a student tested leaves from plants grown in different conditions for starch using iodine solution. The results were:\nPlant A (sunlight + water): Dark blue-black color. \nPlant B (darkness + water): Yellow-brown color. \nPlant C (sunlight + no water): Yellow-brown color. \n\nWhat can be concluded about the experimental design?",
       "options": [
         "The experiment successfully tested multiple variables",
         "The experiment had too many variables to draw clear conclusions",
@@ -152,28 +152,28 @@
       "explanation": "To photosynthesize effectively in dim light, a plant would need more efficient light-absorbing pigments. More chlorophyll or specialized pigments that can capture the limited available light would allow better photosynthesis in low-light conditions."
     },
     {
-      "question": "Students debated whether plants perform photosynthesis at night. One student said, 'Let's test leaves from plants kept in darkness for 24 hours for starch.' Another said, 'We should also test leaves at the END of a dark period.' Which approach is better and why?",
+      "question": "If you test a plant leaf for starch at night and find no starch, does this prove photosynthesis doesn't occur at night?",
       "options": [
-        "First approach - plants in continuous darkness definitely won't photosynthesize",
-        "Second approach - plants might use up stored starch during the night",
-        "Both approaches are equally valid",
-        "Neither approach - photosynthesis only happens in light so no test is needed"
+        "No, because plants use up stored starch at night for respiration",
+        "Yes, starch presence directly shows photosynthesis occurred",
+        "No, because starch tests only work during daytime",
+        "Yes, photosynthesis always produces starch immediately"
+      ],
+      "correct": 0,
+      "points": 15,
+      "explanation": "Finding no starch at night doesn't prove photosynthesis doesn't occur. Plants respire at night, using stored starch for energy. The absence of starch could simply mean it was used up during the night. To test photosynthesis at night, measure oxygen production directly."
+    },
+    {
+      "question": "Students repeated a photosynthesis experiment three times and got these results for oxygen bubbles counted in 5 minutes: Trial 1: 25 bubbles, Trial 2: 28 bubbles, Trial 3: 2 bubbles. What should they do FIRST to ensure reliable conclusions?",
+      "options": [
+        "Calculate the average of all three trials (25+28+2 = 55 ÷ 3 ≈ 18 bubbles)",
+        "Check Trial 3 for possible errors since it's very different from the others",
+        "Use only Trial 2's result because it's likely the most accurate",
+        "Report all three results separately without any analysis"
       ],
       "correct": 1,
       "points": 20,
-      "explanation": "Plants use stored starch for energy during the night through respiration. Testing leaves at the end of a dark period might show little starch even if photosynthesis occurred during the previous day. Better to test leaves at the end of a light period when starch accumulation is maximum, or use gas exchange measurements that can detect photosynthesis in real-time."
-    },
-    {
-      "question": "In an experiment on factors affecting photosynthesis, students were asked to be objective. What does this mean they should do?",
-      "options": [
-        "Only record results that support their hypothesis",
-        "Record all observations accurately, even unexpected ones",
-        "Change their hypothesis to match the results",
-        "Ignore results that don't make sense"
-      ],
-      "correct": 1,
-      "points": 10,
-      "explanation": "Being objective means recording all data accurately without bias, including unexpected or contradictory results. Good scientists report what they actually observe, not just what they expect or want to see. This allows for valid conclusions based on evidence."
+      "explanation": "When results vary widely, you should first check for experimental errors or anomalies. Trial 3's result (2 bubbles) is very different from Trials 1 and 2 (25, 28), suggesting a possible error. Investigating this ensures data quality before drawing conclusions."
     },
     {
       "question": "Considering the Sun is our primary energy source, what would be the ULTIMATE effect on an ecosystem if photosynthesis suddenly stopped in all plants?",
