@@ -8,7 +8,7 @@
   "worksheet": 1,
   "questions": [
     {
-      "question": "A student set up four experiments with potted plants as shown below:\n\nA: Plant with all leaves, placed in sunlight, watered daily\nB: Plant with all leaves, placed in dark box, watered daily\nC: Plant with all leaves painted black, placed in sunlight, watered daily\nD: Plant with all leaves, placed in sunlight, NOT watered\n\nAfter 2 weeks, only Plant A remained healthy. Which variable was being tested when comparing Plants A and B?",
+      "question": "A student set up four experiments with potted plants as shown below: \n\nA: Plant with all leaves, placed in sunlight, watered daily. \n\nB: Plant with all leaves, placed in dark box, watered daily. \n\nC: Plant with all leaves painted black, placed in sunlight, watered daily.\n\nD: Plant with all leaves, placed in sunlight, not watered. \n\nAfter 2 weeks, only Plant A remained healthy. Which variable was being tested when comparing Plants A and B?",
       "options": [
         "Presence of water",
         "Presence of light",
