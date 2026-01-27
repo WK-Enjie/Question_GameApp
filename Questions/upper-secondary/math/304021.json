@@ -1,0 +1,95 @@
+{
+  "title": "Probability of Single and Mutually Exclusive Events",
+  "topic": "Probability",
+  "subject": "Mathematics",
+  "level": "Upper Secondary",
+  "grade": "Sec 4",
+  "chapter": 2,
+  "worksheet": 1,
+  "questions": [
+    {
+      "question": "A fair six-sided die is rolled. What is the probability of getting a number greater than 4?",
+      "options": ["2/3", "1/6", "1/3", "1/2"],
+      "correct": 2,
+      "points": 10,
+      "explanation": "Numbers greater than 4: 5 and 6 (2 outcomes). Total outcomes: 6. Probability = 2/6 = 1/3."
+    },
+    {
+      "question": "A box contains 8 red balls, 5 blue balls, and 7 green balls. If one ball is picked at random, what is the probability it is NOT blue?",
+      "options": ["3/4", "5/20", "1/4", "7/20"],
+      "correct": 0,
+      "points": 10,
+      "explanation": "Total balls = 20. Not blue = red + green = 8 + 7 = 15. Probability = 15/20 = 3/4."
+    },
+    {
+      "question": "What is the probability of an event that is certain to happen?",
+      "options": ["0.5", "1", "0", "0.75"],
+      "correct": 1,
+      "points": 10,
+      "explanation": "A certain event has probability 1. An impossible event has probability 0."
+    },
+    {
+      "question": "A spinner has 10 equal sections numbered 1 to 10. What is the probability of getting a number divisible by 3?",
+      "options": ["1/5", "2/5", "3/10", "1/2"],
+      "correct": 2,
+      "points": 10,
+      "explanation": "Numbers divisible by 3: 3, 6, 9 (3 outcomes). Total outcomes: 10. Probability = 3/10."
+    },
+    {
+      "question": "The probability of event A is 0.25 and the probability of event B is 0.40. If A and B are mutually exclusive, what is P(A or B)?",
+      "options": ["0.15", "0.85", "0.65", "0.10"],
+      "correct": 2,
+      "points": 10,
+      "explanation": "For mutually exclusive events: P(A or B) = P(A) + P(B) = 0.25 + 0.40 = 0.65."
+    },
+    {
+      "question": "A letter is chosen at random from the word 'PROBABILITY'. What is the probability it is the letter 'B'?",
+      "options": ["1/10", "2/11", "1/11", "2/10"],
+      "correct": 1,
+      "points": 10,
+      "explanation": "Total letters in 'PROBABILITY' = 11. Letter 'B' appears 2 times. Probability = 2/11."
+    },
+    {
+      "question": "Which of these events are mutually exclusive when rolling a fair die once?",
+      "options": ["Getting a factor of 6 and getting an even number", "Getting an odd number and getting a prime number", "Getting a number less than 3 and getting a number greater than 4", "Getting a multiple of 2 and getting a multiple of 3"],
+      "correct": 2,
+      "points": 10,
+      "explanation": "Less than 3: {1,2}. Greater than 4: {5,6}. No common outcomes → mutually exclusive."
+    },
+    {
+      "question": "If the probability that it will snow tomorrow is 0.2, what is the probability that it will NOT snow?",
+      "options": ["0.5", "0.8", "0.3", "0.2"],
+      "correct": 1,
+      "points": 10,
+      "explanation": "P(not snow) = 1 - P(snow) = 1 - 0.2 = 0.8."
+    },
+    {
+      "question": "A bag contains 4 white marbles, 6 black marbles, and 5 yellow marbles. One marble is drawn. What is P(white or yellow)?",
+      "options": ["2/5", "6/15", "4/15", "3/5"],
+      "correct": 3,
+      "points": 10,
+      "explanation": "White or yellow = 4 + 5 = 9 marbles. Total = 15. Probability = 9/15 = 3/5."
+    },
+    {
+      "question": "Two mutually exclusive events have probabilities 0.3 and 0.45. What is the probability that neither event occurs?",
+      "options": ["0.15", "0.55", "0.75", "0.25"],
+      "correct": 3,
+      "points": 10,
+      "explanation": "P(A or B) = 0.3 + 0.45 = 0.75. P(neither) = 1 - 0.75 = 0.25."
+    },
+    {
+      "question": "In a survey, 40% of people like coffee, 30% like tea, and 10% like both. If a person is chosen at random, what is P(like coffee only)?",
+      "options": ["0.40", "0.30", "0.10", "0.70"],
+      "correct": 1,
+      "points": 10,
+      "explanation": "Coffee only = total coffee (40%) - both (10%) = 30%. So P(coffee only) = 0.30."
+    },
+    {
+      "question": "Which formula is correct for mutually exclusive events A and B?",
+      "options": ["P(A∩B) = P(A) × P(B)", "P(A∪B) = P(A) × P(B)", "P(A∪B) = P(A) + P(B)", "P(A∩B) = P(A) + P(B)"],
+      "correct": 2,
+      "points": 10,
+      "explanation": "For mutually exclusive events, P(A∪B) = P(A) + P(B) since P(A∩B) = 0."
+    }
+  ]
+}
