@@ -1,10 +1,10 @@
 {
   "title": "Photosynthesis: Energy Conversion in Plants",
-  "topic": "Energy Forms and Uses",
+  "topic": "Interactions",
   "subject": "Science",
   "level": "Primary",
   "grade": "P6",
-  "chapter": "Photosynthesis",
+  "chapter": "Cycles in Nature",
   "worksheet": 1,
   "questions": [
     {
@@ -20,16 +20,16 @@
       "explanation": "Plants A and B both have leaves, water, and access to air (carbon dioxide). The only difference is that Plant A has light while Plant B is in darkness. This tests whether light is necessary for photosynthesis and plant health."
     },
     {
-      "question": "In an experiment to test if carbon dioxide is needed for photosynthesis, students placed two similar plants under bell jars:\nPlant X: Under a bell jar with soda lime (absorbs carbon dioxide)\nPlant Y: Under a bell jar without soda lime\nBoth plants received equal light and water. What would be a good control setup for this experiment?",
+      "question": "In an experiment to test if carbon dioxide is needed for photosynthesis, students placed two similar plants under bell jars:\nPlant X: Under a bell jar with soda lime (absorbs carbon dioxide)\nPlant Y: Under a bell jar without soda lime\nBoth plants received equal light and water. What is the purpose of Plant Y in this experiment?",
       "options": [
-        "A third plant in complete darkness",
-        "A third plant with no water",
-        "A third plant in normal room conditions (no bell jar)",
-        "A third plant with its leaves removed"
+        "To test what happens without any light",
+        "To serve as the control showing normal photosynthesis with CO₂ present",
+        "To test the effect of soda lime on plant growth",
+        "To show that bell jars block carbon dioxide"
       ],
-      "correct": 2,
+      "correct": 1,
       "points": 20,
-      "explanation": "A control setup should show what happens under normal conditions. Plant in normal room conditions (with carbon dioxide, light, and water) serves as a baseline comparison to show normal photosynthesis rates, helping to confirm that any changes in Plants X and Y are due to the experimental conditions."
+      "explanation": "Plant Y (without soda lime) serves as the control group. It has normal carbon dioxide levels, allowing comparison with Plant X (experimental group). Any difference in results can then be attributed to the absence of CO₂ in Plant X."
     },
     {
       "question": "A student designed an experiment using aquatic plants (Elodea) in test tubes. She observed that bubbles were produced when the plants were placed in bright light, but few bubbles were produced in dim light. What do these bubbles most likely contain and what does this experiment demonstrate?",
@@ -95,13 +95,13 @@
       "question": "A farmer noticed his greenhouse plants grew better when he placed containers of baking soda solution around them. What is the MOST LIKELY scientific explanation?",
       "options": [
         "Baking soda solution released oxygen for the plants",
-        "Baking soda solution released carbon dioxide for photosynthesis",
+        "Baking soda solution provided extra carbon dioxide for photosynthesis",
         "Baking soda killed pests that were harming the plants",
         "Baking soda reflected more light onto the plants"
       ],
       "correct": 1,
       "points": 15,
-      "explanation": "Baking soda (sodium bicarbonate) can release carbon dioxide when it reacts with acids in the air or soil. More carbon dioxide in the greenhouse atmosphere would increase the rate of photosynthesis, leading to better plant growth."
+      "explanation": "Baking soda (sodium bicarbonate) can release carbon dioxide in the presence of acids (from soil or plant respiration). More carbon dioxide in the greenhouse atmosphere increases the rate of photosynthesis, leading to better plant growth."
     },
     {
       "question": "Students conducted an experiment where they measured the mass of a plant before and after 4 weeks of growth. They found the plant gained mass. Some students concluded this proves photosynthesis produces food. Why might this conclusion be incomplete?",
@@ -116,16 +116,16 @@
       "explanation": "While photosynthesis produces sugar (food), plants also gain mass from water absorbed by roots and minerals from soil. A better experiment would test specifically for starch (photosynthesis product) in leaves or measure gas exchange (oxygen production, carbon dioxide consumption) to directly demonstrate photosynthesis."
     },
     {
-      "question": "In a photosynthesis experiment, a student tested leaves from plants grown in different conditions for starch using iodine solution. The results were:\nPlant A (sunlight + water): Dark blue-black color. \nPlant B (darkness + water): Yellow-brown color. \nPlant C (sunlight + no water): Yellow-brown color. \n\nWhat can be concluded about the experimental design?",
+      "question": "In a photosynthesis experiment, a student tested leaves from plants grown in different conditions for starch using iodine solution. The results were:\nPlant A (sunlight + water): Dark blue-black color. \nPlant B (darkness + water): Yellow-brown color. \nPlant C (sunlight + no water): Yellow-brown color. \n\nWhat is the BEST way to improve this experimental design according to the 'fair test' principle?",
       "options": [
-        "The experiment successfully tested multiple variables",
-        "The experiment had too many variables to draw clear conclusions",
-        "The experiment needed more plants to be valid",
-        "Iodine solution is not a good test for starch"
+        "Test more plants to get better averages",
+        "Change two variables at once to save time",
+        "Test ONE variable at a time: compare A vs B for light effect (water constant), then A vs C for water effect (light constant)",
+        "Use different types of plants for each condition"
       ],
-      "correct": 0,
+      "correct": 2,
       "points": 15,
-      "explanation": "The experiment effectively tested two variables (light and water) using three different conditions. The results clearly show that both light AND water are needed for starch production (photosynthesis), as only the plant with both sunlight and water showed positive starch test."
+      "explanation": "A proper fair test changes only ONE variable at a time. To test light effect: compare Plant A (light+water) vs Plant B (dark+water) – water kept constant. To test water effect: compare Plant A (light+water) vs Plant C (light+no water) – light kept constant. Testing both variables simultaneously makes it hard to determine which variable caused the effect."
     },
     {
       "question": "If you wanted to modify the classic 'leaf in light vs dark' experiment to make it more accurate, which improvement would be MOST valuable?",
@@ -173,7 +173,7 @@
       ],
       "correct": 1,
       "points": 20,
-      "explanation": "When results vary widely, you should first check for experimental errors or anomalies. Trial 3's result (2 bubbles) is very different from Trials 1 and 2 (25, 28), suggesting a possible error. Investigating this ensures data quality before drawing conclusions."
+      "explanation": "When results vary widely, you should first check for experimental errors or anomalies. Trial 3's result (2 bubbles) is very different from Trials 1 and 2 (25, 28), suggesting a possible error (e.g., blocked tube, timing mistake). Investigating this ensures data quality before drawing conclusions."
     },
     {
       "question": "Considering the Sun is our primary energy source, what would be the ULTIMATE effect on an ecosystem if photosynthesis suddenly stopped in all plants?",
