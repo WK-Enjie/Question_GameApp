@@ -1,81 +1,143 @@
 {
-  "title": "Set Operations and Venn Diagrams",
-  "topic": "Set Language Notation",
-  "subject": "Elementary Mathematics",
+  "title": "Sets: Language, Notation, and Operations",
+  "topic": "Set Theory",
+  "subject": "Mathematics",
   "level": "Upper Secondary",
-  "grade": "Sec 4",
+  "grade": "Sec 4 E-Math",
   "chapter": 1,
   "worksheet": 2,
   "questions": [
     {
-      "question": "Given ξ = {1, 2, 3, 4, 5, 6, 7, 8}, A = {2, 4, 6, 8}, B = {3, 6, 8}. What is A ∩ B?",
-      "options": ["{6, 8}", "{2, 4}", "{2, 4, 6, 8}", "{3, 6, 8}"],
+      "question": "Which of the following represents the set of vowels in the word 'MATHEMATICS' using set-builder notation?",
+      "options": [
+        "{A, E, I}",
+        "{x | x is a vowel in 'MATHEMATICS'}",
+        "{M, A, T, H, E, I, C, S}",
+        "{A, E, I, O, U}"
+      ],
+      "correct": 1,
+      "points": 10,
+      "explanation": "Set-builder notation describes the property of elements. The vowels in 'MATHEMATICS' are A, E, I. Option 1 is correct set-builder form."
+    },
+    {
+      "question": "If A = {1, 3, 5} and B = {2, 3, 4, 5}, what is A ∩ B?",
+      "options": [
+        "{1, 2, 3, 4, 5}",
+        "{3, 5}",
+        "{1, 3, 5}",
+        "{3}"
+      ],
+      "correct": 1,
+      "points": 10,
+      "explanation": "A ∩ B is the set of elements common to both A and B. Common elements: 3 and 5."
+    },
+    {
+      "question": "Which symbol represents 'is a proper subset of'?",
+      "options": [
+        "∈",
+        "⊂",
+        "⊆",
+        "∉"
+      ],
+      "correct": 1,
+      "points": 10,
+      "explanation": "⊂ means 'is a proper subset of' (subset but not equal). ⊆ means 'subset or equal'. ∈ means 'is an element of'."
+    },
+    {
+      "question": "Given ξ = {1,2,3,4,5}, A = {2,4}, what is A'?",
+      "options": [
+        "∅",
+        "{1,3,5}",
+        "{2,4}",
+        "{1,2,3,4,5}"
+      ],
+      "correct": 1,
+      "points": 10,
+      "explanation": "A' is the complement of A in ξ: all elements in ξ not in A = {1,3,5}."
+    },
+    {
+      "question": "If X = {a, b} and Y = {b, c, d}, what is X ∪ Y?",
+      "options": [
+        "{a, b, c, d}",
+        "{a, c, d}",
+        "{b}",
+        "{a, b, c}"
+      ],
       "correct": 0,
       "points": 10,
-      "explanation": "A ∩ B contains elements common to both sets: 6 and 8."
+      "explanation": "X ∪ Y is the set of all elements in X or Y or both = {a, b, c, d}."
     },
     {
-      "question": "If M = {a, e, i, o, u} and N = {a, b, c, d, e}, what is M - N?",
-      "options": ["{a, e}", "{b, c, d}", "{i, o, u}", "{a, b, c, d, e, i, o, u}"],
-      "correct": 2,
+      "question": "Which set is a proper subset of {p, q, r, s}?",
+      "options": [
+        "{p, q, r, s, t}",
+        "{p, q, r}",
+        "None of these",
+        "{p, q, r, s}"
+      ],
+      "correct": 1,
       "points": 10,
-      "explanation": "M - N contains elements in M but not in N: {i, o, u}."
+      "explanation": "A proper subset cannot be equal to the original set. {p, q, r} is a proper subset of {p, q, r, s}."
     },
     {
-      "question": "Given ξ = {x: x is a positive integer ≤ 10}, P = {1, 2, 3, 4}, Q = {3, 4, 5, 6}. What is (P ∪ Q)'?",
-      "options": ["{7, 8, 9, 10}", "{1, 2, 5, 6}", "{3, 4}", "{1, 2, 3, 4, 5, 6}"],
-      "correct": 0,
+      "question": "Given A = {x: x is a prime number less than 10}, what is n(A)?",
+      "options": [
+        "6",
+        "4",
+        "5",
+        "3"
+      ],
+      "correct": 1,
       "points": 10,
-      "explanation": "P ∪ Q = {1,2,3,4,5,6}. Complement in ξ = {1,...,10} is {7,8,9,10}."
+      "explanation": "A = {2, 3, 5, 7}. Number of elements n(A) = 4."
     },
     {
-      "question": "Which Venn diagram shading represents A' ∩ B?",
-      "options": ["Shade only the part of B that is outside A", "Shade only the part of A that is outside B", "Shade the intersection of A and B", "Shade everything except A"],
-      "correct": 0,
-      "points": 10,
-      "explanation": "A' ∩ B means elements in B but not in A."
+      "question": "If M = {1, 2} and N = {2, 3, 4}, what is M × N?",
+      "options": [
+        "{(1,2), (2,3), (3,4)}",
+        "{(1,2), (1,3), (1,4), (2,2), (2,3), (2,4)}",
+        "{1,2,3,4}",
+        "{(1,1), (2,2), (3,3), (4,4)}"
+      ],
+      "correct": 1,
+      "points": 12,
+      "explanation": "M × N is the Cartesian product: all ordered pairs (m,n) where m ∈ M, n ∈ N."
     },
     {
-      "question": "If n(ξ) = 50, n(A) = 30, n(B) = 25, and n(A ∪ B) = 40, what is n(A ∩ B)?",
-      "options": ["15", "5", "10", "20"],
-      "correct": 0,
-      "points": 10,
-      "explanation": "n(A ∪ B) = n(A) + n(B) - n(A ∩ B). So 40 = 30 + 25 - n(A ∩ B) → n(A ∩ B) = 15."
+      "question": "In a class of 30 students, 18 like Math, 15 like Science, and 5 like neither. How many like both?",
+      "options": [
+        "13",
+        "8",
+        "20",
+        "10"
+      ],
+      "correct": 1,
+      "points": 15,
+      "explanation": "Let M and S be sets. n(M∪S) = 30−5 = 25. n(M∩S) = n(M) + n(S) − n(M∪S) = 18+15−25 = 8."
     },
     {
-      "question": "Which of these sets is equal to {x: x ∈ ℤ, -2 < x < 3}?",
-      "options": ["{-1, 0, 1, 2}", "{-2, -1, 0, 1, 2, 3}", "{-1, 0, 1, 2, 3}", "{-2, -1, 0, 1, 2}"],
-      "correct": 0,
+      "question": "If A ⊆ B and B ⊆ A, then which is true?",
+      "options": [
+        "A is a proper subset of B",
+        "A = B",
+        "B is a proper subset of A",
+        "A and B are disjoint"
+      ],
+      "correct": 1,
       "points": 10,
-      "explanation": "x is integer, -2 < x < 3 means x = -1, 0, 1, 2."
+      "explanation": "If A ⊆ B and B ⊆ A, then every element of A is in B and vice versa, so A = B."
     },
     {
-      "question": "Given A = {2, 4, 6}, B = {4, 5, 6, 7}. What is A Δ B (symmetric difference)?",
-      "options": ["{2, 5, 7}", "{4, 6}", "{2, 4, 5, 6, 7}", "{ }"],
-      "correct": 0,
-      "points": 10,
-      "explanation": "Symmetric difference: elements in A or B but not both = {2, 5, 7}."
-    },
-    {
-      "question": "If C ⊆ D and n(C) = 5, n(D) = 9, how many elements are in D but not in C?",
-      "options": ["4", "14", "5", "9"],
-      "correct": 0,
-      "points": 10,
-      "explanation": "Since C ⊆ D, all elements of C are in D. n(D) - n(C) = 9 - 5 = 4."
-    },
-    {
-      "question": "What is the empty set denoted by?",
-      "options": ["{0}", "∅", "{ }", "Both ∅ and { }"],
-      "correct": 3,
-      "points": 10,
-      "explanation": "The empty set can be denoted by either ∅ or { }."
-    },
-    {
-      "question": "In a survey of 100 students: 60 like Math, 50 like Science, 30 like both. How many like neither subject?",
-      "options": ["20", "10", "30", "40"],
-      "correct": 0,
-      "points": 10,
-      "explanation": "n(M∪S) = 60+50-30 = 80. Neither = 100-80 = 20."
+      "question": "Given ξ = {1,2,3,4,5,6}, A = {2,4,6}, B = {1,3,5}, what is A ∩ B'?",
+      "options": [
+        "B",
+        "A",
+        "∅",
+        "ξ"
+      ],
+      "correct": 1,
+      "points": 12,
+      "explanation": "B' = ξ − B = {2,4,6} = A. Therefore, A ∩ B' = A ∩ A = A."
     }
   ]
 }
