@@ -1,0 +1,95 @@
+{
+  "title": "Ratio: Unchanged Quantities",
+  "topic": "Ratio",
+  "subject": "Mathematics",
+  "level": "Primary",
+  "grade": "Primary 6",
+  "chapter": 2,
+  "worksheet": 3,
+  "questions": [
+    {
+      "question": "The ratio of Alex's money to Ben's money was 3 : 2. After Alex gave Ben $15, they had the same amount. What was the TOTAL amount of money they had?",
+      "options": ["$90", "$120", "$150", "$180"],
+      "correct": 2,
+      "points": 12,
+      "explanation": "Total amount stays unchanged during transfer. Initial ratio 3 : 2 → total 5 units. After transfer, ratio 1 : 1 → total 2 parts. Make totals equal: 3 : 2 = 6 : 4 (total 10 units), 1 : 1 = 5 : 5 (total 10 units). Alex gave 1 unit = $15. Total = 10 units = 10 × $15 = $150."
+    },
+    {
+      "question": "The ratio of red beads to blue beads in a box was 5 : 3. After 12 red beads were removed, the ratio became 1 : 1. How many beads were in the box at first?",
+      "options": ["32", "40", "48", "64"],
+      "correct": 2,
+      "points": 12,
+      "explanation": "Blue beads stay unchanged. Initial ratio 5 : 3. Final ratio 1 : 1 = 3 : 3. Blue beads = 3 units (unchanged). Red beads decreased from 5 units to 3 units → decrease of 2 units = 12 beads. 1 unit = 6 beads. Total at first = 5 + 3 = 8 units = 8 × 6 = 48 beads."
+    },
+    {
+      "question": "The ratio of boys to girls in a class was 3 : 5. After 6 boys joined the class, the ratio became 4 : 5. How many girls were in the class?",
+      "options": ["24", "30", "36", "42"],
+      "correct": 1,
+      "points": 15,
+      "explanation": "Number of girls stays unchanged. Initial ratio Boys : Girls = 3 : 5. Final ratio = 4 : 5. Girls = 5 units (unchanged in both ratios). Boys increased from 3 units to 4 units → increase of 1 unit = 6 boys. 1 unit = 6 students. Girls = 5 units = 5 × 6 = 30."
+    },
+    {
+      "question": "The ratio of Tom's age to Jerry's age is 3 : 4. In 4 years' time, the ratio will be 4 : 5. What is Tom's current age?",
+      "options": ["8 years", "10 years", "12 years", "16 years"],
+      "correct": 2,
+      "points": 15,
+      "explanation": "The AGE DIFFERENCE stays unchanged. Current ratio 3 : 4 → difference 1 unit. Future ratio 4 : 5 → difference 1 part. Difference is equal (1 unit = 1 part). In 4 years, both ages increase by 4 years. Tom increases from 3u to 4u → increase of 1u = 4 years. So 1 unit = 4 years. Tom's current age = 3 units = 3 × 4 = 12 years."
+    },
+    {
+      "question": "The ratio of flour to sugar in a recipe is 5 : 2. If 150 g of flour is used, how much sugar is needed?",
+      "options": ["40 g", "50 g", "60 g", "75 g"],
+      "correct": 2,
+      "points": 10,
+      "explanation": "Flour : Sugar = 5 : 2. 5 units = 150 g → 1 unit = 30 g. Sugar = 2 units = 2 × 30 = 60 g. The ratio relationship remains unchanged regardless of quantity used."
+    },
+    {
+      "question": "The ratio of John's stamps to Mary's stamps was 7 : 3. After John gave Mary 24 stamps, the ratio became 3 : 7. How many stamps did John have at first?",
+      "options": ["42", "56", "70", "84"],
+      "correct": 0,
+      "points": 15,
+      "explanation": "TOTAL number of stamps stays unchanged. Initial ratio 7 : 3 → total 10 units. Final ratio 3 : 7 → total 10 parts. Totals are already equal. John decreased from 7 units to 3 units → decrease of 4 units = 24 stamps. 1 unit = 6 stamps. John at first = 7 units = 7 × 6 = 42 stamps."
+    },
+    {
+      "question": "A fruit seller had apples and oranges in the ratio 8 : 5. After selling 40 apples, the ratio became 4 : 5. How many oranges did he have?",
+      "options": ["40", "50", "60", "75"],
+      "correct": 1,
+      "points": 15,
+      "explanation": "Number of oranges stays unchanged. Initial ratio Apples : Oranges = 8 : 5. Final ratio = 4 : 5. Oranges = 5 units (unchanged in both ratios). Apples decreased from 8 units to 4 units → decrease of 4 units = 40 apples. 1 unit = 10 fruits. Oranges = 5 units = 5 × 10 = 50."
+    },
+    {
+      "question": "The ratio of the length to the breadth of a rectangle is 5 : 3. If the breadth is increased by 6 cm while the length stays the same, the new ratio becomes 5 : 4. What is the original perimeter of the rectangle?",
+      "options": ["48 cm", "64 cm", "80 cm", "96 cm"],
+      "correct": 3,
+      "points": 18,
+      "explanation": "Length stays unchanged. Original ratio L : B = 5 : 3. New ratio L : B = 5 : 4. Length = 5 units (unchanged). Breadth increased from 3 units to 4 units → increase of 1 unit = 6 cm. 1 unit = 6 cm. Original length = 5 × 6 = 30 cm. Original breadth = 3 × 6 = 18 cm. Perimeter = 2 × (30 + 18) = 2 × 48 = 96 cm."
+    },
+    {
+      "question": "The ratio of Peter's money to Paul's money was 4 : 3. After BOTH received $12, the ratio became 5 : 4. How much money did Peter have at first?",
+      "options": ["$48", "$60", "$72", "$84"],
+      "correct": 0,
+      "points": 18,
+      "explanation": "The DIFFERENCE between their amounts stays unchanged (both received same amount). Initial ratio 4 : 3 → difference 1 unit. Final ratio 5 : 4 → difference 1 part. Difference unchanged. Peter increased from 4 units to 5 units → increase of 1 unit = $12. 1 unit = $12. Peter at first = 4 units = 4 × $12 = $48."
+    },
+    {
+      "question": "In a library, the ratio of fiction books to non-fiction books was 7 : 4. After 60 fiction books were borrowed, the ratio became 3 : 4. How many books were in the library at first?",
+      "options": ["165", "220", "275", "330"],
+      "correct": 0,
+      "points": 15,
+      "explanation": "Number of non-fiction books stays unchanged. Initial ratio F : NF = 7 : 4. Final ratio = 3 : 4. Non-fiction = 4 units (unchanged). Fiction decreased from 7 units to 3 units → decrease of 4 units = 60 books. 1 unit = 15 books. Total at first = 7 + 4 = 11 units = 11 × 15 = 165 books."
+    },
+    {
+      "question": "A tank contained oil and water in the ratio 9 : 2. After 54 litres of oil was removed, the ratio became 3 : 2. How much oil was in the tank at first?",
+      "options": ["63 L", "72 L", "81 L", "90 L"],
+      "correct": 2,
+      "points": 20,
+      "explanation": "Water amount stays unchanged. Initial ratio Oil : Water = 9 : 2. Final ratio = 3 : 2. Water = 2 units (unchanged). Oil decreased from 9 units to 3 units → decrease of 6 units = 54 L. 1 unit = 9 L. Initial oil = 9 units = 9 × 9 = 81 L."
+    },
+    {
+      "question": "At a party, the ratio of adults to children was 5 : 3. After 15 adults left and 9 children arrived, the ratio became 1 : 1. How many people were at the party at first?",
+      "options": ["96", "108", "120", "144"],
+      "correct": 0,
+      "points": 20,
+      "explanation": "Initial ratio Adults : Children = 5 : 3. Final ratio = 1 : 1. The DIFFERENCE changed from 2 units to 0. Adults leaving (15) and children arriving (9) together reduced the difference by 15 + 9 = 24. This equals the initial difference of 2 units. So 2 units = 24 → 1 unit = 12 people. Total at first = 5 + 3 = 8 units = 8 × 12 = 96 people. (Verification: 60 adults, 36 children initially. After: 45 adults, 45 children.)"
+    }
+  ]
+}

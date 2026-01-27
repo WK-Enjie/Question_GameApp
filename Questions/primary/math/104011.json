@@ -1,0 +1,81 @@
+{
+  "title": "Whole Numbers Up to 100,000",
+  "topic": "Whole Numbers",
+  "subject": "Mathematics",
+  "level": "Primary",
+  "grade": "P4",
+  "chapter": 1,
+  "worksheet": 1,
+  "questions": [
+    {
+      "question": "Round 47,683 to the nearest thousand.",
+      "options": ["47,000", "47,600", "47,700", "48,000"],
+      "correct": 3,
+      "points": 10,
+      "explanation": "To round to the nearest thousand, look at the hundreds digit which is 6. Since 6 is 5 or more, we round up the thousands digit from 7 to 8. The digits after thousands become zero. So 47,683 rounded to the nearest thousand is 48,000."
+    },
+    {
+      "question": "What is the value of the digit 5 in 83,592?",
+      "options": ["5", "50", "500", "5,000"],
+      "correct": 2,
+      "points": 10,
+      "explanation": "In the number 83,592, the digit 5 is in the hundreds place. This means it represents 5 hundreds, which equals 500."
+    },
+    {
+      "question": "Complete the pattern: 24,300, 24,600, 24,900, _____, 25,500",
+      "options": ["25,000", "25,100", "25,200", "25,300"],
+      "correct": 2,
+      "points": 12,
+      "explanation": "Each number increases by 300. 24,300 plus 300 equals 24,600. 24,600 plus 300 equals 24,900. So 24,900 plus 300 equals 25,200. The missing number is 25,200."
+    },
+    {
+      "question": "Round 68,427 to the nearest hundred.",
+      "options": ["68,000", "68,400", "68,430", "68,500"],
+      "correct": 1,
+      "points": 10,
+      "explanation": "To round to the nearest hundred, look at the tens digit which is 2. Since 2 is less than 5, we keep the hundreds digit the same. The digits after hundreds become zero. So 68,427 rounded to the nearest hundred is 68,400."
+    },
+    {
+      "question": "May has 4 times as many marbles as Ben. Together they have 60 marbles. How many marbles does May have?",
+      "options": ["12", "24", "48", "60"],
+      "correct": 2,
+      "points": 15,
+      "explanation": "Draw 1 box for Ben's marbles and 4 boxes for May's marbles. Together they have 5 boxes which equal 60 marbles. Each box has 60 divided by 5 equals 12 marbles. May has 4 boxes, so 4 times 12 equals 48 marbles."
+    },
+    {
+      "question": "Complete the pattern: 95,000, 93,500, 92,000, _____, 89,000",
+      "options": ["91,000", "90,500", "90,000", "89,500"],
+      "correct": 1,
+      "points": 12,
+      "explanation": "Each number decreases by 1,500. 95,000 minus 1,500 equals 93,500. 93,500 minus 1,500 equals 92,000. So 92,000 minus 1,500 equals 90,500. The missing number is 90,500."
+    },
+    {
+      "question": "I am thinking of a number. I add 45 to it, then multiply by 3. The result is 375. What is my number?",
+      "options": ["60", "70", "80", "90"],
+      "correct": 2,
+      "points": 15,
+      "explanation": "Work backwards. Start with 375. Since we multiplied by 3 last, divide 375 by 3 to get 125. Before that, we added 45, so subtract 45 from 125 to get 80. The number is 80."
+    },
+    {
+      "question": "Round 36,748 to the nearest ten thousand.",
+      "options": ["30,000", "35,000", "36,000", "40,000"],
+      "correct": 3,
+      "points": 10,
+      "explanation": "To round to the nearest ten thousand, look at the thousands digit which is 6. Since 6 is 5 or more, we round up the ten thousands digit from 3 to 4. All other digits become zero. So 36,748 rounded to the nearest ten thousand is 40,000."
+    },
+    {
+      "question": "A baker made 3 times as many chocolate cupcakes as vanilla cupcakes. She made 28 cupcakes altogether. How many vanilla cupcakes did she make?",
+      "options": ["7", "14", "21", "28"],
+      "correct": 0,
+      "points": 15,
+      "explanation": "Draw 1 box for vanilla cupcakes and 3 boxes for chocolate cupcakes. Altogether there are 4 boxes which equal 28 cupcakes. Each box has 28 divided by 4 equals 7 cupcakes. So there are 7 vanilla cupcakes."
+    },
+    {
+      "question": "David had some money. He spent half of it on a book. Then he spent $35 on lunch. He had $45 left. How much money did David have at first?",
+      "options": ["$120", "$140", "$160", "$180"],
+      "correct": 2,
+      "points": 15,
+      "explanation": "Work backwards. After buying lunch, David had $45 left. Before lunch, he had $45 plus $35 equals $80. This $80 was half of his original money because he spent half on a book. So his original amount was $80 times 2 equals $160."
+    }
+  ]
+}
