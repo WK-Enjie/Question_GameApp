@@ -10,182 +10,182 @@
     {
       "question": "Which of the following best defines a transverse wave?",
       "options": [
+        "A wave that transfers energy without transferring matter",
         "A wave where the particles vibrate perpendicular to the direction of wave propagation",
-        "A wave where the particles vibrate parallel to the direction of wave propagation",
         "A wave that requires a medium to travel through",
-        "A wave that can travel through a vacuum"
+        "A wave where the particles vibrate parallel to the direction of wave propagation"
       ],
-      "correct": 0,
+      "correct": 1,
       "points": 10,
-      "explanation": "In transverse waves, particle displacement is perpendicular to wave direction. Examples: light, water waves."
+      "explanation": "In transverse waves, particle displacement is perpendicular to wave direction. Examples include light waves and waves on a string."
     },
     {
       "question": "What is the definition of wavelength?",
       "options": [
-        "Distance between two consecutive points in phase on a wave",
         "Time taken for one complete wave to pass a point",
-        "Number of complete waves passing a point per second",
-        "Maximum displacement from the rest position"
+        "Maximum displacement from the rest position",
+        "Distance between two consecutive points in phase on a wave",
+        "Number of complete waves passing a point per second"
       ],
-      "correct": 0,
+      "correct": 2,
       "points": 10,
-      "explanation": "Wavelength (λ) is measured between two consecutive crests, troughs, or any two points in phase."
+      "explanation": "Wavelength (λ) is measured between two consecutive crests, troughs, or any two points that are in phase."
     },
     {
       "question": "If a wave has a frequency of 50 Hz and a wavelength of 0.5 m, what is its wave speed?",
       "options": [
-        "25 m/s",
-        "50 m/s",
+        "100 m/s",
         "0.01 m/s",
-        "100 m/s"
+        "50 m/s",
+        "25 m/s"
       ],
-      "correct": 0,
+      "correct": 3,
       "points": 12,
-      "explanation": "Wave speed v = f × λ = 50 Hz × 0.5 m = 25 m/s."
+      "explanation": "Wave speed v = f × λ = 50 Hz × 0.5 m = 25 m/s. This relationship applies to all types of waves."
     },
     {
       "question": "What is the period of a wave with frequency 20 Hz?",
       "options": [
-        "0.05 s",
-        "20 s",
         "5 s",
-        "0.2 s"
+        "0.2 s",
+        "20 s",
+        "0.05 s"
       ],
-      "correct": 0,
+      "correct": 3,
       "points": 10,
-      "explanation": "Period T = 1/f = 1/20 = 0.05 s."
+      "explanation": "Period T = 1/f = 1/20 = 0.05 s. Period is the time for one complete oscillation."
     },
     {
       "question": "Which type of wave can travel through a vacuum?",
       "options": [
-        "Electromagnetic waves",
-        "Sound waves",
         "Water waves",
-        "Seismic waves"
+        "Seismic waves",
+        "Electromagnetic waves",
+        "Mechanical waves"
       ],
-      "correct": 0,
+      "correct": 2,
       "points": 10,
-      "explanation": "Electromagnetic waves (e.g., light, radio) can travel through a vacuum; mechanical waves require a medium."
+      "explanation": "Electromagnetic waves (e.g., light, radio) can travel through a vacuum; mechanical waves require a medium to propagate."
     },
     {
-      "question": "In a water wave, a buoy moves up and down 10 times in 5 seconds. What is the frequency?",
+      "question": "A marker on a rope moves up and down 12 times in 4 seconds as a wave passes. What is the frequency of the wave?",
       "options": [
-        "2 Hz",
-        "0.5 Hz",
-        "10 Hz",
-        "5 Hz"
+        "48 Hz",
+        "12 Hz",
+        "3 Hz",
+        "4 Hz"
       ],
-      "correct": 0,
+      "correct": 2,
       "points": 12,
-      "explanation": "Frequency = number of oscillations/time = 10/5 = 2 Hz."
+      "explanation": "Frequency = number of oscillations ÷ time = 12 ÷ 4 = 3 Hz. This measures how many complete waves pass a point each second."
     },
     {
       "question": "What is the amplitude of a wave?",
       "options": [
-        "Maximum displacement from the rest position",
         "Distance between two consecutive crests",
+        "Number of waves per second",
         "Time for one complete oscillation",
-        "Number of waves per second"
+        "Maximum displacement from the rest position"
       ],
-      "correct": 0,
+      "correct": 3,
       "points": 10,
-      "explanation": "Amplitude is the maximum displacement from equilibrium, related to wave energy."
+      "explanation": "Amplitude is the maximum displacement from equilibrium. It determines the energy carried by the wave."
     },
     {
-      "question": "If a sound wave has a speed of 340 m/s and a wavelength of 0.68 m, what is its frequency?",
+      "question": "A wave on a string travels at 40 m/s with a wavelength of 0.8 m. What is its frequency?",
       "options": [
-        "500 Hz",
-        "100 Hz",
-        "340 Hz",
-        "232 Hz"
+        "40 Hz",
+        "50 Hz",
+        "32 Hz",
+        "0.02 Hz"
       ],
-      "correct": 0,
+      "correct": 1,
       "points": 12,
-      "explanation": "f = v/λ = 340 m/s ÷ 0.68 m = 500 Hz."
+      "explanation": "f = v/λ = 40 m/s ÷ 0.8 m = 50 Hz. This calculation works for any wave where speed, frequency and wavelength are related."
     },
     {
-      "question": "Which wave property determines loudness for sound and brightness for light?",
+      "question": "Which wave property is directly related to the energy carried by the wave?",
       "options": [
-        "Amplitude",
-        "Wavelength",
+        "Speed",
         "Frequency",
-        "Speed"
+        "Wavelength",
+        "Amplitude"
       ],
-      "correct": 0,
+      "correct": 3,
       "points": 10,
-      "explanation": "Amplitude affects loudness (sound) and brightness (light); energy is proportional to amplitude squared."
+      "explanation": "Energy carried by a wave is proportional to the square of its amplitude. Larger amplitude means more energy, regardless of wave type."
     },
     {
       "question": "What happens to wavelength if frequency doubles and wave speed remains constant?",
       "options": [
-        "Halves",
-        "Doubles",
         "Remains the same",
-        "Quadruples"
+        "Halves",
+        "Quadruples",
+        "Doubles"
       ],
-      "correct": 0,
+      "correct": 1,
       "points": 12,
-      "explanation": "v = fλ. If v constant and f doubles, λ must halve."
+      "explanation": "From v = fλ, if v is constant and f doubles, λ must halve to keep the product unchanged."
     },
     {
       "question": "Which diagram shows correct labeling of amplitude and wavelength on a transverse wave?",
       "options": [
-        "Amplitude: vertical arrow from rest to crest; Wavelength: horizontal arrow crest to crest",
-        "Amplitude: horizontal arrow crest to crest; Wavelength: vertical arrow rest to crest",
-        "Amplitude: from trough to crest; Wavelength: from crest to trough",
-        "Amplitude and wavelength are both horizontal arrows"
+        "Amplitude: distance from trough to crest; Wavelength: distance from crest to trough",
+        "Amplitude: horizontal arrow from crest to crest; Wavelength: vertical arrow from rest position to crest",
+        "Amplitude: vertical arrow from rest position to crest; Wavelength: horizontal arrow from crest to crest",
+        "Amplitude and wavelength are both measured horizontally"
       ],
-      "correct": 0,
+      "correct": 2,
       "points": 10,
-      "explanation": "Amplitude is vertical, wavelength is horizontal between identical points."
+      "explanation": "Amplitude is measured vertically from rest position to crest (or trough). Wavelength is measured horizontally between two consecutive identical points."
     },
     {
-      "question": "A wave travels 60 m in 2 seconds. If its frequency is 10 Hz, what is its wavelength?",
+      "question": "A wave travels 90 m in 3 seconds. If its frequency is 15 Hz, what is its wavelength?",
       "options": [
-        "3 m",
+        "30 m",
         "6 m",
-        "0.5 m",
-        "30 m"
+        "2 m",
+        "4.5 m"
       ],
-      "correct": 0,
+      "correct": 2,
       "points": 15,
-      "explanation": "First find speed: v = distance/time = 60/2 = 30 m/s. Then λ = v/f = 30/10 = 3 m."
+      "explanation": "First find speed: v = distance/time = 90 m ÷ 3 s = 30 m/s. Then λ = v/f = 30 m/s ÷ 15 Hz = 2 m."
     },
     {
-      "question": "What type of wave are sound waves in air?",
+      "question": "Which of the following best defines a longitudinal wave?",
       "options": [
-        "Longitudinal",
-        "Transverse",
-        "Electromagnetic",
-        "Surface"
+        "A wave with compressions and rarefactions that cannot transfer energy",
+        "A wave where the particles vibrate parallel to the direction of wave propagation",
+        "A wave that can only travel through solids",
+        "A wave where the particles vibrate perpendicular to the direction of wave propagation"
       ],
-      "correct": 0,
+      "correct": 1,
       "points": 10,
-      "explanation": "Sound waves are longitudinal; particles vibrate parallel to wave direction."
+      "explanation": "In longitudinal waves, particle displacement is parallel to wave direction. Examples include sound waves in air and seismic P-waves."
     },
     {
-      "question": "If a wave's period is 0.2 s, how many waves pass a point in 10 seconds?",
+      "question": "If a wave's period is 0.25 s, how many complete waves pass a fixed point in 10 seconds?",
       "options": [
-        "50",
-        "5",
-        "2",
-        "10"
+        "10",
+        "40",
+        "2.5",
+        "0.025"
       ],
-      "correct": 0,
+      "correct": 1,
       "points": 12,
-      "explanation": "Number of waves = total time / period = 10 s ÷ 0.2 s = 50."
+      "explanation": "Number of waves = total time ÷ period = 10 s ÷ 0.25 s = 40 waves."
     },
     {
-      "question": "Which application uses reflection of waves?",
+      "question": "Which application primarily uses the reflection of electromagnetic waves?",
       "options": [
+        "Ultrasound imaging",
+        "Seismic surveying",
         "Echo sounding",
-        "Radio broadcasting",
-        "X-ray imaging",
-        "All of the above"
+        "Radar detection"
       ],
-      "correct": 0,
+      "correct": 3,
       "points": 10,
-      "explanation": "Echo sounding uses reflection of sound waves to measure underwater depth. Radio broadcasting relies on transmission, not reflection. X-ray imaging depends on absorption, not reflection. Therefore, only echo sounding primarily uses wave reflection."
+      "explanation": "Radar uses reflection of radio waves (electromagnetic waves) to detect objects. Echo sounding and ultrasound use sound waves; seismic surveying uses mechanical waves in the ground."
     }
   ]
 }
