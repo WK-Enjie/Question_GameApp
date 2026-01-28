@@ -1,0 +1,132 @@
+{
+  "title": "Forces: Advanced Applications and Energy Analysis",
+  "topic": "Physics",
+  "subject": "Science",
+  "level": "Secondary",
+  "grade": "S2",
+  "chapter": "Forces and Energy",
+  "worksheet": 5,
+  "difficulty": "Challenging",
+  "questions": [
+    {
+      "question": "A hydraulic press has a small piston of area 0.01 m² and a large piston of area 0.5 m². If a force of 100 N is applied to the small piston, what force is exerted by the large piston?",
+      "options": [
+        "100 N",
+        "500 N",
+        "5000 N",
+        "10000 N"
+      ],
+      "correct": 2,
+      "points": 20,
+      "explanation": "Using Pascal's principle: Pressure is equal throughout. P = F₁/A₁ = F₂/A₂. F₂ = F₁ × (A₂/A₁) = 100 N × (0.5/0.01) = 100 × 50 = 5000 N."
+    },
+    {
+      "question": "A crate weighing 800 N is dragged horizontally with a constant force. If the coefficient of kinetic friction is 0.4, what is the frictional force acting against the motion?",
+      "options": [
+        "200 N",
+        "320 N",
+        "800 N",
+        "3200 N"
+      ],
+      "correct": 1,
+      "points": 20,
+      "explanation": "Frictional force = μ × normal force = 0.4 × 800 N = 320 N. (Note: Work calculation removed to stay within S2 syllabus—students learn force concepts before work/energy calculations.)"
+    },
+    {
+      "question": "Why do engineers design tall buildings to sway slightly in strong winds?",
+      "options": [
+        "To reduce construction costs",
+        "To allow heat expansion",
+        "To dissipate wind energy and prevent structural failure",
+        "To improve architectural aesthetics"
+      ],
+      "correct": 2,
+      "points": 15,
+      "explanation": "Controlled flexibility allows buildings to absorb and dissipate wind energy through gradual oscillation rather than resisting rigidly, which could cause catastrophic failure from stress concentration."
+    },
+    {
+      "question": "A bicycle pump compresses air rapidly. What is the primary energy conversion happening to the air inside?",
+      "options": [
+        "Kinetic energy → Thermal energy",
+        "Chemical energy → Electrical energy",
+        "Potential energy → Nuclear energy",
+        "Electrical energy → Light energy"
+      ],
+      "correct": 0,
+      "points": 15,
+      "explanation": "The work done in compressing the air increases both its pressure and temperature. The mechanical kinetic energy of the pump handle is converted to thermal energy in the air molecules through increased collisions."
+    },
+    {
+      "question": "Which statement BEST explains why geothermal energy has less environmental impact than nuclear energy?",
+      "options": [
+        "Geothermal produces no radioactive waste",
+        "Nuclear energy is more expensive",
+        "Geothermal plants are smaller",
+        "Nuclear energy uses more water"
+      ],
+      "correct": 0,
+      "points": 15,
+      "explanation": "While both are low-carbon, nuclear energy produces radioactive waste requiring secure long-term storage for thousands of years. Geothermal produces minimal waste and has a much smaller environmental footprint."
+    },
+    {
+      "question": "Two identical boxes float in water. Box A has a small hole and slowly fills with water, while Box B remains sealed. What happens to Box A?",
+      "options": [
+        "It floats higher because water adds weight",
+        "It sinks because its average density increases",
+        "It floats at the same level because material hasn't changed",
+        "It floats sideways due to uneven weight distribution"
+      ],
+      "correct": 1,
+      "points": 20,
+      "explanation": "As water enters Box A, its total mass increases while volume stays nearly the same, increasing its average density. When density exceeds that of water (~1000 kg/m³), it sinks—demonstrating the principle of buoyancy."
+    },
+    {
+      "question": "A 500 g apple falls from a tree. Ignoring air resistance, what happens to its energy during the fall?",
+      "options": [
+        "Gravitational potential energy decreases while kinetic energy increases",
+        "Both potential and kinetic energy decrease",
+        "Thermal energy is converted to kinetic energy",
+        "Total energy decreases due to gravity"
+      ],
+      "correct": 0,
+      "points": 20,
+      "explanation": "As the apple falls, height decreases → gravitational potential energy decreases. Speed increases → kinetic energy increases. Total energy is conserved (ignoring air resistance), illustrating energy transformation without loss."
+    },
+    {
+      "question": "What explains why a suction cup can support significant weight on a smooth surface?",
+      "options": [
+        "The vacuum created increases internal pressure",
+        "Atmospheric pressure pushes the cup against the surface",
+        "Adhesive forces between materials",
+        "Reduced friction allows better contact"
+      ],
+      "correct": 1,
+      "points": 15,
+      "explanation": "When air is pushed out, atmospheric pressure (approximately 101,325 Pa) exerts a force on the outside of the cup. With little to no pressure inside, this creates a net force pressing the cup firmly against the surface."
+    },
+    {
+      "question": "Why might biofuels NOT be considered completely carbon-neutral?",
+      "options": [
+        "They release more CO₂ than fossil fuels when burned",
+        "Energy is used in farming, processing, and transport",
+        "They reduce oxygen in the atmosphere",
+        "They increase atmospheric pressure"
+      ],
+      "correct": 1,
+      "points": 20,
+      "explanation": "While plants absorb CO₂ during growth, the full lifecycle includes fertilizer production, farming machinery, processing plants, and transportation—all typically powered by fossil fuels, reducing net carbon neutrality."
+    },
+    {
+      "question": "A 600 N student stands on one foot wearing a shoe with a sole area of 150 cm². What pressure does the student exert on the floor?",
+      "options": [
+        "40 Pa",
+        "400 Pa",
+        "4000 Pa",
+        "40,000 Pa"
+      ],
+      "correct": 3,
+      "points": 20,
+      "explanation": "Convert area: 150 cm² = 0.015 m². Pressure = Force/Area = 600 N / 0.015 m² = 40,000 Pa. This demonstrates how pressure increases when force is concentrated on a smaller area."
+    }
+  ]
+}

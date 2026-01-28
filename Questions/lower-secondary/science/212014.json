@@ -1,0 +1,132 @@
+{
+  "title": "Forces: Types, Pressure, and Daily Phenomena",
+  "topic": "Physics",
+  "subject": "Science",
+  "level": "Secondary",
+  "grade": "S2",
+  "chapter": "Forces and Energy",
+  "worksheet": 4,
+  "difficulty": "Intermediate",
+  "questions": [
+    {
+      "question": "Which of the following is an example of a contact force?",
+      "options": [
+        "Gravitational force pulling a falling apple",
+        "Magnetic force between two magnets",
+        "Friction slowing down a sliding book",
+        "Electrostatic force attracting a balloon to a wall"
+      ],
+      "correct": 2,
+      "points": 10,
+      "explanation": "Friction requires direct contact between surfaces. The book slides against the table, making friction a contact force. The other options are non-contact forces."
+    },
+    {
+      "question": "What is the SI unit for measuring force?",
+      "options": [
+        "Pascal",
+        "Joule",
+        "Newton",
+        "Watt"
+      ],
+      "correct": 2,
+      "points": 10,
+      "explanation": "The newton (N) is the SI unit of force, named after Sir Isaac Newton. One newton is the force needed to accelerate 1 kg by 1 m/s²."
+    },
+    {
+      "question": "A force of 50 N is applied to an area of 0.25 m². What is the pressure exerted?",
+      "options": [
+        "12.5 Pa",
+        "200 Pa",
+        "50 Pa",
+        "0.005 Pa"
+      ],
+      "correct": 1,
+      "points": 15,
+      "explanation": "Using the formula Pressure = Force/Area = 50 N / 0.25 m² = 200 Pa. Pressure is measured in pascals (Pa)."
+    },
+    {
+      "question": "Why does a sharp knife cut better than a blunt one?",
+      "options": [
+        "It has less mass",
+        "It applies more force",
+        "It concentrates force over a smaller area, increasing pressure",
+        "It has less friction"
+      ],
+      "correct": 2,
+      "points": 10,
+      "explanation": "A sharp knife has a very small cutting edge area. For the same applied force, pressure is higher (Pressure = Force/Area), allowing it to penetrate materials more easily."
+    },
+    {
+      "question": "What energy conversion occurs when a person uses a hand-cranked flashlight?",
+      "options": [
+        "Chemical → Light",
+        "Kinetic → Light",
+        "Kinetic → Electrical → Light",
+        "Thermal → Light"
+      ],
+      "correct": 2,
+      "points": 10,
+      "explanation": "Turning the crank (kinetic energy) spins a small generator that produces electricity, which then powers the light bulb. This demonstrates a two-stage energy conversion appropriate for S2 understanding."
+    },
+    {
+      "question": "Which natural phenomenon is caused by gravitational and seismic forces?",
+      "options": [
+        "Solar eclipse",
+        "Tsunami",
+        "Rainbow",
+        "Aurora borealis"
+      ],
+      "correct": 1,
+      "points": 10,
+      "explanation": "Tsunamis are triggered by underwater earthquakes (seismic forces) that displace massive amounts of water. Gravity then pulls the displaced water back, creating powerful waves that travel across oceans."
+    },
+    {
+      "question": "What allows a submarine to dive and surface in water?",
+      "options": [
+        "Changing its engine power",
+        "Adjusting its buoyancy using ballast tanks",
+        "Increasing its speed",
+        "Changing its shape"
+      ],
+      "correct": 1,
+      "points": 10,
+      "explanation": "Submarines use ballast tanks that can be filled with water (to dive) or air (to surface), changing their overall density and buoyancy to control depth."
+    },
+    {
+      "question": "Which renewable energy source uses heat from within the Earth?",
+      "options": [
+        "Solar energy",
+        "Wind energy",
+        "Geothermal energy",
+        "Biofuels"
+      ],
+      "correct": 2,
+      "points": 10,
+      "explanation": "Geothermal energy harnesses heat from radioactive decay in the Earth's core, used for heating and electricity generation with minimal greenhouse gas emissions."
+    },
+    {
+      "question": "What principle explains why drinking through a straw works?",
+      "options": [
+        "Gravity",
+        "Atmospheric pressure",
+        "Surface tension",
+        "Capillary action"
+      ],
+      "correct": 1,
+      "points": 10,
+      "explanation": "Sucking reduces pressure inside the straw. Higher atmospheric pressure outside pushes the liquid up the straw into your mouth."
+    },
+    {
+      "question": "What is the main environmental impact of burning fossil fuels?",
+      "options": [
+        "Increased soil fertility",
+        "Reduced atmospheric pressure",
+        "Release of greenhouse gases causing climate change",
+        "Decreased ocean acidity"
+      ],
+      "correct": 2,
+      "points": 15,
+      "explanation": "Burning fossil fuels releases carbon dioxide and other greenhouse gases that trap heat in the atmosphere, contributing to global warming and climate change."
+    }
+  ]
+}
