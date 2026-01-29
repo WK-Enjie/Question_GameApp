@@ -1,0 +1,131 @@
+{
+  "title": "Redox Reactions: Disproportionation and Agent Identification",
+  "topic": "Redox Reactions",
+  "subject": "Chemistry",
+  "level": "Upper Secondary",
+  "grade": "Sec 3 Pure Chemistry",
+  "chapter": 12,
+  "worksheet": 2,
+  "questions": [
+    {
+      "question": "Disproportionation is a redox reaction in which the same element in a single reactant is simultaneously oxidised and reduced. Which of the following reactions is an example of disproportionation?",
+      "options": [
+        "Zn + Cu²⁺ → Zn²⁺ + Cu",
+        "Cl₂ + H₂O → HCl + HClO",
+        "2H₂ + O₂ → 2H₂O",
+        "Fe + 2HCl → FeCl₂ + H₂"
+      ],
+      "correct": 1,
+      "points": 10,
+      "explanation": "In Cl₂ + H₂O → HCl + HClO, chlorine (oxidation state 0 in Cl₂) is simultaneously reduced to -1 in HCl and oxidised to +1 in HClO. This satisfies the definition of disproportionation. The other options involve different elements undergoing oxidation and reduction."
+    },
+    {
+      "question": "Disproportionation occurs when atoms of the same element in identical initial oxidation states undergo both oxidation and reduction in the same reaction. In 2H₂O₂ → 2H₂O + O₂, what happens to oxygen?",
+      "options": [
+        "All oxygen atoms are oxidised",
+        "All oxygen atoms are reduced",
+        "Some oxygen atoms are oxidised, others are reduced",
+        "Oxygen atoms undergo no change in oxidation state"
+      ],
+      "correct": 2,
+      "points": 12,
+      "explanation": "In H₂O₂, all oxygen atoms start with oxidation state -1. In the products, oxygen in H₂O has oxidation state -2 (reduction) while oxygen in O₂ has oxidation state 0 (oxidation). Since the same element undergoes both processes, this is disproportionation."
+    },
+    {
+      "question": "Consider the reaction: 2KMnO₄ + 10KI + 8H₂SO₄ → 2MnSO₄ + 6K₂SO₄ + 5I₂ + 8H₂O. Which substance is the oxidising agent?",
+      "options": [
+        "KI",
+        "I₂",
+        "KMnO₄",
+        "H₂SO₄"
+      ],
+      "correct": 2,
+      "points": 12,
+      "explanation": "KMnO₄ contains Mn in +7 state (MnO₄⁻). In products, Mn is +2 (MnSO₄), so Mn gains electrons (reduction). The substance that is reduced is the oxidising agent."
+    },
+    {
+      "question": "In the reaction 2KMnO₄ + 10KI + 8H₂SO₄ → 2MnSO₄ + 6K₂SO₄ + 5I₂ + 8H₂O, what is the change in oxidation state of iodine?",
+      "options": [
+        "-1 to 0",
+        "0 to -1",
+        "+1 to 0",
+        "-1 to +1"
+      ],
+      "correct": 0,
+      "points": 12,
+      "explanation": "In KI, iodine is I⁻ with oxidation state -1. In I₂, iodine has oxidation state 0. Change: -1 → 0 (loss of electrons = oxidation)."
+    },
+    {
+      "question": "Which statement correctly describes the roles in the reaction between acidified KMnO₄ and KI?",
+      "options": [
+        "KMnO₄ is oxidised; KI is reduced",
+        "KMnO₄ is the reducing agent; KI is the oxidising agent",
+        "KMnO₄ is reduced; KI is oxidised",
+        "Both KMnO₄ and KI are oxidised"
+      ],
+      "correct": 2,
+      "points": 10,
+      "explanation": "Mn in KMnO₄ changes from +7 to +2 (gains electrons → reduced). I in KI changes from -1 to 0 (loses electrons → oxidised). KMnO₄ is the oxidising agent; KI is the reducing agent."
+    },
+    {
+      "question": "What is the oxidation state of manganese in KMnO₄ and in MnSO₄ respectively?",
+      "options": [
+        "+6 and +2",
+        "+7 and +4",
+        "+7 and +2",
+        "+4 and +2"
+      ],
+      "correct": 2,
+      "points": 10,
+      "explanation": "In KMnO₄: K = +1, O = -2 (×4 = -8). Let Mn = x: +1 + x - 8 = 0 → x = +7. In MnSO₄: SO₄²⁻ has -2 charge, so Mn = +2."
+    },
+    {
+      "question": "Disproportionation is a reaction where the same element is both oxidised and reduced. In the reaction Cl₂ + 2NaOH → NaCl + NaClO + H₂O, what are the oxidation states of chlorine in NaCl and NaClO?",
+      "options": [
+        "-1 in both",
+        "0 in both",
+        "-1 in NaCl and +1 in NaClO",
+        "+1 in NaCl and -1 in NaClO"
+      ],
+      "correct": 2,
+      "points": 14,
+      "explanation": "Chlorine starts with oxidation state 0 in Cl₂. In NaCl, Cl = -1 (reduction). In NaClO: Na = +1, O = -2, so Cl = +1 (oxidation). The same element (chlorine) undergoes both processes → disproportionation."
+    },
+    {
+      "question": "When acidified potassium manganate(VII) reacts with potassium iodide, a brown solution forms. What causes the brown colour?",
+      "options": [
+        "Formation of Mn²⁺ ions",
+        "Formation of I₂ molecules",
+        "Formation of SO₄²⁻ ions",
+        "Formation of K⁺ ions"
+      ],
+      "correct": 1,
+      "points": 10,
+      "explanation": "Iodide ions (I⁻) are oxidised to iodine (I₂), which dissolves in water to give a brown solution. This is a characteristic test for oxidising agents using KI."
+    },
+    {
+      "question": "Which half-equation correctly shows the reduction of manganate(VII) ions in acidic conditions?",
+      "options": [
+        "MnO₄⁻ + 4H⁺ + 3e⁻ → MnO₂ + 2H₂O",
+        "MnO₄⁻ + 8H⁺ + 5e⁻ → Mn²⁺ + 4H₂O",
+        "MnO₄⁻ + 2H₂O + 3e⁻ → MnO₂ + 4OH⁻",
+        "MnO₄⁻ → Mn²⁺ + 4O₂"
+      ],
+      "correct": 1,
+      "points": 15,
+      "explanation": "In acidic conditions, MnO₄⁻ (Mn⁺⁷) is reduced to Mn²⁺. Balanced half-equation: MnO₄⁻ + 8H⁺ + 5e⁻ → Mn²⁺ + 4H₂O. (Option A is for neutral conditions; Option C is for alkaline conditions.)"
+    },
+    {
+      "question": "Disproportionation occurs when the same element in identical starting conditions undergoes both oxidation and reduction. In 2H₂O₂ → 2H₂O + O₂, what is the ratio of oxygen atoms that are oxidised to those that are reduced?",
+      "options": [
+        "1 : 1",
+        "1 : 2",
+        "2 : 1",
+        "3 : 1"
+      ],
+      "correct": 0,
+      "points": 15,
+      "explanation": "In 2H₂O₂ (4 oxygen atoms total, all at -1), two oxygen atoms form H₂O (oxidation state -2 → reduction) and two oxygen atoms form O₂ (oxidation state 0 → oxidation). Ratio of oxidised : reduced oxygen atoms = 2 : 2 = 1 : 1."
+    }
+  ]
+}
