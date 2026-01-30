@@ -1,0 +1,155 @@
+{
+  "title": "Scalar and Vector Quantities",
+  "topic": "Physical Quantities, Units and Measurement",
+  "subject": "Combined Science (Physics)",
+  "level": "Secondary",
+  "grade": "Sec 3",
+  "chapter": 1,
+  "worksheet": 2,
+  "questions": [
+    {
+      "question": "Which of the following is a vector quantity?",
+      "options": [
+        "Distance",
+        "Speed",
+        "Time",
+        "Displacement"
+      ],
+      "correct": 3,
+      "points": 10,
+      "explanation": "Displacement is a vector because it has both magnitude (how far) and direction (which way). Distance and speed are scalars with magnitude only."
+    },
+    {
+      "question": "Which of the following is a scalar quantity?",
+      "options": [
+        "Velocity",
+        "Acceleration",
+        "Force",
+        "Mass"
+      ],
+      "correct": 3,
+      "points": 10,
+      "explanation": "Mass is a scalar quantity—it only has magnitude (e.g., 5 kg) and no direction. Velocity, acceleration and force are vectors."
+    },
+    {
+      "question": "Which pair correctly shows a scalar quantity and its corresponding vector quantity?",
+      "options": [
+        "Mass and volume",
+        "Distance and displacement",
+        "Time and frequency",
+        "Temperature and heat"
+      ],
+      "correct": 1,
+      "points": 12,
+      "explanation": "Distance (scalar) measures total path length. Displacement (vector) measures straight-line change in position with direction."
+    },
+    {
+      "question": "A delivery van travels 8 km east, then 6 km west. What is the total distance travelled and the displacement?",
+      "options": [
+        "Distance = 14 km, Displacement = 2 km east",
+        "Distance = 2 km, Displacement = 14 km east",
+        "Distance = 14 km, Displacement = 14 km east",
+        "Distance = 2 km, Displacement = 2 km east"
+      ],
+      "correct": 0,
+      "points": 15,
+      "explanation": "Distance (scalar) = total path = 8 km + 6 km = 14 km. Displacement (vector) = net movement = 8 km east – 6 km west = 2 km east."
+    },
+    {
+      "question": "Which statement about vectors is TRUE?",
+      "options": [
+        "Vectors can be added by simple arithmetic addition",
+        "Vectors only have magnitude",
+        "Vectors must include direction to be fully described",
+        "All physical quantities are vectors"
+      ],
+      "correct": 2,
+      "points": 10,
+      "explanation": "Vectors require both magnitude AND direction for complete description (e.g., '5 m/s north'). Without direction, the quantity is incomplete."
+    },
+    {
+      "question": "What does a car's speedometer display?",
+      "options": [
+        "Velocity (vector)",
+        "Displacement (vector)",
+        "Speed (scalar)",
+        "Acceleration (vector)"
+      ],
+      "correct": 2,
+      "points": 10,
+      "explanation": "A speedometer shows speed—a scalar quantity with magnitude only (e.g., 60 km/h). It does not show direction, so it is not velocity."
+    },
+    {
+      "question": "Which quantity is a vector?",
+      "options": [
+        "Temperature",
+        "Time",
+        "Weight",
+        "Energy"
+      ],
+      "correct": 2,
+      "points": 12,
+      "explanation": "Weight is a vector (force) acting downward due to gravity. It has magnitude (e.g., 500 N) and direction (toward Earth's centre). Temperature, time and energy are scalars."
+    },
+    {
+      "question": "A runner completes one full lap around a 400 m circular track. What are the distance travelled and displacement?",
+      "options": [
+        "Distance = 400 m, Displacement = 400 m",
+        "Distance = 0 m, Displacement = 400 m",
+        "Distance = 400 m, Displacement = 0 m",
+        "Distance = 0 m, Displacement = 0 m"
+      ],
+      "correct": 2,
+      "points": 15,
+      "explanation": "Distance (scalar) = total path = 400 m. Displacement (vector) = change in position = 0 m (runner ends where they started). Direction matters for displacement!"
+    },
+    {
+      "question": "Which instrument measures a scalar quantity?",
+      "options": [
+        "Compass (shows direction)",
+        "Thermometer (shows temperature)",
+        "Wind vane (shows wind direction)",
+        "All of the above"
+      ],
+      "correct": 1,
+      "points": 12,
+      "explanation": "A thermometer measures temperature—a scalar with magnitude only. Compass and wind vane measure direction, which relates to vector quantities."
+    },
+    {
+      "question": "Mass and weight are often confused. Which statement is CORRECT?",
+      "options": [
+        "Mass and weight are both scalars",
+        "Mass is a vector, weight is a scalar",
+        "Mass is a scalar, weight is a vector",
+        "Mass and weight are both vectors"
+      ],
+      "correct": 2,
+      "points": 15,
+      "explanation": "Mass (scalar) = amount of matter (kg), no direction. Weight (vector) = gravitational force (N) acting downward toward Earth's centre."
+    },
+    {
+      "question": "If two forces act on an object—5 N east and 3 N west—what is the resultant force?",
+      "options": [
+        "8 N east",
+        "2 N east",
+        "2 N west",
+        "8 N west"
+      ],
+      "correct": 1,
+      "points": 15,
+      "explanation": "Forces are vectors. Opposite directions subtract: 5 N east – 3 N west = 2 N east. Direction is essential for the answer."
+    },
+    {
+      "question": "Which statement is TRUE about scalars and vectors?",
+      "options": [
+        "All quantities with units are vectors",
+        "Scalars can have negative values but no direction",
+        "Vectors are always larger than scalars",
+        "Distance is a vector because it has units"
+      ],
+      "correct": 1,
+      "points": 12,
+      "explanation": "Scalars can be negative (e.g., –10°C temperature) but still have no direction. Vectors require both magnitude AND direction for complete description."
+    }
+  ]
+}

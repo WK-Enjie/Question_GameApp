@@ -1,0 +1,155 @@
+{
+  "title": "Base Quantities and Unit Prefixes",
+  "topic": "Physical Quantities, Units and Measurement",
+  "subject": "Combined Science (Physics)",
+  "level": "Secondary",
+  "grade": "Sec 3",
+  "chapter": 1,
+  "worksheet": 1,
+  "questions": [
+    {
+      "question": "Which of the following is a base quantity in the SI system?",
+      "options": [
+        "Force",
+        "Speed",
+        "Energy",
+        "Mass"
+      ],
+      "correct": 3,
+      "points": 10,
+      "explanation": "Mass is a base quantity measured in kilograms (kg). Force, speed, and energy are derived quantities calculated from base quantities."
+    },
+    {
+      "question": "What is the SI base unit for length?",
+      "options": [
+        "Centimetre (cm)",
+        "Kilometre (km)",
+        "Millimetre (mm)",
+        "Metre (m)"
+      ],
+      "correct": 3,
+      "points": 10,
+      "explanation": "The SI base unit for length is the metre (m). Centimetre, kilometre and millimetre are derived units created by adding prefixes to the base unit."
+    },
+    {
+      "question": "The prefix 'milli' (m) represents which factor?",
+      "options": [
+        "100",
+        "1000",
+        "0.01",
+        "0.001"
+      ],
+      "correct": 3,
+      "points": 10,
+      "explanation": "The prefix 'milli' means one-thousandth (10⁻³ or 0.001). For example, 1 milligram = 0.001 grams and 1 millisecond = 0.001 seconds."
+    },
+    {
+      "question": "Convert 3.6 kilometres to metres.",
+      "options": [
+        "36 m",
+        "360 m",
+        "3,600 m",
+        "36,000 m"
+      ],
+      "correct": 2,
+      "points": 10,
+      "explanation": "1 kilometre = 1,000 metres. So 3.6 km = 3.6 × 1,000 = 3,600 m. The prefix 'kilo' means one thousand (10³)."
+    },
+    {
+      "question": "Which base quantity is measured in kelvin (K)?",
+      "options": [
+        "Mass",
+        "Length",
+        "Time",
+        "Temperature"
+      ],
+      "correct": 3,
+      "points": 10,
+      "explanation": "Temperature is a base quantity. While degrees Celsius (°C) is commonly used, the SI base unit is kelvin (K)."
+    },
+    {
+      "question": "Convert 750 millilitres to litres.",
+      "options": [
+        "75 L",
+        "7.5 L",
+        "0.75 L",
+        "0.075 L"
+      ],
+      "correct": 2,
+      "points": 10,
+      "explanation": "1 litre = 1,000 millilitres, so 750 mL = 750 ÷ 1,000 = 0.75 L. Moving from milli- to base unit divides by 1,000."
+    },
+    {
+      "question": "Which prefix represents one million (1,000,000)?",
+      "options": [
+        "Kilo (k)",
+        "Centi (c)",
+        "Mega (M)",
+        "Giga (G)"
+      ],
+      "correct": 2,
+      "points": 10,
+      "explanation": "The prefix 'mega' (M) represents one million (10⁶). For example, 1 megabyte = 1,000,000 bytes."
+    },
+    {
+      "question": "Convert 0.0042 metres to millimetres.",
+      "options": [
+        "0.42 mm",
+        "4.2 mm",
+        "42 mm",
+        "420 mm"
+      ],
+      "correct": 1,
+      "points": 12,
+      "explanation": "1 metre = 1,000 millimetres, so 0.0042 m = 0.0042 × 1,000 = 4.2 mm. Converting from base unit to milli- multiplies by 1,000."
+    },
+    {
+      "question": "What is the SI unit for electric current?",
+      "options": [
+        "Volt (V)",
+        "Ampere (A)",
+        "Ohm (Ω)",
+        "Watt (W)"
+      ],
+      "correct": 1,
+      "points": 10,
+      "explanation": "Electric current is measured in amperes (A), one of the five base quantities in the Combined Science syllabus (length, mass, time, temperature, current)."
+    },
+    {
+      "question": "Which measurement uses the prefix 'micro' (μ)?",
+      "options": [
+        "5 kg",
+        "5 mg",
+        "5 ng",
+        "5 μg"
+      ],
+      "correct": 3,
+      "points": 10,
+      "explanation": "The symbol 'μ' represents 'micro', meaning one-millionth (10⁻⁶). So 5 μg = 5 micrograms = 0.000005 grams."
+    },
+    {
+      "question": "Why is speed considered a derived quantity?",
+      "options": [
+        "It is measured in m/s",
+        "It has no direction",
+        "It can be expressed using base quantities: distance ÷ time",
+        "It changes during motion"
+      ],
+      "correct": 2,
+      "points": 12,
+      "explanation": "Speed is derived because it is calculated from base quantities: speed = distance (length) ÷ time. Both length and time are base quantities."
+    },
+    {
+      "question": "Convert 250 micrograms to milligrams.",
+      "options": [
+        "0.25 mg",
+        "2.5 mg",
+        "25 mg",
+        "250 mg"
+      ],
+      "correct": 0,
+      "points": 15,
+      "explanation": "1 milligram = 1,000 micrograms. So 250 μg = 250 ÷ 1,000 = 0.25 mg. Moving from micro- (10⁻⁶) to milli- (10⁻³) divides by 1,000."
+    }
+  ]
+}
