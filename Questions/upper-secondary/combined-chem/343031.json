@@ -1,0 +1,67 @@
+{
+  "title": "Atomic Structure Quiz",
+  "topic": "Protons, Neutrons, and Electrons",
+  "subject": "Pure Chemistry",
+  "level": "Secondary 3",
+  "grade": "Sec 3",
+  "chapter": 3,
+  "worksheet": 1,
+  "questions": [
+    {
+      "question": "What is the approximate relative mass of an electron compared to a proton?",
+      "options": ["~1", "~1/1840", "~1/12", "~2"],
+      "correct": 1,
+      "points": 10,
+      "explanation": "A proton has a relative mass of ~1. An electron's mass is approximately 1/1840 that of a proton, making it almost negligible in mass calculations."
+    },
+    {
+      "question": "An atom has 15 protons and 16 neutrons. Which of the following correctly represents it?",
+      "options": ["³⁰₁₅P", "³¹₁₆S", "³¹₁₅P", "¹⁵₃₁P"],
+      "correct": 2,
+      "points": 10,
+      "explanation": "Mass number = protons + neutrons = 31. Proton number = 15. The element with 15 protons is phosphorus (P). Correct nuclide notation is ³¹₁₅P."
+    },
+    {
+      "question": "In the nuclide notation ⁵⁹₂₇Co²⁺, how many electrons are present?",
+      "options": ["32", "27", "25", "29"],
+      "correct": 2,
+      "points": 10,
+      "explanation": "The neutral atom (⁵⁹₂₇Co) has 27 electrons. The 2+ charge indicates a loss of 2 electrons. Therefore, electrons present = 27 - 2 = 25."
+    },
+    {
+      "question": "Which of the following statements about the structure of a ⁴⁰₂₀Ca²⁺ ion is correct?",
+      "options": ["Contains 22 protons, 20 neutrons, and 18 electrons.", "Contains 20 protons, 20 neutrons, and 18 electrons.", "Contains 18 protons, 20 neutrons, and 20 electrons.", "Contains 20 protons, 22 neutrons, and 18 electrons."],
+      "correct": 1,
+      "points": 10,
+      "explanation": "The proton number (20) is constant for calcium. Mass number (40) = protons + neutrons → neutrons = 20. A 2+ ion has 2 fewer electrons than protons → electrons = 18."
+    },
+    {
+      "question": "What is the total number of nucleons in an atom of nitrogen-15 (¹⁵₇N)?",
+      "options": ["22", "15", "8", "7"],
+      "correct": 1,
+      "points": 10,
+      "explanation": "Nucleons are the particles in the nucleus: protons and neutrons. The mass number (superscript 15) gives the total number of nucleons."
+    },
+    {
+      "question": "What is the overall charge of the nucleus of a beryllium-9 atom (⁹₄Be)?",
+      "options": ["+5", "0", "+4", "+9"],
+      "correct": 2,
+      "points": 10,
+      "explanation": "The nucleus contains protons (charge +1 each) and neutrons (charge 0). With 4 protons, the total nuclear charge is +4."
+    },
+    {
+      "question": "An element has an atomic number of 9 and a mass number of 19. How many neutrons does its neutral atom have?",
+      "options": ["9", "10", "19", "28"],
+      "correct": 1,
+      "points": 10,
+      "explanation": "Number of neutrons = Mass number - Atomic number = 19 - 9 = 10."
+    },
+    {
+      "question": "Which of the following is true for all isotopes of the same element?",
+      "options": ["They have the same nucleon number.", "They have the same number of neutrons.", "They have the same number of protons.", "They have the same physical properties."],
+      "correct": 2,
+      "points": 10,
+      "explanation": "Isotopes are defined as atoms of the same element (same number of protons) but with different numbers of neutrons (and therefore different mass numbers)."
+    }
+  ]
+}

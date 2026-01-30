@@ -1,0 +1,87 @@
+{
+  "title": "Atomic Structure & Nuclide Notation",
+  "topic": "Interpreting Atomic Symbols",
+  "subject": "Pure Chemistry",
+  "level": "Secondary 3",
+  "grade": "Sec 3",
+  "chapter": 3,
+  "worksheet": 2,
+  "questions": [
+    {
+      "question": "In the symbol ²³₁₁Na⁺, what does the superscript '+' indicate?",
+      "options": [
+        "The mass number has increased by 1.",
+        "The number of protons has increased by 1.",
+        "The atom has gained a proton.",
+        "The atom has lost one electron."
+      ],
+      "correct": 3,
+      "points": 10,
+      "explanation": "The '+' indicates a positive charge, which results from the loss of one or more electrons. The number of protons remains unchanged."
+    },
+    {
+      "question": "An atom has 17 protons, 18 neutrons, and 17 electrons. Which nuclide notation is correct?",
+      "options": ["³⁵₁₇Cl", "³⁵₁₈Ar", "¹⁷₁₈Cl", "³⁵₁₉K"],
+      "correct": 0,
+      "points": 10,
+      "explanation": "Mass number = protons + neutrons = 35. Atomic number = protons = 17. The element with atomic number 17 is chlorine (Cl)."
+    },
+    {
+      "question": "How many neutrons are present in one atom of ¹⁴₆C?",
+      "options": ["6", "8", "14", "20"],
+      "correct": 1,
+      "points": 10,
+      "explanation": "Number of neutrons = Mass number - Atomic number = 14 - 6 = 8."
+    },
+    {
+      "question": "Which two particles have approximately the same relative mass?",
+      "options": [
+        "Proton and Electron",
+        "Neutron and Electron",
+        "Proton and Neutron",
+        "Electron and Alpha Particle"
+      ],
+      "correct": 2,
+      "points": 10,
+      "explanation": "A proton and a neutron each have a relative mass of approximately 1, while an electron's mass is negligible (~1/1840)."
+    },
+    {
+      "question": "What is the total number of subatomic particles in a neutral atom of ¹⁹₉F?",
+      "options": ["9", "19", "28", "10"],
+      "correct": 2,
+      "points": 10,
+      "explanation": "Total subatomic particles = protons + neutrons + electrons. Protons = 9, Neutrons = 10 (19-9), Electrons = 9 (neutral atom). Total = 9 + 10 + 9 = 28."
+    },
+    {
+      "question": "An ion has 13 protons, 14 neutrons, and 10 electrons. What is its correct nuclide notation?",
+      "options": ["²⁷₁₃Al³⁺", "²⁷₁₄Si³⁻", "²⁷₁₀Ne³⁺", "¹³₂₇Al³⁺"],
+      "correct": 0,
+      "points": 10,
+      "explanation": "Mass number = 13+14 = 27. Atomic number = 13 (Aluminum, Al). Charge = +3 (13 protons - 10 electrons)."
+    },
+    {
+      "question": "If an element's atomic number is 12 and its mass number is 24, which statement is FALSE?",
+      "options": [
+        "The atom has 12 electrons if neutral.",
+        "The nucleus contains 12 protons.",
+        "The number of neutrons is 12.",
+        "The nucleon number is 12."
+      ],
+      "correct": 3,
+      "points": 10,
+      "explanation": "The nucleon number (mass number) is 24, not 12. It represents the total number of protons and neutrons."
+    },
+    {
+      "question": "Two atoms, X and Y, have the same number of protons but different numbers of neutrons. They are:",
+      "options": [
+        "Ions of the same element.",
+        "Atoms of different elements.",
+        "Isotopes of the same element.",
+        "Isotopes of different elements."
+      ],
+      "correct": 2,
+      "points": 10,
+      "explanation": "Isotopes are atoms of the same element (same proton number) that differ in their neutron number (and hence mass number)."
+    }
+  ]
+}

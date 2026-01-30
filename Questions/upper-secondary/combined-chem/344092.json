@@ -9,59 +9,59 @@
   "questions": [
     {
       "question": "Which anion gives effervescence with dilute HCl, producing a gas that turns limewater milky?",
-      "options": ["CO₃²⁻", "SO₄²⁻", "Cl⁻", "NO₃⁻"],
-      "correct": 0,
+      "options": ["SO₄²⁻", "Cl⁻", "I⁻", "CO₃²⁻"],
+      "correct": 3,
       "points": 10,
-      "explanation": "CO₃²⁻ + 2H⁺ → CO₂(g) + H₂O. CO₂ turns limewater milky: Ca(OH)₂ + CO₂ → CaCO₃ + H₂O"
+      "explanation": "CO₃²⁻ + 2H⁺ → CO₂(g) + H₂O. CO₂ turns limewater milky: Ca(OH)₂ + CO₂ → CaCO₃↓ + H₂O. (Syllabus 6b & 6c)"
     },
     {
-      "question": "Which anion gives a white precipitate with acidified BaCl₂ that is insoluble in acids?",
-      "options": ["SO₄²⁻", "CO₃²⁻", "SO₃²⁻", "PO₄³⁻"],
-      "correct": 0,
+      "question": "Which anion gives a white precipitate with acidified BaCl₂ that is insoluble in dilute HCl?",
+      "options": ["CO₃²⁻", "SO₄²⁻", "NO₃⁻", "Cl⁻"],
+      "correct": 1,
       "points": 10,
-      "explanation": "SO₄²⁻ + Ba²⁺ → BaSO₄(s) white precipitate, insoluble in acids."
+      "explanation": "SO₄²⁻ + Ba²⁺ → BaSO₄(s) white precipitate, insoluble in acids. (Syllabus 6b)"
     },
     {
-      "question": "Which anion gives a yellow precipitate with AgNO₃ that is insoluble in dilute NH₃?",
-      "options": ["I⁻", "Cl⁻", "Br⁻", "NO₃⁻"],
-      "correct": 0,
+      "question": "Which anion gives a white precipitate with AgNO₃ that dissolves completely in dilute NH₃?",
+      "options": ["I⁻", "NO₃⁻", "SO₄²⁻", "Cl⁻"],
+      "correct": 3,
       "points": 10,
-      "explanation": "I⁻ + Ag⁺ → AgI(s) yellow precipitate, insoluble in dilute NH₃."
+      "explanation": "Cl⁻ + Ag⁺ → AgCl(s) white precipitate. AgCl dissolves in dilute NH₃ forming soluble [Ag(NH₃)₂]⁺ complex. (Syllabus 6b)"
     },
     {
-      "question": "Which anion gives a cream precipitate with AgNO₃ that is partly soluble in concentrated NH₃?",
-      "options": ["Br⁻", "Cl⁻", "I⁻", "CN⁻"],
-      "correct": 0,
+      "question": "Which anion gives a yellow precipitate with AgNO₃ that remains after adding dilute NH₃?",
+      "options": ["Cl⁻", "SO₄²⁻", "NO₃⁻", "I⁻"],
+      "correct": 3,
       "points": 10,
-      "explanation": "Br⁻ gives cream AgBr precipitate, partly soluble in concentrated NH₃ but not in dilute NH₃."
+      "explanation": "I⁻ + Ag⁺ → AgI(s) yellow precipitate, insoluble in dilute NH₃. (Syllabus 6b)"
     },
     {
-      "question": "Which anion gives a brown ring at the interface when tested with FeSO₄ and conc. H₂SO₄?",
-      "options": ["NO₃⁻", "NO₂⁻", "SO₄²⁻", "Cl⁻"],
-      "correct": 0,
+      "question": "Which anion, when warmed with aluminium foil and aqueous NaOH, produces a gas that turns damp red litmus paper blue?",
+      "options": ["Cl⁻", "SO₄²⁻", "CO₃²⁻", "NO₃⁻"],
+      "correct": 3,
       "points": 10,
-      "explanation": "Brown ring test for NO₃⁻: NO₃⁻ + Fe²⁺ + H₂SO₄ → brown [Fe(NO)]SO₄ ring."
+      "explanation": "NO₃⁻ is reduced by Al in NaOH: NO₃⁻ → NH₃(g). NH₃ turns damp red litmus blue. (Syllabus 6b & 6c)"
     },
     {
-      "question": "Which anion decolorizes acidified potassium manganate(VII) solution?",
-      "options": ["SO₃²⁻", "CO₃²⁻", "Cl⁻", "NO₃⁻"],
-      "correct": 0,
+      "question": "A solution gives a white precipitate with AgNO₃. The precipitate dissolves completely when dilute NH₃ is added. Which anion is present?",
+      "options": ["I⁻", "SO₄²⁻", "NO₃⁻", "Cl⁻"],
+      "correct": 3,
       "points": 10,
-      "explanation": "SO₃²⁻ reduces purple MnO₄⁻ to colourless Mn²⁺: 5SO₃²⁻ + 2MnO₄⁻ + 6H⁺ → 5SO₄²⁻ + 2Mn²⁺ + 3H₂O"
+      "explanation": "Only Cl⁻ gives a white AgCl precipitate soluble in dilute NH₃. AgI (yellow) is insoluble. (Syllabus 6b)"
     },
     {
-      "question": "Which anion gives a white precipitate with AgNO₃ that dissolves in dilute NH₃?",
-      "options": ["Cl⁻", "Br⁻", "I⁻", "SO₄²⁻"],
-      "correct": 0,
+      "question": "Which anion produces a gas with dilute HCl that turns limewater milky but does NOT decolorize acidified KMnO₄?",
+      "options": ["SO₃²⁻", "NO₃⁻", "I⁻", "CO₃²⁻"],
+      "correct": 3,
       "points": 10,
-      "explanation": "Cl⁻ gives white AgCl precipitate, soluble in dilute NH₃ forming [Ag(NH₃)₂]⁺ complex."
+      "explanation": "CO₃²⁻ produces CO₂ (turns limewater milky) but CO₂ does NOT decolorize KMnO₄. SO₃²⁻ produces SO₂ which DOES decolorize KMnO₄. (Syllabus 6b & 6c)"
     },
     {
-      "question": "Which anion produces a colourless gas with dilute HCl that smells of rotten eggs?",
-      "options": ["S²⁻", "CO₃²⁻", "SO₃²⁻", "NO₂⁻"],
-      "correct": 0,
+      "question": "A solution gives a yellow precipitate with AgNO₃. The precipitate remains unchanged after adding dilute NH₃. Which anion is present?",
+      "options": ["Cl⁻", "SO₄²⁻", "NO₃⁻", "I⁻"],
+      "correct": 3,
       "points": 10,
-      "explanation": "S²⁻ + 2H⁺ → H₂S(g) which has a characteristic rotten egg smell."
+      "explanation": "Only I⁻ gives a yellow AgI precipitate insoluble in dilute NH₃. Cl⁻ gives white ppt that dissolves. (Syllabus 6b)"
     }
   ]
 }
