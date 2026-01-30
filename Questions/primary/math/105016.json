@@ -1,0 +1,67 @@
+{
+  "title": "Bluey's Math Adventures",
+  "topic": "Age Problems, Give and Take, Excess and Shortage",
+  "subject": "Mathematics",
+  "level": "Primary",
+  "grade": "P5",
+  "chapter": 1,
+  "worksheet": 6,
+  "questions": [
+    {
+      "question": "Bingo is 9 years old. Her mum Chilli is 33 years old. How many years ago was Chilli 3 times as old as Bingo?",
+      "options": ["2 years ago", "4 years ago", "3 years ago", "5 years ago"],
+      "correct": 2,
+      "points": 20,
+      "explanation": "The age difference never changes: 33 – 9 = 24 years. When Chilli was 3 times Bingo's age, the difference equals 2 parts (3 parts – 1 part). So 2 parts = 24 years → 1 part = 12 years (Bingo's age then). Bingo is now 9, so years ago: 12 – 9 = 3 years ago. Check: Chilli was 30, Bingo was 6 → 30 = 3 × 6 ✓"
+    },
+    {
+      "question": "Bluey has 45 craft sticks. Bingo has 15 craft sticks. Bluey gives some sticks to Bingo so they have equal amounts. How many sticks does Bluey give?",
+      "options": ["12 sticks", "20 sticks", "18 sticks", "15 sticks"],
+      "correct": 3,
+      "points": 15,
+      "explanation": "The total number of sticks stays the same: 45 + 15 = 60 sticks. When equal, each has 60 ÷ 2 = 30 sticks. Bluey started with 45, so she gives away 45 – 30 = 15 sticks."
+    },
+    {
+      "question": "Bandit bought some sausages for a barbecue. If he gives 3 sausages to each guest, he has 16 left. If he gives 5 sausages to each guest, he has 4 left. How many guests are there?",
+      "options": ["8 guests", "7 guests", "9 guests", "6 guests"],
+      "correct": 3,
+      "points": 25,
+      "explanation": "When giving 2 more sausages per guest (5 – 3 = 2), the leftover decreases by 12 sausages (16 – 4 = 12). These 12 extra sausages were used to give 2 more to each guest. Number of guests: 12 ÷ 2 = 6 guests."
+    },
+    {
+      "question": "Rusty has 3 times as many toy cars as Bluey. If Rusty gives 18 toy cars to Bluey, they will have the same number. How many toy cars did Rusty have at first?",
+      "options": ["48 cars", "36 cars", "60 cars", "54 cars"],
+      "correct": 3,
+      "points": 20,
+      "explanation": "When they become equal, Rusty must have given away half of the difference between them. Since Rusty gave 18 cars to become equal, the original difference was 18 × 2 = 36 cars. Rusty had 3 times as many as Bluey, so Rusty had 3 parts and Bluey had 1 part. The difference of 2 parts equals 36 cars → 1 part = 18 cars. Rusty had 3 × 18 = 54 cars at first."
+    },
+    {
+      "question": "Winton and his cousins want to buy a soccer ball. If each contributes $6, they are short of $12. If each contributes $9, they have $6 extra. How many children are sharing the cost?",
+      "options": ["5 children", "8 children", "7 children", "6 children"],
+      "correct": 3,
+      "points": 25,
+      "explanation": "When each child contributes $3 more ($9 – $6 = $3), the group changes from being $12 short to having $6 extra—a total swing of $18 ($12 + $6). This $18 comes from each child adding $3. Number of children: $18 ÷ $3 = 6 children."
+    },
+    {
+      "question": "Ninty collected leaves. If she bundles 4 leaves in each group, 2 leaves remain. If she bundles 6 leaves in each group, 4 leaves remain. How many leaves did Ninty collect (fewer than 30)?",
+      "options": ["18 leaves", "14 leaves", "22 leaves", "26 leaves"],
+      "correct": 2,
+      "points": 25,
+      "explanation": "Numbers that leave 2 leftover when bundled 4 per group: 6, 10, 14, 18, 22, 26... Which leaves 4 leftover when bundled 6 per group? 22 ÷ 6 = 3 groups with 4 left ✓. Total leaves = 22. Check: 22 ÷ 4 = 5 groups with 2 left ✓; 22 ÷ 6 = 3 groups with 4 left ✓"
+    },
+    {
+      "question": "Jackie is 5 years older than Rusty. Four years ago, the sum of their ages was 23 years. How old is Rusty now?",
+      "options": ["11 years", "14 years", "12 years", "13 years"],
+      "correct": 3,
+      "points": 20,
+      "explanation": "Four years ago, both were 4 years younger, so together they were 8 years younger than now (4 + 4 = 8). Their total age now: 23 + 8 = 31 years. Jackie is 5 years older than Rusty. If we remove Jackie's extra 5 years, they would have equal ages totaling 31 – 5 = 26 years. So Rusty's age now: 26 ÷ 2 = 13 years."
+    },
+    {
+      "question": "Lockheed Monster has 5 times as many crystals as Ninty. If Lockheed Monster gives 30 crystals to Ninty, they will have equal amounts. How many crystals do they have altogether?",
+      "options": ["75 crystals", "105 crystals", "60 crystals", "90 crystals"],
+      "correct": 3,
+      "points": 20,
+      "explanation": "When they become equal, Lockheed Monster must have given away half of the difference between them. Since he gave 30 crystals to become equal, the original difference was 30 × 2 = 60 crystals. Lockheed Monster had 5 parts and Ninty had 1 part, so the difference is 4 parts. 4 parts = 60 crystals → 1 part = 15 crystals. Total crystals = 5 parts + 1 part = 6 parts = 6 × 15 = 90 crystals."
+    }
+  ]
+}

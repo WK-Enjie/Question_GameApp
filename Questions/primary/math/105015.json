@@ -1,0 +1,95 @@
+{
+  "title": "Age, Transfer & Excess-Shortage Problems",
+  "topic": "Age Problems, Difference Unchanged, Give and Take, Excess and Shortage",
+  "subject": "Mathematics",
+  "level": "Primary",
+  "grade": "P5",
+  "chapter": 1,
+  "worksheet": 5,
+  "questions": [
+    {
+      "question": "A teacher has some sweets. If she gives 5 sweets to each pupil, she will have 12 sweets left. If she gives 7 sweets to each pupil, she will be short of 8 sweets. How many pupils are there?",
+      "options": ["8 pupils", "12 pupils", "10 pupils", "15 pupils"],
+      "correct": 2,
+      "points": 20,
+      "explanation": "Difference per pupil: 7 - 5 = 2 sweets. Total difference: 12 excess + 8 shortage = 20 sweets. Pupils: 20 ÷ 2 = 10 pupils."
+    },
+    {
+      "question": "Maya is 14 years old. Her brother is 6 years old. How many years ago was Maya three times as old as her brother?",
+      "options": ["3 years ago", "5 years ago", "2 years ago", "4 years ago"],
+      "correct": 2,
+      "points": 20,
+      "explanation": "Let x = years ago. Maya then: 14 - x, Brother then: 6 - x. Equation: 14 - x = 3(6 - x) → 14 - x = 18 - 3x → 2x = 4 → x = 2 years ago. Check: 12 = 3 × 4 ✓"
+    },
+    {
+      "question": "There are some cookies to be shared. If each child gets 4 cookies, there will be 15 cookies left. If each child gets 6 cookies, there will be 3 cookies left. How many children are there?",
+      "options": ["12 children", "9 children", "6 children", "8 children"],
+      "correct": 2,
+      "points": 20,
+      "explanation": "Difference per child: 6 - 4 = 2 cookies. Difference in leftovers: 15 - 3 = 12 cookies. Children: 12 ÷ 2 = 6 children."
+    },
+    {
+      "question": "Ryan has $96 and Sam has $48. Ryan gives some money to Sam so that Ryan has $24 more than Sam. How much did Ryan give?",
+      "options": ["$15", "$18", "$12", "$24"],
+      "correct": 2,
+      "points": 20,
+      "explanation": "Total money: $96 + $48 = $144 (unchanged). After transfer: Ryan = Sam + $24. So Sam + $24 + Sam = $144 → 2 × Sam = $120 → Sam = $60. Ryan gave: $60 - $48 = $12."
+    },
+    {
+      "question": "A grandfather is 68 years old. His grandson is 8 years old. In how many years will the grandfather be 5 times as old as his grandson?",
+      "options": ["6 years", "8 years", "7 years", "9 years"],
+      "correct": 2,
+      "points": 20,
+      "explanation": "Age difference: 68 - 8 = 60 years (unchanged). When grandfather is 5 times grandson's age, difference = 4 parts. Each part = 60 ÷ 4 = 15 years (grandson's age then). Years needed: 15 - 8 = 7 years."
+    },
+    {
+      "question": "Some pencils are to be distributed. If each student gets 3 pencils, 22 pencils remain. If each student gets 5 pencils, 4 pencils remain. How many pencils are there altogether?",
+      "options": ["46 pencils", "55 pencils", "49 pencils", "52 pencils"],
+      "correct": 2,
+      "points": 25,
+      "explanation": "Difference per student: 5 - 3 = 2 pencils. Difference in leftovers: 22 - 4 = 18 pencils. Students: 18 ÷ 2 = 9 students. Total pencils: 9 × 3 + 22 = 27 + 22 = 49 pencils."
+    },
+    {
+      "question": "Cindy has 3 times as many books as David. If Cindy gives 18 books to David, they will have the same number of books. How many books did Cindy have at first?",
+      "options": ["48 books", "36 books", "60 books", "54 books"],
+      "correct": 3,
+      "points": 20,
+      "explanation": "Let David = x, Cindy = 3x. After: Cindy = 3x - 18, David = x + 18. Equal: 3x - 18 = x + 18 → 2x = 36 → x = 18. Cindy: 3 × 18 = 54 books."
+    },
+    {
+      "question": "A group of friends wants to buy a gift. If each contributes $8, they will be short of $10. If each contributes $10, they will have $6 extra. How many friends are there?",
+      "options": ["9 friends", "10 friends", "12 friends", "8 friends"],
+      "correct": 3,
+      "points": 25,
+      "explanation": "Difference per person: $10 - $8 = $2. Total difference: $10 shortage + $6 excess = $16. Friends: $16 ÷ $2 = 8 friends."
+    },
+    {
+      "question": "Alan is 5 years older than Ben. In 3 years, the sum of their ages will be 31 years. How old is Alan now?",
+      "options": ["14 years", "16 years", "17 years", "15 years"],
+      "correct": 3,
+      "points": 15,
+      "explanation": "Let Ben = x, Alan = x + 5. In 3 years: Ben = x + 3, Alan = x + 8. Sum: (x + 3) + (x + 8) = 31 → 2x + 11 = 31 → 2x = 20 → x = 10. Alan now: 10 + 5 = 15 years."
+    },
+    {
+      "question": "There are some oranges. If they are given 4 to each child, 14 oranges remain. If they are given 7 to each child, 2 oranges remain. How many oranges are there?",
+      "options": ["30 oranges", "38 oranges", "46 oranges", "22 oranges"],
+      "correct": 0,
+      "points": 25,
+      "explanation": "Difference per child: 7 - 4 = 3 oranges. Difference in leftovers: 14 - 2 = 12 oranges. Children: 12 ÷ 3 = 4 children. Total oranges: 4 × 4 + 14 = 16 + 14 = 30 oranges. Check: 30 ÷ 7 = 4 R2 ✓"
+    },
+    {
+      "question": "Some cupcakes are packed into boxes. If 5 cupcakes are packed in each box, 8 cupcakes are left unpacked. If 8 cupcakes are packed in each box, 2 cupcakes are left unpacked. How many cupcakes are there?",
+      "options": ["28 cupcakes", "18 cupcakes", "38 cupcakes", "48 cupcakes"],
+      "correct": 1,
+      "points": 20,
+      "explanation": "Numbers with remainder 8 when ÷5: 13, 18, 23, 28, 33, 38... Which has remainder 2 when ÷8? 18 ÷ 8 = 2 R2 ✓. Total cupcakes = 18."
+    },
+    {
+      "question": "A coach has some basketballs. If he gives 3 basketballs to each team, he will have 9 basketballs left. If he gives 5 basketballs to each team, he will have 1 basketball left. How many teams are there?",
+      "options": ["7 teams", "5 teams", "6 teams", "4 teams"],
+      "correct": 3,
+      "points": 20,
+      "explanation": "Difference per team: 5 - 3 = 2 basketballs. Difference in leftovers: 9 - 1 = 8 basketballs. Teams: 8 ÷ 2 = 4 teams."
+    }
+  ]
+}

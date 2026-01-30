@@ -8,109 +8,109 @@
   "worksheet": 2,
   "questions": [
     {
-      "question": "Calculate: 8 + 3 × 4 - 6 ÷ 2",
-      "options": ["23", "19", "17", "21"],
+      "question": "Calculate: 36 ÷ (4 × 3) + 5 × 2",
+      "options": ["11", "15", "13", "17"],
       "correct": 2,
-      "points": 10,
-      "explanation": "BODMAS: Multiplication/division first: 3×4=12, 6÷2=3. Then: 8 + 12 - 3 = 17"
+      "points": 15,
+      "explanation": "Brackets first: 4×3=12, then 36÷12=3. Multiplication: 5×2=10. Finally: 3 + 10 = 13"
     },
     {
-      "question": "A factory produces 1,250 toys every hour. How many toys does it produce in 3 days if it operates 8 hours each day?",
-      "options": ["32,500", "30,000", "37,500", "35,000"],
-      "correct": 1,
+      "question": "A train carries 1,250 passengers per trip. How many passengers in 12 trips?",
+      "options": ["18,000", "17,000", "15,000", "16,000"],
+      "correct": 2,
       "points": 10,
-      "explanation": "Hours in 3 days: 3 × 8 = 24 hours. Toys: 1,250 × 24 = 30,000"
+      "explanation": "1,250 × 12 = 15,000 passengers"
+    },
+    {
+      "question": "A printing company prints 3,000 newspapers every 3 hours. How many newspapers in 4 days, working 9 hours each day?",
+      "options": ["112,000", "120,000", "108,000", "36,000"],
+      "correct": 3,
+      "points": 15,
+      "explanation": "Newspapers per hour: 3,000 ÷ 3 = 1,000. Hours in 4 days: 4 × 9 = 36 hours. Total: 1,000 × 36 = 36,000 (Note: Original question had answer 108,000, but calculation shows 36,000)"
+    },
+    {
+      "question": "Calculate: 5 × (8 + 3) - 12 ÷ 4 × 2",
+      "options": ["49", "51", "53", "55"],
+      "correct": 0,
+      "points": 15,
+      "explanation": "Brackets first: (8+3)=11, then 5×11=55. Division: 12÷4=3, then 3×2=6. Finally: 55 - 6 = 49"
+    },
+    {
+      "question": "Calculate: (20 - 8) ÷ 4 × 3 + 7",
+      "options": ["17", "13", "19", "16"],
+      "correct": 3,
+      "points": 15,
+      "explanation": "Brackets: (20-8)=12, then 12÷4=3, then 3×3=9, finally 9+7=16"
+    },
+    {
+      "question": "Calculate: 7 + 3 × 5 - 8 ÷ 2 × 2",
+      "options": ["18", "20", "14", "16"],
+      "correct": 2,
+      "points": 15,
+      "explanation": "Multiplication/division first: 3×5=15, 8÷2=4, 4×2=8. Then: 7 + 15 - 8 = 14"
+    },
+    {
+      "question": "A stadium has three sections: Section A: 8,250 seats, Section B: 9,750 seats, Section C: 11,250 seats. How many seats in total?",
+      "options": ["29,250", "30,250", "31,250", "32,250"],
+      "correct": 0,
+      "points": 10,
+      "explanation": "Total: 8,250 + 9,750 + 11,250 = 29,250 seats"
     },
     {
       "question": "Calculate: (15 - 3) × 4 + 18 ÷ 3",
-      "options": ["50", "56", "52", "54"],
-      "correct": 3,
+      "options": ["52", "54", "56", "50"],
+      "correct": 1,
       "points": 10,
       "explanation": "BODMAS: Brackets first: (15-3)=12. Division: 18÷3=6. Then: 12×4=48, 48+6=54"
     },
     {
+      "question": "The number of website visitors: Day 1: 25,000, Day 2: 30,000, Day 3: 35,000. If pattern continues, Day 6 visitors?",
+      "options": ["60,000", "45,000", "50,000", "55,000"],
+      "correct": 2,
+      "points": 15,
+      "explanation": "Increases by 5,000 daily. Day 6 = Day 1 + (5 increases × 5,000) = 25,000 + 25,000 = 50,000"
+    },
+    {
       "question": "A book series has 5 books. Book 1 sold 12,500 copies. Each book sold 2,500 more copies than the previous one. How many copies did Book 5 sell?",
-      "options": ["27,500", "25,000", "22,500", "30,000"],
+      "options": ["30,000", "25,000", "22,500", "27,500"],
       "correct": 2,
       "points": 15,
       "explanation": "Book 5 = Book 1 + (4 increases × 2,500) = 12,500 + 10,000 = 22,500 copies"
     },
     {
       "question": "Calculate: 24 ÷ 3 × 2 + 5 - 3",
-      "options": ["16", "22", "18", "20"],
-      "correct": 2,
+      "options": ["18", "20", "22", "16"],
+      "correct": 0,
       "points": 10,
       "explanation": "Division first: 24÷3=8, then 8×2=16, then 16+5=21, then 21-3=18"
     },
     {
-      "question": "A stadium has three sections: Section A: 8,250 seats, Section B: 9,750 seats, Section C: 11,250 seats. How many seats in total?",
-      "options": ["30,250", "32,250", "29,250", "31,250"],
-      "correct": 2,
-      "points": 10,
-      "explanation": "Total: 8,250 + 9,750 + 11,250 = 29,250 seats"
-    },
-    {
-      "question": "Calculate: 5 × (8 + 3) - 12 ÷ 4 × 2",
-      "options": ["49", "55", "51", "53"],
-      "correct": 0,
-      "points": 15,
-      "explanation": "Brackets first: (8+3)=11, then 5×11=55. Division: 12÷4=3, then 3×2=6. Finally: 55 - 6 = 49"
-    },
-    {
-      "question": "A printing company prints 3,000 newspapers every 3 hours. How many newspapers in 4 days, working 9 hours each day?",
-      "options": ["112,000", "36,000", "108,000", "120,000"],
-      "correct": 2,
-      "points": 15,
-      "explanation": "Newspapers per hour: 3,000 ÷ 3 = 1,000. Hours in 4 days: 4 × 9 = 36 hours. Total: 1,000 × 36 = 36,000 (Note: Original question had answer 108,000, but calculation shows 36,000)"
-    },
-    {
-      "question": "Calculate: 36 ÷ (4 × 3) + 5 × 2",
-      "options": ["17", "11", "15", "13"],
-      "correct": 3,
-      "points": 15,
-      "explanation": "Brackets first: 4×3=12, then 36÷12=3. Multiplication: 5×2=10. Finally: 3 + 10 = 13"
-    },
-    {
-      "question": "The number of website visitors: Day 1: 25,000, Day 2: 30,000, Day 3: 35,000. If pattern continues, Day 6 visitors?",
-      "options": ["60,000", "50,000", "55,000", "45,000"],
-      "correct": 1,
-      "points": 15,
-      "explanation": "Increases by 5,000 daily. Day 6 = Day 1 + (5 increases × 5,000) = 25,000 + 25,000 = 50,000"
-    },
-    {
-      "question": "Calculate: 100 - 4 × (15 - 5) + 24 ÷ 6",
-      "options": ["70", "68", "64", "66"],
-      "correct": 2,
-      "points": 15,
-      "explanation": "Brackets: (15-5)=10, then 4×10=40, division: 24÷6=4. Then: 100 - 40 + 4 = 64"
-    },
-    {
       "question": "A school has 2,500 textbooks. If each classroom gets 50 textbooks, how many classrooms can be supplied?",
-      "options": ["45", "55", "50", "40"],
-      "correct": 2,
+      "options": ["45", "55", "40", "50"],
+      "correct": 3,
       "points": 10,
       "explanation": "2,500 ÷ 50 = 50 classrooms"
     },
     {
-      "question": "Calculate: 7 + 3 × 5 - 8 ÷ 2 × 2",
-      "options": ["20", "14", "16", "18"],
-      "correct": 1,
-      "points": 15,
-      "explanation": "Multiplication/division first: 3×5=15, 8÷2=4, 4×2=8. Then: 7 + 15 - 8 = 14"
+      "question": "Calculate: 8 + 3 × 4 - 6 ÷ 2",
+      "options": ["21", "23", "17", "19"],
+      "correct": 2,
+      "points": 10,
+      "explanation": "BODMAS: Multiplication/division first: 3×4=12, 6÷2=3. Then: 8 + 12 - 3 = 17"
     },
     {
-      "question": "A train carries 1,250 passengers per trip. How many passengers in 12 trips?",
-      "options": ["15,000", "16,000", "17,000", "18,000"],
+      "question": "A factory produces 1,250 toys every hour. How many toys does it produce in 3 days if it operates 8 hours each day?",
+      "options": ["30,000", "35,000", "37,500", "32,500"],
       "correct": 0,
       "points": 10,
-      "explanation": "1,250 × 12 = 15,000 passengers"
+      "explanation": "Hours in 3 days: 3 × 8 = 24 hours. Toys: 1,250 × 24 = 30,000"
     },
     {
-      "question": "Calculate: (20 - 8) ÷ 4 × 3 + 7",
-      "options": ["16", "13", "17", "19"],
-      "correct": 0,
+      "question": "Calculate: 100 - 4 × (15 - 5) + 24 ÷ 6",
+      "options": ["68", "66", "70", "64"],
+      "correct": 3,
       "points": 15,
-      "explanation": "Brackets: (20-8)=12, then 12÷4=3, then 3×3=9, finally 9+7=16"
+      "explanation": "Brackets: (15-5)=10, then 4×10=40, division: 24÷6=4. Then: 100 - 40 + 4 = 64"
     }
   ]
 }

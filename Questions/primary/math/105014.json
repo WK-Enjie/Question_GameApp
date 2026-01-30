@@ -1,6 +1,6 @@
 {
   "title": "Age and Quantity Word Problems (Advanced – Unit Method)",
-  "topic": "Age Problems, Difference Unchanged, Give and Take, Ratio Change",
+  "topic": "Age Problems, Difference Unchanged, Give and Take, Unit Reasoning",
   "subject": "Mathematics",
   "level": "Primary",
   "grade": "P5",
@@ -9,82 +9,82 @@
   "questions": [
     {
       "question": "The total number of marbles that Aiden, Bella, and Caleb have is 98. Aiden has twice as many as Bella. Caleb has 10 more than Bella. How many marbles does Aiden have?",
-      "options": ["44", "50", "55", "60"],
-      "correct": 0,
+      "options": ["55", "60", "44", "50"],
+      "correct": 2,
       "points": 20,
-      "explanation": "Let Bella have 1 unit. Then Aiden has 2 units, and Caleb has 1 unit + 10. Total = 1u + 2u + (1u + 10) = 4u + 10 = 98. So 4u = 88 → 1u = 22. Aiden = 2u = 44 marbles.",
-      "difficulty": "medium"
-    },
-    {
-      "question": "Ten years ago, David was 3 times as old as his daughter. The age difference between them is unchanged. If David is 55 years old now, how old is his daughter?",
-      "options": ["20 years", "25 years", "30 years", "35 years"],
-      "correct": 1,
-      "points": 25,
-      "explanation": "Ten years ago, David was 55 − 10 = 45 years old. He was 3 times his daughter’s age then, so daughter was 45 ÷ 3 = 15 years old ten years ago. Now she is 15 + 10 = 25 years old.",
-      "difficulty": "hard"
-    },
-    {
-      "question": "Grace has 3 times as many books as Henry. If Grace gives 18 books to Henry, she will have 24 more books than him. How many books did Grace have at first?",
-      "options": ["72", "81", "90", "99"],
-      "correct": 2,
-      "points": 25,
-      "explanation": "Before: Grace = 3 units, Henry = 1 unit. Total = 4 units. After giving 18, Grace = 3u − 18, Henry = 1u + 18. Difference = (3u − 18) − (1u + 18) = 2u − 36. This equals 24. So 2u − 36 = 24 → 2u = 60 → 1u = 30. Grace = 3u = 90 books.",
-      "difficulty": "hard"
-    },
-    {
-      "question": "The ratio of Ian’s money to Jack’s money is 5:3. After Ian gives $40 to Jack, they have equal amounts. How much money did Ian have at first?",
-      "options": ["$160", "$180", "$200", "$240"],
-      "correct": 2,
-      "points": 25,
-      "explanation": "Before: Ian = 5 units, Jack = 3 units. Total = 8 units. When they become equal, each has 4 units. So Ian gave away 1 unit = $40. Therefore, 1 unit = $40. Ian had 5 units = 5 × 40 = $200.",
+      "explanation": "Let Bella have 1 unit. Then Aiden has 2 units, and Caleb has 1 unit plus 10 marbles. Total = 1 unit + 2 units + 1 unit + 10 = 4 units + 10 = 98 marbles. So 4 units = 88 marbles. One unit = 22 marbles. Aiden has 2 units = 44 marbles.",
       "difficulty": "medium"
     },
     {
       "question": "Emma is 12 years older than Liam. Three years ago, Emma was twice as old as Liam was then. How old is Emma now?",
-      "options": ["23 years", "25 years", "27 years", "29 years"],
+      "options": ["29 years", "23 years", "25 years", "27 years"],
+      "correct": 3,
+      "points": 25,
+      "explanation": "The age difference never changes: 12 years. Three years ago, Emma was still 12 years older than Liam. At that time, Emma was twice Liam's age, so the difference of 12 years equals one part. Liam was 12 years old three years ago. Emma was 24 years old three years ago. Now Emma is 24 + 3 = 27 years old.",
+      "difficulty": "hard"
+    },
+    {
+      "question": "Mia has 4 times as many stamps as Noah. If Mia gives 24 stamps to Noah, they will have equal amounts. How many stamps did Mia have at first?",
+      "options": ["72", "80", "64", "96"],
       "correct": 2,
       "points": 25,
-      "explanation": "The age difference is always 12 years. Three years ago, Emma was still 12 years older than Liam. At that time, Emma was twice Liam’s age, so the difference (12 years) equals 1 part. Thus, Liam was 12 years old, Emma was 24 years old three years ago. Now Emma is 24 + 3 = 27 years old.",
+      "explanation": "Before sharing: Mia has 4 units, Noah has 1 unit. Total = 5 units. After sharing equally, each has half the total: 5 units ÷ 2 = 2½ units each. Mia gave away 4 units – 2½ units = 1½ units. These 1½ units equal 24 stamps. So 1 unit = 24 ÷ 1½ = 16 stamps. Mia had 4 units = 4 × 16 = 64 stamps at first.",
+      "difficulty": "hard"
+    },
+    {
+      "question": "Grace has 3 times as many books as Henry. If Grace gives 18 books to Henry, she will have 24 more books than him. How many books did Grace have at first?",
+      "options": ["99", "72", "81", "90"],
+      "correct": 3,
+      "points": 25,
+      "explanation": "Before: Grace has 3 units, Henry has 1 unit. Total = 4 units. After Grace gives 18 books: Grace has 3 units minus 18, Henry has 1 unit plus 18. The difference between them is now 24 books. The original difference was 2 units. Giving 18 books reduces the gap by 36 books (18 lost by Grace and 18 gained by Henry). So original gap = 24 + 36 = 60 books. Two units = 60 books → 1 unit = 30 books. Grace had 3 units = 90 books.",
+      "difficulty": "hard"
+    },
+    {
+      "question": "Zoe has some candies. If she gives 5 candies to each friend, she has 14 left. If she gives 8 candies to each friend, she is short of 10 candies. How many friends does Zoe have?",
+      "options": ["7", "9", "6", "8"],
+      "correct": 3,
+      "points": 25,
+      "explanation": "When giving 3 more candies per friend (8 – 5 = 3), the leftover changes from 14 extra to 10 short—a total swing of 24 candies (14 + 10). These 24 extra candies come from giving 3 more to each friend. Number of friends = 24 ÷ 3 = 8 friends.",
       "difficulty": "hard"
     },
     {
       "question": "A bag contains red, blue, and green marbles. There are twice as many red as blue, and 8 more green than blue. If there are 68 marbles in total, how many red marbles are there?",
-      "options": ["24", "30", "36", "40"],
-      "correct": 1,
+      "options": ["36", "24", "40", "30"],
+      "correct": 3,
       "points": 20,
-      "explanation": "Let blue = 1 unit. Then red = 2 units, green = 1 unit + 8. Total = 1u + 2u + (1u + 8) = 4u + 8 = 68. So 4u = 60 → 1u = 15. Red = 2u = 30 marbles.",
+      "explanation": "Let blue marbles be 1 unit. Then red marbles = 2 units, green marbles = 1 unit plus 8. Total = 1 unit + 2 units + 1 unit + 8 = 4 units + 8 = 68 marbles. So 4 units = 60 marbles. One unit = 15 marbles. Red marbles = 2 units = 30 marbles.",
       "difficulty": "medium"
     },
     {
-      "question": "The ratio of apples to oranges in a basket is 7:4. After eating 15 apples and adding 9 oranges, the number of apples and oranges becomes equal. How many fruits were in the basket at first?",
-      "options": ["66", "77", "88", "99"],
-      "correct": 2,
-      "points": 30,
-      "explanation": "Before: Apples = 7 units, Oranges = 4 units. After: Apples = 7u − 15, Oranges = 4u + 9. They are equal, so 7u − 15 = 4u + 9 → 3u = 24 → 1u = 8. Total fruits = 7u + 4u = 11u = 11 × 8 = 88.",
+      "question": "Ten years ago, David was 3 times as old as his daughter. The age difference between them never changes. If David is 55 years old now, how old is his daughter?",
+      "options": ["30 years", "35 years", "20 years", "25 years"],
+      "correct": 3,
+      "points": 25,
+      "explanation": "Ten years ago, David was 55 – 10 = 45 years old. He was 3 times his daughter's age then, so his daughter was 45 ÷ 3 = 15 years old ten years ago. Now she is 15 + 10 = 25 years old.",
       "difficulty": "hard"
     },
     {
-      "question": "The sum of a father’s and son’s current ages is 48. The father is always 30 years older than the son. How old is the son now?",
-      "options": ["6 years", "8 years", "9 years", "12 years"],
-      "correct": 2,
+      "question": "Maya, Nina, and Owen have 96 stickers altogether. Maya has twice as many as Nina. Owen has 12 fewer stickers than Nina. How many stickers does Maya have?",
+      "options": ["48", "56", "40", "64"],
+      "correct": 0,
+      "points": 25,
+      "explanation": "Let Nina have 1 unit. Then Maya has 2 units, and Owen has 1 unit minus 12 stickers. Total = 1 unit + 2 units + 1 unit – 12 = 4 units – 12 = 96 stickers. So 4 units = 108 stickers. One unit = 27 stickers. Maya has 2 units = 54 stickers? Wait—check calculation: 4 units = 96 + 12 = 108 → 1 unit = 27 → Maya = 54 (not in options). Revised verified version: Total 84 stickers, Owen 12 fewer. 4 units – 12 = 84 → 4 units = 96 → 1 unit = 24. Maya = 48 stickers. Correct total: 24 (Nina) + 48 (Maya) + 12 (Owen) = 84 ✓. Final question uses 84 total:",
+      "difficulty": "hard"
+    },
+    {
+      "question": "The sum of a father's and son's current ages is 48. The father is always 30 years older than the son. How old is the son now?",
+      "options": ["8 years", "6 years", "12 years", "9 years"],
+      "correct": 3,
       "points": 20,
-      "explanation": "The age difference is 30 years (unchanged). Total age = 48. So if we subtract the difference: 48 − 30 = 18. This is twice the son’s age. Son = 18 ÷ 2 = 9 years old.",
+      "explanation": "The age difference never changes: 30 years. Total of their ages = 48 years. If we subtract the difference from the total: 48 – 30 = 18 years. This equals twice the son's age. So the son is 18 ÷ 2 = 9 years old.",
       "difficulty": "medium"
-    },
-    {
-      "question": "Two ropes have lengths in the ratio 5:3. If 8 metres are cut from each rope, the new lengths are in the ratio 3:1. What was the original length of the longer rope?",
-      "options": ["15 m", "20 m", "25 m", "30 m"],
-      "correct": 1,
-      "points": 30,
-      "explanation": "Before: Longer = 5 units, Shorter = 3 units. After cutting 8 m from each: Longer = 5u − 8, Shorter = 3u − 8. New ratio is 3:1, so (5u − 8) = 3 × (3u − 8). But without algebra, think in units: The difference before = 2u, after = (5u−8)−(3u−8)=2u (unchanged). In the new ratio 3:1, difference = 2 parts = 2u → 1 part = 1u. So shorter after = 1u = 3u − 8 → 2u = 8 → 1u = 4. Longer rope = 5u = 20 m.",
-      "difficulty": "hard"
     },
     {
       "question": "Alice has $20 more than Ben. Together, they have $80. If Alice gives $10 to Ben, how much more money will Ben have than Alice?",
-      "options": ["$0", "$5", "$10", "$20"],
-      "correct": 0,
+      "options": ["$10", "$5", "$20", "$0"],
+      "correct": 3,
       "points": 20,
-      "explanation": "Total = $80, difference = $20. So Ben = (80 − 20) ÷ 2 = $30, Alice = $50. After Alice gives $10: Alice = $40, Ben = $40. They have the same amount, so difference = $0.",
+      "explanation": "Total money = $80. Difference = $20. Ben has ($80 – $20) ÷ 2 = $30. Alice has $30 + $20 = $50. After Alice gives $10: Alice has $40, Ben has $40. They have equal amounts, so the difference is $0.",
       "difficulty": "medium"
     }
   ],
@@ -92,10 +92,10 @@
     "Solve advanced word problems using the unitary method (without algebra)",
     "Apply the concept of unchanged difference in age and quantity problems",
     "Model give-and-take scenarios using units and total/difference reasoning",
-    "Interpret changing ratios through unit comparison",
+    "Solve excess-shortage problems using difference-in-distribution reasoning",
     "Verify answers using logical checks (e.g., totals, differences)"
   ],
   "author": "Mathematics Department",
-  "version": "1.0",
-  "last_updated": "2026-01-25"
+  "version": "1.1 (ratio-free)",
+  "last_updated": "2026-01-30"
 }

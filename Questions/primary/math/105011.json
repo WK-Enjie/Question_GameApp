@@ -8,79 +8,74 @@
   "worksheet": 1,
   "questions": [
     {
-      "question": "What is the value of the digit 7 in the number 8,734,562?",
-      "options": ["700,000", "70,000", "7,000", "700"],
-      "correct": 0,
+      "question": "Which is the smallest 7-digit number?",
+      "options": ["999,999", "100,000", "1,000,000", "1,111,111"],
+      "correct": 2,
       "points": 10,
-      "explanation": "In 8,734,562, the digit 7 is in the hundred thousands place: 7 × 100,000 = 700,000"
-    },
-    {
-      "question": "Write 4,508,209 in words.",
-      "options": [
-        "Four million, five hundred eight thousand, two hundred nine",
-        "Four million, five hundred eighty thousand, two hundred nine",
-        "Four million, five thousand, eight hundred twenty-nine",
-        "Four million, fifty-eight thousand, two hundred nine"
-      ],
-      "correct": 0,
-      "points": 10,
-      "explanation": "4,508,209 is correctly read as 'Four million, five hundred eight thousand, two hundred nine'"
-    },
-    {
-      "question": "Which number is 5 million more than 3,750,000?",
-      "options": ["8,750,000", "3,755,000", "5,750,000", "8,250,000"],
-      "correct": 0,
-      "points": 10,
-      "explanation": "3,750,000 + 5,000,000 = 8,750,000"
+      "explanation": "The smallest 7-digit number is 1,000,000 (one million)"
     },
     {
       "question": "What is 3,456,789 rounded to the nearest hundred thousand?",
-      "options": ["3,400,000", "3,500,000", "3,460,000", "3,450,000"],
-      "correct": 1,
+      "options": ["3,500,000", "3,460,000", "3,450,000", "3,400,000"],
+      "correct": 0,
       "points": 10,
       "explanation": "The digit in the ten thousands place is 5, which is 5 or more, so we round up: 3,456,789 → 3,500,000"
     },
     {
-      "question": "Which number has '7' in the millions place?",
-      "options": ["7,342,156", "3,742,156", "3,427,156", "3,342,756"],
-      "correct": 0,
+      "question": "Which number is 5 million more than 3,750,000?",
+      "options": ["3,755,000", "8,250,000", "5,750,000", "8,750,000"],
+      "correct": 3,
       "points": 10,
-      "explanation": "In 7,342,156, the first digit is 7, which is in the millions place (7 million)"
+      "explanation": "3,750,000 + 5,000,000 = 8,750,000"
+    },
+    {
+      "question": "Continue the pattern: 2,500,000; 2,750,000; 3,000,000; ___",
+      "options": ["3,750,000", "3,500,000", "3,250,000", "4,000,000"],
+      "correct": 2,
+      "points": 10,
+      "explanation": "The pattern increases by 250,000 each time: 3,000,000 + 250,000 = 3,250,000"
     },
     {
       "question": "What is 450 × 1,000?",
-      "options": ["45,000", "450,000", "4,500,000", "450,000,000"],
-      "correct": 1,
+      "options": ["450,000", "450,000,000", "45,000", "4,500,000"],
+      "correct": 0,
       "points": 10,
       "explanation": "Multiplying by 1,000 adds three zeros: 450 × 1,000 = 450,000"
     },
     {
       "question": "Find the missing number: 6,250,000 ÷ ___ = 6,250",
-      "options": ["10", "100", "1,000", "10,000"],
-      "correct": 2,
+      "options": ["10", "1,000", "100", "10,000"],
+      "correct": 1,
       "points": 10,
       "explanation": "6,250,000 ÷ 1,000 = 6,250 (dividing by 1,000 removes three zeros)"
     },
     {
-      "question": "Which is the smallest 7-digit number?",
-      "options": ["1,000,000", "999,999", "100,000", "1,111,111"],
-      "correct": 0,
-      "points": 10,
-      "explanation": "The smallest 7-digit number is 1,000,000 (one million)"
-    },
-    {
-      "question": "Continue the pattern: 2,500,000; 2,750,000; 3,000,000; ___",
-      "options": ["3,250,000", "3,500,000", "3,750,000", "4,000,000"],
-      "correct": 0,
-      "points": 10,
-      "explanation": "The pattern increases by 250,000 each time: 3,000,000 + 250,000 = 3,250,000"
-    },
-    {
       "question": "What is 8 million − 3.5 million?",
-      "options": ["4.5 million", "5.5 million", "4 million", "5 million"],
-      "correct": 0,
+      "options": ["4 million", "5 million", "4.5 million", "5.5 million"],
+      "correct": 2,
       "points": 10,
       "explanation": "8,000,000 − 3,500,000 = 4,500,000 = 4.5 million"
+    },
+    {
+      "question": "Which number has '7' in the millions place?",
+      "options": ["3,427,156", "3,742,156", "3,342,756", "7,342,156"],
+      "correct": 3,
+      "points": 10,
+      "explanation": "In 7,342,156, the first digit is 7, which is in the millions place (7 million)"
+    },
+    {
+      "question": "What is the value of the digit 7 in the number 8,734,562?",
+      "options": ["700", "7,000", "70,000", "700,000"],
+      "correct": 3,
+      "points": 10,
+      "explanation": "In 8,734,562, the digit 7 is in the hundred thousands place: 7 × 100,000 = 700,000"
+    },
+    {
+      "question": "Write 4,508,209 in words.",
+      "options": ["Four million, fifty-eight thousand, two hundred nine", "Four million, five hundred eighty thousand, two hundred nine", "Four million, five hundred eight thousand, two hundred nine", "Four million, five thousand, eight hundred twenty-nine"],
+      "correct": 2,
+      "points": 10,
+      "explanation": "4,508,209 is correctly read as 'Four million, five hundred eight thousand, two hundred nine'"
     }
   ]
 }
