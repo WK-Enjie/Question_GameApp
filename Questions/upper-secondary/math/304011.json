@@ -9,17 +9,10 @@
   "questions": [
     {
       "question": "If A = {2, 4, 6, 8} and B = {4, 6}, which of the following is correct?",
-      "options": ["B ∈ A", "A ⊂ B", "B ∉ A", "B ⊆ A"],
+      "options": ["B ∈ A", "A ⊂ B", "B ∉ A", "B ⊂ A"],
       "correct": 3,
       "points": 10,
-      "explanation": "B is a subset of A because all elements of B (4 and 6) are in A."
-    },
-    {
-      "question": "Given ξ = {1, 2, 3, 4, 5, 6, 7, 8, 9}, A = {2, 4, 6, 8}, B = {1, 3, 5, 7}. What is A' ∩ B?",
-      "options": ["{ }", "{1, 3, 5, 7}", "{2, 4, 6, 8}", "{1, 2, 3, 4, 5, 6, 7, 8}"],
-      "correct": 1,
-      "points": 10,
-      "explanation": "A' = {1, 3, 5, 7, 9}. A' ∩ B = {1, 3, 5, 7} ∩ {1, 3, 5, 7} = {1, 3, 5, 7}."
+      "explanation": "B is a proper subset of A because all elements of B (4 and 6) are in A, but A contains additional elements."
     },
     {
       "question": "If P = {x: x is a prime number less than 10}, which element relationship is correct?",
@@ -29,18 +22,25 @@
       "explanation": "P = {2, 3, 5, 7}. 3 is an element of P, so 3 ∈ P is correct."
     },
     {
-      "question": "Given X = {a, b, c} and Y = {b, c, d, e}, what is X ∪ Y?",
-      "options": ["{a, d, e}", "{a, b, c, d}", "{a, b, c, d, e}", "{b, c}"],
-      "correct": 2,
+      "question": "Given X = {a, b, c} and Y = {b, c, d, e}, which statement is true?",
+      "options": ["X ⊂ Y", "Y ⊂ X", "X = Y", "None of the above"],
+      "correct": 0,
       "points": 10,
-      "explanation": "The union of two sets includes all elements from both sets without duplication."
+      "explanation": "X is a proper subset of Y because every element of X is in Y, but Y contains additional elements (d, e)."
     },
     {
-      "question": "If A = {1, 2, 3} and B = {3, 4, 5}, what is (A ∩ B)' when ξ = {1, 2, 3, 4, 5, 6}?",
-      "options": ["{3}", "{1, 2, 4, 5}", "{6}", "{1, 2, 4, 5, 6}"],
-      "correct": 3,
+      "question": "If A = {1, 2, 3} and B = {1, 2, 3, 4, 5}, which statement is true?",
+      "options": ["A ⊂ B", "B ⊂ A", "A = B", "None of the above"],
+      "correct": 0,
       "points": 10,
-      "explanation": "A ∩ B = {3}. Complement in ξ is {1, 2, 4, 5, 6}."
+      "explanation": "A is a proper subset of B because every element of A is in B, but B contains additional elements (4, 5)."
+    },
+    {
+      "question": "If C = {x: x is a factor of 12}, which statement is true?",
+      "options": ["C ⊂ {1, 2, 3, 4}", "{1, 2} ⊂ C", "8 ∈ C", "C ⊂ {1, 2, 3}"],
+      "correct": 1,
+      "points": 10,
+      "explanation": "C = {1, 2, 3, 4, 6, 12}. {1, 2} is a proper subset of C."
     },
     {
       "question": "Which symbol represents 'is not an element of'?",
@@ -50,32 +50,25 @@
       "explanation": "∉ means 'is not an element of'."
     },
     {
-      "question": "Given ξ = {x: x is an integer, 1 ≤ x ≤ 10}, A = {2, 4, 6, 8, 10}, B = {1, 3, 5, 7, 9}. What is n(A ∩ B)?",
-      "options": ["5", "1", "0", "10"],
-      "correct": 2,
+      "question": "Given ξ = {x: x is an integer, 1 ≤ x ≤ 10}, A = {2, 4, 6, 8, 10}, B = {1, 3, 5, 7, 9}. Which statement is true?",
+      "options": ["A ⊂ ξ", "B ⊂ A", "ξ ⊂ A", "None of the above"],
+      "correct": 0,
       "points": 10,
-      "explanation": "A contains even numbers, B contains odd numbers. No common elements, so n(A ∩ B) = 0."
+      "explanation": "A is a proper subset of ξ because every element of A is in ξ, but ξ contains additional elements (1, 3, 5, 7, 9)."
     },
     {
-      "question": "If C = {x: x is a factor of 12}, which statement is true?",
-      "options": ["C ⊂ {1, 2, 3, 4}", "{ } ∉ C", "8 ∈ C", "{2, 3} ⊂ C"],
-      "correct": 3,
-      "points": 10,
-      "explanation": "C = {1, 2, 3, 4, 6, 12}. {2, 3} is a proper subset of C."
-    },
-    {
-      "question": "What does the notation '|A|' or 'n(A)' represent?",
-      "options": ["Complement of set A", "Power set of A", "Cardinality (number of elements) of set A", "Universal set containing A"],
-      "correct": 2,
-      "points": 10,
-      "explanation": "|A| or n(A) represents the cardinality of set A."
-    },
-    {
-      "question": "If n(A) = 5, n(B) = 7, and n(A ∩ B) = 2, what is n(A ∪ B)?",
-      "options": ["14", "10", "Cannot be determined", "12"],
+      "question": "If D = {x: x is a multiple of 3 less than 10}, which statement is true?",
+      "options": ["D ⊂ {1, 2, 3, 4, 5, 6}", "{3, 6} ⊂ D", "D ⊂ {3, 6, 9, 12}", "None of the above"],
       "correct": 1,
       "points": 10,
-      "explanation": "n(A ∪ B) = n(A) + n(B) - n(A ∩ B) = 5 + 7 - 2 = 10."
+      "explanation": "D = {3, 6, 9}. {3, 6} is a proper subset of D."
+    },
+    {
+      "question": "What does the notation 'A ⊂ B' mean?",
+      "options": ["A is equal to B", "A is a proper subset of B", "A is not related to B", "A contains B"],
+      "correct": 1,
+      "points": 10,
+      "explanation": "A ⊂ B means A is a proper subset of B, i.e., every element of A is in B, but B contains at least one element not in A."
     }
   ]
 }
