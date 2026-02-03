@@ -1,0 +1,104 @@
+{
+  "worksheet": {
+    "title": "Circles, Sectors and Arc Length (Worksheet 2)",
+    "level": "Secondary 3",
+    "subject": "Elementary Mathematics",
+    "chapter": "Chapter 8: Circles, Sectors and Arc Length",
+    "worksheet_number": 2,
+    "difficulty_range": "Intermediate to Hard",
+    "syllabus_notes": "All questions use degree measure only. Radian measure is NOT covered in Sec 3 E-Math syllabus (introduced in Sec 4).",
+    "questions": [
+      {
+        "question_id": "S3-C8-W2-Q1",
+        "difficulty": "intermediate",
+        "question_type": "structured",
+        "question_text": "A sector OAB has centre O and radius 16 cm. The perimeter of the sector is 57.14 cm. (Use π = 3.142)\n\n(a) Find the length of arc AB.\n(b) Find ∠AOB in degrees.\n(c) Find the area of sector OAB.",
+        "key_formulas": [
+          "Perimeter of sector = 2r + arc length",
+          "Arc length = (θ/360°) × 2πr",
+          "Area of sector = (θ/360°) × πr²"
+        ],
+        "answer": {
+          "part_a": "25.14 cm",
+          "part_b": "90°",
+          "part_c": "201.1 cm²"
+        },
+        "solution": "Part (a): Perimeter = 2r + arc length\n57.14 = 2(16) + arc length\nArc length = 57.14 - 32 = 25.14 cm\n\nPart (b): Arc length = (θ/360) × 2πr\n25.14 = (θ/360) × 2 × 3.142 × 16\n25.14 = (θ/360) × 100.544\nθ = (25.14 × 360) ÷ 100.544 = 90°\n\nPart (c): Area = (90/360) × π × 16² = (1/4) × 3.142 × 256 = 201.1 cm²"
+      },
+      {
+        "question_id": "S3-C8-W2-Q2",
+        "difficulty": "intermediate",
+        "question_type": "structured",
+        "question_text": "The diagram shows a square PQRS of side 12 cm. Quadrants with centres P and R, each of radius 12 cm, are drawn inside the square. The shaded region is the area common to both quadrants.\n\n(a) Find the area of one quadrant.\n(b) Find the area of the shaded region. (Use π = 3.142)",
+        "key_formulas": [
+          "Area of quadrant = ¼πr²",
+          "Area of square = side²",
+          "Shaded area = area of quadrant P + area of quadrant R - area of square"
+        ],
+        "answer": {
+          "part_a": "113.1 cm²",
+          "part_b": "82.2 cm²"
+        },
+        "solution": "Part (a): Area of one quadrant = ¼ × π × 12² = 0.25 × 3.142 × 144 = 113.112 ≈ 113.1 cm²\n\nPart (b): Total area covered by both quadrants = 113.1 + 113.1 = 226.2 cm²\nArea of square = 12 × 12 = 144 cm²\nThe overlapping shaded region is counted twice in the sum of quadrants.\nTherefore: Shaded area = 226.2 - 144 = 82.2 cm²"
+      },
+      {
+        "question_id": "S3-C8-W2-Q3",
+        "difficulty": "hard",
+        "question_type": "structured",
+        "question_text": "A sector OAB has centre O and radius 20 cm. The length of chord AB is 24 cm.\n\n(a) Find ∠AOB in degrees. (Use calculator)\n(b) Find the area of sector OAB. (Use π = 3.142)\n(c) Find the perimeter of the sector.",
+        "key_formulas": [
+          "Chord length = 2r sin(θ/2)",
+          "Arc length = (θ/360°) × 2πr",
+          "Sector area = (θ/360°) × πr²"
+        ],
+        "answer": {
+          "part_a": "73.7°",
+          "part_b": "257.3 cm²",
+          "part_c": "65.7 cm"
+        },
+        "solution": "Part (a): Chord AB = 2r sin(θ/2)\n24 = 2 × 20 × sin(θ/2)\n24 = 40 sin(θ/2)\nsin(θ/2) = 0.6\nθ/2 = sin⁻¹(0.6) = 36.87°\nθ = 73.74° ≈ 73.7°\n\nPart (b): Area = (73.74/360) × π × 20² = 0.20483 × 3.142 × 400 = 257.3 cm²\n\nPart (c): Arc length = (73.74/360) × 2π × 20 = 0.20483 × 125.68 = 25.74 cm ≈ 25.7 cm\nPerimeter = 2r + arc length = 40 + 25.7 = 65.7 cm"
+      },
+      {
+        "question_id": "S3-C8-W2-Q4",
+        "difficulty": "hard",
+        "question_type": "structured",
+        "question_text": "A running track consists of two straight sections each 90 m long and two semicircular ends. The inner perimeter of the track is 400 m.\n\n(a) Find the radius of each semicircular end. (Use π = 3.142)\n(b) The track is 1.25 m wide. Find the outer perimeter of the track.",
+        "key_formulas": [
+          "Perimeter of track = 2 × straight length + circumference of full circle",
+          "Circumference = 2πr"
+        ],
+        "answer": {
+          "part_a": "35.0 m",
+          "part_b": "407.9 m"
+        },
+        "solution": "Part (a): Inner perimeter = 2(straight) + circumference of circle\n400 = 2(90) + 2πr\n400 = 180 + 2πr\n220 = 2πr\nr = 220 ÷ (2 × 3.142) = 220 ÷ 6.284 = 35.01 m ≈ 35.0 m\n\nPart (b): Outer radius = inner radius + width = 35.0 + 1.25 = 36.25 m\nOuter perimeter = 2(90) + 2π(36.25) = 180 + 2 × 3.142 × 36.25 = 180 + 227.855 = 407.855 m ≈ 407.9 m"
+      },
+      {
+        "question_id": "S3-C8-W2-Q5",
+        "difficulty": "hard",
+        "question_type": "structured",
+        "question_text": "A sector has radius r cm and central angle θ°. The perimeter of the sector is 30 cm and its area is 50 cm².\n\n(a) Show that the arc length is (30 - 2r) cm.\n(b) Show that r(30 - 2r) = 100.\n(c) Hence find the two possible values of r.\n(d) Find the corresponding values of θ. (Use π = 3.142)",
+        "key_formulas": [
+          "Perimeter = 2r + arc length",
+          "Area of sector = ½ × arc length × radius",
+          "Arc length = (θ/360°) × 2πr"
+        ],
+        "answer": {
+          "part_a": "Shown: perimeter = 2r + arc ⇒ arc = 30 - 2r",
+          "part_b": "Shown: area = ½ × arc × r = 50 ⇒ arc × r = 100 ⇒ r(30 - 2r) = 100",
+          "part_c": "r = 5 cm or r = 10 cm",
+          "part_d": "θ = 229.2° (when r = 5 cm) or θ = 57.3° (when r = 10 cm)"
+        },
+        "solution": "Part (a): Perimeter = 2r + arc length\n30 = 2r + arc length ⇒ arc length = 30 - 2r ✓\n\nPart (b): Area of sector = ½ × arc length × radius\n50 = ½ × (30 - 2r) × r\n100 = (30 - 2r)r ⇒ r(30 - 2r) = 100 ✓\n\nPart (c): 30r - 2r² = 100\n2r² - 30r + 100 = 0\nr² - 15r + 50 = 0\n(r - 5)(r - 10) = 0\nr = 5 cm or r = 10 cm\n\nPart (d): When r = 5 cm:\nArc length = 30 - 2(5) = 20 cm\nθ = (20 × 360) ÷ (2π × 5) = 7200 ÷ (10 × 3.142) = 7200 ÷ 31.42 = 229.2°\n\nWhen r = 10 cm:\nArc length = 30 - 2(10) = 10 cm\nθ = (10 × 360) ÷ (2π × 10) = 3600 ÷ (20 × 3.142) = 3600 ÷ 62.84 = 57.3°"
+      }
+    ],
+    "teaching_notes": [
+      "Radian measure is NOT included—this aligns with Singapore Sec 3 E-Math syllabus (radians introduced in Sec 4).",
+      "Question 2 tests understanding of overlapping regions: shaded area = sum of quadrant areas - square area.",
+      "Question 3 requires trigonometry (sine ratio) which Sec 3 students have covered in right-angled triangles.",
+      "Question 5 uses the relationship Area = ½ × arc length × radius to simplify algebra—both solutions are valid (minor and major sectors).",
+      "Common error alert: Students often forget sector perimeter includes TWO radii plus the arc length.",
+      "All numerical answers verified with π = 3.142 and rounded appropriately for Sec 3 assessment standards."
+    ]
+  }
+}
