@@ -1,0 +1,251 @@
+{
+  "title": "Forces: Frictional, Gravitational, and Elastic Spring Force (Advanced)",
+  "topic": "Interaction of Forces",
+  "subject": "Science",
+  "level": "Primary",
+  "grade": "P6",
+  "chapter": "Forces",
+  "worksheet": 3,
+  "questions": [
+    {
+      "question": "Which of the following scenarios describes an interaction where ONLY a pulling force is being applied to the object?",
+      "options": [
+        "A footballer kicking a stationary ball across the field",
+        "A student using a magnet to pick up steel paperclips",
+        "A baker kneading dough on a wooden board",
+        "A carpenter hammering a nail into a piece of wood"
+      ],
+      "correct": 1,
+      "points": 10,
+      "explanation": "Magnetic force acts as a pull in this context, drawing the paperclips toward the magnet. Kicking, kneading, and hammering involve pushing forces."
+    },
+    {
+      "question": "Two boys are pushing a heavy crate in opposite directions. The crate remains stationary. Which statement is correct?",
+      "options": [
+        "There are no forces acting on the crate",
+        "The forces applied by both boys are equal in strength",
+        "The frictional force is greater than the pushing forces",
+        "The crate has too much mass for gravity to move it"
+      ],
+      "correct": 1,
+      "points": 10,
+      "explanation": "If the crate does not move, the forces are balanced. This shows that a force can move a stationary object only if the applied force is greater than the opposing forces like friction."
+    },
+    {
+      "question": "A parachutist falls at a constant speed after opening his parachute. What is the effect of the forces acting on him?",
+      "options": [
+        "The force of gravity has stopped acting on him",
+        "Air resistance is now acting in the same direction as gravity",
+        "The upward force of air resistance balances the downward force of gravity",
+        "The force of gravity is now weaker than the air resistance"
+      ],
+      "correct": 2,
+      "points": 10,
+      "explanation": "While gravity pulls him down, air resistance (a form of friction) pushes up. When these forces balance, his speed remains constant rather than increasing."
+    },
+    {
+      "question": "A student tests four different springs by hanging a 200g weight on each. Which spring exerts the GREATEST elastic spring force to resist the weight?",
+      "options": [
+        "Spring A: Extended by 10cm",
+        "Spring B: Extended by 2cm",
+        "Spring C: Extended by 5cm",
+        "Spring D: Extended by 8cm"
+      ],
+      "correct": 1,
+      "points": 15,
+      "explanation": "Spring B is the 'stiffest' because it stretched the least under the same load. It exerts a stronger elastic spring force to maintain its shape compared to the others."
+    },
+    {
+      "question": "An astronaut travels from Earth to Jupiter, where gravity is much stronger. How do his mass and weight change?",
+      "options": [
+        "His mass increases, but his weight stays the same",
+        "Both his mass and weight increase",
+        "His mass stays the same, but his weight increases",
+        "His mass stays the same, but his weight decreases"
+      ],
+      "correct": 2,
+      "points": 15,
+      "explanation": "Mass is the amount of matter and does not change with location. Weight is the measure of gravitational force; since Jupiter's gravity is stronger, his weight increases."
+    },
+    {
+      "question": "A block is pulled across a table. Why does it require more force to start the block moving than to keep it moving?",
+      "options": [
+        "Gravity only acts on the block when it is stationary",
+        "Frictional force is strongest when the surfaces are first resisting motion",
+        "The block's mass increases when it is at rest",
+        "The elastic spring force of the table pushes against the block"
+      ],
+      "correct": 1,
+      "points": 15,
+      "explanation": "Friction opposes motion. More force is needed to overcome the initial friction between the two surfaces to move a stationary object."
+    },
+    {
+      "question": "When a spring is compressed between two hands, which of the following is an effect of the force applied by the hands?",
+      "options": [
+        "The mass of the spring decreases",
+        "The spring's gravitational force increases",
+        "The shape of the spring is changed",
+        "The spring becomes a magnet"
+      ],
+      "correct": 2,
+      "points": 10,
+      "explanation": "One effect of a force is to change the shape of an object. When you push on both ends of the spring, it becomes shorter – its shape has been changed by the applied force."
+    },
+    {
+      "question": "Which of these factors does NOT affect the amount of frictional force between a sliding wooden block and the floor?",
+      "options": [
+        "The roughness of the floor surface",
+        "The mass of the wooden block",
+        "The surface area of the block in contact with the floor",
+        "The presence of a lubricant like oil on the floor"
+      ],
+      "correct": 2,
+      "points": 15,
+      "explanation": "In most standard science investigations, friction depends on the nature of the surfaces and the weight of the object, not the size of the contact area."
+    },
+    {
+      "question": "Why would a person weigh less on the peak of Mount Everest than at sea level?",
+      "options": [
+        "There is less air pressure at the peak",
+        "The person has less mass at higher altitudes",
+        "The person is further from the Earth's center, so gravitational force is slightly weaker",
+        "The cold temperature reduces the elastic spring force in the body"
+      ],
+      "correct": 2,
+      "points": 15,
+      "explanation": "Weight is the measure of gravitational force. As distance from the center of the Earth increases, the pull of gravity decreases slightly."
+    },
+    {
+      "question": "In a rainy climate, why do some stairs have thin strips of sandpaper glued to the edges?",
+      "options": [
+        "To reduce the weight of the stairs",
+        "To increase friction and prevent slipping when the surface is wet",
+        "To absorb excess gravitational force",
+        "To make the stairs change shape more easily"
+      ],
+      "correct": 1,
+      "points": 15,
+      "explanation": "Water acts as a lubricant and reduces friction. Sandpaper provides a rougher surface to increase friction, allowing for better grip."
+    },
+    {
+      "question": "A ball is thrown horizontally. Which force eventually causes it to hit the ground?",
+      "options": [
+        "The force of the throw",
+        "Air resistance",
+        "Magnetic force",
+        "Gravitational force"
+      ],
+      "correct": 3,
+      "points": 10,
+      "explanation": "While the throw moves it forward, gravitational force acts continuously to pull the ball downward toward the center of the Earth."
+    },
+    {
+      "question": "Which of the following would be the most effective way to INCREASE the distance a toy car travels after being pushed?",
+      "options": [
+        "Using a rougher surface like a carpet",
+        "Adding more weight to the toy car",
+        "Applying a lubricant to the wheels' axles",
+        "Using square-shaped wheels"
+      ],
+      "correct": 2,
+      "points": 15,
+      "explanation": "Lubricants reduce unwanted friction between moving parts, allowing the wheels to spin more freely and the car to travel further."
+    },
+    {
+      "question": "A book is placed on a table. The book does not move. Which statement correctly describes the forces acting on the book?",
+      "options": [
+        "Only gravity acts on the book",
+        "The table pushes upward on the book with a force equal to the book's weight",
+        "The book's weight is greater than the force from the table",
+        "No forces act on the book because it is not moving"
+      ],
+      "correct": 1,
+      "points": 20,
+      "explanation": "Two forces act on the stationary book: gravity pulls it downward, and the table pushes upward with an equal force. These balanced forces result in no movement."
+    },
+    {
+      "question": "A spring has an original length of 15cm. When a 50g weight is added, it becomes 17cm. What will the total length be if the weight is increased to 150g?",
+      "options": [
+        "19cm",
+        "21cm",
+        "22cm",
+        "45cm"
+      ],
+      "correct": 1,
+      "points": 20,
+      "explanation": "The extension for 50g is 2cm (17 - 15). For 150g (3 times the weight), the extension will be 6cm (2 x 3). Total length = 15cm + 6cm = 21cm."
+    },
+    {
+      "question": "Why is it more difficult to stop a heavy truck than a small car moving at the same speed?",
+      "options": [
+        "The truck has more mass, requiring a larger force to change its motion",
+        "The truck has less friction with the road",
+        "Gravity pulls the car harder because it is closer to the ground",
+        "The car has more elastic spring force in its brakes"
+      ],
+      "correct": 0,
+      "points": 15,
+      "explanation": "Objects with more mass require a greater force to change their speed or stop their motion."
+    },
+    {
+      "question": "Which of the following is true about all forces?",
+      "options": [
+        "They can only be seen when something moves",
+        "They are always beneficial to machines",
+        "They can act from a distance without touching the object",
+        "They always cause an object to speed up"
+      ],
+      "correct": 2,
+      "points": 15,
+      "explanation": "Non-contact forces like gravity and magnetic force can act on an object without physical contact."
+    },
+    {
+      "question": "A student wants to investigate the effect of mass on the friction of a sled. She uses four sleds with different masses but the same base material. What must she keep constant?",
+      "options": [
+        "The mass of the sleds",
+        "The type of surface the sleds slide on",
+        "The amount of force used to pull the sleds",
+        "The speed at which she pulls the sleds"
+      ],
+      "correct": 1,
+      "points": 15,
+      "explanation": "In a fair test, only the variable being tested (mass) should change. The surface must stay the same to see how mass alone affects friction."
+    },
+    {
+      "question": "A student used a spring balance to pull a block across four surfaces. The results are shown below:\nSurface W: 2.5N\nSurface X: 1.2N\nSurface Y: 4.0N\nSurface Z: 0.5N\nWhich surface would be best for a 'slip-and-slide' water toy?",
+      "options": [
+        "Surface W",
+        "Surface X",
+        "Surface Y",
+        "Surface Z"
+      ],
+      "correct": 3,
+      "points": 20,
+      "explanation": "Surface Z required the least force to move the block, meaning it has the lowest frictional force. This makes it the most 'slippery'."
+    },
+    {
+      "question": "Which statement accurately describes the relationship between friction and heat?",
+      "options": [
+        "Friction always destroys heat",
+        "Heat is a force that creates friction",
+        "Frictional force between moving surfaces often produces heat",
+        "Friction only works in cold temperatures"
+      ],
+      "correct": 2,
+      "points": 10,
+      "explanation": "When surfaces rub against each other, the interaction of the particles creates heat. This is why hands feel warm when rubbed together."
+    },
+    {
+      "question": "A student argues that 'Without gravity, we would still have weight but no mass.' Is this correct?",
+      "options": [
+        "Yes, mass depends on gravity",
+        "No, we would have mass but no weight",
+        "No, we would have neither mass nor weight",
+        "Yes, because weight is a constant property of matter"
+      ],
+      "correct": 1,
+      "points": 20,
+      "explanation": "Mass is the amount of matter in an object and is constant. Weight is the result of gravitational force acting on that mass. Without gravity, there is no weight."
+    }
+  ]
+}

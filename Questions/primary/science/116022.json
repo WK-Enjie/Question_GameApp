@@ -17,7 +17,7 @@
       ],
       "correct": 3,
       "points": 15,
-      "explanation": "Frictional force acts between the car’s wheels and the carpet, opposing its motion and making it harder to pull."
+      "explanation": "Frictional force acts between the car's wheels and the carpet, opposing its motion and making it harder to pull."
     },
     {
       "question": "Why can astronauts jump higher on the Moon than on Earth?",
@@ -29,7 +29,7 @@
       ],
       "correct": 2,
       "points": 15,
-      "explanation": "The Moon’s gravitational force is about 1/6th of Earth’s, so astronauts weigh less and can jump higher with the same effort."
+      "explanation": "The Moon's gravitational force is about 1/6th of Earth's, so astronauts weigh less and can jump higher with the same effort."
     },
     {
       "question": "Which of the following uses elastic spring force?",
@@ -59,13 +59,13 @@
       "question": "Which statement is TRUE about weight?",
       "options": [
         "Weight is the same on Earth and the Moon",
-        "Weight depends only on the object’s volume",
+        "Weight depends only on the object's volume",
         "Weight is caused by gravitational force",
         "Weight does not change with location"
       ],
       "correct": 2,
       "points": 15,
-      "explanation": "Weight is the force of gravity acting on an object’s mass. It changes depending on the strength of gravity (e.g., less on the Moon)."
+      "explanation": "Weight is the force of gravity acting on an object's mass. It changes depending on the strength of gravity (e.g., less on the Moon)."
     },
     {
       "question": "What happens when you add oil to the hinges of a squeaky door?",
@@ -104,16 +104,16 @@
       "explanation": "Concrete has more friction than ice, so more force is needed to overcome friction and start the box moving."
     },
     {
-      "question": "Which of the following shows that forces act in pairs?",
+      "question": "A tug-of-war team pulls with 300 N of force, but the rope does not move. What must be true?",
       "options": [
-        "A magnet attracting a paperclip",
-        "Pushing a wall and feeling it push back",
-        "An apple falling from a tree",
-        "A spring returning to its shape"
+        "No forces are acting on the rope",
+        "The other team is pulling with less than 300 N",
+        "The other team is also pulling with 300 N in the opposite direction",
+        "Gravity has stopped acting on the rope"
       ],
-      "correct": 1,
+      "correct": 2,
       "points": 20,
-      "explanation": "When you push a wall, you feel it pushing back on you—this illustrates Newton’s third law: forces always occur in equal and opposite pairs."
+      "explanation": "When the rope stays stationary, the forces are balanced. Both teams must be pulling with equal force in opposite directions."
     },
     {
       "question": "Friction is useful when:",

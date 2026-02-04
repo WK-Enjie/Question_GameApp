@@ -1,0 +1,251 @@
+{
+  "title": "Energy Forms and Uses: Photosynthesis (Advanced)",
+  "topic": "Photosynthesis and Respiration",
+  "subject": "Science",
+  "level": "Primary",
+  "grade": "P6",
+  "chapter": "Photosynthesis",
+  "worksheet": 3,
+  "questions": [
+    {
+      "question": "A plant with variegated leaves (green and white patches) was left in sunlight. After a starch test, only the green parts turned blue-black. What does this experiment prove?",
+      "options": [
+        "Light is not needed for photosynthesis",
+        "Chlorophyll is necessary for the production of starch",
+        "Water is only transported to green parts of a leaf",
+        "Carbon dioxide enters the leaf only through green patches"
+      ],
+      "correct": 1,
+      "points": 10,
+      "explanation": "Green parts contain chlorophyll while white parts do not. The blue-black result indicates starch is present, proving chlorophyll is a requirement for photosynthesis."
+    },
+    {
+      "question": "A student placed a water plant in a beaker and added baking soda (sodium hydrogen carbonate). What was the likely purpose of adding the baking soda?",
+      "options": [
+        "To increase the temperature of the water",
+        "To provide a constant supply of carbon dioxide",
+        "To act as a lubricant for oxygen bubbles",
+        "To prevent the plant from respiring"
+      ],
+      "correct": 1,
+      "points": 15,
+      "explanation": "Baking soda releases carbon dioxide into the water. This ensures carbon dioxide is not a limiting factor during an investigation of other requirements like light."
+    },
+    {
+      "question": "A graph shows that as light intensity increases, the rate of photosynthesis rises but eventually levels off. What is the most likely reason for it leveling off?",
+      "options": [
+        "The plant has stopped respiring",
+        "The light intensity has become too high and damaged the leaf",
+        "Another factor, such as carbon dioxide concentration, has become a limiting factor",
+        "The plant has run out of chlorophyll"
+      ],
+      "correct": 2,
+      "points": 15,
+      "explanation": "Once light is abundant, the rate is restricted by the availability of other requirements, such as carbon dioxide or water."
+    },
+    {
+      "question": "A plant was kept in a dark cupboard for 48 hours before an experiment. What is the scientific term and reason for this step?",
+      "options": [
+        "De-starching; to ensure any starch present was produced during the experiment",
+        "Respiration; to allow the plant to produce more oxygen",
+        "De-starching; to kill the leaf cells before testing",
+        "Hibernation; to reduce the amount of water the plant needs"
+      ],
+      "correct": 0,
+      "points": 15,
+      "explanation": "Keeping a plant in the dark forces it to use up stored starch (de-starching), ensuring that any starch found later was produced during the actual investigation."
+    },
+    {
+      "question": "Why is the Sun considered the primary source of energy for a carnivore that only eats other animals?",
+      "options": [
+        "The sun provides the light for carnivores to see their prey",
+        "Carnivores carry out photosynthesis in their skin",
+        "Energy from the Sun is captured by plants and passed through the food chain",
+        "The Sun's heat is the only way carnivores get energy"
+      ],
+      "correct": 2,
+      "points": 10,
+      "explanation": "The Sun is the primary source of energy. Plants capture light to make food, which is then passed to herbivores and eventually to carnivores."
+    },
+    {
+      "question": "In an experiment to test for starch, why is the leaf boiled in alcohol?",
+      "options": [
+        "To soften the leaf and make it easier to handle",
+        "To remove the chlorophyll so color changes are visible",
+        "To convert sugar into starch instantly",
+        "To disinfect the leaf from bacteria"
+      ],
+      "correct": 1,
+      "points": 15,
+      "explanation": "Chlorophyll is green and would mask the blue-black color of the iodine-starch reaction. Alcohol removes the pigment for clear results."
+    },
+    {
+      "question": "A sealed jar contains a green plant and is placed in the dark for 12 hours. What happens to the oxygen levels inside?",
+      "options": [
+        "Oxygen increases because the plant produces it",
+        "Oxygen decreases because the plant is respiring and not photosynthesizing",
+        "Oxygen stays the same because plants only respire in the day",
+        "Oxygen increases because the plant is breaking down CO2"
+      ],
+      "correct": 1,
+      "points": 15,
+      "explanation": "In the dark, photosynthesis stops, so oxygen is not produced. However, respiration continues, which consumes oxygen."
+    },
+    {
+      "question": "Which of the following describes the net gas exchange of a plant during a very bright, sunny afternoon?",
+      "options": [
+        "Takes in more oxygen than it releases",
+        "Releases more carbon dioxide than it takes in",
+        "Releases more oxygen than it takes in",
+        "Takes in equal amounts of oxygen and carbon dioxide"
+      ],
+      "correct": 2,
+      "points": 20,
+      "explanation": "In bright light, the rate of photosynthesis (releasing oxygen) is much higher than the rate of respiration (consuming oxygen)."
+    },
+    {
+      "question": "If the xylem (water-carrying tubes) of a plant is blocked, how will photosynthesis be affected?",
+      "options": [
+        "The rate will increase to compensate for less water",
+        "The rate will decrease or stop as water is a necessary requirement",
+        "The rate will stay the same as plants only need light and CO2",
+        "The plant will produce more sugar but less oxygen"
+      ],
+      "correct": 1,
+      "points": 15,
+      "explanation": "Water is a core requirement for photosynthesis. If the plant cannot transport water to the leaves, it cannot produce sugar."
+    },
+    {
+      "question": "A student set up two identical jars with plants. Jar A had a chemical that absorbs carbon dioxide; Jar B did not. Both were placed in sunlight. What is the independent variable?",
+      "options": [
+        "The amount of sunlight",
+        "The presence of carbon dioxide",
+        "The amount of starch produced",
+        "The type of plant used"
+      ],
+      "correct": 1,
+      "points": 15,
+      "explanation": "The independent variable is the factor being changed. In this case, it is the presence or absence of carbon dioxide."
+    },
+    {
+      "question": "What are the primary products of photosynthesis?",
+      "options": [
+        "Carbon dioxide and water",
+        "Sugar and oxygen",
+        "Starch and nitrogen",
+        "Light and heat"
+      ],
+      "correct": 1,
+      "points": 10,
+      "explanation": "Photosynthesis involves the production of sugar and oxygen from water and carbon dioxide in the presence of light."
+    },
+    {
+      "question": "A glowing splint is inserted into a test tube of gas collected from an underwater plant in sunlight. The splint relights. What gas is present?",
+      "options": [
+        "Carbon dioxide",
+        "Nitrogen",
+        "Hydrogen",
+        "Oxygen"
+      ],
+      "correct": 3,
+      "points": 10,
+      "explanation": "Oxygen supports combustion and is the only gas produced during photosynthesis that would cause a glowing splint to relight."
+    },
+    {
+      "question": "Which statement about respiration in plants is TRUE?",
+      "options": [
+        "It only happens at night",
+        "It happens all the time to carry out life processes",
+        "It is the process of making food from sunlight",
+        "It only happens in the roots, not the leaves"
+      ],
+      "correct": 1,
+      "points": 15,
+      "explanation": "Living things need energy from respiration to carry out life processes at all times, including plants."
+    },
+    {
+      "question": "A student coated the underside of all leaves on a plant with Vaseline. Why did the plant eventually die?",
+      "options": [
+        "Vaseline is poisonous to plants",
+        "The Vaseline blocked the sunlight from reaching the chlorophyll",
+        "The Vaseline blocked the stomata, preventing gas exchange for photosynthesis",
+        "The plant could no longer absorb water through its leaves"
+      ],
+      "correct": 2,
+      "points": 20,
+      "explanation": "Stomata are mostly on the underside of leaves. Blocking them prevents the intake of carbon dioxide, which is required for photosynthesis."
+    },
+    {
+      "question": "How do plants and animals differ in the way they obtain energy?",
+      "options": [
+        "Plants get energy from soil; animals get energy from water",
+        "Plants make their own food; animals must consume other organisms",
+        "Animals make food using moonlight; plants use sunlight",
+        "Plants do not need energy to stay alive"
+      ],
+      "correct": 1,
+      "points": 10,
+      "explanation": "Plants are producers that make food via photosynthesis, while animals are consumers that must eat to get energy."
+    },
+    {
+      "question": "Two plants were placed at different distances from a lamp. Plant X was 10cm away; Plant Y was 50cm away. Which plant will likely produce more oxygen bubbles?",
+      "options": [
+        "Plant Y, because it has more space",
+        "Both will produce the same amount",
+        "Plant X, because the light intensity is higher",
+        "Neither will produce bubbles in artificial light"
+      ],
+      "correct": 2,
+      "points": 15,
+      "explanation": "Higher light intensity generally increases the rate of photosynthesis, leading to more oxygen production."
+    },
+    {
+      "question": "What is the primary function of chlorophyll in photosynthesis?",
+      "options": [
+        "To absorb light energy",
+        "To take in carbon dioxide from the air",
+        "To store water for the plant",
+        "To turn the leaf brown in autumn"
+      ],
+      "correct": 0,
+      "points": 10,
+      "explanation": "Chlorophyll is the green pigment that captures light energy, which is then used to combine water and carbon dioxide into sugar."
+    },
+    {
+      "question": "A plant is placed in a jar with a chemical that turns from red to yellow when carbon dioxide levels increase. After 5 hours in the dark, what color will the chemical be?",
+      "options": [
+        "Red, because the plant used up all the CO2",
+        "Yellow, because the plant released CO2 during respiration",
+        "Clear, because photosynthesis removed the color",
+        "Blue, because oxygen was released"
+      ],
+      "correct": 1,
+      "points": 20,
+      "explanation": "In the dark, only respiration occurs, which releases carbon dioxide into the jar, changing the indicator color."
+    },
+    {
+      "question": "Which of the following is the correct word equation for photosynthesis?",
+      "options": [
+        "Sugar + Oxygen -> Water + Carbon Dioxide",
+        "Water + Carbon Dioxide + Light -> Sugar + Oxygen",
+        "Water + Oxygen -> Sugar + Carbon Dioxide",
+        "Sugar + Light -> Water + Oxygen"
+      ],
+      "correct": 1,
+      "points": 15,
+      "explanation": "Photosynthesis uses water and carbon dioxide with light energy to produce sugar and oxygen."
+    },
+    {
+      "question": "Why is sugar often converted into starch by the plant?",
+      "options": [
+        "Starch is easier to transport through the stem",
+        "Starch is the form of food used for respiration",
+        "Starch is an insoluble form used for storage",
+        "Starch attracts more pollinators to the plant"
+      ],
+      "correct": 2,
+      "points": 20,
+      "explanation": "Plants produce sugar (glucose) but convert it into starch for storage because starch is insoluble and does not affect the plant's water balance."
+    }
+  ]
+}

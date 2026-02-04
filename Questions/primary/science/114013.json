@@ -1,0 +1,191 @@
+{
+  "title": "Matter: Gases, Air Spaces & Displacement",
+  "topic": "Cycles in Matter and Water",
+  "subject": "Science",
+  "level": "Primary",
+  "grade": "P4",
+  "chapter": "Matter",
+  "worksheet": 3,
+  "questions": [
+    {
+      "question": "A student draws 20 ml of air into a syringe and seals the tip. When the plunger is pushed down, the air is compressed to 10 ml. What happens to the MASS of the air?",
+      "options": [
+        "The mass decreases to half",
+        "The mass stays the same",
+        "The mass doubles",
+        "The mass becomes zero"
+      ],
+      "correct": 1,
+      "points": 15,
+      "explanation": "Compressing air reduces its VOLUME but does NOT change its MASS. The same amount of air particles are now packed into a smaller space. Mass is the amount of matter, and no air was added or removed."
+    },
+    {
+      "question": "Using the same syringe from the previous question (20 ml compressed to 10 ml), what happens to the VOLUME of the air?",
+      "options": [
+        "The volume stays the same",
+        "The volume increases",
+        "The volume decreases",
+        "Volume cannot be measured for gases"
+      ],
+      "correct": 2,
+      "points": 15,
+      "explanation": "When the plunger is pushed down, the air particles are forced closer together. This reduces the space they occupy, so the VOLUME decreases from 20 ml to 10 ml. Gases can be compressed because their particles have large spaces between them."
+    },
+    {
+      "question": "Which statement correctly describes the properties of the three states of matter?",
+      "options": [
+        "Solid: definite shape and volume; Liquid: definite volume but no definite shape; Gas: no definite shape or volume",
+        "Solid: no definite shape; Liquid: definite shape; Gas: definite volume",
+        "Solid: no definite volume; Liquid: no definite shape; Gas: definite shape",
+        "Solid: definite volume only; Liquid: definite shape only; Gas: both definite"
+      ],
+      "correct": 0,
+      "points": 15,
+      "explanation": "Solids keep their shape and size. Liquids take the shape of their container but have a fixed amount (volume). Gases spread out to fill any container—they have no fixed shape or size."
+    },
+    {
+      "question": "A jar is completely filled with large marbles. When rice is poured in, the rice fills the spaces between the marbles without overflowing the jar. Why is this possible?",
+      "options": [
+        "The marbles shrink to make space",
+        "Air spaces exist between the marbles, and the smaller rice grains fill these gaps",
+        "Rice is a liquid that flows into empty spaces",
+        "The jar magically expands to hold more"
+      ],
+      "correct": 1,
+      "points": 15,
+      "explanation": "Solid objects like marbles do not pack perfectly—air occupies the gaps between them. Smaller solid particles (rice) can fit into these air spaces, allowing more matter to be packed into the same container volume."
+    },
+    {
+      "question": "A student places an empty cup upside down and pushes it straight down into a basin of water. Water does NOT enter the cup. What does this show?",
+      "options": [
+        "Air has no mass",
+        "Air occupies space and blocks the water from entering",
+        "Water is afraid of cups",
+        "The cup material repels water"
+      ],
+      "correct": 1,
+      "points": 15,
+      "explanation": "The cup is not empty—it contains air. Air is matter that occupies space. When pushed underwater, the trapped air fills the cup's space and prevents water from entering. This proves air takes up space."
+    },
+    {
+      "question": "Continuing from the previous question: When the student tilts the upside-down cup slightly underwater, bubbles rise and water enters the cup. What does this show?",
+      "options": [
+        "Air disappears when tilted",
+        "Air can be pushed out of a space, allowing water to take its place",
+        "Water is stronger than air",
+        "Tilting creates a vacuum"
+      ],
+      "correct": 1,
+      "points": 15,
+      "explanation": "Tilting the cup gives the trapped air a path to escape (seen as bubbles rising). Once the air leaves, its space becomes available, and water flows in to occupy that space. This shows that two types of matter cannot occupy the same space at the same time."
+    },
+    {
+      "question": "A deflated balloon is placed on a balance and shows a mass of 3 grams. After inflating it with air, the mass reads 3.5 grams. What does this prove?",
+      "options": [
+        "Air has no mass",
+        "Air has mass",
+        "Balloons get heavier when stretched",
+        "The balance is broken"
+      ],
+      "correct": 1,
+      "points": 15,
+      "explanation": "The inflated balloon weighs more because air was added. Since mass increased, air must have mass. This proves air (a gas) is matter."
+    },
+    {
+      "question": "Which of these can be easily compressed (reduced in volume) by pushing?",
+      "options": [
+        "A block of wood",
+        "A cup of water",
+        "Air inside a sealed syringe",
+        "A metal spoon"
+      ],
+      "correct": 2,
+      "points": 10,
+      "explanation": "Gases like air can be compressed because their particles are far apart with empty space between them. Solids (wood, metal) and liquids (water) have particles packed closely together and cannot be compressed easily."
+    },
+    {
+      "question": "A student pours sand into a measuring cup until it is full. After tapping the cup gently on the table, more sand can be added. Why?",
+      "options": [
+        "Tapping creates new sand particles",
+        "Tapping removes air, making the sand disappear",
+        "Tapping allows sand grains to settle closer together, reducing air spaces between them",
+        "Sand magically multiplies when tapped"
+      ],
+      "correct": 2,
+      "points": 15,
+      "explanation": "Dry sand grains have irregular shapes and do not pack perfectly—air fills the gaps. Tapping makes the grains rearrange into a tighter arrangement, reducing the air spaces. This creates room for more sand to be added."
+    },
+    {
+      "question": "A plastic bottle is half-filled with water and tightly capped. When squeezed, the bottle deforms but the water level does not drop. What does this show about liquids?",
+      "options": [
+        "Liquids have no mass",
+        "Liquids can be compressed easily",
+        "Liquids cannot be compressed—their volume stays constant",
+        "Water turns into gas when squeezed"
+      ],
+      "correct": 2,
+      "points": 15,
+      "explanation": "Unlike gases, liquids have particles packed closely together with little space between them. Squeezing cannot significantly reduce this space, so the water's volume stays the same. The bottle deforms instead."
+    },
+    {
+      "question": "Which container holds matter that has NO definite shape AND NO definite volume?",
+      "options": [
+        "A ice cube in a tray",
+        "Juice in a glass",
+        "Air in a balloon",
+        "Rice in a bowl"
+      ],
+      "correct": 2,
+      "points": 10,
+      "explanation": "Air (a gas) takes the shape of its container and expands to fill all available space. It has no fixed shape or volume. Solids (ice, rice) have both definite shape and volume. Liquids (juice) have definite volume but no definite shape."
+    },
+    {
+      "question": "A student has two identical sealed plastic bags. Bag X contains only air. Bag Y contains air plus a handful of dried beans. Which statement is TRUE?",
+      "options": [
+        "Bag X has more mass because air is heavy",
+        "Bag Y has more mass because it contains more matter (air + beans)",
+        "Both bags have the same mass because the bags are identical",
+        "Bag X has no mass because air is 'nothing'"
+      ],
+      "correct": 1,
+      "points": 15,
+      "explanation": "Mass is the amount of matter. Bag Y contains all the air that Bag X has PLUS the beans. More matter = more mass. This shows that both solids (beans) and gases (air) contribute to mass."
+    },
+    {
+      "question": "When a stone is lowered into a full cup of water, water spills out. Why?",
+      "options": [
+        "The stone absorbs water and releases it",
+        "The stone has magic powers",
+        "The stone occupies space, pushing out an equal volume of water",
+        "Water is scared of stones"
+      ],
+      "correct": 2,
+      "points": 15,
+      "explanation": "Matter occupies space. The stone takes up space inside the cup, so the water that was in that space must move out. The spilled water volume equals the stone's volume—this is called displacement."
+    },
+    {
+      "question": "A sponge feels light and can be squeezed flat. A rock of the same size feels heavy and cannot be squeezed. What is the main reason?",
+      "options": [
+        "Sponges are made of magic material",
+        "Sponges contain many air spaces that can be reduced when squeezed; rocks have almost no air spaces",
+        "Rocks are alive and resist squeezing",
+        "Sponges have negative mass"
+      ],
+      "correct": 1,
+      "points": 15,
+      "explanation": "A sponge has a porous structure filled with air pockets. Squeezing pushes the air out and reduces these spaces, decreasing volume. A rock has a compact structure with minimal air spaces, so its volume cannot be reduced by squeezing."
+    },
+    {
+      "question": "Which activity BEST shows that air occupies space?",
+      "options": [
+        "Watching clouds move in the sky",
+        "Blowing up a balloon until it expands",
+        "Feeling wind on your face",
+        "Hearing sounds travel through air"
+      ],
+      "correct": 1,
+      "points": 10,
+      "explanation": "As you blow air into a balloon, it expands because the added air occupies space inside. The more air added, the more space it takes up, making the balloon larger. This directly shows air is matter that occupies space."
+    }
+  ]
+}

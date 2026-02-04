@@ -212,16 +212,16 @@
       "explanation": "Lubricants like oil create a smooth layer between surfaces, reducing friction. This helps machines work more smoothly and efficiently."
     },
     {
-      "question": "A spring is stretched and then released. What energy conversion occurs?",
+      "question": "John wants to investigate how the mass of a block affects the force needed to move it. He adds weights to the block and pulls it across a wooden table. Which force is he measuring when the block starts to move?",
       "options": [
-        "Kinetic energy → Gravitational potential energy",
-        "Heat energy → Light energy",
-        "Chemical energy → Electrical energy",
-        "Elastic potential energy → Kinetic energy"
+        "Magnetic force",
+        "Gravitational force",
+        "Frictional force",
+        "Elastic spring force"
       ],
-      "correct": 3,
+      "correct": 2,
       "points": 15,
-      "explanation": "When stretched, a spring stores elastic potential energy. When released, this converts to kinetic energy as the spring moves back to its original position."
+      "explanation": "To move the block, John must apply a force that overcomes the frictional force acting between the block and the table surface. As mass increases, friction increases."
     },
     {
       "question": "Which statement about forces is scientifically accurate?",
