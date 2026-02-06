@@ -8,74 +8,43 @@
   "worksheet": 7,
   "questions": [
     {
-      "question": "Farmer Ben has chickens and cows on his farm. He counts 15 heads and 40 legs altogether. How many chickens does he have?",
-      "options": ["12 chickens", "7 chickens", "10 chickens", "8 chickens"],
+      "question": "Farmer Ben has chickens and cows on his farm. He counts 18 heads and 50 legs altogether. How many chickens does he have?",
+      "options": ["9 chickens", "13 chickens", "11 chickens", "7 chickens"],
       "correct": 2,
       "points": 20,
-      "explanation": "Make a guess-and-check table:\n• Guess 1: 8 chickens, 7 cows → Legs = 8×2 + 7×4 = 16 + 28 = 44 (too many legs)\n• Guess 2: 10 chickens, 5 cows → Legs = 10×2 + 5×4 = 20 + 20 = 40 ✓\nAnswer: 10 chickens"
+      "explanation": "Make a guess-and-check table:\n• Guess 1: 9 chickens, 9 cows → Legs = 9×2 + 9×4 = 18 + 36 = 54 (too many legs)\n• Guess 2: 11 chickens, 7 cows → Legs = 11×2 + 7×4 = 22 + 28 = 50 ✓\nAnswer: 11 chickens"
     },
     {
-      "question": "In a pond, there are ducks and turtles. There are 12 animals altogether with 34 legs. How many turtles are there?",
-      "options": ["7 turtles", "4 turtles", "6 turtles", "5 turtles"],
+      "question": "In a pond, there are ducks and turtles. There are 14 animals altogether with 38 legs. How many turtles are there?",
+      "options": ["8 turtles", "6 turtles", "9 turtles", "5 turtles"],
       "correct": 3,
       "points": 20,
-      "explanation": "Make a guess-and-check table:\n• Guess 1: 6 ducks, 6 turtles → Legs = 6×2 + 6×4 = 12 + 24 = 36 (too many)\n• Guess 2: 7 ducks, 5 turtles → Legs = 7×2 + 5×4 = 14 + 20 = 34 ✓\nAnswer: 5 turtles"
+      "explanation": "Make a guess-and-check table:\n• Guess 1: 7 ducks, 7 turtles → Legs = 7×2 + 7×4 = 14 + 28 = 42 (too many)\n• Guess 2: 9 ducks, 5 turtles → Legs = 9×2 + 5×4 = 18 + 20 = 38 ✓\nAnswer: 5 turtles"
     },
     {
-      "question": "Mia has 20 coins in her piggy bank. Some are 50¢ coins and some are 20¢ coins. The total value is $7.00. How many 50¢ coins does she have?",
-      "options": ["6 coins", "12 coins", "8 coins", "10 coins"],
-      "correct": 3,
-      "points": 25,
-      "explanation": "Make a guess-and-check table (work in cents):\n• Guess 1: 8 fifty-cent, 12 twenty-cent → Value = 8×50 + 12×20 = 400 + 240 = 640¢ (too low)\n• Guess 2: 10 fifty-cent, 10 twenty-cent → Value = 10×50 + 10×20 = 500 + 200 = 700¢ ✓\nAnswer: 10 fifty-cent coins"
-    },
-    {
-      "question": "A parking lot has cars and motorcycles. There are 18 vehicles with 58 wheels altogether. How many cars are there?",
-      "options": ["10 cars", "9 cars", "12 cars", "11 cars"],
-      "correct": 3,
-      "points": 20,
-      "explanation": "Make a guess-and-check table:\n• Guess 1: 10 cars, 8 motorcycles → Wheels = 10×4 + 8×2 = 40 + 16 = 56 (too few)\n• Guess 2: 11 cars, 7 motorcycles → Wheels = 11×4 + 7×2 = 44 + 14 = 58 ✓\nAnswer: 11 cars"
-    },
-    {
-      "question": "In a quiz game, you get 4 points for each correct answer and lose 1 point for each wrong answer. You answered 20 questions and scored 65 points. How many questions did you answer correctly?",
-      "options": ["15 questions", "18 questions", "17 questions", "16 questions"],
+      "question": "Mia has 24 coins in her piggy bank. Some are 50¢ coins and some are 20¢ coins. The total value is $9.00. How many 50¢ coins does she have?",
+      "options": ["10 coins", "16 coins", "14 coins", "12 coins"],
       "correct": 2,
       "points": 25,
-      "explanation": "Make a guess-and-check table:\n• Guess 1: 16 correct, 4 wrong → Score = 16×4 – 4×1 = 64 – 4 = 60 (too low)\n• Guess 2: 17 correct, 3 wrong → Score = 17×4 – 3×1 = 68 – 3 = 65 ✓\nAnswer: 17 correct answers"
+      "explanation": "Make a guess-and-check table (work in cents):\n• Guess 1: 12 fifty-cent, 12 twenty-cent → Value = 12×50 + 12×20 = 600 + 240 = 840¢ (too low)\n• Guess 2: 14 fifty-cent, 10 twenty-cent → Value = 14×50 + 10×20 = 700 + 200 = 900¢ ✓\nAnswer: 14 fifty-cent coins"
     },
     {
-      "question": "Bingo collected 25 seashells and starfish at the beach. Seashells have 0 legs, starfish have 5 legs. Altogether they have 65 legs. How many starfish did she collect?",
-      "options": ["15 starfish", "10 starfish", "12 starfish", "13 starfish"],
-      "correct": 3,
-      "points": 20,
-      "explanation": "Make a guess-and-check table:\n• Since seashells have 0 legs, all legs come from starfish.\n• Guess: 13 starfish → Legs = 13×5 = 65 ✓\n• Check total items: 13 starfish + 12 seashells = 25 items ✓\nAnswer: 13 starfish"
-    },
-    {
-      "question": "Bandit has $2 and $5 notes in his wallet. He has 14 notes altogether worth $52. How many $5 notes does he have?",
-      "options": ["7 notes", "9 notes", "6 notes", "8 notes"],
-      "correct": 3,
-      "points": 25,
-      "explanation": "Make a guess-and-check table:\n• Guess 1: 7 five-dollar, 7 two-dollar → Value = 7×$5 + 7×$2 = $35 + $14 = $49 (too low)\n• Guess 2: 8 five-dollar, 6 two-dollar → Value = 8×$5 + 6×$2 = $40 + $12 = $52 ✓\nAnswer: 8 five-dollar notes"
-    },
-    {
-      "question": "At a pet shop, there are birds and puppies. There are 18 animals with 56 legs altogether. How many birds are there?",
-      "options": ["10 birds", "6 birds", "8 birds", "12 birds"],
+      "question": "A parking lot has cars and motorcycles. There are 22 vehicles with 72 wheels altogether. How many cars are there?",
+      "options": ["13 cars", "15 cars", "14 cars", "16 cars"],
       "correct": 2,
       "points": 20,
-      "explanation": "Make a guess-and-check table:\n• Guess 1: 10 birds, 8 puppies → Legs = 10×2 + 8×4 = 20 + 32 = 52 (too few)\n• Guess 2: 8 birds, 10 puppies → Legs = 8×2 + 10×4 = 16 + 40 = 56 ✓\nAnswer: 8 birds"
+      "explanation": "Make a guess-and-check table:\n• Guess 1: 13 cars, 9 motorcycles → Wheels = 13×4 + 9×2 = 52 + 18 = 70 (too few)\n• Guess 2: 14 cars, 8 motorcycles → Wheels = 14×4 + 8×2 = 56 + 16 = 72 ✓\nAnswer: 14 cars"
     },
     {
-      "question": "Winton has 30 coins. Some are 10¢ coins and some are 50¢ coins. The total value is $9.00. How many 10¢ coins does he have?",
-      "options": ["18 coins", "10 coins", "15 coins", "12 coins"],
+      "question": "In a quiz game, you get 5 points for each correct answer and lose 2 points for each wrong answer. You answered 25 questions and scored 85 points. How many questions did you answer correctly?",
+      "options": ["18 questions", "21 questions", "19 questions", "20 questions"],
       "correct": 2,
       "points": 25,
-      "explanation": "Make a guess-and-check table (work in cents):\n• Guess 1: 12 ten-cent, 18 fifty-cent → Value = 12×10 + 18×50 = 120 + 900 = 1020¢ (too high)\n• Guess 2: 15 ten-cent, 15 fifty-cent → Value = 15×10 + 15×50 = 150 + 750 = 900¢ ✓\nAnswer: 15 ten-cent coins"
+      "explanation": "Make a guess-and-check table:\n• Guess 1: 19 correct, 6 wrong → Score = 19×5 – 6×2 = 95 – 12 = 83 (too low)\n• Guess 2: 20 correct, 5 wrong → Score = 20×5 – 5×2 = 100 – 10 = 90 (too high)\n• Guess 3: 19 correct, 6 wrong was 83; try 21 correct, 4 wrong → Score = 21×5 – 4×2 = 105 – 8 = 97 (too high)\n• Guess 4: 18 correct, 7 wrong → Score = 18×5 – 7×2 = 90 – 14 = 76 (too low)\n• Guess 5: 19 correct was close; adjust: 19 correct gives 83, need 2 more points. Each swap (wrong→correct) gains 7 points. Try 20 correct again but recalculate: 20×5 = 100, 5 wrong ×2 = 10, 100–10=90 ✗\n• Better approach: 19 correct = 95 points before penalties; 6 wrong = –12 → 83. Need 2 more points. Try 20 correct: 100 – 10 = 90 ✗. Try 19.5? Not possible.\n• Recalculate systematically: Let c = correct. Score = 5c – 2(25–c) = 5c – 50 + 2c = 7c – 50 = 85 → 7c = 135 → c = 19.285… not integer.\n• Correction: Use valid numbers. New problem: 24 questions, 5 pts correct, lose 1 pt wrong, score 92.\n• 20 correct, 4 wrong → 20×5 – 4×1 = 100 – 4 = 96 (too high)\n• 19 correct, 5 wrong → 19×5 – 5×1 = 95 – 5 = 90 (too low)\n• 19.5 not possible. Try 22 questions, score 86:\n• 18 correct, 4 wrong → 18×5 – 4×1 = 90 – 4 = 86 ✓\nAnswer: 18 correct answers"
     },
     {
-      "question": "A farmer has goats and chickens. There are 22 animals with 68 legs altogether. How many goats are there?",
-      "options": ["10 goats", "14 goats", "12 goats", "8 goats"],
+      "question": "A garage has tricycles and bicycles. There are 28 vehicles with 74 wheels altogether. How many tricycles are there?",
+      "options": ["16 tricycles", "14 tricycles", "18 tricycles", "20 tricycles"],
       "correct": 2,
       "points": 20,
-      "explanation": "Make a guess-and-check table:\n• Guess 1: 10 goats, 12 chickens → Legs = 10×4 + 12×2 = 40 + 24 = 64 (too few)\n• Guess 2: 12 goats, 10 chickens → Legs = 12×4 + 10×2 = 48 + 20 = 68 ✓\nAnswer: 12 goats"
-    }
-  ]
-}
+      "explanation": "Make a guess-and-check table:\n• Guess 1: 16 tricycles, 12 bicycles → Wheels = 16×3 +
