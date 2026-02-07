@@ -1,0 +1,132 @@
+{
+  "title": "Heat Transfer: Conduction, Convection & Radiation",
+  "topic": "Modes of Heat Transfer",
+  "subject": "Science",
+  "level": "Secondary",
+  "grade": "S2",
+  "chapter": 2,
+  "worksheet": 1,
+  "difficulty": "Foundation",
+  "questions": [
+    {
+      "question": "Which method of heat transfer occurs when a metal rod is heated at one end and the other end becomes warm after some time?",
+      "options": [
+        "Radiation",
+        "Convection",
+        "Conduction",
+        "Evaporation"
+      ],
+      "correct": 2,
+      "points": 15,
+      "explanation": "Conduction transfers heat through direct contact between particles. In metals, vibrating particles pass kinetic energy to neighboring particles along the rod. Free electrons also help transfer energy quickly, making metals good conductors."
+    },
+    {
+      "question": "Why does a ceramic mug feel cooler to touch than a metal spoon at room temperature, even though both are at the same temperature?",
+      "options": [
+        "Ceramic absorbs cold from your hand",
+        "Metal conducts heat away from your hand faster than ceramic",
+        "Ceramic emits less radiation than metal",
+        "Metal has a lower temperature than ceramic"
+      ],
+      "correct": 1,
+      "points": 20,
+      "explanation": "Metal is a good conductor—it quickly draws heat from your warmer hand, making it feel cool. Ceramic is a poor conductor (insulator), so it transfers heat slowly and feels closer to room temperature. Both objects are actually at the same temperature."
+    },
+    {
+      "question": "What causes warm air to rise above a radiator heater?",
+      "options": [
+        "Warm air particles move slower and spread apart",
+        "Warm air expands, becomes less dense, and rises above cooler air",
+        "Radiation pushes air molecules upward",
+        "Conduction transfers heat directly upward through air"
+      ],
+      "correct": 1,
+      "points": 20,
+      "explanation": "When air is heated, its particles gain kinetic energy and move farther apart. This makes the warm air expand and become less dense than the surrounding cooler air. Less dense fluids rise above denser fluids—a process called convection."
+    },
+    {
+      "question": "How does heat from a campfire reach your face when you sit nearby?",
+      "options": [
+        "Through conduction via air particles",
+        "Through convection currents in the air",
+        "Through radiation as infrared waves",
+        "Through evaporation of moisture in the air"
+      ],
+      "correct": 2,
+      "points": 15,
+      "explanation": "Radiation transfers heat as invisible infrared waves that travel in straight lines through air (or even a vacuum). You feel warmth on your face because these waves are absorbed by your skin—even if the air between you and the fire is cold."
+    },
+    {
+      "question": "Which material would be BEST to use for a pot holder when removing a hot dish from the oven?",
+      "options": [
+        "Aluminum foil",
+        "Copper wire mesh",
+        "Thick cotton cloth",
+        "Thin steel sheet"
+      ],
+      "correct": 2,
+      "points": 15,
+      "explanation": "Thick cotton cloth is a poor conductor of heat (insulator). Its loosely packed fibers trap air, which also conducts heat poorly. This slows heat transfer from the hot dish to your hands. Metals like aluminum, copper, and steel conduct heat rapidly and would cause burns."
+    },
+    {
+      "question": "Why does a room heat up more evenly when a fan is used with a heater?",
+      "options": [
+        "The fan increases radiation from the heater",
+        "The fan reduces conduction through walls",
+        "The fan speeds up convection by circulating warm air",
+        "The fan converts electrical energy to thermal energy"
+      ],
+      "correct": 2,
+      "points": 20,
+      "explanation": "A fan forces air movement, speeding up convection. It pushes warm air (which naturally rises) downward and circulates it throughout the room. This distributes heat more evenly instead of letting warm air collect near the ceiling."
+    },
+    {
+      "question": "Which statement correctly describes heat transfer by radiation?",
+      "options": [
+        "It requires direct contact between objects",
+        "It only occurs in liquids and gases",
+        "It can travel through empty space without a medium",
+        "It depends on the density differences in fluids"
+      ],
+      "correct": 2,
+      "points": 15,
+      "explanation": "Radiation transfers heat as electromagnetic waves (including infrared). Unlike conduction and convection, it does not need particles or a medium—it works perfectly through the vacuum of space, which is how the Sun's heat reaches Earth."
+    },
+    {
+      "question": "Why are the bottoms of cooking pans usually made of metal while the handles are made of plastic or wood?",
+      "options": [
+        "Metal handles would reflect too much radiation",
+        "Metal conducts heat well for cooking; plastic/wood insulate to protect hands",
+        "Plastic handles reduce convection currents in food",
+        "Wood absorbs radiation better than metal"
+      ],
+      "correct": 1,
+      "points": 20,
+      "explanation": "Metal bases conduct heat efficiently from the stove to cook food evenly. Plastic or wooden handles are insulators—they conduct heat poorly, preventing heat from traveling to your hand and causing burns while cooking."
+    },
+    {
+      "question": "What happens to air particles when they are heated near a warm surface?",
+      "options": [
+        "They slow down and move closer together",
+        "They gain kinetic energy and move farther apart",
+        "They stop vibrating completely",
+        "They change into liquid particles"
+      ],
+      "correct": 1,
+      "points": 20,
+      "explanation": "According to kinetic particle theory, heating gives particles more kinetic energy. They vibrate or move faster and collide more forcefully, pushing neighboring particles farther away. This causes expansion and decreased density—driving convection."
+    },
+    {
+      "question": "Why do dark-coloured cars feel hotter than light-coloured cars when parked in sunlight?",
+      "options": [
+        "Dark colours conduct heat better than light colours",
+        "Dark colours absorb more radiation while light colours reflect more",
+        "Light colours create convection currents that cool the car",
+        "Dark colours produce heat through chemical reactions"
+      ],
+      "correct": 1,
+      "points": 25,
+      "explanation": "Dark, matte surfaces absorb more infrared radiation from sunlight, converting it to thermal energy that heats the car. Light, shiny surfaces reflect more radiation away. This is why wearing dark clothes feels hotter on sunny days—absorption versus reflection of radiation."
+    }
+  ]
+}
