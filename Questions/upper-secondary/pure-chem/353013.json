@@ -1,0 +1,131 @@
+{
+  "title": "Experimental Chemistry: Advanced Separation Techniques",
+  "topic": "Methods of Purification and Analysis",
+  "subject": "Chemistry",
+  "level": "Upper Secondary",
+  "grade": "Sec 3 Pure Chemistry",
+  "chapter": 1,
+  "worksheet": 3,
+  "questions": [
+    {
+      "question": "A student runs two chromatograms using different solvents. The same dye has Rf = 0.35 in solvent A and Rf = 0.65 in solvent B. What can be concluded about the dye's solubility?",
+      "options": [
+        "The dye is less soluble in solvent B than in solvent A",
+        "The dye is more soluble in solvent B than in solvent A",
+        "Solubility cannot be compared across different solvents",
+        "The dye is insoluble in both solvents"
+      ],
+      "correct": 1,
+      "points": 10,
+      "explanation": "A higher Rf value (0.65 in solvent B) indicates the dye traveled further, meaning it has greater solubility in solvent B and spends more time in the mobile phase compared to solvent A (Rf = 0.35)."
+    },
+    {
+      "question": "In a chromatogram of black ink, three colored spots appear with Rf values of 0.22, 0.58, and 0.89. What does this indicate about the ink?",
+      "options": [
+        "The ink is a pure substance",
+        "The ink contains three different colored components",
+        "The ink has decomposed during chromatography",
+        "Only one component is present but it split into three spots"
+      ],
+      "correct": 1,
+      "points": 10,
+      "explanation": "Multiple spots with different Rf values indicate the ink is a mixture containing three distinct colored components that separated based on differences in solubility and affinity for the paper."
+    },
+    {
+      "question": "A mixture contains two colorless compounds. How can paper chromatography still be used to separate and identify them?",
+      "options": [
+        "By using a locating agent such as ninhydrin or UV light to visualize spots",
+        "By adding food coloring to the mixture before separation",
+        "Paper chromatography only works for colored substances",
+        "By measuring temperature changes during separation"
+      ],
+      "correct": 0,
+      "points": 15,
+      "explanation": "Colorless compounds can be detected after chromatography using locating agents (e.g., ninhydrin for amino acids) or UV light if the compounds fluoresce, allowing visualization and Rf calculation."
+    },
+    {
+      "question": "Calculate the Rf value when a pigment travels 4.2 cm and the solvent front travels 14.0 cm from the origin.",
+      "options": [
+        "0.30",
+        "3.33",
+        "9.8",
+        "0.42"
+      ],
+      "correct": 0,
+      "points": 10,
+      "explanation": "Rf = distance traveled by solute / distance traveled by solvent = 4.2 cm / 14.0 cm = 0.30. Rf values are dimensionless and always less than 1."
+    },
+    {
+      "question": "Why is it important to use the same solvent system when comparing Rf values for identification?",
+      "options": [
+        "Different solvents change the molecular weight of compounds",
+        "Rf values are only meaningful under identical experimental conditions",
+        "Solvents affect the color of compounds",
+        "Different solvents require different paper types"
+      ],
+      "correct": 1,
+      "points": 10,
+      "explanation": "Rf values depend on the specific interactions between solute, solvent, and stationary phase. Changing the solvent alters these interactions, making Rf values incomparable across different solvent systems."
+    },
+    {
+      "question": "Which statement correctly describes the role of the fractionating column in fractional distillation?",
+      "options": [
+        "It increases the pressure to raise boiling points",
+        "It provides surface area for repeated condensation and vaporization",
+        "It filters solid impurities from the vapor",
+        "It cools the vapor instantly to liquid"
+      ],
+      "correct": 1,
+      "points": 10,
+      "explanation": "The fractionating column contains packing material that provides surface area for vapors to condense and re-vaporize multiple times, enhancing separation of components with close boiling points."
+    },
+    {
+      "question": "During fractional distillation of crude oil, which fraction is collected at the TOP of the fractionating column?",
+      "options": [
+        "Bitumen (highest boiling point)",
+        "Kerosene (medium boiling point)",
+        "Refinery gases (lowest boiling point)",
+        "Diesel oil (high boiling point)"
+      ],
+      "correct": 2,
+      "points": 10,
+      "explanation": "Components with the lowest boiling points (refinery gases like methane, ethane) remain gaseous longest and rise to the top of the column before condensing, while higher-boiling fractions condense at lower, hotter levels."
+    },
+    {
+      "question": "A student obtains an Rf value of 1.20 for a compound. What error most likely occurred?",
+      "options": [
+        "The solvent front was measured incorrectly",
+        "The compound decomposed during the experiment",
+        "The origin line was drawn too thick",
+        "The paper was not dried properly"
+      ],
+      "correct": 0,
+      "points": 10,
+      "explanation": "Rf values cannot exceed 1.0 because the solute cannot travel further than the solvent front. An Rf > 1 indicates measurement error—likely the solvent front distance was recorded as smaller than the actual distance traveled."
+    },
+    {
+      "question": "Which purification method would be most appropriate for obtaining pure water from seawater?",
+      "options": [
+        "Paper chromatography",
+        "Fractional distillation",
+        "Simple distillation",
+        "Filtration"
+      ],
+      "correct": 2,
+      "points": 10,
+      "explanation": "Seawater contains dissolved salts (non-volatile) and water (volatile). Simple distillation effectively separates them since only water vaporizes and condenses, leaving salts behind. Fractional distillation is unnecessary as there is only one volatile component."
+    },
+    {
+      "question": "Two samples are spotted side-by-side on chromatography paper: an unknown mixture and a pure reference compound. After development, one spot from the mixture aligns exactly with the reference spot (same Rf and color). What conclusion can be drawn?",
+      "options": [
+        "The mixture contains the reference compound as one component",
+        "The mixture is identical to the reference compound",
+        "The reference compound contaminated the mixture",
+        "Both samples are pure substances"
+      ],
+      "correct": 0,
+      "points": 15,
+      "explanation": "When a spot from a mixture has identical Rf value and appearance to a pure reference compound run on the same chromatogram, it provides strong evidence that the mixture contains that compound as one of its components."
+    }
+  ]
+}

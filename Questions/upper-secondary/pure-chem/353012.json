@@ -1,0 +1,131 @@
+{
+  "title": "Experimental Chemistry: Chromatography and Fractional Distillation",
+  "topic": "Methods of Purification and Analysis",
+  "subject": "Chemistry",
+  "level": "Upper Secondary",
+  "grade": "Sec 3 Pure Chemistry",
+  "chapter": 1,
+  "worksheet": 2,
+  "questions": [
+    {
+      "question": "In paper chromatography, why do different components of a mixture separate based on their solubility in the solvent?",
+      "options": [
+        "More soluble components travel slower due to stronger attraction to the paper",
+        "More soluble components travel further as they spend more time in the mobile phase",
+        "Less soluble components vaporize first during the process",
+        "Solubility has no effect on separation in chromatography"
+      ],
+      "correct": 1,
+      "points": 10,
+      "explanation": "Components with higher solubility in the solvent (mobile phase) spend more time dissolved in it and travel further up the paper, while less soluble components interact more with the stationary phase (paper) and move slower."
+    },
+    {
+      "question": "A chromatogram shows a solvent front 15.0 cm from the origin and a dye spot 9.0 cm from the origin. What is the Rf value of the dye?",
+      "options": [
+        "0.60",
+        "1.67",
+        "6.0",
+        "24.0"
+      ],
+      "correct": 0,
+      "points": 10,
+      "explanation": "Rf = distance traveled by solute / distance traveled by solvent = 9.0 cm / 15.0 cm = 0.60. Rf values are always between 0 and 1."
+    },
+    {
+      "question": "How can Rf values be used to identify unknown substances in a chromatogram?",
+      "options": [
+        "By comparing the color of the spots with known samples",
+        "By matching Rf values to reference data obtained under identical conditions",
+        "By measuring the spot intensity relative to the solvent front",
+        "By calculating the molecular weight from the Rf value"
+      ],
+      "correct": 1,
+      "points": 10,
+      "explanation": "Rf values are characteristic for a substance under specific conditions (same solvent, temperature, paper type). Identification is done by comparing unknown Rf values with reference data from known standards run on the same chromatogram."
+    },
+    {
+      "question": "Which application best demonstrates the use of paper chromatography for analysis?",
+      "options": [
+        "Purifying drinking water by removing impurities",
+        "Separating crude oil into useful fractions like gasoline",
+        "Analyzing food dyes in candy to detect artificial colors",
+        "Drying wet ethanol after distillation"
+      ],
+      "correct": 2,
+      "points": 15,
+      "explanation": "Paper chromatography is ideal for separating and identifying colored components in mixtures like food dyes, where each dye travels a different distance based on solubility and can be identified by Rf values."
+    },
+    {
+      "question": "Why is fractional distillation preferred over simple distillation for separating ethanol (bp 78°C) from water (bp 100°C)?",
+      "options": [
+        "Because ethanol and water form an azeotrope that cannot be separated",
+        "Because the fractionating column provides multiple vaporization-condensation cycles",
+        "Because simple distillation requires a vacuum setup",
+        "Because fractional distillation heats the mixture more quickly"
+      ],
+      "correct": 1,
+      "points": 10,
+      "explanation": "The fractionating column in fractional distillation creates temperature gradients that allow repeated condensation and vaporization, improving separation of liquids with close boiling points (like ethanol and water) compared to simple distillation."
+    },
+    {
+      "question": "In fractional distillation of crude oil, what determines the fraction collected at different heights of the fractionating column?",
+      "options": [
+        "The density of the hydrocarbons",
+        "The boiling points of the components",
+        "The molecular size of the compounds",
+        "The solubility in water"
+      ],
+      "correct": 1,
+      "points": 10,
+      "explanation": "Components with higher boiling points condense at lower (hotter) levels of the column, while lower-boiling components rise higher before condensing. Fractions are collected based on boiling point ranges."
+    },
+    {
+      "question": "Which mixture would be most effectively purified using fractional distillation?",
+      "options": [
+        "Sand and salt dissolved in water",
+        "Iodine and sand (sublimation mixture)",
+        "Ethanol and water (miscible liquids)",
+        "Oil and water (immiscible liquids)"
+      ],
+      "correct": 2,
+      "points": 10,
+      "explanation": "Ethanol and water are miscible liquids with different boiling points (78°C vs 100°C). Fractional distillation separates them based on volatility, whereas immiscible mixtures (oil/water) use separating funnels, and solids use filtration."
+    },
+    {
+      "question": "Two dyes in a mixture have Rf values of 0.25 and 0.80. Which dye is more soluble in the solvent used?",
+      "options": [
+        "The dye with Rf = 0.25",
+        "The dye with Rf = 0.80",
+        "Both are equally soluble",
+        "Solubility cannot be determined from Rf"
+      ],
+      "correct": 1,
+      "points": 10,
+      "explanation": "A higher Rf value (0.80) indicates the dye traveled further, meaning it spent more time in the mobile phase (solvent) and is therefore more soluble in the solvent compared to the dye with Rf = 0.25."
+    },
+    {
+      "question": "Why must the solvent level be below the origin line in paper chromatography?",
+      "options": [
+        "To prevent the solvent from evaporating too quickly",
+        "To avoid dissolving the sample spots directly into the solvent reservoir",
+        "To ensure the paper absorbs solvent evenly",
+        "To reduce the risk of fire with flammable solvents"
+      ],
+      "correct": 1,
+      "points": 10,
+      "explanation": "If the solvent level is above the origin line, the sample spots would dissolve directly into the solvent reservoir instead of being carried up the paper by capillary action, ruining the separation."
+    },
+    {
+      "question": "A chromatogram shows three spots with Rf values of 0.15, 0.45, and 0.75. If the solvent front is 12.0 cm from the origin, what is the distance traveled by the spot with Rf = 0.45?",
+      "options": [
+        "5.4 cm",
+        "4.5 cm",
+        "2.7 cm",
+        "9.0 cm"
+      ],
+      "correct": 0,
+      "points": 10,
+      "explanation": "Distance traveled by solute = Rf × distance traveled by solvent = 0.45 × 12.0 cm = 5.4 cm."
+    }
+  ]
+}
