@@ -1,0 +1,126 @@
+{
+  "title": "Factors and Multiples (Foundation)",
+  "topic": "Whole Numbers",
+  "subject": "Mathematics",
+  "level": "Primary",
+  "grade": "P4",
+  "chapter": 4,
+  "worksheet": 1,
+  "questions": [
+    {
+      "question": "Which of the following is a factor of 24?",
+      "options": ["5", "7", "8", "9"],
+      "correct": 2,
+      "points": 10,
+      "explanation": "A factor divides a number exactly. 24 ÷ 8 = 3, so 8 is a factor of 24. 24 ÷ 5 = 4.8, 24 ÷ 7 = 3.428..., 24 ÷ 9 = 2.666..., so 5, 7, and 9 are not factors."
+    },
+    {
+      "question": "What is the 4th multiple of 6?",
+      "options": ["18", "20", "24", "30"],
+      "correct": 2,
+      "points": 10,
+      "explanation": "Multiples of 6: 6×1=6, 6×2=12, 6×3=18, 6×4=24. So the 4th multiple is 24."
+    },
+    {
+      "question": "Which number is a common factor of 12 and 18?",
+      "options": ["4", "5", "6", "8"],
+      "correct": 2,
+      "points": 12,
+      "explanation": "Factors of 12: 1, 2, 3, 4, 6, 12. Factors of 18: 1, 2, 3, 6, 9, 18. Common factors are 1, 2, 3, 6. From options, 6 is a common factor."
+    },
+    {
+      "question": "What is the smallest common multiple of 4 and 5?",
+      "options": ["10", "15", "20", "25"],
+      "correct": 2,
+      "points": 12,
+      "explanation": "Multiples of 4: 4, 8, 12, 16, 20, 24... Multiples of 5: 5, 10, 15, 20, 25... The smallest number in both lists is 20."
+    },
+    {
+      "question": "How many factors does the number 16 have?",
+      "options": ["3", "4", "5", "6"],
+      "correct": 2,
+      "points": 12,
+      "explanation": "Factors of 16 are numbers that divide 16 exactly: 1, 2, 4, 8, 16. That's 5 factors."
+    },
+    {
+      "question": "Which of these numbers is a multiple of 9?",
+      "options": ["27", "35", "42", "50"],
+      "correct": 0,
+      "points": 10,
+      "explanation": "27 ÷ 9 = 3, so 27 is a multiple of 9. 35÷9=3.88, 42÷9=4.66, 50÷9=5.55, so they are not multiples."
+    },
+    {
+      "question": "What is the highest common factor (HCF) of 8 and 12?",
+      "options": ["2", "4", "6", "8"],
+      "correct": 1,
+      "points": 12,
+      "explanation": "Factors of 8: 1, 2, 4, 8. Factors of 12: 1, 2, 3, 4, 6, 12. Common factors are 1, 2, 4. The highest is 4."
+    },
+    {
+      "question": "The number 21 is a multiple of which two numbers?",
+      "options": ["3 and 5", "3 and 7", "4 and 5", "6 and 7"],
+      "correct": 1,
+      "points": 10,
+      "explanation": "21 ÷ 3 = 7 and 21 ÷ 7 = 3, so 21 is a multiple of both 3 and 7."
+    },
+    {
+      "question": "What is the smallest factor of any number?",
+      "options": ["0", "1", "The number itself", "2"],
+      "correct": 1,
+      "points": 10,
+      "explanation": "The smallest factor of any number is always 1, because 1 divides every number exactly."
+    },
+    {
+      "question": "Which statement about prime numbers is TRUE?",
+      "options": [
+        "All prime numbers are odd",
+        "1 is a prime number",
+        "2 is a prime number",
+        "Prime numbers have more than 2 factors"
+      ],
+      "correct": 2,
+      "points": 12,
+      "explanation": "2 is a prime number because it has exactly two factors: 1 and 2. Statement A is false (2 is even), B is false (1 has only 1 factor), D is false (primes have exactly 2 factors)."
+    },
+    {
+      "question": "What is the least common multiple (LCM) of 3 and 8?",
+      "options": ["16", "18", "24", "32"],
+      "correct": 2,
+      "points": 12,
+      "explanation": "Multiples of 3: 3, 6, 9, 12, 15, 18, 21, 24... Multiples of 8: 8, 16, 24, 32... The smallest common multiple is 24."
+    },
+    {
+      "question": "A number has factors 1, 3, 7, and 21. What is the number?",
+      "options": ["14", "21", "28", "42"],
+      "correct": 1,
+      "points": 10,
+      "explanation": "If 1, 3, 7, and 21 are factors, then the number must be 21. Check: 21 ÷ 1 = 21, 21 ÷ 3 = 7, 21 ÷ 7 = 3, 21 ÷ 21 = 1."
+    },
+    {
+      "question": "Which number is NOT a multiple of 4?",
+      "options": ["16", "22", "28", "36"],
+      "correct": 1,
+      "points": 10,
+      "explanation": "16÷4=4, 28÷4=7, 36÷4=9, but 22÷4=5.5, so 22 is not a multiple of 4."
+    },
+    {
+      "question": "What are the first three multiples of 7?",
+      "options": [
+        "7, 14, 28",
+        "7, 14, 21",
+        "14, 21, 28",
+        "7, 21, 35"
+      ],
+      "correct": 1,
+      "points": 10,
+      "explanation": "First three multiples of 7: 7×1=7, 7×2=14, 7×3=21. So 7, 14, 21."
+    },
+    {
+      "question": "The HCF of two numbers is 3. If one number is 12, which could be the other number?",
+      "options": ["9", "15", "21", "All of the above"],
+      "correct": 3,
+      "points": 15,
+      "explanation": "HCF of 12 and 9 is 3. HCF of 12 and 15 is 3. HCF of 12 and 21 is 3. Therefore all options are valid, so the answer is 'All of the above'."
+    }
+  ]
+}

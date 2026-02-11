@@ -1,0 +1,116 @@
+{
+  "title": "HCF, LCM and Number Puzzles",
+  "topic": "Whole Numbers",
+  "subject": "Mathematics",
+  "level": "Primary",
+  "grade": "P4",
+  "chapter": 4,
+  "worksheet": 2,
+  "questions": [
+    {
+      "question": "What is the Highest Common Factor (HCF) of 12 and 18?",
+      "options": ["3", "4", "6", "9"],
+      "correct": 2,
+      "points": 10,
+      "explanation": "Factors of 12: 1, 2, 3, 4, 6, 12. Factors of 18: 1, 2, 3, 6, 9, 18. Common factors: 1, 2, 3, 6. The highest is 6."
+    },
+    {
+      "question": "What is the Lowest Common Multiple (LCM) of 4 and 6?",
+      "options": ["12", "18", "24", "36"],
+      "correct": 0,
+      "points": 10,
+      "explanation": "Multiples of 4: 4, 8, 12, 16, 20... Multiples of 6: 6, 12, 18, 24... The smallest common multiple is 12."
+    },
+    {
+      "question": "A number is between 30 and 50. It can be divided exactly by 8 and also by 6. What is the number?",
+      "options": ["36", "40", "48", "42"],
+      "correct": 2,
+      "points": 12,
+      "explanation": "Find common multiples of 6 and 8. LCM of 6 and 8 is 24. Multiples of 24: 24, 48, 72... Between 30 and 50, the number is 48. Check: 48 ÷ 8 = 6, 48 ÷ 6 = 8."
+    },
+    {
+      "question": "What is the HCF of 15 and 25?",
+      "options": ["3", "5", "15", "25"],
+      "correct": 1,
+      "points": 10,
+      "explanation": "Factors of 15: 1, 3, 5, 15. Factors of 25: 1, 5, 25. Common factors: 1, 5. The highest is 5."
+    },
+    {
+      "question": "Two bells ring at the same time. Bell A rings every 5 minutes. Bell B rings every 6 minutes. After how many minutes will they ring together again?",
+      "options": ["20 minutes", "30 minutes", "40 minutes", "50 minutes"],
+      "correct": 1,
+      "points": 12,
+      "explanation": "Find the LCM of 5 and 6. 5 × 6 = 30 (since 5 and 6 have no common factors). So they ring together every 30 minutes."
+    },
+    {
+      "question": "I am thinking of a number. When I divide it into groups of 5, I have 2 left over. When I divide it into groups of 6, I have 3 left over. What is the smallest possible number?",
+      "options": ["27", "33", "57", "63"],
+      "correct": 0,
+      "points": 15,
+      "explanation": "The number has remainder 2 when ÷5, and remainder 3 when ÷6. Check options: 27 ÷ 5 = 5 R2, 27 ÷ 6 = 4 R3 ✓. 33 ÷ 5 = 6 R3 ✗. 27 is the smallest that fits both conditions."
+    },
+    {
+      "question": "What is the LCM of 8 and 12?",
+      "options": ["24", "36", "48", "96"],
+      "correct": 0,
+      "points": 10,
+      "explanation": "Multiples of 8: 8, 16, 24, 32, 40... Multiples of 12: 12, 24, 36, 48... The smallest common multiple is 24."
+    },
+    {
+      "question": "A number is between 20 and 40. It is a common multiple of 3 and 4. What is the LARGEST such number?",
+      "options": ["24", "28", "32", "36"],
+      "correct": 3,
+      "points": 12,
+      "explanation": "Common multiples of 3 and 4 are multiples of 12 (LCM of 3 and 4 is 12). Multiples of 12 between 20 and 40 are 24 and 36. The largest is 36."
+    },
+    {
+      "question": "What is the HCF of 24 and 36?",
+      "options": ["6", "8", "12", "18"],
+      "correct": 2,
+      "points": 10,
+      "explanation": "Factors of 24: 1, 2, 3, 4, 6, 8, 12, 24. Factors of 36: 1, 2, 3, 4, 6, 9, 12, 18, 36. Common factors: 1, 2, 3, 4, 6, 12. The highest is 12."
+    },
+    {
+      "question": "Ribbons come in two lengths: 18 cm and 24 cm. Jenny wants to cut them into equal pieces without any leftover. What is the greatest possible length of each piece?",
+      "options": ["2 cm", "3 cm", "6 cm", "9 cm"],
+      "correct": 2,
+      "points": 12,
+      "explanation": "Find the HCF of 18 and 24. Factors of 18: 1, 2, 3, 6, 9, 18. Factors of 24: 1, 2, 3, 4, 6, 8, 12, 24. Highest common factor is 6. So the greatest possible length is 6 cm."
+    },
+    {
+      "question": "I am thinking of a number. When divided by 4, the remainder is 1. When divided by 5, the remainder is 2. The number is less than 30. What is the number?",
+      "options": ["13", "17", "22", "27"],
+      "correct": 1,
+      "points": 15,
+      "explanation": "Check options: 17 ÷ 4 = 4 R1, 17 ÷ 5 = 3 R2 ✓. 13 ÷ 4 = 3 R1, but 13 ÷ 5 = 2 R3 ✗. 22 ÷ 4 = 5 R2 ✗. 27 ÷ 4 = 6 R3 ✗. So the number is 17."
+    },
+    {
+      "question": "What is the LCM of 5, 6, and 10?",
+      "options": ["20", "30", "40", "60"],
+      "correct": 1,
+      "points": 12,
+      "explanation": "Multiples of 5: 5, 10, 15, 20, 25, 30... Multiples of 6: 6, 12, 18, 24, 30... Multiples of 10: 10, 20, 30... The smallest common multiple is 30."
+    },
+    {
+      "question": "Two numbers have an HCF of 4 and an LCM of 24. If one number is 8, what is the other number?",
+      "options": ["12", "16", "20", "24"],
+      "correct": 0,
+      "points": 15,
+      "explanation": "HCF × LCM = Product of the two numbers. So 4 × 24 = 96. If one number is 8, the other is 96 ÷ 8 = 12."
+    },
+    {
+      "question": "A number is between 50 and 70. It is a multiple of 7 and also a multiple of 3. What is the number?",
+      "options": ["56", "63", "66", "70"],
+      "correct": 1,
+      "points": 12,
+      "explanation": "Common multiples of 3 and 7 are multiples of 21 (LCM of 3 and 7 is 21). Multiples of 21: 21, 42, 63, 84... Between 50 and 70, the number is 63."
+    },
+    {
+      "question": "Students can be grouped into teams of 6 or teams of 8 with no students left out. What is the smallest possible number of students?",
+      "options": ["24", "36", "48", "64"],
+      "correct": 0,
+      "points": 12,
+      "explanation": "Find the LCM of 6 and 8. LCM of 6 and 8 is 24. So the smallest number that can be divided exactly into groups of 6 or 8 is 24."
+    }
+  ]
+}
