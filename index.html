@@ -3,255 +3,318 @@
 <head>
     <meta charset="UTF-8">
     <meta name="viewport" content="width=device-width, initial-scale=1.0">
-    <title>Auto-Quiz Game</title>
+    <title>🧧 CNY Blackjack Quiz Game</title>
     <link rel="stylesheet" href="style.css">
     <link rel="stylesheet" href="https://cdnjs.cloudflare.com/ajax/libs/font-awesome/6.4.0/css/all.min.css">
 </head>
 <body>
+    <!-- Lantern Decorations -->
+    <div class="lantern" style="top: 20px; left: 5%;">🏮</div>
+    <div class="lantern" style="top: 40px; right: 5%;">🏮</div>
+    <div class="lantern" style="top: 80px; left: 15%;">🏮</div>
+    <div class="lantern" style="top: 60px; right: 15%;">🏮</div>
+
     <div class="container">
-        <!-- PIN Screen -->
+        <!-- Header -->
+        <header>
+            <h1>🧧 <span class="cny-text">CNY Blackjack Quiz</span> 🧧</h1>
+            <div class="subtitle">Test your knowledge and aim for 21! 🎰</div>
+        </header>
+
+        <!-- PIN Entry Screen -->
         <div id="pin-screen" class="screen active">
-            <div class="header">
-                <h1><i class="fas fa-gamepad"></i> Auto-Quiz Game</h1>
-                <p class="subtitle">Enter 6-digit quiz code or browse catalog</p>
+            <div class="pin-guide-section">
+                <h2>Enter 6-Digit Quiz Code</h2>
+                <p class="subtitle-text">Format: Level-Subject-Grade-Chap-WS</p>
+                
                 <div class="pin-guide">
                     <div class="guide-item">
-                        <span class="guide-digit">1</span> School Level
-                        <div class="guide-tooltip">1=Primary, 2=Lower Sec, 3=Upper Sec</div>
+                        <span class="guide-digit">1</span>
+                        <span class="guide-label">Level</span>
+                        <div class="guide-tooltip">
+                            1=Primary<br>2=Lower Sec<br>3=Upper Sec
+                        </div>
                     </div>
                     <div class="guide-item">
-                        <span class="guide-digit">2</span> Subject
-                        <div class="guide-tooltip">0=Math, 1=Science, 2=Comb Physics, 3=Pure Physics, 4=Comb Chem, 5=Pure Chem</div>
+                        <span class="guide-digit">2</span>
+                        <span class="guide-label">Subject</span>
+                        <div class="guide-tooltip">
+                            0=Math<br>1=Science<br>2=Comb Physics<br>3=Pure Physics<br>4=Comb Chem<br>5=Pure Chem
+                        </div>
                     </div>
                     <div class="guide-item">
-                        <span class="guide-digit">3</span> Grade
-                        <div class="guide-tooltip">P1-P6 (1-6), S1-S4 (1-4)</div>
+                        <span class="guide-digit">3</span>
+                        <span class="guide-label">Grade</span>
+                        <div class="guide-tooltip">
+                            P1-P6 (1-6)<br>S1-S4 (1-4)
+                        </div>
                     </div>
                     <div class="guide-item">
-                        <span class="guide-digit">4</span> Chapter
-                        <div class="guide-tooltip">Tens digit (0-9)</div>
+                        <span class="guide-digit">4</span>
+                        <span class="guide-label">Chap10</span>
+                        <div class="guide-tooltip">Chapter tens digit (0-9)</div>
                     </div>
                     <div class="guide-item">
-                        <span class="guide-digit">5</span> Chapter
-                        <div class="guide-tooltip">Ones digit (0-9)</div>
+                        <span class="guide-digit">5</span>
+                        <span class="guide-label">Chap1</span>
+                        <div class="guide-tooltip">Chapter ones digit (0-9)</div>
                     </div>
                     <div class="guide-item">
-                        <span class="guide-digit">6</span> Worksheet
+                        <span class="guide-digit">6</span>
+                        <span class="guide-label">WS#</span>
                         <div class="guide-tooltip">Worksheet number (1-9)</div>
                     </div>
                 </div>
             </div>
-            
+
+            <!-- PIN Display -->
             <div class="pin-input-section">
                 <div class="pin-display">
-                    <div id="digit1" class="digit">
-                        <div class="digit-number">_</div>
-                        <div class="digit-label">Level</div>
+                    <div class="digit" id="digit1">
+                        <span class="digit-number">_</span>
+                        <span class="digit-label">Level</span>
                     </div>
-                    <div id="digit2" class="digit">
-                        <div class="digit-number">_</div>
-                        <div class="digit-label">Subject</div>
+                    <div class="digit" id="digit2">
+                        <span class="digit-number">_</span>
+                        <span class="digit-label">Subject</span>
                     </div>
-                    <div id="digit3" class="digit">
-                        <div class="digit-number">_</div>
-                        <div class="digit-label">Grade</div>
+                    <div class="digit" id="digit3">
+                        <span class="digit-number">_</span>
+                        <span class="digit-label">Grade</span>
                     </div>
-                    <div id="digit4" class="digit">
-                        <div class="digit-number">_</div>
-                        <div class="digit-label">Chap10</div>
+                    <div class="digit" id="digit4">
+                        <span class="digit-number">_</span>
+                        <span class="digit-label">Chap10</span>
                     </div>
-                    <div id="digit5" class="digit">
-                        <div class="digit-number">_</div>
-                        <div class="digit-label">Chap1</div>
+                    <div class="digit" id="digit5">
+                        <span class="digit-number">_</span>
+                        <span class="digit-label">Chap1</span>
                     </div>
-                    <div id="digit6" class="digit">
-                        <div class="digit-number">_</div>
-                        <div class="digit-label">WS#</div>
+                    <div class="digit" id="digit6">
+                        <span class="digit-number">_</span>
+                        <span class="digit-label">WS#</span>
                     </div>
                 </div>
-                
+
+                <!-- Keypad -->
+                <div class="keypad">
+                    <button class="key" data-key="1">1</button>
+                    <button class="key" data-key="2">2</button>
+                    <button class="key" data-key="3">3</button>
+                    <button class="key" data-key="4">4</button>
+                    <button class="key" data-key="5">5</button>
+                    <button class="key" data-key="6">6</button>
+                    <button class="key" data-key="7">7</button>
+                    <button class="key" data-key="8">8</button>
+                    <button class="key" data-key="9">9</button>
+                    <button class="key clear" id="clear-btn"><i class="fas fa-backspace"></i></button>
+                    <button class="key" data-key="0">0</button>
+                    <button class="key submit" id="submit-pin">GO <i class="fas fa-arrow-right"></i></button>
+                </div>
+
                 <div class="quick-actions">
                     <button id="test-pin" class="btn test-btn">
-                        <i class="fas fa-vial"></i> Test 341-09-1
+                        <i class="fas fa-flask"></i> Test 342-09-1
                     </button>
                     <button id="scan-quizzes" class="btn scan-btn">
                         <i class="fas fa-search"></i> Scan for Quizzes
                     </button>
                 </div>
             </div>
-            
-            <div class="keypad">
-                <button class="key" data-key="1">1</button>
-                <button class="key" data-key="2">2</button>
-                <button class="key" data-key="3">3</button>
-                <button class="key" data-key="4">4</button>
-                <button class="key" data-key="5">5</button>
-                <button class="key" data-key="6">6</button>
-                <button class="key" data-key="7">7</button>
-                <button class="key" data-key="8">8</button>
-                <button class="key" data-key="9">9</button>
-                <button id="clear-btn" class="key clear"><i class="fas fa-backspace"></i></button>
-                <button class="key" data-key="0">0</button>
-                <button id="submit-pin" class="key submit"><i class="fas fa-play"></i> GO</button>
-            </div>
-            
+
+            <!-- Catalog Section -->
             <div class="catalog-container">
                 <div class="catalog-header">
-                    <h3><i class="fas fa-book"></i> Available Quizzes</h3>
-                    <span id="quiz-count" class="badge">Scanning...</span>
+                    <h3>Available Quizzes</h3>
+                    <span class="badge" id="quiz-count">Loading...</span>
                 </div>
                 <div id="quiz-catalog" class="quiz-catalog">
                     <div class="loading-catalog">
-                        <i class="fas fa-spinner fa-spin"></i> Scanning for quiz files...
+                        <div class="spinner"></div>
+                        <p>Loading quiz catalog...</p>
                     </div>
                 </div>
             </div>
+
+            <div class="divider">
+                <span>OR</span>
+            </div>
+
+            <!-- File Upload -->
+            <div class="file-upload-section">
+                <label class="upload-btn">
+                    <i class="fas fa-file-import"></i> Upload Quiz JSON
+                    <input type="file" id="json-upload" accept=".json" hidden>
+                </label>
+                <div id="upload-status" class="upload-status"></div>
+            </div>
         </div>
-        
+
         <!-- Loading Screen -->
         <div id="loading-screen" class="screen">
             <div class="loading-content">
                 <div class="spinner"></div>
-                <h2 id="loading-message">Initializing...</h2>
-                <div id="loading-details" class="loading-details">
-                    Checking quiz files...
-                </div>
+                <h2 id="loading-message">Loading quiz...</h2>
+                <p id="loading-details">Please wait</p>
+                
                 <div class="progress-container">
-                    <div id="scan-progress" class="progress-bar"></div>
+                    <div class="progress-bar" id="scan-progress"></div>
                 </div>
-                <div id="found-count" class="found-count">
-                    Found: <span id="quiz-found">0</span> quizzes
-                </div>
+                <div class="found-count" id="quiz-found">0 quizzes found</div>
             </div>
         </div>
-        
+
         <!-- Error Screen -->
         <div id="error-screen" class="screen">
             <div class="error-content">
-                <div class="error-icon"><i class="fas fa-exclamation-triangle"></i></div>
+                <div class="error-icon">
+                    <i class="fas fa-exclamation-triangle"></i>
+                </div>
                 <h2>Quiz Not Found</h2>
-                <div id="error-message" class="error-details">
-                    Error details will appear here
+                <div class="error-details" id="error-message">
+                    Please check the quiz code and try again
                 </div>
                 <div class="action-buttons">
-                    <button id="back-to-pin-error" class="btn secondary">
-                        <i class="fas fa-home"></i> Back to Home
-                    </button>
-                    <button id="retry-btn" class="btn primary">
-                        <i class="fas fa-redo"></i> Retry
-                    </button>
+                    <button id="retry-btn" class="btn secondary">Retry</button>
+                    <button id="back-to-pin-error" class="btn primary">Back to Home</button>
                 </div>
             </div>
         </div>
-        
+
         <!-- Game Screen -->
         <div id="game-screen" class="screen">
-            <div class="game-header">
-                <div class="quiz-info">
-                    <h2 id="quiz-title">Quiz Title</h2>
-                    <p id="quiz-topic">Subject • Grade</p>
-                    <div class="quiz-code-display">
-                        <span class="code-label">Code:</span>
-                        <span id="current-quiz-code" class="quiz-code">000-00-0</span>
+            <!-- Player Info -->
+            <div class="player-info">
+                <div class="player-card player-1" id="player1">
+                    <h3>Player 1</h3>
+                    <div class="score-display">
+                        <span class="label">Total Score:</span>
+                        <span id="score1" class="score">0</span>
                     </div>
+                    <div class="round-score">
+                        <span class="label">Round:</span>
+                        <span id="round-score1" class="score">0</span>/21
+                    </div>
+                </div>
+                <div class="player-card player-2" id="player2">
+                    <h3>Player 2</h3>
+                    <div class="score-display">
+                        <span class="label">Total Score:</span>
+                        <span id="score2" class="score">0</span>
+                    </div>
+                    <div class="round-score">
+                        <span class="label">Round:</span>
+                        <span id="round-score2" class="score">0</span>/21
+                    </div>
+                </div>
+            </div>
+
+            <!-- Current Player Turn -->
+            <div id="player-turn" class="player-turn">
+                <span class="turn-indicator">🎯</span>
+                <span id="current-player">Player 1's Turn</span>
+            </div>
+
+            <!-- Quiz Info -->
+            <div class="quiz-info-header">
+                <div>
+                    <h2 id="quiz-title">Quiz Title</h2>
+                    <p><span id="quiz-topic">Subject • Grade</span> • Code: <span id="current-quiz-code">000-00-0</span></p>
                 </div>
                 <div class="question-counter">
-                    Question <span id="current-q">1</span>/<span id="total-q">10</span>
+                    <span id="current-q">1</span> / <span id="total-q">10</span>
                 </div>
             </div>
-            
-            <div class="players-container">
-                <div id="player1" class="player active">
-                    <div class="player-header">
-                        <div class="player-name">Player 1</div>
-                        <div class="player-status">
-                            <span id="player1-turn" class="turn-indicator active"><i class="fas fa-user"></i></span>
-                        </div>
-                    </div>
-                    <div id="score1" class="score">0</div>
-                    <div class="score-label">Score</div>
-                </div>
-                <div id="player2" class="player">
-                    <div class="player-header">
-                        <div class="player-name">Player 2</div>
-                        <div class="player-status">
-                            <span id="player2-turn" class="turn-indicator"><i class="fas fa-user"></i></span>
-                        </div>
-                    </div>
-                    <div id="score2" class="score">0</div>
-                    <div class="score-label">Score</div>
-                </div>
-            </div>
-            
-            <div class="question-container">
+
+            <!-- Question Display -->
+            <div id="question-section" class="question-section">
                 <div id="question-text" class="question-text">
-                    Question will appear here
+                    Loading question...
                 </div>
-                <div id="options-container" class="options">
-                    <!-- Options will be added here -->
+                <div id="options-container" class="options-container">
+                    <!-- Options will be inserted here -->
+                </div>
+                <div class="game-controls">
+                    <button id="submit-answer" class="btn primary btn-large">Submit Answer</button>
+                    <button id="next-btn" class="btn secondary btn-large" style="display: none;">Next Question</button>
                 </div>
             </div>
-            
-            <div class="game-controls">
-                <button id="submit-answer" class="btn primary" disabled>
-                    <i class="fas fa-paper-plane"></i> Submit Answer
-                </button>
-                <button id="next-btn" class="btn secondary" style="display:none">
-                    <i class="fas fa-arrow-right"></i> Next Question
-                </button>
-                <button id="home-btn" class="btn">
-                    <i class="fas fa-home"></i> Home
-                </button>
+
+            <!-- Answer Feedback -->
+            <div id="answer-feedback" class="answer-feedback">
+                <div class="feedback-placeholder">
+                    <i class="fas fa-lightbulb"></i>
+                    <p>Select an answer to continue</p>
+                </div>
             </div>
-            
-            <div class="feedback-section">
-                <div id="answer-feedback" class="feedback">
-                    <div class="feedback-placeholder">
-                        <i class="fas fa-lightbulb"></i> Select an answer to continue
+
+            <!-- Treasure Section -->
+            <div id="treasure-section" class="treasure-section">
+                <h3>🎁 Pick a Treasure Box!</h3>
+                <div class="treasure-boxes">
+                    <div class="treasure-box" data-box="1">🎁</div>
+                    <div class="treasure-box" data-box="2">🎁</div>
+                    <div class="treasure-box" data-box="3">🎁</div>
+                </div>
+                <div id="powerup-result"></div>
+            </div>
+
+            <!-- Blackjack Controls -->
+            <div id="blackjack-controls" class="blackjack-controls">
+                <div class="blackjack-info">
+                    <span>Current Round: <strong id="current-round-total">0</strong>/21</span>
+                    <span class="risk-warning" id="risk-warning">⚠️ Risky!</span>
+                </div>
+                <div class="blackjack-buttons">
+                    <button id="hit-btn" class="btn-hit">🔥 Hit Me (+50% Risk)</button>
+                    <button id="stand-btn" class="btn-stand">✅ Stand (Bank Points)</button>
+                </div>
+            </div>
+
+            <!-- Home Button -->
+            <button id="home-btn" class="btn home-btn">
+                <i class="fas fa-home"></i> Home
+            </button>
+
+            <!-- Celebration Area -->
+            <div id="celebration-area" class="celebration-area"></div>
+            <div id="coins-container" class="coins-container"></div>
+        </div>
+
+        <!-- Game Over Screen -->
+        <div id="game-over" class="game-over">
+            <div class="game-over-content">
+                <div class="trophy">🏆</div>
+                <h2 id="winner-message">Game Over!</h2>
+                <div class="winner-name" id="winner-name">Player 1 Wins!</div>
+                
+                <div class="final-scores">
+                    <div class="final-score">
+                        <span class="player-label">Player 1:</span>
+                        <span class="score-value" id="final-score1">0</span>
+                    </div>
+                    <div class="final-score">
+                        <span class="player-label">Player 2:</span>
+                        <span class="score-value" id="final-score2">0</span>
                     </div>
                 </div>
                 
-                <div id="treasure-section" class="treasure-section" style="display:none">
-                    <h3><i class="fas fa-gift"></i> Pick a Treasure Box!</h3>
-                    <div class="treasure-boxes">
-                        <div class="treasure-box" data-box="1">🎁</div>
-                        <div class="treasure-box" data-box="2">🎁</div>
-                        <div class="treasure-box" data-box="3">🎁</div>
-                    </div>
-                    <div id="powerup-result"></div>
-                </div>
-            </div>
-            
-            <div id="game-over" class="game-over" style="display:none">
-                <div class="game-over-content">
-                    <div class="trophy">
-                        <i class="fas fa-trophy"></i>
-                    </div>
-                    <h2 id="winner-message">Game Over!</h2>
-                    <div id="winner-name" class="winner-name">Winner</div>
-                    <div class="final-scores">
-                        <div class="final-score">
-                            <span class="player-label">Player 1:</span>
-                            <span id="final-score1" class="score-value">0</span>
-                        </div>
-                        <div class="final-score">
-                            <span class="player-label">Player 2:</span>
-                            <span id="final-score2" class="score-value">0</span>
-                        </div>
-                    </div>
-                    <div class="game-over-btns">
-                        <button id="restart-btn" class="btn primary">
-                            <i class="fas fa-redo"></i> Play Again
-                        </button>
-                        <button id="new-chapter-btn" class="btn">
-                            <i class="fas fa-book"></i> New Quiz
-                        </button>
-                    </div>
+                <div class="action-buttons">
+                    <button id="restart-btn" class="btn primary">Play Again</button>
+                    <button id="new-chapter-btn" class="btn secondary">New Quiz</button>
                 </div>
             </div>
         </div>
+
+        <!-- Footer -->
+        <footer>
+            <div class="footer-content">
+                <span>🧧 Happy Chinese New Year 2026! 🧧</span>
+                <span>Quiz Path: <span id="current-quiz-path">Not selected</span></span>
+            </div>
+        </footer>
     </div>
-    
+
     <script src="script.js"></script>
 </body>
 </html>
