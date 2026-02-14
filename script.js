@@ -6,8 +6,8 @@ const gameState = {
     currentQuestion: 0,
     currentPlayer: 1,
     scores: [0, 0],
-    targetScore: 21,
-    roundScores: [0, 0],
+    targetScore: 21, // BLACKJACK TARGET
+    roundScores: [0, 0], // ROUND ACCUMULATION (0-21)
     selectedAnswer: null,
     answered: false,
     powerupUsed: false,
@@ -112,7 +112,7 @@ document.addEventListener('DOMContentLoaded', async function() {
 
     // Test button
     document.getElementById('test-pin').addEventListener('click', function() {
-        setPinFromCode('342091'); // 342-09-1
+        setPinFromCode('342091'); // 342-09-1 (Your Smart Shopper Math)
         setTimeout(submitPin, 500);
     });
 
@@ -412,12 +412,12 @@ async function loadCatalogFromStorage() {
         return;
     }
     
-    // Default quizzes for testing
+    // Default quizzes for testing (including your Smart Shopper Math)
     const defaultQuizzes = [
         { code: '101-01-1', filename: '101011.json', path: 'Questions/primary/math/101011.json', name: 'P1 Math Chapter 1', subject: 'Mathematics', level: 'Primary', grade: 'P1' },
         { code: '201-01-1', filename: '201011.json', path: 'Questions/lower-secondary/math/201011.json', name: 'Sec 1 Math Chapter 1', subject: 'Mathematics', level: 'Lower Secondary', grade: 'S1' },
         { code: '201-01-2', filename: '201012.json', path: 'Questions/lower-secondary/math/201012.json', name: 'Sec 1 Math Chapter 1 Worksheet 2', subject: 'Mathematics', level: 'Lower Secondary', grade: 'S1' },
-        { code: '342-09-1', filename: '342091.json', path: 'Questions/upper-secondary/combined-chem/342091.json', name: 'Sec 4 Combined Chemistry Chapter 9', subject: 'Combined Chemistry', level: 'Upper Secondary', grade: 'S4' }
+        { code: '342-09-1', filename: '342091.json', path: 'Questions/upper-secondary/combined-chem/342091.json', name: 'Smart Shopper Math', subject: 'Mathematics', level: 'Upper Secondary', grade: 'S4' }
     ];
 
     gameState.quizCatalog = defaultQuizzes;
@@ -650,10 +650,10 @@ function submitAnswer() {
             showCelebration('⚡ Power-Up Activated! Points doubled!', 'warning');
         }
         
-        // Add to round score (blackjack style)
+        // Add to round score (BLACKJACK STYLE)
         gameState.roundScores[playerIdx] += points;
         
-        // Check for bust
+        // Check for BUST (over 21)
         if (gameState.roundScores[playerIdx] > gameState.targetScore) {
             bust(playerIdx);
             return;
@@ -662,7 +662,7 @@ function submitAnswer() {
         // Show celebration
         showCelebration(`✅ Correct! +${points} this round!`, 'success');
         
-        // Show blackjack controls
+        // Show BLACKJACK CONTROLS
         document.getElementById('blackjack-controls').style.display = 'flex';
         document.getElementById('current-round-total').textContent = gameState.roundScores[playerIdx];
         
@@ -976,7 +976,7 @@ function createCoinExplosion(rect) {
 
 // ========== END GAME ==========
 function endGame() {
-    // Bank any remaining round points
+    // Bank any remaining round points (if <=21)
     for (let i = 0; i < 2; i++) {
         if (gameState.roundScores[i] > 0 && gameState.roundScores[i] <= 21) {
             gameState.scores[i] += gameState.roundScores[i];

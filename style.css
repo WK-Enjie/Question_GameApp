@@ -669,7 +669,7 @@ h1 {
 }
 
 /* ========== GAME SCREEN ========== */
-.game-info-header {
+.quiz-info-header {
     display: flex;
     justify-content: space-between;
     align-items: flex-start;
