@@ -1,0 +1,67 @@
+{
+  "title": "Linear Functions & Graphs",
+  "topic": "Gradient, Equations, Tables of Values",
+  "subject": "Mathematics",
+  "level": "Lower Secondary",
+  "grade": "S1",
+  "chapter": 5,
+  "worksheet": 1,
+  "questions": [
+    {
+      "question": "Find the gradient of the line passing through points A(2, 5) and B(6, 13).",
+      "options": ["1.5", "2", "2.5", "3"],
+      "correct": 1,
+      "points": 10,
+      "explanation": "Gradient = (y₂ - y₁)/(x₂ - x₁) = (13 - 5)/(6 - 2) = 8/4 = 2. The gradient represents how much y changes for each unit change in x."
+    },
+    {
+      "question": "What is the gradient of the line with equation y = -4x + 7?",
+      "options": ["7", "-7", "4", "-4"],
+      "correct": 3,
+      "points": 10,
+      "explanation": "In the equation y = mx + c, m represents the gradient. Here m = -4, so the gradient is -4. The negative sign indicates the line slopes downward from left to right."
+    },
+    {
+      "question": "A line has gradient 3 and passes through the point (1, 4). What is its y-intercept?",
+      "options": ["0", "1", "2", "3"],
+      "correct": 1,
+      "points": 15,
+      "explanation": "Using y = mx + c: 4 = 3(1) + c → 4 = 3 + c → c = 1. The y-intercept is the point where the line crosses the y-axis (when x = 0)."
+    },
+    {
+      "question": "The table shows values for the equation y = 2x - 3. Find the missing value of y when x = 5.\n\nx | 1 | 3 | 5 | 7\ny | -1 | 3 | ? | 11",
+      "options": ["5", "6", "7", "8"],
+      "correct": 2,
+      "points": 15,
+      "explanation": "Substitute x = 5 into y = 2x - 3: y = 2(5) - 3 = 10 - 3 = 7. Always verify with another point: when x = 3, y = 2(3) - 3 = 3 ✓"
+    },
+    {
+      "question": "Find the gradient of the line passing through points P(-2, 7) and Q(4, -5).",
+      "options": ["-1", "-1.5", "-2", "-2.5"],
+      "correct": 2,
+      "points": 20,
+      "explanation": "Gradient = (y₂ - y₁)/(x₂ - x₁) = (-5 - 7)/(4 - (-2)) = (-12)/(6) = -2. Negative gradient means the line slopes downward as x increases."
+    },
+    {
+      "question": "The table shows values for a linear relationship. Find the missing value of x when y = 10.\n\nx | 2 | 4 | ? | 10\ny | 5 | 7 | 10 | 14",
+      "options": ["6", "7", "8", "9"],
+      "correct": 1,
+      "points": 20,
+      "explanation": "First find gradient using first two points: (7-5)/(4-2) = 2/2 = 1. Equation: y = x + c. Using (2,5): 5 = 2 + c → c = 3. So y = x + 3. When y = 10: 10 = x + 3 → x = 7."
+    },
+    {
+      "question": "A line has y-intercept -4 and gradient 5/2. Which equation represents this line?",
+      "options": ["y = 2x - 4", "y = 5x - 4", "y = (2/5)x - 4", "y = (5/2)x - 4"],
+      "correct": 3,
+      "points": 25,
+      "explanation": "In y = mx + c: m = gradient = 5/2, c = y-intercept = -4. Therefore equation is y = (5/2)x - 4. Fractional gradients indicate steeper slopes than whole numbers."
+    },
+    {
+      "question": "Water flows from a tank at a constant rate. After 2 minutes, 45L remains. After 5 minutes, 30L remains. How much water was initially in the tank?",
+      "options": ["50L", "55L", "60L", "65L"],
+      "correct": 1,
+      "points": 25,
+      "explanation": "Gradient (flow rate) = (30-45)/(5-2) = -15/3 = -5 L/min. Equation: y = -5x + c. Using (2,45): 45 = -5(2) + c → 45 = -10 + c → c = 55. Initial amount (x=0) is 55L. Real-world context: negative gradient represents decreasing quantity."
+    }
+  ]
+}
