@@ -1,0 +1,67 @@
+{
+  "title": "Quadratic Expansion & Factorisation - Worksheet 1",
+  "topic": "Basic Expansion, Grouping, Cross Method",
+  "subject": "Mathematics",
+  "level": "Lower Secondary",
+  "grade": "S2",
+  "chapter": 3,
+  "worksheet": 1,
+  "questions": [
+    {
+      "question": "Expand and simplify: (x + 3)(x + 5)",
+      "options": ["x² + 15x + 8", "x² + 8x + 8", "x² + 15x + 15", "x² + 8x + 15"],
+      "correct": 3,
+      "points": 10,
+      "explanation": "Use FOIL method: First: x·x = x², Outer: x·5 = 5x, Inner: 3·x = 3x, Last: 3·5 = 15. Combine: x² + 5x + 3x + 15 = x² + 8x + 15."
+    },
+    {
+      "question": "Expand and simplify: (2x - 3)²",
+      "options": ["4x² + 12x + 9", "4x² - 6x + 9", "4x² - 9", "4x² - 12x + 9"],
+      "correct": 3,
+      "points": 10,
+      "explanation": "Use (a-b)² = a² - 2ab + b²: (2x)² - 2(2x)(3) + 3² = 4x² - 12x + 9."
+    },
+    {
+      "question": "Factorise completely: 3x² + 12x",
+      "options": ["x(3x + 12)", "3(x² + 4x)", "12x(x + 1)", "3x(x + 4)"],
+      "correct": 3,
+      "points": 10,
+      "explanation": "HCF of 3x² and 12x is 3x. So 3x² + 12x = 3x(x + 4)."
+    },
+    {
+      "question": "Expand and simplify: (x - 4)(x + 4)",
+      "options": ["x² - 16", "x² + 16", "x² - 8x + 16", "x² + 8x - 16"],
+      "correct": 0,
+      "points": 15,
+      "explanation": "Difference of squares: (a-b)(a+b) = a² - b² = x² - 4² = x² - 16."
+    },
+    {
+      "question": "Factorise by grouping: 2x² + 6x + x + 3",
+      "options": ["(x + 1)(2x + 3)", "(x + 3)(2x + 1)", "(2x + 3)(x + 1)", "(2x + 1)(x + 3)"],
+      "correct": 3,
+      "points": 15,
+      "explanation": "Group: (2x² + 6x) + (x + 3) = 2x(x + 3) + 1(x + 3) = (2x + 1)(x + 3)."
+    },
+    {
+      "question": "Expand and simplify: (3x + 2)(2x - 5)",
+      "options": ["6x² + 19x - 10", "6x² - 19x - 10", "6x² + 11x - 10", "6x² - 11x - 10"],
+      "correct": 3,
+      "points": 20,
+      "explanation": "FOIL: 3x·2x = 6x², 3x·(-5) = -15x, 2·2x = 4x, 2·(-5) = -10 → 6x² - 11x - 10."
+    },
+    {
+      "question": "Factorise using cross method: x² + 7x + 12",
+      "options": ["(x + 1)(x + 12)", "(x - 3)(x - 4)", "(x + 2)(x + 6)", "(x + 3)(x + 4)"],
+      "correct": 3,
+      "points": 20,
+      "explanation": "Numbers multiplying to 12 and adding to 7: 3 and 4 → (x + 3)(x + 4)."
+    },
+    {
+      "question": "Expand and simplify: (x + 2)² - (x - 2)²",
+      "options": ["4x", "8", "0", "8x"],
+      "correct": 3,
+      "points": 25,
+      "explanation": "(x² + 4x + 4) - (x² - 4x + 4) = 8x. The x² and constant terms cancel out."
+    }
+  ]
+}
