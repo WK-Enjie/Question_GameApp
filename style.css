@@ -1,602 +1,523 @@
-:root {
-    --red: #c53030;
-    --gold: #d69e2e;
-    --dark: #1a202c;
-    --panel: #2d3748;
-    --text: #f7fafc;
-}
-
-* {
-    margin: 0;
-    padding: 0;
-    box-sizing: border-box;
-}
-
-body {
-    background: linear-gradient(135deg, #742a2a, #2d3748);
-    font-family: 'Segoe UI', sans-serif;
-    color: var(--text);
-    margin: 0;
-    min-height: 100vh;
-    display: flex;
-    justify-content: center;
-    align-items: center;
-}
-
-.container {
-    width: 100%;
-    max-width: 600px;
-    background: var(--dark);
-    border: 4px solid var(--gold);
-    border-radius: 20px;
-    padding: 20px;
-    box-shadow: 0 10px 30px rgba(0,0,0,0.5);
-    position: relative;
-    min-height: 80vh;
-}
-
-/* Header */
-header { 
-    text-align: center; 
-    margin-bottom: 20px; 
-}
-
-h1 { 
-    margin: 0; 
-    color: var(--gold); 
-    font-size: 2rem; 
-}
-
-.subtitle { 
-    color: #a0aec0; 
-    font-size: 0.9rem; 
-}
-
-/* Screens */
-.screen { 
-    display: none; 
-    animation: fadeIn 0.3s; 
-}
-
-.screen.active { 
-    display: block; 
-}
-
-@keyframes fadeIn { 
-    from { opacity:0; } 
-    to { opacity:1; } 
-}
-
-/* PIN Input Section */
-.pin-input-section {
-    text-align: center;
-    margin-bottom: 20px;
-}
-
-.pin-input-section h2 {
-    color: var(--gold);
-    margin-bottom: 15px;
-    font-size: 1.5rem;
-}
-
-.pin-display { 
-    display: flex; 
-    gap: 5px; 
-    justify-content: center; 
-    margin: 20px 0; 
-}
-
-.digit {
-    width: 45px; 
-    height: 60px;
-    background: var(--panel); 
-    border: 2px solid var(--gold);
-    border-radius: 8px; 
-    display: flex; 
-    align-items: center; 
-    justify-content: center;
-    font-size: 1.5rem; 
-    color: var(--gold);
-}
-
-.keypad { 
-    display: grid; 
-    grid-template-columns: repeat(3, 1fr); 
-    gap: 10px; 
-    max-width: 300px; 
-    margin: 0 auto; 
-}
-
-.key {
-    padding: 15px; 
-    background: var(--panel); 
-    border: none;
-    border-radius: 10px; 
-    color: white; 
-    font-size: 1.2rem; 
-    cursor: pointer;
-    transition: 0.2s;
-}
-
-.key:hover {
-    background: #4a5568;
-    transform: translateY(-2px);
-}
-
-.key:active { 
-    background: #4a5568; 
-    transform: translateY(0);
-}
-
-.key.clear {
-    background: #742a2a;
-}
-
-.key.submit { 
-    background: var(--gold); 
-    color: var(--dark); 
-    font-weight: bold; 
-}
-
-/* Quick Actions - Hidden by default */
-.quick-actions {
-    display: none;
-    gap: 10px;
-    justify-content: center;
-    margin-top: 20px;
-    flex-wrap: wrap;
-}
-
-/* Show only in admin mode */
-body.admin-mode .quick-actions {
-    display: flex;
-}
-
-/* Quiz Catalog */
-.quiz-catalog {
-    display: grid;
-    grid-template-columns: repeat(3, 1fr);
-    gap: 10px;
-    margin-top: 20px;
-    max-height: 200px;
-    overflow-y: auto;
-    padding: 10px;
-}
-
-.cat-item {
-    background: var(--panel);
-    padding: 10px;
-    border-radius: 8px;
-    text-align: center;
-    cursor: pointer;
-    border: 2px solid transparent;
-    transition: 0.2s;
-    font-size: 0.9rem;
-}
-
-.cat-item:hover {
-    border-color: var(--gold);
-    background: #4a5568;
-    transform: translateY(-2px);
-}
-
-/* Loading Screen */
-.loading-content {
-    text-align: center;
-    padding: 40px;
-}
-
-.spinner {
-    border: 4px solid rgba(255, 255, 255, 0.1);
-    border-top: 4px solid var(--gold);
-    border-radius: 50%;
-    width: 50px;
-    height: 50px;
-    animation: spin 1s linear infinite;
-    margin: 0 auto 20px;
-}
-
-@keyframes spin {
-    to { transform: rotate(360deg); }
-}
-
-#loading-message {
-    color: var(--gold);
-}
-
-/* Game UI */
-.player-info { 
-    display: flex; 
-    justify-content: space-between; 
-    align-items: center; 
-    margin-bottom: 15px; 
-    gap: 10px;
-}
-
-.player-card {
-    background: var(--panel); 
-    padding: 15px 10px; 
-    border-radius: 10px;
-    flex: 1;
-    text-align: center; 
-    border: 2px solid transparent;
-    transition: 0.3s;
-}
-
-.player-card h3 {
-    margin-bottom: 10px;
-    font-size: 1.1rem;
-}
-
-.player-card.active { 
-    border-color: var(--gold); 
-    background: #2c5282; 
-    transform: scale(1.05);
-}
-
-.total-score { 
-    font-size: 2rem; 
-    font-weight: bold; 
-    color: var(--gold); 
-}
-
-.round-indicator { 
-    font-size: 0.8rem; 
-    color: #a0aec0; 
-    margin-top: 5px;
-}
-
-/* VS Badge */
-.vs-badge {
-    background: var(--gold);
-    color: var(--dark);
-    padding: 8px 12px;
-    border-radius: 50%;
-    font-weight: bold;
-    font-size: 0.9rem;
-    box-shadow: 0 2px 10px rgba(214, 158, 46, 0.4);
-}
-
-/* Turn Banner */
-.turn-banner {
-    background: var(--panel);
-    padding: 12px 15px;
-    border-radius: 8px;
-    display: flex;
-    justify-content: space-between;
-    align-items: center;
-    margin-bottom: 15px;
-    border: 2px solid var(--gold);
-}
-
-.turn-banner #current-player-name {
-    font-weight: bold;
-    color: var(--gold);
-    font-size: 1.1rem;
-}
-
-.q-counter {
-    font-size: 0.9rem;
-    color: #a0aec0;
-}
-
-/* Question Area */
-.question-area { 
-    background: var(--panel); 
-    padding: 20px; 
-    border-radius: 10px; 
-    margin-bottom: 15px; 
-}
-
-.question-area h3 {
-    margin-bottom: 15px;
-    color: var(--text);
-    font-size: 1.2rem;
-}
-
-.options-grid { 
-    display: grid; 
-    gap: 10px; 
-    margin: 15px 0; 
-}
-
-.option {
-    padding: 15px; 
-    background: var(--dark); 
-    border-radius: 8px; 
-    cursor: pointer;
-    border: 2px solid #4a5568; 
-    transition: 0.2s;
-    text-align: left;
-}
-
-.option:hover { 
-    border-color: var(--gold); 
-    transform: translateX(5px);
-}
-
-.option.selected { 
-    background: var(--gold); 
-    color: var(--dark); 
-    border-color: var(--gold); 
-}
-
-.option.correct { 
-    background: #2f855a; 
-    border-color: #48bb78; 
-    color: white;
-}
-
-.option.incorrect { 
-    background: #c53030; 
-    border-color: #f56565; 
-    color: white;
-}
-
-/* Phase Sections */
-.phase-section {
-    background: rgba(0,0,0,0.3); 
-    border: 2px dashed var(--gold);
-    padding: 20px; 
-    border-radius: 10px; 
-    text-align: center; 
-    margin-top: 15px;
-}
-
-.phase-header {
-    color: var(--gold);
-    font-size: 1.3rem;
-    font-weight: bold;
-    margin-bottom: 15px;
-    text-transform: uppercase;
-}
-
-.choice-grid { 
-    display: flex; 
-    gap: 15px; 
-    justify-content: center; 
-    margin-top: 15px; 
-}
-
-.choice-card {
-    flex: 1; 
-    background: var(--panel); 
-    padding: 20px; 
-    border-radius: 10px;
-    cursor: pointer; 
-    border: 2px solid transparent; 
-    transition: 0.3s;
-    max-width: 200px;
-}
-
-.choice-card:hover { 
-    transform: translateY(-5px); 
-    border-color: var(--gold); 
-    box-shadow: 0 5px 15px rgba(214, 158, 46, 0.3);
-}
-
-.choice-card .icon { 
-    font-size: 2.5rem; 
-    margin-bottom: 10px; 
-}
-
-.choice-card h4 {
-    color: var(--gold);
-    margin-bottom: 8px;
-    font-size: 1.1rem;
-}
-
-.choice-card p {
-    font-size: 0.85rem;
-    color: #a0aec0;
-}
-
-.choice-card.risk:hover { 
-    border-color: var(--red); 
-    box-shadow: 0 5px 15px rgba(197, 48, 48, 0.3);
-}
-
-/* Treasure Section */
-.treasure-grid { 
-    display: flex; 
-    gap: 15px; 
-    justify-content: center; 
-    margin: 20px 0; 
-}
-
-.t-box {
-    width: 80px; 
-    height: 80px; 
-    background: var(--gold); 
-    color: var(--dark);
-    display: flex; 
-    align-items: center; 
-    justify-content: center;
-    font-size: 2rem; 
-    font-weight: bold;
-    border-radius: 10px; 
-    cursor: pointer;
-    box-shadow: 0 5px 15px rgba(214, 158, 46, 0.4);
-    transition: 0.3s;
-}
-
-.t-box:hover {
-    transform: scale(1.1);
-}
-
-.t-box.opened {
-    background: white;
-    pointer-events: none;
-}
-
-#treasure-result {
-    margin-top: 15px;
-    font-size: 1.1rem;
-    color: var(--gold);
-}
-
-/* Risk Section */
-.risk-score { 
-    font-size: 1.8rem; 
-    font-weight: bold; 
-    color: var(--gold); 
-    margin-bottom: 20px;
-}
-
-.risk-controls { 
-    display: flex; 
-    gap: 15px; 
-    justify-content: center; 
-}
-
-/* Buttons */
-.btn {
-    padding: 12px 24px; 
-    border: none; 
-    border-radius: 8px;
-    font-weight: bold; 
-    cursor: pointer; 
-    font-size: 1rem;
-    transition: 0.2s;
-    text-transform: uppercase;
-}
-
-.btn:hover {
-    transform: translateY(-2px);
-    box-shadow: 0 5px 15px rgba(0,0,0,0.3);
-}
-
-.btn:active {
-    transform: translateY(0);
-}
-
-.btn-block { 
-    width: 100%; 
-}
-
-.btn.primary { 
-    background: var(--gold); 
-    color: var(--dark); 
-}
-
-.btn.secondary { 
-    background: var(--panel); 
-    color: white; 
-    border: 1px solid var(--gold); 
-}
-
-.btn.danger { 
-    background: var(--red); 
-    color: white; 
-}
-
-.btn.success { 
-    background: #2f855a; 
-    color: white; 
-}
-
-.btn:disabled {
-    opacity: 0.5;
-    cursor: not-allowed;
-}
-
-/* Feedback Area */
-.feedback-area {
-    margin-top: 15px; 
-    padding: 12px; 
-    border-radius: 8px; 
-    text-align: center; 
-    font-weight: bold;
-    display: none;
-}
-
-.feedback-area.success { 
-    background: #2f855a; 
-    color: white; 
-    display: block;
-}
-
-.feedback-area.error { 
-    background: #c53030; 
-    color: white; 
-    display: block;
-}
-
-.feedback-area.info { 
-    background: #2b6cb0; 
-    color: white; 
-    display: block;
-}
-
-/* Game Over Screen */
-#game-over-screen {
-    text-align: center;
-    padding: 40px 20px;
-}
-
-#game-over-screen h1 {
-    margin-bottom: 20px;
-    font-size: 2.5rem;
-}
-
-#winner-text {
-    color: var(--gold);
-    font-size: 2rem;
-    margin-bottom: 30px;
-}
-
-.final-scores {
-    font-size: 1.3rem;
-    margin: 30px 0;
-}
-
-.final-scores p {
-    margin: 10px 0;
-    color: #a0aec0;
-}
-
-.final-scores span {
-    color: var(--gold);
-    font-weight: bold;
-}
-
-/* Decorations */
-.lantern { 
-    position: absolute; 
-    font-size: 2rem; 
-    animation: swing 3s infinite ease-in-out; 
-    z-index: 1;
-}
-
-@keyframes swing { 
-    0%, 100% { transform: rotate(-5deg); } 
-    50% { transform: rotate(5deg); } 
-}
-
-/* Responsive */
-@media (max-width: 480px) {
-    .container {
-        padding: 15px;
-        margin: 10px;
+// ========== GAME CONFIGURATION ==========
+const TARGET_SCORE = 50;
+
+// ========== STATE ==========
+const state = {
+    pin: [],
+    questions: [],
+    currQIndex: 0,
+    currPlayer: 1,
+    scores: [0, 0],
+    roundScore: 0,
+    isAnswered: false,
+    quizCatalog: [],
+    quizMetadata: null
+};
+
+// ========== INIT ==========
+document.addEventListener('DOMContentLoaded', () => {
+    console.log("🧧 CNY Game 50 Loaded");
+    
+    // Load Catalog (hidden but used for fallback)
+    const stored = localStorage.getItem('quizCatalog');
+    if (stored) state.quizCatalog = JSON.parse(stored);
+
+    // Event Listeners
+    setupPinPad();
+    
+    // Game Actions
+    document.getElementById('submit-answer').addEventListener('click', submitAnswer);
+    document.getElementById('btn-choose-box').addEventListener('click', startTreasurePhase);
+    document.getElementById('btn-choose-risk').addEventListener('click', startRiskPhase);
+    
+    // Risk Actions
+    document.getElementById('btn-hit').addEventListener('click', handleHit);
+    document.getElementById('btn-stand').addEventListener('click', handleStand);
+    
+    // Treasure Actions
+    document.querySelectorAll('.t-box').forEach(box => {
+        box.addEventListener('click', (e) => handleTreasureOpen(e.target));
+    });
+
+    // Navigation
+    document.getElementById('btn-home').addEventListener('click', () => location.reload());
+    document.getElementById('scan-quizzes').addEventListener('click', scanForQuizzes);
+    document.getElementById('json-upload').addEventListener('change', handleFileUpload);
+
+    // Admin Mode Toggle (Ctrl+Shift+A)
+    document.addEventListener('keydown', (e) => {
+        if (e.ctrlKey && e.shiftKey && e.key === 'A') {
+            document.body.classList.toggle('admin-mode');
+            const isAdmin = document.body.classList.contains('admin-mode');
+            showFeedback(isAdmin ? '🔓 Admin Mode Enabled' : '🔒 Admin Mode Disabled', 'info');
+            setTimeout(clearFeedback, 2000);
+        }
+    });
+});
+
+// ========== NAVIGATION ==========
+function showScreen(id) {
+    document.querySelectorAll('.screen').forEach(s => s.classList.remove('active'));
+    document.getElementById(id).classList.add('active');
+}
+
+function showFeedback(msg, type) {
+    const el = document.getElementById('feedback-area');
+    el.textContent = msg;
+    el.className = `feedback-area ${type}`;
+}
+
+function clearFeedback() {
+    const el = document.getElementById('feedback-area');
+    el.className = 'feedback-area';
+    el.textContent = '';
+}
+
+// ========== PIN PAD & LOADING ==========
+function setupPinPad() {
+    document.querySelectorAll('.key[data-key]').forEach(btn => {
+        btn.addEventListener('click', () => {
+            if (state.pin.length < 6) {
+                state.pin.push(btn.dataset.key);
+                updatePinDisplay();
+            }
+        });
+    });
+
+    document.getElementById('clear-btn').addEventListener('click', () => {
+        state.pin = [];
+        updatePinDisplay();
+    });
+
+    document.getElementById('submit-pin').addEventListener('click', async () => {
+        const code = state.pin.join('');
+        if (code.length === 6) await loadQuiz(code);
+        else alert("Enter 6 digits");
+    });
+}
+
+function updatePinDisplay() {
+    for (let i = 1; i <= 6; i++) {
+        const val = state.pin[i-1] || '_';
+        document.querySelector(`#digit${i} .digit-number`).textContent = val;
+    }
+}
+
+// ========== QUIZ LOADING LOGIC ==========
+const LEVELS = { 
+    1: 'primary', 
+    2: 'lower-secondary', 
+    3: 'upper-secondary' 
+};
+
+const SUBJECTS = { 
+    0: 'math', 
+    1: 'science', 
+    2: 'combined-physics', 
+    3: 'pure-physics', 
+    4: 'combined-chemistry', 
+    5: 'pure-chemistry' 
+};
+
+async function loadQuiz(code) {
+    showScreen('loading-screen');
+    document.getElementById('loading-message').textContent = `Loading Quiz ${code}...`;
+    
+    const digits = code.split('').map(Number);
+    const lvlFolder = LEVELS[digits[0]] || 'primary';
+    const subFolder = SUBJECTS[digits[1]] || 'math';
+    
+    const filename = `${code}.json`;
+    const path = `Questions/${lvlFolder}/${subFolder}/${filename}`;
+    
+    console.log(`Attempting to load: ${path}`);
+    
+    try {
+        const res = await fetch(path);
+        if(!res.ok) throw new Error("File not found");
+        const data = await res.json();
+        
+        if(!data.questions || !Array.isArray(data.questions)) {
+            throw new Error("Invalid JSON format - missing 'questions' array");
+        }
+        
+        state.quizMetadata = {
+            title: data.title || 'Quiz',
+            topic: data.topic || '',
+            subject: data.subject || '',
+            grade: data.grade || ''
+        };
+        
+        startQuiz(data.questions);
+        
+    } catch (e) {
+        console.warn("Fetch failed, checking catalog", e);
+        
+        const catItem = state.quizCatalog.find(q => q.code === code);
+        if(catItem && catItem.questions) {
+            state.quizMetadata = {
+                title: catItem.title || 'Uploaded Quiz',
+                topic: catItem.topic || '',
+                subject: catItem.subject || '',
+                grade: catItem.grade || ''
+            };
+            startQuiz(catItem.questions);
+        } else {
+            alert(`❌ Quiz ${code} not found!\n\nPlease check the code or contact admin.`);
+            showScreen('pin-screen');
+        }
+    }
+}
+
+function handleFileUpload(e) {
+    const file = e.target.files[0];
+    if(!file) return;
+    
+    const reader = new FileReader();
+    reader.onload = (evt) => {
+        try {
+            const data = JSON.parse(evt.target.result);
+            
+            if(!data.questions || !Array.isArray(data.questions)) {
+                throw new Error("Invalid format - must have 'questions' array");
+            }
+            
+            const nameMatch = file.name.match(/(\d{6})\.json/);
+            let code = nameMatch ? nameMatch[1] : null;
+            
+            if(!code) {
+                code = prompt("Enter 6-digit code for this quiz (e.g., 201011):");
+            }
+            
+            if(!code || code.length !== 6 || !/^\d{6}$/.test(code)) {
+                alert("Invalid code. Must be 6 digits.");
+                return;
+            }
+            
+            const existing = state.quizCatalog.findIndex(q => q.code === code);
+            const entry = { 
+                code, 
+                questions: data.questions,
+                title: data.title || file.name,
+                topic: data.topic || '',
+                subject: data.subject || '',
+                grade: data.grade || ''
+            };
+            
+            if(existing >= 0) {
+                state.quizCatalog[existing] = entry;
+            } else {
+                state.quizCatalog.push(entry);
+            }
+            
+            localStorage.setItem('quizCatalog', JSON.stringify(state.quizCatalog));
+            
+            alert(`✅ Quiz "${data.title || code}" saved!\nCode: ${code}\n${data.questions.length} questions loaded.`);
+            
+            state.quizMetadata = {
+                title: entry.title,
+                topic: entry.topic,
+                subject: entry.subject,
+                grade: entry.grade
+            };
+            startQuiz(data.questions);
+            
+        } catch(err) {
+            alert("❌ Invalid JSON format!\n\nError: " + err.message);
+            console.error(err);
+        }
+    };
+    reader.readAsText(file);
+}
+
+// ========== GAMEPLAY CORE ==========
+function startQuiz(questions) {
+    if(!questions || questions.length === 0) {
+        alert("No questions in file");
+        showScreen('pin-screen');
+        return;
     }
     
-    .player-info {
-        flex-direction: column;
+    state.questions = questions;
+    state.currQIndex = 0;
+    state.currPlayer = 1;
+    state.scores = [0, 0];
+    state.roundScore = 0;
+    
+    updateScoreboard();
+    loadQuestion();
+    showScreen('game-screen');
+    
+    console.log(`Quiz loaded: ${state.quizMetadata?.title || 'Unknown'} (${questions.length} questions)`);
+}
+
+function loadQuestion() {
+    const q = state.questions[state.currQIndex];
+    if(!q) {
+        endGame();
+        return;
+    }
+
+    state.isAnswered = false;
+    state.roundScore = 0;
+    selectedOptionIdx = null;
+    
+    document.getElementById('question-text').textContent = q.question;
+    document.getElementById('current-q').textContent = state.currQIndex + 1;
+    document.getElementById('total-q').textContent = state.questions.length;
+    
+    const cont = document.getElementById('options-container');
+    cont.innerHTML = '';
+    q.options.forEach((opt, idx) => {
+        const div = document.createElement('div');
+        div.className = 'option';
+        div.textContent = `${String.fromCharCode(65+idx)}) ${opt}`;
+        div.onclick = () => selectOption(div, idx);
+        cont.appendChild(div);
+    });
+
+    document.getElementById('submit-answer').style.display = 'block';
+    document.getElementById('submit-answer').disabled = false;
+    document.getElementById('btn-hit').disabled = false;
+    document.getElementById('btn-stand').disabled = false;
+    
+    document.getElementById('choice-section').style.display = 'none';
+    document.getElementById('treasure-section').style.display = 'none';
+    document.getElementById('risk-section').style.display = 'none';
+    clearFeedback();
+    
+    updateTurnIndicator();
+}
+
+let selectedOptionIdx = null;
+
+function selectOption(el, idx) {
+    if(state.isAnswered) return;
+    document.querySelectorAll('.option').forEach(o => o.classList.remove('selected'));
+    el.classList.add('selected');
+    selectedOptionIdx = idx;
+}
+
+function submitAnswer() {
+    if(selectedOptionIdx === null || state.isAnswered) return;
+    state.isAnswered = true;
+    document.getElementById('submit-answer').disabled = true;
+
+    const q = state.questions[state.currQIndex];
+    const options = document.querySelectorAll('.option');
+    const isCorrect = (selectedOptionIdx === q.correct);
+
+    if(isCorrect) {
+        options[selectedOptionIdx].classList.add('correct');
+    } else {
+        options[selectedOptionIdx].classList.add('incorrect');
+        options[q.correct].classList.add('correct');
+    }
+
+    document.getElementById('submit-answer').style.display = 'none';
+
+    if(isCorrect) {
+        const base = q.points || 10;
+        state.roundScore = base;
+        
+        let msg = `✅ CORRECT! Base: ${base} pts`;
+        if(q.explanation) {
+            msg += `\n\n💡 ${q.explanation}`;
+        }
+        showFeedback(msg, 'success');
+        
+        setTimeout(() => {
+            document.getElementById('choice-section').style.display = 'block';
+        }, q.explanation ? 3000 : 1500);
+        
+    } else {
+        let msg = `❌ WRONG! Correct: ${String.fromCharCode(65+q.correct)}) ${q.options[q.correct]}`;
+        if(q.explanation) {
+            msg += `\n\n💡 ${q.explanation}`;
+        }
+        showFeedback(msg, 'error');
+        
+        setTimeout(() => {
+            state.currQIndex++;
+            loadQuestion(); 
+        }, q.explanation ? 4000 : 2500);
+    }
+}
+
+// ========== PHASE 2: CHOICE ==========
+function startTreasurePhase() {
+    document.getElementById('choice-section').style.display = 'none';
+    document.getElementById('treasure-section').style.display = 'block';
+    
+    document.querySelectorAll('.t-box').forEach(b => {
+        b.textContent = '?';
+        b.classList.remove('opened');
+        b.style.pointerEvents = 'auto';
+    });
+    document.getElementById('treasure-result').innerHTML = '';
+}
+
+function startRiskPhase() {
+    document.getElementById('choice-section').style.display = 'none';
+    document.getElementById('risk-section').style.display = 'block';
+    updateRiskDisplay();
+}
+
+// ========== PHASE 3: TREASURE ==========
+function handleTreasureOpen(box) {
+    if(box.classList.contains('opened')) return;
+    
+    const effects = [
+        { lbl: "🎯 Double Points!", val: 'x2' },
+        { lbl: "💰 Bonus +20!", val: '+20' },
+        { lbl: "😱 Half Points!", val: '/2' },
+        { lbl: "🔄 Swap Scores!", val: 'swap' },
+        { lbl: "🎁 Lucky +15!", val: '+15' }
+    ];
+    
+    const effect = effects[Math.floor(Math.random() * effects.length)];
+    
+    if(effect.val === 'x2') state.roundScore *= 2;
+    if(effect.val === '+20') state.roundScore += 20;
+    if(effect.val === '+15') state.roundScore += 15;
+    if(effect.val === '/2') state.roundScore = Math.floor(state.roundScore / 2);
+    if(effect.val === 'swap') {
+        let temp = state.scores[0];
+        state.scores[0] = state.scores[1];
+        state.scores[1] = temp;
+        updateScoreboard();
+    }
+
+    box.textContent = effect.val === 'swap' ? '🔄' : effect.val === 'x2' ? '2X' : effect.val === '/2' ? '½' : '+';
+    box.classList.add('opened');
+    
+    document.querySelectorAll('.t-box').forEach(b => b.style.pointerEvents = 'none');
+    
+    document.getElementById('treasure-result').innerHTML = 
+        `<strong>${effect.lbl}</strong><br>Round Score: ${state.roundScore} pts`;
+    
+    setTimeout(() => {
+        bankPointsAndNext();
+    }, 2500);
+}
+
+// ========== PHASE 4: RISK (HIT/STAND) ==========
+function updateRiskDisplay() {
+    document.getElementById('risk-display').textContent = state.roundScore;
+    
+    const display = document.getElementById('risk-display');
+    if(state.roundScore >= 40) {
+        display.style.color = '#f56565';
+    } else if(state.roundScore >= 30) {
+        display.style.color = '#ed8936';
+    } else {
+        display.style.color = 'var(--gold)';
+    }
+}
+
+function handleHit() {
+    const add = Math.ceil(state.roundScore * 0.5);
+    state.roundScore += add;
+    updateRiskDisplay();
+
+    if(state.roundScore > TARGET_SCORE) {
+        state.roundScore = 0;
+        updateRiskDisplay();
+        showFeedback("💥 BUST! Score > 50! Lost all round points!", 'error');
+        document.getElementById('btn-hit').disabled = true;
+        document.getElementById('btn-stand').disabled = true;
+        
+        setTimeout(() => {
+            switchPlayer();
+            state.currQIndex++;
+            loadQuestion();
+        }, 2500);
+    } else if(state.roundScore === TARGET_SCORE) {
+        showFeedback("🎯 PERFECT 50! Maximum points!", 'success');
+        document.getElementById('btn-hit').disabled = true;
+        setTimeout(handleStand, 1500);
+    } else {
+        showFeedback(`🔥 Hit! +${add} pts (Total: ${state.roundScore})`, 'info');
+    }
+}
+
+function handleStand() {
+    showFeedback(`✅ Stand! Banking ${state.roundScore} points...`, 'success');
+    document.getElementById('btn-hit').disabled = true;
+    document.getElementById('btn-stand').disabled = true;
+    
+    setTimeout(() => {
+        bankPointsAndNext();
+    }, 1500);
+}
+
+// ========== UTILS ==========
+function bankPointsAndNext() {
+    state.scores[state.currPlayer - 1] += state.roundScore;
+    updateScoreboard();
+    
+    if(state.scores[state.currPlayer - 1] >= 100) {
+        endGame();
+        return;
     }
     
-    .player-card {
-        width: 100%;
-    }
+    switchPlayer();
+    state.currQIndex++;
+    loadQuestion();
+}
+
+function switchPlayer() {
+    state.currPlayer = state.currPlayer === 1 ? 2 : 1;
+    updateTurnIndicator();
+}
+
+function updateScoreboard() {
+    document.getElementById('score1').textContent = state.scores[0];
+    document.getElementById('score2').textContent = state.scores[1];
     
-    .vs-badge {
-        margin: 10px 0;
-    }
+    const roundNum = Math.floor(state.currQIndex / 2) + 1;
+    document.getElementById('p1-round').textContent = `Round: ${roundNum}`;
+    document.getElementById('p2-round').textContent = `Round: ${roundNum}`;
+}
+
+function updateTurnIndicator() {
+    const p1Card = document.getElementById('player1');
+    const p2Card = document.getElementById('player2');
+    const banner = document.getElementById('current-player-name');
     
-    .choice-grid {
-        flex-direction: column;
+    if(state.currPlayer === 1) {
+        p1Card.classList.add('active');
+        p2Card.classList.remove('active');
+        banner.textContent = "Player 1's Turn";
+    } else {
+        p2Card.classList.add('active');
+        p1Card.classList.remove('active');
+        banner.textContent = "Player 2's Turn";
     }
+}
+
+function endGame() {
+    showScreen('game-over-screen');
+    const s1 = state.scores[0];
+    const s2 = state.scores[1];
+    document.getElementById('final-p1').textContent = s1;
+    document.getElementById('final-p2').textContent = s2;
     
-    .choice-card {
-        max-width: 100%;
+    let msg = "It's a Tie! 🤝";
+    if(s1 > s2) msg = "🏆 Player 1 Wins! 🏆";
+    if(s2 > s1) msg = "🏆 Player 2 Wins! 🏆";
+    document.getElementById('winner-text').textContent = msg;
+}
+
+// ========== CATALOG (HIDDEN) ==========
+function scanForQuizzes() {
+    alert("📡 Please enter the 6-digit quiz code.");
+}
+
+function clearCatalog() {
+    if(confirm("⚠️ Clear all saved quizzes?")) {
+        state.quizCatalog = [];
+        localStorage.removeItem('quizCatalog');
+        alert("✅ Catalog cleared!");
     }
 }

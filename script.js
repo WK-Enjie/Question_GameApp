@@ -6,22 +6,21 @@ const state = {
     pin: [],
     questions: [],
     currQIndex: 0,
-    currPlayer: 1, // 1 or 2
-    scores: [0, 0], // Total banked scores
-    roundScore: 0,  // Current round accumulation
+    currPlayer: 1,
+    scores: [0, 0],
+    roundScore: 0,
     isAnswered: false,
     quizCatalog: [],
-    quizMetadata: null // Stores title, topic, etc.
+    quizMetadata: null
 };
 
 // ========== INIT ==========
 document.addEventListener('DOMContentLoaded', () => {
     console.log("🧧 CNY Game 50 Loaded");
     
-    // Load Catalog
+    // Load Catalog (hidden but used for fallback)
     const stored = localStorage.getItem('quizCatalog');
     if (stored) state.quizCatalog = JSON.parse(stored);
-    renderCatalog();
 
     // Event Listeners
     setupPinPad();
@@ -65,7 +64,7 @@ function showScreen(id) {
 function showFeedback(msg, type) {
     const el = document.getElementById('feedback-area');
     el.textContent = msg;
-    el.className = `feedback-area ${type}`; // success, error, info
+    el.className = `feedback-area ${type}`;
 }
 
 function clearFeedback() {
@@ -105,30 +104,26 @@ function updatePinDisplay() {
 }
 
 // ========== QUIZ LOADING LOGIC ==========
-// Maps for decoding
 const LEVELS = { 
-    1:'primary', 
-    2:'lower-secondary', 
-    3:'upper-secondary' 
+    1: 'primary', 
+    2: 'lower-secondary', 
+    3: 'upper-secondary' 
 };
 
 const SUBJECTS = { 
-    0:'math', 
-    1:'science', 
-    2:'combined-physics', 
-    3:'pure-physics', 
-    4:'combined-chemistry', 
-    5:'pure-chemistry' 
+    0: 'math', 
+    1: 'science', 
+    2: 'combined-physics', 
+    3: 'pure-physics', 
+    4: 'combined-chemistry', 
+    5: 'pure-chemistry' 
 };
 
 async function loadQuiz(code) {
     showScreen('loading-screen');
     document.getElementById('loading-message').textContent = `Loading Quiz ${code}...`;
     
-    // Decode the 6-digit code
     const digits = code.split('').map(Number);
-    
-    // Construct folder path based on code
     const lvlFolder = LEVELS[digits[0]] || 'primary';
     const subFolder = SUBJECTS[digits[1]] || 'math';
     
@@ -138,17 +133,14 @@ async function loadQuiz(code) {
     console.log(`Attempting to load: ${path}`);
     
     try {
-        // Attempt fetch from server
         const res = await fetch(path);
         if(!res.ok) throw new Error("File not found");
         const data = await res.json();
         
-        // Validate and extract data
         if(!data.questions || !Array.isArray(data.questions)) {
             throw new Error("Invalid JSON format - missing 'questions' array");
         }
         
-        // Store metadata
         state.quizMetadata = {
             title: data.title || 'Quiz',
             topic: data.topic || '',
@@ -161,7 +153,6 @@ async function loadQuiz(code) {
     } catch (e) {
         console.warn("Fetch failed, checking catalog", e);
         
-        // Fallback: Check catalog for uploaded quiz
         const catItem = state.quizCatalog.find(q => q.code === code);
         if(catItem && catItem.questions) {
             state.quizMetadata = {
@@ -172,7 +163,7 @@ async function loadQuiz(code) {
             };
             startQuiz(catItem.questions);
         } else {
-            alert(`❌ Quiz ${code} not found!\n\nPlease:\n• Check the code\n• Upload JSON via Admin Mode (Ctrl+Shift+A)\n• Ensure folder structure: Questions/${lvlFolder}/${subFolder}/${code}.json`);
+            alert(`❌ Quiz ${code} not found!\n\nPlease check the code or contact admin.`);
             showScreen('pin-screen');
         }
     }
@@ -187,16 +178,13 @@ function handleFileUpload(e) {
         try {
             const data = JSON.parse(evt.target.result);
             
-            // Validate format
             if(!data.questions || !Array.isArray(data.questions)) {
                 throw new Error("Invalid format - must have 'questions' array");
             }
             
-            // Extract code from filename (if matches pattern XXXXXX.json)
             const nameMatch = file.name.match(/(\d{6})\.json/);
             let code = nameMatch ? nameMatch[1] : null;
             
-            // If no code in filename, prompt user
             if(!code) {
                 code = prompt("Enter 6-digit code for this quiz (e.g., 201011):");
             }
@@ -206,7 +194,6 @@ function handleFileUpload(e) {
                 return;
             }
             
-            // Save to catalog with metadata
             const existing = state.quizCatalog.findIndex(q => q.code === code);
             const entry = { 
                 code, 
@@ -224,11 +211,9 @@ function handleFileUpload(e) {
             }
             
             localStorage.setItem('quizCatalog', JSON.stringify(state.quizCatalog));
-            renderCatalog();
             
             alert(`✅ Quiz "${data.title || code}" saved!\nCode: ${code}\n${data.questions.length} questions loaded.`);
             
-            // Auto-load the quiz
             state.quizMetadata = {
                 title: entry.title,
                 topic: entry.topic,
@@ -238,7 +223,7 @@ function handleFileUpload(e) {
             startQuiz(data.questions);
             
         } catch(err) {
-            alert("❌ Invalid JSON format!\n\nExpected structure:\n{\n  \"title\": \"...\",\n  \"questions\": [...]\n}\n\nError: " + err.message);
+            alert("❌ Invalid JSON format!\n\nError: " + err.message);
             console.error(err);
         }
     };
@@ -273,17 +258,14 @@ function loadQuestion() {
         return;
     }
 
-    // Reset UI
     state.isAnswered = false;
     state.roundScore = 0;
     selectedOptionIdx = null;
     
-    // Display question
     document.getElementById('question-text').textContent = q.question;
     document.getElementById('current-q').textContent = state.currQIndex + 1;
     document.getElementById('total-q').textContent = state.questions.length;
     
-    // Render Options
     const cont = document.getElementById('options-container');
     cont.innerHTML = '';
     q.options.forEach((opt, idx) => {
@@ -294,19 +276,16 @@ function loadQuestion() {
         cont.appendChild(div);
     });
 
-    // Reset button states
     document.getElementById('submit-answer').style.display = 'block';
     document.getElementById('submit-answer').disabled = false;
     document.getElementById('btn-hit').disabled = false;
     document.getElementById('btn-stand').disabled = false;
     
-    // Hide Phases
     document.getElementById('choice-section').style.display = 'none';
     document.getElementById('treasure-section').style.display = 'none';
     document.getElementById('risk-section').style.display = 'none';
     clearFeedback();
     
-    // Update Turn UI
     updateTurnIndicator();
 }
 
@@ -328,7 +307,6 @@ function submitAnswer() {
     const options = document.querySelectorAll('.option');
     const isCorrect = (selectedOptionIdx === q.correct);
 
-    // Visuals
     if(isCorrect) {
         options[selectedOptionIdx].classList.add('correct');
     } else {
@@ -339,7 +317,6 @@ function submitAnswer() {
     document.getElementById('submit-answer').style.display = 'none';
 
     if(isCorrect) {
-        // CORRECT: Get Base Points -> Show Choice
         const base = q.points || 10;
         state.roundScore = base;
         
@@ -354,7 +331,6 @@ function submitAnswer() {
         }, q.explanation ? 3000 : 1500);
         
     } else {
-        // WRONG: Show explanation, no points, keep turn
         let msg = `❌ WRONG! Correct: ${String.fromCharCode(65+q.correct)}) ${q.options[q.correct]}`;
         if(q.explanation) {
             msg += `\n\n💡 ${q.explanation}`;
@@ -373,7 +349,6 @@ function startTreasurePhase() {
     document.getElementById('choice-section').style.display = 'none';
     document.getElementById('treasure-section').style.display = 'block';
     
-    // Reset boxes
     document.querySelectorAll('.t-box').forEach(b => {
         b.textContent = '?';
         b.classList.remove('opened');
@@ -402,7 +377,6 @@ function handleTreasureOpen(box) {
     
     const effect = effects[Math.floor(Math.random() * effects.length)];
     
-    // Apply Effect
     if(effect.val === 'x2') state.roundScore *= 2;
     if(effect.val === '+20') state.roundScore += 20;
     if(effect.val === '+15') state.roundScore += 15;
@@ -414,17 +388,14 @@ function handleTreasureOpen(box) {
         updateScoreboard();
     }
 
-    // UI Update
     box.textContent = effect.val === 'swap' ? '🔄' : effect.val === 'x2' ? '2X' : effect.val === '/2' ? '½' : '+';
     box.classList.add('opened');
     
-    // Lock all boxes
     document.querySelectorAll('.t-box').forEach(b => b.style.pointerEvents = 'none');
     
     document.getElementById('treasure-result').innerHTML = 
         `<strong>${effect.lbl}</strong><br>Round Score: ${state.roundScore} pts`;
     
-    // Auto-Stand after delay
     setTimeout(() => {
         bankPointsAndNext();
     }, 2500);
@@ -434,25 +405,22 @@ function handleTreasureOpen(box) {
 function updateRiskDisplay() {
     document.getElementById('risk-display').textContent = state.roundScore;
     
-    // Color code based on risk level
     const display = document.getElementById('risk-display');
     if(state.roundScore >= 40) {
-        display.style.color = '#f56565'; // Red - high risk
+        display.style.color = '#f56565';
     } else if(state.roundScore >= 30) {
-        display.style.color = '#ed8936'; // Orange - medium risk
+        display.style.color = '#ed8936';
     } else {
-        display.style.color = 'var(--gold)'; // Gold - safe
+        display.style.color = 'var(--gold)';
     }
 }
 
 function handleHit() {
-    // Add 50% of current score
     const add = Math.ceil(state.roundScore * 0.5);
     state.roundScore += add;
     updateRiskDisplay();
 
     if(state.roundScore > TARGET_SCORE) {
-        // BUST
         state.roundScore = 0;
         updateRiskDisplay();
         showFeedback("💥 BUST! Score > 50! Lost all round points!", 'error');
@@ -460,13 +428,11 @@ function handleHit() {
         document.getElementById('btn-stand').disabled = true;
         
         setTimeout(() => {
-            // Bust = no points, switch player
             switchPlayer();
             state.currQIndex++;
             loadQuestion();
         }, 2500);
     } else if(state.roundScore === TARGET_SCORE) {
-        // Perfect 50!
         showFeedback("🎯 PERFECT 50! Maximum points!", 'success');
         document.getElementById('btn-hit').disabled = true;
         setTimeout(handleStand, 1500);
@@ -487,17 +453,14 @@ function handleStand() {
 
 // ========== UTILS ==========
 function bankPointsAndNext() {
-    // Add round score to total
     state.scores[state.currPlayer - 1] += state.roundScore;
     updateScoreboard();
     
-    // Check for winner (optional: end game if someone reaches target)
     if(state.scores[state.currPlayer - 1] >= 100) {
         endGame();
         return;
     }
     
-    // Next Turn - Winner takes turn (switch player after correct answer)
     switchPlayer();
     state.currQIndex++;
     loadQuestion();
@@ -512,7 +475,6 @@ function updateScoreboard() {
     document.getElementById('score1').textContent = state.scores[0];
     document.getElementById('score2').textContent = state.scores[1];
     
-    // Update round indicators
     const roundNum = Math.floor(state.currQIndex / 2) + 1;
     document.getElementById('p1-round').textContent = `Round: ${roundNum}`;
     document.getElementById('p2-round').textContent = `Round: ${roundNum}`;
@@ -547,72 +509,15 @@ function endGame() {
     document.getElementById('winner-text').textContent = msg;
 }
 
-// ========== CATALOG & SCAN ==========
-function renderCatalog() {
-    const el = document.getElementById('quiz-catalog');
-    if(state.quizCatalog.length === 0) {
-        el.innerHTML = '<div style="color: #a0aec0; text-align: center; padding: 20px;">No saved quizzes</div>';
-        return;
-    }
-    
-    el.innerHTML = '<h3 style="color: var(--gold); margin-bottom: 10px; text-align: center;">📚 Saved Quizzes</h3>' +
-        state.quizCatalog.map(q => 
-            `<div class="cat-item" onclick="loadQuizFromCatalog('${q.code}')" title="${q.title || 'Quiz'}\n${q.grade || ''} ${q.subject || ''}">
-                <div style="font-weight: bold;">${q.code}</div>
-                <div style="font-size: 0.75rem; color: #a0aec0; margin-top: 3px;">${q.topic || q.grade || ''}</div>
-            </div>`
-        ).join('');
-}
-
-function loadQuizFromCatalog(code) {
-    state.pin = code.split('');
-    updatePinDisplay();
-    loadQuiz(code);
-}
-
-// Mock Scanner
+// ========== CATALOG (HIDDEN) ==========
 function scanForQuizzes() {
-    alert("📡 Scanning for quizzes...\n\nNote: This requires server-side directory listing.\n\nFor now:\n• Upload JSON files\n• Or enter known 6-digit codes");
-    
-    // Demo quiz for testing
-    const demo = { 
-        code: '201011',
-        title: 'Demo: Sec 1 Math - Chapter 1',
-        topic: 'LCM & HCF',
-        subject: 'Mathematics',
-        grade: 'Sec 1',
-        questions: [
-            {
-                question: "What is the HCF of 36 and 48?", 
-                options: ["6", "12", "18", "24"], 
-                correct: 1, 
-                points: 10,
-                explanation: "Common factors: 1, 2, 3, 4, 6, 12. Highest is 12."
-            },
-            {
-                question: "Find the LCM of 15 and 25?", 
-                options: ["50", "75", "100", "125"], 
-                correct: 1, 
-                points: 10,
-                explanation: "Multiples of 15: 15, 30, 45, 60, 75... Multiples of 25: 25, 50, 75... LCM = 75."
-            }
-        ] 
-    };
-    
-    if(!state.quizCatalog.some(q => q.code === demo.code)) {
-        state.quizCatalog.push(demo);
-        localStorage.setItem('quizCatalog', JSON.stringify(state.quizCatalog));
-        renderCatalog();
-        alert(`✅ Demo quiz ${demo.code} added to catalog!`);
-    }
+    alert("📡 Please enter the 6-digit quiz code.");
 }
 
-// Clear catalog (admin function - call from console if needed)
 function clearCatalog() {
-    if(confirm("⚠️ Clear all saved quizzes from catalog?")) {
+    if(confirm("⚠️ Clear all saved quizzes?")) {
         state.quizCatalog = [];
         localStorage.removeItem('quizCatalog');
-        renderCatalog();
         alert("✅ Catalog cleared!");
     }
 }
