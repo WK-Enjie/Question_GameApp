@@ -6,7 +6,7 @@ const gameState = {
     currentQuestion: 0,
     currentPlayer: 1,
     scores: [0, 0],
-    targetScore: 41, // CHANGED FROM 21 TO 41!
+    targetScore: 41, // ✅ CHANGED TO 41 - MAX POINTS
     roundScores: [0, 0],
     selectedAnswer: null,
     answered: false,
@@ -74,684 +74,378 @@ function decodeQuizCode(code) {
     };
 }
 
-// ========== INITIALIZATION ==========
-document.addEventListener('DOMContentLoaded', async function() {
-    console.log('🚀 CNY Blackjack Quiz Game Initialized');
-    
-    // Initialize PIN display
-    updatePinDisplay();
-
-    // Load catalog from storage
-    await loadCatalogFromStorage();
-    updateCatalogDisplay();
-
-    // ========== EVENT LISTENERS ==========
-    // Number buttons
+// ========== SAFE EVENT DELEGATION ==========
+function setupEventListeners() {
+    // PIN KEYPAD
     document.querySelectorAll('.key[data-key]').forEach(button => {
-        button.addEventListener('click', function() {
-            const digit = this.getAttribute('data-key');
-            addDigit(digit);
-        });
+        button.removeEventListener('click', handleKeyClick); // Prevent duplicates
+        button.addEventListener('click', handleKeyClick);
     });
 
-    // Clear button
-    document.getElementById('clear-btn').addEventListener('click', clearPin);
+    // CRITICAL FIX: Event delegation for submit button (works even if DOM changes)
+    document.removeEventListener('click', handleDocumentClick);
+    document.addEventListener('click', handleDocumentClick);
 
-    // Submit button
-    document.getElementById('submit-pin').addEventListener('click', submitPin);
-
-    // Scan button
-    document.getElementById('scan-quizzes').addEventListener('click', scanForQuizzes);
-
-    // Test button
-    document.getElementById('test-pin').addEventListener('click', function() {
-        setPinFromCode('202031'); // Test with WS1
-        setTimeout(submitPin, 500);
+    // Other buttons
+    document.getElementById('clear-btn')?.addEventListener('click', clearPin);
+    document.getElementById('submit-pin')?.addEventListener('click', submitPin);
+    document.getElementById('test-pin')?.addEventListener('click', () => {
+        setPinFromCode('202031');
+        setTimeout(submitPin, 300);
     });
-
-    // Home button
-    document.getElementById('home-btn').addEventListener('click', function() {
+    document.getElementById('home-btn')?.addEventListener('click', () => {
         clearPin();
         showScreen('pin-screen');
     });
-
-    // Error screen buttons
     document.getElementById('retry-btn')?.addEventListener('click', submitPin);
-    document.getElementById('back-to-pin-error')?.addEventListener('click', function() {
+    document.getElementById('back-to-pin-error')?.addEventListener('click', () => {
         clearPin();
         showScreen('pin-screen');
     });
-
-    // Game over buttons
     document.getElementById('restart-btn')?.addEventListener('click', initGame);
-    document.getElementById('new-chapter-btn')?.addEventListener('click', function() {
+    document.getElementById('new-chapter-btn')?.addEventListener('click', () => {
         clearPin();
         showScreen('pin-screen');
     });
-
-    // Treasure boxes
-    document.querySelectorAll('.treasure-box').forEach(box => {
-        box.addEventListener('click', function() {
-            const boxNum = this.getAttribute('data-box');
-            openTreasureBox(boxNum);
-        });
-    });
-
-    // Blackjack buttons
+    document.getElementById('scan-quizzes')?.addEventListener('click', scanForQuizzes);
+    document.getElementById('json-upload')?.addEventListener('change', handleFileUpload);
     document.getElementById('hit-btn')?.addEventListener('click', hitMe);
     document.getElementById('stand-btn')?.addEventListener('click', stand);
-
-    // File upload
-    document.getElementById('json-upload').addEventListener('change', handleFileUpload);
-
-    // Keyboard support
-    document.addEventListener('keydown', function(e) {
-        if (document.getElementById('pin-screen').classList.contains('active')) {
-            if (e.key >= '0' && e.key <= '9') {
-                addDigit(e.key);
-            } else if (e.key === 'Backspace') {
-                removeLastDigit();
-            } else if (e.key === 'Enter') {
-                submitPin();
-            }
-        }
+    
+    // Treasure boxes
+    document.querySelectorAll('.treasure-box').forEach(box => {
+        box.removeEventListener('click', handleTreasureClick);
+        box.addEventListener('click', handleTreasureClick);
     });
+}
 
-    console.log('✅ All systems ready');
-    console.log('🎯 Max Points: 41 (changed from 21)');
-});
+function handleKeyClick(e) {
+    const digit = this.getAttribute('data-key');
+    addDigit(digit);
+}
 
-// ========== PIN FUNCTIONS ==========
+function handleDocumentClick(e) {
+    // Submit answer button (event delegation)
+    if (e.target.matches('#submit-answer, #submit-answer *')) {
+        e.preventDefault();
+        submitAnswer();
+        return;
+    }
+    
+    // Option selection (event delegation)
+    if (e.target.closest('.option')) {
+        const option = e.target.closest('.option');
+        const index = parseInt(option.dataset.index);
+        if (!isNaN(index)) {
+            selectOption(index);
+        }
+    }
+}
+
+function handleTreasureClick() {
+    const boxNum = this.getAttribute('data-box');
+    openTreasureBox(boxNum);
+}
+
+// ========== CORE FUNCTIONS (WITH NULL SAFETY) ==========
 function updatePinDisplay() {
     for (let i = 1; i <= 6; i++) {
-        const digitElement = document.getElementById(`digit${i}`);
-        if (!digitElement) continue;
-        
-        const digitValue = gameState.pin[i - 1];
-        const numberEl = digitElement.querySelector('.digit-number');
-        if (numberEl) {
-            numberEl.textContent = digitValue || '_';
-        }
-        digitElement.classList.toggle('filled', digitValue !== '');
+        const el = document.getElementById(`digit${i}`);
+        if (!el) continue;
+        const val = gameState.pin[i-1] || '_';
+        const numEl = el.querySelector('.digit-number');
+        if (numEl) numEl.textContent = val;
+        el.classList.toggle('filled', val !== '_');
     }
 }
 
 function addDigit(digit) {
-    if (gameState.currentDigit < 6) {
-        gameState.pin[gameState.currentDigit] = digit;
-        gameState.currentDigit++;
-        updatePinDisplay();
-    }
-}
-
-function removeLastDigit() {
-    if (gameState.currentDigit > 0) {
-        gameState.currentDigit--;
-        gameState.pin[gameState.currentDigit] = '';
-        updatePinDisplay();
-    }
+    if (gameState.currentDigit >= 6) return;
+    gameState.pin[gameState.currentDigit] = digit;
+    gameState.currentDigit++;
+    updatePinDisplay();
 }
 
 function clearPin() {
-    gameState.pin = ['', '', '', '', '', ''];
+    gameState.pin = Array(6).fill('');
     gameState.currentDigit = 0;
     updatePinDisplay();
 }
 
-function setPinFromCode(code) {
-    clearPin();
-    const digits = code.split('');
-    digits.forEach(digit => {
-        addDigit(digit);
-    });
+function showScreen(id) {
+    document.querySelectorAll('.screen').forEach(s => s.classList.remove('active'));
+    const screen = document.getElementById(id);
+    if (screen) screen.classList.add('active');
 }
 
-// ========== SCREEN MANAGEMENT ==========
-function showScreen(screenId) {
-    document.querySelectorAll('.screen').forEach(screen => {
-        screen.classList.remove('active');
-    });
-    const targetScreen = document.getElementById(screenId);
-    if (targetScreen) {
-        targetScreen.classList.add('active');
-    }
-}
-
-// ========== LOAD QUIZ ==========
-async function loadQuizByCode(code) {
-    console.log(`🔍 Loading: ${code}`);
-    
-    const quizInfo = decodeQuizCode(code);
-    if (!quizInfo) {
-        return { 
-            success: false, 
-            error: `Invalid quiz code format: ${code}` 
-        };
-    }
-
-    gameState.currentQuizCode = quizInfo.code;
-    gameState.currentQuizInfo = quizInfo;
-
-    document.getElementById('loading-message').textContent = `Loading ${quizInfo.code}...`;
-
-    try {
-        const response = await fetch(quizInfo.filepath);
-        
-        if (!response.ok) {
-            if (response.status === 404) {
-                throw new Error(`File not found: ${quizInfo.filename}`);
-            }
-            throw new Error(`HTTP ${response.status}: ${response.statusText}`);
-        }
-        
-        const data = await response.json();
-        
-        if (!data.questions || !Array.isArray(data.questions)) {
-            throw new Error('Invalid quiz format: Missing questions array');
-        }
-        
-        if (data.questions.length === 0) {
-            throw new Error('Quiz file is empty');
-        }
-        
-        addQuizToCatalog(quizInfo);
-        
-        return { 
-            success: true, 
-            data, 
-            info: quizInfo 
-        };
-        
-    } catch (error) {
-        console.error('❌ Error loading quiz:', error);
-        return { 
-            success: false, 
-            error: error.message 
-        };
-    }
-}
-
-// ========== SUBMIT PIN ==========
 async function submitPin() {
     const pin = gameState.pin.join('');
     if (pin.length !== 6) {
-        alert('Please enter all 6 digits');
+        alert('⚠️ Please enter all 6 digits');
         return;
     }
-
+    
     showScreen('loading-screen');
-    document.getElementById('loading-message').textContent = 'Loading quiz...';
-
     try {
         const result = await loadQuizByCode(pin);
-        
-        if (!result.success) {
-            const quizInfo = decodeQuizCode(pin);
-            let errorMsg = `<strong>Worksheet ${quizInfo?.code || pin} not found</strong><br><br>`;
-            errorMsg += `<div style="color: #a0aec0; font-size: 0.9rem;">`;
-            errorMsg += `Error: ${result.error}</div>`;
-            
-            if (quizInfo && result.error.includes('not found')) {
-                errorMsg += `<br><div style="background: rgba(214, 158, 46, 0.1); padding: 15px; border-radius: 10px; margin-top: 15px;">`;
-                errorMsg += `<strong>Suggested file location:</strong><br>`;
-                errorMsg += `<code style="background: rgba(214, 158, 46, 0.2); padding: 5px 10px; border-radius: 5px; display: inline-block; margin-top: 5px;">`;
-                errorMsg += `${quizInfo.filepath}</code>`;
-                errorMsg += `</div>`;
-            }
-            
-            if (gameState.quizCatalog.length > 0) {
-                errorMsg += `<br><strong>Available quizzes (${gameState.quizCatalog.length}):</strong><br>`;
-                gameState.quizCatalog.slice(0, 5).forEach(q => {
-                    errorMsg += `<div style="margin: 5px 0; padding: 8px; background: rgba(45, 55, 72, 0.5); border-radius: 5px;">`;
-                    errorMsg += `• <strong>${q.code}</strong>: ${q.name}`;
-                    errorMsg += `</div>`;
-                });
-                
-                if (gameState.quizCatalog.length > 5) {
-                    errorMsg += `<div style="color: #718096; margin-top: 5px;">`;
-                    errorMsg += `... and ${gameState.quizCatalog.length - 5} more`;
-                    errorMsg += `</div>`;
-                }
-            }
-            
-            throw new Error(errorMsg);
-        }
+        if (!result.success) throw new Error(result.error);
         
         gameState.questions = result.data.questions;
-        
-        document.getElementById('quiz-title').textContent = 
-            result.data.title || result.info.fullName;
-        document.getElementById('quiz-topic').textContent = 
-            `${result.info.subject} • ${result.info.gradeLabel}`;
-        document.getElementById('current-quiz-code').textContent = 
-            result.info.code;
-        document.getElementById('current-quiz-path').textContent = 
-            result.info.filepath;
+        document.getElementById('quiz-title').textContent = result.data.title || result.info.fullName;
+        document.getElementById('quiz-topic').textContent = `${result.info.subject} • ${result.info.gradeLabel}`;
+        document.getElementById('current-quiz-code').textContent = result.info.code;
+        document.getElementById('current-quiz-path').textContent = result.info.filepath;
         
         initGame();
         showScreen('game-screen');
-        
-    } catch (error) {
-        console.error('Failed to load quiz:', error);
-        
+    } catch (err) {
+        console.error('Load failed:', err);
         setTimeout(() => {
-            document.getElementById('error-message').innerHTML = error.message;
+            document.getElementById('error-message').innerHTML = 
+                `<strong>Error:</strong> ${err.message || 'Failed to load quiz'}`;
             showScreen('error-screen');
         }, 500);
     }
 }
 
-// ========== FILE UPLOAD ==========
-function handleFileUpload(event) {
-    const file = event.target.files[0];
-    if (!file) return;
+async function loadQuizByCode(code) {
+    const info = decodeQuizCode(code);
+    if (!info) return { success: false, error: 'Invalid code format' };
     
-    const statusEl = document.getElementById('upload-status');
-    statusEl.textContent = 'Loading quiz...';
-    statusEl.className = 'upload-status';
-    
-    const reader = new FileReader();
-    reader.onload = (e) => {
-        try {
-            const quizData = JSON.parse(e.target.result);
-            gameState.loadedFromUpload = true;
-            
-            gameState.questions = quizData.questions || [];
-            document.getElementById('quiz-title').textContent = quizData.title || 'Uploaded Quiz';
-            document.getElementById('quiz-topic').textContent = `${quizData.subject || 'General'} • ${quizData.level || 'All Levels'}`;
-            document.getElementById('current-quiz-code').textContent = 'UPLOAD';
-            document.getElementById('current-quiz-path').textContent = `Uploaded: ${file.name}`;
-            
-            initGame();
-            showScreen('game-screen');
-            
-            statusEl.textContent = '✅ Quiz loaded successfully!';
-            statusEl.className = 'upload-status success';
-        } catch (error) {
-            statusEl.textContent = `❌ Error: ${error.message}`;
-            statusEl.className = 'upload-status error';
-            console.error('Error parsing JSON:', error);
-        }
-    };
-    reader.readAsText(file);
-}
-
-// ========== CATALOG MANAGEMENT ==========
-async function loadCatalogFromStorage() {
-    const storedCatalog = localStorage.getItem('quizCatalog');
-    if (storedCatalog) {
-        gameState.quizCatalog = JSON.parse(storedCatalog);
-        console.log(`📂 Loaded ${gameState.quizCatalog.length} quizzes from storage`);
-        return;
+    try {
+        const res = await fetch(info.filepath);
+        if (!res.ok) throw new Error(`File not found: ${info.filename}`);
+        const data = await res.json();
+        
+        if (!data.questions?.length) throw new Error('Invalid quiz format');
+        addQuizToCatalog(info);
+        return { success: true, data, info };
+    } catch (err) {
+        return { success: false, error: err.message };
     }
-    
-    const defaultQuizzes = [
-        { code: '202-03-1', filename: '202031.json', path: 'Questions/lower-secondary/math/202031.json', name: 'Sec 2 Quadratic WS1', subject: 'Mathematics', level: 'Lower Secondary', grade: 'S2' },
-        { code: '202-03-2', filename: '202032.json', path: 'Questions/lower-secondary/math/202032.json', name: 'Sec 2 Quadratic WS2', subject: 'Mathematics', level: 'Lower Secondary', grade: 'S2' }
-    ];
-
-    gameState.quizCatalog = defaultQuizzes;
-    localStorage.setItem('quizCatalog', JSON.stringify(defaultQuizzes));
 }
 
-function addQuizToCatalog(quizInfo) {
-    const exists = gameState.quizCatalog.find(q => q.code === quizInfo.code);
-    if (!exists) {
-        gameState.quizCatalog.push({
-            code: quizInfo.code,
-            filename: quizInfo.filename,
-            path: quizInfo.filepath,
-            name: quizInfo.fullName,
-            subject: quizInfo.subject,
-            level: quizInfo.level,
-            grade: quizInfo.gradeLabel
-        });
-        localStorage.setItem('quizCatalog', JSON.stringify(gameState.quizCatalog));
-        updateCatalogDisplay();
-        return true;
-    }
-    return false;
-}
-
-function updateCatalogDisplay() {
-    const catalogEl = document.getElementById('quiz-catalog');
-    const countEl = document.getElementById('quiz-count');
-    
-    if (gameState.quizCatalog.length === 0) {
-        catalogEl.innerHTML = `
-            <div class="no-quizzes">
-                <i class="fas fa-search"></i>
-                <h4>No quizzes found</h4>
-                <p>Add JSON files to the Questions folder</p>
-            </div>
-        `;
-        countEl.textContent = '0 quizzes';
-        return;
-    }
-
-    const sortedQuizzes = [...gameState.quizCatalog].sort((a, b) => a.code.localeCompare(b.code));
-
-    catalogEl.innerHTML = sortedQuizzes.map(quiz => `
-        <div class="quiz-item" data-code="${quiz.code.replace(/-/g, '')}">
-            <div class="quiz-header">
-                <span class="quiz-code">${quiz.code}</span>
-                <span class="quiz-name">${quiz.name}</span>
-            </div>
-            <div class="quiz-details">
-                <span class="quiz-level">${quiz.level}</span> • 
-                <span class="quiz-grade">${quiz.grade}</span> • 
-                <span class="quiz-subject">${quiz.subject}</span>
-            </div>
-        </div>
-    `).join('');
-
-    countEl.textContent = `${gameState.quizCatalog.length} quizzes`;
-
-    document.querySelectorAll('.quiz-item').forEach(item => {
-        item.addEventListener('click', function() {
-            const code = this.dataset.code;
-            setPinFromCode(code);
-            setTimeout(submitPin, 500);
-        });
-    });
-}
-
-// ========== FILE SCANNER ==========
-async function scanForQuizzes() {
-    console.log('🔍 Scanning for quiz files...');
-    showScreen('loading-screen');
-    
-    const loadingMessage = document.getElementById('loading-message');
-    const loadingDetails = document.getElementById('loading-details');
-    const progressBar = document.getElementById('scan-progress');
-    const foundCount = document.getElementById('quiz-found');
-
-    loadingMessage.textContent = 'Scanning Questions folder...';
-    loadingDetails.textContent = 'Looking for quiz files...';
-    
-    let progress = 0;
-    const interval = setInterval(() => {
-        progress += 5;
-        if (progressBar) progressBar.style.width = `${progress}%`;
-        if (progress >= 100) {
-            clearInterval(interval);
-            setTimeout(() => {
-                loadingMessage.textContent = 'Scan complete!';
-                loadingDetails.textContent = `Found ${gameState.quizCatalog.length} quiz files`;
-                if (foundCount) foundCount.textContent = gameState.quizCatalog.length;
-                
-                setTimeout(() => {
-                    showScreen('pin-screen');
-                    updateCatalogDisplay();
-                }, 1500);
-            }, 500);
-        }
-    }, 100);
-}
-
-// ========== GAME FUNCTIONS ==========
 function initGame() {
-    gameState.currentQuestion = 0;
-    gameState.currentPlayer = 1;
-    gameState.scores = [0, 0];
-    gameState.roundScores = [0, 0];
-    gameState.selectedAnswer = null;
-    gameState.answered = false;
-    gameState.powerupUsed = false;
-    gameState.canUsePowerup = false;
-    gameState.coins = 0;
+    Object.assign(gameState, {
+        currentQuestion: 0,
+        currentPlayer: 1,
+        scores: [0, 0],
+        roundScores: [0, 0],
+        selectedAnswer: null,
+        answered: false,
+        powerupUsed: false,
+        canUsePowerup: false,
+        coins: 0
+    });
     
     updateScores();
     updatePlayerTurn();
     loadQuestion();
-
-    const gameOver = document.getElementById('game-over');
-    if (gameOver) gameOver.style.display = 'none';
+    document.getElementById('game-over')?.style.setProperty('display', 'none', 'important');
 }
 
 function loadQuestion() {
-    const question = gameState.questions[gameState.currentQuestion];
-    if (!question) {
+    const q = gameState.questions[gameState.currentQuestion];
+    if (!q) {
         endGame();
         return;
     }
-
+    
+    // Update UI
     document.getElementById('current-q').textContent = gameState.currentQuestion + 1;
     document.getElementById('total-q').textContent = gameState.questions.length;
-    document.getElementById('question-text').textContent = question.question || "Question";
-
+    document.getElementById('question-text').textContent = q.question;
+    
+    // Render options WITH DIRECT EVENT HANDLERS
     const container = document.getElementById('options-container');
     container.innerHTML = '';
-
-    if (question.options && question.options.length) {
-        question.options.forEach((option, index) => {
-            const optionEl = document.createElement('div');
-            optionEl.className = 'option';
-            optionEl.innerHTML = `<strong>${String.fromCharCode(65 + index)})</strong> ${option}`;
-            optionEl.dataset.index = index;
-            
-            // CRITICAL FIX: Direct click handler on each option
-            optionEl.addEventListener('click', function() {
-                selectOption(parseInt(this.dataset.index));
-            });
-            
-            container.appendChild(optionEl);
-        });
-    }
-
+    
+    q.options.forEach((opt, idx) => {
+        const el = document.createElement('div');
+        el.className = 'option';
+        el.innerHTML = `<strong>${String.fromCharCode(65 + idx)})</strong> ${opt}`;
+        el.dataset.index = idx;
+        
+        // DIRECT CLICK HANDLER (MOST RELIABLE)
+        el.onclick = () => selectOption(idx);
+        
+        container.appendChild(el);
+    });
+    
+    // Reset state
     gameState.selectedAnswer = null;
     gameState.answered = false;
-    gameState.powerupUsed = false;
-    gameState.canUsePowerup = false;
-
-    const submitBtn = document.getElementById('submit-answer');
-    if (submitBtn) {
-        submitBtn.disabled = true;
-        submitBtn.style.display = 'block';
-    }
-
-    const nextBtn = document.getElementById('next-btn');
-    if (nextBtn) nextBtn.style.display = 'none';
-
+    document.getElementById('submit-answer').disabled = true;
     document.getElementById('answer-feedback').innerHTML = 
         '<div class="feedback-placeholder"><i class="fas fa-lightbulb"></i><p>Select an answer to continue</p></div>';
-
+    
     document.getElementById('treasure-section').style.display = 'none';
     document.getElementById('blackjack-controls').style.display = 'none';
-
     updateScores();
     updatePlayerTurn();
-    
-    window.scrollTo({ top: 0, behavior: 'smooth' });
 }
 
 function selectOption(index) {
     if (gameState.answered) return;
     
-    document.querySelectorAll('.option').forEach(opt => {
-        opt.classList.remove('selected');
-    });
-
+    // Deselect all
+    document.querySelectorAll('.option').forEach(el => el.classList.remove('selected'));
+    
+    // Select current
     const options = document.querySelectorAll('.option');
     if (options[index]) {
         options[index].classList.add('selected');
         gameState.selectedAnswer = index;
         
-        const submitBtn = document.getElementById('submit-answer');
-        if (submitBtn) {
-            submitBtn.disabled = false;
-            submitBtn.style.opacity = '1';
-            submitBtn.style.cursor = 'pointer';
+        // ENABLE SUBMIT BUTTON (CRITICAL FIX)
+        const btn = document.getElementById('submit-answer');
+        if (btn) {
+            btn.disabled = false;
+            btn.style.opacity = '1';
+            btn.style.cursor = 'pointer';
+            btn.style.transform = 'scale(1.02)';
+            setTimeout(() => {
+                if (btn) btn.style.transform = 'scale(1)';
+            }, 100);
         }
     }
 }
 
 function submitAnswer() {
-    if (gameState.answered || gameState.selectedAnswer === null) {
-        alert('Please select an answer first!');
+    // SAFETY CHECKS
+    if (gameState.answered) {
+        console.log('Already answered');
+        return;
+    }
+    
+    if (gameState.selectedAnswer === null) {
+        alert('❗ Please select an answer first!');
         return;
     }
     
     gameState.answered = true;
-    
-    const question = gameState.questions[gameState.currentQuestion];
-    const isCorrect = gameState.selectedAnswer === question.correct;
-    const basePoints = question.points || 10;
+    const q = gameState.questions[gameState.currentQuestion];
+    const isCorrect = gameState.selectedAnswer === q.correct;
+    const points = q.points || 10;
     const playerIdx = gameState.currentPlayer - 1;
-
+    
+    // Disable button immediately
     const submitBtn = document.getElementById('submit-answer');
-    if (submitBtn) submitBtn.disabled = true;
-
-    document.querySelectorAll('.option').forEach((opt, index) => {
-        if (index === question.correct) {
-            opt.classList.add('correct');
-            createCoinExplosion(opt.getBoundingClientRect());
-        } else if (index === gameState.selectedAnswer && !isCorrect) {
-            opt.classList.add('incorrect');
+    if (submitBtn) {
+        submitBtn.disabled = true;
+        submitBtn.textContent = 'Submitted...';
+    }
+    
+    // Visual feedback
+    document.querySelectorAll('.option').forEach((el, idx) => {
+        if (idx === q.correct) {
+            el.classList.add('correct');
+            createCoinExplosion(el.getBoundingClientRect());
+        } else if (idx === gameState.selectedAnswer && !isCorrect) {
+            el.classList.add('incorrect');
         }
     });
-
+    
+    // Process answer
     if (isCorrect) {
-        let points = basePoints;
-        
-        if (gameState.canUsePowerup && confirm('Use Power-Up for double points?')) {
-            points *= 2;
+        let earned = points;
+        if (gameState.canUsePowerup && confirm('✨ Use Power-Up for DOUBLE points?')) {
+            earned *= 2;
             gameState.canUsePowerup = false;
-            showCelebration('⚡ Power-Up Activated! Points doubled!', 'warning');
+            showCelebration('⚡ POWER-UP! Points doubled!', 'warning');
         }
         
-        gameState.roundScores[playerIdx] += points;
+        gameState.roundScores[playerIdx] += earned;
         
+        // CHECK BUST (AGAINST 41)
         if (gameState.roundScores[playerIdx] > gameState.targetScore) {
             bust(playerIdx);
             return;
         }
         
-        showCelebration(`✅ Correct! +${points} this round!`, 'success');
-        
+        showCelebration(`✅ CORRECT! +${earned} points!`, 'success');
         document.getElementById('blackjack-controls').style.display = 'flex';
         document.getElementById('current-round-total').textContent = gameState.roundScores[playerIdx];
-        
         updateRiskWarning();
         
-        gameState.coins += Math.floor(points / 5);
+        gameState.coins += Math.floor(earned / 5);
         document.getElementById('treasure-section').style.display = 'block';
         
-        let feedback = `
+        document.getElementById('answer-feedback').innerHTML = `
             <div class="feedback-correct">
                 <span>🧧</span>
                 <div>
-                    <h3>恭喜发财! +${points} points</h3>
+                    <h3>恭喜发财! +${earned} points</h3>
                     <p><strong>Round Total:</strong> ${gameState.roundScores[playerIdx]}/41</p>
-                    ${question.explanation ? `<p><strong>Explanation:</strong> ${question.explanation}</p>` : ''}
+                    ${q.explanation ? `<p><strong>Explanation:</strong> ${q.explanation}</p>` : ''}
                 </div>
             </div>
         `;
-        
-        document.getElementById('answer-feedback').innerHTML = feedback;
-        
     } else {
-        const correctLetter = String.fromCharCode(65 + question.correct);
-        const correctText = question.options[question.correct];
+        const correctAns = q.options[q.correct];
+        showCelebration('❌ WRONG! Turn lost!', 'danger');
         
-        showCelebration('❌ Wrong answer! Turn lost!', 'danger');
-        
-        let feedback = `
+        document.getElementById('answer-feedback').innerHTML = `
             <div class="feedback-incorrect">
                 <span>❌</span>
                 <div>
                     <h3>Incorrect Answer</h3>
-                    <p><strong>Correct:</strong> ${correctLetter}) ${correctText}</p>
-                    ${question.explanation ? `<p><strong>Explanation:</strong> ${question.explanation}</p>` : ''}
+                    <p><strong>Correct:</strong> ${String.fromCharCode(65 + q.correct)}) ${correctAns}</p>
+                    ${q.explanation ? `<p><strong>Explanation:</strong> ${q.explanation}</p>` : ''}
                 </div>
             </div>
         `;
-        
-        document.getElementById('answer-feedback').innerHTML = feedback;
         
         setTimeout(() => {
             switchPlayer();
             gameState.currentQuestion++;
             loadQuestion();
-        }, 2500);
+        }, 2200);
     }
 }
 
-function nextQuestion() {
-    gameState.currentQuestion++;
-    if (gameState.currentQuestion >= gameState.questions.length) {
-        endGame();
-        return;
-    }
-
-    if (gameState.answered) {
-        gameState.currentPlayer = gameState.currentPlayer === 1 ? 2 : 1;
-    }
-
-    loadQuestion();
-}
-
-// ========== BLACKJACK FUNCTIONS ==========
+// ========== BLACKJACK (MAX 41) ==========
 function hitMe() {
-    const playerIdx = gameState.currentPlayer - 1;
-    const currentRoundTotal = gameState.roundScores[playerIdx];
-    
-    if (currentRoundTotal >= 35) {
-        if (!confirm('⚠️ Very risky! You have ' + currentRoundTotal + '/41 points. Are you sure you want to HIT?')) {
-            return;
-        }
-    }
+    const total = gameState.roundScores[gameState.currentPlayer - 1];
+    if (total > 35 && !confirm(`⚠️ RISKY! You have ${total}/41 points. Hit anyway?`)) return;
     
     document.getElementById('blackjack-controls').style.display = 'none';
-    
     gameState.currentQuestion++;
     loadQuestion();
-    
-    showCelebration('🔥 HIT! Next question loaded!', 'warning');
+    showCelebration('🔥 HIT! Next question!', 'warning');
 }
 
 function stand() {
     const playerIdx = gameState.currentPlayer - 1;
-    const roundPoints = gameState.roundScores[playerIdx];
+    const pts = gameState.roundScores[playerIdx];
     
-    if (roundPoints === 0) {
+    if (pts === 0) {
         showCelebration('ℹ️ No points to bank!', 'info');
-        switchPlayer();
-        gameState.currentQuestion++;
-        loadQuestion();
+        nextTurn();
         return;
     }
     
-    gameState.scores[playerIdx] += roundPoints;
+    gameState.scores[playerIdx] += pts;
+    gameState.roundScores[playerIdx] = 0;
     updateScores();
     
-    showCelebration(
-        `✅ STAND! Banking ${roundPoints} points!`, 
-        'success'
-    );
-    
-    gameState.roundScores[playerIdx] = 0;
-    updateRoundDisplay();
-    
-    setTimeout(() => {
-        switchPlayer();
-        gameState.currentQuestion++;
-        loadQuestion();
-    }, 1800);
+    showCelebration(`✅ STAND! Banked ${pts} points!`, 'success');
+    setTimeout(nextTurn, 1800);
 }
 
 function bust(playerIdx) {
-    const lostPoints = gameState.roundScores[playerIdx];
-    showCelebration(`💥 BUST! Lost ${lostPoints} points!`, 'danger');
-    
+    const lost = gameState.roundScores[playerIdx];
     gameState.roundScores[playerIdx] = 0;
     updateRoundDisplay();
     
-    setTimeout(() => {
-        switchPlayer();
-        gameState.currentQuestion++;
-        loadQuestion();
-    }, 2200);
+    showCelebration(`💥 BUST! Lost ${lost} points!`, 'danger');
+    setTimeout(nextTurn, 2000);
+}
+
+function nextTurn() {
+    switchPlayer();
+    gameState.currentQuestion++;
+    loadQuestion();
 }
 
 function switchPlayer() {
@@ -760,175 +454,78 @@ function switchPlayer() {
 }
 
 function updateRiskWarning() {
-    const playerIdx = gameState.currentPlayer - 1;
-    const currentScore = gameState.roundScores[playerIdx];
-    const warningEl = document.getElementById('risk-warning');
-    
-    if (warningEl) {
-        if (currentScore > 35) {
-            warningEl.style.display = 'inline-block';
-        } else {
-            warningEl.style.display = 'none';
-        }
-    }
+    const total = gameState.roundScores[gameState.currentPlayer - 1];
+    const warn = document.getElementById('risk-warning');
+    if (warn) warn.style.display = total > 35 ? 'inline-block' : 'none';
 }
 
-// ========== DISPLAY UPDATES ==========
+// ========== UTILITIES ==========
 function updateScores() {
-    document.getElementById('score1').textContent = gameState.scores[0];
-    document.getElementById('score2').textContent = gameState.scores[1];
+    document.getElementById('score1').textContent = gameState.scores[0] || '0';
+    document.getElementById('score2').textContent = gameState.scores[1] || '0';
     updateRoundDisplay();
 }
 
 function updateRoundDisplay() {
-    document.getElementById('round-score1').textContent = gameState.roundScores[0];
-    document.getElementById('round-score2').textContent = gameState.roundScores[1];
+    document.getElementById('round-score1').textContent = gameState.roundScores[0] || '0';
+    document.getElementById('round-score2').textContent = gameState.roundScores[1] || '0';
 }
 
 function updatePlayerTurn() {
-    const playerTurnEl = document.getElementById('current-player');
-    if (playerTurnEl) {
-        playerTurnEl.textContent = `Player ${gameState.currentPlayer}'s Turn`;
-    }
+    const el = document.getElementById('current-player');
+    if (el) el.textContent = `Player ${gameState.currentPlayer}'s Turn`;
     
-    const player1 = document.getElementById('player1');
-    const player2 = document.getElementById('player2');
-    if (player1 && player2) {
-        player1.classList.toggle('active', gameState.currentPlayer === 1);
-        player2.classList.toggle('active', gameState.currentPlayer === 2);
-    }
+    document.getElementById('player1')?.classList.toggle('active', gameState.currentPlayer === 1);
+    document.getElementById('player2')?.classList.toggle('active', gameState.currentPlayer === 2);
 }
 
-// ========== TREASURE BOXES ==========
-const powerUps = [
-    { icon: '⚡', name: 'Double Points', type: 'double' },
-    { icon: '➗', name: 'Half Points', type: 'half' },
-    { icon: '➖', name: 'Negative Points', type: 'negative' },
-    { icon: '🔄', name: 'Switch Scores', type: 'switch' },
-    { icon: '✨', name: 'Bonus +10', type: 'bonus' }
-];
-
-function openTreasureBox(boxNum) {
-    if (!gameState.canUsePowerup || gameState.powerupUsed) return;
-    gameState.powerupUsed = true;
-
-    const powerUp = powerUps[Math.floor(Math.random() * powerUps.length)];
-
-    const selectedBox = document.querySelector(`[data-box="${boxNum}"]`);
-    if (selectedBox) {
-        selectedBox.textContent = powerUp.icon;
-        selectedBox.classList.add('active');
-    }
-
-    document.getElementById('powerup-result').innerHTML = `
-        <div class="powerup-display">
-            <div class="powerup-icon">${powerUp.icon}</div>
-            <h3>${powerUp.name}</h3>
-            <p>Power-up activated!</p>
-        </div>
-    `;
-
-    applyPowerUp(powerUp.type);
-}
-
-function applyPowerUp(type) {
-    const playerIdx = gameState.currentPlayer - 1;
-    const otherIdx = playerIdx === 0 ? 1 : 0;
-    const question = gameState.questions[gameState.currentQuestion];
-    const basePoints = question.points || 10;
-    let message = '';
-
-    switch(type) {
-        case 'double':
-            const doublePoints = basePoints * 2;
-            gameState.scores[playerIdx] += doublePoints;
-            message = `Double points! +${doublePoints}`;
-            break;
-        case 'half':
-            const halfPoints = Math.floor(basePoints / 2);
-            gameState.scores[playerIdx] += halfPoints;
-            message = `Half points! +${halfPoints}`;
-            break;
-        case 'negative':
-            gameState.scores[playerIdx] -= basePoints;
-            message = `Negative points! -${basePoints}`;
-            break;
-        case 'switch':
-            [gameState.scores[playerIdx], gameState.scores[otherIdx]] = 
-            [gameState.scores[otherIdx], gameState.scores[playerIdx]];
-            message = `Scores switched!`;
-            break;
-        case 'bonus':
-            gameState.scores[playerIdx] += 10;
-            message = `Bonus +10 points!`;
-            break;
-    }
-
-    updateScores();
-
-    const feedbackDiv = document.getElementById('answer-feedback');
-    if (feedbackDiv) {
-        feedbackDiv.innerHTML += `<div class="powerup-message">🎁 ${message}</div>`;
-    }
-}
-
-// ========== CELEBRATION EFFECTS ==========
-function showCelebration(message, type = 'success') {
-    const celebrationArea = document.getElementById('celebration-area');
-    if (!celebrationArea) return;
+function showCelebration(msg, type = 'success') {
+    const area = document.getElementById('celebration-area');
+    if (!area) return;
     
-    const celebration = document.createElement('div');
-    celebration.className = 'celebration';
-    celebration.innerHTML = message;
-
-    if (type === 'success') {
-        celebration.style.background = 'linear-gradient(135deg, #38a169, #2f855a)';
-        celebration.style.boxShadow = '0 10px 30px rgba(0,0,0,0.5), 0 0 30px rgba(104, 211, 145, 0.8)';
-    } else if (type === 'danger') {
-        celebration.style.background = 'linear-gradient(135deg, #e53e3e, #c53030)';
-        celebration.style.boxShadow = '0 10px 30px rgba(0,0,0,0.5), 0 0 30px rgba(245, 101, 101, 0.8)';
-    } else if (type === 'warning') {
-        celebration.style.background = 'linear-gradient(135deg, #dd6b20, #c05621)';
-        celebration.style.boxShadow = '0 10px 30px rgba(0,0,0,0.5), 0 0 30px rgba(237, 137, 54, 0.8)';
-    } else if (type === 'info') {
-        celebration.style.background = 'linear-gradient(135deg, #3182ce, #2c5282)';
-        celebration.style.boxShadow = '0 10px 30px rgba(0,0,0,0.5), 0 0 30px rgba(83, 161, 230, 0.8)';
-    }
-
-    celebrationArea.appendChild(celebration);
-
+    const div = document.createElement('div');
+    div.className = 'celebration';
+    div.innerHTML = msg;
+    
+    // Color coding
+    const styles = {
+        success: 'linear-gradient(135deg, #38a169, #2f855a)',
+        danger: 'linear-gradient(135deg, #e53e3e, #c53030)',
+        warning: 'linear-gradient(135deg, #dd6b20, #c05621)',
+        info: 'linear-gradient(135deg, #3182ce, #2c5282)'
+    };
+    
+    div.style.background = styles[type] || styles.success;
+    area.appendChild(div);
+    
     setTimeout(() => {
-        celebration.remove();
-    }, 3000);
+        div.remove();
+    }, 2800);
 }
 
-// ========== COIN EFFECTS ==========
 function createCoinExplosion(rect) {
-    const coinsContainer = document.getElementById('coins-container');
-    if (!coinsContainer) return;
+    const container = document.getElementById('coins-container');
+    if (!container) return;
     
-    for (let i = 0; i < 12; i++) {
+    for (let i = 0; i < 10; i++) {
         const coin = document.createElement('div');
         coin.className = 'coin';
-        coin.textContent = i % 3 === 0 ? '💰' : i % 3 === 1 ? '🧧' : '🏮';
+        coin.textContent = ['💰', '🧧', '🏮'][Math.floor(Math.random() * 3)];
         
-        const x = rect.left + rect.width/2 + (Math.random() - 0.5) * 120;
-        const y = rect.top + rect.height/2 + (Math.random() - 0.5) * 60;
+        const x = rect.left + rect.width/2 + (Math.random() - 0.5) * 100;
+        const y = rect.top + rect.height/2 + (Math.random() - 0.5) * 50;
         
         coin.style.left = `${x}px`;
         coin.style.top = `${y}px`;
-        coin.style.fontSize = `${1.2 + Math.random() * 0.8}rem`;
+        coin.style.fontSize = `${1 + Math.random() * 0.8}rem`;
         
-        coinsContainer.appendChild(coin);
-        
-        setTimeout(() => {
-            coin.remove();
-        }, 3200);
+        container.appendChild(coin);
+        setTimeout(() => coin.remove(), 3000);
     }
 }
 
-// ========== END GAME ==========
 function endGame() {
+    // Bank remaining safe points
     for (let i = 0; i < 2; i++) {
         if (gameState.roundScores[i] > 0 && gameState.roundScores[i] <= gameState.targetScore) {
             gameState.scores[i] += gameState.roundScores[i];
@@ -937,36 +534,151 @@ function endGame() {
     
     updateScores();
     
-    const score1 = gameState.scores[0];
-    const score2 = gameState.scores[1];
-    let winnerMessage = '';
-    let winnerName = '';
+    const s1 = gameState.scores[0];
+    const s2 = gameState.scores[1];
+    let msg = s1 > s2 ? 'Player 1 Wins! 🏆' : 
+              s2 > s1 ? 'Player 2 Wins! 🏆' : "It's a Tie! 🤝";
+    
+    document.getElementById('winner-message').textContent = 'Game Over!';
+    document.getElementById('winner-name').textContent = msg;
+    document.getElementById('final-score1').textContent = s1;
+    document.getElementById('final-score2').textContent = s2;
+    
+    document.getElementById('game-over').style.display = 'flex';
+    showCelebration(`🏆 ${msg} 🏆`, 'success');
+}
 
-    if (score1 > score2) {
-        winnerMessage = 'Player 1 Wins! 🏆';
-        winnerName = 'Player 1';
-    } else if (score2 > score1) {
-        winnerMessage = 'Player 2 Wins! 🏆';
-        winnerName = 'Player 2';
-    } else {
-        winnerMessage = "It's a Tie! 🤝";
-        winnerName = 'Both Players';
+// ========== CATALOG & FILE HANDLING ==========
+async function loadCatalogFromStorage() {
+    try {
+        const stored = localStorage.getItem('quizCatalog');
+        if (stored) {
+            gameState.quizCatalog = JSON.parse(stored);
+            return;
+        }
+    } catch (e) {}
+    
+    gameState.quizCatalog = [
+        { code: '202-03-1', filename: '202031.json', path: 'Questions/lower-secondary/math/202031.json', name: 'Sec 2 Quadratic WS1', subject: 'Math', level: 'Lower Sec', grade: 'S2' },
+        { code: '202-03-2', filename: '202032.json', path: 'Questions/lower-secondary/math/202032.json', name: 'Sec 2 Quadratic WS2', subject: 'Math', level: 'Lower Sec', grade: 'S2' }
+    ];
+    localStorage.setItem('quizCatalog', JSON.stringify(gameState.quizCatalog));
+}
+
+function addQuizToCatalog(info) {
+    if (gameState.quizCatalog.some(q => q.code === info.code)) return false;
+    gameState.quizCatalog.push({
+        code: info.code,
+        filename: info.filename,
+        path: info.filepath,
+        name: info.fullName,
+        subject: info.subject,
+        level: info.level,
+        grade: info.gradeLabel
+    });
+    localStorage.setItem('quizCatalog', JSON.stringify(gameState.quizCatalog));
+    return true;
+}
+
+function updateCatalogDisplay() {
+    const el = document.getElementById('quiz-catalog');
+    const count = document.getElementById('quiz-count');
+    if (!el || !count) return;
+    
+    if (gameState.quizCatalog.length === 0) {
+        el.innerHTML = '<div class="no-quizzes"><i class="fas fa-search"></i><h4>No quizzes found</h4></div>';
+        count.textContent = '0';
+        return;
     }
-
-    const winnerMsgEl = document.getElementById('winner-message');
-    const winnerNameEl = document.getElementById('winner-name');
-    const finalScore1 = document.getElementById('final-score1');
-    const finalScore2 = document.getElementById('final-score2');
     
-    if (winnerMsgEl) winnerMsgEl.textContent = winnerMessage;
-    if (winnerNameEl) winnerNameEl.textContent = winnerName;
-    if (finalScore1) finalScore1.textContent = score1;
-    if (finalScore2) finalScore2.textContent = score2;
-
-    const gameOver = document.getElementById('game-over');
-    if (gameOver) gameOver.style.display = 'flex';
+    el.innerHTML = gameState.quizCatalog.map(q => `
+        <div class="quiz-item" data-code="${q.code.replace(/-/g, '')}">
+            <div class="quiz-header">
+                <span class="quiz-code">${q.code}</span>
+                <span class="quiz-name">${q.name}</span>
+            </div>
+            <div class="quiz-details">
+                <span class="quiz-level">${q.level}</span> • 
+                <span class="quiz-grade">${q.grade}</span> • 
+                <span class="quiz-subject">${q.subject}</span>
+            </div>
+        </div>
+    `).join('');
     
+    count.textContent = gameState.quizCatalog.length;
+    
+    // Add click handlers
+    document.querySelectorAll('.quiz-item').forEach(item => {
+        item.onclick = () => {
+            setPinFromCode(item.dataset.code);
+            setTimeout(submitPin, 300);
+        };
+    });
+}
+
+function handleFileUpload(e) {
+    const file = e.target.files[0];
+    if (!file) return;
+    
+    const status = document.getElementById('upload-status');
+    status.textContent = 'Loading...';
+    status.className = 'upload-status';
+    
+    const reader = new FileReader();
+    reader.onload = (ev) => {
+        try {
+            const data = JSON.parse(ev.target.result);
+            gameState.questions = data.questions || [];
+            document.getElementById('quiz-title').textContent = data.title || 'Uploaded Quiz';
+            document.getElementById('quiz-topic').textContent = `${data.subject || 'General'} • ${data.level || 'All'}`;
+            document.getElementById('current-quiz-code').textContent = 'UPLOAD';
+            document.getElementById('current-quiz-path').textContent = file.name;
+            
+            initGame();
+            showScreen('game-screen');
+            status.textContent = '✅ Loaded successfully!';
+            status.className = 'upload-status success';
+        } catch (err) {
+            status.textContent = `❌ Error: ${err.message}`;
+            status.className = 'upload-status error';
+        }
+    };
+    reader.readAsText(file);
+}
+
+function scanForQuizzes() {
+    showScreen('loading-screen');
     setTimeout(() => {
-        showCelebration(`🏆 ${winnerMessage} 🏆`, 'success');
-    }, 500);
+        document.getElementById('loading-message').textContent = 'Scan complete!';
+        document.getElementById('quiz-found').textContent = gameState.quizCatalog.length;
+        setTimeout(() => {
+            showScreen('pin-screen');
+            updateCatalogDisplay();
+        }, 1200);
+    }, 800);
+}
+
+// ========== INITIALIZE ON LOAD ==========
+if (document.readyState === 'loading') {
+    document.addEventListener('DOMContentLoaded', () => {
+        console.log('✅ CNY Game Initialized | Max Points: 41');
+        loadCatalogFromStorage().then(updateCatalogDisplay);
+        setupEventListeners();
+        
+        // Keyboard support
+        document.addEventListener('keydown', (e) => {
+            if (document.getElementById('pin-screen').classList.contains('active')) {
+                if (/\d/.test(e.key)) addDigit(e.key);
+                if (e.key === 'Backspace') {
+                    e.preventDefault();
+                    clearPin();
+                }
+                if (e.key === 'Enter') submitPin();
+            }
+        });
+    });
+} else {
+    console.log('✅ CNY Game Initialized | Max Points: 41');
+    loadCatalogFromStorage().then(updateCatalogDisplay);
+    setupEventListeners();
 }
