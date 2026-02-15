@@ -6,8 +6,8 @@ const gameState = {
     currentQuestion: 0,
     currentPlayer: 1,
     scores: [0, 0],
-    targetScore: 21, // BLACKJACK TARGET
-    roundScores: [0, 0], // ROUND ACCUMULATION (0-21)
+    targetScore: 41, // CHANGED FROM 21 TO 41!
+    roundScores: [0, 0],
     selectedAnswer: null,
     answered: false,
     powerupUsed: false,
@@ -42,23 +42,16 @@ function decodeQuizCode(code) {
 
     const [levelDigit, subjectDigit, gradeDigit, chap10, chap1, worksheet] = digits;
 
-    // Validate digits
     if (levelDigit < 1 || levelDigit > 3) return null;
     if (subjectDigit < 0 || subjectDigit > 5) return null;
 
     const level = LEVELS[levelDigit];
     const subject = SUBJECTS[subjectDigit];
 
-    // Format: XXX-XX-X
     const formattedCode = `${levelDigit}${subjectDigit}${gradeDigit}-${chap10}${chap1}-${worksheet}`;
-
-    // Build filename: XXXXXX.json (no hyphens)
     const filename = `${levelDigit}${subjectDigit}${gradeDigit}${chap10}${chap1}${worksheet}.json`;
-
-    // Build path: Questions/[level]/[subject]/filename.json
     const filepath = `Questions/${level.folder}/${subject.folder}/${filename}`;
 
-    // Grade label
     let gradeLabel = '';
     if (levelDigit === 1) {
         gradeLabel = `P${gradeDigit}`;
@@ -112,13 +105,11 @@ document.addEventListener('DOMContentLoaded', async function() {
 
     // Test button
     document.getElementById('test-pin').addEventListener('click', function() {
-        setPinFromCode('342091'); // 342-09-1 (Your Smart Shopper Math)
+        setPinFromCode('202031'); // Test with WS1
         setTimeout(submitPin, 500);
     });
 
-    // Game buttons
-    document.getElementById('submit-answer').addEventListener('click', submitAnswer);
-    document.getElementById('next-btn').addEventListener('click', nextQuestion);
+    // Home button
     document.getElementById('home-btn').addEventListener('click', function() {
         clearPin();
         showScreen('pin-screen');
@@ -147,8 +138,8 @@ document.addEventListener('DOMContentLoaded', async function() {
     });
 
     // Blackjack buttons
-    document.getElementById('hit-btn').addEventListener('click', hitMe);
-    document.getElementById('stand-btn').addEventListener('click', stand);
+    document.getElementById('hit-btn')?.addEventListener('click', hitMe);
+    document.getElementById('stand-btn')?.addEventListener('click', stand);
 
     // File upload
     document.getElementById('json-upload').addEventListener('change', handleFileUpload);
@@ -167,23 +158,21 @@ document.addEventListener('DOMContentLoaded', async function() {
     });
 
     console.log('✅ All systems ready');
-    console.log('💡 Add JSON quiz files to the Questions folder');
-    console.log('📂 File naming: 3-digit level/subject/grade + 2-digit chapter + 1-digit worksheet');
-    console.log('📂 Example: 342091.json = 3(upper sec)4(comb chem)2(S4)09(chapter9)1(worksheet1)');
+    console.log('🎯 Max Points: 41 (changed from 21)');
 });
 
 // ========== PIN FUNCTIONS ==========
 function updatePinDisplay() {
     for (let i = 1; i <= 6; i++) {
         const digitElement = document.getElementById(`digit${i}`);
+        if (!digitElement) continue;
+        
         const digitValue = gameState.pin[i - 1];
-        if (digitElement) {
-            const numberEl = digitElement.querySelector('.digit-number');
-            if (numberEl) {
-                numberEl.textContent = digitValue || '_';
-            }
-            digitElement.classList.toggle('filled', digitValue !== '');
+        const numberEl = digitElement.querySelector('.digit-number');
+        if (numberEl) {
+            numberEl.textContent = digitValue || '_';
         }
+        digitElement.classList.toggle('filled', digitValue !== '');
     }
 }
 
@@ -232,7 +221,6 @@ function showScreen(screenId) {
 async function loadQuizByCode(code) {
     console.log(`🔍 Loading: ${code}`);
     
-    // Decode the quiz code
     const quizInfo = decodeQuizCode(code);
     if (!quizInfo) {
         return { 
@@ -241,15 +229,12 @@ async function loadQuizByCode(code) {
         };
     }
 
-    // Store current quiz code
     gameState.currentQuizCode = quizInfo.code;
     gameState.currentQuizInfo = quizInfo;
 
-    // Update loading display
     document.getElementById('loading-message').textContent = `Loading ${quizInfo.code}...`;
 
     try {
-        // Try to load the file
         const response = await fetch(quizInfo.filepath);
         
         if (!response.ok) {
@@ -260,9 +245,7 @@ async function loadQuizByCode(code) {
         }
         
         const data = await response.json();
-        console.log('✅ Quiz loaded successfully');
         
-        // Validate quiz data
         if (!data.questions || !Array.isArray(data.questions)) {
             throw new Error('Invalid quiz format: Missing questions array');
         }
@@ -271,12 +254,11 @@ async function loadQuizByCode(code) {
             throw new Error('Quiz file is empty');
         }
         
-        // Add to catalog if not already there
         addQuizToCatalog(quizInfo);
         
         return { 
             success: true, 
-            data: data, 
+            data, 
             info: quizInfo 
         };
         
@@ -304,13 +286,11 @@ async function submitPin() {
         const result = await loadQuizByCode(pin);
         
         if (!result.success) {
-            // Check if this might be a new file not in catalog
             const quizInfo = decodeQuizCode(pin);
             let errorMsg = `<strong>Worksheet ${quizInfo?.code || pin} not found</strong><br><br>`;
             errorMsg += `<div style="color: #a0aec0; font-size: 0.9rem;">`;
             errorMsg += `Error: ${result.error}</div>`;
             
-            // Suggest creating the file
             if (quizInfo && result.error.includes('not found')) {
                 errorMsg += `<br><div style="background: rgba(214, 158, 46, 0.1); padding: 15px; border-radius: 10px; margin-top: 15px;">`;
                 errorMsg += `<strong>Suggested file location:</strong><br>`;
@@ -319,7 +299,6 @@ async function submitPin() {
                 errorMsg += `</div>`;
             }
             
-            // Show available quizzes
             if (gameState.quizCatalog.length > 0) {
                 errorMsg += `<br><strong>Available quizzes (${gameState.quizCatalog.length}):</strong><br>`;
                 gameState.quizCatalog.slice(0, 5).forEach(q => {
@@ -338,10 +317,8 @@ async function submitPin() {
             throw new Error(errorMsg);
         }
         
-        // Store questions
         gameState.questions = result.data.questions;
         
-        // Set quiz info
         document.getElementById('quiz-title').textContent = 
             result.data.title || result.info.fullName;
         document.getElementById('quiz-topic').textContent = 
@@ -351,7 +328,6 @@ async function submitPin() {
         document.getElementById('current-quiz-path').textContent = 
             result.info.filepath;
         
-        // Initialize game
         initGame();
         showScreen('game-screen');
         
@@ -380,14 +356,12 @@ function handleFileUpload(event) {
             const quizData = JSON.parse(e.target.result);
             gameState.loadedFromUpload = true;
             
-            // Set quiz info from uploaded data
             gameState.questions = quizData.questions || [];
             document.getElementById('quiz-title').textContent = quizData.title || 'Uploaded Quiz';
             document.getElementById('quiz-topic').textContent = `${quizData.subject || 'General'} • ${quizData.level || 'All Levels'}`;
             document.getElementById('current-quiz-code').textContent = 'UPLOAD';
             document.getElementById('current-quiz-path').textContent = `Uploaded: ${file.name}`;
             
-            // Initialize game
             initGame();
             showScreen('game-screen');
             
@@ -404,7 +378,6 @@ function handleFileUpload(event) {
 
 // ========== CATALOG MANAGEMENT ==========
 async function loadCatalogFromStorage() {
-    // Try to load from localStorage first
     const storedCatalog = localStorage.getItem('quizCatalog');
     if (storedCatalog) {
         gameState.quizCatalog = JSON.parse(storedCatalog);
@@ -412,12 +385,9 @@ async function loadCatalogFromStorage() {
         return;
     }
     
-    // Default quizzes for testing (including your Smart Shopper Math)
     const defaultQuizzes = [
-        { code: '101-01-1', filename: '101011.json', path: 'Questions/primary/math/101011.json', name: 'P1 Math Chapter 1', subject: 'Mathematics', level: 'Primary', grade: 'P1' },
-        { code: '201-01-1', filename: '201011.json', path: 'Questions/lower-secondary/math/201011.json', name: 'Sec 1 Math Chapter 1', subject: 'Mathematics', level: 'Lower Secondary', grade: 'S1' },
-        { code: '201-01-2', filename: '201012.json', path: 'Questions/lower-secondary/math/201012.json', name: 'Sec 1 Math Chapter 1 Worksheet 2', subject: 'Mathematics', level: 'Lower Secondary', grade: 'S1' },
-        { code: '342-09-1', filename: '342091.json', path: 'Questions/upper-secondary/combined-chem/342091.json', name: 'Smart Shopper Math', subject: 'Mathematics', level: 'Upper Secondary', grade: 'S4' }
+        { code: '202-03-1', filename: '202031.json', path: 'Questions/lower-secondary/math/202031.json', name: 'Sec 2 Quadratic WS1', subject: 'Mathematics', level: 'Lower Secondary', grade: 'S2' },
+        { code: '202-03-2', filename: '202032.json', path: 'Questions/lower-secondary/math/202032.json', name: 'Sec 2 Quadratic WS2', subject: 'Mathematics', level: 'Lower Secondary', grade: 'S2' }
     ];
 
     gameState.quizCatalog = defaultQuizzes;
@@ -425,7 +395,6 @@ async function loadCatalogFromStorage() {
 }
 
 function addQuizToCatalog(quizInfo) {
-    // Check if quiz already exists
     const exists = gameState.quizCatalog.find(q => q.code === quizInfo.code);
     if (!exists) {
         gameState.quizCatalog.push({
@@ -454,16 +423,12 @@ function updateCatalogDisplay() {
                 <i class="fas fa-search"></i>
                 <h4>No quizzes found</h4>
                 <p>Add JSON files to the Questions folder</p>
-                <button id="refresh-catalog" class="btn secondary">
-                    <i class="fas fa-redo"></i> Refresh
-                </button>
             </div>
         `;
         countEl.textContent = '0 quizzes';
         return;
     }
 
-    // Sort quizzes by code
     const sortedQuizzes = [...gameState.quizCatalog].sort((a, b) => a.code.localeCompare(b.code));
 
     catalogEl.innerHTML = sortedQuizzes.map(quiz => `
@@ -482,7 +447,6 @@ function updateCatalogDisplay() {
 
     countEl.textContent = `${gameState.quizCatalog.length} quizzes`;
 
-    // Add click handlers
     document.querySelectorAll('.quiz-item').forEach(item => {
         item.addEventListener('click', function() {
             const code = this.dataset.code;
@@ -492,7 +456,7 @@ function updateCatalogDisplay() {
     });
 }
 
-// ========== FILE SCANNER (Placeholder) ==========
+// ========== FILE SCANNER ==========
 async function scanForQuizzes() {
     console.log('🔍 Scanning for quiz files...');
     showScreen('loading-screen');
@@ -505,17 +469,16 @@ async function scanForQuizzes() {
     loadingMessage.textContent = 'Scanning Questions folder...';
     loadingDetails.textContent = 'Looking for quiz files...';
     
-    // Simulate scanning progress
     let progress = 0;
     const interval = setInterval(() => {
         progress += 5;
-        progressBar.style.width = `${progress}%`;
+        if (progressBar) progressBar.style.width = `${progress}%`;
         if (progress >= 100) {
             clearInterval(interval);
             setTimeout(() => {
                 loadingMessage.textContent = 'Scan complete!';
                 loadingDetails.textContent = `Found ${gameState.quizCatalog.length} quiz files`;
-                foundCount.textContent = gameState.quizCatalog.length;
+                if (foundCount) foundCount.textContent = gameState.quizCatalog.length;
                 
                 setTimeout(() => {
                     showScreen('pin-screen');
@@ -542,7 +505,8 @@ function initGame() {
     updatePlayerTurn();
     loadQuestion();
 
-    document.getElementById('game-over').style.display = 'none';
+    const gameOver = document.getElementById('game-over');
+    if (gameOver) gameOver.style.display = 'none';
 }
 
 function loadQuestion() {
@@ -552,12 +516,10 @@ function loadQuestion() {
         return;
     }
 
-    // Update counters
     document.getElementById('current-q').textContent = gameState.currentQuestion + 1;
     document.getElementById('total-q').textContent = gameState.questions.length;
     document.getElementById('question-text').textContent = question.question || "Question";
 
-    // Clear and add options
     const container = document.getElementById('options-container');
     container.innerHTML = '';
 
@@ -567,24 +529,30 @@ function loadQuestion() {
             optionEl.className = 'option';
             optionEl.innerHTML = `<strong>${String.fromCharCode(65 + index)})</strong> ${option}`;
             optionEl.dataset.index = index;
-            optionEl.onclick = () => selectOption(index);
+            
+            // CRITICAL FIX: Direct click handler on each option
+            optionEl.addEventListener('click', function() {
+                selectOption(parseInt(this.dataset.index));
+            });
+            
             container.appendChild(optionEl);
         });
     }
 
-    // Reset UI
     gameState.selectedAnswer = null;
     gameState.answered = false;
     gameState.powerupUsed = false;
     gameState.canUsePowerup = false;
 
     const submitBtn = document.getElementById('submit-answer');
-    submitBtn.disabled = true;
-    submitBtn.style.display = 'block';
+    if (submitBtn) {
+        submitBtn.disabled = true;
+        submitBtn.style.display = 'block';
+    }
 
-    document.getElementById('next-btn').style.display = 'none';
+    const nextBtn = document.getElementById('next-btn');
+    if (nextBtn) nextBtn.style.display = 'none';
 
-    // Hide feedback and treasure
     document.getElementById('answer-feedback').innerHTML = 
         '<div class="feedback-placeholder"><i class="fas fa-lightbulb"></i><p>Select an answer to continue</p></div>';
 
@@ -594,31 +562,36 @@ function loadQuestion() {
     updateScores();
     updatePlayerTurn();
     
-    // Scroll to top
     window.scrollTo({ top: 0, behavior: 'smooth' });
 }
 
 function selectOption(index) {
     if (gameState.answered) return;
     
-    // Remove previous selection
     document.querySelectorAll('.option').forEach(opt => {
         opt.classList.remove('selected');
     });
 
-    // Select new option
     const options = document.querySelectorAll('.option');
     if (options[index]) {
         options[index].classList.add('selected');
         gameState.selectedAnswer = index;
         
-        // Enable submit button
-        document.getElementById('submit-answer').disabled = false;
+        const submitBtn = document.getElementById('submit-answer');
+        if (submitBtn) {
+            submitBtn.disabled = false;
+            submitBtn.style.opacity = '1';
+            submitBtn.style.cursor = 'pointer';
+        }
     }
 }
 
 function submitAnswer() {
-    if (gameState.answered || gameState.selectedAnswer === null) return;
+    if (gameState.answered || gameState.selectedAnswer === null) {
+        alert('Please select an answer first!');
+        return;
+    }
+    
     gameState.answered = true;
     
     const question = gameState.questions[gameState.currentQuestion];
@@ -626,10 +599,9 @@ function submitAnswer() {
     const basePoints = question.points || 10;
     const playerIdx = gameState.currentPlayer - 1;
 
-    // Disable submit
-    document.getElementById('submit-answer').disabled = true;
+    const submitBtn = document.getElementById('submit-answer');
+    if (submitBtn) submitBtn.disabled = true;
 
-    // Mark answers
     document.querySelectorAll('.option').forEach((opt, index) => {
         if (index === question.correct) {
             opt.classList.add('correct');
@@ -639,47 +611,38 @@ function submitAnswer() {
         }
     });
 
-    // Process answer
     if (isCorrect) {
         let points = basePoints;
         
-        // Apply power-up if available and used
         if (gameState.canUsePowerup && confirm('Use Power-Up for double points?')) {
             points *= 2;
             gameState.canUsePowerup = false;
             showCelebration('⚡ Power-Up Activated! Points doubled!', 'warning');
         }
         
-        // Add to round score (BLACKJACK STYLE)
         gameState.roundScores[playerIdx] += points;
         
-        // Check for BUST (over 21)
         if (gameState.roundScores[playerIdx] > gameState.targetScore) {
             bust(playerIdx);
             return;
         }
         
-        // Show celebration
         showCelebration(`✅ Correct! +${points} this round!`, 'success');
         
-        // Show BLACKJACK CONTROLS
         document.getElementById('blackjack-controls').style.display = 'flex';
         document.getElementById('current-round-total').textContent = gameState.roundScores[playerIdx];
         
-        // Update risk warning
         updateRiskWarning();
         
-        // Award coins
         gameState.coins += Math.floor(points / 5);
         document.getElementById('treasure-section').style.display = 'block';
         
-        // Show feedback
         let feedback = `
             <div class="feedback-correct">
                 <span>🧧</span>
                 <div>
                     <h3>恭喜发财! +${points} points</h3>
-                    <p><strong>Round Total:</strong> ${gameState.roundScores[playerIdx]}/21</p>
+                    <p><strong>Round Total:</strong> ${gameState.roundScores[playerIdx]}/41</p>
                     ${question.explanation ? `<p><strong>Explanation:</strong> ${question.explanation}</p>` : ''}
                 </div>
             </div>
@@ -688,13 +651,11 @@ function submitAnswer() {
         document.getElementById('answer-feedback').innerHTML = feedback;
         
     } else {
-        // Wrong answer - lose turn
         const correctLetter = String.fromCharCode(65 + question.correct);
         const correctText = question.options[question.correct];
         
         showCelebration('❌ Wrong answer! Turn lost!', 'danger');
         
-        // Show feedback
         let feedback = `
             <div class="feedback-incorrect">
                 <span>❌</span>
@@ -708,7 +669,6 @@ function submitAnswer() {
         
         document.getElementById('answer-feedback').innerHTML = feedback;
         
-        // Switch player after delay
         setTimeout(() => {
             switchPlayer();
             gameState.currentQuestion++;
@@ -736,17 +696,14 @@ function hitMe() {
     const playerIdx = gameState.currentPlayer - 1;
     const currentRoundTotal = gameState.roundScores[playerIdx];
     
-    // Show warning for high risk
-    if (currentRoundTotal >= 18) {
-        if (!confirm('⚠️ Very risky! You have ' + currentRoundTotal + '/21 points. Are you sure you want to HIT?')) {
+    if (currentRoundTotal >= 35) {
+        if (!confirm('⚠️ Very risky! You have ' + currentRoundTotal + '/41 points. Are you sure you want to HIT?')) {
             return;
         }
     }
     
-    // Hide controls
     document.getElementById('blackjack-controls').style.display = 'none';
     
-    // Move to next question with risk multiplier
     gameState.currentQuestion++;
     loadQuestion();
     
@@ -754,7 +711,6 @@ function hitMe() {
 }
 
 function stand() {
-    // End round, bank current points
     const playerIdx = gameState.currentPlayer - 1;
     const roundPoints = gameState.roundScores[playerIdx];
     
@@ -774,11 +730,9 @@ function stand() {
         'success'
     );
     
-    // Reset round score
     gameState.roundScores[playerIdx] = 0;
     updateRoundDisplay();
     
-    // Switch player after delay
     setTimeout(() => {
         switchPlayer();
         gameState.currentQuestion++;
@@ -787,15 +741,12 @@ function stand() {
 }
 
 function bust(playerIdx) {
-    // Player loses all round points
     const lostPoints = gameState.roundScores[playerIdx];
     showCelebration(`💥 BUST! Lost ${lostPoints} points!`, 'danger');
     
-    // Reset round score
     gameState.roundScores[playerIdx] = 0;
     updateRoundDisplay();
     
-    // Switch player after delay
     setTimeout(() => {
         switchPlayer();
         gameState.currentQuestion++;
@@ -813,10 +764,12 @@ function updateRiskWarning() {
     const currentScore = gameState.roundScores[playerIdx];
     const warningEl = document.getElementById('risk-warning');
     
-    if (currentScore > 18) {
-        warningEl.style.display = 'inline-block';
-    } else {
-        warningEl.style.display = 'none';
+    if (warningEl) {
+        if (currentScore > 35) {
+            warningEl.style.display = 'inline-block';
+        } else {
+            warningEl.style.display = 'none';
+        }
     }
 }
 
@@ -834,11 +787,16 @@ function updateRoundDisplay() {
 
 function updatePlayerTurn() {
     const playerTurnEl = document.getElementById('current-player');
-    playerTurnEl.textContent = `Player ${gameState.currentPlayer}'s Turn`;
+    if (playerTurnEl) {
+        playerTurnEl.textContent = `Player ${gameState.currentPlayer}'s Turn`;
+    }
     
-    // Visual indicator for current player
-    document.getElementById('player1').classList.toggle('active', gameState.currentPlayer === 1);
-    document.getElementById('player2').classList.toggle('active', gameState.currentPlayer === 2);
+    const player1 = document.getElementById('player1');
+    const player2 = document.getElementById('player2');
+    if (player1 && player2) {
+        player1.classList.toggle('active', gameState.currentPlayer === 1);
+        player2.classList.toggle('active', gameState.currentPlayer === 2);
+    }
 }
 
 // ========== TREASURE BOXES ==========
@@ -854,17 +812,14 @@ function openTreasureBox(boxNum) {
     if (!gameState.canUsePowerup || gameState.powerupUsed) return;
     gameState.powerupUsed = true;
 
-    // Random power-up
     const powerUp = powerUps[Math.floor(Math.random() * powerUps.length)];
 
-    // Update selected box
     const selectedBox = document.querySelector(`[data-box="${boxNum}"]`);
     if (selectedBox) {
         selectedBox.textContent = powerUp.icon;
         selectedBox.classList.add('active');
     }
 
-    // Show power-up
     document.getElementById('powerup-result').innerHTML = `
         <div class="powerup-display">
             <div class="powerup-icon">${powerUp.icon}</div>
@@ -873,7 +828,6 @@ function openTreasureBox(boxNum) {
         </div>
     `;
 
-    // Apply effect
     applyPowerUp(powerUp.type);
 }
 
@@ -912,19 +866,21 @@ function applyPowerUp(type) {
 
     updateScores();
 
-    // Add message
     const feedbackDiv = document.getElementById('answer-feedback');
-    feedbackDiv.innerHTML += `<div class="powerup-message">🎁 ${message}</div>`;
+    if (feedbackDiv) {
+        feedbackDiv.innerHTML += `<div class="powerup-message">🎁 ${message}</div>`;
+    }
 }
 
 // ========== CELEBRATION EFFECTS ==========
 function showCelebration(message, type = 'success') {
     const celebrationArea = document.getElementById('celebration-area');
+    if (!celebrationArea) return;
+    
     const celebration = document.createElement('div');
     celebration.className = 'celebration';
     celebration.innerHTML = message;
 
-    // Add color based on type
     if (type === 'success') {
         celebration.style.background = 'linear-gradient(135deg, #38a169, #2f855a)';
         celebration.style.boxShadow = '0 10px 30px rgba(0,0,0,0.5), 0 0 30px rgba(104, 211, 145, 0.8)';
@@ -941,7 +897,6 @@ function showCelebration(message, type = 'success') {
 
     celebrationArea.appendChild(celebration);
 
-    // Remove after animation
     setTimeout(() => {
         celebration.remove();
     }, 3000);
@@ -950,14 +905,13 @@ function showCelebration(message, type = 'success') {
 // ========== COIN EFFECTS ==========
 function createCoinExplosion(rect) {
     const coinsContainer = document.getElementById('coins-container');
+    if (!coinsContainer) return;
     
-    // Create multiple coins
     for (let i = 0; i < 12; i++) {
         const coin = document.createElement('div');
         coin.className = 'coin';
         coin.textContent = i % 3 === 0 ? '💰' : i % 3 === 1 ? '🧧' : '🏮';
         
-        // Random position around the element
         const x = rect.left + rect.width/2 + (Math.random() - 0.5) * 120;
         const y = rect.top + rect.height/2 + (Math.random() - 0.5) * 60;
         
@@ -967,7 +921,6 @@ function createCoinExplosion(rect) {
         
         coinsContainer.appendChild(coin);
         
-        // Remove after animation
         setTimeout(() => {
             coin.remove();
         }, 3200);
@@ -976,9 +929,8 @@ function createCoinExplosion(rect) {
 
 // ========== END GAME ==========
 function endGame() {
-    // Bank any remaining round points (if <=21)
     for (let i = 0; i < 2; i++) {
-        if (gameState.roundScores[i] > 0 && gameState.roundScores[i] <= 21) {
+        if (gameState.roundScores[i] > 0 && gameState.roundScores[i] <= gameState.targetScore) {
             gameState.scores[i] += gameState.roundScores[i];
         }
     }
@@ -1001,57 +953,20 @@ function endGame() {
         winnerName = 'Both Players';
     }
 
-    document.getElementById('winner-message').textContent = winnerMessage;
-    document.getElementById('winner-name').textContent = winnerName;
-    document.getElementById('final-score1').textContent = score1;
-    document.getElementById('final-score2').textContent = score2;
-
-    document.getElementById('game-over').style.display = 'flex';
+    const winnerMsgEl = document.getElementById('winner-message');
+    const winnerNameEl = document.getElementById('winner-name');
+    const finalScore1 = document.getElementById('final-score1');
+    const finalScore2 = document.getElementById('final-score2');
     
-    // Final celebration
+    if (winnerMsgEl) winnerMsgEl.textContent = winnerMessage;
+    if (winnerNameEl) winnerNameEl.textContent = winnerName;
+    if (finalScore1) finalScore1.textContent = score1;
+    if (finalScore2) finalScore2.textContent = score2;
+
+    const gameOver = document.getElementById('game-over');
+    if (gameOver) gameOver.style.display = 'flex';
+    
     setTimeout(() => {
         showCelebration(`🏆 ${winnerMessage} 🏆`, 'success');
     }, 500);
 }
-
-// ========== DEBUG & DEVELOPMENT TOOLS ==========
-window.quizTools = {
-    // Test a specific quiz
-    testQuiz: function(code) {
-        setPinFromCode(code);
-        setTimeout(submitPin, 500);
-    },
-    
-    // Clear localStorage
-    resetCatalog: function() {
-        localStorage.removeItem('quizCatalog');
-        gameState.quizCatalog = [];
-        updateCatalogDisplay();
-        console.log('Catalog reset');
-    },
-
-    // Add a test quiz
-    addTestQuiz: function() {
-        const testQuiz = {
-            code: '201-01-1',
-            filename: '201011.json',
-            path: 'Questions/lower-secondary/math/201011.json',
-            name: 'Sec 1 Math Chapter 1',
-            subject: 'Mathematics',
-            level: 'Lower Secondary',
-            grade: 'S1'
-        };
-        
-        gameState.quizCatalog.push(testQuiz);
-        localStorage.setItem('quizCatalog', JSON.stringify(gameState.quizCatalog));
-        updateCatalogDisplay();
-        console.log('Test quiz added');
-    },
-
-    // Show current state
-    showState: function() {
-        console.log('Current PIN:', gameState.pin);
-        console.log('Catalog size:', gameState.quizCatalog.length);
-        console.log('Catalog:', gameState.quizCatalog);
-    }
-};
