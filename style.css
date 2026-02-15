@@ -1,59 +1,127 @@
-/* New Choice Section */
-.choice-section {
-    background: rgba(45, 55, 72, 0.8);
-    border: 2px solid var(--cny-gold);
-    border-radius: 15px;
-    padding: 25px;
-    margin-top: 20px;
-    text-align: center;
-    animation: fadeIn 0.5s;
+:root {
+    --red: #c53030;
+    --gold: #d69e2e;
+    --dark: #1a202c;
+    --panel: #2d3748;
+    --text: #f7fafc;
 }
 
-.choice-section h3 {
-    color: var(--cny-light-gold);
-    margin-bottom: 20px;
-    font-size: 1.4rem;
-}
-
-.choice-buttons {
+body {
+    background: linear-gradient(135deg, #742a2a, #2d3748);
+    font-family: 'Segoe UI', sans-serif;
+    color: var(--text);
+    margin: 0;
+    min-height: 100vh;
     display: flex;
     justify-content: center;
     align-items: center;
-    gap: 20px;
 }
 
-.divider-vertical {
-    color: var(--text-gray);
-    font-weight: bold;
-    font-size: 0.9rem;
-}
-
-/* Big Action Buttons */
-#choose-box-btn, #choose-risk-btn {
-    padding: 15px 30px;
-    height: auto;
-    flex-direction: column;
-    font-size: 1.2rem;
-    min-width: 180px;
-}
-
-#choose-box-btn small, #choose-risk-btn small {
-    font-size: 0.8rem;
-    font-weight: normal;
-    opacity: 0.8;
-    margin-top: 5px;
-}
-
-/* Treasure Box Opened State */
-.treasure-box.opened {
-    background: var(--cny-gold);
-    color: var(--dark-bg);
-    transform: scale(1.1);
-    box-shadow: 0 0 20px var(--cny-gold);
-    pointer-events: none;
-}
-
-.blackjack-buttons button {
-    font-size: 1.3rem;
+.container {
+    width: 100%;
+    max-width: 600px;
+    background: var(--dark);
+    border: 4px solid var(--gold);
+    border-radius: 20px;
     padding: 20px;
+    box-shadow: 0 10px 30px rgba(0,0,0,0.5);
+    position: relative;
+    min-height: 80vh;
 }
+
+/* Header */
+header { text-align: center; margin-bottom: 20px; }
+h1 { margin: 0; color: var(--gold); font-size: 2rem; }
+.subtitle { color: #a0aec0; font-size: 0.9rem; }
+
+/* Screens */
+.screen { display: none; animation: fadeIn 0.3s; }
+.screen.active { display: block; }
+@keyframes fadeIn { from { opacity:0; } to { opacity:1; } }
+
+/* PIN Input */
+.pin-display { display: flex; gap: 5px; justify-content: center; margin: 20px 0; }
+.digit {
+    width: 45px; height: 60px;
+    background: var(--panel); border: 2px solid var(--gold);
+    border-radius: 8px; display: flex; align-items: center; justify-content: center;
+    font-size: 1.5rem; color: var(--gold);
+}
+
+.keypad { display: grid; grid-template-columns: repeat(3, 1fr); gap: 10px; max-width: 300px; margin: 0 auto; }
+.key {
+    padding: 15px; background: var(--panel); border: none;
+    border-radius: 10px; color: white; font-size: 1.2rem; cursor: pointer;
+}
+.key:active { background: #4a5568; }
+.key.submit { background: var(--gold); color: var(--dark); font-weight: bold; }
+
+/* Game UI */
+.player-info { display: flex; justify-content: space-between; align-items: center; margin-bottom: 15px; }
+.player-card {
+    background: var(--panel); padding: 10px; border-radius: 10px;
+    width: 45%; text-align: center; border: 2px solid transparent;
+}
+.player-card.active { border-color: var(--gold); background: #2c5282; }
+.total-score { font-size: 2rem; font-weight: bold; color: var(--gold); }
+.round-indicator { font-size: 0.8rem; color: #a0aec0; }
+
+.question-area { background: var(--panel); padding: 15px; border-radius: 10px; margin-bottom: 15px; }
+.options-grid { display: grid; gap: 10px; margin: 15px 0; }
+.option {
+    padding: 15px; background: var(--dark); border-radius: 8px; cursor: pointer;
+    border: 2px solid #4a5568; transition: 0.2s;
+}
+.option:hover { border-color: var(--gold); }
+.option.selected { background: var(--gold); color: var(--dark); border-color: var(--gold); }
+.option.correct { background: #2f855a; border-color: #48bb78; }
+.option.incorrect { background: #c53030; border-color: #f56565; }
+
+/* Phase Sections */
+.phase-section {
+    background: rgba(0,0,0,0.3); border: 2px dashed var(--gold);
+    padding: 15px; border-radius: 10px; text-align: center; margin-top: 15px;
+}
+
+.choice-grid { display: flex; gap: 10px; justify-content: center; margin-top: 10px; }
+.choice-card {
+    flex: 1; background: var(--panel); padding: 15px; border-radius: 10px;
+    cursor: pointer; border: 2px solid transparent; transition: 0.2s;
+}
+.choice-card:hover { transform: translateY(-5px); border-color: var(--gold); }
+.choice-card .icon { font-size: 2rem; margin-bottom: 5px; }
+.choice-card.risk:hover { border-color: var(--red); }
+
+.treasure-grid { display: flex; gap: 15px; justify-content: center; margin: 15px 0; }
+.t-box {
+    width: 70px; height: 70px; background: var(--gold); color: var(--dark);
+    display: flex; align-items: center; justify-content: center;
+    font-size: 2rem; border-radius: 10px; cursor: pointer;
+    box-shadow: 0 5px 15px rgba(214, 158, 46, 0.4);
+}
+
+/* Controls */
+.btn {
+    padding: 12px 20px; border: none; border-radius: 8px;
+    font-weight: bold; cursor: pointer; font-size: 1rem;
+}
+.btn-block { width: 100%; }
+.primary { background: var(--gold); color: var(--dark); }
+.secondary { background: var(--panel); color: white; border: 1px solid var(--gold); }
+.danger { background: var(--red); color: white; }
+.success { background: #2f855a; color: white; }
+
+.risk-controls { display: flex; gap: 10px; justify-content: center; margin-top: 10px; }
+.risk-score { font-size: 1.5rem; font-weight: bold; color: var(--gold); }
+
+/* Feedback */
+.feedback-area {
+    margin-top: 15px; padding: 10px; border-radius: 8px; text-align: center; font-weight: bold;
+}
+.feedback-area.success { background: #2f855a; color: white; }
+.feedback-area.error { background: #c53030; color: white; }
+.feedback-area.info { background: #2b6cb0; color: white; }
+
+/* Decorations */
+.lantern { position: absolute; font-size: 2rem; animation: swing 3s infinite ease-in-out; }
+@keyframes swing { 0%,100% { transform: rotate(-5deg); } 50% { transform: rotate(5deg); } }

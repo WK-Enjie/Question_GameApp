@@ -1,43 +1,204 @@
-<div id="question-section" class="question-section">
-    <div id="question-text" class="question-text">Loading...</div>
-    <div id="options-container" class="options-container"></div>
-    
-    <div class="game-controls">
-        <button id="submit-answer" class="btn primary btn-large">Submit Answer</button>
-    </div>
-</div>
+/* New Choice Section */
+.choice-section {
+    background: rgba(45, 55, 72, 0.8);
+    border: 2px solid var(--cny-gold);
+    border-radius: 15px;
+    padding: 25px;
+    margin-top: 20px;
+    text-align: center;
+    animation: fadeIn 0.5s;
+}
 
-<div id="choice-section" class="choice-section" style="display: none;">
-    <h3>✨ Correct! Choose your Path:</h3>
-    <div class="choice-buttons">
-        <button id="choose-box-btn" class="btn secondary">
-            🎁 Open Treasure Box <br><small>(Safe Bonus)</small>
-        </button>
-        <div class="divider-vertical">OR</div>
-        <button id="choose-risk-btn" class="btn primary">
-            🎲 Risk It! <br><small>(Hit for +50% Points)</small>
-        </button>
-    </div>
-</div>
+.choice-section h3 {
+    color: var(--cny-light-gold);
+    margin-bottom: 20px;
+    font-size: 1.4rem;
+}
 
-<div id="treasure-section" class="treasure-section" style="display: none;">
-    <h3>🎁 Pick a Box!</h3>
-    <div class="treasure-boxes">
-        <div class="treasure-box" data-box="1">❓</div>
-        <div class="treasure-box" data-box="2">❓</div>
-        <div class="treasure-box" data-box="3">❓</div>
-    </div>
-    <div id="powerup-result"></div>
-</div>
+.choice-buttons {
+    display: flex;
+    justify-content: center;
+    align-items: center;
+    gap: 20px;
+}
 
-<div id="blackjack-controls" class="blackjack-controls" style="display: none;">
-    <div class="blackjack-info">
-        <span>Round Score: <strong id="current-round-total" style="font-size:1.5em; color:#ffd700;">0</strong> / 50</span>
-    </div>
-    <div class="blackjack-buttons">
-        <button id="hit-btn" class="btn-hit">🔥 HIT (+50%)</button>
-        <button id="stand-btn" class="btn-stand">✅ STAND (Bank)</button>
-    </div>
-</div>
+.divider-vertical {
+    color: var(--text-gray);
+    font-weight: bold;
+    font-size: 0.9rem;
+}
 
-<div id="answer-feedback" class="answer-feedback"></div>
+/* Big Action Buttons */
+#choose-box-btn, #choose-risk-btn {
+    padding: 15px 30px;
+    height: auto;
+    flex-direction: column;
+    font-size: 1.2rem;
+    min-width: 180px;
+}
+
+#choose-box-btn small, #choose-risk-btn small {
+    font-size: 0.8rem;
+    font-weight: normal;
+    opacity: 0.8;
+    margin-top: 5px;
+}
+
+/* Treasure Box Opened State */
+.treasure-box.opened {
+    background: var(--cny-gold);
+    color: var(--dark-bg);
+    transform: scale(1.1);
+    box-shadow: 0 0 20px var(--cny-gold);
+    pointer-events: none;
+}
+
+.blackjack-buttons button {
+    font-size: 1.3rem;
+    padding: 20px;
+}<!DOCTYPE html>
+<html lang="en">
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>🧧 CNY Blackjack Quiz (Max 50)</title>
+    <link rel="stylesheet" href="style.css">
+    <link rel="stylesheet" href="https://cdnjs.cloudflare.com/ajax/libs/font-awesome/6.4.0/css/all.min.css">
+</head>
+<body>
+    <div class="lantern" style="top: 20px; left: 5%;">🏮</div>
+    <div class="lantern" style="top: 40px; right: 5%;">🏮</div>
+
+    <div class="container">
+        <header>
+            <h1>🧧 <span class="cny-text">CNY Quiz 50</span> 🧧</h1>
+            <div class="subtitle">Target: 50 Points | Winner Takes Turn</div>
+        </header>
+
+        <div id="pin-screen" class="screen active">
+            <div class="pin-input-section">
+                <h2>Enter Quiz Code</h2>
+                <div class="pin-display">
+                    <div class="digit" id="digit1"><span class="digit-number">_</span></div>
+                    <div class="digit" id="digit2"><span class="digit-number">_</span></div>
+                    <div class="digit" id="digit3"><span class="digit-number">_</span></div>
+                    <div class="digit" id="digit4"><span class="digit-number">_</span></div>
+                    <div class="digit" id="digit5"><span class="digit-number">_</span></div>
+                    <div class="digit" id="digit6"><span class="digit-number">_</span></div>
+                </div>
+
+                <div class="keypad">
+                    <button class="key" data-key="1">1</button>
+                    <button class="key" data-key="2">2</button>
+                    <button class="key" data-key="3">3</button>
+                    <button class="key" data-key="4">4</button>
+                    <button class="key" data-key="5">5</button>
+                    <button class="key" data-key="6">6</button>
+                    <button class="key" data-key="7">7</button>
+                    <button class="key" data-key="8">8</button>
+                    <button class="key" data-key="9">9</button>
+                    <button class="key clear" id="clear-btn">⌫</button>
+                    <button class="key" data-key="0">0</button>
+                    <button class="key submit" id="submit-pin">GO</button>
+                </div>
+                
+                <div class="quick-actions">
+                    <button id="scan-quizzes" class="btn secondary"><i class="fas fa-search"></i> Scan</button>
+                    <label class="btn secondary">
+                        <i class="fas fa-upload"></i> Upload JSON
+                        <input type="file" id="json-upload" hidden accept=".json">
+                    </label>
+                </div>
+            </div>
+
+            <div id="quiz-catalog" class="quiz-catalog">
+                </div>
+        </div>
+
+        <div id="loading-screen" class="screen">
+            <div class="loading-content">
+                <div class="spinner"></div>
+                <h2 id="loading-message">Loading...</h2>
+            </div>
+        </div>
+
+        <div id="game-screen" class="screen">
+            <div class="player-info">
+                <div class="player-card" id="player1">
+                    <h3>Player 1</h3>
+                    <div class="total-score" id="score1">0</div>
+                    <div class="round-indicator" id="p1-round">Round: 0</div>
+                </div>
+                <div class="vs-badge">VS</div>
+                <div class="player-card" id="player2">
+                    <h3>Player 2</h3>
+                    <div class="total-score" id="score2">0</div>
+                    <div class="round-indicator" id="p2-round">Round: 0</div>
+                </div>
+            </div>
+
+            <div class="turn-banner">
+                <span id="current-player-name">Player 1's Turn</span>
+                <span class="q-counter">Q: <span id="current-q">1</span>/<span id="total-q">10</span></span>
+            </div>
+
+            <div class="question-area">
+                <h3 id="question-text">Loading Question...</h3>
+                <div id="options-container" class="options-grid"></div>
+                <button id="submit-answer" class="btn primary btn-block">Submit Answer</button>
+            </div>
+
+            <div id="choice-section" class="phase-section" style="display: none;">
+                <div class="phase-header">✨ CORRECT! CHOOSE YOUR PATH ✨</div>
+                <div class="choice-grid">
+                    <div class="choice-card" id="btn-choose-box">
+                        <div class="icon">🎁</div>
+                        <h4>Treasure Box</h4>
+                        <p>Safe random bonus or swap</p>
+                    </div>
+                    <div class="choice-card risk" id="btn-choose-risk">
+                        <div class="icon">🎲</div>
+                        <h4>Risk It!</h4>
+                        <p>Hit for +50% points<br>(Max 50)</p>
+                    </div>
+                </div>
+            </div>
+
+            <div id="treasure-section" class="phase-section" style="display: none;">
+                <h3>Pick a Box!</h3>
+                <div class="treasure-grid">
+                    <div class="t-box" data-id="1">?</div>
+                    <div class="t-box" data-id="2">?</div>
+                    <div class="t-box" data-id="3">?</div>
+                </div>
+                <div id="treasure-result"></div>
+            </div>
+
+            <div id="risk-section" class="phase-section" style="display: none;">
+                <div class="risk-score">
+                    Round Score: <span id="risk-display">0</span> / 50
+                </div>
+                <div class="risk-controls">
+                    <button id="btn-hit" class="btn danger">🔥 HIT (+50%)</button>
+                    <button id="btn-stand" class="btn success">✅ STAND</button>
+                </div>
+            </div>
+
+            <div id="feedback-area" class="feedback-area"></div>
+        </div>
+
+        <div id="game-over-screen" class="screen">
+            <h1>🏆 Game Over 🏆</h1>
+            <h2 id="winner-text">Player 1 Wins!</h2>
+            <div class="final-scores">
+                <p>Player 1: <span id="final-p1">0</span></p>
+                <p>Player 2: <span id="final-p2">0</span></p>
+            </div>
+            <button id="btn-home" class="btn primary">Back to Home</button>
+        </div>
+
+    </div>
+
+    <script src="script.js"></script>
+</body>
+</html>
