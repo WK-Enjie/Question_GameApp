@@ -3,148 +3,263 @@
 <head>
     <meta charset="UTF-8">
     <meta name="viewport" content="width=device-width, initial-scale=1.0">
-    <title>QA Virtual Lab</title>
+    <title>🧧 新春 Quiz 挑战 · 红包大作战</title>
     <link rel="stylesheet" href="style.css">
-    <link href="https://fonts.googleapis.com/css2?family=Roboto:wght@400;500;700&display=swap" rel="stylesheet">
+    <link rel="stylesheet" href="https://cdnjs.cloudflare.com/ajax/libs/font-awesome/6.4.0/css/all.min.css">
 </head>
 <body>
-
-    <nav>
-        <div class="logo">QA Master 🧪</div>
-        <div class="nav-links">
-            <button type="button" onclick="showSection('learn')">Learn</button>
-            <button type="button" onclick="showSection('lab')">Virtual Lab</button>
-            <button type="button" onclick="showSection('quiz')">Quiz</button>
-        </div>
-    </nav>
-
-    <main>
-        <section id="learn" class="active-section">
-            <h2>Reference Material</h2>
-            <div class="tabs-header">
-                <button type="button" onclick="openTab(event, 'cations')" class="tab-btn active-tab">Cations</button>
-                <button type="button" onclick="openTab(event, 'anions')" class="tab-btn">Anions</button>
-                <button type="button" onclick="openTab(event, 'gases')" class="tab-btn">Gases</button>
-            </div>
-
-            <div id="cations" class="tab-content active-content">
-                <h3>Testing for Cations</h3>
-                <table>
-                    <thead>
-                        <tr>
-                            <th>Ion</th>
-                            <th>Effect of Aqueous Sodium Hydroxide</th>
-                            <th>Effect of Aqueous Ammonia</th>
-                        </tr>
-                    </thead>
-                    <tbody>
-                        <tr><td>Zinc (Zn²⁺)</td><td>White precipitate formed.<br>Soluble in excess to form a colorless solution.</td><td>White precipitate formed.<br>Soluble in excess to form a colorless solution.</td></tr>
-                        <tr><td>Aluminium (Al³⁺)</td><td>White precipitate formed.<br>Soluble in excess to form a colorless solution.</td><td>White precipitate formed.<br>Insoluble in excess.</td></tr>
-                        <tr><td>Calcium (Ca²⁺)</td><td>White precipitate formed.<br>Insoluble in excess.</td><td>No precipitate formed (or very slight).</td></tr>
-                        <tr><td>Copper(II) (Cu²⁺)</td><td>Light blue precipitate formed.<br>Insoluble in excess.</td><td>Light blue precipitate formed.<br>Soluble in excess to form a deep blue solution.</td></tr>
-                        <tr><td>Iron(II) (Fe²⁺)</td><td>Green precipitate formed.<br>Insoluble in excess.</td><td>Green precipitate formed.<br>Insoluble in excess.</td></tr>
-                        <tr><td>Iron(III) (Fe³⁺)</td><td>Red-brown precipitate formed.<br>Insoluble in excess.</td><td>Red-brown precipitate formed.<br>Insoluble in excess.</td></tr>
-                        <tr><td>Ammonium (NH₄⁺)</td><td>Ammonia gas produced on warming.</td><td>-</td></tr>
-                    </tbody>
-                </table>
-            </div>
-
-            <div id="anions" class="tab-content">
-                <h3>Testing for Anions</h3>
-                <table>
-                    <thead><tr><th>Ion</th><th>Test</th><th>Result</th></tr></thead>
-                    <tbody>
-                        <tr><td>Carbonate (CO₃²⁻)</td><td>Add dilute acid</td><td>Effervescence observed. Carbon Dioxide gas produced.</td></tr>
-                        <tr><td>Chloride (Cl⁻)</td><td>Acidify with Nitric Acid, then add Silver Nitrate</td><td>White precipitate formed.</td></tr>
-                        <tr><td>Iodide (I⁻)</td><td>Acidify with Nitric Acid, then add Silver Nitrate</td><td>Yellow precipitate formed.</td></tr>
-                        <tr><td>Nitrate (NO₃⁻)</td><td>Add Aqueous NaOH and Aluminium foil; warm gently</td><td>Ammonia gas produced.</td></tr>
-                        <tr><td>Sulfate (SO₄²⁻)</td><td>Acidify with Nitric Acid, then add Barium Nitrate</td><td>White precipitate formed.</td></tr>
-                    </tbody>
-                </table>
-            </div>
-
-            <div id="gases" class="tab-content">
-                <h3>Testing for Gases</h3>
-                <div class="gas-grid">
-                    <div class="card"><strong>Ammonia (NH₃)</strong><br>Turns damp red litmus paper blue.</div>
-                    <div class="card"><strong>Carbon Dioxide (CO₂)</strong><br>Turns limewater milky (White precipitate formed).</div>
-                    <div class="card"><strong>Chlorine (Cl₂)</strong><br>Bleaches damp litmus paper.</div>
-                    <div class="card"><strong>Hydrogen (H₂)</strong><br>Extinguishes a lighted splint with a "pop" sound.</div>
-                    <div class="card"><strong>Oxygen (O₂)</strong><br>Relights a glowing splint.</div>
+    <div class="container">
+        <!-- Chinese New Year Decorations -->
+        <div class="lantern"></div>
+        <div class="firecracker" style="left: 30px;"></div>
+        <div class="firecracker" style="left: 40px; animation-delay: 0.2s;"></div>
+        <div class="firecracker" style="left: 50px; animation-delay: 0.4s;"></div>
+        <div class="firecracker" style="left: 60px; animation-delay: 0.6s;"></div>
+        <div class="firecracker" style="left: 70px; animation-delay: 0.8s;"></div>
+        
+        <!-- PIN Screen -->
+        <div id="pin-screen" class="screen active">
+            <div class="header">
+                <h1><i class="fas fa-dragon"></i> 新春 Quiz 挑战</h1>
+                <p class="subtitle">🧧 输入6位红包码 或 浏览题库 🧧</p>
+                <div class="pin-guide">
+                    <div class="guide-item">
+                        <span class="guide-digit">1</span> 学段
+                        <div class="guide-tooltip">1=小学, 2=初中, 3=高中</div>
+                    </div>
+                    <div class="guide-item">
+                        <span class="guide-digit">2</span> 科目
+                        <div class="guide-tooltip">0=数学, 1=科学, 2=综合物理, 3=纯物理, 4=综合化学, 5=纯化学</div>
+                    </div>
+                    <div class="guide-item">
+                        <span class="guide-digit">3</span> 年级
+                        <div class="guide-tooltip">P1-P6 (1-6), S1-S4 (1-4)</div>
+                    </div>
+                    <div class="guide-item">
+                        <span class="guide-digit">4</span> 章节
+                        <div class="guide-tooltip">十位数 (0-9)</div>
+                    </div>
+                    <div class="guide-item">
+                        <span class="guide-digit">5</span> 章节
+                        <div class="guide-tooltip">个位数 (0-9)</div>
+                    </div>
+                    <div class="guide-item">
+                        <span class="guide-digit">6</span> 练习
+                        <div class="guide-tooltip">练习编号 (1-9)</div>
+                    </div>
                 </div>
             </div>
-        </section>
-
-        <section id="lab">
-            <h2>Virtual Laboratory</h2>
-            <div class="lab-layout">
+            
+            <div class="pin-input-section">
+                <div class="pin-display">
+                    <div id="digit1" class="digit">
+                        <div class="digit-number">_</div>
+                        <div class="digit-label">学段</div>
+                    </div>
+                    <div id="digit2" class="digit">
+                        <div class="digit-number">_</div>
+                        <div class="digit-label">科目</div>
+                    </div>
+                    <div id="digit3" class="digit">
+                        <div class="digit-number">_</div>
+                        <div class="digit-label">年级</div>
+                    </div>
+                    <div id="digit4" class="digit">
+                        <div class="digit-number">_</div>
+                        <div class="digit-label">章十</div>
+                    </div>
+                    <div id="digit5" class="digit">
+                        <div class="digit-number">_</div>
+                        <div class="digit-label">章个</div>
+                    </div>
+                    <div id="digit6" class="digit">
+                        <div class="digit-number">_</div>
+                        <div class="digit-label">练习</div>
+                    </div>
+                </div>
                 
-                <div class="lab-controls">
-                    <h3>1. Select Unknown Ion</h3>
-                    <select id="ionSelect">
-                        <option value="zn">Zinc (Zn²⁺)</option>
-                        <option value="al">Aluminium (Al³⁺)</option>
-                        <option value="ca">Calcium (Ca²⁺)</option>
-                        <option value="cu">Copper(II) (Cu²⁺)</option>
-                        <option value="fe2">Iron(II) (Fe²⁺)</option>
-                        <option value="fe3">Iron(III) (Fe³⁺)</option>
-                        <option value="nh4">Ammonium (NH₄⁺)</option>
-                    </select>
-
-                    <h3>2. Add Reagent</h3>
-                    <div class="reagent-grid">
-                        <button type="button" onclick="runTest('naoh_few')">+ NaOH (Few)</button>
-                        <button type="button" onclick="runTest('naoh_excess')">+ NaOH (Excess)</button>
-                        <button type="button" onclick="runTest('nh3_few')">+ NH₃ (Few)</button>
-                        <button type="button" onclick="runTest('nh3_excess')">+ NH₃ (Excess)</button>
-                    </div>
-                    <button type="button" class="reset-btn" onclick="resetLab()">Reset Test Tube</button>
-                    
-                    <div class="tip-box">
-                        <strong>Visual Guide:</strong><br>
-                        Look at the grid lines behind the tube.<br>
-                        ✅ Lines visible = <strong>Solution</strong><br>
-                        ❌ Lines blocked = <strong>Precipitate</strong>
+                <div class="quick-actions">
+                    <button id="test-pin" class="btn test-btn">
+                        <i class="fas fa-vial"></i> 测试 341-09-1
+                    </button>
+                    <button id="scan-quizzes" class="btn scan-btn">
+                        <i class="fas fa-search"></i> 扫描红包
+                    </button>
+                </div>
+            </div>
+            
+            <div class="keypad">
+                <button class="key" data-key="1">1</button>
+                <button class="key" data-key="2">2</button>
+                <button class="key" data-key="3">3</button>
+                <button class="key" data-key="4">4</button>
+                <button class="key" data-key="5">5</button>
+                <button class="key" data-key="6">6</button>
+                <button class="key" data-key="7">7</button>
+                <button class="key" data-key="8">8</button>
+                <button class="key" data-key="9">9</button>
+                <button id="clear-btn" class="key clear"><i class="fas fa-backspace"></i> 清除</button>
+                <button class="key" data-key="0">0</button>
+                <button id="submit-pin" class="key submit"><i class="fas fa-play"></i> 开启</button>
+            </div>
+            
+            <div class="catalog-container">
+                <div class="catalog-header">
+                    <h3><i class="fas fa-gift"></i> 新春红包题库</h3>
+                    <span id="quiz-count" class="badge">扫描中...</span>
+                </div>
+                <div id="quiz-catalog" class="quiz-catalog">
+                    <div class="loading-catalog">
+                        <i class="fas fa-spinner fa-spin"></i> 正在寻找红包...
                     </div>
                 </div>
-
-                <div class="lab-visuals">
-                    <div class="lab-bench">
-                        <div class="test-tube">
-                            <div id="chemical" class="chemical clear"></div>
-                            <div class="glass-shine"></div>
+            </div>
+        </div>
+        
+        <!-- Loading Screen -->
+        <div id="loading-screen" class="screen">
+            <div class="loading-content">
+                <div class="spinner"></div>
+                <h2 id="loading-message">新年快乐...</h2>
+                <div id="loading-details" class="loading-details">
+                    正在打开红包...
+                </div>
+                <div class="progress-container">
+                    <div id="scan-progress" class="progress-bar"></div>
+                </div>
+                <div id="found-count" class="found-count">
+                    找到: <span id="quiz-found">0</span> 个红包
+                </div>
+            </div>
+        </div>
+        
+        <!-- Error Screen -->
+        <div id="error-screen" class="screen">
+            <div class="error-content">
+                <div class="error-icon"><i class="fas fa-exclamation-triangle"></i></div>
+                <h2>红包不见啦!</h2>
+                <div id="error-message" class="error-details">
+                    错误信息将显示在这里
+                </div>
+                <div class="action-buttons">
+                    <button id="back-to-pin-error" class="btn secondary">
+                        <i class="fas fa-home"></i> 返回首页
+                    </button>
+                    <button id="retry-btn" class="btn primary">
+                        <i class="fas fa-redo"></i> 再试一次
+                    </button>
+                </div>
+            </div>
+        </div>
+        
+        <!-- Game Screen -->
+        <div id="game-screen" class="screen">
+            <div class="game-header">
+                <div class="quiz-info">
+                    <h2 id="quiz-title">新春挑战</h2>
+                    <p id="quiz-topic">科目 • 年级</p>
+                    <div class="quiz-code-display">
+                        <span class="code-label">红包码:</span>
+                        <span id="current-quiz-code" class="quiz-code">000-00-0</span>
+                    </div>
+                </div>
+                <div class="question-counter">
+                    第 <span id="current-q">1</span>/<span id="total-q">10</span> 题
+                </div>
+            </div>
+            
+            <div class="players-container">
+                <div id="player1" class="player active">
+                    <div class="player-header">
+                        <div class="player-name">玩家 1 🐉</div>
+                        <div class="player-status">
+                            <span id="player1-turn" class="turn-indicator active"><i class="fas fa-user"></i></span>
                         </div>
                     </div>
-                    
-                    <div class="observation-box">
-                        <h4>Observation:</h4>
-                        <p id="obsText">Colorless Solution</p>
+                    <div id="score1" class="score">0</div>
+                    <div class="score-label">积分</div>
+                </div>
+                <div id="player2" class="player">
+                    <div class="player-header">
+                        <div class="player-name">玩家 2 🐲</div>
+                        <div class="player-status">
+                            <span id="player2-turn" class="turn-indicator"><i class="fas fa-user"></i></span>
+                        </div>
                     </div>
-
-                    <div class="equation-box">
-                        <h4>Ionic Equation:</h4>
-                        <p id="eqText" class="equation-text">No reaction yet.</p>
+                    <div id="score2" class="score">0</div>
+                    <div class="score-label">积分</div>
+                </div>
+            </div>
+            
+            <div class="question-container">
+                <div id="question-text" class="question-text">
+                    问题即将出现...
+                </div>
+                <div id="options-container" class="options">
+                    <!-- Options will be added here -->
+                </div>
+            </div>
+            
+            <div class="game-controls">
+                <button id="submit-answer" class="btn primary" disabled>
+                    <i class="fas fa-paper-plane"></i> 提交答案
+                </button>
+                <button id="next-btn" class="btn secondary" style="display:none">
+                    <i class="fas fa-arrow-right"></i> 下一题
+                </button>
+                <button id="home-btn" class="btn">
+                    <i class="fas fa-home"></i> 首页
+                </button>
+            </div>
+            
+            <div class="feedback-section">
+                <div id="answer-feedback" class="feedback">
+                    <div class="feedback-placeholder">
+                        <i class="fas fa-lightbulb"></i> 选择答案开始挑战
                     </div>
                 </div>
-
-            </div>
-        </section>
-
-        <section id="quiz">
-            <h2>Challenge Mode</h2>
-            <div class="quiz-container">
-                <div class="score-display">Score: <span id="scoreVal">0</span> / <span id="totalVal">6</span></div>
                 
-                <div id="questionArea"></div>
-                
-                <div id="optionsContainer" class="options-grid"></div>
-                <div id="feedbackText" class="feedback"></div>
-                <button type="button" id="nextBtn" onclick="nextQuestion()">Next Question ➜</button>
+                <div id="treasure-section" class="treasure-section" style="display:none">
+                    <h3><i class="fas fa-gift"></i> 选个红包!</h3>
+                    <div class="treasure-boxes">
+                        <div class="treasure-box" data-box="1">🧧</div>
+                        <div class="treasure-box" data-box="2">🧧</div>
+                        <div class="treasure-box" data-box="3">🧧</div>
+                    </div>
+                    <div id="powerup-result"></div>
+                </div>
             </div>
-        </section>
-
-    </main>
-
+            
+            <div id="game-over" class="game-over" style="display:none">
+                <div class="game-over-content">
+                    <div class="trophy">
+                        <i class="fas fa-trophy"></i>
+                    </div>
+                    <h2 id="winner-message">新年快乐!</h2>
+                    <div id="winner-name" class="winner-name">获胜者</div>
+                    <div class="final-scores">
+                        <div class="final-score">
+                            <span class="player-label">玩家 1:</span>
+                            <span id="final-score1" class="score-value">0</span>
+                        </div>
+                        <div class="final-score">
+                            <span class="player-label">玩家 2:</span>
+                            <span id="final-score2" class="score-value">0</span>
+                        </div>
+                    </div>
+                    <div class="game-over-btns">
+                        <button id="restart-btn" class="btn primary">
+                            <i class="fas fa-redo"></i> 再玩一次
+                        </button>
+                        <button id="new-chapter-btn" class="btn">
+                            <i class="fas fa-book"></i> 新红包
+                        </button>
+                    </div>
+                </div>
+            </div>
+        </div>
+    </div>
+    
     <script src="script.js"></script>
 </body>
 </html>
