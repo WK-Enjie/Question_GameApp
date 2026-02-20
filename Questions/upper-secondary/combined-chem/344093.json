@@ -1,0 +1,83 @@
+{
+  "title": "Identification of Compounds (Cations & Anions)",
+  "topic": "Combined Tests for Unknown Ionic Compounds",
+  "subject": "Combined Science (Chemistry)",
+  "level": "Upper Secondary",
+  "grade": "Sec 4",
+  "chapter": 9,
+  "worksheet": 3,
+  "syllabus": "O-Level Chemistry 5087",
+  "constraints": "No flame tests; limewater test described as 'white precipitate'",
+  "questions": [
+    {
+      "question": "A white solid is tested. When dilute HCl is added, effervescence occurs and the gas gives a white precipitate when bubbled through limewater. The solution obtained after adding HCl gives a white precipitate with NaOH that does not dissolve in excess. The solid is:",
+      "options": ["CaCO₃", "CaCl₂", "Na₂CO₃", "CaSO₄"],
+      "correct": 0,
+      "points": 15,
+      "explanation": "Effervescence with HCl and white precipitate with limewater confirms CO₃²⁻. White precipitate with NaOH insoluble in excess indicates Ca²⁺. So compound is calcium carbonate, CaCO₃."
+    },
+    {
+      "question": "A white solid is dissolved in water. The solution gives a white precipitate with acidified BaCl₂. Another portion gives a white precipitate with NaOH that dissolves in excess NaOH to give a colourless solution. The solid is:",
+      "options": ["CuSO₄", "FeSO₄", "ZnSO₄", "CaSO₄"],
+      "correct": 2,
+      "points": 20,
+      "explanation": "White precipitate with acidified BaCl₂ indicates SO₄²⁻. White precipitate with NaOH soluble in excess indicates Zn²⁺ (amphoteric hydroxide). Thus, the solid is ZnSO₄."
+    },
+    {
+      "question": "A yellow-brown solution gives a reddish-brown precipitate with NaOH. Another portion gives a white precipitate with acidified BaCl₂. The compound is:",
+      "options": ["FeCl₃", "Fe₂(SO₄)₃", "FeSO₄", "CuSO₄"],
+      "correct": 1,
+      "points": 15,
+      "explanation": "Reddish-brown precipitate with NaOH indicates Fe³⁺. White precipitate with acidified BaCl₂ indicates SO₄²⁻. So the compound is iron(III) sulfate, Fe₂(SO₄)₃."
+    },
+    {
+      "question": "A colourless solution gives a white precipitate with AgNO₃ that dissolves in dilute NH₃. Another portion gives a white precipitate with NaOH that dissolves in excess NaOH. The compound is:",
+      "options": ["ZnI₂", "AlCl₃", "ZnCl₂", "NaCl"],
+      "correct": 2,
+      "points": 20,
+      "explanation": "White precipitate with AgNO₃ soluble in dilute NH₃ indicates Cl⁻. White precipitate with NaOH soluble in excess indicates Zn²⁺ (amphoteric). So ZnCl₂ fits."
+    },
+    {
+      "question": "A green solution gives a green precipitate with NaOH that turns brown on standing. Another portion gives a white precipitate with acidified BaCl₂. The compound is:",
+      "options": ["FeSO₄", "Fe₂(SO₄)₃", "CuSO₄", "NiSO₄"],
+      "correct": 0,
+      "points": 15,
+      "explanation": "Green precipitate (Fe(OH)₂) that turns brown (oxidised to Fe(OH)₃) indicates Fe²⁺. White precipitate with acidified BaCl₂ indicates SO₄²⁻. So FeSO₄."
+    },
+    {
+      "question": "A white solid gives a pungent gas when warmed with NaOH. The gas turns moist red litmus paper blue. Its solution gives a white precipitate with AgNO₃ that dissolves in dilute NH₃. The solid is:",
+      "options": ["NH₄Cl", "NaCl", "NH₄NO₃", "KCl"],
+      "correct": 0,
+      "points": 15,
+      "explanation": "Pungent gas turning moist red litmus blue indicates NH₃, confirming NH₄⁺. White precipitate with AgNO₃ soluble in dilute NH₃ indicates Cl⁻. So NH₄Cl."
+    },
+    {
+      "question": "A blue solution gives a blue precipitate with NaOH that is insoluble in excess. Another portion gives a white precipitate with acidified BaCl₂. The compound is:",
+      "options": ["CuCl₂", "CuSO₄", "Cu(NO₃)₂", "FeCl₂"],
+      "correct": 1,
+      "points": 20,
+      "explanation": "Blue precipitate with NaOH indicates Cu²⁺. White precipitate with acidified BaCl₂ indicates SO₄²⁻. Thus, CuSO₄."
+    },
+    {
+      "question": "A colourless solution gives a white precipitate with NaOH that dissolves in excess NaOH. The same solution gives a white precipitate with NH₃ that does not dissolve in excess NH₃. Another portion gives a white precipitate with acidified BaCl₂. The compound is:",
+      "options": ["ZnSO₄", "Al₂(SO₄)₃", "CaSO₄", "MgSO₄"],
+      "correct": 1,
+      "points": 20,
+      "explanation": "White precipitate with NaOH soluble in excess indicates Zn²⁺ or Al³⁺. White precipitate with NH₃ insoluble in excess distinguishes Al³⁺ (Zn(OH)₂ dissolves in excess NH₃). White precipitate with acidified BaCl₂ indicates SO₄²⁻. Thus, Al₂(SO₄)₃."
+    },
+    {
+      "question": "A colourless solution gives a white precipitate with NaOH that does not dissolve in excess. The same solution gives no precipitate with NH₃. Another portion gives a white precipitate with AgNO₃ that dissolves in dilute NH₃. The compound is:",
+      "options": ["CaCl₂", "ZnCl₂", "AlCl₃", "NH₄Cl"],
+      "correct": 0,
+      "points": 15,
+      "explanation": "White precipitate with NaOH insoluble in excess and no precipitate with NH₃ indicates Ca²⁺. White precipitate with AgNO₃ soluble in dilute NH₃ indicates Cl⁻. Thus, CaCl₂."
+    },
+    {
+      "question": "A white solid is insoluble in water but dissolves in dilute HCl with effervescence. The gas produced gives a white precipitate when bubbled through limewater. When dilute H₂SO₄ is added to the resulting solution, a white precipitate forms. The solid is:",
+      "options": ["CaCO₃", "CaSO₄", "BaCO₃", "ZnCO₃"],
+      "correct": 2,
+      "points": 20,
+      "explanation": "Effervescence with HCl and white precipitate with limewater indicates CO₃²⁻. The resulting solution contains the cation. White precipitate with H₂SO₄ indicates Ba²⁺ (BaSO₄ is insoluble). CaSO₄ and ZnSO₄ are soluble. Thus, BaCO₃."
+    }
+  ]
+}
