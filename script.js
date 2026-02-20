@@ -11,7 +11,8 @@ const gameState = {
     powerupUsed: false,
     canUsePowerup: false,
     currentQuizCode: '',
-    quizCatalog: []
+    quizCatalog: [],
+    currentQuizInfo: null
 };
 
 // ========== CNY SOUND EFFECTS (Optional - uncomment if you want to add sound) ==========
@@ -23,18 +24,18 @@ const gameState = {
 
 // ========== QUIZ CODE DECODER ==========
 const SUBJECTS = {
-    0: { name: 'Mathematics', folder: 'math' },
-    1: { name: 'Science', folder: 'science' },
-    2: { name: 'Combined Physics', folder: 'combined-physics' },
-    3: { name: 'Pure Physics', folder: 'pure-physics' },
-    4: { name: 'Combined Chemistry', folder: 'combined-chem' },
-    5: { name: 'Pure Chemistry', folder: 'pure-chem' }
+    0: { name: 'Mathematics', folder: 'math', chinese: '数学' },
+    1: { name: 'Science', folder: 'science', chinese: '科学' },
+    2: { name: 'Combined Physics', folder: 'combined-physics', chinese: '综合物理' },
+    3: { name: 'Pure Physics', folder: 'pure-physics', chinese: '纯物理' },
+    4: { name: 'Combined Chemistry', folder: 'combined-chem', chinese: '综合化学' },
+    5: { name: 'Pure Chemistry', folder: 'pure-chem', chinese: '纯化学' }
 };
 
 const LEVELS = {
-    1: { name: 'Primary', folder: 'primary' },
-    2: { name: 'Lower Secondary', folder: 'lower-secondary' },
-    3: { name: 'Upper Secondary', folder: 'upper-secondary' }
+    1: { name: 'Primary', folder: 'primary', chinese: '小学' },
+    2: { name: 'Lower Secondary', folder: 'lower-secondary', chinese: '初中' },
+    3: { name: 'Upper Secondary', folder: 'upper-secondary', chinese: '高中' }
 };
 
 function decodeQuizCode(code) {
@@ -42,20 +43,26 @@ function decodeQuizCode(code) {
     
     if (digits.length !== 6) return null;
     
-    const [levelDigit, subjectDigit, gradeDigit, chap10, chap1, worksheet] = digits;
+    const [levelDigit, gradeTens, gradeOnes, chapterTens, chapterOnes, worksheet] = digits;
     
     // Validate digits
     if (levelDigit < 1 || levelDigit > 3) return null;
-    if (subjectDigit < 0 || subjectDigit > 5) return null;
+    
+    // For Primary level, grade is tens digit (0-6), for Secondary, grade is tens digit (1-4)
+    const grade = parseInt(`${gradeTens}${gradeOnes}`);
     
     const level = LEVELS[levelDigit];
+    
+    // Determine subject based on grade and level (for your files, we'll use default mapping)
+    // Since your files are all Mathematics, we'll set subject to 0 (Mathematics)
+    const subjectDigit = 0; // All your files are Mathematics
     const subject = SUBJECTS[subjectDigit];
     
-    // Format: XXX-XX-X
-    const formattedCode = `${levelDigit}${subjectDigit}${gradeDigit}-${chap10}${chap1}-${worksheet}`;
+    // Format: XXX-XX-X (for display)
+    const formattedCode = `${levelDigit}${grade}${chapterTens}${chapterOnes}-${worksheet}`;
     
-    // Build filename: XXXXXX.json (no hyphens)
-    const filename = `${levelDigit}${subjectDigit}${gradeDigit}${chap10}${chap1}${worksheet}.json`;
+    // Build filename: XXXXXX.json (your actual file naming)
+    const filename = `${levelDigit}${grade}${chapterTens}${chapterOnes}${worksheet}.json`;
     
     // Build path: Questions/[level]/[subject]/filename.json
     const filepath = `Questions/${level.folder}/${subject.folder}/${filename}`;
@@ -63,9 +70,9 @@ function decodeQuizCode(code) {
     // Grade label
     let gradeLabel = '';
     if (levelDigit === 1) {
-        gradeLabel = `P${gradeDigit}`;
+        gradeLabel = `P${grade}`;
     } else {
-        gradeLabel = `S${gradeDigit}`;
+        gradeLabel = `S${grade}`;
     }
     
     return {
@@ -74,12 +81,14 @@ function decodeQuizCode(code) {
         filename: filename,
         filepath: filepath,
         level: level.name,
+        levelChinese: level.chinese,
         subject: subject.name,
-        grade: gradeDigit,
+        subjectChinese: subject.chinese,
+        grade: grade,
         gradeLabel: gradeLabel,
-        chapter: parseInt(`${chap10}${chap1}`),
+        chapter: parseInt(`${chapterTens}${chapterOnes}`),
         worksheet: worksheet,
-        fullName: `${level.name} ${gradeLabel} ${subject.name} Chapter ${parseInt(`${chap10}${chap1}`)} Worksheet ${worksheet}`
+        fullName: `${level.chinese} ${gradeLabel} ${subject.chinese} 第${parseInt(`${chapterTens}${chapterOnes}`)}章 练习${worksheet}`
     };
 }
 
@@ -98,49 +107,17 @@ async function scanForQuizzes() {
     
     // Define all possible paths to scan
     const scanPaths = [
-        { level: 1, levelName: 'primary', subjects: [0, 1] },
-        { level: 2, levelName: 'lower-secondary', subjects: [0, 1] },
-        { level: 3, levelName: 'upper-secondary', subjects: [0, 2, 3, 4, 5] }
+        { level: 1, levelName: 'primary', subjects: ['math'] },
+        { level: 2, levelName: 'lower-secondary', subjects: ['math'] },
+        { level: 3, levelName: 'upper-secondary', subjects: ['math'] }
     ];
     
     try {
-        // Check if Questions folder exists
         loadingMessage.textContent = '检查题库中...';
         loadingDetails.textContent = '正在寻找红包...';
         
-        const baseCheck = await fetch('Questions/');
-        if (!baseCheck.ok) {
-            throw new Error('题库文件夹不存在，请创建 Questions 文件夹');
-        }
-        
-        // Scan each level and subject
-        for (let levelIdx = 0; levelIdx < scanPaths.length; levelIdx++) {
-            const levelData = scanPaths[levelIdx];
-            
-            for (let subjIdx = 0; subjIdx < levelData.subjects.length; subjIdx++) {
-                const subjectDigit = levelData.subjects[subjIdx];
-                const subject = SUBJECTS[subjectDigit];
-                
-                const path = `Questions/${levelData.levelName}/${subject.folder}/`;
-                loadingDetails.textContent = `扫描中: ${levelData.levelName}/${subject.name}...`;
-                
-                // Update progress
-                const progress = ((levelIdx * levelData.subjects.length + subjIdx + 1) / 
-                                 (scanPaths.length * scanPaths.reduce((a, b) => a + b.subjects.length, 0))) * 100;
-                progressBar.style.width = `${progress}%`;
-                
-                try {
-                    // Try to get directory listing
-                    const response = await fetch(path);
-                    if (!response.ok) continue;
-                    
-                } catch (error) {
-                    console.log(`跳过 ${path}: ${error.message}`);
-                }
-            }
-        }
-        
-        // After scanning, load from localStorage or default list
+        // For demo purposes, we'll load from localStorage or default list
+        // In a real server environment, you'd need server-side file listing
         await loadCatalogFromStorage();
         
         // Update progress to 100%
@@ -189,12 +166,74 @@ async function loadCatalogFromStorage() {
         return;
     }
     
-    // If no stored catalog, create from default files
+    // If no stored catalog, create from your actual files
     const defaultQuizzes = [
-        { code: '101-01-1', filename: '101011.json', path: 'Questions/primary/math/101011.json', name: 'P1 数学 第1章', level: 'Primary', grade: 'P1', subject: 'Mathematics' },
-        { code: '201-01-1', filename: '201011.json', path: 'Questions/lower-secondary/math/201011.json', name: '中1 数学 第1章', level: 'Lower Secondary', grade: 'S1', subject: 'Mathematics' },
-        { code: '201-01-2', filename: '201012.json', path: 'Questions/lower-secondary/math/201012.json', name: '中1 数学 第1章 练习2', level: 'Lower Secondary', grade: 'S1', subject: 'Mathematics' },
-        { code: '342-09-1', filename: '342091.json', path: 'Questions/upper-secondary/combined-chem/342091.json', name: '中4 综合化学 第9章', level: 'Upper Secondary', grade: 'S4', subject: 'Combined Chemistry' }
+        { 
+            code: '10501-7', 
+            filename: '105017.json', 
+            path: 'Questions/primary/math/105017.json', 
+            name: '小学 P5 数学 第1章 练习7 - Guess and Check',
+            level: 'Primary',
+            grade: 'P5',
+            subject: 'Mathematics',
+            chapter: 1,
+            worksheet: 7
+        },
+        { 
+            code: '10501-8', 
+            filename: '105018.json', 
+            path: 'Questions/primary/math/105018.json', 
+            name: '小学 P5 数学 第1章 练习8 - Common Multiples',
+            level: 'Primary',
+            grade: 'P5',
+            subject: 'Mathematics',
+            chapter: 1,
+            worksheet: 8
+        },
+        { 
+            code: '10501-9', 
+            filename: '105019.json', 
+            path: 'Questions/primary/math/105019.json', 
+            name: '小学 P5 数学 第1章 练习9 - Smart Shopper',
+            level: 'Primary',
+            grade: 'P5',
+            subject: 'Mathematics',
+            chapter: 1,
+            worksheet: 9
+        },
+        { 
+            code: '10502-1', 
+            filename: '105021.json', 
+            path: 'Questions/primary/math/105021.json', 
+            name: '小学 P5 数学 第2章 练习1 - Fractions & Decimals',
+            level: 'Primary',
+            grade: 'P5',
+            subject: 'Mathematics',
+            chapter: 2,
+            worksheet: 1
+        },
+        { 
+            code: '10502-2', 
+            filename: '105022.json', 
+            path: 'Questions/primary/math/105022.json', 
+            name: '小学 P5 数学 第2章 练习2 - Advanced Fractions',
+            level: 'Primary',
+            grade: 'P5',
+            subject: 'Mathematics',
+            chapter: 2,
+            worksheet: 2
+        },
+        { 
+            code: '10502-3', 
+            filename: '105023.json', 
+            path: 'Questions/primary/math/105023.json', 
+            name: '小学 P5 数学 第2章 练习3 - Fraction of Quantity',
+            level: 'Primary',
+            grade: 'P5',
+            subject: 'Mathematics',
+            chapter: 2,
+            worksheet: 3
+        }
     ];
     
     gameState.quizCatalog = defaultQuizzes;
@@ -232,7 +271,7 @@ function updateCatalogDisplay() {
                 <i class="fas fa-search"></i>
                 <h4>没有找到红包</h4>
                 <p>在 Questions 文件夹中添加 JSON 文件</p>
-                <button id="refresh-catalog" class="btn small">
+                <button id="refresh-catalog" class="btn small" onclick="location.reload()">
                     <i class="fas fa-redo"></i> 刷新
                 </button>
             </div>
@@ -244,8 +283,11 @@ function updateCatalogDisplay() {
     // Sort quizzes by code
     const sortedQuizzes = [...gameState.quizCatalog].sort((a, b) => a.code.localeCompare(b.code));
     
-    catalogEl.innerHTML = sortedQuizzes.map(quiz => `
-        <div class="quiz-item" data-code="${quiz.code.replace(/-/g, '')}">
+    catalogEl.innerHTML = sortedQuizzes.map(quiz => {
+        // Extract raw code from filename (remove .json)
+        const rawCode = quiz.filename.replace('.json', '');
+        return `
+        <div class="quiz-item" data-code="${rawCode}">
             <div class="quiz-header">
                 <span class="quiz-code">${quiz.code}</span>
                 <span class="quiz-name">${quiz.name}</span>
@@ -256,7 +298,7 @@ function updateCatalogDisplay() {
                 <span class="quiz-subject">${quiz.subject}</span>
             </div>
         </div>
-    `).join('');
+    `}).join('');
     
     countEl.textContent = `${gameState.quizCatalog.length} 个红包`;
     
@@ -332,34 +374,82 @@ function showScreen(screenId) {
 async function loadQuizByCode(code) {
     console.log(`🔍 Loading: ${code}`);
     
-    // Decode the quiz code
+    // Decode the quiz code (for display purposes)
     const quizInfo = decodeQuizCode(code);
-    if (!quizInfo) {
-        return { 
-            success: false, 
-            error: `红包码格式错误: ${code}` 
-        };
+    
+    // Build filename directly from the 6-digit code
+    const filename = `${code}.json`;
+    
+    // For your specific files, we need to determine the correct path
+    // Based on your files: 105017.json, 105018.json, etc.
+    // Format: first digit = level (1=Primary), next two digits = grade (05=P5), 
+    // next two digits = chapter (01,02), last digit = worksheet (7,8,9,1,2,3)
+    
+    let filepath = '';
+    let level = 'primary';
+    let subject = 'math';
+    let gradeLabel = '';
+    let chapter = 0;
+    let worksheet = 0;
+    let fullName = '';
+    
+    if (code.length === 6) {
+        const levelDigit = parseInt(code[0]);
+        const gradeNum = parseInt(code.substring(1, 3));
+        const chapterNum = parseInt(code.substring(3, 5));
+        const worksheetNum = parseInt(code[5]);
+        
+        chapter = chapterNum;
+        worksheet = worksheetNum;
+        
+        if (levelDigit === 1) {
+            level = 'primary';
+            gradeLabel = `P${gradeNum}`;
+        } else if (levelDigit === 2) {
+            level = 'lower-secondary';
+            gradeLabel = `S${gradeNum}`;
+        } else {
+            level = 'upper-secondary';
+            gradeLabel = `S${gradeNum}`;
+        }
+        
+        filepath = `Questions/${level}/${subject}/${filename}`;
+        fullName = `${level === 'primary' ? '小学' : level === 'lower-secondary' ? '初中' : '高中'} ${gradeLabel} 数学 第${chapterNum}章 练习${worksheetNum}`;
+    } else {
+        filepath = `Questions/primary/math/${filename}`;
+        fullName = `小学 P5 数学 练习`;
     }
     
-    // Store current quiz code
-    gameState.currentQuizCode = quizInfo.code;
+    // Store current quiz info
+    gameState.currentQuizCode = code;
+    gameState.currentQuizInfo = {
+        code: code,
+        filename: filename,
+        filepath: filepath,
+        fullName: fullName,
+        gradeLabel: gradeLabel,
+        subject: 'Mathematics',
+        chapter: chapter,
+        worksheet: worksheet
+    };
     
     // Update loading display
-    document.getElementById('loading-message').textContent = `打开红包 ${quizInfo.code}...`;
+    document.getElementById('loading-message').textContent = `打开红包 ${code}...`;
     
     try {
         // Try to load the file
-        const response = await fetch(quizInfo.filepath);
+        console.log(`Fetching from: ${filepath}`);
+        const response = await fetch(filepath);
         
         if (!response.ok) {
             if (response.status === 404) {
-                throw new Error(`文件不存在: ${quizInfo.filename}`);
+                throw new Error(`文件不存在: ${filename}`);
             }
             throw new Error(`HTTP ${response.status}: ${response.statusText}`);
         }
         
         const data = await response.json();
-        console.log('✅ 红包打开成功');
+        console.log('✅ 红包打开成功', data);
         
         // Validate quiz data
         if (!data.questions || !Array.isArray(data.questions)) {
@@ -371,12 +461,26 @@ async function loadQuizByCode(code) {
         }
         
         // Add to catalog if not already there
-        addQuizToCatalog(quizInfo);
+        const catalogEntry = {
+            code: code.substring(0,5) + '-' + code[5], // Format as XXX-XX-X
+            filename: filename,
+            path: filepath,
+            name: data.title || fullName,
+            subject: data.subject || 'Mathematics',
+            level: data.level || (code[0] === '1' ? 'Primary' : 'Secondary'),
+            grade: data.grade || gradeLabel
+        };
+        
+        const exists = gameState.quizCatalog.find(q => q.filename === filename);
+        if (!exists) {
+            gameState.quizCatalog.push(catalogEntry);
+            localStorage.setItem('quizCatalog', JSON.stringify(gameState.quizCatalog));
+        }
         
         return { 
             success: true, 
             data: data, 
-            info: quizInfo 
+            info: gameState.currentQuizInfo 
         };
         
     } catch (error) {
@@ -404,20 +508,16 @@ async function submitPin() {
         const result = await loadQuizByCode(pin);
         
         if (!result.success) {
-            // Check if this might be a new file not in catalog
-            const quizInfo = decodeQuizCode(pin);
-            let errorMsg = `<strong>红包 ${quizInfo?.code || pin} 不存在</strong><br><br>`;
+            let errorMsg = `<strong>红包 ${pin} 不存在</strong><br><br>`;
             errorMsg += `<div style="color: #666; font-size: 0.9rem;">`;
             errorMsg += `错误: ${result.error}</div>`;
             
-            // Suggest creating the file
-            if (quizInfo && result.error.includes('不存在')) {
-                errorMsg += `<br><div style="background: #f0f9ff; padding: 15px; border-radius: 10px; margin-top: 15px;">`;
-                errorMsg += `<strong>建议文件位置:</strong><br>`;
-                errorMsg += `<code style="background: #e1f0ff; padding: 5px 10px; border-radius: 5px; display: inline-block; margin-top: 5px;">`;
-                errorMsg += `${quizInfo.filepath}</code>`;
-                errorMsg += `</div>`;
-            }
+            // Suggest correct filename format
+            errorMsg += `<br><div style="background: #f0f9ff; padding: 15px; border-radius: 10px; margin-top: 15px;">`;
+            errorMsg += `<strong>文件名格式:</strong><br>`;
+            errorMsg += `<code style="background: #e1f0ff; padding: 5px 10px; border-radius: 5px; display: inline-block; margin-top: 5px;">`;
+            errorMsg += `Questions/primary/math/${pin}.json</code>`;
+            errorMsg += `</div>`;
             
             // Show available quizzes
             if (gameState.quizCatalog.length > 0) {
@@ -445,9 +545,11 @@ async function submitPin() {
         document.getElementById('quiz-title').textContent = 
             result.data.title || result.info.fullName;
         document.getElementById('quiz-topic').textContent = 
-            `${result.info.subject} • ${result.info.gradeLabel}`;
-        document.getElementById('current-quiz-code').textContent = 
-            result.info.code;
+            `数学 • ${result.info.gradeLabel || 'P5'}`;
+        
+        // Format code for display (XXX-XX-X)
+        const displayCode = pin.substring(0,5) + '-' + pin[5];
+        document.getElementById('current-quiz-code').textContent = displayCode;
         
         // Initialize game
         initGame();
@@ -775,9 +877,9 @@ document.addEventListener('DOMContentLoaded', async function() {
     // Scan button
     document.getElementById('scan-quizzes').addEventListener('click', scanForQuizzes);
     
-    // Test button
+    // Test button - update to one of your actual files
     document.getElementById('test-pin').addEventListener('click', function() {
-        setPinFromCode('342091'); // 342-09-1
+        setPinFromCode('105017'); // 10501-7 - Guess and Check
         setTimeout(submitPin, 500);
     });
     
@@ -825,9 +927,8 @@ document.addEventListener('DOMContentLoaded', async function() {
     });
     
     console.log('✅ 新年快乐，万事如意！');
-    console.log('💡 在 Questions 文件夹中添加 JSON 题库文件');
-    console.log('📂 文件命名规则: 3位学段/科目/年级 + 2位章节 + 1位练习');
-    console.log('📂 例如: 342091.json = 高中/综合化学/中4/第9章/练习1');
+    console.log('📂 文件命名规则: 6位数字.json (例如: 105017.json)');
+    console.log('📂 105017.json = 小学/P5/第1章/练习7');
 });
 
 // ========== DEBUG & DEVELOPMENT TOOLS ==========
@@ -849,13 +950,13 @@ window.quizTools = {
     // Add a test quiz
     addTestQuiz: function() {
         const testQuiz = {
-            code: '201-01-1',
-            filename: '201011.json',
-            path: 'Questions/lower-secondary/math/201011.json',
-            name: '中1 数学 第1章',
+            code: '10501-7',
+            filename: '105017.json',
+            path: 'Questions/primary/math/105017.json',
+            name: '小学 P5 数学 第1章 练习7 - Guess and Check',
             subject: 'Mathematics',
-            level: 'Lower Secondary',
-            grade: 'S1'
+            level: 'Primary',
+            grade: 'P5'
         };
         
         gameState.quizCatalog.push(testQuiz);
