@@ -1,0 +1,90 @@
+{
+  "title": "Secondary 1 Mathematics - Chapter 2",
+  "topic": "Number Classification & Operations with Negatives",
+  "subject": "Mathematics",
+  "grade": "Sec 1",
+  "chapter": 2,
+  "worksheet": 1,
+  "questions": [
+    {
+      "question": "Which of the following is an integer?",
+      "options": ["-3.5", "2/3", "0", "√2"],
+      "correct": 2,
+      "points": 10,
+      "explanation": "Integers are whole numbers and their negatives, including zero. -3.5 is a decimal, 2/3 is a fraction, √2 is irrational. Only 0 is an integer."
+    },
+    {
+      "question": "Which of the following is a rational number?",
+      "options": ["π", "√5", "0.75", "√2"],
+      "correct": 2,
+      "points": 10,
+      "explanation": "A rational number can be expressed as a fraction of two integers. π and √2 are irrational, √5 is also irrational. 0.75 = 3/4, so it is rational."
+    },
+    {
+      "question": "Arrange the numbers in ascending order: -5, 3, -2, 0, 4",
+      "options": [
+        "-5, -2, 0, 3, 4",
+        "-2, -5, 0, 3, 4",
+        "4, 3, 0, -2, -5",
+        "0, -2, -5, 3, 4"
+      ],
+      "correct": 0,
+      "points": 15,
+      "explanation": "Ascending means from smallest to largest. On the number line, -5 is smallest, then -2, then 0, then 3, then 4. So the correct order is -5, -2, 0, 3, 4."
+    },
+    {
+      "question": "Arrange in descending order: -1.5, 2.3, -0.7, 1.1",
+      "options": [
+        "2.3, 1.1, -0.7, -1.5",
+        "-1.5, -0.7, 1.1, 2.3",
+        "2.3, 1.1, -1.5, -0.7",
+        "1.1, 2.3, -0.7, -1.5"
+      ],
+      "correct": 0,
+      "points": 15,
+      "explanation": "Descending means largest to smallest. 2.3 is largest, then 1.1, then -0.7, then -1.5. So correct order: 2.3, 1.1, -0.7, -1.5."
+    },
+    {
+      "question": "Compute: -3 + 7 = ?",
+      "options": ["-10", "4", "10", "-4"],
+      "correct": 1,
+      "points": 10,
+      "explanation": "Starting at -3 and adding 7 moves 7 units to the right on the number line, landing at 4. So -3 + 7 = 4."
+    },
+    {
+      "question": "Compute: -5 - (-2) = ?",
+      "options": ["-3", "-7", "3", "7"],
+      "correct": 0,
+      "points": 10,
+      "explanation": "Subtracting a negative is the same as adding the positive: -5 - (-2) = -5 + 2 = -3."
+    },
+    {
+      "question": "Compute: -2.5 + 4.3 = ?",
+      "options": ["1.8", "-1.8", "6.8", "-6.8"],
+      "correct": 0,
+      "points": 15,
+      "explanation": "Add the numbers: 4.3 - 2.5 = 1.8. Since 4.3 is larger, the result is positive 1.8."
+    },
+    {
+      "question": "Compute: 3.2 - (-1.8) = ?",
+      "options": ["1.4", "5.0", "-1.4", "-5.0"],
+      "correct": 1,
+      "points": 15,
+      "explanation": "Subtracting a negative gives addition: 3.2 - (-1.8) = 3.2 + 1.8 = 5.0."
+    },
+    {
+      "question": "Which of the following numbers is a whole number?",
+      "options": ["-3", "0", "2.5", "1/2"],
+      "correct": 1,
+      "points": 10,
+      "explanation": "Whole numbers are non-negative integers: 0, 1, 2, ... So 0 is a whole number. -3 is negative (integer but not whole), 2.5 and 1/2 are not integers."
+    },
+    {
+      "question": "The temperature in a city was -5°C in the morning and rose by 8°C by noon. What is the temperature at noon?",
+      "options": ["3°C", "13°C", "-13°C", "-3°C"],
+      "correct": 0,
+      "points": 20,
+      "explanation": "Rise means addition: -5 + 8 = 3. So the noon temperature is 3°C."
+    }
+  ]
+}
