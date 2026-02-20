@@ -3,49 +3,36 @@
 <head>
     <meta charset="UTF-8">
     <meta name="viewport" content="width=device-width, initial-scale=1.0">
-    <title>🧧 新春 Quiz 挑战 · 红包大作战</title>
+    <title>🧧 Celebrate CNY with Math · Revision Arena</title>
     <link rel="stylesheet" href="style.css">
     <link rel="stylesheet" href="https://cdnjs.cloudflare.com/ajax/libs/font-awesome/6.4.0/css/all.min.css">
 </head>
 <body>
     <div class="container">
-        <!-- Chinese New Year Decorations -->
-        <div class="lantern"></div>
-        <div class="firecracker" style="left: 30px;"></div>
-        <div class="firecracker" style="left: 40px; animation-delay: 0.2s;"></div>
-        <div class="firecracker" style="left: 50px; animation-delay: 0.4s;"></div>
-        <div class="firecracker" style="left: 60px; animation-delay: 0.6s;"></div>
-        <div class="firecracker" style="left: 70px; animation-delay: 0.8s;"></div>
+        <!-- Subtle Decorations -->
+        <div class="red-packet-decoration"></div>
         
         <!-- PIN Screen -->
         <div id="pin-screen" class="screen active">
             <div class="header">
-                <h1><i class="fas fa-dragon"></i> 新春 Quiz 挑战</h1>
-                <p class="subtitle">🧧 输入6位红包码 或 浏览题库 🧧</p>
+                <h1><i class="fas fa-dragon"></i> Celebrate CNY with Math</h1>
+                <p class="subtitle">Enter 6-digit worksheet code • Grab red packets • Earn bonuses</p>
                 <div class="pin-guide">
                     <div class="guide-item">
-                        <span class="guide-digit">1</span> 学段
-                        <div class="guide-tooltip">1=小学, 2=初中, 3=高中</div>
+                        <span class="guide-digit">1</span> Level
+                        <div class="guide-tooltip">1=Primary, 2=Lower Sec, 3=Upper Sec</div>
                     </div>
                     <div class="guide-item">
-                        <span class="guide-digit">2</span> 科目
-                        <div class="guide-tooltip">0=数学, 1=科学, 2=综合物理, 3=纯物理, 4=综合化学, 5=纯化学</div>
+                        <span class="guide-digit">2-3</span> Grade
+                        <div class="guide-tooltip">P1-P6 (01-06), S1-S4 (01-04)</div>
                     </div>
                     <div class="guide-item">
-                        <span class="guide-digit">3</span> 年级
-                        <div class="guide-tooltip">P1-P6 (1-6), S1-S4 (1-4)</div>
+                        <span class="guide-digit">4-5</span> Chapter
+                        <div class="guide-tooltip">Chapter number (01-99)</div>
                     </div>
                     <div class="guide-item">
-                        <span class="guide-digit">4</span> 章节
-                        <div class="guide-tooltip">十位数 (0-9)</div>
-                    </div>
-                    <div class="guide-item">
-                        <span class="guide-digit">5</span> 章节
-                        <div class="guide-tooltip">个位数 (0-9)</div>
-                    </div>
-                    <div class="guide-item">
-                        <span class="guide-digit">6</span> 练习
-                        <div class="guide-tooltip">练习编号 (1-9)</div>
+                        <span class="guide-digit">6</span> Worksheet
+                        <div class="guide-tooltip">Worksheet number (1-9)</div>
                     </div>
                 </div>
             </div>
@@ -54,36 +41,36 @@
                 <div class="pin-display">
                     <div id="digit1" class="digit">
                         <div class="digit-number">_</div>
-                        <div class="digit-label">学段</div>
+                        <div class="digit-label">Level</div>
                     </div>
                     <div id="digit2" class="digit">
                         <div class="digit-number">_</div>
-                        <div class="digit-label">科目</div>
+                        <div class="digit-label">Grade</div>
                     </div>
                     <div id="digit3" class="digit">
                         <div class="digit-number">_</div>
-                        <div class="digit-label">年级</div>
+                        <div class="digit-label"></div>
                     </div>
                     <div id="digit4" class="digit">
                         <div class="digit-number">_</div>
-                        <div class="digit-label">章十</div>
+                        <div class="digit-label">Chapter</div>
                     </div>
                     <div id="digit5" class="digit">
                         <div class="digit-number">_</div>
-                        <div class="digit-label">章个</div>
+                        <div class="digit-label"></div>
                     </div>
                     <div id="digit6" class="digit">
                         <div class="digit-number">_</div>
-                        <div class="digit-label">练习</div>
+                        <div class="digit-label">WS#</div>
                     </div>
                 </div>
                 
                 <div class="quick-actions">
                     <button id="test-pin" class="btn test-btn">
-                        <i class="fas fa-vial"></i> 测试 341-09-1
+                        <i class="fas fa-flask"></i> Try 105017
                     </button>
                     <button id="scan-quizzes" class="btn scan-btn">
-                        <i class="fas fa-search"></i> 扫描红包
+                        <i class="fas fa-search"></i> Browse Worksheets
                     </button>
                 </div>
             </div>
@@ -98,19 +85,19 @@
                 <button class="key" data-key="7">7</button>
                 <button class="key" data-key="8">8</button>
                 <button class="key" data-key="9">9</button>
-                <button id="clear-btn" class="key clear"><i class="fas fa-backspace"></i> 清除</button>
+                <button id="clear-btn" class="key clear"><i class="fas fa-backspace"></i> Clear</button>
                 <button class="key" data-key="0">0</button>
-                <button id="submit-pin" class="key submit"><i class="fas fa-play"></i> 开启</button>
+                <button id="submit-pin" class="key submit"><i class="fas fa-play"></i> Start</button>
             </div>
             
             <div class="catalog-container">
                 <div class="catalog-header">
-                    <h3><i class="fas fa-gift"></i> 新春红包题库</h3>
-                    <span id="quiz-count" class="badge">扫描中...</span>
+                    <h3><i class="fas fa-book-open"></i> CNY Math Worksheets</h3>
+                    <span id="quiz-count" class="badge">Loading...</span>
                 </div>
                 <div id="quiz-catalog" class="quiz-catalog">
                     <div class="loading-catalog">
-                        <i class="fas fa-spinner fa-spin"></i> 正在寻找红包...
+                        <i class="fas fa-spinner fa-spin"></i> Loading worksheets...
                     </div>
                 </div>
             </div>
@@ -120,15 +107,13 @@
         <div id="loading-screen" class="screen">
             <div class="loading-content">
                 <div class="spinner"></div>
-                <h2 id="loading-message">新年快乐...</h2>
-                <div id="loading-details" class="loading-details">
-                    正在打开红包...
-                </div>
+                <h2 id="loading-message">Opening red packet...</h2>
+                <div id="loading-details" class="loading-details"></div>
                 <div class="progress-container">
                     <div id="scan-progress" class="progress-bar"></div>
                 </div>
                 <div id="found-count" class="found-count">
-                    找到: <span id="quiz-found">0</span> 个红包
+                    Found: <span id="quiz-found">0</span> worksheets
                 </div>
             </div>
         </div>
@@ -137,16 +122,14 @@
         <div id="error-screen" class="screen">
             <div class="error-content">
                 <div class="error-icon"><i class="fas fa-exclamation-triangle"></i></div>
-                <h2>红包不见啦!</h2>
-                <div id="error-message" class="error-details">
-                    错误信息将显示在这里
-                </div>
+                <h2>Worksheet Not Found</h2>
+                <div id="error-message" class="error-details"></div>
                 <div class="action-buttons">
                     <button id="back-to-pin-error" class="btn secondary">
-                        <i class="fas fa-home"></i> 返回首页
+                        <i class="fas fa-home"></i> Back
                     </button>
                     <button id="retry-btn" class="btn primary">
-                        <i class="fas fa-redo"></i> 再试一次
+                        <i class="fas fa-redo"></i> Retry
                     </button>
                 </div>
             </div>
@@ -156,71 +139,67 @@
         <div id="game-screen" class="screen">
             <div class="game-header">
                 <div class="quiz-info">
-                    <h2 id="quiz-title">新春挑战</h2>
-                    <p id="quiz-topic">科目 • 年级</p>
+                    <h2 id="quiz-title">Mathematics Worksheet</h2>
+                    <p id="quiz-topic">Topic • Grade</p>
                     <div class="quiz-code-display">
-                        <span class="code-label">红包码:</span>
-                        <span id="current-quiz-code" class="quiz-code">000-00-0</span>
+                        <span class="code-label">🧧 Code:</span>
+                        <span id="current-quiz-code" class="quiz-code">00000-0</span>
                     </div>
                 </div>
                 <div class="question-counter">
-                    第 <span id="current-q">1</span>/<span id="total-q">10</span> 题
+                    Q<span id="current-q">1</span>/<span id="total-q">10</span>
                 </div>
             </div>
             
             <div class="players-container">
                 <div id="player1" class="player active">
                     <div class="player-header">
-                        <div class="player-name">玩家 1 🐉</div>
+                        <div class="player-name">Player 1</div>
                         <div class="player-status">
-                            <span id="player1-turn" class="turn-indicator active"><i class="fas fa-user"></i></span>
+                            <span id="player1-turn" class="turn-indicator active"><i class="fas fa-dragon"></i></span>
                         </div>
                     </div>
                     <div id="score1" class="score">0</div>
-                    <div class="score-label">积分</div>
+                    <div class="score-label">Fortune Points</div>
                 </div>
                 <div id="player2" class="player">
                     <div class="player-header">
-                        <div class="player-name">玩家 2 🐲</div>
+                        <div class="player-name">Player 2</div>
                         <div class="player-status">
-                            <span id="player2-turn" class="turn-indicator"><i class="fas fa-user"></i></span>
+                            <span id="player2-turn" class="turn-indicator"><i class="fas fa-dragon"></i></span>
                         </div>
                     </div>
                     <div id="score2" class="score">0</div>
-                    <div class="score-label">积分</div>
+                    <div class="score-label">Fortune Points</div>
                 </div>
             </div>
             
             <div class="question-container">
-                <div id="question-text" class="question-text">
-                    问题即将出现...
-                </div>
-                <div id="options-container" class="options">
-                    <!-- Options will be added here -->
-                </div>
+                <div id="question-text" class="question-text">Loading question...</div>
+                <div id="options-container" class="options"></div>
             </div>
             
             <div class="game-controls">
                 <button id="submit-answer" class="btn primary" disabled>
-                    <i class="fas fa-paper-plane"></i> 提交答案
+                    <i class="fas fa-check-circle"></i> Submit
                 </button>
                 <button id="next-btn" class="btn secondary" style="display:none">
-                    <i class="fas fa-arrow-right"></i> 下一题
+                    <i class="fas fa-arrow-right"></i> Next
                 </button>
                 <button id="home-btn" class="btn">
-                    <i class="fas fa-home"></i> 首页
+                    <i class="fas fa-home"></i> Menu
                 </button>
             </div>
             
             <div class="feedback-section">
                 <div id="answer-feedback" class="feedback">
                     <div class="feedback-placeholder">
-                        <i class="fas fa-lightbulb"></i> 选择答案开始挑战
+                        <i class="fas fa-lightbulb"></i> Select an answer
                     </div>
                 </div>
                 
                 <div id="treasure-section" class="treasure-section" style="display:none">
-                    <h3><i class="fas fa-gift"></i> 选个红包!</h3>
+                    <h3><i class="fas fa-gift"></i> Pick a Red Packet!</h3>
                     <div class="treasure-boxes">
                         <div class="treasure-box" data-box="1">🧧</div>
                         <div class="treasure-box" data-box="2">🧧</div>
@@ -235,24 +214,24 @@
                     <div class="trophy">
                         <i class="fas fa-trophy"></i>
                     </div>
-                    <h2 id="winner-message">新年快乐!</h2>
-                    <div id="winner-name" class="winner-name">获胜者</div>
+                    <h2 id="winner-message">Game Complete!</h2>
+                    <div id="winner-name" class="winner-name">Winner</div>
                     <div class="final-scores">
                         <div class="final-score">
-                            <span class="player-label">玩家 1:</span>
+                            <span class="player-label">Player 1:</span>
                             <span id="final-score1" class="score-value">0</span>
                         </div>
                         <div class="final-score">
-                            <span class="player-label">玩家 2:</span>
+                            <span class="player-label">Player 2:</span>
                             <span id="final-score2" class="score-value">0</span>
                         </div>
                     </div>
                     <div class="game-over-btns">
                         <button id="restart-btn" class="btn primary">
-                            <i class="fas fa-redo"></i> 再玩一次
+                            <i class="fas fa-redo"></i> Play Again
                         </button>
                         <button id="new-chapter-btn" class="btn">
-                            <i class="fas fa-book"></i> 新红包
+                            <i class="fas fa-book"></i> New Worksheet
                         </button>
                     </div>
                 </div>

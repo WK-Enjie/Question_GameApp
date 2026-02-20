@@ -15,27 +15,20 @@ const gameState = {
     currentQuizInfo: null
 };
 
-// ========== CNY SOUND EFFECTS (Optional - uncomment if you want to add sound) ==========
-// const cnySounds = {
-//     firecracker: new Audio('https://www.soundjay.com/misc/sounds/firecracker-1.mp3'),
-//     gong: new Audio('https://www.soundjay.com/misc/sounds/bell-church-1.mp3'),
-//     cheer: new Audio('https://www.soundjay.com/misc/sounds/applause-1.mp3')
-// };
-
 // ========== QUIZ CODE DECODER ==========
 const SUBJECTS = {
-    0: { name: 'Mathematics', folder: 'math', chinese: '数学' },
-    1: { name: 'Science', folder: 'science', chinese: '科学' },
-    2: { name: 'Combined Physics', folder: 'combined-physics', chinese: '综合物理' },
-    3: { name: 'Pure Physics', folder: 'pure-physics', chinese: '纯物理' },
-    4: { name: 'Combined Chemistry', folder: 'combined-chem', chinese: '综合化学' },
-    5: { name: 'Pure Chemistry', folder: 'pure-chem', chinese: '纯化学' }
+    0: { name: 'Mathematics', folder: 'math' },
+    1: { name: 'Science', folder: 'science' },
+    2: { name: 'Combined Physics', folder: 'combined-physics' },
+    3: { name: 'Pure Physics', folder: 'pure-physics' },
+    4: { name: 'Combined Chemistry', folder: 'combined-chem' },
+    5: { name: 'Pure Chemistry', folder: 'pure-chem' }
 };
 
 const LEVELS = {
-    1: { name: 'Primary', folder: 'primary', chinese: '小学' },
-    2: { name: 'Lower Secondary', folder: 'lower-secondary', chinese: '初中' },
-    3: { name: 'Upper Secondary', folder: 'upper-secondary', chinese: '高中' }
+    1: { name: 'Primary', folder: 'primary' },
+    2: { name: 'Lower Secondary', folder: 'lower-secondary' },
+    3: { name: 'Upper Secondary', folder: 'upper-secondary' }
 };
 
 function decodeQuizCode(code) {
@@ -81,14 +74,12 @@ function decodeQuizCode(code) {
         filename: filename,
         filepath: filepath,
         level: level.name,
-        levelChinese: level.chinese,
         subject: subject.name,
-        subjectChinese: subject.chinese,
         grade: grade,
         gradeLabel: gradeLabel,
         chapter: parseInt(`${chapterTens}${chapterOnes}`),
         worksheet: worksheet,
-        fullName: `${level.chinese} ${gradeLabel} ${subject.chinese} 第${parseInt(`${chapterTens}${chapterOnes}`)}章 练习${worksheet}`
+        fullName: `${level.name} ${gradeLabel} ${subject.name} Chapter ${parseInt(`${chapterTens}${chapterOnes}`)} Worksheet ${worksheet}`
     };
 }
 
@@ -113,8 +104,8 @@ async function scanForQuizzes() {
     ];
     
     try {
-        loadingMessage.textContent = '检查题库中...';
-        loadingDetails.textContent = '正在寻找红包...';
+        loadingMessage.textContent = 'Checking worksheets...';
+        loadingDetails.textContent = 'Looking for CNY math worksheets...';
         
         // For demo purposes, we'll load from localStorage or default list
         // In a real server environment, you'd need server-side file listing
@@ -128,15 +119,15 @@ async function scanForQuizzes() {
         // Show completion message
         setTimeout(() => {
             if (foundQuizzes === 0) {
-                loadingMessage.textContent = '没有找到红包';
-                loadingDetails.textContent = '请在 Questions 文件夹中添加 JSON 题库文件';
+                loadingMessage.textContent = 'No worksheets found';
+                loadingDetails.textContent = 'Add JSON files to the Questions folder';
                 setTimeout(() => {
                     showScreen('pin-screen');
                     updateCatalogDisplay();
                 }, 2000);
             } else {
-                loadingMessage.textContent = '恭喜发财！红包找到啦！';
-                loadingDetails.textContent = `找到 ${foundQuizzes} 个红包题库`;
+                loadingMessage.textContent = 'Happy CNY! Worksheets loaded!';
+                loadingDetails.textContent = `Found ${foundQuizzes} worksheets with red packet bonuses`;
                 setTimeout(() => {
                     showScreen('pin-screen');
                     updateCatalogDisplay();
@@ -146,7 +137,7 @@ async function scanForQuizzes() {
         
     } catch (error) {
         console.error('Scan error:', error);
-        loadingMessage.textContent = '扫描失败';
+        loadingMessage.textContent = 'Scan failed';
         loadingDetails.textContent = error.message;
         
         setTimeout(() => {
@@ -172,7 +163,7 @@ async function loadCatalogFromStorage() {
             code: '10501-7', 
             filename: '105017.json', 
             path: 'Questions/primary/math/105017.json', 
-            name: '小学 P5 数学 第1章 练习7 - Guess and Check',
+            name: 'P5 Math Chapter 1 Worksheet 7 - Guess and Check',
             level: 'Primary',
             grade: 'P5',
             subject: 'Mathematics',
@@ -183,7 +174,7 @@ async function loadCatalogFromStorage() {
             code: '10501-8', 
             filename: '105018.json', 
             path: 'Questions/primary/math/105018.json', 
-            name: '小学 P5 数学 第1章 练习8 - Common Multiples',
+            name: 'P5 Math Chapter 1 Worksheet 8 - Common Multiples',
             level: 'Primary',
             grade: 'P5',
             subject: 'Mathematics',
@@ -194,7 +185,7 @@ async function loadCatalogFromStorage() {
             code: '10501-9', 
             filename: '105019.json', 
             path: 'Questions/primary/math/105019.json', 
-            name: '小学 P5 数学 第1章 练习9 - Smart Shopper',
+            name: 'P5 Math Chapter 1 Worksheet 9 - Equal Spending',
             level: 'Primary',
             grade: 'P5',
             subject: 'Mathematics',
@@ -205,7 +196,7 @@ async function loadCatalogFromStorage() {
             code: '10502-1', 
             filename: '105021.json', 
             path: 'Questions/primary/math/105021.json', 
-            name: '小学 P5 数学 第2章 练习1 - Fractions & Decimals',
+            name: 'P5 Math Chapter 2 Worksheet 1 - Fractions & Decimals',
             level: 'Primary',
             grade: 'P5',
             subject: 'Mathematics',
@@ -216,7 +207,7 @@ async function loadCatalogFromStorage() {
             code: '10502-2', 
             filename: '105022.json', 
             path: 'Questions/primary/math/105022.json', 
-            name: '小学 P5 数学 第2章 练习2 - Advanced Fractions',
+            name: 'P5 Math Chapter 2 Worksheet 2 - Advanced Fractions',
             level: 'Primary',
             grade: 'P5',
             subject: 'Mathematics',
@@ -227,7 +218,7 @@ async function loadCatalogFromStorage() {
             code: '10502-3', 
             filename: '105023.json', 
             path: 'Questions/primary/math/105023.json', 
-            name: '小学 P5 数学 第2章 练习3 - Fraction of Quantity',
+            name: 'P5 Math Chapter 2 Worksheet 3 - Fraction of Quantity',
             level: 'Primary',
             grade: 'P5',
             subject: 'Mathematics',
@@ -269,14 +260,14 @@ function updateCatalogDisplay() {
         catalogEl.innerHTML = `
             <div class="no-quizzes">
                 <i class="fas fa-search"></i>
-                <h4>没有找到红包</h4>
-                <p>在 Questions 文件夹中添加 JSON 文件</p>
+                <h4>No worksheets found</h4>
+                <p>Add JSON files to the Questions folder</p>
                 <button id="refresh-catalog" class="btn small" onclick="location.reload()">
-                    <i class="fas fa-redo"></i> 刷新
+                    <i class="fas fa-redo"></i> Refresh
                 </button>
             </div>
         `;
-        countEl.textContent = '0 个红包';
+        countEl.textContent = '0 worksheets';
         return;
     }
     
@@ -300,7 +291,7 @@ function updateCatalogDisplay() {
         </div>
     `}).join('');
     
-    countEl.textContent = `${gameState.quizCatalog.length} 个红包`;
+    countEl.textContent = `${gameState.quizCatalog.length} worksheets`;
     
     // Add click handlers
     document.querySelectorAll('.quiz-item').forEach(item => {
@@ -414,10 +405,10 @@ async function loadQuizByCode(code) {
         }
         
         filepath = `Questions/${level}/${subject}/${filename}`;
-        fullName = `${level === 'primary' ? '小学' : level === 'lower-secondary' ? '初中' : '高中'} ${gradeLabel} 数学 第${chapterNum}章 练习${worksheetNum}`;
+        fullName = `${level} ${gradeLabel} Math Chapter ${chapterNum} Worksheet ${worksheetNum}`;
     } else {
         filepath = `Questions/primary/math/${filename}`;
-        fullName = `小学 P5 数学 练习`;
+        fullName = `Math Worksheet`;
     }
     
     // Store current quiz info
@@ -434,7 +425,7 @@ async function loadQuizByCode(code) {
     };
     
     // Update loading display
-    document.getElementById('loading-message').textContent = `打开红包 ${code}...`;
+    document.getElementById('loading-message').textContent = `Opening worksheet ${code}...`;
     
     try {
         // Try to load the file
@@ -443,21 +434,21 @@ async function loadQuizByCode(code) {
         
         if (!response.ok) {
             if (response.status === 404) {
-                throw new Error(`文件不存在: ${filename}`);
+                throw new Error(`File not found: ${filename}`);
             }
             throw new Error(`HTTP ${response.status}: ${response.statusText}`);
         }
         
         const data = await response.json();
-        console.log('✅ 红包打开成功', data);
+        console.log('✅ Worksheet loaded successfully', data);
         
         // Validate quiz data
         if (!data.questions || !Array.isArray(data.questions)) {
-            throw new Error('红包格式错误: 缺少题目数组');
+            throw new Error('Invalid worksheet format: missing questions array');
         }
         
         if (data.questions.length === 0) {
-            throw new Error('红包是空的');
+            throw new Error('Worksheet is empty');
         }
         
         // Add to catalog if not already there
@@ -484,7 +475,7 @@ async function loadQuizByCode(code) {
         };
         
     } catch (error) {
-        console.error('❌ 红包打开失败:', error);
+        console.error('❌ Failed to load worksheet:', error);
         return { 
             success: false, 
             error: error.message 
@@ -497,31 +488,31 @@ async function submitPin() {
     const pin = gameState.pin.join('');
     
     if (pin.length !== 6) {
-        alert('请输入全部6位数字');
+        alert('Please enter all 6 digits');
         return;
     }
     
     showScreen('loading-screen');
-    document.getElementById('loading-message').textContent = '打开红包中...';
+    document.getElementById('loading-message').textContent = 'Opening worksheet...';
     
     try {
         const result = await loadQuizByCode(pin);
         
         if (!result.success) {
-            let errorMsg = `<strong>红包 ${pin} 不存在</strong><br><br>`;
+            let errorMsg = `<strong>Worksheet ${pin} not found</strong><br><br>`;
             errorMsg += `<div style="color: #666; font-size: 0.9rem;">`;
-            errorMsg += `错误: ${result.error}</div>`;
+            errorMsg += `Error: ${result.error}</div>`;
             
             // Suggest correct filename format
             errorMsg += `<br><div style="background: #f0f9ff; padding: 15px; border-radius: 10px; margin-top: 15px;">`;
-            errorMsg += `<strong>文件名格式:</strong><br>`;
+            errorMsg += `<strong>File format:</strong><br>`;
             errorMsg += `<code style="background: #e1f0ff; padding: 5px 10px; border-radius: 5px; display: inline-block; margin-top: 5px;">`;
             errorMsg += `Questions/primary/math/${pin}.json</code>`;
             errorMsg += `</div>`;
             
             // Show available quizzes
             if (gameState.quizCatalog.length > 0) {
-                errorMsg += `<br><strong>可用红包 (${gameState.quizCatalog.length}):</strong><br>`;
+                errorMsg += `<br><strong>Available worksheets (${gameState.quizCatalog.length}):</strong><br>`;
                 gameState.quizCatalog.slice(0, 5).forEach(q => {
                     errorMsg += `<div style="margin: 5px 0; padding: 8px; background: #f7fafc; border-radius: 5px;">
                         • <strong>${q.code}</strong>: ${q.name}
@@ -530,7 +521,7 @@ async function submitPin() {
                 
                 if (gameState.quizCatalog.length > 5) {
                     errorMsg += `<div style="color: #718096; margin-top: 5px;">
-                        ... 还有 ${gameState.quizCatalog.length - 5} 个红包
+                        ... and ${gameState.quizCatalog.length - 5} more
                     </div>`;
                 }
             }
@@ -545,7 +536,7 @@ async function submitPin() {
         document.getElementById('quiz-title').textContent = 
             result.data.title || result.info.fullName;
         document.getElementById('quiz-topic').textContent = 
-            `数学 • ${result.info.gradeLabel || 'P5'}`;
+            `Mathematics • ${result.info.gradeLabel || 'P5'}`;
         
         // Format code for display (XXX-XX-X)
         const displayCode = pin.substring(0,5) + '-' + pin[5];
@@ -593,7 +584,7 @@ function loadQuestion() {
     // Update counters
     document.getElementById('current-q').textContent = gameState.currentQuestion + 1;
     document.getElementById('total-q').textContent = gameState.questions.length;
-    document.getElementById('question-text').textContent = question.question || "题目";
+    document.getElementById('question-text').textContent = question.question || "Question";
     
     // Clear and add options
     const container = document.getElementById('options-container');
@@ -624,7 +615,7 @@ function loadQuestion() {
     
     // Hide feedback and treasure
     document.getElementById('answer-feedback').innerHTML = 
-        '<div class="feedback-placeholder"><i class="fas fa-lightbulb"></i> 选择答案开始挑战</div>';
+        '<div class="feedback-placeholder"><i class="fas fa-lightbulb"></i> Select an answer</div>';
     
     document.getElementById('treasure-section').style.display = 'none';
     
@@ -678,10 +669,10 @@ function submitAnswer() {
         
         let feedback = `
             <div class="feedback-correct">
-                <span>🧧✅</span>
+                <span>✅🧧</span>
                 <div>
-                    <h3>恭喜发财！ +${points} 分</h3>
-                    ${question.explanation ? `<p><strong>解释:</strong> ${question.explanation}</p>` : ''}
+                    <h3>Correct! +${points} points</h3>
+                    ${question.explanation ? `<p><strong>Explanation:</strong> ${question.explanation}</p>` : ''}
                 </div>
             </div>
         `;
@@ -695,11 +686,11 @@ function submitAnswer() {
         
         let feedback = `
             <div class="feedback-incorrect">
-                <span>🧧❌</span>
+                <span>❌</span>
                 <div>
-                    <h3>再接再厉</h3>
-                    <p><strong>正确答案:</strong> ${correctLetter}) ${correctText}</p>
-                    ${question.explanation ? `<p><strong>解释:</strong> ${question.explanation}</p>` : ''}
+                    <h3>Incorrect</h3>
+                    <p><strong>Correct answer:</strong> ${correctLetter}) ${correctText}</p>
+                    ${question.explanation ? `<p><strong>Explanation:</strong> ${question.explanation}</p>` : ''}
                 </div>
             </div>
         `;
@@ -752,14 +743,14 @@ function endGame() {
     let winnerName = '';
     
     if (score1 > score2) {
-        winnerMessage = '玩家 1 新年行大运! 🐉';
-        winnerName = '玩家 1';
+        winnerMessage = 'Player 1 Wins! 🏆🧧';
+        winnerName = 'Player 1';
     } else if (score2 > score1) {
-        winnerMessage = '玩家 2 新年行大运! 🐲';
-        winnerName = '玩家 2';
+        winnerMessage = 'Player 2 Wins! 🏆🧧';
+        winnerName = 'Player 2';
     } else {
-        winnerMessage = "恭喜发财，和气生财! 🤝";
-        winnerName = '两位玩家';
+        winnerMessage = "It's a Tie! 🤝🧧";
+        winnerName = 'Both Players';
     }
     
     document.getElementById('winner-message').textContent = winnerMessage;
@@ -772,11 +763,11 @@ function endGame() {
 
 // ========== POWER-UPS ==========
 const powerUps = [
-    { icon: '🧧⚡', name: '双倍红包', type: 'double' },
-    { icon: '🧧➗', name: '一半红包', type: 'half' },
-    { icon: '🧧➖', name: '扣红包', type: 'negative' },
-    { icon: '🧧🔄', name: '交换红包', type: 'switch' },
-    { icon: '🧧✨', name: '额外红包 +10', type: 'bonus' }
+    { icon: '🧧⚡', name: 'Double Points', type: 'double' },
+    { icon: '🧧➗', name: 'Half Points', type: 'half' },
+    { icon: '🧧➖', name: 'Negative Points', type: 'negative' },
+    { icon: '🧧🔄', name: 'Switch Scores', type: 'switch' },
+    { icon: '🧧✨', name: 'Bonus +10', type: 'bonus' }
 ];
 
 function openTreasureBox(boxNum) {
@@ -799,7 +790,7 @@ function openTreasureBox(boxNum) {
         <div class="powerup-display">
             <div class="powerup-icon">${powerUp.icon}</div>
             <h3>${powerUp.name}</h3>
-            <p>恭喜发财！红包拿来！</p>
+            <p>Happy CNY! You got a red packet bonus!</p>
         </div>
     `;
     
@@ -819,25 +810,25 @@ function applyPowerUp(type) {
         case 'double':
             const doublePoints = basePoints * 2;
             gameState.scores[playerIdx] += doublePoints;
-            message = `双倍红包！ +${doublePoints}`;
+            message = `Double points! +${doublePoints}`;
             break;
         case 'half':
             const halfPoints = Math.floor(basePoints / 2);
             gameState.scores[playerIdx] += halfPoints;
-            message = `一半红包！ +${halfPoints}`;
+            message = `Half points! +${halfPoints}`;
             break;
         case 'negative':
             gameState.scores[playerIdx] -= basePoints;
-            message = `扣红包！ -${basePoints}`;
+            message = `Negative points! -${basePoints}`;
             break;
         case 'switch':
             [gameState.scores[playerIdx], gameState.scores[otherIdx]] = 
             [gameState.scores[otherIdx], gameState.scores[playerIdx]];
-            message = `红包交换！`;
+            message = `Scores switched!`;
             break;
         case 'bonus':
             gameState.scores[playerIdx] += 10;
-            message = `额外红包 +10！`;
+            message = `Bonus +10 points!`;
             break;
     }
     
@@ -845,12 +836,12 @@ function applyPowerUp(type) {
     
     // Add message
     const feedbackDiv = document.getElementById('answer-feedback');
-    feedbackDiv.innerHTML += `<div class="powerup-message">🎁 ${message}</div>`;
+    feedbackDiv.innerHTML += `<div class="powerup-message">🧧 ${message}</div>`;
 }
 
 // ========== INITIALIZATION ==========
 document.addEventListener('DOMContentLoaded', async function() {
-    console.log('🧧 新春 Quiz 挑战 启动！');
+    console.log('🧧 Celebrate CNY with Math - Loaded!');
     
     // Initialize PIN display
     updatePinDisplay();
@@ -926,9 +917,9 @@ document.addEventListener('DOMContentLoaded', async function() {
         }
     });
     
-    console.log('✅ 新年快乐，万事如意！');
-    console.log('📂 文件命名规则: 6位数字.json (例如: 105017.json)');
-    console.log('📂 105017.json = 小学/P5/第1章/练习7');
+    console.log('✅ Happy Chinese New Year!');
+    console.log('📂 File format: 6-digit code.json (e.g., 105017.json)');
+    console.log('📂 105017 = Primary/P5/Chapter 1/Worksheet 7');
 });
 
 // ========== DEBUG & DEVELOPMENT TOOLS ==========
@@ -944,31 +935,13 @@ window.quizTools = {
         localStorage.removeItem('quizCatalog');
         gameState.quizCatalog = [];
         updateCatalogDisplay();
-        console.log('红包目录已重置');
-    },
-    
-    // Add a test quiz
-    addTestQuiz: function() {
-        const testQuiz = {
-            code: '10501-7',
-            filename: '105017.json',
-            path: 'Questions/primary/math/105017.json',
-            name: '小学 P5 数学 第1章 练习7 - Guess and Check',
-            subject: 'Mathematics',
-            level: 'Primary',
-            grade: 'P5'
-        };
-        
-        gameState.quizCatalog.push(testQuiz);
-        localStorage.setItem('quizCatalog', JSON.stringify(gameState.quizCatalog));
-        updateCatalogDisplay();
-        console.log('测试红包已添加');
+        console.log('Catalog reset');
     },
     
     // Show current state
     showState: function() {
-        console.log('当前红包码:', gameState.pin);
-        console.log('红包目录大小:', gameState.quizCatalog.length);
-        console.log('红包目录:', gameState.quizCatalog);
+        console.log('Current code:', gameState.pin);
+        console.log('Catalog size:', gameState.quizCatalog.length);
+        console.log('Catalog:', gameState.quizCatalog);
     }
 };
