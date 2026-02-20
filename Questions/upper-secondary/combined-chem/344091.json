@@ -12,7 +12,7 @@
       "options": ["Cu²⁺", "Fe²⁺", "Al³⁺", "Ca²⁺"],
       "correct": 0,
       "points": 10,
-      "explanation": "Cu²⁺ gives blue Cu(OH)₂ with NaOH. On heating: Cu(OH)₂ → CuO (black) + H₂O"
+      "explanation": "Cu²⁺ gives blue Cu(OH)₂ with NaOH. On heating: Cu(OH)₂ → CuO (black) + H₂O."
     },
     {
       "question": "Which cation produces ammonia gas when warmed with NaOH solution?",
@@ -43,18 +43,18 @@
       "explanation": "Fe³⁺ gives red-brown Fe(OH)₃ with both NaOH and NH₃. The precipitate is insoluble in excess."
     },
     {
-      "question": "Which cation gives a white precipitate with NaOH that is insoluble in excess NaOH but dissolves in acids?",
+      "question": "Which cation gives a white precipitate with NaOH that is insoluble in excess NaOH?",
       "options": ["Ca²⁺", "Al³⁺", "Zn²⁺", "NH₄⁺"],
       "correct": 0,
       "points": 10,
-      "explanation": "Ca²⁺ gives white Ca(OH)₂ with NaOH, insoluble in excess but soluble in acids: Ca(OH)₂ + 2H⁺ → Ca²⁺ + 2H₂O."
+      "explanation": "Ca²⁺ gives white Ca(OH)₂ with NaOH, insoluble in excess. This distinguishes it from Zn²⁺ and Al³⁺ which dissolve in excess NaOH."
     },
     {
       "question": "A cation gives white precipitate with NaOH soluble in excess. With NH₃, it gives white precipitate soluble in excess. Identify.",
       "options": ["Zn²⁺", "Al³⁺", "Mg²⁺", "Fe²⁺"],
       "correct": 0,
       "points": 10,
-      "explanation": "Zn²⁺ gives white Zn(OH)₂ soluble in both excess NaOH (forms [Zn(OH)₄]²⁻) and excess NH₃ (forms [Zn(NH₃)₄]²⁺)."
+      "explanation": "Zn²⁺ gives white Zn(OH)₂ soluble in both excess NaOH (forms [Zn(OH)₄]²⁻) and excess NH₃ (forms [Zn(NH₃)]²⁺)."
     },
     {
       "question": "Which cation gives no precipitate with NH₃ solution but gives white precipitate with NaOH?",
