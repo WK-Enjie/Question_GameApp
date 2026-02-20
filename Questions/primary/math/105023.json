@@ -1,0 +1,107 @@
+{
+  "title": "Smart Shopper Math",
+  "topic": "Fraction of a Quantity - Initial, Final, and Change",
+  "subject": "Mathematics",
+  "level": "Primary",
+  "grade": "P5",
+  "chapter": 2,
+  "worksheet": 3,
+  "questions": [
+    {
+      "question": "Mrs Tan used 2/5 of a bag of rice. After using, she had 9 kg of rice left. What was the mass of the full bag of rice?",
+      "options": [
+        "12 kg",
+        "15 kg",
+        "18 kg",
+        "22.5 kg"
+      ],
+      "correct": 1,
+      "points": 25,
+      "explanation": "If she used 2 out of 5 units, then 3 units = 9 kg. So 1 unit = 9 kg ÷ 3 = 3 kg. Full bag = 5 units × 3 kg = 15 kg."
+    },
+    {
+      "question": "Mr Lim bought a bag of flour. He used 3/4 of it and had 2 kg left. How many kilograms of flour did he use?",
+      "options": [
+        "6 kg",
+        "8 kg",
+        "10 kg",
+        "12 kg"
+      ],
+      "correct": 0,
+      "points": 25,
+      "explanation": "If he used 3 out of 4 units, then 1 unit = 2 kg. Full bag = 4 units × 2 kg = 8 kg. He used = 8 kg - 2 kg = 6 kg."
+    },
+    {
+      "question": "Siti had a bag of sugar. After using 3/8 of it, she had 10 kg left. How many kilograms of sugar did she use?",
+      "options": [
+        "4 kg",
+        "5 kg",
+        "6 kg",
+        "8 kg"
+      ],
+      "correct": 2,
+      "points": 25,
+      "explanation": "If she used 3 out of 8 units, then 5 units = 10 kg. So 1 unit = 10 kg ÷ 5 = 2 kg. Full bag = 8 units × 2 kg = 16 kg. She used = 16 kg - 10 kg = 6 kg."
+    },
+    {
+      "question": "A baker had a bag of flour. He used 2/3 of it to make bread. He then had 4 kg left. How many kilograms of flour were in the full bag?",
+      "options": [
+        "8 kg",
+        "10 kg",
+        "12 kg",
+        "14 kg"
+      ],
+      "correct": 2,
+      "points": 25,
+      "explanation": "If he used 2 out of 3 units, then 1 unit = 4 kg. Full bag = 3 units × 4 kg = 12 kg."
+    },
+    {
+      "question": "Mrs Wong used 5/8 of a bag of rice. She used 15 kg of rice. How many kilograms of rice were left?",
+      "options": [
+        "6 kg",
+        "7 kg",
+        "8 kg",
+        "9 kg"
+      ],
+      "correct": 3,
+      "points": 25,
+      "explanation": "If she used 5 out of 8 units = 15 kg, then 1 unit = 15 kg ÷ 5 = 3 kg. Full bag = 8 units × 3 kg = 24 kg. Left = 24 kg - 15 kg = 9 kg."
+    },
+    {
+      "question": "Mr Ravi bought a bag of onions. He sold 3/5 of it and had 8 kg left. How many kilograms of onions did he sell?",
+      "options": [
+        "10 kg",
+        "12 kg",
+        "14 kg",
+        "16 kg"
+      ],
+      "correct": 1,
+      "points": 25,
+      "explanation": "If he sold 3 out of 5 units, then 2 units = 8 kg. So 1 unit = 8 kg ÷ 2 = 4 kg. He sold = 3 units × 4 kg = 12 kg."
+    },
+    {
+      "question": "A shop had a bag of beans weighing 20 kg. After selling some, 2/5 of the bag remained. How many kilograms of beans were sold?",
+      "options": [
+        "8 kg",
+        "10 kg",
+        "12 kg",
+        "15 kg"
+      ],
+      "correct": 2,
+      "points": 20,
+      "explanation": "Full bag = 5 units = 20 kg. So 1 unit = 20 kg ÷ 5 = 4 kg. Remaining = 2 units × 4 kg = 8 kg. Sold = 20 kg - 8 kg = 12 kg."
+    },
+    {
+      "question": "Mrs Lim used 3/7 of a bag of potatoes. She used 6 kg of potatoes. How many kilograms of potatoes were in the full bag?",
+      "options": [
+        "10 kg",
+        "12 kg",
+        "14 kg",
+        "16 kg"
+      ],
+      "correct": 2,
+      "points": 20,
+      "explanation": "If she used 3 out of 7 units = 6 kg, then 1 unit = 6 kg ÷ 3 = 2 kg. Full bag = 7 units × 2 kg = 14 kg."
+    }
+  ]
+}
