@@ -1,5 +1,5 @@
 {
-  "title": "Smart Shopper Math",
+  "title": "Primary School Math",
   "topic": "Fractions, Decimals, and Rounding in Real-Life Contexts",
   "subject": "Mathematics",
   "level": "Primary",
@@ -15,9 +15,9 @@
         "4.2 kg",
         "4.0 kg"
       ],
-      "correct": 0,
+      "correct": 2,
       "points": 15,
-      "explanation": "Total weight = 2.35 kg + 1.8 kg = 4.15 kg. Rounded to 1 decimal place = 4.1 kg."
+      "explanation": "Total weight = 2.35 kg + 1.8 kg = 4.15 kg. Rounded to 1 decimal place = 4.2 kg."
     },
     {
       "question": "Muthu bought 3.25 m of ribbon. He used 1.5 m to wrap a gift. How many metres of ribbon did he have left? Express your answer as a fraction.",
@@ -73,7 +73,7 @@
         "2 L",
         "2.25 L",
         "2 1/2 L",
-        "2 L"
+        "2 1/4 L"
       ],
       "correct": 0,
       "points": 25,
