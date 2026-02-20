@@ -1,446 +1,292 @@
-const state = {
-    pin: [],
-    questions: [],
-    currQIndex: 0,
-    currPlayer: 1,
-    scores: [0, 0],
-    roundScore: 0,
-    isAnswered: false,
-    selectedOption: null,
-    hitCount: 0,
-    maxHits: 3
+// --- NAV ---
+function showSection(id) {
+    document.querySelectorAll('section').forEach(s => s.classList.remove('active-section'));
+    document.getElementById(id).classList.add('active-section');
+}
+
+// FIX: Passed explicit evt parameter to prevent ReferenceErrors
+function openTab(evt, id) {
+    document.querySelectorAll('.tab-content').forEach(c => c.classList.remove('active-content'));
+    document.querySelectorAll('.tab-btn').forEach(b => b.classList.remove('active-tab'));
+    document.getElementById(id).classList.add('active-content');
+    evt.currentTarget.classList.add('active-tab');
+}
+
+// --- VIRTUAL LAB ---
+const reactions = {
+    'zn': {
+        'naoh_few': { t: 'White precipitate formed.', c: 'ppt-white', e: 'Zn<sup>2+</sup>(aq) + 2OH<sup>-</sup>(aq) &rarr; Zn(OH)<sub>2</sub>(s)' },
+        'naoh_excess': { t: 'Precipitate dissolves (colorless solution).', c: 'clear excess', e: 'Precipitate dissolves (No precipitation equation).' },
+        'nh3_few': { t: 'White precipitate formed.', c: 'ppt-white', e: 'Zn<sup>2+</sup>(aq) + 2OH<sup>-</sup>(aq) &rarr; Zn(OH)<sub>2</sub>(s)' },
+        'nh3_excess': { t: 'Precipitate dissolves (colorless solution).', c: 'clear excess', e: 'Precipitate dissolves (No precipitation equation).' }
+    },
+    'al': {
+        'naoh_few': { t: 'White precipitate formed.', c: 'ppt-white', e: 'Al<sup>3+</sup>(aq) + 3OH<sup>-</sup>(aq) &rarr; Al(OH)<sub>3</sub>(s)' },
+        'naoh_excess': { t: 'Precipitate dissolves (colorless solution).', c: 'clear excess', e: 'Precipitate dissolves (No precipitation equation).' },
+        'nh3_few': { t: 'White precipitate formed.', c: 'ppt-white', e: 'Al<sup>3+</sup>(aq) + 3OH<sup>-</sup>(aq) &rarr; Al(OH)<sub>3</sub>(s)' },
+        'nh3_excess': { t: 'White precipitate remains (Insoluble).', c: 'ppt-white excess', e: 'Precipitate remains insoluble.' }
+    },
+    'ca': {
+        'naoh_few': { t: 'White precipitate formed.', c: 'ppt-white', e: 'Ca<sup>2+</sup>(aq) + 2OH<sup>-</sup>(aq) &rarr; Ca(OH)<sub>2</sub>(s)' },
+        'naoh_excess': { t: 'White precipitate remains (Insoluble).', c: 'ppt-white excess', e: 'Precipitate remains insoluble.' },
+        'nh3_few': { t: 'No precipitate formed.', c: 'clear', e: 'No observable reaction.' },
+        'nh3_excess': { t: 'No precipitate formed.', c: 'clear excess', e: 'No observable reaction.' }
+    },
+    'cu': {
+        'naoh_few': { t: 'Light blue precipitate formed.', c: 'ppt-blue', e: 'Cu<sup>2+</sup>(aq) + 2OH<sup>-</sup>(aq) &rarr; Cu(OH)<sub>2</sub>(s)' },
+        'naoh_excess': { t: 'Light blue precipitate remains.', c: 'ppt-blue excess', e: 'Cu<sup>2+</sup>(aq) + 2OH<sup>-</sup>(aq) &rarr; Cu(OH)<sub>2</sub>(s)' },
+        'nh3_few': { t: 'Light blue precipitate formed.', c: 'ppt-blue', e: 'Cu<sup>2+</sup>(aq) + 2OH<sup>-</sup>(aq) &rarr; Cu(OH)<sub>2</sub>(s)' },
+        'nh3_excess': { t: 'Deep blue solution formed.', c: 'sol-deep-blue', e: 'Precipitate dissolves (No precipitation equation).' }
+    },
+    'fe2': {
+        'naoh_few': { t: 'Green precipitate formed.', c: 'ppt-green', e: 'Fe<sup>2+</sup>(aq) + 2OH<sup>-</sup>(aq) &rarr; Fe(OH)<sub>2</sub>(s)' },
+        'naoh_excess': { t: 'Green precipitate remains.', c: 'ppt-green excess', e: 'Precipitate remains insoluble.' },
+        'nh3_few': { t: 'Green precipitate formed.', c: 'ppt-green', e: 'Fe<sup>2+</sup>(aq) + 2OH<sup>-</sup>(aq) &rarr; Fe(OH)<sub>2</sub>(s)' },
+        'nh3_excess': { t: 'Green precipitate remains.', c: 'ppt-green excess', e: 'Precipitate remains insoluble.' }
+    },
+    'fe3': {
+        'naoh_few': { t: 'Red-brown precipitate formed.', c: 'ppt-red', e: 'Fe<sup>3+</sup>(aq) + 3OH<sup>-</sup>(aq) &rarr; Fe(OH)<sub>3</sub>(s)' },
+        'naoh_excess': { t: 'Red-brown precipitate remains.', c: 'ppt-red excess', e: 'Precipitate remains insoluble.' },
+        'nh3_few': { t: 'Red-brown precipitate formed.', c: 'ppt-red', e: 'Fe<sup>3+</sup>(aq) + 3OH<sup>-</sup>(aq) &rarr; Fe(OH)<sub>3</sub>(s)' },
+        'nh3_excess': { t: 'Red-brown precipitate remains.', c: 'ppt-red excess', e: 'Precipitate remains insoluble.' }
+    },
+    'nh4': {
+        'naoh_few': { t: 'Ammonia gas produced on warming.', c: 'clear', e: 'NH<sub>4</sub><sup>+</sup>(aq) + OH<sup>-</sup>(aq) &rarr; NH<sub>3</sub>(g) + H<sub>2</sub>O(l)' },
+        'naoh_excess': { t: 'Ammonia gas produced on warming.', c: 'clear excess', e: 'NH<sub>4</sub><sup>+</sup>(aq) + OH<sup>-</sup>(aq) &rarr; NH<sub>3</sub>(g) + H<sub>2</sub>O(l)' },
+        'nh3_few': { t: 'No reaction.', c: 'clear', e: '-' },
+        'nh3_excess': { t: 'No reaction.', c: 'clear excess', e: '-' }
+    }
 };
 
-document.addEventListener('DOMContentLoaded', function() {
-    setupPinPad();
-    setupGame();
-    setupAdmin();
-});
+function runTest(reagent) {
+    const ion = document.getElementById('ionSelect').value;
+    const chemical = document.getElementById('chemical');
+    const obsText = document.getElementById('obsText');
+    const eqText = document.getElementById('eqText');
 
-function setupPinPad() {
-    document.querySelectorAll('.key[data-key]').forEach(btn => {
-        btn.onclick = () => {
-            if (state.pin.length < 6) {
-                state.pin.push(btn.dataset.key);
-                updatePinDisplay();
-            }
-        };
-    });
-    document.getElementById('clear-btn').onclick = () => {
-        state.pin = [];
-        updatePinDisplay();
-    };
-    document.getElementById('submit-pin').onclick = () => {
-        const code = state.pin.join('');
-        if (code.length === 6) loadQuiz(code);
-        else alert("Enter 6 digits");
-    };
-    document.getElementById('json-upload').onchange = handleFileUpload;
-}
-
-function setupGame() {
-    document.getElementById('submit-answer').onclick = submitAnswer;
-    document.getElementById('btn-choose-box').onclick = startTreasure;
-    document.getElementById('btn-choose-risk').onclick = startRisk;
-    document.getElementById('btn-hit').onclick = handleHit;
-    document.getElementById('btn-stand').onclick = handleStand;
-    document.getElementById('btn-home').onclick = () => location.reload();
-    document.querySelectorAll('.t-box').forEach(box => {
-        box.onclick = () => handleTreasure(box);
-    });
-}
-
-function setupAdmin() {
-    document.addEventListener('keydown', e => {
-        if (e.ctrlKey && e.shiftKey && e.key === 'A') {
-            document.body.classList.toggle('admin-mode');
-            alert('Admin Mode ' + (document.body.classList.contains('admin-mode') ? 'ON' : 'OFF'));
-        }
-    });
-}
-
-function updatePinDisplay() {
-    for (let i = 1; i <= 6; i++) {
-        document.querySelector('#digit' + i + ' .digit-number').textContent = state.pin[i - 1] || '_';
+    const res = reactions[ion][reagent];
+    if (res) {
+        obsText.innerText = res.t;
+        eqText.innerHTML = res.e; 
+        chemical.className = 'chemical ' + res.c;
     }
 }
 
-function showScreen(id) {
-    document.querySelectorAll('.screen').forEach(s => s.classList.remove('active'));
-    document.getElementById(id).classList.add('active');
+function resetLab() {
+    const chemical = document.getElementById('chemical');
+    const obsText = document.getElementById('obsText');
+    const eqText = document.getElementById('eqText');
+
+    chemical.className = 'chemical clear';
+    chemical.style.height = '25%';
+    obsText.innerText = 'Colorless Solution';
+    eqText.innerHTML = 'No reaction yet.';
 }
 
-function showFeedback(msg, type) {
-    const el = document.getElementById('feedback-area');
-    el.textContent = msg;
-    el.className = 'feedback-area show ' + type;
+// --- EXTENDED QUIZ BANK (18 Questions) ---
+const questionBank = [
+    { 
+        html: `
+            <div class="flowchart-container">
+                <div class="flow-step flow-unknown">Unknown Solution P</div>
+                <div class="flow-arrow">↓</div>
+                <div class="flow-action">+ Aqueous NaOH (Excess)</div>
+                <div class="flow-arrow">↓</div>
+                <div class="flow-step">White precipitate dissolves</div>
+                <div class="flow-arrow">↓</div>
+                <div class="flow-action">+ Aqueous Ammonia (Excess)</div>
+                <div class="flow-arrow">↓</div>
+                <div class="flow-step">White precipitate remains</div>
+            </div>
+            <p>Identify Solution P.</p>
+        `,
+        options: ["Zinc (Zn²⁺)", "Aluminium (Al³⁺)", "Calcium (Ca²⁺)", "Lead (Pb²⁺)"], 
+        a: 1 
+    },
+    { 
+        html: `
+            <div class="flowchart-container">
+                <div class="flow-step flow-unknown">Unknown Solution Q</div>
+                <div class="flow-arrow">↓</div>
+                <div class="flow-action">+ Aqueous NaOH</div>
+                <div class="flow-arrow">↓</div>
+                <div class="flow-step">Light Blue Precipitate</div>
+                <div class="flow-arrow">↓</div>
+                <div class="flow-action">+ Aqueous Ammonia (Excess)</div>
+                <div class="flow-arrow">↓</div>
+                <div class="flow-step">Deep Blue Solution</div>
+            </div>
+            <p>Identify Solution Q.</p>
+        `,
+        options: ["Iron(II)", "Copper(II)", "Zinc", "Calcium"], 
+        a: 1 
+    },
+    { 
+        html: `
+            <div class="flowchart-container">
+                <div class="flow-step flow-unknown">Unknown Solution R</div>
+                <div class="flow-arrow">↓</div>
+                <div class="flow-action">+ Aqueous NaOH (Excess)</div>
+                <div class="flow-arrow">↓</div>
+                <div class="flow-step">White precipitate dissolves</div>
+                <div class="flow-arrow">↓</div>
+                <div class="flow-action">+ Aqueous Ammonia (Excess)</div>
+                <div class="flow-arrow">↓</div>
+                <div class="flow-step">White precipitate dissolves</div>
+            </div>
+            <p>Identify Solution R.</p>
+        `,
+        options: ["Zinc (Zn²⁺)", "Aluminium (Al³⁺)", "Calcium (Ca²⁺)", "Copper (Cu²⁺)"], 
+        a: 0 
+    },
+    { 
+        html: `
+            <div class="flowchart-container">
+                <div class="flow-step flow-unknown">Unknown Solution S</div>
+                <div class="flow-arrow">↓</div>
+                <div class="flow-action">+ Aqueous NaOH</div>
+                <div class="flow-arrow">↓</div>
+                <div class="flow-step">Green Precipitate</div>
+                <div class="flow-arrow">↓</div>
+                <div class="flow-action">+ Excess NaOH</div>
+                <div class="flow-arrow">↓</div>
+                <div class="flow-step">Precipitate Insoluble</div>
+            </div>
+            <p>Identify Solution S.</p>
+        `,
+        options: ["Iron(II)", "Iron(III)", "Copper(II)", "Chromium(III)"], 
+        a: 0 
+    },
+    { 
+        html: `
+            <div class="flowchart-container">
+                <div class="flow-step flow-unknown">Unknown Anion T</div>
+                <div class="flow-arrow">↓</div>
+                <div class="flow-action">+ Dilute Nitric Acid</div>
+                <div class="flow-arrow">↓</div>
+                <div class="flow-action">+ Silver Nitrate</div>
+                <div class="flow-arrow">↓</div>
+                <div class="flow-step">Yellow Precipitate</div>
+            </div>
+            <p>Identify Anion T.</p>
+        `,
+        options: ["Chloride", "Sulfate", "Iodide", "Nitrate"], 
+        a: 2 
+    },
+    { 
+        html: `
+            <div class="flowchart-container">
+                <div class="flow-step flow-unknown">Unknown Solution U</div>
+                <div class="flow-arrow">↓</div>
+                <div class="flow-action">+ Aqueous NaOH</div>
+                <div class="flow-arrow">↓</div>
+                <div class="flow-step">White Precipitate</div>
+                <div class="flow-arrow">↓</div>
+                <div class="flow-action">+ Aqueous Ammonia</div>
+                <div class="flow-arrow">↓</div>
+                <div class="flow-step">No Precipitate / Very Slight</div>
+            </div>
+            <p>Identify Solution U.</p>
+        `,
+        options: ["Zinc", "Aluminium", "Calcium", "Ammonium"], 
+        a: 2 
+    },
+    { q: "Which gas turns damp red litmus paper blue?", options: ["Chlorine", "Ammonia", "Oxygen", "Hydrogen"], a: 1 },
+    { q: "Which ion forms a white precipitate with acidified Silver Nitrate?", options: ["Chloride", "Sulfate", "Nitrate", "Carbonate"], a: 0 },
+    { q: "What is observed when Aqueous Sodium Hydroxide is added to Iron(III) ions?", options: ["White ppt", "Red-brown ppt", "Green ppt", "Blue ppt"], a: 1 },
+    { q: "Which cation produces Ammonia gas when warmed with Aqueous NaOH and Aluminium foil?", options: ["Ammonium", "Nitrate", "Zinc", "Calcium"], a: 1 },
+    { q: "Which gas extinguishes a lighted splint with a 'pop' sound?", options: ["Hydrogen", "Oxygen", "Carbon Dioxide", "Ammonia"], a: 0 },
+    { q: "Which anion produces carbon dioxide when reacted with dilute acid?", options: ["Chloride", "Carbonate", "Sulfate", "Nitrate"], a: 1 },
+    { q: "Which cation forms a precipitate that is soluble in excess Aqueous Ammonia?", options: ["Zinc", "Aluminium", "Iron(II)", "Calcium"], a: 0 },
+    { q: "Which gas turns limewater milky?", options: ["Hydrogen", "Ammonia", "Carbon Dioxide", "Chlorine"], a: 2 },
+    { q: "To test for Sulfate ions, you add acid followed by...", options: ["Silver Nitrate", "Barium Nitrate", "Sodium Hydroxide", "Ammonia"], a: 1 },
+    { q: "Observation: Red-brown precipitate formed with Aqueous Ammonia, insoluble in excess.", options: ["Iron(II)", "Iron(III)", "Copper(II)", "Zinc"], a: 1 },
+    { q: "Which gas relights a glowing splint?", options: ["Hydrogen", "Oxygen", "Carbon Dioxide", "Chlorine"], a: 1 },
+    { q: "Observation: Green precipitate formed with NaOH, insoluble in excess.", options: ["Iron(II)", "Iron(III)", "Copper(II)", "Chromium"], a: 0 }
+];
+
+// --- QUIZ LOGIC (Random Sampling) ---
+let currentQuiz = [];
+let qIdx = 0;
+let score = 0;
+
+function shuffleArray(array) {
+    for (let i = array.length - 1; i > 0; i--) {
+        const j = Math.floor(Math.random() * (i + 1));
+        [array[i], array[j]] = [array[j], array[i]];
+    }
+    return array;
 }
 
-function showPhase(id) {
-    document.getElementById('choice-section').classList.remove('show');
-    document.getElementById('treasure-section').classList.remove('show');
-    document.getElementById('risk-section').classList.remove('show');
-    if (id) document.getElementById(id).classList.add('show');
-}
-
-function loadQuiz(code) {
-    showScreen('loading-screen');
-    const levels = {1: 'primary', 2: 'lower-secondary', 3: 'upper-secondary'};
-    const subjects = {0: 'math', 1: 'science', 2: 'combined-physics', 3: 'pure-physics', 4: 'combined-chemistry', 5: 'pure-chemistry'};
-    const digits = code.split('').map(Number);
-    const path = 'Questions/' + (levels[digits[0]] || 'primary') + '/' + (subjects[digits[1]] || 'math') + '/' + code + '.json';
+function startQuiz() {
+    qIdx = 0;
+    score = 0;
     
-    fetch(path)
-        .then(res => res.ok ? res.json() : Promise.reject())
-        .then(data => {
-            if (data.questions && data.questions.length > 0) startQuiz(data.questions);
-            else alert('No questions');
-        })
-        .catch(() => {
-            alert('Quiz not found! Use Ctrl+Shift+A for admin mode.');
-            showScreen('pin-screen');
-        });
-}
-
-function handleFileUpload(e) {
-    const file = e.target.files[0];
-    if (!file) return;
-    const reader = new FileReader();
-    reader.onload = evt => {
-        try {
-            const data = JSON.parse(evt.target.result);
-            if (data.questions && data.questions.length > 0) startQuiz(data.questions);
-            else alert('Invalid JSON');
-        } catch (err) {
-            alert('Invalid file');
-        }
-    };
-    reader.readAsText(file);
-}
-
-function startQuiz(questions) {
-    state.questions = questions;
-    state.currQIndex = 0;
-    state.currPlayer = 1;
-    state.scores = [0, 0];
-    updateScoreboard();
+    const shuffled = shuffleArray([...questionBank]);
+    currentQuiz = shuffled.slice(0, 6);
+    
+    document.getElementById('totalVal').innerText = currentQuiz.length;
+    document.getElementById('scoreVal').innerText = "0";
+    
     loadQuestion();
-    showScreen('game-screen');
 }
 
 function loadQuestion() {
-    const q = state.questions[state.currQIndex];
-    if (!q) {
-        endGame();
+    if(qIdx >= currentQuiz.length) {
+        document.getElementById('questionArea').innerHTML = `<h3>Quiz Completed!</h3>`;
+        document.getElementById('optionsContainer').innerHTML = `
+            <div style="margin-bottom:20px;">You scored ${score} out of ${currentQuiz.length}</div>
+            <button type="button" onclick="startQuiz()" style="background:#27ae60; color:white; border:none; padding:15px; cursor:pointer; border-radius:5px;">Restart Quiz</button>`;
+        document.getElementById('nextBtn').style.display = 'none';
+        document.getElementById('feedbackText').innerText = "";
         return;
     }
+
+    const q = currentQuiz[qIdx];
+    const qArea = document.getElementById('questionArea');
     
-    state.isAnswered = false;
-    state.roundScore = 0;
-    state.selectedOption = null;
-    state.hitCount = 0;
+    if (q.html) {
+        qArea.innerHTML = `<div style="font-weight:bold; margin-bottom:10px;">Question ${qIdx+1}:</div>` + q.html;
+    } else {
+        qArea.innerHTML = `<div style="font-weight:bold; margin-bottom:10px;">Question ${qIdx+1}:</div><p>${q.q}</p>`;
+    }
     
-    document.getElementById('question-text').textContent = q.question;
-    document.getElementById('current-q').textContent = state.currQIndex + 1;
-    document.getElementById('total-q').textContent = state.questions.length;
+    const opts = document.getElementById('optionsContainer');
+    opts.innerHTML = '';
+    document.getElementById('feedbackText').innerText = '';
+    document.getElementById('nextBtn').style.display = 'none';
     
-    const cont = document.getElementById('options-container');
-    cont.innerHTML = '';
-    q.options.forEach((opt, idx) => {
-        const div = document.createElement('div');
-        div.className = 'option';
-        div.textContent = String.fromCharCode(65 + idx) + ') ' + opt;
-        div.onclick = () => selectOption(div, idx);
-        cont.appendChild(div);
+    q.options.forEach((o, i) => {
+        const btn = document.createElement('button');
+        btn.type = "button";
+        btn.innerText = o;
+        btn.onclick = () => check(i, q.a, btn);
+        opts.appendChild(btn);
     });
-    
-    document.getElementById('submit-answer').style.display = 'block';
-    document.getElementById('submit-answer').disabled = false;
-    document.getElementById('btn-hit').disabled = false;
-    document.getElementById('btn-stand').disabled = false;
-    
-    showPhase(null);
-    document.getElementById('feedback-area').className = 'feedback-area';
-    updateTurnIndicator();
 }
 
-function selectOption(el, idx) {
-    if (state.isAnswered) return;
-    document.querySelectorAll('.option').forEach(o => o.classList.remove('selected'));
-    el.classList.add('selected');
-    state.selectedOption = idx;
-}
-
-function submitAnswer() {
-    if (state.selectedOption === null || state.isAnswered) return;
-    state.isAnswered = true;
-    document.getElementById('submit-answer').disabled = true;
+function check(sel, corr, btn) {
+    const all = document.querySelectorAll('.options-grid button');
+    all.forEach(b => b.disabled = true);
     
-    const q = state.questions[state.currQIndex];
-    const options = document.querySelectorAll('.option');
-    const isCorrect = state.selectedOption === q.correct;
-    
-    if (isCorrect) {
-        options[state.selectedOption].classList.add('correct');
-        state.roundScore = q.points || 10;
-        
-        let msg = 'CORRECT! Base: ' + state.roundScore + ' pts';
-        if (q.explanation) {
-            msg += '\n\n' + q.explanation;
-        }
-        showFeedback(msg, 'success');
-        setTimeout(() => showPhase('choice-section'), q.explanation ? 3000 : 1500);
+    if(sel === corr) {
+        score++;
+        document.getElementById('scoreVal').innerText = score;
+        document.getElementById('feedbackText').innerHTML = "Correct! ✅";
+        document.getElementById('feedbackText').style.color = "green";
+        btn.style.background = "#27ae60";
     } else {
-        options[state.selectedOption].classList.add('incorrect');
-        options[q.correct].classList.add('correct');
-        
-        let msg = 'WRONG! Answer: ' + String.fromCharCode(65 + q.correct) + ') ' + q.options[q.correct];
-        if (q.explanation) {
-            msg += '\n\n' + q.explanation;
-        }
-        showFeedback(msg, 'error');
-        setTimeout(() => {
-            state.currQIndex++;
-            loadQuestion();
-        }, q.explanation ? 4000 : 2500);
+        document.getElementById('feedbackText').innerHTML = "Incorrect. <br>The correct answer was: " + currentQuiz[qIdx].options[corr];
+        document.getElementById('feedbackText').style.color = "#c0392b";
+        btn.style.background = "#c0392b";
     }
-    document.getElementById('submit-answer').style.display = 'none';
+    document.getElementById('nextBtn').style.display = 'inline-block';
 }
 
-function startTreasure() {
-    showPhase('treasure-section');
-    document.querySelectorAll('.t-box').forEach(b => {
-        b.textContent = '?';
-        b.classList.remove('opened');
-        b.style.pointerEvents = 'auto';
-    });
-    document.getElementById('treasure-result').textContent = '';
+function nextQuestion() {
+    qIdx++;
+    loadQuestion();
 }
 
-function startRisk() {
-    showPhase('risk-section');
-    state.hitCount = 0;
-    updateRiskDisplay();
-}
-
-function handleTreasure(box) {
-    if (box.classList.contains('opened')) return;
-    
-    const effects = [
-        {lbl: '🎯 Double!', val: 'x2'},
-        {lbl: '💰 +20 pts!', val: '+20'},
-        {lbl: '🎁 +15 pts!', val: '+15'},
-        {lbl: '😱 Half!', val: '/2'},
-        {lbl: '🔄 Swap!', val: 'swap'}
-    ];
-    
-    const effect = effects[Math.floor(Math.random() * effects.length)];
-    
-    if (effect.val === 'x2') state.roundScore *= 2;
-    if (effect.val === '+20') state.roundScore += 20;
-    if (effect.val === '+15') state.roundScore += 15;
-    if (effect.val === '/2') state.roundScore = Math.floor(state.roundScore / 2);
-    if (effect.val === 'swap') {
-        const temp = state.scores[0];
-        state.scores[0] = state.scores[1];
-        state.scores[1] = temp;
-        updateScoreboard();
-    }
-    
-    // Cap at 50
-    if (state.roundScore > 50) state.roundScore = 50;
-    
-    box.textContent = effect.val === 'swap' ? '🔄' : '💰';
-    box.classList.add('opened');
-    
-    document.querySelectorAll('.t-box').forEach(b => b.style.pointerEvents = 'none');
-    document.getElementById('treasure-result').innerHTML = effect.lbl + '<br>Score: ' + state.roundScore + ' pts';
-    
-    setTimeout(() => {
-        state.scores[state.currPlayer - 1] += state.roundScore;
-        updateScoreboard();
-        switchPlayer();
-        state.currQIndex++;
-        loadQuestion();
-    }, 2500);
-}
-
-function updateRiskDisplay() {
-    const display = document.getElementById('risk-display');
-    display.textContent = state.roundScore;
-    
-    // Color based on score
-    if (state.roundScore >= 40) {
-        display.style.color = '#48bb78'; // Green - high score!
-    } else if (state.roundScore >= 25) {
-        display.style.color = '#ed8936'; // Orange - medium
-    } else {
-        display.style.color = '#d69e2e'; // Gold - low
-    }
-    
-    // Update hit counter display
-    const hitBtn = document.getElementById('btn-hit');
-    const hitsLeft = state.maxHits - state.hitCount;
-    
-    if (hitsLeft <= 0 || state.roundScore >= 50) {
-        hitBtn.disabled = true;
-        hitBtn.textContent = state.roundScore >= 50 ? 'MAX 50!' : 'NO HITS LEFT';
-    } else {
-        hitBtn.disabled = false;
-        hitBtn.textContent = '🎲 HIT (' + hitsLeft + ' left)';
-    }
-}
-
-function handleHit() {
-    // Check if can still hit
-    if (state.hitCount >= state.maxHits) {
-        showFeedback('No hits remaining!', 'error');
-        return;
-    }
-    
-    if (state.roundScore >= 50) {
-        showFeedback('Already at MAX 50!', 'info');
-        return;
-    }
-    
-    state.hitCount++;
-    
-    // Random effects: can go UP or DOWN
-    const effects = [
-        {type: 'add', min: 5, max: 20, label: '+'},      // Add 5-20 points
-        {type: 'add', min: 3, max: 15, label: '+'},      // Add 3-15 points
-        {type: 'add', min: 10, max: 25, label: '+'},     // Add 10-25 points (lucky!)
-        {type: 'subtract', min: 3, max: 10, label: '-'}, // Lose 3-10 points
-        {type: 'subtract', min: 5, max: 15, label: '-'}, // Lose 5-15 points
-        {type: 'multiply', val: 1.5, label: 'x1.5'},     // Multiply by 1.5
-        {type: 'multiply', val: 2, label: 'x2'},         // Double (rare lucky)
-        {type: 'multiply', val: 0.5, label: '÷2'},       // Halve (unlucky)
-        {type: 'set', min: 15, max: 40, label: '🎲'}     // Random set between 15-40
-    ];
-    
-    const effect = effects[Math.floor(Math.random() * effects.length)];
-    let change = 0;
-    let newScore = state.roundScore;
-    let msg = '';
-    let feedbackType = 'info';
-    
-    switch(effect.type) {
-        case 'add':
-            change = Math.floor(Math.random() * (effect.max - effect.min + 1)) + effect.min;
-            newScore = state.roundScore + change;
-            msg = '⬆️ +' + change + ' pts!';
-            feedbackType = 'success';
-            break;
-            
-        case 'subtract':
-            change = Math.floor(Math.random() * (effect.max - effect.min + 1)) + effect.min;
-            newScore = Math.max(1, state.roundScore - change); // Minimum 1 point
-            msg = '⬇️ -' + change + ' pts!';
-            feedbackType = 'error';
-            break;
-            
-        case 'multiply':
-            newScore = Math.floor(state.roundScore * effect.val);
-            if (effect.val > 1) {
-                msg = '🚀 ' + effect.label + ' = ' + newScore + ' pts!';
-                feedbackType = 'success';
-            } else {
-                msg = '😱 ' + effect.label + ' = ' + newScore + ' pts!';
-                feedbackType = 'error';
-            }
-            newScore = Math.max(1, newScore); // Minimum 1 point
-            break;
-            
-        case 'set':
-            newScore = Math.floor(Math.random() * (effect.max - effect.min + 1)) + effect.min;
-            if (newScore > state.roundScore) {
-                msg = '🎲 Random: ' + newScore + ' pts! (Lucky!)';
-                feedbackType = 'success';
-            } else {
-                msg = '🎲 Random: ' + newScore + ' pts!';
-                feedbackType = newScore < state.roundScore ? 'error' : 'info';
-            }
-            break;
-    }
-    
-    // Cap at 50
-    if (newScore > 50) {
-        newScore = 50;
-        msg += ' (Capped at 50!)';
-    }
-    
-    state.roundScore = newScore;
-    
-    // Add hits remaining info
-    const hitsLeft = state.maxHits - state.hitCount;
-    msg += '\n\nHits left: ' + hitsLeft;
-    
-    showFeedback(msg, feedbackType);
-    updateRiskDisplay();
-    
-    // Auto-stand if at 50 or no hits left
-    if (state.roundScore >= 50) {
-        showFeedback('🎯 MAX 50! Auto-banking...', 'success');
-        document.getElementById('btn-hit').disabled = true;
-        document.getElementById('btn-stand').disabled = true;
-        setTimeout(handleStand, 2000);
-    } else if (state.hitCount >= state.maxHits) {
-        showFeedback(msg + '\n\n⚠️ No hits left! Click STAND to bank.', feedbackType);
-    }
-}
-
-function handleStand() {
-    document.getElementById('btn-hit').disabled = true;
-    document.getElementById('btn-stand').disabled = true;
-    
-    showFeedback('✅ Banking ' + state.roundScore + ' points!', 'success');
-    
-    setTimeout(() => {
-        state.scores[state.currPlayer - 1] += state.roundScore;
-        updateScoreboard();
-        switchPlayer();
-        state.currQIndex++;
-        loadQuestion();
-    }, 1500);
-}
-
-function switchPlayer() {
-    state.currPlayer = state.currPlayer === 1 ? 2 : 1;
-    updateTurnIndicator();
-}
-
-function updateScoreboard() {
-    document.getElementById('score1').textContent = state.scores[0];
-    document.getElementById('score2').textContent = state.scores[1];
-}
-
-function updateTurnIndicator() {
-    const p1 = document.getElementById('player1');
-    const p2 = document.getElementById('player2');
-    
-    if (state.currPlayer === 1) {
-        p1.classList.add('active');
-        p2.classList.remove('active');
-        document.getElementById('current-player-name').textContent = "Player 1's Turn";
-    } else {
-        p2.classList.add('active');
-        p1.classList.remove('active');
-        document.getElementById('current-player-name').textContent = "Player 2's Turn";
-    }
-}
-
-function endGame() {
-    showScreen('game-over-screen');
-    document.getElementById('final-p1').textContent = state.scores[0];
-    document.getElementById('final-p2').textContent = state.scores[1];
-    
-    let winner;
-    if (state.scores[0] > state.scores[1]) {
-        winner = '🏆 Player 1 Wins! 🏆';
-    } else if (state.scores[1] > state.scores[0]) {
-        winner = '🏆 Player 2 Wins! 🏆';
-    } else {
-        winner = "🤝 It's a Tie! 🤝";
-    }
-    document.getElementById('winner-text').textContent = winner;
-}
+// Ensure DOM is fully loaded before launching the quiz mechanics
+document.addEventListener('DOMContentLoaded', startQuiz);

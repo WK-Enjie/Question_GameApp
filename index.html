@@ -3,126 +3,147 @@
 <head>
     <meta charset="UTF-8">
     <meta name="viewport" content="width=device-width, initial-scale=1.0">
-    <title>CNY Quiz</title>
+    <title>QA Virtual Lab</title>
     <link rel="stylesheet" href="style.css">
+    <link href="https://fonts.googleapis.com/css2?family=Roboto:wght@400;500;700&display=swap" rel="stylesheet">
 </head>
 <body>
-    <div class="container">
-        <header>
-            <h1>🧧 CNY Quiz 50 🧧</h1>
-            <div class="subtitle">Target: 50 Points</div>
-        </header>
 
-        <div id="pin-screen" class="screen active">
-            <div class="pin-input-section">
-                <h2>Enter Quiz Code</h2>
-                <div class="pin-display">
-                    <div class="digit" id="digit1"><span class="digit-number">_</span></div>
-                    <div class="digit" id="digit2"><span class="digit-number">_</span></div>
-                    <div class="digit" id="digit3"><span class="digit-number">_</span></div>
-                    <div class="digit" id="digit4"><span class="digit-number">_</span></div>
-                    <div class="digit" id="digit5"><span class="digit-number">_</span></div>
-                    <div class="digit" id="digit6"><span class="digit-number">_</span></div>
-                </div>
-                <div class="keypad">
-                    <button class="key" data-key="1">1</button>
-                    <button class="key" data-key="2">2</button>
-                    <button class="key" data-key="3">3</button>
-                    <button class="key" data-key="4">4</button>
-                    <button class="key" data-key="5">5</button>
-                    <button class="key" data-key="6">6</button>
-                    <button class="key" data-key="7">7</button>
-                    <button class="key" data-key="8">8</button>
-                    <button class="key" data-key="9">9</button>
-                    <button class="key clear" id="clear-btn">⌫</button>
-                    <button class="key" data-key="0">0</button>
-                    <button class="key submit" id="submit-pin">GO</button>
-                </div>
-                <div class="quick-actions">
-                    <label class="btn secondary">
-                        Upload JSON
-                        <input type="file" id="json-upload" hidden accept=".json">
-                    </label>
-                </div>
-            </div>
+    <nav>
+        <div class="logo">QA Master 🧪</div>
+        <div class="nav-links">
+            <button type="button" onclick="showSection('learn')">Learn</button>
+            <button type="button" onclick="showSection('lab')">Virtual Lab</button>
+            <button type="button" onclick="showSection('quiz')">Quiz</button>
         </div>
+    </nav>
 
-        <div id="loading-screen" class="screen">
-            <div class="loading-content">
-                <div class="spinner"></div>
-                <h2 id="loading-message">Loading...</h2>
+    <main>
+        <section id="learn" class="active-section">
+            <h2>Reference Material</h2>
+            <div class="tabs-header">
+                <button type="button" onclick="openTab(event, 'cations')" class="tab-btn active-tab">Cations</button>
+                <button type="button" onclick="openTab(event, 'anions')" class="tab-btn">Anions</button>
+                <button type="button" onclick="openTab(event, 'gases')" class="tab-btn">Gases</button>
             </div>
-        </div>
 
-        <div id="game-screen" class="screen">
-            <div class="player-info">
-                <div class="player-card" id="player1">
-                    <h3>Player 1</h3>
-                    <div class="total-score" id="score1">0</div>
+            <div id="cations" class="tab-content active-content">
+                <h3>Testing for Cations</h3>
+                <table>
+                    <thead>
+                        <tr>
+                            <th>Ion</th>
+                            <th>Effect of Aqueous Sodium Hydroxide</th>
+                            <th>Effect of Aqueous Ammonia</th>
+                        </tr>
+                    </thead>
+                    <tbody>
+                        <tr><td>Zinc (Zn²⁺)</td><td>White precipitate formed.<br>Soluble in excess to form a colorless solution.</td><td>White precipitate formed.<br>Soluble in excess to form a colorless solution.</td></tr>
+                        <tr><td>Aluminium (Al³⁺)</td><td>White precipitate formed.<br>Soluble in excess to form a colorless solution.</td><td>White precipitate formed.<br>Insoluble in excess.</td></tr>
+                        <tr><td>Calcium (Ca²⁺)</td><td>White precipitate formed.<br>Insoluble in excess.</td><td>No precipitate formed (or very slight).</td></tr>
+                        <tr><td>Copper(II) (Cu²⁺)</td><td>Light blue precipitate formed.<br>Insoluble in excess.</td><td>Light blue precipitate formed.<br>Soluble in excess to form a deep blue solution.</td></tr>
+                        <tr><td>Iron(II) (Fe²⁺)</td><td>Green precipitate formed.<br>Insoluble in excess.</td><td>Green precipitate formed.<br>Insoluble in excess.</td></tr>
+                        <tr><td>Iron(III) (Fe³⁺)</td><td>Red-brown precipitate formed.<br>Insoluble in excess.</td><td>Red-brown precipitate formed.<br>Insoluble in excess.</td></tr>
+                        <tr><td>Ammonium (NH₄⁺)</td><td>Ammonia gas produced on warming.</td><td>-</td></tr>
+                    </tbody>
+                </table>
+            </div>
+
+            <div id="anions" class="tab-content">
+                <h3>Testing for Anions</h3>
+                <table>
+                    <thead><tr><th>Ion</th><th>Test</th><th>Result</th></tr></thead>
+                    <tbody>
+                        <tr><td>Carbonate (CO₃²⁻)</td><td>Add dilute acid</td><td>Effervescence observed. Carbon Dioxide gas produced.</td></tr>
+                        <tr><td>Chloride (Cl⁻)</td><td>Acidify with Nitric Acid, then add Silver Nitrate</td><td>White precipitate formed.</td></tr>
+                        <tr><td>Iodide (I⁻)</td><td>Acidify with Nitric Acid, then add Silver Nitrate</td><td>Yellow precipitate formed.</td></tr>
+                        <tr><td>Nitrate (NO₃⁻)</td><td>Add Aqueous NaOH and Aluminium foil; warm gently</td><td>Ammonia gas produced.</td></tr>
+                        <tr><td>Sulfate (SO₄²⁻)</td><td>Acidify with Nitric Acid, then add Barium Nitrate</td><td>White precipitate formed.</td></tr>
+                    </tbody>
+                </table>
+            </div>
+
+            <div id="gases" class="tab-content">
+                <h3>Testing for Gases</h3>
+                <div class="gas-grid">
+                    <div class="card"><strong>Ammonia (NH₃)</strong><br>Turns damp red litmus paper blue.</div>
+                    <div class="card"><strong>Carbon Dioxide (CO₂)</strong><br>Turns limewater milky (White precipitate formed).</div>
+                    <div class="card"><strong>Chlorine (Cl₂)</strong><br>Bleaches damp litmus paper.</div>
+                    <div class="card"><strong>Hydrogen (H₂)</strong><br>Extinguishes a lighted splint with a "pop" sound.</div>
+                    <div class="card"><strong>Oxygen (O₂)</strong><br>Relights a glowing splint.</div>
                 </div>
-                <div class="vs-badge">VS</div>
-                <div class="player-card" id="player2">
-                    <h3>Player 2</h3>
-                    <div class="total-score" id="score2">0</div>
-                </div>
             </div>
+        </section>
 
-            <div class="turn-banner">
-                <span id="current-player-name">Player 1's Turn</span>
-                <span class="q-counter">Q: <span id="current-q">1</span>/<span id="total-q">10</span></span>
-            </div>
+        <section id="lab">
+            <h2>Virtual Laboratory</h2>
+            <div class="lab-layout">
+                
+                <div class="lab-controls">
+                    <h3>1. Select Unknown Ion</h3>
+                    <select id="ionSelect">
+                        <option value="zn">Zinc (Zn²⁺)</option>
+                        <option value="al">Aluminium (Al³⁺)</option>
+                        <option value="ca">Calcium (Ca²⁺)</option>
+                        <option value="cu">Copper(II) (Cu²⁺)</option>
+                        <option value="fe2">Iron(II) (Fe²⁺)</option>
+                        <option value="fe3">Iron(III) (Fe³⁺)</option>
+                        <option value="nh4">Ammonium (NH₄⁺)</option>
+                    </select>
 
-            <div class="question-area">
-                <h3 id="question-text">Loading Question...</h3>
-                <div id="options-container" class="options-grid"></div>
-                <button id="submit-answer" class="btn primary btn-block">Submit Answer</button>
-            </div>
-
-            <div id="choice-section" class="phase-section">
-                <div class="phase-header">CORRECT! CHOOSE YOUR PATH</div>
-                <div class="choice-grid">
-                    <div class="choice-card" id="btn-choose-box">
-                        <div class="icon">🎁</div>
-                        <h4>Treasure Box</h4>
+                    <h3>2. Add Reagent</h3>
+                    <div class="reagent-grid">
+                        <button type="button" onclick="runTest('naoh_few')">+ NaOH (Few)</button>
+                        <button type="button" onclick="runTest('naoh_excess')">+ NaOH (Excess)</button>
+                        <button type="button" onclick="runTest('nh3_few')">+ NH₃ (Few)</button>
+                        <button type="button" onclick="runTest('nh3_excess')">+ NH₃ (Excess)</button>
                     </div>
-                    <div class="choice-card risk" id="btn-choose-risk">
-                        <div class="icon">🎲</div>
-                        <h4>Risk It!</h4>
+                    <button type="button" class="reset-btn" onclick="resetLab()">Reset Test Tube</button>
+                    
+                    <div class="tip-box">
+                        <strong>Visual Guide:</strong><br>
+                        Look at the grid lines behind the tube.<br>
+                        ✅ Lines visible = <strong>Solution</strong><br>
+                        ❌ Lines blocked = <strong>Precipitate</strong>
                     </div>
                 </div>
-            </div>
 
-            <div id="treasure-section" class="phase-section">
-                <h3>Pick a Box!</h3>
-                <div class="treasure-grid">
-                    <div class="t-box" data-id="1">?</div>
-                    <div class="t-box" data-id="2">?</div>
-                    <div class="t-box" data-id="3">?</div>
+                <div class="lab-visuals">
+                    <div class="lab-bench">
+                        <div class="test-tube">
+                            <div id="chemical" class="chemical clear"></div>
+                            <div class="glass-shine"></div>
+                        </div>
+                    </div>
+                    
+                    <div class="observation-box">
+                        <h4>Observation:</h4>
+                        <p id="obsText">Colorless Solution</p>
+                    </div>
+
+                    <div class="equation-box">
+                        <h4>Ionic Equation:</h4>
+                        <p id="eqText" class="equation-text">No reaction yet.</p>
+                    </div>
                 </div>
-                <div id="treasure-result"></div>
-            </div>
 
-            <div id="risk-section" class="phase-section">
-                <div class="risk-score">Score: <span id="risk-display">0</span> / 50</div>
-                <div class="risk-controls">
-                    <button id="btn-hit" class="btn danger">HIT</button>
-                    <button id="btn-stand" class="btn success">STAND</button>
-                </div>
             </div>
+        </section>
 
-            <div id="feedback-area" class="feedback-area"></div>
-        </div>
-
-        <div id="game-over-screen" class="screen">
-            <h1>Game Over</h1>
-            <h2 id="winner-text">Player 1 Wins!</h2>
-            <div class="final-scores">
-                <p>Player 1: <span id="final-p1">0</span></p>
-                <p>Player 2: <span id="final-p2">0</span></p>
+        <section id="quiz">
+            <h2>Challenge Mode</h2>
+            <div class="quiz-container">
+                <div class="score-display">Score: <span id="scoreVal">0</span> / <span id="totalVal">6</span></div>
+                
+                <div id="questionArea"></div>
+                
+                <div id="optionsContainer" class="options-grid"></div>
+                <div id="feedbackText" class="feedback"></div>
+                <button type="button" id="nextBtn" onclick="nextQuestion()">Next Question ➜</button>
             </div>
-            <button id="btn-home" class="btn primary">Restart</button>
-        </div>
-    </div>
+        </section>
+
+    </main>
 
     <script src="script.js"></script>
 </body>
