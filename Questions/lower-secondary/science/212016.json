@@ -1,0 +1,132 @@
+{
+  "title": "Forces and Energy: Formula Calculations",
+  "topic": "Application of Forces and Transfer of Energy",
+  "subject": "Science",
+  "level": "Secondary",
+  "grade": "S2",
+  "chapter": 9,
+  "worksheet": 6,
+  "difficulty": "Standard",
+  "questions": [
+    {
+      "question": "An object has a mass of 8 kg. What is its weight on Earth? (Use g = 10 N/kg)",
+      "options": [
+        "0.8 N",
+        "8 N",
+        "80 N",
+        "800 N"
+      ],
+      "correct": 2,
+      "points": 15,
+      "explanation": "Weight = mass × gravitational field strength. W = mg = 8 kg × 10 N/kg = 80 N."
+    },
+    {
+      "question": "A student lifts a 5 kg bag vertically through a height of 2 m. What is the gain in gravitational potential energy? (Use g = 10 N/kg)",
+      "options": [
+        "10 J",
+        "25 J",
+        "50 J",
+        "100 J"
+      ],
+      "correct": 3,
+      "points": 15,
+      "explanation": "GPE = mgh = 5 kg × 10 N/kg × 2 m = 100 J. The bag gains gravitational potential energy as it is raised."
+    },
+    {
+      "question": "A force of 30 N pushes a box horizontally for a distance of 4 m in the direction of the force. How much work is done?",
+      "options": [
+        "7.5 J",
+        "34 J",
+        "120 J",
+        "480 J"
+      ],
+      "correct": 2,
+      "points": 15,
+      "explanation": "Work done = force × distance moved in direction of force. W = F × d = 30 N × 4 m = 120 J."
+    },
+    {
+      "question": "A toy car of mass 0.5 kg moves at a speed of 4 m/s. What is its kinetic energy?",
+      "options": [
+        "1 J",
+        "2 J",
+        "4 J",
+        "8 J"
+      ],
+      "correct": 2,
+      "points": 20,
+      "explanation": "KE = ½mv² = ½ × 0.5 kg × (4 m/s)² = ½ × 0.5 × 16 = 4 J. Remember to square the speed first."
+    },
+    {
+      "question": "An object weighs 120 N on Earth. What is its mass? (Use g = 10 N/kg)",
+      "options": [
+        "0.083 kg",
+        "12 kg",
+        "120 kg",
+        "1200 kg"
+      ],
+      "correct": 1,
+      "points": 15,
+      "explanation": "Weight = mg, so mass = weight ÷ g. m = 120 N ÷ 10 N/kg = 12 kg."
+    },
+    {
+      "question": "A crane does 600 J of work to lift a load vertically through 3 m. What is the weight of the load?",
+      "options": [
+        "2 N",
+        "20 N",
+        "200 N",
+        "1800 N"
+      ],
+      "correct": 2,
+      "points": 20,
+      "explanation": "Work done = force × distance. For vertical lifting, force = weight. So weight = work ÷ distance = 600 J ÷ 3 m = 200 N."
+    },
+    {
+      "question": "A ball of mass 2 kg is dropped from a height of 5 m. What is its gravitational potential energy at the start? (Use g = 10 N/kg)",
+      "options": [
+        "10 J",
+        "25 J",
+        "50 J",
+        "100 J"
+      ],
+      "correct": 3,
+      "points": 15,
+      "explanation": "GPE = mgh = 2 kg × 10 N/kg × 5 m = 100 J. This is the energy stored due to the ball's position above ground."
+    },
+    {
+      "question": "A cyclist and bicycle have a combined mass of 60 kg. If they travel at 5 m/s, what is their kinetic energy?",
+      "options": [
+        "150 J",
+        "300 J",
+        "750 J",
+        "1500 J"
+      ],
+      "correct": 2,
+      "points": 20,
+      "explanation": "KE = ½mv² = ½ × 60 kg × (5 m/s)² = ½ × 60 × 25 = 750 J. Kinetic energy depends on mass and the square of speed."
+    },
+    {
+      "question": "A student pushes a trolley with a constant force of 25 N. If 100 J of work is done, how far does the trolley move in the direction of the force?",
+      "options": [
+        "0.25 m",
+        "4 m",
+        "25 m",
+        "100 m"
+      ],
+      "correct": 1,
+      "points": 15,
+      "explanation": "Work done = force × distance, so distance = work ÷ force. d = 100 J ÷ 25 N = 4 m."
+    },
+    {
+      "question": "A book of mass 0.4 kg is placed on a shelf 1.5 m above the floor. What is the gravitational potential energy of the book relative to the floor? (Use g = 10 N/kg)",
+      "options": [
+        "0.6 J",
+        "2.4 J",
+        "6 J",
+        "15 J"
+      ],
+      "correct": 2,
+      "points": 15,
+      "explanation": "GPE = mgh = 0.4 kg × 10 N/kg × 1.5 m = 6 J. Gravitational potential energy depends on mass, gravitational field strength, and height."
+    }
+  ]
+}

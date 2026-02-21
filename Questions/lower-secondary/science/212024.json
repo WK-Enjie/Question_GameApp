@@ -1,0 +1,192 @@
+{
+  "title": "Thermal Energy Transfer: Effects and Modes",
+  "topic": "Transfer of Thermal Energy and its Effects",
+  "subject": "Science",
+  "level": "Secondary",
+  "grade": "S2",
+  "chapter": 10,
+  "worksheet": 4,
+  "difficulty": "Standard",
+  "questions": [
+    {
+      "question": "Which statement best describes how thermal energy is transferred through a metal rod by conduction?",
+      "options": [
+        "Thermal energy moves through the metal as a fluid flow",
+        "Thermal energy is passed along through direct contact within the material",
+        "Thermal energy travels as waves through empty space in the metal",
+        "Thermal energy is carried by moving currents inside the solid"
+      ],
+      "correct": 1,
+      "points": 15,
+      "explanation": "Conduction is the transfer of thermal energy through direct contact within a material. In metals, thermal energy is passed efficiently from the hot end to the cold end through the material itself."
+    },
+    {
+      "question": "Why does thermal energy transfer by convection only occur in fluids (liquids and gases)?",
+      "options": [
+        "Fluids can flow and move, allowing warmer regions to rise and cooler regions to sink",
+        "Fluids are always hotter than solids",
+        "Fluids absorb radiation better than solids",
+        "Fluids conduct thermal energy faster than solids"
+      ],
+      "correct": 0,
+      "points": 20,
+      "explanation": "Convection requires the movement of the substance itself. In fluids, warmer regions become less dense and rise, while cooler, denser regions sink, creating a circulation current that transfers thermal energy."
+    },
+    {
+      "question": "Which property allows thermal energy from the Sun to reach Earth through empty space?",
+      "options": [
+        "Conduction through space",
+        "Convection currents in space",
+        "Radiation can travel without needing a material medium",
+        "Evaporation of solar material"
+      ],
+      "correct": 2,
+      "points": 15,
+      "explanation": "Radiation is the transfer of thermal energy that does not require a material medium. It can travel through empty space, which is how thermal energy from the Sun reaches Earth."
+    },
+    {
+      "question": "What is one effect when a metal bridge gains thermal energy on a hot day?",
+      "options": [
+        "The bridge contracts and becomes shorter",
+        "The bridge expands and may increase in length",
+        "The bridge changes state from solid to liquid",
+        "The bridge emits less radiation"
+      ],
+      "correct": 1,
+      "points": 15,
+      "explanation": "When materials gain thermal energy, they generally expand. Solids like metal bridges increase in length when heated, which is why expansion joints are built into structures to allow for this change."
+    },
+    {
+      "question": "Which material is MOST suitable for the handle of a cooking pot to minimise thermal energy transfer to the hand?",
+      "options": [
+        "Aluminium",
+        "Copper",
+        "Thick plastic with trapped air",
+        "Stainless steel"
+      ],
+      "correct": 2,
+      "points": 15,
+      "explanation": "Plastic with trapped air is a poor conductor of thermal energy. Both plastic and air transfer thermal energy slowly, reducing the rate at which thermal energy reaches the hand and preventing burns."
+    },
+    {
+      "question": "How does a vacuum flask reduce thermal energy transfer to keep a hot drink warm?",
+      "options": [
+        "The vacuum allows conduction but blocks convection and radiation",
+        "The vacuum blocks conduction and convection; shiny walls reflect radiation back",
+        "The plastic stopper conducts thermal energy away from the drink",
+        "The glass inner wall absorbs all radiation"
+      ],
+      "correct": 1,
+      "points": 20,
+      "explanation": "A vacuum has no material to transfer thermal energy by conduction or convection. The shiny surfaces reflect radiation back into the liquid. Together, these features minimise all three modes of thermal energy transfer."
+    },
+    {
+      "question": "When a substance gains thermal energy, what generally happens to its size?",
+      "options": [
+        "Most substances become smaller",
+        "Most substances expand and take up more space",
+        "The size does not change at all",
+        "Only liquids change size, solids and gases do not"
+      ],
+      "correct": 1,
+      "points": 20,
+      "explanation": "Generally, solids, liquids and gases expand when they gain thermal energy and contract when they give out thermal energy. This change in size is called thermal expansion."
+    },
+    {
+      "question": "In a room with a heater placed near the floor, why does thermal energy spread throughout the room over time?",
+      "options": [
+        "Thermal energy is conducted rapidly through the air from floor to ceiling",
+        "Warm air near the heater rises and cooler air sinks to replace it, creating a circulation current",
+        "Radiation from the heater pushes air molecules directly upward",
+        "Air particles evaporate and carry thermal energy upward"
+      ],
+      "correct": 1,
+      "points": 20,
+      "explanation": "Air near the heater gains thermal energy, becomes less dense, and rises. Cooler, denser air sinks to take its place. This continuous circulation—a convection current—distributes thermal energy throughout the room."
+    },
+    {
+      "question": "Why does a dull black surface feel warmer than a shiny white surface when both are exposed to sunlight for the same time?",
+      "options": [
+        "Dull black surfaces conduct thermal energy better than shiny white surfaces",
+        "Dull black surfaces absorb more radiation; shiny white surfaces reflect more",
+        "Shiny white surfaces create stronger convection currents",
+        "Dull black surfaces produce thermal energy through chemical reactions"
+      ],
+      "correct": 1,
+      "points": 25,
+      "explanation": "Dark, dull surfaces are good absorbers of radiation—they take in more incoming radiation and convert it to thermal energy, raising their temperature. Light, shiny surfaces reflect more radiation away, so they gain less thermal energy and feel cooler."
+    },
+    {
+      "question": "A student places identical metal spoons in three cups: one with hot water, one with cold water, and one empty at room temperature. After 2 minutes, the spoon in hot water feels warmest. Which mode of thermal energy transfer is primarily responsible for the spoon becoming warm?",
+      "options": [
+        "Convection within the spoon",
+        "Radiation from the water to the spoon",
+        "Conduction through direct contact between the hot water and the spoon",
+        "Evaporation of water onto the spoon"
+      ],
+      "correct": 2,
+      "points": 20,
+      "explanation": "The spoon gains thermal energy mainly by conduction: thermal energy is transferred through direct contact from the hot water to the spoon. This energy then spreads through the metal spoon by conduction."
+    },
+    {
+      "question": "Why are cooling fins on engines and electronics often painted black?",
+      "options": [
+        "To look more attractive",
+        "To prevent rust",
+        "To increase the rate of cooling by radiation",
+        "To reduce weight"
+      ],
+      "correct": 2,
+      "points": 15,
+      "explanation": "Dull black surfaces are good emitters of radiation. Painting cooling fins black increases the rate at which they can emit thermal energy by radiation, helping to cool the component more effectively."
+    },
+    {
+      "question": "Fibreglass is a material made of fine glass fibres with trapped air pockets. It is often used in building attics. Which statement best explains why fibreglass is suitable for this purpose?",
+      "options": [
+        "Fibreglass is a good conductor of thermal energy",
+        "Fibreglass is a poor conductor of thermal energy, reducing thermal energy transfer through the roof",
+        "Fibreglass absorbs radiation and converts it to light",
+        "Fibreglass creates convection currents that cool the house"
+      ],
+      "correct": 1,
+      "points": 15,
+      "explanation": "Fibreglass is a poor conductor of thermal energy. The trapped air pockets also transfer thermal energy slowly. This reduces the rate of thermal energy transfer between the inside and outside of a building, helping to maintain comfortable indoor temperatures."
+    },
+    {
+      "question": "In the 'cool roof' programme, why are light-coloured or reflective roofs recommended for buildings in hot climates?",
+      "options": [
+        "Light colours conduct thermal energy better",
+        "Light colours absorb more solar radiation",
+        "Light colours reflect more solar radiation, reducing thermal energy gain",
+        "Light colours create stronger convection currents"
+      ],
+      "correct": 2,
+      "points": 20,
+      "explanation": "Light-coloured or reflective surfaces reflect more solar radiation and absorb less. This reduces the amount of thermal energy gained by the building, helping to keep indoor temperatures lower and reducing the need for air conditioning."
+    },
+    {
+      "question": "Why does thermal expansion result in a change in density?",
+      "options": [
+        "The mass of the substance changes when it expands",
+        "The volume changes while the mass stays the same, so density changes",
+        "Density is not related to thermal expansion",
+        "Only gases change density when heated"
+      ],
+      "correct": 1,
+      "points": 20,
+      "explanation": "Density equals mass divided by volume. When a substance expands, its volume increases while its mass stays the same. This causes the density to decrease. When it contracts, volume decreases and density increases."
+    },
+    {
+      "question": "Which statement correctly compares conduction and convection?",
+      "options": [
+        "Both require a material medium, but only convection involves movement of the substance itself",
+        "Both can occur in a vacuum",
+        "Conduction occurs only in gases, convection occurs only in solids",
+        "Convection is faster than conduction in all materials"
+      ],
+      "correct": 0,
+      "points": 20,
+      "explanation": "Both conduction and convection require a material medium. Conduction transfers thermal energy through direct contact within a material. Convection transfers thermal energy through the movement of the fluid itself (liquids or gases) due to density differences."
+    }
+  ]
+}
