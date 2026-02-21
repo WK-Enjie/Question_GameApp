@@ -1,0 +1,132 @@
+{
+  "title": "Thermal Energy Transfer: Effects and Modes",
+  "topic": "Thermal Energy Transfer",
+  "subject": "Science",
+  "level": "Secondary",
+  "grade": "S2",
+  "chapter": 2,
+  "worksheet": 3,
+  "difficulty": "Standard",
+  "questions": [
+    {
+      "question": "Which statement best describes how thermal energy is transferred through a metal rod by conduction?",
+      "options": [
+        "Particles move from the hot end to the cold end, carrying thermal energy with them",
+        "Vibrating particles pass kinetic energy to neighbouring particles; free electrons also help transfer energy",
+        "Energy travels as rays through the metal from the hot end to the cold end",
+        "Warm particles rise and cool particles sink, creating a current inside the rod"
+      ],
+      "correct": 1,
+      "points": 15,
+      "explanation": "In conduction, particles at the hot end vibrate more vigorously and collide with neighbouring particles, passing kinetic energy along the rod. In metals, free electrons also move rapidly and transfer thermal energy efficiently."
+    },
+    {
+      "question": "Why does thermal energy transfer by convection only occur in fluids (liquids and gases)?",
+      "options": [
+        "Fluids have free electrons that carry thermal energy",
+        "Fluid particles can move freely, allowing less dense regions to rise and denser regions to sink",
+        "Fluids absorb radiation better than solids",
+        "Fluids conduct thermal energy faster than solids"
+      ],
+      "correct": 1,
+      "points": 20,
+      "explanation": "Convection requires the bulk movement of particles. In fluids, particles can flow freely. When a region gains thermal energy, it expands, becomes less dense, and rises; cooler, denser fluid sinks to replace it, creating a convection current."
+    },
+    {
+      "question": "Which property allows thermal energy from the Sun to reach Earth through empty space?",
+      "options": [
+        "Conduction through space particles",
+        "Convection currents in the atmosphere",
+        "Radiation travels without needing particles or a medium",
+        "Evaporation of solar particles"
+      ],
+      "correct": 2,
+      "points": 15,
+      "explanation": "Radiation transfers thermal energy as rays that can travel through empty space. Unlike conduction and convection, radiation does not require particles or a medium—it can travel through a vacuum, which is how the Sun's thermal energy reaches Earth."
+    },
+    {
+      "question": "What is one effect when a metal bridge gains thermal energy on a hot day?",
+      "options": [
+        "The bridge contracts and becomes shorter",
+        "The bridge expands and may increase in length",
+        "The bridge changes state from solid to liquid",
+        "The bridge emits less radiation"
+      ],
+      "correct": 1,
+      "points": 15,
+      "explanation": "When materials gain thermal energy, their particles vibrate more vigorously and move slightly farther apart. This causes expansion—solids like metal bridges increase in length, which is why expansion joints are built into structures."
+    },
+    {
+      "question": "Which material is MOST suitable for the handle of a cooking pot to minimise thermal energy transfer to the hand?",
+      "options": [
+        "Aluminium",
+        "Copper",
+        "Thick plastic with air pockets",
+        "Stainless steel"
+      ],
+      "correct": 2,
+      "points": 15,
+      "explanation": "Thick plastic with trapped air pockets is a poor conductor of thermal energy (an insulator). Both plastic and air transfer thermal energy slowly, reducing the rate at which thermal energy reaches the hand and preventing burns."
+    },
+    {
+      "question": "How does a vacuum flask reduce thermal energy transfer to keep a hot drink warm?",
+      "options": [
+        "The vacuum allows conduction but blocks convection and radiation",
+        "The vacuum blocks conduction and convection; shiny walls reflect radiation back",
+        "The plastic stopper conducts thermal energy away from the drink",
+        "The glass inner wall absorbs all radiation"
+      ],
+      "correct": 1,
+      "points": 20,
+      "explanation": "A vacuum has no particles, so it prevents conduction and convection. The shiny surfaces reflect radiation back into the liquid. Together, these features minimise all three modes of thermal energy transfer."
+    },
+    {
+      "question": "According to kinetic particle theory, what happens to particles in a substance when it gains thermal energy?",
+      "options": [
+        "Particles lose kinetic energy and move closer together",
+        "Particles gain kinetic energy, vibrate or move faster, and tend to move farther apart",
+        "Particles stop moving and become fixed in position",
+        "Particles change into a different type of particle"
+      ],
+      "correct": 1,
+      "points": 20,
+      "explanation": "When a substance gains thermal energy, its particles gain kinetic energy. They vibrate more vigorously (in solids) or move faster (in fluids), colliding more forcefully and tending to move farther apart—causing expansion and possibly state changes."
+    },
+    {
+      "question": "In a room with a heater placed near the floor, why does thermal energy spread throughout the room over time?",
+      "options": [
+        "Thermal energy is conducted rapidly through the air from floor to ceiling",
+        "Warm air near the heater becomes less dense, rises, and cooler air sinks to replace it, creating a convection current",
+        "Radiation from the heater pushes air molecules directly upward",
+        "Air particles evaporate and carry thermal energy upward"
+      ],
+      "correct": 1,
+      "points": 20,
+      "explanation": "Air near the heater gains thermal energy, expands, and becomes less dense. This warm air rises; cooler, denser air sinks to take its place. This continuous circulation—a convection current—distributes thermal energy throughout the room."
+    },
+    {
+      "question": "Why does a dull black surface feel warmer than a shiny white surface when both are exposed to sunlight for the same time?",
+      "options": [
+        "Dull black surfaces conduct thermal energy better than shiny white surfaces",
+        "Dull black surfaces absorb more radiation; shiny white surfaces reflect more",
+        "Shiny white surfaces create stronger convection currents",
+        "Dull black surfaces produce thermal energy through chemical reactions"
+      ],
+      "correct": 1,
+      "points": 25,
+      "explanation": "Dark, dull surfaces are good absorbers of radiation—they convert more incoming radiation into thermal energy, raising their temperature. Light, shiny surfaces reflect more radiation away, so they gain less thermal energy and feel cooler."
+    },
+    {
+      "question": "A student places identical metal spoons in three cups: one with hot water, one with cold water, and one empty at room temperature. After 2 minutes, the spoon in hot water feels warmest. Which mode of thermal energy transfer is primarily responsible for the spoon becoming warm?",
+      "options": [
+        "Convection within the spoon",
+        "Radiation from the water to the spoon",
+        "Conduction from the hot water particles to the spoon particles through direct contact",
+        "Evaporation of water onto the spoon"
+      ],
+      "correct": 2,
+      "points": 20,
+      "explanation": "The spoon gains thermal energy mainly by conduction: fast-moving water particles collide with the spoon's surface particles, transferring kinetic energy. This energy then spreads through the metal spoon by conduction via vibrating particles and free electrons."
+    }
+  ]
+}
