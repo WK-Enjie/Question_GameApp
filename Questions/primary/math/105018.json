@@ -15,7 +15,7 @@
       "explanation": "Find the least common multiple of the two costs: $2 and $3.\nMultiples of $2: $2, $4, $6...\nMultiples of $3: $3, $6...\nLCM = $6\nSo the least amount spent on each type is $6.\nCheck: $6 buys 3 bundles of blue pens (3 × $2) and 2 bundles of black pens (2 × $3). ✓\nAnswer: $6"
     },
     {
-      "question": "Stickers come in packets. A packet of 5 star stickers costs $2 and a packet of 3 heart stickers costs $3. Amy spent the same amount on each type and bought exactly 31 stickers altogether. How many star stickers did she buy?",
+      "question": "Stickers come in packets. A packet of 5 star stickers costs $2 and a packet of 3 heart stickers costs $3. Amy spent the same amount on each type and bought exactly 21 stickers altogether. How many star stickers did she buy?",
       "options": ["10 stickers", "15 stickers", "20 stickers", "25 stickers"],
       "correct": 2,
       "points": 25,
@@ -38,7 +38,7 @@
     {
       "question": "Keychains come in sets. A set of 4 silver keychains costs $3 while a set of 6 gold keychains costs $5. Zoe spent an equal amount on both types and bought 2 more silver keychains than gold keychains. How many silver keychains did she buy?",
       "options": ["8 keychains", "12 keychains", "16 keychains", "20 keychains"],
-      "correct": 1,
+      "correct": 3,
       "points": 25,
       "explanation": "Equal cost: Find LCM of $3 and $5 → $15.\n• At $15: Silver sets = $15 ÷ $3 = 5 sets → 5 × 4 = 20 silver keychains\n• At $15: Gold sets = $15 ÷ $5 = 3 sets → 3 × 6 = 18 gold keychains\nDifference: 20 – 18 = 2 keychains ✓\nAnswer: 20 silver keychains"
     },
@@ -57,14 +57,14 @@
       "explanation": "Equal cost: Find LCM of $2 and $4 → $4.\n• At $4: Yellow packs = $4 ÷ $2 = 2 packs → 2 × 3 = 6 yellow pencils\n• At $4: Green packs = $4 ÷ $4 = 1 pack → 1 × 5 = 5 green pencils\nDifference: 6 – 5 = 1 pencil ✓\nAnswer: 6 yellow pencils"
     },
     {
-      "question": "A shop sells toy robots in boxes. A box of 6 red robots costs $5 while a box of 4 blue robots costs $4. Leo spent an equal amount of money on both types of boxes and bought 2 more red robots than blue robots. What is the least number of red robots he bought?",
+      "question": "A shop sells toy robots in boxes. A box of 6 red robots costs $5 while a box of 4 blue robots costs $4. Leo spent an equal amount of money on both types of boxes and bought 4 more red robots than blue robots. What is the least number of red robots he bought?",
       "options": ["12 robots", "18 robots", "24 robots", "30 robots"],
       "correct": 0,
       "points": 25,
       "explanation": "Equal cost: Find LCM of $5 and $4 → $20.\n• At $20: Red boxes = $20 ÷ $5 = 4 boxes → 4 × 6 = 24 red robots\n• At $20: Blue boxes = $20 ÷ $4 = 5 boxes → 5 × 4 = 20 blue robots\nDifference: 24 – 20 = 4 robots (need 2 more)\nNext common cost: $40\n• Red: 8 boxes → 48 red; Blue: 10 boxes → 40 blue → diff = 8\nNo exact 2. Perfect version with exact match:"
     },
     {
-      "question": "Balloons come in packs. A pack of 5 red balloons costs $3 while a pack of 4 blue balloons costs $4. Chloe spent an equal amount on both types and bought exactly 33 balloons altogether. How many red balloons did she buy?",
+      "question": "Balloons come in packs. A pack of 5 red balloons costs $3 while a pack of 4 blue balloons costs $4. Chloe spent an equal amount on both types and bought exactly 32 balloons altogether. How many red balloons did she buy?",
       "options": ["10 balloons", "15 balloons", "20 balloons", "25 balloons"],
       "correct": 1,
       "points": 25,

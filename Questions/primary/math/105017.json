@@ -36,7 +36,7 @@
       "explanation": "Make a guess-and-check table:\n• Guess 1: 13 cars, 9 motorcycles → Wheels = 13×4 + 9×2 = 52 + 18 = 70 (too few)\n• Guess 2: 14 cars, 8 motorcycles → Wheels = 14×4 + 8×2 = 56 + 16 = 72 ✓\nAnswer: 14 cars"
     },
     {
-      "question": "In a quiz game, you get 5 points for each correct answer and lose 2 points for each wrong answer. You answered 25 questions and scored 85 points. How many questions did you answer correctly?",
+      "question": "In a quiz game, you get 5 points for each correct answer and lose 1 points for each wrong answer. You answered 18 questions and scored 36 points. How many questions did you answer correctly?",
       "options": ["18 questions", "21 questions", "19 questions", "20 questions"],
       "correct": 2,
       "points": 25,
@@ -47,4 +47,4 @@
       "options": ["16 tricycles", "14 tricycles", "18 tricycles", "20 tricycles"],
       "correct": 2,
       "points": 20,
-      "explanation": "Make a guess-and-check table:\n• Guess 1: 16 tricycles, 12 bicycles → Wheels = 16×3 +
+      "explanation": "Make a guess-and-check table: look for a pattern
