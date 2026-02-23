@@ -3,32 +3,37 @@
 <head>
     <meta charset="UTF-8">
     <meta name="viewport" content="width=device-width, initial-scale=1.0">
-    <title>🧧 Celebrate CNY with Math · Revision Arena</title>
+    <title>Auto-Quiz Game</title>
     <link rel="stylesheet" href="style.css">
     <link rel="stylesheet" href="https://cdnjs.cloudflare.com/ajax/libs/font-awesome/6.4.0/css/all.min.css">
 </head>
 <body>
     <div class="container">
-        <!-- Subtle Decorations -->
-        <div class="red-packet-decoration"></div>
-        
         <!-- PIN Screen -->
         <div id="pin-screen" class="screen active">
             <div class="header">
-                <h1><i class="fas fa-dragon"></i> Celebrate CNY with Math</h1>
-                <p class="subtitle">Enter 6-digit worksheet code • Grab red packets • Earn bonuses</p>
+                <h1><i class="fas fa-gamepad"></i> Auto-Quiz Game</h1>
+                <p class="subtitle">Enter 6-digit quiz code or browse catalog</p>
                 <div class="pin-guide">
                     <div class="guide-item">
-                        <span class="guide-digit">1</span> Level
+                        <span class="guide-digit">1</span> School Level
                         <div class="guide-tooltip">1=Primary, 2=Lower Sec, 3=Upper Sec</div>
                     </div>
                     <div class="guide-item">
-                        <span class="guide-digit">2-3</span> Grade
-                        <div class="guide-tooltip">P1-P6 (01-06), S1-S4 (01-04)</div>
+                        <span class="guide-digit">2</span> Subject
+                        <div class="guide-tooltip">0=Math, 1=Science, 2=Comb Physics, 3=Pure Physics, 4=Comb Chem, 5=Pure Chem</div>
                     </div>
                     <div class="guide-item">
-                        <span class="guide-digit">4-5</span> Chapter
-                        <div class="guide-tooltip">Chapter number (01-99)</div>
+                        <span class="guide-digit">3</span> Grade
+                        <div class="guide-tooltip">P1-P6 (1-6), S1-S4 (1-4)</div>
+                    </div>
+                    <div class="guide-item">
+                        <span class="guide-digit">4</span> Chapter
+                        <div class="guide-tooltip">Tens digit (0-9)</div>
+                    </div>
+                    <div class="guide-item">
+                        <span class="guide-digit">5</span> Chapter
+                        <div class="guide-tooltip">Ones digit (0-9)</div>
                     </div>
                     <div class="guide-item">
                         <span class="guide-digit">6</span> Worksheet
@@ -45,19 +50,19 @@
                     </div>
                     <div id="digit2" class="digit">
                         <div class="digit-number">_</div>
-                        <div class="digit-label">Grade</div>
+                        <div class="digit-label">Subject</div>
                     </div>
                     <div id="digit3" class="digit">
                         <div class="digit-number">_</div>
-                        <div class="digit-label"></div>
+                        <div class="digit-label">Grade</div>
                     </div>
                     <div id="digit4" class="digit">
                         <div class="digit-number">_</div>
-                        <div class="digit-label">Chapter</div>
+                        <div class="digit-label">Chap10</div>
                     </div>
                     <div id="digit5" class="digit">
                         <div class="digit-number">_</div>
-                        <div class="digit-label"></div>
+                        <div class="digit-label">Chap1</div>
                     </div>
                     <div id="digit6" class="digit">
                         <div class="digit-number">_</div>
@@ -67,10 +72,10 @@
                 
                 <div class="quick-actions">
                     <button id="test-pin" class="btn test-btn">
-                        <i class="fas fa-flask"></i> Try 105017
+                        <i class="fas fa-vial"></i> Test 341-09-1
                     </button>
                     <button id="scan-quizzes" class="btn scan-btn">
-                        <i class="fas fa-search"></i> Browse Worksheets
+                        <i class="fas fa-search"></i> Scan for Quizzes
                     </button>
                 </div>
             </div>
@@ -85,19 +90,19 @@
                 <button class="key" data-key="7">7</button>
                 <button class="key" data-key="8">8</button>
                 <button class="key" data-key="9">9</button>
-                <button id="clear-btn" class="key clear"><i class="fas fa-backspace"></i> Clear</button>
+                <button id="clear-btn" class="key clear"><i class="fas fa-backspace"></i></button>
                 <button class="key" data-key="0">0</button>
-                <button id="submit-pin" class="key submit"><i class="fas fa-play"></i> Start</button>
+                <button id="submit-pin" class="key submit"><i class="fas fa-play"></i> GO</button>
             </div>
             
             <div class="catalog-container">
                 <div class="catalog-header">
-                    <h3><i class="fas fa-book-open"></i> CNY Math Worksheets</h3>
-                    <span id="quiz-count" class="badge">Loading...</span>
+                    <h3><i class="fas fa-book"></i> Available Quizzes</h3>
+                    <span id="quiz-count" class="badge">Scanning...</span>
                 </div>
                 <div id="quiz-catalog" class="quiz-catalog">
                     <div class="loading-catalog">
-                        <i class="fas fa-spinner fa-spin"></i> Loading worksheets...
+                        <i class="fas fa-spinner fa-spin"></i> Scanning for quiz files...
                     </div>
                 </div>
             </div>
@@ -107,13 +112,15 @@
         <div id="loading-screen" class="screen">
             <div class="loading-content">
                 <div class="spinner"></div>
-                <h2 id="loading-message">Opening red packet...</h2>
-                <div id="loading-details" class="loading-details"></div>
+                <h2 id="loading-message">Initializing...</h2>
+                <div id="loading-details" class="loading-details">
+                    Checking quiz files...
+                </div>
                 <div class="progress-container">
                     <div id="scan-progress" class="progress-bar"></div>
                 </div>
                 <div id="found-count" class="found-count">
-                    Found: <span id="quiz-found">0</span> worksheets
+                    Found: <span id="quiz-found">0</span> quizzes
                 </div>
             </div>
         </div>
@@ -122,11 +129,13 @@
         <div id="error-screen" class="screen">
             <div class="error-content">
                 <div class="error-icon"><i class="fas fa-exclamation-triangle"></i></div>
-                <h2>Worksheet Not Found</h2>
-                <div id="error-message" class="error-details"></div>
+                <h2>Quiz Not Found</h2>
+                <div id="error-message" class="error-details">
+                    Error details will appear here
+                </div>
                 <div class="action-buttons">
                     <button id="back-to-pin-error" class="btn secondary">
-                        <i class="fas fa-home"></i> Back
+                        <i class="fas fa-home"></i> Back to Home
                     </button>
                     <button id="retry-btn" class="btn primary">
                         <i class="fas fa-redo"></i> Retry
@@ -139,15 +148,15 @@
         <div id="game-screen" class="screen">
             <div class="game-header">
                 <div class="quiz-info">
-                    <h2 id="quiz-title">Mathematics Worksheet</h2>
-                    <p id="quiz-topic">Topic • Grade</p>
+                    <h2 id="quiz-title">Quiz Title</h2>
+                    <p id="quiz-topic">Subject • Grade</p>
                     <div class="quiz-code-display">
-                        <span class="code-label">🧧 Code:</span>
-                        <span id="current-quiz-code" class="quiz-code">00000-0</span>
+                        <span class="code-label">Code:</span>
+                        <span id="current-quiz-code" class="quiz-code">000-00-0</span>
                     </div>
                 </div>
                 <div class="question-counter">
-                    Q<span id="current-q">1</span>/<span id="total-q">10</span>
+                    Question <span id="current-q">1</span>/<span id="total-q">10</span>
                 </div>
             </div>
             
@@ -156,54 +165,58 @@
                     <div class="player-header">
                         <div class="player-name">Player 1</div>
                         <div class="player-status">
-                            <span id="player1-turn" class="turn-indicator active"><i class="fas fa-dragon"></i></span>
+                            <span id="player1-turn" class="turn-indicator active"><i class="fas fa-user"></i></span>
                         </div>
                     </div>
                     <div id="score1" class="score">0</div>
-                    <div class="score-label">Fortune Points</div>
+                    <div class="score-label">Score</div>
                 </div>
                 <div id="player2" class="player">
                     <div class="player-header">
                         <div class="player-name">Player 2</div>
                         <div class="player-status">
-                            <span id="player2-turn" class="turn-indicator"><i class="fas fa-dragon"></i></span>
+                            <span id="player2-turn" class="turn-indicator"><i class="fas fa-user"></i></span>
                         </div>
                     </div>
                     <div id="score2" class="score">0</div>
-                    <div class="score-label">Fortune Points</div>
+                    <div class="score-label">Score</div>
                 </div>
             </div>
             
             <div class="question-container">
-                <div id="question-text" class="question-text">Loading question...</div>
-                <div id="options-container" class="options"></div>
+                <div id="question-text" class="question-text">
+                    Question will appear here
+                </div>
+                <div id="options-container" class="options">
+                    <!-- Options will be added here -->
+                </div>
             </div>
             
             <div class="game-controls">
                 <button id="submit-answer" class="btn primary" disabled>
-                    <i class="fas fa-check-circle"></i> Submit
+                    <i class="fas fa-paper-plane"></i> Submit Answer
                 </button>
                 <button id="next-btn" class="btn secondary" style="display:none">
-                    <i class="fas fa-arrow-right"></i> Next
+                    <i class="fas fa-arrow-right"></i> Next Question
                 </button>
                 <button id="home-btn" class="btn">
-                    <i class="fas fa-home"></i> Menu
+                    <i class="fas fa-home"></i> Home
                 </button>
             </div>
             
             <div class="feedback-section">
                 <div id="answer-feedback" class="feedback">
                     <div class="feedback-placeholder">
-                        <i class="fas fa-lightbulb"></i> Select an answer
+                        <i class="fas fa-lightbulb"></i> Select an answer to continue
                     </div>
                 </div>
                 
                 <div id="treasure-section" class="treasure-section" style="display:none">
-                    <h3><i class="fas fa-gift"></i> Pick a Red Packet!</h3>
+                    <h3><i class="fas fa-gift"></i> Pick a Treasure Box!</h3>
                     <div class="treasure-boxes">
-                        <div class="treasure-box" data-box="1">🧧</div>
-                        <div class="treasure-box" data-box="2">🧧</div>
-                        <div class="treasure-box" data-box="3">🧧</div>
+                        <div class="treasure-box" data-box="1">🎁</div>
+                        <div class="treasure-box" data-box="2">🎁</div>
+                        <div class="treasure-box" data-box="3">🎁</div>
                     </div>
                     <div id="powerup-result"></div>
                 </div>
@@ -214,7 +227,7 @@
                     <div class="trophy">
                         <i class="fas fa-trophy"></i>
                     </div>
-                    <h2 id="winner-message">Game Complete!</h2>
+                    <h2 id="winner-message">Game Over!</h2>
                     <div id="winner-name" class="winner-name">Winner</div>
                     <div class="final-scores">
                         <div class="final-score">
@@ -231,7 +244,7 @@
                             <i class="fas fa-redo"></i> Play Again
                         </button>
                         <button id="new-chapter-btn" class="btn">
-                            <i class="fas fa-book"></i> New Worksheet
+                            <i class="fas fa-book"></i> New Quiz
                         </button>
                     </div>
                 </div>

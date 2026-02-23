@@ -11,8 +11,7 @@ const gameState = {
     powerupUsed: false,
     canUsePowerup: false,
     currentQuizCode: '',
-    quizCatalog: [],
-    currentQuizInfo: null
+    quizCatalog: []
 };
 
 // ========== QUIZ CODE DECODER ==========
@@ -36,26 +35,20 @@ function decodeQuizCode(code) {
     
     if (digits.length !== 6) return null;
     
-    const [levelDigit, gradeTens, gradeOnes, chapterTens, chapterOnes, worksheet] = digits;
+    const [levelDigit, subjectDigit, gradeDigit, chap10, chap1, worksheet] = digits;
     
     // Validate digits
     if (levelDigit < 1 || levelDigit > 3) return null;
-    
-    // For Primary level, grade is tens digit (0-6), for Secondary, grade is tens digit (1-4)
-    const grade = parseInt(`${gradeTens}${gradeOnes}`);
+    if (subjectDigit < 0 || subjectDigit > 5) return null;
     
     const level = LEVELS[levelDigit];
-    
-    // Determine subject based on grade and level (for your files, we'll use default mapping)
-    // Since your files are all Mathematics, we'll set subject to 0 (Mathematics)
-    const subjectDigit = 0; // All your files are Mathematics
     const subject = SUBJECTS[subjectDigit];
     
-    // Format: XXX-XX-X (for display)
-    const formattedCode = `${levelDigit}${grade}${chapterTens}${chapterOnes}-${worksheet}`;
+    // Format: XXX-XX-X
+    const formattedCode = `${levelDigit}${subjectDigit}${gradeDigit}-${chap10}${chap1}-${worksheet}`;
     
-    // Build filename: XXXXXX.json (your actual file naming)
-    const filename = `${levelDigit}${grade}${chapterTens}${chapterOnes}${worksheet}.json`;
+    // Build filename: XXXXXX.json (no hyphens)
+    const filename = `${levelDigit}${subjectDigit}${gradeDigit}${chap10}${chap1}${worksheet}.json`;
     
     // Build path: Questions/[level]/[subject]/filename.json
     const filepath = `Questions/${level.folder}/${subject.folder}/${filename}`;
@@ -63,9 +56,9 @@ function decodeQuizCode(code) {
     // Grade label
     let gradeLabel = '';
     if (levelDigit === 1) {
-        gradeLabel = `P${grade}`;
+        gradeLabel = `P${gradeDigit}`;
     } else {
-        gradeLabel = `S${grade}`;
+        gradeLabel = `S${gradeDigit}`;
     }
     
     return {
@@ -75,11 +68,11 @@ function decodeQuizCode(code) {
         filepath: filepath,
         level: level.name,
         subject: subject.name,
-        grade: grade,
+        grade: gradeDigit,
         gradeLabel: gradeLabel,
-        chapter: parseInt(`${chapterTens}${chapterOnes}`),
+        chapter: parseInt(`${chap10}${chap1}`),
         worksheet: worksheet,
-        fullName: `${level.name} ${gradeLabel} ${subject.name} Chapter ${parseInt(`${chapterTens}${chapterOnes}`)} Worksheet ${worksheet}`
+        fullName: `${level.name} ${gradeLabel} ${subject.name} Chapter ${parseInt(`${chap10}${chap1}`)} Worksheet ${worksheet}`
     };
 }
 
@@ -98,17 +91,55 @@ async function scanForQuizzes() {
     
     // Define all possible paths to scan
     const scanPaths = [
-        { level: 1, levelName: 'primary', subjects: ['math'] },
-        { level: 2, levelName: 'lower-secondary', subjects: ['math'] },
-        { level: 3, levelName: 'upper-secondary', subjects: ['math'] }
+        { level: 1, levelName: 'primary', subjects: [0, 1] },
+        { level: 2, levelName: 'lower-secondary', subjects: [0, 1] },
+        { level: 3, levelName: 'upper-secondary', subjects: [0, 2, 3, 4, 5] }
     ];
     
     try {
-        loadingMessage.textContent = 'Checking worksheets...';
-        loadingDetails.textContent = 'Looking for CNY math worksheets...';
+        // Check if Questions folder exists
+        loadingMessage.textContent = 'Checking Questions folder...';
+        loadingDetails.textContent = 'Looking for quiz files...';
         
-        // For demo purposes, we'll load from localStorage or default list
-        // In a real server environment, you'd need server-side file listing
+        const baseCheck = await fetch('Questions/');
+        if (!baseCheck.ok) {
+            throw new Error('Questions folder not found. Please create it with the proper structure.');
+        }
+        
+        // Scan each level and subject
+        for (let levelIdx = 0; levelIdx < scanPaths.length; levelIdx++) {
+            const levelData = scanPaths[levelIdx];
+            
+            for (let subjIdx = 0; subjIdx < levelData.subjects.length; subjIdx++) {
+                const subjectDigit = levelData.subjects[subjIdx];
+                const subject = SUBJECTS[subjectDigit];
+                
+                const path = `Questions/${levelData.levelName}/${subject.folder}/`;
+                loadingDetails.textContent = `Scanning ${levelData.levelName}/${subject.name}...`;
+                
+                // Update progress
+                const progress = ((levelIdx * levelData.subjects.length + subjIdx + 1) / 
+                                 (scanPaths.length * scanPaths.reduce((a, b) => a + b.subjects.length, 0))) * 100;
+                progressBar.style.width = `${progress}%`;
+                
+                try {
+                    // Try to get directory listing
+                    const response = await fetch(path);
+                    if (!response.ok) continue;
+                    
+                    // Note: This will only work if server provides directory listing
+                    // For production, you'd need a server-side script to list files
+                    
+                } catch (error) {
+                    console.log(`Skipping ${path}: ${error.message}`);
+                }
+                
+                // For now, we'll load from a pre-scanned list
+                // In production, you'd implement actual file scanning here
+            }
+        }
+        
+        // After scanning (or in development), load from localStorage or default list
         await loadCatalogFromStorage();
         
         // Update progress to 100%
@@ -119,15 +150,15 @@ async function scanForQuizzes() {
         // Show completion message
         setTimeout(() => {
             if (foundQuizzes === 0) {
-                loadingMessage.textContent = 'No worksheets found';
-                loadingDetails.textContent = 'Add JSON files to the Questions folder';
+                loadingMessage.textContent = 'No quizzes found';
+                loadingDetails.textContent = 'Add JSON quiz files to the Questions folder';
                 setTimeout(() => {
                     showScreen('pin-screen');
                     updateCatalogDisplay();
                 }, 2000);
             } else {
-                loadingMessage.textContent = 'Happy CNY! Worksheets loaded!';
-                loadingDetails.textContent = `Found ${foundQuizzes} worksheets with red packet bonuses`;
+                loadingMessage.textContent = 'Scan complete!';
+                loadingDetails.textContent = `Found ${foundQuizzes} quiz files`;
                 setTimeout(() => {
                     showScreen('pin-screen');
                     updateCatalogDisplay();
@@ -157,74 +188,13 @@ async function loadCatalogFromStorage() {
         return;
     }
     
-    // If no stored catalog, create from your actual files
+    // If no stored catalog, create from default files
+    // This is where you'd add your default quizzes
     const defaultQuizzes = [
-        { 
-            code: '10501-7', 
-            filename: '105017.json', 
-            path: 'Questions/primary/math/105017.json', 
-            name: 'P5 Math Chapter 1 Worksheet 7 - Guess and Check',
-            level: 'Primary',
-            grade: 'P5',
-            subject: 'Mathematics',
-            chapter: 1,
-            worksheet: 7
-        },
-        { 
-            code: '10501-8', 
-            filename: '105018.json', 
-            path: 'Questions/primary/math/105018.json', 
-            name: 'P5 Math Chapter 1 Worksheet 8 - Common Multiples',
-            level: 'Primary',
-            grade: 'P5',
-            subject: 'Mathematics',
-            chapter: 1,
-            worksheet: 8
-        },
-        { 
-            code: '10501-9', 
-            filename: '105019.json', 
-            path: 'Questions/primary/math/105019.json', 
-            name: 'P5 Math Chapter 1 Worksheet 9 - Equal Spending',
-            level: 'Primary',
-            grade: 'P5',
-            subject: 'Mathematics',
-            chapter: 1,
-            worksheet: 9
-        },
-        { 
-            code: '10502-1', 
-            filename: '105021.json', 
-            path: 'Questions/primary/math/105021.json', 
-            name: 'P5 Math Chapter 2 Worksheet 1 - Fractions & Decimals',
-            level: 'Primary',
-            grade: 'P5',
-            subject: 'Mathematics',
-            chapter: 2,
-            worksheet: 1
-        },
-        { 
-            code: '10502-2', 
-            filename: '105022.json', 
-            path: 'Questions/primary/math/105022.json', 
-            name: 'P5 Math Chapter 2 Worksheet 2 - Advanced Fractions',
-            level: 'Primary',
-            grade: 'P5',
-            subject: 'Mathematics',
-            chapter: 2,
-            worksheet: 2
-        },
-        { 
-            code: '10502-3', 
-            filename: '105023.json', 
-            path: 'Questions/primary/math/105023.json', 
-            name: 'P5 Math Chapter 2 Worksheet 3 - Fraction of Quantity',
-            level: 'Primary',
-            grade: 'P5',
-            subject: 'Mathematics',
-            chapter: 2,
-            worksheet: 3
-        }
+        { code: '101-01-1', filename: '101011.json', path: 'Questions/primary/math/101011.json', name: 'P1 Math Chapter 1' },
+        { code: '201-01-1', filename: '201011.json', path: 'Questions/lower-secondary/math/201011.json', name: 'Sec 1 Math Chapter 1' },
+        { code: '201-01-2', filename: '201012.json', path: 'Questions/lower-secondary/math/201012.json', name: 'Sec 1 Math Chapter 1 Worksheet 2' },
+        { code: '342-09-1', filename: '342091.json', path: 'Questions/upper-secondary/combined-chem/342091.json', name: 'Sec 4 Combined Chemistry Chapter 9' }
     ];
     
     gameState.quizCatalog = defaultQuizzes;
@@ -260,25 +230,22 @@ function updateCatalogDisplay() {
         catalogEl.innerHTML = `
             <div class="no-quizzes">
                 <i class="fas fa-search"></i>
-                <h4>No worksheets found</h4>
+                <h4>No quizzes found</h4>
                 <p>Add JSON files to the Questions folder</p>
-                <button id="refresh-catalog" class="btn small" onclick="location.reload()">
+                <button id="refresh-catalog" class="btn small">
                     <i class="fas fa-redo"></i> Refresh
                 </button>
             </div>
         `;
-        countEl.textContent = '0 worksheets';
+        countEl.textContent = '0 quizzes';
         return;
     }
     
     // Sort quizzes by code
     const sortedQuizzes = [...gameState.quizCatalog].sort((a, b) => a.code.localeCompare(b.code));
     
-    catalogEl.innerHTML = sortedQuizzes.map(quiz => {
-        // Extract raw code from filename (remove .json)
-        const rawCode = quiz.filename.replace('.json', '');
-        return `
-        <div class="quiz-item" data-code="${rawCode}">
+    catalogEl.innerHTML = sortedQuizzes.map(quiz => `
+        <div class="quiz-item" data-code="${quiz.code.replace(/-/g, '')}">
             <div class="quiz-header">
                 <span class="quiz-code">${quiz.code}</span>
                 <span class="quiz-name">${quiz.name}</span>
@@ -289,9 +256,9 @@ function updateCatalogDisplay() {
                 <span class="quiz-subject">${quiz.subject}</span>
             </div>
         </div>
-    `}).join('');
+    `).join('');
     
-    countEl.textContent = `${gameState.quizCatalog.length} worksheets`;
+    countEl.textContent = `${gameState.quizCatalog.length} quizzes`;
     
     // Add click handlers
     document.querySelectorAll('.quiz-item').forEach(item => {
@@ -365,117 +332,55 @@ function showScreen(screenId) {
 async function loadQuizByCode(code) {
     console.log(`🔍 Loading: ${code}`);
     
-    // Decode the quiz code (for display purposes)
+    // Decode the quiz code
     const quizInfo = decodeQuizCode(code);
-    
-    // Build filename directly from the 6-digit code
-    const filename = `${code}.json`;
-    
-    // For your specific files, we need to determine the correct path
-    // Based on your files: 105017.json, 105018.json, etc.
-    // Format: first digit = level (1=Primary), next two digits = grade (05=P5), 
-    // next two digits = chapter (01,02), last digit = worksheet (7,8,9,1,2,3)
-    
-    let filepath = '';
-    let level = 'primary';
-    let subject = 'math';
-    let gradeLabel = '';
-    let chapter = 0;
-    let worksheet = 0;
-    let fullName = '';
-    
-    if (code.length === 6) {
-        const levelDigit = parseInt(code[0]);
-        const gradeNum = parseInt(code.substring(1, 3));
-        const chapterNum = parseInt(code.substring(3, 5));
-        const worksheetNum = parseInt(code[5]);
-        
-        chapter = chapterNum;
-        worksheet = worksheetNum;
-        
-        if (levelDigit === 1) {
-            level = 'primary';
-            gradeLabel = `P${gradeNum}`;
-        } else if (levelDigit === 2) {
-            level = 'lower-secondary';
-            gradeLabel = `S${gradeNum}`;
-        } else {
-            level = 'upper-secondary';
-            gradeLabel = `S${gradeNum}`;
-        }
-        
-        filepath = `Questions/${level}/${subject}/${filename}`;
-        fullName = `${level} ${gradeLabel} Math Chapter ${chapterNum} Worksheet ${worksheetNum}`;
-    } else {
-        filepath = `Questions/primary/math/${filename}`;
-        fullName = `Math Worksheet`;
+    if (!quizInfo) {
+        return { 
+            success: false, 
+            error: `Invalid quiz code format: ${code}` 
+        };
     }
     
-    // Store current quiz info
-    gameState.currentQuizCode = code;
-    gameState.currentQuizInfo = {
-        code: code,
-        filename: filename,
-        filepath: filepath,
-        fullName: fullName,
-        gradeLabel: gradeLabel,
-        subject: 'Mathematics',
-        chapter: chapter,
-        worksheet: worksheet
-    };
+    // Store current quiz code
+    gameState.currentQuizCode = quizInfo.code;
     
     // Update loading display
-    document.getElementById('loading-message').textContent = `Opening worksheet ${code}...`;
+    document.getElementById('loading-message').textContent = `Loading ${quizInfo.code}...`;
     
     try {
         // Try to load the file
-        console.log(`Fetching from: ${filepath}`);
-        const response = await fetch(filepath);
+        const response = await fetch(quizInfo.filepath);
         
         if (!response.ok) {
             if (response.status === 404) {
-                throw new Error(`File not found: ${filename}`);
+                throw new Error(`File not found: ${quizInfo.filename}`);
             }
             throw new Error(`HTTP ${response.status}: ${response.statusText}`);
         }
         
         const data = await response.json();
-        console.log('✅ Worksheet loaded successfully', data);
+        console.log('✅ Quiz loaded successfully');
         
         // Validate quiz data
         if (!data.questions || !Array.isArray(data.questions)) {
-            throw new Error('Invalid worksheet format: missing questions array');
+            throw new Error('Invalid quiz format: Missing questions array');
         }
         
         if (data.questions.length === 0) {
-            throw new Error('Worksheet is empty');
+            throw new Error('Quiz file is empty');
         }
         
         // Add to catalog if not already there
-        const catalogEntry = {
-            code: code.substring(0,5) + '-' + code[5], // Format as XXX-XX-X
-            filename: filename,
-            path: filepath,
-            name: data.title || fullName,
-            subject: data.subject || 'Mathematics',
-            level: data.level || (code[0] === '1' ? 'Primary' : 'Secondary'),
-            grade: data.grade || gradeLabel
-        };
-        
-        const exists = gameState.quizCatalog.find(q => q.filename === filename);
-        if (!exists) {
-            gameState.quizCatalog.push(catalogEntry);
-            localStorage.setItem('quizCatalog', JSON.stringify(gameState.quizCatalog));
-        }
+        addQuizToCatalog(quizInfo);
         
         return { 
             success: true, 
             data: data, 
-            info: gameState.currentQuizInfo 
+            info: quizInfo 
         };
         
     } catch (error) {
-        console.error('❌ Failed to load worksheet:', error);
+        console.error('❌ Error loading quiz:', error);
         return { 
             success: false, 
             error: error.message 
@@ -493,26 +398,30 @@ async function submitPin() {
     }
     
     showScreen('loading-screen');
-    document.getElementById('loading-message').textContent = 'Opening worksheet...';
+    document.getElementById('loading-message').textContent = 'Loading quiz...';
     
     try {
         const result = await loadQuizByCode(pin);
         
         if (!result.success) {
-            let errorMsg = `<strong>Worksheet ${pin} not found</strong><br><br>`;
+            // Check if this might be a new file not in catalog
+            const quizInfo = decodeQuizCode(pin);
+            let errorMsg = `<strong>Worksheet ${quizInfo?.code || pin} not found</strong><br><br>`;
             errorMsg += `<div style="color: #666; font-size: 0.9rem;">`;
             errorMsg += `Error: ${result.error}</div>`;
             
-            // Suggest correct filename format
-            errorMsg += `<br><div style="background: #f0f9ff; padding: 15px; border-radius: 10px; margin-top: 15px;">`;
-            errorMsg += `<strong>File format:</strong><br>`;
-            errorMsg += `<code style="background: #e1f0ff; padding: 5px 10px; border-radius: 5px; display: inline-block; margin-top: 5px;">`;
-            errorMsg += `Questions/primary/math/${pin}.json</code>`;
-            errorMsg += `</div>`;
+            // Suggest creating the file
+            if (quizInfo && result.error.includes('not found')) {
+                errorMsg += `<br><div style="background: #f0f9ff; padding: 15px; border-radius: 10px; margin-top: 15px;">`;
+                errorMsg += `<strong>Suggested file location:</strong><br>`;
+                errorMsg += `<code style="background: #e1f0ff; padding: 5px 10px; border-radius: 5px; display: inline-block; margin-top: 5px;">`;
+                errorMsg += `${quizInfo.filepath}</code>`;
+                errorMsg += `</div>`;
+            }
             
             // Show available quizzes
             if (gameState.quizCatalog.length > 0) {
-                errorMsg += `<br><strong>Available worksheets (${gameState.quizCatalog.length}):</strong><br>`;
+                errorMsg += `<br><strong>Available quizzes (${gameState.quizCatalog.length}):</strong><br>`;
                 gameState.quizCatalog.slice(0, 5).forEach(q => {
                     errorMsg += `<div style="margin: 5px 0; padding: 8px; background: #f7fafc; border-radius: 5px;">
                         • <strong>${q.code}</strong>: ${q.name}
@@ -536,11 +445,9 @@ async function submitPin() {
         document.getElementById('quiz-title').textContent = 
             result.data.title || result.info.fullName;
         document.getElementById('quiz-topic').textContent = 
-            `Mathematics • ${result.info.gradeLabel || 'P5'}`;
-        
-        // Format code for display (XXX-XX-X)
-        const displayCode = pin.substring(0,5) + '-' + pin[5];
-        document.getElementById('current-quiz-code').textContent = displayCode;
+            `${result.info.subject} • ${result.info.gradeLabel}`;
+        document.getElementById('current-quiz-code').textContent = 
+            result.info.code;
         
         // Initialize game
         initGame();
@@ -615,7 +522,7 @@ function loadQuestion() {
     
     // Hide feedback and treasure
     document.getElementById('answer-feedback').innerHTML = 
-        '<div class="feedback-placeholder"><i class="fas fa-lightbulb"></i> Select an answer</div>';
+        '<div class="feedback-placeholder"><i class="fas fa-lightbulb"></i> Select an answer to continue</div>';
     
     document.getElementById('treasure-section').style.display = 'none';
     
@@ -669,7 +576,7 @@ function submitAnswer() {
         
         let feedback = `
             <div class="feedback-correct">
-                <span>✅🧧</span>
+                <span>✅</span>
                 <div>
                     <h3>Correct! +${points} points</h3>
                     ${question.explanation ? `<p><strong>Explanation:</strong> ${question.explanation}</p>` : ''}
@@ -743,13 +650,13 @@ function endGame() {
     let winnerName = '';
     
     if (score1 > score2) {
-        winnerMessage = 'Player 1 Wins! 🏆🧧';
+        winnerMessage = 'Player 1 Wins! 🏆';
         winnerName = 'Player 1';
     } else if (score2 > score1) {
-        winnerMessage = 'Player 2 Wins! 🏆🧧';
+        winnerMessage = 'Player 2 Wins! 🏆';
         winnerName = 'Player 2';
     } else {
-        winnerMessage = "It's a Tie! 🤝🧧";
+        winnerMessage = "It's a Tie! 🤝";
         winnerName = 'Both Players';
     }
     
@@ -763,11 +670,11 @@ function endGame() {
 
 // ========== POWER-UPS ==========
 const powerUps = [
-    { icon: '🧧⚡', name: 'Double Points', type: 'double' },
-    { icon: '🧧➗', name: 'Half Points', type: 'half' },
-    { icon: '🧧➖', name: 'Negative Points', type: 'negative' },
-    { icon: '🧧🔄', name: 'Switch Scores', type: 'switch' },
-    { icon: '🧧✨', name: 'Bonus +10', type: 'bonus' }
+    { icon: '⚡', name: 'Double Points', type: 'double' },
+    { icon: '➗', name: 'Half Points', type: 'half' },
+    { icon: '➖', name: 'Negative Points', type: 'negative' },
+    { icon: '🔄', name: 'Switch Scores', type: 'switch' },
+    { icon: '✨', name: 'Bonus +10', type: 'bonus' }
 ];
 
 function openTreasureBox(boxNum) {
@@ -790,7 +697,7 @@ function openTreasureBox(boxNum) {
         <div class="powerup-display">
             <div class="powerup-icon">${powerUp.icon}</div>
             <h3>${powerUp.name}</h3>
-            <p>Happy CNY! You got a red packet bonus!</p>
+            <p>Power-up activated!</p>
         </div>
     `;
     
@@ -836,12 +743,12 @@ function applyPowerUp(type) {
     
     // Add message
     const feedbackDiv = document.getElementById('answer-feedback');
-    feedbackDiv.innerHTML += `<div class="powerup-message">🧧 ${message}</div>`;
+    feedbackDiv.innerHTML += `<div class="powerup-message">🎁 ${message}</div>`;
 }
 
 // ========== INITIALIZATION ==========
 document.addEventListener('DOMContentLoaded', async function() {
-    console.log('🧧 Celebrate CNY with Math - Loaded!');
+    console.log('🚀 Auto-Quiz Game Initialized');
     
     // Initialize PIN display
     updatePinDisplay();
@@ -868,9 +775,9 @@ document.addEventListener('DOMContentLoaded', async function() {
     // Scan button
     document.getElementById('scan-quizzes').addEventListener('click', scanForQuizzes);
     
-    // Test button - update to one of your actual files
+    // Test button
     document.getElementById('test-pin').addEventListener('click', function() {
-        setPinFromCode('105017'); // 10501-7 - Guess and Check
+        setPinFromCode('342091'); // 342-09-1
         setTimeout(submitPin, 500);
     });
     
@@ -917,9 +824,10 @@ document.addEventListener('DOMContentLoaded', async function() {
         }
     });
     
-    console.log('✅ Happy Chinese New Year!');
-    console.log('📂 File format: 6-digit code.json (e.g., 105017.json)');
-    console.log('📂 105017 = Primary/P5/Chapter 1/Worksheet 7');
+    console.log('✅ All systems ready');
+    console.log('💡 Add JSON quiz files to the Questions folder');
+    console.log('📂 File naming: 3-digit level/subject/grade + 2-digit chapter + 1-digit worksheet');
+    console.log('📂 Example: 342091.json = 3(upper sec)4(comb chem)2(S4)09(chapter9)1(worksheet1)');
 });
 
 // ========== DEBUG & DEVELOPMENT TOOLS ==========
@@ -938,9 +846,27 @@ window.quizTools = {
         console.log('Catalog reset');
     },
     
+    // Add a test quiz
+    addTestQuiz: function() {
+        const testQuiz = {
+            code: '201-01-1',
+            filename: '201011.json',
+            path: 'Questions/lower-secondary/math/201011.json',
+            name: 'Sec 1 Math Chapter 1',
+            subject: 'Mathematics',
+            level: 'Lower Secondary',
+            grade: 'S1'
+        };
+        
+        gameState.quizCatalog.push(testQuiz);
+        localStorage.setItem('quizCatalog', JSON.stringify(gameState.quizCatalog));
+        updateCatalogDisplay();
+        console.log('Test quiz added');
+    },
+    
     // Show current state
     showState: function() {
-        console.log('Current code:', gameState.pin);
+        console.log('Current PIN:', gameState.pin);
         console.log('Catalog size:', gameState.quizCatalog.length);
         console.log('Catalog:', gameState.quizCatalog);
     }
