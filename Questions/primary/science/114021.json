@@ -1,0 +1,191 @@
+{
+    "title": "Human System: Digestive System Introduction",
+    "topic": "Human System",
+    "subject": "Science",
+    "level": "Primary",
+    "grade": "P4",
+    "chapter": "Human System (Digestive System)",
+    "worksheet": 1,
+    "questions": [
+        {
+            "question": "Which of the following is NOT one of the five human systems in our body?",
+            "options": [
+                "Digestive system",
+                "Respiratory system",
+                "Transportation system",
+                "Circulatory system"
+            ],
+            "correct": 2,
+            "points": 10,
+            "explanation": "The five human systems are digestive, respiratory, circulatory, skeletal, and muscular systems. Transportation system is not a human body system."
+        },
+        {
+            "question": "What is the main function of the digestive system?",
+            "options": [
+                "To help us breathe",
+                "To break down food and absorb nutrients",
+                "To pump blood around the body",
+                "To help us move"
+            ],
+            "correct": 1,
+            "points": 10,
+            "explanation": "The digestive system breaks down the food we eat into simpler substances that our body can absorb and use for energy, growth, and repair."
+        },
+        {
+            "question": "Which is the correct order of food passing through the digestive system?",
+            "options": [
+                "Mouth → Stomach → Gullet → Small intestine → Large intestine",
+                "Mouth → Gullet → Stomach → Small intestine → Large intestine",
+                "Mouth → Gullet → Small intestine → Stomach → Large intestine",
+                "Mouth → Stomach → Gullet → Large intestine → Small intestine"
+            ],
+            "correct": 1,
+            "points": 15,
+            "explanation": "Food travels in this order: Mouth (chewing) → Gullet (food pipe) → Stomach (mixing and breaking down) → Small intestine (absorption) → Large intestine (water absorption)."
+        },
+        {
+            "question": "What happens to food in the mouth?",
+            "options": [
+                "Food is absorbed into the blood",
+                "Food is broken down by teeth and mixed with saliva",
+                "Food is stored for later use",
+                "Food is turned into waste"
+            ],
+            "correct": 1,
+            "points": 10,
+            "explanation": "In the mouth, teeth chew and break food into smaller pieces, while saliva (spit) moistens the food and starts the digestion process."
+        },
+        {
+            "question": "What is the function of the gullet?",
+            "options": [
+                "To chew food",
+                "To absorb nutrients from food",
+                "To push food from the mouth to the stomach",
+                "To remove waste from the body"
+            ],
+            "correct": 2,
+            "points": 10,
+            "explanation": "The gullet (also called the oesophagus or food pipe) is a muscular tube that pushes food from the mouth down to the stomach."
+        },
+        {
+            "question": "What happens in the stomach?",
+            "options": [
+                "Food is chewed into smaller pieces",
+                "Food is mixed with digestive juices and broken down further",
+                "Nutrients are absorbed into the blood",
+                "Water is removed from undigested food"
+            ],
+            "correct": 1,
+            "points": 15,
+            "explanation": "In the stomach, food is mixed with digestive juices (acids and enzymes) that break it down into a liquid mixture. The stomach muscles also churn the food."
+        },
+        {
+            "question": "Where does most of the absorption of digested food into the blood take place?",
+            "options": [
+                "Stomach",
+                "Large intestine",
+                "Small intestine",
+                "Gullet"
+            ],
+            "correct": 2,
+            "points": 15,
+            "explanation": "The small intestine is where most nutrients from digested food are absorbed into the bloodstream to be carried to all parts of the body."
+        },
+        {
+            "question": "What is the main function of the large intestine?",
+            "options": [
+                "To break down food",
+                "To absorb water from undigested food",
+                "To produce digestive juices",
+                "To chew food"
+            ],
+            "correct": 1,
+            "points": 15,
+            "explanation": "The large intestine absorbs water from the undigested food, turning it into solid waste (faeces) that will be removed from the body."
+        },
+        {
+            "question": "Which system helps us to breathe?",
+            "options": [
+                "Digestive system",
+                "Respiratory system",
+                "Circulatory system",
+                "Skeletal system"
+            ],
+            "correct": 1,
+            "points": 10,
+            "explanation": "The respiratory system helps us breathe by taking in oxygen and removing carbon dioxide from our body."
+        },
+        {
+            "question": "What is the function of the circulatory system?",
+            "options": [
+                "To break down food",
+                "To help us move",
+                "To pump and transport blood around the body",
+                "To protect our organs"
+            ],
+            "correct": 2,
+            "points": 10,
+            "explanation": "The circulatory system, which includes the heart and blood vessels, pumps blood to transport nutrients, oxygen, and waste products throughout the body."
+        },
+        {
+            "question": "After food leaves the stomach, where does it go next?",
+            "options": [
+                "Gullet",
+                "Large intestine",
+                "Small intestine",
+                "Mouth"
+            ],
+            "correct": 2,
+            "points": 10,
+            "explanation": "After food is broken down in the stomach, it moves into the small intestine where nutrients are absorbed."
+        },
+        {
+            "question": "Which part of the digestive system is the longest?",
+            "options": [
+                "Stomach",
+                "Gullet",
+                "Small intestine",
+                "Large intestine"
+            ],
+            "correct": 2,
+            "points": 10,
+            "explanation": "The small intestine is the longest part of the digestive system, measuring about 6-7 meters long in adults. It is called 'small' because of its narrow diameter, not its length."
+        },
+        {
+            "question": "What would happen if the digestive system did not work properly?",
+            "options": [
+                "We would not be able to breathe",
+                "Our body would not get the nutrients it needs from food",
+                "Our blood would not circulate",
+                "We would not be able to move"
+            ],
+            "correct": 1,
+            "points": 15,
+            "explanation": "If the digestive system does not work properly, our body cannot break down food and absorb nutrients, which are essential for energy, growth, and staying healthy."
+        },
+        {
+            "question": "Which human system provides support and structure to our body?",
+            "options": [
+                "Muscular system",
+                "Skeletal system",
+                "Digestive system",
+                "Respiratory system"
+            ],
+            "correct": 1,
+            "points": 10,
+            "explanation": "The skeletal system, made up of bones, provides support and structure to our body, protects our organs, and works with muscles to help us move."
+        },
+        {
+            "question": "Why is it important to chew food thoroughly before swallowing?",
+            "options": [
+                "To make the food taste better",
+                "To break food into smaller pieces for easier digestion",
+                "To make the stomach work harder",
+                "To prevent the gullet from working"
+            ],
+            "correct": 1,
+            "points": 15,
+            "explanation": "Chewing food thoroughly breaks it into smaller pieces and mixes it with saliva, making it easier for the rest of the digestive system to break it down and absorb nutrients efficiently."
+        }
+    ]
+}

@@ -1,0 +1,191 @@
+{
+    "title": "Human Digestive System: Parts, Functions and Digestion Process",
+    "topic": "Human System",
+    "subject": "Science",
+    "level": "Primary",
+    "grade": "P4",
+    "chapter": "Human System (Digestive System)",
+    "worksheet": 2,
+    "questions": [
+        {
+            "question": "Which is the correct order of food passing through the digestive system?",
+            "options": [
+                "Mouth → Stomach → Gullet → Small intestine → Large intestine",
+                "Mouth → Gullet → Stomach → Small intestine → Large intestine",
+                "Mouth → Gullet → Small intestine → Stomach → Large intestine",
+                "Mouth → Stomach → Gullet → Large intestine → Small intestine"
+            ],
+            "correct": 1,
+            "points": 15,
+            "explanation": "Food travels in this order: Mouth (chewing) → Gullet (food pipe) → Stomach (mixing and breaking down) → Small intestine (absorption of nutrients) → Large intestine (water absorption)."
+        },
+        {
+            "question": "What happens to food in the mouth during digestion?",
+            "options": [
+                "Food is absorbed into the blood",
+                "Food is broken down by teeth and mixed with saliva",
+                "Food is stored for later use",
+                "Food is turned into waste immediately"
+            ],
+            "correct": 1,
+            "points": 10,
+            "explanation": "In the mouth, teeth chew and break food into smaller pieces (mechanical digestion), while saliva moistens the food and starts breaking it down chemically. This makes food easier to swallow and digest."
+        },
+        {
+            "question": "Why is it important to chew food thoroughly before swallowing?",
+            "options": [
+                "To make the food taste better",
+                "To break food into smaller pieces for easier digestion and swallowing",
+                "To make the stomach work harder",
+                "To prevent the gullet from working"
+            ],
+            "correct": 1,
+            "points": 15,
+            "explanation": "Chewing food thoroughly breaks it into smaller pieces, increasing the surface area for digestive juices to work on. This makes digestion more efficient and prevents choking. Well-chewed food is also easier to swallow."
+        },
+        {
+            "question": "What is the main function of the gullet (oesophagus)?",
+            "options": [
+                "To chew food into smaller pieces",
+                "To absorb nutrients from food",
+                "To push food from the mouth to the stomach",
+                "To remove waste from the body"
+            ],
+            "correct": 2,
+            "points": 10,
+            "explanation": "The gullet is a muscular tube that connects the mouth to the stomach. Its main function is to push food down to the stomach through muscle contractions. No digestion or absorption happens in the gullet."
+        },
+        {
+            "question": "What happens to food in the stomach?",
+            "options": [
+                "Food is chewed into smaller pieces",
+                "Food is mixed with digestive juices and broken down further",
+                "Nutrients are absorbed into the blood",
+                "Water is removed from undigested food"
+            ],
+            "correct": 1,
+            "points": 15,
+            "explanation": "In the stomach, food is mixed with digestive juices (acids and enzymes) that break it down into a liquid mixture. The stomach muscles also churn and mix the food. Food stays in the stomach for about 2-4 hours."
+        },
+        {
+            "question": "Where does most of the absorption of digested food into the blood take place?",
+            "options": [
+                "Stomach",
+                "Large intestine",
+                "Small intestine",
+                "Gullet"
+            ],
+            "correct": 2,
+            "points": 15,
+            "explanation": "The small intestine is where most nutrients from digested food are absorbed into the bloodstream. The walls of the small intestine have tiny finger-like projections that increase surface area for absorption. Nutrients are then carried to all parts of the body."
+        },
+        {
+            "question": "What is the main function of the large intestine?",
+            "options": [
+                "To break down food completely",
+                "To absorb water from undigested food",
+                "To produce digestive juices",
+                "To chew food"
+            ],
+            "correct": 1,
+            "points": 15,
+            "explanation": "The large intestine absorbs water from the undigested food, turning it into solid waste (faeces). Any remaining nutrients may also be absorbed. The waste is then stored before being removed from the body."
+        },
+        {
+            "question": "After food leaves the stomach, where does it go next?",
+            "options": [
+                "Gullet",
+                "Large intestine",
+                "Small intestine",
+                "Mouth"
+            ],
+            "correct": 2,
+            "points": 10,
+            "explanation": "After food is partially digested in the stomach, it moves into the small intestine. Here, digestion is completed and nutrients are absorbed into the bloodstream to be used by the body."
+        },
+        {
+            "question": "Which part of the digestive system is the longest?",
+            "options": [
+                "Stomach",
+                "Gullet",
+                "Small intestine",
+                "Large intestine"
+            ],
+            "correct": 2,
+            "points": 10,
+            "explanation": "The small intestine is the longest part of the digestive system, measuring about 6-7 meters long in adults. It is called 'small' because of its narrow diameter (about 2.5 cm), not its length. The large intestine is shorter but wider."
+        },
+        {
+            "question": "How long does it typically take for food to pass through the entire digestive system?",
+            "options": [
+                "1-2 hours",
+                "6-8 hours",
+                "24-72 hours",
+                "1-2 weeks"
+            ],
+            "correct": 2,
+            "points": 15,
+            "explanation": "It takes about 24-72 hours (1-3 days) for food to pass through the entire digestive system. The time varies depending on the type of food eaten and the individual. Food spends the most time in the large intestine."
+        },
+        {
+            "question": "What happens to the nutrients after they are absorbed in the small intestine?",
+            "options": [
+                "They are stored in the stomach",
+                "They are carried by blood to all parts of the body",
+                "They are removed from the body as waste",
+                "They stay in the small intestine"
+            ],
+            "correct": 1,
+            "points": 15,
+            "explanation": "After nutrients are absorbed through the walls of the small intestine, they enter the bloodstream. The blood then carries these nutrients to all parts of the body where they are used for energy, growth, and repair."
+        },
+        {
+            "question": "Which digestive organ produces acids and juices to break down food?",
+            "options": [
+                "Mouth and gullet",
+                "Stomach and small intestine",
+                "Large intestine only",
+                "Gullet only"
+            ],
+            "correct": 1,
+            "points": 15,
+            "explanation": "The stomach produces acidic digestive juices that break down food, especially proteins. The small intestine also produces digestive juices and receives juices from the liver and pancreas to complete digestion."
+        },
+        {
+            "question": "What would happen if the digestive system did not break food into smaller pieces?",
+            "options": [
+                "The body would get more energy",
+                "The body would not be able to absorb nutrients properly",
+                "Food would digest faster",
+                "Nothing would change"
+            ],
+            "correct": 1,
+            "points": 15,
+            "explanation": "If food is not broken into smaller pieces, the surface area would be too small for digestive juices to work effectively. This means nutrients cannot be properly absorbed, and the body would not get the energy and materials it needs for growth and health."
+        },
+        {
+            "question": "Which statement about digestion is TRUE?",
+            "options": [
+                "Digestion starts in the stomach",
+                "All food is absorbed in the stomach",
+                "Digestion starts in the mouth with chewing",
+                "The large intestine digests most of the food"
+            ],
+            "correct": 2,
+            "points": 15,
+            "explanation": "Digestion starts in the mouth where teeth break food into smaller pieces and saliva begins to break down carbohydrates. This is why chewing thoroughly is important for good digestion."
+        },
+        {
+            "question": "What is the final waste product of the digestive system called?",
+            "options": [
+                "Urine",
+                "Faeces",
+                "Saliva",
+                "Digestive juice"
+            ],
+            "correct": 1,
+            "points": 10,
+            "explanation": "Faeces (also called stool or waste) is the solid waste material that remains after digestion and absorption. It consists of undigested food, bacteria, and other waste materials. It is stored in the large intestine before being removed from the body."
+        }
+    ]
+}
