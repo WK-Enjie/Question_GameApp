@@ -1,0 +1,191 @@
+{
+ "title ":  "Forms of Energy: Basics and Conversion ",
+ "topic ":  "Energy ",
+ "subject ":  "Science ",
+ "level ":  "Primary ",
+ "grade ":  "P6 ",
+ "chapter ":  "Energy Conversion ",
+ "worksheet ": 1,
+ "questions ": [
+{
+ "question ":  "Which form of energy is possessed by a moving car? ",
+ "options ": [
+ "Potential energy ",
+ "Kinetic energy ",
+ "Light energy ",
+ "Chemical energy "
+],
+ "correct ": 1,
+ "points ": 10,
+ "explanation ":  "Kinetic energy is the energy of motion. Any object that is moving possesses kinetic energy. Potential energy is due to position or state. "
+},
+{
+ "question ":  "A ball is held at the top of a hill. What form of energy does it have before it is released? ",
+ "options ": [
+ "Kinetic energy ",
+ "Potential energy ",
+ "Sound energy ",
+ "Electrical energy "
+],
+ "correct ": 1,
+ "points ": 10,
+ "explanation ":  "Potential energy is energy due to an object's position or height. When the ball is at the top of the hill, it has potential energy. "
+},
+{
+ "question ":  "What is the primary source of energy for most energy resources on Earth? ",
+ "options ": [
+ "The Moon ",
+ "The Sun ",
+ "The Ocean ",
+ "The Wind "
+],
+ "correct ": 1,
+ "points ": 10,
+ "explanation ":  "The Sun is the primary source of energy. Energy from most resources (like fossil fuels, wind, water) is derived in some way from the Sun. "
+},
+{
+ "question ":  "When a battery-powered toy car moves, what is the main energy conversion in the motor? ",
+ "options ": [
+ "Light energy → Kinetic energy ",
+ "Electrical energy → Kinetic energy ",
+ "Kinetic energy → Electrical energy ",
+ "Potential energy → Sound energy "
+],
+ "correct ": 1,
+ "points ": 15,
+ "explanation ":  "The battery supplies electrical energy to the motor. The motor converts this electrical energy into kinetic energy to move the car. "
+},
+{
+ "question ":  "Which forms of energy are produced when a light bulb is switched on? ",
+ "options ": [
+ "Light energy only ",
+ "Light energy and Heat energy ",
+ "Light energy and Sound energy ",
+ "Heat energy and Sound energy "
+],
+ "correct ": 1,
+ "points ": 15,
+ "explanation ":  "A light bulb converts electrical energy primarily into light energy (useful) and heat energy (wasted). "
+},
+{
+ "question ":  "An electric fan is switched on. Which energy conversion takes place? ",
+ "options ": [
+ "Electrical energy → Kinetic energy + Sound energy + Heat energy ",
+ "Kinetic energy → Electrical energy + Light energy ",
+ "Potential energy → Kinetic energy + Heat energy ",
+ "Electrical energy → Potential energy + Sound energy "
+],
+ "correct ": 0,
+ "points ": 15,
+ "explanation ":  "The fan uses electrical energy. The blades move (Kinetic), it makes noise (Sound), and the motor gets warm (Heat). "
+},
+{
+ "question ":  "Solar panels are used to generate electricity. What is the energy conversion? ",
+ "options ": [
+ "Heat energy → Electrical energy ",
+ "Light energy → Electrical energy ",
+ "Kinetic energy → Electrical energy ",
+ "Potential energy → Light energy "
+],
+ "correct ": 1,
+ "points ": 15,
+ "explanation ":  "Solar panels capture light energy from the Sun and convert it into electrical energy. "
+},
+{
+ "question ":  "In a hydroelectric dam, water stored at a height is released to turn turbines. What is the initial form of energy in the stored water? ",
+ "options ": [
+ "Kinetic energy ",
+ "Potential energy ",
+ "Electrical energy ",
+ "Sound energy "
+],
+ "correct ": 1,
+ "points ": 15,
+ "explanation ":  "Water stored at a height has potential energy due to its position. As it falls, this converts to kinetic energy. "
+},
+{
+ "question ":  "Why is heat energy often considered 'wasted' energy in appliances? ",
+ "options ": [
+ "Because heat is always dangerous ",
+ "Because it is not the intended useful output of the appliance ",
+ "Because heat energy cannot be produced ",
+ "Because heat energy is too expensive "
+],
+ "correct ": 1,
+ "points ": 10,
+ "explanation ":  "Wasted energy is energy produced that is not useful for the appliance's purpose. For a light bulb, light is useful, heat is wasted. "
+},
+{
+ "question ":  "Which action increases the potential energy of an object? ",
+ "options ": [
+ "Lowering the object to the ground ",
+ "Lifting the object to a higher position ",
+ "Pushing the object to move faster ",
+ "Stopping the object from moving "
+],
+ "correct ": 1,
+ "points ": 15,
+ "explanation ":  "Potential energy increases when an object is moved to a higher position against gravity. "
+},
+{
+ "question ":  "When a rubber band is stretched, what form of energy is stored in it? ",
+ "options ": [
+ "Kinetic energy ",
+ "Potential energy ",
+ "Light energy ",
+ "Heat energy "
+],
+ "correct ": 1,
+ "points ": 15,
+ "explanation ":  "Stretching a rubber band changes its state/shape, storing potential energy (elastic potential energy). "
+},
+{
+ "question ":  "Friction between two surfaces usually converts kinetic energy into which form of energy? ",
+ "options ": [
+ "Light energy ",
+ "Heat energy ",
+ "Electrical energy ",
+ "Potential energy "
+],
+ "correct ": 1,
+ "points ": 15,
+ "explanation ":  "Friction opposes motion and converts kinetic energy into heat energy (and sometimes sound energy). "
+},
+{
+ "question ":  "What is required for all things to work or function? ",
+ "options ": [
+ "Water ",
+ "Energy ",
+ "Air ",
+ "Light "
+],
+ "correct ": 1,
+ "points ": 10,
+ "explanation ":  "Energy is required for things to work in everyday life. All living things obtain and use energy for life processes. "
+},
+{
+ "question ":  "Which of the following is NOT a form of energy listed in the Primary 6 syllabus? ",
+ "options ": [
+ "Kinetic energy ",
+ "Potential energy ",
+ "Chemical energy ",
+ "Sound energy "
+],
+ "correct ": 2,
+ "points ": 10,
+ "explanation ":  "The P6 syllabus lists Kinetic, Potential, Light, Electrical, Sound, and Heat energy. 'Chemical energy' is not a required term (though energy stored in food/batteries is discussed). "
+},
+{
+ "question ":  "Why is it important to conserve energy? ",
+ "options ": [
+ "Because energy is free ",
+ "Because some energy sources can be depleted ",
+ "Because energy cannot be converted ",
+ "Because energy is not important "
+],
+ "correct ": 1,
+ "points ": 15,
+ "explanation ":  "Some sources of energy (like fossil fuels) are non-renewable and can be depleted. Conservation ensures resources last longer and protects the environment. "
+}
+]
+}

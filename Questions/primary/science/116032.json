@@ -1,0 +1,191 @@
+{
+ "title ":  "Forms of Energy: Analysis and Investigation ",
+ "topic ":  "Energy ",
+ "subject ":  "Science ",
+ "level ":  "Primary ",
+ "grade ":  "P6 ",
+ "chapter ":  "Energy Conversion ",
+ "worksheet ": 2,
+ "questions ": [
+{
+ "question ":  "A student investigates how the number of batteries affects the brightness of a bulb. What is the changed variable? ",
+ "options ": [
+ "The brightness of the bulb ",
+ "The type of bulb used ",
+ "The number of batteries ",
+ "The length of the wires "
+],
+ "correct ": 2,
+ "points ": 15,
+ "explanation ":  "The changed variable is the one the student intentionally changes to test its effect. Here, the student changes the number of batteries. "
+},
+{
+ "question ":  "In the same experiment (number of batteries vs bulb brightness), what is the measured variable? ",
+ "options ": [
+ "The number of batteries ",
+ "The brightness of the bulb ",
+ "The type of battery ",
+ "The switch used "
+],
+ "correct ": 1,
+ "points ": 15,
+ "explanation ":  "The measured variable is the result observed or measured. The brightness changes in response to the number of batteries. "
+},
+{
+ "question ":  "To ensure a fair test in the battery experiment, which variable must be kept the same? ",
+ "options ": [
+ "The brightness of the bulb ",
+ "The number of batteries ",
+ "The type of bulb used ",
+ "The energy supplied "
+],
+ "correct ": 2,
+ "points ": 15,
+ "explanation ":  "Fixed variables must be kept constant to ensure a fair test. The type of bulb must remain the same so only the batteries affect the brightness. "
+},
+{
+ "question ":  "Data shows: 1 battery (Dim), 2 batteries (Bright), 3 batteries (Very Bright). What is the relationship? ",
+ "options ": [
+ "As the number of batteries increases, the brightness decreases. ",
+ "As the number of batteries increases, the brightness increases. ",
+ "The number of batteries does not affect brightness. ",
+ "As the brightness increases, the number of batteries decreases. "
+],
+ "correct ": 1,
+ "points ": 15,
+ "explanation ":  "The pattern shows that more batteries provide more electrical energy, resulting in a brighter bulb. "
+},
+{
+ "question ":  "Which energy conversion chain correctly represents a hydroelectric power station? ",
+ "options ": [
+ "Kinetic → Potential → Electrical ",
+ "Potential → Kinetic → Electrical ",
+ "Electrical → Kinetic → Potential ",
+ "Light → Electrical → Kinetic "
+],
+ "correct ": 1,
+ "points ": 20,
+ "explanation ":  "Water at height (Potential) falls to gain speed (Kinetic), turning turbines to generate electricity (Electrical). "
+},
+{
+ "question ":  "Plants make food using sunlight. Animals eat plants to run. What is the energy pathway? ",
+ "options ": [
+ "Light → Chemical (food) → Kinetic ",
+ "Kinetic → Light → Chemical ",
+ "Heat → Chemical → Kinetic ",
+ "Light → Kinetic → Chemical "
+],
+ "correct ": 0,
+ "points ": 20,
+ "explanation ":  "Plants convert Light energy to energy stored in food. Animals convert energy from food into Kinetic energy for movement. "
+},
+{
+ "question ":  "Two identical balls are dropped from different heights. Ball A from 1m, Ball B from 2m. Which has more potential energy at the start? ",
+ "options ": [
+ "Ball A ",
+ "Ball B ",
+ "Both have the same ",
+ "Neither has potential energy "
+],
+ "correct ": 1,
+ "points ": 15,
+ "explanation ":  "Potential energy depends on height. Ball B is higher, so it has more potential energy than Ball A. "
+},
+{
+ "question ":  "When Ball B (from previous question) hits the ground, it makes a louder sound than Ball A. Why? ",
+ "options ": [
+ "Ball B has more mass ",
+ "Ball B converted more potential energy into kinetic and sound energy ",
+ "Ball A lost its energy in the air ",
+ "Sound energy is not related to height "
+],
+ "correct ": 1,
+ "points ": 20,
+ "explanation ":  "Ball B started with more potential energy, which converted to more kinetic energy. Upon impact, more energy was converted into sound and heat. "
+},
+{
+ "question ":  "An appliance is said to be 'energy efficient'. What does this mean? ",
+ "options ": [
+ "It uses more electrical energy. ",
+ "It converts more input energy into useful output energy. ",
+ "It produces more heat energy. ",
+ "It works slower than other appliances. "
+],
+ "correct ": 1,
+ "points ": 15,
+ "explanation ":  "Energy efficiency means less energy is wasted (e.g., as heat) and more is converted into the useful form (e.g., light or motion). "
+},
+{
+ "question ":  "Why do we repeat experiments three times and take an average? ",
+ "options ": [
+ "To make the experiment take longer ",
+ "To ensure the results are reliable and accurate ",
+ "To change the variables ",
+ "To use more equipment "
+],
+ "correct ": 1,
+ "points ": 15,
+ "explanation ":  "Repeating experiments helps to minimize errors and ensures the results are consistent and reliable. "
+},
+{
+ "question ":  "A pendulum swings from Position A (highest) to Position B (lowest). Where is kinetic energy maximum? ",
+ "options ": [
+ "Position A ",
+ "Position B ",
+ "Halfway between A and B ",
+ "Kinetic energy is constant "
+],
+ "correct ": 1,
+ "points ": 20,
+ "explanation ":  "At the lowest point (B), all potential energy has converted to kinetic energy, so speed and kinetic energy are maximum. "
+},
+{
+ "question ":  "Why does a pendulum eventually stop swinging? ",
+ "options ": [
+ "It runs out of potential energy permanently ",
+ "Energy is lost to the surroundings as heat and sound due to air resistance and friction ",
+ "Gravity stops working ",
+ "The string becomes too heavy "
+],
+ "correct ": 1,
+ "points ": 20,
+ "explanation ":  "Energy is not destroyed but converted to useless forms (heat/sound) due to friction/air resistance, leaving less energy for motion. "
+},
+{
+ "question ":  "Which modification would increase the kinetic energy of a moving trolley? ",
+ "options ": [
+ "Decrease its speed ",
+ "Increase its speed ",
+ "Stop the trolley ",
+ " Lift the trolley higher "
+],
+ "correct ": 1,
+ "points ": 15,
+ "explanation ":  "Kinetic energy depends on motion. Increasing the speed increases the kinetic energy. Lifting it increases potential energy. "
+},
+{
+ "question ":  "In a circuit, wires become warm after being switched on for a while. What energy conversion causes this? ",
+ "options ": [
+ "Electrical energy → Light energy ",
+ "Electrical energy → Heat energy ",
+ "Kinetic energy → Heat energy ",
+ "Potential energy → Electrical energy "
+],
+ "correct ": 1,
+ "points ": 15,
+ "explanation ":  "Some electrical energy is always converted to heat energy due to resistance in the wires. This is often wasted energy. "
+},
+{
+ "question ":  "How does using less electrical energy help the environment? ",
+ "options ": [
+ "It makes appliances last longer ",
+ "It reduces the burning of fossil fuels in power stations, reducing pollution ",
+ "It increases the cost of electricity ",
+ "It stops the Sun from shining "
+],
+ "correct ": 1,
+ "points ": 20,
+ "explanation ":  "Many power stations burn fossil fuels to generate electricity. Using less reduces fuel consumption and pollution (greenhouse gases). "
+}
+]
+}
