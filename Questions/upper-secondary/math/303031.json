@@ -1,0 +1,131 @@
+{
+  "title": "Indices - Worksheet 1",
+  "topic": "Laws of Indices and Simplification",
+  "subject": "Mathematics",
+  "level": "Upper Secondary",
+  "grade": "Sec 3 E-Math",
+  "chapter": 3,
+  "worksheet": 1,
+  "questions": [
+    {
+      "question": "Simplify: 2³ × 2⁴",
+      "options": [
+        "2⁷",
+        "2¹²",
+        "4⁷",
+        "12⁷"
+      ],
+      "correct": 0,
+      "points": 10,
+      "explanation": "When multiplying with the same base, add the indices: 2³ × 2⁴ = 2³⁺⁴ = 2⁷"
+    },
+    {
+      "question": "Simplify: 5⁸ ÷ 5³",
+      "options": [
+        "5⁵",
+        "5¹¹",
+        "1⁵",
+        "25⁵"
+      ],
+      "correct": 0,
+      "points": 10,
+      "explanation": "When dividing with the same base, subtract the indices: 5⁸ ÷ 5³ = 5⁸⁻³ = 5⁵"
+    },
+    {
+      "question": "Simplify: (3²)⁴",
+      "options": [
+        "3⁶",
+        "3⁸",
+        "9⁴",
+        "3¹⁶"
+      ],
+      "correct": 1,
+      "points": 10,
+      "explanation": "When raising a power to a power, multiply the indices: (3²)⁴ = 3²ˣ⁴ = 3⁸"
+    },
+    {
+      "question": "What is the value of 7⁰?",
+      "options": [
+        "0",
+        "1",
+        "7",
+        "undefined"
+      ],
+      "correct": 1,
+      "points": 10,
+      "explanation": "Any non-zero number raised to the power of 0 equals 1: a⁰ = 1 (where a ≠ 0)"
+    },
+    {
+      "question": "Simplify: 4⁻²",
+      "options": [
+        "-16",
+        "-8",
+        "1/16",
+        "1/8"
+      ],
+      "correct": 2,
+      "points": 12,
+      "explanation": "Negative index means reciprocal: 4⁻² = 1/4² = 1/16"
+    },
+    {
+      "question": "Simplify: 2³ × 2⁻⁵",
+      "options": [
+        "2⁻²",
+        "2⁻⁸",
+        "2²",
+        "1/4"
+      ],
+      "correct": 0,
+      "points": 12,
+      "explanation": "Add indices: 2³ × 2⁻⁵ = 2³⁺⁽⁻⁵⁾ = 2⁻² = 1/2² = 1/4"
+    },
+    {
+      "question": "Simplify: (2x³)⁴",
+      "options": [
+        "2x¹²",
+        "8x¹²",
+        "16x¹²",
+        "16x⁷"
+      ],
+      "correct": 2,
+      "points": 15,
+      "explanation": "Apply the power to both parts: (2x³)⁴ = 2⁴ × (x³)⁴ = 16 × x¹² = 16x¹²"
+    },
+    {
+      "question": "Solve for x: 3ˣ = 81",
+      "options": [
+        "3",
+        "4",
+        "9",
+        "27"
+      ],
+      "correct": 1,
+      "points": 15,
+      "explanation": "81 = 3⁴, so 3ˣ = 3⁴, therefore x = 4"
+    },
+    {
+      "question": "Simplify: √(x⁶)",
+      "options": [
+        "x²",
+        "x³",
+        "x⁴",
+        "x¹²"
+      ],
+      "correct": 1,
+      "points": 15,
+      "explanation": "√(x⁶) = (x⁶)^(1/2) = x⁶ˣ⁽¹/²⁾ = x³"
+    },
+    {
+      "question": "Solve for n: 5ⁿ⁺² = 125",
+      "options": [
+        "1",
+        "2",
+        "3",
+        "4"
+      ],
+      "correct": 0,
+      "points": 15,
+      "explanation": "125 = 5³, so 5ⁿ⁺² = 5³. Therefore n + 2 = 3, which gives n = 1"
+    }
+  ]
+}
