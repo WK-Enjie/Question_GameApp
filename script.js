@@ -653,7 +653,7 @@ function showQuestion(idx) {
 
     // --- start timer ---
     gameState.answerStartTime = Date.now();
-    startTimer(q.time || 15);
+    startTimer(q.time || 45);
 }
 
 function hideQuestionOverlay() {
@@ -1189,4 +1189,5 @@ window.quizTools = {
         updateCatalogDisplay(); console.log('Test quiz added');
     },
     showState: () => console.log(JSON.parse(JSON.stringify(gameState)))
+
 };
