@@ -12,39 +12,80 @@
       "options": ["9 chickens", "13 chickens", "11 chickens", "7 chickens"],
       "correct": 2,
       "points": 20,
-      "explanation": "Make a guess-and-check table:\n• Guess 1: 9 chickens, 9 cows → Legs = 9×2 + 9×4 = 18 + 36 = 54 (too many legs)\n• Guess 2: 11 chickens, 7 cows → Legs = 11×2 + 7×4 = 22 + 28 = 50 ✓\nAnswer: 11 chickens"
+      "time": 20,
+      "explanation": "Chickens have 2 legs, cows have 4 legs.\n• Guess 1: 9 chickens, 9 cows → 9×2 + 9×4 = 18 + 36 = 54 legs (too many)\n• Guess 2: 11 chickens, 7 cows → 11×2 + 7×4 = 22 + 28 = 50 legs ✓\nAnswer: 11 chickens"
     },
     {
       "question": "In a pond, there are ducks and turtles. There are 14 animals altogether with 38 legs. How many turtles are there?",
       "options": ["8 turtles", "6 turtles", "9 turtles", "5 turtles"],
       "correct": 3,
       "points": 20,
-      "explanation": "Make a guess-and-check table:\n• Guess 1: 7 ducks, 7 turtles → Legs = 7×2 + 7×4 = 14 + 28 = 42 (too many)\n• Guess 2: 9 ducks, 5 turtles → Legs = 9×2 + 5×4 = 18 + 20 = 38 ✓\nAnswer: 5 turtles"
+      "time": 20,
+      "explanation": "Ducks have 2 legs, turtles have 4 legs.\n• Guess 1: 7 ducks, 7 turtles → 7×2 + 7×4 = 14 + 28 = 42 (too many)\n• Guess 2: 9 ducks, 5 turtles → 9×2 + 5×4 = 18 + 20 = 38 ✓\nAnswer: 5 turtles"
     },
     {
       "question": "Mia has 24 coins in her piggy bank. Some are 50¢ coins and some are 20¢ coins. The total value is $9.00. How many 50¢ coins does she have?",
       "options": ["10 coins", "16 coins", "14 coins", "12 coins"],
       "correct": 2,
       "points": 25,
-      "explanation": "Make a guess-and-check table (work in cents):\n• Guess 1: 12 fifty-cent, 12 twenty-cent → Value = 12×50 + 12×20 = 600 + 240 = 840¢ (too low)\n• Guess 2: 14 fifty-cent, 10 twenty-cent → Value = 14×50 + 10×20 = 700 + 200 = 900¢ ✓\nAnswer: 14 fifty-cent coins"
+      "time": 25,
+      "explanation": "Work in cents. Total = 900¢.\n• Guess 1: 12 fifty-cent, 12 twenty-cent → 12×50 + 12×20 = 600 + 240 = 840¢ (too low)\n• Guess 2: 14 fifty-cent, 10 twenty-cent → 14×50 + 10×20 = 700 + 200 = 900¢ ✓\nAnswer: 14 fifty-cent coins"
     },
     {
       "question": "A parking lot has cars and motorcycles. There are 22 vehicles with 72 wheels altogether. How many cars are there?",
       "options": ["13 cars", "15 cars", "14 cars", "16 cars"],
       "correct": 2,
       "points": 20,
-      "explanation": "Make a guess-and-check table:\n• Guess 1: 13 cars, 9 motorcycles → Wheels = 13×4 + 9×2 = 52 + 18 = 70 (too few)\n• Guess 2: 14 cars, 8 motorcycles → Wheels = 14×4 + 8×2 = 56 + 16 = 72 ✓\nAnswer: 14 cars"
+      "time": 20,
+      "explanation": "Cars have 4 wheels, motorcycles have 2 wheels.\n• Guess 1: 13 cars, 9 motorcycles → 13×4 + 9×2 = 52 + 18 = 70 (too few)\n• Guess 2: 14 cars, 8 motorcycles → 14×4 + 8×2 = 56 + 16 = 72 ✓\nAnswer: 14 cars"
     },
     {
-      "question": "In a quiz game, you get 5 points for each correct answer and lose 1 points for each wrong answer. You answered 18 questions and scored 36 points. How many questions did you answer correctly?",
-      "options": ["18 questions", "21 questions", "19 questions", "20 questions"],
-      "correct": 2,
+      "question": "In a quiz game, you earn 5 points for each correct answer and lose 1 point for each wrong answer. You answered 18 questions and scored 36 points. How many questions did you answer correctly?",
+      "options": ["8 questions", "10 questions", "7 questions", "9 questions"],
+      "correct": 3,
       "points": 25,
-      "explanation": "Make a guess-and-check table:\n• Guess 1: 19 correct, 6 wrong → Score = 19×5 – 6×2 = 95 – 12 = 83 (too low)\n• Guess 2: 20 correct, 5 wrong → Score = 20×5 – 5×2 = 100 – 10 = 90 (too high)\n• Guess 3: 19 correct, 6 wrong was 83; try 21 correct, 4 wrong → Score = 21×5 – 4×2 = 105 – 8 = 97 (too high)\n• Guess 4: 18 correct, 7 wrong → Score = 18×5 – 7×2 = 90 – 14 = 76 (too low)\n• Guess 5: 19 correct was close; adjust: 19 correct gives 83, need 2 more points. Each swap (wrong→correct) gains 7 points. Try 20 correct again but recalculate: 20×5 = 100, 5 wrong ×2 = 10, 100–10=90 ✗\n• Better approach: 19 correct = 95 points before penalties; 6 wrong = –12 → 83. Need 2 more points. Try 20 correct: 100 – 10 = 90 ✗. Try 19.5? Not possible.\n• Recalculate systematically: Let c = correct. Score = 5c – 2(25–c) = 5c – 50 + 2c = 7c – 50 = 85 → 7c = 135 → c = 19.285… not integer.\n• Correction: Use valid numbers. New problem: 24 questions, 5 pts correct, lose 1 pt wrong, score 92.\n• 20 correct, 4 wrong → 20×5 – 4×1 = 100 – 4 = 96 (too high)\n• 19 correct, 5 wrong → 19×5 – 5×1 = 95 – 5 = 90 (too low)\n• 19.5 not possible. Try 22 questions, score 86:\n• 18 correct, 4 wrong → 18×5 – 4×1 = 90 – 4 = 86 ✓\nAnswer: 18 correct answers"
+      "time": 25,
+      "explanation": "Each correct = +5 pts, each wrong = −1 pt.\n• Guess 1: 10 correct, 8 wrong → 10×5 − 8×1 = 50 − 8 = 42 (too high)\n• Guess 2: 8 correct, 10 wrong → 8×5 − 10×1 = 40 − 10 = 30 (too low)\n• Guess 3: 9 correct, 9 wrong → 9×5 − 9×1 = 45 − 9 = 36 ✓\nAnswer: 9 questions"
     },
     {
       "question": "A garage has tricycles and bicycles. There are 28 vehicles with 74 wheels altogether. How many tricycles are there?",
-      "options": ["16 tricycles", "14 tricycles", "18 tricycles", "20 tricycles"],
+      "options": ["20 tricycles", "18 tricycles", "14 tricycles", "16 tricycles"],
+      "correct": 1,
+      "points": 20,
+      "time": 20,
+      "explanation": "Tricycles have 3 wheels, bicycles have 2 wheels.\n• Guess 1: 14 tricycles, 14 bicycles → 14×3 + 14×2 = 42 + 28 = 70 (too few)\n• Guess 2: 16 tricycles, 12 bicycles → 16×3 + 12×2 = 48 + 24 = 72 (still too few)\n• Guess 3: 18 tricycles, 10 bicycles → 18×3 + 10×2 = 54 + 20 = 74 ✓\nAnswer: 18 tricycles"
+    },
+    {
+      "question": "Ali bought 15 stamps. Some were 30¢ stamps and some were 50¢ stamps. He paid $5.50 altogether. How many 50¢ stamps did he buy?",
+      "options": ["5 stamps", "6 stamps", "3 stamps", "4 stamps"],
+      "correct": 0,
+      "points": 25,
+      "time": 25,
+      "explanation": "Work in cents. Total = 550¢.\n• Guess 1: 6 fifty-cent, 9 thirty-cent → 6×50 + 9×30 = 300 + 270 = 570¢ (too high)\n• Guess 2: 4 fifty-cent, 11 thirty-cent → 4×50 + 11×30 = 200 + 330 = 530¢ (too low)\n• Guess 3: 5 fifty-cent, 10 thirty-cent → 5×50 + 10×30 = 250 + 300 = 550¢ ✓\nAnswer: 5 fifty-cent stamps"
+    },
+    {
+      "question": "A workshop has 3-legged stools and 4-legged tables. There are 16 pieces of furniture with 55 legs altogether. How many stools are there?",
+      "options": ["8 stools", "10 stools", "9 stools", "7 stools"],
       "correct": 2,
       "points": 20,
-      "explanation": "Make a guess-and-check table: look for a pattern
+      "time": 20,
+      "explanation": "Stools have 3 legs, tables have 4 legs.\n• Guess 1: 8 stools, 8 tables → 8×3 + 8×4 = 24 + 32 = 56 (too many)\n• Guess 2: 10 stools, 6 tables → 10×3 + 6×4 = 30 + 24 = 54 (too few)\n• Guess 3: 9 stools, 7 tables → 9×3 + 7×4 = 27 + 28 = 55 ✓\nAnswer: 9 stools"
+    },
+    {
+      "question": "In a garden, there are spiders and beetles. Spiders have 8 legs and beetles have 6 legs. There are 12 creatures with 84 legs. How many spiders are there?",
+      "options": ["5 spiders", "7 spiders", "4 spiders", "6 spiders"],
+      "correct": 3,
+      "points": 20,
+      "time": 20,
+      "explanation": "Spiders have 8 legs, beetles have 6 legs.\n• Guess 1: 4 spiders, 8 beetles → 4×8 + 8×6 = 32 + 48 = 80 (too few)\n• Guess 2: 7 spiders, 5 beetles → 7×8 + 5×6 = 56 + 30 = 86 (too many)\n• Guess 3: 6 spiders, 6 beetles → 6×8 + 6×6 = 48 + 36 = 84 ✓\nAnswer: 6 spiders"
+    },
+    {
+      "question": "At a carnival, adult tickets cost $8 and child tickets cost $3. A group of 15 people paid $80 altogether. How many adults are in the group?",
+      "options": ["8 adults", "5 adults", "7 adults", "6 adults"],
+      "correct": 2,
+      "points": 25,
+      "time": 25,
+      "explanation": "Adult ticket = $8, child ticket = $3.\n• Guess 1: 5 adults, 10 children → 5×8 + 10×3 = 40 + 30 = $70 (too low)\n• Guess 2: 8 adults, 7 children → 8×8 + 7×3 = 64 + 21 = $85 (too high)\n• Guess 3: 7 adults, 8 children → 7×8 + 8×3 = 56 + 24 = $80 ✓\nAnswer: 7 adults"
+    }
+  ]
+}
