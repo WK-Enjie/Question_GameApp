@@ -1,6 +1,6 @@
 /* ================================================================
    QUIZ FLIP — CARD BATTLE GAME
-   Complete Stylesheet
+   Complete Stylesheet (Updated Rules)
    ================================================================ */
 
 /* ========== RESET & BASE ========== */
@@ -31,6 +31,8 @@
     --correct-light: #d1fae5;
     --incorrect: #ef4444;
     --incorrect-light: #fee2e2;
+    --timeout: #f59e0b;
+    --timeout-light: rgba(245, 158, 11, 0.15);
 
     /* Neutrals */
     --bg: #0f172a;
@@ -525,9 +527,7 @@ body {
     box-shadow: 0 5px 15px rgba(0, 0, 0, 0.3);
 }
 
-.btn:active {
-    transform: translateY(0);
-}
+.btn:active { transform: translateY(0); }
 
 .btn.primary {
     background: var(--primary);
@@ -578,7 +578,7 @@ body {
     background: var(--bg);
     border-radius: var(--radius-lg);
     padding: 15px 20px;
-    margin-bottom: 15px;
+    margin-bottom: 12px;
     border: 1px solid var(--border);
 }
 
@@ -625,7 +625,12 @@ body {
     margin-bottom: 2px;
 }
 
-.sb-score { display: flex; align-items: baseline; gap: 3px; justify-content: center; }
+.sb-score {
+    display: flex;
+    align-items: baseline;
+    gap: 3px;
+    justify-content: center;
+}
 
 .score-num {
     font-size: 1.8rem;
@@ -696,7 +701,7 @@ body {
     gap: 10px;
     padding: 12px 20px;
     border-radius: var(--radius);
-    margin-bottom: 15px;
+    margin-bottom: 10px;
     position: relative;
     overflow: hidden;
     transition: all 0.4s;
@@ -731,7 +736,6 @@ body {
 }
 
 .turn-avatar { font-size: 1.4rem; }
-
 .turn-text { font-size: 0.95rem; }
 
 .turn-cards-left {
@@ -742,6 +746,42 @@ body {
     display: flex;
     align-items: center;
     gap: 5px;
+}
+
+
+/* ---- RULES REMINDER BAR ---- */
+.rules-bar {
+    display: flex;
+    justify-content: center;
+    gap: 10px;
+    margin-bottom: 12px;
+    flex-wrap: wrap;
+}
+
+.rule-chip {
+    font-size: 0.72rem;
+    font-weight: 600;
+    padding: 5px 12px;
+    border-radius: 20px;
+    letter-spacing: 0.2px;
+}
+
+.rule-chip.correct-rule {
+    background: rgba(16, 185, 129, 0.1);
+    color: #6ee7b7;
+    border: 1px solid rgba(16, 185, 129, 0.2);
+}
+
+.rule-chip.wrong-rule {
+    background: rgba(239, 68, 68, 0.1);
+    color: #fca5a5;
+    border: 1px solid rgba(239, 68, 68, 0.2);
+}
+
+.rule-chip.timeout-rule {
+    background: rgba(245, 158, 11, 0.1);
+    color: #fcd34d;
+    border: 1px solid rgba(245, 158, 11, 0.2);
 }
 
 
@@ -774,7 +814,20 @@ body {
 
 .flip-card.disabled {
     cursor: default;
-    opacity: 0.5;
+    pointer-events: none;
+}
+
+/* Completed cards stay flipped and dim slightly */
+.flip-card.completed {
+    opacity: 0.7;
+    cursor: default;
+    pointer-events: none;
+}
+
+/* Failed cards stay flipped with red tint */
+.flip-card.failed {
+    opacity: 0.75;
+    cursor: default;
     pointer-events: none;
 }
 
@@ -790,6 +843,12 @@ body {
 
 .flip-card.flipped .flip-card-inner {
     transform: rotateY(180deg);
+}
+
+/* Unflip animation (timeout) */
+.flip-card.unflipping .flip-card-inner {
+    transform: rotateY(0deg);
+    transition: transform 0.8s cubic-bezier(0.4, 0, 0.2, 1);
 }
 
 /* Front & Back shared */
@@ -808,13 +867,12 @@ body {
     overflow: hidden;
 }
 
-/* FRONT (face-down — player sees this) */
+/* FRONT (face-down) */
 .flip-card-front {
     background: linear-gradient(145deg, #3b4fd0, #5b6de8);
     border: 2px solid rgba(255, 255, 255, 0.1);
 }
 
-/* Decorative pattern on card fronts */
 .flip-card-front::before {
     content: '';
     position: absolute;
@@ -829,6 +887,17 @@ body {
     width: 120%;
     height: 120%;
     background: radial-gradient(circle at 30% 20%, rgba(255, 255, 255, 0.06) 0%, transparent 50%);
+}
+
+/* Timeout return glow on card front */
+.flip-card.returned .flip-card-front {
+    animation: returnGlow 1.5s ease;
+}
+
+@keyframes returnGlow {
+    0%   { box-shadow: 0 0 30px rgba(245, 158, 11, 0.5); }
+    50%  { box-shadow: 0 0 15px rgba(245, 158, 11, 0.3); }
+    100% { box-shadow: none; }
 }
 
 .card-number {
@@ -877,24 +946,29 @@ body {
     letter-spacing: 0.5px;
 }
 
-/* Correct / Incorrect card backs */
+/* Correct card back */
 .flip-card.result-correct .flip-card-back {
     background: linear-gradient(145deg, rgba(16, 185, 129, 0.2), rgba(16, 185, 129, 0.05));
     border-color: var(--correct);
 }
 
+/* Incorrect card back */
 .flip-card.result-incorrect .flip-card-back {
     background: linear-gradient(145deg, rgba(239, 68, 68, 0.2), rgba(239, 68, 68, 0.05));
     border-color: var(--incorrect);
+}
+
+/* Timeout card back (brief flash before unflip) */
+.flip-card.result-timeout .flip-card-back {
+    background: linear-gradient(145deg, rgba(245, 158, 11, 0.2), rgba(245, 158, 11, 0.05));
+    border-color: var(--timeout);
 }
 
 /* Card owner indicator (bottom strip) */
 .flip-card.owner-p1 .flip-card-back::after {
     content: '';
     position: absolute;
-    bottom: 0;
-    left: 0;
-    right: 0;
+    bottom: 0; left: 0; right: 0;
     height: 4px;
     background: var(--p1);
     border-radius: 0 0 10px 10px;
@@ -903,11 +977,19 @@ body {
 .flip-card.owner-p2 .flip-card-back::after {
     content: '';
     position: absolute;
-    bottom: 0;
-    left: 0;
-    right: 0;
+    bottom: 0; left: 0; right: 0;
     height: 4px;
     background: var(--p2);
+    border-radius: 0 0 10px 10px;
+}
+
+/* Nobody claimed — wrong answer */
+.flip-card.owner-none .flip-card-back::after {
+    content: '';
+    position: absolute;
+    bottom: 0; left: 0; right: 0;
+    height: 4px;
+    background: var(--text-muted);
     border-radius: 0 0 10px 10px;
 }
 
@@ -917,7 +999,6 @@ body {
     animation: cardDeal 0.4s ease forwards;
 }
 
-/* JS sets --deal-delay via style */
 @keyframes cardDeal {
     from {
         opacity: 0;
@@ -948,10 +1029,8 @@ body {
    ================================================================ */
 .question-overlay {
     position: fixed;
-    top: 0;
-    left: 0;
-    width: 100%;
-    height: 100%;
+    top: 0; left: 0;
+    width: 100%; height: 100%;
     z-index: 500;
     display: flex;
     align-items: center;
@@ -998,7 +1077,7 @@ body {
     display: flex;
     align-items: center;
     gap: 10px;
-    margin-bottom: 18px;
+    margin-bottom: 14px;
 }
 
 .timer-track {
@@ -1037,6 +1116,33 @@ body {
 
 .timer-clock.warning { color: #f59e0b; }
 .timer-clock.danger  { color: var(--incorrect); }
+
+/* Player Indicator in Modal */
+.q-player-indicator {
+    display: flex;
+    align-items: center;
+    gap: 8px;
+    padding: 8px 14px;
+    border-radius: var(--radius);
+    margin-bottom: 14px;
+    font-weight: 600;
+    font-size: 0.88rem;
+}
+
+.q-player-indicator.p1 {
+    background: rgba(59, 130, 246, 0.1);
+    border: 1px solid rgba(59, 130, 246, 0.25);
+    color: #93c5fd;
+}
+
+.q-player-indicator.p2 {
+    background: rgba(239, 68, 68, 0.1);
+    border: 1px solid rgba(239, 68, 68, 0.25);
+    color: #fca5a5;
+}
+
+.qpi-avatar { font-size: 1.3rem; }
+.qpi-name   { flex: 1; }
 
 /* Question Header */
 .q-header {
@@ -1079,9 +1185,7 @@ body {
 }
 
 /* Question Body */
-.q-body {
-    margin-bottom: 20px;
-}
+.q-body { margin-bottom: 20px; }
 
 .q-text {
     font-size: 1.2rem;
@@ -1137,8 +1241,18 @@ body {
     background: rgba(239, 68, 68, 0.12);
 }
 
-.q-option.dimmed {
-    opacity: 0.4;
+.q-option.dimmed { opacity: 0.4; }
+
+/* Wrong answer — no correct shown, just dim all */
+.q-option.wrong-locked {
+    opacity: 0.5;
+    cursor: default;
+}
+
+.q-option.wrong-selected.locked {
+    border-color: var(--incorrect);
+    background: rgba(239, 68, 68, 0.12);
+    opacity: 1;
 }
 
 .option-letter {
@@ -1165,7 +1279,8 @@ body {
     color: white;
 }
 
-.q-option.incorrect.locked .option-letter {
+.q-option.incorrect.locked .option-letter,
+.q-option.wrong-selected.locked .option-letter {
     background: var(--incorrect);
     color: white;
 }
@@ -1206,13 +1321,56 @@ body {
     box-shadow: 0 6px 25px rgba(102, 126, 234, 0.5);
 }
 
-.btn-submit:disabled {
-    cursor: not-allowed;
+.btn-submit:disabled { cursor: not-allowed; }
+.btn-submit.hidden   { display: none; }
+
+/* Result Banner */
+.q-result-banner {
+    display: none;
+    padding: 14px 18px;
+    border-radius: var(--radius);
+    margin-bottom: 12px;
+    font-weight: 700;
+    font-size: 1.05rem;
+    text-align: center;
 }
 
-.btn-submit.hidden { display: none; }
+.q-result-banner.show {
+    display: block;
+    animation: resultSlide 0.4s cubic-bezier(0.34, 1.56, 0.64, 1);
+}
 
-/* Explanation */
+.q-result-banner.correct-banner {
+    background: rgba(16, 185, 129, 0.12);
+    border: 1px solid rgba(16, 185, 129, 0.3);
+    color: #6ee7b7;
+}
+
+.q-result-banner.incorrect-banner {
+    background: rgba(239, 68, 68, 0.12);
+    border: 1px solid rgba(239, 68, 68, 0.3);
+    color: #fca5a5;
+}
+
+.q-result-banner.timeout-banner {
+    background: rgba(245, 158, 11, 0.12);
+    border: 1px solid rgba(245, 158, 11, 0.3);
+    color: #fcd34d;
+}
+
+@keyframes resultSlide {
+    from { opacity: 0; transform: translateY(-10px) scale(0.95); }
+    to   { opacity: 1; transform: translateY(0) scale(1); }
+}
+
+.result-sub {
+    font-size: 0.82rem;
+    font-weight: 500;
+    margin-top: 4px;
+    opacity: 0.8;
+}
+
+/* Explanation (correct only) */
 .q-explanation {
     display: none;
     padding: 16px;
@@ -1231,12 +1389,6 @@ body {
     background: rgba(16, 185, 129, 0.1);
     border: 1px solid rgba(16, 185, 129, 0.3);
     color: #6ee7b7;
-}
-
-.q-explanation.incorrect-exp {
-    background: rgba(239, 68, 68, 0.1);
-    border: 1px solid rgba(239, 68, 68, 0.3);
-    color: #fca5a5;
 }
 
 @keyframes slideDown {
@@ -1279,10 +1431,8 @@ body {
    ================================================================ */
 .treasure-overlay {
     position: fixed;
-    top: 0;
-    left: 0;
-    width: 100%;
-    height: 100%;
+    top: 0; left: 0;
+    width: 100%; height: 100%;
     z-index: 600;
     display: flex;
     align-items: center;
@@ -1475,13 +1625,8 @@ body {
     to   { transform: scale(1); opacity: 1; }
 }
 
-.treasure-continue {
-    display: none;
-}
-
-.treasure-continue.show {
-    display: flex;
-}
+.treasure-continue       { display: none; }
+.treasure-continue.show  { display: flex; }
 
 
 /* ================================================================
@@ -1489,10 +1634,8 @@ body {
    ================================================================ */
 .gameover-overlay {
     position: fixed;
-    top: 0;
-    left: 0;
-    width: 100%;
-    height: 100%;
+    top: 0; left: 0;
+    width: 100%; height: 100%;
     z-index: 700;
     display: flex;
     align-items: center;
@@ -1533,9 +1676,7 @@ body {
     transform: translateY(0) scale(1);
 }
 
-.go-celebration {
-    margin-bottom: 15px;
-}
+.go-celebration { margin-bottom: 15px; }
 
 .go-trophy {
     font-size: 4rem;
@@ -1584,10 +1725,7 @@ body {
     box-shadow: 0 0 25px rgba(251, 191, 36, 0.15);
 }
 
-.go-avatar {
-    font-size: 2rem;
-    margin-bottom: 8px;
-}
+.go-avatar { font-size: 2rem; margin-bottom: 8px; }
 
 .go-pname {
     font-size: 0.8rem;
@@ -1631,19 +1769,10 @@ body {
 
 .stat-row:last-child { border-bottom: none; }
 
-.stat-icon { font-size: 1.1rem; text-align: center; }
+.stat-icon  { font-size: 1.1rem; text-align: center; }
+.stat-label { text-align: left; color: var(--text-dim); font-weight: 500; }
 
-.stat-label {
-    text-align: left;
-    color: var(--text-dim);
-    font-weight: 500;
-}
-
-.stat-p1, .stat-p2 {
-    font-weight: 700;
-    text-align: center;
-}
-
+.stat-p1, .stat-p2 { font-weight: 700; text-align: center; }
 .stat-p1 { color: #93c5fd; }
 .stat-p2 { color: #fca5a5; }
 
@@ -1654,7 +1783,8 @@ body {
     font-weight: 700;
 }
 
-.stat-header .stat-p1, .stat-header .stat-p2 {
+.stat-header .stat-p1,
+.stat-header .stat-p2 {
     color: var(--text-muted);
     font-weight: 700;
 }
@@ -1676,10 +1806,8 @@ body {
    ================================================================ */
 #score-popups {
     position: fixed;
-    top: 0;
-    left: 0;
-    width: 100%;
-    height: 100%;
+    top: 0; left: 0;
+    width: 100%; height: 100%;
     pointer-events: none;
     z-index: 9990;
 }
@@ -1696,19 +1824,12 @@ body {
 .score-popup.positive { color: #34d399; }
 .score-popup.negative { color: #f87171; }
 .score-popup.bonus    { color: #fbbf24; }
+.score-popup.timeout  { color: #fcd34d; }
 
 @keyframes popFloat {
-    0% {
-        opacity: 1;
-        transform: translateY(0) scale(0.5);
-    }
-    20% {
-        transform: translateY(-10px) scale(1.2);
-    }
-    100% {
-        opacity: 0;
-        transform: translateY(-80px) scale(0.8);
-    }
+    0%   { opacity: 1; transform: translateY(0) scale(0.5); }
+    20%  { transform: translateY(-10px) scale(1.2); }
+    100% { opacity: 0; transform: translateY(-80px) scale(0.8); }
 }
 
 
@@ -1762,7 +1883,6 @@ body {
 /* ================================================================
    UTILITY ANIMATIONS
    ================================================================ */
-/* Score change pulse */
 .score-num.pulse-up {
     animation: pulseUp 0.5s ease;
 }
@@ -1783,7 +1903,6 @@ body {
     100% { transform: scale(1); color: var(--text); }
 }
 
-/* Player panel glow (correct answer) */
 @keyframes correctGlow {
     0%   { box-shadow: 0 0 0 0 rgba(16, 185, 129, 0.4); }
     50%  { box-shadow: 0 0 30px 5px rgba(16, 185, 129, 0.2); }
@@ -1860,6 +1979,10 @@ body {
     .turn-avatar { font-size: 1.2rem; }
     .turn-cards-left { font-size: 0.72rem; }
 
+    /* Rules Bar */
+    .rules-bar { gap: 5px; }
+    .rule-chip { font-size: 0.62rem; padding: 4px 8px; }
+
     /* Card Board */
     .card-board {
         grid-template-columns: repeat(4, 1fr);
@@ -1879,6 +2002,7 @@ body {
     .q-text { font-size: 1.05rem; }
     .q-option { padding: 12px 14px; font-size: 0.92rem; }
     .option-letter { width: 30px; height: 30px; font-size: 0.82rem; }
+    .q-player-indicator { padding: 6px 10px; font-size: 0.8rem; }
 
     /* Treasure */
     .treasure-modal { padding: 25px 20px; }
@@ -1910,6 +2034,8 @@ body {
 
     .question-modal { padding: 16px; }
     .q-text { font-size: 0.95rem; }
+
+    .rules-bar { flex-direction: column; align-items: center; gap: 3px; }
 }
 
 /* ================================================================
@@ -1923,10 +2049,13 @@ body {
 }
 ::-webkit-scrollbar-thumb:hover { background: var(--text-muted); }
 
-
 /* ================================================================
    SOUND TOGGLE
    ================================================================ */
+.gc-btn.muted {
+    position: relative;
+}
+
 .gc-btn.muted i::after {
     content: '';
     position: absolute;

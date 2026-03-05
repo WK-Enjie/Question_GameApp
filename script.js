@@ -1,6 +1,10 @@
 // ================================================================
 //  QUIZ FLIP — CARD BATTLE GAME
-//  Complete Game Logic
+//  Complete Game Logic (Updated Rules)
+//  - Each player answers once per turn, then switches
+//  - Correct: card stays, answer + explanation shown, points awarded
+//  - Wrong: card stays (failed), correct answer NOT revealed
+//  - Timeout: card UNFLIPS back to board, can be attempted again
 // ================================================================
 
 // ========== GAME STATE ==========
@@ -24,7 +28,7 @@ const gameState = {
 
     // Cards
     cards: [],
-    flippedCount: 0,
+    completedCount: 0,
     totalCards: 0,
 
     // Streaks
@@ -35,11 +39,12 @@ const gameState = {
     correctCounts: [0, 0],
     totalAnswered: [0, 0],
     fastestAnswer: [Infinity, Infinity],
+    timeoutCounts: [0, 0],
 
     // Timer
-    timeLeft: 15,
+    timeLeft: 45,
     timerInterval: null,
-    timerMax: 15,
+    timerMax: 45,
     answerStartTime: 0,
 
     // Treasure
@@ -49,9 +54,9 @@ const gameState = {
     // Sound
     soundEnabled: true,
 
-    // Special card indices (assigned at game start)
-    specialCards: new Set(),   // ⚡ double-point cards
-    bonusCards: new Set()      // 🎁 treasure cards
+    // Special card indices
+    specialCards: new Set(),
+    bonusCards: new Set()
 };
 
 
@@ -148,9 +153,20 @@ class SoundEngine {
         setTimeout(() => this._tone(260, 0.25, 'square', 0.07), 140);
     }
 
-    _select()      { this._tone(600, 0.05, 'sine', 0.07); }
-    _tick()         { this._tone(1000, 0.025, 'sine', 0.04); }
-    _timeWarning()  { this._tone(800, 0.08, 'square', 0.06); }
+    _timeout() {
+        this._tone(440, 0.15, 'triangle', 0.08);
+        setTimeout(() => this._tone(350, 0.2, 'triangle', 0.08), 120);
+        setTimeout(() => this._tone(280, 0.3, 'triangle', 0.06), 240);
+    }
+
+    _cardReturn() {
+        this._tone(500, 0.1, 'sine', 0.06);
+        setTimeout(() => this._tone(400, 0.12, 'sine', 0.05), 80);
+    }
+
+    _select()       { this._tone(600, 0.05, 'sine', 0.07); }
+    _tick()          { this._tone(1000, 0.025, 'sine', 0.04); }
+    _timeWarning()   { this._tone(800, 0.08, 'square', 0.06); }
 
     _treasure() {
         [523, 659, 784, 1047].forEach((f, i) =>
@@ -259,7 +275,7 @@ class ConfettiEngine {
     }
 }
 
-let confetti; // initialised in DOMContentLoaded
+let confetti;
 
 
 // ================================================================
@@ -286,7 +302,7 @@ function showScreen(id) {
 
 
 // ================================================================
-//  PIN INPUT  (unchanged API)
+//  PIN INPUT  (unchanged)
 // ================================================================
 function updatePinDisplay() {
     for (let i = 1; i <= 6; i++) {
@@ -321,8 +337,8 @@ async function scanForQuizzes() {
     ];
 
     try {
-        msg.textContent = 'Checking Questions folder…';
-        det.textContent = 'Looking for quiz files…';
+        msg.textContent = 'Checking Questions folder...';
+        det.textContent = 'Looking for quiz files...';
         const base = await fetch('Questions/');
         if (!base.ok) throw new Error('Questions folder not found.');
 
@@ -331,7 +347,7 @@ async function scanForQuizzes() {
         for (const p of paths) {
             for (const s of p.subj) {
                 step++;
-                det.textContent = `Scanning ${p.ln}/${SUBJECTS[s].name}…`;
+                det.textContent = `Scanning ${p.ln}/${SUBJECTS[s].name}...`;
                 bar.style.width = `${(step / total) * 100}%`;
                 try { await fetch(`Questions/${p.ln}/${SUBJECTS[s].folder}/`); } catch (_) {}
             }
@@ -409,13 +425,13 @@ function updateCatalogDisplay() {
 
 
 // ================================================================
-//  LOAD QUIZ  (unchanged JSON path logic)
+//  LOAD QUIZ  (unchanged)
 // ================================================================
 async function loadQuizByCode(code) {
     const info = decodeQuizCode(code);
     if (!info) return { success: false, error: `Invalid code: ${code}` };
     gameState.currentQuizCode = info.code;
-    document.getElementById('loading-message').textContent = `Loading ${info.code}…`;
+    document.getElementById('loading-message').textContent = `Loading ${info.code}...`;
 
     try {
         const res = await fetch(info.filepath);
@@ -438,7 +454,7 @@ async function submitPin() {
     if (pin.length !== 6) { alert('Please enter all 6 digits'); return; }
 
     showScreen('loading-screen');
-    document.getElementById('loading-message').textContent = 'Loading quiz…';
+    document.getElementById('loading-message').textContent = 'Loading quiz...';
     document.getElementById('loading-details').textContent  = '';
     document.getElementById('scan-progress').style.width     = '50%';
 
@@ -462,9 +478,9 @@ async function submitPin() {
         gameState.questions = result.data.questions;
         gameState.quizInfo  = result.info;
 
-        document.getElementById('quiz-title').textContent          = result.data.title || result.info.fullName;
-        document.getElementById('quiz-topic').textContent          = `${result.info.subject} · ${result.info.gradeLabel}`;
-        document.getElementById('current-quiz-code').textContent   = result.info.code;
+        document.getElementById('quiz-title').textContent        = result.data.title || result.info.fullName;
+        document.getElementById('quiz-topic').textContent        = `${result.info.subject} · ${result.info.gradeLabel}`;
+        document.getElementById('current-quiz-code').textContent = result.info.code;
 
         setTimeout(() => { initGame(); showScreen('game-screen'); }, 350);
     } catch (e) {
@@ -481,11 +497,11 @@ function generateCardBoard() {
     board.innerHTML = '';
 
     const total = gameState.questions.length;
-    gameState.totalCards  = total;
-    gameState.flippedCount = 0;
+    gameState.totalCards    = total;
+    gameState.completedCount = 0;
     gameState.cards = [];
 
-    // ----- assign special / bonus cards -----
+    // Assign special / bonus cards
     gameState.specialCards.clear();
     gameState.bonusCards.clear();
 
@@ -497,7 +513,7 @@ function generateCardBoard() {
     shuffled.slice(0, nSpecial).forEach(i => gameState.specialCards.add(i));
     shuffled.slice(nSpecial, nSpecial + nBonus).forEach(i => gameState.bonusCards.add(i));
 
-    // ----- grid columns -----
+    // Grid columns
     let cols = 5;
     if (total <= 4)       cols = 2;
     else if (total <= 6)  cols = 3;
@@ -507,7 +523,7 @@ function generateCardBoard() {
     else                  cols = 6;
     board.style.gridTemplateColumns = `repeat(${cols}, 1fr)`;
 
-    // ----- create cards -----
+    // Create cards
     for (let i = 0; i < total; i++) {
         const isSpecial = gameState.specialCards.has(i);
         const isBonus   = gameState.bonusCards.has(i);
@@ -539,8 +555,17 @@ function generateCardBoard() {
         card.addEventListener('click', () => onCardClick(i));
         board.appendChild(card);
 
-        gameState.cards.push({ element: card, index: i, flipped: false, result: null, owner: null });
+        gameState.cards.push({
+            element: card,
+            index: i,
+            flipped: false,
+            completed: false,
+            result: null,
+            owner: null
+        });
     }
+
+    updateCardsRemaining();
 }
 
 
@@ -556,6 +581,7 @@ function initGame() {
     gameState.correctCounts   = [0, 0];
     gameState.totalAnswered   = [0, 0];
     gameState.fastestAnswer   = [Infinity, Infinity];
+    gameState.timeoutCounts   = [0, 0];
     gameState.selectedAnswer  = null;
     gameState.answered        = false;
     gameState.canPickTreasure = false;
@@ -568,7 +594,6 @@ function initGame() {
     updateStreaks();
     updatePlayerTurn();
     generateCardBoard();
-    document.getElementById('cards-remaining').textContent = gameState.totalCards;
 }
 
 
@@ -577,15 +602,16 @@ function initGame() {
 // ================================================================
 function onCardClick(idx) {
     const c = gameState.cards[idx];
-    if (c.flipped || document.getElementById('question-overlay').classList.contains('show')) return;
+
+    // Can't click if: already completed, currently flipped, or overlay is open
+    if (c.completed || c.flipped ||
+        document.getElementById('question-overlay').classList.contains('show') ||
+        document.getElementById('treasure-overlay').classList.contains('show'))
+        return;
 
     gameState.currentQuestion = idx;
     c.flipped = true;
-    c.owner   = gameState.currentPlayer;
-    c.element.classList.add('flipped', `owner-p${gameState.currentPlayer}`);
-
-    gameState.flippedCount++;
-    document.getElementById('cards-remaining').textContent = gameState.totalCards - gameState.flippedCount;
+    c.element.classList.add('flipped');
 
     sound.play('cardFlip');
     setTimeout(() => showQuestion(idx), 450);
@@ -599,17 +625,23 @@ function showQuestion(idx) {
     const q = gameState.questions[idx];
     if (!q) return;
 
-    // --- reset state ---
+    // Reset state
     gameState.selectedAnswer = null;
     gameState.answered       = false;
 
-    // --- points ---
+    // Points calculation
     let pts      = q.points || 10;
     const isDbl  = gameState.specialCards.has(idx);
     const isBns  = gameState.bonusCards.has(idx);
     if (isDbl) pts *= 2;
 
-    // --- header badges ---
+    // Player indicator
+    const qpi = document.getElementById('q-player-indicator');
+    qpi.className = `q-player-indicator p${gameState.currentPlayer}`;
+    qpi.querySelector('.qpi-avatar').textContent = gameState.currentPlayer === 1 ? '😎' : '🤓';
+    qpi.querySelector('.qpi-name').textContent   = `Player ${gameState.currentPlayer} answering...`;
+
+    // Header badges
     document.getElementById('q-number').textContent = `Q${idx + 1}`;
     document.getElementById('q-points').textContent = `${pts} pts`;
 
@@ -619,10 +651,10 @@ function showQuestion(idx) {
     if (isDbl)      { sp.textContent = '⚡ DOUBLE'; sp.classList.add('double'); }
     else if (isBns) { sp.textContent = '🎁 TREASURE'; }
 
-    // --- question text ---
+    // Question text
     document.getElementById('question-text').textContent = q.question || 'Question';
 
-    // --- options ---
+    // Options
     const optBox = document.getElementById('options-container');
     optBox.innerHTML = '';
     (q.options || []).forEach((o, i) => {
@@ -634,24 +666,31 @@ function showQuestion(idx) {
         optBox.appendChild(btn);
     });
 
-    // --- buttons ---
+    // Buttons
     const sub = document.getElementById('submit-answer');
     sub.disabled  = true;
     sub.classList.remove('hidden');
     sub.innerHTML = '<i class="fas fa-lock"></i><span>Lock In Answer</span>';
 
+    // Clear result banner
+    const banner = document.getElementById('q-result-banner');
+    banner.className = 'q-result-banner';
+    banner.innerHTML = '';
+
+    // Clear explanation
     const exp = document.getElementById('q-explanation');
     exp.className = 'q-explanation';
     exp.innerHTML = '';
 
+    // Hide next button
     const nxt = document.getElementById('next-btn');
     nxt.classList.remove('show');
     nxt.style.display = 'none';
 
-    // --- show overlay ---
+    // Show overlay
     document.getElementById('question-overlay').classList.add('show');
 
-    // --- start timer ---
+    // Start timer
     gameState.answerStartTime = Date.now();
     startTimer(q.time || 45);
 }
@@ -682,7 +721,7 @@ function selectOption(i) {
 
 
 // ================================================================
-//  SUBMIT ANSWER
+//  SUBMIT ANSWER  (CORE GAME LOGIC — UPDATED RULES)
 // ================================================================
 function submitAnswer() {
     if (gameState.answered || gameState.selectedAnswer === null) return;
@@ -693,183 +732,267 @@ function submitAnswer() {
     const idx      = gameState.currentQuestion;
     const q        = gameState.questions[idx];
     const correct  = gameState.selectedAnswer === q.correct;
-    const pi       = gameState.currentPlayer - 1;        // player index
+    const pi       = gameState.currentPlayer - 1;
     const isDbl    = gameState.specialCards.has(idx);
     const isBns    = gameState.bonusCards.has(idx);
     const timeTaken = (Date.now() - gameState.answerStartTime) / 1000;
 
-    // stats
     gameState.totalAnswered[pi]++;
 
-    // hide submit button
+    // Hide submit button
     document.getElementById('submit-answer').classList.add('hidden');
 
-    // lock & colour options
-    document.querySelectorAll('.q-option').forEach((o, i) => {
-        o.classList.add('locked');
-        if (i === q.correct)                              o.classList.add('correct');
-        else if (i === gameState.selectedAnswer && !correct) o.classList.add('incorrect');
-        else                                               o.classList.add('dimmed');
-    });
-
     const cardData = gameState.cards[idx];
+    const banner   = document.getElementById('q-result-banner');
 
     // ===================== CORRECT =====================
     if (correct) {
-        // fastest
+        // Lock & highlight options — show correct answer
+        document.querySelectorAll('.q-option').forEach((o, i) => {
+            o.classList.add('locked');
+            if (i === q.correct)  o.classList.add('correct');
+            else                  o.classList.add('dimmed');
+        });
+
+        // Fastest time
         if (timeTaken < gameState.fastestAnswer[pi]) gameState.fastestAnswer[pi] = timeTaken;
 
-        // streak
+        // Streak
         gameState.streaks[pi]++;
         const streak = gameState.streaks[pi];
         if (streak > gameState.bestStreaks[pi]) gameState.bestStreaks[pi] = streak;
         gameState.correctCounts[pi]++;
 
-        // points  (base × double? × streak multiplier)
+        // Points: base × double? × streak multiplier
         let basePts    = q.points || 10;
         let multiplier = isDbl ? 2 : 1;
         if (streak >= 5)      multiplier += 1;
         else if (streak >= 3) multiplier += 0.5;
-
         const totalPts = Math.round(basePts * multiplier);
         gameState.scores[pi] += totalPts;
 
-        // --- audio ---
+        // Audio
         sound.play('correct');
         if (streak >= 3) sound.play('streak');
 
-        // --- card back ---
-        cardData.element.classList.add('result-correct');
+        // Card back
+        cardData.element.classList.add('result-correct', 'completed', `owner-p${gameState.currentPlayer}`);
         cardData.element.querySelector('.card-result-icon').textContent  = '✅';
         cardData.element.querySelector('.card-result-label').textContent = `+${totalPts}`;
+        cardData.completed = true;
+        cardData.result    = 'correct';
+        cardData.owner     = gameState.currentPlayer;
+        gameState.completedCount++;
 
-        // --- confetti ---
+        // Confetti burst on card
         const cr = cardData.element.getBoundingClientRect();
         confetti.burst(cr.left + cr.width / 2, cr.top + cr.height / 2, 25);
 
-        // --- floating popup ---
+        // Floating score popup
         const sbRect = document.getElementById(`sb-p${gameState.currentPlayer}`).getBoundingClientRect();
         showScorePopup(`+${totalPts}`, sbRect.left + sbRect.width / 2, sbRect.top, 'positive');
         if (streak >= 3) showScorePopup(`🔥 ${streak}x Streak!`, sbRect.left + sbRect.width / 2, sbRect.top - 35, 'bonus');
 
-        // --- score pulse ---
+        // Score pulse & glow
         pulseScore(gameState.currentPlayer, 'up');
         glowPlayer(gameState.currentPlayer);
 
         updateScores();
         updateStreaks();
+        updateCardsRemaining();
 
-        // --- explanation ---
-        let html = `<div><strong>✅ Correct! +${totalPts} points</strong>`;
+        // Result banner
+        let bannerHTML = `<div>✅ Correct! +${totalPts} points</div>`;
         if (multiplier > 1) {
             const reasons = [];
             if (isDbl)       reasons.push('⚡ Double card');
-            if (streak >= 3) reasons.push(`🔥 ${streak}x streak`);
-            html += `<br><small>${reasons.join(' · ')}</small>`;
+            if (streak >= 3) reasons.push(`🔥 ${streak}x streak bonus`);
+            bannerHTML += `<div class="result-sub">${reasons.join(' · ')}</div>`;
         }
-        if (q.explanation) html += `<br><br>${q.explanation}`;
-        html += '</div>';
+        banner.className = 'q-result-banner correct-banner show';
+        banner.innerHTML  = bannerHTML;
 
-        const exp = document.getElementById('q-explanation');
-        exp.innerHTML = html;
-        exp.className = 'q-explanation correct-exp show';
+        // Explanation (ONLY shown on correct)
+        if (q.explanation) {
+            const exp = document.getElementById('q-explanation');
+            exp.innerHTML  = `<strong>Explanation:</strong> ${q.explanation}`;
+            exp.className  = 'q-explanation correct-exp show';
+        }
 
-        // --- next action ---
+        // Next action: treasure or continue
         if (isBns) {
-            // treasure card — open treasure overlay
             gameState.canPickTreasure = true;
             gameState.treasurePicked  = false;
-            const nxt = document.getElementById('next-btn');
-            nxt.innerHTML = '<span>🎁 Open Treasure!</span><i class="fas fa-gift"></i>';
-            nxt.classList.add('show');
-            nxt.style.display = 'flex';
-            nxt.onclick = () => { hideQuestionOverlay(); setTimeout(showTreasureOverlay, 200); };
+            buildNextButton('treasure');
         } else {
-            buildNextButton(true);     // keep turn
+            buildNextButton('correct');
         }
 
     // ===================== INCORRECT =====================
     } else {
+        // Lock options — DO NOT reveal correct answer
+        document.querySelectorAll('.q-option').forEach((o, i) => {
+            o.classList.add('locked');
+            if (i === gameState.selectedAnswer) {
+                o.classList.add('wrong-selected');
+            } else {
+                o.classList.add('wrong-locked');
+            }
+        });
+
+        // Reset streak
         gameState.streaks[pi] = 0;
 
+        // Audio + screen shake
         sound.play('incorrect');
 
-        cardData.element.classList.add('result-incorrect', 'shake');
-        cardData.element.querySelector('.card-result-icon').textContent  = '❌';
-        cardData.element.querySelector('.card-result-label').textContent = 'Miss';
-
-        // screen shake
         const gs = document.getElementById('game-screen');
         gs.classList.add('screen-shake');
         setTimeout(() => gs.classList.remove('screen-shake'), 450);
 
-        const letter = String.fromCharCode(65 + q.correct);
-        let html = `<div><strong>❌ Incorrect</strong><br>Correct: <strong>${letter}) ${q.options[q.correct]}</strong>`;
-        if (q.explanation) html += `<br><br>${q.explanation}`;
-        html += '</div>';
-
-        const exp = document.getElementById('q-explanation');
-        exp.innerHTML = html;
-        exp.className = 'q-explanation incorrect-exp show';
+        // Card back
+        cardData.element.classList.add('result-incorrect', 'failed', 'owner-none', 'shake');
+        cardData.element.querySelector('.card-result-icon').textContent  = '❌';
+        cardData.element.querySelector('.card-result-label').textContent = 'Miss';
+        cardData.completed = true;
+        cardData.result    = 'incorrect';
+        cardData.owner     = null;
+        gameState.completedCount++;
 
         updateStreaks();
-        buildNextButton(false);        // switch player
+        updateCardsRemaining();
+
+        // Result banner — do NOT reveal answer
+        banner.className = 'q-result-banner incorrect-banner show';
+        banner.innerHTML  = `
+            <div>❌ Wrong Answer!</div>
+            <div class="result-sub">The correct answer remains hidden. Study and try next time!</div>
+        `;
+
+        // NO explanation shown
+
+        buildNextButton('incorrect');
     }
 }
 
 
 // ================================================================
-//  TIME-UP HANDLER
+//  TIME-UP HANDLER  (card returns to board)
 // ================================================================
 function timeUp() {
     if (gameState.answered) return;
     gameState.answered = true;
-    sound.play('incorrect');
 
     const idx = gameState.currentQuestion;
     const q   = gameState.questions[idx];
     const pi  = gameState.currentPlayer - 1;
 
     gameState.totalAnswered[pi]++;
+    gameState.timeoutCounts[pi]++;
     gameState.streaks[pi] = 0;
 
+    sound.play('timeout');
+
+    // Hide submit button
     document.getElementById('submit-answer').classList.add('hidden');
 
-    document.querySelectorAll('.q-option').forEach((o, i) => {
-        o.classList.add('locked');
-        if (i === q.correct) o.classList.add('correct');
-        else                 o.classList.add('dimmed');
+    // Lock options without revealing anything
+    document.querySelectorAll('.q-option').forEach(o => {
+        o.classList.add('locked', 'wrong-locked');
     });
 
-    const cd = gameState.cards[idx];
-    cd.element.classList.add('result-incorrect', 'shake');
-    cd.element.querySelector('.card-result-icon').textContent  = '⏰';
-    cd.element.querySelector('.card-result-label').textContent = 'Time!';
-
-    const letter = String.fromCharCode(65 + q.correct);
-    const exp = document.getElementById('q-explanation');
-    exp.innerHTML = `<div><strong>⏰ Time's Up!</strong><br>Answer: <strong>${letter}) ${q.options[q.correct]}</strong>${q.explanation ? `<br><br>${q.explanation}` : ''}</div>`;
-    exp.className = 'q-explanation incorrect-exp show';
+    // Mark selected if any (but don't highlight correct)
+    if (gameState.selectedAnswer !== null) {
+        const opts = document.querySelectorAll('.q-option');
+        if (opts[gameState.selectedAnswer]) {
+            opts[gameState.selectedAnswer].classList.remove('wrong-locked');
+            opts[gameState.selectedAnswer].classList.add('wrong-selected');
+        }
+    }
 
     updateStreaks();
-    buildNextButton(false);
+
+    // Result banner
+    const banner = document.getElementById('q-result-banner');
+    banner.className = 'q-result-banner timeout-banner show';
+    banner.innerHTML  = `
+        <div>⏰ Time's Up!</div>
+        <div class="result-sub">The card returns to the board for another attempt</div>
+    `;
+
+    // NO explanation shown
+    // Card will unflip when player clicks continue
+
+    // Screen shake (gentler)
+    const gs = document.getElementById('game-screen');
+    gs.classList.add('screen-shake');
+    setTimeout(() => gs.classList.remove('screen-shake'), 450);
+
+    buildNextButton('timeout');
 }
 
 
 // ================================================================
-//  NEXT / CONTINUE BUTTON
+//  NEXT / CONTINUE BUTTON  (always switches player)
 // ================================================================
-function buildNextButton(keepTurn) {
-    const btn = document.getElementById('next-btn');
+function buildNextButton(result) {
+    const btn     = document.getElementById('next-btn');
+    const cardIdx = gameState.currentQuestion;
+
+    // Treasure card — open treasure instead of continue
+    if (result === 'treasure') {
+        btn.innerHTML = '<span>🎁 Open Treasure!</span><i class="fas fa-gift"></i>';
+        btn.classList.add('show');
+        btn.style.display = 'flex';
+        btn.onclick = () => {
+            hideQuestionOverlay();
+            setTimeout(showTreasureOverlay, 200);
+        };
+        return;
+    }
+
+    // Normal continue button
     btn.innerHTML = '<span>Continue</span><i class="fas fa-arrow-right"></i>';
     btn.classList.add('show');
     btn.style.display = 'flex';
 
     btn.onclick = () => {
         hideQuestionOverlay();
-        if (!keepTurn) gameState.currentPlayer = gameState.currentPlayer === 1 ? 2 : 1;
+
+        // ALWAYS switch player
+        gameState.currentPlayer = gameState.currentPlayer === 1 ? 2 : 1;
         updatePlayerTurn();
-        if (gameState.flippedCount >= gameState.totalCards) setTimeout(endGame, 500);
+
+        // Timeout: unflip card back to board
+        if (result === 'timeout') {
+            setTimeout(() => {
+                const card = gameState.cards[cardIdx];
+                card.flipped   = false;
+                card.completed = false;
+                card.result    = null;
+                card.owner     = null;
+
+                card.element.classList.remove(
+                    'flipped', 'result-timeout', 'disabled',
+                    'owner-p1', 'owner-p2', 'owner-none',
+                    'completed', 'failed'
+                );
+                card.element.classList.add('unflipping', 'returned');
+
+                sound.play('cardReturn');
+
+                // Clean up animation classes
+                setTimeout(() => card.element.classList.remove('unflipping'), 800);
+                setTimeout(() => card.element.classList.remove('returned'), 2300);
+
+                updateCardsRemaining();
+            }, 300);
+        }
+
+        // Check game end
+        if (gameState.completedCount >= gameState.totalCards) {
+            setTimeout(endGame, 500);
+        }
     };
 }
 
@@ -885,10 +1008,16 @@ function startTimer(secs) {
     clearInterval(gameState.timerInterval);
     gameState.timerInterval = setInterval(() => {
         gameState.timeLeft -= 0.1;
-        if (gameState.timeLeft <= 0) { gameState.timeLeft = 0; stopTimer(); timeUp(); return; }
+        if (gameState.timeLeft <= 0) {
+            gameState.timeLeft = 0;
+            stopTimer();
+            timeUp();
+            return;
+        }
         renderTimer();
-        // tick in last 5 s
-        if (gameState.timeLeft <= 5 && Math.abs(gameState.timeLeft - Math.round(gameState.timeLeft)) < 0.06)
+        // Tick in last 5 seconds
+        if (gameState.timeLeft <= 5 &&
+            Math.abs(gameState.timeLeft - Math.round(gameState.timeLeft)) < 0.06)
             sound.play('tick');
     }, 100);
 }
@@ -901,19 +1030,19 @@ function renderTimer() {
     const text  = document.getElementById('timer-text');
     const clock = text.parentElement;
 
-    bar.style.width = `${pct}%`;
+    bar.style.width  = `${pct}%`;
     text.textContent = Math.ceil(gameState.timeLeft);
 
     bar.classList.remove('warning', 'danger');
     clock.classList.remove('warning', 'danger');
 
-    if (gameState.timeLeft <= 3)       { bar.classList.add('danger');  clock.classList.add('danger'); }
-    else if (gameState.timeLeft <= 7)  { bar.classList.add('warning'); clock.classList.add('warning'); }
+    if (gameState.timeLeft <= 5)       { bar.classList.add('danger');  clock.classList.add('danger'); }
+    else if (gameState.timeLeft <= 15) { bar.classList.add('warning'); clock.classList.add('warning'); }
 }
 
 
 // ================================================================
-//  SCORES · STREAKS · TURN
+//  SCORES · STREAKS · TURN · CARDS
 // ================================================================
 function updateScores() {
     document.getElementById('score1').textContent = gameState.scores[0];
@@ -937,10 +1066,15 @@ function updatePlayerTurn() {
     document.getElementById('turn-text').textContent   = `Player ${gameState.currentPlayer}'s Turn — Pick a card!`;
 }
 
+function updateCardsRemaining() {
+    document.getElementById('cards-remaining').textContent =
+        gameState.totalCards - gameState.completedCount;
+}
+
 function pulseScore(player, dir) {
     const el = document.getElementById(`score${player}`);
     el.classList.remove('pulse-up', 'pulse-down');
-    void el.offsetWidth;                               // reflow
+    void el.offsetWidth;
     el.classList.add(dir === 'up' ? 'pulse-up' : 'pulse-down');
 }
 
@@ -967,18 +1101,22 @@ const TREASURES = [
 ];
 
 function showTreasureOverlay() {
-    // reset boxes
+    // Reset boxes
     document.querySelectorAll('.t-box').forEach(b => {
         b.classList.remove('opened', 'not-chosen');
         b.querySelector('.t-box-back').innerHTML = '';
     });
     document.getElementById('treasure-result').innerHTML = '';
     const cont = document.getElementById('treasure-continue');
-    cont.classList.remove('show'); cont.style.display = 'none';
+    cont.classList.remove('show');
+    cont.style.display = 'none';
 
-    // assign random treasures
+    // Assign random treasures
     const shuffled = [...TREASURES].sort(() => Math.random() - 0.5);
     document.querySelectorAll('.t-box').forEach((b, i) => { b._treasure = shuffled[i]; });
+
+    gameState.canPickTreasure = true;
+    gameState.treasurePicked  = false;
 
     document.getElementById('treasure-overlay').classList.add('show');
     sound.play('treasure');
@@ -989,23 +1127,23 @@ function hideTreasureOverlay() {
 }
 
 function openTreasureBox(box) {
-    if (gameState.treasurePicked) return;
+    if (gameState.treasurePicked || !gameState.canPickTreasure) return;
     gameState.treasurePicked = true;
 
     const t  = box._treasure;
     const pi = gameState.currentPlayer - 1;
 
-    // flip chosen box
+    // Flip chosen box
     box.classList.add('opened');
     box.querySelector('.t-box-back').innerHTML =
         `<span class="t-reward-icon">${t.icon}</span><span class="t-reward-text">${t.name}</span>`;
 
-    // dim others
+    // Dim others
     document.querySelectorAll('.t-box').forEach(b => { if (b !== box) b.classList.add('not-chosen'); });
 
     sound.play('powerup');
 
-    // apply effect
+    // Apply effect
     let msg = '';
     if (t.pts > 0) {
         gameState.scores[pi] += t.pts;
@@ -1017,23 +1155,24 @@ function openTreasureBox(box) {
         [gameState.scores[0], gameState.scores[1]] = [gameState.scores[1], gameState.scores[0]];
         msg = '🔄 Scores swapped!';
     } else if (t.action === 'shield') {
-        msg = '🛡️ Shield activated — next miss forgiven!';
+        msg = '🛡️ Shield active — next wrong answer forgiven!';
     } else if (t.action === 'doubleNext') {
-        msg = '⚡ Next correct answer = 2× points!';
+        msg = '⚡ Next correct answer = 2x points!';
     }
 
     updateScores();
 
-    // confetti
+    // Confetti
     const br = box.getBoundingClientRect();
     confetti.burst(br.left + br.width / 2, br.top + br.height / 2, 28);
 
-    // show result + continue
+    // Show result + continue
     setTimeout(() => {
         document.getElementById('treasure-result').innerHTML =
             `<div class="t-result-text ${t.cls}">${msg}</div>`;
         const cont = document.getElementById('treasure-continue');
-        cont.classList.add('show'); cont.style.display = 'flex';
+        cont.classList.add('show');
+        cont.style.display = 'flex';
     }, 550);
 }
 
@@ -1064,7 +1203,7 @@ function endGame() {
 }
 
 function buildStats() {
-    const acc = (c, t) => t > 0 ? Math.round((c / t) * 100) + '%' : '-';
+    const acc  = (c, t) => t > 0 ? Math.round((c / t) * 100) + '%' : '-';
     const fast = v => v < Infinity ? v.toFixed(1) + 's' : '-';
 
     document.getElementById('game-stats').innerHTML = `
@@ -1073,15 +1212,20 @@ function buildStats() {
             <span class="stat-p1">P1</span><span class="stat-p2">P2</span>
         </div>
         <div class="stat-row"><span class="stat-icon">✅</span><span class="stat-label">Correct</span>
-            <span class="stat-p1">${gameState.correctCounts[0]}</span><span class="stat-p2">${gameState.correctCounts[1]}</span></div>
+            <span class="stat-p1">${gameState.correctCounts[0]}</span>
+            <span class="stat-p2">${gameState.correctCounts[1]}</span></div>
         <div class="stat-row"><span class="stat-icon">🎯</span><span class="stat-label">Accuracy</span>
             <span class="stat-p1">${acc(gameState.correctCounts[0], gameState.totalAnswered[0])}</span>
             <span class="stat-p2">${acc(gameState.correctCounts[1], gameState.totalAnswered[1])}</span></div>
         <div class="stat-row"><span class="stat-icon">🔥</span><span class="stat-label">Best Streak</span>
-            <span class="stat-p1">${gameState.bestStreaks[0]}</span><span class="stat-p2">${gameState.bestStreaks[1]}</span></div>
+            <span class="stat-p1">${gameState.bestStreaks[0]}</span>
+            <span class="stat-p2">${gameState.bestStreaks[1]}</span></div>
         <div class="stat-row"><span class="stat-icon">⚡</span><span class="stat-label">Fastest</span>
             <span class="stat-p1">${fast(gameState.fastestAnswer[0])}</span>
-            <span class="stat-p2">${fast(gameState.fastestAnswer[1])}</span></div>`;
+            <span class="stat-p2">${fast(gameState.fastestAnswer[1])}</span></div>
+        <div class="stat-row"><span class="stat-icon">⏰</span><span class="stat-label">Timeouts</span>
+            <span class="stat-p1">${gameState.timeoutCounts[0]}</span>
+            <span class="stat-p2">${gameState.timeoutCounts[1]}</span></div>`;
 }
 
 function hideGameOver() { document.getElementById('game-over').classList.remove('show'); }
@@ -1093,13 +1237,10 @@ function hideGameOver() { document.getElementById('game-over').classList.remove(
 document.addEventListener('DOMContentLoaded', async () => {
     console.log('🃏 Quiz Flip — Card Battle Game');
 
-    // confetti engine
     confetti = new ConfettiEngine('confetti-canvas');
 
-    // pin
     updatePinDisplay();
 
-    // catalog
     await loadCatalogFromStorage();
     updateCatalogDisplay();
 
@@ -1148,36 +1289,51 @@ document.addEventListener('DOMContentLoaded', async () => {
     document.querySelectorAll('.t-box').forEach(b =>
         b.addEventListener('click', function () { openTreasureBox(this); }));
 
+    // Treasure continue — ALWAYS switch player
     document.getElementById('treasure-continue').addEventListener('click', () => {
         hideTreasureOverlay();
-        updatePlayerTurn();   // player keeps turn (they answered correctly)
-        if (gameState.flippedCount >= gameState.totalCards) setTimeout(endGame, 500);
+
+        // Switch player
+        gameState.currentPlayer = gameState.currentPlayer === 1 ? 2 : 1;
+        updatePlayerTurn();
+
+        // Check game end
+        if (gameState.completedCount >= gameState.totalCards) setTimeout(endGame, 500);
     });
 
     // ---- KEYBOARD ----
     document.addEventListener('keydown', e => {
-        // pin screen
+        // PIN screen
         if (document.getElementById('pin-screen').classList.contains('active')) {
             if (e.key >= '0' && e.key <= '9') addDigit(e.key);
             else if (e.key === 'Backspace')   removeLastDigit();
             else if (e.key === 'Enter')       submitPin();
             return;
         }
-        // question overlay
-        if (document.getElementById('question-overlay').classList.contains('show') && !gameState.answered) {
-            const map = { a:0, b:1, c:2, d:3, '1':0, '2':1, '3':2, '4':3 };
-            const idx = map[e.key.toLowerCase()];
-            if (idx !== undefined) selectOption(idx);
-            if (e.key === 'Enter' && gameState.selectedAnswer !== null) submitAnswer();
+        // Question overlay open
+        if (document.getElementById('question-overlay').classList.contains('show')) {
+            if (!gameState.answered) {
+                const map = { a:0, b:1, c:2, d:3, '1':0, '2':1, '3':2, '4':3 };
+                const idx = map[e.key.toLowerCase()];
+                if (idx !== undefined) selectOption(idx);
+                if (e.key === 'Enter' && gameState.selectedAnswer !== null) submitAnswer();
+            } else {
+                // After answering, Enter clicks continue
+                if (e.key === 'Enter') {
+                    const nxt = document.getElementById('next-btn');
+                    if (nxt.style.display !== 'none') nxt.click();
+                }
+            }
         }
     });
 
     console.log('✅ Ready — add quiz JSON files to Questions/ folder');
+    console.log('📋 Rules: Correct = keep card | Wrong = lose card, answer hidden | Timeout = card returns');
 });
 
 
 // ================================================================
-//  DEBUG TOOLS  (same as original)
+//  DEBUG TOOLS
 // ================================================================
 window.quizTools = {
     testQuiz:     c  => { setPinFromCode(c); setTimeout(submitPin, 500); },
@@ -1189,5 +1345,4 @@ window.quizTools = {
         updateCatalogDisplay(); console.log('Test quiz added');
     },
     showState: () => console.log(JSON.parse(JSON.stringify(gameState)))
-
 };
