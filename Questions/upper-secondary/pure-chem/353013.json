@@ -23,11 +23,11 @@
       "question": "In a chromatogram of black ink, three colored spots appear with Rf values of 0.22, 0.58, and 0.89. What does this indicate about the ink?",
       "options": [
         "The ink is a pure substance",
-        "The ink contains three different colored components",
+        "Only one component is present but it split into three spots",
         "The ink has decomposed during chromatography",
-        "Only one component is present but it split into three spots"
+        "The ink contains three different colored components"
       ],
-      "correct": 1,
+      "correct": 3,
       "points": 10,
       "explanation": "Multiple spots with different Rf values indicate the ink is a mixture containing three distinct colored components that separated based on differences in solubility and affinity for the paper."
     },
@@ -59,11 +59,11 @@
       "question": "Why is it important to use the same solvent system when comparing Rf values for identification?",
       "options": [
         "Different solvents change the molecular weight of compounds",
-        "Rf values are only meaningful under identical experimental conditions",
+        "Different solvents require different paper types",
         "Solvents affect the color of compounds",
-        "Different solvents require different paper types"
+        "Rf values are only meaningful under identical experimental conditions"
       ],
-      "correct": 1,
+      "correct": 3,
       "points": 10,
       "explanation": "Rf values depend on the specific interactions between solute, solvent, and stationary phase. Changing the solvent alters these interactions, making Rf values incomparable across different solvent systems."
     },
@@ -94,14 +94,14 @@
     {
       "question": "A student obtains an Rf value of 1.20 for a compound. What error most likely occurred?",
       "options": [
-        "The solvent front was measured incorrectly",
+        "The paper was not dried properly",
         "The compound decomposed during the experiment",
         "The origin line was drawn too thick",
-        "The paper was not dried properly"
+        "The solvent front was measured incorrectly"
       ],
-      "correct": 0,
+      "correct": 3,
       "points": 10,
-      "explanation": "Rf values cannot exceed 1.0 because the solute cannot travel further than the solvent front. An Rf > 1 indicates measurement error—likely the solvent front distance was recorded as smaller than the actual distance traveled."
+      "explanation": "Rf values cannot exceed 1.0 because the solute cannot travel further than the solvent front. An Rf greater than 1 indicates measurement error, most likely the solvent front distance was recorded as smaller than the actual distance traveled."
     },
     {
       "question": "Which purification method would be most appropriate for obtaining pure water from seawater?",
