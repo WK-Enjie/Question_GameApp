@@ -1,0 +1,191 @@
+{
+  "title": "Kinetic Particle Theory",
+  "topic": "Particle Model and States of Matter",
+  "subject": "Combined Chemistry",
+  "level": "Upper Secondary",
+  "grade": "Sec 3",
+  "chapter": 2,
+  "worksheet": 1,
+  "questions": [
+    {
+      "question": "Which statement best describes the arrangement of particles in a solid?",
+      "options": [
+        "Particles are far apart and move randomly",
+        "Particles are closely packed in a regular arrangement and vibrate about fixed positions",
+        "Particles are close together but can slide past each other",
+        "Particles move freely at high speeds in all directions"
+      ],
+      "correct": 1,
+      "points": 10,
+      "explanation": "In solids, particles are held in fixed positions by strong forces of attraction. They vibrate about these positions but cannot move freely. The arrangement is regular."
+    },
+    {
+      "question": "Why does diffusion occur faster in gases than in liquids?",
+      "options": [
+        "Gas particles are larger than liquid particles",
+        "Liquid particles have stronger electrostatic forces than gas particles",
+        "Gas particles are attracted to each other more strongly",
+        "Gas particles have more energy and move faster with more space between them"
+      ],
+      "correct": 3,
+      "points": 15,
+      "explanation": "Gas particles have higher kinetic energy, move faster, and have more space between them, allowing them to spread out and mix more quickly than liquid particles."
+    },
+    {
+      "question": "A gas is compressed into a smaller volume at constant temperature. What happens to the pressure and why?",
+      "options": [
+        "Pressure increases because frequency of collision of particles on inner surface increases",
+        "Pressure decreases because particles move slower",
+        "Pressure stays the same because temperature is constant",
+        "Pressure decreases because particles are closer together"
+      ],
+      "correct": 0,
+      "points": 20,
+      "explanation": "Pressure is caused by the frequency of collision of particles on the inner surface of the container. When volume decreases, particles collide more frequently, increasing pressure."
+    },
+    {
+      "question": "What happens to the movement of particles when a substance is heated?",
+      "options": [
+        "Particles move slower and closer together",
+        "Particles gain kinetic energy and move faster",
+        "Particles lose energy and stop moving",
+        "Particles become larger in size"
+      ],
+      "correct": 1,
+      "points": 10,
+      "explanation": "Heating transfers energy to particles, increasing their kinetic energy. This causes them to move faster and, in gases and liquids, spread further apart."
+    },
+    {
+      "question": "Which observation provides evidence for the kinetic particle theory?",
+      "options": [
+        "Ice floats on water",
+        "Metals conduct electricity",
+        "Bromine vapour spreads to fill a gas jar",
+        "Water boils at 100 degrees Celsius at sea level"
+      ],
+      "correct": 2,
+      "points": 15,
+      "explanation": "The spreading of bromine vapour (diffusion) demonstrates that gas particles are in constant random motion, supporting the kinetic particle theory."
+    },
+    {
+      "question": "Why does a balloon expand when heated?",
+      "options": [
+        "The rubber becomes softer when warm",
+        "Air particles from outside enter the balloon",
+        "The mass of gas particles increases with temperature",
+        "Gas particles inside gain energy, move faster, and collide more forcefully with the balloon walls"
+      ],
+      "correct": 3,
+      "points": 20,
+      "explanation": "Heating increases the kinetic energy of gas particles inside the balloon. They move faster and collide more forcefully with the walls, causing the balloon to expand."
+    },
+    {
+      "question": "In which state of matter do particles have the most freedom of movement?",
+      "options": [
+        "Solid",
+        "Liquid",
+        "Gas",
+        "All states have equal freedom"
+      ],
+      "correct": 2,
+      "points": 10,
+      "explanation": "Gas particles have weak forces of attraction between them and move freely at high speeds in all directions, giving them the most freedom of movement."
+    },
+    {
+      "question": "A perfume is sprayed in one corner of a room. After a few minutes, it can be smelled across the room. This is an example of:",
+      "options": [
+        "Diffusion",
+        "Evaporation",
+        "Condensation",
+        "Sublimation"
+      ],
+      "correct": 0,
+      "points": 10,
+      "explanation": "Diffusion is the spreading of particles from an area of high concentration to low concentration due to their random motion. Perfume particles spread through the air by diffusion."
+    },
+    {
+      "question": "What happens to the volume of a fixed mass of gas when its temperature increases at constant pressure?",
+      "options": [
+        "Volume decreases",
+        "Volume stays the same",
+        "Volume increases",
+        "Volume first increases then decreases"
+      ],
+      "correct": 2,
+      "points": 15,
+      "explanation": "At constant pressure, heating a gas increases particle kinetic energy. Particles move faster and push the container walls outward, increasing volume."
+    },
+    {
+      "question": "Which factor does NOT affect the rate of diffusion of a gas?",
+      "options": [
+        "Temperature",
+        "Mass of gas particles",
+        "Concentration gradient",
+        "Colour of the gas"
+      ],
+      "correct": 3,
+      "points": 15,
+      "explanation": "Diffusion rate depends on temperature (higher = faster), particle mass (lighter = faster), and concentration gradient. Colour is a visual property and does not affect particle motion."
+    },
+    {
+      "question": "Why can gases be compressed easily but solids cannot?",
+      "options": [
+        "There is more empty space between gas particles than between solid particles",
+        "Gas particles are smaller than solid particles",
+        "Solid particles repel each other strongly",
+        "Gas particles have no mass"
+      ],
+      "correct": 0,
+      "points": 20,
+      "explanation": "Gas particles are far apart with large empty spaces between them, allowing them to be pushed closer together. Solid particles are already closely packed with minimal space."
+    },
+    {
+      "question": "When a liquid evaporates, what happens to the particles that escape into the gas phase?",
+      "options": [
+        "They are the slowest-moving particles in the liquid",
+        "They are the particles with the highest kinetic energy",
+        "They lose energy as they escape",
+        "They change into different particles"
+      ],
+      "correct": 1,
+      "points": 20,
+      "explanation": "Only particles with sufficient kinetic energy can overcome the attractive forces holding them in the liquid. These high-energy particles escape as gas, leaving lower-energy particles behind."
+    },
+    {
+      "question": "A sealed syringe contains air. When the plunger is pushed in, the pressure increases. Why?",
+      "options": [
+        "Air particles collide with the walls more frequently in the smaller volume",
+        "Air particles become smaller",
+        "Air particles move slower in a smaller space",
+        "The number of air particles increases"
+      ],
+      "correct": 0,
+      "points": 20,
+      "explanation": "Reducing volume forces the same number of particles into a smaller space. They hit the container walls more often per second, increasing pressure."
+    },
+    {
+      "question": "Which statement explains why solids have a fixed shape?",
+      "options": [
+        "Solid particles are in constant random motion",
+        "Solid particles are held in fixed positions by strong forces of attraction",
+        "Solid particles can slide past each other easily",
+        "Solid particles have no kinetic energy"
+      ],
+      "correct": 1,
+      "points": 15,
+      "explanation": "Strong electrostatic forces hold solid particles in a fixed, regular arrangement. They can only vibrate about these positions, giving solids a definite shape."
+    },
+    {
+      "question": "Why is gaseous fuel less preferred than liquid fuel for storage in vehicle tanks?",
+      "options": [
+        "Gases are more expensive to produce than liquids",
+        "Gases burn less efficiently than liquids",
+        "Gases occupy a much larger volume than liquids for the same mass, making storage difficult",
+        "Gases are heavier than liquids"
+      ],
+      "correct": 2,
+      "points": 20,
+      "explanation": "Gas particles are far apart. For the same mass of fuel, the gaseous state occupies a much larger volume than the liquid state, requiring larger and heavier tanks for storage."
+    }
+  ]
+}
