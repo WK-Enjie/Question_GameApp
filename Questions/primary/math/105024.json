@@ -1,0 +1,131 @@
+{
+  "title": "Fractions to Decimals, Rounding and Comparing",
+  "topic": "Conversion of Fractions to Decimals and Rounding",
+  "subject": "Mathematics",
+  "level": "Primary",
+  "grade": "P5",
+  "chapter": 2,
+  "worksheet": 4,
+  "questions": [
+    {
+      "question": "Convert 3/8 to a decimal.",
+      "options": [
+        "0.35",
+        "0.375",
+        "0.38",
+        "0.3"
+      ],
+      "correct": 1,
+      "points": 10,
+      "explanation": "3/8 = 3 divided by 8 = 0.375"
+    },
+    {
+      "question": "Convert 5/6 to a decimal correct to 2 decimal places.",
+      "options": [
+        "0.84",
+        "0.80",
+        "0.85",
+        "0.83"
+      ],
+      "correct": 3,
+      "points": 12,
+      "explanation": "5/6 = 5 divided by 6 = 0.8333... The third decimal digit is 3 (less than 5), so we round down to 0.83"
+    },
+    {
+      "question": "Which of the following fractions is closest to 1 whole?",
+      "options": [
+        "7/8",
+        "5/6",
+        "4/5",
+        "3/4"
+      ],
+      "correct": 0,
+      "points": 15,
+      "explanation": "Convert each to decimal: 7/8 = 0.875, 5/6 = 0.833, 4/5 = 0.8, 3/4 = 0.75. Since 0.875 is the largest and nearest to 1, the answer is 7/8."
+    },
+    {
+      "question": "Convert 7/12 to a decimal correct to 2 decimal places.",
+      "options": [
+        "0.57",
+        "0.60",
+        "0.58",
+        "0.59"
+      ],
+      "correct": 2,
+      "points": 12,
+      "explanation": "7/12 = 7 divided by 12 = 0.5833... The third decimal digit is 3 (less than 5), so we round down to 0.58"
+    },
+    {
+      "question": "Which of these fractions is closest to 1 whole?",
+      "options": [
+        "5/9",
+        "3/5",
+        "7/10",
+        "11/12"
+      ],
+      "correct": 3,
+      "points": 15,
+      "explanation": "Convert each: 5/9 = 0.556, 3/5 = 0.6, 7/10 = 0.7, 11/12 = 0.917. Since 0.917 is closest to 1, the answer is 11/12."
+    },
+    {
+      "question": "Convert 2/9 to a decimal correct to 3 decimal places.",
+      "options": [
+        "0.222",
+        "0.223",
+        "0.229",
+        "0.220"
+      ],
+      "correct": 0,
+      "points": 12,
+      "explanation": "2/9 = 2 divided by 9 = 0.2222... The fourth decimal digit is 2 (less than 5), so we round down to 0.222"
+    },
+    {
+      "question": "What is 0.4567 rounded to 2 decimal places?",
+      "options": [
+        "0.45",
+        "0.47",
+        "0.46",
+        "0.50"
+      ],
+      "correct": 2,
+      "points": 10,
+      "explanation": "Look at the third decimal digit which is 6 (5 or more), so we round up the second decimal digit. 0.4567 rounds to 0.46"
+    },
+    {
+      "question": "Convert 11/16 to a decimal.",
+      "options": [
+        "0.6785",
+        "0.6875",
+        "0.6975",
+        "0.6825"
+      ],
+      "correct": 1,
+      "points": 10,
+      "explanation": "11/16 = 11 divided by 16 = 0.6875"
+    },
+    {
+      "question": "Which of these fractions is the furthest from 1 whole?",
+      "options": [
+        "2/3",
+        "7/8",
+        "9/10",
+        "5/6"
+      ],
+      "correct": 0,
+      "points": 15,
+      "explanation": "Convert each: 2/3 = 0.667, 7/8 = 0.875, 9/10 = 0.9, 5/6 = 0.833. Since 0.667 is the smallest and furthest from 1, the answer is 2/3."
+    },
+    {
+      "question": "Convert 5/11 to a decimal correct to 2 decimal places.",
+      "options": [
+        "0.46",
+        "0.44",
+        "0.45",
+        "0.50"
+      ],
+      "correct": 2,
+      "points": 12,
+      "explanation": "5/11 = 5 divided by 11 = 0.4545... The third decimal digit is 4 (less than 5), so we round down to 0.45"
+    }
+  ]
+}
