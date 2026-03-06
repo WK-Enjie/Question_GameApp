@@ -12,7 +12,7 @@
       "options": ["x² + 15x + 8", "x² + 8x + 8", "x² + 15x + 15", "x² + 8x + 15"],
       "correct": 3,
       "points": 10,
-      "explanation": "Use FOIL method: First: x·x = x², Outer: x·5 = 5x, Inner: 3·x = 3x, Last: 3·5 = 15. Combine: x² + 5x + 3x + 15 = x² + 8x + 15."
+      "explanation": "Use Rainbow method: First: x·x = x², Outer: x·5 = 5x, Inner: 3·x = 3x, Last: 3·5 = 15. Combine: x² + 5x + 3x + 15 = x² + 8x + 15."
     },
     {
       "question": "Expand and simplify: (2x - 3)²",
@@ -64,4 +64,5 @@
       "explanation": "(x² + 4x + 4) - (x² - 4x + 4) = 8x. The x² and constant terms cancel out."
     }
   ]
+
 }
