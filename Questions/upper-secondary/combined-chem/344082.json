@@ -2,7 +2,12 @@
   "title": "Sec 4 Combined Chemistry Chapter 8 Worksheet 2",
   "topic": "Alloys vs Pure Metals, Metal Reactivity Patterns",
   "subject": "Combined Science (Chemistry)",
+  "level": "Upper Secondary",
   "grade": "Sec 4",
+  "chapter": 8,
+  "worksheet": 2,
+  "syllabus": "O-Level Science (Chemistry) 5087/5088",
+  "constraints": "No sacrificial protection; focus on barrier methods only for rust prevention",
   "questions": [
     {
       "question": "Why are alloys generally harder than pure metals?",
