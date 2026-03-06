@@ -1,0 +1,193 @@
+{
+  "title": "Metal Reactivity Patterns - Worksheet 3",
+  "topic": "Displacement Reactions, Extraction, Rust Prevention",
+  "subject": "Combined Science (Chemistry)",
+  "level": "Upper Secondary",
+  "grade": "Sec 4",
+  "chapter": 8,
+  "worksheet": 3,
+  "syllabus": "O-Level Science (Chemistry) 5087/5088",
+  "constraints": "No sacrificial protection; no electrolysis details; no technical reduction methods; focus on observations and predictions only",
+  "questions": [
+    {
+      "question": "Zinc metal is added to blue copper(II) sulfate solution. Which observation is correct?",
+      "options": [
+        "No visible change occurs",
+        "Vigorous fizzing with hydrogen gas produced",
+        "Brown coating forms on zinc, blue solution fades to colourless",
+        "Solution turns green, white precipitate forms"
+      ],
+      "correct": 2,
+      "points": 10,
+      "explanation": "Zinc is more reactive than copper and displaces it: Zn + CuSO₄ → ZnSO₄ + Cu. Brown copper metal coats the zinc, and blue Cu²⁺ ions are replaced by colourless Zn²⁺ ions, fading the solution."
+    },
+    {
+      "question": "A student tests four metals P, Q, R, S with dilute hydrochloric acid. Results: P - rapid bubbles; Q - slow bubbles; R - no reaction; S - very rapid bubbles. Order of decreasing reactivity?",
+      "options": [
+        "P > Q > S > R",
+        "S > P > Q > R",
+        "R > Q > P > S",
+        "S > R > P > Q"
+      ],
+      "correct": 1,
+      "points": 12,
+      "explanation": "More reactive metals react faster with acids, producing hydrogen bubbles more vigorously. S (very rapid) is most reactive, then P, then Q (slow), and R (no reaction) is least reactive, below hydrogen."
+    },
+    {
+      "question": "Which metal can be extracted from its oxide by heating with carbon?",
+      "options": [
+        "Aluminium",
+        "Magnesium",
+        "Potassium",
+        "Iron"
+      ],
+      "correct": 3,
+      "points": 10,
+      "explanation": "Metals below carbon in the reactivity series can be extracted by reduction with carbon. Iron is below carbon; aluminium, magnesium, and potassium are above carbon and require electrolysis."
+    },
+    {
+      "question": "Which method prevents rusting by placing a barrier between iron and the environment?",
+      "options": [
+        "Attaching magnesium blocks to iron",
+        "Using an electric current",
+        "Painting the iron surface",
+        "Heating the iron strongly"
+      ],
+      "correct": 2,
+      "points": 10,
+      "explanation": "Painting creates a physical barrier that prevents oxygen and water from reaching the iron surface. Attaching magnesium is sacrificial protection (not barrier method); the other options are not rust prevention methods."
+    },
+    {
+      "question": "Iron filings are added to copper(II) sulfate solution. After 10 minutes, what is observed?",
+      "options": [
+        "No change; iron does not react with copper sulfate",
+        "Brown solid deposits on iron, blue solution becomes pale green",
+        "Iron dissolves completely with vigorous bubbling",
+        "Solution turns yellow, copper precipitates as blue solid"
+      ],
+      "correct": 1,
+      "points": 15,
+      "explanation": "Iron is above copper in reactivity: Fe + CuSO₄ → FeSO₄ + Cu. Brown copper metal coats the iron, and blue Cu²⁺ ions are replaced by pale green Fe²⁺ ions in solution."
+    },
+    {
+      "question": "Why does copper not react with dilute hydrochloric acid?",
+      "options": [
+        "Copper is too soft to react with acids",
+        "Copper forms a protective oxide layer",
+        "Dilute acids are not strong enough for any reaction",
+        "Copper is below hydrogen in the reactivity series"
+      ],
+      "correct": 3,
+      "points": 10,
+      "explanation": "Only metals above hydrogen in the reactivity series can displace hydrogen from dilute acids. Copper is below hydrogen, so no reaction occurs with dilute HCl or H₂SO₄."
+    },
+    {
+      "question": "Magnesium ribbon is heated in steam. What products are formed?",
+      "options": [
+        "Magnesium hydroxide and oxygen gas",
+        "No reaction; magnesium does not react with steam",
+        "Magnesium oxide and hydrogen gas",
+        "Magnesium chloride and hydrogen gas"
+      ],
+      "correct": 2,
+      "points": 12,
+      "explanation": "Magnesium reacts with steam (not cold water): Mg + H₂O(g) → MgO + H₂. White magnesium oxide solid and hydrogen gas are produced. Heating is required to initiate the reaction."
+    },
+    {
+      "question": "Which protective method is most suitable for preventing rust on a bicycle chain?",
+      "options": [
+        "Painting with decorative paint",
+        "Oiling or greasing",
+        "Plastic coating",
+        "Galvanising with zinc"
+      ],
+      "correct": 1,
+      "points": 10,
+      "explanation": "Oiling or greasing provides a barrier that prevents water and oxygen reaching the iron, while allowing the chain to move freely. Painting would chip off with movement; plastic coating is impractical; galvanising is for larger structures."
+    },
+    {
+      "question": "Metal X displaces copper from copper(II) sulfate but does not displace zinc from zinc sulfate. Where is X in the reactivity series?",
+      "options": [
+        "Above zinc",
+        "Below copper",
+        "At the same position as hydrogen",
+        "Between zinc and copper"
+      ],
+      "correct": 3,
+      "points": 15,
+      "explanation": "A metal can only displace a less reactive metal from its salt solution. Since X displaces copper (more reactive than Cu) but not zinc (less reactive than Zn), X must be between zinc and copper in the reactivity series."
+    },
+    {
+      "question": "Why can carbon reduce iron(III) oxide but not magnesium oxide?",
+      "options": [
+        "Iron oxide is more stable than magnesium oxide",
+        "Carbon reacts faster with iron oxide",
+        "Iron is below carbon in reactivity; magnesium is above carbon",
+        "Magnesium oxide requires higher temperatures"
+      ],
+      "correct": 2,
+      "points": 15,
+      "explanation": "Carbon can only reduce oxides of metals below it in the reactivity series. Iron is below carbon, so reduction occurs. Magnesium is above carbon, so carbon cannot reduce magnesium oxide."
+    },
+    {
+      "question": "Magnesium ribbon is added to dilute sulfuric acid. Which observation is NOT expected?",
+      "options": [
+        "Brown precipitate forms immediately",
+        "Magnesium dissolves, colourless solution forms",
+        "Effervescence; gas burns with 'pop' sound",
+        "Test tube feels warm (exothermic reaction)"
+      ],
+      "correct": 0,
+      "points": 12,
+      "explanation": "Mg + H₂SO₄ → MgSO₄ + H₂. Magnesium dissolves to form colourless magnesium sulfate solution; hydrogen gas causes effervescence and burns with 'pop'; reaction is exothermic. No brown precipitate forms."
+    },
+    {
+      "question": "Which metal would be extracted by electrolysis of its molten ore?",
+      "options": [
+        "Iron",
+        "Zinc",
+        "Lead",
+        "Aluminium"
+      ],
+      "correct": 3,
+      "points": 10,
+      "explanation": "Metals above carbon in the reactivity series (like aluminium) cannot be extracted by reduction with carbon and require electrolysis. Iron, zinc, and lead are below carbon and can be extracted by reduction."
+    },
+    {
+      "question": "A steel gate is painted to prevent rusting. How does this method work?",
+      "options": [
+        "Paint reacts with iron to form a protective compound",
+        "Paint forms a barrier preventing oxygen and water reaching the iron",
+        "Paint absorbs moisture from the air",
+        "Paint makes the iron more reactive, forming protective oxide"
+      ],
+      "correct": 1,
+      "points": 10,
+      "explanation": "Rusting requires both oxygen and water. Paint creates a physical barrier that prevents these from contacting the iron surface, stopping the corrosion process."
+    },
+    {
+      "question": "Predict: Will lead react with zinc sulfate solution? Explain.",
+      "options": [
+        "Yes; lead displaces zinc, forming lead sulfate",
+        "Yes; vigorous reaction with hydrogen gas",
+        "No reaction; lead is less reactive than zinc",
+        "No reaction; both metals are unreactive"
+      ],
+      "correct": 2,
+      "points": 15,
+      "explanation": "Lead is below zinc in the reactivity series. A metal can only displace a less reactive metal from solution. Since lead is less reactive than zinc, no displacement occurs."
+    },
+    {
+      "question": "A metal M reacts with dilute HCl to produce hydrogen gas. M does not react with cold water but reacts with steam to produce hydrogen. M is most likely:",
+      "options": [
+        "Potassium",
+        "Copper",
+        "Silver",
+        "Magnesium"
+      ],
+      "correct": 3,
+      "points": 18,
+      "explanation": "Potassium reacts with cold water (too reactive). Copper and silver do not react with dilute acids (below hydrogen). Magnesium fits: no reaction with cold water, reacts with steam, and reacts with dilute acids to produce H₂."
+    }
+  ]
+}
