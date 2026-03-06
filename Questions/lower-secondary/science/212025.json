@@ -1,0 +1,371 @@
+{
+  "title": "Thermal Transfer of Heat - Fill in the Blanks (Advanced)",
+  "topic": "Thermal Transfer of Heat - Convection, Conduction, Radiation",
+  "subject": "Science",
+  "level": "Secondary",
+  "grade": "Sec 2",
+  "chapter": 2,
+  "worksheet": 5,
+  "questions": [
+    {
+      "question": "The land surface gains thermal energy at a _______ rate than the sea surface during the day.",
+      "options": [
+        "slower",
+        "faster",
+        "constant",
+        "similar"
+      ],
+      "correct": 1,
+      "points": 10,
+      "explanation": "The land surface heats up faster than the sea surface during the day. This is why the air above the land surface becomes warmer first, initiating the sea breeze cycle."
+    },
+    {
+      "question": "Air above the land surface gains thermal energy, expands, becomes _______ dense and rises.",
+      "options": [
+        "more",
+        "less",
+        "equally",
+        "extremely"
+      ],
+      "correct": 1,
+      "points": 10,
+      "explanation": "When air is heated, particles gain kinetic energy and move further apart. The same mass now occupies more volume, making it less dense. Less dense air rises above denser air."
+    },
+    {
+      "question": "During a sea breeze, the cooler and _______ air over the sea surface rushes in to replace the rising warm air over the land surface.",
+      "options": [
+        "lighter",
+        "thinner",
+        "denser",
+        "warmer"
+      ],
+      "correct": 2,
+      "points": 10,
+      "explanation": "Cooler air has particles that are closer together, making it denser. This denser air from above the sea surface rushes towards the land surface to replace the rising warm air."
+    },
+    {
+      "question": "At night, the land surface _______ thermal energy at a faster rate than the sea surface.",
+      "options": [
+        "gains",
+        "absorbs",
+        "loses",
+        "reflects"
+      ],
+      "correct": 2,
+      "points": 12,
+      "explanation": "At night, without sunlight, both land surface and sea surface lose thermal energy. However, the land surface cools down faster, so it loses thermal energy at a faster rate."
+    },
+    {
+      "question": "During a land breeze at night, the air above the _______ is warmer and rises.",
+      "options": [
+        "land surface",
+        "sea surface",
+        "mountain top",
+        "forest floor"
+      ],
+      "correct": 1,
+      "points": 12,
+      "explanation": "At night, the sea surface remains warmer than the land surface. The air above the sea surface is therefore warmer, less dense, and rises."
+    },
+    {
+      "question": "The circular movement of air due to differences in temperature and density is called a _______ current.",
+      "options": [
+        "conduction",
+        "radiation",
+        "convection",
+        "electrical"
+      ],
+      "correct": 2,
+      "points": 10,
+      "explanation": "Convection currents are formed when fluids (liquids or gases) circulate due to differences in density caused by temperature differences."
+    },
+    {
+      "question": "When water is heated from below, the water at the bottom becomes _______ dense than the cooler water above it.",
+      "options": [
+        "more",
+        "less",
+        "equally",
+        "far more"
+      ],
+      "correct": 1,
+      "points": 10,
+      "explanation": "Heated water expands as particles move further apart. This makes the heated water at the bottom less dense, causing it to rise while cooler water sinks."
+    },
+    {
+      "question": "In convection, thermal energy is transferred through the _______ of the fluid itself.",
+      "options": [
+        "vibration",
+        "collision",
+        "bulk movement",
+        "compression"
+      ],
+      "correct": 2,
+      "points": 10,
+      "explanation": "Unlike conduction where particles vibrate in fixed positions, convection involves the bulk movement (flow) of the fluid carrying thermal energy from one place to another."
+    },
+    {
+      "question": "Cooler air is denser because the air particles are _______ together.",
+      "options": [
+        "further",
+        "loosely",
+        "closer",
+        "not held"
+      ],
+      "correct": 2,
+      "points": 10,
+      "explanation": "Cooler air particles have lower kinetic energy, so they move slower and stay closer together. This results in more particles per unit volume, making cooler air denser."
+    },
+    {
+      "question": "During a sea breeze, warm air rises over the land surface and travels towards the _______ at higher altitudes.",
+      "options": [
+        "mountains",
+        "inland areas",
+        "sea surface",
+        "forest"
+      ],
+      "correct": 2,
+      "points": 12,
+      "explanation": "The warm air that rises above the land surface moves towards the sea surface at higher altitudes. There it cools, becomes denser, and sinks, completing the convection cycle."
+    },
+    {
+      "question": "As warm air rises to higher altitudes, it cools, becomes _______ and eventually sinks.",
+      "options": [
+        "less dense",
+        "lighter",
+        "denser",
+        "warmer"
+      ],
+      "correct": 2,
+      "points": 12,
+      "explanation": "Rising warm air cools as it moves away from the heated surface. Cooler air is denser, so it eventually sinks back down, completing the convection cycle."
+    },
+    {
+      "question": "Convection can occur in liquids and gases but _______ occur in solids.",
+      "options": [
+        "can also",
+        "will always",
+        "cannot",
+        "may sometimes"
+      ],
+      "correct": 2,
+      "points": 12,
+      "explanation": "In solids, particles are held in fixed positions and cannot flow freely. Since convection requires bulk movement of particles, it cannot occur in solids."
+    },
+    {
+      "question": "During the day, a region of _______ pressure forms above the land surface as warm air rises.",
+      "options": [
+        "high",
+        "low",
+        "constant",
+        "extreme"
+      ],
+      "correct": 1,
+      "points": 15,
+      "explanation": "When warm air rises above the land surface, there are fewer air particles near the surface, creating a region of low pressure. Air from above the sea surface (higher pressure) rushes in to fill this space."
+    },
+    {
+      "question": "Air flows from the sea surface to the land surface during a sea breeze because air moves from regions of _______ pressure to regions of _______ pressure.",
+      "options": [
+        "low, high",
+        "high, low",
+        "equal, equal",
+        "low, low"
+      ],
+      "correct": 1,
+      "points": 15,
+      "explanation": "Air naturally flows from regions of higher pressure to regions of lower pressure. During a sea breeze, pressure is higher above the cooler sea surface and lower above the warmer land surface."
+    },
+    {
+      "question": "In a boiling pot of water, the water near the _______ loses thermal energy, becomes denser, and sinks.",
+      "options": [
+        "bottom",
+        "heat source",
+        "surface",
+        "centre"
+      ],
+      "correct": 2,
+      "points": 12,
+      "explanation": "Water heated at the bottom rises to the surface. At the surface, it loses thermal energy to the surroundings, becomes cooler and denser, then sinks back down."
+    },
+    {
+      "question": "During a land breeze, the surface wind blows from the _______ towards the _______.",
+      "options": [
+        "sea surface, land surface",
+        "land surface, sea surface",
+        "mountain top, sea surface",
+        "sea surface, mountain top"
+      ],
+      "correct": 1,
+      "points": 12,
+      "explanation": "At night (land breeze), the land surface is cooler than the sea surface. Air above the warmer sea surface rises, and cooler denser air from above the land surface rushes towards the sea at ground level."
+    },
+    {
+      "question": "During a land breeze, the convection current flows in the _______ direction compared to a sea breeze.",
+      "options": [
+        "same",
+        "opposite",
+        "perpendicular",
+        "random"
+      ],
+      "correct": 1,
+      "points": 12,
+      "explanation": "Sea breeze (day): surface air flows from sea to land. Land breeze (night): surface air flows from land to sea. The directions are opposite."
+    },
+    {
+      "question": "Warm air is _______ dense than cool air because the particles are further apart.",
+      "options": [
+        "more",
+        "much more",
+        "less",
+        "equally"
+      ],
+      "correct": 2,
+      "points": 10,
+      "explanation": "When air is heated, particles gain kinetic energy, move faster, and spread further apart. This means fewer particles per unit volume, making warm air less dense."
+    },
+    {
+      "question": "The denser air rushes in along the _______ while the less dense air rises and moves at higher altitudes.",
+      "options": [
+        "upper atmosphere",
+        "ground level",
+        "stratosphere",
+        "clouds"
+      ],
+      "correct": 1,
+      "points": 12,
+      "explanation": "In convection currents, cooler denser air flows along the ground level (surface), while warmer less dense air rises and travels at higher altitudes."
+    },
+    {
+      "question": "If the temperature difference between the land surface and sea surface is greater, the convection current will be _______.",
+      "options": [
+        "weaker",
+        "unchanged",
+        "stronger",
+        "absent"
+      ],
+      "correct": 2,
+      "points": 15,
+      "explanation": "A greater temperature difference creates a larger difference in air density and pressure. This causes air to flow faster, creating a stronger convection current."
+    },
+    {
+      "question": "Convection currents transfer thermal energy from _______ regions to _______ regions.",
+      "options": [
+        "cooler, warmer",
+        "warmer, cooler",
+        "denser, denser",
+        "lower, lower"
+      ],
+      "correct": 1,
+      "points": 12,
+      "explanation": "Thermal energy always flows from warmer regions to cooler regions. Convection currents carry warm fluid (and its thermal energy) away from the heat source to cooler areas."
+    },
+    {
+      "question": "The rising warm air carries thermal energy _______ from the heated surface.",
+      "options": [
+        "towards",
+        "away",
+        "parallel to",
+        "below"
+      ],
+      "correct": 1,
+      "points": 10,
+      "explanation": "Convection transfers thermal energy by moving heated fluid away from the heat source. Rising warm air carries thermal energy away from the heated surface."
+    },
+    {
+      "question": "For a sea breeze to form, the land surface must be _______ than the sea surface.",
+      "options": [
+        "cooler",
+        "warmer",
+        "at the same temperature as",
+        "slightly cooler"
+      ],
+      "correct": 1,
+      "points": 10,
+      "explanation": "A sea breeze forms when the land surface is warmer than the sea surface. This causes air above the land to rise, and cooler air from above the sea rushes in to replace it."
+    },
+    {
+      "question": "In the absence of a temperature difference, convection currents _______ form.",
+      "options": [
+        "will still",
+        "will always",
+        "will not",
+        "may still"
+      ],
+      "correct": 2,
+      "points": 15,
+      "explanation": "Convection requires a temperature difference to create density differences in the fluid. Without a temperature difference, there is no difference in density, so no convection current forms."
+    },
+    {
+      "question": "During convection in a fluid, the _______ fluid rises while the _______ fluid sinks.",
+      "options": [
+        "cooler, warmer",
+        "denser, less dense",
+        "warmer, cooler",
+        "heavier, lighter"
+      ],
+      "correct": 2,
+      "points": 10,
+      "explanation": "Warmer fluid is less dense and rises. Cooler fluid is denser and sinks. This creates the circular flow of a convection current."
+    },
+    {
+      "question": "At night, the region of low pressure forms above the _______ because warm air rises there.",
+      "options": [
+        "land surface",
+        "sea surface",
+        "mountain top",
+        "buildings"
+      ],
+      "correct": 1,
+      "points": 15,
+      "explanation": "At night, the sea surface is warmer than the land surface. Warm air rises above the sea surface, creating a region of low pressure there. This is the opposite of what happens during the day."
+    },
+    {
+      "question": "Convection is more efficient than conduction in transferring thermal energy through fluids because particles can _______ freely.",
+      "options": [
+        "vibrate",
+        "collide",
+        "move",
+        "compress"
+      ],
+      "correct": 2,
+      "points": 12,
+      "explanation": "In fluids, particles can move freely from place to place. This bulk movement of particles carrying thermal energy is faster than the particle-to-particle vibration in conduction."
+    },
+    {
+      "question": "When a fluid is heated, it expands. This means the same _______ of fluid now occupies a larger volume.",
+      "options": [
+        "number",
+        "temperature",
+        "mass",
+        "density"
+      ],
+      "correct": 2,
+      "points": 12,
+      "explanation": "When heated, the same mass of fluid expands to occupy a larger volume. Since density = mass ÷ volume, the density decreases when volume increases for the same mass."
+    },
+    {
+      "question": "The process where warm fluid rises and cool fluid sinks, creating a continuous circulation, is called a convection _______.",
+      "options": [
+        "wave",
+        "current",
+        "transfer",
+        "ray"
+      ],
+      "correct": 1,
+      "points": 10,
+      "explanation": "A convection current is the continuous circular movement of fluid caused by heating. Warm fluid rises, cools, becomes denser, sinks, gets heated again, and the cycle repeats."
+    },
+    {
+      "question": "During a sea breeze, the air completes a _______ path, rising over the land surface and sinking over the sea surface.",
+      "options": [
+        "straight",
+        "random",
+        "circular",
+        "zigzag"
+      ],
+      "correct": 2,
+      "points": 10,
+      "explanation": "The convection current forms a circular (loop) path: air rises over land surface → moves towards sea at high altitude → sinks over sea surface → flows back to land at ground level."
+    }
+  ]
+}
