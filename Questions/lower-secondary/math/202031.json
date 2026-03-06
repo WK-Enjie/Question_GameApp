@@ -47,7 +47,7 @@
       "options": ["6x² + 19x - 10", "6x² - 19x - 10", "6x² + 11x - 10", "6x² - 11x - 10"],
       "correct": 3,
       "points": 20,
-      "explanation": "FOIL: 3x·2x = 6x², 3x·(-5) = -15x, 2·2x = 4x, 2·(-5) = -10 → 6x² - 11x - 10."
+      "explanation": "Rainbow: 3x·2x = 6x², 3x·(-5) = -15x, 2·2x = 4x, 2·(-5) = -10 → 6x² - 11x - 10."
     },
     {
       "question": "Factorise using cross method: x² + 7x + 12",
@@ -66,3 +66,4 @@
   ]
 
 }
+
