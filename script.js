@@ -1,6 +1,6 @@
 // ================================================================
 //  QUIZ FLIP — CARD BATTLE GAME
-//  Complete Game Logic with Fraction Rendering
+//  Complete Game Logic with Math Rendering
 //  Rules:
 //  - Each player answers once per turn, then switches
 //  - Correct: card stays, answer + explanation shown, points awarded
@@ -100,10 +100,23 @@ function decodeQuizCode(code) {
 
 
 // ================================================================
-//  FRACTION RENDERER
-//  Auto-converts "3/8" to styled fraction, "2 1/3" to mixed number
-//  Skips patterns like "100 / 100" (spaces around slash)
-//  Skips patterns inside words or $ amounts
+//  MATH RENDERER
+//  Converts plain text notation into styled HTML:
+//
+//  FRACTIONS:      3/8          → stacked fraction
+//  MIXED NUMBERS:  2 1/3        → whole + stacked fraction
+//  SUPERSCRIPTS:   x^2          → x with raised 2
+//                  x^{10}       → x with raised 10
+//                  x^2 + y^2    → works inline
+//  SQUARE ROOT:    √(2x)        → √ with vinculum over 2x
+//                  √(ab)        → √ with vinculum over ab
+//  CUBE ROOT:      ∛(8)         → ³√ with vinculum over 8
+//                  cbrt(27)     → ³√ with vinculum over 27
+//
+//  PROTECTED (not converted):
+//    450 / 9       → stays as "450 / 9" (spaces around slash)
+//    $5,400        → stays as "$5,400" (dollar amounts)
+//    P x R x T / 100 → stays unchanged
 // ================================================================
 function renderMath(text) {
     if (!text) return '';
@@ -115,22 +128,59 @@ function renderMath(text) {
         .replace(/>/g, '&gt;');
 
     // Step 2: Protect patterns we do NOT want to convert
+
     // Protect "x / y" (spaces around slash) — division expressions
-    const protected_divs = [];
-    s = s.replace(/(\d+)\s+\/\s+(\d+)/g, (match) => {
-        protected_divs.push(match);
-        return `__PROTDIV${protected_divs.length - 1}__`;
+    const protectedDivs = [];
+    s = s.replace(/(\w+)\s+\/\s+(\w+)/g, (match) => {
+        protectedDivs.push(match);
+        return `__PDIV${protectedDivs.length - 1}__`;
     });
 
-    // Protect dollar amounts like "$5,400"
-    const protected_dollars = [];
+    // Protect dollar amounts "$5,400" or "$2,000.50"
+    const protectedDollars = [];
     s = s.replace(/\$[\d,]+(\.\d+)?/g, (match) => {
-        protected_dollars.push(match);
-        return `__PROTDOL${protected_dollars.length - 1}__`;
+        protectedDollars.push(match);
+        return `__PDOL${protectedDollars.length - 1}__`;
     });
 
-    // Step 3: Mixed numbers — "2 1/3", "4 1/12", "1 3/8"
+    // Step 3: Cube roots — ∛(content) or cbrt(content)
+    s = s.replace(/(?:∛|cbrt)\(([^)]+)\)/g, (match, content) => {
+        return `<span class="cbrt-wrap">` +
+            `<span class="cbrt-index">3</span>` +
+            `<span class="cbrt-sign">√</span>` +
+            `<span class="cbrt-content">${content}</span>` +
+        `</span>`;
+    });
+
+    // Step 4: Square roots — √(content)
+    s = s.replace(/√\(([^)]+)\)/g, (match, content) => {
+        return `<span class="sqrt-wrap">` +
+            `<span class="sqrt-sign">√</span>` +
+            `<span class="sqrt-content">${content}</span>` +
+        `</span>`;
+    });
+
+    // Step 5: Standalone √ followed by a single variable — √a, √b
+    s = s.replace(/√([a-zA-Z])/g, (match, v) => {
+        return `<span class="sqrt-wrap">` +
+            `<span class="sqrt-sign">√</span>` +
+            `<span class="sqrt-content">${v}</span>` +
+        `</span>`;
+    });
+
+    // Step 6: Superscripts with braces — x^{10}, a^{2n}
+    s = s.replace(/\^{([^}]+)}/g, (match, exp) => {
+        return `<span class="sup">${exp}</span>`;
+    });
+
+    // Step 7: Superscripts single char — x^2, b^4, )^2
+    s = s.replace(/\^(\d+|[a-zA-Z])/g, (match, exp) => {
+        return `<span class="sup">${exp}</span>`;
+    });
+
+    // Step 8: Mixed numbers — "2 1/3", "4 1/12", "1 3/8"
     // Pattern: whole_number SPACE numerator/denominator
+    // Must come BEFORE simple fractions
     s = s.replace(/(\d+)\s+(\d+)\/(\d+)/g, (match, whole, num, den) => {
         return `<span class="mixed-num">` +
             `<span class="whole">${whole}</span>` +
@@ -141,7 +191,8 @@ function renderMath(text) {
         `</span>`;
     });
 
-    // Step 4: Simple fractions — "3/8", "2/5", "11/12"
+    // Step 9: Simple fractions — "3/8", "2/5", "11/12"
+    // Only matches digit/digit that hasn't been converted yet
     s = s.replace(/(\d+)\/(\d+)/g, (match, num, den) => {
         return `<span class="frac">` +
             `<span class="frac-num">${num}</span>` +
@@ -149,12 +200,12 @@ function renderMath(text) {
         `</span>`;
     });
 
-    // Step 5: Restore protected patterns
-    protected_divs.forEach((val, i) => {
-        s = s.replace(`__PROTDIV${i}__`, val);
+    // Step 10: Restore protected patterns
+    protectedDivs.forEach((val, i) => {
+        s = s.replace(`__PDIV${i}__`, val);
     });
-    protected_dollars.forEach((val, i) => {
-        s = s.replace(`__PROTDOL${i}__`, val);
+    protectedDollars.forEach((val, i) => {
+        s = s.replace(`__PDOL${i}__`, val);
     });
 
     return s;
@@ -269,8 +320,8 @@ class ConfettiEngine {
 
     burst(x, y, count = 35) {
         const colors = [
-            '#667eea','#764ba2','#f59e0b','#10b981',
-            '#ef4444','#3b82f6','#ec4899','#8b5cf6'
+            '#667eea', '#764ba2', '#f59e0b', '#10b981',
+            '#ef4444', '#3b82f6', '#ec4899', '#8b5cf6'
         ];
         for (let i = 0; i < count; i++) {
             const angle = (Math.PI * 2 * i) / count + (Math.random() - 0.5);
@@ -455,10 +506,10 @@ async function loadCatalogFromStorage() {
     if (s) { gameState.quizCatalog = JSON.parse(s); return; }
 
     gameState.quizCatalog = [
-        { code:'101-01-1', filename:'101011.json', path:'Questions/primary/math/101011.json',                  name:'P1 Math Chapter 1' },
-        { code:'201-01-1', filename:'201011.json', path:'Questions/lower-secondary/math/201011.json',          name:'Sec 1 Math Chapter 1' },
-        { code:'201-01-2', filename:'201012.json', path:'Questions/lower-secondary/math/201012.json',          name:'Sec 1 Math Ch 1 WS 2' },
-        { code:'342-09-1', filename:'342091.json', path:'Questions/upper-secondary/combined-chem/342091.json', name:'Sec 4 Comb Chem Ch 9' }
+        { code: '101-01-1', filename: '101011.json', path: 'Questions/primary/math/101011.json',                  name: 'P1 Math Chapter 1' },
+        { code: '201-01-1', filename: '201011.json', path: 'Questions/lower-secondary/math/201011.json',          name: 'Sec 1 Math Chapter 1' },
+        { code: '201-01-2', filename: '201012.json', path: 'Questions/lower-secondary/math/201012.json',          name: 'Sec 1 Math Ch 1 WS 2' },
+        { code: '342-09-1', filename: '342091.json', path: 'Questions/upper-secondary/combined-chem/342091.json', name: 'Sec 4 Comb Chem Ch 9' }
     ];
     localStorage.setItem('quizCatalog', JSON.stringify(gameState.quizCatalog));
 }
@@ -696,7 +747,7 @@ function onCardClick(idx) {
 
 
 // ================================================================
-//  QUESTION OVERLAY  (with renderMath)
+//  QUESTION OVERLAY  (uses renderMath)
 // ================================================================
 function showQuestion(idx) {
     const q = gameState.questions[idx];
@@ -728,10 +779,10 @@ function showQuestion(idx) {
     if (isDbl)      { sp.textContent = '⚡ DOUBLE'; sp.classList.add('double'); }
     else if (isBns) { sp.textContent = '🎁 TREASURE'; }
 
-    // Question text — RENDER FRACTIONS
+    // Question text — RENDER MATH
     document.getElementById('question-text').innerHTML = renderMath(q.question || 'Question');
 
-    // Options — RENDER FRACTIONS
+    // Options — RENDER MATH
     const optBox = document.getElementById('options-container');
     optBox.innerHTML = '';
     (q.options || []).forEach((o, i) => {
@@ -806,12 +857,12 @@ function submitAnswer() {
     gameState.answered = true;
     stopTimer();
 
-    const idx      = gameState.currentQuestion;
-    const q        = gameState.questions[idx];
-    const correct  = gameState.selectedAnswer === q.correct;
-    const pi       = gameState.currentPlayer - 1;
-    const isDbl    = gameState.specialCards.has(idx);
-    const isBns    = gameState.bonusCards.has(idx);
+    const idx       = gameState.currentQuestion;
+    const q         = gameState.questions[idx];
+    const correct   = gameState.selectedAnswer === q.correct;
+    const pi        = gameState.currentPlayer - 1;
+    const isDbl     = gameState.specialCards.has(idx);
+    const isBns     = gameState.bonusCards.has(idx);
     const timeTaken = (Date.now() - gameState.answerStartTime) / 1000;
 
     gameState.totalAnswered[pi]++;
@@ -889,7 +940,7 @@ function submitAnswer() {
         banner.className = 'q-result-banner correct-banner show';
         banner.innerHTML  = bannerHTML;
 
-        // Explanation — RENDER FRACTIONS (only on correct)
+        // Explanation — RENDER MATH (only on correct)
         if (q.explanation) {
             const exp = document.getElementById('q-explanation');
             exp.innerHTML = `<strong>Explanation:</strong> ${renderMath(q.explanation)}`;
@@ -945,8 +996,6 @@ function submitAnswer() {
             <div>❌ Wrong Answer!</div>
             <div class="result-sub">The correct answer remains hidden. Study and try next time!</div>
         `;
-
-        // NO explanation shown
 
         buildNextButton('incorrect');
     }
@@ -1385,6 +1434,7 @@ document.addEventListener('DOMContentLoaded', async () => {
 
     console.log('✅ Ready — add quiz JSON files to Questions/ folder');
     console.log('📋 Rules: Correct = keep card | Wrong = card lost, answer hidden | Timeout = card returns');
+    console.log('📐 Math: Use ^2 for superscript, √(x) for sqrt, ∛(x) for cbrt, n/d for fractions');
 });
 
 
@@ -1392,13 +1442,15 @@ document.addEventListener('DOMContentLoaded', async () => {
 //  DEBUG TOOLS
 // ================================================================
 window.quizTools = {
-    testQuiz:     c => { setPinFromCode(c); setTimeout(submitPin, 500); },
+    testQuiz: c => { setPinFromCode(c); setTimeout(submitPin, 500); },
+
     resetCatalog: () => {
         localStorage.removeItem('quizCatalog');
         gameState.quizCatalog = [];
         updateCatalogDisplay();
         console.log('Catalog reset');
     },
+
     addTestQuiz: () => {
         gameState.quizCatalog.push({
             code: '201-01-1', filename: '201011.json',
@@ -1410,9 +1462,19 @@ window.quizTools = {
         updateCatalogDisplay();
         console.log('Test quiz added');
     },
+
     showState: () => console.log(JSON.parse(JSON.stringify(gameState))),
-    testFraction: (text) => {
-        console.log('Input:', text);
-        console.log('Output:', renderMath(text));
+
+    // Test the math renderer in console
+    testMath: (text) => {
+        const result = renderMath(text);
+        console.log('Input: ', text);
+        console.log('Output:', result);
+        // Also render in a temporary popup
+        const div = document.createElement('div');
+        div.style.cssText = 'position:fixed;top:20px;left:50%;transform:translateX(-50%);background:#1e293b;color:#f1f5f9;padding:30px;border-radius:16px;z-index:99999;font-size:1.5rem;border:2px solid #667eea;box-shadow:0 20px 60px rgba(0,0,0,0.5);min-width:300px;text-align:center;';
+        div.innerHTML = `<div style="font-size:0.7rem;color:#94a3b8;margin-bottom:10px;">MATH RENDER TEST</div>${result}<div style="font-size:0.7rem;color:#64748b;margin-top:15px;cursor:pointer;" onclick="this.parentElement.remove()">Click to close</div>`;
+        document.body.appendChild(div);
+        return result;
     }
 };
