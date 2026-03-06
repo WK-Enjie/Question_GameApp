@@ -1,0 +1,131 @@
+{
+  "title": "Algebraic Identities - Advanced Applications",
+  "topic": "Quadratic Expressions - Algebraic Identities",
+  "subject": "Mathematics",
+  "level": "Lower Secondary",
+  "grade": "Sec 2",
+  "chapter": 4,
+  "worksheet": 2,
+  "questions": [
+    {
+      "question": "Factorise completely: 3x^2 - 75",
+      "options": [
+        "(3x + 15)(x - 5)",
+        "3(x + 25)(x - 3)",
+        "3(x + 5)(x - 5)",
+        "(3x + 5)(x - 15)"
+      ],
+      "correct": 2,
+      "points": 12,
+      "explanation": "First factor out the common factor 3: 3x^2 - 75 = 3(x^2 - 25). Then apply difference of squares: 3(x^2 - 25) = 3(x + 5)(x - 5)"
+    },
+    {
+      "question": "Factorise completely: (x + 2)^2 - 9",
+      "options": [
+        "(x - 1)(x - 5)",
+        "(x + 11)(x - 7)",
+        "(x + 5)(x + 1)",
+        "(x + 5)(x - 1)"
+      ],
+      "correct": 3,
+      "points": 15,
+      "explanation": "Using a^2 - b^2 = (a + b)(a - b) where a = (x + 2) and b = 3. So (x + 2)^2 - 9 = [(x + 2) + 3][(x + 2) - 3] = (x + 5)(x - 1)"
+    },
+    {
+      "question": "Expand: (√(2x) + 3)(√(2x) - 3)",
+      "options": [
+        "2x + 9",
+        "2x - 9",
+        "4x^2 - 9",
+        "2x - 3"
+      ],
+      "correct": 1,
+      "points": 12,
+      "explanation": "Using (a + b)(a - b) = a^2 - b^2. Here a = √(2x) and b = 3. So (√(2x))^2 - 3^2 = 2x - 9"
+    },
+    {
+      "question": "Given that x - y = 4 and xy = 12, find the value of x^2 + y^2.",
+      "options": [
+        "40",
+        "20",
+        "28",
+        "52"
+      ],
+      "correct": 0,
+      "points": 15,
+      "explanation": "Using (x - y)^2 = x^2 - 2xy + y^2. So 4^2 = x^2 + y^2 - 2(12). Therefore 16 = x^2 + y^2 - 24, so x^2 + y^2 = 16 + 24 = 40"
+    },
+    {
+      "question": "Factorise completely: 16a^2 - 81b^4",
+      "options": [
+        "(4a + 9b)(4a - 9b)",
+        "(8a + 9b^2)(8a - 9b^2)",
+        "(4a^2 + 9b^2)(4a^2 - 9b^2)",
+        "(4a + 9b^2)(4a - 9b^2)"
+      ],
+      "correct": 3,
+      "points": 12,
+      "explanation": "Using a^2 - b^2 = (a + b)(a - b). Here 16a^2 = (4a)^2 and 81b^4 = (9b^2)^2. So 16a^2 - 81b^4 = (4a + 9b^2)(4a - 9b^2)"
+    },
+    {
+      "question": "Given that x^2 + y^2 = 13 and xy = 6, find the value of (x + y)^2.",
+      "options": [
+        "7",
+        "19",
+        "31",
+        "25"
+      ],
+      "correct": 3,
+      "points": 15,
+      "explanation": "Using (x + y)^2 = x^2 + 2xy + y^2 = (x^2 + y^2) + 2xy = 13 + 2(6) = 13 + 12 = 25"
+    },
+    {
+      "question": "Factorise completely: x^4 - 16",
+      "options": [
+        "(x^2 + 4)(x^2 - 4)",
+        "(x^2 + 4)(x + 2)(x - 2)",
+        "(x + 2)^2 (x - 2)^2",
+        "(x^2 - 4)(x^2 - 4)"
+      ],
+      "correct": 1,
+      "points": 15,
+      "explanation": "First: x^4 - 16 = (x^2)^2 - 4^2 = (x^2 + 4)(x^2 - 4). Then factorise (x^2 - 4) further: = (x^2 + 4)(x + 2)(x - 2). Note: (x^2 + 4) cannot be factorised further using real numbers."
+    },
+    {
+      "question": "Evaluate without a calculator: 998^2 - 2^2",
+      "options": [
+        "994004",
+        "995996",
+        "996000",
+        "998000"
+      ],
+      "correct": 2,
+      "points": 12,
+      "explanation": "Using a^2 - b^2 = (a + b)(a - b). So 998^2 - 2^2 = (998 + 2)(998 - 2) = 1000 x 996 = 996000"
+    },
+    {
+      "question": "Expand and simplify: (√(a) + √(b))^2 - (√(a) - √(b))^2",
+      "options": [
+        "4√(ab)",
+        "2a + 2b",
+        "4ab",
+        "a + b"
+      ],
+      "correct": 0,
+      "points": 18,
+      "explanation": "(√(a) + √(b))^2 = a + 2√(ab) + b. (√(a) - √(b))^2 = a - 2√(ab) + b. Subtracting: (a + 2√(ab) + b) - (a - 2√(ab) + b) = 4√(ab)"
+    },
+    {
+      "question": "Given that x^2 + y^2 = 20 and (x - y)^2 = 8, find the value of xy.",
+      "options": [
+        "4",
+        "6",
+        "8",
+        "12"
+      ],
+      "correct": 1,
+      "points": 18,
+      "explanation": "Using (x - y)^2 = x^2 - 2xy + y^2. So 8 = (x^2 + y^2) - 2xy = 20 - 2xy. Therefore 2xy = 20 - 8 = 12, so xy = 6"
+    }
+  ]
+}
