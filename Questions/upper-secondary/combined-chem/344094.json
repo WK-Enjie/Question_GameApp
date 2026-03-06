@@ -1,0 +1,565 @@
+{
+  "title": "Identification of Compounds and Gases - Advanced",
+  "topic": "Qualitative Analysis with Gas Tests",
+  "subject": "Combined Science (Chemistry)",
+  "level": "Upper Secondary",
+  "grade": "Sec 4",
+  "chapter": 9,
+  "worksheet": 5,
+  "syllabus": "O-Level Chemistry 5078",
+  "constraints": "No flame tests; no bromide; no concentrated NH₃; no lead compounds; no H₂S; no K₂Cr₂O₇",
+  "questions": [
+    {
+      "question": "A colourless gas is produced when dilute HCl is added to a white solid. The gas forms a white precipitate with limewater. The gas is:",
+      "options": [
+        "Hydrogen",
+        "Oxygen",
+        "Carbon dioxide",
+        "Ammonia"
+      ],
+      "correct": 2,
+      "points": 10,
+      "explanation": "A gas that forms a white precipitate with limewater is carbon dioxide (CO₂). The white precipitate formed is calcium carbonate (CaCO₃)."
+    },
+    {
+      "question": "A colourless gas with a pungent smell is released when a white solid is warmed with NaOH solution. The gas turns moist red litmus paper blue. The gas is:",
+      "options": [
+        "Hydrogen",
+        "Chlorine",
+        "Ammonia",
+        "Sulfur dioxide"
+      ],
+      "correct": 2,
+      "points": 10,
+      "explanation": "A pungent gas that turns moist red litmus paper blue is ammonia (NH₃). This confirms the presence of ammonium ions (NH₄⁺) in the original solid."
+    },
+    {
+      "question": "A colourless gas is produced when a metal is added to dilute sulfuric acid. The gas extinguishes a burning splint with a 'pop' sound. The gas is:",
+      "options": [
+        "Oxygen",
+        "Carbon dioxide",
+        "Hydrogen",
+        "Nitrogen"
+      ],
+      "correct": 2,
+      "points": 10,
+      "explanation": "A gas that extinguishes a burning splint with a 'pop' sound is hydrogen (H₂). This is produced when reactive metals react with dilute acids."
+    },
+    {
+      "question": "A colourless gas relights a glowing splint. The gas is:",
+      "options": [
+        "Hydrogen",
+        "Oxygen",
+        "Carbon dioxide",
+        "Ammonia"
+      ],
+      "correct": 1,
+      "points": 10,
+      "explanation": "A gas that relights a glowing splint is oxygen (O₂). This is the standard test for oxygen."
+    },
+    {
+      "question": "A greenish-yellow gas with a pungent choking smell is produced. The gas bleaches moist blue litmus paper, turning it white. The gas is:",
+      "options": [
+        "Ammonia",
+        "Sulfur dioxide",
+        "Chlorine",
+        "Nitrogen dioxide"
+      ],
+      "correct": 2,
+      "points": 12,
+      "explanation": "A greenish-yellow gas that bleaches moist litmus paper (turns it white) is chlorine (Cl₂). Chlorine is a bleaching agent."
+    },
+    {
+      "question": "A white solid produces effervescence when dilute HCl is added. The gas forms a white precipitate with limewater. The remaining solution gives a white precipitate with NaOH that is insoluble in excess. The solid is:",
+      "options": [
+        "Na₂CO₃",
+        "CaCO₃",
+        "ZnCO₃",
+        "K₂CO₃"
+      ],
+      "correct": 1,
+      "points": 15,
+      "explanation": "Gas forming white precipitate with limewater indicates CO₂, confirming CO₃²⁻. White precipitate with NaOH insoluble in excess indicates Ca²⁺. Thus, CaCO₃."
+    },
+    {
+      "question": "A white solid gives a pungent gas when warmed with NaOH. The gas turns moist red litmus blue. The solid dissolved in water gives a white precipitate with acidified BaCl₂. The solid is:",
+      "options": [
+        "NH₄Cl",
+        "NH₄NO₃",
+        "(NH₄)₂SO₄",
+        "NH₄I"
+      ],
+      "correct": 2,
+      "points": 15,
+      "explanation": "Pungent gas turning moist red litmus blue is NH₃, confirming NH₄⁺. White precipitate with acidified BaCl₂ indicates SO₄²⁻. Thus, (NH₄)₂SO₄."
+    },
+    {
+      "question": "Zinc metal is added to dilute hydrochloric acid. A gas is evolved. Which statement about the gas is correct?",
+      "options": [
+        "It forms a white precipitate with limewater",
+        "It relights a glowing splint",
+        "It burns with a 'pop' sound",
+        "It turns moist red litmus blue"
+      ],
+      "correct": 2,
+      "points": 12,
+      "explanation": "Zinc reacts with dilute HCl to produce hydrogen gas (Zn + 2HCl → ZnCl₂ + H₂). Hydrogen burns with a 'pop' sound when a lighted splint is applied."
+    },
+    {
+      "question": "A brown gas is observed when a solid nitrate is heated strongly. The brown gas is:",
+      "options": [
+        "Ammonia",
+        "Chlorine",
+        "Nitrogen dioxide",
+        "Sulfur dioxide"
+      ],
+      "correct": 2,
+      "points": 12,
+      "explanation": "When most nitrates (except Group I nitrates) are heated, they decompose to produce brown nitrogen dioxide gas (NO₂) and oxygen."
+    },
+    {
+      "question": "When copper(II) nitrate is heated strongly, the gases produced are:",
+      "options": [
+        "Nitrogen dioxide only",
+        "Oxygen only",
+        "Nitrogen dioxide and oxygen",
+        "Ammonia and oxygen"
+      ],
+      "correct": 2,
+      "points": 15,
+      "explanation": "Copper(II) nitrate decomposes on heating: 2Cu(NO₃)₂ → 2CuO + 4NO₂ + O₂. Brown NO₂ gas and colourless O₂ (relights glowing splint) are produced."
+    },
+    {
+      "question": "A solid compound is heated. A brown gas and a colourless gas are evolved. The colourless gas relights a glowing splint. The residue is a black solid that turns blue when water is added. The original compound is:",
+      "options": [
+        "Fe(NO₃)₃",
+        "Zn(NO₃)₂",
+        "Cu(NO₃)₂",
+        "Ca(NO₃)₂"
+      ],
+      "correct": 2,
+      "points": 20,
+      "explanation": "Brown gas (NO₂) and colourless gas relighting glowing splint (O₂) indicate thermal decomposition of a nitrate. Black residue turning blue with water indicates CuO (anhydrous copper(II) oxide turns blue when hydrated). Thus, Cu(NO₃)₂."
+    },
+    {
+      "question": "Solid X produces a gas when heated. The gas forms a white precipitate with limewater. The residue dissolves in dilute HCl to give a solution that produces a white precipitate with NaOH, insoluble in excess. Solid X is:",
+      "options": [
+        "CaCO₃",
+        "Na₂CO₃",
+        "ZnCO₃",
+        "CuCO₃"
+      ],
+      "correct": 0,
+      "points": 18,
+      "explanation": "Gas forming white precipitate with limewater is CO₂, indicating carbonate decomposition. Residue is the metal oxide. Dissolving in HCl and testing with NaOH gives white precipitate insoluble in excess, indicating Ca²⁺. Thus, CaCO₃ (decomposes to CaO + CO₂)."
+    },
+    {
+      "question": "A pale green solution gives a dirty green precipitate with NaOH that turns reddish-brown on standing. When magnesium ribbon is added to the original solution, a gas is evolved that burns with a 'pop' sound. The solution contains:",
+      "options": [
+        "Fe³⁺ ions",
+        "Fe²⁺ ions",
+        "Cu²⁺ ions",
+        "Zn²⁺ ions"
+      ],
+      "correct": 1,
+      "points": 15,
+      "explanation": "Dirty green precipitate with NaOH turning reddish-brown indicates Fe²⁺ (Fe(OH)₂ oxidises to Fe(OH)₃). Magnesium reacting to produce H₂ (pop sound) confirms an acidic solution. Thus, Fe²⁺ ions."
+    },
+    {
+      "question": "An unknown gas turns moist blue litmus paper red, then bleaches it white. The gas is:",
+      "options": [
+        "Ammonia",
+        "Carbon dioxide",
+        "Chlorine",
+        "Hydrogen"
+      ],
+      "correct": 2,
+      "points": 12,
+      "explanation": "A gas that first turns moist blue litmus red (acidic) then bleaches it white is chlorine (Cl₂). Chlorine dissolves in water to form acids, then acts as a bleaching agent."
+    },
+    {
+      "question": "A blue solution gives a blue precipitate with NaOH that is insoluble in excess. When zinc metal is added to the solution, a gas is evolved that burns with a 'pop' sound, and a reddish-brown solid deposits on the zinc. The solution contains:",
+      "options": [
+        "Fe²⁺ ions",
+        "Fe³⁺ ions",
+        "Cu²⁺ ions",
+        "Zn²⁺ ions"
+      ],
+      "correct": 2,
+      "points": 18,
+      "explanation": "Blue precipitate with NaOH insoluble in excess indicates Cu²⁺. Zinc displacing a metal (reddish-brown = copper) and evolving H₂ (pop sound) confirms Cu²⁺ in acidic solution. Zn + Cu²⁺ → Zn²⁺ + Cu."
+    },
+    {
+      "question": "A solid is heated in a test tube. A colourless liquid collects at the cooler end of the tube. The liquid boils at 100°C and turns anhydrous cobalt(II) chloride paper from blue to pink. The liquid is:",
+      "options": [
+        "Dilute acid",
+        "Ethanol",
+        "Water",
+        "Ammonia solution"
+      ],
+      "correct": 2,
+      "points": 12,
+      "explanation": "A colourless liquid that boils at 100°C and turns anhydrous cobalt(II) chloride paper from blue to pink is water (H₂O). These are the two standard tests for water."
+    },
+    {
+      "question": "Which of the following correctly describes the tests for water?",
+      "options": [
+        "Boils at 0°C and turns cobalt(II) chloride paper pink",
+        "Boils at 100°C and turns cobalt(II) chloride paper blue",
+        "Boils at 100°C and turns anhydrous cobalt(II) chloride paper from blue to pink",
+        "Freezes at 100°C and turns cobalt(II) chloride paper pink"
+      ],
+      "correct": 2,
+      "points": 10,
+      "explanation": "Water boils at 100°C (at standard atmospheric pressure) and turns anhydrous cobalt(II) chloride paper from blue to pink. These are the two tests for water."
+    },
+    {
+      "question": "A white solid dissolves in water to give a colourless solution. Adding dilute HCl to the solid produces effervescence and a gas that forms a white precipitate with limewater. The solution gives no precipitate with NaOH. The original solid is:",
+      "options": [
+        "CaCO₃",
+        "Na₂CO₃",
+        "ZnCO₃",
+        "MgCO₃"
+      ],
+      "correct": 1,
+      "points": 15,
+      "explanation": "Gas forming white precipitate with limewater confirms CO₃²⁻. No precipitate with NaOH indicates a Group I cation (Na⁺ or K⁺). Thus, Na₂CO₃."
+    },
+    {
+      "question": "When hydrogen peroxide decomposes in the presence of manganese(IV) oxide catalyst, the gas produced:",
+      "options": [
+        "Burns with a 'pop' sound",
+        "Forms a white precipitate with limewater",
+        "Relights a glowing splint",
+        "Turns moist red litmus blue"
+      ],
+      "correct": 2,
+      "points": 12,
+      "explanation": "Hydrogen peroxide decomposes to produce oxygen gas: 2H₂O₂ → 2H₂O + O₂. Oxygen relights a glowing splint."
+    },
+    {
+      "question": "A solid nitrate is heated strongly. A brown gas is evolved, and the residue is a reddish-brown solid. The original nitrate is:",
+      "options": [
+        "Cu(NO₃)₂",
+        "Fe(NO₃)₃",
+        "Zn(NO₃)₂",
+        "Ca(NO₃)₂"
+      ],
+      "correct": 1,
+      "points": 18,
+      "explanation": "Brown gas (NO₂) indicates nitrate decomposition. Reddish-brown residue is Fe₂O₃ (iron(III) oxide). Thus, Fe(NO₃)₃. Note: Cu(NO₃)₂ gives black CuO residue."
+    },
+    {
+      "question": "Gas X turns moist red litmus blue. Gas Y forms a white precipitate with limewater. Gas Z burns with a 'pop' sound. The gases X, Y, and Z are:",
+      "options": [
+        "X = CO₂, Y = NH₃, Z = O₂",
+        "X = NH₃, Y = CO₂, Z = H₂",
+        "X = Cl₂, Y = SO₂, Z = H₂",
+        "X = NH₃, Y = SO₂, Z = O₂"
+      ],
+      "correct": 1,
+      "points": 15,
+      "explanation": "X turns moist red litmus blue → NH₃ (alkaline gas). Y forms white precipitate with limewater → CO₂. Z burns with 'pop' sound → H₂. Thus, X = NH₃, Y = CO₂, Z = H₂."
+    },
+    {
+      "question": "A carbonate X is heated strongly. It does NOT decompose. When dilute HCl is added to X, effervescence occurs and the gas forms a white precipitate with limewater. The solution gives no precipitate with NaOH. X is:",
+      "options": [
+        "CaCO₃",
+        "ZnCO₃",
+        "Na₂CO₃",
+        "CuCO₃"
+      ],
+      "correct": 2,
+      "points": 18,
+      "explanation": "A carbonate that does NOT decompose on heating is a Group I carbonate (Na₂CO₃ or K₂CO₃). No precipitate with NaOH confirms Na⁺. Gas with HCl forming white precipitate with limewater confirms CO₃²⁻. Thus, Na₂CO₃."
+    },
+    {
+      "question": "A student heats solid ammonium chloride (NH₄Cl). Which observation is correct?",
+      "options": [
+        "A brown gas is evolved",
+        "The solid sublimes and white fumes are seen",
+        "A gas that relights a glowing splint is evolved",
+        "The solid melts to form a colourless liquid"
+      ],
+      "correct": 1,
+      "points": 12,
+      "explanation": "Ammonium chloride sublimes when heated (solid → gas directly). White fumes of NH₄Cl are observed as it decomposes and recombines: NH₄Cl → NH₃ + HCl → NH₄Cl (white fumes)."
+    },
+    {
+      "question": "A solution gives a reddish-brown precipitate with NaOH. When the solution is warmed with NaOH, no gas is evolved. The solution gives no precipitate with acidified BaCl₂. It gives a white precipitate with AgNO₃ that is soluble in dilute NH₃. The compound is:",
+      "options": [
+        "FeCl₂",
+        "FeCl₃",
+        "Fe₂(SO₄)₃",
+        "Fe(NO₃)₃"
+      ],
+      "correct": 1,
+      "points": 20,
+      "explanation": "Reddish-brown precipitate with NaOH indicates Fe³⁺. No gas when warmed rules out NH₄⁺. No precipitate with acidified BaCl₂ rules out SO₄²⁻. White precipitate with AgNO₃ soluble in dilute NH₃ indicates Cl⁻. Thus, FeCl₃."
+    },
+    {
+      "question": "A white solid produces two gases when heated. One gas forms a white precipitate with limewater, and the other turns moist red litmus blue. The solid is:",
+      "options": [
+        "Na₂CO₃",
+        "CaCO₃",
+        "(NH₄)₂CO₃",
+        "NH₄NO₃"
+      ],
+      "correct": 2,
+      "points": 18,
+      "explanation": "Gas forming white precipitate with limewater is CO₂. Gas turning moist red litmus blue is NH₃. A compound releasing both CO₂ and NH₃ on heating is ammonium carbonate: (NH₄)₂CO₃ → 2NH₃ + CO₂ + H₂O."
+    },
+    {
+      "question": "Concentrated hydrochloric acid is added to potassium manganate(VII). A greenish-yellow gas with a choking smell is evolved. The gas is:",
+      "options": [
+        "Oxygen",
+        "Chlorine",
+        "Hydrogen",
+        "Nitrogen dioxide"
+      ],
+      "correct": 1,
+      "points": 15,
+      "explanation": "Greenish-yellow gas with choking smell is chlorine (Cl₂). KMnO₄ oxidises HCl to produce Cl₂: 2KMnO₄ + 16HCl → 2KCl + 2MnCl₂ + 8H₂O + 5Cl₂."
+    },
+    {
+      "question": "A compound gives a yellow precipitate with AgNO₃ that is insoluble in dilute NH₃. When the compound is heated with NaOH solution, a pungent gas is evolved that turns moist red litmus blue. The compound is:",
+      "options": [
+        "NH₄Cl",
+        "NH₄NO₃",
+        "(NH₄)₂SO₄",
+        "NH₄I"
+      ],
+      "correct": 3,
+      "points": 18,
+      "explanation": "Yellow precipitate with AgNO₃ insoluble in dilute NH₃ indicates I⁻. Pungent gas turning moist red litmus blue is NH₃, confirming NH₄⁺. Thus, NH₄I."
+    },
+    {
+      "question": "A blue solution is electrolysed. At the cathode, a reddish-brown solid is deposited. At the anode, a greenish-yellow gas with a pungent smell is evolved. The electrolyte is:",
+      "options": [
+        "CuSO₄(aq)",
+        "CuCl₂(aq)",
+        "FeCl₃(aq)",
+        "NaCl(aq)"
+      ],
+      "correct": 1,
+      "points": 20,
+      "explanation": "Blue solution indicates Cu²⁺. Reddish-brown solid at cathode is copper metal. Greenish-yellow gas at anode is chlorine. Thus, the electrolyte is CuCl₂(aq)."
+    },
+    {
+      "question": "A gas jar of chlorine is inverted over a gas jar of ammonia. The observation is:",
+      "options": [
+        "A brown gas is formed",
+        "White fumes are produced",
+        "A 'pop' sound is heard",
+        "No visible change"
+      ],
+      "correct": 1,
+      "points": 15,
+      "explanation": "When chlorine and ammonia gases mix, they react to form white fumes of ammonium chloride: 8NH₃ + 3Cl₂ → N₂ + 6NH₄Cl. The NH₄Cl appears as white fumes/smoke."
+    },
+    {
+      "question": "A gas turns moist blue litmus red but does NOT bleach it. The gas also forms a white precipitate with limewater. The gas is:",
+      "options": [
+        "Chlorine",
+        "Sulfur dioxide",
+        "Carbon dioxide",
+        "Hydrogen chloride"
+      ],
+      "correct": 2,
+      "points": 12,
+      "explanation": "A gas that turns moist blue litmus red (acidic) but does NOT bleach it, and forms a white precipitate with limewater, is carbon dioxide (CO₂). Chlorine would bleach the litmus."
+    },
+    {
+      "question": "Solid sodium carbonate is heated with solid ammonium chloride. The gas evolved:",
+      "options": [
+        "Forms a white precipitate with limewater",
+        "Burns with a 'pop' sound",
+        "Turns moist red litmus blue",
+        "Bleaches moist litmus paper"
+      ],
+      "correct": 2,
+      "points": 18,
+      "explanation": "When Na₂CO₃ is heated with NH₄Cl, ammonia gas is released: Na₂CO₃ + 2NH₄Cl → 2NaCl + H₂O + CO₂ + 2NH₃. The dominant gas detected is NH₃, which turns moist red litmus blue."
+    },
+    {
+      "question": "An unknown compound X gives effervescence with dilute HCl. The gas forms a white precipitate with limewater. When NaOH is added to a solution of X, a white precipitate forms that dissolves in excess NaOH. Adding AgNO₃ to another portion gives no precipitate. X is:",
+      "options": [
+        "CaCO₃",
+        "ZnCO₃",
+        "Na₂CO₃",
+        "MgCO₃"
+      ],
+      "correct": 1,
+      "points": 20,
+      "explanation": "Gas forming white precipitate with limewater confirms CO₃²⁻. White precipitate with NaOH soluble in excess indicates Zn²⁺ (amphoteric). No precipitate with AgNO₃ rules out Cl⁻ and I⁻. Thus, ZnCO₃."
+    },
+    {
+      "question": "A mixture of gases is tested. Gas A turns moist red litmus blue. Gas B turns moist blue litmus red and bleaches it. Gas C has no effect on litmus but relights a glowing splint. The gases A, B and C are:",
+      "options": [
+        "A = NH₃, B = Cl₂, C = O₂",
+        "A = CO₂, B = Cl₂, C = H₂",
+        "A = NH₃, B = CO₂, C = O₂",
+        "A = Cl₂, B = NH₃, C = CO₂"
+      ],
+      "correct": 0,
+      "points": 18,
+      "explanation": "A turns moist red litmus blue → NH₃ (alkaline). B turns moist blue litmus red then bleaches it → Cl₂. C has no effect on litmus but relights glowing splint → O₂. Thus, A = NH₃, B = Cl₂, C = O₂."
+    },
+    {
+      "question": "A solid is heated and a gas is evolved. The gas has no effect on limewater and does not burn with a 'pop' sound, but it relights a glowing splint. The solid could be:",
+      "options": [
+        "CaCO₃",
+        "NH₄Cl",
+        "KNO₃",
+        "Na₂CO₃"
+      ],
+      "correct": 2,
+      "points": 15,
+      "explanation": "Gas that relights glowing splint is O₂. No effect on limewater rules out CO₂. KNO₃ (potassium nitrate, a Group I nitrate) decomposes to give O₂: 2KNO₃ → 2KNO₂ + O₂."
+    },
+    {
+      "question": "A student adds dilute HCl to four different white solids W, X, Y, and Z. The observations are: W - no reaction; X - effervescence, gas forms white precipitate with limewater; Y - effervescence, gas has no effect on limewater but burns with 'pop' sound; Z - no effervescence but solid dissolves. The solids are:",
+      "options": [
+        "W = NaCl, X = Na₂CO₃, Y = Mg, Z = NaOH",
+        "W = NaOH, X = Na₂CO₃, Y = Zn, Z = NaCl",
+        "W = NaCl, X = CaCO₃, Y = Zn, Z = NaOH",
+        "W = CaSO₄, X = Na₂CO₃, Y = Mg, Z = NaCl"
+      ],
+      "correct": 0,
+      "points": 20,
+      "explanation": "W - no reaction with HCl indicates NaCl (already a chloride). X - CO₂ evolved indicates carbonate (Na₂CO₃). Y - H₂ evolved indicates reactive metal (Mg). Z - dissolves without gas indicates base or soluble compound (NaOH neutralises HCl)."
+    },
+    {
+      "question": "Two colourless solutions P and Q are tested. P gives a white precipitate with AgNO₃ that is soluble in dilute NH₃. Q gives a yellow precipitate with AgNO₃ that is insoluble in dilute NH₃. The anions in P and Q are:",
+      "options": [
+        "P = I⁻, Q = Cl⁻",
+        "P = Cl⁻, Q = I⁻",
+        "P = SO₄²⁻, Q = Cl⁻",
+        "P = NO₃⁻, Q = I⁻"
+      ],
+      "correct": 1,
+      "points": 15,
+      "explanation": "White precipitate with AgNO₃ soluble in dilute NH₃ indicates Cl⁻ (AgCl). Yellow precipitate with AgNO₃ insoluble in dilute NH₃ indicates I⁻ (AgI). Thus, P = Cl⁻, Q = I⁻."
+    },
+    {
+      "question": "A green solution is divided into two portions. Portion 1 gives a green precipitate with NaOH that turns reddish-brown on standing in air. Portion 2 gives a white precipitate with acidified BaCl₂. The solution contains:",
+      "options": [
+        "Fe³⁺ and SO₄²⁻",
+        "Fe²⁺ and SO₄²⁻",
+        "Cu²⁺ and SO₄²⁻",
+        "Fe²⁺ and Cl⁻"
+      ],
+      "correct": 1,
+      "points": 15,
+      "explanation": "Green precipitate with NaOH turning reddish-brown in air indicates Fe²⁺ (Fe(OH)₂ oxidises to Fe(OH)₃). White precipitate with acidified BaCl₂ indicates SO₄²⁻. Thus, Fe²⁺ and SO₄²⁻."
+    },
+    {
+      "question": "A student adds excess NaOH to solutions of four different cations. The results are shown: Solution A - white precipitate, insoluble in excess; Solution B - white precipitate, soluble in excess; Solution C - blue precipitate, insoluble in excess; Solution D - reddish-brown precipitate. Which solution contains Zn²⁺?",
+      "options": [
+        "Solution A",
+        "Solution B",
+        "Solution C",
+        "Solution D"
+      ],
+      "correct": 1,
+      "points": 12,
+      "explanation": "Zn(OH)₂ is amphoteric - it forms a white precipitate with NaOH that dissolves in excess NaOH to form zincate ions. Solution B shows this behaviour. (A = Ca²⁺/Mg²⁺, C = Cu²⁺, D = Fe³⁺)"
+    },
+    {
+      "question": "Thermal decomposition of which compound produces ONLY oxygen gas?",
+      "options": [
+        "Cu(NO₃)₂",
+        "CaCO₃",
+        "H₂O₂",
+        "NH₄Cl"
+      ],
+      "correct": 2,
+      "points": 12,
+      "explanation": "H₂O₂ decomposes to produce only O₂ and H₂O: 2H₂O₂ → 2H₂O + O₂. Cu(NO₃)₂ produces NO₂ and O₂. CaCO₃ produces CO₂. NH₄Cl sublimes to NH₃ and HCl."
+    },
+    {
+      "question": "A colourless liquid is tested. It boils at 100°C and turns anhydrous cobalt(II) chloride paper from blue to pink. The liquid is confirmed to be:",
+      "options": [
+        "Ethanol",
+        "Dilute hydrochloric acid",
+        "Water",
+        "Aqueous ammonia"
+      ],
+      "correct": 2,
+      "points": 10,
+      "explanation": "Water boils at 100°C at standard atmospheric pressure and turns anhydrous cobalt(II) chloride paper from blue to pink. Both tests together confirm the liquid is water."
+    },
+    {
+      "question": "A compound is heated and a colourless liquid condenses. The liquid freezes at 0°C and turns blue cobalt(II) chloride paper pink. Which statement is correct?",
+      "options": [
+        "The liquid is ethanol",
+        "The liquid is water",
+        "The liquid is dilute acid",
+        "The liquid cannot be identified from these tests"
+      ],
+      "correct": 1,
+      "points": 12,
+      "explanation": "Water freezes at 0°C and boils at 100°C. Anhydrous cobalt(II) chloride (blue) turns pink when water is added. Both observations confirm the liquid is water."
+    },
+    {
+      "question": "Hydrated copper(II) sulfate (CuSO₄·5H₂O) is heated gently. A colourless liquid collects at the cooler end of the test tube. The liquid boils at 100°C. The remaining solid is:",
+      "options": [
+        "Blue",
+        "White",
+        "Black",
+        "Green"
+      ],
+      "correct": 1,
+      "points": 15,
+      "explanation": "When hydrated copper(II) sulfate is heated, water is driven off (confirmed by boiling at 100°C). The blue hydrated salt becomes white anhydrous copper(II) sulfate (CuSO₄)."
+    },
+    {
+      "question": "Which pair of tests would confirm that a colourless liquid is pure water?",
+      "options": [
+        "Freezes at 10°C and turns cobalt(II) chloride paper pink",
+        "Boils at 100°C and turns blue cobalt(II) chloride paper pink",
+        "Boils at 78°C and turns cobalt(II) chloride paper pink",
+        "Turns cobalt(II) chloride paper pink and has no smell"
+      ],
+      "correct": 1,
+      "points": 12,
+      "explanation": "Pure water boils at exactly 100°C (at 1 atm) and turns anhydrous blue cobalt(II) chloride paper pink. Ethanol boils at 78°C, so option C is wrong. Both tests are needed to confirm pure water."
+    },
+    {
+      "question": "A solid is heated strongly. Water vapour is evolved (confirmed by boiling point of 100°C and cobalt(II) chloride test). The residue turns from blue to white. Adding water to the white residue turns it blue again. The original solid is:",
+      "options": [
+        "Anhydrous copper(II) sulfate",
+        "Hydrated copper(II) sulfate",
+        "Copper(II) carbonate",
+        "Copper(II) nitrate"
+      ],
+      "correct": 1,
+      "points": 18,
+      "explanation": "Water vapour evolved indicates a hydrated compound. Blue solid turning white indicates loss of water of crystallisation from CuSO₄·5H₂O. White residue turning blue with water confirms anhydrous CuSO₄. Original solid is hydrated copper(II) sulfate."
+    },
+    {
+      "question": "A gas forms a white precipitate with limewater. When excess of the gas is bubbled through, the white precipitate dissolves to give a colourless solution. The gas is:",
+      "options": [
+        "Ammonia",
+        "Hydrogen",
+        "Carbon dioxide",
+        "Chlorine"
+      ],
+      "correct": 2,
+      "points": 15,
+      "explanation": "CO₂ forms white precipitate (CaCO₃) with limewater. Excess CO₂ dissolves the precipitate: CaCO₃ + CO₂ + H₂O → Ca(HCO₃)₂ (soluble calcium hydrogencarbonate). This is characteristic of CO₂."
+    },
+    {
+      "question": "A white solid gives effervescence with dilute HCl. The gas forms a white precipitate with limewater. The remaining solution gives a white precipitate with NaOH that dissolves in excess NaOH. The same solution gives a white precipitate with NH₃ that does NOT dissolve in excess NH₃. The cation present is:",
+      "options": [
+        "Ca²⁺",
+        "Zn²⁺",
+        "Al³⁺",
+        "Mg²⁺"
+      ],
+      "correct": 2,
+      "points": 20,
+      "explanation": "Gas forming white precipitate with limewater confirms CO₃²⁻. White precipitate with NaOH soluble in excess indicates Zn²⁺ or Al³⁺. White precipitate with NH₃ insoluble in excess indicates Al³⁺ (Zn(OH)₂ dissolves in excess NH₃). Thus, Al³⁺."
+    }
+  ]
+}
