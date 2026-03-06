@@ -1,0 +1,371 @@
+{
+  "title": "Bimetallic Strips and Applications of Thermal Expansion",
+  "topic": "Effects of Heating on Bimetallic Strips and Applications",
+  "subject": "Science",
+  "level": "Lower Secondary",
+  "grade": "Sec 2",
+  "chapter": 2,
+  "worksheet": 2,
+  "questions": [
+    {
+      "question": "A bimetallic strip is made of two different metals bonded together. When heated, the strip bends because the two metals expand at _______ rates.",
+      "options": [
+        "the same",
+        "different",
+        "constant",
+        "zero"
+      ],
+      "correct": 1,
+      "points": 10,
+      "explanation": "Different metals have different rates of thermal expansion. When bonded together and heated, one metal expands more than the other, causing the strip to bend."
+    },
+    {
+      "question": "In a bimetallic strip, the metal that expands more when heated will be on the _______ of the curve.",
+      "options": [
+        "inside",
+        "outside",
+        "top",
+        "bottom"
+      ],
+      "correct": 1,
+      "points": 12,
+      "explanation": "The metal that expands more becomes longer and must curve around the outside. The metal that expands less stays shorter and remains on the inside of the curve."
+    },
+    {
+      "question": "A bimetallic strip made of brass and iron is heated. If brass expands more than iron, the strip will bend with _______ on the outer side of the curve.",
+      "options": [
+        "iron",
+        "brass",
+        "both metals equally",
+        "neither metal"
+      ],
+      "correct": 1,
+      "points": 12,
+      "explanation": "Brass expands more than iron when heated. The brass becomes longer and curves around the outside, while the iron (expanding less) stays on the inside."
+    },
+    {
+      "question": "When a bimetallic strip is cooled below room temperature, it bends in the _______ direction compared to when it is heated.",
+      "options": [
+        "same",
+        "opposite",
+        "perpendicular",
+        "random"
+      ],
+      "correct": 1,
+      "points": 15,
+      "explanation": "When cooled, the metal that normally expands more will now contract more. This causes the strip to bend in the opposite direction compared to heating."
+    },
+    {
+      "question": "In a fire alarm using a bimetallic strip, the strip bends when heated and _______ an electrical circuit to trigger the alarm.",
+      "options": [
+        "breaks",
+        "completes",
+        "insulates",
+        "bypasses"
+      ],
+      "correct": 1,
+      "points": 12,
+      "explanation": "In most fire alarms, the bimetallic strip bends when heated and touches a contact, completing the electrical circuit and triggering the alarm."
+    },
+    {
+      "question": "A thermostat uses a bimetallic strip to _______ control the temperature of a room or appliance.",
+      "options": [
+        "manually",
+        "randomly",
+        "automatically",
+        "permanently"
+      ],
+      "correct": 2,
+      "points": 10,
+      "explanation": "A thermostat uses the bending of a bimetallic strip to automatically switch heating or cooling devices on and off, maintaining a set temperature without manual intervention."
+    },
+    {
+      "question": "In an electric iron, when the desired temperature is reached, the bimetallic strip bends and _______ the circuit, stopping the heating.",
+      "options": [
+        "completes",
+        "breaks",
+        "reverses",
+        "doubles"
+      ],
+      "correct": 1,
+      "points": 12,
+      "explanation": "When the iron reaches the set temperature, the bimetallic strip bends away from the contact, breaking the circuit. This stops the heating element from receiving electricity."
+    },
+    {
+      "question": "When the electric iron cools down, the bimetallic strip returns to its original shape and _______ the circuit again to resume heating.",
+      "options": [
+        "breaks",
+        "insulates",
+        "completes",
+        "overloads"
+      ],
+      "correct": 2,
+      "points": 12,
+      "explanation": "As the iron cools, the bimetallic strip straightens and makes contact again, completing the circuit. This allows current to flow and the heating element to heat up again."
+    },
+    {
+      "question": "The continuous bending and straightening of the bimetallic strip in a thermostat keeps the temperature within a _______ range.",
+      "options": [
+        "wide",
+        "narrow",
+        "random",
+        "unlimited"
+      ],
+      "correct": 1,
+      "points": 12,
+      "explanation": "The thermostat switches the heater on and off repeatedly, keeping the temperature within a narrow range around the set point, rather than allowing large fluctuations."
+    },
+    {
+      "question": "Gaps are left between railway tracks to allow for thermal _______.",
+      "options": [
+        "contraction",
+        "conduction",
+        "expansion",
+        "radiation"
+      ],
+      "correct": 2,
+      "points": 10,
+      "explanation": "On hot days, railway tracks expand. Gaps between tracks provide space for this expansion, preventing the tracks from buckling or bending."
+    },
+    {
+      "question": "If railway tracks were laid without gaps on a cold day, the tracks would _______ and buckle on a hot day.",
+      "options": [
+        "contract",
+        "shrink",
+        "expand",
+        "break apart"
+      ],
+      "correct": 2,
+      "points": 12,
+      "explanation": "Tracks laid without gaps on a cold day have no room to expand when heated. On a hot day, they expand but have nowhere to go, causing them to buckle and deform."
+    },
+    {
+      "question": "Steel bridges often have one end fixed and the other end resting on _______ to allow for expansion and contraction.",
+      "options": [
+        "concrete blocks",
+        "rollers",
+        "springs",
+        "clamps"
+      ],
+      "correct": 1,
+      "points": 15,
+      "explanation": "Rollers allow one end of the bridge to move freely as the bridge expands in heat or contracts in cold. This prevents stress and damage to the bridge structure."
+    },
+    {
+      "question": "Power lines are hung loosely between poles to prevent them from _______ when they contract in cold weather.",
+      "options": [
+        "expanding",
+        "sagging",
+        "snapping",
+        "overheating"
+      ],
+      "correct": 2,
+      "points": 12,
+      "explanation": "In cold weather, power lines contract and shorten. If hung too tightly, this contraction would create tension that could snap the wires. The slack allows for safe contraction."
+    },
+    {
+      "question": "On a hot day, power lines appear to _______ more than usual because the metal expands and lengthens.",
+      "options": [
+        "tighten",
+        "sag",
+        "vibrate",
+        "glow"
+      ],
+      "correct": 1,
+      "points": 10,
+      "explanation": "When heated, power lines expand and become longer. Since the poles are fixed, the extra length causes the lines to hang lower and sag more."
+    },
+    {
+      "question": "A metal lid on a glass jar is difficult to open. Running hot water over the lid helps because the metal lid expands _______ than the glass.",
+      "options": [
+        "less",
+        "more",
+        "at the same rate",
+        "slower"
+      ],
+      "correct": 1,
+      "points": 12,
+      "explanation": "Metals generally expand more than glass when heated. Hot water causes the metal lid to expand more than the glass jar, loosening the lid and making it easier to open."
+    },
+    {
+      "question": "A bimetallic strip made of copper and steel is heated. Copper expands more than steel. The strip will bend with copper on the _______ and steel on the _______.",
+      "options": [
+        "inside, outside",
+        "outside, inside",
+        "top, bottom",
+        "left, right"
+      ],
+      "correct": 1,
+      "points": 15,
+      "explanation": "Copper expands more, so it becomes longer and must take the longer path around the outside of the curve. Steel expands less and stays on the inside."
+    },
+    {
+      "question": "When the same bimetallic strip (copper and steel) is cooled, copper contracts more than steel. The strip will now bend with copper on the _______.",
+      "options": [
+        "outside",
+        "inside",
+        "same side as when heated",
+        "neither side"
+      ],
+      "correct": 1,
+      "points": 15,
+      "explanation": "When cooled, copper contracts more than steel, so copper becomes shorter. The shorter metal goes to the inside of the curve. This is opposite to the bending when heated."
+    },
+    {
+      "question": "In a car engine, a thermostat uses a bimetallic strip or similar device to control the flow of _______.",
+      "options": [
+        "fuel",
+        "air",
+        "coolant",
+        "exhaust"
+      ],
+      "correct": 2,
+      "points": 12,
+      "explanation": "The car thermostat controls the flow of coolant (water or coolant fluid) through the engine. When the engine is cold, it restricts flow. When hot, it opens to allow cooling."
+    },
+    {
+      "question": "Concrete roads have expansion joints filled with compressible material to prevent _______ when the concrete expands in hot weather.",
+      "options": [
+        "flooding",
+        "cracking",
+        "fading",
+        "sinking"
+      ],
+      "correct": 1,
+      "points": 12,
+      "explanation": "Without expansion joints, expanding concrete would push against adjacent sections, causing stress and cracking. The compressible material absorbs the expansion."
+    },
+    {
+      "question": "A bimetallic strip is straight at room temperature. When placed in ice water, the strip will _______.",
+      "options": [
+        "remain straight",
+        "bend",
+        "melt",
+        "break"
+      ],
+      "correct": 1,
+      "points": 10,
+      "explanation": "In ice water, both metals contract, but one contracts more than the other. This unequal contraction causes the strip to bend, just in the opposite direction to heating."
+    },
+    {
+      "question": "The bending of a bimetallic strip depends on the _______ between the expansion rates of the two metals.",
+      "options": [
+        "sum",
+        "product",
+        "difference",
+        "average"
+      ],
+      "correct": 2,
+      "points": 12,
+      "explanation": "The greater the difference in expansion rates between the two metals, the more the strip will bend. If both metals expanded at the same rate, there would be no bending."
+    },
+    {
+      "question": "A longer bimetallic strip will show a _______ bend compared to a shorter strip of the same metals for the same temperature change.",
+      "options": [
+        "smaller",
+        "larger",
+        "same",
+        "no"
+      ],
+      "correct": 1,
+      "points": 15,
+      "explanation": "A longer strip means more material expanding. The difference in expansion between the two metals accumulates over the length, resulting in a larger, more noticeable bend."
+    },
+    {
+      "question": "Thermometers that use bimetallic strips are often coiled into a spiral so that a small temperature change produces a _______ movement of the pointer.",
+      "options": [
+        "smaller",
+        "larger",
+        "slower",
+        "random"
+      ],
+      "correct": 1,
+      "points": 15,
+      "explanation": "Coiling the strip makes it effectively longer, amplifying the bending effect. This produces a larger rotation of the pointer for the same temperature change, making the thermometer more sensitive."
+    },
+    {
+      "question": "In a simple fire alarm circuit, the bimetallic strip is positioned so that it _______ touch the electrical contact at normal room temperature.",
+      "options": [
+        "does",
+        "does not",
+        "sometimes",
+        "always"
+      ],
+      "correct": 1,
+      "points": 12,
+      "explanation": "At normal temperature, the circuit should be open (alarm off). The strip only bends enough to touch the contact and complete the circuit when the temperature rises significantly, as in a fire."
+    },
+    {
+      "question": "If a bimetallic strip in a thermostat becomes damaged or loses its flexibility, the appliance may _______ or never turn on.",
+      "options": [
+        "overheat",
+        "work perfectly",
+        "make noise",
+        "change colour"
+      ],
+      "correct": 0,
+      "points": 12,
+      "explanation": "A damaged bimetallic strip may not bend properly to break the circuit when the set temperature is reached. This could cause the appliance to overheat as it continues heating without stopping."
+    },
+    {
+      "question": "The design of a bimetallic strip thermostat ensures that heating is switched _______ when the temperature is too high and switched _______ when it is too low.",
+      "options": [
+        "on, off",
+        "off, on",
+        "off, off",
+        "on, on"
+      ],
+      "correct": 1,
+      "points": 12,
+      "explanation": "When too hot, the strip bends to break the circuit, switching heating off. When too cool, the strip returns to its original position, completing the circuit and switching heating on."
+    },
+    {
+      "question": "Unlike a liquid-in-glass thermometer, a bimetallic strip thermometer does not require a _______ to function.",
+      "options": [
+        "metal",
+        "liquid",
+        "scale",
+        "pointer"
+      ],
+      "correct": 1,
+      "points": 10,
+      "explanation": "Bimetallic strip thermometers use the bending of two metals to indicate temperature. They do not need liquid (like mercury or alcohol) as liquid-in-glass thermometers do."
+    },
+    {
+      "question": "An advantage of bimetallic strip thermometers over liquid-in-glass thermometers is that they are more _______ and less likely to break.",
+      "options": [
+        "fragile",
+        "expensive",
+        "durable",
+        "accurate"
+      ],
+      "correct": 2,
+      "points": 10,
+      "explanation": "Bimetallic strips are made of metals, making them more durable and robust. Glass thermometers are fragile and can break easily, potentially releasing harmful liquids."
+    },
+    {
+      "question": "When choosing metals for a bimetallic strip, engineers select two metals with very _______ rates of expansion to maximize bending.",
+      "options": [
+        "similar",
+        "different",
+        "slow",
+        "fast"
+      ],
+      "correct": 1,
+      "points": 10,
+      "explanation": "The greater the difference in expansion rates, the more the strip bends for a given temperature change. Metals with similar expansion rates would produce very little bending."
+    },
+    {
+      "question": "A bimetallic strip can be used as a switch because it can _______ and _______ an electrical circuit based on temperature.",
+      "options": [
+        "complete, break",
+        "heat, cool",
+        "expand, contract",
+        "conduct, insulate"
+      ],
+      "correct": 0,
+      "points": 12,
+      "explanation": "The bimetallic strip acts as a temperature-controlled switch. It can complete a circuit (by touching a contact) or break a circuit (by bending away from a contact) depending on the temperature."
+    }
+  ]
+}
