@@ -36,9 +36,9 @@ const gameState = {
     fastestAnswer: [Infinity, Infinity],
     timeoutCounts: [0, 0],
 
-    timeLeft: 45,
+    timeLeft: 150,
     timerInterval: null,
-    timerMax: 45,
+    timerMax: 150,
     answerStartTime: 0,
 
     canPickTreasure: false,
@@ -1477,4 +1477,5 @@ window.quizTools = {
         document.body.appendChild(div);
         return result;
     }
+
 };
