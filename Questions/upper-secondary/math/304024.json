@@ -1,0 +1,431 @@
+{
+  "title": "Probability of Dependent Events and Combined Probability",
+  "topic": "Probability - Dependent Events and Without Replacement",
+  "subject": "Mathematics",
+  "level": "Upper Secondary",
+  "grade": "Sec 4",
+  "chapter": 2,
+  "worksheet": 4,
+  "questions": [
+    {
+      "question": "A bag contains 5 red balls and 3 blue balls. Two balls are drawn without replacement. What is the probability that the first ball is red?",
+      "options": [
+        "5/8",
+        "3/8",
+        "5/7",
+        "1/2"
+      ],
+      "correct": 0,
+      "points": 10,
+      "explanation": "Total balls = 8. Red balls = 5. P(first red) = 5/8."
+    },
+    {
+      "question": "Using the same bag (5 red, 3 blue), if the first ball drawn is red, what is the probability that the second ball is also red?",
+      "options": [
+        "5/8",
+        "4/8",
+        "4/7",
+        "5/7"
+      ],
+      "correct": 2,
+      "points": 12,
+      "explanation": "After drawing one red ball, there are 7 balls left (4 red, 3 blue). P(second red after first red) = 4/7."
+    },
+    {
+      "question": "Using the same bag (5 red, 3 blue), what is the probability of drawing two red balls without replacement?",
+      "options": [
+        "25/64",
+        "20/56",
+        "5/14",
+        "4/7"
+      ],
+      "correct": 2,
+      "points": 12,
+      "explanation": "P(both red) = P(first red) x P(second red after first red) = 5/8 x 4/7 = 20/56 = 5/14."
+    },
+    {
+      "question": "Two events are dependent if the occurrence of one event _______ the probability of the other event.",
+      "options": [
+        "does not change",
+        "doubles",
+        "affects",
+        "eliminates"
+      ],
+      "correct": 2,
+      "points": 10,
+      "explanation": "Dependent events are events where the outcome of one event affects (changes) the probability of the other event occurring."
+    },
+    {
+      "question": "A box contains 4 green and 6 yellow marbles. Two marbles are drawn without replacement. What is the probability of drawing a green then a yellow?",
+      "options": [
+        "24/90",
+        "24/100",
+        "4/15",
+        "6/25"
+      ],
+      "correct": 2,
+      "points": 12,
+      "explanation": "P(green first) = 4/10. After drawing green, 9 marbles remain (6 yellow). P(yellow second) = 6/9. P(green then yellow) = 4/10 x 6/9 = 24/90 = 4/15."
+    },
+    {
+      "question": "Using the same box (4 green, 6 yellow), what is the probability of drawing a yellow then a green without replacement?",
+      "options": [
+        "4/15",
+        "6/25",
+        "24/100",
+        "2/9"
+      ],
+      "correct": 0,
+      "points": 12,
+      "explanation": "P(yellow first) = 6/10. After drawing yellow, 9 marbles remain (4 green). P(green second) = 4/9. P(yellow then green) = 6/10 x 4/9 = 24/90 = 4/15."
+    },
+    {
+      "question": "From the previous two questions, what is the probability of drawing one green and one yellow in any order without replacement?",
+      "options": [
+        "4/15",
+        "8/15",
+        "24/90",
+        "48/90"
+      ],
+      "correct": 1,
+      "points": 15,
+      "explanation": "P(one of each) = P(green then yellow) + P(yellow then green) = 4/15 + 4/15 = 8/15."
+    },
+    {
+      "question": "A deck of 52 cards has 4 aces. Two cards are drawn without replacement. What is the probability that both are aces?",
+      "options": [
+        "1/221",
+        "4/663",
+        "1/169",
+        "16/2704"
+      ],
+      "correct": 0,
+      "points": 15,
+      "explanation": "P(first ace) = 4/52. After drawing one ace, 51 cards remain (3 aces). P(second ace) = 3/51. P(both aces) = 4/52 x 3/51 = 12/2652 = 1/221."
+    },
+    {
+      "question": "For dependent events A and B, which formula is correct?",
+      "options": [
+        "P(A and B) = P(A) x P(B)",
+        "P(A and B) = P(A) + P(B)",
+        "P(A and B) = P(A) x P(B after A occurs)",
+        "P(A and B) = P(A) - P(B)"
+      ],
+      "correct": 2,
+      "points": 10,
+      "explanation": "For dependent events: P(A and B) = P(A) x P(B after A occurs). The probability of B changes depending on whether A has occurred."
+    },
+    {
+      "question": "A bag contains 3 red, 4 blue, and 5 green balls. One ball is drawn without replacement. What is the total number of balls?",
+      "options": [
+        "11",
+        "12",
+        "10",
+        "15"
+      ],
+      "correct": 1,
+      "points": 10,
+      "explanation": "Total = 3 + 4 + 5 = 12 balls."
+    },
+    {
+      "question": "Using the bag from the previous question (3 red, 4 blue, 5 green), two balls are drawn without replacement. What is the probability of drawing two blue balls?",
+      "options": [
+        "16/144",
+        "12/132",
+        "1/11",
+        "4/33"
+      ],
+      "correct": 2,
+      "points": 12,
+      "explanation": "P(first blue) = 4/12 = 1/3. After drawing one blue, 11 balls remain (3 blue). P(second blue) = 3/11. P(both blue) = 1/3 x 3/11 = 3/33 = 1/11."
+    },
+    {
+      "question": "A class has 12 boys and 8 girls. Two students are selected randomly without replacement. What is the probability that both are girls?",
+      "options": [
+        "14/95",
+        "64/400",
+        "8/50",
+        "56/380"
+      ],
+      "correct": 0,
+      "points": 12,
+      "explanation": "Total = 20. P(first girl) = 8/20 = 2/5. After selecting one girl, 19 students remain (7 girls). P(second girl) = 7/19. P(both girls) = 2/5 x 7/19 = 14/95."
+    },
+    {
+      "question": "Using the same class (12 boys, 8 girls), what is the probability that both students selected are boys?",
+      "options": [
+        "33/95",
+        "144/400",
+        "12/38",
+        "132/380"
+      ],
+      "correct": 0,
+      "points": 12,
+      "explanation": "P(first boy) = 12/20 = 3/5. After selecting one boy, 19 students remain (11 boys). P(second boy) = 11/19. P(both boys) = 3/5 x 11/19 = 33/95."
+    },
+    {
+      "question": "Using the same class (12 boys, 8 girls), what is the probability of selecting one boy and one girl in any order?",
+      "options": [
+        "48/95",
+        "96/380",
+        "24/95",
+        "96/190"
+      ],
+      "correct": 0,
+      "points": 15,
+      "explanation": "P(boy then girl) = 12/20 x 8/19 = 96/380. P(girl then boy) = 8/20 x 12/19 = 96/380. Total = 192/380 = 48/95."
+    },
+    {
+      "question": "Three cards are drawn from a deck of 52 without replacement. What is the probability that all three are hearts?",
+      "options": [
+        "11/850",
+        "13/850",
+        "1/64",
+        "2197/140608"
+      ],
+      "correct": 0,
+      "points": 18,
+      "explanation": "P(first heart) = 13/52. After one heart drawn, P(second heart) = 12/51. After two hearts drawn, P(third heart) = 11/50. P(all hearts) = 13/52 x 12/51 x 11/50 = 1716/132600 = 11/850."
+    },
+    {
+      "question": "A jar contains 6 black and 4 white balls. Three balls are drawn without replacement. What is the probability that all three are black?",
+      "options": [
+        "1/6",
+        "24/120",
+        "120/720",
+        "216/1000"
+      ],
+      "correct": 0,
+      "points": 18,
+      "explanation": "P(first black) = 6/10. P(second black) = 5/9. P(third black) = 4/8. P(all black) = 6/10 x 5/9 x 4/8 = 120/720 = 1/6."
+    },
+    {
+      "question": "When drawing without replacement, the probability of the second event depends on the _______ of the first event.",
+      "options": [
+        "timing",
+        "outcome",
+        "colour",
+        "size"
+      ],
+      "correct": 1,
+      "points": 10,
+      "explanation": "In dependent events without replacement, the outcome of the first event determines what remains and affects the probability of the second event."
+    },
+    {
+      "question": "A bag contains 7 red and 3 blue balls. Two balls are drawn without replacement. What is the probability that both balls are the same colour?",
+      "options": [
+        "24/45",
+        "21/45",
+        "42/90",
+        "48/90"
+      ],
+      "correct": 0,
+      "points": 15,
+      "explanation": "P(both red) = 7/10 x 6/9 = 42/90. P(both blue) = 3/10 x 2/9 = 6/90. P(same colour) = 42/90 + 6/90 = 48/90 = 24/45."
+    },
+    {
+      "question": "Using the same bag (7 red, 3 blue), what is the probability that the two balls drawn are different colours?",
+      "options": [
+        "21/45",
+        "24/45",
+        "42/90",
+        "7/15"
+      ],
+      "correct": 3,
+      "points": 12,
+      "explanation": "P(different colours) = 1 - P(same colour) = 1 - 24/45 = 21/45 = 7/15."
+    },
+    {
+      "question": "A committee of 2 is to be formed from 5 men and 4 women. What is the probability that both members are women?",
+      "options": [
+        "1/6",
+        "12/72",
+        "16/81",
+        "4/27"
+      ],
+      "correct": 0,
+      "points": 12,
+      "explanation": "Total = 9. P(first woman) = 4/9. After selecting one woman, 8 people remain (3 women). P(second woman) = 3/8. P(both women) = 4/9 x 3/8 = 12/72 = 1/6."
+    },
+    {
+      "question": "From a group of 3 doctors and 5 nurses, two people are selected randomly. What is the probability that at least one is a doctor?",
+      "options": [
+        "9/14",
+        "5/14",
+        "15/28",
+        "3/8"
+      ],
+      "correct": 0,
+      "points": 18,
+      "explanation": "P(no doctors) = P(both nurses) = 5/8 x 4/7 = 20/56 = 5/14. P(at least one doctor) = 1 - 5/14 = 9/14."
+    },
+    {
+      "question": "Two cards are drawn without replacement from a standard deck. What is the probability of drawing a king followed by a queen?",
+      "options": [
+        "4/663",
+        "16/2652",
+        "1/169",
+        "4/652"
+      ],
+      "correct": 0,
+      "points": 15,
+      "explanation": "P(king first) = 4/52. After drawing a king, 51 cards remain (4 queens). P(queen second) = 4/51. P(king then queen) = 4/52 x 4/51 = 16/2652 = 4/663."
+    },
+    {
+      "question": "What is the probability of drawing a king followed by another king from a standard deck without replacement?",
+      "options": [
+        "1/221",
+        "1/169",
+        "12/2652",
+        "4/663"
+      ],
+      "correct": 0,
+      "points": 15,
+      "explanation": "P(king first) = 4/52. After drawing a king, 51 cards remain (3 kings). P(second king) = 3/51. P(two kings) = 4/52 x 3/51 = 12/2652 = 1/221."
+    },
+    {
+      "question": "A bag contains 10 balls numbered 1 to 10. Two balls are drawn without replacement. What is the probability that both numbers are even?",
+      "options": [
+        "2/9",
+        "4/18",
+        "5/18",
+        "1/4"
+      ],
+      "correct": 0,
+      "points": 12,
+      "explanation": "Even numbers: 2, 4, 6, 8, 10 (5 balls). P(first even) = 5/10 = 1/2. After drawing one even, 9 balls remain (4 even). P(second even) = 4/9. P(both even) = 1/2 x 4/9 = 4/18 = 2/9."
+    },
+    {
+      "question": "Using the same bag (balls 1-10), what is the probability that both numbers drawn are odd?",
+      "options": [
+        "2/9",
+        "5/18",
+        "4/18",
+        "1/4"
+      ],
+      "correct": 0,
+      "points": 12,
+      "explanation": "Odd numbers: 1, 3, 5, 7, 9 (5 balls). P(first odd) = 5/10 = 1/2. After drawing one odd, 9 balls remain (4 odd). P(second odd) = 4/9. P(both odd) = 1/2 x 4/9 = 4/18 = 2/9."
+    },
+    {
+      "question": "Using the same bag (balls 1-10), what is the probability that one number is odd and one is even?",
+      "options": [
+        "4/9",
+        "5/9",
+        "1/2",
+        "2/9"
+      ],
+      "correct": 1,
+      "points": 12,
+      "explanation": "P(one odd, one even) = 1 - P(both odd) - P(both even) = 1 - 2/9 - 2/9 = 1 - 4/9 = 5/9."
+    },
+    {
+      "question": "A shelf has 8 fiction and 5 non-fiction books. Two books are selected randomly without replacement. What is the probability that the first is fiction and the second is non-fiction?",
+      "options": [
+        "40/156",
+        "8/39",
+        "5/26",
+        "10/39"
+      ],
+      "correct": 3,
+      "points": 12,
+      "explanation": "Total = 13. P(fiction first) = 8/13. After selecting fiction, 12 books remain (5 non-fiction). P(non-fiction second) = 5/12. P = 8/13 x 5/12 = 40/156 = 10/39."
+    },
+    {
+      "question": "In the previous question, what is the probability of selecting both fiction books?",
+      "options": [
+        "14/39",
+        "56/156",
+        "28/78",
+        "64/169"
+      ],
+      "correct": 0,
+      "points": 12,
+      "explanation": "P(first fiction) = 8/13. After selecting one fiction, 12 books remain (7 fiction). P(second fiction) = 7/12. P(both fiction) = 8/13 x 7/12 = 56/156 = 14/39."
+    },
+    {
+      "question": "A box contains 4 defective and 8 good items. Two items are selected without replacement. What is the probability that both are good?",
+      "options": [
+        "14/33",
+        "56/132",
+        "64/144",
+        "8/22"
+      ],
+      "correct": 0,
+      "points": 12,
+      "explanation": "Total = 12. P(first good) = 8/12 = 2/3. After selecting one good, 11 items remain (7 good). P(second good) = 7/11. P(both good) = 2/3 x 7/11 = 14/33."
+    },
+    {
+      "question": "Using the previous box (4 defective, 8 good), what is the probability that at least one item is defective?",
+      "options": [
+        "19/33",
+        "14/33",
+        "5/11",
+        "4/11"
+      ],
+      "correct": 0,
+      "points": 15,
+      "explanation": "P(at least one defective) = 1 - P(both good) = 1 - 14/33 = 19/33."
+    },
+    {
+      "question": "A jar has 5 red, 4 blue, and 3 green sweets. Two sweets are taken without replacement. What is the probability of getting a red followed by a green?",
+      "options": [
+        "5/44",
+        "15/132",
+        "5/48",
+        "15/144"
+      ],
+      "correct": 0,
+      "points": 12,
+      "explanation": "Total = 12. P(red first) = 5/12. After drawing red, 11 sweets remain (3 green). P(green second) = 3/11. P = 5/12 x 3/11 = 15/132 = 5/44."
+    },
+    {
+      "question": "Using the same jar (5 red, 4 blue, 3 green), what is the probability of getting two different colours?",
+      "options": [
+        "47/66",
+        "74/132",
+        "19/66",
+        "58/132"
+      ],
+      "correct": 0,
+      "points": 18,
+      "explanation": "P(same colour) = P(RR) + P(BB) + P(GG) = (5/12 x 4/11) + (4/12 x 3/11) + (3/12 x 2/11) = 20/132 + 12/132 + 6/132 = 38/132 = 19/66. P(different) = 1 - 19/66 = 47/66."
+    },
+    {
+      "question": "Compare: Drawing with replacement makes events _______, while drawing without replacement makes events _______.",
+      "options": [
+        "dependent, independent",
+        "independent, dependent",
+        "certain, impossible",
+        "impossible, certain"
+      ],
+      "correct": 1,
+      "points": 10,
+      "explanation": "With replacement: items are returned, probabilities stay the same (independent). Without replacement: items are removed, probabilities change (dependent)."
+    },
+    {
+      "question": "If P(A) = 0.6 and P(B after A occurs) = 0.5, what is P(A and B)?",
+      "options": [
+        "1.1",
+        "0.30",
+        "0.11",
+        "0.10"
+      ],
+      "correct": 1,
+      "points": 12,
+      "explanation": "For dependent events: P(A and B) = P(A) x P(B after A occurs) = 0.6 x 0.5 = 0.30."
+    },
+    {
+      "question": "If P(A) = 0.4, P(B) = 0.5, and P(A and B) = 0.2, are A and B independent?",
+      "options": [
+        "Yes, because P(A) x P(B) = P(A and B)",
+        "No, because P(A) + P(B) is not equal to P(A and B)",
+        "Yes, because P(A) + P(B) > P(A and B)",
+        "No, because P(A) x P(B) is not equal to P(A and B)"
+      ],
+      "correct": 0,
+      "points": 15,
+      "explanation": "Events are independent if P(A and B) = P(A) x P(B). Here, 0.4 x 0.5 = 0.2, which equals P(A and B). So yes, they are independent."
+    }
+  ]
+}

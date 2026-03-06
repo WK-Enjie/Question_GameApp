@@ -1,0 +1,371 @@
+{
+  "title": "Probability with Possibility Diagrams",
+  "topic": "Probability - Possibility Diagrams and Sample Spaces",
+  "subject": "Mathematics",
+  "level": "Upper Secondary",
+  "grade": "Sec 4",
+  "chapter": 2,
+  "worksheet": 3,
+  "questions": [
+    {
+      "question": "Two fair dice are rolled. How many outcomes are in the sample space?",
+      "options": [
+        "12",
+        "36",
+        "6",
+        "24"
+      ],
+      "correct": 1,
+      "points": 10,
+      "explanation": "Each die has 6 outcomes. Total outcomes = 6 x 6 = 36. A possibility diagram would show a 6 by 6 grid."
+    },
+    {
+      "question": "Two fair dice are rolled. What is the probability that the sum is 7?",
+      "options": [
+        "1/6",
+        "7/36",
+        "6/36",
+        "5/36"
+      ],
+      "correct": 0,
+      "points": 12,
+      "explanation": "Outcomes with sum 7: (1,6), (2,5), (3,4), (4,3), (5,2), (6,1) = 6 outcomes. P(sum 7) = 6/36 = 1/6."
+    },
+    {
+      "question": "Two fair dice are rolled. What is the probability that the sum is 2?",
+      "options": [
+        "2/36",
+        "1/36",
+        "1/6",
+        "2/12"
+      ],
+      "correct": 1,
+      "points": 10,
+      "explanation": "Only one outcome gives sum 2: (1,1). P(sum 2) = 1/36."
+    },
+    {
+      "question": "Two fair dice are rolled. What is the probability that the sum is 12?",
+      "options": [
+        "1/6",
+        "2/36",
+        "12/36",
+        "1/36"
+      ],
+      "correct": 3,
+      "points": 10,
+      "explanation": "Only one outcome gives sum 12: (6,6). P(sum 12) = 1/36."
+    },
+    {
+      "question": "Two fair dice are rolled. Which sum has the highest probability?",
+      "options": [
+        "6",
+        "7",
+        "8",
+        "12"
+      ],
+      "correct": 1,
+      "points": 12,
+      "explanation": "Sum of 7 has the most combinations: (1,6), (2,5), (3,4), (4,3), (5,2), (6,1) = 6 ways. All other sums have fewer ways."
+    },
+    {
+      "question": "Two fair dice are rolled. What is the probability that the sum is greater than 10?",
+      "options": [
+        "3/36",
+        "6/36",
+        "2/36",
+        "4/36"
+      ],
+      "correct": 0,
+      "points": 12,
+      "explanation": "Sum > 10 means sum = 11 or 12. Sum 11: (5,6), (6,5) = 2 ways. Sum 12: (6,6) = 1 way. Total = 3. P = 3/36 = 1/12."
+    },
+    {
+      "question": "Two fair dice are rolled. What is the probability that the product of the two numbers is 12?",
+      "options": [
+        "2/36",
+        "4/36",
+        "3/36",
+        "6/36"
+      ],
+      "correct": 1,
+      "points": 15,
+      "explanation": "Product = 12: (2,6), (6,2), (3,4), (4,3) = 4 outcomes. P = 4/36 = 1/9."
+    },
+    {
+      "question": "Two fair dice are rolled. What is the probability that both dice show the same number?",
+      "options": [
+        "1/36",
+        "6/36",
+        "12/36",
+        "3/36"
+      ],
+      "correct": 1,
+      "points": 12,
+      "explanation": "Same number (doubles): (1,1), (2,2), (3,3), (4,4), (5,5), (6,6) = 6 outcomes. P = 6/36 = 1/6."
+    },
+    {
+      "question": "A fair coin is tossed 3 times. How many outcomes are in the sample space?",
+      "options": [
+        "6",
+        "8",
+        "3",
+        "9"
+      ],
+      "correct": 1,
+      "points": 10,
+      "explanation": "Each toss has 2 outcomes. Total = 2 x 2 x 2 = 8 outcomes."
+    },
+    {
+      "question": "A fair coin is tossed 3 times. What is the probability of getting exactly 2 heads?",
+      "options": [
+        "1/8",
+        "2/8",
+        "3/8",
+        "4/8"
+      ],
+      "correct": 2,
+      "points": 12,
+      "explanation": "Outcomes with exactly 2 heads: HHT, HTH, THH = 3 outcomes. P = 3/8."
+    },
+    {
+      "question": "A fair coin is tossed 3 times. What is the probability of getting at least 2 heads?",
+      "options": [
+        "3/8",
+        "4/8",
+        "1/2",
+        "5/8"
+      ],
+      "correct": 1,
+      "points": 15,
+      "explanation": "At least 2 heads means 2 or 3 heads. 2 heads: HHT, HTH, THH = 3. 3 heads: HHH = 1. Total = 4. P = 4/8 = 1/2."
+    },
+    {
+      "question": "Two fair dice are rolled. What is the probability that the difference between the two numbers is 1?",
+      "options": [
+        "10/36",
+        "5/36",
+        "6/36",
+        "8/36"
+      ],
+      "correct": 0,
+      "points": 15,
+      "explanation": "Difference of 1: (1,2), (2,1), (2,3), (3,2), (3,4), (4,3), (4,5), (5,4), (5,6), (6,5) = 10 outcomes. P = 10/36 = 5/18."
+    },
+    {
+      "question": "A spinner has sections 1, 2, 3 and another spinner has sections A, B. How many outcomes are in the combined sample space?",
+      "options": [
+        "5",
+        "6",
+        "9",
+        "8"
+      ],
+      "correct": 1,
+      "points": 10,
+      "explanation": "First spinner: 3 outcomes. Second spinner: 2 outcomes. Total = 3 x 2 = 6 outcomes: (1,A), (1,B), (2,A), (2,B), (3,A), (3,B)."
+    },
+    {
+      "question": "Two fair dice are rolled. What is the probability that the first die shows a larger number than the second die?",
+      "options": [
+        "1/2",
+        "15/36",
+        "18/36",
+        "6/36"
+      ],
+      "correct": 1,
+      "points": 18,
+      "explanation": "Count outcomes where first > second. By symmetry, P(first > second) = P(second > first). With 6 ties, remaining 30 split equally: 15/36."
+    },
+    {
+      "question": "Two fair dice are rolled. What is the probability that at least one die shows a 6?",
+      "options": [
+        "1/6",
+        "11/36",
+        "12/36",
+        "10/36"
+      ],
+      "correct": 1,
+      "points": 15,
+      "explanation": "P(no 6) = 5/6 x 5/6 = 25/36. P(at least one 6) = 1 - 25/36 = 11/36."
+    },
+    {
+      "question": "Two fair dice are rolled. What is the probability that the sum is even?",
+      "options": [
+        "1/2",
+        "18/36",
+        "16/36",
+        "20/36"
+      ],
+      "correct": 0,
+      "points": 12,
+      "explanation": "Sum is even when both odd or both even. P(both odd) = 3/6 x 3/6 = 9/36. P(both even) = 3/6 x 3/6 = 9/36. Total = 18/36 = 1/2."
+    },
+    {
+      "question": "Two fair dice are rolled. What is the probability that the sum is odd?",
+      "options": [
+        "18/36",
+        "1/2",
+        "16/36",
+        "20/36"
+      ],
+      "correct": 1,
+      "points": 10,
+      "explanation": "Sum is odd when one die is odd and the other is even. P(odd sum) = 1 - P(even sum) = 1 - 1/2 = 1/2."
+    },
+    {
+      "question": "Two fair dice are rolled. What is the probability that the sum is a prime number?",
+      "options": [
+        "15/36",
+        "12/36",
+        "17/36",
+        "14/36"
+      ],
+      "correct": 0,
+      "points": 18,
+      "explanation": "Prime sums: 2(1), 3(2), 5(4), 7(6), 11(2) = 1+2+4+6+2 = 15 outcomes. P = 15/36 = 5/12."
+    },
+    {
+      "question": "Two fair four-sided dice (numbered 1-4) are rolled. How many outcomes are in the sample space?",
+      "options": [
+        "8",
+        "16",
+        "12",
+        "24"
+      ],
+      "correct": 1,
+      "points": 10,
+      "explanation": "Each die has 4 outcomes. Total = 4 x 4 = 16 outcomes."
+    },
+    {
+      "question": "Two fair four-sided dice (numbered 1-4) are rolled. What is the probability that the sum is 5?",
+      "options": [
+        "3/16",
+        "4/16",
+        "5/16",
+        "2/16"
+      ],
+      "correct": 1,
+      "points": 12,
+      "explanation": "Sum = 5: (1,4), (2,3), (3,2), (4,1) = 4 outcomes. P = 4/16 = 1/4."
+    },
+    {
+      "question": "Two fair dice are rolled. What is the probability that exactly one die shows an even number?",
+      "options": [
+        "1/4",
+        "1/2",
+        "18/36",
+        "9/36"
+      ],
+      "correct": 1,
+      "points": 15,
+      "explanation": "Exactly one even means (odd, even) or (even, odd). P = 3/6 x 3/6 + 3/6 x 3/6 = 9/36 + 9/36 = 18/36 = 1/2."
+    },
+    {
+      "question": "Two fair dice are rolled. What is the probability that neither die shows a 1?",
+      "options": [
+        "25/36",
+        "11/36",
+        "30/36",
+        "24/36"
+      ],
+      "correct": 0,
+      "points": 12,
+      "explanation": "P(not 1) = 5/6 for each die. P(neither shows 1) = 5/6 x 5/6 = 25/36."
+    },
+    {
+      "question": "Two fair dice are rolled. Given that the sum is 8, how many possible outcomes are there?",
+      "options": [
+        "4",
+        "5",
+        "6",
+        "3"
+      ],
+      "correct": 1,
+      "points": 12,
+      "explanation": "Sum = 8: (2,6), (3,5), (4,4), (5,3), (6,2) = 5 outcomes."
+    },
+    {
+      "question": "A fair coin and a fair die are tossed together. How many outcomes are in the sample space?",
+      "options": [
+        "8",
+        "6",
+        "12",
+        "36"
+      ],
+      "correct": 2,
+      "points": 10,
+      "explanation": "Coin: 2 outcomes. Die: 6 outcomes. Total = 2 x 6 = 12 outcomes."
+    },
+    {
+      "question": "A fair coin and a fair die are tossed together. What is the probability of getting a tail and a number greater than 4?",
+      "options": [
+        "1/12",
+        "2/12",
+        "1/6",
+        "3/12"
+      ],
+      "correct": 2,
+      "points": 12,
+      "explanation": "P(tail) = 1/2. Numbers > 4: 5, 6. P(>4) = 2/6 = 1/3. P(tail and >4) = 1/2 x 1/3 = 1/6 = 2/12."
+    },
+    {
+      "question": "Two fair dice are rolled. What is the probability that the sum is at most 4?",
+      "options": [
+        "6/36",
+        "3/36",
+        "4/36",
+        "5/36"
+      ],
+      "correct": 0,
+      "points": 15,
+      "explanation": "Sum at most 4 means 2, 3, or 4. Sum 2: (1,1)=1. Sum 3: (1,2),(2,1)=2. Sum 4: (1,3),(2,2),(3,1)=3. Total = 6. P = 6/36 = 1/6."
+    },
+    {
+      "question": "Two fair dice are rolled. What is the probability that the product is odd?",
+      "options": [
+        "9/36",
+        "18/36",
+        "12/36",
+        "6/36"
+      ],
+      "correct": 0,
+      "points": 15,
+      "explanation": "Product is odd only when both numbers are odd. Odd numbers: 1, 3, 5. P(both odd) = 3/6 x 3/6 = 9/36 = 1/4."
+    },
+    {
+      "question": "Two fair dice are rolled. What is the probability that the larger of the two numbers shown is 4?",
+      "options": [
+        "5/36",
+        "7/36",
+        "6/36",
+        "4/36"
+      ],
+      "correct": 1,
+      "points": 18,
+      "explanation": "Larger number is 4 when: (4,1), (4,2), (4,3), (4,4), (1,4), (2,4), (3,4) = 7 outcomes. P = 7/36."
+    },
+    {
+      "question": "A bag contains 2 red and 3 blue balls. Two balls are drawn with replacement. What is the total number of outcomes?",
+      "options": [
+        "10",
+        "25",
+        "20",
+        "5"
+      ],
+      "correct": 1,
+      "points": 10,
+      "explanation": "With replacement, each draw has 5 outcomes (2 red + 3 blue). Total outcomes = 5 x 5 = 25."
+    },
+    {
+      "question": "Using the bag from the previous question (2 red, 3 blue), what is the probability of drawing 2 different colours with replacement?",
+      "options": [
+        "12/25",
+        "6/25",
+        "13/25",
+        "10/25"
+      ],
+      "correct": 0,
+      "points": 15,
+      "explanation": "Different colours: (red, blue) or (blue, red). P(R then B) = 2/5 x 3/5 = 6/25. P(B then R) = 3/5 x 2/5 = 6/25. Total = 12/25."
+    }
+  ]
+}
