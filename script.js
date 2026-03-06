@@ -820,7 +820,7 @@ function showQuestion(idx) {
 
     // Start timer
     gameState.answerStartTime = Date.now();
-    startTimer(q.time || 150);
+    startTimer(q.time || 180);
 }
 
 function hideQuestionOverlay() {
@@ -1477,4 +1477,5 @@ window.quizTools = {
         document.body.appendChild(div);
         return result;
     }
+
 };
