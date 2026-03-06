@@ -1,0 +1,191 @@
+{
+  "title": "D.C. Circuits: Advanced Applications and Calculations",
+  "topic": "D.C. Circuits",
+  "subject": "Physics",
+  "level": "Upper Secondary",
+  "grade": "Sec 4",
+  "chapter": 17,
+  "worksheet": 2,
+  "questions": [
+    {
+      "question": "A circuit consists of a 12 V battery connected to a 4 Ω resistor in series with a parallel combination of two 6 Ω resistors. What is the total current supplied by the battery?",
+      "options": [
+        "2.0 A",
+        "3.0 A",
+        "1.5 A",
+        "1.71 A"
+      ],
+      "correct": 3,
+      "points": 10,
+      "explanation": "First, calculate the effective resistance of the parallel section: 1/Rp = 1/6 + 1/6 = 2/6, so Rp = 3 Ω. Total resistance R_total = 4 Ω + 3 Ω = 7 Ω. Using Ohm's Law: I = V/R_total = 12 V ÷ 7 Ω ≈ 1.714 A, which rounds to 1.71 A. This requires sequential application of parallel and series resistance formulas followed by Ohm's Law."
+    },
+    {
+      "question": "In the circuit described above, what is the potential difference across the 4 Ω resistor?",
+      "options": [
+        "3.43 V",
+        "5.14 V",
+        "12 V",
+        "6.86 V"
+      ],
+      "correct": 3,
+      "points": 10,
+      "explanation": "The current through the 4 Ω resistor equals the total circuit current (1.714 A) since it is in series with the battery. Using V = IR: V = 1.714 A × 4 Ω ≈ 6.86 V. Alternatively, using voltage division: V_4Ω = 12 V × (4 Ω / 7 Ω) ≈ 6.86 V. The remaining 5.14 V appears across the parallel combination."
+    },
+    {
+      "question": "A potential divider circuit uses a 12 V supply, a fixed 2 kΩ resistor, and an LDR. The output is taken across the LDR. If the LDR resistance is 10 kΩ in the dark, what is the output voltage?",
+      "options": [
+        "12 V",
+        "6 V",
+        "10 V",
+        "2 V"
+      ],
+      "correct": 2,
+      "points": 10,
+      "explanation": "Using the potential divider formula: V_out = V_in × (R_LDR / (R_fixed + R_LDR)) = 12 V × (10 kΩ / (2 kΩ + 10 kΩ)) = 12 V × (10/12) = 10 V. In darkness, the high LDR resistance means most of the supply voltage appears across it. This principle is used in automatic night-light circuits."
+    },
+    {
+      "question": "Two identical lamps are connected in series to a battery. A third identical lamp is then connected in parallel with one of the original lamps. What happens to the brightness of the first lamp (the one not in parallel)?",
+      "options": [
+        "Increases",
+        "Decreases",
+        "Becomes zero",
+        "Remains the same"
+      ],
+      "correct": 0,
+      "points": 10,
+      "explanation": "Initially, total resistance = 2R (two lamps in series). After adding the third lamp in parallel with one lamp, that section becomes R/2, so new total resistance = R + R/2 = 1.5R. Lower total resistance means higher total current from the battery. Since the first lamp is in series with the source, this increased current flows through it. Power P = I²R, so higher current means greater power dissipation and increased brightness."
+    },
+    {
+      "question": "A 10 Ω resistor and a 20 Ω resistor are connected in series across a 9 V battery. What is the power dissipated by the 20 Ω resistor?",
+      "options": [
+        "0.8 W",
+        "1.8 W",
+        "4.05 W",
+        "3.6 W"
+      ],
+      "correct": 1,
+      "points": 10,
+      "explanation": "Total resistance = 10 Ω + 20 Ω = 30 Ω. Circuit current I = V/R = 9 V ÷ 30 Ω = 0.3 A. Power in the 20 Ω resistor: P = I²R = (0.3 A)² × 20 Ω = 0.09 × 20 = 1.8 W. Alternatively, V across 20 Ω = 0.3 A × 20 Ω = 6 V, so P = VI = 6 V × 0.3 A = 1.8 W. Both methods confirm the answer."
+    },
+    {
+      "question": "A potentiometer is connected across a 6 V supply. What is the range of output voltages available from the wiper terminal?",
+      "options": [
+        "0 V to 6 V",
+        "3 V to 6 V",
+        "0 V to 3 V",
+        "1 V to 5 V"
+      ],
+      "correct": 0,
+      "points": 10,
+      "explanation": "A potentiometer functions as a continuously variable potential divider. Moving the wiper from one end of the resistive track to the other varies the output resistance from 0 to the total resistance. This allows the output voltage to be adjusted smoothly from 0 V (wiper at ground end) to the full supply voltage of 6 V (wiper at supply end)."
+    },
+    {
+      "question": "In a parallel circuit, Branch A has resistance R and Branch B has resistance 2R. How does the current in Branch A compare to the current in Branch B?",
+      "options": [
+        "Currents are equal",
+        "Current in A is four times the current in B",
+        "Current in A is twice the current in B",
+        "Current in B is twice the current in A"
+      ],
+      "correct": 2,
+      "points": 10,
+      "explanation": "In a parallel circuit, the potential difference across each branch is identical. Using I = V/R: I_A = V/R and I_B = V/(2R). Therefore I_A = 2 × I_B. Current divides inversely with resistance in parallel branches: the branch with half the resistance carries twice the current."
+    },
+    {
+      "question": "A circuit contains a battery, a switch, and two resistors in series. A voltmeter is connected across one resistor. If the other resistor burns out and becomes an open circuit, what happens to the voltmeter reading?",
+      "options": [
+        "Increases but less than e.m.f.",
+        "Becomes zero",
+        "Becomes equal to battery e.m.f.",
+        "Remains the same"
+      ],
+      "correct": 1,
+      "points": 10,
+      "explanation": "When the other resistor becomes an open circuit, no current can flow anywhere in the series circuit. With zero current, the potential difference across the intact resistor is V = IR = 0 × R = 0 V. The voltmeter, connected across this resistor, therefore reads zero. Note: if the voltmeter were connected across the open resistor, it would read the full battery e.m.f."
+    },
+    {
+      "question": "An NTC thermistor is used in a potential divider to trigger an alarm when temperature rises. Where should the output voltage be taken to ensure V_out increases with temperature?",
+      "options": [
+        "Across the fixed resistor (thermistor connected to the supply)",
+        "In series with the thermistor",
+        "Across the thermistor (fixed resistor connected to the supply)",
+        "Across the battery"
+      ],
+      "correct": 0,
+      "points": 10,
+      "explanation": "For an NTC thermistor, resistance decreases as temperature increases. To obtain an output voltage that rises with temperature, V_out must be taken across the component whose voltage share increases. As the thermistor's resistance falls, its voltage share decreases while the fixed resistor's share increases. Therefore, connect the thermistor to the supply (upper position) and take the output across the fixed resistor (lower position, connected to ground)."
+    },
+    {
+      "question": "Three resistors of 2 Ω, 4 Ω, and 4 Ω are connected in parallel. What is the effective resistance?",
+      "options": [
+        "1 Ω",
+        "0.5 Ω",
+        "10 Ω",
+        "2 Ω"
+      ],
+      "correct": 0,
+      "points": 10,
+      "explanation": "For parallel resistors: 1/R_total = 1/2 + 1/4 + 1/4 = 2/4 + 1/4 + 1/4 = 4/4 = 1. Therefore R_total = 1 Ω. This demonstrates that adding more parallel paths always reduces the total resistance to a value below the smallest individual resistor. The two 4 Ω resistors in parallel give 2 Ω, which in parallel with the other 2 Ω gives 1 Ω."
+    },
+    {
+      "question": "A 12 V battery supplies 3 A to a circuit. How much electrical energy is converted in 2 minutes?",
+      "options": [
+        "72 J",
+        "4320 J",
+        "2160 J",
+        "36 J"
+      ],
+      "correct": 1,
+      "points": 10,
+      "explanation": "Energy converted E = VIt. Time must be in seconds: 2 minutes = 120 s. Therefore E = 12 V × 3 A × 120 s = 4320 J. This question integrates circuit current values with energy relationships. Note that power P = VI = 36 W, and energy = power × time = 36 W × 120 s = 4320 J, confirming the result."
+    },
+    {
+      "question": "Two resistors R₁ and R₂ are connected in series. The potential difference across R₁ is 4 V and across R₂ is 8 V. If R₁ = 10 Ω, what is the value of R₂?",
+      "options": [
+        "20 Ω",
+        "30 Ω",
+        "40 Ω",
+        "5 Ω"
+      ],
+      "correct": 0,
+      "points": 10,
+      "explanation": "In a series circuit, current is constant throughout. Using V = IR, voltage is directly proportional to resistance. Since V₂ (8 V) is twice V₁ (4 V), R₂ must be twice R₁. Therefore R₂ = 2 × 10 Ω = 20 Ω. Verification: current I = V₁/R₁ = 4 V ÷ 10 Ω = 0.4 A; then R₂ = V₂/I = 8 V ÷ 0.4 A = 20 Ω."
+    },
+    {
+      "question": "Why is a variable resistor often included in a potential divider circuit with an LDR?",
+      "options": [
+        "To increase the maximum current indefinitely",
+        "To adjust the sensitivity or trigger point of the circuit",
+        "To convert the circuit from DC to AC",
+        "To prevent the LDR from overheating"
+      ],
+      "correct": 1,
+      "points": 10,
+      "explanation": "A variable resistor allows calibration of the circuit's response. By adjusting its resistance, the voltage division ratio changes, enabling the user to set the specific light intensity level at which the output voltage reaches the threshold needed to trigger a connected device (e.g., switching on a street lamp at a desired dusk level). This adjustability is essential for practical applications where environmental conditions vary."
+    },
+    {
+      "question": "A 6 Ω resistor is connected in parallel with a 3 Ω resistor. This combination is then connected in series with a 2 Ω resistor. What is the total resistance of the circuit?",
+      "options": [
+        "4 Ω",
+        "3 Ω",
+        "11 Ω",
+        "5 Ω"
+      ],
+      "correct": 0,
+      "points": 10,
+      "explanation": "First, calculate the parallel section: using the product-over-sum formula, R_parallel = (6 × 3) / (6 + 3) = 18 / 9 = 2 Ω. Then add the series resistor: R_total = 2 Ω (parallel combination) + 2 Ω (series resistor) = 4 Ω. This question requires sequential application of both parallel and series resistance formulas, testing understanding of how to simplify complex resistor networks."
+    },
+    {
+      "question": "In a circuit with a constant voltage supply, what happens to the total power dissipated if an additional resistor is added in parallel?",
+      "options": [
+        "Increases",
+        "Becomes zero",
+        "Decreases",
+        "Remains the same"
+      ],
+      "correct": 0,
+      "points": 10,
+      "explanation": "Total power dissipated is given by P_total = V²/R_total. Adding a resistor in parallel always decreases the effective resistance of the circuit. Since the supply voltage V is constant, a decrease in R_total results in an increase in P_total. Physically, the additional parallel path allows more total current to flow from the supply, increasing the rate of energy conversion in the circuit."
+    }
+  ]
+}

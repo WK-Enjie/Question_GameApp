@@ -1,0 +1,191 @@
+{
+  "title": "D.C. Circuits",
+  "topic": "D.C. Circuits",
+  "subject": "Physics",
+  "level": "Upper Secondary",
+  "grade": "Sec 4",
+  "chapter": 17,
+  "worksheet": 1,
+  "questions": [
+    {
+      "question": "Which statement correctly describes the current in a series circuit?",
+      "options": [
+        "The current is highest near the positive terminal",
+        "The current increases as it passes through each resistor",
+        "The current divides equally at each component",
+        "The current is the same at every point in the circuit"
+      ],
+      "correct": 3,
+      "points": 10,
+      "explanation": "In a series circuit, there is only one path for current to flow, so the current at every point is the same. This is a fundamental principle that applies regardless of the number or values of components in the series circuit."
+    },
+    {
+      "question": "Three resistors of 2 Ω, 3 Ω, and 5 Ω are connected in series. What is the total resistance?",
+      "options": [
+        "1 Ω",
+        "0.1 Ω",
+        "10 Ω",
+        "30 Ω"
+      ],
+      "correct": 2,
+      "points": 10,
+      "explanation": "For resistors in series, total resistance R_total = R₁ + R₂ + R₃ = 2 Ω + 3 Ω + 5 Ω = 10 Ω. In series, resistances simply add together because the current must pass through each resistor sequentially."
+    },
+    {
+      "question": "In a parallel circuit with two branches, the current in branch 1 is 0.3 A and in branch 2 is 0.5 A. What is the total current from the source?",
+      "options": [
+        "0.8 A",
+        "0.2 A",
+        "0.15 A",
+        "1.67 A"
+      ],
+      "correct": 0,
+      "points": 10,
+      "explanation": "In a parallel circuit, the total current from the source equals the sum of currents in separate branches: I_total = I₁ + I₂ = 0.3 A + 0.5 A = 0.8 A. This follows from conservation of charge at the junction."
+    },
+    {
+      "question": "Two resistors are connected in parallel across a 12 V battery. What is the potential difference across each resistor?",
+      "options": [
+        "24 V across each resistor",
+        "6 V across each resistor",
+        "12 V across each resistor",
+        "Depends on the resistance values"
+      ],
+      "correct": 2,
+      "points": 10,
+      "explanation": "In a parallel circuit, the potential difference across each branch is the same and equals the supply voltage. Therefore, each resistor has 12 V across it, regardless of their individual resistance values."
+    },
+    {
+      "question": "Two identical resistors are connected in series across a 9 V battery. What is the potential difference across each resistor?",
+      "options": [
+        "2.25 V",
+        "9 V",
+        "4.5 V",
+        "18 V"
+      ],
+      "correct": 2,
+      "points": 10,
+      "explanation": "In a series circuit, the sum of potential differences equals the total voltage. For identical resistors, voltage divides equally: 9 V ÷ 2 = 4.5 V across each resistor. The voltage divides proportionally to resistance values."
+    },
+    {
+      "question": "Three 6 Ω resistors are connected in parallel. What is their effective resistance?",
+      "options": [
+        "18 Ω",
+        "0.5 Ω",
+        "6 Ω",
+        "2 Ω"
+      ],
+      "correct": 3,
+      "points": 10,
+      "explanation": "For n identical resistors in parallel: R_total = R/n = 6 Ω ÷ 3 = 2 Ω. Alternatively, using 1/R_total = 1/6 + 1/6 + 1/6 = 3/6 = 1/2, so R_total = 2 Ω. Parallel connection always reduces total resistance."
+    },
+    {
+      "question": "A circuit contains a 4 Ω resistor and a 12 Ω resistor in parallel. What is the combined resistance?",
+      "options": [
+        "0.33 Ω",
+        "16 Ω",
+        "8 Ω",
+        "3 Ω"
+      ],
+      "correct": 3,
+      "points": 10,
+      "explanation": "For two resistors in parallel: 1/R_total = 1/4 + 1/12 = 3/12 + 1/12 = 4/12 = 1/3. Therefore R_total = 3 Ω. Using the product-over-sum formula: R_total = (4×12)/(4+12) = 48/16 = 3 Ω."
+    },
+    {
+      "question": "Which component would you use to provide a continuously variable output voltage from a fixed voltage source?",
+      "options": [
+        "Variable potential divider (potentiometer)",
+        "Thermistor",
+        "Fixed resistor",
+        "Fuse"
+      ],
+      "correct": 0,
+      "points": 10,
+      "explanation": "A variable potential divider (potentiometer) provides a continuously adjustable output voltage by varying the position of a sliding contact along a resistive track. This is commonly used in volume controls and dimmer switches."
+    },
+    {
+      "question": "How does the resistance of an NTC thermistor change as temperature increases?",
+      "options": [
+        "Remains constant",
+        "Increases",
+        "First increases then decreases",
+        "Decreases"
+      ],
+      "correct": 3,
+      "points": 10,
+      "explanation": "NTC (Negative Temperature Coefficient) thermistors have resistance that decreases as temperature increases. This property makes them useful as temperature sensors in potential divider circuits for temperature control applications."
+    },
+    {
+      "question": "In a potential divider circuit with an LDR, what happens to the output voltage across the LDR when light intensity increases?",
+      "options": [
+        "Decreases (if LDR is the lower resistor)",
+        "Stays constant",
+        "Becomes zero",
+        "Increases (if LDR is the lower resistor)"
+      ],
+      "correct": 0,
+      "points": 10,
+      "explanation": "When light intensity increases, LDR resistance decreases. In a potential divider with LDR as the lower resistor, V_out = V_in × R_LDR/(R_fixed + R_LDR). As R_LDR decreases, V_out decreases. This principle is used in automatic lighting systems."
+    },
+    {
+      "question": "A 12 V battery supplies a circuit with two resistors in series: 3 Ω and 9 Ω. What is the current in the circuit?",
+      "options": [
+        "0.33 A",
+        "1 A",
+        "3 A",
+        "4 A"
+      ],
+      "correct": 1,
+      "points": 10,
+      "explanation": "Total resistance in series: R_total = 3 Ω + 9 Ω = 12 Ω. Using Ohm's Law: I = V/R = 12 V ÷ 12 Ω = 1 A. The same 1 A current flows through both resistors in series."
+    },
+    {
+      "question": "In the circuit above (Q11), what is the potential difference across the 9 Ω resistor?",
+      "options": [
+        "3 V",
+        "9 V",
+        "12 V",
+        "1 V"
+      ],
+      "correct": 1,
+      "points": 10,
+      "explanation": "Current I = 1 A (from Q11). Voltage across 9 Ω resistor: V = IR = 1 A × 9 Ω = 9 V. Alternatively, voltage divides in proportion to resistance: V_9Ω = 12 V × 9/(3+9) = 12 V × 9/12 = 9 V."
+    },
+    {
+      "question": "Which circuit symbol represents a light-dependent resistor (LDR)?",
+      "options": [
+        "Resistor symbol with arrows pointing towards it",
+        "Resistor symbol with a line underneath",
+        "Circle with 'LED' inside",
+        "Resistor symbol with a diagonal arrow through it"
+      ],
+      "correct": 0,
+      "points": 10,
+      "explanation": "An LDR is represented by a resistor symbol with arrows pointing towards it, indicating that light falls on it. The arrows represent incident light. A diagonal arrow through a resistor indicates a variable resistor."
+    },
+    {
+      "question": "A potential divider uses a 10 kΩ fixed resistor and an LDR. In bright light, the LDR has resistance 2 kΩ. If the supply is 6 V and output is taken across the LDR, what is V_out?",
+      "options": [
+        "5 V",
+        "3 V",
+        "6 V",
+        "1 V"
+      ],
+      "correct": 3,
+      "points": 10,
+      "explanation": "Using the potential divider formula: V_out = V_in × R_LDR/(R_fixed + R_LDR) = 6 V × 2 kΩ/(10 kΩ + 2 kΩ) = 6 V × 2/12 = 1 V. The output voltage is proportional to the fraction of total resistance."
+    },
+    {
+      "question": "Two resistors, 6 Ω and 3 Ω, are connected in parallel across a 12 V supply. What is the total current from the supply?",
+      "options": [
+        "12 A",
+        "6 A",
+        "4 A",
+        "2 A"
+      ],
+      "correct": 1,
+      "points": 10,
+      "explanation": "Method 1: I₁ = 12 V ÷ 6 Ω = 2 A; I₂ = 12 V ÷ 3 Ω = 4 A; I_total = 2 A + 4 A = 6 A. Method 2: R_total = (6×3)/(6+3) = 2 Ω; I_total = 12 V ÷ 2 Ω = 6 A."
+    }
+  ]
+}

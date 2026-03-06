@@ -1,0 +1,191 @@
+{
+  "title": "Current of Electricity",
+  "topic": "Current Electricity",
+  "subject": "Physics",
+  "level": "Upper Secondary",
+  "grade": "Sec 4",
+  "chapter": 16,
+  "worksheet": 2,
+  "questions": [
+    {
+      "question": "Which statement correctly defines electric current?",
+      "options": [
+        "The opposition to the flow of charge",
+        "The rate of flow of electric charge",
+        "The energy transferred per unit charge",
+        "The total amount of charge stored in a conductor"
+      ],
+      "correct": 1,
+      "points": 10,
+      "explanation": "Electric current is defined as the rate of flow of electric charge. Mathematically, I = Q/t, measured in amperes (A), where 1 A = 1 C/s."
+    },
+    {
+      "question": "A charge of 450 C passes through a wire in 3 minutes. What is the current in the wire?",
+      "options": [
+        "1350 A",
+        "150 A",
+        "0.4 A",
+        "2.5 A"
+      ],
+      "correct": 3,
+      "points": 10,
+      "explanation": "Using Q = It, rearrange to I = Q/t. Time = 3 min = 180 s. I = 450 C ÷ 180 s = 2.5 A. Always convert time to seconds when using SI units."
+    },
+    {
+      "question": "What is the key difference between conventional current and electron flow?",
+      "options": [
+        "Conventional current flows from positive to negative; electrons flow from negative to positive",
+        "Conventional current is faster than electron flow",
+        "There is no difference; they are the same",
+        "Conventional current only exists in AC circuits"
+      ],
+      "correct": 0,
+      "points": 10,
+      "explanation": "Conventional current direction (established before electrons were discovered) is from positive to negative terminal. Electron flow is opposite: negative to positive. Both describe the same physical phenomenon but with opposite directional conventions."
+    },
+    {
+      "question": "Three identical 1.5 V cells are connected in series. What is the total e.m.f. of the combination?",
+      "options": [
+        "4.5 V",
+        "0.5 V",
+        "1.5 V",
+        "3.0 V"
+      ],
+      "correct": 0,
+      "points": 10,
+      "explanation": "For cells in series, total e.m.f. = sum of individual e.m.f. values. Total = 1.5 V + 1.5 V + 1.5 V = 4.5 V. This is because each cell does work on the charge sequentially."
+    },
+    {
+      "question": "Which definition best describes electromotive force (e.m.f.)?",
+      "options": [
+        "Work done per unit charge by a source in driving charge around a complete circuit",
+        "Force that pushes electrons through a wire",
+        "Energy dissipated per unit charge in a resistor",
+        "Maximum current a cell can supply"
+      ],
+      "correct": 0,
+      "points": 10,
+      "explanation": "E.m.f. is defined as the work done per unit charge by a source in driving charges around a complete circuit. It represents the total energy supplied by the source per coulomb, measured in volts (J/C)."
+    },
+    {
+      "question": "A battery does 120 J of work to move 20 C of charge through a circuit. What is the potential difference across the battery terminals?",
+      "options": [
+        "6 V",
+        "100 V",
+        "2400 V",
+        "0.17 V"
+      ],
+      "correct": 0,
+      "points": 10,
+      "explanation": "Using V = W/Q. V = 120 J ÷ 20 C = 6 V. Potential difference is the work done per unit charge in driving charges through a component, measured in volts."
+    },
+    {
+      "question": "A resistor has a p.d. of 9.0 V across it and a current of 0.3 A flowing through it. What is its resistance?",
+      "options": [
+        "0.033 Ω",
+        "30 Ω",
+        "9.3 Ω",
+        "2.7 Ω"
+      ],
+      "correct": 1,
+      "points": 10,
+      "explanation": "Using R = V/I. R = 9.0 V ÷ 0.3 A = 30 Ω. This is Ohm's Law, which defines resistance as the ratio of potential difference to current for a component."
+    },
+    {
+      "question": "Which factor does NOT affect the resistance of a uniform wire at constant temperature?",
+      "options": [
+        "The resistivity of the material",
+        "The cross-sectional area of the wire",
+        "The length of the wire",
+        "The current flowing through the wire"
+      ],
+      "correct": 3,
+      "points": 10,
+      "explanation": "Resistance of a wire is given by R = ρL/A, where ρ is resistivity (material property), L is length, A is cross-sectional area. Current affects voltage via Ohm's Law but does not change the inherent resistance of the wire."
+    },
+    {
+      "question": "A copper wire of resistance R is replaced by another copper wire of the same length but twice the diameter. What is the new resistance?",
+      "options": [
+        "2R",
+        "4R",
+        "R/4",
+        "R/2"
+      ],
+      "correct": 2,
+      "points": 10,
+      "explanation": "Area A ∝ diameter². Doubling diameter increases area by 4×. Since R ∝ 1/A, resistance becomes R/4. This shows why thicker cables have lower resistance and are used for high-current applications."
+    },
+    {
+      "question": "What happens to the resistance of a metallic conductor when its temperature increases?",
+      "options": [
+        "Becomes zero",
+        "Decreases",
+        "Remains constant",
+        "Increases"
+      ],
+      "correct": 3,
+      "points": 10,
+      "explanation": "For metals, resistance increases with temperature. Higher temperature causes metal ions to vibrate more vigorously, increasing collisions with conduction electrons and impeding their flow, thus increasing resistance."
+    },
+    {
+      "question": "Which I-V graph represents an ohmic conductor at constant temperature?",
+      "options": [
+        "Horizontal line",
+        "Straight line through the origin",
+        "Curve with increasing gradient",
+        "Curve with decreasing gradient"
+      ],
+      "correct": 1,
+      "points": 10,
+      "explanation": "For an ohmic conductor at constant temperature, V ∝ I (Ohm's Law), so the I-V graph is a straight line through the origin with constant gradient = 1/R. The constant gradient indicates constant resistance."
+    },
+    {
+      "question": "Why does the I-V graph of a filament lamp curve with decreasing gradient as voltage increases?",
+      "options": [
+        "The filament cools down, decreasing its resistance",
+        "The current decreases as voltage increases",
+        "The filament heats up, increasing its resistance",
+        "The lamp only conducts in one direction"
+      ],
+      "correct": 2,
+      "points": 10,
+      "explanation": "As current increases, the filament temperature rises due to heating effect. For metals, resistance increases with temperature. Higher resistance means current increases less rapidly than voltage, producing a curve with decreasing gradient."
+    },
+    {
+      "question": "Which statement correctly describes the I-V characteristic of a semiconductor diode?",
+      "options": [
+        "Current is proportional to voltage in both directions",
+        "Very low current in reverse bias; current increases rapidly after threshold voltage in forward bias",
+        "Current flows equally well in both directions",
+        "No current flows regardless of voltage direction"
+      ],
+      "correct": 1,
+      "points": 10,
+      "explanation": "A semiconductor diode conducts significantly only when forward-biased above a threshold voltage (~0.6 V for silicon); in reverse bias, only negligible leakage current flows. This unidirectional property makes diodes useful for rectification."
+    },
+    {
+      "question": "A student measures the resistance of a wire using an ammeter and voltmeter. Which circuit arrangement is correct?",
+      "options": [
+        "Both meters in parallel across the wire",
+        "Ammeter in parallel with wire; voltmeter in series with wire",
+        "Ammeter in series with wire; voltmeter in parallel across wire",
+        "Both meters in series with the wire"
+      ],
+      "correct": 2,
+      "points": 10,
+      "explanation": "Ammeters measure current and must be connected in series to experience the same current flow. Voltmeters measure p.d. and must be connected in parallel across the component. This arrangement allows accurate measurement of V and I for R = V/I."
+    },
+    {
+      "question": "Two wires X and Y are made of the same material. Wire X is twice as long as Y and has half the cross-sectional area. If Y has resistance R, what is the resistance of X?",
+      "options": [
+        "R/4",
+        "4R",
+        "2R",
+        "R"
+      ],
+      "correct": 1,
+      "points": 10,
+      "explanation": "Using R = ρL/A. For X: L_X = 2L_Y, A_X = ½A_Y. So R_X = ρ(2L_Y)/(½A_Y) = 4 × (ρL_Y/A_Y) = 4R. Resistance scales directly with length and inversely with area."
+    }
+  ]
+}
