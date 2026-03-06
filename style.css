@@ -1,6 +1,6 @@
 /* ================================================================
    QUIZ FLIP — CARD BATTLE GAME
-   Complete Stylesheet (Updated Rules)
+   Complete Stylesheet with Fraction Rendering
    ================================================================ */
 
 /* ========== RESET & BASE ========== */
@@ -11,14 +11,12 @@
 }
 
 :root {
-    /* Core palette */
     --primary: #667eea;
     --primary-dark: #5a67d8;
     --primary-light: #ebf4ff;
     --accent: #764ba2;
     --gradient: linear-gradient(135deg, #667eea 0%, #764ba2 100%);
 
-    /* Player colors */
     --p1: #3b82f6;
     --p1-light: #dbeafe;
     --p1-glow: rgba(59, 130, 246, 0.4);
@@ -26,7 +24,6 @@
     --p2-light: #fee2e2;
     --p2-glow: rgba(239, 68, 68, 0.4);
 
-    /* Feedback */
     --correct: #10b981;
     --correct-light: #d1fae5;
     --incorrect: #ef4444;
@@ -34,7 +31,6 @@
     --timeout: #f59e0b;
     --timeout-light: rgba(245, 158, 11, 0.15);
 
-    /* Neutrals */
     --bg: #0f172a;
     --surface: #1e293b;
     --surface2: #334155;
@@ -43,7 +39,6 @@
     --text-dim: #94a3b8;
     --text-muted: #64748b;
 
-    /* Sizing */
     --radius: 12px;
     --radius-lg: 20px;
     --radius-xl: 28px;
@@ -61,7 +56,6 @@ body {
     overflow-x: hidden;
 }
 
-/* Confetti canvas */
 #confetti-canvas {
     position: fixed;
     top: 0;
@@ -100,6 +94,81 @@ body {
 @keyframes fadeIn {
     from { opacity: 0; transform: translateY(10px); }
     to   { opacity: 1; transform: translateY(0); }
+}
+
+
+/* ================================================================
+   FRACTION & MIXED NUMBER DISPLAY
+   ================================================================ */
+.frac {
+    display: inline-flex;
+    flex-direction: column;
+    align-items: center;
+    vertical-align: middle;
+    margin: 0 3px;
+    font-size: 0.82em;
+    line-height: 1.15;
+    position: relative;
+}
+
+.frac-num {
+    padding: 0 4px 2px;
+    border-bottom: 2px solid currentColor;
+    min-width: 16px;
+    text-align: center;
+    font-weight: 700;
+}
+
+.frac-den {
+    padding: 2px 4px 0;
+    min-width: 16px;
+    text-align: center;
+    font-weight: 700;
+}
+
+.mixed-num {
+    display: inline-flex;
+    align-items: center;
+    gap: 2px;
+    vertical-align: middle;
+}
+
+.mixed-num .whole {
+    font-size: 1.2em;
+    font-weight: 700;
+}
+
+/* Fractions inside options */
+.q-option .frac {
+    font-size: 0.88em;
+}
+
+.q-option .mixed-num .whole {
+    font-size: 1.15em;
+}
+
+/* Fractions inside question text */
+.q-text .frac {
+    font-size: 0.78em;
+}
+
+.q-text .mixed-num .whole {
+    font-size: 1.25em;
+}
+
+/* Fractions in explanation */
+.q-explanation .frac {
+    font-size: 0.8em;
+}
+
+/* Fractions in result banner */
+.q-result-banner .frac {
+    font-size: 0.8em;
+}
+
+/* Fractions in card result label */
+.card-result-label .frac {
+    font-size: 0.75em;
 }
 
 
@@ -796,7 +865,6 @@ body {
     perspective: 1200px;
 }
 
-/* ---- Individual Flip Card ---- */
 .flip-card {
     aspect-ratio: 3 / 4;
     cursor: pointer;
@@ -804,11 +872,11 @@ body {
     transition: transform 0.2s;
 }
 
-.flip-card:hover:not(.flipped):not(.disabled) {
+.flip-card:hover:not(.flipped):not(.disabled):not(.completed):not(.failed) {
     transform: translateY(-6px) scale(1.03);
 }
 
-.flip-card:hover:not(.flipped):not(.disabled) .flip-card-inner {
+.flip-card:hover:not(.flipped):not(.disabled):not(.completed):not(.failed) .flip-card-inner {
     box-shadow: 0 12px 30px rgba(102, 126, 234, 0.3);
 }
 
@@ -817,14 +885,12 @@ body {
     pointer-events: none;
 }
 
-/* Completed cards stay flipped and dim slightly */
 .flip-card.completed {
     opacity: 0.7;
     cursor: default;
     pointer-events: none;
 }
 
-/* Failed cards stay flipped with red tint */
 .flip-card.failed {
     opacity: 0.75;
     cursor: default;
@@ -845,13 +911,11 @@ body {
     transform: rotateY(180deg);
 }
 
-/* Unflip animation (timeout) */
 .flip-card.unflipping .flip-card-inner {
     transform: rotateY(0deg);
     transition: transform 0.8s cubic-bezier(0.4, 0, 0.2, 1);
 }
 
-/* Front & Back shared */
 .flip-card-front,
 .flip-card-back {
     position: absolute;
@@ -867,7 +931,7 @@ body {
     overflow: hidden;
 }
 
-/* FRONT (face-down) */
+/* FRONT */
 .flip-card-front {
     background: linear-gradient(145deg, #3b4fd0, #5b6de8);
     border: 2px solid rgba(255, 255, 255, 0.1);
@@ -889,7 +953,6 @@ body {
     background: radial-gradient(circle at 30% 20%, rgba(255, 255, 255, 0.06) 0%, transparent 50%);
 }
 
-/* Timeout return glow on card front */
 .flip-card.returned .flip-card-front {
     animation: returnGlow 1.5s ease;
 }
@@ -914,7 +977,6 @@ body {
     z-index: 1;
 }
 
-/* Special card markers */
 .flip-card.card-special .flip-card-front {
     background: linear-gradient(145deg, #8b5cf6, #a78bfa);
     border-color: rgba(167, 139, 250, 0.4);
@@ -925,7 +987,7 @@ body {
     border-color: rgba(245, 158, 11, 0.4);
 }
 
-/* BACK (revealed) */
+/* BACK */
 .flip-card-back {
     background: var(--surface2);
     transform: rotateY(180deg);
@@ -946,25 +1008,21 @@ body {
     letter-spacing: 0.5px;
 }
 
-/* Correct card back */
 .flip-card.result-correct .flip-card-back {
     background: linear-gradient(145deg, rgba(16, 185, 129, 0.2), rgba(16, 185, 129, 0.05));
     border-color: var(--correct);
 }
 
-/* Incorrect card back */
 .flip-card.result-incorrect .flip-card-back {
     background: linear-gradient(145deg, rgba(239, 68, 68, 0.2), rgba(239, 68, 68, 0.05));
     border-color: var(--incorrect);
 }
 
-/* Timeout card back (brief flash before unflip) */
 .flip-card.result-timeout .flip-card-back {
     background: linear-gradient(145deg, rgba(245, 158, 11, 0.2), rgba(245, 158, 11, 0.05));
     border-color: var(--timeout);
 }
 
-/* Card owner indicator (bottom strip) */
 .flip-card.owner-p1 .flip-card-back::after {
     content: '';
     position: absolute;
@@ -983,7 +1041,6 @@ body {
     border-radius: 0 0 10px 10px;
 }
 
-/* Nobody claimed — wrong answer */
 .flip-card.owner-none .flip-card-back::after {
     content: '';
     position: absolute;
@@ -1010,7 +1067,6 @@ body {
     }
 }
 
-/* Shake animation for wrong answer card */
 .flip-card.shake .flip-card-inner {
     animation: cardShake 0.5s ease;
 }
@@ -1218,7 +1274,7 @@ body {
     width: 100%;
 }
 
-.q-option:hover:not(.locked) {
+.q-option:hover:not(.locked):not(.wrong-locked) {
     border-color: var(--primary);
     background: rgba(102, 126, 234, 0.1);
     transform: translateX(4px);
@@ -1243,7 +1299,6 @@ body {
 
 .q-option.dimmed { opacity: 0.4; }
 
-/* Wrong answer — no correct shown, just dim all */
 .q-option.wrong-locked {
     opacity: 0.5;
     cursor: default;
@@ -1505,7 +1560,6 @@ body {
     font-size: 0.9rem;
 }
 
-/* Treasure boxes */
 .treasure-grid {
     display: flex;
     justify-content: center;
@@ -1588,7 +1642,6 @@ body {
     pointer-events: none;
 }
 
-/* Treasure Result */
 .treasure-result {
     min-height: 50px;
     display: flex;
@@ -1703,7 +1756,6 @@ body {
     margin-bottom: 25px;
 }
 
-/* VS Scores */
 .go-scores {
     display: flex;
     align-items: center;
@@ -1748,7 +1800,6 @@ body {
     font-size: 1rem;
 }
 
-/* Stats Grid */
 .go-stats {
     background: var(--bg);
     border-radius: var(--radius);
@@ -1789,7 +1840,6 @@ body {
     font-weight: 700;
 }
 
-/* Game Over Actions */
 .go-actions {
     display: flex;
     gap: 12px;
@@ -1913,7 +1963,6 @@ body {
     animation: correctGlow 0.8s ease;
 }
 
-/* Screen shake for wrong answer */
 .screen-shake {
     animation: screenShake 0.4s ease;
 }
@@ -1941,7 +1990,6 @@ body {
 
     .screen { padding: 18px; }
 
-    /* PIN Screen */
     .header h1 { font-size: 1.7rem; }
     .logo-icon { font-size: 2.2rem; }
 
@@ -1960,7 +2008,6 @@ body {
     .quick-actions { flex-direction: column; gap: 8px; }
     .quiz-catalog { max-height: 180px; }
 
-    /* Game Screen */
     #game-screen { padding: 12px; min-height: auto; }
 
     .scoreboard {
@@ -1979,11 +2026,9 @@ body {
     .turn-avatar { font-size: 1.2rem; }
     .turn-cards-left { font-size: 0.72rem; }
 
-    /* Rules Bar */
     .rules-bar { gap: 5px; }
     .rule-chip { font-size: 0.62rem; padding: 4px 8px; }
 
-    /* Card Board */
     .card-board {
         grid-template-columns: repeat(4, 1fr);
         gap: 8px;
@@ -1992,7 +2037,6 @@ body {
     .card-number { font-size: 1rem; top: 5px; left: 6px; }
     .card-icon { font-size: 1.5rem; }
 
-    /* Question Modal */
     .question-modal {
         padding: 20px;
         width: 96%;
@@ -2004,12 +2048,15 @@ body {
     .option-letter { width: 30px; height: 30px; font-size: 0.82rem; }
     .q-player-indicator { padding: 6px 10px; font-size: 0.8rem; }
 
-    /* Treasure */
+    /* Fractions in mobile */
+    .frac { font-size: 0.85em; }
+    .q-text .frac { font-size: 0.8em; }
+    .q-option .frac { font-size: 0.9em; }
+
     .treasure-modal { padding: 25px 20px; }
     .t-box { width: 80px; height: 80px; }
     .t-box-front { font-size: 2.5rem; }
 
-    /* Game Over */
     .gameover-modal { padding: 30px 20px; }
     .go-trophy { font-size: 3rem; }
     .go-title { font-size: 1.4rem; }
@@ -2036,6 +2083,10 @@ body {
     .q-text { font-size: 0.95rem; }
 
     .rules-bar { flex-direction: column; align-items: center; gap: 3px; }
+
+    /* Fractions in very small screens */
+    .frac { font-size: 0.88em; margin: 0 2px; }
+    .frac-num, .frac-den { min-width: 14px; padding: 0 3px; }
 }
 
 /* ================================================================

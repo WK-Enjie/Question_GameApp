@@ -1,6 +1,7 @@
 // ================================================================
 //  QUIZ FLIP — CARD BATTLE GAME
-//  Complete Game Logic (Updated Rules)
+//  Complete Game Logic with Fraction Rendering
+//  Rules:
 //  - Each player answers once per turn, then switches
 //  - Correct: card stays, answer + explanation shown, points awarded
 //  - Wrong: card stays (failed), correct answer NOT revealed
@@ -9,59 +10,49 @@
 
 // ========== GAME STATE ==========
 const gameState = {
-    // PIN
     pin: ['', '', '', '', '', ''],
     currentDigit: 0,
 
-    // Quiz data
     questions: [],
     currentQuizCode: '',
     quizCatalog: [],
     quizInfo: null,
 
-    // Core game
     currentQuestion: -1,
     currentPlayer: 1,
     scores: [0, 0],
     selectedAnswer: null,
     answered: false,
 
-    // Cards
     cards: [],
     completedCount: 0,
     totalCards: 0,
 
-    // Streaks
     streaks: [0, 0],
     bestStreaks: [0, 0],
 
-    // Per-player stats
     correctCounts: [0, 0],
     totalAnswered: [0, 0],
     fastestAnswer: [Infinity, Infinity],
     timeoutCounts: [0, 0],
 
-    // Timer
     timeLeft: 45,
     timerInterval: null,
     timerMax: 45,
     answerStartTime: 0,
 
-    // Treasure
     canPickTreasure: false,
     treasurePicked: false,
 
-    // Sound
     soundEnabled: true,
 
-    // Special card indices
     specialCards: new Set(),
     bonusCards: new Set()
 };
 
 
 // ================================================================
-//  QUIZ CODE DECODER  (unchanged — works with existing worksheets)
+//  QUIZ CODE DECODER
 // ================================================================
 const SUBJECTS = {
     0: { name: 'Mathematics',        folder: 'math' },
@@ -109,7 +100,69 @@ function decodeQuizCode(code) {
 
 
 // ================================================================
-//  SOUND ENGINE  (Web Audio API — no files needed)
+//  FRACTION RENDERER
+//  Auto-converts "3/8" to styled fraction, "2 1/3" to mixed number
+//  Skips patterns like "100 / 100" (spaces around slash)
+//  Skips patterns inside words or $ amounts
+// ================================================================
+function renderMath(text) {
+    if (!text) return '';
+
+    // Step 1: Escape HTML
+    let s = text
+        .replace(/&/g, '&amp;')
+        .replace(/</g, '&lt;')
+        .replace(/>/g, '&gt;');
+
+    // Step 2: Protect patterns we do NOT want to convert
+    // Protect "x / y" (spaces around slash) — division expressions
+    const protected_divs = [];
+    s = s.replace(/(\d+)\s+\/\s+(\d+)/g, (match) => {
+        protected_divs.push(match);
+        return `__PROTDIV${protected_divs.length - 1}__`;
+    });
+
+    // Protect dollar amounts like "$5,400"
+    const protected_dollars = [];
+    s = s.replace(/\$[\d,]+(\.\d+)?/g, (match) => {
+        protected_dollars.push(match);
+        return `__PROTDOL${protected_dollars.length - 1}__`;
+    });
+
+    // Step 3: Mixed numbers — "2 1/3", "4 1/12", "1 3/8"
+    // Pattern: whole_number SPACE numerator/denominator
+    s = s.replace(/(\d+)\s+(\d+)\/(\d+)/g, (match, whole, num, den) => {
+        return `<span class="mixed-num">` +
+            `<span class="whole">${whole}</span>` +
+            `<span class="frac">` +
+                `<span class="frac-num">${num}</span>` +
+                `<span class="frac-den">${den}</span>` +
+            `</span>` +
+        `</span>`;
+    });
+
+    // Step 4: Simple fractions — "3/8", "2/5", "11/12"
+    s = s.replace(/(\d+)\/(\d+)/g, (match, num, den) => {
+        return `<span class="frac">` +
+            `<span class="frac-num">${num}</span>` +
+            `<span class="frac-den">${den}</span>` +
+        `</span>`;
+    });
+
+    // Step 5: Restore protected patterns
+    protected_divs.forEach((val, i) => {
+        s = s.replace(`__PROTDIV${i}__`, val);
+    });
+    protected_dollars.forEach((val, i) => {
+        s = s.replace(`__PROTDOL${i}__`, val);
+    });
+
+    return s;
+}
+
+
+// ================================================================
+//  SOUND ENGINE
 // ================================================================
 class SoundEngine {
     constructor() { this.ctx = null; this.enabled = true; }
@@ -302,7 +355,7 @@ function showScreen(id) {
 
 
 // ================================================================
-//  PIN INPUT  (unchanged)
+//  PIN INPUT
 // ================================================================
 function updatePinDisplay() {
     for (let i = 1; i <= 6; i++) {
@@ -313,21 +366,43 @@ function updatePinDisplay() {
         el.classList.toggle('filled', v !== '');
     }
 }
-function addDigit(d)       { if (gameState.currentDigit < 6) { gameState.pin[gameState.currentDigit++] = d; updatePinDisplay(); sound.play('buttonClick'); } }
-function removeLastDigit() { if (gameState.currentDigit > 0) { gameState.pin[--gameState.currentDigit] = ''; updatePinDisplay(); } }
-function clearPin()        { gameState.pin = ['','','','','','']; gameState.currentDigit = 0; updatePinDisplay(); }
-function setPinFromCode(c) { clearPin(); c.split('').forEach(d => addDigit(d)); }
+
+function addDigit(d) {
+    if (gameState.currentDigit < 6) {
+        gameState.pin[gameState.currentDigit++] = d;
+        updatePinDisplay();
+        sound.play('buttonClick');
+    }
+}
+
+function removeLastDigit() {
+    if (gameState.currentDigit > 0) {
+        gameState.pin[--gameState.currentDigit] = '';
+        updatePinDisplay();
+    }
+}
+
+function clearPin() {
+    gameState.pin = ['', '', '', '', '', ''];
+    gameState.currentDigit = 0;
+    updatePinDisplay();
+}
+
+function setPinFromCode(c) {
+    clearPin();
+    c.split('').forEach(d => addDigit(d));
+}
 
 
 // ================================================================
-//  FILE SCANNER  (unchanged)
+//  FILE SCANNER
 // ================================================================
 async function scanForQuizzes() {
     showScreen('loading-screen');
-    const msg  = document.getElementById('loading-message');
-    const det  = document.getElementById('loading-details');
-    const bar  = document.getElementById('scan-progress');
-    const cnt  = document.getElementById('quiz-found');
+    const msg = document.getElementById('loading-message');
+    const det = document.getElementById('loading-details');
+    const bar = document.getElementById('scan-progress');
+    const cnt = document.getElementById('quiz-found');
     gameState.quizCatalog = [];
 
     const paths = [
@@ -373,17 +448,17 @@ async function scanForQuizzes() {
 
 
 // ================================================================
-//  CATALOG MANAGEMENT  (unchanged)
+//  CATALOG MANAGEMENT
 // ================================================================
 async function loadCatalogFromStorage() {
     const s = localStorage.getItem('quizCatalog');
     if (s) { gameState.quizCatalog = JSON.parse(s); return; }
 
     gameState.quizCatalog = [
-        { code:'101-01-1', filename:'101011.json', path:'Questions/primary/math/101011.json',                          name:'P1 Math Chapter 1' },
-        { code:'201-01-1', filename:'201011.json', path:'Questions/lower-secondary/math/201011.json',                  name:'Sec 1 Math Chapter 1' },
-        { code:'201-01-2', filename:'201012.json', path:'Questions/lower-secondary/math/201012.json',                  name:'Sec 1 Math Ch 1 WS 2' },
-        { code:'342-09-1', filename:'342091.json', path:'Questions/upper-secondary/combined-chem/342091.json',         name:'Sec 4 Comb Chem Ch 9' }
+        { code:'101-01-1', filename:'101011.json', path:'Questions/primary/math/101011.json',                  name:'P1 Math Chapter 1' },
+        { code:'201-01-1', filename:'201011.json', path:'Questions/lower-secondary/math/201011.json',          name:'Sec 1 Math Chapter 1' },
+        { code:'201-01-2', filename:'201012.json', path:'Questions/lower-secondary/math/201012.json',          name:'Sec 1 Math Ch 1 WS 2' },
+        { code:'342-09-1', filename:'342091.json', path:'Questions/upper-secondary/combined-chem/342091.json', name:'Sec 4 Comb Chem Ch 9' }
     ];
     localStorage.setItem('quizCatalog', JSON.stringify(gameState.quizCatalog));
 }
@@ -409,14 +484,14 @@ function updateCatalogDisplay() {
     }
     const sorted = [...gameState.quizCatalog].sort((a, b) => a.code.localeCompare(b.code));
     el.innerHTML = sorted.map(q => `
-        <div class="quiz-item" data-code="${q.code.replace(/-/g,'')}">
+        <div class="quiz-item" data-code="${q.code.replace(/-/g, '')}">
             <div class="quiz-header"><span class="quiz-code">${q.code}</span><span class="quiz-name">${q.name}</span></div>
-            <div class="quiz-details">${q.level||''} · ${q.grade||''} · ${q.subject||''}</div>
+            <div class="quiz-details">${q.level || ''} · ${q.grade || ''} · ${q.subject || ''}</div>
         </div>`).join('');
     cnt.textContent = `${gameState.quizCatalog.length} quizzes`;
 
     document.querySelectorAll('.quiz-item').forEach(item =>
-        item.addEventListener('click', function() {
+        item.addEventListener('click', function () {
             setPinFromCode(this.dataset.code);
             setTimeout(submitPin, 500);
         })
@@ -425,7 +500,7 @@ function updateCatalogDisplay() {
 
 
 // ================================================================
-//  LOAD QUIZ  (unchanged)
+//  LOAD QUIZ
 // ================================================================
 async function loadQuizByCode(code) {
     const info = decodeQuizCode(code);
@@ -447,7 +522,7 @@ async function loadQuizByCode(code) {
 
 
 // ================================================================
-//  SUBMIT PIN  →  LOAD  →  START GAME
+//  SUBMIT PIN → LOAD → START GAME
 // ================================================================
 async function submitPin() {
     const pin = gameState.pin.join('');
@@ -456,7 +531,7 @@ async function submitPin() {
     showScreen('loading-screen');
     document.getElementById('loading-message').textContent = 'Loading quiz...';
     document.getElementById('loading-details').textContent  = '';
-    document.getElementById('scan-progress').style.width     = '50%';
+    document.getElementById('scan-progress').style.width    = '50%';
 
     try {
         const result = await loadQuizByCode(pin);
@@ -484,7 +559,10 @@ async function submitPin() {
 
         setTimeout(() => { initGame(); showScreen('game-screen'); }, 350);
     } catch (e) {
-        setTimeout(() => { document.getElementById('error-message').innerHTML = e.message; showScreen('error-screen'); }, 500);
+        setTimeout(() => {
+            document.getElementById('error-message').innerHTML = e.message;
+            showScreen('error-screen');
+        }, 500);
     }
 }
 
@@ -497,7 +575,7 @@ function generateCardBoard() {
     board.innerHTML = '';
 
     const total = gameState.questions.length;
-    gameState.totalCards    = total;
+    gameState.totalCards     = total;
     gameState.completedCount = 0;
     gameState.cards = [];
 
@@ -598,12 +676,11 @@ function initGame() {
 
 
 // ================================================================
-//  CARD CLICK  →  FLIP  →  SHOW QUESTION
+//  CARD CLICK → FLIP → SHOW QUESTION
 // ================================================================
 function onCardClick(idx) {
     const c = gameState.cards[idx];
 
-    // Can't click if: already completed, currently flipped, or overlay is open
     if (c.completed || c.flipped ||
         document.getElementById('question-overlay').classList.contains('show') ||
         document.getElementById('treasure-overlay').classList.contains('show'))
@@ -619,7 +696,7 @@ function onCardClick(idx) {
 
 
 // ================================================================
-//  QUESTION OVERLAY
+//  QUESTION OVERLAY  (with renderMath)
 // ================================================================
 function showQuestion(idx) {
     const q = gameState.questions[idx];
@@ -629,10 +706,10 @@ function showQuestion(idx) {
     gameState.selectedAnswer = null;
     gameState.answered       = false;
 
-    // Points calculation
-    let pts      = q.points || 10;
-    const isDbl  = gameState.specialCards.has(idx);
-    const isBns  = gameState.bonusCards.has(idx);
+    // Points
+    let pts     = q.points || 10;
+    const isDbl = gameState.specialCards.has(idx);
+    const isBns = gameState.bonusCards.has(idx);
     if (isDbl) pts *= 2;
 
     // Player indicator
@@ -651,17 +728,17 @@ function showQuestion(idx) {
     if (isDbl)      { sp.textContent = '⚡ DOUBLE'; sp.classList.add('double'); }
     else if (isBns) { sp.textContent = '🎁 TREASURE'; }
 
-    // Question text
-    document.getElementById('question-text').textContent = q.question || 'Question';
+    // Question text — RENDER FRACTIONS
+    document.getElementById('question-text').innerHTML = renderMath(q.question || 'Question');
 
-    // Options
+    // Options — RENDER FRACTIONS
     const optBox = document.getElementById('options-container');
     optBox.innerHTML = '';
     (q.options || []).forEach((o, i) => {
         const btn = document.createElement('button');
         btn.className = 'q-option';
         btn.dataset.index = i;
-        btn.innerHTML = `<span class="option-letter">${String.fromCharCode(65 + i)}</span><span class="option-text">${o}</span>`;
+        btn.innerHTML = `<span class="option-letter">${String.fromCharCode(65 + i)}</span><span class="option-text">${renderMath(o)}</span>`;
         btn.addEventListener('click', () => selectOption(i));
         optBox.appendChild(btn);
     });
@@ -721,7 +798,7 @@ function selectOption(i) {
 
 
 // ================================================================
-//  SUBMIT ANSWER  (CORE GAME LOGIC — UPDATED RULES)
+//  SUBMIT ANSWER  (CORE GAME LOGIC)
 // ================================================================
 function submitAnswer() {
     if (gameState.answered || gameState.selectedAnswer === null) return;
@@ -747,14 +824,14 @@ function submitAnswer() {
 
     // ===================== CORRECT =====================
     if (correct) {
-        // Lock & highlight options — show correct answer
+        // Lock & highlight — show correct answer
         document.querySelectorAll('.q-option').forEach((o, i) => {
             o.classList.add('locked');
             if (i === q.correct)  o.classList.add('correct');
             else                  o.classList.add('dimmed');
         });
 
-        // Fastest time
+        // Fastest
         if (timeTaken < gameState.fastestAnswer[pi]) gameState.fastestAnswer[pi] = timeTaken;
 
         // Streak
@@ -763,7 +840,7 @@ function submitAnswer() {
         if (streak > gameState.bestStreaks[pi]) gameState.bestStreaks[pi] = streak;
         gameState.correctCounts[pi]++;
 
-        // Points: base × double? × streak multiplier
+        // Points
         let basePts    = q.points || 10;
         let multiplier = isDbl ? 2 : 1;
         if (streak >= 5)      multiplier += 1;
@@ -784,11 +861,11 @@ function submitAnswer() {
         cardData.owner     = gameState.currentPlayer;
         gameState.completedCount++;
 
-        // Confetti burst on card
+        // Confetti
         const cr = cardData.element.getBoundingClientRect();
         confetti.burst(cr.left + cr.width / 2, cr.top + cr.height / 2, 25);
 
-        // Floating score popup
+        // Floating popup
         const sbRect = document.getElementById(`sb-p${gameState.currentPlayer}`).getBoundingClientRect();
         showScorePopup(`+${totalPts}`, sbRect.left + sbRect.width / 2, sbRect.top, 'positive');
         if (streak >= 3) showScorePopup(`🔥 ${streak}x Streak!`, sbRect.left + sbRect.width / 2, sbRect.top - 35, 'bonus');
@@ -812,14 +889,14 @@ function submitAnswer() {
         banner.className = 'q-result-banner correct-banner show';
         banner.innerHTML  = bannerHTML;
 
-        // Explanation (ONLY shown on correct)
+        // Explanation — RENDER FRACTIONS (only on correct)
         if (q.explanation) {
             const exp = document.getElementById('q-explanation');
-            exp.innerHTML  = `<strong>Explanation:</strong> ${q.explanation}`;
-            exp.className  = 'q-explanation correct-exp show';
+            exp.innerHTML = `<strong>Explanation:</strong> ${renderMath(q.explanation)}`;
+            exp.className = 'q-explanation correct-exp show';
         }
 
-        // Next action: treasure or continue
+        // Next action
         if (isBns) {
             gameState.canPickTreasure = true;
             gameState.treasurePicked  = false;
@@ -830,7 +907,7 @@ function submitAnswer() {
 
     // ===================== INCORRECT =====================
     } else {
-        // Lock options — DO NOT reveal correct answer
+        // Lock — do NOT reveal correct answer
         document.querySelectorAll('.q-option').forEach((o, i) => {
             o.classList.add('locked');
             if (i === gameState.selectedAnswer) {
@@ -843,7 +920,7 @@ function submitAnswer() {
         // Reset streak
         gameState.streaks[pi] = 0;
 
-        // Audio + screen shake
+        // Audio + shake
         sound.play('incorrect');
 
         const gs = document.getElementById('game-screen');
@@ -862,7 +939,7 @@ function submitAnswer() {
         updateStreaks();
         updateCardsRemaining();
 
-        // Result banner — do NOT reveal answer
+        // Result banner — NO answer revealed
         banner.className = 'q-result-banner incorrect-banner show';
         banner.innerHTML  = `
             <div>❌ Wrong Answer!</div>
@@ -893,15 +970,14 @@ function timeUp() {
 
     sound.play('timeout');
 
-    // Hide submit button
+    // Hide submit
     document.getElementById('submit-answer').classList.add('hidden');
 
-    // Lock options without revealing anything
+    // Lock options without revealing
     document.querySelectorAll('.q-option').forEach(o => {
         o.classList.add('locked', 'wrong-locked');
     });
 
-    // Mark selected if any (but don't highlight correct)
     if (gameState.selectedAnswer !== null) {
         const opts = document.querySelectorAll('.q-option');
         if (opts[gameState.selectedAnswer]) {
@@ -920,10 +996,7 @@ function timeUp() {
         <div class="result-sub">The card returns to the board for another attempt</div>
     `;
 
-    // NO explanation shown
-    // Card will unflip when player clicks continue
-
-    // Screen shake (gentler)
+    // Screen shake
     const gs = document.getElementById('game-screen');
     gs.classList.add('screen-shake');
     setTimeout(() => gs.classList.remove('screen-shake'), 450);
@@ -939,7 +1012,7 @@ function buildNextButton(result) {
     const btn     = document.getElementById('next-btn');
     const cardIdx = gameState.currentQuestion;
 
-    // Treasure card — open treasure instead of continue
+    // Treasure card
     if (result === 'treasure') {
         btn.innerHTML = '<span>🎁 Open Treasure!</span><i class="fas fa-gift"></i>';
         btn.classList.add('show');
@@ -951,7 +1024,7 @@ function buildNextButton(result) {
         return;
     }
 
-    // Normal continue button
+    // Normal continue
     btn.innerHTML = '<span>Continue</span><i class="fas fa-arrow-right"></i>';
     btn.classList.add('show');
     btn.style.display = 'flex';
@@ -963,7 +1036,7 @@ function buildNextButton(result) {
         gameState.currentPlayer = gameState.currentPlayer === 1 ? 2 : 1;
         updatePlayerTurn();
 
-        // Timeout: unflip card back to board
+        // Timeout: unflip card
         if (result === 'timeout') {
             setTimeout(() => {
                 const card = gameState.cards[cardIdx];
@@ -981,7 +1054,6 @@ function buildNextButton(result) {
 
                 sound.play('cardReturn');
 
-                // Clean up animation classes
                 setTimeout(() => card.element.classList.remove('unflipping'), 800);
                 setTimeout(() => card.element.classList.remove('returned'), 2300);
 
@@ -1015,7 +1087,6 @@ function startTimer(secs) {
             return;
         }
         renderTimer();
-        // Tick in last 5 seconds
         if (gameState.timeLeft <= 5 &&
             Math.abs(gameState.timeLeft - Math.round(gameState.timeLeft)) < 0.06)
             sound.play('tick');
@@ -1036,8 +1107,8 @@ function renderTimer() {
     bar.classList.remove('warning', 'danger');
     clock.classList.remove('warning', 'danger');
 
-    if (gameState.timeLeft <= 5)       { bar.classList.add('danger');  clock.classList.add('danger'); }
-    else if (gameState.timeLeft <= 15) { bar.classList.add('warning'); clock.classList.add('warning'); }
+    if (gameState.timeLeft <= 5)        { bar.classList.add('danger');  clock.classList.add('danger'); }
+    else if (gameState.timeLeft <= 15)  { bar.classList.add('warning'); clock.classList.add('warning'); }
 }
 
 
@@ -1101,7 +1172,6 @@ const TREASURES = [
 ];
 
 function showTreasureOverlay() {
-    // Reset boxes
     document.querySelectorAll('.t-box').forEach(b => {
         b.classList.remove('opened', 'not-chosen');
         b.querySelector('.t-box-back').innerHTML = '';
@@ -1111,7 +1181,6 @@ function showTreasureOverlay() {
     cont.classList.remove('show');
     cont.style.display = 'none';
 
-    // Assign random treasures
     const shuffled = [...TREASURES].sort(() => Math.random() - 0.5);
     document.querySelectorAll('.t-box').forEach((b, i) => { b._treasure = shuffled[i]; });
 
@@ -1133,17 +1202,14 @@ function openTreasureBox(box) {
     const t  = box._treasure;
     const pi = gameState.currentPlayer - 1;
 
-    // Flip chosen box
     box.classList.add('opened');
     box.querySelector('.t-box-back').innerHTML =
         `<span class="t-reward-icon">${t.icon}</span><span class="t-reward-text">${t.name}</span>`;
 
-    // Dim others
     document.querySelectorAll('.t-box').forEach(b => { if (b !== box) b.classList.add('not-chosen'); });
 
     sound.play('powerup');
 
-    // Apply effect
     let msg = '';
     if (t.pts > 0) {
         gameState.scores[pi] += t.pts;
@@ -1162,11 +1228,9 @@ function openTreasureBox(box) {
 
     updateScores();
 
-    // Confetti
     const br = box.getBoundingClientRect();
     confetti.burst(br.left + br.width / 2, br.top + br.height / 2, 28);
 
-    // Show result + continue
     setTimeout(() => {
         document.getElementById('treasure-result').innerHTML =
             `<div class="t-result-text ${t.cls}">${msg}</div>`;
@@ -1244,7 +1308,7 @@ document.addEventListener('DOMContentLoaded', async () => {
     await loadCatalogFromStorage();
     updateCatalogDisplay();
 
-    // ---- PIN SCREEN listeners ----
+    // ---- PIN SCREEN ----
     document.querySelectorAll('.key[data-key]').forEach(b =>
         b.addEventListener('click', function () { addDigit(this.dataset.key); }));
 
@@ -1257,7 +1321,7 @@ document.addEventListener('DOMContentLoaded', async () => {
         setTimeout(submitPin, 500);
     });
 
-    // ---- GAME listeners ----
+    // ---- GAME ----
     document.getElementById('submit-answer').addEventListener('click', submitAnswer);
 
     document.getElementById('home-btn').addEventListener('click', () => {
@@ -1272,53 +1336,45 @@ document.addEventListener('DOMContentLoaded', async () => {
         this.classList.toggle('muted', !on);
     });
 
-    // ---- ERROR listeners ----
+    // ---- ERROR ----
     document.getElementById('retry-btn')?.addEventListener('click', submitPin);
     document.getElementById('back-to-pin-error')?.addEventListener('click', () => {
         clearPin(); showScreen('pin-screen');
     });
 
-    // ---- GAME OVER listeners ----
+    // ---- GAME OVER ----
     document.getElementById('restart-btn')?.addEventListener('click', () => { hideGameOver(); initGame(); });
     document.getElementById('new-chapter-btn')?.addEventListener('click', () => {
         stopTimer(); hideQuestionOverlay(); hideTreasureOverlay(); hideGameOver();
         clearPin(); showScreen('pin-screen');
     });
 
-    // ---- TREASURE listeners ----
+    // ---- TREASURE ----
     document.querySelectorAll('.t-box').forEach(b =>
         b.addEventListener('click', function () { openTreasureBox(this); }));
 
-    // Treasure continue — ALWAYS switch player
     document.getElementById('treasure-continue').addEventListener('click', () => {
         hideTreasureOverlay();
-
-        // Switch player
         gameState.currentPlayer = gameState.currentPlayer === 1 ? 2 : 1;
         updatePlayerTurn();
-
-        // Check game end
         if (gameState.completedCount >= gameState.totalCards) setTimeout(endGame, 500);
     });
 
     // ---- KEYBOARD ----
     document.addEventListener('keydown', e => {
-        // PIN screen
         if (document.getElementById('pin-screen').classList.contains('active')) {
             if (e.key >= '0' && e.key <= '9') addDigit(e.key);
             else if (e.key === 'Backspace')   removeLastDigit();
             else if (e.key === 'Enter')       submitPin();
             return;
         }
-        // Question overlay open
         if (document.getElementById('question-overlay').classList.contains('show')) {
             if (!gameState.answered) {
-                const map = { a:0, b:1, c:2, d:3, '1':0, '2':1, '3':2, '4':3 };
+                const map = { a: 0, b: 1, c: 2, d: 3, '1': 0, '2': 1, '3': 2, '4': 3 };
                 const idx = map[e.key.toLowerCase()];
                 if (idx !== undefined) selectOption(idx);
                 if (e.key === 'Enter' && gameState.selectedAnswer !== null) submitAnswer();
             } else {
-                // After answering, Enter clicks continue
                 if (e.key === 'Enter') {
                     const nxt = document.getElementById('next-btn');
                     if (nxt.style.display !== 'none') nxt.click();
@@ -1328,7 +1384,7 @@ document.addEventListener('DOMContentLoaded', async () => {
     });
 
     console.log('✅ Ready — add quiz JSON files to Questions/ folder');
-    console.log('📋 Rules: Correct = keep card | Wrong = lose card, answer hidden | Timeout = card returns');
+    console.log('📋 Rules: Correct = keep card | Wrong = card lost, answer hidden | Timeout = card returns');
 });
 
 
@@ -1336,13 +1392,27 @@ document.addEventListener('DOMContentLoaded', async () => {
 //  DEBUG TOOLS
 // ================================================================
 window.quizTools = {
-    testQuiz:     c  => { setPinFromCode(c); setTimeout(submitPin, 500); },
-    resetCatalog: () => { localStorage.removeItem('quizCatalog'); gameState.quizCatalog = []; updateCatalogDisplay(); console.log('Catalog reset'); },
-    addTestQuiz:  () => {
-        gameState.quizCatalog.push({ code:'201-01-1', filename:'201011.json', path:'Questions/lower-secondary/math/201011.json',
-            name:'Sec 1 Math Chapter 1', subject:'Mathematics', level:'Lower Secondary', grade:'S1' });
-        localStorage.setItem('quizCatalog', JSON.stringify(gameState.quizCatalog));
-        updateCatalogDisplay(); console.log('Test quiz added');
+    testQuiz:     c => { setPinFromCode(c); setTimeout(submitPin, 500); },
+    resetCatalog: () => {
+        localStorage.removeItem('quizCatalog');
+        gameState.quizCatalog = [];
+        updateCatalogDisplay();
+        console.log('Catalog reset');
     },
-    showState: () => console.log(JSON.parse(JSON.stringify(gameState)))
+    addTestQuiz: () => {
+        gameState.quizCatalog.push({
+            code: '201-01-1', filename: '201011.json',
+            path: 'Questions/lower-secondary/math/201011.json',
+            name: 'Sec 1 Math Chapter 1', subject: 'Mathematics',
+            level: 'Lower Secondary', grade: 'S1'
+        });
+        localStorage.setItem('quizCatalog', JSON.stringify(gameState.quizCatalog));
+        updateCatalogDisplay();
+        console.log('Test quiz added');
+    },
+    showState: () => console.log(JSON.parse(JSON.stringify(gameState))),
+    testFraction: (text) => {
+        console.log('Input:', text);
+        console.log('Output:', renderMath(text));
+    }
 };

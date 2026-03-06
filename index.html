@@ -8,7 +8,6 @@
     <link rel="stylesheet" href="https://cdnjs.cloudflare.com/ajax/libs/font-awesome/6.4.0/css/all.min.css">
 </head>
 <body>
-    <!-- Fullscreen confetti layer -->
     <canvas id="confetti-canvas"></canvas>
 
     <div class="container">
@@ -195,7 +194,6 @@
             <div class="question-overlay" id="question-overlay">
                 <div class="question-backdrop"></div>
                 <div class="question-modal">
-                    <!-- Timer -->
                     <div class="timer-wrapper">
                         <div class="timer-track">
                             <div class="timer-fill" id="timer-bar"></div>
@@ -206,40 +204,32 @@
                         </div>
                     </div>
 
-                    <!-- Current Player Indicator -->
                     <div class="q-player-indicator" id="q-player-indicator">
                         <span class="qpi-avatar">😎</span>
                         <span class="qpi-name">Player 1 answering...</span>
                     </div>
 
-                    <!-- Question Header -->
                     <div class="q-header">
                         <span class="q-badge" id="q-number">Q1</span>
                         <span class="q-points-badge" id="q-points">10 pts</span>
                         <span class="q-special-badge" id="q-special"></span>
                     </div>
 
-                    <!-- Question Body -->
                     <div class="q-body">
                         <p class="q-text" id="question-text">Question goes here</p>
                     </div>
 
-                    <!-- Options -->
                     <div class="q-options" id="options-container"></div>
 
-                    <!-- Submit Button -->
                     <button class="btn-submit" id="submit-answer" disabled>
                         <i class="fas fa-lock"></i>
                         <span>Lock In Answer</span>
                     </button>
 
-                    <!-- Result Banner (correct / wrong / timeout) -->
                     <div class="q-result-banner" id="q-result-banner"></div>
 
-                    <!-- Explanation (only shown on correct answers) -->
                     <div class="q-explanation" id="q-explanation"></div>
 
-                    <!-- Continue Button -->
                     <button class="btn-next" id="next-btn">
                         <span>Continue</span>
                         <i class="fas fa-arrow-right"></i>
@@ -325,10 +315,8 @@
                 </div>
             </div>
 
-            <!-- ---- FLOATING SCORE POPUP ---- -->
             <div id="score-popups"></div>
 
-            <!-- ---- BOTTOM CONTROLS ---- -->
             <div class="game-controls-bar">
                 <button id="home-btn" class="gc-btn" title="Back to Home">
                     <i class="fas fa-home"></i>
@@ -342,7 +330,7 @@
                 </button>
             </div>
 
-        </div><!-- /game-screen -->
+        </div>
 
         <!-- ===================== ERROR SCREEN ===================== -->
         <div id="error-screen" class="screen">
@@ -359,7 +347,7 @@
             </div>
         </div>
 
-    </div><!-- /container -->
+    </div>
 
     <script src="script.js"></script>
 </body>
