@@ -78,7 +78,7 @@
       "id": 11,
       "question": "Ali has 20% more money than Ben. Ben has 25% less money than Charlie. If Ali has $144, how much money does Charlie have?",
       "options": ["$140", "$150", "$160", "$170"],
-      "correct": 1,
+      "correct": 2,
       "explanation": "Ali = 120% of Ben. Ben = $144 ÷ 1.2 = $120. Ben = 75% of Charlie (100% - 25% = 75%). Charlie = $120 ÷ 0.75 = $160."
     },
     {
@@ -98,7 +98,7 @@
     {
       "id": 14,
       "question": "A TV set was sold at a profit of 30%. If it was sold at a discount of 15% on the selling price, the shop owner would still make a profit of $105. What was the cost price?",
-      "options": ["$500", "$550", "$600", "$650"],
+      "options": ["$900", "$550", "$1000", "$1050"],
       "correct": 2,
       "explanation": "Let cost price be x. Original selling price = 1.3x. Discounted price = 1.3x - (15% of 1.3x) = 1.3x - 0.195x = 1.105x. Profit = 1.105x - x = 0.105x = $105. x = $105 ÷ 0.105 = $600."
     },
@@ -110,4 +110,5 @@
       "explanation": "January: $200 + (20% of $200) = $200 + $40 = $240. February: $240 - (10% of $240) = $240 - $24 = $216. March: $216 + (15% of $216) = $216 + $32.40 = $248.40."
     }
   ]
+
 }
