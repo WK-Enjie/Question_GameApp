@@ -1,133 +1,131 @@
-
-  {
-    "title": "Exploring Diversity of Matter: Advanced Data Analysis and Material Selection",
-    "topic": "Diversity of Matter",
-    "subject": "Science",
-    "level": "Lower Secondary",
-    "grade": "Sec 1",
-    "chapter": 2,
-    "worksheet": 2,
-    "questions": [
-      {
-        "question": "A student conducts a scratch test on three unknown solid materials: P, Q, and R. Material P leaves a scratch on Material Q. Material R leaves a scratch on Material P. Which material is the best choice for manufacturing a cutting tool, and why?",
-        "options": [
-          "Material P, because it is harder than Q.",
-          "Material Q, because it is the most flexible.",
-          "Material R, because it has the highest hardness.",
-          "None of them, because metals are required for cutting tools."
-        ],
-        "correct": 2,
-        "points": 12,
-        "explanation": "Hardness determines a material's ability to resist scratching and to cut other materials. Since R scratches P, and P scratches Q, R is the hardest material (R > P > Q) and therefore the best for cutting."
-      },
-      {
-        "question": "An engineering team is building a lightweight drone frame. The material must have a density lower than 2.0 g/cm³. Material M has a mass of 150 g and a volume of 100 cm³. Material N has a mass of 250 g and a volume of 100 cm³. Which material should they use?",
-        "options": [
-          "Material M, because its density is 1.5 g/cm³.",
-          "Material N, because its density is 2.5 g/cm³.",
-          "Material M, because its density is 0.67 g/cm³.",
-          "Material N, because heavier materials are always stronger."
-        ],
-        "correct": 0,
-        "points": 15,
-        "explanation": "Density = Mass / Volume. For Material M: 150g / 100cm³ = 1.5 g/cm³. For Material N: 250g / 100cm³ = 2.5 g/cm³. Material M is the only one that meets the requirement of being under 2.0 g/cm³."
-      },
-      {
-        "question": "To test thermal properties, identical ice cubes are placed on identically sized blocks of Materials A, B, and C at room temperature. The ice on A melts in 2 minutes, on B in 15 minutes, and on C in 5 minutes. Which material is the best choice for making a cooler box?",
-        "options": [
-          "Material A, because it absorbs heat the fastest.",
-          "Material B, because it is the poorest thermal conductor.",
-          "Material C, because it offers a balance of melting times.",
-          "Material A, because it has the highest thermal conductivity."
-        ],
-        "correct": 1,
-        "points": 12,
-        "explanation": "A cooler box needs to act as an insulator (poor thermal conductor) to keep heat out. Since the ice on Material B took the longest to melt, B transfers heat the slowest and is the best insulator."
-      },
-      {
-        "question": "A gymnastics springboard must withstand a gymnast jumping on it without permanently bending, but it must also compress and spring back. Based on the data below, which material is ideal?\nMaterial W: Yields at 50 N, Bends up to 45°\nMaterial X: Yields at 5000 N, Bends up to 2°\nMaterial Y: Yields at 4500 N, Bends up to 45°\nMaterial Z: Yields at 100 N, Bends up to 2°",
-        "options": [
-          "Material W",
-          "Material X",
-          "Material Y",
-          "Material Z"
-        ],
-        "correct": 2,
-        "points": 15,
-        "explanation": "The springboard needs High Strength (to withstand the high force of the jump without yielding/permanently deforming) and High Flexibility (to bend 45° and spring back). Material Y provides the best combination of both."
-      },
-      {
-        "question": "A liquid is being chosen as a coolant for a car engine. The engine operates between -10°C in winter and 110°C when running hot. Which coolant liquid is suitable?",
-        "options": [
-          "Liquid A: Melting Point = -5°C, Boiling Point = 100°C",
-          "Liquid B: Melting Point = -20°C, Boiling Point = 150°C",
-          "Liquid C: Melting Point = 10°C, Boiling Point = 150°C",
-          "Liquid D: Melting Point = -20°C, Boiling Point = 90°C"
-        ],
-        "correct": 1,
-        "points": 12,
-        "explanation": "To remain a liquid, the substance's melting point must be below the lowest operating temperature (-10°C), and its boiling point must be above the highest operating temperature (110°C). Only Liquid B (-20°C to 150°C) fits."
-      },
-      {
-        "question": "A school wants to replace its single-use plastic canteen cutlery with a sustainable alternative. The new cutlery must cut through tough meat, withstand hot soups (90°C), and be biodegradable. Which material is best?",
-        "options": [
-          "Material 1: Biodegradable, Melts at 60°C, High Hardness",
-          "Material 2: Non-biodegradable, Melts at 200°C, High Hardness",
-          "Material 3: Biodegradable, Melts at 200°C, High Hardness",
-          "Material 4: Biodegradable, Melts at 150°C, Low Hardness (soft)"
-        ],
-        "correct": 2,
-        "points": 12,
-        "explanation": "The material must be biodegradable for sustainability, have a melting point above 90°C to survive hot soup, and have high hardness to cut through meat. Material 3 meets all requirements."
-      },
-      {
-        "question": "During an offshore oil spill, the crude oil (density = 0.85 g/cm³) sits on top of the seawater (density = 1.03 g/cm³). Responders deploy a containment boom to trap the oil. For the boom to float effectively, what must its density be?",
-        "options": [
-          "Greater than 1.03 g/cm³.",
-          "Exactly 1.03 g/cm³.",
-          "Less than 1.03 g/cm³.",
-          "Density does not affect floating."
-        ],
-        "correct": 2,
-        "points": 10,
-        "explanation": "For an object to float on a liquid, its density must be less than the density of the liquid. Therefore, the containment boom must have a density lower than seawater (< 1.03 g/cm³)."
-      },
-      {
-        "question": "Three materials are tested in a simple electrical circuit. When connected, Material F makes the bulb shine very brightly. Material G makes it shine dimly. Material H keeps the bulb completely off. Which materials should be used for the internal wiring and the outer safety casing, respectively?",
-        "options": [
-          "Wiring: Material G, Casing: Material F",
-          "Wiring: Material F, Casing: Material H",
-          "Wiring: Material H, Casing: Material F",
-          "Wiring: Material F, Casing: Material G"
-        ],
-        "correct": 1,
-        "points": 10,
-        "explanation": "Internal wiring needs to be an excellent electrical conductor (Material F, very bright). The safety casing must be an electrical insulator to prevent shocks (Material H, bulb off)."
-      },
-      {
-        "question": "Engineers are designing a bookshelf. They plot the maximum force different materials can take before they permanently lose their shape. Mat P: 50 N, Mat Q: 800 N, Mat R: 20 N. Which material is most suitable for the shelves?",
-        "options": [
-          "Material P",
-          "Material Q",
-          "Material R",
-          "Any material will work if it is thick enough."
-        ],
-        "correct": 1,
-        "points": 10,
-        "explanation": "A bookshelf must hold heavy books without permanently sagging. Strength is the ability to withstand a load without permanent deformation. Material Q can take the highest force (800 N), meaning it has the highest strength."
-      },
-      {
-        "question": "A space agency is designing the heat shield for a capsule re-entering Earth's atmosphere. The shield must survive extreme atmospheric friction heat (thousands of degrees), protect the astronauts inside from getting hot, and be lightweight so the rocket can lift off. Which property profile is ideal?",
-        "options": [
-          "High Melting Point, High Density, High Thermal Conductivity",
-          "Low Melting Point, Low Density, Low Thermal Conductivity",
-          "High Melting Point, Low Density, Low Thermal Conductivity",
-          "High Melting Point, Low Density, High Thermal Conductivity"
-        ],
-        "correct": 2,
-        "points": 12,
-        "explanation": "The shield must not melt (High Melting Point), must be lightweight for launch (Low Density), and must NOT transfer the intense outside heat to the astronauts inside (Low Thermal Conductivity / Insulator)."
-      }
-      }
-
-
+{
+  "title": "Exploring Diversity of Matter: Advanced Data Analysis and Material Selection",
+  "topic": "Diversity of Matter",
+  "subject": "Science",
+  "level": "Lower Secondary",
+  "grade": "Sec 1",
+  "chapter": 2,
+  "worksheet": 2,
+  "questions": [
+    {
+      "question": "A student conducts a scratch test on three unknown solid materials: P, Q, and R. Material P leaves a scratch on Material Q. Material R leaves a scratch on Material P. Which material is the best choice for manufacturing a cutting tool, and why?",
+      "options": [
+        "Material P, because it is harder than Q.",
+        "Material Q, because it is the most flexible.",
+        "Material R, because it has the highest hardness.",
+        "None of them, because metals are required for cutting tools."
+      ],
+      "correct": 2,
+      "points": 12,
+      "explanation": "Hardness determines a material's ability to resist scratching and to cut other materials. Since R scratches P, and P scratches Q, R is the hardest material (R > P > Q) and therefore the best for cutting."
+    },
+    {
+      "question": "An engineering team is building a lightweight drone frame. The material must have a density lower than 2.0 g/cm³. Material M has a mass of 150 g and a volume of 100 cm³. Material N has a mass of 250 g and a volume of 100 cm³. Which material should they use?",
+      "options": [
+        "Material M, because its density is 1.5 g/cm³.",
+        "Material N, because its density is 2.5 g/cm³.",
+        "Material M, because its density is 0.67 g/cm³.",
+        "Material N, because heavier materials are always stronger."
+      ],
+      "correct": 0,
+      "points": 15,
+      "explanation": "Density = Mass / Volume. For Material M: 150g / 100cm³ = 1.5 g/cm³. For Material N: 250g / 100cm³ = 2.5 g/cm³. Material M is the only one that meets the requirement of being under 2.0 g/cm³."
+    },
+    {
+      "question": "To test thermal properties, identical ice cubes are placed on identically sized blocks of Materials A, B, and C at room temperature. The ice on A melts in 2 minutes, on B in 15 minutes, and on C in 5 minutes. Which material is the best choice for making a cooler box?",
+      "options": [
+        "Material A, because it absorbs heat the fastest.",
+        "Material B, because it is the poorest thermal conductor.",
+        "Material C, because it offers a balance of melting times.",
+        "Material A, because it has the highest thermal conductivity."
+      ],
+      "correct": 1,
+      "points": 12,
+      "explanation": "A cooler box needs to act as an insulator (poor thermal conductor) to keep heat out. Since the ice on Material B took the longest to melt, B transfers heat the slowest and is the best insulator."
+    },
+    {
+      "question": "A gymnastics springboard must withstand a gymnast jumping on it without permanently bending, but it must also compress and spring back. Based on the data below, which material is ideal?\nMaterial W: Yields at 50 N, Bends up to 45°\nMaterial X: Yields at 5000 N, Bends up to 2°\nMaterial Y: Yields at 4500 N, Bends up to 45°\nMaterial Z: Yields at 100 N, Bends up to 2°",
+      "options": [
+        "Material W",
+        "Material X",
+        "Material Y",
+        "Material Z"
+      ],
+      "correct": 2,
+      "points": 15,
+      "explanation": "The springboard needs High Strength (to withstand the high force of the jump without yielding/permanently deforming) and High Flexibility (to bend 45° and spring back). Material Y provides the best combination of both."
+    },
+    {
+      "question": "A liquid is being chosen as a coolant for a car engine. The engine operates between -10°C in winter and 110°C when running hot. Which coolant liquid is suitable?",
+      "options": [
+        "Liquid A: Melting Point = -5°C, Boiling Point = 100°C",
+        "Liquid B: Melting Point = -20°C, Boiling Point = 150°C",
+        "Liquid C: Melting Point = 10°C, Boiling Point = 150°C",
+        "Liquid D: Melting Point = -20°C, Boiling Point = 90°C"
+      ],
+      "correct": 1,
+      "points": 12,
+      "explanation": "To remain a liquid, the substance's melting point must be below the lowest operating temperature (-10°C), and its boiling point must be above the highest operating temperature (110°C). Only Liquid B (-20°C to 150°C) fits."
+    },
+    {
+      "question": "A school wants to replace its single-use plastic canteen cutlery with a sustainable alternative. The new cutlery must cut through tough meat, withstand hot soups (90°C), and be biodegradable. Which material is best?",
+      "options": [
+        "Material 1: Biodegradable, Melts at 60°C, High Hardness",
+        "Material 2: Non-biodegradable, Melts at 200°C, High Hardness",
+        "Material 3: Biodegradable, Melts at 200°C, High Hardness",
+        "Material 4: Biodegradable, Melts at 150°C, Low Hardness (soft)"
+      ],
+      "correct": 2,
+      "points": 12,
+      "explanation": "The material must be biodegradable for sustainability, have a melting point above 90°C to survive hot soup, and have high hardness to cut through meat. Material 3 meets all requirements."
+    },
+    {
+      "question": "During an offshore oil spill, the crude oil (density = 0.85 g/cm³) sits on top of the seawater (density = 1.03 g/cm³). Responders deploy a containment boom to trap the oil. For the boom to float effectively, what must its density be?",
+      "options": [
+        "Greater than 1.03 g/cm³.",
+        "Exactly 1.03 g/cm³.",
+        "Less than 1.03 g/cm³.",
+        "Density does not affect floating."
+      ],
+      "correct": 2,
+      "points": 10,
+      "explanation": "For an object to float on a liquid, its density must be less than the density of the liquid. Therefore, the containment boom must have a density lower than seawater (< 1.03 g/cm³)."
+    },
+    {
+      "question": "Three materials are tested in a simple electrical circuit. When connected, Material F makes the bulb shine very brightly. Material G makes it shine dimly. Material H keeps the bulb completely off. Which materials should be used for the internal wiring and the outer safety casing, respectively?",
+      "options": [
+        "Wiring: Material G, Casing: Material F",
+        "Wiring: Material F, Casing: Material H",
+        "Wiring: Material H, Casing: Material F",
+        "Wiring: Material F, Casing: Material G"
+      ],
+      "correct": 1,
+      "points": 10,
+      "explanation": "Internal wiring needs to be an excellent electrical conductor (Material F, very bright). The safety casing must be an electrical insulator to prevent shocks (Material H, bulb off)."
+    },
+    {
+      "question": "Engineers are designing a bookshelf. They plot the maximum force different materials can take before they permanently lose their shape. Mat P: 50 N, Mat Q: 800 N, Mat R: 20 N. Which material is most suitable for the shelves?",
+      "options": [
+        "Material P",
+        "Material Q",
+        "Material R",
+        "Any material will work if it is thick enough."
+      ],
+      "correct": 1,
+      "points": 10,
+      "explanation": "A bookshelf must hold heavy books without permanently sagging. Strength is the ability to withstand a load without permanent deformation. Material Q can take the highest force (800 N), meaning it has the highest strength."
+    },
+    {
+      "question": "A space agency is designing the heat shield for a capsule re-entering Earth's atmosphere. The shield must survive extreme atmospheric friction heat (thousands of degrees), protect the astronauts inside from getting hot, and be lightweight so the rocket can lift off. Which property profile is ideal?",
+      "options": [
+        "High Melting Point, High Density, High Thermal Conductivity",
+        "Low Melting Point, Low Density, Low Thermal Conductivity",
+        "High Melting Point, Low Density, Low Thermal Conductivity",
+        "High Melting Point, Low Density, High Thermal Conductivity"
+      ],
+      "correct": 2,
+      "points": 12,
+      "explanation": "The shield must not melt (High Melting Point), must be lightweight for launch (Low Density), and must NOT transfer the intense outside heat to the astronauts inside (Low Thermal Conductivity / Insulator)."
+    }
+  ]
+}
