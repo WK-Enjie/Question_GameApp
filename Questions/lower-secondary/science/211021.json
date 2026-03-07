@@ -1,264 +1,131 @@
-[
-  {
-    "title": "Exploring Diversity of Matter: Defining Physical Properties",
-    "topic": "Diversity of Matter",
-    "subject": "Science",
-    "level": "Lower Secondary",
-    "grade": "Sec 1",
-    "chapter": 2,
-    "worksheet": 1,
-    "questions": [
-      {
-        "question": "Which of the following best defines the 'strength' of a material in a scientific context?",
-        "options": [
-          "Its ability to resist being scratched by another material.",
-          "Its ability to bend easily without breaking.",
-          "Its ability to support a heavy load without yielding or permanently deforming.",
-          "Its ability to float on water."
-        ],
-        "correct": 2,
-        "points": 12,
-        "explanation": "Strength refers to how much force or heavy load a material can withstand before it yields or permanently deforms. It is not just about snapping, but resisting deformation under a load."
-      },
-      {
-        "question": "A student rubs an unknown solid against a piece of iron. The iron leaves no mark on the solid, but the solid leaves a deep scratch on the iron. What does this demonstrate?",
-        "options": [
-          "The solid has higher strength than iron.",
-          "The solid has greater flexibility than iron.",
-          "The solid is harder than iron.",
-          "The solid is denser than iron."
-        ],
-        "correct": 2,
-        "points": 12,
-        "explanation": "Hardness is a material's resistance to surface wear, such as scratching or denting. If it scratches iron, it possesses a higher hardness than iron."
-      },
-      {
-        "question": "Which of the following describes a material with high flexibility?",
-        "options": [
-          "It can support heavy weights without denting.",
-          "It can bend easily and return to its original shape without permanently deforming.",
-          "It resists being scratched by a sharp object.",
-          "It melts at a very high temperature."
-        ],
-        "correct": 1,
-        "points": 10,
-        "explanation": "Flexibility is the ability of a material to bend without breaking and to readily return to its original shape."
-      },
-      {
-        "question": "Why are the handles of cooking pots usually made of plastics or wood?",
-        "options": [
-          "They have high electrical conductivity.",
-          "They are good thermal insulators (poor heat conductors).",
-          "They have high thermal conductivity.",
-          "They have extremely high melting points."
-        ],
-        "correct": 1,
-        "points": 10,
-        "explanation": "Plastics and wood are poor thermal conductors (insulators), which prevents heat from the pot from traveling to the handle and burning the user's hands."
-      },
-      {
-        "question": "What is the correct formula to calculate the density of a substance?",
-        "options": [
-          "Density = Mass × Volume",
-          "Density = Volume ÷ Mass",
-          "Density = Mass ÷ Volume",
-          "Density = Mass + Volume"
-        ],
-        "correct": 2,
-        "points": 10,
-        "explanation": "Density is defined as the mass per unit volume of a substance, found by dividing its mass by its volume."
-      },
-      {
-        "question": "An aluminum block has a mass of 54 g and a volume of 20 cm³. What is its density?",
-        "options": [
-          "2.7 g/cm³",
-          "0.37 g/cm³",
-          "1080 g/cm³",
-          "74 g/cm³"
-        ],
-        "correct": 0,
-        "points": 12,
-        "explanation": "Density = Mass ÷ Volume. 54 g ÷ 20 cm³ = 2.7 g/cm³."
-      },
-      {
-        "question": "A student determines the density of a 100 g block of iron to be 7.9 g/cm³. If the block is cut perfectly in half, what is the density of one of the halves?",
-        "options": [
-          "3.95 g/cm³",
-          "7.9 g/cm³",
-          "15.8 g/cm³",
-          "0 g/cm³"
-        ],
-        "correct": 1,
-        "points": 15,
-        "explanation": "Density is an intrinsic physical property of the material. Because both the mass and the volume are halved, the ratio (mass/volume) remains exactly the same."
-      },
-      {
-        "question": "Fill in the blank: The specific temperature at which a liquid turns into a gas throughout its volume is called its ________.",
-        "options": [
-          "Boiling point",
-          "Melting point",
-          "Freezing point",
-          "Evaporation point"
-        ],
-        "correct": 0,
-        "points": 10,
-        "explanation": "The boiling point is the constant temperature at which a substance changes from a liquid to a gas."
-      },
-      {
-        "question": "The density of water is 1.0 g/cm³. Object A has a density of 0.8 g/cm³, and Object B has a density of 1.2 g/cm³. What will happen if they are placed in water?",
-        "options": [
-          "Both will float.",
-          "Both will sink.",
-          "Object A will float, and Object B will sink.",
-          "Object A will sink, and Object B will float."
-        ],
-        "correct": 2,
-        "points": 12,
-        "explanation": "An object floats if its density is lower than the surrounding fluid and sinks if it is higher. Object A (0.8 < 1.0) floats; Object B (1.2 > 1.0) sinks."
-      },
-      {
-        "question": "Why is analyzing the life cycle of materials like plastics crucial for sustainable development?",
-        "options": [
-          "To ensure they can be manufactured as expensively as possible.",
-          "To reduce environmental pollution by understanding how they are sourced, used, and disposed of.",
-          "To increase the melting point of plastics for industrial use.",
-          "To make plastics heavier than metals."
-        ],
-        "correct": 1,
-        "points": 12,
-        "explanation": "Understanding the life cycle helps us make informed choices to minimize waste and environmental impact, promoting sustainability."
-      }
-    ]
-  },
-  {
-    "title": "Exploring Diversity of Matter: Data-Driven Material Selection",
-    "topic": "Diversity of Matter",
-    "subject": "Science",
-    "level": "Lower Secondary",
-    "grade": "Sec 1",
-    "chapter": 2,
-    "worksheet": 2,
-    "questions": [
-      {
-        "question": "You are designing the base of a high-quality frying pan. Based on the data below, which material is the most suitable?",
-        "options": [
-          "Material A: Melting Point = 150°C, Thermal Conductivity = Poor",
-          "Material B: Melting Point = 1085°C, Thermal Conductivity = Good",
-          "Material C: Melting Point = 232°C, Thermal Conductivity = Good",
-          "Material D: Melting Point = 1085°C, Thermal Conductivity = Poor"
-        ],
-        "correct": 1,
-        "points": 12,
-        "explanation": "A frying pan base must conduct heat well to cook food efficiently (Good Thermal Conductivity) and must withstand stove temperatures without melting (High Melting Point). Material B fits both criteria perfectly."
-      },
-      {
-        "question": "Engineers are selecting an outer coating for electrical wires in a household. Based on the properties below, which material should they choose?",
-        "options": [
-          "Material W: Good electrical conductivity, Low flexibility",
-          "Material X: Poor electrical conductivity, High flexibility",
-          "Material Y: Good electrical conductivity, High flexibility",
-          "Material Z: Poor electrical conductivity, Low flexibility"
-        ],
-        "correct": 1,
-        "points": 12,
-        "explanation": "The outer coating must protect users from electric shocks (Poor electrical conductivity / Insulator) and must be able to bend around corners during installation (High flexibility). Material X is the best choice."
-      },
-      {
-        "question": "An aerospace company is evaluating metals for an airplane fuselage (body). The material must support heavy loads without deforming while keeping the plane light. Which alloy is most suitable?",
-        "options": [
-          "Alloy A: Density = 8.9 g/cm³, Strength = High",
-          "Alloy B: Density = 2.7 g/cm³, Strength = High",
-          "Alloy C: Density = 1.2 g/cm³, Strength = Low",
-          "Alloy D: Density = 11.3 g/cm³, Strength = Low"
-        ],
-        "correct": 1,
-        "points": 15,
-        "explanation": "Aircraft materials must be lightweight to allow flight and save fuel (Low Density) while maintaining the ability to withstand air pressure and structural loads without yielding (High Strength). Alloy B offers the best balance."
-      },
-      {
-        "question": "A sporting goods brand is creating a new climbing rope. It needs to hold climbers safely and be easily coiled into a backpack. Which rope material should be selected?",
-        "options": [
-          "Rope A: Strength = 20 kN (High), Flexibility = High",
-          "Rope B: Strength = 20 kN (High), Flexibility = Low",
-          "Rope C: Strength = 2 kN (Low), Flexibility = High",
-          "Rope D: Strength = 2 kN (Low), Flexibility = Low"
-        ],
-        "correct": 0,
-        "points": 12,
-        "explanation": "A climbing rope must support human weight and sudden drops without deforming or breaking (High Strength) and must be pliable enough to tie knots and pack away (High Flexibility)."
-      },
-      {
-        "question": "You are manufacturing the tip of a drill bit designed to bore into solid concrete walls. Review the data below and choose the best material.",
-        "options": [
-          "Material P: Hardness = Scratches glass/concrete, Melting Point = 3000°C",
-          "Material Q: Hardness = Scratched by copper, Melting Point = 3000°C",
-          "Material R: Hardness = Scratches glass/concrete, Melting Point = 400°C",
-          "Material S: Hardness = Scratched by copper, Melting Point = 400°C"
-        ],
-        "correct": 0,
-        "points": 15,
-        "explanation": "A drill bit must be harder than concrete to cut into it without wearing down (High Hardness), and it must survive the extreme friction heat generated during drilling without melting (High Melting Point)."
-      },
-      {
-        "question": "A manufacturer is designing buoyancy foam for a life jacket that keeps stranded sailors warm. Which material from the table is most suitable? (Density of seawater ≈ 1.03 g/cm³)",
-        "options": [
-          "Material 1: Density = 0.05 g/cm³, Thermal Conductivity = Poor",
-          "Material 2: Density = 0.05 g/cm³, Thermal Conductivity = Good",
-          "Material 3: Density = 1.20 g/cm³, Thermal Conductivity = Poor",
-          "Material 4: Density = 1.20 g/cm³, Thermal Conductivity = Good"
-        ],
-        "correct": 0,
-        "points": 12,
-        "explanation": "To float, the material's density must be lower than water's (Density < 1.03). To keep the wearer warm, it must prevent body heat from escaping into the cold water (Poor Thermal Conductivity / Insulator)."
-      },
-      {
-        "question": "City planners are building a bridge pillar to support a heavy highway over a river. The pillar must not sway, sag, or sink. Which material profile is best?",
-        "options": [
-          "Material J: Strength = Low, Flexibility = Low",
-          "Material K: Strength = High, Flexibility = High",
-          "Material L: Strength = High, Flexibility = Low",
-          "Material M: Strength = Low, Flexibility = High"
-        ],
-        "correct": 2,
-        "points": 12,
-        "explanation": "A bridge pillar must carry immense loads without permanently deforming (High Strength) and must be rigid to prevent the bridge structure from swaying dangerously under traffic (Low Flexibility)."
-      },
-      {
-        "question": "A tech company is selecting a material for a 'Heat Sink' to sit on top of a hot computer CPU. It needs to pull heat away quickly and remain solid inside a computer reaching 90°C. Which is best?",
-        "options": [
-          "Material X: Thermal Conductivity = 400 W/m·K (High), Melting Point = 1085°C",
-          "Material Y: Thermal Conductivity = 0.2 W/m·K (Low), Melting Point = 150°C",
-          "Material Z: Thermal Conductivity = 400 W/m·K (High), Melting Point = 60°C",
-          "Material W: Thermal Conductivity = 0.2 W/m·K (Low), Melting Point = 1085°C"
-        ],
-        "correct": 0,
-        "points": 12,
-        "explanation": "The heat sink must be an excellent conductor of heat (High Thermal Conductivity) to cool the CPU, and its melting point must be well above the computer's operating temperature to stay solid."
-      },
-      {
-        "question": "A company is designing lightweight camping tent poles that must arch over the tent without snapping in heavy winds. Based on the options below, which pole design is ideal?",
-        "options": [
-          "Pole A: Mass = 5.0 kg, Bends easily without breaking, Strength = High",
-          "Pole B: Mass = 0.5 kg, Bends easily without breaking, Strength = High",
-          "Pole C: Mass = 0.5 kg, Snaps immediately when bent, Strength = High",
-          "Pole D: Mass = 5.0 kg, Snaps immediately when bent, Strength = Low"
-        ],
-        "correct": 1,
-        "points": 10,
-        "explanation": "Tent poles for backpacking need a low mass (lightweight), the ability to bend into arches (High Flexibility), and the capacity to handle wind forces without permanently deforming (High Strength)."
-      },
-      {
-        "question": "A fisherman needs to cast an anchor to hold his boat in place. The anchor must sink rapidly to the sea floor and withstand the pulling force of ocean currents without deforming. Which material works best?",
-        "options": [
-          "Material E: Density = 0.8 g/cm³, Strength = High",
-          "Material F: Density = 7.8 g/cm³, Strength = Low",
-          "Material G: Density = 7.8 g/cm³, Strength = High",
-          "Material H: Density = 0.8 g/cm³, Strength = Low"
-        ],
-        "correct": 2,
-        "points": 10,
-        "explanation": "An anchor must sink (Density > 1.0 g/cm³, so 7.8 g/cm³ works) and must not permanently deform or break when the boat pulls against it in strong currents (High Strength)."
-      }
-    ]
-  }
-]
+{
+  "title": "Exploring Diversity of Matter: Data-Driven Material Selection",
+  "topic": "Diversity of Matter",
+  "subject": "Science",
+  "level": "Lower Secondary",
+  "grade": "Sec 1",
+  "chapter": 2,
+  "worksheet": 2,
+  "questions": [
+    {
+      "question": "You are designing the base of a high-quality frying pan. Based on the data below, which material is the most suitable?",
+      "options": [
+        "Material A: Melting Point = 150°C, Thermal Conductivity = Poor",
+        "Material B: Melting Point = 1085°C, Thermal Conductivity = Good",
+        "Material C: Melting Point = 232°C, Thermal Conductivity = Good",
+        "Material D: Melting Point = 1085°C, Thermal Conductivity = Poor"
+      ],
+      "correct": 1,
+      "points": 12,
+      "explanation": "A frying pan base must conduct heat well to cook food efficiently (Good Thermal Conductivity) and must withstand stove temperatures without melting (High Melting Point). Material B fits both criteria perfectly."
+    },
+    {
+      "question": "Engineers are selecting an outer coating for electrical wires in a household. Based on the properties below, which material should they choose?",
+      "options": [
+        "Material W: Good electrical conductivity, Low flexibility",
+        "Material X: Poor electrical conductivity, High flexibility",
+        "Material Y: Good electrical conductivity, High flexibility",
+        "Material Z: Poor electrical conductivity, Low flexibility"
+      ],
+      "correct": 1,
+      "points": 12,
+      "explanation": "The outer coating must protect users from electric shocks (Poor electrical conductivity / Insulator) and must be able to bend around corners during installation (High flexibility). Material X is the best choice."
+    },
+    {
+      "question": "An aerospace company is evaluating metals for an airplane fuselage (body). The material must support heavy loads without deforming while keeping the plane light. Which alloy is most suitable?",
+      "options": [
+        "Alloy A: Density = 8.9 g/cm³, Strength = High",
+        "Alloy B: Density = 2.7 g/cm³, Strength = High",
+        "Alloy C: Density = 1.2 g/cm³, Strength = Low",
+        "Alloy D: Density = 11.3 g/cm³, Strength = Low"
+      ],
+      "correct": 1,
+      "points": 15,
+      "explanation": "Aircraft materials must be lightweight to allow flight and save fuel (Low Density) while maintaining the ability to withstand air pressure and structural loads without yielding (High Strength). Alloy B offers the best balance."
+    },
+    {
+      "question": "A sporting goods brand is creating a new climbing rope. It needs to hold climbers safely and be easily coiled into a backpack. Which rope material should be selected?",
+      "options": [
+        "Rope A: Strength = 20 kN (High), Flexibility = High",
+        "Rope B: Strength = 20 kN (High), Flexibility = Low",
+        "Rope C: Strength = 2 kN (Low), Flexibility = High",
+        "Rope D: Strength = 2 kN (Low), Flexibility = Low"
+      ],
+      "correct": 0,
+      "points": 12,
+      "explanation": "A climbing rope must support human weight and sudden drops without deforming or breaking (High Strength) and must be pliable enough to tie knots and pack away (High Flexibility)."
+    },
+    {
+      "question": "You are manufacturing the tip of a drill bit designed to bore into solid concrete walls. Review the data below and choose the best material.",
+      "options": [
+        "Material P: Hardness = Scratches glass/concrete, Melting Point = 3000°C",
+        "Material Q: Hardness = Scratched by copper, Melting Point = 3000°C",
+        "Material R: Hardness = Scratches glass/concrete, Melting Point = 400°C",
+        "Material S: Hardness = Scratched by copper, Melting Point = 400°C"
+      ],
+      "correct": 0,
+      "points": 15,
+      "explanation": "A drill bit must be harder than concrete to cut into it without wearing down (High Hardness), and it must survive the extreme friction heat generated during drilling without melting (High Melting Point)."
+    },
+    {
+      "question": "A manufacturer is designing buoyancy foam for a life jacket that keeps stranded sailors warm. Which material from the table is most suitable? (Density of seawater ≈ 1.03 g/cm³)",
+      "options": [
+        "Material 1: Density = 0.05 g/cm³, Thermal Conductivity = Poor",
+        "Material 2: Density = 0.05 g/cm³, Thermal Conductivity = Good",
+        "Material 3: Density = 1.20 g/cm³, Thermal Conductivity = Poor",
+        "Material 4: Density = 1.20 g/cm³, Thermal Conductivity = Good"
+      ],
+      "correct": 0,
+      "points": 12,
+      "explanation": "To float, the material's density must be lower than water's (Density < 1.03). To keep the wearer warm, it must prevent body heat from escaping into the cold water (Poor Thermal Conductivity / Insulator)."
+    },
+    {
+      "question": "City planners are building a bridge pillar to support a heavy highway over a river. The pillar must not sway, sag, or sink. Which material profile is best?",
+      "options": [
+        "Material J: Strength = Low, Flexibility = Low",
+        "Material K: Strength = High, Flexibility = High",
+        "Material L: Strength = High, Flexibility = Low",
+        "Material M: Strength = Low, Flexibility = High"
+      ],
+      "correct": 2,
+      "points": 12,
+      "explanation": "A bridge pillar must carry immense loads without permanently deforming (High Strength) and must be rigid to prevent the bridge structure from swaying dangerously under traffic (Low Flexibility)."
+    },
+    {
+      "question": "A tech company is selecting a material for a 'Heat Sink' to sit on top of a hot computer CPU. It needs to pull heat away quickly and remain solid inside a computer reaching 90°C. Which is best?",
+      "options": [
+        "Material X: Thermal Conductivity = 400 W/m·K (High), Melting Point = 1085°C",
+        "Material Y: Thermal Conductivity = 0.2 W/m·K (Low), Melting Point = 150°C",
+        "Material Z: Thermal Conductivity = 400 W/m·K (High), Melting Point = 60°C",
+        "Material W: Thermal Conductivity = 0.2 W/m·K (Low), Melting Point = 1085°C"
+      ],
+      "correct": 0,
+      "points": 12,
+      "explanation": "The heat sink must be an excellent conductor of heat (High Thermal Conductivity) to cool the CPU, and its melting point must be well above the computer's operating temperature to stay solid."
+    },
+    {
+      "question": "A company is designing lightweight camping tent poles that must arch over the tent without snapping in heavy winds. Based on the options below, which pole design is ideal?",
+      "options": [
+        "Pole A: Mass = 5.0 kg, Bends easily without breaking, Strength = High",
+        "Pole B: Mass = 0.5 kg, Bends easily without breaking, Strength = High",
+        "Pole C: Mass = 0.5 kg, Snaps immediately when bent, Strength = High",
+        "Pole D: Mass = 5.0 kg, Snaps immediately when bent, Strength = Low"
+      ],
+      "correct": 1,
+      "points": 10,
+      "explanation": "Tent poles for backpacking need a low mass (lightweight), the ability to bend into arches (High Flexibility), and the capacity to handle wind forces without permanently deforming (High Strength)."
+    },
+    {
+      "question": "A fisherman needs to cast an anchor to hold his boat in place. The anchor must sink rapidly to the sea floor and withstand the pulling force of ocean currents without deforming. Which material works best?",
+      "options": [
+        "Material E: Density = 0.8 g/cm³, Strength = High",
+        "Material F: Density = 7.8 g/cm³, Strength = Low",
+        "Material G: Density = 7.8 g/cm³, Strength = High",
+        "Material H: Density = 0.8 g/cm³, Strength = Low"
+      ],
+      "correct": 2,
+      "points": 10,
+      "explanation": "An anchor must sink (Density > 1.0 g/cm³, so 7.8 g/cm³ works) and must not permanently deform or break when the boat pulls against it in strong currents (High Strength)."
+    }
+  ]
+}
