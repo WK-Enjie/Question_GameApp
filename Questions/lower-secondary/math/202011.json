@@ -1,285 +1,150 @@
 {
-  "title": "Chapter 1: Solving Simultaneous Equations",
+  "title": "Secondary 2 Mathematics - Chapter 1",
+  "topic": "Solving Simultaneous Equations",
   "subject": "Mathematics",
-  "grade": "Secondary 2",
-  "topics": [
-    "Solving by Substitution",
-    "Solving by Elimination",
-    "Graphical Method",
-    "Horizontal/Vertical Lines",
-    "Parallel Lines"
-  ],
+  "grade": "Sec 2",
+  "chapter": 1,
+  "worksheet": 1,
   "questions": [
     {
-      "question": "Solve graphically: y = 2x + 1 and y = 4 - x. Which point is their intersection?",
-      "options": [
-        "(1, 3)",
-        "(2, 3)",
-        "(1, 2)",
-        "(2, 1)"
-      ],
+      "question": "Find the point of intersection of the lines y = 2x + 1 and y = 4 - x by solving algebraically.",
+      "options": ["(1, 3)", "(2, 3)", "(1, 2)", "(2, 1)"],
       "correct": 0,
       "points": 15,
-      "explanation": "Set equal: 2x+1=5-x → 3x=4 → x=1.33, y=3.67. Actually test (1,3): For y=2x+1: 2(1)+1=3✓, For y=5-x: 5-1=4✗. Wait, let's solve: 2x+1=5-x → 3x=4 → x=4/3≈1.33. None match exactly. But (1,3) closest? Actually (2,1): 2(2)+1=5, 5-2=3. Not matching. Let's recalc: 2x+1=5-x → 3x=4 → x=4/3, y=11/3. No exact match in options. This question needs exact solution.",
-      "difficulty": "medium"
+      "explanation": "Set equations equal: 2x + 1 = 4 - x → 3x = 3 → x = 1. Substitute: y = 2(1) + 1 = 3. Intersection: (1, 3)."
     },
     {
       "question": "What is the equation of a horizontal line passing through (2, 3)?",
-      "options": [
-        "x = 2",
-        "y = 3",
-        "y = 2x + 3",
-        "x + y = 5"
-      ],
+      "options": ["x = 2", "y = 3", "y = 2x + 3", "x + y = 5"],
       "correct": 1,
       "points": 10,
-      "explanation": "Horizontal line: y = constant. Through (2,3) means y = 3.",
-      "difficulty": "easy"
+      "explanation": "Horizontal lines have constant y-values. Through (2, 3) means y is always 3 → y = 3."
     },
     {
-      "question": "Find the intersection between line x = 4 and y = 2x - 3",
-      "options": [
-        "(4, 5)",
-        "(4, 1)",
-        "(4, -1)",
-        "(2, 1)"
-      ],
+      "question": "Find the point where the vertical line x = 4 meets the line y = 2x - 3.",
+      "options": ["(4, 5)", "(4, 1)", "(4, -1)", "(2, 1)"],
       "correct": 0,
       "points": 10,
-      "explanation": "x=4, so y=2(4)-3=8-3=5 → (4,5)",
-      "difficulty": "easy"
+      "explanation": "At x = 4, substitute into y = 2x - 3: y = 2(4) - 3 = 5. Point of intersection: (4, 5)."
     },
     {
-      "question": "Which pair would graph as parallel lines?",
-      "options": [
-        "y = 3 and y = -3",
-        "x = 2 and x = 5",
-        "y = 2x + 1 and y = 2x - 4",
-        "All of the above"
-      ],
+      "question": "Which pair of equations represents lines that would NEVER intersect (parallel lines)?",
+      "options": ["y = 3 and y = -3", "x = 2 and x = 5", "y = 2x + 1 and y = 2x - 4", "All of the above"],
       "correct": 3,
       "points": 15,
-      "explanation": "All are parallel: A) horizontal lines, B) vertical lines, C) lines with same slope.",
-      "difficulty": "medium"
+      "explanation": "All pairs are parallel: A) horizontal lines (slope 0), B) vertical lines (undefined slope), C) same gradient m = 2. Parallel lines never intersect."
     },
     {
-      "question": "Solve graphically by finding intersection: y = 3 and x + y = 5",
-      "options": [
-        "(2, 3)",
-        "(3, 2)",
-        "(5, 0)",
-        "(0, 5)"
-      ],
+      "question": "Find the point of intersection of y = 3 and x + y = 5 by substitution.",
+      "options": ["(2, 3)", "(3, 2)", "(5, 0)", "(0, 5)"],
       "correct": 0,
       "points": 15,
-      "explanation": "y=3, so x+3=5 → x=2 → (2,3)",
-      "difficulty": "medium"
+      "explanation": "Substitute y = 3 into x + y = 5: x + 3 = 5 → x = 2. Intersection: (2, 3)."
     },
     {
-      "question": "What is the equation of a vertical line through (-1, 4)?",
-      "options": [
-        "y = 4",
-        "x = -1",
-        "y = -x + 3",
-        "x = 4"
-      ],
+      "question": "What is the equation of a vertical line passing through (-1, 4)?",
+      "options": ["y = 4", "x = -1", "y = -x + 3", "x = 4"],
       "correct": 1,
       "points": 10,
-      "explanation": "Vertical line: x = constant. Through (-1,4) means x = -1.",
-      "difficulty": "easy"
+      "explanation": "Vertical lines have constant x-values. Through (-1, 4) means x is always -1 → x = -1."
     },
     {
-      "question": "Solve: y = -2 and 2x - y = 6",
-      "options": [
-        "(2, -2)",
-        "(4, -2)",
-        "(-2, 2)",
-        "(2, 2)"
-      ],
+      "question": "Solve the system: y = -2 and 2x - y = 6.",
+      "options": ["(2, -2)", "(4, -2)", "(-2, 2)", "(2, 2)"],
       "correct": 0,
       "points": 10,
-      "explanation": "y=-2, so 2x-(-2)=6 → 2x+2=6 → 2x=4 → x=2 → (2,-2)",
-      "difficulty": "easy"
+      "explanation": "Substitute y = -2: 2x - (-2) = 6 → 2x + 2 = 6 → x = 2. Solution: (2, -2)."
     },
     {
-      "question": "The lines x = 3 and y = -1 intersect at:",
-      "options": [
-        "(3, -1)",
-        "(-1, 3)",
-        "(3, 0)",
-        "(0, -1)"
-      ],
+      "question": "The lines x = 3 and y = -1 intersect at which point?",
+      "options": ["(3, -1)", "(-1, 3)", "(3, 0)", "(0, -1)"],
       "correct": 0,
       "points": 10,
-      "explanation": "Vertical line x=3 and horizontal line y=-1 intersect at (3,-1).",
-      "difficulty": "easy"
+      "explanation": "Vertical line x = 3 and horizontal line y = -1 meet where both conditions are true: (3, -1)."
     },
     {
-      "question": "Graphically solve: y = 2x - 1 and y = x + 2",
-      "options": [
-        "(3, 5)",
-        "(2, 4)",
-        "(1, 3)",
-        "(0, 2)"
-      ],
+      "question": "Find the point of intersection of y = 2x - 1 and y = x + 2 by solving algebraically.",
+      "options": ["(3, 5)", "(2, 4)", "(1, 3)", "(0, 2)"],
       "correct": 0,
       "points": 15,
-      "explanation": "Set equal: 2x-1=x+2 → x=3, then y=3+2=5 → (3,5)",
-      "difficulty": "medium"
+      "explanation": "Set equal: 2x - 1 = x + 2 → x = 3. Substitute: y = 3 + 2 = 5. Intersection: (3, 5)."
     },
     {
-      "question": "Which point lies on both lines: y = 4 and x = -2?",
-      "options": [
-        "(-2, 4)",
-        "(4, -2)",
-        "(2, 4)",
-        "(-2, -4)"
-      ],
+      "question": "Which point satisfies BOTH equations: y = 4 and x = -2?",
+      "options": ["(-2, 4)", "(4, -2)", "(2, 4)", "(-2, -4)"],
       "correct": 0,
       "points": 10,
-      "explanation": "Must satisfy both: x=-2 AND y=4 → (-2,4)",
-      "difficulty": "easy"
+      "explanation": "Must have x = -2 AND y = 4. The only point that satisfies both is (-2, 4)."
     },
     {
-      "question": "Solve by elimination: 3x + y = 10 and x - y = 2",
-      "options": [
-        "(3, 1)",
-        "(2, 4)",
-        "(4, -2)",
-        "(1, 7)"
-      ],
+      "question": "Solve by elimination: 3x + y = 10 and x - y = 2.",
+      "options": ["(3, 1)", "(2, 4)", "(4, -2)", "(1, 7)"],
       "correct": 0,
       "points": 15,
-      "explanation": "Add equations: 4x=12 → x=3, then 3-y=2 → y=1 → (3,1)",
-      "difficulty": "medium"
+      "explanation": "Add equations to eliminate y: 4x = 12 → x = 3. Substitute: 3 - y = 2 → y = 1. Solution: (3, 1)."
     },
     {
-      "question": "Graph y=2 and y=5 on same axes. They are:",
-      "options": [
-        "Parallel horizontal lines",
-        "Parallel vertical lines",
-        "Intersecting lines",
-        "The same line"
-      ],
+      "question": "The lines y = 2 and y = 5 are both horizontal. What is true about them?",
+      "options": ["They are parallel and never intersect", "They intersect at (0, 7)", "They are the same line", "They are perpendicular"],
       "correct": 0,
       "points": 10,
-      "explanation": "Both horizontal lines (y=constant) with different y-values → parallel.",
-      "difficulty": "easy"
+      "explanation": "Both have slope 0 (horizontal) but different y-values. Parallel lines with different intercepts never intersect."
     },
     {
-      "question": "Where do the lines x = -3 and 2x + y = 1 meet at?",
-      "options": [
-        "(-3, 7)",
-        "(-3, -5)",
-        "(3, -5)",
-        "(-3, 5)"
-      ],
+      "question": "Find where the line x = -3 meets the line 2x + y = 1.",
+      "options": ["(-3, 7)", "(-3, -5)", "(3, -5)", "(-3, 5)"],
       "correct": 0,
       "points": 10,
-      "explanation": "x=-3, so 2(-3)+y=1 → -6+y=1 → y=7 → (-3,7)",
-      "difficulty": "easy"
+      "explanation": "Substitute x = -3: 2(-3) + y = 1 → y = 7. Intersection: (-3, 7)."
     },
     {
-      "question": "The lines y = 2x + 1 and y = 2x - 3 graphically show:",
-      "options": [
-        "Intersection at (1,-1)",
-        "Parallel lines, no intersection",
-        "Same line, infinite intersections",
-        "Perpendicular lines"
-      ],
+      "question": "The lines y = 2x + 1 and y = 2x - 3 have the same gradient. What does this tell you?",
+      "options": ["They intersect at exactly one point", "They are parallel and never intersect", "They are the same line", "They are perpendicular"],
       "correct": 1,
       "points": 10,
-      "explanation": "Same slope (2), different intercepts → parallel → no intersection.",
-      "difficulty": "easy"
+      "explanation": "Same gradient (m = 2) but different y-intercepts means the lines are parallel and never meet."
     },
     {
-      "question": "Solve graphically by coordinates: y = -x + 4 and y = 2x - 2",
-      "options": [
-        "(2, 2)",
-        "(3, 1)",
-        "(1, 3)",
-        "(0, 4)"
-      ],
+      "question": "Find the point of intersection of y = -x + 4 and y = 2x - 2 by solving algebraically.",
+      "options": ["(2, 2)", "(3, 1)", "(1, 3)", "(0, 4)"],
       "correct": 0,
       "points": 15,
-      "explanation": "Set equal: -x+4=2x-2 → 6=3x → x=2, y=-2+4=2 → (2,2)",
-      "difficulty": "medium"
+      "explanation": "Set equal: -x + 4 = 2x - 2 → 3x = 6 → x = 2. Substitute: y = -2 + 4 = 2. Intersection: (2, 2)."
     },
     {
-      "question": "What type of lines are x = 4 and x = -2?",
-      "options": [
-        "Parallel vertical lines",
-        "Parallel horizontal lines",
-        "Intersecting lines",
-        "Perpendicular lines"
-      ],
+      "question": "The lines x = 4 and x = -2 are both vertical. What is true about them?",
+      "options": ["They are parallel and never intersect", "They intersect at (4, -2)", "They are the same line", "They are perpendicular"],
       "correct": 0,
       "points": 10,
-      "explanation": "Both vertical lines (x=constant) → parallel.",
-      "difficulty": "easy"
+      "explanation": "Both are vertical lines (undefined slope) with different x-values → parallel → never intersect."
     },
     {
-      "question": "Where does the line 3x - 2y = 12 cut the x-axis?",
-      "options": [
-        "(4, 0)",
-        "(0, 4)",
-        "(12, 0)",
-        "(0, 12)"
-      ],
+      "question": "Find where the line 3x - 2y = 12 crosses the x-axis.",
+      "options": ["(4, 0)", "(0, 4)", "(12, 0)", "(0, 12)"],
       "correct": 0,
       "points": 10,
-      "explanation": "y=0, so 3x-0=12 → x=4 → (4,0)",
-      "difficulty": "easy"
+      "explanation": "At x-axis, y = 0. Substitute: 3x = 12 → x = 4. Point: (4, 0)."
     },
     {
-      "question": "Find intersection of y = -1 and x = 5 graphically",
-      "options": [
-        "(5, -1)",
-        "(-1, 5)",
-        "(5, 0)",
-        "(0, -1)"
-      ],
+      "question": "Find the point where the horizontal line y = -1 meets the vertical line x = 5.",
+      "options": ["(5, -1)", "(-1, 5)", "(5, 0)", "(0, -1)"],
       "correct": 0,
       "points": 10,
-      "explanation": "Horizontal line y=-1 meets vertical line x=5 at (5,-1).",
-      "difficulty": "easy"
+      "explanation": "Horizontal line y = -1 and vertical line x = 5 meet at the point satisfying both: (5, -1)."
     },
     {
-      "question": "Solve substitution: y = x + 2 and 2x + y = 11",
-      "options": [
-        "(3, 5)",
-        "(5, 3)",
-        "(4, 6)",
-        "(2, 4)"
-      ],
+      "question": "Solve by substitution: y = x + 2 and 2x + y = 11.",
+      "options": ["(3, 5)", "(5, 3)", "(4, 6)", "(2, 4)"],
       "correct": 0,
       "points": 15,
-      "explanation": "Substitute: 2x+(x+2)=11 → 3x=9 → x=3, y=3+2=5 → (3,5)",
-      "difficulty": "medium"
+      "explanation": "Substitute y = x + 2: 2x + (x + 2) = 11 → 3x = 9 → x = 3. Then y = 5. Solution: (3, 5)."
     },
     {
-      "question": "Graph x=0 and y=0. Their intersection is:",
-      "options": [
-        "(0, 0)",
-        "(1, 0)",
-        "(0, 1)",
-        "No intersection"
-      ],
+      "question": "The lines x = 0 (y-axis) and y = 0 (x-axis) intersect at which point?",
+      "options": ["(0, 0)", "(1, 0)", "(0, 1)", "No intersection"],
       "correct": 0,
       "points": 10,
-      "explanation": "x=0 is y-axis, y=0 is x-axis → intersect at origin (0,0).",
-      "difficulty": "easy"
+      "explanation": "The y-axis (x = 0) and x-axis (y = 0) meet at the origin: (0, 0)."
     }
-  ],
-  "learning_objectives": [
-    "Solve simultaneous equations using substitution",
-    "Solve simultaneous equations using elimination",
-    "Solve graphically using coordinates",
-    "Identify horizontal and vertical lines",
-    "Recognize parallel lines",
-    "Find intersection points graphically"
-  ],
-  "author": "Mathematics Department",
-  "version": "1.0",
-  "last_updated": "2024-01-15"
+  ]
 }
