@@ -3,344 +3,96 @@
 <head>
     <meta charset="UTF-8">
     <meta name="viewport" content="width=device-width, initial-scale=1.0">
-    <title>Quiz Flip — Card Battle Game</title>
+    <title>🧧 CNY Battle Arcade 🧧</title>
     <link rel="stylesheet" href="style.css">
-    <link rel="stylesheet" href="https://cdnjs.cloudflare.com/ajax/libs/font-awesome/6.4.0/css/all.min.css">
+    <!-- KaTeX for Math Rendering -->
+    <link rel="stylesheet" href="https://cdn.jsdelivr.net/npm/katex@0.16.9/dist/katex.min.css">
+    <script src="https://cdn.jsdelivr.net/npm/katex@0.16.9/dist/katex.min.js"></script>
 </head>
 <body>
-    <canvas id="confetti-canvas"></canvas>
-
-    <div class="container">
-
-        <!-- ===================== PIN SCREEN ===================== -->
-        <div id="pin-screen" class="screen active">
-            <div class="header">
-                <div class="logo-icon">🃏</div>
-                <h1><i class="fas fa-gamepad"></i> Quiz Flip</h1>
-                <p class="subtitle">Flip cards · Answer questions · Outscore your rival!</p>
-            </div>
-
-            <div class="pin-guide">
-                <div class="guide-item">
-                    <span class="guide-digit">1</span>
-                    Level
-                    <div class="guide-tooltip">1=Primary, 2=Lower Sec, 3=Upper Sec</div>
+    <div id="game-container">
+        <!-- LOGIN SCREEN -->
+        <div id="login-screen" class="screen">
+            <div class="login-box">
+                <h1>🧧 CNY ARCADE 🧧</h1>
+                <p style="color: #fff; margin-bottom: 20px;">Defeat the Lucky Horse with Math!</p>
+                <div class="input-area">
+                    <input type="text" id="pin-input" placeholder="Enter Mission Code">
+                    <button id="start-btn" class="btn">START BATTLE</button>
                 </div>
-                <div class="guide-item">
-                    <span class="guide-digit">2</span>
-                    Subject
-                    <div class="guide-tooltip">0=Math, 1=Science, 2=Comb Physics, 3=Pure Physics, 4=Comb Chem, 5=Pure Chem</div>
-                </div>
-                <div class="guide-item">
-                    <span class="guide-digit">3</span>
-                    Grade
-                    <div class="guide-tooltip">P1-P6 (1-6), S1-S4 (1-4)</div>
-                </div>
-                <div class="guide-item">
-                    <span class="guide-digit">4</span>
-                    Chapter
-                    <div class="guide-tooltip">Tens digit (0-9)</div>
-                </div>
-                <div class="guide-item">
-                    <span class="guide-digit">5</span>
-                    Chapter
-                    <div class="guide-tooltip">Ones digit (0-9)</div>
-                </div>
-                <div class="guide-item">
-                    <span class="guide-digit">6</span>
-                    Worksheet
-                    <div class="guide-tooltip">Worksheet number (1-9)</div>
-                </div>
-            </div>
-
-            <div class="pin-input-section">
-                <div class="pin-display">
-                    <div id="digit1" class="digit">
-                        <div class="digit-number">_</div>
-                        <div class="digit-label">Level</div>
-                    </div>
-                    <div id="digit2" class="digit">
-                        <div class="digit-number">_</div>
-                        <div class="digit-label">Subject</div>
-                    </div>
-                    <div id="digit3" class="digit">
-                        <div class="digit-number">_</div>
-                        <div class="digit-label">Grade</div>
-                    </div>
-                    <div id="digit4" class="digit">
-                        <div class="digit-number">_</div>
-                        <div class="digit-label">Chap10</div>
-                    </div>
-                    <div id="digit5" class="digit">
-                        <div class="digit-number">_</div>
-                        <div class="digit-label">Chap1</div>
-                    </div>
-                    <div id="digit6" class="digit">
-                        <div class="digit-number">_</div>
-                        <div class="digit-label">WS#</div>
-                    </div>
-                </div>
-            </div>
-
-            <div class="keypad">
-                <button class="key" data-key="1">1</button>
-                <button class="key" data-key="2">2</button>
-                <button class="key" data-key="3">3</button>
-                <button class="key" data-key="4">4</button>
-                <button class="key" data-key="5">5</button>
-                <button class="key" data-key="6">6</button>
-                <button class="key" data-key="7">7</button>
-                <button class="key" data-key="8">8</button>
-                <button class="key" data-key="9">9</button>
-                <button class="key clear" id="clear-btn">C</button>
-                <button class="key" data-key="0">0</button>
-                <button class="key submit" id="submit-pin">GO</button>
-            </div>
-
-            <div class="quick-actions">
-                <button id="test-pin" class="btn test-btn">
-                    <i class="fas fa-flask"></i> Test 342-09-1
-                </button>
-                <button id="scan-quizzes" class="btn scan-btn">
-                    <i class="fas fa-search"></i> Scan for Quizzes
-                </button>
-            </div>
-
-            <div class="catalog-container">
-                <div class="catalog-header">
-                    <h3><i class="fas fa-folder-open"></i> Available Quizzes</h3>
-                    <span id="quiz-count" class="badge">0 quizzes</span>
-                </div>
-                <div id="quiz-catalog" class="quiz-catalog"></div>
+                <div id="error-msg" class="error hidden"></div>
             </div>
         </div>
 
-        <!-- ===================== LOADING SCREEN ===================== -->
-        <div id="loading-screen" class="screen">
-            <div class="loading-content">
-                <div class="spinner"></div>
-                <h2 id="loading-message">Initializing...</h2>
-                <p id="loading-details">Checking quiz files...</p>
-                <div class="progress-container">
-                    <div id="scan-progress" class="progress-bar"></div>
+        <!-- BATTLE SCREEN -->
+        <div id="battle-screen" class="screen hidden">
+            <!-- HUD -->
+            <div class="hud">
+                <div class="player-hud">
+                    <div class="name">👦 HERO</div>
+                    <div class="hp-bar-container">
+                        <div id="player-hp-fill"></div>
+                    </div>
+                    <div class="score-box">SCORE: <span id="score-display">0</span></div>
                 </div>
-                <div id="quiz-found" class="found-count"></div>
-            </div>
-        </div>
-
-        <!-- ===================== GAME SCREEN ===================== -->
-        <div id="game-screen" class="screen">
-
-            <div class="scoreboard">
-                <div class="sb-player sb-p1 active" id="sb-p1">
-                    <div class="sb-avatar" id="p1-avatar">😎</div>
-                    <div class="sb-info">
-                        <div class="sb-name">Player 1</div>
-                        <div class="sb-score">
-                            <span id="score1" class="score-num">0</span>
-                            <span class="score-pts">pts</span>
-                        </div>
+                <div class="vs-logo">VS</div>
+                <div class="enemy-hud">
+                    <div class="name">🐴 LUCKY HORSE</div>
+                    <div class="hp-bar-container">
+                        <div id="enemy-hp-fill"></div>
                     </div>
-                    <div class="sb-streak" id="streak1" title="Streak">
-                        <i class="fas fa-fire"></i>
-                        <span id="streak-count1">0</span>
-                    </div>
-                </div>
-
-                <div class="sb-center">
-                    <div class="sb-quiz-title" id="quiz-title">Quiz Title</div>
-                    <div class="sb-quiz-topic" id="quiz-topic">Subject · Grade</div>
-                </div>
-
-                <div class="sb-player sb-p2" id="sb-p2">
-                    <div class="sb-streak" id="streak2" title="Streak">
-                        <span id="streak-count2">0</span>
-                        <i class="fas fa-fire"></i>
-                    </div>
-                    <div class="sb-info">
-                        <div class="sb-name">Player 2</div>
-                        <div class="sb-score">
-                            <span id="score2" class="score-num">0</span>
-                            <span class="score-pts">pts</span>
-                        </div>
-                    </div>
-                    <div class="sb-avatar" id="p2-avatar">🤓</div>
+                    <div class="score-box">COMBO: <span id="combo-display" class="hidden"></span></div>
                 </div>
             </div>
 
-            <div class="turn-banner" id="turn-banner">
-                <div class="turn-glow"></div>
-                <span class="turn-avatar" id="turn-avatar">😎</span>
-                <span class="turn-text" id="turn-text">Player 1's Turn — Pick a card!</span>
-                <div class="turn-cards-left">
-                    <i class="fas fa-clone"></i>
-                    <span id="cards-remaining">0</span> left
+            <!-- ARENA -->
+            <div class="arena">
+                <div class="fighter player">
+                    <div class="avatar" id="player-sprite">👦</div>
+                    <div class="shadow"></div>
                 </div>
+                <div class="fighter enemy">
+                    <div class="avatar" id="enemy-sprite">🐴</div>
+                    <div class="shadow"></div>
+                    <div class="aura"></div>
+                </div>
+                <div id="fireball" class="projectile hidden">✨</div>
+                <div id="enemy-projectile" class="projectile hidden">🥕</div>
+                <div id="explosion" class="explosion hidden">💥</div>
+                <div id="crit-display" class="crit-text hidden">CRITICAL HIT!</div>
+                <div id="miss-display" class="combo-text miss hidden">MISSED!</div>
+                <div id="damage-number" class="damage-number hidden"></div>
             </div>
 
-            <div class="rules-bar" id="rules-bar">
-                <span class="rule-chip correct-rule">✅ Correct = Keep card + Points</span>
-                <span class="rule-chip wrong-rule">❌ Wrong = Lose card, answer hidden</span>
-                <span class="rule-chip timeout-rule">⏰ Timeout = Card returns</span>
-            </div>
-
-            <div class="card-board" id="card-board"></div>
-
-            <div class="question-overlay" id="question-overlay">
-                <div class="question-backdrop"></div>
-                <div class="question-modal">
-                    <div class="timer-wrapper">
-                        <div class="timer-track">
-                            <div class="timer-fill" id="timer-bar"></div>
-                        </div>
-                        <div class="timer-clock">
-                            <i class="fas fa-clock"></i>
-                            <span id="timer-text">45</span>
-                        </div>
-                    </div>
-
-                    <div class="q-player-indicator" id="q-player-indicator">
-                        <span class="qpi-avatar">😎</span>
-                        <span class="qpi-name">Player 1 answering...</span>
-                    </div>
-
-                    <div class="q-header">
-                        <span class="q-badge" id="q-number">Q1</span>
-                        <span class="q-points-badge" id="q-points">10 pts</span>
-                        <span class="q-special-badge" id="q-special"></span>
-                    </div>
-
-                    <div class="q-body">
-                        <p class="q-text" id="question-text">Question goes here</p>
-                    </div>
-
-                    <div class="q-options" id="options-container"></div>
-
-                    <button class="btn-submit" id="submit-answer" disabled>
-                        <i class="fas fa-lock"></i>
-                        <span>Lock In Answer</span>
-                    </button>
-
-                    <div class="q-result-banner" id="q-result-banner"></div>
-                    <div class="q-explanation" id="q-explanation"></div>
-
-                    <button class="btn-next" id="next-btn">
-                        <span>Continue</span>
-                        <i class="fas fa-arrow-right"></i>
-                    </button>
+            <!-- CONTROL PANEL -->
+            <div class="control-panel">
+                <div class="timer-strip">
+                    <div id="timer-fill"></div>
                 </div>
-            </div>
-
-            <div class="treasure-overlay" id="treasure-overlay">
-                <div class="treasure-backdrop"></div>
-                <div class="treasure-modal">
-                    <div class="treasure-header">
-                        <span class="treasure-sparkle">✨</span>
-                        <span class="treasure-gift">🎁</span>
-                        <span class="treasure-sparkle">✨</span>
-                    </div>
-                    <h3 class="treasure-title">Choose a Treasure Box!</h3>
-                    <p class="treasure-subtitle">You earned a reward!</p>
-
-                    <div class="treasure-grid">
-                        <div class="t-box" data-box="0">
-                            <div class="t-box-inner">
-                                <div class="t-box-front">🎁</div>
-                                <div class="t-box-back"></div>
-                            </div>
-                        </div>
-                        <div class="t-box" data-box="1">
-                            <div class="t-box-inner">
-                                <div class="t-box-front">🎁</div>
-                                <div class="t-box-back"></div>
-                            </div>
-                        </div>
-                        <div class="t-box" data-box="2">
-                            <div class="t-box-inner">
-                                <div class="t-box-front">🎁</div>
-                                <div class="t-box-back"></div>
-                            </div>
-                        </div>
-                    </div>
-
-                    <div class="treasure-result" id="treasure-result"></div>
-                    <button class="btn-next treasure-continue" id="treasure-continue">
-                        <span>Continue</span>
-                        <i class="fas fa-arrow-right"></i>
-                    </button>
-                </div>
-            </div>
-
-            <div class="gameover-overlay" id="game-over">
-                <div class="gameover-backdrop"></div>
-                <div class="gameover-modal">
-                    <div class="go-celebration" id="go-celebration">
-                        <span class="go-trophy">🏆</span>
-                    </div>
-                    <h2 class="go-title" id="winner-message">Game Over!</h2>
-                    <div class="go-winner-name" id="winner-name">Player 1</div>
-
-                    <div class="go-scores">
-                        <div class="go-player go-p1">
-                            <div class="go-avatar">😎</div>
-                            <div class="go-pname">Player 1</div>
-                            <div class="go-pscore" id="final-score1">0</div>
-                        </div>
-                        <div class="go-vs">VS</div>
-                        <div class="go-player go-p2">
-                            <div class="go-avatar">🤓</div>
-                            <div class="go-pname">Player 2</div>
-                            <div class="go-pscore" id="final-score2">0</div>
-                        </div>
-                    </div>
-
-                    <div class="go-stats" id="game-stats"></div>
-
-                    <div class="go-actions">
-                        <button id="restart-btn" class="btn primary">
-                            <i class="fas fa-redo"></i> Play Again
-                        </button>
-                        <button id="new-chapter-btn" class="btn secondary">
-                            <i class="fas fa-home"></i> New Quiz
-                        </button>
-                    </div>
-                </div>
-            </div>
-
-            <div id="score-popups"></div>
-
-            <div class="game-controls-bar">
-                <button id="home-btn" class="gc-btn" title="Back to Home">
-                    <i class="fas fa-home"></i>
-                </button>
-                <div class="gc-quiz-code">
-                    <i class="fas fa-hashtag"></i>
-                    <span id="current-quiz-code">000-00-0</span>
-                </div>
-                <button id="sound-btn" class="gc-btn" title="Toggle Sound">
-                    <i class="fas fa-volume-up" id="sound-icon"></i>
-                </button>
-            </div>
-
-        </div>
-
-        <!-- ===================== ERROR SCREEN ===================== -->
-        <div id="error-screen" class="screen">
-            <div class="error-content">
-                <div class="error-icon">
-                    <i class="fas fa-exclamation-triangle"></i>
-                </div>
-                <h2>Quiz Not Found</h2>
-                <div id="error-message" class="error-details"></div>
-                <div class="action-buttons">
-                    <button id="back-to-pin-error" class="btn secondary">Back to Home</button>
-                    <button id="retry-btn" class="btn primary">Retry</button>
+                <div class="question-box">
+                    <div class="q-header" id="q-progress">QUESTION 1 / 12</div>
+                    <p id="q-text">Loading...</p>
+                    <div id="options-container" class="options-grid"></div>
                 </div>
             </div>
         </div>
 
+        <!-- END SCREEN -->
+        <div id="end-screen" class="screen hidden">
+            <div class="victory-box">
+                <h1 id="end-title">VICTORY!</h1>
+                <p id="end-reason" style="font-size: 1.5rem; margin: 20px 0;"></p>
+                <div class="stats-grid">
+                    <div>FINAL SCORE</div>
+                    <div class="big-num" id="final-score">0</div>
+                    <div>MAX COMBO</div>
+                    <div class="big-num" id="final-combo">0</div>
+                </div>
+                <!-- FIXED: Added proper ID and event listener -->
+                <button id="play-again-btn" class="btn">PLAY AGAIN</button>
+            </div>
+        </div>
     </div>
-
     <script src="script.js"></script>
 </body>
 </html>
