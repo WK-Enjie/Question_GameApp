@@ -118,54 +118,62 @@ input {
     border: 1px solid red; 
 }
 
-/* HUD */
+/* HUD - FIXED SPACING */
 .hud { 
     height: 15%; 
     display: flex; 
     justify-content: space-between; 
-    padding: 20px; 
+    align-items: center;
+    padding: 15px 20px; 
     color: white; 
     font-family: 'Black Ops One'; 
+    gap: 10px;
 }
 
 .vs-logo { 
-    font-size: 3rem; 
+    font-size: 2.5rem; 
     color: var(--gold); 
-    align-self: center; 
     text-shadow: 0 0 20px var(--red); 
+    margin: 0 10px;
 }
 
-.enemy-hud { 
-    text-align: right; 
-    width: 40%; 
+.enemy-hud, .player-hud { 
+    display: flex;
+    flex-direction: column;
+    align-items: flex-start;
+    gap: 5px;
+    width: 35%;
 }
 
-.player-hud { 
-    width: 40%; 
+.enemy-hud {
+    align-items: flex-end;
+    text-align: right;
 }
 
 .name { 
-    font-size: 1.3rem; 
-    margin-bottom: 5px; 
-    letter-spacing: 2px; 
+    font-size: 1.2rem; 
+    letter-spacing: 1px; 
     text-shadow: 2px 2px 0 #000; 
+    display: block;
+    margin: 0;
 }
 
-.score-box { 
+.score-box, .combo-box { 
     font-family: 'Roboto'; 
     color: var(--gold); 
-    font-size: 0.9rem; 
-    margin-top: 5px;
+    font-size: 0.85rem; 
+    display: block;
+    margin: 0;
 }
 
 .hp-bar-container { 
     width: 100%; 
-    height: 20px; 
+    height: 18px; 
     background: #333; 
     border: 2px solid #fff; 
-    transform: skewX(-20deg); 
+    transform: skewX(-15deg); 
     overflow: hidden; 
-    box-shadow: 0 0 10px rgba(0,0,0,0.5); 
+    box-shadow: 0 0 8px rgba(0,0,0,0.5); 
 }
 
 #player-hp-fill { 
@@ -193,33 +201,26 @@ input {
 .fighter { 
     position: absolute; 
     bottom: 20px; 
-    width: 150px; 
-    height: 150px; 
+    width: 140px; 
+    height: 140px; 
     text-align: center; 
 }
 
-.player { 
-    left: 10%; 
-}
-
-.enemy { 
-    right: 10%; 
-}
+.player { left: 8%; }
+.enemy { right: 8%; }
 
 .avatar { 
-    font-size: 100px; 
+    font-size: 90px; 
     filter: drop-shadow(0 10px 10px rgba(0,0,0,0.5)); 
     position: relative; 
     z-index: 2; 
 }
 
-#enemy-sprite { 
-    animation: float 3s infinite ease-in-out; 
-}
+#enemy-sprite { animation: float 3s infinite ease-in-out; }
 
 .shadow { 
-    width: 100px; 
-    height: 20px; 
+    width: 90px; 
+    height: 18px; 
     background: rgba(0,0,0,0.5); 
     border-radius: 50%; 
     position: absolute; 
@@ -232,8 +233,8 @@ input {
     position: absolute; 
     top: 10px; 
     left: 10px; 
-    width: 130px; 
-    height: 130px; 
+    width: 120px; 
+    height: 120px; 
     background: radial-gradient(circle, rgba(255, 215, 0, 0.4) 0%, transparent 70%); 
     border-radius: 50%; 
     animation: pulse 1s infinite alternate; 
@@ -243,93 +244,76 @@ input {
 /* PROJECTILES */
 .projectile { 
     position: absolute; 
-    font-size: 60px; 
-    bottom: 60px; 
+    font-size: 55px; 
+    bottom: 55px; 
     z-index: 10; 
     filter: drop-shadow(0 0 10px orange); 
 }
 
-#fireball { 
-    left: 20%; 
-}
-
+#fireball { left: 18%; }
 #enemy-projectile { 
-    right: 20%; 
+    right: 18%; 
     filter: drop-shadow(0 0 10px var(--gold)); 
-    font-size: 70px; 
+    font-size: 65px; 
 }
 
 .explosion { 
     position: absolute; 
-    font-size: 120px; 
-    bottom: 40px; 
+    font-size: 110px; 
+    bottom: 35px; 
     z-index: 20; 
     text-shadow: 0 0 20px yellow; 
     transform: scale(1.5); 
 }
 
-/* DAMAGE NUMBER */
-.damage-number {
-    position: absolute;
-    font-family: 'Black Ops One';
-    font-size: 2.5rem;
-    z-index: 60;
-    pointer-events: none;
-    animation: floatUp 0.8s ease-out forwards;
-}
-
-@keyframes floatUp {
-    0% { opacity: 1; transform: translateY(0) scale(1); }
-    100% { opacity: 0; transform: translateY(-50px) scale(1.2); }
-}
-
-/* COMBAT TEXT */
-.combo-text { 
+/* COMBAT TEXT - FIXED POSITIONING */
+.combo-text, .crit-text, .miss { 
     position: absolute; 
-    top: 20%; 
-    left: 10%; 
     font-family: 'Black Ops One'; 
-    font-size: 4rem; 
-    color: var(--gold); 
-    transform: rotate(-10deg); 
-    text-shadow: 5px 5px 0 #000; 
+    font-size: 3.5rem; 
+    transform: rotate(-8deg); 
+    text-shadow: 4px 4px 0 #000; 
     animation: popIn 0.3s; 
     pointer-events: none; 
     z-index: 50; 
+    display: block;
+}
+
+.combo-text { 
+    top: 25%; 
+    left: 15%; 
+    color: var(--gold); 
 }
 
 .crit-text { 
-    position: absolute; 
-    top: 40%; 
-    right: 20%; 
-    font-family: 'Black Ops One'; 
-    font-size: 3rem; 
+    top: 35%; 
+    right: 25%; 
     color: #ff0055; 
     text-shadow: 2px 2px 0 white; 
-    z-index: 50; 
     animation: shake 0.5s; 
-    pointer-events: none; 
 }
 
 .miss { 
     color: #aaa; 
-    text-shadow: 2px 2px 0 #000; 
-    left: 20%; 
+    left: 25%; 
 }
 
-/* CONTROL PANEL */
+/* CONTROL PANEL - FIXED SPACING */
 .control-panel { 
     height: 40%; 
     background: #f4f4f4; 
     border-top: 5px solid var(--gold); 
     display: flex; 
     flex-direction: column; 
+    padding: 10px;
 }
 
 .timer-strip { 
-    height: 10px; 
+    height: 8px; 
     background: #333; 
     width: 100%; 
+    border-radius: 4px;
+    margin-bottom: 10px;
 }
 
 #timer-fill { 
@@ -337,52 +321,58 @@ input {
     background: var(--hp-green); 
     width: 100%; 
     transition: width 0.1s linear; 
+    border-radius: 4px;
 }
 
 .question-box { 
-    padding: 20px; 
+    padding: 10px 15px; 
     flex-grow: 1; 
     display: flex; 
     flex-direction: column; 
+    gap: 8px;
 }
 
 .q-header { 
     color: #666; 
     font-weight: bold; 
-    margin-bottom: 5px; 
-    font-size: 0.9rem; 
+    font-size: 0.85rem; 
     letter-spacing: 1px; 
+    display: block;
 }
 
 #q-text { 
-    margin: 0 0 15px 0; 
+    margin: 0; 
     color: #222; 
-    font-size: 1.3rem; 
+    font-size: 1.2rem; 
     line-height: 1.4; 
+    display: block;
     word-wrap: break-word;
 }
 
 .options-grid { 
     display: grid; 
     grid-template-columns: 1fr 1fr; 
-    gap: 10px; 
+    gap: 8px; 
     flex-grow: 1; 
 }
 
 .opt-btn { 
     background: white; 
     border: 2px solid #ccc; 
-    border-radius: 8px; 
-    font-size: 1.1rem; 
+    border-radius: 6px; 
+    font-size: 1rem; 
     font-weight: bold; 
     cursor: pointer; 
-    box-shadow: 0 4px 0 #bbb; 
+    box-shadow: 0 3px 0 #bbb; 
     transition: 0.1s; 
     color: #333; 
+    padding: 8px 12px;
+    text-align: left;
+    display: block;
 }
 
 .opt-btn:active { 
-    transform: translateY(4px); 
+    transform: translateY(3px); 
     box-shadow: none; 
 }
 
@@ -390,14 +380,14 @@ input {
     background: #4CAF50; 
     color: white; 
     border-color: #388E3C; 
-    box-shadow: 0 4px 0 #1B5E20; 
+    box-shadow: 0 3px 0 #1B5E20; 
 }
 
 .opt-btn.wrong { 
     background: #F44336; 
     color: white; 
     border-color: #D32F2F; 
-    box-shadow: 0 4px 0 #B71C1C; 
+    box-shadow: 0 3px 0 #B71C1C; 
 }
 
 /* END SCREEN */
@@ -409,29 +399,42 @@ input {
     text-align: center; 
     color: white; 
     width: 100%; 
+    padding: 20px;
 }
 
 #end-title { 
     font-family: 'Black Ops One'; 
-    font-size: 4rem; 
-    margin: 0; 
+    font-size: 3.5rem; 
+    margin: 0 0 15px 0; 
     text-shadow: 0 0 20px currentColor; 
+    display: block;
+}
+
+#end-reason {
+    font-size: 1.3rem;
+    margin: 0 0 20px 0;
+    display: block;
 }
 
 .stats-grid { 
     display: grid; 
     grid-template-columns: 1fr 1fr; 
-    gap: 15px; 
-    max-width: 400px; 
-    margin: 30px auto; 
+    gap: 12px; 
+    max-width: 350px; 
+    margin: 0 auto 25px auto; 
     background: rgba(0,0,0,0.5); 
-    padding: 20px; 
-    border-radius: 10px; 
+    padding: 15px; 
+    border-radius: 8px; 
     border: 2px solid var(--gold); 
 }
 
+.stats-grid div {
+    display: block;
+    text-align: center;
+}
+
 .big-num { 
-    font-size: 2.5rem; 
+    font-size: 2rem; 
     color: var(--gold); 
     font-weight: bold; 
 }
@@ -439,46 +442,46 @@ input {
 /* ANIMATIONS */
 @keyframes float { 
     0%, 100% { transform: translateY(0); } 
-    50% { transform: translateY(-15px); } 
+    50% { transform: translateY(-12px); } 
 }
 
 @keyframes pulse { 
     0% { opacity: 0.5; transform: scale(1); } 
-    100% { opacity: 1; transform: scale(1.2); } 
+    100% { opacity: 1; transform: scale(1.15); } 
 }
 
 @keyframes shootRight { 
-    0% { left: 20%; transform: rotate(0deg); opacity: 1; } 
-    100% { left: 80%; transform: rotate(360deg); opacity: 1; } 
+    0% { left: 18%; transform: rotate(0deg); opacity: 1; } 
+    100% { left: 75%; transform: rotate(360deg); opacity: 1; } 
 }
 
 @keyframes shootLeft { 
-    0% { right: 20%; transform: rotate(0deg); opacity: 1; } 
-    100% { right: 80%; transform: rotate(-360deg); opacity: 1; } 
+    0% { right: 18%; transform: rotate(0deg); opacity: 1; } 
+    100% { right: 75%; transform: rotate(-360deg); opacity: 1; } 
 }
 
 @keyframes shake { 
-    0% { transform: translate(0); } 
-    25% { transform: translate(-5px, 5px); } 
-    75% { transform: translate(5px, -5px); } 
-    100% { transform: translate(0); } 
+    0% { transform: translate(0) rotate(-8deg); } 
+    25% { transform: translate(-4px, 4px) rotate(-8deg); } 
+    75% { transform: translate(4px, -4px) rotate(-8deg); } 
+    100% { transform: translate(0) rotate(-8deg); } 
 }
 
 @keyframes hitEffect { 
     0% { filter: hue-rotate(0deg); } 
-    20% { filter: hue-rotate(90deg) brightness(2); transform: translateX(20px); } 
+    20% { filter: hue-rotate(90deg) brightness(2); transform: translateX(15px); } 
     100% { filter: hue-rotate(0deg); transform: translateX(0); } 
 }
 
 @keyframes playerHit { 
     0% { filter: brightness(1); } 
-    20% { filter: sepia(1) hue-rotate(-50deg) saturate(5); transform: translateX(-20px); } 
+    20% { filter: sepia(1) hue-rotate(-50deg) saturate(5); transform: translateX(-15px); } 
     100% { filter: brightness(1); transform: translateX(0); } 
 }
 
 @keyframes popIn { 
     from { transform: scale(0) rotate(-45deg); opacity: 0; } 
-    to { transform: scale(1) rotate(-10deg); opacity: 1; } 
+    to { transform: scale(1) rotate(-8deg); opacity: 1; } 
 }
 
 /* JS Utilities */
@@ -511,7 +514,8 @@ input {
     #q-text { font-size: 1.1rem; }
     .avatar { font-size: 70px; }
     .fighter { width: 100px; height: 100px; }
-    .hud { padding: 10px; }
-    .vs-logo { font-size: 2rem; }
+    .hud { padding: 8px 12px; gap: 5px; }
+    .vs-logo { font-size: 2rem; margin: 0 5px; }
     #end-title { font-size: 2.5rem; }
-   }
+    .stats-grid { grid-template-columns: 1fr; gap: 8px; }
+}
