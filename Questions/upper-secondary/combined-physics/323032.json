@@ -1,0 +1,193 @@
+```json
+{
+  "title": "Mass, Weight, Density and Pressure",
+  "topic": "Mass, Weight, Density and Pressure",
+  "subject": "Physics",
+  "level": "Secondary",
+  "grade": "Sec 3",
+  "chapter": 3,
+  "worksheet": 2,
+  "questions": [
+    {
+      "question": "An astronaut has a mass of 72 kg on Earth. On a planet where gravitational field strength is 4 N/kg, what would be their weight?",
+      "options": [
+        "18 N",
+        "72 N",
+        "288 N",
+        "720 N"
+      ],
+      "correct": 2,
+      "points": 12,
+      "explanation": "Mass is constant everywhere (72 kg). Weight on the planet: W = mg = 72 kg × 4 N/kg = 288 N. On Earth (g = 10 N/kg), weight would be 720 N, but mass remains 72 kg regardless of location."
+    },
+    {
+      "question": "A rectangular block exerts a pressure of 2000 Pa on a surface. If the block is turned to rest on a face with half the original area, what is the new pressure?",
+      "options": [
+        "1000 Pa",
+        "2000 Pa",
+        "4000 Pa",
+        "8000 Pa"
+      ],
+      "correct": 2,
+      "points": 15,
+      "explanation": "Pressure P = F/A. The force (weight) remains constant. If area is halved (A/2), pressure doubles: P_new = F/(A/2) = 2 × (F/A) = 2 × 2000 Pa = 4000 Pa. Pressure is inversely proportional to area for constant force."
+    },
+    {
+      "question": "Two objects have the same volume but different masses. Object A has mass 200 g and Object B has mass 300 g. Which statement is correct?",
+      "options": [
+        "Object A has higher density than Object B",
+        "Object B has higher density than Object A",
+        "Both objects have the same density",
+        "Density cannot be determined without knowing the volume"
+      ],
+      "correct": 1,
+      "points": 12,
+      "explanation": "Density ρ = m/V. Since volume is the same for both objects, the object with greater mass has higher density. Object B (300 g) has higher density than Object A (200 g) by a factor of 1.5."
+    },
+    {
+      "question": "A hydraulic press has a small piston of area 0.01 m² and a large piston of area 0.5 m². If a force of 50 N is applied to the small piston, what force is exerted by the large piston?",
+      "options": [
+        "1 N",
+        "25 N",
+        "100 N",
+        "2500 N"
+      ],
+      "correct": 3,
+      "points": 18,
+      "explanation": "By Pascal's principle, pressure is transmitted equally: P_small = P_large. F₁/A₁ = F₂/A₂. So F₂ = F₁ × (A₂/A₁) = 50 N × (0.5/0.01) = 50 N × 50 = 2500 N. The force is multiplied by the area ratio."
+    },
+    {
+      "question": "A metal cube of side 5 cm has a mass of 1000 g. What is its density in kg/m³?",
+      "options": [
+        "8 kg/m³",
+        "80 kg/m³",
+        "800 kg/m³",
+        "8000 kg/m³"
+      ],
+      "correct": 3,
+      "points": 18,
+      "explanation": "Volume = (5 cm)³ = 125 cm³ = 125 × 10⁻⁶ m³ = 0.000125 m³. Mass = 1000 g = 1 kg. Density ρ = m/V = 1 kg ÷ 0.000125 m³ = 8000 kg/m³. Alternatively: ρ = 1000 g/125 cm³ = 8 g/cm³ = 8000 kg/m³."
+    },
+    {
+      "question": "Why does pressure in a liquid increase with depth?",
+      "options": [
+        "The density of the liquid increases with depth",
+        "The weight of the liquid column above increases with depth",
+        "The gravitational field strength increases with depth",
+        "The temperature of the liquid increases with depth"
+      ],
+      "correct": 1,
+      "points": 12,
+      "explanation": "Pressure in a liquid increases with depth because the weight of the liquid column above that point increases. This is a conceptual understanding; density and g are assumed constant for incompressible liquids."
+    },
+    {
+      "question": "A U-tube manometer is used to compare pressures. What does a greater height difference in the liquid levels indicate?",
+      "options": [
+        "A smaller pressure difference",
+        "A greater pressure difference",
+        "No pressure difference",
+        "The density of the liquid has changed"
+      ],
+      "correct": 1,
+      "points": 12,
+      "explanation": "A manometer measures pressure difference by the height difference of the liquid column. A greater height difference indicates a greater pressure difference between the two sides. This is a conceptual understanding without calculation."
+    },
+    {
+      "question": "A student measures the mass of an empty beaker as 50 g. After adding 100 cm³ of liquid, the total mass is 140 g. What is the density of the liquid?",
+      "options": [
+        "0.9 g/cm³",
+        "1.0 g/cm³",
+        "1.4 g/cm³",
+        "1.9 g/cm³"
+      ],
+      "correct": 0,
+      "points": 15,
+      "explanation": "Mass of liquid = 140 g - 50 g = 90 g. Volume = 100 cm³. Density ρ = m/V = 90 g ÷ 100 cm³ = 0.9 g/cm³. Remember to subtract the beaker mass to get only the liquid mass."
+    },
+    {
+      "question": "Which combination of changes will ALWAYS increase the pressure exerted by a solid block on a surface?",
+      "options": [
+        "Increase mass and increase base area",
+        "Decrease mass and decrease base area",
+        "Increase mass and decrease base area",
+        "Decrease mass and increase base area"
+      ],
+      "correct": 2,
+      "points": 15,
+      "explanation": "Pressure P = F/A = mg/A. To increase pressure: increase force (mass) AND decrease area. Option C does both. Option A is uncertain (both increase). Option B is uncertain (both decrease). Option D decreases pressure."
+    },
+    {
+      "question": "An object weighs 100 N on Earth (g = 10 N/kg). On the Moon, g = 1.6 N/kg. What is the weight of the object on the Moon?",
+      "options": [
+        "16 N",
+        "62.5 N",
+        "100 N",
+        "160 N"
+      ],
+      "correct": 0,
+      "points": 15,
+      "explanation": "First find mass: m = W/g = 100 N ÷ 10 N/kg = 10 kg. Mass is constant. Weight on Moon: W = mg = 10 kg × 1.6 N/kg = 16 N. Do not assume weight is constant; mass is the invariant property."
+    },
+    {
+      "question": "Three identical containers are filled with different liquids to the same height. Liquid A has density 800 kg/m³, Liquid B has 1000 kg/m³, Liquid C has 1200 kg/m³. Which exerts the greatest pressure at the bottom?",
+      "options": [
+        "Liquid A",
+        "Liquid B",
+        "Liquid C",
+        "All exert the same pressure"
+      ],
+      "correct": 2,
+      "points": 12,
+      "explanation": "Pressure at depth depends on density (conceptually). Height (h) and g are the same for all. Pressure is directly proportional to density. Liquid C has highest density (1200 kg/m³), so it exerts the greatest pressure at the bottom."
+    },
+    {
+      "question": "A solid cylinder exerts a pressure P on the ground. If an identical cylinder is stacked directly on top of it, what is the new pressure exerted on the ground?",
+      "options": [
+        "P",
+        "2P",
+        "4P",
+        "P/2"
+      ],
+      "correct": 1,
+      "points": 15,
+      "explanation": "Pressure P = F/A. Stacking an identical cylinder doubles the force (weight) to 2F. The contact area A with the ground remains the same. New Pressure = 2F/A = 2 × (F/A) = 2P."
+    },
+    {
+      "question": "Why do snowshoes prevent a person from sinking into deep snow?",
+      "options": [
+        "They reduce the person's weight",
+        "They increase the gravitational field strength",
+        "They distribute the person's weight over a larger area, reducing pressure",
+        "They make the snow more compact and supportive"
+      ],
+      "correct": 2,
+      "points": 12,
+      "explanation": "Snowshoes increase the contact area between the person and the snow. Since P = F/A, increasing area (A) while force (weight F) stays constant reduces pressure on the snow, preventing sinking."
+    },
+    {
+      "question": "A block of wood floats in water. What can be deduced about the density of the wood compared to water?",
+      "options": [
+        "Density of wood > density of water",
+        "Density of wood < density of water",
+        "Density of wood = density of water",
+        "Density cannot be determined"
+      ],
+      "correct": 1,
+      "points": 15,
+      "explanation": "An object floats if its average density is less than the fluid's density. Since the wood floats, its density must be less than that of water. If it were greater, it would sink."
+    },
+    {
+      "question": "Which instrument is most suitable for measuring the density of an irregularly shaped small stone?",
+      "options": [
+        "Ruler and balance",
+        "Measuring cylinder and balance",
+        "Thermometer and stopwatch",
+        "Newton-meter and ruler"
+      ],
+      "correct": 1,
+      "points": 12,
+      "explanation": "Density = Mass/Volume. Mass is measured using a balance. Volume of an irregular stone is measured by displacement using a measuring cylinder (eureka can or displacement method). Rulers are for regular shapes."
+    }
+  ]
+}
+```
