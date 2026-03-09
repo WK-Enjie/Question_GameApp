@@ -1,0 +1,191 @@
+{
+  "title": "Dynamics: Forces, Motion and Terminal Velocity",
+  "topic": "Dynamics",
+  "subject": "Physics",
+  "level": "Secondary",
+  "grade": "Sec 3",
+  "chapter": 3,
+  "worksheet": 3,
+  "questions": [
+    {
+      "question": "Which property of a body is a measure of its resistance to change in motion?",
+      "options": [
+        "Weight",
+        "Volume",
+        "Mass",
+        "Density"
+      ],
+      "correct": 2,
+      "points": 10,
+      "explanation": "Mass is the measure of a body's resistance to change in motion. The greater the mass, the harder it is to change its state of rest or motion."
+    },
+    {
+      "question": "A skydiver falls at terminal velocity. What is the relationship between air resistance and weight?",
+      "options": [
+        "Air resistance is zero",
+        "Air resistance is less than weight",
+        "Air resistance is equal to weight",
+        "Air resistance is greater than weight"
+      ],
+      "correct": 2,
+      "points": 12,
+      "explanation": "At terminal velocity, acceleration is zero. This means forces are balanced. Therefore, upward air resistance equals downward weight (Syllabus 3m)."
+    },
+    {
+      "question": "A resultant force of 20 N acts on a mass of 4 kg. What is the acceleration produced?",
+      "options": [
+        "0.2 m/s²",
+        "5 m/s²",
+        "16 m/s²",
+        "80 m/s²"
+      ],
+      "correct": 1,
+      "points": 12,
+      "explanation": "Using Newton's Second Law: F = ma. So a = F/m = 20 N ÷ 4 kg = 5 m/s². An unbalanced force causes acceleration."
+    },
+    {
+      "question": "Which statement about action-reaction pairs is CORRECT?",
+      "options": [
+        "They act on the same body",
+        "They are equal in magnitude and opposite in direction",
+        "They cancel each other out completely",
+        "The action force occurs before the reaction force"
+      ],
+      "correct": 1,
+      "points": 12,
+      "explanation": "Newton's Third Law states action and reaction forces are equal in magnitude, opposite in direction, and act on different bodies (Syllabus 3g)."
+    },
+    {
+      "question": "A box is pushed with a force of 50 N. The frictional force opposing the motion is 10 N. If the mass of the box is 5 kg, what is its acceleration?",
+      "options": [
+        "8 m/s²",
+        "10 m/s²",
+        "12 m/s²",
+        "50 m/s²"
+      ],
+      "correct": 0,
+      "points": 15,
+      "explanation": "Resultant (unbalanced) force F = Push - Friction = 50 N - 10 N = 40 N. Using F = ma: 40 N = 5 kg × a. So a = 40 ÷ 5 = 8 m/s² (Syllabus 3j)."
+    },
+    {
+      "question": "How does the acceleration of a falling object change as it approaches terminal velocity?",
+      "options": [
+        "It increases continuously",
+        "It remains constant at 10 m/s²",
+        "It decreases until it becomes zero",
+        "It becomes negative immediately"
+      ],
+      "correct": 2,
+      "points": 15,
+      "explanation": "As speed increases, air resistance increases. The resultant force (Weight - Air Resistance) decreases. Since F = ma, acceleration decreases until it reaches zero at terminal velocity."
+    },
+    {
+      "question": "A swimmer pushes water backwards to move forward. Which law explains this motion?",
+      "options": [
+        "Newton's First Law",
+        "Newton's Second Law",
+        "Newton's Third Law",
+        "Law of Conservation of Energy"
+      ],
+      "correct": 2,
+      "points": 10,
+      "explanation": "The swimmer exerts a backward force on the water (action). The water exerts an equal and opposite forward force on the swimmer (reaction), propelling them forward."
+    },
+    {
+      "question": "An object moves with constant velocity in a straight line. What can be said about the forces acting on it?",
+      "options": [
+        "There are no forces acting on the object",
+        "The resultant force is zero",
+        "The driving force is greater than friction",
+        "The object has no resistance to change"
+      ],
+      "correct": 1,
+      "points": 12,
+      "explanation": "According to Newton's First Law, if an object moves with constant velocity, the forces are balanced and the resultant (unbalanced) force is zero."
+    },
+    {
+      "question": "A car of mass 1000 kg accelerates at 2 m/s². The total resistive force is 500 N. What is the engine force?",
+      "options": [
+        "1500 N",
+        "2000 N",
+        "2500 N",
+        "3000 N"
+      ],
+      "correct": 2,
+      "points": 18,
+      "explanation": "Resultant force F = ma = 1000 kg × 2 m/s² = 2000 N. Engine Force = Resultant + Resistive = 2000 N + 500 N = 2500 N (Syllabus 3j)."
+    },
+    {
+      "question": "What happens to the air resistance acting on a skydiver immediately after opening their parachute?",
+      "options": [
+        "It decreases rapidly",
+        "It remains constant",
+        "It increases rapidly",
+        "It becomes zero"
+      ],
+      "correct": 2,
+      "points": 15,
+      "explanation": "Opening the parachute greatly increases the surface area, causing air resistance (drag) to increase rapidly. This creates an upward resultant force, slowing the skydiver down."
+    },
+    {
+      "question": "Why do action and reaction forces not cancel each other out?",
+      "options": [
+        "They are not equal in magnitude",
+        "They act at different times",
+        "They act on different bodies",
+        "They are in the same direction"
+      ],
+      "correct": 2,
+      "points": 15,
+      "explanation": "Forces only cancel if they act on the same body. Action-reaction pairs act on different objects, so they produce effects on different objects and do not cancel (Syllabus 3g)."
+    },
+    {
+      "question": "Which velocity-time graph represents an object falling and reaching terminal velocity?",
+      "options": [
+        "A straight line with constant positive gradient",
+        "A curve with increasing gradient",
+        "A curve with decreasing gradient becoming horizontal",
+        "A horizontal line from the start"
+      ],
+      "correct": 2,
+      "points": 15,
+      "explanation": "Initially, acceleration (gradient) is high. As speed increases, air resistance increases, reducing acceleration. At terminal velocity, acceleration is zero, so the graph becomes horizontal (constant velocity)."
+    },
+    {
+      "question": "Object A has mass 2 kg and Object B has mass 10 kg. Which object has greater resistance to change in motion?",
+      "options": [
+        "Object A",
+        "Object B",
+        "Both have the same resistance",
+        "Resistance depends on speed, not mass"
+      ],
+      "correct": 1,
+      "points": 10,
+      "explanation": "Resistance to change in motion is directly proportional to mass. Object B has 5 times the mass of Object A, so it has 5 times the resistance to change."
+    },
+    {
+      "question": "A book rests on a table. The weight of the book is the action force. What is the reaction force?",
+      "options": [
+        "The normal force of the table on the book",
+        "The gravitational pull of the book on the Earth",
+        "The friction between the book and table",
+        "The air resistance on the book"
+      ],
+      "correct": 1,
+      "points": 15,
+      "explanation": "Action-reaction pairs act on different objects. Weight is Earth pulling Book. The reaction is Book pulling Earth (gravitational pull of the book on the Earth). The normal force is a separate contact force."
+    },
+    {
+      "question": "A trolley is pulled by a constant force. If the mass of the trolley is doubled while the force remains constant, what happens to the acceleration?",
+      "options": [
+        "It doubles",
+        "It remains the same",
+        "It halves",
+        "It becomes zero"
+      ],
+      "correct": 2,
+      "points": 15,
+      "explanation": "From F = ma, acceleration is inversely proportional to mass (a = F/m). If mass doubles, acceleration halves for the same unbalanced force."
+    }
+  ]
+}
