@@ -1,11 +1,12 @@
 // ================================================================
 //  QUIZ FLIP — CARD BATTLE GAME
-//  Complete Game Logic with Math Rendering
+//  Complete Game Logic with Math Rendering & Multi-Treasure System
 //  Rules:
 //  - Each player answers once per turn, then switches
 //  - Correct: card stays, answer + explanation shown, points awarded
 //  - Wrong: card stays (failed), correct answer NOT revealed
 //  - Timeout: card UNFLIPS back to board, can be attempted again
+//  - Treasure cards: Bronze 📦, Silver 🎁, Gold 👑
 // ================================================================
 
 // ========== GAME STATE ==========
@@ -47,7 +48,12 @@ const gameState = {
     soundEnabled: true,
 
     specialCards: new Set(),
-    bonusCards: new Set()
+
+    // ---- Multi-Treasure System ----
+    treasureCards: new Map(),        // cardIndex → 'bronze' | 'silver' | 'gold'
+    treasuresRemaining: 0,
+    treasuresCollected: [0, 0],      // per player
+    currentTreasureTier: null
 };
 
 
@@ -101,112 +107,52 @@ function decodeQuizCode(code) {
 
 // ================================================================
 //  MATH RENDERER
-//  Converts plain text notation into styled HTML:
-//
-//  FRACTIONS:      3/8          → stacked fraction
-//  MIXED NUMBERS:  2 1/3        → whole + stacked fraction
-//  SUPERSCRIPTS:   x^2          → x with raised 2
-//                  x^{10}       → x with raised 10
-//                  x^2 + y^2    → works inline
-//  SQUARE ROOT:    √(2x)        → √ with vinculum over 2x
-//                  √(ab)        → √ with vinculum over ab
-//  CUBE ROOT:      ∛(8)         → ³√ with vinculum over 8
-//                  cbrt(27)     → ³√ with vinculum over 27
-//
-//  PROTECTED (not converted):
-//    450 / 9       → stays as "450 / 9" (spaces around slash)
-//    $5,400        → stays as "$5,400" (dollar amounts)
-//    P x R x T / 100 → stays unchanged
 // ================================================================
 function renderMath(text) {
     if (!text) return '';
 
-    // Step 1: Escape HTML
     let s = text
         .replace(/&/g, '&amp;')
         .replace(/</g, '&lt;')
         .replace(/>/g, '&gt;');
 
-    // Step 2: Protect patterns we do NOT want to convert
-
-    // Protect "x / y" (spaces around slash) — division expressions
     const protectedDivs = [];
     s = s.replace(/(\w+)\s+\/\s+(\w+)/g, (match) => {
         protectedDivs.push(match);
         return `__PDIV${protectedDivs.length - 1}__`;
     });
 
-    // Protect dollar amounts "$5,400" or "$2,000.50"
     const protectedDollars = [];
     s = s.replace(/\$[\d,]+(\.\d+)?/g, (match) => {
         protectedDollars.push(match);
         return `__PDOL${protectedDollars.length - 1}__`;
     });
 
-    // Step 3: Cube roots — ∛(content) or cbrt(content)
     s = s.replace(/(?:∛|cbrt)\(([^)]+)\)/g, (match, content) => {
-        return `<span class="cbrt-wrap">` +
-            `<span class="cbrt-index">3</span>` +
-            `<span class="cbrt-sign">√</span>` +
-            `<span class="cbrt-content">${content}</span>` +
-        `</span>`;
+        return `<span class="cbrt-wrap"><span class="cbrt-index">3</span><span class="cbrt-sign">√</span><span class="cbrt-content">${content}</span></span>`;
     });
 
-    // Step 4: Square roots — √(content)
     s = s.replace(/√\(([^)]+)\)/g, (match, content) => {
-        return `<span class="sqrt-wrap">` +
-            `<span class="sqrt-sign">√</span>` +
-            `<span class="sqrt-content">${content}</span>` +
-        `</span>`;
+        return `<span class="sqrt-wrap"><span class="sqrt-sign">√</span><span class="sqrt-content">${content}</span></span>`;
     });
 
-    // Step 5: Standalone √ followed by a single variable — √a, √b
     s = s.replace(/√([a-zA-Z])/g, (match, v) => {
-        return `<span class="sqrt-wrap">` +
-            `<span class="sqrt-sign">√</span>` +
-            `<span class="sqrt-content">${v}</span>` +
-        `</span>`;
+        return `<span class="sqrt-wrap"><span class="sqrt-sign">√</span><span class="sqrt-content">${v}</span></span>`;
     });
 
-    // Step 6: Superscripts with braces — x^{10}, a^{2n}
-    s = s.replace(/\^{([^}]+)}/g, (match, exp) => {
-        return `<span class="sup">${exp}</span>`;
-    });
+    s = s.replace(/\^{([^}]+)}/g, (match, exp) => `<span class="sup">${exp}</span>`);
+    s = s.replace(/\^(\d+|[a-zA-Z])/g, (match, exp) => `<span class="sup">${exp}</span>`);
 
-    // Step 7: Superscripts single char — x^2, b^4, )^2
-    s = s.replace(/\^(\d+|[a-zA-Z])/g, (match, exp) => {
-        return `<span class="sup">${exp}</span>`;
-    });
-
-    // Step 8: Mixed numbers — "2 1/3", "4 1/12", "1 3/8"
-    // Pattern: whole_number SPACE numerator/denominator
-    // Must come BEFORE simple fractions
     s = s.replace(/(\d+)\s+(\d+)\/(\d+)/g, (match, whole, num, den) => {
-        return `<span class="mixed-num">` +
-            `<span class="whole">${whole}</span>` +
-            `<span class="frac">` +
-                `<span class="frac-num">${num}</span>` +
-                `<span class="frac-den">${den}</span>` +
-            `</span>` +
-        `</span>`;
+        return `<span class="mixed-num"><span class="whole">${whole}</span><span class="frac"><span class="frac-num">${num}</span><span class="frac-den">${den}</span></span></span>`;
     });
 
-    // Step 9: Simple fractions — "3/8", "2/5", "11/12"
-    // Only matches digit/digit that hasn't been converted yet
     s = s.replace(/(\d+)\/(\d+)/g, (match, num, den) => {
-        return `<span class="frac">` +
-            `<span class="frac-num">${num}</span>` +
-            `<span class="frac-den">${den}</span>` +
-        `</span>`;
+        return `<span class="frac"><span class="frac-num">${num}</span><span class="frac-den">${den}</span></span>`;
     });
 
-    // Step 10: Restore protected patterns
-    protectedDivs.forEach((val, i) => {
-        s = s.replace(`__PDIV${i}__`, val);
-    });
-    protectedDollars.forEach((val, i) => {
-        s = s.replace(`__PDOL${i}__`, val);
-    });
+    protectedDivs.forEach((val, i) => { s = s.replace(`__PDIV${i}__`, val); });
+    protectedDollars.forEach((val, i) => { s = s.replace(`__PDOL${i}__`, val); });
 
     return s;
 }
@@ -275,6 +221,11 @@ class SoundEngine {
     _treasure() {
         [523, 659, 784, 1047].forEach((f, i) =>
             setTimeout(() => this._tone(f, 0.13, 'sine', 0.11), i * 75));
+    }
+
+    _treasureGold() {
+        [523, 659, 784, 1047, 1319].forEach((f, i) =>
+            setTimeout(() => this._tone(f, 0.15, 'sine', 0.13), i * 80));
     }
 
     _powerup() {
@@ -619,6 +570,34 @@ async function submitPin() {
 
 
 // ================================================================
+//  TREASURE TIER DISTRIBUTION
+// ================================================================
+function getTreasureDistribution(total) {
+    let nTreasure;
+    if (total <= 4)       nTreasure = 1;
+    else if (total <= 7)  nTreasure = 2;
+    else if (total <= 12) nTreasure = 3;
+    else if (total <= 16) nTreasure = 4;
+    else if (total <= 22) nTreasure = 5;
+    else                  nTreasure = 6;
+
+    // Pattern: bronze, silver, gold, bronze, silver, bronze
+    const pattern = ['bronze', 'silver', 'gold', 'bronze', 'silver', 'bronze'];
+    const tiers = [];
+    for (let i = 0; i < nTreasure; i++) {
+        tiers.push(pattern[i] || 'bronze');
+    }
+    return tiers;
+}
+
+const TREASURE_META = {
+    bronze: { icon: '📦', label: 'Bronze',  emoji: '🥉' },
+    silver: { icon: '🎁', label: 'Silver',  emoji: '🥈' },
+    gold:   { icon: '👑', label: 'Gold',    emoji: '🥇' }
+};
+
+
+// ================================================================
 //  CARD BOARD GENERATION
 // ================================================================
 function generateCardBoard() {
@@ -630,17 +609,26 @@ function generateCardBoard() {
     gameState.completedCount = 0;
     gameState.cards = [];
 
-    // Assign special / bonus cards
+    // Assign special (double-point) cards
     gameState.specialCards.clear();
-    gameState.bonusCards.clear();
+    gameState.treasureCards.clear();
 
     const indices  = Array.from({ length: total }, (_, i) => i);
     const shuffled = [...indices].sort(() => Math.random() - 0.5);
 
     const nSpecial = Math.max(1, Math.floor(total * 0.15));
-    const nBonus   = Math.max(1, Math.floor(total * 0.12));
     shuffled.slice(0, nSpecial).forEach(i => gameState.specialCards.add(i));
-    shuffled.slice(nSpecial, nSpecial + nBonus).forEach(i => gameState.bonusCards.add(i));
+
+    // Assign treasure cards (non-overlapping with special)
+    const availableForTreasure = shuffled.filter(i => !gameState.specialCards.has(i));
+    const tierList = getTreasureDistribution(total);
+    const actualTreasureCount = Math.min(tierList.length, availableForTreasure.length);
+
+    // Shuffle tier assignments so positions are random
+    const shuffledTiers = [...tierList].sort(() => Math.random() - 0.5);
+    for (let i = 0; i < actualTreasureCount; i++) {
+        gameState.treasureCards.set(availableForTreasure[i], shuffledTiers[i]);
+    }
 
     // Grid columns
     let cols = 5;
@@ -654,8 +642,9 @@ function generateCardBoard() {
 
     // Create cards
     for (let i = 0; i < total; i++) {
-        const isSpecial = gameState.specialCards.has(i);
-        const isBonus   = gameState.bonusCards.has(i);
+        const isSpecial    = gameState.specialCards.has(i);
+        const treasureTier = gameState.treasureCards.get(i) || null;
+        const isTreasure   = !!treasureTier;
 
         const card = document.createElement('div');
         card.className = 'flip-card';
@@ -663,17 +652,26 @@ function generateCardBoard() {
         card.style.animationDelay = `${i * 0.06}s`;
 
         if (isSpecial) card.classList.add('card-special');
-        if (isBonus)   card.classList.add('card-bonus');
+        if (isTreasure) card.classList.add(`card-treasure-${treasureTier}`);
 
+        // Card icon
         let icon = '❓';
-        if (isSpecial) icon = '⚡';
-        else if (isBonus) icon = '🎁';
+        if (isSpecial) {
+            icon = '⚡';
+        } else if (treasureTier === 'gold') {
+            icon = '👑';
+        } else if (treasureTier === 'silver') {
+            icon = '🎁';
+        } else if (treasureTier === 'bronze') {
+            icon = '📦';
+        }
 
         card.innerHTML = `
             <div class="flip-card-inner">
                 <div class="flip-card-front">
                     <span class="card-number">${i + 1}</span>
                     <span class="card-icon">${icon}</span>
+                    ${isTreasure ? `<span class="card-tier-label tier-${treasureTier}">${TREASURE_META[treasureTier].label}</span>` : ''}
                 </div>
                 <div class="flip-card-back">
                     <span class="card-result-icon"></span>
@@ -702,19 +700,21 @@ function generateCardBoard() {
 //  INIT / RESET GAME
 // ================================================================
 function initGame() {
-    gameState.currentQuestion = -1;
-    gameState.currentPlayer   = 1;
-    gameState.scores          = [0, 0];
-    gameState.streaks         = [0, 0];
-    gameState.bestStreaks      = [0, 0];
-    gameState.correctCounts   = [0, 0];
-    gameState.totalAnswered   = [0, 0];
-    gameState.fastestAnswer   = [Infinity, Infinity];
-    gameState.timeoutCounts   = [0, 0];
-    gameState.selectedAnswer  = null;
-    gameState.answered        = false;
-    gameState.canPickTreasure = false;
-    gameState.treasurePicked  = false;
+    gameState.currentQuestion    = -1;
+    gameState.currentPlayer      = 1;
+    gameState.scores             = [0, 0];
+    gameState.streaks            = [0, 0];
+    gameState.bestStreaks         = [0, 0];
+    gameState.correctCounts      = [0, 0];
+    gameState.totalAnswered      = [0, 0];
+    gameState.fastestAnswer      = [Infinity, Infinity];
+    gameState.timeoutCounts      = [0, 0];
+    gameState.selectedAnswer     = null;
+    gameState.answered           = false;
+    gameState.canPickTreasure    = false;
+    gameState.treasurePicked     = false;
+    gameState.treasuresCollected = [0, 0];
+    gameState.currentTreasureTier = null;
 
     hideQuestionOverlay();
     hideTreasureOverlay();
@@ -747,20 +747,19 @@ function onCardClick(idx) {
 
 
 // ================================================================
-//  QUESTION OVERLAY  (uses renderMath)
+//  QUESTION OVERLAY
 // ================================================================
 function showQuestion(idx) {
     const q = gameState.questions[idx];
     if (!q) return;
 
-    // Reset state
     gameState.selectedAnswer = null;
     gameState.answered       = false;
 
-    // Points
-    let pts     = q.points || 10;
-    const isDbl = gameState.specialCards.has(idx);
-    const isBns = gameState.bonusCards.has(idx);
+    let pts          = q.points || 10;
+    const isDbl      = gameState.specialCards.has(idx);
+    const treasureTier = gameState.treasureCards.get(idx) || null;
+    const isTreasure = !!treasureTier;
     if (isDbl) pts *= 2;
 
     // Player indicator
@@ -776,13 +775,19 @@ function showQuestion(idx) {
     const sp = document.getElementById('q-special');
     sp.textContent = '';
     sp.className   = 'q-special-badge';
-    if (isDbl)      { sp.textContent = '⚡ DOUBLE'; sp.classList.add('double'); }
-    else if (isBns) { sp.textContent = '🎁 TREASURE'; }
+    if (isDbl) {
+        sp.textContent = '⚡ DOUBLE';
+        sp.classList.add('double');
+    } else if (isTreasure) {
+        const meta = TREASURE_META[treasureTier];
+        sp.textContent = `${meta.icon} ${meta.label.toUpperCase()} TREASURE`;
+        sp.classList.add('treasure', `treasure-${treasureTier}`);
+    }
 
-    // Question text — RENDER MATH
+    // Question text
     document.getElementById('question-text').innerHTML = renderMath(q.question || 'Question');
 
-    // Options — RENDER MATH
+    // Options
     const optBox = document.getElementById('options-container');
     optBox.innerHTML = '';
     (q.options || []).forEach((o, i) => {
@@ -794,23 +799,21 @@ function showQuestion(idx) {
         optBox.appendChild(btn);
     });
 
-    // Buttons
+    // Submit button
     const sub = document.getElementById('submit-answer');
     sub.disabled  = true;
     sub.classList.remove('hidden');
     sub.innerHTML = '<i class="fas fa-lock"></i><span>Lock In Answer</span>';
 
-    // Clear result banner
+    // Clear result
     const banner = document.getElementById('q-result-banner');
     banner.className = 'q-result-banner';
     banner.innerHTML = '';
 
-    // Clear explanation
     const exp = document.getElementById('q-explanation');
     exp.className = 'q-explanation';
     exp.innerHTML = '';
 
-    // Hide next button
     const nxt = document.getElementById('next-btn');
     nxt.classList.remove('show');
     nxt.style.display = 'none';
@@ -818,7 +821,7 @@ function showQuestion(idx) {
     // Show overlay
     document.getElementById('question-overlay').classList.add('show');
 
-    // Start timer
+    // Timer
     gameState.answerStartTime = Date.now();
     startTimer(q.time || 150);
 }
@@ -849,7 +852,7 @@ function selectOption(i) {
 
 
 // ================================================================
-//  SUBMIT ANSWER  (CORE GAME LOGIC)
+//  SUBMIT ANSWER
 // ================================================================
 function submitAnswer() {
     if (gameState.answered || gameState.selectedAnswer === null) return;
@@ -857,17 +860,17 @@ function submitAnswer() {
     gameState.answered = true;
     stopTimer();
 
-    const idx       = gameState.currentQuestion;
-    const q         = gameState.questions[idx];
-    const correct   = gameState.selectedAnswer === q.correct;
-    const pi        = gameState.currentPlayer - 1;
-    const isDbl     = gameState.specialCards.has(idx);
-    const isBns     = gameState.bonusCards.has(idx);
-    const timeTaken = (Date.now() - gameState.answerStartTime) / 1000;
+    const idx          = gameState.currentQuestion;
+    const q            = gameState.questions[idx];
+    const correct      = gameState.selectedAnswer === q.correct;
+    const pi           = gameState.currentPlayer - 1;
+    const isDbl        = gameState.specialCards.has(idx);
+    const treasureTier = gameState.treasureCards.get(idx) || null;
+    const isTreasure   = !!treasureTier;
+    const timeTaken    = (Date.now() - gameState.answerStartTime) / 1000;
 
     gameState.totalAnswered[pi]++;
 
-    // Hide submit button
     document.getElementById('submit-answer').classList.add('hidden');
 
     const cardData = gameState.cards[idx];
@@ -875,23 +878,19 @@ function submitAnswer() {
 
     // ===================== CORRECT =====================
     if (correct) {
-        // Lock & highlight — show correct answer
         document.querySelectorAll('.q-option').forEach((o, i) => {
             o.classList.add('locked');
             if (i === q.correct)  o.classList.add('correct');
             else                  o.classList.add('dimmed');
         });
 
-        // Fastest
         if (timeTaken < gameState.fastestAnswer[pi]) gameState.fastestAnswer[pi] = timeTaken;
 
-        // Streak
         gameState.streaks[pi]++;
         const streak = gameState.streaks[pi];
         if (streak > gameState.bestStreaks[pi]) gameState.bestStreaks[pi] = streak;
         gameState.correctCounts[pi]++;
 
-        // Points
         let basePts    = q.points || 10;
         let multiplier = isDbl ? 2 : 1;
         if (streak >= 5)      multiplier += 1;
@@ -899,11 +898,9 @@ function submitAnswer() {
         const totalPts = Math.round(basePts * multiplier);
         gameState.scores[pi] += totalPts;
 
-        // Audio
         sound.play('correct');
         if (streak >= 3) sound.play('streak');
 
-        // Card back
         cardData.element.classList.add('result-correct', 'completed', `owner-p${gameState.currentPlayer}`);
         cardData.element.querySelector('.card-result-icon').textContent  = '✅';
         cardData.element.querySelector('.card-result-label').textContent = `+${totalPts}`;
@@ -912,16 +909,13 @@ function submitAnswer() {
         cardData.owner     = gameState.currentPlayer;
         gameState.completedCount++;
 
-        // Confetti
         const cr = cardData.element.getBoundingClientRect();
         confetti.burst(cr.left + cr.width / 2, cr.top + cr.height / 2, 25);
 
-        // Floating popup
         const sbRect = document.getElementById(`sb-p${gameState.currentPlayer}`).getBoundingClientRect();
         showScorePopup(`+${totalPts}`, sbRect.left + sbRect.width / 2, sbRect.top, 'positive');
         if (streak >= 3) showScorePopup(`🔥 ${streak}x Streak!`, sbRect.left + sbRect.width / 2, sbRect.top - 35, 'bonus');
 
-        // Score pulse & glow
         pulseScore(gameState.currentPlayer, 'up');
         glowPlayer(gameState.currentPlayer);
 
@@ -929,7 +923,6 @@ function submitAnswer() {
         updateStreaks();
         updateCardsRemaining();
 
-        // Result banner
         let bannerHTML = `<div>✅ Correct! +${totalPts} points</div>`;
         if (multiplier > 1) {
             const reasons = [];
@@ -937,28 +930,30 @@ function submitAnswer() {
             if (streak >= 3) reasons.push(`🔥 ${streak}x streak bonus`);
             bannerHTML += `<div class="result-sub">${reasons.join(' · ')}</div>`;
         }
+        if (isTreasure) {
+            const meta = TREASURE_META[treasureTier];
+            bannerHTML += `<div class="result-sub">${meta.icon} ${meta.label} Treasure unlocked!</div>`;
+        }
         banner.className = 'q-result-banner correct-banner show';
         banner.innerHTML  = bannerHTML;
 
-        // Explanation — RENDER MATH (only on correct)
         if (q.explanation) {
             const exp = document.getElementById('q-explanation');
             exp.innerHTML = `<strong>Explanation:</strong> ${renderMath(q.explanation)}`;
             exp.className = 'q-explanation correct-exp show';
         }
 
-        // Next action
-        if (isBns) {
+        // Treasure or normal continue
+        if (isTreasure) {
             gameState.canPickTreasure = true;
             gameState.treasurePicked  = false;
-            buildNextButton('treasure');
+            buildNextButton('treasure', treasureTier);
         } else {
             buildNextButton('correct');
         }
 
     // ===================== INCORRECT =====================
     } else {
-        // Lock — do NOT reveal correct answer
         document.querySelectorAll('.q-option').forEach((o, i) => {
             o.classList.add('locked');
             if (i === gameState.selectedAnswer) {
@@ -968,17 +963,14 @@ function submitAnswer() {
             }
         });
 
-        // Reset streak
         gameState.streaks[pi] = 0;
 
-        // Audio + shake
         sound.play('incorrect');
 
         const gs = document.getElementById('game-screen');
         gs.classList.add('screen-shake');
         setTimeout(() => gs.classList.remove('screen-shake'), 450);
 
-        // Card back
         cardData.element.classList.add('result-incorrect', 'failed', 'owner-none', 'shake');
         cardData.element.querySelector('.card-result-icon').textContent  = '❌';
         cardData.element.querySelector('.card-result-label').textContent = 'Miss';
@@ -990,12 +982,14 @@ function submitAnswer() {
         updateStreaks();
         updateCardsRemaining();
 
-        // Result banner — NO answer revealed
+        let wrongBannerHTML = `<div>❌ Wrong Answer!</div>`;
+        wrongBannerHTML += `<div class="result-sub">The correct answer remains hidden. Study and try next time!</div>`;
+        if (isTreasure) {
+            const meta = TREASURE_META[treasureTier];
+            wrongBannerHTML += `<div class="result-sub">${meta.icon} ${meta.label} Treasure lost!</div>`;
+        }
         banner.className = 'q-result-banner incorrect-banner show';
-        banner.innerHTML  = `
-            <div>❌ Wrong Answer!</div>
-            <div class="result-sub">The correct answer remains hidden. Study and try next time!</div>
-        `;
+        banner.innerHTML  = wrongBannerHTML;
 
         buildNextButton('incorrect');
     }
@@ -1003,7 +997,7 @@ function submitAnswer() {
 
 
 // ================================================================
-//  TIME-UP HANDLER  (card returns to board)
+//  TIME-UP HANDLER
 // ================================================================
 function timeUp() {
     if (gameState.answered) return;
@@ -1019,10 +1013,8 @@ function timeUp() {
 
     sound.play('timeout');
 
-    // Hide submit
     document.getElementById('submit-answer').classList.add('hidden');
 
-    // Lock options without revealing
     document.querySelectorAll('.q-option').forEach(o => {
         o.classList.add('locked', 'wrong-locked');
     });
@@ -1037,7 +1029,6 @@ function timeUp() {
 
     updateStreaks();
 
-    // Result banner
     const banner = document.getElementById('q-result-banner');
     banner.className = 'q-result-banner timeout-banner show';
     banner.innerHTML  = `
@@ -1045,7 +1036,6 @@ function timeUp() {
         <div class="result-sub">The card returns to the board for another attempt</div>
     `;
 
-    // Screen shake
     const gs = document.getElementById('game-screen');
     gs.classList.add('screen-shake');
     setTimeout(() => gs.classList.remove('screen-shake'), 450);
@@ -1055,20 +1045,21 @@ function timeUp() {
 
 
 // ================================================================
-//  NEXT / CONTINUE BUTTON  (always switches player)
+//  NEXT / CONTINUE BUTTON
 // ================================================================
-function buildNextButton(result) {
+function buildNextButton(result, treasureTier = null) {
     const btn     = document.getElementById('next-btn');
     const cardIdx = gameState.currentQuestion;
 
-    // Treasure card
+    // Treasure card — open treasure overlay
     if (result === 'treasure') {
-        btn.innerHTML = '<span>🎁 Open Treasure!</span><i class="fas fa-gift"></i>';
+        const meta = TREASURE_META[treasureTier] || TREASURE_META.bronze;
+        btn.innerHTML = `<span>${meta.icon} Open ${meta.label} Treasure!</span><i class="fas fa-gift"></i>`;
         btn.classList.add('show');
         btn.style.display = 'flex';
         btn.onclick = () => {
             hideQuestionOverlay();
-            setTimeout(showTreasureOverlay, 200);
+            setTimeout(() => showTreasureOverlay(treasureTier), 200);
         };
         return;
     }
@@ -1081,7 +1072,6 @@ function buildNextButton(result) {
     btn.onclick = () => {
         hideQuestionOverlay();
 
-        // ALWAYS switch player
         gameState.currentPlayer = gameState.currentPlayer === 1 ? 2 : 1;
         updatePlayerTurn();
 
@@ -1110,7 +1100,6 @@ function buildNextButton(result) {
             }, 300);
         }
 
-        // Check game end
         if (gameState.completedCount >= gameState.totalCards) {
             setTimeout(endGame, 500);
         }
@@ -1162,7 +1151,7 @@ function renderTimer() {
 
 
 // ================================================================
-//  SCORES · STREAKS · TURN · CARDS
+//  SCORES · STREAKS · TURN · CARDS · TREASURES
 // ================================================================
 function updateScores() {
     document.getElementById('score1').textContent = gameState.scores[0];
@@ -1189,6 +1178,24 @@ function updatePlayerTurn() {
 function updateCardsRemaining() {
     document.getElementById('cards-remaining').textContent =
         gameState.totalCards - gameState.completedCount;
+    updateTreasuresRemaining();
+}
+
+function updateTreasuresRemaining() {
+    let remaining = 0;
+    gameState.treasureCards.forEach((tier, idx) => {
+        const card = gameState.cards[idx];
+        if (card && !card.completed) remaining++;
+    });
+    gameState.treasuresRemaining = remaining;
+
+    const countEl     = document.getElementById('treasures-remaining');
+    const countMiniEl = document.getElementById('treasures-remaining-mini');
+    const containerEl = document.getElementById('treasure-count-display');
+
+    if (countEl)     countEl.textContent = remaining;
+    if (countMiniEl) countMiniEl.textContent = remaining;
+    if (containerEl) containerEl.classList.toggle('empty', remaining === 0);
 }
 
 function pulseScore(player, dir) {
@@ -1207,37 +1214,80 @@ function glowPlayer(player) {
 
 
 // ================================================================
-//  TREASURE SYSTEM
+//  TREASURE SYSTEM — TIERED REWARDS
 // ================================================================
-const TREASURES = [
-    { icon: '⭐', name: 'Bonus +5',    pts: 5,  cls: 'positive' },
-    { icon: '🌟', name: 'Bonus +10',   pts: 10, cls: 'positive' },
-    { icon: '💎', name: 'Bonus +15',   pts: 15, cls: 'positive' },
-    { icon: '🎯', name: 'Bonus +20',   pts: 20, cls: 'positive' },
-    { icon: '🍀', name: 'Lucky +8',    pts: 8,  cls: 'positive' },
-    { icon: '🔄', name: 'Swap Scores', pts: 0,  cls: 'tricky',  action: 'swap' },
-    { icon: '🛡️', name: 'Shield',      pts: 0,  cls: 'neutral', action: 'shield' },
-    { icon: '⚡', name: 'Double Next',  pts: 0,  cls: 'positive', action: 'doubleNext' }
-];
+const TREASURES = {
+    bronze: [
+        { icon: '⭐', name: 'Bonus +3',    pts: 3,  cls: 'positive' },
+        { icon: '⭐', name: 'Bonus +5',    pts: 5,  cls: 'positive' },
+        { icon: '🍀', name: 'Lucky +5',    pts: 5,  cls: 'positive' },
+        { icon: '🎯', name: 'Bonus +8',    pts: 8,  cls: 'positive' },
+        { icon: '🛡️', name: 'Shield',      pts: 0,  cls: 'neutral', action: 'shield' }
+    ],
+    silver: [
+        { icon: '🌟', name: 'Bonus +10',   pts: 10, cls: 'positive' },
+        { icon: '💎', name: 'Bonus +12',   pts: 12, cls: 'positive' },
+        { icon: '🌟', name: 'Bonus +15',   pts: 15, cls: 'positive' },
+        { icon: '🔄', name: 'Swap Scores', pts: 0,  cls: 'tricky',  action: 'swap' },
+        { icon: '⚡', name: 'Double Next',  pts: 0,  cls: 'positive', action: 'doubleNext' },
+        { icon: '🛡️', name: 'Shield',      pts: 0,  cls: 'neutral', action: 'shield' }
+    ],
+    gold: [
+        { icon: '💎', name: 'Bonus +20',   pts: 20, cls: 'positive' },
+        { icon: '🎯', name: 'Bonus +25',   pts: 25, cls: 'positive' },
+        { icon: '👑', name: 'Royal +30',   pts: 30, cls: 'positive' },
+        { icon: '🔄', name: 'Swap Scores', pts: 0,  cls: 'tricky',  action: 'swap' },
+        { icon: '⚡', name: 'Double Next',  pts: 0,  cls: 'positive', action: 'doubleNext' },
+        { icon: '💰', name: 'Steal 10',    pts: 10, cls: 'tricky',  action: 'steal' }
+    ]
+};
 
-function showTreasureOverlay() {
+function showTreasureOverlay(tier = 'bronze') {
+    gameState.currentTreasureTier = tier;
+
+    const modal = document.querySelector('.treasure-modal');
+    modal.className = `treasure-modal tier-${tier}`;
+
+    // Tier-specific header
+    const titles = {
+        bronze: { icon: '📦', title: 'Bronze Treasure!', sub: 'A small reward awaits...',     boxIcon: '📦' },
+        silver: { icon: '🎁', title: 'Silver Treasure!', sub: 'A worthy prize inside!',       boxIcon: '🎁' },
+        gold:   { icon: '👑', title: 'Gold Treasure!',   sub: 'A legendary reward awaits!',   boxIcon: '👑' }
+    };
+    const t = titles[tier];
+
+    document.getElementById('treasure-tier-icon').textContent = t.icon;
+    document.getElementById('treasure-title').textContent     = t.title;
+    document.getElementById('treasure-subtitle').textContent  = t.sub;
+
+    const badge = document.getElementById('treasure-tier-badge');
+    badge.textContent = `${TREASURE_META[tier].emoji} ${tier.toUpperCase()} TIER`;
+    badge.className   = `treasure-tier-badge tier-${tier}`;
+
+    // Reset boxes
     document.querySelectorAll('.t-box').forEach(b => {
         b.classList.remove('opened', 'not-chosen');
+        const front = b.querySelector('.t-box-front');
+        if (front) front.textContent = t.boxIcon;
         b.querySelector('.t-box-back').innerHTML = '';
     });
+
     document.getElementById('treasure-result').innerHTML = '';
     const cont = document.getElementById('treasure-continue');
     cont.classList.remove('show');
     cont.style.display = 'none';
 
-    const shuffled = [...TREASURES].sort(() => Math.random() - 0.5);
-    document.querySelectorAll('.t-box').forEach((b, i) => { b._treasure = shuffled[i]; });
+    // Assign rewards from tier pool
+    const pool = [...TREASURES[tier]].sort(() => Math.random() - 0.5);
+    document.querySelectorAll('.t-box').forEach((b, i) => {
+        b._treasure = pool[i % pool.length];
+    });
 
     gameState.canPickTreasure = true;
     gameState.treasurePicked  = false;
 
     document.getElementById('treasure-overlay').classList.add('show');
-    sound.play('treasure');
+    sound.play(tier === 'gold' ? 'treasureGold' : 'treasure');
 }
 
 function hideTreasureOverlay() {
@@ -1248,8 +1298,12 @@ function openTreasureBox(box) {
     if (gameState.treasurePicked || !gameState.canPickTreasure) return;
     gameState.treasurePicked = true;
 
-    const t  = box._treasure;
-    const pi = gameState.currentPlayer - 1;
+    const t    = box._treasure;
+    const pi   = gameState.currentPlayer - 1;
+    const tier = gameState.currentTreasureTier || 'bronze';
+
+    // Track collection
+    gameState.treasuresCollected[pi]++;
 
     box.classList.add('opened');
     box.querySelector('.t-box-back').innerHTML =
@@ -1260,7 +1314,8 @@ function openTreasureBox(box) {
     sound.play('powerup');
 
     let msg = '';
-    if (t.pts > 0) {
+    if (t.pts > 0 && !t.action) {
+        // Pure point reward
         gameState.scores[pi] += t.pts;
         msg = `${t.icon} +${t.pts} bonus points!`;
         const r = document.getElementById(`sb-p${gameState.currentPlayer}`).getBoundingClientRect();
@@ -1273,12 +1328,25 @@ function openTreasureBox(box) {
         msg = '🛡️ Shield active — next wrong answer forgiven!';
     } else if (t.action === 'doubleNext') {
         msg = '⚡ Next correct answer = 2x points!';
+    } else if (t.action === 'steal') {
+        const opponent = gameState.currentPlayer === 1 ? 1 : 0;
+        const stolen = Math.min(t.pts, gameState.scores[opponent]);
+        gameState.scores[opponent] -= stolen;
+        gameState.scores[pi] += stolen;
+        msg = `💰 Stole ${stolen} points from Player ${opponent + 1}!`;
+        const r = document.getElementById(`sb-p${gameState.currentPlayer}`).getBoundingClientRect();
+        showScorePopup(`+${stolen}`, r.left + r.width / 2, r.top, 'bonus');
+        const r2 = document.getElementById(`sb-p${opponent + 1}`).getBoundingClientRect();
+        showScorePopup(`-${stolen}`, r2.left + r2.width / 2, r2.top, 'negative');
+        pulseScore(gameState.currentPlayer, 'up');
+        pulseScore(opponent + 1, 'down');
     }
 
     updateScores();
 
     const br = box.getBoundingClientRect();
-    confetti.burst(br.left + br.width / 2, br.top + br.height / 2, 28);
+    const burstCount = tier === 'gold' ? 45 : tier === 'silver' ? 35 : 25;
+    confetti.burst(br.left + br.width / 2, br.top + br.height / 2, burstCount);
 
     setTimeout(() => {
         document.getElementById('treasure-result').innerHTML =
@@ -1338,7 +1406,10 @@ function buildStats() {
             <span class="stat-p2">${fast(gameState.fastestAnswer[1])}</span></div>
         <div class="stat-row"><span class="stat-icon">⏰</span><span class="stat-label">Timeouts</span>
             <span class="stat-p1">${gameState.timeoutCounts[0]}</span>
-            <span class="stat-p2">${gameState.timeoutCounts[1]}</span></div>`;
+            <span class="stat-p2">${gameState.timeoutCounts[1]}</span></div>
+        <div class="stat-row"><span class="stat-icon">🎁</span><span class="stat-label">Treasures</span>
+            <span class="stat-p1">${gameState.treasuresCollected[0]}</span>
+            <span class="stat-p2">${gameState.treasuresCollected[1]}</span></div>`;
 }
 
 function hideGameOver() { document.getElementById('game-over').classList.remove('show'); }
@@ -1348,7 +1419,7 @@ function hideGameOver() { document.getElementById('game-over').classList.remove(
 //  MASTER INITIALISATION
 // ================================================================
 document.addEventListener('DOMContentLoaded', async () => {
-    console.log('🃏 Quiz Flip — Card Battle Game');
+    console.log('🃏 Quiz Flip — Card Battle Game (Multi-Treasure Edition)');
 
     confetti = new ConfettiEngine('confetti-canvas');
 
@@ -1406,6 +1477,7 @@ document.addEventListener('DOMContentLoaded', async () => {
         hideTreasureOverlay();
         gameState.currentPlayer = gameState.currentPlayer === 1 ? 2 : 1;
         updatePlayerTurn();
+        updateCardsRemaining();
         if (gameState.completedCount >= gameState.totalCards) setTimeout(endGame, 500);
     });
 
@@ -1432,9 +1504,9 @@ document.addEventListener('DOMContentLoaded', async () => {
         }
     });
 
-    console.log('✅ Ready — add quiz JSON files to Questions/ folder');
-    console.log('📋 Rules: Correct = keep card | Wrong = card lost, answer hidden | Timeout = card returns');
-    console.log('📐 Math: Use ^2 for superscript, √(x) for sqrt, ∛(x) for cbrt, n/d for fractions');
+    console.log('✅ Ready — Multi-Treasure System Active');
+    console.log('📦 Bronze | 🎁 Silver | 👑 Gold treasures');
+    console.log('📋 Rules: Correct = keep card | Wrong = card lost | Timeout = card returns');
 });
 
 
@@ -1463,14 +1535,28 @@ window.quizTools = {
         console.log('Test quiz added');
     },
 
-    showState: () => console.log(JSON.parse(JSON.stringify(gameState))),
+    showState: () => console.log(JSON.parse(JSON.stringify(gameState, (key, val) => {
+        if (val instanceof Map) return Object.fromEntries(val);
+        if (val instanceof Set) return [...val];
+        return val;
+    }))),
 
-    // Test the math renderer in console
+    showTreasures: () => {
+        console.log('🗺️ Treasure Map:');
+        gameState.treasureCards.forEach((tier, idx) => {
+            const meta = TREASURE_META[tier];
+            const card = gameState.cards[idx];
+            const status = card?.completed ? (card.result === 'correct' ? '✅ collected' : '❌ lost') : '⏳ available';
+            console.log(`  Card ${idx + 1}: ${meta.icon} ${meta.label} — ${status}`);
+        });
+        console.log(`  Remaining: ${gameState.treasuresRemaining}`);
+        console.log(`  Collected: P1=${gameState.treasuresCollected[0]} P2=${gameState.treasuresCollected[1]}`);
+    },
+
     testMath: (text) => {
         const result = renderMath(text);
         console.log('Input: ', text);
         console.log('Output:', result);
-        // Also render in a temporary popup
         const div = document.createElement('div');
         div.style.cssText = 'position:fixed;top:20px;left:50%;transform:translateX(-50%);background:#1e293b;color:#f1f5f9;padding:30px;border-radius:16px;z-index:99999;font-size:1.5rem;border:2px solid #667eea;box-shadow:0 20px 60px rgba(0,0,0,0.5);min-width:300px;text-align:center;';
         div.innerHTML = `<div style="font-size:0.7rem;color:#94a3b8;margin-bottom:10px;">MATH RENDER TEST</div>${result}<div style="font-size:0.7rem;color:#64748b;margin-top:15px;cursor:pointer;" onclick="this.parentElement.remove()">Click to close</div>`;

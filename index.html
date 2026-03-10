@@ -150,6 +150,10 @@
                 <div class="sb-center">
                     <div class="sb-quiz-title" id="quiz-title">Quiz Title</div>
                     <div class="sb-quiz-topic" id="quiz-topic">Subject · Grade</div>
+                    <div class="sb-treasure-count" id="treasure-count-display">
+                        <i class="fas fa-gem"></i>
+                        <span id="treasures-remaining">0</span> treasures
+                    </div>
                 </div>
 
                 <div class="sb-player sb-p2" id="sb-p2">
@@ -173,6 +177,9 @@
                 <span class="turn-avatar" id="turn-avatar">😎</span>
                 <span class="turn-text" id="turn-text">Player 1's Turn — Pick a card!</span>
                 <div class="turn-cards-left">
+                    <i class="fas fa-gem treasure-icon-mini"></i>
+                    <span id="treasures-remaining-mini">0</span>
+                    &nbsp;
                     <i class="fas fa-clone"></i>
                     <span id="cards-remaining">0</span> left
                 </div>
@@ -182,6 +189,7 @@
                 <span class="rule-chip correct-rule">✅ Correct = Keep card + Points</span>
                 <span class="rule-chip wrong-rule">❌ Wrong = Lose card, answer hidden</span>
                 <span class="rule-chip timeout-rule">⏰ Timeout = Card returns</span>
+                <span class="rule-chip treasure-rule">🎁 Treasure = Bonus rewards!</span>
             </div>
 
             <div class="card-board" id="card-board"></div>
@@ -236,13 +244,14 @@
                 <div class="treasure-modal">
                     <div class="treasure-header">
                         <span class="treasure-sparkle">✨</span>
-                        <span class="treasure-gift">🎁</span>
+                        <span class="treasure-gift" id="treasure-tier-icon">🎁</span>
                         <span class="treasure-sparkle">✨</span>
                     </div>
-                    <h3 class="treasure-title">Choose a Treasure Box!</h3>
-                    <p class="treasure-subtitle">You earned a reward!</p>
+                    <h3 class="treasure-title" id="treasure-title">Choose a Treasure Box!</h3>
+                    <p class="treasure-subtitle" id="treasure-subtitle">You earned a reward!</p>
+                    <div class="treasure-tier-badge" id="treasure-tier-badge"></div>
 
-                    <div class="treasure-grid">
+                    <div class="treasure-grid" id="treasure-grid">
                         <div class="t-box" data-box="0">
                             <div class="t-box-inner">
                                 <div class="t-box-front">🎁</div>
