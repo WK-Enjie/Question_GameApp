@@ -574,14 +574,14 @@ async function submitPin() {
 // ================================================================
 function getTreasureDistribution(total) {
     let nTreasure;
-    if (total <= 3)       nTreasure = 1;
-    else if (total <= 5)  nTreasure = 2;
-    else if (total <= 7)  nTreasure = 3;
-    else if (total <= 10) nTreasure = 4;
-    else if (total <= 14) nTreasure = 5;
-    else if (total <= 18) nTreasure = 6;
-    else if (total <= 24) nTreasure = 7;
-    else                  nTreasure = 8;
+    if (total <= 3)       nTreasure = 2;
+    else if (total <= 5)  nTreasure = 3;
+    else if (total <= 7)  nTreasure = 4;
+    else if (total <= 10) nTreasure = 5;
+    else if (total <= 14) nTreasure = 7;
+    else if (total <= 18) nTreasure = 9;
+    else if (total <= 24) nTreasure = 12;
+    else                  nTreasure = 15;
 
     // Mix of tiers — more bronze, fewer gold
     const pattern = [
