@@ -1,0 +1,156 @@
+{
+  "title": "Current Electricity - Basic Concepts and Formulas",
+  "topic": "Electric Charge, Current, Potential Difference and Resistance",
+  "subject": "Combined Physics",
+  "level": "Upper Secondary",
+  "grade": "Sec 3",
+  "chapter": 12,
+  "worksheet": 1,
+  "questions": [
+    {
+      "question": "What is the unit of electric current?",
+      "options": ["Volt (V)", "Ampere (A)", "Coulomb (C)", "Ohm (Ω)"],
+      "correct": 1,
+      "points": 10,
+      "explanation": "Electric current is measured in amperes (A). One ampere is one coulomb of charge flowing per second."
+    },
+    {
+      "question": "What is the unit of electric charge?",
+      "options": ["Volt (V)", "Ampere (A)", "Coulomb (C)", "Joule (J)"],
+      "correct": 2,
+      "points": 10,
+      "explanation": "Electric charge is measured in coulombs (C)."
+    },
+    {
+      "question": "Which formula relates charge (Q), current (I) and time (t)?",
+      "options": ["Q = I/t", "Q = It", "Q = I + t", "Q = I - t"],
+      "correct": 1,
+      "points": 10,
+      "explanation": "Charge = Current × Time, or Q = It. This means charge flowing is the rate of flow (current) multiplied by the duration."
+    },
+    {
+      "question": "A current of 2 A flows for 5 s. How much charge passes?",
+      "options": ["2.5 C", "10 C", "7 C", "0.4 C"],
+      "correct": 1,
+      "points": 12,
+      "explanation": "Q = It = 2 A × 5 s = 10 C."
+    },
+    {
+      "question": "If 30 C of charge passes in 10 s, what is the current?",
+      "options": ["3 A", "300 A", "0.33 A", "20 A"],
+      "correct": 0,
+      "points": 12,
+      "explanation": "I = Q/t = 30 C / 10 s = 3 A."
+    },
+    {
+      "question": "What is the unit of potential difference (voltage)?",
+      "options": ["Ampere (A)", "Coulomb (C)", "Volt (V)", "Ohm (Ω)"],
+      "correct": 2,
+      "points": 10,
+      "explanation": "Potential difference is measured in volts (V). One volt is one joule of energy transferred per coulomb of charge."
+    },
+    {
+      "question": "Which formula defines potential difference (V) in terms of work (W) and charge (Q)?",
+      "options": ["V = WQ", "V = W/Q", "V = Q/W", "V = W + Q"],
+      "correct": 1,
+      "points": 10,
+      "explanation": "Potential difference = Work done per unit charge, or V = W/Q."
+    },
+    {
+      "question": "If 12 J of work is done to move 3 C of charge, what is the potential difference?",
+      "options": ["4 V", "36 V", "0.25 V", "9 V"],
+      "correct": 0,
+      "points": 12,
+      "explanation": "V = W/Q = 12 J / 3 C = 4 V."
+    },
+    {
+      "question": "A 9 V battery does 18 J of work. How much charge flows?",
+      "options": ["2 C", "162 C", "0.5 C", "27 C"],
+      "correct": 0,
+      "points": 12,
+      "explanation": "Q = W/V = 18 J / 9 V = 2 C."
+    },
+    {
+      "question": "What is the unit of electrical resistance?",
+      "options": ["Volt (V)", "Ampere (A)", "Ohm (Ω)", "Coulomb (C)"],
+      "correct": 2,
+      "points": 10,
+      "explanation": "Resistance is measured in ohms (Ω)."
+    },
+    {
+      "question": "Which formula relates voltage (V), current (I) and resistance (R)?",
+      "options": ["V = I/R", "V = IR", "V = I + R", "V = I - R"],
+      "correct": 1,
+      "points": 10,
+      "explanation": "Ohm's Law: Voltage = Current × Resistance, or V = IR."
+    },
+    {
+      "question": "A resistor has 6 V across it and 2 A flowing through it. What is its resistance?",
+      "options": ["3 Ω", "12 Ω", "0.33 Ω", "4 Ω"],
+      "correct": 0,
+      "points": 12,
+      "explanation": "R = V/I = 6 V / 2 A = 3 Ω."
+    },
+    {
+      "question": "A 10 Ω resistor has 5 A flowing through it. What is the voltage across it?",
+      "options": ["2 V", "50 V", "0.5 V", "15 V"],
+      "correct": 1,
+      "points": 12,
+      "explanation": "V = IR = 5 A × 10 Ω = 50 V."
+    },
+    {
+      "question": "A 12 V battery is connected to a 4 Ω resistor. What is the current?",
+      "options": ["3 A", "48 A", "0.33 A", "8 A"],
+      "correct": 0,
+      "points": 12,
+      "explanation": "I = V/R = 12 V / 4 Ω = 3 A."
+    },
+    {
+      "question": "Which statement about conventional current is correct?",
+      "options": [
+        "It flows from negative to positive terminal",
+        "It flows from positive to negative terminal",
+        "It is the flow of protons",
+        "It is the same as electron flow"
+      ],
+      "correct": 1,
+      "points": 10,
+      "explanation": "Conventional current is defined as flowing from the positive terminal to the negative terminal of a power source. Electron flow is in the opposite direction."
+    },
+    {
+      "question": "What happens to the resistance of a wire if its length is doubled (same material, same thickness)?",
+      "options": ["Halved", "Doubled", "Unchanged", "Quadrupled"],
+      "correct": 1,
+      "points": 12,
+      "explanation": "Resistance is directly proportional to length. Doubling the length doubles the resistance."
+    },
+    {
+      "question": "What happens to the resistance of a wire if its cross-sectional area is doubled (same material, same length)?",
+      "options": ["Halved", "Doubled", "Unchanged", "Quadrupled"],
+      "correct": 0,
+      "points": 12,
+      "explanation": "Resistance is inversely proportional to cross-sectional area. Doubling the area halves the resistance."
+    },
+    {
+      "question": "A charge of 60 C passes through a lamp in 2 minutes. What is the current?",
+      "options": ["0.5 A", "30 A", "120 A", "2 A"],
+      "correct": 0,
+      "points": 12,
+      "explanation": "First convert time: 2 min = 120 s. Then I = Q/t = 60 C / 120 s = 0.5 A."
+    },
+    {
+      "question": "A potential difference of 24 V causes 8 C of charge to flow. How much work is done?",
+      "options": ["3 J", "192 J", "0.33 J", "16 J"],
+      "correct": 1,
+      "points": 12,
+      "explanation": "W = VQ = 24 V × 8 C = 192 J."
+    },
+    {
+      "question": "A current of 0.5 A flows through a resistor for 10 s. How much charge passes?",
+      "options": ["5 C", "0.05 C", "20 C", "10.5 C"],
+      "correct": 0,
+      "points": 12,
+      "explanation": "Q = It = 0.5 A × 10 s = 5 C."
+    }
+  ]
+}

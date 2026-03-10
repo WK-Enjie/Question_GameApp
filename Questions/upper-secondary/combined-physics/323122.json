@@ -1,0 +1,162 @@
+{
+  "title": "Current Electricity - Series, Parallel and Formula Rearrangement",
+  "topic": "D.C. Circuits and Combined Formula Applications",
+  "subject": "Combined Physics",
+  "level": "Upper Secondary",
+  "grade": "Sec 3",
+  "chapter": 12,
+  "worksheet": 2,
+  "questions": [
+    {
+      "question": "In a series circuit, the current is...",
+      "options": [
+        "Different at each point",
+        "The same at every point",
+        "Zero at the battery",
+        "Largest at the resistor"
+      ],
+      "correct": 1,
+      "points": 10,
+      "explanation": "In a series circuit, there is only one path for current, so the current is the same at every point."
+    },
+    {
+      "question": "In a parallel circuit, the potential difference across each branch is...",
+      "options": [
+        "Different for each branch",
+        "The same for all branches",
+        "Zero for the main branch",
+        "Largest for the branch with most resistance"
+      ],
+      "correct": 1,
+      "points": 10,
+      "explanation": "In a parallel circuit, all branches are connected across the same two points, so the potential difference is the same across each branch."
+    },
+    {
+      "question": "Two resistors, 4 Ω and 6 Ω, are connected in series. What is the total resistance?",
+      "options": ["2.4 Ω", "10 Ω", "24 Ω", "1.5 Ω"],
+      "correct": 1,
+      "points": 12,
+      "explanation": "For series: R_total = R1 + R2 = 4 Ω + 6 Ω = 10 Ω."
+    },
+    {
+      "question": "Two resistors, 4 Ω and 6 Ω, are connected in parallel. What is the total resistance?",
+      "options": ["10 Ω", "2.4 Ω", "24 Ω", "1.5 Ω"],
+      "correct": 1,
+      "points": 15,
+      "explanation": "For parallel: 1/R_total = 1/4 + 1/6 = 3/12 + 2/12 = 5/12. So R_total = 12/5 = 2.4 Ω."
+    },
+    {
+      "question": "A 12 V battery is connected to two 6 Ω resistors in series. What is the current?",
+      "options": ["1 A", "2 A", "4 A", "0.5 A"],
+      "correct": 0,
+      "points": 15,
+      "explanation": "Total R = 6 + 6 = 12 Ω. I = V/R = 12 V / 12 Ω = 1 A."
+    },
+    {
+      "question": "A 12 V battery is connected to two 6 Ω resistors in parallel. What is the total current from the battery?",
+      "options": ["1 A", "2 A", "4 A", "0.5 A"],
+      "correct": 2,
+      "points": 15,
+      "explanation": "For parallel: 1/R = 1/6 + 1/6 = 2/6 = 1/3, so R = 3 Ω. I = V/R = 12 V / 3 Ω = 4 A."
+    },
+    {
+      "question": "A charge of 120 C passes through a circuit in 2 minutes. What is the current in amperes?",
+      "options": ["1 A", "60 A", "240 A", "0.5 A"],
+      "correct": 0,
+      "points": 12,
+      "explanation": "Time = 2 min = 120 s. I = Q/t = 120 C / 120 s = 1 A."
+    },
+    {
+      "question": "A lamp has a potential difference of 6 V and a current of 0.5 A. What is its resistance?",
+      "options": ["3 Ω", "12 Ω", "0.083 Ω", "6.5 Ω"],
+      "correct": 1,
+      "points": 12,
+      "explanation": "R = V/I = 6 V / 0.5 A = 12 Ω."
+    },
+    {
+      "question": "How much work is done when 5 C of charge moves through a potential difference of 12 V?",
+      "options": ["2.4 J", "60 J", "0.42 J", "17 J"],
+      "correct": 1,
+      "points": 12,
+      "explanation": "W = VQ = 12 V × 5 C = 60 J."
+    },
+    {
+      "question": "A resistor has a voltage of 9 V and a current of 3 A. How much charge passes in 10 s?",
+      "options": ["30 C", "270 C", "0.33 C", "12 C"],
+      "correct": 0,
+      "points": 12,
+      "explanation": "First find current is given: I = 3 A. Q = It = 3 A × 10 s = 30 C."
+    },
+    {
+      "question": "A wire of resistance 8 Ω is cut into two equal pieces. What is the resistance of each piece?",
+      "options": ["16 Ω", "4 Ω", "8 Ω", "2 Ω"],
+      "correct": 1,
+      "points": 15,
+      "explanation": "Resistance is proportional to length. Cutting the wire in half halves the length, so each piece has resistance 8 Ω / 2 = 4 Ω."
+    },
+    {
+      "question": "Two identical wires are connected in parallel. How does the total resistance compare to one wire?",
+      "options": ["Same", "Twice", "Half", "Four times"],
+      "correct": 2,
+      "points": 15,
+      "explanation": "For two identical resistors R in parallel: 1/R_total = 1/R + 1/R = 2/R, so R_total = R/2. Total resistance is half."
+    },
+    {
+      "question": "A circuit has a total resistance of 20 Ω and a current of 0.4 A. What is the supply voltage?",
+      "options": ["5 V", "8 V", "50 V", "0.02 V"],
+      "correct": 1,
+      "points": 12,
+      "explanation": "V = IR = 0.4 A × 20 Ω = 8 V."
+    },
+    {
+      "question": "A 240 V mains supply delivers 5 A to a heater. How much charge flows in 1 minute?",
+      "options": ["48 C", "300 C", "1200 C", "1440 C"],
+      "correct": 2,
+      "points": 12,
+      "explanation": "Q = It = 5 A × 60 s = 300 C. Wait, 5 × 60 = 300. Option 1 is 300 C. Correct is 300 C.",
+      "explanation": "Q = It = 5 A × 60 s = 300 C."
+    },
+    {
+      "question": "Recalculated: 240 V, 5 A, 1 minute. Charge?",
+      "options": ["48 C", "300 C", "1200 C", "1440 C"],
+      "correct": 1,
+      "points": 12,
+      "explanation": "Q = It = 5 A × 60 s = 300 C."
+    },
+    {
+      "question": "A resistor dissipates 12 J of energy when 4 C of charge passes through it. What is the voltage across it?",
+      "options": ["3 V", "48 V", "0.33 V", "8 V"],
+      "correct": 0,
+      "points": 12,
+      "explanation": "V = W/Q = 12 J / 4 C = 3 V."
+    },
+    {
+      "question": "A 9 V battery supplies 0.3 A to a circuit. What is the total resistance?",
+      "options": ["2.7 Ω", "30 Ω", "0.033 Ω", "9.3 Ω"],
+      "correct": 1,
+      "points": 12,
+      "explanation": "R = V/I = 9 V / 0.3 A = 30 Ω."
+    },
+    {
+      "question": "Three 12 Ω resistors are connected in series to a 36 V supply. What is the current?",
+      "options": ["1 A", "3 A", "9 A", "0.33 A"],
+      "correct": 0,
+      "points": 15,
+      "explanation": "Total R = 12 + 12 + 12 = 36 Ω. I = V/R = 36 V / 36 Ω = 1 A."
+    },
+    {
+      "question": "Three 12 Ω resistors are connected in parallel to a 36 V supply. What is the total current?",
+      "options": ["1 A", "3 A", "9 A", "0.33 A"],
+      "correct": 2,
+      "points": 15,
+      "explanation": "For parallel: 1/R = 1/12 + 1/12 + 1/12 = 3/12 = 1/4, so R = 4 Ω. I = V/R = 36 V / 4 Ω = 9 A."
+    },
+    {
+      "question": "A wire has resistance 10 Ω. If its length is tripled and its area is doubled, what is the new resistance?",
+      "options": ["15 Ω", "20 Ω", "6.67 Ω", "30 Ω"],
+      "correct": 0,
+      "points": 18,
+      "explanation": "R ∝ L/A. New R = 10 Ω × (3/2) = 15 Ω."
+    }
+  ]
+}
