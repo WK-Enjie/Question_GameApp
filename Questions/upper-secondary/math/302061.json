@@ -1,0 +1,151 @@
+{
+  "title": "Basic Trigonometry - Right-Angled Triangles",
+  "topic": "Trigonometric Ratios (SOH CAH TOA)",
+  "subject": "Mathematics",
+  "level": "Upper Secondary",
+  "grade": "Sec 3",
+  "chapter": 6,
+  "worksheet": 1,
+  "questions": [
+    {
+      "question": "In a right-angled triangle, which side is opposite the right angle?",
+      "options": ["Adjacent", "Opposite", "Hypotenuse", "Base"],
+      "correct": 2,
+      "points": 10,
+      "explanation": "The hypotenuse is always the longest side and is opposite the right angle (90°)."
+    },
+    {
+      "question": "In triangle ABC, angle B = 90°. Which side is the hypotenuse?",
+      "options": ["AB", "BC", "AC", "None"],
+      "correct": 2,
+      "points": 10,
+      "explanation": "The hypotenuse is opposite the right angle. Since B = 90°, the opposite side is AC."
+    },
+    {
+      "question": "What is the correct formula for sin θ in a right-angled triangle?",
+      "options": ["Adjacent/Hypotenuse", "Opposite/Hypotenuse", "Opposite/Adjacent", "Hypotenuse/Opposite"],
+      "correct": 1,
+      "points": 10,
+      "explanation": "SOH CAH TOA: Sin = Opposite / Hypotenuse."
+    },
+    {
+      "question": "What is the correct formula for cos θ in a right-angled triangle?",
+      "options": ["Adjacent/Hypotenuse", "Opposite/Hypotenuse", "Opposite/Adjacent", "Hypotenuse/Adjacent"],
+      "correct": 0,
+      "points": 10,
+      "explanation": "SOH CAH TOA: Cos = Adjacent / Hypotenuse."
+    },
+    {
+      "question": "What is the correct formula for tan θ in a right-angled triangle?",
+      "options": ["Adjacent/Hypotenuse", "Opposite/Hypotenuse", "Opposite/Adjacent", "Hypotenuse/Opposite"],
+      "correct": 2,
+      "points": 10,
+      "explanation": "SOH CAH TOA: Tan = Opposite / Adjacent."
+    },
+    {
+      "question": "In triangle ABC, angle B = 90°, AB = 3, BC = 4. Find AC.",
+      "options": ["5", "6", "7", "8"],
+      "correct": 0,
+      "points": 12,
+      "explanation": "Using Pythagoras: AC^2 = 3^2 + 4^2 = 9 + 16 = 25. AC = √(25) = 5."
+    },
+    {
+      "question": "Using the triangle above (AB=3, BC=4, AC=5), find sin A.",
+      "options": ["3/5", "4/5", "3/4", "4/3"],
+      "correct": 1,
+      "points": 12,
+      "explanation": "Sin A = Opposite/Hypotenuse = BC/AC = 4/5."
+    },
+    {
+      "question": "Using the same triangle, find cos A.",
+      "options": ["3/5", "4/5", "3/4", "4/3"],
+      "correct": 0,
+      "points": 12,
+      "explanation": "Cos A = Adjacent/Hypotenuse = AB/AC = 3/5."
+    },
+    {
+      "question": "Using the same triangle, find tan A.",
+      "options": ["3/5", "4/5", "3/4", "4/3"],
+      "correct": 3,
+      "points": 12,
+      "explanation": "Tan A = Opposite/Adjacent = BC/AB = 4/3."
+    },
+    {
+      "question": "What is the value of sin 30°?",
+      "options": ["1/2", "√(3)/2", "1", "0"],
+      "correct": 0,
+      "points": 10,
+      "explanation": "Standard trigonometric value: sin 30° = 1/2."
+    },
+    {
+      "question": "What is the value of cos 60°?",
+      "options": ["1/2", "√(3)/2", "1", "0"],
+      "correct": 0,
+      "points": 10,
+      "explanation": "Standard trigonometric value: cos 60° = 1/2."
+    },
+    {
+      "question": "What is the value of tan 45°?",
+      "options": ["1/2", "1", "√(2)", "0"],
+      "correct": 1,
+      "points": 10,
+      "explanation": "Standard trigonometric value: tan 45° = 1."
+    },
+    {
+      "question": "A ladder leans against a wall. The ladder is 10 m long and makes an angle of 30° with the ground. How high up the wall does it reach?",
+      "options": ["5 m", "8.66 m", "10 m", "7.5 m"],
+      "correct": 0,
+      "points": 15,
+      "explanation": "Height = 10 × sin 30° = 10 × 1/2 = 5 m."
+    },
+    {
+      "question": "In a right-angled triangle, if the opposite side is 6 and the hypotenuse is 12, what is the angle θ?",
+      "options": ["30°", "45°", "60°", "90°"],
+      "correct": 0,
+      "points": 15,
+      "explanation": "Sin θ = 6/12 = 1/2. Therefore θ = 30°."
+    },
+    {
+      "question": "Find the value of x if tan x = 1.",
+      "options": ["30°", "45°", "60°", "90°"],
+      "correct": 1,
+      "points": 10,
+      "explanation": "Tan 45° = 1, so x = 45°."
+    },
+    {
+      "question": "In triangle PQR, angle Q = 90°, PQ = 5, QR = 12. Find PR.",
+      "options": ["13", "15", "17", "10"],
+      "correct": 0,
+      "points": 12,
+      "explanation": "PR^2 = 5^2 + 12^2 = 25 + 144 = 169. PR = √(169) = 13."
+    },
+    {
+      "question": "Using the triangle above (PQ=5, QR=12, PR=13), find sin R.",
+      "options": ["5/13", "12/13", "5/12", "12/5"],
+      "correct": 0,
+      "points": 12,
+      "explanation": "Sin R = Opposite/Hypotenuse = PQ/PR = 5/13."
+    },
+    {
+      "question": "Using the same triangle, find cos R.",
+      "options": ["5/13", "12/13", "5/12", "12/5"],
+      "correct": 1,
+      "points": 12,
+      "explanation": "Cos R = Adjacent/Hypotenuse = QR/PR = 12/13."
+    },
+    {
+      "question": "If sin θ = 0.5, what is θ?",
+      "options": ["30°", "45°", "60°", "90°"],
+      "correct": 0,
+      "points": 10,
+      "explanation": "Sin 30° = 0.5."
+    },
+    {
+      "question": "A right-angled triangle has a hypotenuse of 10 cm and an angle of 60°. Find the adjacent side.",
+      "options": ["5 cm", "8.66 cm", "10 cm", "7.5 cm"],
+      "correct": 0,
+      "points": 15,
+      "explanation": "Adjacent = 10 × cos 60° = 10 × 1/2 = 5 cm."
+    }
+  ]
+}
