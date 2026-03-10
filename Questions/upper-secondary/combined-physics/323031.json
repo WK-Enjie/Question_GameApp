@@ -94,14 +94,14 @@
     {
       "question": "A rectangular block measuring 10 cm × 4 cm × 2 cm has a mass of 320 g. What is the maximum pressure it can exert on a horizontal surface? [g = 10 N/kg]",
       "options": [
-        "400 Pa",
+        "4000 Pa",
         "800 Pa",
         "1600 Pa",
         "3200 Pa"
       ],
-      "correct": 2,
+      "correct": 0,
       "points": 20,
-      "explanation": "Maximum pressure occurs on the smallest face: Area = 4 cm × 2 cm = 8 cm² = 0.0008 m². Weight = mg = 0.32 kg × 10 N/kg = 3.2 N. P = F/A = 3.2 N ÷ 0.0008 m² = 4000 Pa. Wait, let me recalculate: 3.2 / 0.0008 = 4000. But 4000 is not an option. Let me check the area: 4 cm × 2 cm = 8 cm² = 8 × 10⁻⁴ m² = 0.0008 m². 3.2 / 0.0008 = 4000 Pa. The options need adjustment. Let me fix: Options should include 4000 Pa. I'll revise the question values for cleaner calculation."
+      "explanation": "Maximum pressure occurs on the smallest face: Area = 4 cm × 2 cm = 8 cm² = 0.0008 m². Weight = mg = 0.32 kg × 10 N/kg = 3.2 N. P = F/A = 3.2 N ÷ 0.0008 m² = 4000 Pa. : 4 cm × 2 cm = 8 cm² = 8 × 10⁻⁴ m² = 0.0008 m². 3.2 / 0.0008 = 4000 Pa."
     },
     {
       "question": "A rectangular block measuring 10 cm × 5 cm × 2 cm has a mass of 500 g. What is the minimum pressure it can exert on a horizontal surface? [g = 10 N/kg]",
@@ -111,9 +111,9 @@
         "500 Pa",
         "1000 Pa"
       ],
-      "correct": 2,
+      "correct": 3,
       "points": 20,
-      "explanation": "Minimum pressure occurs on the largest face: Area = 10 cm × 5 cm = 50 cm² = 0.005 m². Weight = mg = 0.5 kg × 10 N/kg = 5 N. P = F/A = 5 N ÷ 0.005 m² = 1000 Pa. Wait, that's maximum area gives minimum pressure. 5/0.005 = 1000 Pa. Option 3 is 1000 Pa. Correct index should be 3. Let me fix."
+      "explanation": "Minimum pressure occurs on the largest face: Area = 10 cm × 5 cm = 50 cm² = 0.005 m². Weight = mg = 0.5 kg × 10 N/kg = 5 N. P = F/A = 5 N ÷ 0.005 m² = 1000 Pa."
     },
     {
       "question": "Why does a sharp knife cut more easily than a blunt knife?",
@@ -188,4 +188,5 @@
       "explanation": "Volume of cube = side³ = 2 cm × 2 cm × 2 cm = 8 cm³. Using ρ = m/V: Density = 64 g ÷ 8 cm³ = 8 g/cm³."
     }
   ]
+
 }
