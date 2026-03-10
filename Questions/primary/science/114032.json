@@ -1,0 +1,191 @@
+{
+  "title": "Heat Transfer and Conductors",
+  "topic": "Energy Forms and Uses",
+  "subject": "Science",
+  "level": "Primary",
+  "grade": "P4",
+  "chapter": 3,
+  "worksheet": 2,
+  "questions": [
+    {
+      "question": "Why are cooking pots usually made of metal?",
+      "options": [
+        "Metal is colorful",
+        "Metal is a good conductor of heat",
+        "Metal is lightweight",
+        "Metal does not get hot"
+      ],
+      "correct": 1,
+      "points": 10,
+      "explanation": "Metals are good conductors of heat, meaning they allow heat to pass through them quickly from the stove to the food. This allows food to cook evenly and efficiently."
+    },
+    {
+      "question": "Why do oven gloves have thick fabric or rubber coatings?",
+      "options": [
+        "They look nicer",
+        "Fabric and rubber are poor conductors of heat",
+        "They make the gloves heavier",
+        "Fabric and rubber are good conductors of heat"
+      ],
+      "correct": 1,
+      "points": 10,
+      "explanation": "Fabric and rubber are poor conductors (insulators) of heat. They slow down heat transfer from the hot oven to your hands, protecting you from burns. Insulators reduce the rate of heat flow."
+    },
+    {
+      "question": "A metal door knob feels colder than a wooden door in the same room. Why?",
+      "options": [
+        "Metal is actually colder than wood",
+        "Metal conducts heat away from your hand faster than wood",
+        "Wood produces heat",
+        "Metal absorbs cold from the air"
+      ],
+      "correct": 1,
+      "points": 15,
+      "explanation": "Both objects are at room temperature, but metal is a good conductor. When you touch it, heat flows quickly from your hand to the metal, making it feel colder. Wood conducts heat more slowly, so less heat leaves your hand at once."
+    },
+    {
+      "question": "Why are there small gaps between sections of railway tracks?",
+      "options": [
+        "To make the tracks look neat",
+        "To allow for expansion when tracks get hot",
+        "To reduce the cost of materials",
+        "To let water drain through"
+      ],
+      "correct": 1,
+      "points": 15,
+      "explanation": "Metals expand when heated. On hot days, railway tracks can get very hot and expand. The gaps provide space for this expansion, preventing the tracks from bending or buckling. This is an important real-life application of heat expansion."
+    },
+    {
+      "question": "Which material would be BEST for making the handle of a frying pan?",
+      "options": [
+        "Iron",
+        "Copper",
+        "Wood",
+        "Aluminium"
+      ],
+      "correct": 2,
+      "points": 10,
+      "explanation": "Wood is a poor conductor of heat (insulator). A wooden handle stays cool even when the metal pan gets hot, allowing you to hold it safely without burning your hand. Good conductors would transfer heat to your hand too quickly."
+    },
+    {
+      "question": "Why does a metal spoon left in a hot cup of soup become hot all the way to the handle?",
+      "options": [
+        "Heat travels through the metal quickly",
+        "The spoon absorbs cold from the air",
+        "Heat jumps from the soup to the handle",
+        "The handle produces its own heat"
+      ],
+      "correct": 0,
+      "points": 15,
+      "explanation": "Metals are good conductors. Heat from the hot soup transfers through the metal spoon from the hot end to the cooler handle end quickly. This is how heat moves through solids."
+    },
+    {
+      "question": "A tight metal lid on a glass jar is difficult to open. Why does running hot water over the lid help?",
+      "options": [
+        "The hot water makes the lid slippery",
+        "The metal lid expands more than the glass when heated",
+        "The glass shrinks when heated",
+        "The hot water cools the contents inside"
+      ],
+      "correct": 1,
+      "points": 20,
+      "explanation": "When heated, the metal lid expands more than the glass jar because metals generally expand more than glass for the same temperature increase. This makes the lid slightly looser and easier to open. This demonstrates thermal expansion in everyday life."
+    },
+    {
+      "question": "Why do birds fluff up their feathers in cold weather?",
+      "options": [
+        "To look bigger",
+        "To trap more air which is a poor conductor of heat",
+        "To let more heat escape",
+        "To attract other birds"
+      ],
+      "correct": 1,
+      "points": 15,
+      "explanation": "Fluffing feathers traps a layer of air close to the bird's body. Air is a poor conductor of heat, so this trapped air layer acts as insulation, reducing heat loss from the bird's body. This is a natural adaptation for heat conservation."
+    },
+    {
+      "question": "Which of the following is an effect of heat gain in everyday life?",
+      "options": [
+        "A metal bridge contracting in winter",
+        "Water freezing into ice",
+        "A balloon expanding when left in the sun",
+        "A puddle drying up on a cold day"
+      ],
+      "correct": 2,
+      "points": 10,
+      "explanation": "When the air inside a balloon gains heat from the sun, the air expands, causing the balloon to expand. This shows expansion due to heat gain. The other options involve heat loss or cooling."
+    },
+    {
+      "question": "Why are double-glazed windows (two glass panes with air gap) used in cold climates?",
+      "options": [
+        "They look more modern",
+        "The air gap is a poor conductor, reducing heat loss",
+        "They are cheaper to make",
+        "The glass panes conduct heat better together"
+      ],
+      "correct": 1,
+      "points": 15,
+      "explanation": "Air is a poor conductor of heat. The trapped air layer between the two glass panes acts as insulation, slowing down heat transfer from the warm inside to the cold outside. This helps keep buildings warm and saves energy."
+    },
+    {
+      "question": "A student places identical ice cubes on a metal tray and a plastic tray at room temperature. Which ice cube will melt faster and why?",
+      "options": [
+        "Metal tray ice melts faster because metal conducts heat to the ice better",
+        "Plastic tray ice melts faster because plastic is warmer",
+        "Both melt at same rate",
+        "Metal tray ice melts slower because metal is colder"
+      ],
+      "correct": 0,
+      "points": 20,
+      "explanation": "Metal is a good conductor of heat. It transfers heat from the room to the ice cube more quickly than plastic (a poor conductor), so the ice on metal gains heat faster and melts sooner. This demonstrates how material choice affects heat transfer rate."
+    },
+    {
+      "question": "Why do electrical wires have plastic or rubber coating?",
+      "options": [
+        "To make them colorful",
+        "Plastic and rubber are poor conductors of heat and electricity",
+        "To make wires heavier",
+        "To help electricity flow faster"
+      ],
+      "correct": 1,
+      "points": 10,
+      "explanation": "Plastic and rubber are poor conductors (insulators) of both heat and electricity. The coating prevents electric shock and reduces heat transfer, keeping users safe. This is an important safety application of insulating materials."
+    },
+    {
+      "question": "What happens to a metal ball that just fits through a metal ring when the ball is heated?",
+      "options": [
+        "It still fits perfectly",
+        "It no longer fits because the ball expands",
+        "It fits more easily because the ball shrinks",
+        "The ring expands so it still fits"
+      ],
+      "correct": 1,
+      "points": 15,
+      "explanation": "When heated, the metal ball expands (it takes up more space). If it was just fitting before heating, after expansion it will be too large to pass through the unchanged ring. This classic experiment demonstrates thermal expansion of solids."
+    },
+    {
+      "question": "Why is the inside of a thermos flask shiny and silver?",
+      "options": [
+        "To look attractive",
+        "Shiny surfaces reflect heat, reducing heat transfer",
+        "Silver conducts heat well",
+        "To make the flask lighter"
+      ],
+      "correct": 1,
+      "points": 20,
+      "explanation": "Shiny, silver surfaces reflect heat. In a thermos, this helps keep hot drinks hot (by reflecting heat back in) and cold drinks cold (by reflecting external heat away), reducing heat transfer. This is an application of controlling heat flow."
+    },
+    {
+      "question": "In winter, why do we wear multiple thin layers of clothing instead of one thick layer?",
+      "options": [
+        "Thin layers are more fashionable",
+        "Multiple layers trap more air (a poor conductor) between them",
+        "Thick layers conduct heat better",
+        "Thin layers are cheaper"
+      ],
+      "correct": 1,
+      "points": 15,
+      "explanation": "Each layer of clothing traps a thin layer of air. Air is a poor conductor of heat, so multiple trapped air layers provide better insulation than one thick layer, keeping body heat from escaping. This is a practical application of heat conservation."
+    }
+  ]
+}

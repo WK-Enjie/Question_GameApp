@@ -1,0 +1,191 @@
+{
+  "title": "Heat Sources and Temperature",
+  "topic": "Energy Forms and Uses",
+  "subject": "Science",
+  "level": "Primary",
+  "grade": "P4",
+  "chapter": 3,
+  "worksheet": 1,
+  "questions": [
+    {
+      "question": "Which of the following is NOT a common source of heat?",
+      "options": [
+        "The Sun",
+        "A burning candle",
+        "An ice cube",
+        "An electric heater"
+      ],
+      "correct": 2,
+      "points": 10,
+      "explanation": "An ice cube is cold, not a source of heat. Common heat sources include the Sun, fire, and electric heaters which give out heat energy to their surroundings."
+    },
+    {
+      "question": "What does temperature measure?",
+      "options": [
+        "The amount of heat in an object",
+        "The degree of hotness of an object",
+        "The size of an object",
+        "The weight of an object"
+      ],
+      "correct": 1,
+      "points": 10,
+      "explanation": "Temperature measures the degree of hotness or coldness of an object. It is not the same as the amount of heat energy. Temperature is measured in degrees Celsius (°C) using a thermometer."
+    },
+    {
+      "question": "Which statement about heat is correct?",
+      "options": [
+        "Heat is a type of matter",
+        "Heat is a form of energy",
+        "Heat is measured in degrees Celsius",
+        "Heat cannot move from one object to another"
+      ],
+      "correct": 1,
+      "points": 15,
+      "explanation": "Heat is a form of energy that can be transferred from one object to another. It is measured in joules (J), while temperature is measured in degrees Celsius. Heat energy causes objects to become hotter."
+    },
+    {
+      "question": "Sarah touches a cup of hot chocolate and a cup of cold milk. Which statement correctly describes what happens?",
+      "options": [
+        "Cold moves from the milk to Sarah's hand",
+        "Heat moves from Sarah's hand to the hot chocolate",
+        "Heat moves from the hot chocolate to Sarah's hand",
+        "Temperature moves from the hot chocolate to the cold milk"
+      ],
+      "correct": 2,
+      "points": 15,
+      "explanation": "Heat always flows from a hotter object to a colder object. The hot chocolate is hotter than Sarah's hand, so heat flows from the chocolate to her hand. 'Cold' is not a substance that moves; it is the absence of heat."
+    },
+    {
+      "question": "Two identical metal spoons are placed in different cups of water. Spoon A is in water at 80°C, Spoon B is in water at 30°C. After the same amount of time, which spoon will feel hotter and why?",
+      "options": [
+        "Spoon A because it gained more heat from the hotter water",
+        "Spoon B because cold water makes metal feel hotter",
+        "Both spoons feel the same because they are identical",
+        "Spoon A because heat flows from colder to hotter objects"
+      ],
+      "correct": 0,
+      "points": 15,
+      "explanation": "Spoon A is in hotter water, so more heat flows from the water to the spoon in the same amount of time. This makes Spoon A hotter than Spoon B. Heat transfer depends on the temperature difference between objects."
+    },
+    {
+      "question": "What is the main difference between heat and temperature?",
+      "options": [
+        "Heat is measured with a thermometer, temperature is not",
+        "Heat is the total energy an object has, temperature measures how hot it is",
+        "Temperature can flow between objects, heat cannot",
+        "Heat is only found in hot objects, temperature is in all objects"
+      ],
+      "correct": 1,
+      "points": 20,
+      "explanation": "Heat is the total amount of heat energy an object has, while temperature measures the degree of hotness. A large object at low temperature can have more heat energy than a small object at high temperature."
+    },
+    {
+      "question": "John measures the temperature of water before and after heating it on a stove. The temperature increases from 25°C to 75°C. What can he conclude?",
+      "options": [
+        "The water lost heat to the surroundings",
+        "The water gained heat from the stove",
+        "The temperature decrease shows heat loss",
+        "The water changed state from liquid to gas"
+      ],
+      "correct": 1,
+      "points": 10,
+      "explanation": "When the temperature of water increases, it means the water has gained heat energy from the heat source (the stove). Heat gain causes temperature to rise. The water remains liquid as it has not reached boiling point."
+    },
+    {
+      "question": "Which instrument is used to measure temperature?",
+      "options": [
+        "Ruler",
+        "Thermometer",
+        "Weighing scale",
+        "Measuring cylinder"
+      ],
+      "correct": 1,
+      "points": 10,
+      "explanation": "A thermometer is specifically designed to measure temperature. It contains a liquid that expands when heated and contracts when cooled, moving up or down a calibrated scale to show temperature."
+    },
+    {
+      "question": "A metal rod has one end placed in hot water and the other end in cold water. After some time, what happens to the temperature along the rod?",
+      "options": [
+        "The whole rod becomes as hot as the hot water",
+        "The whole rod becomes as cold as the cold water",
+        "Heat flows from the hot end to the cold end until temperatures equalize",
+        "Temperature flows from cold end to hot end"
+      ],
+      "correct": 2,
+      "points": 15,
+      "explanation": "Heat flows from the hotter region to the colder region through the metal rod. Over time, the temperature along the rod will become more uniform as heat transfers from hot to cold until both ends reach the same temperature."
+    },
+    {
+      "question": "Why do we feel warm when we stand near a campfire?",
+      "options": [
+        "Cold from our body moves to the fire",
+        "Heat from the fire travels to our body",
+        "The fire increases the temperature of the air only",
+        "Our body produces more heat near fire"
+      ],
+      "correct": 1,
+      "points": 10,
+      "explanation": "Heat from the campfire travels through the air to our body. Since heat flows from hotter to colder objects, we absorb heat from the fire and feel warmer. This is heat transfer in action."
+    },
+    {
+      "question": "Two cups of water have the same temperature of 40°C. Cup A has 100ml of water, Cup B has 300ml of water. Which statement is correct?",
+      "options": [
+        "Cup B has higher temperature",
+        "Cup A has more heat energy",
+        "Cup B has more heat energy",
+        "Both cups have the same amount of heat energy"
+      ],
+      "correct": 2,
+      "points": 20,
+      "explanation": "Temperature measures degree of hotness, while heat energy depends on both temperature AND amount of matter. Cup B has three times more water at the same temperature, so it contains more total heat energy even though both feel equally hot."
+    },
+    {
+      "question": "When a thermometer is placed in hot soup, the liquid inside rises. Why does this happen?",
+      "options": [
+        "The liquid gains heat and expands",
+        "The liquid loses heat and contracts",
+        "The glass tube shrinks when hot",
+        "Air pressure pushes the liquid up"
+      ],
+      "correct": 0,
+      "points": 15,
+      "explanation": "When the thermometer liquid gains heat from the hot soup, it expands (takes up more space). This expansion makes the liquid rise in the narrow tube, showing a higher temperature reading."
+    },
+    {
+      "question": "Which situation shows that heat flows from hotter to colder objects?",
+      "options": [
+        "Ice melting in your hand",
+        "A cold drink warming up in the sun",
+        "A metal spoon getting hot when left in hot soup",
+        "All of the above"
+      ],
+      "correct": 3,
+      "points": 15,
+      "explanation": "All these examples show heat flowing from hotter to colder: hand (hotter) to ice (colder), sun (hotter) to drink (colder), soup (hotter) to spoon (colder). Heat always moves from higher temperature to lower temperature regions."
+    },
+    {
+      "question": "Mary leaves a cup of hot tea on the table. After 30 minutes, the tea becomes cooler. What happened to the heat?",
+      "options": [
+        "The heat disappeared",
+        "The heat moved from the tea to the cooler surroundings",
+        "The tea absorbed cold from the air",
+        "The heat changed into temperature"
+      ],
+      "correct": 1,
+      "points": 10,
+      "explanation": "Heat flows from the hotter tea to the cooler surrounding air until they reach the same temperature. Heat is not destroyed; it is transferred to the environment. This is why the tea cools down over time."
+    },
+    {
+      "question": "Why is it important to use a thermometer rather than just touching an object to compare temperatures?",
+      "options": [
+        "Touching is faster",
+        "Our sense of touch can be fooled by previous temperatures",
+        "Thermometers are more colorful",
+        "Touching hot objects is always safe"
+      ],
+      "correct": 1,
+      "points": 10,
+      "explanation": "Our sense of touch is relative and can be misleading. If your hand is cold, a lukewarm object may feel hot. A thermometer gives an objective, accurate measurement of temperature in degrees Celsius, which is essential for scientific investigations."
+    }
+  ]
+}
