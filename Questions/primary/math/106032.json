@@ -1,114 +1,116 @@
 {
-  "quizTitle": "Primary 6 Mathematics: Percentage (More/Less Than & PSLE Challenging)",
-  "quizCode": "PERCENT002",
-  "instructions": "Solve each challenging problem carefully. Show your working clearly. Choose the correct answer.",
-  "timeLimit": 1500,
+  "title": "Percentage: More/Less Than & PSLE Challenging",
+  "topic": "Percentage",
+  "subject": "Mathematics",
+  "level": "Primary",
+  "grade": "P6",
+  "chapter": 3,
+  "worksheet": 2,
   "questions": [
     {
-      "id": 1,
       "question": "John has 20% more stamps than Mary. If Mary has 150 stamps, how many stamps does John have?",
       "options": ["170", "180", "190", "200"],
       "correct": 1,
-      "explanation": "John's stamps = 150 + (20% of 150) = 150 + (0.2 × 150) = 150 + 30 = 180."
+      "points": 10,
+      "explanation": "John's stamps = 100% + 20% = 120% of Mary's stamps. Mary has 150 stamps. John has 150 × 1.2 = 180 stamps."
     },
     {
-      "id": 2,
       "question": "Peter has 25% fewer books than Jane. If Peter has 60 books, how many books does Jane have?",
       "options": ["75", "80", "85", "90"],
       "correct": 1,
-      "explanation": "Peter's books = 75% of Jane's books (100% - 25% = 75%). Let Jane's books be x. 0.75x = 60. x = 60 ÷ 0.75 = 80."
+      "points": 12,
+      "explanation": "Peter's books = 100% − 25% = 75% of Jane's books. 75% = 60 books. 1% = 60 ÷ 75 = 0.8. Jane's books = 100% = 0.8 × 100 = 80 books."
     },
     {
-      "id": 3,
       "question": "A shop sold a bag at 20% discount. The customer paid $160. If the shop owner still made a profit of 25% on the cost price, what was the cost price?",
       "options": ["$120", "$128", "$135", "$140"],
       "correct": 1,
-      "explanation": "Selling price = $160 = 80% of marked price. Marked price = $160 ÷ 0.8 = $200. Selling price = 125% of cost price (profit 25%). Cost price = $160 ÷ 1.25 = $128."
+      "points": 20,
+      "explanation": "Selling price = $160 = 125% of cost price (profit 25%). Cost price = $160 ÷ 1.25 = $128."
     },
     {
-      "id": 4,
       "question": "Box A has 40% more marbles than Box B. If Box A has 112 marbles, how many marbles are there in Box B?",
       "options": ["75", "80", "85", "90"],
       "correct": 1,
-      "explanation": "Box A = 140% of Box B (100% + 40% = 140%). Let Box B have x marbles. 1.4x = 112. x = 112 ÷ 1.4 = 80."
+      "points": 12,
+      "explanation": "Box A = 100% + 40% = 140% of Box B. 140% = 112 marbles. 1% = 112 ÷ 140 = 0.8. Box B = 100% = 0.8 × 100 = 80 marbles."
     },
     {
-      "id": 5,
       "question": "During a sale, a shirt was sold at 30% discount. After the sale, the price was increased by 20% of the sale price. If the original price was $100, what is the final price?",
       "options": ["$84", "$88", "$92", "$96"],
       "correct": 0,
-      "explanation": "Sale price = $100 - (30% of $100) = $100 - $30 = $70. Final price = $70 + (20% of $70) = $70 + $14 = $84."
+      "points": 15,
+      "explanation": "Sale price = $100 − (30% of $100) = $100 − $30 = $70. Final price = $70 + (20% of $70) = $70 + $14 = $84."
     },
     {
-      "id": 6,
       "question": "Tom has 15% more money than Sam. Sam has 20% less money than Alex. If Alex has $200, how much money does Tom have?",
       "options": ["$184", "$190", "$196", "$204"],
       "correct": 0,
-      "explanation": "Sam's money = $200 - (20% of $200) = $200 - $40 = $160. Tom's money = $160 + (15% of $160) = $160 + $24 = $184."
+      "points": 15,
+      "explanation": "Sam's money = $200 − (20% of $200) = $200 − $40 = $160. Tom's money = $160 + (15% of $160) = $160 + $24 = $184."
     },
     {
-      "id": 7,
       "question": "A shopkeeper bought a watch for $120 and sold it at a profit of 25%. He then gave a discount of 10% on the selling price. How much did the customer pay?",
       "options": ["$132", "$135", "$138", "$140"],
       "correct": 1,
-      "explanation": "Selling price before discount = $120 + (25% of $120) = $120 + $30 = $150. Final price = $150 - (10% of $150) = $150 - $15 = $135."
+      "points": 18,
+      "explanation": "Selling price before discount = $120 + (25% of $120) = $120 + $30 = $150. Final price = $150 − (10% of $150) = $150 − $15 = $135."
     },
     {
-      "id": 8,
       "question": "School A has 30% fewer students than School B. School B has 25% more students than School C. If School C has 800 students, how many students does School A have?",
       "options": ["700", "720", "750", "780"],
       "correct": 0,
-      "explanation": "School B = 800 + (25% of 800) = 800 + 200 = 1,000 students. School A = 1,000 - (30% of 1,000) = 1,000 - 300 = 700 students."
+      "points": 15,
+      "explanation": "School B = 800 + (25% of 800) = 800 + 200 = 1,000 students. School A = 1,000 − (30% of 1,000) = 1,000 − 300 = 700 students."
     },
     {
-      "id": 9,
       "question": "A restaurant bill was $180. A service charge of 10% was added and then a discount of 5% was given on the total amount. How much did the customer pay?",
       "options": ["$186.30", "$188.10", "$189.00", "$190.50"],
       "correct": 1,
-      "explanation": "With service charge = $180 + (10% of $180) = $180 + $18 = $198. Final amount = $198 - (5% of $198) = $198 - $9.90 = $188.10."
+      "points": 15,
+      "explanation": "With service charge = $180 + (10% of $180) = $180 + $18 = $198. Final amount = $198 − (5% of $198) = $198 − $9.90 = $188.10."
     },
     {
-      "id": 10,
       "question": "The price of a laptop was increased by 15% of the original price. After the increase, it was sold at a discount of 10% of the increased price. If the original price was $1,200, what was the final selling price?",
       "options": ["$1,224", "$1,242", "$1,260", "$1,278"],
       "correct": 1,
-      "explanation": "Increased price = $1,200 + (15% of $1,200) = $1,200 + $180 = $1,380. Final price = $1,380 - (10% of $1,380) = $1,380 - $138 = $1,242."
+      "points": 15,
+      "explanation": "Increased price = $1,200 + (15% of $1,200) = $1,200 + $180 = $1,380. Final price = $1,380 − (10% of $1,380) = $1,380 − $138 = $1,242."
     },
     {
-      "id": 11,
       "question": "Ali has 20% more money than Ben. Ben has 25% less money than Charlie. If Ali has $144, how much money does Charlie have?",
       "options": ["$140", "$150", "$160", "$170"],
       "correct": 2,
-      "explanation": "Ali = 120% of Ben. Ben = $144 ÷ 1.2 = $120. Ben = 75% of Charlie (100% - 25% = 75%). Charlie = $120 ÷ 0.75 = $160."
+      "points": 20,
+      "explanation": "Ali = 120% of Ben. Ben = $144 ÷ 1.2 = $120. Ben = 75% of Charlie (100% − 25% = 75%). Charlie = $120 ÷ 0.75 = $160."
     },
     {
-      "id": 12,
       "question": "A shop sold a dress at 25% discount. The customer paid $90. The shop owner made a profit of 20% on the cost price. What was the marked price of the dress?",
       "options": ["$110", "$115", "$120", "$125"],
       "correct": 2,
-      "explanation": "Selling price = $90 = 75% of marked price. Marked price = $90 ÷ 0.75 = $120. (Check: Cost price = $90 ÷ 1.2 = $75. Profit = $90 - $75 = $15 = 20% of $75 ✓)"
+      "points": 20,
+      "explanation": "Selling price = $90 = 75% of marked price (100% − 25% = 75%). Marked price = $90 ÷ 0.75 = $120."
     },
     {
-      "id": 13,
       "question": "The number of boys in a class is 40% more than the number of girls. If there are 28 boys, how many pupils are there in the class?",
       "options": ["45", "48", "50", "52"],
       "correct": 1,
-      "explanation": "Boys = 140% of girls (100% + 40% = 140%). Let number of girls be x. 1.4x = 28. x = 28 ÷ 1.4 = 20 girls. Total pupils = 28 + 20 = 48."
+      "points": 15,
+      "explanation": "Boys = 140% of girls (100% + 40% = 140%). 140% = 28 girls. 1% = 28 ÷ 140 = 0.2. Girls = 100% = 0.2 × 100 = 20. Total pupils = 28 + 20 = 48."
     },
     {
-      "id": 14,
       "question": "A TV set was sold at a profit of 30%. If it was sold at a discount of 15% on the selling price, the shop owner would still make a profit of $105. What was the cost price?",
-      "options": ["$900", "$550", "$1000", "$1050"],
+      "options": ["$900", "$950", "$1000", "$1050"],
       "correct": 2,
-      "explanation": "Let cost price be x. Original selling price = 1.3x. Discounted price = 1.3x - (15% of 1.3x) = 1.3x - 0.195x = 1.105x. Profit = 1.105x - x = 0.105x = $105. x = $105 ÷ 0.105 = $600."
+      "points": 25,
+      "explanation": "Selling price = 130% of cost price. After 15% discount = 130% × 0.85 = 110.5% of cost price. Profit = 110.5% − 100% = 10.5% = $105. Cost price = $105 ÷ 0.105 = $1,000."
     },
     {
-      "id": 15,
       "question": "The price of a bag was increased by 20% in January. In February, it was decreased by 10% of the January price. In March, it was increased by 15% of the February price. If the original price was $200, what is the price in March?",
       "options": ["$245.60", "$248.40", "$250.20", "$252.80"],
       "correct": 1,
-      "explanation": "January: $200 + (20% of $200) = $200 + $40 = $240. February: $240 - (10% of $240) = $240 - $24 = $216. March: $216 + (15% of $216) = $216 + $32.40 = $248.40."
+      "points": 20,
+      "explanation": "January: $200 + (20% of $200) = $200 + $40 = $240. February: $240 − (10% of $240) = $240 − $24 = $216. March: $216 + (15% of $216) = $216 + $32.40 = $248.40."
     }
   ]
-
 }
