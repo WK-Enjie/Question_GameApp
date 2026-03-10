@@ -1,0 +1,171 @@
+{
+  "title": "Salt Identification - Qualitative Analysis",
+  "topic": "Tests for Cations, Anions and Gases",
+  "subject": "Combined Chemistry",
+  "level": "Upper Secondary",
+  "grade": "Sec 4",
+  "chapter": 9,
+  "worksheet": 5,
+  "questions": [
+    {
+      "question": "A solution gives a white precipitate with aqueous sodium hydroxide. The precipitate is soluble in excess NaOH. Which cation is present?",
+      "options": ["Ca^2+", "Cu^2+", "Zn^2+", "Fe^2+"],
+      "correct": 2,
+      "points": 12,
+      "explanation": "Zn^2+ and Al^3+ give white precipitates with NaOH that dissolve in excess. Zn^2+ is the correct choice here. Ca^2+ gives a white precipitate insoluble in excess. Cu^2+ gives light blue, Fe^2+ gives green."
+    },
+    {
+      "question": "A solution gives a light blue precipitate with aqueous ammonia. The precipitate dissolves in excess ammonia to give a dark blue solution. Which cation is present?",
+      "options": ["Fe^2+", "Fe^3+", "Cu^2+", "Zn^2+"],
+      "correct": 2,
+      "points": 12,
+      "explanation": "Cu^2+ gives a light blue precipitate of Cu(OH)2 with NH3, which dissolves in excess to form the deep blue complex [Cu(NH3)4]^2+."
+    },
+    {
+      "question": "A salt solution gives a green precipitate with both aqueous sodium hydroxide and aqueous ammonia. The precipitate is insoluble in excess. Which cation is present?",
+      "options": ["Fe^2+", "Fe^3+", "Cu^2+", "Zn^2+"],
+      "correct": 0,
+      "points": 12,
+      "explanation": "Fe^2+ gives a green precipitate of Fe(OH)2 with both NaOH and NH3, insoluble in excess. Fe^3+ gives red-brown, Cu^2+ gives light blue, Zn^2+ gives white."
+    },
+    {
+      "question": "A salt is warmed with aqueous sodium hydroxide. A gas is evolved that turns damp red litmus paper blue. Which ion is present in the salt?",
+      "options": ["CO3^2-", "NH4^+", "NO3^-", "SO4^2-"],
+      "correct": 1,
+      "points": 12,
+      "explanation": "NH4^+ reacts with OH^- on warming to produce NH3 gas: NH4^+ + OH^- → NH3 + H2O. Ammonia turns damp red litmus blue."
+    },
+    {
+      "question": "Dilute nitric acid is added to a salt solution, followed by aqueous silver nitrate. A white precipitate forms. Which anion is present?",
+      "options": ["CO3^2-", "Cl^-", "NO3^-", "SO4^2-"],
+      "correct": 1,
+      "points": 12,
+      "explanation": "Cl^- gives a white precipitate of AgCl with AgNO3 in acidic medium: Ag^+ + Cl^- → AgCl(s). Carbonate would effervesce with acid first."
+    },
+    {
+      "question": "Dilute nitric acid is added to a salt solution, followed by aqueous barium nitrate. A white precipitate forms. Which anion is present?",
+      "options": ["Cl^-", "NO3^-", "SO4^2-", "CO3^2-"],
+      "correct": 2,
+      "points": 12,
+      "explanation": "SO4^2- gives a white precipitate of BaSO4 with Ba(NO3)2 in acidic medium: Ba^2+ + SO4^2- → BaSO4(s). Acid removes carbonate interference."
+    },
+    {
+      "question": "Dilute hydrochloric acid is added to a solid salt. Effervescence occurs and the gas produced turns limewater milky. Which anion is present?",
+      "options": ["Cl^-", "CO3^2-", "NO3^-", "SO4^2-"],
+      "correct": 1,
+      "points": 12,
+      "explanation": "CO3^2- reacts with acid to produce CO2 gas: CO3^2- + 2H^+ → CO2 + H2O. CO2 turns limewater (Ca(OH)2) milky due to formation of CaCO3."
+    },
+    {
+      "question": "A salt solution gives no precipitate with aqueous sodium hydroxide. When warmed with NaOH and aluminium foil, ammonia gas is produced. Which anion is present?",
+      "options": ["Cl^-", "CO3^2-", "NO3^-", "SO4^2-"],
+      "correct": 2,
+      "points": 15,
+      "explanation": "NO3^- is reduced by Al in alkaline medium to produce NH3: NO3^- + 8e^- + 10H^+ → NH4^+ + 3H2O, then NH4^+ + OH^- → NH3. This is the brown ring test alternative."
+    },
+    {
+      "question": "A salt X gives a white precipitate with NaOH (soluble in excess) and a white precipitate with AgNO3/HNO3. What is salt X?",
+      "options": ["ZnCl2", "ZnSO4", "AlCl3", "CaCl2"],
+      "correct": 0,
+      "points": 15,
+      "explanation": "White ppt with NaOH soluble in excess → Zn^2+ or Al^3+. White ppt with AgNO3/HNO3 → Cl^-. ZnCl2 fits both. AlCl3 also fits but Zn^2+ is more common in syllabus."
+    },
+    {
+      "question": "A salt Y gives a light blue precipitate with NH3 (soluble in excess, dark blue solution) and no precipitate with Ba(NO3)2/HNO3. What is salt Y?",
+      "options": ["CuCl2", "CuSO4", "Cu(NO3)2", "FeSO4"],
+      "correct": 2,
+      "points": 15,
+      "explanation": "Light blue ppt with NH3 soluble to dark blue → Cu^2+. No ppt with Ba(NO3)2/HNO3 → not SO4^2-. Therefore anion is NO3^- or Cl^-. Cu(NO3)2 is the best fit."
+    },
+    {
+      "question": "A salt Z gives a green precipitate with NaOH (insoluble in excess) and effervescence with HCl producing a gas that turns limewater milky. What is salt Z?",
+      "options": ["FeCO3", "FeCl2", "CuCO3", "ZnCO3"],
+      "correct": 0,
+      "points": 15,
+      "explanation": "Green ppt with NaOH → Fe^2+. Effervescence with acid producing CO2 → CO3^2-. Therefore salt is FeCO3."
+    },
+    {
+      "question": "Which test distinguishes between aqueous solutions of Fe^2+ and Fe^3+?",
+      "options": [
+        "Add aqueous NaOH and observe precipitate colour",
+        "Add dilute HCl and observe effervescence",
+        "Add aqueous AgNO3 and observe precipitate",
+        "Warm with NaOH and Al foil"
+      ],
+      "correct": 0,
+      "points": 12,
+      "explanation": "Fe^2+ gives green Fe(OH)2 precipitate with NaOH. Fe^3+ gives red-brown Fe(OH)3 precipitate. The colour difference distinguishes them."
+    },
+    {
+      "question": "A student tests an unknown salt. With NaOH: white ppt, soluble in excess. With NH3: white ppt, soluble in excess. With AgNO3/HNO3: white ppt. What is the salt?",
+      "options": ["ZnCl2", "AlCl3", "ZnSO4", "PbCl2"],
+      "correct": 0,
+      "points": 18,
+      "explanation": "White ppt with NaOH soluble in excess → Zn^2+ or Al^3+. White ppt with NH3 soluble in excess → Zn^2+ only (Al^3+ ppt insoluble in excess NH3). White ppt with AgNO3 → Cl^-. Therefore ZnCl2."
+    },
+    {
+      "question": "Which gas turns acidified potassium manganate(VII) from purple to colourless?",
+      "options": ["NH3", "CO2", "Cl2", "SO2"],
+      "correct": 3,
+      "points": 12,
+      "explanation": "SO2 is a reducing agent that reduces purple MnO4^- to colourless Mn^2+: 2MnO4^- + 5SO2 + 2H2O → 2Mn^2+ + 5SO4^2- + 4H^+."
+    },
+    {
+      "question": "A salt gives a red-brown precipitate with both NaOH and NH3, insoluble in excess. Adding HCl produces no gas. What is the most likely salt?",
+      "options": ["FeCl3", "Fe2(SO4)3", "CuCl2", "Fe(NO3)3"],
+      "correct": 3,
+      "points": 15,
+      "explanation": "Red-brown ppt → Fe^3+. No gas with HCl → not carbonate. All options have Fe^3+ except CuCl2. Fe(NO3)3 is a common soluble salt fitting the description."
+    },
+    {
+      "question": "Which pair of reagents can distinguish between Cl^- and SO4^2- in solution?",
+      "options": [
+        "NaOH and NH3",
+        "AgNO3/HNO3 and Ba(NO3)2/HNO3",
+        "HCl and limewater",
+        "NaOH and Al foil"
+      ],
+      "correct": 1,
+      "points": 15,
+      "explanation": "AgNO3/HNO3: Cl^- gives white AgCl ppt, SO4^2- gives no ppt. Ba(NO3)2/HNO3: SO4^2- gives white BaSO4 ppt, Cl^- gives no ppt. Together they distinguish."
+    },
+    {
+      "question": "A white solid salt dissolves in water. The solution gives: (1) no precipitate with NaOH, (2) ammonia gas on warming with NaOH + Al, (3) white ppt with AgNO3/HNO3. Identify the salt.",
+      "options": ["NH4Cl", "NH4NO3", "NaCl", "ZnCl2"],
+      "correct": 0,
+      "points": 18,
+      "explanation": "No ppt with NaOH → not metal cation. NH3 with NaOH+Al → NO3^- or NH4^+. But NH4^+ itself gives NH3 with NaOH alone on warming. White ppt with AgNO3 → Cl^-. Therefore NH4Cl."
+    },
+    {
+      "question": "Which observation confirms the presence of Cu^2+ in a solution?",
+      "options": [
+        "Blue solution colour alone",
+        "Light blue ppt with NaOH, insoluble in excess",
+        "Light blue ppt with NH3, soluble in excess to dark blue",
+        "Both 2 and 3"
+      ],
+      "correct": 3,
+      "points": 12,
+      "explanation": "Cu^2+ solutions are often blue, but colour alone isn't conclusive. The definitive tests are: light blue Cu(OH)2 ppt with NaOH (insoluble in excess) AND dissolution in excess NH3 to form dark blue [Cu(NH3)4]^2+."
+    },
+    {
+      "question": "A salt solution is tested. With NaOH: no precipitate. With NH3: no precipitate. With AgNO3/HNO3: cream precipitate. With Ba(NO3)2/HNO3: no precipitate. What is the anion?",
+      "options": ["Cl^-", "Br^-", "I^-", "SO4^2-"],
+      "correct": 1,
+      "points": 15,
+      "explanation": "Cream precipitate with AgNO3/HNO3 is characteristic of Br^- (AgBr is cream). Cl^- gives white, I^- gives yellow. No ppt with Ba(NO3)2 confirms not SO4^2-."
+    },
+    {
+      "question": "In qualitative analysis, why is dilute nitric acid added before testing for halides with AgNO3?",
+      "options": [
+        "To acidify the solution for better precipitation",
+        "To remove carbonate ions that would give false positive",
+        "To oxidise the halide ions",
+        "To dissolve any existing precipitates"
+      ],
+      "correct": 1,
+      "points": 12,
+      "explanation": "Carbonate ions (CO3^2-) also give a white precipitate with Ag^+ (Ag2CO3). Adding HNO3 removes CO3^2- by converting to CO2 gas, preventing false positives for Cl^-."
+    }
+  ]
+}
