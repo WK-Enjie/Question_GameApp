@@ -1,0 +1,251 @@
+{
+  "title": "Chemical Changes: Thermal Decomposition and Acid Reactions",
+  "topic": "Chemical Changes - Thermal Decomposition and Acid Reactions",
+  "subject": "Science",
+  "level": "Secondary",
+  "grade": "Sec 2",
+  "chapter": 3,
+  "worksheet": 2,
+  "questions": [
+    {
+      "question": "Thermal decomposition is a reaction where a single substance breaks down into simpler substances when __________.",
+      "options": [
+        "cooled",
+        "heated",
+        "mixed with water",
+        "exposed to light"
+      ],
+      "correct": 1,
+      "points": 10,
+      "explanation": "Thermal decomposition means 'breaking down by heat'. One reactant breaks into two or more products when thermal energy is supplied."
+    },
+    {
+      "question": "The word equation for the thermal decomposition of calcium carbonate is: calcium carbonate → calcium oxide + __________.",
+      "options": [
+        "oxygen",
+        "carbon dioxide",
+        "water",
+        "calcium"
+      ],
+      "correct": 1,
+      "points": 10,
+      "explanation": "When calcium carbonate is heated, it decomposes to form calcium oxide and carbon dioxide. Heat is a condition, not a reactant."
+    },
+    {
+      "question": "When an acid reacts with a metal, the gas produced is __________.",
+      "options": [
+        "oxygen",
+        "carbon dioxide",
+        "hydrogen",
+        "nitrogen"
+      ],
+      "correct": 2,
+      "points": 10,
+      "explanation": "When a reactive metal reacts with an acid, hydrogen gas is produced. This is a characteristic reaction of acids with metals."
+    },
+    {
+      "question": "The word equation for the reaction between hydrochloric acid and magnesium is: hydrochloric acid + magnesium → magnesium chloride + __________.",
+      "options": [
+        "oxygen",
+        "carbon dioxide",
+        "hydrogen",
+        "water"
+      ],
+      "correct": 2,
+      "points": 10,
+      "explanation": "Magnesium reacts with hydrochloric acid to form magnesium chloride and hydrogen gas. The gas is produced as bubbles."
+    },
+    {
+      "question": "When an acid reacts with a carbonate, the gas produced is __________.",
+      "options": [
+        "oxygen",
+        "hydrogen",
+        "carbon dioxide",
+        "nitrogen"
+      ],
+      "correct": 2,
+      "points": 10,
+      "explanation": "When an acid reacts with a carbonate, carbon dioxide gas is produced. This is a characteristic reaction of acids with carbonates."
+    },
+    {
+      "question": "The word equation for the reaction between sulfuric acid and zinc carbonate is: sulfuric acid + zinc carbonate → zinc sulfate + water + __________.",
+      "options": [
+        "oxygen",
+        "hydrogen",
+        "carbon dioxide",
+        "zinc"
+      ],
+      "correct": 2,
+      "points": 10,
+      "explanation": "Sulfuric acid reacts with zinc carbonate to form zinc sulfate, water, and carbon dioxide. The carbon dioxide is produced as bubbles."
+    },
+    {
+      "question": "Neutralisation is a reaction between an acid and an alkali that produces a salt and __________.",
+      "options": [
+        "hydrogen",
+        "carbon dioxide",
+        "water",
+        "oxygen"
+      ],
+      "correct": 2,
+      "points": 10,
+      "explanation": "Neutralisation always produces a salt and water. The acid and alkali 'neutralise' each other's properties, forming these two products."
+    },
+    {
+      "question": "The word equation for the neutralisation reaction between hydrochloric acid and sodium hydroxide is: hydrochloric acid + sodium hydroxide → sodium chloride + __________.",
+      "options": [
+        "hydrogen",
+        "carbon dioxide",
+        "water",
+        "sodium"
+      ],
+      "correct": 2,
+      "points": 10,
+      "explanation": "Hydrochloric acid reacts with sodium hydroxide to form sodium chloride (the salt) and water. This is a neutralisation reaction."
+    },
+    {
+      "question": "The test for hydrogen gas is to insert a lit splint. A positive result is a __________.",
+      "options": [
+        "flame that goes out",
+        "pop sound",
+        "flame that relights",
+        "colour change"
+      ],
+      "correct": 1,
+      "points": 10,
+      "explanation": "Hydrogen gas is confirmed by the 'pop test': a lit splint produces a characteristic pop sound when inserted into a test tube containing hydrogen."
+    },
+    {
+      "question": "The test for carbon dioxide gas is to bubble it through __________.",
+      "options": [
+        "water",
+        "limewater",
+        "acid",
+        "alkali"
+      ],
+      "correct": 1,
+      "points": 10,
+      "explanation": "Carbon dioxide is confirmed by bubbling the gas through limewater. Carbon dioxide reacts with limewater to form a white precipitate, which makes the solution turn milky."
+    },
+    {
+      "question": "When carbon dioxide is bubbled through limewater, a positive result is that the limewater turns __________.",
+      "options": [
+        "clear",
+        "blue",
+        "milky",
+        "red"
+      ],
+      "correct": 2,
+      "points": 10,
+      "explanation": "Carbon dioxide reacts with limewater to form a white precipitate, which makes the solution turn milky. Effervescence (bubbles) may also be observed."
+    },
+    {
+      "question": "The word equation for the thermal decomposition of potassium chlorate is: potassium chlorate → potassium chloride + __________.",
+      "options": [
+        "carbon dioxide",
+        "oxygen",
+        "water",
+        "chlorine"
+      ],
+      "correct": 1,
+      "points": 10,
+      "explanation": "Potassium chlorate decomposes when heated to form potassium chloride and oxygen. Heat is a condition, not written as a reactant."
+    },
+    {
+      "question": "When copper(II) carbonate is heated, it decomposes. The word equation is: copper(II) carbonate → copper(II) oxide + __________.",
+      "options": [
+        "oxygen",
+        "carbon dioxide",
+        "water",
+        "copper"
+      ],
+      "correct": 1,
+      "points": 10,
+      "explanation": "Copper(II) carbonate decomposes when heated to form copper(II) oxide and carbon dioxide. This is thermal decomposition; heat is a condition."
+    },
+    {
+      "question": "The word equation for the neutralisation reaction between nitric acid and potassium hydroxide is: nitric acid + potassium hydroxide → potassium nitrate + __________.",
+      "options": [
+        "hydrogen",
+        "carbon dioxide",
+        "water",
+        "potassium"
+      ],
+      "correct": 2,
+      "points": 10,
+      "explanation": "Nitric acid reacts with potassium hydroxide to form potassium nitrate (the salt) and water. This is a neutralisation reaction."
+    },
+    {
+      "question": "To produce hydrogen gas in the laboratory, a student should use a combination of __________.",
+      "options": [
+        "acid + carbonate",
+        "acid + metal",
+        "acid + alkali",
+        "metal + water"
+      ],
+      "correct": 1,
+      "points": 10,
+      "explanation": "Hydrogen gas is produced when a reactive metal reacts with an acid. For example, magnesium + hydrochloric acid → magnesium chloride + hydrogen."
+    },
+    {
+      "question": "To produce carbon dioxide gas in the laboratory, a student should use a combination of __________.",
+      "options": [
+        "acid + metal",
+        "acid + carbonate",
+        "acid + alkali",
+        "metal + water"
+      ],
+      "correct": 1,
+      "points": 10,
+      "explanation": "Carbon dioxide gas is produced when an acid reacts with a carbonate. For example, hydrochloric acid + calcium carbonate → calcium chloride + water + carbon dioxide."
+    },
+    {
+      "question": "The word equation for the reaction between hydrochloric acid and calcium carbonate is: hydrochloric acid + calcium carbonate → calcium chloride + water + __________.",
+      "options": [
+        "oxygen",
+        "hydrogen",
+        "carbon dioxide",
+        "calcium"
+      ],
+      "correct": 2,
+      "points": 10,
+      "explanation": "Hydrochloric acid reacts with calcium carbonate to form calcium chloride, water, and carbon dioxide. The carbon dioxide is produced as bubbles (effervescence)."
+    },
+    {
+      "question": "The word equation for the reaction between sulfuric acid and magnesium is: sulfuric acid + magnesium → magnesium sulfate + __________.",
+      "options": [
+        "oxygen",
+        "carbon dioxide",
+        "hydrogen",
+        "water"
+      ],
+      "correct": 2,
+      "points": 10,
+      "explanation": "Magnesium reacts with sulfuric acid to form magnesium sulfate and hydrogen gas. The gas is produced as bubbles."
+    },
+    {
+      "question": "When hydrochloric acid is added to sodium hydroxide solution, the mixture becomes warm. This is because the reaction __________.",
+      "options": [
+        "absorbs thermal energy",
+        "releases thermal energy",
+        "has no change in thermal energy",
+        "requires a catalyst"
+      ],
+      "correct": 1,
+      "points": 10,
+      "explanation": "Neutralisation reactions release thermal energy, which causes the mixture to warm up."
+    },
+    {
+      "question": "In the test for hydrogen gas, the splint used should be __________.",
+      "options": [
+        "glowing",
+        "lit",
+        "extinguished",
+        "cold"
+      ],
+      "correct": 1,
+      "points": 10,
+      "explanation": "The test for hydrogen uses a lit splint. When inserted into a test tube containing hydrogen, it produces a characteristic pop sound."
+    }
+  ]
+}
