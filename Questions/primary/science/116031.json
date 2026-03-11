@@ -13,7 +13,7 @@
         "Potential energy",
         "Kinetic energy",
         "Light energy",
-        "Chemical energy"
+        "Sound energy"
       ],
       "correct": 1,
       "points": 10,
@@ -41,7 +41,7 @@
       ],
       "correct": 1,
       "points": 10,
-      "explanation": "The Sun is the primary source of energy. Energy from most resources (like fossil fuels, wind, water) is derived in some way from the Sun."
+      "explanation": "The Sun is the primary source of energy. Energy from most resources is derived in some way from the Sun."
     },
     {
       "question": "When a battery-powered toy car moves, what is the main energy conversion in the motor?",
@@ -53,7 +53,7 @@
       ],
       "correct": 1,
       "points": 15,
-      "explanation": "The battery supplies electrical energy to the motor. The motor converts this electrical energy into kinetic energy to move the car."
+      "explanation": "The battery supplies energy to the motor. The motor converts this energy into kinetic energy to move the car."
     },
     {
       "question": "Which forms of energy are produced when a light bulb is switched on?",
@@ -80,7 +80,7 @@
       "explanation": "The fan uses electrical energy. The blades move (Kinetic), it makes noise (Sound), and the motor gets warm (Heat)."
     },
     {
-      "question": "Solar panels are used to generate electricity. What is the energy conversion?",
+      "question": "A solar-powered calculator works when placed in sunlight. What is the main energy conversion?",
       "options": [
         "Heat energy → Electrical energy",
         "Light energy → Electrical energy",
@@ -89,10 +89,10 @@
       ],
       "correct": 1,
       "points": 15,
-      "explanation": "Solar panels capture light energy from the Sun and convert it into electrical energy."
+      "explanation": "The solar cell in the calculator captures light energy and converts it into electrical energy to power the calculator."
     },
     {
-      "question": "In a hydroelectric dam, water stored at a height is released to turn turbines. What is the initial form of energy in the stored water?",
+      "question": "Water stored behind a dam is released to turn turbines. What is the initial form of energy in the stored water?",
       "options": [
         "Kinetic energy",
         "Potential energy",
@@ -101,7 +101,7 @@
       ],
       "correct": 1,
       "points": 15,
-      "explanation": "Water stored at a height has potential energy due to its position. As it falls, this converts to kinetic energy."
+      "explanation": "Water stored at a height has potential energy due to its position. As it falls, this converts to kinetic energy to turn the turbines."
     },
     {
       "question": "Why is heat energy often considered 'wasted' energy in appliances?",
@@ -128,7 +128,7 @@
       "explanation": "Potential energy increases when an object is moved to a higher position against gravity."
     },
     {
-      "question": "When a rubber band is stretched, what form of energy is stored in it?",
+      "question": "When a rubber band is stretched and held, what form of energy is stored in it?",
       "options": [
         "Kinetic energy",
         "Potential energy",
@@ -137,7 +137,7 @@
       ],
       "correct": 1,
       "points": 15,
-      "explanation": "Stretching a rubber band changes its state/shape, storing potential energy (elastic potential energy)."
+      "explanation": "Stretching a rubber band changes its shape, storing potential energy. When released, this energy can cause motion."
     },
     {
       "question": "Friction between two surfaces usually converts kinetic energy into which form of energy?",
@@ -164,16 +164,16 @@
       "explanation": "Energy is required for things to work in everyday life. All living things obtain and use energy for life processes."
     },
     {
-      "question": "Which of the following is NOT a form of energy listed in the Primary 6 syllabus?",
+      "question": "A person climbs a flight of stairs. What energy conversion takes place?",
       "options": [
-        "Kinetic energy",
-        "Potential energy",
-        "Chemical energy",
-        "Sound energy"
+        "Energy from food → Kinetic energy → Potential energy",
+        "Potential energy → Kinetic energy → Heat energy",
+        "Kinetic energy → Light energy → Sound energy",
+        "Electrical energy → Potential energy → Kinetic energy"
       ],
-      "correct": 2,
-      "points": 10,
-      "explanation": "The P6 syllabus lists Kinetic, Potential, Light, Electrical, Sound, and Heat energy. 'Chemical energy' is not a required term (though energy stored in food/batteries is discussed)."
+      "correct": 0,
+      "points": 15,
+      "explanation": "The body uses energy from food to move (kinetic energy). As the person climbs higher, this energy is converted to potential energy due to the increase in height."
     },
     {
       "question": "Why is it important to conserve energy?",
@@ -185,7 +185,7 @@
       ],
       "correct": 1,
       "points": 15,
-      "explanation": "Some sources of energy (like fossil fuels) are non-renewable and can be depleted. Conservation ensures resources last longer and protects the environment."
+      "explanation": "Some sources of energy can be depleted. Conservation ensures resources last longer and protects the environment."
     }
   ]
 }
