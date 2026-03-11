@@ -71,13 +71,13 @@
       "question": "In an experiment to test for starch, why is the leaf boiled in alcohol?",
       "options": [
         "To soften the leaf and make it easier to handle",
-        "To remove the chlorophyll so color changes are visible",
+        "To remove the green colour so the iodine test result can be seen clearly",
         "To convert sugar into starch instantly",
         "To disinfect the leaf from bacteria"
       ],
       "correct": 1,
       "points": 15,
-      "explanation": "Chlorophyll is green and would mask the blue-black color of the iodine-starch reaction. Alcohol removes the pigment for clear results."
+      "explanation": "The green colour in leaves would make it hard to see the blue-black colour change when iodine is added. Boiling in alcohol removes the green colour for clear results."
     },
     {
       "question": "A sealed jar contains a green plant and is placed in the dark for 12 hours. What happens to the oxygen levels inside?",
@@ -89,7 +89,7 @@
       ],
       "correct": 1,
       "points": 15,
-      "explanation": "In the dark, photosynthesis stops, so oxygen is not produced. However, respiration continues, which consumes oxygen."
+      "explanation": "In the dark, photosynthesis stops, so oxygen is not produced. However, respiration continues, which uses up oxygen."
     },
     {
       "question": "Which of the following describes the net gas exchange of a plant during a very bright, sunny afternoon?",
@@ -101,10 +101,10 @@
       ],
       "correct": 2,
       "points": 20,
-      "explanation": "In bright light, the rate of photosynthesis (releasing oxygen) is much higher than the rate of respiration (consuming oxygen)."
+      "explanation": "In bright light, the rate of photosynthesis (releasing oxygen) is much higher than the rate of respiration (using oxygen)."
     },
     {
-      "question": "If the xylem (water-carrying tubes) of a plant is blocked, how will photosynthesis be affected?",
+      "question": "If the tubes that carry water in a plant are blocked, how will photosynthesis be affected?",
       "options": [
         "The rate will increase to compensate for less water",
         "The rate will decrease or stop as water is a necessary requirement",
@@ -116,7 +116,7 @@
       "explanation": "Water is a core requirement for photosynthesis. If the plant cannot transport water to the leaves, it cannot produce sugar."
     },
     {
-      "question": "A student set up two identical jars with plants. Jar A had a chemical that absorbs carbon dioxide; Jar B did not. Both were placed in sunlight. What is the independent variable?",
+      "question": "A student set up two identical jars with plants. Jar A had a chemical that absorbs carbon dioxide; Jar B did not. Both were placed in sunlight. What is the changed variable in this experiment?",
       "options": [
         "The amount of sunlight",
         "The presence of carbon dioxide",
@@ -125,7 +125,7 @@
       ],
       "correct": 1,
       "points": 15,
-      "explanation": "The independent variable is the factor being changed. In this case, it is the presence or absence of carbon dioxide."
+      "explanation": "The changed variable is the factor being deliberately changed. In this case, it is the presence or absence of carbon dioxide. All other conditions are kept the same."
     },
     {
       "question": "What are the primary products of photosynthesis?",
@@ -137,19 +137,19 @@
       ],
       "correct": 1,
       "points": 10,
-      "explanation": "Photosynthesis involves the production of sugar and oxygen from water and carbon dioxide in the presence of light."
+      "explanation": "Photosynthesis uses water and carbon dioxide with light energy to produce sugar and oxygen."
     },
     {
-      "question": "A glowing splint is inserted into a test tube of gas collected from an underwater plant in sunlight. The splint relights. What gas is present?",
+      "question": "A student collects gas bubbles from a water plant in sunlight. Which observation would support that the gas is oxygen?",
       "options": [
-        "Carbon dioxide",
-        "Nitrogen",
-        "Hydrogen",
-        "Oxygen"
+        "The bubbles rise quickly to the surface",
+        "The bubbles are colourless and odourless",
+        "More bubbles are produced when light intensity increases",
+        "The bubbles pop when they reach the surface"
       ],
-      "correct": 3,
+      "correct": 2,
       "points": 10,
-      "explanation": "Oxygen supports combustion and is the only gas produced during photosynthesis that would cause a glowing splint to relight."
+      "explanation": "Oxygen is produced during photosynthesis. When light intensity increases, the rate of photosynthesis increases, so more oxygen bubbles are produced. This pattern supports that the gas is oxygen."
     },
     {
       "question": "Which statement about respiration in plants is TRUE?",
@@ -164,16 +164,16 @@
       "explanation": "Living things need energy from respiration to carry out life processes at all times, including plants."
     },
     {
-      "question": "A student coated the underside of all leaves on a plant with Vaseline. Why did the plant eventually die?",
+      "question": "A student covered the underside of all leaves on a plant with a thin layer of oil. Why did the plant eventually die?",
       "options": [
-        "Vaseline is poisonous to plants",
-        "The Vaseline blocked the sunlight from reaching the chlorophyll",
-        "The Vaseline blocked the stomata, preventing gas exchange for photosynthesis",
+        "Oil is poisonous to plants",
+        "The oil blocked the sunlight from reaching the chlorophyll",
+        "The oil blocked the tiny openings on the leaf surface, preventing carbon dioxide from entering for photosynthesis",
         "The plant could no longer absorb water through its leaves"
       ],
       "correct": 2,
       "points": 20,
-      "explanation": "Stomata are mostly on the underside of leaves. Blocking them prevents the intake of carbon dioxide, which is required for photosynthesis."
+      "explanation": "Leaves have tiny openings (mostly on the underside) that allow carbon dioxide to enter for photosynthesis. A thin layer of oil blocks these openings, so the plant cannot take in carbon dioxide. Without photosynthesis, the plant cannot make food and will die."
     },
     {
       "question": "How do plants and animals differ in the way they obtain energy?",
@@ -212,16 +212,16 @@
       "explanation": "Chlorophyll is the green pigment that captures light energy, which is then used to combine water and carbon dioxide into sugar."
     },
     {
-      "question": "A plant is placed in a jar with a chemical that turns from red to yellow when carbon dioxide levels increase. After 5 hours in the dark, what color will the chemical be?",
+      "question": "A plant is placed in a jar with a chemical that turns from red to yellow when carbon dioxide levels increase. After 5 hours in the dark, what colour will the chemical be?",
       "options": [
         "Red, because the plant used up all the CO2",
         "Yellow, because the plant released CO2 during respiration",
-        "Clear, because photosynthesis removed the color",
+        "Clear, because photosynthesis removed the colour",
         "Blue, because oxygen was released"
       ],
       "correct": 1,
       "points": 20,
-      "explanation": "In the dark, only respiration occurs, which releases carbon dioxide into the jar, changing the indicator color."
+      "explanation": "In the dark, only respiration occurs, which releases carbon dioxide into the jar, changing the indicator colour."
     },
     {
       "question": "Which of the following is the correct word equation for photosynthesis?",
