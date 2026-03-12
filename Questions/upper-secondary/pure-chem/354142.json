@@ -1,0 +1,141 @@
+{
+  "title": "Periodic Table Applications - Worksheet 2",
+  "topic": "Displacement Reactions, Stability, Transition Metals, and Bonding",
+  "subject": "Chemistry",
+  "level": "Upper Secondary",
+  "grade": "Sec 4",
+  "chapter": 14,
+  "worksheet": 2,
+  "questions": [
+    {
+      "id": 1,
+      "question": "Chlorine gas is bubbled through aqueous potassium bromide. What is observed?",
+      "options": [
+        "No visible change",
+        "Solution turns from colourless to orange/brown",
+        "Solution turns from colourless to purple",
+        "A grey solid precipitates"
+      ],
+      "answer": "Solution turns from colourless to orange/brown",
+      "time": 90,
+      "explanation": "Chlorine is more reactive than bromine and displaces it. Bromine is formed, which is orange/brown in aqueous solution. Equation: Cl₂ + 2KBr → 2KCl + Br₂."
+    },
+    {
+      "id": 2,
+      "question": "Which carbonate is the most thermally stable?",
+      "options": [
+        "Copper(II) carbonate",
+        "Zinc carbonate",
+        "Magnesium carbonate",
+        "Sodium carbonate"
+      ],
+      "answer": "Sodium carbonate",
+      "time": 90,
+      "explanation": "Thermal stability of carbonates increases with the reactivity of the metal. Sodium is the most reactive metal listed (Group 1), so sodium carbonate is the most stable and does not decompose on heating."
+    },
+    {
+      "id": 3,
+      "question": "Complete the sentence: Sodium carbonate does not decompose on heating because the ______ between the ions are very strong.",
+      "options": [
+        "covalent bonds",
+        "electrostatic forces of attraction",
+        "intermolecular forces",
+        "metallic bonds"
+      ],
+      "answer": "electrostatic forces of attraction",
+      "time": 90,
+      "explanation": "Ionic compounds are held together by strong electrostatic forces of attraction between oppositely charged ions. In highly stable carbonates like sodium carbonate, a large amount of heat energy is needed to overcome these forces."
+    },
+    {
+      "id": 4,
+      "question": "Which property is characteristic of transition elements like iron and copper?",
+      "options": [
+        "They form colourless compounds only",
+        "They have low melting points",
+        "They act as catalysts and form coloured compounds",
+        "They react vigorously with cold water"
+      ],
+      "answer": "They act as catalysts and form coloured compounds",
+      "time": 90,
+      "explanation": "Transition elements typically have high melting points, high density, form coloured compounds, have variable oxidation states, and often act as catalysts."
+    },
+    {
+      "id": 5,
+      "question": "Why does magnesium react faster with acid than zinc does?",
+      "options": [
+        "Magnesium has a larger atomic mass",
+        "Magnesium is more reactive and loses electrons more readily",
+        "Zinc forms a protective oxide layer",
+        "Magnesium acid is more concentrated"
+      ],
+      "answer": "Magnesium is more reactive and loses electrons more readily",
+      "time": 90,
+      "explanation": "Magnesium is higher in the reactivity series than zinc. This means magnesium atoms lose electrons to form ions more readily, leading to a faster rate of reaction with acid."
+    },
+    {
+      "id": 6,
+      "question": "Complete the explanation: In a covalent bond, the strength depends on the strong electrostatic forces of attraction between the ______.",
+      "options": [
+        "oppositely charged ions",
+        "positive ions and sea of delocalised electrons",
+        "positive nuclei and shared pairs of electrons",
+        "neutral molecules"
+      ],
+      "answer": "positive nuclei and shared pairs of electrons",
+      "time": 90,
+      "explanation": "A covalent bond is held together by the strong electrostatic forces of attraction between the positively charged nuclei of the bonded atoms and the negatively charged shared pair(s) of electrons."
+    },
+    {
+      "id": 7,
+      "question": "Metal X displaces copper from copper(II) sulfate but does not displace zinc from zinc sulfate. Where is X in the reactivity series?",
+      "options": [
+        "Above zinc",
+        "Between zinc and copper",
+        "Below copper",
+        "Above magnesium"
+      ],
+      "answer": "Between zinc and copper",
+      "time": 90,
+      "explanation": "X is more reactive than copper (displaces it) but less reactive than zinc (does not displace it). Therefore, X lies between zinc and copper in the reactivity series."
+    },
+    {
+      "id": 8,
+      "question": "Complete the sentence: Ionic compounds have high melting points due to strong electrostatic forces of attraction between ______.",
+      "options": [
+        "positive nuclei and shared pairs of electrons",
+        "positive ions and sea of delocalised electrons",
+        "oppositely charged ions",
+        "neutral molecules"
+      ],
+      "answer": "oppositely charged ions",
+      "time": 90,
+      "explanation": "Ionic compounds consist of a giant lattice of oppositely charged ions. The strong electrostatic forces of attraction between these ions require a large amount of energy to overcome, resulting in high melting points."
+    },
+    {
+      "id": 9,
+      "question": "The graph shows volume of gas vs time for the reaction of calcium carbonate with acid. Curve X is the original experiment. Which change produces Curve Y (steeper initial gradient, same final volume)?",
+      "options": [
+        "Using a catalyst",
+        "Increasing the temperature",
+        "Using powdered calcium carbonate instead of lumps",
+        "Increasing the concentration of the acid"
+      ],
+      "answer": "Using powdered calcium carbonate instead of lumps",
+      "time": 90,
+      "explanation": "Powder increases surface area, increasing collision frequency (steeper gradient). Same final volume means the same amount of limiting reactant was used. This links reactivity and particle size to rate of reaction."
+    },
+    {
+      "id": 10,
+      "question": "Which statement about transition metals is correct?",
+      "options": [
+        "They only have one oxidation state",
+        "They can have variable oxidation states",
+        "They are highly reactive with water",
+        "They form white precipitates only"
+      ],
+      "answer": "They can have variable oxidation states",
+      "time": 90,
+      "explanation": "A key chemical property of transition metals is their ability to form ions with different charges (variable oxidation states), e.g., Fe²⁺ and Fe³⁺. This is due to the similar energies of their 3d and 4s orbitals."
+    }
+  ]
+}
