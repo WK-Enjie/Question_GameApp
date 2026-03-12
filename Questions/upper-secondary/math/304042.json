@@ -1,0 +1,191 @@
+{
+  "title": "Statistics - Conceptual Understanding and Data Transformation",
+  "topic": "Statistics - Cumulative Frequency, Spread, and Data Effects",
+  "subject": "Mathematics",
+  "level": "Upper Secondary",
+  "grade": "Sec 4",
+  "chapter": 4,
+  "worksheet": 2,
+  "questions": [
+    {
+      "question": "A cumulative frequency curve is very steep around the median. What does this indicate about the data?",
+      "options": [
+        "Data is widely spread around the median",
+        "Data is tightly clustered around the median",
+        "Data has many outliers",
+        "Data is symmetric"
+      ],
+      "correct": 1,
+      "points": 12,
+      "explanation": "A steep gradient on a cumulative frequency curve means a small range of values contains many data points, indicating tight clustering (small IQR) (Syllabus 20c)."
+    },
+    {
+      "question": "Two cumulative frequency curves intersect at the 50% cumulative frequency line. What does this imply?",
+      "options": [
+        "Same mean",
+        "Same median",
+        "Same range",
+        "Same standard deviation"
+      ],
+      "correct": 1,
+      "points": 12,
+      "explanation": "The 50% cumulative frequency corresponds to the median. If curves intersect there, both data sets have the same median value (Syllabus 20c)."
+    },
+    {
+      "question": "A data set has mean = 40, SD = 6. If every value is multiplied by 3, what is the new standard deviation?",
+      "options": [
+        "6",
+        "12",
+        "18",
+        "24"
+      ],
+      "correct": 2,
+      "points": 12,
+      "explanation": "Multiplying all values by k multiplies the standard deviation by |k|. New SD = 3 × 6 = 18 (Syllabus 20b)."
+    },
+    {
+      "question": "Which measure of spread is most resistant to extreme outliers?",
+      "options": [
+        "Range",
+        "Standard Deviation",
+        "Interquartile Range",
+        "Variance"
+      ],
+      "correct": 2,
+      "points": 10,
+      "explanation": "The IQR uses only the middle 50% of data (Q1 to Q3), so extreme values at the ends do not affect it. Range and SD are sensitive (Syllabus 20c)."
+    },
+    {
+      "question": "A box-and-whisker plot has a much longer right whisker than left whisker. What does this suggest?",
+      "options": [
+        "Data is symmetric",
+        "Data is negatively skewed",
+        "Data is positively skewed",
+        "Data has no outliers"
+      ],
+      "correct": 2,
+      "points": 12,
+      "explanation": "A long right whisker indicates the upper 25% of data is spread over a wider range, creating a tail to the right (positive skew) (Syllabus 20c)."
+    },
+    {
+      "question": "If a data set is perfectly symmetric, what is the expected relationship between mean and median?",
+      "options": [
+        "Mean > Median",
+        "Mean < Median",
+        "Mean ≈ Median",
+        "No relationship"
+      ],
+      "correct": 2,
+      "points": 10,
+      "explanation": "In a symmetric distribution, the center of gravity (mean) and middle value (median) coincide. They differ in skewed distributions (Syllabus 20c)."
+    },
+    {
+      "question": "The highest value in a data set is removed. Which measure is guaranteed to change?",
+      "options": [
+        "Median",
+        "Mode",
+        "Range",
+        "Interquartile Range"
+      ],
+      "correct": 2,
+      "points": 12,
+      "explanation": "Range = Max - Min. Removing the maximum definitely changes the Max, thus changing the Range. Median, Mode, and IQR may remain unchanged (Syllabus 20b)."
+    },
+    {
+      "question": "A cumulative frequency curve is flatter in the middle section. What does this suggest?",
+      "options": [
+        "Data is clustered around the median",
+        "Data is spread out around the median",
+        "Data has no outliers",
+        "Data is symmetric"
+      ],
+      "correct": 1,
+      "points": 12,
+      "explanation": "A flat gradient means a large range of values is needed to accumulate frequency, indicating data is spread out (less consistent) in that region (Syllabus 20c)."
+    },
+    {
+      "question": "If every value in a data set is decreased by 10, how does the variance change?",
+      "options": [
+        "Decreases by 10",
+        "Decreases by 100",
+        "Remains unchanged",
+        "Increases by 10"
+      ],
+      "correct": 2,
+      "points": 12,
+      "explanation": "Variance (and SD) measures spread. Shifting all data by a constant (translation) does not change distances between values, so spread measures remain unchanged (Syllabus 20b)."
+    },
+    {
+      "question": "A data set has Q1 = 15, Median = 25, Q3 = 40. What is the interquartile range?",
+      "options": [
+        "10",
+        "15",
+        "25",
+        "40"
+      ],
+      "correct": 2,
+      "points": 10,
+      "explanation": "IQR = Q3 - Q1 = 40 - 15 = 25 (Syllabus 20b)."
+    },
+    {
+      "question": "On a cumulative frequency curve, the lower quartile is found at what percentage of total frequency?",
+      "options": [
+        "25%",
+        "50%",
+        "75%",
+        "100%"
+      ],
+      "correct": 0,
+      "points": 10,
+      "explanation": "The lower quartile (Q1) is the 25th percentile, found at 25% of the total cumulative frequency (Syllabus 20b)."
+    },
+    {
+      "question": "A teacher corrects an error: one score was recorded as 20 instead of 80. How does this affect the mean?",
+      "options": [
+        "Mean decreases",
+        "Mean increases",
+        "Mean remains the same",
+        "Cannot be determined"
+      ],
+      "correct": 1,
+      "points": 12,
+      "explanation": "Correcting 20 to 80 increases the sum of scores. Since Mean = Sum/n, increasing the sum increases the mean (Syllabus 20a)."
+    },
+    {
+      "question": "Which statement about standard deviation is correct?",
+      "options": [
+        "SD can be negative",
+        "SD is always zero or positive",
+        "SD equals the range",
+        "SD is unaffected by outliers"
+      ],
+      "correct": 1,
+      "points": 10,
+      "explanation": "Standard deviation is calculated using squared distances, so it is always non-negative (≥ 0). It equals zero only when all values are identical (Syllabus 20b)."
+    },
+    {
+      "question": "Two classes have identical means. Class X has IQR = 8, Class Y has IQR = 20. Which class has more consistent scores in the middle 50%?",
+      "options": [
+        "Class X",
+        "Class Y",
+        "Both equally consistent",
+        "Cannot compare IQRs"
+      ],
+      "correct": 0,
+      "points": 12,
+      "explanation": "A smaller IQR indicates the middle 50% of scores are more tightly clustered. Class X (IQR=8) has more consistent middle scores (Syllabus 20c)."
+    },
+    {
+      "question": "A cumulative frequency curve for Class A lies entirely to the right of Class B's curve. What does this indicate?",
+      "options": [
+        "Class A has higher scores overall",
+        "Class A has lower scores overall",
+        "Both classes have same median",
+        "Class A has smaller IQR"
+      ],
+      "correct": 0,
+      "points": 15,
+      "explanation": "If Curve A is to the right of Curve B, for any given cumulative frequency percentage, Class A has a higher corresponding value. This indicates Class A generally has higher scores (Syllabus 20c)."
+    }
+  ]
+}
