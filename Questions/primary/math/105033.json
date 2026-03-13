@@ -5,147 +5,147 @@
   "level": "Primary",
   "grade": "P5",
   "chapter": 3,
-  "worksheet": 3,
+  "worksheet": 2,
   "questions": [
     {
-      "question": "Da Tong bought $3\\frac{3}{4}$ litres of juice. She drank $\\frac{1}{2}$ litre and gave $\\frac{1}{2}$ of the remainder to her friend. How many litres of juice did she have left?",
-      "options": ["$1\\frac{1}{8}$ L", "$1\\frac{3}{8}$ L", "$1\\frac{5}{8}$ L", "$1\\frac{7}{8}$ L"],
-      "correct": 1,
-      "points": 12,
-      "explanation": "Start: $3\\frac{3}{4} = \\frac{15}{4}$ L. After drank: $\\frac{15}{4} - \\frac{1}{2} = \\frac{13}{4}$ L. Gave $\\frac{1}{2}$ of remainder, so $\\frac{1}{2}$ left: $\\frac{13}{4} \\times \\frac{1}{2} = \\frac{13}{8} = 1\\frac{5}{8}$ L."
-    },
-    {
-      "question": "Mei Lin had $2\\frac{2}{3}$ kg of flour. She used $\\frac{1}{4}$ of it to bake cookies and $\\frac{1}{3}$ of the remainder to make cakes. How much flour did she have left?",
-      "options": ["$1$ kg", "$1\\frac{1}{3}$ kg", "$1\\frac{1}{2}$ kg", "$1\\frac{2}{3}$ kg"],
-      "correct": 1,
-      "points": 12,
-      "explanation": "Start: $2\\frac{2}{3} = \\frac{8}{3}$ kg. After used $\\frac{1}{4}$: $\\frac{8}{3} \\times \\frac{3}{4} = 2$ kg left. After used $\\frac{1}{3}$ of remainder: $2 \\times \\frac{2}{3} = \\frac{4}{3} = 1\\frac{1}{3}$ kg left."
-    },
-    {
-      "question": "A tank contained $4\\frac{1}{2}$ litres of water. $\\frac{1}{3}$ of the water was used to water plants and $\\frac{1}{2}$ of the remainder was used to clean the floor. How much water was left in the tank?",
-      "options": ["$1$ L", "$1\\frac{1}{2}$ L", "$2$ L", "$2\\frac{1}{2}$ L"],
-      "correct": 1,
-      "points": 12,
-      "explanation": "Start: $4\\frac{1}{2} = \\frac{9}{2}$ L. After used $\\frac{1}{3}$: $\\frac{9}{2} \\times \\frac{2}{3} = 3$ L left. After used $\\frac{1}{2}$ of remainder: $3 \\times \\frac{1}{2} = 1\\frac{1}{2}$ L left."
-    },
-    {
-      "question": "Tom had $5\\frac{1}{4}$ m of ribbon. He used $\\frac{2}{3}$ of it to wrap gifts and gave $\\frac{1}{2}$ of the remainder to his sister. How much ribbon did Tom have left?",
-      "options": ["$\\frac{5}{8}$ m", "$\\frac{7}{8}$ m", "$\\frac{9}{8}$ m", "$\\frac{11}{8}$ m"],
-      "correct": 1,
-      "points": 15,
-      "explanation": "Start: $5\\frac{1}{4} = \\frac{21}{4}$ m. After used $\\frac{2}{3}$: $\\frac{21}{4} \\times \\frac{1}{3} = \\frac{7}{4}$ m left. After gave $\\frac{1}{2}$ of remainder: $\\frac{7}{4} \\times \\frac{1}{2} = \\frac{7}{8}$ m left."
-    },
-    {
-      "question": "Sarah baked $3\\frac{1}{2}$ dozen cupcakes. She sold $\\frac{2}{5}$ of them in the morning and $\\frac{1}{3}$ of the remainder in the afternoon. How many dozen cupcakes were left?",
-      "options": ["$1\\frac{1}{5}$ dozen", "$1\\frac{2}{5}$ dozen", "$1\\frac{3}{5}$ dozen", "$1\\frac{4}{5}$ dozen"],
-      "correct": 1,
-      "points": 15,
-      "explanation": "Start: $3\\frac{1}{2} = \\frac{7}{2}$ dozen. After sold $\\frac{2}{5}$: $\\frac{7}{2} \\times \\frac{3}{5} = \\frac{21}{10}$ dozen left. After sold $\\frac{1}{3}$ of remainder: $\\frac{21}{10} \\times \\frac{2}{3} = \\frac{42}{30} = 1\\frac{2}{5}$ dozen left."
-    },
-    {
-      "question": "A bottle contained $2\\frac{3}{4}$ litres of milk. $\\frac{1}{5}$ of the milk was used for coffee and $\\frac{1}{2}$ of the remainder was used for baking. How much milk was left?",
-      "options": ["$\\frac{9}{10}$ L", "$\\frac{11}{10}$ L", "$\\frac{13}{10}$ L", "$\\frac{15}{10}$ L"],
-      "correct": 1,
-      "points": 12,
-      "explanation": "Start: $2\\frac{3}{4} = \\frac{11}{4}$ L. After used $\\frac{1}{5}$: $\\frac{11}{4} \\times \\frac{4}{5} = \\frac{11}{5}$ L left. After used $\\frac{1}{2}$ of remainder: $\\frac{11}{5} \\times \\frac{1}{2} = \\frac{11}{10}$ L left."
-    },
-    {
-      "question": "Ben had $4\\frac{2}{3}$ kg of rice. He cooked $\\frac{1}{4}$ of it for lunch and stored $\\frac{2}{3}$ of the remainder in the pantry. How much rice did he have left to use?",
-      "options": ["$\\frac{5}{6}$ kg", "$\\frac{7}{6}$ kg", "$\\frac{9}{6}$ kg", "$\\frac{11}{6}$ kg"],
-      "correct": 1,
-      "points": 15,
-      "explanation": "Start: $4\\frac{2}{3} = \\frac{14}{3}$ kg. After cooked $\\frac{1}{4}$: $\\frac{14}{3} \\times \\frac{3}{4} = \\frac{14}{4} = \\frac{7}{2}$ kg left. After stored $\\frac{2}{3}$ of remainder: $\\frac{7}{2} \\times \\frac{1}{3} = \\frac{7}{6}$ kg left."
-    },
-    {
-      "question": "A rope was $6\\frac{3}{5}$ m long. $\\frac{1}{3}$ of it was cut for a project and $\\frac{3}{4}$ of the remainder was used for tying. How much rope was left?",
-      "options": ["$\\frac{7}{5}$ m", "$\\frac{9}{5}$ m", "$\\frac{11}{5}$ m", "$\\frac{13}{5}$ m"],
+      "question": "Lisa spent 1/4 of her money on food, then 1/3 of the remainder on drinks and the rest on snacks. What fraction of her money was spent on snacks?",
+      "options": ["1/6", "1/4", "1/2", "2/3"],
       "correct": 2,
       "points": 15,
-      "explanation": "Start: $6\\frac{3}{5} = \\frac{33}{5}$ m. After cut $\\frac{1}{3}$: $\\frac{33}{5} \\times \\frac{2}{3} = \\frac{22}{5}$ m left. After used $\\frac{3}{4}$ of remainder: $\\frac{22}{5} \\times \\frac{1}{4} = \\frac{22}{20} = \\frac{11}{10}$ m. Wait—recalculate: $\\frac{22}{5} \\times \\frac{1}{4} = \\frac{11}{10}$. Let me fix: $\\frac{22}{5} \\times \\frac{1}{4} = \\frac{11}{10}$. Options need $\\frac{11}{10}$."
+      "explanation": "Food = 1/4. Remainder = 1 - 1/4 = 3/4. Drinks = 1/3 x 3/4 = 1/4. Spent on food and drinks = 1/4 + 1/4 = 1/2. Snacks = 1 - 1/2 = 1/2"
     },
     {
-      "question": "Lisa had $3\\frac{3}{8}$ litres of paint. She used $\\frac{1}{3}$ of it for the walls and $\\frac{1}{2}$ of the remainder for the ceiling. How much paint did she have left?",
-      "options": ["$\\frac{7}{8}$ L", "$\\frac{9}{8}$ L", "$\\frac{11}{8}$ L", "$\\frac{13}{8}$ L"],
-      "correct": 1,
-      "points": 12,
-      "explanation": "Start: $3\\frac{3}{8} = \\frac{27}{8}$ L. After used $\\frac{1}{3}$: $\\frac{27}{8} \\times \\frac{2}{3} = \\frac{18}{8}$ L left. After used $\\frac{1}{2}$ of remainder: $\\frac{18}{8} \\times \\frac{1}{2} = \\frac{18}{16} = \\frac{9}{8}$ L left."
-    },
-    {
-      "question": "A jar contained $5\\frac{1}{2}$ kg of sugar. $\\frac{2}{5}$ of the sugar was used for making jam and $\\frac{1}{3}$ of the remainder was used for baking. How much sugar was left?",
-      "options": ["$2$ kg", "$2\\frac{1}{5}$ kg", "$2\\frac{1}{3}$ kg", "$2\\frac{1}{2}$ kg"],
-      "correct": 1,
-      "points": 15,
-      "explanation": "Start: $5\\frac{1}{2} = \\frac{11}{2}$ kg. After used $\\frac{2}{5}$: $\\frac{11}{2} \\times \\frac{3}{5} = \\frac{33}{10}$ kg left. After used $\\frac{1}{3}$ of remainder: $\\frac{33}{10} \\times \\frac{2}{3} = \\frac{66}{30} = \\frac{11}{5} = 2\\frac{1}{5}$ kg left."
-    },
-    {
-      "question": "Mr Tan bought $4\\frac{1}{2}$ kg of apples. He gave $\\frac{1}{3}$ of them to his neighbour and $\\frac{3}{4}$ of the remainder to his friend. How many kg of apples did Mr Tan have left?",
-      "options": ["$\\frac{5}{8}$ kg", "$\\frac{7}{8}$ kg", "$\\frac{9}{8}$ kg", "$\\frac{11}{8}$ kg"],
-      "correct": 2,
-      "points": 15,
-      "explanation": "Start: $4\\frac{1}{2} = \\frac{9}{2}$ kg. After gave $\\frac{1}{3}$: $\\frac{9}{2} \\times \\frac{2}{3} = 3$ kg left. After gave $\\frac{3}{4}$ of remainder: $3 \\times \\frac{1}{4} = \\frac{3}{4} = \\frac{6}{8}$ kg. Let me recalculate: $3 \\times \\frac{1}{4} = \\frac{3}{4}$. Options need $\\frac{3}{4}$."
-    },
-    {
-      "question": "A container had $3\\frac{2}{5}$ litres of oil. $\\frac{1}{4}$ of the oil was used for cooking and $\\frac{2}{5}$ of the remainder was poured into another bottle. How much oil was left in the container?",
-      "options": ["$\\frac{27}{20}$ L", "$\\frac{31}{20}$ L", "$\\frac{35}{20}$ L", "$\\frac{39}{20}$ L"],
-      "correct": 1,
-      "points": 15,
-      "explanation": "Start: $3\\frac{2}{5} = \\frac{17}{5}$ L. After used $\\frac{1}{4}$: $\\frac{17}{5} \\times \\frac{3}{4} = \\frac{51}{20}$ L left. After poured $\\frac{2}{5}$ of remainder: $\\frac{51}{20} \\times \\frac{3}{5} = \\frac{153}{100}$. Let me recalculate: $\\frac{51}{20} \\times \\frac{3}{5} = \\frac{153}{100}$. Options need adjustment."
-    },
-    {
-      "question": "Jenny had $2\\frac{3}{4}$ m of cloth. She used $\\frac{1}{5}$ of it to make a bag and $\\frac{1}{2}$ of the remainder to make a cushion. How much cloth did she have left?",
-      "options": ["$\\frac{9}{10}$ m", "$\\frac{11}{10}$ m", "$\\frac{13}{10}$ m", "$\\frac{15}{10}$ m"],
-      "correct": 1,
-      "points": 12,
-      "explanation": "Start: $2\\frac{3}{4} = \\frac{11}{4}$ m. After used $\\frac{1}{5}$: $\\frac{11}{4} \\times \\frac{4}{5} = \\frac{11}{5}$ m left. After used $\\frac{1}{2}$ of remainder: $\\frac{11}{5} \\times \\frac{1}{2} = \\frac{11}{10}$ m left."
-    },
-    {
-      "question": "A bucket contained $6\\frac{2}{3}$ litres of water. $\\frac{1}{4}$ of the water was used to wash the car and $\\frac{3}{5}$ of the remainder was used to water the garden. How much water was left?",
-      "options": ["$1$ L", "$1\\frac{1}{3}$ L", "$1\\frac{2}{3}$ L", "$2$ L"],
-      "correct": 1,
-      "points": 15,
-      "explanation": "Start: $6\\frac{2}{3} = \\frac{20}{3}$ L. After used $\\frac{1}{4}$: $\\frac{20}{3} \\times \\frac{3}{4} = 5$ L left. After used $\\frac{3}{5}$ of remainder: $5 \\times \\frac{2}{5} = 2$ L. Let me recalculate: $5 \\times \\frac{2}{5} = 2$ L. Options need $2$ L."
-    },
-    {
-      "question": "David bought $5\\frac{1}{3}$ kg of potatoes. He used $\\frac{3}{8}$ of them for soup and $\\frac{2}{5}$ of the remainder for frying. How many kg of potatoes did he have left?",
-      "options": ["$2$ kg", "$2\\frac{1}{5}$ kg", "$2\\frac{1}{3}$ kg", "$2\\frac{2}{5}$ kg"],
+      "question": "Tom had some marbles. He gave 1/4 of them to Ali and 2/5 of the remainder to Bella. What fraction of his total marbles did he give to Bella?",
+      "options": ["3/10", "2/5", "1/2", "3/20"],
       "correct": 0,
       "points": 15,
-      "explanation": "Start: $5\\frac{1}{3} = \\frac{16}{3}$ kg. After used $\\frac{3}{8}$: $\\frac{16}{3} \\times \\frac{5}{8} = \\frac{10}{3}$ kg left. After used $\\frac{2}{5}$ of remainder: $\\frac{10}{3} \\times \\frac{3}{5} = 2$ kg left."
+      "explanation": "After giving 1/4 to Ali, remainder = 3/4. Bella gets 2/5 of 3/4 = 2/5 x 3/4 = 6/20 = 3/10 of the total."
     },
     {
-      "question": "A tank had $4\\frac{4}{5}$ litres of petrol. $\\frac{1}{6}$ of it was used for the motorcycle and $\\frac{1}{2}$ of the remainder was used for the car. How much petrol was left?",
-      "options": ["$1\\frac{3}{5}$ L", "$1\\frac{4}{5}$ L", "$2$ L", "$2\\frac{1}{5}$ L"],
+      "question": "What is 3/4 + 5/8?",
+      "options": ["8/12", "1 3/8", "1 1/4", "1 1/2"],
+      "correct": 1,
+      "points": 10,
+      "explanation": "Find a common denominator. 3/4 = 6/8. So 6/8 + 5/8 = 11/8 = 1 3/8"
+    },
+    {
+      "question": "Siti spent 1/5 of her money on a book and 3/10 of her money on a pen. What fraction of her money did she spend altogether?",
+      "options": ["4/15", "2/5", "3/5", "1/2"],
+      "correct": 3,
+      "points": 10,
+      "explanation": "1/5 + 3/10 = 2/10 + 3/10 = 5/10 = 1/2"
+    },
+    {
+      "question": "Mary had $120. She spent 1/4 on a dress and 1/3 of the remainder on shoes. How much did she spend on shoes?",
+      "options": ["$20", "$40", "$30", "$10"],
       "correct": 2,
       "points": 15,
-      "explanation": "Start: $4\\frac{4}{5} = \\frac{24}{5}$ L. After used $\\frac{1}{6}$: $\\frac{24}{5} \\times \\frac{5}{6} = 4$ L left. After used $\\frac{1}{2}$ of remainder: $4 \\times \\frac{1}{2} = 2$ L left."
+      "explanation": "Dress = 1/4 x $120 = $30. Remainder = $120 - $30 = $90. Shoes = 1/3 x $90 = $30."
     },
     {
-      "question": "Mrs Lim baked $3\\frac{1}{2}$ dozen muffins. She sold $\\frac{3}{7}$ of them at the market and gave $\\frac{1}{2}$ of the remainder to her neighbours. How many dozen muffins did she have left?",
-      "options": ["$1$ dozen", "$1\\frac{1}{4}$ dozen", "$1\\frac{1}{2}$ dozen", "$1\\frac{3}{4}$ dozen"],
+      "question": "What is 5/6 - 1/4?",
+      "options": ["7/12", "1/3", "2/3", "5/24"],
       "correct": 0,
-      "points": 15,
-      "explanation": "Start: $3\\frac{1}{2} = \\frac{7}{2}$ dozen. After sold $\\frac{3}{7}$: $\\frac{7}{2} \\times \\frac{4}{7} = 2$ dozen left. After gave $\\frac{1}{2}$ of remainder: $2 \\times \\frac{1}{2} = 1$ dozen left."
+      "points": 10,
+      "explanation": "Find a common denominator of 12. 5/6 = 10/12. 1/4 = 3/12. So 10/12 - 3/12 = 7/12"
     },
     {
-      "question": "A rope was $5\\frac{2}{3}$ m long. $\\frac{1}{4}$ of it was cut for a kite and $\\frac{2}{3}$ of the remainder was used for a swing. How much rope was left?",
-      "options": ["$\\frac{13}{12}$ m", "$\\frac{15}{12}$ m", "$\\frac{17}{12}$ m", "$\\frac{19}{12}$ m"],
+      "question": "Mr Tan had some oranges. He sold 2/5 of them in the morning and 1/4 of the remainder in the afternoon. What fraction of his oranges was left?",
+      "options": ["3/4", "1/2", "3/20", "9/20"],
+      "correct": 3,
+      "points": 20,
+      "explanation": "Sold in morning = 2/5. Remainder = 3/5. Sold in afternoon = 1/4 x 3/5 = 3/20. Left = 3/5 - 3/20 = 12/20 - 3/20 = 9/20"
+    },
+    {
+      "question": "Calculate 2 1/3 + 1 3/4.",
+      "options": ["3 7/12", "4 1/12", "3 1/7", "4 1/7"],
+      "correct": 1,
+      "points": 12,
+      "explanation": "2 1/3 + 1 3/4 = 7/3 + 7/4. Common denominator = 12. So 28/12 + 21/12 = 49/12 = 4 1/12"
+    },
+    {
+      "question": "Jane had $240. She spent 1/3 on food, 1/4 of the remainder on transport, and saved the rest. How much did she save?",
+      "options": ["$100", "$140", "$80", "$120"],
+      "correct": 3,
+      "points": 20,
+      "explanation": "Food = 1/3 x $240 = $80. Remainder = $240 - $80 = $160. Transport = 1/4 x $160 = $40. Saved = $160 - $40 = $120."
+    },
+    {
+      "question": "What is 4/5 - 2/3?",
+      "options": ["2/15", "1/5", "1/8", "2/5"],
+      "correct": 0,
+      "points": 10,
+      "explanation": "Find a common denominator of 15. 4/5 = 12/15. 2/3 = 10/15. So 12/15 - 10/15 = 2/15"
+    },
+    {
+      "question": "Da Tong bought 3 3/4 litres of juice. She drank 1/2 litre and gave 1/2 of the remainder to her friend. How many litres of juice did she have left?",
+      "options": ["1 1/8 L", "1 3/8 L", "1 5/8 L", "1 7/8 L"],
       "correct": 2,
       "points": 15,
-      "explanation": "Start: $5\\frac{2}{3} = \\frac{17}{3}$ m. After cut $\\frac{1}{4}$: $\\frac{17}{3} \\times \\frac{3}{4} = \\frac{17}{4}$ m left. After used $\\frac{2}{3}$ of remainder: $\\frac{17}{4} \\times \\frac{1}{3} = \\frac{17}{12}$ m left."
+      "explanation": "Start: 3 3/4 = 15/4 L. After drank: 15/4 - 1/2 = 13/4 L. Gave 1/2 of remainder, so 1/2 left: 13/4 x 1/2 = 13/8 = 1 5/8 L."
     },
     {
-      "question": "Tom had $4\\frac{1}{5}$ litres of juice. He drank $\\frac{1}{3}$ of it in the morning and $\\frac{1}{4}$ of the remainder in the afternoon. How much juice did he have left?",
-      "options": ["$1\\frac{7}{10}$ L", "$1\\frac{9}{10}$ L", "$2\\frac{1}{10}$ L", "$2\\frac{3}{10}$ L"],
-      "correct": 2,
-      "points": 15,
-      "explanation": "Start: $4\\frac{1}{5} = \\frac{21}{5}$ L. After drank $\\frac{1}{3}$: $\\frac{21}{5} \\times \\frac{2}{3} = \\frac{14}{5}$ L left. After drank $\\frac{1}{4}$ of remainder: $\\frac{14}{5} \\times \\frac{3}{4} = \\frac{42}{20} = 2\\frac{1}{10}$ L left."
-    },
-    {
-      "question": "A bag contained $6\\frac{3}{4}$ kg of rice. $\\frac{1}{5}$ of the rice was used for dinner and $\\frac{1}{2}$ of the remainder was stored in the cupboard. How much rice was left in the bag?",
-      "options": ["$2$ kg", "$2\\frac{1}{4}$ kg", "$2\\frac{1}{2}$ kg", "$2\\frac{3}{4}$ kg"],
+      "question": "Mei Lin had 2 2/3 kg of flour. She used 1/4 of it to bake cookies and 1/3 of the remainder to make cakes. How much flour did she have left?",
+      "options": ["1 kg", "1 1/3 kg", "1 1/2 kg", "1 2/3 kg"],
       "correct": 1,
       "points": 15,
-      "explanation": "Start: $6\\frac{3}{4} = \\frac{27}{4}$ kg. After used $\\frac{1}{5}$: $\\frac{27}{4} \\times \\frac{4}{5} = \\frac{27}{5}$ kg left. After stored $\\frac{1}{2}$ of remainder: $\\frac{27}{5} \\times \\frac{1}{2} = \\frac{27}{10} = 2\\frac{7}{10}$ kg. Let me recalculate for clean answer."
+      "explanation": "Start: 2 2/3 = 8/3 kg. After used 1/4: 8/3 x 3/4 = 2 kg left. After used 1/3 of remainder: 2 x 2/3 = 4/3 = 1 1/3 kg left."
+    },
+    {
+      "question": "A tank contained 4 1/2 litres of water. 1/3 of the water was used to water plants and 1/2 of the remainder was used to clean the floor. How much water was left in the tank?",
+      "options": ["1 L", "1 1/2 L", "2 L", "2 1/2 L"],
+      "correct": 1,
+      "points": 15,
+      "explanation": "Start: 4 1/2 = 9/2 L. After used 1/3: 9/2 x 2/3 = 3 L left. After used 1/2 of remainder: 3 x 1/2 = 1 1/2 L left."
+    },
+    {
+      "question": "Tom had 5 1/4 m of ribbon. He used 2/3 of it to wrap gifts and gave 1/2 of the remainder to his sister. How much ribbon did Tom have left?",
+      "options": ["5/8 m", "7/8 m", "9/8 m", "11/8 m"],
+      "correct": 1,
+      "points": 15,
+      "explanation": "Start: 5 1/4 = 21/4 m. After used 2/3: 21/4 x 1/3 = 7/4 m left. After gave 1/2 of remainder: 7/4 x 1/2 = 7/8 m left."
+    },
+    {
+      "question": "Sarah baked 3 1/2 dozen cupcakes. She sold 2/5 of them in the morning and 1/3 of the remainder in the afternoon. How many dozen cupcakes were left?",
+      "options": ["1 1/5 dozen", "1 2/5 dozen", "1 3/5 dozen", "1 4/5 dozen"],
+      "correct": 1,
+      "points": 15,
+      "explanation": "Start: 3 1/2 = 7/2 dozen. After sold 2/5: 7/2 x 3/5 = 21/10 dozen left. After sold 1/3 of remainder: 21/10 x 2/3 = 42/30 = 1 2/5 dozen left."
+    },
+    {
+      "question": "A bottle contained 2 3/4 litres of milk. 1/5 of the milk was used for coffee and 1/2 of the remainder was used for baking. How much milk was left?",
+      "options": ["9/10 L", "11/10 L", "13/10 L", "15/10 L"],
+      "correct": 1,
+      "points": 15,
+      "explanation": "Start: 2 3/4 = 11/4 L. After used 1/5: 11/4 x 4/5 = 11/5 L left. After used 1/2 of remainder: 11/5 x 1/2 = 11/10 L left."
+    },
+    {
+      "question": "Ben had 4 2/3 kg of rice. He cooked 1/4 of it for lunch and stored 2/3 of the remainder in the pantry. How much rice did he have left to use?",
+      "options": ["5/6 kg", "7/6 kg", "9/6 kg", "11/6 kg"],
+      "correct": 1,
+      "points": 15,
+      "explanation": "Start: 4 2/3 = 14/3 kg. After cooked 1/4: 14/3 x 3/4 = 14/4 = 7/2 kg left. After stored 2/3 of remainder: 7/2 x 1/3 = 7/6 kg left."
+    },
+    {
+      "question": "A rope was 6 3/5 m long. 1/3 of it was cut for a project and 3/4 of the remainder was used for tying. How much rope was left?",
+      "options": ["7/5 m", "9/5 m", "11/10 m", "13/5 m"],
+      "correct": 2,
+      "points": 15,
+      "explanation": "Start: 6 3/5 = 33/5 m. After cut 1/3: 33/5 x 2/3 = 22/5 m left. After used 3/4 of remainder: 22/5 x 1/4 = 22/20 = 11/10 m left."
+    },
+    {
+      "question": "Lisa had 3 3/8 litres of paint. She used 1/3 of it for the walls and 1/2 of the remainder for the ceiling. How much paint did she have left?",
+      "options": ["7/8 L", "9/8 L", "11/8 L", "13/8 L"],
+      "correct": 1,
+      "points": 15,
+      "explanation": "Start: 3 3/8 = 27/8 L. After used 1/3: 27/8 x 2/3 = 18/8 L left. After used 1/2 of remainder: 18/8 x 1/2 = 18/16 = 9/8 L left."
+    },
+    {
+      "question": "A jar contained 5 1/2 kg of sugar. 2/5 of the sugar was used for making jam and 1/3 of the remainder was used for baking. How much sugar was left?",
+      "options": ["2 kg", "2 1/5 kg", "2 1/3 kg", "2 1/2 kg"],
+      "correct": 1,
+      "points": 15,
+      "explanation": "Start: 5 1/2 = 11/2 kg. After used 2/5: 11/2 x 3/5 = 33/10 kg left. After used 1/3 of remainder: 33/10 x 2/3 = 66/30 = 11/5 = 2 1/5 kg left."
     }
   ]
 }
