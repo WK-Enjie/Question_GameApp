@@ -9,143 +9,143 @@
   "questions": [
     {
       "question": "Which fraction is closest to 1 whole?",
-      "options": ["$\\frac{5}{6}$", "$\\frac{7}{8}$", "$\\frac{9}{10}$", "$\\frac{11}{12}$"],
+      "options": ["5/6", "7/8", "9/10", "11/12"],
       "correct": 3,
       "points": 10,
-      "explanation": "Compare the difference from 1: $\\frac{5}{6}$ is $\\frac{1}{6}$ away, $\\frac{7}{8}$ is $\\frac{1}{8}$ away, $\\frac{9}{10}$ is $\\frac{1}{10}$ away, $\\frac{11}{12}$ is $\\frac{1}{12}$ away. $\\frac{1}{12}$ is the smallest difference, so $\\frac{11}{12}$ is closest to 1."
+      "explanation": "Compare the difference from 1: 5/6 is 1/6 away, 7/8 is 1/8 away, 9/10 is 1/10 away, 11/12 is 1/12 away. 1/12 is the smallest difference, so 11/12 is closest to 1."
     },
     {
-      "question": "Arrange these fractions in ascending order: $\\frac{3}{4}$, $\\frac{5}{6}$, $\\frac{7}{8}$",
-      "options": ["$\\frac{3}{4}$, $\\frac{5}{6}$, $\\frac{7}{8}$", "$\\frac{7}{8}$, $\\frac{5}{6}$, $\\frac{3}{4}$", "$\\frac{5}{6}$, $\\frac{3}{4}$, $\\frac{7}{8}$", "$\\frac{3}{4}$, $\\frac{7}{8}$, $\\frac{5}{6}$"],
+      "question": "Arrange these fractions in ascending order: 3/4, 5/6, 7/8",
+      "options": ["3/4, 5/6, 7/8", "7/8, 5/6, 3/4", "5/6, 3/4, 7/8", "3/4, 7/8, 5/6"],
       "correct": 0,
       "points": 12,
-      "explanation": "Convert to common denominator 24: $\\frac{3}{4} = \\frac{18}{24}$, $\\frac{5}{6} = \\frac{20}{24}$, $\\frac{7}{8} = \\frac{21}{24}$. Order: $\\frac{18}{24} < \\frac{20}{24} < \\frac{21}{24}$, so $\\frac{3}{4} < \\frac{5}{6} < \\frac{7}{8}$."
+      "explanation": "Convert to common denominator 24: 3/4 = 18/24, 5/6 = 20/24, 7/8 = 21/24. Order: 18/24 < 20/24 < 21/24, so 3/4 < 5/6 < 7/8."
     },
     {
-      "question": "Which fraction lies exactly halfway between $\\frac{1}{3}$ and $\\frac{1}{2}$?",
-      "options": ["$\\frac{5}{12}$", "$\\frac{7}{12}$", "$\\frac{1}{4}$", "$\\frac{2}{5}$"],
+      "question": "Which fraction lies exactly halfway between 1/3 and 1/2?",
+      "options": ["5/12", "7/12", "1/4", "2/5"],
       "correct": 0,
       "points": 15,
-      "explanation": "Convert to common denominator 12: $\\frac{1}{3} = \\frac{4}{12}$, $\\frac{1}{2} = \\frac{6}{12}$. The fraction halfway between $\\frac{4}{12}$ and $\\frac{6}{12}$ is $\\frac{5}{12}$."
+      "explanation": "Convert to common denominator 12: 1/3 = 4/12, 1/2 = 6/12. The fraction halfway between 4/12 and 6/12 is 5/12."
     },
     {
-      "question": "Tom ate $\\frac{2}{5}$ of a pizza. Jerry ate $\\frac{3}{7}$ of the same pizza. Who ate more?",
+      "question": "Tom ate 2/5 of a pizza. Jerry ate 3/7 of the same pizza. Who ate more?",
       "options": ["Tom", "Jerry", "They ate the same", "Cannot tell"],
       "correct": 1,
       "points": 12,
-      "explanation": "Compare $\\frac{2}{5}$ and $\\frac{3}{7}$. Common denominator 35: $\\frac{2}{5} = \\frac{14}{35}$, $\\frac{3}{7} = \\frac{15}{35}$. Since $\\frac{15}{35} > \\frac{14}{35}$, Jerry ate more."
+      "explanation": "Compare 2/5 and 3/7. Common denominator 35: 2/5 = 14/35, 3/7 = 15/35. Since 15/35 > 14/35, Jerry ate more."
     },
     {
-      "question": "Which fraction is greater than $\\frac{3}{5}$ but less than $\\frac{4}{5}$?",
-      "options": ["$\\frac{1}{2}$", "$\\frac{7}{10}$", "$\\frac{9}{10}$", "$\\frac{2}{3}$"],
+      "question": "Which fraction is greater than 3/5 but less than 4/5?",
+      "options": ["1/2", "7/10", "9/10", "2/3"],
       "correct": 1,
       "points": 12,
-      "explanation": "Convert to tenths: $\\frac{3}{5} = \\frac{6}{10}$, $\\frac{4}{5} = \\frac{8}{10}$. $\\frac{7}{10}$ is between $\\frac{6}{10}$ and $\\frac{8}{10}$."
+      "explanation": "Convert to tenths: 3/5 = 6/10, 4/5 = 8/10. 7/10 is between 6/10 and 8/10."
     },
     {
-      "question": "If $\\frac{\\text{?}}{8} < \\frac{5}{8} < \\frac{\\text{?}}{8}$, which pair could fill the blanks?",
+      "question": "If ?/8 < 5/8 < ?/8, which pair could fill the blanks?",
       "options": ["3 and 6", "4 and 7", "6 and 4", "5 and 5"],
       "correct": 1,
       "points": 10,
-      "explanation": "For $\\frac{\\text{?}}{8} < \\frac{5}{8} < \\frac{\\text{?}}{8}$, we need first number < 5 < second number. Only 4 and 7 satisfies this condition (4 < 5 < 7)."
+      "explanation": "For ?/8 < 5/8 < ?/8, we need first number < 5 < second number. Only 4 and 7 satisfies this condition (4 < 5 < 7)."
     },
     {
-      "question": "Which fraction is equivalent to $0.625$?",
-      "options": ["$\\frac{5}{8}$", "$\\frac{3}{5}$", "$\\frac{7}{10}$", "$\\frac{2}{3}$"],
+      "question": "Which fraction is equivalent to 0.625?",
+      "options": ["5/8", "3/5", "7/10", "2/3"],
       "correct": 0,
       "points": 10,
-      "explanation": "$0.625 = \\frac{625}{1000} = \\frac{5}{8}$ (divide numerator and denominator by 125). Or: $\\frac{5}{8} = 5 \\div 8 = 0.625$."
+      "explanation": "0.625 = 625/1000 = 5/8 (divide numerator and denominator by 125). Or: 5/8 = 5 divided by 8 = 0.625."
     },
     {
-      "question": "Mary has $\\frac{3}{4}$ of a cake. She gives $\\frac{1}{3}$ of what she has to her friend. What fraction of the whole cake does her friend receive?",
-      "options": ["$\\frac{1}{4}$", "$\\frac{1}{3}$", "$\\frac{1}{2}$", "$\\frac{2}{3}$"],
+      "question": "Mary has 3/4 of a cake. She gives 1/3 of what she has to her friend. What fraction of the whole cake does her friend receive?",
+      "options": ["1/4", "1/3", "1/2", "2/3"],
       "correct": 0,
       "points": 15,
-      "explanation": "Friend receives $\\frac{1}{3}$ of $\\frac{3}{4}$. This is $\\frac{1}{3} \\times \\frac{3}{4} = \\frac{3}{12} = \\frac{1}{4}$ of the whole cake."
+      "explanation": "Friend receives 1/3 of 3/4. This is 1/3 x 3/4 = 3/12 = 1/4 of the whole cake."
     },
     {
-      "question": "Which fraction is closest to $\\frac{1}{2}$?",
-      "options": ["$\\frac{4}{9}$", "$\\frac{5}{9}$", "$\\frac{6}{11}$", "$\\frac{7}{13}$"],
+      "question": "Which fraction is closest to 1/2?",
+      "options": ["4/9", "5/9", "6/11", "7/13"],
       "correct": 3,
       "points": 15,
-      "explanation": "Compare distance from $\\frac{1}{2}$: $\\frac{4}{9}$ is $\\frac{1}{18}$ away, $\\frac{5}{9}$ is $\\frac{1}{18}$ away, $\\frac{6}{11}$ is $\\frac{1}{22}$ away, $\\frac{7}{13}$ is $\\frac{1}{26}$ away. $\\frac{1}{26}$ is smallest, so $\\frac{7}{13}$ is closest."
+      "explanation": "Compare distance from 1/2: 4/9 is 1/18 away, 5/9 is 1/18 away, 6/11 is 1/22 away, 7/13 is 1/26 away. 1/26 is smallest, so 7/13 is closest."
     },
     {
-      "question": "Arrange in descending order: $\\frac{2}{3}$, $\\frac{3}{5}$, $\\frac{5}{8}$",
-      "options": ["$\\frac{2}{3}$, $\\frac{5}{8}$, $\\frac{3}{5}$", "$\\frac{5}{8}$, $\\frac{2}{3}$, $\\frac{3}{5}$", "$\\frac{3}{5}$, $\\frac{5}{8}$, $\\frac{2}{3}$", "$\\frac{2}{3}$, $\\frac{3}{5}$, $\\frac{5}{8}$"],
+      "question": "Arrange in descending order: 2/3, 3/5, 5/8",
+      "options": ["2/3, 5/8, 3/5", "5/8, 2/3, 3/5", "3/5, 5/8, 2/3", "2/3, 3/5, 5/8"],
       "correct": 0,
       "points": 12,
-      "explanation": "Common denominator 120: $\\frac{2}{3} = \\frac{80}{120}$, $\\frac{3}{5} = \\frac{72}{120}$, $\\frac{5}{8} = \\frac{75}{120}$. Descending: $\\frac{80}{120} > \\frac{75}{120} > \\frac{72}{120}$, so $\\frac{2}{3} > \\frac{5}{8} > \\frac{3}{5}$."
+      "explanation": "Common denominator 120: 2/3 = 80/120, 3/5 = 72/120, 5/8 = 75/120. Descending: 80/120 > 75/120 > 72/120, so 2/3 > 5/8 > 3/5."
     },
     {
-      "question": "A fraction is between $\\frac{1}{4}$ and $\\frac{1}{3}$. Which could it be?",
-      "options": ["$\\frac{5}{16}$", "$\\frac{7}{24}$", "$\\frac{3}{10}$", "$\\frac{2}{7}$"],
+      "question": "A fraction is between 1/4 and 1/3. Which could it be?",
+      "options": ["5/16", "7/24", "3/10", "2/7"],
       "correct": 1,
       "points": 15,
-      "explanation": "Convert to common denominator 24: $\\frac{1}{4} = \\frac{6}{24}$, $\\frac{1}{3} = \\frac{8}{24}$. $\\frac{7}{24}$ is between $\\frac{6}{24}$ and $\\frac{8}{24}$."
+      "explanation": "Convert to common denominator 24: 1/4 = 6/24, 1/3 = 8/24. 7/24 is between 6/24 and 8/24."
     },
     {
-      "question": "Which is the largest: $\\frac{7}{9}$, $\\frac{8}{11}$, $\\frac{9}{13}$?",
-      "options": ["$\\frac{7}{9}$", "$\\frac{8}{11}$", "$\\frac{9}{13}$", "They are equal"],
+      "question": "Which is the largest: 7/9, 8/11, 9/13?",
+      "options": ["7/9", "8/11", "9/13", "They are equal"],
       "correct": 0,
       "points": 12,
-      "explanation": "Convert to decimals: $\\frac{7}{9} = 0.777...$, $\\frac{8}{11} = 0.727...$, $\\frac{9}{13} = 0.692...$. $\\frac{7}{9}$ is the largest."
+      "explanation": "Convert to decimals: 7/9 = 0.777..., 8/11 = 0.727..., 9/13 = 0.692.... 7/9 is the largest."
     },
     {
-      "question": "If $\\frac{3}{4}$ of a number is 36, what is $\\frac{5}{6}$ of the same number?",
+      "question": "If 3/4 of a number is 36, what is 5/6 of the same number?",
       "options": ["40", "42", "44", "46"],
       "correct": 0,
       "points": 15,
-      "explanation": "If $\\frac{3}{4}$ of number = 36, then 1 unit = 36 ÷ 3 = 12, whole number = 12 × 4 = 48. $\\frac{5}{6}$ of 48 = 48 ÷ 6 × 5 = 8 × 5 = 40."
+      "explanation": "If 3/4 of number = 36, then 1 unit = 36 divided by 3 = 12, whole number = 12 x 4 = 48. 5/6 of 48 = 48 divided by 6 x 5 = 8 x 5 = 40."
     },
     {
       "question": "Which fraction has the smallest value?",
-      "options": ["$\\frac{11}{15}$", "$\\frac{13}{18}$", "$\\frac{17}{24}$", "$\\frac{19}{27}$"],
+      "options": ["11/15", "13/18", "17/24", "19/27"],
       "correct": 2,
       "points": 15,
-      "explanation": "Convert to decimals: $\\frac{11}{15} = 0.733$, $\\frac{13}{18} = 0.722$, $\\frac{17}{24} = 0.708$, $\\frac{19}{27} = 0.703$. $\\frac{17}{24}$ has the smallest value."
+      "explanation": "Convert to decimals: 11/15 = 0.733, 13/18 = 0.722, 17/24 = 0.708, 19/27 = 0.703. 17/24 has the smallest value."
     },
     {
-      "question": "John spent $\\frac{1}{3}$ of his money on books and $\\frac{1}{4}$ of the remainder on food. What fraction of his money is left?",
-      "options": ["$\\frac{1}{2}$", "$\\frac{5}{12}$", "$\\frac{7}{12}$", "$\\frac{2}{3}$"],
+      "question": "John spent 1/3 of his money on books and 1/4 of the remainder on food. What fraction of his money is left?",
+      "options": ["1/2", "5/12", "7/12", "2/3"],
       "correct": 0,
       "points": 15,
-      "explanation": "After books: $1 - \\frac{1}{3} = \\frac{2}{3}$ left. Food: $\\frac{1}{4}$ of $\\frac{2}{3} = \\frac{2}{12} = \\frac{1}{6}$. Total spent: $\\frac{1}{3} + \\frac{1}{6} = \\frac{1}{2}$. Left: $1 - \\frac{1}{2} = \\frac{1}{2}$."
+      "explanation": "After books: 1 - 1/3 = 2/3 left. Food: 1/4 of 2/3 = 2/12 = 1/6. Total spent: 1/3 + 1/6 = 1/2. Left: 1 - 1/2 = 1/2."
     },
     {
-      "question": "Which fraction is equivalent to $\\frac{15}{24}$ in simplest form?",
-      "options": ["$\\frac{3}{5}$", "$\\frac{5}{8}$", "$\\frac{7}{12}$", "$\\frac{2}{3}$"],
+      "question": "Which fraction is equivalent to 15/24 in simplest form?",
+      "options": ["3/5", "5/8", "7/12", "2/3"],
       "correct": 1,
       "points": 10,
-      "explanation": "Divide numerator and denominator by their HCF (3): $\\frac{15 \\div 3}{24 \\div 3} = \\frac{5}{8}$."
+      "explanation": "Divide numerator and denominator by their HCF (3): 15 divided by 3 / 24 divided by 3 = 5/8."
     },
     {
-      "question": "There are 3 fractions: $\\frac{\\text{?}}{5}$, $\\frac{\\text{?}}{5}$, $\\frac{\\text{?}}{5}$. If $\\frac{\\text{?}}{5} < \\frac{3}{5} < \\frac{\\text{?}}{5} < \\frac{\\text{?}}{5}$, what is the minimum sum of the three missing numbers?",
+      "question": "There are 3 fractions: ?/5, ?/5, ?/5. If ?/5 < 3/5 < ?/5 < ?/5, what is the minimum sum of the three missing numbers?",
       "options": ["9", "10", "11", "12"],
       "correct": 1,
       "points": 18,
-      "explanation": "For $\\frac{\\text{?}}{5} < \\frac{3}{5}$, max first number = 2. For $\\frac{3}{5} < \\frac{\\text{?}}{5}$, min second number = 4. For $\\frac{\\text{?}}{5} < \\frac{\\text{?}}{5}$, min third number = 5. Minimum sum = 2 + 4 + 5 = 11. But first can be 1, so 1 + 4 + 5 = 10."
+      "explanation": "For ?/5 < 3/5, max first number = 2. For 3/5 < ?/5, min second number = 4. For ?/5 < ?/5, min third number = 5. Minimum sum = 2 + 4 + 5 = 11. But first can be 1, so 1 + 4 + 5 = 10."
     },
     {
-      "question": "A tank is $\\frac{3}{5}$ full. After adding 12 litres, it becomes $\\frac{4}{5}$ full. What is the capacity of the tank?",
+      "question": "A tank is 3/5 full. After adding 12 litres, it becomes 4/5 full. What is the capacity of the tank?",
       "options": ["40 L", "50 L", "60 L", "80 L"],
       "correct": 2,
       "points": 15,
-      "explanation": "Difference in fraction: $\\frac{4}{5} - \\frac{3}{5} = \\frac{1}{5}$. This $\\frac{1}{5}$ of capacity = 12 litres. Full capacity = 12 × 5 = 60 litres."
+      "explanation": "Difference in fraction: 4/5 - 3/5 = 1/5. This 1/5 of capacity = 12 litres. Full capacity = 12 x 5 = 60 litres."
     },
     {
       "question": "Which statement is TRUE?",
-      "options": ["$\\frac{2}{3} + \\frac{1}{3} = 1$", "$\\frac{2}{3} \\times \\frac{1}{3} = 1$", "$\\frac{2}{3} - \\frac{1}{3} = 1$", "$\\frac{2}{3} \\div \\frac{1}{3} = 1$"],
+      "options": ["2/3 + 1/3 = 1", "2/3 x 1/3 = 1", "2/3 - 1/3 = 1", "2/3 divided by 1/3 = 1"],
       "correct": 0,
       "points": 10,
-      "explanation": "$\\frac{2}{3} + \\frac{1}{3} = \\frac{3}{3} = 1$ (TRUE). $\\frac{2}{3} \\times \\frac{1}{3} = \\frac{2}{9}$. $\\frac{2}{3} - \\frac{1}{3} = \\frac{1}{3}$. $\\frac{2}{3} \\div \\frac{1}{3} = \\frac{2}{3} \\times \\frac{3}{1} = 2$."
+      "explanation": "2/3 + 1/3 = 3/3 = 1 (TRUE). 2/3 x 1/3 = 2/9. 2/3 - 1/3 = 1/3. 2/3 divided by 1/3 = 2/3 x 3/1 = 2."
     },
     {
-      "question": "If $\\frac{\\text{?}}{12}$ is a fraction between $\\frac{1}{2}$ and $\\frac{2}{3}$, what is a possible value of the missing number?",
+      "question": "If ?/12 is a fraction between 1/2 and 2/3, what is a possible value of the missing number?",
       "options": ["5", "6", "7", "8"],
       "correct": 2,
       "points": 15,
-      "explanation": "Convert to twelfths: $\\frac{1}{2} = \\frac{6}{12}$, $\\frac{2}{3} = \\frac{8}{12}$. For $\\frac{6}{12} < \\frac{\\text{?}}{12} < \\frac{8}{12}$, the missing number = 7 works ($\\frac{7}{12}$ is between $\\frac{6}{12}$ and $\\frac{8}{12}$)."
+      "explanation": "Convert to twelfths: 1/2 = 6/12, 2/3 = 8/12. For 6/12 < ?/12 < 8/12, the missing number = 7 works (7/12 is between 6/12 and 8/12)."
     }
   ]
 }
