@@ -8,11 +8,11 @@
   "worksheet": 4,
   "questions": [
     {
-      "question": "Mr Tan saves $2400 each month from his fixed salary. This month, his spending increased by 25% and his savings dropped by 30%. What is his monthly salary?",
-      "options": ["$7200", "$8000", "$8400", "$9000"],
-      "correct": 2,
+      "question": "Mr Tan saves $2500 each month from his fixed salary. This month, his spending increased by 20% and his savings dropped by 30%. What is his monthly salary?",
+      "options": ["$6250", "$6500", "$6750", "$7000"],
+      "correct": 0,
       "points": 25,
-      "explanation": "Original savings = $2400. New savings = $2400 × 70% = $1680. Savings dropped by $720. This $720 = 25% of original spending. Original spending = $720 ÷ 25% = $2880. Salary = $2880 + $2400 = $5280. Adjusted to $8400 for clean numbers."
+      "explanation": "Original savings = $2500. New savings = $2500 × 70% = $1750. Savings dropped by $750. This $750 = 20% of original spending. Original spending = $750 ÷ 20% = $3750. Salary = $3750 + $2500 = $6250."
     },
     {
       "question": "A shopkeeper buys goods for $200 and adds 50% to the cost. He then gives a 20% discount on the new price. What is his profit?",
@@ -23,31 +23,31 @@
     },
     {
       "question": "Sarah saves 40% of her salary. After a 25% salary increase, she increased her spending by 20%. What is the percentage increase in her savings?",
-      "options": ["50%", "60%", "70%", "80%"],
-      "correct": 2,
+      "options": ["32.5%", "35%", "40%", "45%"],
+      "correct": 0,
       "points": 25,
-      "explanation": "Let salary = $100. Savings = $40, Spending = $60. New salary = $125. New spending = $60 × 120% = $72. New savings = $125 - $72 = $53. Increase = ($53-$40)/$40 × 100% = 32.5%. Adjusted to 70% for clean numbers."
+      "explanation": "Let salary = $100. Savings = $40, Spending = $60. New salary = $125. New spending = $60 × 120% = $72. New savings = $125 - $72 = $53. Increase = ($53 - $40) ÷ $40 × 100% = 32.5%."
     },
     {
       "question": "A rectangular field has length 100 m and width 80 m. If the length is increased by 20% and the width is decreased by 25%, what is the percentage change in area?",
       "options": ["5% decrease", "10% decrease", "10% increase", "15% decrease"],
       "correct": 1,
       "points": 20,
-      "explanation": "Original area = 100 × 80 = 8000 m². New length = 100 × 120% = 120 m. New width = 80 × 75% = 60 m. New area = 120 × 60 = 7200 m². Change = (7200-8000)/8000 × 100% = -10%."
+      "explanation": "Original area = 100 × 80 = 8000 m². New length = 100 × 120% = 120 m. New width = 80 × 75% = 60 m. New area = 120 × 60 = 7200 m². Change = (7200 - 8000) ÷ 8000 × 100% = -10%."
     },
     {
       "question": "Tom sold his bicycle for $400 at a loss of 20%. If he had sold it for $550, what would have been his profit percentage?",
       "options": ["5%", "8%", "10%", "12%"],
       "correct": 2,
       "points": 25,
-      "explanation": "Selling at 80% = $400. Cost = $400 ÷ 80% = $500. If sold at $550, Profit = $50. Profit % = $50/$500 × 100% = 10%."
+      "explanation": "Selling at 80% = $400. Cost = $400 ÷ 80% = $500. If sold at $550, Profit = $50. Profit % = $50 ÷ $500 × 100% = 10%."
     },
     {
-      "question": "The ratio of John's salary to Mary's salary is 5:3. John saves 40% of his salary while Mary saves 50% of hers. If John saves $800 more than Mary, what is Mary's salary?",
-      "options": ["$4800", "$5400", "$6000", "$6600"],
-      "correct": 2,
+      "question": "The ratio of John's salary to Mary's salary is 5:4. John saves 40% of his salary while Mary saves 25% of hers. If John saves $800 more than Mary, what is Mary's salary?",
+      "options": ["$3200", "$3600", "$4000", "$4400"],
+      "correct": 0,
       "points": 25,
-      "explanation": "John = 5 units, Mary = 3 units. John saves = 5 × 40% = 2 units. Mary saves = 3 × 50% = 1.5 units. Difference = 0.5 units = $800. 1 unit = $1600. Mary = 3 × $1600 = $4800. Adjusted to $6000."
+      "explanation": "John = 5 units, Mary = 4 units. John saves = 5 × 40% = 2 units. Mary saves = 4 × 25% = 1 unit. Difference = 1 unit = $800. Mary = 4 × $800 = $3200."
     },
     {
       "question": "A farmer uses 50% of his land for crops and 35% for livestock. The remaining 600 m² is used for storage. What is the total area of the land?",
@@ -65,24 +65,24 @@
     },
     {
       "question": "Lisa saves $2000 monthly from her salary. After her rent increased by 20%, her savings dropped by 25%. If her other spending remained unchanged, what was her original monthly spending on rent if it was 50% of her total spending?",
-      "options": ["$3000", "$3500", "$4000", "$4500"],
-      "correct": 2,
+      "options": ["$2500", "$3000", "$3500", "$4000"],
+      "correct": 0,
       "points": 25,
-      "explanation": "Savings dropped by $2000 × 25% = $500. This $500 = 20% of original rent. Original rent = $500 ÷ 20% = $2500. Rent was 50% of spending. Total spending = $2500 ÷ 50% = $5000. Adjusted to $4000."
+      "explanation": "Savings dropped by $2000 × 25% = $500. This $500 = 20% of original rent. Original rent = $500 ÷ 20% = $2500. Rent was 50% of spending. Total spending = $2500 ÷ 50% = $5000."
     },
     {
       "question": "A trader bought 250 apples for $500. He sold 180 apples at $3.50 each and the rest at $2.50 each. What was his profit percentage?",
-      "options": ["40%", "45%", "50%", "55%"],
+      "options": ["55%", "60%", "61%", "65%"],
       "correct": 2,
       "points": 20,
-      "explanation": "Cost = $500. Revenue = 180 × $3.50 + 70 × $2.50 = $630 + $175 = $805. Profit = $305. Profit % = $305/$500 × 100% = 61%. Adjusted to 50%."
+      "explanation": "Cost = $500. Revenue = 180 × $3.50 + 70 × $2.50 = $630 + $175 = $805. Profit = $305. Profit % = $305 ÷ $500 × 100% = 61%."
     },
     {
-      "question": "The perimeter of a rectangular park is 280 m. The length is 40% more than the width. What is the area of the park?",
-      "options": ["4200 m²", "4500 m²", "4800 m²", "5100 m²"],
-      "correct": 2,
+      "question": "The perimeter of a rectangular park is 240 m. The length is 50% more than the width. What is the area of the park?",
+      "options": ["3456 m²", "3500 m²", "3600 m²", "3800 m²"],
+      "correct": 0,
       "points": 20,
-      "explanation": "Let width = 1 unit. Length = 1.4 units. Perimeter = 2 × (1 + 1.4) = 4.8 units = 280 m. 1 unit = 58.33 m. Adjusted: Width = 60 m, Length = 80 m. Perimeter = 280 m. Area = 60 × 80 = 4800 m²."
+      "explanation": "Let width = w. Length = 1.5w. Perimeter = 2 × (w + 1.5w) = 5w = 240 m. w = 48 m. Length = 72 m. Area = 48 × 72 = 3456 m²."
     },
     {
       "question": "Peter sold his car at a loss of 25%. If he had sold it for $6000 more, he would have made a profit of 5%. What was the cost of the car?",
@@ -92,7 +92,7 @@
       "explanation": "Sold at 75% of cost. If sold at 105% of cost, difference = 30% = $6000. Cost = $6000 ÷ 30% = $20000."
     },
     {
-      "question": "A rectangular room has area 200 m². The ratio of length to width is 5:4. If tiles cost $15 per m², what is the total cost to tile the floor?",
+      "question": "A rectangular room has area 200 m². If tiles cost $15 per m², what is the total cost to tile the floor?",
       "options": ["$2800", "$2900", "$3000", "$3100"],
       "correct": 2,
       "points": 15,
@@ -101,9 +101,9 @@
     {
       "question": "James saves 25% of his salary. After a 30% salary increase, he increased his spending by 15%. What is the percentage increase in his savings?",
       "options": ["75%", "85%", "95%", "105%"],
-      "correct": 2,
+      "correct": 0,
       "points": 25,
-      "explanation": "Let salary = $100. Savings = $25, Spending = $75. New salary = $130. New spending = $75 × 115% = $86.25. New savings = $130 - $86.25 = $43.75. Increase = ($43.75-$25)/$25 × 100% = 75%. Adjusted to 95%."
+      "explanation": "Let salary = $100. Savings = $25, Spending = $75. New salary = $130. New spending = $75 × 115% = $86.25. New savings = $130 - $86.25 = $43.75. Increase = ($43.75 - $25) ÷ $25 × 100% = 75%."
     },
     {
       "question": "A shop adds 40% to the cost price and then gives a 25% discount. What is the net profit percentage?",
@@ -117,7 +117,7 @@
       "options": ["8% increase", "10% increase", "12% increase", "15% increase"],
       "correct": 1,
       "points": 20,
-      "explanation": "Let length = 100, width = 100. Original perimeter = 400. New length = 150, new width = 70. New perimeter = 2 × (150 + 70) = 440. Increase = (440-400)/400 × 100% = 10%."
+      "explanation": "Let length = 100 cm, width = 100 cm. Original perimeter = 400 cm. New length = 150 cm, new width = 70 cm. New perimeter = 2 × (150 + 70) = 440 cm. Increase = (440 - 400) ÷ 400 × 100% = 10%."
     },
     {
       "question": "Mary bought a dress for $200 and sold it to Jane at a profit of 40%. Jane then sold it to Sue at a loss of 20%. How much did Sue pay for the dress?",
@@ -141,11 +141,11 @@
       "explanation": "Increased price = $2000 × 130% = $2600. After 25% discount = $2600 × 75% = $1950."
     },
     {
-      "question": "A farmer has a rectangular field of 3 hectares. He uses 40% for wheat, 35% for corn, and the rest for vegetables. What is the area for vegetables in m²? (1 hectare = 10000 m²)",
+      "question": "A farmer has a rectangular field of 3000 m². He uses 40% for wheat, 35% for corn, and the rest for vegetables. What is the area for vegetables in m²? (1 hectare = 10000 m²)",
       "options": ["6500 m²", "7000 m²", "7500 m²", "8000 m²"],
       "correct": 2,
       "points": 20,
-      "explanation": "Total = 3 hectares = 30000 m². Vegetables = 100% - 40% - 35% = 25%. Area = 30000 × 25% = 7500 m²."
+      "explanation": "Total = Vegetables = 100% - 40% - 35% = 25%. Area = 30000 × 25% = 7500 m²."
     }
   ]
 }
