@@ -1,0 +1,191 @@
+{
+ "title": "Chemical Bonding: Formation and Structure - Worksheet 1",
+ "topic": "Formation of Ions, Molecules and Compounds",
+ "subject": "Pure Chemistry",
+ "level": "Upper Secondary",
+ "grade": "Sec 3",
+ "chapter": 4,
+ "worksheet": 1,
+ "questions": [
+  {
+   "question": "Complete the sentence: An ion is formed when an atom ______ electrons.",
+   "options": [
+    "shares",
+    "gains or loses",
+    "creates",
+    "ignores"
+   ],
+   "correct": 1,
+   "points": 10,
+   "explanation": "Ions are formed when atoms gain or lose electrons to achieve a stable noble gas electron configuration. Metals lose electrons to form positive ions (cations), while non-metals gain electrons to form negative ions (anions)."
+  },
+  {
+   "question": "How many electrons does a magnesium atom lose to form a magnesium ion?",
+   "options": [
+    "1",
+    "2",
+    "3",
+    "4"
+   ],
+   "correct": 1,
+   "points": 10,
+   "explanation": "Magnesium is in Group 2 and has electron configuration 2,8,2. To achieve a stable noble gas configuration (2,8), it loses its 2 outer electrons to form Mg²⁺."
+  },
+  {
+   "question": "Complete the sentence: In the formation of sodium chloride, sodium atoms ______ electrons and chlorine atoms ______ electrons.",
+   "options": [
+    "gain, lose",
+    "lose, gain",
+    "share, share",
+    "lose, lose"
+   ],
+   "correct": 1,
+   "points": 10,
+   "explanation": "Sodium (Group 1) loses 1 electron to form Na⁺. Chlorine (Group 17) gains 1 electron to form Cl⁻. The transfer of electrons forms oppositely charged ions that attract to form the ionic compound."
+  },
+  {
+   "question": "Which diagram correctly shows the formation of a covalent bond in a hydrogen molecule (H₂)?",
+   "options": [
+    "Two H atoms each lose an electron to form H⁺ ions",
+    "Two H atoms share a pair of electrons",
+    "One H atom transfers an electron to the other",
+    "Two H atoms form a metallic bond"
+   ],
+   "correct": 1,
+   "points": 10,
+   "explanation": "In covalent bonding, atoms share pairs of electrons to achieve stable noble gas configurations. In H₂, each hydrogen atom (1 electron) shares its electron with the other, giving each atom access to 2 electrons like helium."
+  },
+  {
+   "question": "Complete the sentence: A molecule is formed when atoms are joined together by ______ bonds.",
+   "options": [
+    "ionic",
+    "covalent",
+    "metallic",
+    "electrostatic"
+   ],
+   "correct": 1,
+   "points": 10,
+   "explanation": "A molecule is a group of atoms held together by covalent bonds, where electrons are shared between non-metal atoms. Ionic compounds form giant lattices, not discrete molecules."
+  },
+  {
+   "question": "How many bonding pairs of electrons are there in a molecule of ammonia (NH₃)?",
+   "options": [
+    "1",
+    "2",
+    "3",
+    "4"
+   ],
+   "correct": 2,
+   "points": 10,
+   "explanation": "In ammonia, nitrogen (Group 15, 5 valence electrons) forms 3 single covalent bonds with 3 hydrogen atoms. Each N-H bond consists of one shared pair of electrons, so there are 3 bonding pairs. Nitrogen also has one lone pair."
+  },
+  {
+   "question": "Complete the explanation: Metallic bonding involves strong electrostatic forces of attraction between ______.",
+   "options": [
+    "oppositely charged ions",
+    "positive nuclei and shared pairs of electrons",
+    "positive ions and sea of delocalised electrons",
+    "neutral atoms"
+   ],
+   "correct": 2,
+   "points": 10,
+   "explanation": "In metals, atoms lose outer electrons to form positive ions. These outer electrons become delocalised and move freely throughout the structure, forming a 'sea of electrons' that holds the positive ions together."
+  },
+  {
+   "question": "How many atoms are present in one molecule of sulfuric acid, H₂SO₄?",
+   "options": [
+    "3",
+    "6",
+    "7",
+    "8"
+   ],
+   "correct": 2,
+   "points": 10,
+   "explanation": "H₂SO₄ contains: 2 hydrogen atoms + 1 sulfur atom + 4 oxygen atoms = 7 atoms total. The subscript numbers indicate the number of each type of atom in the molecule."
+  },
+  {
+   "question": "Complete the sentence: In the carbonate ion, CO₃²⁻, the overall charge of ______ indicates that the ion has gained ______ electrons.",
+   "options": [
+    "2-, two",
+    "2+, two",
+    "3-, three",
+    "1-, one"
+   ],
+   "correct": 0,
+   "points": 10,
+   "explanation": "The carbonate ion has a 2- charge, meaning it has gained 2 extra electrons compared to the total protons. Polyatomic ions like CO₃²⁻ behave as single units in ionic compounds."
+  },
+  {
+   "question": "Which type of bonding is present in calcium hydroxide, Ca(OH)₂?",
+   "options": [
+    "Covalent only",
+    "Ionic only",
+    "Both ionic and covalent",
+    "Metallic"
+   ],
+   "correct": 2,
+   "points": 10,
+   "explanation": "Calcium hydroxide contains Ca²⁺ ions and OH⁻ ions held by ionic bonds. Within each hydroxide ion (OH⁻), oxygen and hydrogen are joined by a covalent bond. Thus, it has both ionic and covalent bonding."
+  },
+  {
+   "question": "Complete the sentence: Atoms form ions to achieve the stable electron configuration of a ______.",
+   "options": [
+    "metal",
+    "non-metal",
+    "noble gas",
+    "transition element"
+   ],
+   "correct": 2,
+   "points": 10,
+   "explanation": "Atoms gain, lose, or share electrons to achieve a full outer shell of electrons, which is the stable configuration of noble gases (Group 18). This is known as the octet rule (or duplet for hydrogen and helium)."
+  },
+  {
+   "question": "How many electrons are shared in a double covalent bond?",
+   "options": [
+    "2",
+    "4",
+    "6",
+    "8"
+   ],
+   "correct": 1,
+   "points": 10,
+   "explanation": "A single covalent bond involves sharing 2 electrons (1 pair). A double bond involves sharing 4 electrons (2 pairs), as seen in O=O or C=O. A triple bond shares 6 electrons (3 pairs)."
+  },
+  {
+   "question": "Complete the explanation: In metallic bonding, the delocalised electrons are formed when metal atoms ______ their outer electrons.",
+   "options": [
+    "gain",
+    "share",
+    "lose",
+    "hide"
+   ],
+   "correct": 2,
+   "points": 10,
+   "explanation": "Metal atoms have few outer electrons that are loosely held. These electrons are lost from individual atoms and become delocalised, moving freely throughout the metal structure while the positive metal ions remain in a lattice."
+  },
+  {
+   "question": "Which formula represents a compound containing a polyatomic ion?",
+   "options": [
+    "NaCl",
+    "MgO",
+    "CaCO₃",
+    "KBr"
+   ],
+   "correct": 2,
+   "points": 10,
+   "explanation": "CaCO₃ contains the carbonate ion (CO₃²⁻), which is a polyatomic ion (an ion made of more than one atom covalently bonded). NaCl, MgO, and KBr contain only simple ions (Na⁺, Cl⁻, Mg²⁺, O²⁻, K⁺, Br⁻)."
+  },
+  {
+   "question": "Complete the sentence: In a water molecule (H₂O), the oxygen atom forms ______ covalent bonds with hydrogen atoms.",
+   "options": [
+    "1",
+    "2",
+    "3",
+    "4"
+   ],
+   "correct": 1,
+   "points": 10,
+   "explanation": "Oxygen has 6 valence electrons and needs 2 more to complete its octet. It forms 2 single covalent bonds with 2 hydrogen atoms, sharing one pair of electrons with each. Oxygen also has 2 lone pairs."
+  }
+ ]
+}n

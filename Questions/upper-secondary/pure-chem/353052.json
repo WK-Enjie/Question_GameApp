@@ -1,0 +1,191 @@
+{
+ "title": "Ionic and Covalent Compounds: Physical Properties - Worksheet 2",
+ "topic": "Structure, Bonding and Physical Properties",
+ "subject": "Pure Chemistry",
+ "level": "Upper Secondary",
+ "grade": "Sec 3",
+ "chapter": 5,
+ "worksheet": 2,
+ "questions": [
+  {
+   "question": "Complete the sentence: In an ionic compound, the strong electrostatic forces of attraction act between ______.",
+   "options": [
+    "positive nuclei and shared pairs of electrons",
+    "positive ions and sea of delocalised electrons",
+    "oppositely charged ions",
+    "neutral molecules"
+   ],
+   "correct": 2,
+   "points": 10,
+   "explanation": "Ionic bonding involves the transfer of electrons from metals to non-metals, forming positively charged cations and negatively charged anions. These oppositely charged ions attract each other through strong electrostatic forces in a giant lattice."
+  },
+  {
+   "question": "Why does solid lead(II) bromide not conduct electricity but molten lead(II) bromide does?",
+   "options": [
+    "Electrons are free to move in the liquid but not the solid",
+    "Ions are free to move in the liquid but fixed in position in the solid",
+    "The bonds break completely to form atoms in the liquid",
+    "Water molecules allow ions to move in the liquid"
+   ],
+   "correct": 1,
+   "points": 10,
+   "explanation": "In solid ionic compounds, ions are held in fixed positions by strong electrostatic forces. When molten, the lattice breaks down and ions become mobile charge carriers, allowing electrical conduction."
+  },
+  {
+   "question": "Which statement correctly describes the bonding in carbon dioxide?",
+   "options": [
+    "Giant ionic lattice of C⁴⁺ and O²⁻ ions",
+    "Simple molecules with covalent bonds between C and O atoms",
+    "Giant covalent structure with each C bonded to 4 O atoms",
+    "Metallic bonding with delocalised electrons"
+   ],
+   "correct": 1,
+   "points": 10,
+   "explanation": "Carbon dioxide is a simple covalent molecule. Each carbon atom forms double covalent bonds with two oxygen atoms (O=C=O). The molecules are held together by weak intermolecular forces, giving CO₂ a low boiling point."
+  },
+  {
+   "question": "Complete the explanation: Ionic compounds are brittle because when a force is applied, layers of ions shift so that ______ repel each other, causing the lattice to break.",
+   "options": [
+    "oppositely charged ions",
+    "ions of the same charge",
+    "delocalised electrons",
+    "neutral atoms"
+   ],
+   "correct": 1,
+   "points": 10,
+   "explanation": "In an ionic lattice, ions are arranged so that oppositely charged ions are adjacent. When a force shifts layers, ions of the same charge may become adjacent. These like charges repel, causing the lattice to fracture."
+  },
+  {
+   "question": "Which substance has a simple molecular structure?",
+   "options": [
+    "Sodium chloride",
+    "Diamond",
+    "Ammonia",
+    "Magnesium"
+   ],
+   "correct": 2,
+   "points": 10,
+   "explanation": "Ammonia (NH₃) is a simple covalent molecule with weak intermolecular forces between molecules. Sodium chloride is ionic, diamond is giant covalent, and magnesium has metallic bonding."
+  },
+  {
+   "question": "Complete the sentence: The high melting point of magnesium oxide is due to strong electrostatic forces of attraction between ______.",
+   "options": [
+    "Mg²⁺ and O²⁻ ions",
+    "Mg atoms and O atoms",
+    "delocalised electrons and Mg²⁺ ions",
+    "shared electrons and nuclei"
+   ],
+   "correct": 0,
+   "points": 10,
+   "explanation": "Magnesium oxide is an ionic compound. Mg loses 2 electrons to form Mg²⁺, and O gains 2 electrons to form O²⁻. The strong electrostatic attraction between these doubly charged ions requires a large amount of energy to overcome."
+  },
+  {
+   "question": "Why does iodine have a low melting point despite having a high relative molecular mass?",
+   "options": [
+    "The covalent bonds within I₂ molecules are weak",
+    "The intermolecular forces between I₂ molecules are weak",
+    "Iodine atoms are small and light",
+    "Iodine has metallic bonding"
+   ],
+   "correct": 1,
+   "points": 10,
+   "explanation": "Iodine exists as I₂ molecules held by strong covalent bonds within each molecule. However, the forces between separate I₂ molecules (intermolecular forces) are weak, so little energy is needed to separate the molecules, giving a low melting point."
+  },
+  {
+   "question": "Complete the explanation: When an ionic compound dissolves in water, it conducts electricity because the ______ become mobile.",
+   "options": [
+    "electrons",
+    "ions",
+    "water molecules",
+    "covalent bonds"
+   ],
+   "correct": 1,
+   "points": 10,
+   "explanation": "In aqueous solution, water molecules surround and separate the ions in the ionic lattice. These free-moving ions can carry electric charge through the solution, allowing electrical conduction."
+  },
+  {
+   "question": "Which property is NOT typical of simple covalent molecules?",
+   "options": [
+    "Low melting and boiling points",
+    "Do not conduct electricity",
+    "Often soluble in organic solvents",
+    "High electrical conductivity when molten"
+   ],
+   "correct": 3,
+   "points": 10,
+   "explanation": "Simple covalent molecules do not conduct electricity in any state because they contain no mobile charged particles (no free electrons or ions). High conductivity when molten is a property of ionic compounds."
+  },
+  {
+   "question": "Complete the sentence: In a giant ionic lattice, each ion is surrounded by ions of ______ charge.",
+   "options": [
+    "the same",
+    "opposite",
+    "neutral",
+    "variable"
+   ],
+   "correct": 1,
+   "points": 10,
+   "explanation": "In an ionic lattice, the arrangement maximises attraction and minimises repulsion. Each positive ion is surrounded by negative ions and vice versa, creating a stable three-dimensional structure held by electrostatic forces."
+  },
+  {
+   "question": "Why does sodium chloride dissolve in water but not in hexane?",
+   "options": [
+    "Water is polar and can attract ions; hexane is non-polar",
+    "Water has a higher boiling point than hexane",
+    "Sodium chloride reacts with water but not hexane",
+    "Hexane molecules are too large to surround ions"
+   ],
+   "correct": 0,
+   "points": 10,
+   "explanation": "Water molecules are polar with partial charges that can attract and surround oppositely charged ions, overcoming the electrostatic forces in the ionic lattice. Hexane is non-polar and cannot interact effectively with ions."
+  },
+  {
+   "question": "Complete the explanation: Simple covalent molecules have low boiling points because little energy is needed to overcome the ______ between molecules.",
+   "options": [
+    "covalent bonds",
+    "electrostatic forces",
+    "intermolecular forces",
+    "ionic bonds"
+   ],
+   "correct": 2,
+   "points": 10,
+   "explanation": "In simple covalent substances, strong covalent bonds hold atoms together within each molecule. However, the forces between separate molecules (intermolecular forces) are weak, so little energy is needed to separate the molecules during boiling."
+  },
+  {
+   "question": "Which statement about the electrical conductivity of ionic compounds is correct?",
+   "options": [
+    "They conduct in solid, molten, and aqueous states",
+    "They conduct only when solid",
+    "They conduct when molten or aqueous, but not when solid",
+    "They never conduct electricity"
+   ],
+   "correct": 2,
+   "points": 10,
+   "explanation": "In the solid state, ions in an ionic compound are fixed in position and cannot carry charge. When molten or dissolved, ions become mobile and can move to carry electric current."
+  },
+  {
+   "question": "Complete the sentence: The term 'giant' in giant ionic lattice means that the structure extends in ______ dimensions.",
+   "options": [
+    "one",
+    "two",
+    "three",
+    "four"
+   ],
+   "correct": 2,
+   "points": 10,
+   "explanation": "A giant ionic lattice is a three-dimensional arrangement where ions are packed in a regular repeating pattern extending in all directions. This creates a macroscopic crystal structure from microscopic ionic interactions."
+  },
+  {
+   "question": "Which pair of substances would both be expected to have high melting points?",
+   "options": [
+    "Carbon dioxide and water",
+    "Sodium chloride and magnesium oxide",
+    "Methane and ammonia",
+    "Iodine and bromine"
+   ],
+   "correct": 1,
+   "points": 10,
+   "explanation": "Sodium chloride and magnesium oxide are both ionic compounds with giant lattices held by strong electrostatic forces between ions. These strong forces require large amounts of energy to overcome, resulting in high melting points."
+  }
+ ]
+}

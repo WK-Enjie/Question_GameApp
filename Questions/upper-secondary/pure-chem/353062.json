@@ -1,0 +1,191 @@
+{
+ "title": "Ionic Equations and Aqueous Ions - Worksheet 2",
+ "topic": "Ionic Equations, Spectator Ions, and Precipitation Reactions",
+ "subject": "Pure Chemistry",
+ "level": "Upper Secondary",
+ "grade": "Sec 3",
+ "chapter": 6,
+ "worksheet": 2,
+ "questions": [
+  {
+   "question": "Which of the following is the correct ionic equation for the reaction between aqueous silver nitrate and aqueous sodium chloride?",
+   "options": [
+    "Ag⁺(aq) + NO₃⁻(aq) + Na⁺(aq) + Cl⁻(aq) → AgCl(s) + Na⁺(aq) + NO₃⁻(aq)",
+    "Ag⁺(aq) + Cl⁻(aq) → AgCl(s)",
+    "AgNO₃(aq) + NaCl(aq) → AgCl(s) + NaNO₃(aq)",
+    "Ag⁺(aq) + Na⁺(aq) → AgNa(s)"
+   ],
+   "correct": 1,
+   "points": 10,
+   "explanation": "The net ionic equation shows only the ions that form the precipitate. Na⁺ and NO₃⁻ are spectator ions (unchanged). The essential reaction is Ag⁺(aq) + Cl⁻(aq) → AgCl(s)."
+  },
+  {
+   "question": "Complete the sentence: Spectator ions are ions that ______ during a chemical reaction.",
+   "options": [
+    "form a precipitate",
+    "are produced as a gas",
+    "do not take part in the reaction",
+    "change oxidation state"
+   ],
+   "correct": 2,
+   "points": 10,
+   "explanation": "Spectator ions are present in solution but do not participate in the chemical change. They appear unchanged on both sides of the ionic equation and are omitted from the net ionic equation."
+  },
+  {
+   "question": "Which ionic equation correctly represents the neutralisation reaction between any strong acid and strong base?",
+   "options": [
+    "H⁺(aq) + OH⁻(aq) → H₂O(l)",
+    "H⁺(aq) + OH⁻(aq) → H₂O(g)",
+    "H₂(g) + O₂(g) → H₂O(l)",
+    "H⁺(aq) + O²⁻(aq) → H₂O(l)"
+   ],
+   "correct": 0,
+   "points": 10,
+   "explanation": "All strong acid-strong base neutralisations reduce to H⁺(aq) + OH⁻(aq) → H₂O(l). The other ions (e.g., Na⁺, Cl⁻) are spectators and do not appear in the net ionic equation."
+  },
+  {
+   "question": "When aqueous barium chloride reacts with aqueous sodium sulfate, a white precipitate forms. What is the formula of the precipitate?",
+   "options": [
+    "BaCl₂",
+    "Na₂SO₄",
+    "BaSO₄",
+    "NaCl"
+   ],
+   "correct": 2,
+   "points": 10,
+   "explanation": "Barium sulfate (BaSO₄) is insoluble in water and forms a white precipitate. Sodium chloride remains dissolved. The net ionic equation is Ba²⁺(aq) + SO₄²⁻(aq) → BaSO₄(s)."
+  },
+  {
+   "question": "Which of the following pairs of aqueous solutions will produce a precipitate when mixed?",
+   "options": [
+    "NaCl(aq) and KNO₃(aq)",
+    "AgNO₃(aq) and NaCl(aq)",
+    "NaOH(aq) and HCl(aq)",
+    "K₂SO₄(aq) and NaNO₃(aq)"
+   ],
+   "correct": 1,
+   "points": 10,
+   "explanation": "AgNO₃ and NaCl form insoluble AgCl (white precipitate). The other pairs form only soluble products: NaCl + KNO₃ → all ions remain in solution; NaOH + HCl → NaCl(aq) + H₂O(l); K₂SO₄ + NaNO₃ → all soluble."
+  },
+  {
+   "question": "Complete the explanation: To write an ionic equation, first write the full balanced equation, then ______, and finally ______.",
+   "options": [
+    "add state symbols, balance charges",
+    "split aqueous compounds into ions, cancel spectator ions",
+    "remove state symbols, simplify formulas",
+    "multiply all coefficients by 2, add charges"
+   ],
+   "correct": 1,
+   "points": 10,
+   "explanation": "Steps for ionic equations: 1) Write balanced molecular equation with state symbols. 2) Split all aqueous strong electrolytes into their ions. 3) Cancel spectator ions that appear unchanged on both sides. 4) Write the net ionic equation."
+  },
+  {
+   "question": "Which ionic equation represents the reaction between aqueous copper(II) sulfate and aqueous sodium hydroxide?",
+   "options": [
+    "Cu²⁺(aq) + SO₄²⁻(aq) + 2Na⁺(aq) + 2OH⁻(aq) → Cu(OH)₂(s) + 2Na⁺(aq) + SO₄²⁻(aq)",
+    "Cu²⁺(aq) + 2OH⁻(aq) → Cu(OH)₂(s)",
+    "CuSO₄(aq) + 2NaOH(aq) → Cu(OH)₂(s) + Na₂SO₄(aq)",
+    "Cu⁺(aq) + OH⁻(aq) → CuOH(s)"
+   ],
+   "correct": 1,
+   "points": 10,
+   "explanation": "Copper(II) hydroxide is insoluble (blue precipitate). Na⁺ and SO₄²⁻ are spectator ions. The net ionic equation shows only the reacting ions: Cu²⁺(aq) + 2OH⁻(aq) → Cu(OH)₂(s)."
+  },
+  {
+   "question": "What is the correct ionic equation for the reaction of solid calcium carbonate with aqueous hydrochloric acid?",
+   "options": [
+    "CaCO₃(s) + 2H⁺(aq) → Ca²⁺(aq) + CO₂(g) + H₂O(l)",
+    "CaCO₃(s) + H⁺(aq) → Ca⁺(aq) + CO₂(g) + H₂O(l)",
+    "Ca²⁺(aq) + CO₃²⁻(aq) + 2H⁺(aq) → Ca²⁺(aq) + CO₂(g) + H₂O(l)",
+    "CaCO₃(s) + 2HCl(aq) → CaCl₂(aq) + CO₂(g) + H₂O(l)"
+   ],
+   "correct": 0,
+   "points": 10,
+   "explanation": "CaCO₃ is a solid, so it is not split into ions. HCl is aqueous and dissociates to H⁺ and Cl⁻. Products: Ca²⁺(aq), CO₂(g), H₂O(l). Cl⁻ is a spectator. Net ionic: CaCO₃(s) + 2H⁺(aq) → Ca²⁺(aq) + CO₂(g) + H₂O(l)."
+  },
+  {
+   "question": "Which statement about aqueous ions is correct?",
+   "options": [
+    "Aqueous ions are neutral atoms dissolved in water",
+    "Aqueous ions are charged particles that are free to move in solution",
+    "Aqueous ions only exist in acidic solutions",
+    "Aqueous ions cannot conduct electricity"
+   ],
+   "correct": 1,
+   "points": 10,
+   "explanation": "Aqueous ions are charged particles (cations or anions) that are dispersed and free to move in water. Their mobility allows ionic solutions to conduct electricity."
+  },
+  {
+   "question": "Complete the sentence: In the ionic equation for a precipitation reaction, the precipitate is always written with the state symbol ______.",
+   "options": [
+    "(aq)",
+    "(l)",
+    "(g)",
+    "(s)"
+   ],
+   "correct": 3,
+   "points": 10,
+   "explanation": "A precipitate is an insoluble solid that forms from a reaction in solution. Therefore, it is always represented with the state symbol (s) in ionic equations."
+  },
+  {
+   "question": "Which ionic equation correctly shows the reaction between aqueous lead(II) nitrate and aqueous potassium iodide?",
+   "options": [
+    "Pb²⁺(aq) + 2I⁻(aq) → PbI₂(s)",
+    "Pb⁺(aq) + I⁻(aq) → PbI(s)",
+    "Pb(NO₃)₂(aq) + 2KI(aq) → PbI₂(s) + 2KNO₃(aq)",
+    "Pb²⁺(aq) + NO₃⁻(aq) + K⁺(aq) + I⁻(aq) → PbI₂(s) + K⁺(aq) + NO₃⁻(aq)"
+   ],
+   "correct": 0,
+   "points": 10,
+   "explanation": "Lead(II) iodide (PbI₂) is a yellow precipitate. K⁺ and NO₃⁻ are spectator ions. The net ionic equation is Pb²⁺(aq) + 2I⁻(aq) → PbI₂(s)."
+  },
+  {
+   "question": "When aqueous ammonium chloride reacts with aqueous sodium hydroxide and the mixture is warmed, ammonia gas is produced. What is the ionic equation?",
+   "options": [
+    "NH₄⁺(aq) + OH⁻(aq) → NH₃(g) + H₂O(l)",
+    "NH₄Cl(aq) + NaOH(aq) → NH₃(g) + H₂O(l) + NaCl(aq)",
+    "NH₄⁺(aq) + Cl⁻(aq) + Na⁺(aq) + OH⁻(aq) → NH₃(g) + H₂O(l) + Na⁺(aq) + Cl⁻(aq)",
+    "NH₄⁺(aq) + OH⁻(aq) → NH₄OH(aq)"
+   ],
+   "correct": 0,
+   "points": 10,
+   "explanation": "Ammonium ions react with hydroxide ions to form ammonia gas and water. Na⁺ and Cl⁻ are spectator ions. Net ionic: NH₄⁺(aq) + OH⁻(aq) → NH₃(g) + H₂O(l)."
+  },
+  {
+   "question": "Which of the following ionic equations is NOT balanced in terms of both atoms and charge?",
+   "options": [
+    "Fe²⁺(aq) + 2OH⁻(aq) → Fe(OH)₂(s)",
+    "2H⁺(aq) + CO₃²⁻(aq) → CO₂(g) + H₂O(l)",
+    "Ag⁺(aq) + Cl⁻(aq) → AgCl(s)",
+    "Ca²⁺(aq) + OH⁻(aq) → CaOH(s)"
+   ],
+   "correct": 3,
+   "points": 10,
+   "explanation": "Option D is incorrect: Ca²⁺ needs 2OH⁻ to form Ca(OH)₂, not CaOH. Also, charge: left side has +2 + (-1) = +1, right side is neutral. Correct: Ca²⁺(aq) + 2OH⁻(aq) → Ca(OH)₂(s)."
+  },
+  {
+   "question": "Complete the explanation: In an ionic equation, the total charge on the left side must ______ the total charge on the right side.",
+   "options": [
+    "be greater than",
+    "be less than",
+    "be equal to",
+    "have no relationship with"
+   ],
+   "correct": 2,
+   "points": 10,
+   "explanation": "Ionic equations must be balanced for both atoms and charge. The sum of charges on the reactant side must equal the sum of charges on the product side, reflecting conservation of charge."
+  },
+  {
+   "question": "Which ionic equation represents the reaction when aqueous iron(III) chloride reacts with aqueous sodium hydroxide?",
+   "options": [
+    "Fe³⁺(aq) + 3OH⁻(aq) → Fe(OH)₃(s)",
+    "Fe²⁺(aq) + 2OH⁻(aq) → Fe(OH)₂(s)",
+    "Fe³⁺(aq) + OH⁻(aq) → FeOH²⁺(aq)",
+    "FeCl₃(aq) + 3NaOH(aq) → Fe(OH)₃(s) + 3NaCl(aq)"
+   ],
+   "correct": 0,
+   "points": 10,
+   "explanation": "Iron(III) hydroxide is a reddish-brown precipitate. Na⁺ and Cl⁻ are spectator ions. The net ionic equation is Fe³⁺(aq) + 3OH⁻(aq) → Fe(OH)₃(s)."
+  }
+ ]
+}

@@ -1,0 +1,191 @@
+{
+ "title": "Ionic and Covalent Compounds: Physical Properties - Worksheet 1",
+ "topic": "Structure, Bonding and Physical Properties",
+ "subject": "Pure Chemistry",
+ "level": "Upper Secondary",
+ "grade": "Sec 3",
+ "chapter": 5,
+ "worksheet": 1,
+ "questions": [
+  {
+   "question": "Which statement correctly explains why sodium chloride has a high melting point?",
+   "options": [
+    "Strong covalent bonds between sodium and chlorine atoms",
+    "Strong electrostatic forces of attraction between oppositely charged ions",
+    "Weak intermolecular forces between NaCl molecules",
+    "Metallic bonding between sodium ions"
+   ],
+   "correct": 1,
+   "points": 10,
+   "explanation": "Ionic compounds like sodium chloride have a giant lattice structure held together by strong electrostatic forces of attraction between oppositely charged ions. A large amount of energy is required to overcome these forces, resulting in high melting and boiling points."
+  },
+  {
+   "question": "Complete the sentence: Ionic compounds conduct electricity when molten or dissolved in water because the ______ are free to move.",
+   "options": [
+    "electrons",
+    "ions",
+    "atoms",
+    "molecules"
+   ],
+   "correct": 1,
+   "points": 10,
+   "explanation": "In the solid state, ions in an ionic compound are fixed in position by strong electrostatic forces. When molten or dissolved, the ions become mobile and can carry electric charge, allowing the substance to conduct electricity."
+  },
+  {
+   "question": "Why does solid magnesium oxide not conduct electricity?",
+   "options": [
+    "It contains no charged particles",
+    "The ions are fixed in position in the giant lattice",
+    "It has covalent bonds instead of ionic bonds",
+    "The electrons are delocalised but cannot move"
+   ],
+   "correct": 1,
+   "points": 10,
+   "explanation": "In solid ionic compounds, the oppositely charged ions are held in fixed positions by strong electrostatic forces in a giant lattice. Since the ions cannot move, they cannot carry electric charge, so the solid does not conduct electricity."
+  },
+  {
+   "question": "Which property is characteristic of simple covalent molecules like carbon dioxide?",
+   "options": [
+    "High melting point due to strong covalent bonds",
+    "Conducts electricity when molten",
+    "Low boiling point due to weak intermolecular forces",
+    "Hard and brittle solid at room temperature"
+   ],
+   "correct": 2,
+   "points": 10,
+   "explanation": "Simple covalent molecules are held together by weak intermolecular forces between molecules. Little energy is needed to overcome these forces, so they have low melting and boiling points. The strong covalent bonds are within molecules, not between them."
+  },
+  {
+   "question": "Complete the explanation: Sodium chloride has a higher melting point than iodine because the strong electrostatic forces of attraction between ______ require more energy to overcome than the weak intermolecular forces between ______.",
+   "options": [
+    "oppositely charged ions, iodine molecules",
+    "positive ions and delocalised electrons, iodine atoms",
+    "shared electrons and nuclei, iodine molecules",
+    "iodine molecules, oppositely charged ions"
+   ],
+   "correct": 0,
+   "points": 10,
+   "explanation": "Sodium chloride is an ionic compound with a giant lattice of oppositely charged ions held by strong electrostatic forces. Iodine is a simple covalent molecule held by weak intermolecular forces. Stronger forces require more energy to overcome, hence higher melting point."
+  },
+  {
+   "question": "Which substance will conduct electricity in the molten state but not in the solid state?",
+   "options": [
+    "Copper",
+    "Graphite",
+    "Potassium bromide",
+    "Sulfur"
+   ],
+   "correct": 2,
+   "points": 10,
+   "explanation": "Potassium bromide is an ionic compound. In the solid state, ions are fixed and cannot conduct. When molten, ions become mobile and can carry charge. Copper and graphite conduct in both states due to delocalised electrons. Sulfur is a simple covalent molecule and does not conduct."
+  },
+  {
+   "question": "Complete the sentence: A giant ionic lattice consists of ______ held together by strong electrostatic forces of attraction.",
+   "options": [
+    "neutral molecules",
+    "positive ions and delocalised electrons",
+    "oppositely charged ions",
+    "atoms sharing electrons"
+   ],
+   "correct": 2,
+   "points": 10,
+   "explanation": "An ionic compound consists of a giant lattice structure where positively charged cations and negatively charged anions are arranged in a regular pattern and held together by strong electrostatic forces of attraction."
+  },
+  {
+   "question": "Why does water (H₂O) have a low boiling point compared to sodium chloride?",
+   "options": [
+    "Water has weaker covalent bonds than ionic bonds",
+    "Water molecules are held by weak intermolecular forces",
+    "Water is a smaller molecule than sodium chloride",
+    "Water does not contain ions"
+   ],
+   "correct": 1,
+   "points": 10,
+   "explanation": "Water is a simple covalent molecule. The molecules are held together by weak intermolecular forces (hydrogen bonds), which require little energy to overcome. Sodium chloride has strong electrostatic forces between ions in a giant lattice, requiring much more energy."
+  },
+  {
+   "question": "Which statement about the structure and properties of silicon dioxide is not correct?",
+   "options": [
+    "It has a giant covalent structure similar to that of diamond",
+    "There are strong covalent bonds between silicon and oxygen atoms",
+    "Each silicon atom is bonded to four neighbouring oxygen atoms",
+    "It has a high melting point due to the strong attractive force between molecules"
+   ],
+   "correct": 3,
+   "points": 10,
+   "explanation": "Silicon dioxide (SiO₂) has a giant covalent structure where all atoms are joined by strong covalent bonds in a continuous three-dimensional lattice. There are no discrete molecules. The high melting point is due to the large amount of energy needed to break these strong covalent bonds—not weak intermolecular forces between molecules."
+  },
+  {
+   "question": "Complete the explanation: Iodine sublimes easily because the weak ______ between iodine molecules require little energy to overcome.",
+   "options": [
+    "covalent bonds",
+    "electrostatic forces",
+    "intermolecular forces",
+    "metallic bonds"
+   ],
+   "correct": 2,
+   "points": 10,
+   "explanation": "Iodine exists as I₂ molecules. The molecules are held together by weak intermolecular forces. These forces are easily overcome, allowing iodine to sublime (change directly from solid to gas) with little heating. The strong covalent bonds within I₂ molecules remain intact."
+  },
+  {
+   "question": "Which property would you expect for a compound with a giant ionic lattice structure?",
+   "options": [
+    "Low melting point and soluble in organic solvents",
+    "High melting point and conducts electricity when solid",
+    "High melting point and conducts electricity when molten",
+    "Low boiling point and insoluble in water"
+   ],
+   "correct": 2,
+   "points": 10,
+   "explanation": "Giant ionic lattices have high melting points due to strong electrostatic forces between ions. They conduct electricity when molten or dissolved because ions become mobile, but not when solid because ions are fixed in position."
+  },
+  {
+   "question": "Complete the sentence: Simple covalent molecules like methane do not conduct electricity because they contain no ______.",
+   "options": [
+    "covalent bonds",
+    "mobile charged particles",
+    "carbon atoms",
+    "intermolecular forces"
+   ],
+   "correct": 1,
+   "points": 10,
+   "explanation": "Simple covalent molecules have all electrons involved in covalent bonds or as lone pairs. There are no free electrons or mobile ions to carry electric charge, so they do not conduct electricity in any state."
+  },
+  {
+   "question": "Why does calcium fluoride have a higher melting point than hydrogen fluoride?",
+   "options": [
+    "Calcium fluoride has covalent bonds while hydrogen fluoride has ionic bonds",
+    "Calcium fluoride has a giant ionic lattice while hydrogen fluoride has simple molecules",
+    "Hydrogen fluoride has stronger intermolecular forces",
+    "Calcium fluoride molecules are larger"
+   ],
+   "correct": 1,
+   "points": 10,
+   "explanation": "Calcium fluoride (CaF₂) is an ionic compound with a giant lattice held by strong electrostatic forces. Hydrogen fluoride (HF) is a simple covalent molecule held by weak intermolecular forces. Stronger forces in CaF₂ require more energy to overcome."
+  },
+  {
+   "question": "Complete the explanation: When an ionic compound dissolves in water, the water molecules surround the ions and overcome the ______, allowing the ions to move freely.",
+   "options": [
+    "covalent bonds within the ions",
+    "electrostatic forces of attraction between ions",
+    "intermolecular forces between water molecules",
+    "metallic bonds in the lattice"
+   ],
+   "correct": 1,
+   "points": 10,
+   "explanation": "Water is a polar solvent. The partially charged ends of water molecules attract and surround the oppositely charged ions in the ionic lattice. This weakens the electrostatic forces between ions, allowing them to separate and move freely in solution."
+  },
+  {
+   "question": "Which pair of substances both have low melting points?",
+   "options": [
+    "Sodium chloride and magnesium oxide",
+    "Carbon dioxide and water",
+    "Potassium bromide and calcium fluoride",
+    "Aluminium oxide and silicon dioxide"
+   ],
+   "correct": 1,
+   "points": 10,
+   "explanation": "Carbon dioxide and water are simple covalent molecules held by weak intermolecular forces, so they have low melting points. The other pairs are ionic compounds or giant covalent structures with strong bonds requiring high energy to overcome."
+  }
+ ]
+}

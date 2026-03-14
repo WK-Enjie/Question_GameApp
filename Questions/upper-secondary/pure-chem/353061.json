@@ -1,0 +1,191 @@
+{
+ "title": "Writing and Balancing Chemical Equations - Worksheet 1",
+ "topic": "Word Equations, Chemical Equations, and State Symbols",
+ "subject": "Pure Chemistry",
+ "level": "Upper Secondary",
+ "grade": "Sec 3",
+ "chapter": 6,
+ "worksheet": 1,
+ "questions": [
+  {
+   "question": "Which of the following is the correct chemical equation for the reaction: magnesium reacts with oxygen to form magnesium oxide?",
+   "options": [
+    "Mg + O → MgO",
+    "Mg + O₂ → MgO",
+    "2Mg + O₂ → 2MgO",
+    "Mg₂ + O₂ → 2MgO"
+   ],
+   "correct": 2,
+   "points": 10,
+   "explanation": "Magnesium is Mg, oxygen gas is diatomic (O₂), and magnesium oxide is MgO. To balance: 2Mg + O₂ → 2MgO ensures equal numbers of Mg and O atoms on both sides."
+  },
+  {
+   "question": "Complete the sentence: The state symbol (aq) means the substance is ______.",
+   "options": [
+    "dissolved in water",
+    "a pure liquid",
+    "a gas",
+    "a solid precipitate"
+   ],
+   "correct": 0,
+   "points": 10,
+   "explanation": "(aq) stands for 'aqueous', meaning the substance is dissolved in water to form a solution. This is different from (l) which means a pure liquid."
+  },
+  {
+   "question": "Which equation correctly represents the reaction: solid calcium carbonate reacts with aqueous hydrochloric acid to produce aqueous calcium chloride, carbon dioxide gas, and liquid water?",
+   "options": [
+    "CaCO₃(s) + HCl(aq) → CaCl₂(aq) + CO₂(g) + H₂O(l)",
+    "CaCO₃(s) + 2HCl(aq) → CaCl₂(aq) + CO₂(g) + H₂O(l)",
+    "CaCO₃(aq) + 2HCl(aq) → CaCl₂(s) + CO₂(g) + H₂O(l)",
+    "CaCO₃(s) + HCl(aq) → CaCl(aq) + CO₂(g) + H₂O(l)"
+   ],
+   "correct": 1,
+   "points": 10,
+   "explanation": "Calcium carbonate is a solid (s), HCl is aqueous (aq). Products: CaCl₂ is soluble (aq), CO₂ is a gas (g), H₂O is liquid (l). The equation must be balanced: 2HCl provides 2Cl⁻ for CaCl₂ and 2H⁺ for H₂O."
+  },
+  {
+   "question": "What is the correct balanced equation for the combustion of methane (CH₄) in oxygen?",
+   "options": [
+    "CH₄ + O₂ → CO₂ + H₂O",
+    "CH₄ + 2O₂ → CO₂ + 2H₂O",
+    "CH₄ + O₂ → CO₂ + 2H₂O",
+    "2CH₄ + O₂ → 2CO₂ + 4H₂O"
+   ],
+   "correct": 1,
+   "points": 10,
+   "explanation": "Combustion of methane: CH₄ + 2O₂ → CO₂ + 2H₂O. Balance C first (1:1), then H (4 H on left → 2H₂O on right), then O (4 O on right → 2O₂ on left)."
+  },
+  {
+   "question": "Which state symbol should be used for sodium chloride when it is dissolved in water to form brine?",
+   "options": [
+    "(s)",
+    "(l)",
+    "(g)",
+    "(aq)"
+   ],
+   "correct": 3,
+   "points": 10,
+   "explanation": "When an ionic compound like NaCl dissolves in water, it forms an aqueous solution. The ions are dispersed in water, so the state symbol is (aq)."
+  },
+  {
+   "question": "Complete the explanation: In a chemical equation, state symbols are written ______ to show the physical state of each substance.",
+   "options": [
+    "as superscripts after the formula",
+    "in brackets after the formula",
+    "as subscripts within the formula",
+    "before the formula as prefixes"
+   ],
+   "correct": 1,
+   "points": 10,
+   "explanation": "State symbols (s), (l), (g), (aq) are written in brackets immediately after the chemical formula to indicate whether the substance is solid, liquid, gas, or aqueous."
+  },
+  {
+   "question": "Which of the following equations is correctly balanced?",
+   "options": [
+    "Fe + O₂ → Fe₂O₃",
+    "2Fe + 3O₂ → 2Fe₂O₃",
+    "4Fe + 3O₂ → 2Fe₂O₃",
+    "Fe + 3O₂ → Fe₂O₃"
+   ],
+   "correct": 2,
+   "points": 10,
+   "explanation": "To balance Fe₂O₃: need 4 Fe atoms and 6 O atoms on left. 4Fe + 3O₂ → 2Fe₂O₃ gives 4 Fe and 6 O on both sides."
+  },
+  {
+   "question": "When aqueous silver nitrate reacts with aqueous sodium chloride, a white precipitate of silver chloride forms. Which equation correctly shows the state symbols?",
+   "options": [
+    "AgNO₃(aq) + NaCl(aq) → AgCl(aq) + NaNO₃(aq)",
+    "AgNO₃(s) + NaCl(s) → AgCl(s) + NaNO₃(s)",
+    "AgNO₃(aq) + NaCl(aq) → AgCl(s) + NaNO₃(aq)",
+    "AgNO₃(l) + NaCl(l) → AgCl(s) + NaNO₃(l)"
+   ],
+   "correct": 2,
+   "points": 10,
+   "explanation": "Both reactants are aqueous solutions. Silver chloride is insoluble, so it forms a solid precipitate (s). Sodium nitrate remains dissolved (aq)."
+  },
+  {
+   "question": "Complete the sentence: The law of conservation of mass means that in a chemical reaction, the total mass of reactants ______ the total mass of products.",
+   "options": [
+    "is greater than",
+    "is less than",
+    "is equal to",
+    "has no relationship with"
+   ],
+   "correct": 2,
+   "points": 10,
+   "explanation": "The law of conservation of mass states that matter cannot be created or destroyed in a chemical reaction. Therefore, the total mass of reactants equals the total mass of products."
+  },
+  {
+   "question": "Which equation correctly represents the thermal decomposition of solid copper(II) carbonate?",
+   "options": [
+    "CuCO₃(s) → CuO(s) + CO₂(g)",
+    "CuCO₃(s) → Cu(s) + CO₂(g) + O₂(g)",
+    "2CuCO₃(s) → 2CuO(s) + CO₂(g)",
+    "CuCO₃(s) → CuO(g) + CO₂(s)"
+   ],
+   "correct": 0,
+   "points": 10,
+   "explanation": "Copper(II) carbonate decomposes on heating to form solid copper(II) oxide and carbon dioxide gas. The equation is already balanced: 1 Cu, 1 C, 3 O on each side."
+  },
+  {
+   "question": "What is the correct balanced equation for the reaction between aqueous sulfuric acid and aqueous sodium hydroxide?",
+   "options": [
+    "H₂SO₄(aq) + NaOH(aq) → Na₂SO₄(aq) + H₂O(l)",
+    "H₂SO₄(aq) + 2NaOH(aq) → Na₂SO₄(aq) + 2H₂O(l)",
+    "H₂SO₄(aq) + NaOH(aq) → NaSO₄(aq) + H₂O(l)",
+    "2H₂SO₄(aq) + NaOH(aq) → Na₂SO₄(aq) + H₂O(l)"
+   ],
+   "correct": 1,
+   "points": 10,
+   "explanation": "Sulfuric acid is diprotic (2H⁺), so it needs 2NaOH to neutralise. Products: sodium sulfate (Na₂SO₄, soluble, aq) and water (l). Balanced: H₂SO₄ + 2NaOH → Na₂SO₄ + 2H₂O."
+  },
+  {
+   "question": "Which state symbol is used for mercury at room temperature?",
+   "options": [
+    "(s)",
+    "(l)",
+    "(g)",
+    "(aq)"
+   ],
+   "correct": 1,
+   "points": 10,
+   "explanation": "Mercury is the only metal that is liquid at room temperature. Therefore, its state symbol is (l), not (s) like other metals."
+  },
+  {
+   "question": "Complete the explanation: When balancing a chemical equation, we change the ______ in front of formulas, not the ______ within formulas.",
+   "options": [
+    "coefficients, subscripts",
+    "subscripts, coefficients",
+    "state symbols, formulas",
+    "formulas, state symbols"
+   ],
+   "correct": 0,
+   "points": 10,
+   "explanation": "To balance equations, we adjust coefficients (numbers in front of formulas) to change the number of molecules/units. We never change subscripts within formulas, as that would change the chemical identity of the substance."
+  },
+  {
+   "question": "Which equation correctly shows the reaction of solid zinc with aqueous hydrochloric acid?",
+   "options": [
+    "Zn(s) + HCl(aq) → ZnCl(aq) + H₂(g)",
+    "Zn(s) + 2HCl(aq) → ZnCl₂(aq) + H₂(g)",
+    "Zn(s) + HCl(aq) → ZnCl₂(aq) + H(g)",
+    "Zn(s) + 2HCl(aq) → ZnCl₂(s) + H₂(g)"
+   ],
+   "correct": 1,
+   "points": 10,
+   "explanation": "Zinc reacts with HCl to form zinc chloride (ZnCl₂, soluble, aq) and hydrogen gas (H₂, g). Zinc has a +2 charge, so it needs 2Cl⁻. Balanced: Zn + 2HCl → ZnCl₂ + H₂."
+  },
+  {
+   "question": "What does the state symbol (g) indicate about a substance in a chemical equation?",
+   "options": [
+    "The substance is a gas at the reaction conditions",
+    "The substance is generated during the reaction",
+    "The substance is a gel",
+    "The substance is ground into a powder"
+   ],
+   "correct": 0,
+   "points": 10,
+   "explanation": "(g) indicates the substance is in the gaseous state under the reaction conditions. This is important for understanding the physical changes and for calculations involving gas volumes."
+  }
+ ]
+}

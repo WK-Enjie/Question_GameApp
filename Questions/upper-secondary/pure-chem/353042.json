@@ -1,0 +1,191 @@
+{
+ "title": "Chemical Bonding: Formation and Structure - Worksheet 2",
+ "topic": "Formation of Ions, Molecules and Compounds",
+ "subject": "Pure Chemistry",
+ "level": "Upper Secondary",
+ "grade": "Sec 3",
+ "chapter": 4,
+ "worksheet": 2,
+ "questions": [
+  {
+   "question": "Complete the sentence: When a metal atom forms an ion, it ______ electrons to achieve a stable configuration.",
+   "options": [
+    "gains",
+    "loses",
+    "shares",
+    "creates"
+   ],
+   "correct": 1,
+   "points": 10,
+   "explanation": "Metal atoms have 1-3 electrons in their outer shell. They lose these electrons to form positive ions (cations) with a stable noble gas electron configuration. For example, Na (2,8,1) loses 1 electron to form Na⁺ (2,8)."
+  },
+  {
+   "question": "How many electrons does an oxygen atom gain to form an oxide ion?",
+   "options": [
+    "1",
+    "2",
+    "3",
+    "6"
+   ],
+   "correct": 1,
+   "points": 10,
+   "explanation": "Oxygen is in Group 16 with electron configuration 2,6. To achieve a stable noble gas configuration (2,8), it gains 2 electrons to form the oxide ion, O²⁻."
+  },
+  {
+   "question": "Complete the sentence: A covalent bond is formed by the ______ of a pair of electrons between atoms.",
+   "options": [
+    "transfer",
+    "sharing",
+    "loss",
+    "gain"
+   ],
+   "correct": 1,
+   "points": 10,
+   "explanation": "Covalent bonding occurs between non-metal atoms. Each atom contributes one electron to form a shared pair. Both atoms are attracted to the shared pair, holding them together."
+  },
+  {
+   "question": "Which dot-and-cross diagram correctly shows the bonding in methane (CH₄)?",
+   "options": [
+    "Carbon shares 1 electron with each of 4 hydrogen atoms",
+    "Carbon transfers 4 electrons to hydrogen atoms",
+    "Hydrogen atoms share electrons with each other",
+    "Carbon gains 4 electrons from hydrogen atoms"
+   ],
+   "correct": 0,
+   "points": 10,
+   "explanation": "Carbon (Group 14, 4 valence electrons) forms 4 single covalent bonds with 4 hydrogen atoms. Each bond involves sharing one pair of electrons. Carbon achieves an octet (8 electrons), each hydrogen achieves a duplet (2 electrons)."
+  },
+  {
+   "question": "Complete the explanation: Ionic compounds are formed when electrons are transferred from ______ to ______.",
+   "options": [
+    "non-metals, metals",
+    "metals, non-metals",
+    "metals, metals",
+    "non-metals, non-metals"
+   ],
+   "correct": 1,
+   "points": 10,
+   "explanation": "Metals have low ionisation energies and lose electrons easily. Non-metals have high electron affinities and gain electrons readily. Electron transfer from metal to non-metal forms oppositely charged ions that attract to form ionic compounds."
+  },
+  {
+   "question": "How many bonding electrons are there in a molecule of water (H₂O)?",
+   "options": [
+    "2",
+    "4",
+    "6",
+    "8"
+   ],
+   "correct": 1,
+   "points": 10,
+   "explanation": "Water has 2 O-H single covalent bonds. Each bond consists of 2 shared electrons (1 pair). Total bonding electrons = 2 bonds × 2 electrons = 4 bonding electrons. Oxygen also has 4 non-bonding (lone pair) electrons."
+  },
+  {
+   "question": "Complete the sentence: In metallic bonding, the positive metal ions are held together by attraction to ______.",
+   "options": [
+    "other positive ions",
+    "negative ions",
+    "a sea of delocalised electrons",
+    "shared electron pairs"
+   ],
+   "correct": 2,
+   "points": 10,
+   "explanation": "Metal atoms lose outer electrons to form positive ions. These outer electrons become delocalised and move freely throughout the structure. The electrostatic attraction between positive ions and delocalised electrons holds the metal together."
+  },
+  {
+   "question": "How many atoms are in one formula unit of calcium nitrate, Ca(NO₃)₂?",
+   "options": [
+    "3",
+    "6",
+    "9",
+    "12"
+   ],
+   "correct": 2,
+   "points": 10,
+   "explanation": "Ca(NO₃)₂ contains: 1 Ca atom + 2 × (1 N + 3 O) = 1 + 2 × 4 = 9 atoms total. The subscript 2 outside the bracket applies to all atoms inside: 2 N atoms and 6 O atoms."
+  },
+  {
+   "question": "Complete the sentence: The sulfate ion, SO₄²⁻, has an overall charge of ______, meaning it has ______ more electrons than protons.",
+   "options": [
+    "2-, two",
+    "2+, two",
+    "4-, four",
+    "1-, one"
+   ],
+   "correct": 0,
+   "points": 10,
+   "explanation": "The 2- charge on SO₄²⁻ indicates the ion has gained 2 extra electrons. Polyatomic ions like sulfate, carbonate, and hydroxide act as single charged units in ionic compounds."
+  },
+  {
+   "question": "Which compound contains both ionic and covalent bonding?",
+   "options": [
+    "Sodium chloride (NaCl)",
+    "Magnesium oxide (MgO)",
+    "Sodium hydroxide (NaOH)",
+    "Carbon dioxide (CO₂)"
+   ],
+   "correct": 2,
+   "points": 10,
+   "explanation": "NaOH contains Na⁺ ions and OH⁻ ions held by ionic bonds. Within the hydroxide ion (OH⁻), oxygen and hydrogen are joined by a covalent bond. Thus, NaOH has both ionic (between ions) and covalent (within OH⁻) bonding."
+  },
+  {
+   "question": "Complete the explanation: Atoms form chemical bonds to achieve a stable electron configuration, usually with ______ electrons in the outer shell.",
+   "options": [
+    "2 or 8",
+    "4 or 6",
+    "1 or 7",
+    "3 or 5"
+   ],
+   "correct": 0,
+   "points": 10,
+   "explanation": "The octet rule states that atoms tend to gain, lose, or share electrons to achieve 8 electrons in their outer shell (like noble gases). Hydrogen and helium follow the duplet rule (2 electrons)."
+  },
+  {
+   "question": "How many electrons are shared in the covalent bonds of an ammonia molecule (NH₃)?",
+   "options": [
+    "3",
+    "6",
+    "8",
+    "10"
+   ],
+   "correct": 1,
+   "points": 10,
+   "explanation": "Ammonia has 3 N-H single covalent bonds. Each bond involves 2 shared electrons. Total shared electrons = 3 bonds × 2 electrons = 6 bonding electrons. Nitrogen also has one lone pair (2 non-bonding electrons)."
+  },
+  {
+   "question": "Complete the sentence: In the formation of an ionic compound, the metal atom becomes a ______ ion and the non-metal atom becomes a ______ ion.",
+   "options": [
+    "negative, positive",
+    "positive, negative",
+    "neutral, charged",
+    "charged, neutral"
+   ],
+   "correct": 1,
+   "points": 10,
+   "explanation": "Metals lose electrons to form positive ions (cations). Non-metals gain electrons to form negative ions (anions). The electrostatic attraction between these oppositely charged ions forms the ionic bond."
+  },
+  {
+   "question": "Which formula shows a compound with a polyatomic ion containing oxygen?",
+   "options": [
+    "NaCl",
+    "CaO",
+    "K₂SO₄",
+    "MgBr₂"
+   ],
+   "correct": 2,
+   "points": 10,
+   "explanation": "K₂SO₄ contains the sulfate ion (SO₄²⁻), a polyatomic ion made of sulfur and oxygen atoms covalently bonded. NaCl, CaO, and MgBr₂ contain only simple ions without oxygen in polyatomic groups."
+  },
+  {
+   "question": "Complete the explanation: In a covalent molecule, the atoms are held together by strong electrostatic forces of attraction between the positive nuclei and ______.",
+   "options": [
+    "other positive nuclei",
+    "negative ions",
+    "shared pairs of electrons",
+    "delocalised electrons"
+   ],
+   "correct": 2,
+   "points": 10,
+   "explanation": "A covalent bond is the strong electrostatic attraction between the positively charged nuclei of bonded atoms and the negatively charged shared pair(s) of electrons between them."
+  }
+ ]
+}
