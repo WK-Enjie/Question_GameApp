@@ -7,6 +7,7 @@
 //  - Wrong: card stays (failed), correct answer NOT revealed
 //  - Timeout: card UNFLIPS back to board, can be attempted again
 //  - Treasure cards: Bronze 📦, Silver 🎁, Gold 👑
+//  - Power-ups: Shield 🛡️, Double Next ⚡, Steal 💰, Swap 🔄
 // ================================================================
 
 // ========== GAME STATE ==========
@@ -50,10 +51,14 @@ const gameState = {
     specialCards: new Set(),
 
     // ---- Multi-Treasure System ----
-    treasureCards: new Map(),        // cardIndex → 'bronze' | 'silver' | 'gold'
+    treasureCards: new Map(),
     treasuresRemaining: 0,
-    treasuresCollected: [0, 0],      // per player
-    currentTreasureTier: null
+    treasuresCollected: [0, 0],
+    currentTreasureTier: null,
+
+    // ---- Active Power-ups (per player) ----
+    doubleNextActive: [false, false],
+    shieldActive: [false, false]
 };
 
 
@@ -212,6 +217,12 @@ class SoundEngine {
     _cardReturn() {
         this._tone(500, 0.1, 'sine', 0.06);
         setTimeout(() => this._tone(400, 0.12, 'sine', 0.05), 80);
+    }
+
+    _shieldBlock() {
+        this._tone(700, 0.1, 'triangle', 0.1);
+        setTimeout(() => this._tone(900, 0.15, 'triangle', 0.1), 80);
+        setTimeout(() => this._tone(1100, 0.1, 'triangle', 0.08), 160);
     }
 
     _select()       { this._tone(600, 0.05, 'sine', 0.07); }
@@ -583,14 +594,15 @@ function getTreasureDistribution(total) {
     else if (total <= 24) nTreasure = 12;
     else                  nTreasure = 15;
 
-    // Mix of tiers — more bronze, fewer gold
     const pattern = [
         'bronze', 'silver', 'gold', 'bronze',
-        'silver', 'bronze', 'silver', 'gold'
+        'silver', 'bronze', 'silver', 'gold',
+        'bronze', 'silver', 'bronze', 'bronze',
+        'silver', 'gold', 'bronze'
     ];
     const tiers = [];
     for (let i = 0; i < nTreasure; i++) {
-        tiers.push(pattern[i] || 'bronze');
+        tiers.push(pattern[i % pattern.length]);
     }
     return tiers;
 }
@@ -614,7 +626,6 @@ function generateCardBoard() {
     gameState.completedCount = 0;
     gameState.cards = [];
 
-    // Assign special (double-point) cards
     gameState.specialCards.clear();
     gameState.treasureCards.clear();
 
@@ -624,18 +635,15 @@ function generateCardBoard() {
     const nSpecial = Math.max(1, Math.floor(total * 0.15));
     shuffled.slice(0, nSpecial).forEach(i => gameState.specialCards.add(i));
 
-    // Assign treasure cards (non-overlapping with special)
     const availableForTreasure = shuffled.filter(i => !gameState.specialCards.has(i));
     const tierList = getTreasureDistribution(total);
     const actualTreasureCount = Math.min(tierList.length, availableForTreasure.length);
 
-    // Shuffle tier assignments so positions are random
     const shuffledTiers = [...tierList].sort(() => Math.random() - 0.5);
     for (let i = 0; i < actualTreasureCount; i++) {
         gameState.treasureCards.set(availableForTreasure[i], shuffledTiers[i]);
     }
 
-    // Grid columns
     let cols = 5;
     if (total <= 4)       cols = 2;
     else if (total <= 6)  cols = 3;
@@ -645,7 +653,6 @@ function generateCardBoard() {
     else                  cols = 6;
     board.style.gridTemplateColumns = `repeat(${cols}, 1fr)`;
 
-    // Create cards
     for (let i = 0; i < total; i++) {
         const isSpecial    = gameState.specialCards.has(i);
         const treasureTier = gameState.treasureCards.get(i) || null;
@@ -659,7 +666,6 @@ function generateCardBoard() {
         if (isSpecial) card.classList.add('card-special');
         if (isTreasure) card.classList.add(`card-treasure-${treasureTier}`);
 
-        // Card icon
         let icon = '❓';
         if (isSpecial) {
             icon = '⚡';
@@ -720,6 +726,8 @@ function initGame() {
     gameState.treasurePicked     = false;
     gameState.treasuresCollected = [0, 0];
     gameState.currentTreasureTier = null;
+    gameState.doubleNextActive   = [false, false];
+    gameState.shieldActive       = [false, false];
 
     hideQuestionOverlay();
     hideTreasureOverlay();
@@ -728,6 +736,7 @@ function initGame() {
     updateStreaks();
     updatePlayerTurn();
     generateCardBoard();
+    updatePowerUpIndicators();
 }
 
 
@@ -761,17 +770,27 @@ function showQuestion(idx) {
     gameState.selectedAnswer = null;
     gameState.answered       = false;
 
+    const pi         = gameState.currentPlayer - 1;
     let pts          = q.points || 10;
     const isDbl      = gameState.specialCards.has(idx);
     const treasureTier = gameState.treasureCards.get(idx) || null;
     const isTreasure = !!treasureTier;
     if (isDbl) pts *= 2;
 
+    // Show double-next bonus in points preview
+    if (gameState.doubleNextActive[pi]) pts *= 2;
+
     // Player indicator
     const qpi = document.getElementById('q-player-indicator');
     qpi.className = `q-player-indicator p${gameState.currentPlayer}`;
     qpi.querySelector('.qpi-avatar').textContent = gameState.currentPlayer === 1 ? '😎' : '🤓';
-    qpi.querySelector('.qpi-name').textContent   = `Player ${gameState.currentPlayer} answering...`;
+
+    let indicatorText = `Player ${gameState.currentPlayer} answering...`;
+    const buffs = [];
+    if (gameState.doubleNextActive[pi]) buffs.push('⚡ 2x Active');
+    if (gameState.shieldActive[pi]) buffs.push('🛡️ Shield');
+    if (buffs.length) indicatorText += ` [${buffs.join(' · ')}]`;
+    qpi.querySelector('.qpi-name').textContent = indicatorText;
 
     // Header badges
     document.getElementById('q-number').textContent = `Q${idx + 1}`;
@@ -823,10 +842,8 @@ function showQuestion(idx) {
     nxt.classList.remove('show');
     nxt.style.display = 'none';
 
-    // Show overlay
     document.getElementById('question-overlay').classList.add('show');
 
-    // Timer
     gameState.answerStartTime = Date.now();
     startTimer(q.time || 150);
 }
@@ -857,7 +874,7 @@ function selectOption(i) {
 
 
 // ================================================================
-//  SUBMIT ANSWER
+//  SUBMIT ANSWER  (with Shield & Double Next power-ups)
 // ================================================================
 function submitAnswer() {
     if (gameState.answered || gameState.selectedAnswer === null) return;
@@ -873,6 +890,8 @@ function submitAnswer() {
     const treasureTier = gameState.treasureCards.get(idx) || null;
     const isTreasure   = !!treasureTier;
     const timeTaken    = (Date.now() - gameState.answerStartTime) / 1000;
+    const hasDoubleNext = gameState.doubleNextActive[pi];
+    const hasShield     = gameState.shieldActive[pi];
 
     gameState.totalAnswered[pi]++;
 
@@ -896,12 +915,20 @@ function submitAnswer() {
         if (streak > gameState.bestStreaks[pi]) gameState.bestStreaks[pi] = streak;
         gameState.correctCounts[pi]++;
 
+        // ---- Points calculation with Double Next ----
         let basePts    = q.points || 10;
         let multiplier = isDbl ? 2 : 1;
+        if (hasDoubleNext) multiplier *= 2;
         if (streak >= 5)      multiplier += 1;
         else if (streak >= 3) multiplier += 0.5;
         const totalPts = Math.round(basePts * multiplier);
         gameState.scores[pi] += totalPts;
+
+        // Consume the double-next power-up
+        if (hasDoubleNext) {
+            gameState.doubleNextActive[pi] = false;
+            updatePowerUpIndicators();
+        }
 
         sound.play('correct');
         if (streak >= 3) sound.play('streak');
@@ -920,6 +947,7 @@ function submitAnswer() {
         const sbRect = document.getElementById(`sb-p${gameState.currentPlayer}`).getBoundingClientRect();
         showScorePopup(`+${totalPts}`, sbRect.left + sbRect.width / 2, sbRect.top, 'positive');
         if (streak >= 3) showScorePopup(`🔥 ${streak}x Streak!`, sbRect.left + sbRect.width / 2, sbRect.top - 35, 'bonus');
+        if (hasDoubleNext) showScorePopup(`⚡ Double!`, sbRect.left + sbRect.width / 2, sbRect.top - 65, 'bonus');
 
         pulseScore(gameState.currentPlayer, 'up');
         glowPlayer(gameState.currentPlayer);
@@ -929,12 +957,11 @@ function submitAnswer() {
         updateCardsRemaining();
 
         let bannerHTML = `<div>✅ Correct! +${totalPts} points</div>`;
-        if (multiplier > 1) {
-            const reasons = [];
-            if (isDbl)       reasons.push('⚡ Double card');
-            if (streak >= 3) reasons.push(`🔥 ${streak}x streak bonus`);
-            bannerHTML += `<div class="result-sub">${reasons.join(' · ')}</div>`;
-        }
+        const reasons = [];
+        if (isDbl)          reasons.push('⚡ Double card');
+        if (hasDoubleNext)  reasons.push('⚡ Double Next power-up');
+        if (streak >= 3)    reasons.push(`🔥 ${streak}x streak bonus`);
+        if (reasons.length) bannerHTML += `<div class="result-sub">${reasons.join(' · ')}</div>`;
         if (isTreasure) {
             const meta = TREASURE_META[treasureTier];
             bannerHTML += `<div class="result-sub">${meta.icon} ${meta.label} Treasure unlocked!</div>`;
@@ -948,7 +975,6 @@ function submitAnswer() {
             exp.className = 'q-explanation correct-exp show';
         }
 
-        // Treasure or normal continue
         if (isTreasure) {
             gameState.canPickTreasure = true;
             gameState.treasurePicked  = false;
@@ -959,6 +985,45 @@ function submitAnswer() {
 
     // ===================== INCORRECT =====================
     } else {
+
+        // ---- CHECK SHIELD ----
+        if (hasShield) {
+            // Shield absorbs the wrong answer!
+            gameState.shieldActive[pi] = false;
+            updatePowerUpIndicators();
+
+            // Show selected as wrong but don't reveal correct
+            document.querySelectorAll('.q-option').forEach((o, i) => {
+                o.classList.add('locked');
+                if (i === gameState.selectedAnswer) {
+                    o.classList.add('wrong-selected');
+                } else {
+                    o.classList.add('wrong-locked');
+                }
+            });
+
+            sound.play('shieldBlock');
+
+            // Don't break streak
+            // Don't mark card as failed — it returns to board
+
+            const sbRect = document.getElementById(`sb-p${gameState.currentPlayer}`).getBoundingClientRect();
+            showScorePopup('🛡️ Blocked!', sbRect.left + sbRect.width / 2, sbRect.top, 'bonus');
+
+            updateCardsRemaining();
+
+            banner.className = 'q-result-banner timeout-banner show';
+            banner.innerHTML  = `
+                <div>🛡️ Shield Activated!</div>
+                <div class="result-sub">Wrong answer blocked! The card returns to the board.</div>
+            `;
+
+            // Card returns like timeout
+            buildNextButton('shielded');
+            return;
+        }
+
+        // ---- No shield — normal wrong ----
         document.querySelectorAll('.q-option').forEach((o, i) => {
             o.classList.add('locked');
             if (i === gameState.selectedAnswer) {
@@ -983,6 +1048,12 @@ function submitAnswer() {
         cardData.result    = 'incorrect';
         cardData.owner     = null;
         gameState.completedCount++;
+
+        // Consume double-next without benefit if it was active
+        if (hasDoubleNext) {
+            gameState.doubleNextActive[pi] = false;
+            updatePowerUpIndicators();
+        }
 
         updateStreaks();
         updateCardsRemaining();
@@ -1015,6 +1086,12 @@ function timeUp() {
     gameState.totalAnswered[pi]++;
     gameState.timeoutCounts[pi]++;
     gameState.streaks[pi] = 0;
+
+    // Consume double-next without benefit
+    if (gameState.doubleNextActive[pi]) {
+        gameState.doubleNextActive[pi] = false;
+        updatePowerUpIndicators();
+    }
 
     sound.play('timeout');
 
@@ -1056,7 +1133,6 @@ function buildNextButton(result, treasureTier = null) {
     const btn     = document.getElementById('next-btn');
     const cardIdx = gameState.currentQuestion;
 
-    // Treasure card — open treasure overlay
     if (result === 'treasure') {
         const meta = TREASURE_META[treasureTier] || TREASURE_META.bronze;
         btn.innerHTML = `<span>${meta.icon} Open ${meta.label} Treasure!</span><i class="fas fa-gift"></i>`;
@@ -1069,7 +1145,6 @@ function buildNextButton(result, treasureTier = null) {
         return;
     }
 
-    // Normal continue
     btn.innerHTML = '<span>Continue</span><i class="fas fa-arrow-right"></i>';
     btn.classList.add('show');
     btn.style.display = 'flex';
@@ -1080,8 +1155,8 @@ function buildNextButton(result, treasureTier = null) {
         gameState.currentPlayer = gameState.currentPlayer === 1 ? 2 : 1;
         updatePlayerTurn();
 
-        // Timeout: unflip card
-        if (result === 'timeout') {
+        // Timeout OR shielded: unflip card back to board
+        if (result === 'timeout' || result === 'shielded') {
             setTimeout(() => {
                 const card = gameState.cards[cardIdx];
                 card.flipped   = false;
@@ -1156,7 +1231,7 @@ function renderTimer() {
 
 
 // ================================================================
-//  SCORES · STREAKS · TURN · CARDS · TREASURES
+//  SCORES · STREAKS · TURN · CARDS · TREASURES · POWER-UPS
 // ================================================================
 function updateScores() {
     document.getElementById('score1').textContent = gameState.scores[0];
@@ -1177,7 +1252,14 @@ function updatePlayerTurn() {
     const banner = document.getElementById('turn-banner');
     banner.className = `turn-banner p${gameState.currentPlayer}-turn`;
     document.getElementById('turn-avatar').textContent = gameState.currentPlayer === 1 ? '😎' : '🤓';
-    document.getElementById('turn-text').textContent   = `Player ${gameState.currentPlayer}'s Turn — Pick a card!`;
+
+    const pi = gameState.currentPlayer - 1;
+    let turnText = `Player ${gameState.currentPlayer}'s Turn — Pick a card!`;
+    const activePowerups = [];
+    if (gameState.doubleNextActive[pi]) activePowerups.push('⚡2x');
+    if (gameState.shieldActive[pi]) activePowerups.push('🛡️');
+    if (activePowerups.length) turnText += ` [${activePowerups.join(' ')}]`;
+    document.getElementById('turn-text').textContent = turnText;
 }
 
 function updateCardsRemaining() {
@@ -1201,6 +1283,28 @@ function updateTreasuresRemaining() {
     if (countEl)     countEl.textContent = remaining;
     if (countMiniEl) countMiniEl.textContent = remaining;
     if (containerEl) containerEl.classList.toggle('empty', remaining === 0);
+}
+
+function updatePowerUpIndicators() {
+    // Update scoreboard player areas with power-up badges
+    for (let p = 1; p <= 2; p++) {
+        const pi = p - 1;
+        const sbEl = document.getElementById(`sb-p${p}`);
+        // Remove old badges
+        sbEl.querySelectorAll('.powerup-badge').forEach(b => b.remove());
+
+        const badges = [];
+        if (gameState.doubleNextActive[pi]) badges.push('<span class="powerup-badge double-badge">⚡2x</span>');
+        if (gameState.shieldActive[pi]) badges.push('<span class="powerup-badge shield-badge">🛡️</span>');
+
+        if (badges.length) {
+            const container = document.createElement('div');
+            container.className = 'powerup-badges';
+            container.innerHTML = badges.join('');
+            // Insert powerup badges — mark each child
+            container.querySelectorAll('.powerup-badge').forEach(b => sbEl.appendChild(b));
+        }
+    }
 }
 
 function pulseScore(player, dir) {
@@ -1253,7 +1357,6 @@ function showTreasureOverlay(tier = 'bronze') {
     const modal = document.querySelector('.treasure-modal');
     modal.className = `treasure-modal tier-${tier}`;
 
-    // Tier-specific header
     const titles = {
         bronze: { icon: '📦', title: 'Bronze Treasure!', sub: 'A small reward awaits...',     boxIcon: '📦' },
         silver: { icon: '🎁', title: 'Silver Treasure!', sub: 'A worthy prize inside!',       boxIcon: '🎁' },
@@ -1269,7 +1372,6 @@ function showTreasureOverlay(tier = 'bronze') {
     badge.textContent = `${TREASURE_META[tier].emoji} ${tier.toUpperCase()} TIER`;
     badge.className   = `treasure-tier-badge tier-${tier}`;
 
-    // Reset boxes
     document.querySelectorAll('.t-box').forEach(b => {
         b.classList.remove('opened', 'not-chosen');
         const front = b.querySelector('.t-box-front');
@@ -1282,7 +1384,6 @@ function showTreasureOverlay(tier = 'bronze') {
     cont.classList.remove('show');
     cont.style.display = 'none';
 
-    // Assign rewards from tier pool
     const pool = [...TREASURES[tier]].sort(() => Math.random() - 0.5);
     document.querySelectorAll('.t-box').forEach((b, i) => {
         b._treasure = pool[i % pool.length];
@@ -1307,7 +1408,6 @@ function openTreasureBox(box) {
     const pi   = gameState.currentPlayer - 1;
     const tier = gameState.currentTreasureTier || 'bronze';
 
-    // Track collection
     gameState.treasuresCollected[pi]++;
 
     box.classList.add('opened');
@@ -1320,7 +1420,6 @@ function openTreasureBox(box) {
 
     let msg = '';
     if (t.pts > 0 && !t.action) {
-        // Pure point reward
         gameState.scores[pi] += t.pts;
         msg = `${t.icon} +${t.pts} bonus points!`;
         const r = document.getElementById(`sb-p${gameState.currentPlayer}`).getBoundingClientRect();
@@ -1330,9 +1429,13 @@ function openTreasureBox(box) {
         [gameState.scores[0], gameState.scores[1]] = [gameState.scores[1], gameState.scores[0]];
         msg = '🔄 Scores swapped!';
     } else if (t.action === 'shield') {
-        msg = '🛡️ Shield active — next wrong answer forgiven!';
+        gameState.shieldActive[pi] = true;
+        msg = '🛡️ Shield active — your next wrong answer will be forgiven!';
+        updatePowerUpIndicators();
     } else if (t.action === 'doubleNext') {
-        msg = '⚡ Next correct answer = 2x points!';
+        gameState.doubleNextActive[pi] = true;
+        msg = '⚡ Double Next active — your next correct answer earns 2x points!';
+        updatePowerUpIndicators();
     } else if (t.action === 'steal') {
         const opponent = gameState.currentPlayer === 1 ? 1 : 0;
         const stolen = Math.min(t.pts, gameState.scores[opponent]);
@@ -1433,7 +1536,6 @@ document.addEventListener('DOMContentLoaded', async () => {
     await loadCatalogFromStorage();
     updateCatalogDisplay();
 
-    // ---- PIN SCREEN ----
     document.querySelectorAll('.key[data-key]').forEach(b =>
         b.addEventListener('click', function () { addDigit(this.dataset.key); }));
 
@@ -1446,7 +1548,6 @@ document.addEventListener('DOMContentLoaded', async () => {
         setTimeout(submitPin, 500);
     });
 
-    // ---- GAME ----
     document.getElementById('submit-answer').addEventListener('click', submitAnswer);
 
     document.getElementById('home-btn').addEventListener('click', () => {
@@ -1461,20 +1562,17 @@ document.addEventListener('DOMContentLoaded', async () => {
         this.classList.toggle('muted', !on);
     });
 
-    // ---- ERROR ----
     document.getElementById('retry-btn')?.addEventListener('click', submitPin);
     document.getElementById('back-to-pin-error')?.addEventListener('click', () => {
         clearPin(); showScreen('pin-screen');
     });
 
-    // ---- GAME OVER ----
     document.getElementById('restart-btn')?.addEventListener('click', () => { hideGameOver(); initGame(); });
     document.getElementById('new-chapter-btn')?.addEventListener('click', () => {
         stopTimer(); hideQuestionOverlay(); hideTreasureOverlay(); hideGameOver();
         clearPin(); showScreen('pin-screen');
     });
 
-    // ---- TREASURE ----
     document.querySelectorAll('.t-box').forEach(b =>
         b.addEventListener('click', function () { openTreasureBox(this); }));
 
@@ -1486,7 +1584,6 @@ document.addEventListener('DOMContentLoaded', async () => {
         if (gameState.completedCount >= gameState.totalCards) setTimeout(endGame, 500);
     });
 
-    // ---- KEYBOARD ----
     document.addEventListener('keydown', e => {
         if (document.getElementById('pin-screen').classList.contains('active')) {
             if (e.key >= '0' && e.key <= '9') addDigit(e.key);
@@ -1509,9 +1606,9 @@ document.addEventListener('DOMContentLoaded', async () => {
         }
     });
 
-    console.log('✅ Ready — Multi-Treasure System Active');
+    console.log('✅ Ready — Multi-Treasure System with Power-ups Active');
     console.log('📦 Bronze | 🎁 Silver | 👑 Gold treasures');
-    console.log('📋 Rules: Correct = keep card | Wrong = card lost | Timeout = card returns');
+    console.log('⚡ Double Next | 🛡️ Shield | 💰 Steal | 🔄 Swap');
 });
 
 
@@ -1556,6 +1653,27 @@ window.quizTools = {
         });
         console.log(`  Remaining: ${gameState.treasuresRemaining}`);
         console.log(`  Collected: P1=${gameState.treasuresCollected[0]} P2=${gameState.treasuresCollected[1]}`);
+    },
+
+    showPowerUps: () => {
+        console.log('🔋 Active Power-ups:');
+        console.log(`  P1: Double=${gameState.doubleNextActive[0]} Shield=${gameState.shieldActive[0]}`);
+        console.log(`  P2: Double=${gameState.doubleNextActive[1]} Shield=${gameState.shieldActive[1]}`);
+    },
+
+    // Force give a power-up for testing
+    giveDouble: (player = 1) => {
+        gameState.doubleNextActive[player - 1] = true;
+        updatePowerUpIndicators();
+        updatePlayerTurn();
+        console.log(`⚡ Double Next given to Player ${player}`);
+    },
+
+    giveShield: (player = 1) => {
+        gameState.shieldActive[player - 1] = true;
+        updatePowerUpIndicators();
+        updatePlayerTurn();
+        console.log(`🛡️ Shield given to Player ${player}`);
     },
 
     testMath: (text) => {
