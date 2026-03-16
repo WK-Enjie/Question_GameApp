@@ -4,7 +4,7 @@
 //  Rules:
 //  - Each player answers once per turn, then switches
 //  - Correct: card stays, answer + explanation shown, points awarded
-//  - Wrong: card stays (failed), correct answer NOT revealed
+//  - Wrong: card stays (failed), -50% penalty, answer NOT revealed
 //  - Timeout: card UNFLIPS back to board, can be attempted again
 //  - Treasure cards: Bronze 📦, Silver 🎁, Gold 👑
 //  - Power-ups: Shield 🛡️, Double Next ⚡, Steal 💰, Swap 🔄
@@ -38,9 +38,9 @@ const gameState = {
     fastestAnswer: [Infinity, Infinity],
     timeoutCounts: [0, 0],
 
-    timeLeft: 150,
+    timeLeft: 200,
     timerInterval: null,
-    timerMax: 150,
+    timerMax: 200,
     answerStartTime: 0,
 
     canPickTreasure: false,
@@ -776,8 +776,6 @@ function showQuestion(idx) {
     const treasureTier = gameState.treasureCards.get(idx) || null;
     const isTreasure = !!treasureTier;
     if (isDbl) pts *= 2;
-
-    // Show double-next bonus in points preview
     if (gameState.doubleNextActive[pi]) pts *= 2;
 
     // Player indicator
@@ -845,7 +843,7 @@ function showQuestion(idx) {
     document.getElementById('question-overlay').classList.add('show');
 
     gameState.answerStartTime = Date.now();
-    startTimer(q.time || 150);
+    startTimer(q.time || 200);
 }
 
 function hideQuestionOverlay() {
@@ -874,7 +872,7 @@ function selectOption(i) {
 
 
 // ================================================================
-//  SUBMIT ANSWER  (with Shield & Double Next power-ups)
+//  SUBMIT ANSWER  (with Shield, Double Next & Penalty)
 // ================================================================
 function submitAnswer() {
     if (gameState.answered || gameState.selectedAnswer === null) return;
@@ -915,7 +913,7 @@ function submitAnswer() {
         if (streak > gameState.bestStreaks[pi]) gameState.bestStreaks[pi] = streak;
         gameState.correctCounts[pi]++;
 
-        // ---- Points calculation with Double Next ----
+        // Points calculation with Double Next
         let basePts    = q.points || 10;
         let multiplier = isDbl ? 2 : 1;
         if (hasDoubleNext) multiplier *= 2;
@@ -924,7 +922,7 @@ function submitAnswer() {
         const totalPts = Math.round(basePts * multiplier);
         gameState.scores[pi] += totalPts;
 
-        // Consume the double-next power-up
+        // Consume double-next
         if (hasDoubleNext) {
             gameState.doubleNextActive[pi] = false;
             updatePowerUpIndicators();
@@ -986,13 +984,14 @@ function submitAnswer() {
     // ===================== INCORRECT =====================
     } else {
 
+        // Calculate penalty
+        const basePenalty = Math.round((q.points || 10) * 0.5);
+
         // ---- CHECK SHIELD ----
         if (hasShield) {
-            // Shield absorbs the wrong answer!
             gameState.shieldActive[pi] = false;
             updatePowerUpIndicators();
 
-            // Show selected as wrong but don't reveal correct
             document.querySelectorAll('.q-option').forEach((o, i) => {
                 o.classList.add('locked');
                 if (i === gameState.selectedAnswer) {
@@ -1004,26 +1003,24 @@ function submitAnswer() {
 
             sound.play('shieldBlock');
 
-            // Don't break streak
-            // Don't mark card as failed — it returns to board
-
             const sbRect = document.getElementById(`sb-p${gameState.currentPlayer}`).getBoundingClientRect();
             showScorePopup('🛡️ Blocked!', sbRect.left + sbRect.width / 2, sbRect.top, 'bonus');
+            showScorePopup(`Saved -${basePenalty}!`, sbRect.left + sbRect.width / 2, sbRect.top - 35, 'bonus');
 
             updateCardsRemaining();
 
             banner.className = 'q-result-banner timeout-banner show';
             banner.innerHTML  = `
                 <div>🛡️ Shield Activated!</div>
-                <div class="result-sub">Wrong answer blocked! The card returns to the board.</div>
+                <div class="result-sub">Wrong answer blocked! No penalty! Card returns to the board.</div>
+                <div class="result-sub">Saved -${basePenalty} points</div>
             `;
 
-            // Card returns like timeout
             buildNextButton('shielded');
             return;
         }
 
-        // ---- No shield — normal wrong ----
+        // ---- No shield — normal wrong with penalty ----
         document.querySelectorAll('.q-option').forEach((o, i) => {
             o.classList.add('locked');
             if (i === gameState.selectedAnswer) {
@@ -1035,6 +1032,9 @@ function submitAnswer() {
 
         gameState.streaks[pi] = 0;
 
+        // Deduct penalty points (minimum 0)
+        gameState.scores[pi] = Math.max(0, gameState.scores[pi] - basePenalty);
+
         sound.play('incorrect');
 
         const gs = document.getElementById('game-screen');
@@ -1043,22 +1043,28 @@ function submitAnswer() {
 
         cardData.element.classList.add('result-incorrect', 'failed', 'owner-none', 'shake');
         cardData.element.querySelector('.card-result-icon').textContent  = '❌';
-        cardData.element.querySelector('.card-result-label').textContent = 'Miss';
+        cardData.element.querySelector('.card-result-label').textContent = `-${basePenalty}`;
         cardData.completed = true;
         cardData.result    = 'incorrect';
         cardData.owner     = null;
         gameState.completedCount++;
 
-        // Consume double-next without benefit if it was active
+        // Consume double-next without benefit
         if (hasDoubleNext) {
             gameState.doubleNextActive[pi] = false;
             updatePowerUpIndicators();
         }
 
+        // Floating penalty popup
+        const sbRect = document.getElementById(`sb-p${gameState.currentPlayer}`).getBoundingClientRect();
+        showScorePopup(`-${basePenalty}`, sbRect.left + sbRect.width / 2, sbRect.top, 'negative');
+        pulseScore(gameState.currentPlayer, 'down');
+
+        updateScores();
         updateStreaks();
         updateCardsRemaining();
 
-        let wrongBannerHTML = `<div>❌ Wrong Answer!</div>`;
+        let wrongBannerHTML = `<div>❌ Wrong Answer! -${basePenalty} points</div>`;
         wrongBannerHTML += `<div class="result-sub">The correct answer remains hidden. Study and try next time!</div>`;
         if (isTreasure) {
             const meta = TREASURE_META[treasureTier];
@@ -1286,11 +1292,9 @@ function updateTreasuresRemaining() {
 }
 
 function updatePowerUpIndicators() {
-    // Update scoreboard player areas with power-up badges
     for (let p = 1; p <= 2; p++) {
         const pi = p - 1;
         const sbEl = document.getElementById(`sb-p${p}`);
-        // Remove old badges
         sbEl.querySelectorAll('.powerup-badge').forEach(b => b.remove());
 
         const badges = [];
@@ -1299,9 +1303,7 @@ function updatePowerUpIndicators() {
 
         if (badges.length) {
             const container = document.createElement('div');
-            container.className = 'powerup-badges';
             container.innerHTML = badges.join('');
-            // Insert powerup badges — mark each child
             container.querySelectorAll('.powerup-badge').forEach(b => sbEl.appendChild(b));
         }
     }
@@ -1609,6 +1611,8 @@ document.addEventListener('DOMContentLoaded', async () => {
     console.log('✅ Ready — Multi-Treasure System with Power-ups Active');
     console.log('📦 Bronze | 🎁 Silver | 👑 Gold treasures');
     console.log('⚡ Double Next | 🛡️ Shield | 💰 Steal | 🔄 Swap');
+    console.log('❌ Wrong = -50% penalty | 🛡️ Shield blocks penalty');
+    console.log('⏱️ Timer: 200 seconds per question');
 });
 
 
@@ -1661,7 +1665,6 @@ window.quizTools = {
         console.log(`  P2: Double=${gameState.doubleNextActive[1]} Shield=${gameState.shieldActive[1]}`);
     },
 
-    // Force give a power-up for testing
     giveDouble: (player = 1) => {
         gameState.doubleNextActive[player - 1] = true;
         updatePowerUpIndicators();
