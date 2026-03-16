@@ -1,0 +1,191 @@
+{
+ "title": "Formation of Ions and Molecules - Worksheet 1",
+ "topic": "Ionic and Covalent Bonding",
+ "subject": "Science Chemistry",
+ "level": "Upper Secondary",
+ "grade": "Sec 3",
+ "chapter": 4,
+ "worksheet": 1,
+ "questions": [
+  {
+   "question": "Complete the sentence: An ionic bond is formed when electrons are ______ from a metal atom to a non-metal atom.",
+   "options": [
+    "shared",
+    "transferred",
+    "lost only",
+    "gained only"
+   ],
+   "correct": 1,
+   "points": 10,
+   "explanation": "Ionic bonding involves the complete transfer of electrons from a metal (which loses electrons to form a positive ion) to a non-metal (which gains electrons to form a negative ion). The oppositely charged ions are then held together by strong electrostatic forces."
+  },
+  {
+   "question": "Which dot-and-cross diagram correctly shows the formation of sodium chloride (NaCl)?",
+   "options": [
+    "Na and Cl share one pair of electrons to form a covalent bond",
+    "Na transfers one electron to Cl, forming Na⁺ and Cl⁻ ions held by electrostatic attraction",
+    "Cl transfers one electron to Na, forming Cl⁺ and Na⁻ ions",
+    "Na and Cl both gain electrons from a third atom"
+   ],
+   "correct": 1,
+   "points": 10,
+   "explanation": "Sodium (Group 1) has 1 valence electron and loses it to form Na⁺. Chlorine (Group 17) has 7 valence electrons and gains 1 electron to form Cl⁻. The transfer forms oppositely charged ions held together by electrostatic attraction."
+  },
+  {
+   "question": "Complete the sentence: Atoms form ions to achieve the stable electron configuration of a ______.",
+   "options": [
+    "metal",
+    "non-metal",
+    "noble gas",
+    "transition element"
+   ],
+   "correct": 2,
+   "points": 10,
+   "explanation": "Atoms gain, lose, or share electrons to achieve a full outer shell of electrons, which is the stable configuration of noble gases (Group 18). This is known as the octet rule (or duplet rule for hydrogen and helium)."
+  },
+  {
+   "question": "Complete the sentence: A covalent bond is formed by the ______ of a pair of electrons between non-metal atoms.",
+   "options": [
+    "transfer",
+    "sharing",
+    "loss",
+    "gain"
+   ],
+   "correct": 1,
+   "points": 10,
+   "explanation": "Covalent bonding occurs between non-metal atoms. Each atom contributes one electron to form a shared pair. Both atoms are attracted to the shared pair, holding them together and allowing each to achieve a stable noble gas configuration."
+  },
+  {
+   "question": "How many bonding pairs of electrons are there in a molecule of water (H₂O)?",
+   "options": [
+    "1",
+    "2",
+    "3",
+    "4"
+   ],
+   "correct": 1,
+   "points": 10,
+   "explanation": "In water, oxygen (Group 16, 6 valence electrons) forms 2 single covalent bonds with 2 hydrogen atoms. Each O-H bond consists of one shared pair of electrons, so there are 2 bonding pairs. Oxygen also has 2 lone pairs."
+  },
+  {
+   "question": "Which molecule contains a double covalent bond?",
+   "options": [
+    "H₂",
+    "O₂",
+    "H₂O",
+    "CH₄"
+   ],
+   "correct": 1,
+   "points": 10,
+   "explanation": "Oxygen atoms have 6 valence electrons and need 2 more to complete their octet. Two oxygen atoms share two pairs of electrons (4 electrons total) to form a double bond: O=O. H₂ has a single bond, H₂O has two single O-H bonds, CH₄ has four single C-H bonds."
+  },
+  {
+   "question": "Complete the explanation: In the formation of magnesium chloride, magnesium atoms ______ electrons and chlorine atoms ______ electrons.",
+   "options": [
+    "gain, lose",
+    "lose, gain",
+    "share, share",
+    "lose, lose"
+   ],
+   "correct": 1,
+   "points": 10,
+   "explanation": "Magnesium (Group 2) loses 2 electrons to form Mg²⁺. Each chlorine atom (Group 17) gains 1 electron to form Cl⁻. Two Cl⁻ ions are needed to balance one Mg²⁺ ion, giving the formula MgCl₂. The transfer of electrons forms oppositely charged ions."
+  },
+  {
+   "question": "Which formula correctly represents the ionic compound formed between aluminium (Al³⁺) and oxygen (O²⁻)?",
+   "options": [
+    "AlO",
+    "Al₂O",
+    "AlO₂",
+    "Al₂O₃"
+   ],
+   "correct": 3,
+   "points": 10,
+   "explanation": "To balance charges: 2 × Al³⁺ = +6 total charge; 3 × O²⁻ = -6 total charge. The formula Al₂O₃ gives a neutral compound. The charges 'cross over' to become subscripts."
+  },
+  {
+   "question": "How many electrons are shared in the covalent bonds of a methane molecule (CH₄)?",
+   "options": [
+    "2",
+    "4",
+    "6",
+    "8"
+   ],
+   "correct": 3,
+   "points": 10,
+   "explanation": "Methane has 4 C-H single covalent bonds. Each bond involves 2 shared electrons. Total shared electrons = 4 bonds × 2 electrons = 8 bonding electrons. Carbon achieves an octet; each hydrogen achieves a duplet."
+  },
+  {
+   "question": "Complete the sentence: In a covalent bond, the strength depends on the strong electrostatic forces of attraction between the ______.",
+   "options": [
+    "oppositely charged ions",
+    "positive ions and sea of delocalised electrons",
+    "positive nuclei and shared pairs of electrons",
+    "neutral molecules"
+   ],
+   "correct": 2,
+   "points": 10,
+   "explanation": "A covalent bond is held together by the strong electrostatic forces of attraction between the positively charged nuclei of the bonded atoms and the negatively charged shared pair(s) of electrons between them."
+  },
+  {
+   "question": "Which compound contains both ionic and covalent bonding?",
+   "options": [
+    "Sodium chloride (NaCl)",
+    "Magnesium oxide (MgO)",
+    "Sodium hydroxide (NaOH)",
+    "Carbon dioxide (CO₂)"
+   ],
+   "correct": 2,
+   "points": 10,
+   "explanation": "NaOH contains Na⁺ ions and OH⁻ ions held by ionic bonds. Within the hydroxide ion (OH⁻), oxygen and hydrogen are joined by a covalent bond. Thus, NaOH has both ionic (between ions) and covalent (within OH⁻) bonding."
+  },
+  {
+   "question": "Complete the explanation: When a metal atom forms an ion, it ______ electrons to achieve a stable noble gas configuration.",
+   "options": [
+    "gains",
+    "loses",
+    "shares",
+    "creates"
+   ],
+   "correct": 1,
+   "points": 10,
+   "explanation": "Metal atoms have 1-3 electrons in their outer shell. They lose these electrons to form positive ions (cations) with a stable noble gas electron configuration. For example, Na (2,8,1) loses 1 electron to form Na⁺ (2,8)."
+  },
+  {
+   "question": "How many electrons does a nitrogen atom gain to form a nitride ion (N³⁻)?",
+   "options": [
+    "1",
+    "2",
+    "3",
+    "5"
+   ],
+   "correct": 2,
+   "points": 10,
+   "explanation": "Nitrogen is in Group 15 with electron configuration 2,5. To achieve a stable noble gas configuration (2,8), it gains 3 electrons to form the nitride ion, N³⁻."
+  },
+  {
+   "question": "Complete the sentence: In the formation of an ionic compound, the metal atom becomes a ______ ion and the non-metal atom becomes a ______ ion.",
+   "options": [
+    "negative, positive",
+    "positive, negative",
+    "neutral, charged",
+    "charged, neutral"
+   ],
+   "correct": 1,
+   "points": 10,
+   "explanation": "Metals lose electrons to form positive ions (cations). Non-metals gain electrons to form negative ions (anions). The electrostatic attraction between these oppositely charged ions forms the ionic bond."
+  },
+  {
+   "question": "Which dot-and-cross diagram correctly shows the bonding in carbon dioxide (CO₂)?",
+   "options": [
+    "Carbon shares 1 electron with each of 2 oxygen atoms to form single bonds",
+    "Carbon shares 2 electrons with each of 2 oxygen atoms to form double bonds",
+    "Carbon transfers 4 electrons to oxygen atoms",
+    "Oxygen atoms share electrons with each other"
+   ],
+   "correct": 1,
+   "points": 10,
+   "explanation": "Carbon (Group 14, 4 valence electrons) forms 2 double covalent bonds with 2 oxygen atoms (O=C=O). Each double bond involves sharing 2 pairs of electrons (4 electrons total). Carbon achieves an octet; each oxygen achieves an octet."
+  }
+ ]
+}
