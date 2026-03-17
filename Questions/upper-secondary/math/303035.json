@@ -1,0 +1,251 @@
+{
+  "title": "Standard Form & Unit Conversions - Worksheet 4",
+  "topic": "Numbers - Standard Form and Metric Units",
+  "subject": "Mathematics",
+  "level": "Upper Secondary",
+  "grade": "Sec 4 E-Math",
+  "chapter": 3,
+  "worksheet": 4,
+  "questions": [
+    {
+      "question": "Express 0.0000456 in standard form.",
+      "options": [
+        "4.56 × 10^-5",
+        "4.56 × 10^-4",
+        "45.6 × 10^-5",
+        "0.456 × 10^-4"
+      ],
+      "correct": 0,
+      "points": 10,
+      "explanation": "Move decimal 5 places right: 0.0000456 = 4.56 × 10^-5"
+    },
+    {
+      "question": "Express 3,450,000 in standard form.",
+      "options": [
+        "3.45 × 10^5",
+        "3.45 × 10^6",
+        "34.5 × 10^5",
+        "0.345 × 10^7"
+      ],
+      "correct": 1,
+      "points": 10,
+      "explanation": "Move decimal 6 places left: 3,450,000 = 3.45 × 10^6"
+    },
+    {
+      "question": "Calculate: (2 × 10^3) × (3 × 10^4)",
+      "options": [
+        "6 × 10^7",
+        "5 × 10^7",
+        "6 × 10^12",
+        "5 × 10^12"
+      ],
+      "correct": 0,
+      "points": 12,
+      "explanation": "Multiply coefficients: 2 × 3 = 6. Add exponents: 10^3 × 10^4 = 10^7. Answer: 6 × 10^7"
+    },
+    {
+      "question": "Calculate: (8 × 10^6) ÷ (2 × 10^3)",
+      "options": [
+        "4 × 10^3",
+        "4 × 10^2",
+        "6 × 10^3",
+        "4 × 10^9"
+      ],
+      "correct": 0,
+      "points": 12,
+      "explanation": "Divide coefficients: 8 ÷ 2 = 4. Subtract exponents: 10^6 ÷ 10^3 = 10^3. Answer: 4 × 10^3"
+    },
+    {
+      "question": "Given m × 10^-5 km = 2.4 × 10^2 cm. Find the value of m.",
+      "options": [
+        "2.4",
+        "24",
+        "240",
+        "2400"
+      ],
+      "correct": 2,
+      "points": 18,
+      "explanation": "1 km = 10^5 cm. LHS = m × 10^-5 × 10^5 cm = m cm. Equation: m = 2.4 × 10^2 = 240"
+    },
+    {
+      "question": "Given p × 10^-8 km = 3 × 10^-2 mm. Find the value of p.",
+      "options": [
+        "0.3",
+        "3",
+        "30",
+        "300"
+      ],
+      "correct": 1,
+      "points": 18,
+      "explanation": "1 km = 10^6 mm. LHS = p × 10^-8 × 10^6 mm = p × 10^-2 mm. Equation: p × 10^-2 = 3 × 10^-2. p = 3"
+    },
+    {
+      "question": "Convert 5 km to metres.",
+      "options": [
+        "500 m",
+        "5,000 m",
+        "50,000 m",
+        "500,000 m"
+      ],
+      "correct": 1,
+      "points": 8,
+      "explanation": "1 km = 1000 m. 5 km = 5 × 1000 = 5,000 m"
+    },
+    {
+      "question": "Convert 2,500 g to kg.",
+      "options": [
+        "0.25 kg",
+        "2.5 kg",
+        "25 kg",
+        "250 kg"
+      ],
+      "correct": 1,
+      "points": 8,
+      "explanation": "1 kg = 1000 g. 2500 g = 2500 ÷ 1000 = 2.5 kg"
+    },
+    {
+      "question": "Given k × 10^4 mg = 5 × 10^-1 kg. Find the value of k.",
+      "options": [
+        "5",
+        "50",
+        "500",
+        "5000"
+      ],
+      "correct": 1,
+      "points": 18,
+      "explanation": "1 kg = 10^6 mg. RHS = 5 × 10^-1 × 10^6 mg = 5 × 10^5 mg. Equation: k × 10^4 = 5 × 10^5. k = 5 × 10^1 = 50"
+    },
+    {
+      "question": "Convert 3.5 cm to mm.",
+      "options": [
+        "0.35 mm",
+        "3.5 mm",
+        "35 mm",
+        "350 mm"
+      ],
+      "correct": 2,
+      "points": 8,
+      "explanation": "1 cm = 10 mm. 3.5 cm = 3.5 × 10 = 35 mm"
+    },
+    {
+      "question": "Express 0.0072 in standard form.",
+      "options": [
+        "7.2 × 10^-2",
+        "7.2 × 10^-3",
+        "72 × 10^-3",
+        "0.72 × 10^-2"
+      ],
+      "correct": 1,
+      "points": 10,
+      "explanation": "Move decimal 3 places right: 0.0072 = 7.2 × 10^-3"
+    },
+    {
+      "question": "Calculate: (6 × 10^2) × (4 × 10^-3)",
+      "options": [
+        "2.4 × 10^0",
+        "2.4 × 10^-1",
+        "10 × 10^-1",
+        "24 × 10^-1"
+      ],
+      "correct": 0,
+      "points": 15,
+      "explanation": "Multiply coefficients: 6 × 4 = 24. Add exponents: 10^2 × 10^-3 = 10^-1. 24 × 10^-1 = 2.4 × 10^0"
+    },
+    {
+      "question": "Given n × 10^-3 m = 4.5 × 10^2 μm. Find n. (1 m = 10^6 μm)",
+      "options": [
+        "0.45",
+        "4.5",
+        "45",
+        "450"
+      ],
+      "correct": 0,
+      "points": 18,
+      "explanation": "Convert LHS to μm: n × 10^-3 × 10^6 μm = n × 10^3 μm. Equation: n × 10^3 = 4.5 × 10^2. n = 4.5 × 10^-1 = 0.45"
+    },
+    {
+      "question": "Convert 1500 m to km.",
+      "options": [
+        "0.15 km",
+        "1.5 km",
+        "15 km",
+        "150 km"
+      ],
+      "correct": 1,
+      "points": 8,
+      "explanation": "1 km = 1000 m. 1500 m = 1500 ÷ 1000 = 1.5 km"
+    },
+    {
+      "question": "Express 8.2 × 10^4 as an ordinary number.",
+      "options": [
+        "8,200",
+        "82,000",
+        "820,000",
+        "8,200,000"
+      ],
+      "correct": 1,
+      "points": 10,
+      "explanation": "Move decimal 4 places right: 8.2 × 10^4 = 82,000"
+    },
+    {
+      "question": "Given x × 10^-7 km = 5.6 × 10^-1 cm. Find the value of x.",
+      "options": [
+        "0.56",
+        "5.6",
+        "56",
+        "560"
+      ],
+      "correct": 2,
+      "points": 20,
+      "explanation": "1 km = 10^5 cm. LHS = x × 10^-7 × 10^5 cm = x × 10^-2 cm. Equation: x × 10^-2 = 5.6 × 10^-1. x = 5.6 × 10^1 = 56"
+    },
+    {
+      "question": "Calculate: (9 × 10^7) ÷ (3 × 10^4)",
+      "options": [
+        "3 × 10^3",
+        "3 × 10^4",
+        "6 × 10^3",
+        "3 × 10^11"
+      ],
+      "correct": 0,
+      "points": 12,
+      "explanation": "Divide coefficients: 9 ÷ 3 = 3. Subtract exponents: 10^7 ÷ 10^4 = 10^3. Answer: 3 × 10^3"
+    },
+    {
+      "question": "Given y × 10^5 mm = 2.5 × 10^1 m. Find the value of y.",
+      "options": [
+        "0.25",
+        "2.5",
+        "25",
+        "250"
+      ],
+      "correct": 0,
+      "points": 20,
+      "explanation": "1 m = 10^3 mm. RHS = 2.5 × 10^1 × 10^3 mm = 2.5 × 10^4 mm. Equation: y × 10^5 = 2.5 × 10^4. y = 2.5 × 10^-1 = 0.25"
+    },
+    {
+      "question": "The mass of an electron is 9.11 × 10^-31 kg. Express this in grams. (1 kg = 1000 g)",
+      "options": [
+        "9.11 × 10^-28 g",
+        "9.11 × 10^-34 g",
+        "9.11 × 10^-30 g",
+        "9.11 × 10^-29 g"
+      ],
+      "correct": 0,
+      "points": 15,
+      "explanation": "9.11 × 10^-31 kg = 9.11 × 10^-31 × 10^3 g = 9.11 × 10^-28 g"
+    },
+    {
+      "question": "Given a × 10^-2 km = b × 10^2 m where a = 3. Find the value of b.",
+      "options": [
+        "0.3",
+        "3",
+        "30",
+        "300"
+      ],
+      "correct": 0,
+      "points": 20,
+      "explanation": "LHS = 3 × 10^-2 km = 3 × 10^-2 × 10^3 m = 3 × 10^1 m = 30 m. Equation: 30 = b × 10^2. b = 30/100 = 0.3"
+    }
+  ]
+}
