@@ -1,0 +1,151 @@
+{
+  "title": "Units, More/Less Than and Grouping Problems",
+  "topic": "Whole Numbers and Model Method",
+  "subject": "Mathematics",
+  "level": "Primary",
+  "grade": "P4",
+  "chapter": 3,
+  "worksheet": 1,
+  "questions": [
+    {
+      "question": "Tom has 3 times as many marbles as Jerry. Together they have 80 marbles. How many marbles does Tom have?",
+      "options": ["50", "55", "60", "65"],
+      "correct": 2,
+      "points": 15,
+      "explanation": "Jerry = 1 unit, Tom = 3 units. Total = 4 units = 80 marbles. 1 unit = 80 ÷ 4 = 20. Tom = 3 units = 3 × 20 = 60 marbles."
+    },
+    {
+      "question": "Cookies are packed in bags of 6. If there are 85 cookies, what is the maximum number of bags that can be filled completely?",
+      "options": ["12", "13", "14", "15"],
+      "correct": 2,
+      "points": 10,
+      "explanation": "85 ÷ 6 = 14 remainder 1. Maximum complete bags = 14 bags."
+    },
+    {
+      "question": "Amy has 5 times as many stickers as Ben. After Amy gave 50 stickers to Ben, they had the same number. How many stickers did Amy have at first?",
+      "options": ["100", "125", "150", "175"],
+      "correct": 1,
+      "points": 20,
+      "explanation": "Amy = 5 units, Ben = 1 unit. Difference = 4 units. After giving 50, they are equal, so 50 = half of difference = 2 units. 1 unit = 25. Amy = 5 units = 5 × 25 = 125 stickers."
+    },
+    {
+      "question": "Pencils are sold in boxes of 8. What is the minimum number of boxes needed to get at least 50 pencils?",
+      "options": ["5", "6", "7", "8"],
+      "correct": 2,
+      "points": 10,
+      "explanation": "50 ÷ 8 = 6 remainder 2. Need 6 + 1 = 7 boxes to get at least 50 pencils."
+    },
+    {
+      "question": "Lisa has 3 times as much money as Kate. After Lisa spent $40 and Kate spent $10, they had the same amount. How much money did Lisa have at first?",
+      "options": ["$45", "$60", "$75", "$90"],
+      "correct": 0,
+      "points": 20,
+      "explanation": "Lisa = 3 units, Kate = 1 unit. Difference = 2 units. After spending, difference = $40 - $10 = $30. So 2 units = $30. 1 unit = $15. Lisa = 3 units = 3 × $15 = $45."
+    },
+    {
+      "question": "There are 45 students. Each van can carry 7 students. What is the minimum number of vans needed?",
+      "options": ["5", "6", "7", "8"],
+      "correct": 2,
+      "points": 10,
+      "explanation": "45 ÷ 7 = 6 remainder 3. Need 6 + 1 = 7 vans to carry all students."
+    },
+    {
+      "question": "Sam has 4 times as many toy cars as Tim. After Sam bought 20 more cars and Tim bought 10 more cars, Sam had 3 times as many cars as Tim. How many cars did Tim have at first?",
+      "options": ["8", "10", "12", "15"],
+      "correct": 1,
+      "points": 25,
+      "explanation": "Tim = 1 unit, Sam = 4 units. After: Sam = 4 units + 20, Tim = 1 unit + 10. Sam = 3 × Tim. So 4 units + 20 = 3 units + 30. 1 unit = 10. Tim at first = 10 cars."
+    },
+    {
+      "question": "Apples are packed in trays of 10. If there are 127 apples, how many apples will be left over after filling as many trays as possible?",
+      "options": ["5", "6", "7", "8"],
+      "correct": 2,
+      "points": 10,
+      "explanation": "127 ÷ 10 = 12 remainder 7. Left over = 7 apples."
+    },
+    {
+      "question": "Peter has 6 times as many cards as Paul. After Peter gave 75 cards to Paul, they had the same number. How many cards did Peter have at first?",
+      "options": ["150", "160", "170", "180"],
+      "correct": 3,
+      "points": 20,
+      "explanation": "Peter = 6 units, Paul = 1 unit. Difference = 5 units. After giving 75, they are equal, so 75 = half of difference = 2.5 units. 1 unit = 30. Peter = 6 units = 6 × 30 = 180 cards."
+    },
+    {
+      "question": "Balloons are tied in bunches of 9. What is the maximum number of complete bunches that can be made from 100 balloons?",
+      "options": ["9", "10", "11", "12"],
+      "correct": 2,
+      "points": 10,
+      "explanation": "100 ÷ 9 = 11 remainder 1. Maximum complete bunches = 11 bunches."
+    },
+    {
+      "question": "A box has 3 times as many red balls as blue balls. After 15 red balls were removed and 5 blue balls were added, there were equal numbers. How many blue balls were there at first?",
+      "options": ["8", "10", "12", "15"],
+      "correct": 1,
+      "points": 20,
+      "explanation": "Blue = 1 unit, Red = 3 units. After: Red = 3 units - 15, Blue = 1 unit + 5. Equal: 3 units - 15 = 1 unit + 5. 2 units = 20. 1 unit = 10. Blue at first = 10 balls."
+    },
+    {
+      "question": "Ribbon is sold in rolls of 5 metres. What is the minimum number of rolls needed to get at least 38 metres of ribbon?",
+      "options": ["6", "7", "8", "9"],
+      "correct": 2,
+      "points": 10,
+      "explanation": "38 ÷ 5 = 7 remainder 3. Need 7 + 1 = 8 rolls to get at least 38 metres."
+    },
+    {
+      "question": "Notebooks cost $4 each. What is the maximum number of notebooks that can be bought with $35?",
+      "options": ["7", "8", "9", "10"],
+      "correct": 1,
+      "points": 10,
+      "explanation": "$35 ÷ $4 = 8 remainder $3. Maximum notebooks = 8 notebooks."
+    },
+    {
+      "question": "Eggs are packed in cartons of 12. A farmer has 155 eggs. How many cartons can be filled completely?",
+      "options": ["11", "12", "13", "14"],
+      "correct": 1,
+      "points": 10,
+      "explanation": "155 ÷ 12 = 12 remainder 11. Cartons filled = 12 cartons."
+    },
+    {
+      "question": "Ali has 4 times as many stamps as Bob. After Ali gave 50 stamps to Bob, Ali had twice as many stamps as Bob. How many stamps did Ali have at first?",
+      "options": ["280", "300", "320", "340"],
+      "correct": 1,
+      "points": 25,
+      "explanation": "Bob = 1 unit, Ali = 4 units. After: Ali = 4 units - 50, Bob = 1 unit + 50. Ali = 2 × Bob. So 4 units - 50 = 2 units + 100. 2 units = 150. 1 unit = 75. Ali = 4 × 75 = 300 stamps."
+    },
+    {
+      "question": "There are 2 times as many boys as girls in a class. After 10 boys and 2 girls joined, there were 3 times as many boys as girls. How many girls were there at first?",
+      "options": ["3", "4", "5", "6"],
+      "correct": 1,
+      "points": 25,
+      "explanation": "Girls = 1 unit, Boys = 2 units. After: Boys = 2 units + 10, Girls = 1 unit + 2. Boys = 3 × Girls. So 2 units + 10 = 3 units + 6. 1 unit = 4. Girls at first = 4."
+    },
+    {
+      "question": "Chocolates are packed in boxes of 15. If there are 200 chocolates, how many chocolates will be left over?",
+      "options": ["5", "10", "15", "20"],
+      "correct": 0,
+      "points": 10,
+      "explanation": "200 ÷ 15 = 13 remainder 5. Left over = 5 chocolates."
+    },
+    {
+      "question": "There are 3 times as many fiction books as non-fiction books in a library. After 30 fiction books and 6 non-fiction books were donated, there were 4 times as many fiction books as non-fiction books. How many non-fiction books were there at first?",
+      "options": ["5", "6", "7", "8"],
+      "correct": 1,
+      "points": 25,
+      "explanation": "Non-fiction = 1 unit, Fiction = 3 units. After: Fiction = 3 units + 30, Non-fiction = 1 unit + 6. Fiction = 4 × Non-fiction. So 3 units + 30 = 4 units + 24. 1 unit = 6. Non-fiction at first = 6 books."
+    },
+    {
+      "question": "Students are seated at tables. If 6 students sit at each table, 4 students will be standing. If 7 students sit at each table, 2 tables will be empty. How many students are there? (Guess and Check)",
+      "options": ["98", "105", "108", "112"],
+      "correct": 3,
+      "points": 25,
+      "explanation": "Guess and Check: Try 18 tables. Case 1: 6 × 18 + 4 = 112 students. Case 2: 7 × (18 - 2) = 7 × 16 = 112 students. Both match! Answer = 112 students."
+    },
+    {
+      "question": "David has 2 times as many apples as oranges. After he bought 20 more apples and 5 more oranges, he had 3 times as many apples as oranges. How many oranges did he have at first? (Guess and Check)",
+      "options": ["4", "5", "6", "7"],
+      "correct": 1,
+      "points": 25,
+      "explanation": "Guess and Check: Try 5 oranges. Apples = 10. After: Oranges = 5 + 5 = 10, Apples = 10 + 20 = 30. Ratio = 30 : 10 = 3 : 1 ✓. Answer = 5 oranges."
+    }
+  ]
+}
