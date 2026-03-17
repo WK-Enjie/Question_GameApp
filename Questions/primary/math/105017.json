@@ -11,8 +11,7 @@
       "question": "Farmer Ben has chickens and cows on his farm. He counts 18 heads and 50 legs altogether. How many chickens does he have?",
       "options": ["9 chickens", "13 chickens", "11 chickens", "7 chickens"],
       "correct": 2,
-      "points": 20,
-      "time": 20,
+      "points": 20
       "explanation": "Chickens have 2 legs, cows have 4 legs. Guess 1: 9 chickens, 9 cows = 9x2 + 9x4 = 54 legs (too many). Guess 2: 11 chickens, 7 cows = 11x2 + 7x4 = 22 + 28 = 50 legs. Answer: 11 chickens."
     },
     {
@@ -20,7 +19,6 @@
       "options": ["8 turtles", "6 turtles", "9 turtles", "5 turtles"],
       "correct": 3,
       "points": 20,
-      "time": 20,
       "explanation": "Ducks have 2 legs, turtles have 4 legs. Guess 1: 7 ducks, 7 turtles = 7x2 + 7x4 = 42 (too many). Guess 2: 9 ducks, 5 turtles = 9x2 + 5x4 = 18 + 20 = 38. Answer: 5 turtles."
     },
     {
@@ -28,7 +26,6 @@
       "options": ["10 coins", "16 coins", "14 coins", "12 coins"],
       "correct": 2,
       "points": 25,
-      "time": 25,
       "explanation": "Work in cents. Total = 900 cents. Guess 1: 12 fifty-cent, 12 twenty-cent = 600 + 240 = 840 (too low). Guess 2: 14 fifty-cent, 10 twenty-cent = 700 + 200 = 900. Answer: 14 fifty-cent coins."
     },
     {
@@ -36,7 +33,6 @@
       "options": ["13 cars", "15 cars", "14 cars", "16 cars"],
       "correct": 2,
       "points": 20,
-      "time": 20,
       "explanation": "Cars have 4 wheels, motorcycles have 2. Guess 1: 13 cars, 9 motorcycles = 52 + 18 = 70 (too few). Guess 2: 14 cars, 8 motorcycles = 56 + 16 = 72. Answer: 14 cars."
     },
     {
@@ -44,7 +40,6 @@
       "options": ["8 questions", "10 questions", "7 questions", "9 questions"],
       "correct": 3,
       "points": 25,
-      "time": 25,
       "explanation": "Each correct = +5 pts, each wrong = -1 pt. Guess 1: 10 correct, 8 wrong = 50 - 8 = 42 (too high). Guess 2: 8 correct, 10 wrong = 40 - 10 = 30 (too low). Guess 3: 9 correct, 9 wrong = 45 - 9 = 36. Answer: 9 questions."
     },
     {
@@ -52,7 +47,6 @@
       "options": ["20 tricycles", "18 tricycles", "14 tricycles", "16 tricycles"],
       "correct": 1,
       "points": 20,
-      "time": 20,
       "explanation": "Tricycles have 3 wheels, bicycles have 2 wheels. Guess 1: 14 tricycles, 14 bicycles = 42 + 28 = 70 (too few). Guess 2: 16 tricycles, 12 bicycles = 48 + 24 = 72 (still too few). Guess 3: 18 tricycles, 10 bicycles = 54 + 20 = 74. Answer: 18 tricycles."
     },
     {
@@ -60,7 +54,6 @@
       "options": ["5 stamps", "6 stamps", "3 stamps", "4 stamps"],
       "correct": 0,
       "points": 25,
-      "time": 25,
       "explanation": "Work in cents. Total = 550 cents. Guess 1: 6 fifty-cent, 9 thirty-cent = 300 + 270 = 570 (too high). Guess 2: 4 fifty-cent, 11 thirty-cent = 200 + 330 = 530 (too low). Guess 3: 5 fifty-cent, 10 thirty-cent = 250 + 300 = 550. Answer: 5 fifty-cent stamps."
     },
     {
@@ -68,7 +61,6 @@
       "options": ["8 stools", "10 stools", "9 stools", "7 stools"],
       "correct": 2,
       "points": 20,
-      "time": 20,
       "explanation": "Stools have 3 legs, tables have 4 legs. Guess 1: 8 stools, 8 tables = 24 + 32 = 56 (too many). Guess 2: 10 stools, 6 tables = 30 + 24 = 54 (too few). Guess 3: 9 stools, 7 tables = 27 + 28 = 55. Answer: 9 stools."
     },
     {
@@ -76,7 +68,6 @@
       "options": ["5 spiders", "7 spiders", "4 spiders", "6 spiders"],
       "correct": 3,
       "points": 20,
-      "time": 20,
       "explanation": "Spiders have 8 legs, beetles have 6 legs. Guess 1: 4 spiders, 8 beetles = 32 + 48 = 80 (too few). Guess 2: 7 spiders, 5 beetles = 56 + 30 = 86 (too many). Guess 3: 6 spiders, 6 beetles = 48 + 36 = 84. Answer: 6 spiders."
     },
     {
@@ -84,7 +75,6 @@
       "options": ["8 adults", "5 adults", "7 adults", "6 adults"],
       "correct": 2,
       "points": 25,
-      "time": 25,
       "explanation": "Adult ticket = $8, child ticket = $3. Guess 1: 5 adults, 10 children = 40 + 30 = $70 (too low). Guess 2: 8 adults, 7 children = 64 + 21 = $85 (too high). Guess 3: 7 adults, 8 children = 56 + 24 = $80. Answer: 7 adults."
     }
   ]
