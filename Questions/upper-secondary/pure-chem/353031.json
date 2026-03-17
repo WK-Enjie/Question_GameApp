@@ -164,12 +164,12 @@
       "explanation": "Chemical reactions involve the transfer or sharing of electrons. The number of valence (outer shell) electrons determines how an element reacts."
     },
     {
-      "question": "An atom has the nuclide notation 23-11-Na. The bottom number is the proton number and the top number is the nucleon number. How many electrons does a neutral atom of this element have?",
+      "question": "An atom has the nuclide notation ⁹₄Be. The bottom number is the proton number and the top number is the nucleon number. How many electrons does a neutral atom of this element have?",
       "options": [
-        "11",
-        "12",
-        "23",
-        "34"
+        "9",
+        "4",
+        "5",
+        "13"
       ],
       "correct": 0,
       "points": 10,
