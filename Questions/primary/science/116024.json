@@ -1,0 +1,231 @@
+{
+  "title": "Interaction of Forces: Elastic Spring, Magnetic and Frictional Forces",
+  "topic": "Interactions",
+  "subject": "Science",
+  "level": "Primary",
+  "grade": "P6",
+  "chapter": 2,
+  "worksheet": 4,
+  "questions": [
+    {
+      "question": "Two springs, Spring A and Spring B, are hung with identical 200g masses. Spring A extends 3cm. Spring B extends 7cm. Which spring is stiffer?",
+      "options": [
+        "Spring A because it extended less under the same force",
+        "Spring B because it extended more under the same force",
+        "Both springs are equally stiff",
+        "Cannot be determined from the data"
+      ],
+      "answer": "Spring A because it extended less under the same force",
+      "explanation": "A stiffer spring is harder to stretch. When the same force (200g mass) is applied, Spring A extended only 3cm while Spring B extended 7cm. The spring that extends less under the same force is stiffer."
+    },
+    {
+      "question": "A student tests three springs by hanging different masses and measuring extension. For a 100g mass: Spring X extends 2cm, Spring Y extends 5cm, Spring Z extends 4cm. Which spring is the least stiff?",
+      "options": [
+        "Spring X",
+        "Spring Y",
+        "Spring Z",
+        "All springs are equally stiff"
+      ],
+      "answer": "Spring Y",
+      "explanation": "The least stiff spring extends the most under the same force. With a 100g mass, Spring Y extended 5cm, which is more than Spring X (2cm) and Spring Z (4cm). Therefore, Spring Y is the least stiff."
+    },
+    {
+      "question": "Two identical springs are stretched by different forces. Spring P is pulled with 5N and extends 4cm. Spring Q is pulled with 10N and extends 4cm. Which spring is stiffer?",
+      "options": [
+        "Spring P because it needed less force to extend the same amount",
+        "Spring Q because it needed more force to extend the same amount",
+        "Both springs are equally stiff",
+        "Cannot be determined from the data"
+      ],
+      "answer": "Spring Q because it needed more force to extend the same amount",
+      "explanation": "A stiffer spring requires more force to stretch the same distance. Both springs extended 4cm, but Spring Q needed 10N while Spring P needed only 5N. Spring Q is stiffer because it required more force for the same extension."
+    },
+    {
+      "question": "A spring is stretched by 6cm when a 300g mass is hung on it. If a 600g mass is hung on the same spring, what is the most likely extension?",
+      "options": [
+        "3cm",
+        "6cm",
+        "9cm",
+        "12cm"
+      ],
+      "answer": "12cm",
+      "explanation": "If the spring behaves consistently, doubling the force (from 300g to 600g) should double the extension. Since 300g caused 6cm extension, 600g would likely cause 12cm extension, assuming the spring is not stretched beyond its elastic limit."
+    },
+    {
+      "question": "Two bar magnets are placed with their North poles facing each other. What will happen?",
+      "options": [
+        "The magnets will attract each other",
+        "The magnets will repel each other",
+        "The magnets will not affect each other",
+        "The magnets will rotate to align side by side"
+      ],
+      "answer": "The magnets will repel each other",
+      "explanation": "Like poles of magnets repel each other. When two North poles face each other, the magnetic force pushes them apart. This is called magnetic repulsion."
+    },
+    {
+      "question": "A magnet attracts a steel paperclip from a distance of 8cm. If the magnet is moved to 15cm away from the paperclip, what will happen to the magnetic force?",
+      "options": [
+        "The magnetic force will increase",
+        "The magnetic force will decrease",
+        "The magnetic force will stay the same",
+        "The magnetic force will become zero immediately"
+      ],
+      "answer": "The magnetic force will decrease",
+      "explanation": "Magnetic force is a non-contact force that acts at a distance. The strength of the magnetic force decreases as the distance between the magnet and the magnetic object increases. At 15cm, the force will be weaker than at 8cm."
+    },
+    {
+      "question": "A student places a magnet near a steel ball. The ball moves towards the magnet. Which statement best explains this observation?",
+      "options": [
+        "The magnet pushes the ball with a contact force",
+        "The magnet pulls the ball with a magnetic force that acts at a distance",
+        "The ball is attracted to the magnet because of gravitational force",
+        "The ball moves because of frictional force"
+      ],
+      "answer": "The magnet pulls the ball with a magnetic force that acts at a distance",
+      "explanation": "Magnetic force is a non-contact force. The magnet can pull the steel ball without touching it because magnetic force acts at a distance. Steel is a magnetic material, so it is attracted to the magnet."
+    },
+    {
+      "question": "Two ring magnets are placed on a pencil. Magnet A has its North pole facing up. Magnet B is placed above Magnet A with its South pole facing down. What will happen?",
+      "options": [
+        "The magnets will repel and move apart",
+        "The magnets will attract and stick together",
+        "The magnets will not affect each other",
+        "The magnets will rotate but not move"
+      ],
+      "answer": "The magnets will attract and stick together",
+      "explanation": "Unlike poles attract. Magnet A has North pole up, Magnet B has South pole down. These are unlike poles facing each other, so they will attract and stick together."
+    },
+    {
+      "question": "A student tests how distance affects magnetic force. She places a magnet at different distances from a paperclip and counts how many paperclips can be lifted. At 2cm: 5 paperclips. At 5cm: 2 paperclips. At 10cm: 0 paperclips. What can be concluded?",
+      "options": [
+        "Magnetic force increases as distance increases",
+        "Magnetic force decreases as distance increases",
+        "Magnetic force does not depend on distance",
+        "Magnetic force is strongest at 10cm"
+      ],
+      "answer": "Magnetic force decreases as distance increases",
+      "explanation": "The data shows that as distance increases from 2cm to 10cm, the number of paperclips lifted decreases from 5 to 0. This shows that magnetic force becomes weaker as the distance between the magnet and the object increases."
+    },
+    {
+      "question": "A box is pushed across a rough floor. The student then adds oil to the floor and pushes the box again with the same force. What will happen to the distance the box travels?",
+      "options": [
+        "The box will travel a shorter distance because oil increases friction",
+        "The box will travel a longer distance because oil reduces friction",
+        "The box will travel the same distance because oil does not affect friction",
+        "The box will not move at all because oil makes the floor slippery"
+      ],
+      "answer": "The box will travel a longer distance because oil reduces friction",
+      "explanation": "Oil is a lubricant. Lubricants reduce frictional force between surfaces. With less friction opposing the motion, the box will travel a longer distance when pushed with the same force."
+    },
+    {
+      "question": "Two springs are tested. Spring M extends 8cm with a 400g mass. Spring N extends 4cm with a 400g mass. Which statement is correct?",
+      "options": [
+        "Spring M is stiffer than Spring N",
+        "Spring N is stiffer than Spring M",
+        "Both springs have the same stiffness",
+        "Spring M does not follow elastic spring force"
+      ],
+      "answer": "Spring N is stiffer than Spring M",
+      "explanation": "With the same force (400g mass), Spring N extended only 4cm while Spring M extended 8cm. The spring that extends less under the same force is stiffer. Therefore, Spring N is stiffer than Spring M."
+    },
+    {
+      "question": "A student hangs a spring from a stand and adds masses one by one. The extensions recorded are: 100g = 2cm, 200g = 4cm, 300g = 6cm. What extension is expected for a 500g mass?",
+      "options": [
+        "5cm",
+        "8cm",
+        "10cm",
+        "12cm"
+      ],
+      "answer": "10cm",
+      "explanation": "The data shows a pattern: every 100g increase causes 2cm more extension. For 500g, the extension would be 5 x 2cm = 10cm, assuming the spring is not stretched beyond its elastic limit."
+    },
+    {
+      "question": "Why does adding grease to the moving parts of a bicycle make it easier to pedal?",
+      "options": [
+        "Grease increases the gravitational force on the bicycle",
+        "Grease reduces the frictional force between moving parts",
+        "Grease makes the bicycle lighter",
+        "Grease increases the elastic spring force in the pedals"
+      ],
+      "answer": "Grease reduces the frictional force between moving parts",
+      "explanation": "Grease is a lubricant. Lubricants reduce frictional force between surfaces that rub against each other. With less friction in the moving parts, less force is needed to pedal, making it easier to ride."
+    },
+    {
+      "question": "A magnet is placed near four objects: iron nail, copper wire, plastic ruler, aluminium foil. Which object will be attracted to the magnet?",
+      "options": [
+        "Copper wire",
+        "Plastic ruler",
+        "Aluminium foil",
+        "Iron nail"
+      ],
+      "answer": "Iron nail",
+      "explanation": "Magnets attract magnetic materials. Iron is a magnetic material, so the iron nail will be attracted to the magnet. Copper, plastic, and aluminium are not magnetic materials and will not be attracted."
+    },
+    {
+      "question": "Two identical springs are hung with different masses. Spring X has a 150g mass and extends 5cm. Spring Y has a 300g mass. What is the most likely extension of Spring Y?",
+      "options": [
+        "2.5cm",
+        "5cm",
+        "7.5cm",
+        "10cm"
+      ],
+      "answer": "10cm",
+      "explanation": "Spring Y has twice the mass (300g vs 150g) of Spring X. If the spring behaves consistently, twice the force should cause twice the extension. Since 150g caused 5cm extension, 300g would likely cause 10cm extension."
+    },
+    {
+      "question": "A student places two magnets on a table. When she brings them closer, they suddenly push apart. What can she conclude about the poles facing each other?",
+      "options": [
+        "The poles facing each other are unlike poles",
+        "The poles facing each other are like poles",
+        "One magnet is stronger than the other",
+        "The magnets are not magnetic"
+      ],
+      "answer": "The poles facing each other are like poles",
+      "explanation": "Like poles of magnets repel each other. When the magnets suddenly push apart as they are brought closer, it means the poles facing each other are the same (both North or both South), causing magnetic repulsion."
+    },
+    {
+      "question": "A toy car rolls down a ramp onto three different surfaces: Surface A (sandpaper), Surface B (wood), Surface C (oiled glass). On which surface will the car travel the farthest?",
+      "options": [
+        "Surface A because sandpaper provides more grip",
+        "Surface B because wood is smooth",
+        "Surface C because oil reduces friction",
+        "All surfaces will give the same distance"
+      ],
+      "answer": "Surface C because oil reduces friction",
+      "explanation": "Frictional force opposes motion. Sandpaper is rough and creates more friction. Oiled glass has a lubricant that reduces friction. With less friction on Surface C, the car will travel farther before stopping."
+    },
+    {
+      "question": "A spring is compressed by pushing down on it. When released, the spring pushes back up. Why does this happen?",
+      "options": [
+        "Gravitational force pulls the spring up",
+        "Elastic spring force acts to restore the spring to its original length",
+        "Magnetic force repels the spring upwards",
+        "Frictional force pushes the spring upwards"
+      ],
+      "answer": "Elastic spring force acts to restore the spring to its original length",
+      "explanation": "When a spring is compressed, it stores elastic potential energy. The elastic spring force acts in the opposite direction to the compression, trying to return the spring to its original shape. This restoring force pushes the spring back up when released."
+    },
+    {
+      "question": "A student tests two magnets. Magnet P attracts a paperclip from 12cm away. Magnet Q attracts a paperclip from 6cm away. Which magnet is stronger?",
+      "options": [
+        "Magnet P because it can attract from a farther distance",
+        "Magnet Q because it attracts from a closer distance",
+        "Both magnets are equally strong",
+        "Cannot be determined from the data"
+      ],
+      "answer": "Magnet P because it can attract from a farther distance",
+      "explanation": "A stronger magnet can exert magnetic force over a larger distance. Magnet P attracted the paperclip from 12cm away, while Magnet Q only attracted from 6cm. Since Magnet P worked from farther away, it is the stronger magnet."
+    },
+    {
+      "question": "A spring balance is used to measure the weight of objects. When a heavier object is hung on it, the spring extends more. What property of the spring allows the spring balance to work?",
+      "options": [
+        "The spring changes colour when stretched",
+        "The extension of the spring increases with more force applied",
+        "The spring becomes magnetic when stretched",
+        "The spring gets shorter when more force is applied"
+      ],
+      "answer": "The extension of the spring increases with more force applied",
+      "explanation": "A spring balance works because the extension of the spring is related to the force applied. When a heavier object (more weight/force) is hung on it, the spring extends more. This relationship allows the scale to measure weight based on how far the spring stretches."
+    }
+  ]
+}

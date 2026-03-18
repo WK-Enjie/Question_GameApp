@@ -1,0 +1,191 @@
+{
+  "title": "Effects of Heat: Conduction and Expansion",
+  "topic": "Energy Forms and Uses",
+  "subject": "Science",
+  "level": "Primary",
+  "grade": "P4",
+  "chapter": 3,
+  "worksheet": 3,
+  "questions": [
+    {
+      "question": "Two identical rods, one made of copper and one made of wood, are placed in hot water at 70°C. After 3 minutes, the temperature at the handle of the copper rod is 45°C and the wood rod is 28°C. Which rod allows heat to travel through it more quickly?",
+      "options": [
+        "The copper rod because its handle reached a higher temperature",
+        "The wood rod because it stayed cooler",
+        "Both rods allow heat to travel at the same speed",
+        "Cannot be determined from the data"
+      ],
+      "correct": 0,
+      "points": 15,
+      "explanation": "A material that allows heat to travel through it more quickly will have a higher temperature at the handle after the same amount of time. The copper rod's handle reached 45°C while the wood rod's handle was only 28°C, showing heat travelled faster through copper."
+    },
+    {
+      "question": "A student tests three materials by placing one end in hot water and measuring the temperature at the other end after 2 minutes. Material A: 52°C, Material B: 38°C, Material C: 61°C. Which material allows heat to travel through it most quickly?",
+      "options": [
+        "Material A",
+        "Material B",
+        "Material C",
+        "All are equally good"
+      ],
+      "correct": 2,
+      "points": 15,
+      "explanation": "The material that allows heat to travel through it most quickly will reach the highest temperature at the handle after the same time. Material C reached 61°C, the highest temperature, so it allows heat to travel through it most quickly."
+    },
+    {
+      "question": "Why are the handles of cooking pots usually made of wood or plastic?",
+      "options": [
+        "Wood and plastic allow heat to travel quickly to the handle",
+        "Wood and plastic slow down heat travel to the handle",
+        "Wood and plastic are cheaper than metal",
+        "Wood and plastic look nicer"
+      ],
+      "correct": 1,
+      "points": 10,
+      "explanation": "Wood and plastic slow down the transfer of heat. This means heat from the hot pot does not travel quickly to the handle, keeping it cool enough to hold safely."
+    },
+    {
+      "question": "In an experiment, two identical cups are filled with hot water at 80°C. Cup X is made of metal, Cup Y is made of plastic. After 4 minutes, the outside of Cup X feels warmer than Cup Y. Why?",
+      "options": [
+        "Metal allows heat to travel through it more quickly",
+        "Plastic allows heat to travel through it more quickly",
+        "Both materials allow heat to travel at the same speed",
+        "The water in Cup X was hotter"
+      ],
+      "correct": 0,
+      "points": 15,
+      "explanation": "Metal allows heat to travel through it more quickly than plastic. After the same time, more heat reached the outside of the metal cup, making it feel warmer."
+    },
+    {
+      "question": "A student places identical ice cubes on trays made of metal, plastic and wood at room temperature (25°C). After 5 minutes, the ice on the metal tray has melted the most. What does this show?",
+      "options": [
+        "Metal allows heat to travel to the ice more quickly",
+        "Plastic allows heat to travel to the ice more quickly",
+        "Wood allows heat to travel to the ice more quickly",
+        "All materials allow heat to travel at the same speed"
+      ],
+      "correct": 0,
+      "points": 15,
+      "explanation": "Metal allows heat to travel through it more quickly. Heat from the room travelled faster through the metal tray to the ice cube, causing it to melt more in the same amount of time."
+    },
+    {
+      "question": "Two spoons, one metal and one plastic, are placed in a cup of hot soup at 75°C. After 1 minute, the metal spoon handle feels warmer. What can be concluded?",
+      "options": [
+        "Metal allows heat to travel through it more slowly",
+        "Metal allows heat to travel through it more quickly",
+        "Plastic allows heat to travel through it more quickly",
+        "Both materials allow heat to travel at the same speed"
+      ],
+      "correct": 1,
+      "points": 10,
+      "explanation": "After the same amount of time, the metal spoon handle felt warmer. This shows heat travelled through the metal spoon more quickly than through the plastic spoon."
+    },
+    {
+      "question": "Why do oven gloves have thick fabric coatings?",
+      "options": [
+        "Fabric allows heat to travel quickly to your hands",
+        "Fabric slows down heat travel to your hands",
+        "Fabric makes the gloves heavier",
+        "Fabric looks nicer"
+      ],
+      "correct": 1,
+      "points": 10,
+      "explanation": "Fabric slows down the transfer of heat. This protects your hands by reducing how quickly heat from hot objects reaches your skin."
+    },
+    {
+      "question": "A student tests two materials by measuring how long each takes for the handle to reach 40°C when one end is in hot water. Material P: 90 seconds, Material Q: 150 seconds. Which material allows heat to travel through it more quickly?",
+      "options": [
+        "Material P",
+        "Material Q",
+        "Both are the same",
+        "Cannot be determined"
+      ],
+      "correct": 0,
+      "points": 15,
+      "explanation": "Material P reached 40°C in 90 seconds while Material Q took 150 seconds. The shorter time shows heat travelled through Material P more quickly."
+    },
+    {
+      "question": "A metal door knob feels colder than a wooden door in the same room at 24°C. Why?",
+      "options": [
+        "The metal is actually colder than the wood",
+        "Metal allows heat to travel away from your hand more quickly",
+        "Wood produces heat",
+        "Metal absorbs cold from the air"
+      ],
+      "correct": 1,
+      "points": 15,
+      "explanation": "Both objects are at the same room temperature. However, metal allows heat to travel away from your hand more quickly, making it feel colder. Wood slows down heat travel, so less heat leaves your hand at once."
+    },
+    {
+      "question": "Which material would be BEST for making the base of a cooking pot?",
+      "options": [
+        "Wood",
+        "Plastic",
+        "Rubber",
+        "Metal"
+      ],
+      "correct": 3,
+      "points": 10,
+      "explanation": "Metal allows heat to travel through it quickly. This allows heat from the stove to travel quickly and evenly through the base of the pot, helping food cook faster."
+    },
+    {
+      "question": "A frying pan has a metal base and a wooden handle. The metal base gets hot quickly when placed on a stove. After 2 minutes, the handle is still cool. Why is this design useful?",
+      "options": [
+        "The metal base allows heat to travel quickly for cooking; the wooden handle slows down heat travel to keep it cool",
+        "The wooden base allows heat to travel quickly; the metal handle slows down heat travel",
+        "Both parts allow heat to travel at the same speed",
+        "The design is only for appearance"
+      ],
+      "correct": 0,
+      "points": 15,
+      "explanation": "The metal base allows heat to travel quickly for efficient cooking. The wooden handle slows down heat travel, so heat from the pan does not travel quickly to the handle, keeping it cool and safe to hold."
+    },
+    {
+      "question": "Two identical rods are heated at one end. After 3 minutes, Rod X has a temperature of 55°C at the other end, Rod Y has 32°C. What can be concluded about the materials?",
+      "options": [
+        "Rod X allows heat to travel through it more slowly",
+        "Rod X allows heat to travel through it more quickly",
+        "Rod Y allows heat to travel through it more quickly",
+        "Both rods allow heat to travel at the same speed"
+      ],
+      "correct": 1,
+      "points": 15,
+      "explanation": "After the same amount of time, Rod X reached a higher temperature (55°C) at the other end compared to Rod Y (32°C). This shows heat travelled through Rod X more quickly."
+    },
+    {
+      "question": "A student places a metal spoon and a plastic spoon in hot water at 65°C. She measures the handle temperature every minute. After 2 minutes: Metal spoon = 48°C, Plastic spoon = 31°C. What does this data show?",
+      "options": [
+        "Plastic allows heat to travel through it more quickly",
+        "Metal allows heat to travel through it more quickly",
+        "Both materials allow heat to travel at the same speed",
+        "The water temperature changed during the experiment"
+      ],
+      "correct": 1,
+      "points": 15,
+      "explanation": "After the same time, the metal spoon handle reached a higher temperature (48°C) than the plastic spoon (31°C). This data shows heat travelled through the metal spoon more quickly."
+    },
+    {
+      "question": "A hot steamed bun is heated in a microwave. After a short time, the bun bursts open. What is the most likely reason?",
+      "options": [
+        "The bun absorbed water and became too heavy",
+        "The air trapped inside the bun expanded more quickly than the bun itself",
+        "The bun lost heat too quickly and cracked",
+        "The microwave made the bun shrink"
+      ],
+      "correct": 1,
+      "points": 20,
+      "explanation": "When heated, air expands (takes up more space). The air trapped inside the bun expands more quickly than the bun material can stretch. This causes pressure to build up inside until the bun bursts open."
+    },
+    {
+      "question": "A student tests three materials to see which allows heat to travel through it most quickly. She records the time for each handle to reach 50°C: Copper = 45 seconds, Iron = 75 seconds, Glass = 180 seconds. Which material allows heat to travel through it most quickly?",
+      "options": [
+        "Copper",
+        "Iron",
+        "Glass",
+        "All are the same"
+      ],
+      "correct": 0,
+      "points": 15,
+      "explanation": "Copper reached 50°C in the shortest time (45 seconds). The shorter the time, the more quickly heat travelled through the material. This shows copper allowed heat to travel through it most quickly."
+    }
+  ]
+}
