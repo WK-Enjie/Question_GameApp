@@ -1,0 +1,191 @@
+{
+  "title": "Statistics - Comparing Data Sets Using Central Tendency and Spread",
+  "topic": "Statistics - Comparison of Data Sets",
+  "subject": "Mathematics",
+  "level": "Upper Secondary",
+  "grade": "Sec 4",
+  "chapter": 4,
+  "worksheet": 3,
+  "questions": [
+    {
+      "question": "Class A has a mean score of 72 and Class B has a mean score of 68. Both classes have the same standard deviation. Which class performed better on average?",
+      "options": [
+        "Class A",
+        "Class B",
+        "Both performed equally",
+        "Cannot be determined"
+      ],
+      "correct": 0,
+      "points": 10,
+      "explanation": "The mean measures average performance. Since Class A has a higher mean (72 > 68) and both have the same spread, Class A performed better on average."
+    },
+    {
+      "question": "Two data sets have the same median of 50. Data Set X has IQR = 12 and Data Set Y has IQR = 28. Which data set has more consistent values in the middle 50%?",
+      "options": [
+        "Data Set X",
+        "Data Set Y",
+        "Both equally consistent",
+        "Cannot compare IQRs"
+      ],
+      "correct": 0,
+      "points": 12,
+      "explanation": "A smaller IQR indicates the middle 50% of values are more tightly clustered. Data Set X (IQR=12) has more consistent middle values than Data Set Y (IQR=28)."
+    },
+    {
+      "question": "Given Σx = 200, Σx² = 4200, and n = 10 for Data Set P. What is the standard deviation?",
+      "options": [
+        "√20",
+        "20",
+        "√400",
+        "400"
+      ],
+      "correct": 0,
+      "points": 15,
+      "explanation": "Mean = Σx/n = 200/10 = 20. SD = √[(Σx²/n) - (mean)²] = √[(4200/10) - 20²] = √[420 - 400] = √20."
+    },
+    {
+      "question": "Data Set M has mean = 45, SD = 8. Data Set N has mean = 45, SD = 3. Which statement is correct?",
+      "options": [
+        "Data Set M has more consistent values",
+        "Data Set N has more consistent values",
+        "Both have same consistency",
+        "Cannot determine consistency from SD"
+      ],
+      "correct": 1,
+      "points": 12,
+      "explanation": "Both sets have the same mean, but Data Set N has a smaller SD (3 < 8), meaning its values are closer to the mean — more consistent."
+    },
+    {
+      "question": "Two classes took the same test. Class P: median = 65, IQR = 10. Class Q: median = 65, IQR = 22. Which class had more students scoring close to the median?",
+      "options": [
+        "Class P",
+        "Class Q",
+        "Both equally",
+        "Cannot tell from IQR"
+      ],
+      "correct": 0,
+      "points": 12,
+      "explanation": "Same median means same middle value, but Class P has a smaller IQR (10 < 22), meaning more students scored close to the median."
+    },
+    {
+      "question": "Given Σ(x - x̄)² = 96 and n = 24 for a data set. What is the standard deviation?",
+      "options": [
+        "2",
+        "4",
+        "√4",
+        "96"
+      ],
+      "correct": 0,
+      "points": 15,
+      "explanation": "SD = √[Σ(x - x̄)² / n] = √(96 / 24) = √4 = 2."
+    },
+    {
+      "question": "Data Set A: mean = 30, SD = 5. Data Set B: mean = 30, SD = 15. If a value of 40 appears in both sets, in which set is this value more unusual?",
+      "options": [
+        "Data Set A",
+        "Data Set B",
+        "Equally unusual",
+        "Cannot determine"
+      ],
+      "correct": 0,
+      "points": 15,
+      "explanation": "In Data Set A, 40 is 2 SDs above mean (30+2×5=40). In Data Set B, 40 is less than 1 SD above mean (30+15=45). Values farther from the mean relative to SD are more unusual."
+    },
+    {
+      "question": "Two data sets have identical IQRs. Data Set X has range = 40, Data Set Y has range = 60. Which set likely has more extreme values?",
+      "options": [
+        "Data Set X",
+        "Data Set Y",
+        "Both equally",
+        "Cannot tell from range"
+      ],
+      "correct": 1,
+      "points": 12,
+      "explanation": "Same IQR means same middle 50% spread, but Data Set Y has a larger range (60 > 40), suggesting more extreme values at the ends."
+    },
+    {
+      "question": "A teacher calculates Σx = 180, Σx² = 3420, n = 12 for a class test. What is the variance?",
+      "options": [
+        "15",
+        "√15",
+        "225",
+        "Cannot calculate variance"
+      ],
+      "correct": 3,
+      "points": 10,
+      "explanation": "Variance is not tested in O Level E-Math 4052. Students calculate standard deviation directly using SD = √[(Σx²/n) - (mean)²], not variance separately."
+    },
+    {
+      "question": "Data Set P: median = 55, Q1 = 48, Q3 = 62. Data Set Q: median = 55, Q1 = 40, Q3 = 70. Which set has a larger interquartile range?",
+      "options": [
+        "Data Set P",
+        "Data Set Q",
+        "Both equal",
+        "Cannot compare"
+      ],
+      "correct": 1,
+      "points": 10,
+      "explanation": "IQR = Q3 - Q1. Set P: 62-48=14. Set Q: 70-40=30. Data Set Q has larger IQR."
+    },
+    {
+      "question": "Two classes have same mean score. Class X: SD = 6, Class Y: SD = 10. A student scored 12 points above the mean. In which class is this score more impressive?",
+      "options": [
+        "Class X",
+        "Class Y",
+        "Equally impressive",
+        "Cannot determine"
+      ],
+      "correct": 0,
+      "points": 15,
+      "explanation": "In Class X, 12 points above mean = 2 SDs (12÷6=2). In Class Y, 12 points = 1.2 SDs (12÷10=1.2). Being farther from mean in SD units is more impressive."
+    },
+    {
+      "question": "Given a data set with n = 16, Σx = 240, and Σ(x - x̄)² = 144. What is the standard deviation?",
+      "options": [
+        "3",
+        "9",
+        "√9",
+        "144"
+      ],
+      "correct": 0,
+      "points": 15,
+      "explanation": "SD = √[Σ(x - x̄)² / n] = √(144 / 16) = √9 = 3."
+    },
+    {
+      "question": "Data Set A and Data Set B have same median. Data Set A has smaller IQR and smaller range than Data Set B. Which statement must be true?",
+      "options": [
+        "Data Set A is more consistent overall",
+        "Data Set B has higher values",
+        "Both sets are identical",
+        "Data Set A has higher mean"
+      ],
+      "correct": 0,
+      "points": 12,
+      "explanation": "Smaller IQR and range both indicate less spread. With same median, Data Set A's values are more tightly clustered — more consistent overall."
+    },
+    {
+      "question": "A data set has mean = 50. If every value is increased by 10, what happens to the standard deviation?",
+      "options": [
+        "Increases by 10",
+        "Decreases by 10",
+        "Remains unchanged",
+        "Increases by √10"
+      ],
+      "correct": 2,
+      "points": 12,
+      "explanation": "Adding a constant to all values shifts the mean but does not change the spread. Standard deviation remains unchanged."
+    },
+    {
+      "question": "Two data sets have same standard deviation. Data Set X has mean = 40, Data Set Y has mean = 60. A value of 50 appears in both sets. In which set is 50 closer to the mean in standard deviation units?",
+      "options": [
+       "Data Set X",
+       "Data Set Y",
+       "Equally close",
+       "Cannot determine"
+      ],
+     "correct": 2,
+     "points": 15,
+     "explanation": "Distance from mean: |50-40| = 10 for Set X, |50-60| = 10 for Set Y. Since SD is same for both sets, the distance in SD units is identical (10/SD). Therefore, 50 is equally close to the mean in both sets."
+       }
+  ]
+}
