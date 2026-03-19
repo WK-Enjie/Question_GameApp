@@ -8,20 +8,18 @@
   "worksheet": 1,
   "questions": [
     {
-      "id": 1,
       "question": "Why does the reactivity of Group 1 metals increase down the group, while the reactivity of Group 17 elements decreases down the group?",
       "options": [
         "Group 1 atoms have more protons down the group, while Group 17 atoms have fewer protons",
-        "Group 1 atoms lose electrons more easily down the group, while Group 17 atoms gain electrons less easily",
+        "Group 1 atoms lose electrons more readily down the group, while Group 17 atoms gain electrons less readily",
         "Group 1 atoms have fewer inner electron shells down the group, while Group 17 atoms have more",
         "Group 1 atoms form stronger metallic bonds down the group, while Group 17 atoms form weaker covalent bonds"
       ],
-      "answer": "Group 1 atoms lose electrons more easily down the group, while Group 17 atoms gain electrons less easily",
-      "time": 90,
-      "explanation": "Down Group 1, atoms have more inner electron shells. The outer electron is further from the nucleus with weaker electrostatic attraction, so it is lost more easily (increased reactivity). Down Group 17, atoms are larger with more inner electron shells. The attraction on incoming electrons is weaker, so they are gained less easily (decreased reactivity)."
+      "correct": 1,
+      "points": 10,
+      "explanation": "Down Group 1, atoms have more inner electron shells. The outer electron is further from the nucleus with weaker electrostatic attraction, so it is lost more readily (increased reactivity). Down Group 17, atoms are larger with more inner electron shells. The attraction on incoming electrons is weaker, so they are gained less readily (decreased reactivity)."
     },
     {
-      "id": 2,
       "question": "Complete the sentence: Down Group 1, the melting points ______ because the strong electrostatic forces of attraction between the ______ become weaker as atoms get larger.",
       "options": [
         "increase, positive ions and sea of delocalised electrons",
@@ -29,12 +27,11 @@
         "increase, oppositely charged ions",
         "decrease, positive nuclei and shared pairs of electrons"
       ],
-      "answer": "decrease, positive ions and sea of delocalised electrons",
-      "time": 90,
+      "correct": 1,
+      "points": 10,
       "explanation": "Metallic bonding involves strong electrostatic forces of attraction between positive ions and a sea of delocalised electrons. Down Group 1, atoms get larger, so the attraction between positive ions and delocalised electrons weakens, requiring less energy to overcome. Hence, melting points decrease."
     },
     {
-      "id": 3,
       "question": "Element X is in Group 1 and Period 4. Element Y is in Group 1 and Period 3. Which statement correctly compares their reactions with water?",
       "options": [
         "X reacts less vigorously than Y because X has a higher proton number",
@@ -42,12 +39,11 @@
         "Y reacts more vigorously than X because Y has a smaller atomic radius",
         "X and Y react with equal vigour because they have the same number of valence electrons"
       ],
-      "answer": "X reacts more vigorously than Y because X has more inner electron shells",
-      "time": 90,
-      "explanation": "X (Period 4) has more inner electron shells than Y (Period 3). The outer electron in X is further from the nucleus with weaker electrostatic attraction, making it easier to lose. Thus, X is more reactive and reacts more vigorously with water."
+      "correct": 1,
+      "points": 10,
+      "explanation": "X (Period 4) has more inner electron shells than Y (Period 3). The outer electron in X is further from the nucleus with weaker electrostatic attraction, making it more readily lost. Thus, X is more reactive and reacts more vigorously with water."
     },
     {
-      "id": 4,
       "question": "Which trend is observed in the physical properties of halogens down Group 17?",
       "options": [
         "Colour becomes lighter and boiling point decreases",
@@ -55,25 +51,23 @@
         "Colour remains the same and boiling point decreases",
         "Colour becomes darker and boiling point decreases"
       ],
-      "answer": "Colour becomes darker and boiling point increases",
-      "time": 90,
+      "correct": 1,
+      "points": 10,
       "explanation": "Down Group 17, molecules get larger and have more electrons. This increases the strength of intermolecular forces between molecules, requiring more energy to overcome. Hence, boiling points increase. The colour also becomes darker due to increased electron interactions."
     },
     {
-      "id": 5,
       "question": "Complete the explanation: Reactivity increases down Group 1 because the outer electron is further from the nucleus and there are more ______. This means ______ electrostatic attraction between nucleus and outer electron, so electron is lost ______.",
       "options": [
-        "inner electron shells, weaker, more easily",
-        "protons, stronger, less easily",
-        "inner electron shells, stronger, less easily",
-        "protons, weaker, more easily"
+        "inner electron shells, weaker, more readily",
+        "protons, stronger, less readily",
+        "inner electron shells, stronger, less readily",
+        "protons, weaker, more readily"
       ],
-      "answer": "inner electron shells, weaker, more easily",
-      "time": 90,
-      "explanation": "Down Group 1, atoms have more inner electron shells. The outer electron is further from the nucleus and experiences more repulsion from inner electron shells. Attraction between nucleus and outer electron is weaker, so electron is lost more easily, increasing reactivity."
+      "correct": 0,
+      "points": 10,
+      "explanation": "Down Group 1, atoms have more inner electron shells. The outer electron is further from the nucleus and experiences more repulsion from inner electron shells. Attraction between nucleus and outer electron is weaker, so electron is lost more readily, increasing reactivity."
     },
     {
-      "id": 6,
       "question": "Predict the properties of Astatine (below Iodine in Group 17).",
       "options": [
         "Pale yellow gas, very reactive",
@@ -81,12 +75,11 @@
         "Red-brown liquid, more reactive than Bromine",
         "Colourless gas, unreactive"
       ],
-      "answer": "Dark grey solid, less reactive than Iodine",
-      "time": 90,
+      "correct": 1,
+      "points": 10,
       "explanation": "Following Group 17 trends: state becomes solid, colour gets darker, and reactivity decreases down the group. Since Iodine is a grey-black solid, Astatine should be a darker solid and less reactive."
     },
     {
-      "id": 7,
       "question": "Which statement correctly explains why sodium is stored under oil?",
       "options": [
         "It reacts violently with oxygen and moisture in the air",
@@ -94,12 +87,11 @@
         "It reacts with nitrogen in the air to form nitrides",
         "It is less dense than oil and floats on top"
       ],
-      "answer": "It reacts violently with oxygen and moisture in the air",
-      "time": 90,
+      "correct": 0,
+      "points": 10,
       "explanation": "Group 1 metals are highly reactive. Sodium reacts vigorously with oxygen and water vapour in air. Oil prevents contact with air, protecting the metal from oxidation and reaction with moisture."
     },
     {
-      "id": 8,
       "question": "Complete the sentence: Metals are malleable because layers of ______ can slide over each other while the ______ maintains attraction.",
       "options": [
         "oppositely charged ions, sea of delocalised electrons",
@@ -107,12 +99,11 @@
         "neutral atoms, covalent bonds",
         "delocalised electrons, positive nuclei"
       ],
-      "answer": "positive ions, sea of delocalised electrons",
-      "time": 90,
+      "correct": 1,
+      "points": 10,
       "explanation": "Metallic bonding involves a lattice of positive ions in a sea of delocalised electrons. When force is applied, layers of positive ions slide, but the non-directional attraction from the electrons holds the structure together, preventing fracture."
     },
     {
-      "id": 9,
       "question": "An element has the electronic configuration 2,8,18,7. In which Group and Period is it found, and what is its likely physical state at room temperature?",
       "options": [
         "Group 17, Period 4, Gas",
@@ -120,12 +111,11 @@
         "Group 17, Period 5, Solid",
         "Group 7, Period 4, Solid"
       ],
-      "answer": "Group 17, Period 4, Liquid",
-      "time": 90,
+      "correct": 1,
+      "points": 10,
       "explanation": "7 valence electrons = Group 17. 4 occupied shells = Period 4. This element is Bromine, which is a red-brown liquid at room temperature. Group 17 elements show a trend from gas (F₂, Cl₂) to liquid (Br₂) to solid (I₂) down the group."
     },
     {
-      "id": 10,
       "question": "Complete the sentence: Halogens exist as diatomic molecules held together by strong covalent bonds. These bonds involve strong electrostatic forces of attraction between the ______.",
       "options": [
         "oppositely charged ions",
@@ -133,8 +123,8 @@
         "positive nuclei and shared pairs of electrons",
         "neutral molecules"
       ],
-      "answer": "positive nuclei and shared pairs of electrons",
-      "time": 90,
+      "correct": 2,
+      "points": 10,
       "explanation": "Covalent bonding involves the sharing of electron pairs. The bond is held by strong electrostatic forces of attraction between the positive nuclei of the bonded atoms and the negatively charged shared pair(s) of electrons."
     }
   ]
