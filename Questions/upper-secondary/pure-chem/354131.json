@@ -1,131 +1,251 @@
 {
-  "title": "Electrolysis of Molten and Aqueous Solutions",
-  "topic": "Electrolysis",
-  "subject": "Chemistry",
-  "level": "Upper Secondary",
-  "grade": "Sec 4",
-  "chapter": 13,
-  "worksheet": 1,
-  "questions": [
-    {
-      "question": "What is observed at the cathode during electrolysis of concentrated sodium chloride solution using inert electrodes?",
-      "options": [
-        "Bubbles of colorless gas that burns with a pop",
-        "Bubbles of greenish-yellow gas with a choking smell",
-        "Silvery metal deposits",
-        "Pinkish metal deposits"
-      ],
-      "correct": 0,
-      "points": 10,
-      "explanation": "In concentrated NaCl solution, H⁺ ions are preferentially discharged over Na⁺ ions at the cathode, producing hydrogen gas (H₂) which burns with a pop sound."
-    },
-    {
-      "question": "What is the half-ionic equation for the reaction at the anode during electrolysis of dilute sulfuric acid using platinum electrodes?",
-      "options": [
-        "4OH⁻ → O₂ + 2H₂O + 4e⁻",
-        "2Cl⁻ → Cl₂ + 2e⁻",
-        "2H⁺ + 2e⁻ → H₂",
-        "SO₄²⁻ → SO₄ + 2e⁻"
-      ],
-      "correct": 0,
-      "points": 10,
-      "explanation": "In dilute sulfuric acid, OH⁻ ions from water are preferentially discharged over SO₄²⁻ ions, producing oxygen gas: 4OH⁻ → O₂ + 2H₂O + 4e⁻."
-    },
-    {
-      "question": "Which product is obtained at the cathode during electrolysis of molten lead(II) bromide?",
-      "options": [
-        "Molten lead metal",
-        "Bromine gas",
-        "Hydrogen gas",
-        "Oxygen gas"
-      ],
-      "correct": 0,
-      "points": 10,
-      "explanation": "In molten PbBr₂, only Pb²⁺ and Br⁻ ions are present. Pb²⁺ ions are discharged at the cathode: Pb²⁺ + 2e⁻ → Pb, forming molten lead metal."
-    },
-    {
-      "question": "What is observed when concentrated copper(II) sulfate solution is electrolysed using copper electrodes?",
-      "options": [
-        "Cathode increases in mass, anode decreases in mass",
-        "Both electrodes increase in mass",
-        "Blue solution fades at both electrodes",
-        "Gas bubbles at both electrodes"
-      ],
-      "correct": 0,
-      "points": 10,
-      "explanation": "With copper electrodes in CuSO₄ solution, copper is deposited at the cathode (Cu²⁺ + 2e⁻ → Cu) and the anode dissolves (Cu → Cu²⁺ + 2e⁻). This is used in electrorefining of copper."
-    },
-    {
-      "question": "During electrolysis of dilute sodium chloride solution, what is the product at the anode?",
-      "options": [
-        "Oxygen",
-        "Chlorine",
-        "Hydrogen",
-        "Sodium"
-      ],
-      "correct": 0,
-      "points": 10,
-      "explanation": "In dilute NaCl solution, OH⁻ ions are preferentially discharged over Cl⁻ ions at the anode: 4OH⁻ → O₂ + 2H₂O + 4e⁻, producing oxygen gas."
-    },
-    {
-      "question": "What is the main application of electrolysis of molten aluminium oxide (Al₂O₃) dissolved in cryolite?",
-      "options": [
-        "Extraction of aluminium",
-        "Purification of aluminium",
-        "Electroplating of aluminium",
-        "Making aluminium alloys"
-      ],
-      "correct": 0,
-      "points": 10,
-      "explanation": "The Hall-Héroult process uses electrolysis of Al₂O₃ in cryolite to extract aluminium metal. Al³⁺ is reduced at the cathode to aluminium metal."
-    },
-    {
-      "question": "Which half-equation occurs at the cathode during electrolysis of dilute copper(II) sulfate using inert electrodes?",
-      "options": [
-        "Cu²⁺ + 2e⁻ → Cu",
-        "4OH⁻ → O₂ + 2H₂O + 4e⁻",
-        "2H⁺ + 2e⁻ → H₂",
-        "SO₄²⁻ → SO₄ + 2e⁻"
-      ],
-      "correct": 0,
-      "points": 10,
-      "explanation": "In dilute CuSO₄, Cu²⁺ ions are preferentially discharged over H⁺ ions at the cathode because copper is lower than hydrogen in the electrochemical series: Cu²⁺ + 2e⁻ → Cu."
-    },
-    {
-      "question": "What is observed during electrolysis of molten calcium chloride?",
-      "options": [
-        "Silvery metal at cathode, greenish gas at anode",
-        "Colorless gas at both electrodes",
-        "No reaction occurs",
-        "Metal deposits at anode"
-      ],
-      "correct": 0,
-      "points": 10,
-      "explanation": "In molten CaCl₂: Cathode: Ca²⁺ + 2e⁻ → Ca (silvery calcium metal). Anode: 2Cl⁻ → Cl₂ + 2e⁻ (greenish chlorine gas)."
-    },
-    {
-      "question": "Why is cryolite added to aluminium oxide in the extraction of aluminium?",
-      "options": [
-        "To lower the melting point",
-        "To increase conductivity",
-        "To prevent oxidation of aluminium",
-        "Both A and B"
-      ],
-      "correct": 3,
-      "points": 10,
-      "explanation": "Cryolite (Na₃AlF₆) serves two main purposes: 1) Lowers the melting point of Al₂O₃ from 2045°C to about 950°C, saving energy. 2) Increases conductivity of the molten mixture."
-    },
-    {
-      "question": "What would be the product at the anode if concentrated sodium chloride solution is electrolysed using carbon electrodes?",
-      "options": [
-        "Chlorine gas",
-        "Oxygen gas",
-        "Hydrogen gas",
-        "Sodium metal"
-      ],
-      "correct": 0,
-      "points": 10,
-      "explanation": "In concentrated NaCl solution, Cl⁻ ions are preferentially discharged over OH⁻ ions at the anode: 2Cl⁻ → Cl₂ + 2e⁻, producing chlorine gas. This is the basis of the chlor-alkali industry."
-    }
-  ]
+ "title": "Electrolysis of Molten Substances - Worksheet 1",
+ "topic": "Electrolysis of Molten Ionic Compounds",
+ "subject": "Pure Chemistry",
+ "level": "Upper Secondary",
+ "grade": "Sec 4",
+ "chapter": 13,
+ "worksheet": 1,
+ "questions": [
+  {
+   "question": "What is observed at the cathode during electrolysis of molten lead(II) bromide?",
+   "options": [
+    "Silvery globules of molten metal that float to the surface",
+    "Bubbles of brown gas with a pungent smell",
+    "Colourless gas that burns with a pop sound",
+    "Greenish-yellow gas with a choking smell"
+   ],
+   "correct": 0,
+   "points": 10,
+   "explanation": "In molten PbBr₂, Pb²⁺ ions are attracted to the cathode and gain electrons: Pb²⁺ + 2e⁻ → Pb. Molten lead metal appears as silvery globules that float to the surface due to lower density."
+  },
+  {
+   "question": "Which half-equation represents the reaction at the anode during electrolysis of molten sodium chloride?",
+   "options": [
+    "Na⁺ + e⁻ → Na",
+    "4OH⁻ → O₂ + 2H₂O + 4e⁻",
+    "2Cl⁻ → Cl₂ + 2e⁻",
+    "2H⁺ + 2e⁻ → H₂"
+   ],
+   "correct": 2,
+   "points": 10,
+   "explanation": "In molten NaCl, only Na⁺ and Cl⁻ ions are present. Cl⁻ ions are attracted to the anode and lose electrons: 2Cl⁻ → Cl₂ + 2e⁻, producing chlorine gas."
+  },
+  {
+   "question": "Why must the electrolyte be molten or in aqueous solution for electrolysis to occur?",
+   "options": [
+    "The ions need to be mobile to carry electric charge",
+    "The compound must be heated to break covalent bonds",
+    "Water is needed to provide H⁺ and OH⁻ ions",
+    "The electrodes only work at high temperatures"
+   ],
+   "correct": 0,
+   "points": 10,
+   "explanation": "Electrolysis requires mobile ions to carry electric charge through the electrolyte. In solid ionic compounds, ions are fixed in position. Melting or dissolving allows ions to move freely."
+  },
+  {
+   "question": "What product is formed at the cathode during extraction of aluminium from molten aluminium oxide?",
+   "options": [
+    "Oxygen gas",
+    "Carbon dioxide gas",
+    "Aluminium oxide vapour",
+    "Aluminium metal"
+   ],
+   "correct": 3,
+   "points": 10,
+   "explanation": "In the extraction of aluminium, Al³⁺ ions are reduced at the cathode: Al³⁺ + 3e⁻ → Al. Molten aluminium metal collects at the bottom of the electrolytic cell."
+  },
+  {
+   "question": "Which statement correctly explains why cryolite is added to aluminium oxide in the extraction of aluminium?",
+   "options": [
+    "Cryolite lowers the melting point and increases conductivity",
+    "Cryolite acts as a catalyst to speed up the reaction",
+    "Cryolite prevents oxidation of the aluminium produced",
+    "Cryolite provides additional aluminium ions for the reaction"
+   ],
+   "correct": 0,
+   "points": 10,
+   "explanation": "Cryolite (Na₃AlF₆) serves two purposes: 1) Lowers the melting point of Al₂O₃ from 2045°C to about 950°C, saving energy. 2) Increases electrical conductivity of the molten mixture."
+  },
+  {
+   "question": "What is observed at the anode during electrolysis of molten calcium chloride?",
+   "options": [
+    "Silvery metal deposits on the electrode",
+    "Colourless gas that relights a glowing splint",
+    "Brown vapour that condenses to a liquid",
+    "Greenish-yellow gas with a pungent smell"
+   ],
+   "correct": 3,
+   "points": 10,
+   "explanation": "In molten CaCl₂, Cl⁻ ions are oxidised at the anode: 2Cl⁻ → Cl₂ + 2e⁻. Chlorine gas is greenish-yellow with a characteristic pungent, choking smell."
+  },
+  {
+   "question": "Which half-equation represents the reduction reaction during electrolysis of molten magnesium oxide?",
+   "options": [
+    "Mg²⁺ + 2e⁻ → Mg",
+    "O²⁻ → ½O₂ + 2e⁻",
+    "Mg → Mg²⁺ + 2e⁻",
+    "½O₂ + 2e⁻ → O²⁻"
+   ],
+   "correct": 0,
+   "points": 10,
+   "explanation": "Reduction occurs at the cathode. Mg²⁺ ions gain electrons to form magnesium metal: Mg²⁺ + 2e⁻ → Mg. This is the reduction half-equation."
+  },
+  {
+   "question": "Why are graphite electrodes commonly used in electrolysis of molten compounds?",
+   "options": [
+    "Graphite conducts electricity better than metals",
+    "Graphite is cheap and does not react with most products",
+    "Graphite dissolves in the molten electrolyte",
+    "Graphite provides additional carbon for the reaction"
+   ],
+   "correct": 1,
+   "points": 10,
+   "explanation": "Graphite is inert (unreactive) under most electrolysis conditions, conducts electricity well, and is relatively inexpensive. It does not interfere with the electrolysis products."
+  },
+  {
+   "question": "What mass of chlorine gas is produced at the anode when 2 moles of electrons pass through molten sodium chloride?",
+   "options": [
+    "35.5 g",
+    "142.0 g",
+    "71.0 g",
+    "284.0 g"
+   ],
+   "correct": 2,
+   "points": 10,
+   "explanation": "From 2Cl⁻ → Cl₂ + 2e⁻, 2 moles of electrons produce 1 mole of Cl₂. Molar mass of Cl₂ = 2 × 35.5 = 71.0 g. Therefore, 71.0 g of chlorine gas is produced."
+  },
+  {
+   "question": "What is the main product formed at the cathode during electrolysis of molten sodium chloride?",
+   "options": [
+    "Sodium metal",
+    "Chlorine gas",
+    "Hydrogen gas",
+    "Sodium hydroxide"
+   ],
+   "correct": 0,
+   "points": 10,
+   "explanation": "Electrolysis of molten NaCl produces sodium metal at the cathode (Na⁺ + e⁻ → Na). Sodium hydroxide is only produced during electrolysis of aqueous NaCl."
+  },
+  {
+   "question": "During electrolysis of molten potassium iodide, what is formed at the cathode?",
+   "options": [
+    "Iodine vapour with purple colour",
+    "Hydrogen gas from water impurities",
+    "Oxygen gas from oxide impurities",
+    "Potassium metal that reacts violently with moisture"
+   ],
+   "correct": 3,
+   "points": 10,
+   "explanation": "K⁺ ions are reduced at the cathode: K⁺ + e⁻ → K. Potassium metal is highly reactive and must be collected under inert conditions to prevent reaction with air or moisture."
+  },
+  {
+   "question": "Which statement correctly describes the movement of ions during electrolysis?",
+   "options": [
+    "Cations move to the anode, anions move to the cathode",
+    "Both cations and anions move to the cathode",
+    "Cations move to the cathode, anions move to the anode",
+    "Ions do not move; electrons carry the current"
+   ],
+   "correct": 2,
+   "points": 10,
+   "explanation": "During electrolysis, positively charged cations are attracted to the negative cathode, while negatively charged anions are attracted to the positive anode."
+  },
+  {
+   "question": "What is the main reason electrolysis of molten compounds requires high temperatures?",
+   "options": [
+    "To increase the rate of electron transfer",
+    "To melt the ionic compound and allow ion mobility",
+    "To reduce the voltage needed for the reaction",
+    "To prevent the electrodes from corroding"
+   ],
+   "correct": 1,
+   "points": 10,
+   "explanation": "Ionic compounds have high melting points due to strong electrostatic forces. High temperatures are needed to melt the solid and allow ions to move freely for electrolysis."
+  },
+  {
+   "question": "Which product is NOT formed during electrolysis of molten aluminium oxide?",
+   "options": [
+    "Aluminium metal at the cathode",
+    "Oxygen gas at the anode",
+    "Carbon dioxide from anode reaction",
+    "Hydrogen gas from water reduction"
+   ],
+   "correct": 3,
+   "points": 10,
+   "explanation": "Molten Al₂O₃ electrolysis produces Al at cathode and O₂ at anode. The carbon anodes react with oxygen to form CO₂. No water is present, so no hydrogen gas is formed."
+  },
+  {
+   "question": "What is the oxidation half-equation for electrolysis of molten zinc chloride?",
+   "options": [
+    "Zn²⁺ + 2e⁻ → Zn",
+    "Cl₂ + 2e⁻ → 2Cl⁻",
+    "2Cl⁻ → Cl₂ + 2e⁻",
+    "Zn → Zn²⁺ + 2e⁻"
+   ],
+   "correct": 2,
+   "points": 10,
+   "explanation": "Oxidation occurs at the anode. Cl⁻ ions lose electrons to form chlorine gas: 2Cl⁻ → Cl₂ + 2e⁻. This is the oxidation half-equation."
+  },
+  {
+   "question": "Why is electrolysis used to extract aluminium from its ore rather than reduction with carbon?",
+   "options": [
+    "Aluminium oxide has a very high melting point",
+    "Aluminium is more reactive than carbon",
+    "Carbon reduction produces toxic gases",
+    "Electrolysis is cheaper than carbon reduction"
+   ],
+   "correct": 1,
+   "points": 10,
+   "explanation": "Aluminium is more reactive than carbon in the reactivity series. Carbon cannot reduce aluminium oxide to aluminium metal, so electrolysis is the only viable extraction method."
+  },
+  {
+   "question": "During electrolysis of molten copper(II) bromide, what colour change is observed?",
+   "options": [
+    "The molten compound turns from brown to colourless",
+    "The cathode turns blue from copper deposition",
+    "No visible colour change occurs",
+    "Brown bromine vapour is seen at the anode"
+   ],
+   "correct": 3,
+   "points": 10,
+   "explanation": "Bromide ions are oxidised at the anode: 2Br⁻ → Br₂ + 2e⁻. Bromine vapour is reddish-brown and may be observed as a coloured vapour at the anode."
+  },
+  {
+   "question": "Which factor does NOT affect the products of electrolysis of a molten compound?",
+   "options": [
+    "The nature of the ions present in the melt",
+    "The material of the electrodes used",
+    "The concentration of the electrolyte",
+    "The voltage applied to the electrodes"
+   ],
+   "correct": 2,
+   "points": 10,
+   "explanation": "In molten electrolysis, only the ions from the compound are present. Concentration is not a variable as in aqueous solutions. Products depend on ion nature, electrode material, and sufficient voltage."
+  },
+  {
+   "question": "What is the main environmental concern with the electrolytic extraction of aluminium?",
+   "options": [
+    "Release of chlorine gas into the atmosphere",
+    "Production of toxic heavy metal waste",
+    "High energy consumption and carbon emissions",
+    "Depletion of bauxite ore reserves"
+   ],
+   "correct": 2,
+   "points": 10,
+   "explanation": "The extraction process requires very high temperatures and large amounts of electricity. If the electricity comes from fossil fuels, this results in significant carbon dioxide emissions."
+  },
+  {
+   "question": "Which statement correctly compares electrolysis of molten NaCl versus aqueous NaCl?",
+   "options": [
+    "Both produce chlorine gas at the anode only",
+    "Aqueous NaCl produces sodium hydroxide at the cathode",
+    "Both produce sodium metal at the cathode",
+    "Molten NaCl produces sodium; aqueous produces hydrogen"
+   ],
+   "correct": 3,
+   "points": 10,
+   "explanation": "In molten NaCl, Na⁺ is reduced to Na metal. In aqueous NaCl, H⁺ from water is preferentially reduced over Na⁺ (since H is below Na in reactivity series), producing H₂ gas instead."
+  }
+ ]
 }

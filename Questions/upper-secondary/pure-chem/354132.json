@@ -1,0 +1,251 @@
+{
+ "title": "Electrolysis of Aqueous Solutions - Worksheet 2",
+ "topic": "Electrolysis of Concentrated and Dilute Aqueous Solutions",
+ "subject": "Pure Chemistry",
+ "level": "Upper Secondary",
+ "grade": "Sec 4",
+ "chapter": 13,
+ "worksheet": 2,
+ "questions": [
+  {
+   "question": "What is observed at the cathode during electrolysis of concentrated sodium chloride solution using inert electrodes?",
+   "options": [
+    "Silvery metal deposits on the electrode",
+    "Pinkish metal deposits on the electrode",
+    "Bubbles of greenish-yellow gas with choking smell",
+    "Bubbles of colourless gas that burns with a pop"
+   ],
+   "correct": 3,
+   "points": 10,
+   "explanation": "In concentrated NaCl solution, H⁺ ions from water are preferentially discharged over Na⁺ ions at the cathode: 2H⁺ + 2e⁻ → H₂. Hydrogen gas burns with a pop sound."
+  },
+  {
+   "question": "Which half-equation represents the reaction at the anode during electrolysis of dilute sulfuric acid using platinum electrodes?",
+   "options": [
+    "2Cl⁻ → Cl₂ + 2e⁻",
+    "2H⁺ + 2e⁻ → H₂",
+    "4OH⁻ → O₂ + 2H₂O + 4e⁻",
+    "SO₄²⁻ → SO₄ + 2e⁻"
+   ],
+   "correct": 2,
+   "points": 10,
+   "explanation": "In dilute H₂SO₄, OH⁻ ions from water are preferentially discharged over SO₄²⁻ ions at the anode: 4OH⁻ → O₂ + 2H₂O + 4e⁻, producing oxygen gas."
+  },
+  {
+   "question": "Why is hydrogen produced instead of sodium at the cathode during electrolysis of aqueous sodium chloride?",
+   "options": [
+    "Sodium ions are too large to reach the cathode",
+    "Hydrogen is lower than sodium in the reactivity series",
+    "Water molecules block sodium ions from the cathode",
+    "Hydrogen ions are more concentrated than sodium ions"
+   ],
+   "correct": 1,
+   "points": 10,
+   "explanation": "In aqueous solutions, the ion lower in the reactivity series is preferentially discharged. Since hydrogen is below sodium, H⁺ ions are reduced to H₂ instead of Na⁺ to Na."
+  },
+  {
+   "question": "What is observed when concentrated copper(II) sulfate solution is electrolysed using copper electrodes?",
+   "options": [
+    "Gas bubbles at both electrodes",
+    "Cathode increases in mass, anode decreases in mass",
+    "Blue solution fades at both electrodes",
+    "Both electrodes increase in mass"
+   ],
+   "correct": 1,
+   "points": 10,
+   "explanation": "With copper electrodes in CuSO₄ solution: Cathode: Cu²⁺ + 2e⁻ → Cu (copper deposits, mass increases). Anode: Cu → Cu²⁺ + 2e⁻ (copper dissolves, mass decreases). This is electrorefining."
+  },
+  {
+   "question": "During electrolysis of dilute sodium chloride solution, what is the product at the anode?",
+   "options": [
+    "Chlorine gas",
+    "Hydrogen gas",
+    "Sodium metal",
+    "Oxygen gas"
+   ],
+   "correct": 3,
+   "points": 10,
+   "explanation": "In dilute NaCl solution, OH⁻ ions are preferentially discharged over Cl⁻ ions at the anode: 4OH⁻ → O₂ + 2H₂O + 4e⁻, producing oxygen gas. Concentration affects preferential discharge."
+  },
+  {
+   "question": "How does the pH of the solution change during electrolysis of concentrated sodium chloride solution?",
+   "options": [
+    "pH remains constant throughout the solution",
+    "pH decreases at both electrodes",
+    "pH increases at the cathode, decreases at the anode",
+    "pH decreases at the cathode, increases at the anode"
+   ],
+   "correct": 2,
+   "points": 10,
+   "explanation": "At cathode: H⁺ discharged, leaving OH⁻ behind → pH increases (alkaline). At anode: Cl⁻ discharged to Cl₂, but OH⁻ also consumed → pH may decrease slightly. Overall, solution near cathode becomes alkaline."
+  },
+  {
+   "question": "Which product is obtained at the cathode during electrolysis of dilute copper(II) sulfate using inert electrodes?",
+   "options": [
+    "Sulfuric acid forms at the cathode",
+    "Oxygen gas is produced at the cathode",
+    "Copper metal deposits as a pinkish-brown layer",
+    "Hydrogen gas bubbles form on the electrode"
+   ],
+   "correct": 2,
+   "points": 10,
+   "explanation": "In dilute CuSO₄, Cu²⁺ ions are preferentially discharged over H⁺ ions at the cathode because copper is lower than hydrogen in the electrochemical series: Cu²⁺ + 2e⁻ → Cu."
+  },
+  {
+   "question": "What happens to the concentration of copper(II) sulfate solution during electrolysis using inert electrodes?",
+   "options": [
+    "Concentration first increases then decreases",
+    "Concentration decreases as copper ions are removed",
+    "Concentration remains constant throughout",
+    "Concentration increases as water is electrolysed"
+   ],
+   "correct": 1,
+   "points": 10,
+   "explanation": "With inert electrodes, Cu²⁺ ions are removed at the cathode (Cu²⁺ + 2e⁻ → Cu) but not replaced at the anode (where OH⁻ → O₂). Therefore, Cu²⁺ concentration decreases, and the blue colour fades."
+  },
+  {
+   "question": "Why does the blue colour of copper(II) sulfate solution fade during electrolysis with inert electrodes?",
+   "options": [
+    "Water molecules dilute the copper ion concentration",
+    "Sulfate ions are discharged to form sulfur",
+    "Copper ions are oxidised to copper(III) ions",
+    "Copper ions are reduced and deposited as metal"
+   ],
+   "correct": 3,
+   "points": 10,
+   "explanation": "The blue colour is due to Cu²⁺(aq) ions. During electrolysis with inert electrodes, Cu²⁺ ions are reduced at the cathode to copper metal and removed from solution, causing the colour to fade."
+  },
+  {
+   "question": "During electrolysis of aqueous sodium sulfate using inert electrodes, what gases are produced?",
+   "options": [
+    "Chlorine at anode, hydrogen at cathode",
+    "No gases; only metals are deposited",
+    "Hydrogen at cathode, oxygen at anode",
+    "Oxygen at cathode, hydrogen at anode"
+   ],
+   "correct": 2,
+   "points": 10,
+   "explanation": "In aqueous Na₂SO₄, the ions are Na⁺, SO₄²⁻, H⁺, OH⁻. At cathode: H⁺ reduced to H₂. At anode: OH⁻ oxidised to O₂. Na⁺ and SO₄²⁻ remain in solution."
+  },
+  {
+   "question": "How does the pH change during electrolysis of aqueous sodium sulfate?",
+   "options": [
+    "pH becomes acidic at both electrodes",
+    "pH remains neutral throughout the solution",
+    "pH increases at cathode, decreases at anode",
+    "pH decreases at cathode, increases at anode"
+   ],
+   "correct": 2,
+   "points": 10,
+   "explanation": "At cathode: H⁺ discharged, leaving OH⁻ → pH increases (alkaline). At anode: OH⁻ discharged, leaving H⁺ → pH decreases (acidic). The solution becomes locally alkaline at cathode, acidic at anode."
+  },
+  {
+   "question": "What is the main application of electrolysis of concentrated brine (aqueous NaCl)?",
+   "options": [
+    "Generation of electricity from salt water",
+    "Production of chlorine, hydrogen, and sodium hydroxide",
+    "Purification of salt for food consumption",
+    "Extraction of sodium metal for industrial use"
+   ],
+   "correct": 1,
+   "points": 10,
+   "explanation": "The chlor-alkali industry electrolyses concentrated brine to produce: Cl₂ (anode) for disinfectants/PVC, H₂ (cathode) for ammonia/fuel, and NaOH (in solution) for soap/paper."
+  },
+  {
+   "question": "During electrolysis of aqueous silver nitrate using inert electrodes, what is deposited at the cathode?",
+   "options": [
+    "Oxygen gas displaces silver from solution",
+    "Nitrogen gas is produced at the cathode",
+    "Hydrogen gas bubbles form on the electrode",
+    "Silver metal as a shiny grey deposit"
+   ],
+   "correct": 3,
+   "points": 10,
+   "explanation": "Ag⁺ is much lower than H⁺ in the reactivity series, so Ag⁺ is preferentially reduced: Ag⁺ + e⁻ → Ag. Silver metal deposits as a shiny grey layer on the cathode."
+  },
+  {
+   "question": "Why does the pH of the solution increase near the cathode during electrolysis of aqueous potassium nitrate?",
+   "options": [
+    "Water molecules split to produce hydroxide ions",
+    "Nitrate ions migrate to the cathode and form base",
+    "Hydrogen ions are discharged, leaving hydroxide ions",
+    "Potassium ions are reduced to form KOH"
+   ],
+   "correct": 2,
+   "points": 10,
+   "explanation": "At the cathode, H⁺ ions from water are discharged: 2H⁺ + 2e⁻ → H₂. This removes H⁺, leaving excess OH⁻ ions behind, making the solution near the cathode alkaline (pH increases)."
+  },
+  {
+   "question": "Which statement correctly explains why chlorine is produced at the anode in concentrated NaCl but oxygen in dilute NaCl?",
+   "options": [
+    "Concentrated solutions have lower activation energy for Cl⁻ oxidation",
+    "Higher Cl⁻ concentration favours Cl⁻ discharge over OH⁻ discharge",
+    "Dilute solutions contain more oxygen molecules to discharge",
+    "Chloride ions are larger and move faster in concentrated solutions"
+   ],
+   "correct": 1,
+   "points": 10,
+   "explanation": "Preferential discharge depends on ion concentration. In concentrated NaCl, high [Cl⁻] favours Cl⁻ → Cl₂. In dilute NaCl, low [Cl⁻] allows OH⁻ → O₂ to dominate, even though OH⁻ is harder to oxidise."
+  },
+  {
+   "question": "During electrolysis of aqueous copper(II) chloride using inert electrodes, what gases are produced?",
+   "options": [
+    "No gases; only metals are deposited",
+    "Oxygen at anode, copper at cathode",
+    "Chlorine at cathode, hydrogen at anode",
+    "Hydrogen at cathode, chlorine at anode"
+   ],
+   "correct": 3,
+   "points": 10,
+   "explanation": "In aqueous CuCl₂: At cathode, Cu²⁺ is reduced to Cu (not H₂, as Cu is below H). At anode, Cl⁻ is oxidised to Cl₂ (Cl⁻ concentration is high). So: Cu deposits, Cl₂ gas evolves."
+  },
+  {
+   "question": "What happens to the mass of the anode during electrolysis of aqueous copper(II) sulfate using copper electrodes?",
+   "options": [
+    "Mass fluctuates as copper dissolves and redeposits",
+    "Mass decreases as copper atoms dissolve from it",
+    "Mass remains constant as no reaction occurs",
+    "Mass increases as copper ions deposit on it"
+   ],
+   "correct": 1,
+   "points": 10,
+   "explanation": "With copper anode: Cu → Cu²⁺ + 2e⁻. Copper atoms from the anode dissolve into solution as Cu²⁺ ions, causing the anode to lose mass. This is used in electrorefining of copper."
+  },
+  {
+   "question": "Why is platinum or graphite preferred over reactive metals as electrodes in aqueous electrolysis?",
+   "options": [
+    "They increase the voltage of the electrolytic cell",
+    "They are cheaper and easier to obtain",
+    "They do not react with the electrolyte or products",
+    "They conduct electricity more efficiently"
+   ],
+   "correct": 2,
+   "points": 10,
+   "explanation": "Inert electrodes like platinum or graphite do not participate in the electrolysis reactions. Reactive metal electrodes might dissolve or react with products, interfering with the intended electrolysis."
+  },
+  {
+   "question": "During electrolysis of aqueous sodium hydroxide using inert electrodes, what is the overall effect on the solution?",
+   "options": [
+    "No change; only water is electrolysed",
+    "Sodium hydroxide concentration decreases",
+    "Water is decomposed; NaOH concentration increases",
+    "Sodium hydroxide concentration increases"
+   ],
+   "correct": 2,
+   "points": 10,
+   "explanation": "In aqueous NaOH, water is electrolysed: 2H₂O → 2H₂ + O₂. Na⁺ and OH⁻ are spectator ions. As water is removed, the concentration of NaOH in the remaining solution increases."
+  },
+  {
+   "question": "Which factor determines whether hydrogen or a metal is produced at the cathode in aqueous electrolysis?",
+   "options": [
+    "The surface area of the cathode electrode",
+    "The position of the metal in the reactivity series",
+    "The temperature of the electrolytic cell",
+    "The concentration of the metal ion in solution"
+   ],
+   "correct": 1,
+   "points": 10,
+   "explanation": "The key factor is the reactivity series. Metals above hydrogen (e.g., Na, K, Ca) are more reactive; H⁺ is preferentially reduced. Metals below hydrogen (e.g., Cu, Ag) are less reactive; metal ions are reduced."
+  }
+ ]
+}
