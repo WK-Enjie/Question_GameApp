@@ -1,0 +1,251 @@
+{
+  "title": "Diversity of Matter: Application and Analysis",
+  "topic": "Exploring Diversity of Matter by its Chemical Composition",
+  "subject": "Science",
+  "level": "Secondary",
+  "grade": "Sec 1",
+  "chapter": 3,
+  "worksheet": 2,
+  "questions": [
+    {
+      "question": "Substance X conducts electricity and is shiny. Substance Y does not conduct electricity and is dull. Which is likely a metal?",
+      "options": [
+        "Substance X",
+        "Substance Y",
+        "Both are metals",
+        "Neither is a metal"
+      ],
+      "correct": 0,
+      "points": 15,
+      "explanation": "Metals are typically shiny and good conductors of electricity. Non-metals are typically dull and poor conductors."
+    },
+    {
+      "question": "A substance breaks down into two simpler substances when heated strongly. Is it an element or a compound?",
+      "options": [
+        "Element",
+        "Compound",
+        "Mixture",
+        "Metal"
+      ],
+      "correct": 1,
+      "points": 15,
+      "explanation": "Compounds can be broken down into simpler substances (elements) by chemical means like heating. Elements cannot be broken down further."
+    },
+    {
+      "question": "Substance A and Substance B are mixed. They retain their original properties and can be separated easily. Is this a compound or mixture?",
+      "options": [
+        "Compound",
+        "Mixture",
+        "Element",
+        "Atom"
+      ],
+      "correct": 1,
+      "points": 15,
+      "explanation": "In mixtures, constituents retain their original properties and can be separated by physical means. In compounds, properties change and separation requires chemical means."
+    },
+    {
+      "question": "Element Z is found on the far right side of the Periodic Table. Is it likely a metal or non-metal?",
+      "options": [
+        "Metal",
+        "Non-metal",
+        "Both",
+        "Neither"
+      ],
+      "correct": 1,
+      "points": 15,
+      "explanation": "Non-metals are mostly located on the right side of the Periodic Table. Metals are on the left and centre."
+    },
+    {
+      "question": "Why is copper used for electrical wires?",
+      "options": [
+        "It is a non-metal",
+        "It is a good conductor of electricity",
+        "It is a poor conductor of heat",
+        "It is brittle"
+      ],
+      "correct": 1,
+      "points": 15,
+      "explanation": "Copper is a metal and a very good conductor of electricity, making it suitable for wires."
+    },
+    {
+      "question": "Why is plastic used to cover electrical wires?",
+      "options": [
+        "It is a good conductor",
+        "It is a metal",
+        "It is a poor conductor of electricity (insulator)",
+        "It is shiny"
+      ],
+      "correct": 2,
+      "points": 15,
+      "explanation": "Plastic is a non-metal and a poor conductor of electricity (insulator), which prevents electric shocks."
+    },
+    {
+      "question": "Water (H2O) has different properties from hydrogen and oxygen. What does this tell us about water?",
+      "options": [
+        "It is a mixture",
+        "It is an element",
+        "It is a compound",
+        "It is a metal"
+      ],
+      "correct": 2,
+      "points": 15,
+      "explanation": "Compounds have different properties from their constituent elements. Mixtures retain the properties of their constituents."
+    },
+    {
+      "question": "In air, oxygen retains its property of supporting combustion. What does this tell us about air?",
+      "options": [
+        "It is a compound",
+        "It is an element",
+        "It is a mixture",
+        "It is a metal"
+      ],
+      "correct": 2,
+      "points": 15,
+      "explanation": "Since oxygen retains its properties in air, the components are not chemically combined. This indicates air is a mixture."
+    },
+    {
+      "question": "Diagram P shows only one type of atom. Diagram Q shows two types of atoms chemically bonded. What are P and Q?",
+      "options": [
+        "P: Compound, Q: Element",
+        "P: Element, Q: Compound",
+        "P: Mixture, Q: Element",
+        "P: Mixture, Q: Compound"
+      ],
+      "correct": 1,
+      "points": 15,
+      "explanation": "Elements contain only one type of atom. Compounds contain two or more types of atoms chemically bonded."
+    },
+    {
+      "question": "Diagram R shows two types of atoms mixed together but not bonded. What is R?",
+      "options": [
+        "Element",
+        "Compound",
+        "Mixture",
+        "Atom"
+      ],
+      "correct": 2,
+      "points": 15,
+      "explanation": "A mixture contains different types of atoms or molecules that are not chemically bonded together."
+    },
+    {
+      "question": "Why is carbon dioxide classified as a compound?",
+      "options": [
+        "It is a gas",
+        "It contains carbon and oxygen chemically combined",
+        "It is found in the air",
+        "It is colourless"
+      ],
+      "correct": 1,
+      "points": 15,
+      "explanation": "Carbon dioxide is a compound because it consists of carbon and oxygen atoms chemically combined in a fixed ratio."
+    },
+    {
+      "question": "Why is steel classified as a mixture (alloy)?",
+      "options": [
+        "It is hard",
+        "It is made of iron and carbon not chemically combined",
+        "It is a metal",
+        "It is used in buildings"
+      ],
+      "correct": 1,
+      "points": 15,
+      "explanation": "Steel is a mixture of iron and carbon (and other elements) where the components are not chemically combined in a fixed ratio."
+    },
+    {
+      "question": "Elements in the same group of the Periodic Table have...",
+      "options": [
+        "The same colour",
+        "Similar chemical properties",
+        "The same mass",
+        "The same state at room temperature"
+      ],
+      "correct": 1,
+      "points": 15,
+      "explanation": "Elements in the same group (vertical column) have similar chemical properties due to similar arrangement of outer electrons (conceptually)."
+    },
+    {
+      "question": "Can a compound be separated into its elements by physical means (e.g. filtering)?",
+      "options": [
+        "Yes, always",
+        "No, only by chemical means",
+        "Only if it is a gas",
+        "Only if it is heated"
+      ],
+      "correct": 1,
+      "points": 15,
+      "explanation": "Compounds are chemically combined and cannot be separated by physical means. Chemical reactions are needed to break the bonds."
+    },
+    {
+      "question": "Can a mixture be separated into its components by physical means?",
+      "options": [
+        "Yes, because they are not chemically combined",
+        "No, never",
+        "Only if it is a solid",
+        "Only if it is a liquid"
+      ],
+      "correct": 0,
+      "points": 15,
+      "explanation": "Mixtures can be separated by physical means because the components are not chemically bonded."
+    },
+    {
+      "question": "A cooking pot has a metal base. Why?",
+      "options": [
+        "Metal is a poor conductor of heat",
+        "Metal is a good conductor of heat",
+        "Metal is brittle",
+        "Metal is a non-metal"
+      ],
+      "correct": 1,
+      "points": 15,
+      "explanation": "Metals are good conductors of heat, allowing thermal energy to transfer quickly from the stove to the food."
+    },
+    {
+      "question": "A cooking pot has a plastic handle. Why?",
+      "options": [
+        "Plastic is a good conductor of heat",
+        "Plastic is a poor conductor of heat",
+        "Plastic is a metal",
+        "Plastic is shiny"
+      ],
+      "correct": 1,
+      "points": 15,
+      "explanation": "Plastic is a poor conductor of heat (insulator), preventing the handle from getting too hot to hold."
+    },
+    {
+      "question": "Iron burns in oxygen to form iron oxide. Is iron oxide an element, compound or mixture?",
+      "options": [
+        "Element",
+        "Compound",
+        "Mixture",
+        "Metal"
+      ],
+      "correct": 1,
+      "points": 15,
+      "explanation": "Iron oxide is formed by the chemical combination of iron and oxygen, making it a compound."
+    },
+    {
+      "question": "Sugar is dissolved in water. The sugar can be recovered by evaporation. Is this a physical or chemical change?",
+      "options": [
+        "Chemical change (Compound formed)",
+        "Physical change (Mixture formed)",
+        "Chemical change (Element formed)",
+        "Physical change (Element formed)"
+      ],
+      "correct": 1,
+      "points": 15,
+      "explanation": "Dissolving sugar in water forms a mixture. The sugar can be recovered by physical means (evaporation), indicating no chemical reaction occurred."
+    },
+    {
+      "question": "Substance K conducts electricity. Substance L does not. Substance M conducts only when molten. Which is likely a non-metal element?",
+      "options": [
+        "Substance K",
+        "Substance L",
+        "Substance M",
+        "All of them"
+      ],
+      "correct": 1,
+      "points": 15,
+      "explanation": "Non-metal elements are typically poor conductors of electricity in all states. Metals conduct in solid and molten states. Ionic compounds conduct only when molten/dissolved."
+    }
+  ]
+}

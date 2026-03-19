@@ -1,0 +1,251 @@
+{
+  "title": "Diversity of Matter: Elements, Compounds and Mixtures (Basics)",
+  "topic": "Exploring Diversity of Matter by its Chemical Composition",
+  "subject": "Science",
+  "level": "Secondary",
+  "grade": "Sec 1",
+  "chapter": 3,
+  "worksheet": 1,
+  "questions": [
+    {
+      "question": "Which statement best describes an element?",
+      "options": [
+        "A substance made of two or more different types of atoms chemically combined",
+        "A substance made of only one type of atom",
+        "A substance made of two or more substances not chemically combined",
+        "A substance that can be separated by physical means"
+      ],
+      "correct": 1,
+      "points": 10,
+      "explanation": "An element is a pure substance made of only one type of atom. It cannot be broken down into simpler substances by chemical means."
+    },
+    {
+      "question": "Which statement best describes a compound?",
+      "options": [
+        "A substance made of only one type of atom",
+        "A substance made of two or more elements chemically combined in a fixed ratio",
+        "A substance made of two or more substances not chemically combined",
+        "A substance that displays properties of its constituents"
+      ],
+      "correct": 1,
+      "points": 10,
+      "explanation": "A compound consists of two or more different elements chemically combined in a fixed ratio. It has properties different from its constituent elements."
+    },
+    {
+      "question": "Which statement best describes a mixture?",
+      "options": [
+        "A substance made of only one type of atom",
+        "A substance made of two or more elements chemically combined",
+        "A substance made of two or more substances not chemically combined",
+        "A substance that cannot be separated by physical means"
+      ],
+      "correct": 2,
+      "points": 10,
+      "explanation": "A mixture contains two or more substances (elements or compounds) that are not chemically combined. They retain their individual properties."
+    },
+    {
+      "question": "Which of the following is an example of an element?",
+      "options": [
+        "Water",
+        "Iron",
+        "Salt",
+        "Air"
+      ],
+      "correct": 1,
+      "points": 10,
+      "explanation": "Iron is an element made of only iron atoms. Water and salt are compounds. Air is a mixture."
+    },
+    {
+      "question": "Which of the following is an example of a compound?",
+      "options": [
+        "Oxygen gas",
+        "Gold",
+        "Carbon dioxide",
+        "Sea water"
+      ],
+      "correct": 2,
+      "points": 10,
+      "explanation": "Carbon dioxide is a compound made of carbon and oxygen atoms chemically combined. Oxygen and gold are elements. Sea water is a mixture."
+    },
+    {
+      "question": "Which of the following is an example of a mixture?",
+      "options": [
+        "Copper",
+        "Sugar",
+        "Air",
+        "Magnesium oxide"
+      ],
+      "correct": 2,
+      "points": 10,
+      "explanation": "Air is a mixture of gases like nitrogen, oxygen, and carbon dioxide. Copper is an element. Sugar and magnesium oxide are compounds."
+    },
+    {
+      "question": "Which property is typical of most metals?",
+      "options": [
+        "Poor conductor of electricity",
+        "Good conductor of electricity",
+        "Dull appearance",
+        "Brittle when solid"
+      ],
+      "correct": 1,
+      "points": 10,
+      "explanation": "Most metals are good conductors of electricity and heat. They are usually shiny and malleable, not brittle."
+    },
+    {
+      "question": "Which property is typical of most non-metals?",
+      "options": [
+        "Good conductor of heat",
+        "Shiny when polished",
+        "Poor conductor of electricity",
+        "Can be hammered into sheets"
+      ],
+      "correct": 2,
+      "points": 10,
+      "explanation": "Most non-metals are poor conductors of electricity and heat. They are usually dull and brittle when solid."
+    },
+    {
+      "question": "Where are metals mostly found in the Periodic Table?",
+      "options": [
+        "On the right side",
+        "On the left side and centre",
+        "Only in the top row",
+        "Only in the bottom row"
+      ],
+      "correct": 1,
+      "points": 10,
+      "explanation": "Metals are mostly located on the left side and centre of the Periodic Table. Non-metals are mostly on the right side."
+    },
+    {
+      "question": "Can an element be broken down into simpler substances by chemical means?",
+      "options": [
+        "Yes, always",
+        "No, never",
+        "Only when heated",
+        "Only when mixed with water"
+      ],
+      "correct": 1,
+      "points": 10,
+      "explanation": "Elements are the simplest substances. They cannot be broken down into simpler substances by chemical means."
+    },
+    {
+      "question": "Do compounds have the same properties as the elements they are made from?",
+      "options": [
+        "Yes, always",
+        "No, they have different properties",
+        "Sometimes, depending on the temperature",
+        "Only if the compound is a gas"
+      ],
+      "correct": 1,
+      "points": 10,
+      "explanation": "Compounds have completely different properties from their constituent elements. For example, sodium (metal) and chlorine (gas) form salt (edible solid)."
+    },
+    {
+      "question": "Do mixtures display the properties of their constituents?",
+      "options": [
+        "Yes, they retain the properties of their constituents",
+        "No, they have completely new properties",
+        "Only the solid constituents retain properties",
+        "Only the liquid constituents retain properties"
+      ],
+      "correct": 0,
+      "points": 10,
+      "explanation": "Mixtures display the properties of their individual constituents because they are not chemically combined."
+    },
+    {
+      "question": "Which of the following is a metal?",
+      "options": [
+        "Sulfur",
+        "Carbon",
+        "Copper",
+        "Oxygen"
+      ],
+      "correct": 2,
+      "points": 10,
+      "explanation": "Copper is a metal. Sulfur, carbon, and oxygen are non-metals."
+    },
+    {
+      "question": "Which of the following is a non-metal?",
+      "options": [
+        "Iron",
+        "Aluminium",
+        "Nitrogen",
+        "Zinc"
+      ],
+      "correct": 2,
+      "points": 10,
+      "explanation": "Nitrogen is a non-metal. Iron, aluminium, and zinc are metals."
+    },
+    {
+      "question": "What is the chemical symbol for Carbon?",
+      "options": [
+        "Ca",
+        "C",
+        "Co",
+        "Cr"
+      ],
+      "correct": 1,
+      "points": 10,
+      "explanation": "The chemical symbol for Carbon is C. Ca is Calcium, Co is Cobalt, Cr is Chromium."
+    },
+    {
+      "question": "In a compound, are the elements combined in a fixed ratio?",
+      "options": [
+        "Yes, always",
+        "No, never",
+        "Only in solid compounds",
+        "Only in liquid compounds"
+      ],
+      "correct": 0,
+      "points": 10,
+      "explanation": "Elements in a compound are always combined in a fixed ratio by mass. Mixtures have variable ratios."
+    },
+    {
+      "question": "In a mixture, are the components combined in a fixed ratio?",
+      "options": [
+        "Yes, always",
+        "No, the ratio can vary",
+        "Only in gas mixtures",
+        "Only in solid mixtures"
+      ],
+      "correct": 1,
+      "points": 10,
+      "explanation": "The components of a mixture can be mixed in any ratio. There is no fixed ratio."
+    },
+    {
+      "question": "Is energy change usually involved when a compound is formed?",
+      "options": [
+        "Yes, heat or light is often released or absorbed",
+        "No, never",
+        "Only if the compound is coloured",
+        "Only if the compound is a gas"
+      ],
+      "correct": 0,
+      "points": 10,
+      "explanation": "Chemical reactions to form compounds usually involve energy changes (heat, light, etc.). Mixing to form a mixture usually does not."
+    },
+    {
+      "question": "Is oxygen gas (O2) an element or a compound?",
+      "options": [
+        "Element",
+        "Compound",
+        "Mixture",
+        "Solution"
+      ],
+      "correct": 0,
+      "points": 10,
+      "explanation": "Oxygen gas is an element because it contains only one type of atom (oxygen), even though they are paired in molecules."
+    },
+    {
+      "question": "Is salt water an element, compound or mixture?",
+      "options": [
+        "Element",
+        "Compound",
+        "Mixture",
+        "Atom"
+      ],
+      "correct": 2,
+      "points": 10,
+      "explanation": "Salt water is a mixture of salt (compound) and water (compound). They are not chemically combined and can be separated."
+    }
+  ]
+}
