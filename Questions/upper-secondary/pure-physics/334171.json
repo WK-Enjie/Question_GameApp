@@ -10,10 +10,10 @@
     {
       "question": "In a series circuit containing two bulbs, what happens to the current if a third bulb is added in series?",
       "options": [
-        "The current increases",
+        "The current becomes zero",
         "The current decreases",
         "The current remains the same",
-        "The current becomes zero"
+        "The current increases"
       ],
       "correct": 1,
       "points": 10,
@@ -22,10 +22,10 @@
     {
       "question": "Two identical bulbs are connected in parallel across a battery. What is the potential difference across each bulb?",
       "options": [
-        "Half the battery voltage",
+        "Zero",
         "Equal to the battery voltage",
         "Twice the battery voltage",
-        "Zero"
+        "Half the battery voltage"
       ],
       "correct": 1,
       "points": 10,
@@ -34,10 +34,10 @@
     {
       "question": "What happens to the total resistance of a circuit when another resistor is connected in parallel?",
       "options": [
-        "It increases",
+        "It becomes infinite",
         "It decreases",
         "It remains the same",
-        "It becomes infinite"
+        "It increases"
       ],
       "correct": 1,
       "points": 10,
@@ -46,10 +46,10 @@
     {
       "question": "A 12 V battery is connected to two resistors in series: 4 Ω and 8 Ω. What is the total resistance?",
       "options": [
-        "4 Ω",
+        "32 Ω",
         "8 Ω",
         "12 Ω",
-        "32 Ω"
+        "4 Ω"
       ],
       "correct": 2,
       "points": 10,
@@ -58,10 +58,10 @@
     {
       "question": "A resistor of 5 Ω has a current of 2 A flowing through it. What is the potential difference across it?",
       "options": [
-        "2.5 V",
+        "20 V",
         "5 V",
         "10 V",
-        "20 V"
+        "2.5 V"
       ],
       "correct": 2,
       "points": 12,
@@ -70,10 +70,10 @@
     {
       "question": "What happens to the resistance of an LDR when light intensity increases?",
       "options": [
-        "It increases",
+        "It becomes zero",
         "It decreases",
         "It remains constant",
-        "It becomes zero"
+        "It increases"
       ],
       "correct": 1,
       "points": 10,
@@ -82,10 +82,10 @@
     {
       "question": "What happens to the resistance of an NTC thermistor when temperature increases?",
       "options": [
-        "It increases",
+        "It becomes infinite",
         "It decreases",
         "It remains constant",
-        "It becomes infinite"
+        "It increases"
       ],
       "correct": 1,
       "points": 10,
@@ -94,10 +94,10 @@
     {
       "question": "How should an ammeter be connected in a circuit to measure current?",
       "options": [
-        "In parallel with the component",
+        "It does not matter",
         "In series with the component",
         "Across the battery only",
-        "It does not matter"
+        "In parallel with the component"
       ],
       "correct": 1,
       "points": 10,
@@ -106,10 +106,10 @@
     {
       "question": "How should a voltmeter be connected to measure potential difference across a component?",
       "options": [
-        "In series with the component",
+        "It does not matter",
         "In parallel across the component",
         "Across the battery only",
-        "It does not matter"
+        "In series with the component"
       ],
       "correct": 1,
       "points": 10,
@@ -118,10 +118,10 @@
     {
       "question": "If one bulb blows in a series circuit containing two bulbs, what happens to the other bulb?",
       "options": [
-        "It becomes brighter",
+        "It remains unchanged",
         "It becomes dimmer",
         "It goes out",
-        "It remains unchanged"
+        "It becomes brighter"
       ],
       "correct": 2,
       "points": 12,
@@ -130,22 +130,22 @@
     {
       "question": "If one bulb blows in a parallel circuit containing two bulbs, what happens to the other bulb?",
       "options": [
-        "It becomes brighter",
+        "It remains unchanged",
         "It becomes dimmer",
         "It goes out",
-        "It remains unchanged"
+        "It becomes brighter"
       ],
-      "correct": 3,
+      "correct": 0,
       "points": 12,
       "explanation": "In a parallel circuit, each branch is independent. If one branch breaks, the other branches still have a complete path to the supply."
     },
     {
       "question": "A 10 V supply is connected to two identical resistors in series. What is the potential difference across each resistor?",
       "options": [
-        "10 V",
+        "0 V",
         "5 V",
         "20 V",
-        "0 V"
+        "10 V"
       ],
       "correct": 1,
       "points": 12,
@@ -154,10 +154,10 @@
     {
       "question": "Which statement best explains why total current increases when a resistor is added in parallel?",
       "options": [
-        "The voltage increases",
+        "The resistors become hotter",
         "The total resistance decreases",
         "The battery supplies more energy per charge",
-        "The resistors become hotter"
+        "The voltage increases"
       ],
       "correct": 1,
       "points": 12,
@@ -166,10 +166,10 @@
     {
       "question": "What does the potential difference across a component represent?",
       "options": [
-        "The total resistance of the component",
+        "The total current in the circuit",
         "The energy transferred per unit charge through the component",
         "The flow rate of charge through the component",
-        "The total current in the circuit"
+        "The total resistance of the component"
       ],
       "correct": 1,
       "points": 10,
@@ -178,12 +178,12 @@
     {
       "question": "Two resistors, 6 Ω and 3 Ω, are connected in parallel. What is their effective resistance?",
       "options": [
-        "2 Ω",
+        "0.5 Ω",
         "4.5 Ω",
         "9 Ω",
-        "0.5 Ω"
+        "2 Ω"
       ],
-      "correct": 0,
+      "correct": 3,
       "points": 15,
       "explanation": "Using the formula for parallel resistors: 1/R = 1/6 + 1/3 = 1/6 + 2/6 = 3/6 = 1/2. So R = 2 Ω."
     }
