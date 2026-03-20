@@ -1,0 +1,251 @@
+{
+ "title": "Maintaining Air Quality: Application and Carbon Cycle - Worksheet 2",
+ "topic": "Application of Air Quality Knowledge and the Carbon Cycle",
+ "subject": "Pure Chemistry",
+ "level": "Upper Secondary",
+ "grade": "Sec 4",
+ "chapter": 22,
+ "worksheet": 2,
+ "questions": [
+  {
+    "question": "A city introduces a congestion charge to reduce vehicle use. Which air pollutant is most likely to decrease as a result?",
+    "options": [
+      "Sulfur dioxide only",
+      "Carbon monoxide, nitrogen oxides and particulate matter",
+      "Ozone only",
+      "Methane only"
+    ],
+    "correct": 1,
+    "points": 10,
+    "explanation": "Reducing vehicle numbers directly lowers emissions from combustion: CO (incomplete combustion), NOₓ (high-temperature N₂+O₂ reaction), and particulates (soot from diesel/petrol)."
+  },
+  {
+    "question": "In the carbon cycle, which process removes carbon dioxide from the atmosphere?",
+    "options": [
+      "Respiration",
+      "Combustion of fossil fuels",
+      "Photosynthesis",
+      "Decomposition of organic matter"
+    ],
+    "correct": 2,
+    "points": 10,
+    "explanation": "Photosynthesis: 6CO₂ + 6H₂O → C₆H₁₂O₆ + 6O₂. Plants absorb CO₂ from the atmosphere to make glucose, acting as a carbon sink. Respiration and combustion release CO₂."
+  },
+  {
+    "question": "Which human activity has most significantly increased atmospheric CO₂ levels since the Industrial Revolution?",
+    "options": [
+      "Deforestation only",
+      "Burning of fossil fuels",
+      "Agriculture and livestock",
+      "Volcanic eruptions"
+    ],
+    "correct": 1,
+    "points": 10,
+    "explanation": "Burning coal, oil and gas releases carbon stored underground for millions of years as CO₂. This anthropogenic input exceeds natural carbon cycle fluxes, causing atmospheric CO₂ to rise."
+  },
+  {
+    "question": "How do oceans help regulate atmospheric carbon dioxide levels?",
+    "options": [
+      "Oceans produce CO₂ through respiration only",
+      "Oceans absorb CO₂, forming carbonic acid and carbonate ions",
+      "Oceans release CO₂ when water temperature decreases",
+      "Oceans have no significant role in the carbon cycle"
+    ],
+    "correct": 1,
+    "points": 10,
+    "explanation": "CO₂ dissolves in seawater: CO₂ + H₂O ⇌ H₂CO₃ ⇌ H⁺ + HCO₃⁻ ⇌ 2H⁺ + CO₃²⁻. Oceans absorb ~30% of anthropogenic CO₂, but this causes ocean acidification, harming marine life."
+  },
+  {
+    "question": "A student claims that planting more trees will completely solve global warming. Which statement best evaluates this claim?",
+    "options": [
+      "Correct, because trees absorb all human CO₂ emissions",
+      "Partially correct, but trees alone cannot offset current emission rates",
+      "Incorrect, because trees release more CO₂ than they absorb",
+      "Correct, because forests also produce oxygen"
+    ],
+    "correct": 1,
+    "points": 10,
+    "explanation": "While trees absorb CO₂, current global emissions (~40 Gt CO₂/year) far exceed what new forests can sequester. Mitigation requires both carbon sinks AND drastic emission reductions."
+  },
+  {
+    "question": "Which equation represents the overall process of respiration?",
+    "options": [
+      "6CO₂ + 6H₂O → C₆H₁₂O₆ + 6O₂",
+      "C₆H₁₂O₆ + 6O₂ → 6CO₂ + 6H₂O",
+      "CH₄ + 2O₂ → CO₂ + 2H₂O",
+      "CaCO₃ → CaO + CO₂"
+    ],
+    "correct": 1,
+    "points": 10,
+    "explanation": "Respiration is the reverse of photosynthesis: glucose is oxidised with oxygen to release energy, producing CO₂ and water. This occurs in plants, animals and microorganisms."
+  },
+  {
+    "question": "Why is methane (CH₄) considered a more potent greenhouse gas than carbon dioxide?",
+    "options": [
+      "Methane is present in much higher concentrations",
+      "Methane absorbs infrared radiation more effectively per molecule",
+      "Methane remains in the atmosphere longer than CO₂",
+      "Methane is produced only by human activities"
+    ],
+    "correct": 1,
+    "points": 10,
+    "explanation": "Per molecule, CH₄ is ~28-36× more effective at trapping heat than CO₂ over 100 years. However, CO₂ is more concerning overall due to its much higher concentration and longer atmospheric lifetime."
+  },
+  {
+    "question": "Which process in the carbon cycle involves the breakdown of dead organisms by microorganisms?",
+    "options": [
+      "Photosynthesis",
+      "Combustion",
+      "Decomposition",
+      "Sedimentation"
+    ],
+    "correct": 2,
+    "points": 10,
+    "explanation": "Decomposers (bacteria, fungi) break down dead organic matter, releasing CO₂ through respiration. This returns carbon to the atmosphere, completing part of the carbon cycle."
+  },
+  {
+    "question": "A power station uses flue gas desulfurisation. If 1000 kg of SO₂ is treated with excess calcium carbonate, what mass of calcium sulfite (CaSO₃) is produced? [Mr: SO₂=64, CaSO₃=120]",
+    "options": [
+      "640 kg",
+      "1200 kg",
+      "1875 kg",
+      "3200 kg"
+    ],
+    "correct": 2,
+    "points": 10,
+    "explanation": "CaCO₃ + SO₂ → CaSO₃ + CO₂. Moles SO₂ = 1000×1000/64 = 15625 mol. Moles CaSO₃ = 15625 mol (1:1 ratio). Mass CaSO₃ = 15625 × 120 = 1,875,000 g = 1875 kg."
+  },
+  {
+    "question": "Which statement about the greenhouse effect is correct?",
+    "options": [
+      "It is caused only by human activities",
+      "It is a natural process that keeps Earth warm enough for life",
+      "It can be eliminated by removing all CO₂ from the atmosphere",
+      "It is the same as ozone layer depletion"
+    ],
+    "correct": 1,
+    "points": 10,
+    "explanation": "The natural greenhouse effect traps heat via greenhouse gases (CO₂, H₂O, CH₄), keeping Earth ~33°C warmer than it would be otherwise. Human activities enhance this effect, causing global warming."
+  },
+  {
+    "question": "In a catalytic converter, which metal is primarily used to catalyse the reduction of nitrogen oxides?",
+    "options": [
+      "Iron",
+      "Platinum",
+      "Rhodium",
+      "Copper"
+    ],
+    "correct": 2,
+    "points": 10,
+    "explanation": "Rhodium is particularly effective for reducing NOₓ to N₂. Platinum and palladium are better for oxidising CO and hydrocarbons. Modern converters use all three metals for complete emission control."
+  },
+  {
+    "question": "Which of the following best describes how carbon is stored in fossil fuels?",
+    "options": [
+      "Carbon is absorbed directly from the atmosphere by coal and oil",
+      "Ancient organic matter was buried and transformed under heat and pressure over millions of years",
+      "Fossil fuels are formed from inorganic carbon compounds in the Earth's crust",
+      "Carbon in fossil fuels comes from volcanic emissions"
+    ],
+    "correct": 1,
+    "points": 10,
+    "explanation": "Fossil fuels formed from ancient plants and microorganisms that were buried, then subjected to heat and pressure over geological time. The carbon was originally fixed from CO₂ via photosynthesis."
+  },
+  {
+    "question": "A student sets up an experiment to show that plants absorb CO₂. Which observation would support this claim?",
+    "options": [
+      "The plant grows taller in the dark",
+      "Limewater turns milky when air from around the plant is bubbled through it",
+      "Limewater remains clear when air from around a plant in light is bubbled through it",
+      "The plant releases oxygen bubbles in water"
+    ],
+    "correct": 2,
+    "points": 10,
+    "explanation": "Limewater (Ca(OH)₂) turns milky with CO₂ due to CaCO₃ formation. If air from around a photosynthesising plant does NOT turn limewater milky, it suggests CO₂ has been absorbed by the plant."
+  },
+  {
+    "question": "Which mitigation strategy addresses both air pollution and climate change?",
+    "options": [
+      "Installing taller smokestacks",
+      "Switching from coal to natural gas for electricity",
+      "Using electrostatic precipitators",
+      "Adding lead scavengers to petrol"
+    ],
+    "correct": 1,
+    "points": 10,
+    "explanation": "Natural gas (CH₄) produces less CO₂ per unit energy than coal, and emits negligible SO₂ and particulates. This reduces both greenhouse gas emissions and local air pollutants."
+  },
+  {
+    "question": "Which process in the carbon cycle transfers carbon from the atmosphere to the lithosphere (rocks)?",
+    "options": [
+      "Photosynthesis",
+      "Formation of sedimentary rocks like limestone",
+      "Volcanic eruptions",
+      "Respiration"
+    ],
+    "correct": 1,
+    "points": 10,
+    "explanation": "Marine organisms use dissolved CO₂ to form CaCO₃ shells. When they die, shells accumulate on the ocean floor, forming limestone over millions of years, storing carbon in the lithosphere."
+  },
+  {
+    "question": "Why is it difficult to completely eliminate nitrogen oxide emissions from vehicle engines?",
+    "options": [
+      "Nitrogen oxides are produced only during cold starts",
+      "High combustion temperatures cause N₂ and O₂ from air to react",
+      "Catalytic converters cannot function at high temperatures",
+      "Nitrogen oxides are added to fuel to improve performance"
+    ],
+    "correct": 1,
+    "points": 10,
+    "explanation": "At high engine temperatures (>1300°C), atmospheric N₂ and O₂ react: N₂ + O₂ ⇌ 2NO. This thermal NOₓ formation is inherent to high-temperature combustion, making complete elimination challenging."
+  },
+  {
+    "question": "Which of the following is a limitation of using biofuels to reduce air pollution?",
+    "options": [
+      "Biofuels produce more CO₂ than fossil fuels when burned",
+      "Growing biofuel crops may compete with food production and cause deforestation",
+      "Biofuels cannot be used in existing vehicle engines",
+      "Biofuels release more sulfur dioxide than diesel"
+    ],
+    "correct": 1,
+    "points": 10,
+    "explanation": "While biofuels are renewable and can be carbon-neutral, large-scale production may require clearing forests or using agricultural land, potentially increasing net emissions and affecting food security."
+  },
+  {
+    "question": "In the carbon cycle, which reservoir contains the largest amount of carbon?",
+    "options": [
+      "Atmosphere",
+      "Oceans",
+      "Fossil fuels",
+      "Living biomass"
+    ],
+    "correct": 1,
+    "points": 10,
+    "explanation": "Oceans contain ~38,000 Gt of carbon (mostly as dissolved inorganic carbon), far exceeding atmosphere (~750 Gt), fossil fuels (~4000 Gt), or living biomass (~560 Gt)."
+  },
+  {
+    "question": "A city measures air quality and finds high levels of ground-level ozone. Which combination of pollutants is most likely responsible?",
+    "options": [
+      "SO₂ and particulate matter",
+      "NOₓ and volatile organic compounds in sunlight",
+      "CO and lead compounds",
+      "CO₂ and methane"
+    ],
+    "correct": 1,
+    "points": 10,
+    "explanation": "Ground-level (tropospheric) ozone is a secondary pollutant formed when NOₓ and VOCs react in sunlight. It is a key component of photochemical smog and causes respiratory problems."
+  },
+  {
+    "question": "Which statement correctly compares the carbon cycle before and after the Industrial Revolution?",
+    "options": [
+      "The natural carbon cycle was in perfect balance before humans",
+      "Human activities have added a new flux of carbon from lithosphere to atmosphere",
+      "Photosynthesis rates have decreased globally since industrialisation",
+      "Ocean absorption of CO₂ has stopped completely"
+    ],
+    "correct": 1,
+    "points": 10,
+    "explanation": "Burning fossil fuels transfers carbon that was stored in the lithosphere (as coal, oil, gas) into the atmosphere as CO₂. This anthropogenic flux disrupts the natural carbon cycle balance."
+  }
+]
+}

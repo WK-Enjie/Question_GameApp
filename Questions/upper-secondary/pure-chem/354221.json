@@ -1,0 +1,251 @@
+{
+ "title": "Maintaining Air Quality: Sources, Effects and Mitigation - Worksheet 1",
+ "topic": "Air Pollutants, Harmful Effects and Control Methods",
+ "subject": "Pure Chemistry",
+ "level": "Upper Secondary",
+ "grade": "Sec 4",
+ "chapter": 22,
+ "worksheet": 1,
+ "questions": [
+  {
+    "question": "Which of the following is a primary source of carbon monoxide (CO) in urban areas?",
+    "options": [
+      "Volcanic eruptions",
+      "Photosynthesis in plants",
+      "Incomplete combustion of fossil fuels in vehicles",
+      "Decomposition of organic matter"
+    ],
+    "correct": 2,
+    "points": 10,
+    "explanation": "Carbon monoxide is produced when fossil fuels burn incompletely due to limited oxygen supply, commonly in vehicle engines and poorly maintained heaters."
+  },
+  {
+    "question": "What is the main harmful effect of sulfur dioxide (SO₂) on the environment?",
+    "options": [
+      "Causes global warming directly",
+      "Depletes the ozone layer",
+      "Forms acid rain when dissolved in atmospheric water",
+      "Causes immediate respiratory failure"
+    ],
+    "correct": 2,
+    "points": 10,
+    "explanation": "SO₂ dissolves in rainwater to form sulfurous acid (H₂SO₃), which can be oxidised to sulfuric acid (H₂SO₄), causing acid rain that damages buildings, aquatic life and soil."
+  },
+  {
+    "question": "Which pollutant is primarily responsible for photochemical smog in cities?",
+    "options": [
+      "Carbon dioxide",
+      "Nitrogen oxides (NOₓ) and unburnt hydrocarbons",
+      "Sulfur dioxide",
+      "Particulate matter only"
+    ],
+    "correct": 1,
+    "points": 10,
+    "explanation": "Photochemical smog forms when nitrogen oxides and volatile organic compounds react in sunlight to produce ozone and other secondary pollutants, causing haze and respiratory irritation."
+  },
+  {
+    "question": "How does a catalytic converter reduce emissions from vehicle exhaust?",
+    "options": [
+      "It filters out particulate matter only",
+      "It converts CO, NOₓ and unburnt hydrocarbons into less harmful gases",
+      "It adds oxygen to improve fuel combustion",
+      "It absorbs sulfur dioxide before it is released"
+    ],
+    "correct": 1,
+    "points": 10,
+    "explanation": "Catalytic converters use platinum/rhodium catalysts to convert CO to CO₂, NOₓ to N₂, and unburnt hydrocarbons to CO₂ and H₂O through redox reactions."
+  },
+  {
+    "question": "Which reaction occurs in a catalytic converter to remove nitrogen monoxide?",
+    "options": [
+      "2NO + 2CO → N₂ + 2CO₂",
+      "NO + O₂ → NO₂",
+      "2NO → N₂ + O₂",
+      "NO + H₂ → NH₃"
+    ],
+    "correct": 0,
+    "points": 10,
+    "explanation": "In the catalytic converter, nitrogen monoxide is reduced by carbon monoxide: 2NO + 2CO → N₂ + 2CO₂. This is a redox reaction where NO is reduced and CO is oxidised."
+  },
+  {
+    "question": "What is the purpose of flue gas desulfurisation (FGD) in power stations?",
+    "options": [
+      "To remove carbon dioxide from exhaust gases",
+      "To remove sulfur dioxide by reacting it with calcium carbonate or calcium oxide",
+      "To convert nitrogen oxides into nitrogen gas",
+      "To filter out particulate matter only"
+    ],
+    "correct": 1,
+    "points": 10,
+    "explanation": "FGD removes SO₂ by reacting it with CaCO₃ or CaO to form calcium sulfite/sulfate: CaCO₃ + SO₂ → CaSO₃ + CO₂. This prevents SO₂ from causing acid rain."
+  },
+  {
+    "question": "Which equation represents the reaction in flue gas desulfurisation using calcium carbonate?",
+    "options": [
+      "CaCO₃ + SO₂ → CaSO₄ + CO",
+      "CaCO₃ + SO₂ → CaSO₃ + CO₂",
+      "CaO + SO₂ → CaSO₄",
+      "Ca(OH)₂ + SO₂ → CaSO₃ + H₂"
+    ],
+    "correct": 1,
+    "points": 10,
+    "explanation": "Calcium carbonate reacts with sulfur dioxide to form calcium sulfite and carbon dioxide: CaCO₃(s) + SO₂(g) → CaSO₃(s) + CO₂(g). Calcium sulfite can be oxidised to calcium sulfate."
+  },
+  {
+    "question": "Which health effect is associated with long-term exposure to particulate matter (PM₂.₅)?",
+    "options": [
+      "Immediate skin irritation",
+      "Increased risk of respiratory and cardiovascular diseases",
+      "Temporary hearing loss",
+      "Enhanced immune response"
+    ],
+    "correct": 1,
+    "points": 10,
+    "explanation": "Fine particulate matter (PM₂.₅) can penetrate deep into lungs and bloodstream, causing inflammation, asthma, heart disease and reduced lung function over time."
+  },
+  {
+    "question": "Why is leaded petrol no longer used in most countries?",
+    "options": [
+      "It is more expensive than unleaded petrol",
+      "Lead compounds cause neurological damage, especially in children",
+      "It produces more carbon dioxide than unleaded petrol",
+      "It cannot be used in modern catalytic converters"
+    ],
+    "correct": 1,
+    "points": 10,
+    "explanation": "Lead compounds from petrol exhaust accumulate in the body and cause irreversible neurological damage, particularly in developing children. Lead also poisons catalytic converters."
+  },
+  {
+    "question": "Which of the following is NOT a method to reduce air pollution from vehicles?",
+    "options": [
+      "Using catalytic converters",
+      "Switching to electric or hybrid vehicles",
+      "Increasing the sulfur content in diesel fuel",
+      "Promoting public transport and carpooling"
+    ],
+    "correct": 2,
+    "points": 10,
+    "explanation": "Increasing sulfur content would increase SO₂ emissions, worsening air quality. Effective methods include catalytic converters, cleaner fuels, electric vehicles and reducing vehicle use."
+  },
+  {
+    "question": "What is the main greenhouse gas produced by human activities that contributes to global warming?",
+    "options": [
+      "Methane (CH₄)",
+      "Carbon dioxide (CO₂)",
+      "Nitrous oxide (N₂O)",
+      "Water vapour (H₂O)"
+    ],
+    "correct": 1,
+    "points": 10,
+    "explanation": "While all listed are greenhouse gases, CO₂ from fossil fuel combustion and deforestation is the primary anthropogenic contributor to enhanced greenhouse effect and global warming."
+  },
+  {
+    "question": "How does acid rain affect aquatic ecosystems?",
+    "options": [
+      "It increases water temperature",
+      "It lowers pH, harming fish and aquatic plants",
+      "It increases oxygen levels in water",
+      "It promotes algal blooms only"
+    ],
+    "correct": 1,
+    "points": 10,
+    "explanation": "Acid rain lowers the pH of lakes and rivers, making water too acidic for many aquatic organisms. It can also leach aluminium from soil, which is toxic to fish."
+  },
+  {
+    "question": "Which pollutant is mainly produced by lightning and high-temperature combustion in engines?",
+    "options": [
+      "Carbon monoxide",
+      "Sulfur dioxide",
+      "Nitrogen oxides (NOₓ)",
+      "Particulate matter"
+    ],
+    "correct": 2,
+    "points": 10,
+    "explanation": "Nitrogen oxides form when nitrogen and oxygen from air react at high temperatures (e.g., in engines or lightning): N₂ + O₂ → 2NO. NO can further oxidise to NO₂."
+  },
+  {
+    "question": "What is the role of limestone in flue gas desulfurisation?",
+    "options": [
+      "It acts as a catalyst for combustion",
+      "It reacts with SO₂ to form solid calcium sulfite",
+      "It absorbs carbon dioxide from exhaust",
+      "It neutralises nitrogen oxides"
+    ],
+    "correct": 1,
+    "points": 10,
+    "explanation": "Limestone (CaCO₃) or quicklime (CaO) reacts with SO₂ to form solid calcium sulfite (CaSO₃), which can be removed and sometimes converted to gypsum (CaSO₄) for industrial use."
+  },
+  {
+    "question": "Which statement about the function of a catalytic converter's reduction stage is correct?",
+    "options": [
+      "Oxidising carbon monoxide to carbon dioxide",
+      "Reducing nitrogen oxides to nitrogen gas",
+      "Burning unburnt hydrocarbons completely",
+      "Filtering out lead particles"
+    ],
+    "correct": 1,
+    "points": 10,
+    "explanation": "The reduction stage uses rhodium catalyst to reduce NO and NO₂ to harmless N₂ gas: 2NO → N₂ + O₂ or 2NO₂ → N₂ + 2O₂. This prevents NOₓ from forming smog and acid rain."
+  },
+  {
+    "question": "Why are diesel engines a significant source of particulate matter?",
+    "options": [
+      "They burn fuel at lower temperatures",
+      "They operate with excess oxygen, producing more soot",
+      "They use higher sulfur fuel exclusively",
+      "They lack any emission control systems"
+    ],
+    "correct": 1,
+    "points": 10,
+    "explanation": "Diesel engines run with excess air (lean mixture), which promotes incomplete combustion of fuel droplets, producing fine carbon particles (soot) that contribute to PM₂.₅ pollution."
+  },
+  {
+    "question": "Which mitigation strategy directly targets sulfur dioxide emissions from coal-fired power stations?",
+    "options": [
+      "Installing electrostatic precipitators",
+      "Using low-sulfur coal or flue gas desulfurisation",
+      "Adding catalytic converters to smokestacks",
+      "Increasing combustion temperature"
+    ],
+    "correct": 1,
+    "points": 10,
+    "explanation": "Using low-sulfur coal reduces SO₂ at source. Flue gas desulfurisation removes SO₂ after combustion by reacting it with calcium compounds. Both directly target SO₂ emissions."
+  },
+  {
+    "question": "What is the main advantage of using hydrogen as a vehicle fuel over petrol?",
+    "options": [
+      "Hydrogen is cheaper to produce",
+      "Hydrogen combustion produces only water vapour",
+      "Hydrogen engines are more powerful",
+      "Hydrogen is easier to store and transport"
+    ],
+    "correct": 1,
+    "points": 10,
+    "explanation": "When hydrogen burns: 2H₂ + O₂ → 2H₂O. The only product is water vapour, eliminating CO, CO₂, NOₓ and particulate emissions from the exhaust (though NOₓ may still form at high temperatures)."
+  },
+  {
+    "question": "Which statement about carbon monoxide is correct?",
+    "options": [
+      "It is a greenish gas with a pungent smell",
+      "It binds to haemoglobin more strongly than oxygen, reducing oxygen transport",
+      "It is easily detected by smell at low concentrations",
+      "It is removed by catalytic converters through oxidation to methane"
+    ],
+    "correct": 1,
+    "points": 10,
+    "explanation": "CO binds to haemoglobin ~200× more strongly than O₂, forming carboxyhaemoglobin and reducing blood's oxygen-carrying capacity, causing headaches, dizziness or death at high levels."
+  },
+  {
+    "question": "Which of the following is a renewable energy source that can help reduce air pollution?",
+    "options": [
+      "Natural gas",
+      "Coal with carbon capture",
+      "Solar power",
+      "Nuclear fission"
+    ],
+    "correct": 2,
+    "points": 10,
+    "explanation": "Solar power generates electricity without burning fossil fuels, producing no air pollutants or greenhouse gases during operation. It is renewable and helps reduce reliance on polluting energy sources."
+  }
+]
+}
