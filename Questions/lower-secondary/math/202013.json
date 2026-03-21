@@ -4,77 +4,127 @@
   "subject": "Mathematics",
   "grade": "Sec 2",
   "chapter": 1,
-  "worksheet": 2,
+  "worksheet": 3,
   "questions": [
     {
+      "id": 1,
       "question": "The sum of two numbers is 34. If the larger number is divided by the smaller, the quotient is 2 with a remainder of 1. What are the numbers?",
-      "options": ["23 and 11", "22 and 12", "25 and 9", "20 and 14"],
-      "correct": 0,
+      "options": ["22 and 12", "23 and 11", "20 and 14", "25 and 9"],
+      "correct": 1,
       "points": 20,
       "explanation": "Let larger = x, smaller = y. Then: x + y = 34 and x = 2y + 1. Substitute: 2y + 1 + y = 34 → 3y = 33 → y = 11, x = 23."
     },
     {
+      "id": 2,
       "question": "A coffee costs $0.80 more than a muffin. Three coffees and two muffins cost $10.40. What is the price of one coffee?",
-      "options": ["$2.40", "$1.60", "$2.00", "$2.80"],
+      "options": ["$2.40", "$1.60", "$2.80", "$2.00"],
       "correct": 0,
       "points": 20,
       "explanation": "Let muffin = m, coffee = m + 0.80. Then: 3(m + 0.80) + 2m = 10.40 → 3m + 2.40 + 2m = 10.40 → 5m = 8.00 → m = 1.60, so coffee = $2.40."
     },
     {
+      "id": 3,
       "question": "Four years ago, Maya was three times as old as Leo. The sum of their current ages is 32. How old is Maya now?",
-      "options": ["22", "18", "20", "24"],
-      "correct": 0,
+      "options": ["20", "22", "24", "18"],
+      "correct": 1,
       "points": 25,
       "explanation": "Let M = Maya's age, L = Leo's. M + L = 32. Four years ago: M − 4 = 3(L − 4). Substitute M = 32 − L: 32 − L − 4 = 3L − 12 → 28 − L = 3L − 12 → 40 = 4L → L = 10, so M = 22."
     },
     {
+      "id": 4,
       "question": "A rectangle's length is 2.5 cm more than its width. The perimeter is 37 cm. Find the area of the rectangle.",
-      "options": ["84 cm²", "78 cm²", "90 cm²", "72 cm²"],
-      "correct": 0,
+      "options": ["78 cm^2", "84 cm^2", "72 cm^2", "90 cm^2"],
+      "correct": 1,
       "points": 25,
-      "explanation": "Let width = w, length = w + 2.5. Perimeter = 2(w + w + 2.5) = 37 → 4w + 5 = 37 → 4w = 32 → w = 8, length = 10.5. Area = 8 × 10.5 = 84 cm²."
+      "explanation": "Let width = w, length = w + 2.5. Perimeter = 2(w + w + 2.5) = 37 → 4w + 5 = 37 → 4w = 32 → w = 8, length = 10.5. Area = 8 × 10.5 = 84 cm^2."
     },
     {
+      "id": 5,
       "question": "Five burgers and four drinks cost $28.50. Three burgers and five drinks cost $23.60. What is the cost of one drink?",
-      "options": ["$2.50", "$3.00", "$2.20", "$2.75"],
-      "correct": 0,
+      "options": ["$2.20", "$2.50", "$3.00", "$2.75"],
+      "correct": 1,
       "points": 25,
       "explanation": "Let b = burger, d = drink. 5b + 4d = 28.50; 3b + 5d = 23.60. Multiply first by 3: 15b + 12d = 85.50. Second by 5: 15b + 25d = 118.00. Subtract: 13d = 32.50 → d = 2.50."
     },
     {
+      "id": 6,
       "question": "The tens digit of a two-digit number is 3 more than the units digit. The sum of the number and the number formed by reversing its digits is 121. What is the original number?",
-      "options": ["74", "63", "85", "96"],
-      "correct": 0,
+      "options": ["85", "74", "96", "63"],
+      "correct": 1,
       "points": 25,
       "explanation": "Let units = u, tens = t = u + 3. Original = 10t + u, reversed = 10u + t. Sum = 11t + 11u = 11(t + u) = 121 → t + u = 11. Since t = u + 3, then u + 3 + u = 11 → 2u = 8 → u = 4, t = 7 → number = 74."
     },
     {
+      "id": 7,
       "question": "A boat travels 30 km downstream in 2 hours and 18 km upstream in 2 hours. Find the speed of the boat in still water.",
-      "options": ["12 km/h", "11 km/h", "13 km/h", "10 km/h"],
-      "correct": 0,
+      "options": ["13 km/h", "12 km/h", "10 km/h", "11 km/h"],
+      "correct": 1,
       "points": 30,
       "explanation": "Downstream speed = 30/2 = 15 km/h. Upstream speed = 18/2 = 9 km/h. Let b = boat speed, c = current. Then: b + c = 15, b − c = 9. Add: 2b = 24 → b = 12 km/h."
     },
     {
+      "id": 8,
       "question": "The length of a rectangle is 3x cm and its width is (x + 4) cm. If the perimeter is 32 cm, find the value of x.",
-      "options": ["3", "4", "5", "2"],
-      "correct": 0,
+      "options": ["5", "3", "2", "4"],
+      "correct": 1,
       "points": 20,
       "explanation": "Perimeter = 2[length + width] = 2[3x + (x + 4)] = 2(4x + 4) = 8x + 8. Set equal to 32: 8x + 8 = 32 → 8x = 24 → x = 3."
     },
     {
+      "id": 9,
       "question": "A shop sells small and large candles. Three small and two large cost $19. Two small and three large cost $21. How much more does a large candle cost than a small one?",
-      "options": ["$2", "$1.50", "$2.50", "$3"],
-      "correct": 0,
+      "options": ["$2.50", "$2", "$3", "$1.50"],
+      "correct": 1,
       "points": 25,
       "explanation": "Let s = small, l = large. 3s + 2l = 19; 2s + 3l = 21. Subtract: (3s + 2l) − (2s + 3l) = 19 − 21 → s − l = −2 → l − s = 2. So a large candle costs $2 more."
     },
     {
+      "id": 10,
       "question": "The sum of the digits of a two-digit number is 11. If 45 is added to the number, the digits are reversed. What is the number?",
-      "options": ["38", "47", "56", "29"],
-      "correct": 0,
+      "options": ["56", "38", "29", "47"],
+      "correct": 1,
       "points": 25,
       "explanation": "Let number = 10t + u. Given: t + u = 11, and 10t + u + 45 = 10u + t. Simplify: 9t − 9u = −45 → t − u = −5. Solve: t + u = 11 and t − u = −5 → 2t = 6 → t = 3, u = 8. Number = 38. Check: 38 + 45 = 83 (reversed)."
+    },
+    {
+      "id": 11,
+      "question": "John has 20 coins consisting of 20-cent and 50-cent coins. The total value is $7.60. How many 50-cent coins does he have?",
+      "options": ["15", "8", "12", "10"],
+      "correct": 2,
+      "points": 25,
+      "explanation": "Let x = 20-cent, y = 50-cent. x + y = 20, 0.2x + 0.5y = 7.6. Solve: y = 12."
+    },
+    {
+      "id": 12,
+      "question": "The difference between two numbers is 5. Twice the larger plus the smaller is 25. Find the larger number.",
+      "options": ["15", "8", "10", "12"],
+      "correct": 2,
+      "points": 25,
+      "explanation": "x - y = 5, 2x + y = 25. Add: 3x = 30 → x = 10."
+    },
+    {
+      "id": 13,
+      "question": "A concert sold 100 tickets. Adult tickets cost $15 and child tickets cost $10. Total revenue was $1300. How many adult tickets were sold?",
+      "options": ["70", "40", "60", "50"],
+      "correct": 2,
+      "points": 25,
+      "explanation": "a + c = 100, 15a + 10c = 1300. Solve: a = 60."
+    },
+    {
+      "id": 14,
+      "question": "The sum of two numbers is 50. One number is 4 times the other. Find the larger number.",
+      "options": ["30", "10", "40", "20"],
+      "correct": 2,
+      "points": 20,
+      "explanation": "x + y = 50, x = 4y. 5y = 50 → y = 10, x = 40."
+    },
+    {
+      "id": 15,
+      "question": "A farm has chickens and cows. There are 30 heads and 100 legs. How many cows are there?",
+      "options": ["25", "10", "20", "15"],
+      "correct": 2,
+      "points": 25,
+      "explanation": "c + w = 30, 2c + 4w = 100. Solve: w = 20."
     }
   ]
 }
