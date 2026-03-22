@@ -1,0 +1,251 @@
+{
+  "title": "Chemical Changes: Definitions of Reaction Types",
+  "topic": "Chemical Changes",
+  "subject": "Science",
+  "level": "Secondary",
+  "grade": "Sec 2",
+  "chapter": 3,
+  "worksheet": 2,
+  "questions": [
+    {
+      "question": "Which statement best defines a combustion reaction?",
+      "options": [
+        "A reaction where a substance breaks down into simpler substances when heated",
+        "A reaction where a substance reacts with oxygen and releases thermal energy and light",
+        "A reaction where an acid reacts with an alkali to form a salt and water",
+        "A reaction where a metal reacts with water to produce hydrogen gas"
+      ],
+      "correct": 1,
+      "points": 15,
+      "explanation": "Combustion is a reaction with oxygen that releases thermal energy. Examples include burning fuels, magnesium ribbon in air, or cellular respiration."
+    },
+    {
+      "question": "Which statement best defines thermal decomposition?",
+      "options": [
+        "A reaction where two substances combine to form one product",
+        "A reaction where a single substance breaks down into simpler substances when heated",
+        "A reaction where a metal reacts with oxygen to form an oxide",
+        "A reaction where an acid neutralises an alkali"
+      ],
+      "correct": 1,
+      "points": 15,
+      "explanation": "Thermal decomposition means 'breaking down by heat'. One reactant breaks into two or more products when thermal energy is supplied."
+    },
+    {
+      "question": "Which statement best defines an oxidation reaction?",
+      "options": [
+        "A reaction where a substance gains oxygen",
+        "A reaction where a substance loses oxygen",
+        "A reaction that only occurs at high temperatures",
+        "A reaction that produces a salt and water"
+      ],
+      "correct": 0,
+      "points": 15,
+      "explanation": "Oxidation involves gaining oxygen. At Sec 2 level, students learn oxidation as 'reaction with oxygen'."
+    },
+    {
+      "question": "Which statement best defines a neutralisation reaction?",
+      "options": [
+        "A reaction where a metal reacts with an acid to produce hydrogen gas",
+        "A reaction where an acid reacts with an alkali to produce a salt and water",
+        "A reaction where a carbonate reacts with an acid to produce carbon dioxide",
+        "A reaction where two metals combine to form an alloy"
+      ],
+      "correct": 1,
+      "points": 15,
+      "explanation": "Neutralisation is when an acid reacts with an alkali to form a salt and water."
+    },
+    {
+      "question": "Which reaction type always requires oxygen as a reactant?",
+      "options": [
+        "Thermal decomposition",
+        "Neutralisation",
+        "Combustion",
+        "All of the above"
+      ],
+      "correct": 2,
+      "points": 15,
+      "explanation": "Combustion always involves a substance reacting with oxygen."
+    },
+    {
+      "question": "Which reaction type has only one reactant?",
+      "options": [
+        "Combustion",
+        "Thermal decomposition",
+        "Oxidation",
+        "Neutralisation"
+      ],
+      "correct": 1,
+      "points": 15,
+      "explanation": "Thermal decomposition has a single reactant that breaks down into two or more products when heated."
+    },
+    {
+      "question": "Rusting of iron is an example of which type of chemical reaction?",
+      "options": [
+        "Combustion",
+        "Thermal decomposition",
+        "Oxidation",
+        "Neutralisation"
+      ],
+      "correct": 2,
+      "points": 15,
+      "explanation": "Rusting is oxidation: iron reacts with oxygen and water to form rust."
+    },
+    {
+      "question": "Which reaction type produces a salt and water as products?",
+      "options": [
+        "Combustion",
+        "Thermal decomposition",
+        "Oxidation",
+        "Neutralisation"
+      ],
+      "correct": 3,
+      "points": 15,
+      "explanation": "Neutralisation always produces a salt and water."
+    },
+    {
+      "question": "Heating calcium carbonate to produce calcium oxide and carbon dioxide is an example of:",
+      "options": [
+        "Combustion",
+        "Thermal decomposition",
+        "Oxidation",
+        "Neutralisation"
+      ],
+      "correct": 1,
+      "points": 15,
+      "explanation": "This is thermal decomposition: one reactant breaks down into two products when heated."
+    },
+    {
+      "question": "Which statement is true about all four reaction types?",
+      "options": [
+        "They all require heat to start",
+        "They all produce thermal energy",
+        "They all involve the formation of new substances",
+        "They all involve oxygen as a reactant"
+      ],
+      "correct": 2,
+      "points": 20,
+      "explanation": "All chemical reactions involve the formation of new substances with different properties from the reactants."
+    },
+    {
+      "question": "Which of the following is an example of combustion?",
+      "options": [
+        "Calcium carbonate → calcium oxide + carbon dioxide",
+        "Magnesium + oxygen → magnesium oxide",
+        "Hydrochloric acid + sodium hydroxide → sodium chloride + water",
+        "Iron + oxygen + water → rust"
+      ],
+      "correct": 1,
+      "points": 15,
+      "explanation": "Combustion is a reaction with oxygen that releases thermal energy and often light. Magnesium burning in air to form magnesium oxide is a combustion reaction."
+    },
+    {
+      "question": "Which of the following is an example of thermal decomposition?",
+      "options": [
+        "Magnesium + oxygen → magnesium oxide",
+        "Hydrochloric acid + sodium hydroxide → sodium chloride + water",
+        "Calcium carbonate → calcium oxide + carbon dioxide",
+        "Iron + oxygen + water → rust"
+      ],
+      "correct": 2,
+      "points": 15,
+      "explanation": "Thermal decomposition is when a single substance breaks down into simpler substances when heated."
+    },
+    {
+      "question": "Which of the following is an example of neutralisation?",
+      "options": [
+        "Magnesium + oxygen → magnesium oxide",
+        "Calcium carbonate → calcium oxide + carbon dioxide",
+        "Hydrochloric acid + sodium hydroxide → sodium chloride + water",
+        "Iron + oxygen + water → rust"
+      ],
+      "correct": 2,
+      "points": 15,
+      "explanation": "Neutralisation is when an acid reacts with an alkali to produce a salt and water."
+    },
+    {
+      "question": "Which of the following is an example of oxidation?",
+      "options": [
+        "Magnesium + oxygen → magnesium oxide",
+        "Calcium carbonate → calcium oxide + carbon dioxide",
+        "Hydrochloric acid + sodium hydroxide → sodium chloride + water",
+        "Water → steam"
+      ],
+      "correct": 0,
+      "points": 15,
+      "explanation": "Oxidation is a reaction with oxygen. Magnesium reacting with oxygen to form magnesium oxide is an oxidation reaction."
+    },
+    {
+      "question": "Cellular respiration is an example of which reaction type?",
+      "options": [
+        "Combustion",
+        "Thermal decomposition",
+        "Oxidation",
+        "Neutralisation"
+      ],
+      "correct": 2,
+      "points": 15,
+      "explanation": "Cellular respiration is an oxidation reaction where glucose reacts with oxygen to release thermal energy."
+    },
+    {
+      "question": "Photosynthesis is the opposite of which reaction type?",
+      "options": [
+        "Combustion",
+        "Thermal decomposition",
+        "Oxidation (cellular respiration)",
+        "Neutralisation"
+      ],
+      "correct": 2,
+      "points": 15,
+      "explanation": "Photosynthesis uses carbon dioxide and produces oxygen. Cellular respiration (an oxidation reaction) uses oxygen and produces carbon dioxide. They are essentially opposite processes."
+    },
+    {
+      "question": "Which reaction type involves breaking down a compound using heat?",
+      "options": [
+        "Combustion",
+        "Thermal decomposition",
+        "Oxidation",
+        "Neutralisation"
+      ],
+      "correct": 1,
+      "points": 15,
+      "explanation": "Thermal decomposition means 'breaking down by heat'. One reactant breaks into two or more products when thermal energy is supplied."
+    },
+    {
+      "question": "Which reaction type releases thermal energy and often produces light?",
+      "options": [
+        "Combustion",
+        "Thermal decomposition",
+        "Oxidation",
+        "Neutralisation"
+      ],
+      "correct": 0,
+      "points": 15,
+      "explanation": "Combustion is a reaction with oxygen that releases thermal energy and often produces light (flame)."
+    },
+    {
+      "question": "Which reaction type involves an acid and an alkali?",
+      "options": [
+        "Combustion",
+        "Thermal decomposition",
+        "Oxidation",
+        "Neutralisation"
+      ],
+      "correct": 3,
+      "points": 15,
+      "explanation": "Neutralisation is when an acid reacts with an alkali to produce a salt and water."
+    },
+    {
+      "question": "Which statement correctly compares combustion and oxidation?",
+      "options": [
+        "Combustion is rapid oxidation with a flame; oxidation can be rapid or slow",
+        "Oxidation always produces a flame; combustion does not",
+        "Combustion and oxidation are completely different reaction types",
+        "Oxidation only occurs in living things; combustion only occurs in engines"
+      ],
+      "correct": 0,
+      "points": 20,
+      "explanation": "Combustion is a type of oxidation that is rapid and produces a flame. Oxidation is the broader category: it can be rapid (burning) or slow (rusting, respiration). Both involve reaction with oxygen."
+    }
+  ]
+}

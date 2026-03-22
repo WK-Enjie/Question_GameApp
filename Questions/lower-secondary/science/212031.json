@@ -1,0 +1,251 @@
+{
+  "title": "Chemical Changes: Physical vs Chemical Changes and Word Equations Basics",
+  "topic": "Chemical Changes",
+  "subject": "Science",
+  "level": "Secondary",
+  "grade": "Sec 2",
+  "chapter": 3,
+  "worksheet": 1,
+  "questions": [
+    {
+      "question": "Which of the following is a physical change?",
+      "options": [
+        "Ice melting to form water",
+        "Iron rusting",
+        "Wood burning",
+        "Milk turning sour"
+      ],
+      "correct": 0,
+      "points": 10,
+      "explanation": "Melting ice is a physical change because water changes from solid to liquid state, but it is still water. No new substance is formed."
+    },
+    {
+      "question": "Which observation is the BEST evidence that a chemical change has occurred?",
+      "options": [
+        "The substance changes from solid to liquid",
+        "A new gas is produced that was not present before",
+        "The substance becomes smaller in size",
+        "The substance changes shape"
+      ],
+      "correct": 1,
+      "points": 15,
+      "explanation": "The production of a new gas indicates that new substances have been formed, which is definitive evidence of a chemical change."
+    },
+    {
+      "question": "Which of the following is a chemical change?",
+      "options": [
+        "Water boiling to form steam",
+        "Sugar dissolving in water",
+        "Paper burning to form ash",
+        "Glass breaking into pieces"
+      ],
+      "correct": 2,
+      "points": 10,
+      "explanation": "Burning paper produces ash and smoke, which are new substances with different properties from the original paper."
+    },
+    {
+      "question": "In a word equation, where are the reactants written?",
+      "options": [
+        "On the right side of the arrow",
+        "On the left side of the arrow",
+        "Above the arrow",
+        "Below the arrow"
+      ],
+      "correct": 1,
+      "points": 10,
+      "explanation": "Reactants are the starting substances in a chemical reaction and are written on the left side of the arrow."
+    },
+    {
+      "question": "In a word equation, where are the products written?",
+      "options": [
+        "On the left side of the arrow",
+        "On the right side of the arrow",
+        "Above the arrow",
+        "Below the arrow"
+      ],
+      "correct": 1,
+      "points": 10,
+      "explanation": "Products are the new substances formed in a chemical reaction and are written on the right side of the arrow."
+    },
+    {
+      "question": "What does the arrow (→) in a word equation represent?",
+      "options": [
+        "The reactants are equal to the products",
+        "The reactants change to form the products",
+        "The reaction can proceed in both directions",
+        "The products are more important than the reactants"
+      ],
+      "correct": 1,
+      "points": 10,
+      "explanation": "The arrow in a word equation means 'reacts to form' or 'produces'. It shows the direction of the chemical change from reactants to products."
+    },
+    {
+      "question": "Magnesium burns in air to form magnesium oxide. Which substance is the reactant?",
+      "options": [
+        "Magnesium oxide",
+        "Magnesium",
+        "Oxygen only",
+        "Both magnesium and magnesium oxide"
+      ],
+      "correct": 1,
+      "points": 15,
+      "explanation": "Magnesium is a reactant (starting substance). Oxygen from air is also a reactant. Magnesium oxide is the product formed."
+    },
+    {
+      "question": "Magnesium burns in air to form magnesium oxide. Which substance is the product?",
+      "options": [
+        "Magnesium",
+        "Oxygen",
+        "Magnesium oxide",
+        "Air"
+      ],
+      "correct": 2,
+      "points": 15,
+      "explanation": "Magnesium oxide is the product (new substance formed). Magnesium and oxygen are the reactants."
+    },
+    {
+      "question": "Which statement correctly describes a physical change?",
+      "options": [
+        "New substances are formed with different properties",
+        "The substance changes form but no new substance is formed",
+        "The change cannot be reversed under any conditions",
+        "Thermal energy is always released"
+      ],
+      "correct": 1,
+      "points": 10,
+      "explanation": "A physical change involves a change in form, state, or appearance, but the substance itself remains the same. No new substances are formed."
+    },
+    {
+      "question": "Which statement correctly describes a chemical change?",
+      "options": [
+        "The substance changes state but remains the same substance",
+        "One or more new substances with different properties are formed",
+        "The change can always be easily reversed",
+        "Only the size of the substance changes"
+      ],
+      "correct": 1,
+      "points": 10,
+      "explanation": "A chemical change involves the formation of new substances with different properties from the original substances."
+    },
+    {
+      "question": "Water freezes to form ice. Is this a physical or chemical change?",
+      "options": [
+        "Physical change",
+        "Chemical change",
+        "Both physical and chemical change",
+        "Neither physical nor chemical change"
+      ],
+      "correct": 0,
+      "points": 10,
+      "explanation": "Freezing water is a physical change. Water changes from liquid to solid state, but it is still water. No new substance is formed."
+    },
+    {
+      "question": "Iron reacts with oxygen to form rust. Is this a physical or chemical change?",
+      "options": [
+        "Physical change",
+        "Chemical change",
+        "Both physical and chemical change",
+        "Neither physical nor chemical change"
+      ],
+      "correct": 1,
+      "points": 10,
+      "explanation": "Rusting is a chemical change. Iron reacts with oxygen to form rust, which is a new substance with different properties."
+    },
+    {
+      "question": "In the word equation: hydrogen + oxygen → water, which substances are the reactants?",
+      "options": [
+        "Water only",
+        "Hydrogen and oxygen",
+        "Hydrogen only",
+        "Oxygen only"
+      ],
+      "correct": 1,
+      "points": 15,
+      "explanation": "Reactants are written on the left side of the arrow. Hydrogen and oxygen are the starting substances that react to form water."
+    },
+    {
+      "question": "In the word equation: hydrogen + oxygen → water, which substance is the product?",
+      "options": [
+        "Hydrogen",
+        "Oxygen",
+        "Water",
+        "Both hydrogen and oxygen"
+      ],
+      "correct": 2,
+      "points": 15,
+      "explanation": "Products are written on the right side of the arrow. Water is the new substance formed from hydrogen and oxygen."
+    },
+    {
+      "question": "Which of the following is NOT evidence of a chemical change?",
+      "options": [
+        "A permanent colour change",
+        "A gas is produced",
+        "The substance melts",
+        "A precipitate (solid) forms when two solutions are mixed"
+      ],
+      "correct": 2,
+      "points": 15,
+      "explanation": "Melting is a physical change (change of state). The substance remains the same chemically. Colour change, gas production, and precipitate formation are evidence of chemical changes."
+    },
+    {
+      "question": "A student heats sugar in a test tube. The sugar melts, then turns brown and finally black, producing a smell. Which statement is correct?",
+      "options": [
+        "Only physical changes occurred because the sugar melted",
+        "Only chemical changes occurred because the colour changed",
+        "Both physical and chemical changes occurred",
+        "Neither physical nor chemical changes occurred"
+      ],
+      "correct": 2,
+      "points": 20,
+      "explanation": "Melting is a physical change (state change). The browning and blackening with a new smell indicate chemical changes where new substances are formed."
+    },
+    {
+      "question": "Which word equation correctly shows the reactants and products for burning magnesium?",
+      "options": [
+        "magnesium oxide → magnesium + oxygen",
+        "magnesium + oxygen → magnesium oxide",
+        "magnesium + oxide → magnesium oxygen",
+        "magnesium → magnesium oxide + oxygen"
+      ],
+      "correct": 1,
+      "points": 15,
+      "explanation": "Magnesium and oxygen are the reactants (left side). Magnesium oxide is the product (right side). The arrow shows the direction of the reaction."
+    },
+    {
+      "question": "Salt dissolves in water. Is this a physical or chemical change?",
+      "options": [
+        "Physical change",
+        "Chemical change",
+        "Both physical and chemical change",
+        "Neither physical nor chemical change"
+      ],
+      "correct": 0,
+      "points": 10,
+      "explanation": "Dissolving salt in water is a physical change. The salt can be recovered by evaporating the water. No new substance is formed."
+    },
+    {
+      "question": "Which of the following changes can be easily reversed?",
+      "options": [
+        "Burning wood",
+        "Rusting iron",
+        "Melting ice",
+        "Cooking an egg"
+      ],
+      "correct": 2,
+      "points": 10,
+      "explanation": "Melting ice can be easily reversed by freezing the water back to ice. Burning, rusting, and cooking are chemical changes that are difficult or impossible to reverse."
+    },
+    {
+      "question": "What is the main difference between reactants and products in a chemical reaction?",
+      "options": [
+        "Reactants are formed during the reaction; products are used up",
+        "Reactants are the starting substances; products are the new substances formed",
+        "Reactants and products are always the same substances",
+        "Products are always solids; reactants are always liquids or gases"
+      ],
+      "correct": 1,
+      "points": 15,
+      "explanation": "Reactants are the substances present before the reaction starts. Products are the new substances formed as a result of the chemical change. They have different properties from the reactants."
+    }
+  ]
+}

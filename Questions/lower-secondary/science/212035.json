@@ -1,0 +1,251 @@
+{
+  "title": "Chemical Changes: Application and Analysis",
+  "topic": "Chemical Changes - Application and Comparison",
+  "subject": "Science",
+  "level": "Secondary",
+  "grade": "Sec 2",
+  "chapter": 3,
+  "worksheet": 5,
+  "questions": [
+    {
+      "question": "A student heats copper(II) carbonate strongly. The green powder turns black and a gas is produced that turns limewater milky. What type of reaction is this?",
+      "options": [
+        "Combustion",
+        "Thermal decomposition",
+        "Neutralisation",
+        "Oxidation"
+      ],
+      "correct": 1,
+      "points": 15,
+      "explanation": "Thermal decomposition is when a single substance breaks down into simpler substances when heated. Copper(II) carbonate decomposes to copper(II) oxide (black) and carbon dioxide."
+    },
+    {
+      "question": "A student adds dilute hydrochloric acid to magnesium ribbon. Bubbles of gas are produced. Which test confirms the identity of the gas?",
+      "options": [
+        "Bubble through limewater",
+        "Insert a glowing splint",
+        "Insert a lit splint for a pop sound",
+        "Test with blue litmus paper"
+      ],
+      "correct": 2,
+      "points": 15,
+      "explanation": "When acid reacts with metal, hydrogen gas is produced. Hydrogen is confirmed by the pop test using a lit splint."
+    },
+    {
+      "question": "A student mixes hydrochloric acid with sodium hydroxide solution. The mixture becomes warm. What type of reaction is this?",
+      "options": [
+        "Combustion",
+        "Thermal decomposition",
+        "Neutralisation",
+        "Oxidation"
+      ],
+      "correct": 2,
+      "points": 15,
+      "explanation": "Neutralisation is when an acid reacts with an alkali to produce a salt and water. The reaction releases thermal energy, causing the mixture to warm up."
+    },
+    {
+      "question": "Iron nails are placed in three test tubes: Tube A (dry air), Tube B (boiled water with oil layer), Tube C (air and water). In which tube will rusting occur?",
+      "options": [
+        "Tube A only",
+        "Tube B only",
+        "Tube C only",
+        "Tube A and C"
+      ],
+      "correct": 2,
+      "points": 15,
+      "explanation": "Rusting requires both oxygen and water. Tube C has both. Tube A has no water. Tube B has no oxygen (boiling removes dissolved oxygen, oil prevents air from entering)."
+    },
+    {
+      "question": "A student adds dilute hydrochloric acid to calcium carbonate. Bubbles of gas are produced. Which word equation represents this reaction?",
+      "options": [
+        "hydrochloric acid + calcium carbonate → calcium chloride + hydrogen",
+        "hydrochloric acid + calcium carbonate → calcium chloride + water + carbon dioxide",
+        "hydrochloric acid + calcium → calcium chloride + carbon dioxide",
+        "calcium carbonate → calcium oxide + carbon dioxide"
+      ],
+      "correct": 1,
+      "points": 15,
+      "explanation": "When acid reacts with carbonate, the products are salt, water, and carbon dioxide. The carbon dioxide causes the bubbling observed."
+    },
+    {
+      "question": "Which statement correctly compares combustion and cellular respiration?",
+      "options": [
+        "Both require oxygen and release thermal energy",
+        "Combustion requires oxygen but respiration does not",
+        "Respiration releases thermal energy but combustion does not",
+        "Both produce oxygen as a product"
+      ],
+      "correct": 0,
+      "points": 15,
+      "explanation": "Both combustion and cellular respiration are oxidation reactions that require oxygen and release thermal energy. Respiration occurs in living cells, combustion is rapid burning."
+    },
+    {
+      "question": "A student wants to identify an unknown white powder. Tests show: dissolves in water, solution conducts electricity, reacts with acid to produce gas. The powder is MOST likely a __________.",
+      "options": [
+        "metal",
+        "non-metal",
+        "carbonate compound",
+        "mixture"
+      ],
+      "correct": 2,
+      "points": 15,
+      "explanation": "Carbonate compounds dissolve in water to form conducting solutions and react with acids to produce carbon dioxide gas. This matches all the test observations."
+    },
+    {
+      "question": "Which word equation correctly represents photosynthesis?",
+      "options": [
+        "glucose + oxygen → carbon dioxide + water + thermal energy",
+        "carbon dioxide + water → glucose + oxygen",
+        "carbon dioxide + oxygen → glucose + water",
+        "glucose → carbon dioxide + water"
+      ],
+      "correct": 1,
+      "points": 15,
+      "explanation": "Photosynthesis uses carbon dioxide and water, with light energy, to produce glucose and oxygen. Light is a condition, not a reactant."
+    },
+    {
+      "question": "A student observes that a candle burns with a yellow flame and produces water vapour and a gas that turns limewater milky. What type of reaction is occurring?",
+      "options": [
+        "Thermal decomposition",
+        "Neutralisation",
+        "Combustion",
+        "Oxidation only"
+      ],
+      "correct": 2,
+      "points": 15,
+      "explanation": "Combustion is a reaction with oxygen that releases thermal energy and light (flame). The products carbon dioxide (turns limewater milky) and water indicate complete combustion of wax."
+    },
+    {
+      "question": "Which condition is required for photosynthesis but NOT for cellular respiration?",
+      "options": [
+        "Oxygen",
+        "Glucose",
+        "Light",
+        "Water"
+      ],
+      "correct": 2,
+      "points": 15,
+      "explanation": "Photosynthesis requires light energy as a condition. Cellular respiration occurs in living cells continuously and does not require light."
+    },
+    {
+      "question": "A student heats potassium chlorate strongly. Oxygen gas is produced. What type of reaction is this?",
+      "options": [
+        "Combustion",
+        "Thermal decomposition",
+        "Neutralisation",
+        "Oxidation"
+      ],
+      "correct": 1,
+      "points": 15,
+      "explanation": "Thermal decomposition is when a single substance breaks down into simpler substances when heated. Potassium chlorate decomposes to potassium chloride and oxygen."
+    },
+    {
+      "question": "Which statement about chemical reactions is ALWAYS true?",
+      "options": [
+        "Thermal energy is always released",
+        "New substances are always formed",
+        "Oxygen is always required",
+        "The reaction can always be reversed"
+      ],
+      "correct": 1,
+      "points": 15,
+      "explanation": "All chemical reactions involve the formation of new substances with different properties from the reactants. Not all release thermal energy, require oxygen, or are reversible."
+    },
+    {
+      "question": "A student adds zinc to dilute sulfuric acid. Which gas is produced?",
+      "options": [
+        "Oxygen",
+        "Carbon dioxide",
+        "Hydrogen",
+        "Nitrogen"
+      ],
+      "correct": 2,
+      "points": 15,
+      "explanation": "When a reactive metal reacts with an acid, hydrogen gas is produced. This is a characteristic reaction of acids with metals."
+    },
+    {
+      "question": "Which word equation correctly represents the reaction between nitric acid and potassium hydroxide?",
+      "options": [
+        "nitric acid + potassium hydroxide → potassium nitrate + water",
+        "nitric acid + potassium → potassium nitrate + hydrogen",
+        "potassium hydroxide → potassium oxide + water",
+        "nitric acid → nitrogen + oxygen + water"
+      ],
+      "correct": 0,
+      "points": 15,
+      "explanation": "Neutralisation is when an acid reacts with an alkali to produce a salt and water. Nitric acid + potassium hydroxide produces potassium nitrate (salt) and water."
+    },
+    {
+      "question": "A student observes rust forming on an iron gate near the sea. Why does rusting occur faster near the sea?",
+      "options": [
+        "Sea air contains more oxygen",
+        "Sea water contains salt which speeds up rusting",
+        "Sea air is warmer",
+        "Sea water contains more iron"
+      ],
+      "correct": 1,
+      "points": 15,
+      "explanation": "Salt (sodium chloride) in sea water and sea air acts as a catalyst that speeds up the rusting process. This is why iron rusts faster in coastal areas."
+    },
+    {
+      "question": "Which statement correctly describes what happens to atoms during a chemical reaction?",
+      "options": [
+        "Atoms are created during the reaction",
+        "Atoms are destroyed during the reaction",
+        "Atoms are rearranged but not created or destroyed",
+        "Atoms change into different types of atoms"
+      ],
+      "correct": 2,
+      "points": 15,
+      "explanation": "Chemical reactions involve the rearrangement of atoms. Atoms are not created or destroyed during a chemical reaction, which is why mass is conserved."
+    },
+    {
+      "question": "A student burns magnesium ribbon in air. The white powder formed has different properties from magnesium. What does this indicate?",
+      "options": [
+        "A physical change has occurred",
+        "A chemical change has occurred",
+        "No change has occurred",
+        "The magnesium has melted"
+      ],
+      "correct": 1,
+      "points": 15,
+      "explanation": "When new substances with different properties are formed, a chemical change has occurred. Magnesium oxide has different properties from magnesium metal."
+    },
+    {
+      "question": "Which gas is produced when an acid reacts with a carbonate?",
+      "options": [
+        "Hydrogen",
+        "Oxygen",
+        "Carbon dioxide",
+        "Nitrogen"
+      ],
+      "correct": 2,
+      "points": 15,
+      "explanation": "When an acid reacts with a carbonate, carbon dioxide gas is produced. This is confirmed by bubbling the gas through limewater which turns milky."
+    },
+    {
+      "question": "A student wants to prevent rusting on a bicycle chain. Which method would be MOST effective?",
+      "options": [
+        "Paint the chain",
+        "Apply oil or grease to the chain",
+        "Keep the bicycle indoors",
+        "Wash the chain with water daily"
+      ],
+      "correct": 1,
+      "points": 15,
+      "explanation": "Applying oil or grease prevents both oxygen and water from reaching the iron surface. This is effective for moving parts like chains where paint would wear off."
+    },
+    {
+      "question": "Which word equation correctly represents cellular respiration?",
+      "options": [
+        "carbon dioxide + water → glucose + oxygen",
+        "glucose + oxygen → carbon dioxide + water + thermal energy",
+        "glucose → carbon dioxide + oxygen",
+        "oxygen + water → glucose + carbon dioxide"
+      ],
+      "correct": 1,
+      "points": 15,
+      "explanation": "Cellular respiration is an oxidation reaction where glucose reacts with oxygen to release thermal energy and produce carbon dioxide and water."
+    }
+  ]
+}
