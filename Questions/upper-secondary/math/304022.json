@@ -1,206 +1,171 @@
 {
-  "title": "Probability Word Problems - Basic to Intermediate",
-  "topic": "Probability",
+  "title": "Secondary 4 Mathematics - Chapter 2",
+  "topic": "Probability - Real-World Applications",
   "subject": "Mathematics",
   "level": "Upper Secondary",
   "grade": "Sec 4",
   "chapter": 2,
-  "worksheet": 2,
+  "worksheet": 3,
   "questions": [
     {
-      "question": "A box contains red, blue, and green marbles. The probability of drawing a red marble is 1/3 and the probability of drawing a blue marble is 1/4. If there are 24 marbles in total, how many green marbles are there?",
-      "options": [
-        "10",
-        "6",
-        "8",
-        "12"
-      ],
-      "correct": 0,
-      "points": 12,
-      "time": 60,
-      "explanation": "P(green) = 1 - 1/3 - 1/4 = 5/12. Number of green marbles = 5/12 × 24 = 10."
-    },
-    {
-      "question": "In a class, the probability that a randomly chosen student plays football is 0.6 and the probability they play basketball is 0.5. If 10% play both sports, what is the probability a student plays at least one sport?",
-      "options": [
-        "0.30",
-        "1.00",
-        "0.60",
-        "1.10"
-      ],
-      "correct": 1,
-      "points": 12,
-      "time": 60,
-      "explanation": "P(at least one) = P(football) + P(basketball) - P(both) = 0.6 + 0.5 - 0.1 = 1.0."
-    },
-    {
-      "question": "A bag contains x red balls and 8 blue balls. Two balls are drawn with replacement. The probability that both are red is 1/9. Find x.",
-      "options": [
-        "2",
-        "5",
-        "4",
-        "3"
-      ],
-      "correct": 2,
-      "points": 15,
-      "time": 90,
-      "explanation": "With replacement: (x/(x+8))² = 1/9 → x/(x+8) = 1/3 → 3x = x+8 → x = 4."
-    },
-    {
-      "question": "A spinner has sections labelled A, B, C. P(A) = 2P(B) and P(C) = 3P(B). If the spinner is spun 120 times, how many times would you expect it to land on B?",
-      "options": [
-        "30",
-        "60",
-        "20",
-        "40"
-      ],
-      "correct": 2,
-      "points": 12,
-      "time": 60,
-      "explanation": "Let P(B) = p. Then p + 2p + 3p = 1 → p = 1/6. Expected frequency = 1/6 × 120 = 20."
-    },
-    {
-      "question": "A fair die is rolled twice. Given that the sum of the two rolls is 8, what is the probability that the first roll was a 3?",
-      "options": [
-        "1/5",
-        "1/6",
-        "1/4",
-        "1/3"
-      ],
+      "id": 1,
+      "question": "A bag contains 8 red marbles and 12 blue marbles. Two marbles are drawn one after another with replacement. What is the probability both are red?",
+      "options": ["4/25", "2/5", "8/25", "16/100"],
       "correct": 0,
       "points": 15,
-      "time": 90,
-      "explanation": "Pairs summing to 8: (2,6), (3,5), (4,4), (5,3), (6,2) (5 outcomes). Given sum = 8, probability first roll is 3 is 1/5."
+      "explanation": "P(red) = 8/20 = 2/5. With replacement, multiply: 2/5 × 2/5 = 4/25."
     },
     {
-      "question": "In a group of students, 40% study Chemistry, 35% study Physics, and 15% study both. If a student is chosen at random, what is the probability they study neither subject?",
-      "options": [
-        "0.30",
-        "0.40",
-        "0.20",
-        "0.60"
-      ],
-      "correct": 1,
-      "points": 12,
-      "time": 60,
-      "explanation": "P(at least one) = 0.40 + 0.35 - 0.15 = 0.60. P(neither) = 1 - 0.60 = 0.40."
+      "id": 2,
+      "question": "In a school, 60% of students play football and 50% play basketball. If 30% play both sports, what percentage play at least one sport?",
+      "options": ["70%", "110%", "80%", "40%"],
+      "correct": 2,
+      "points": 15,
+      "explanation": "P(at least one) = 60% + 50% - 30% = 80%."
     },
     {
-      "question": "A bag contains 5 red and n blue marbles. Two marbles are drawn with replacement. The probability of getting one red and one blue (in any order) is 40/81. Find n.",
-      "options": [
-        "3",
-        "6",
-        "5",
-        "4"
-      ],
-      "correct": 3,
+      "id": 3,
+      "question": "A spinner has 5 equal sections numbered 1 to 5. It is spun twice. What is the probability of getting a 3 on the first spin and an odd number on the second?",
+      "options": ["1/5", "2/5", "3/25", "1/25"],
+      "correct": 2,
+      "points": 15,
+      "explanation": "P(3) = 1/5. Odd numbers: 1, 3, 5 so P(odd) = 3/5. Multiply: 1/5 × 3/5 = 3/25."
+    },
+    {
+      "id": 4,
+      "question": "A box contains 10 light bulbs, 3 of which are defective. Two bulbs are chosen without replacement. What is the probability both are defective?",
+      "options": ["1/10", "9/100", "1/15", "3/10"],
+      "correct": 2,
       "points": 18,
-      "time": 120,
-      "explanation": "2 × 5/(5+n) × n/(5+n) = 40/81. Solve: 10n/(5+n)² = 40/81 → n = 4."
+      "explanation": "P(first defective) = 3/10. P(second defective) = 2/9. Multiply: 3/10 × 2/9 = 6/90 = 1/15."
     },
     {
-      "question": "The probability that a machine produces a defective item is p. In a batch of 200 items, the expected number of defectives is 12. Find p.",
-      "options": [
-        "0.06",
-        "0.03",
-        "0.12",
-        "0.24"
-      ],
+      "id": 5,
+      "question": "At a food stall, the probability that a customer orders chicken rice is 0.4 and the probability they order noodles is 0.35. If a customer cannot order both, what is the probability they order either chicken rice or noodles?",
+      "options": ["0.75", "0.65", "0.14", "0.05"],
       "correct": 0,
-      "points": 10,
-      "time": 60,
-      "explanation": "Expected frequency = np. 200p = 12 → p = 0.06."
-    },
-    {
-      "question": "A card is drawn from a standard deck. If it is known that the card is a face card (Jack, Queen, King), what is the probability it is a Heart?",
-      "options": [
-        "1/13",
-        "3/13",
-        "1/4",
-        "1/3"
-      ],
-      "correct": 2,
       "points": 12,
-      "time": 60,
-      "explanation": "There are 12 face cards total. 3 are Hearts. P(Heart | face) = 3/12 = 1/4."
+      "explanation": "Since they cannot order both, add the probabilities: 0.4 + 0.35 = 0.75."
     },
     {
-      "question": "Two events X and Y are independent. P(X) = 2/5 and P(X ∩ Y) = 1/5. Find P(Y).",
-      "options": [
-        "2/5",
-        "1/2",
-        "3/5",
-        "4/5"
-      ],
+      "id": 6,
+      "question": "A coin is tossed 4 times. What is the probability of getting all Heads?",
+      "options": ["1/8", "1/16", "1/4", "1/2"],
       "correct": 1,
       "points": 12,
-      "time": 60,
-      "explanation": "Independence: P(X ∩ Y) = P(X) × P(Y). 1/5 = 2/5 × P(Y) → P(Y) = 1/2."
+      "explanation": "Each toss has P(H) = 1/2. Multiply for 4 tosses: 1/2 × 1/2 × 1/2 × 1/2 = 1/16."
     },
     {
-      "question": "A box contains red and blue counters. The probability of drawing two red counters without replacement is 1/6. If there are 4 red counters, how many blue counters are there?",
-      "options": [
-        "2",
-        "4",
-        "5",
-        "3"
-      ],
-      "correct": 3,
-      "points": 18,
-      "time": 120,
-      "explanation": "Let blue = b. 4/(4+b) × 3/(3+b) = 1/6. Solve: b = 3."
-    },
-    {
-      "question": "In a survey, 60% of people like tea, 50% like coffee, and 20% like neither. What percentage like both tea and coffee?",
-      "options": [
-        "20%",
-        "40%",
-        "10%",
-        "30%"
-      ],
-      "correct": 3,
-      "points": 12,
-      "time": 60,
-      "explanation": "P(at least one) = 1 - 0.20 = 0.80. 0.80 = 0.60 + 0.50 - P(both) → P(both) = 0.30 = 30%."
-    },
-    {
-      "question": "A biased coin is tossed twice. The probability of getting exactly one Head is 12/25. If P(H) = p, find p.",
-      "options": [
-        "1/5",
-        "4/5",
-        "2/5",
-        "3/5"
-      ],
+      "id": 7,
+      "question": "In a class of 30 students, 18 study Physics and 15 study Chemistry. If 8 study both subjects, how many students study neither subject?",
+      "options": ["10", "3", "5", "8"],
       "correct": 2,
       "points": 18,
-      "time": 120,
-      "explanation": "2p(1-p) = 12/25 → 25p² - 25p + 6 = 0 → p = 2/5 or 3/5. Answer 2/5."
+      "explanation": "P(at least one) = 18 + 15 - 8 = 25 students. Neither = 30 - 25 = 5 students."
     },
     {
-      "question": "A bag has 3 red, x blue, and 5 green balls. The probability of drawing a blue ball is 1/3. Find x.",
-      "options": [
-        "2",
-        "5",
-        "3",
-        "4"
-      ],
+      "id": 8,
+      "question": "A deck of 52 cards is shuffled. Two cards are drawn with replacement. What is the probability both are Aces?",
+      "options": ["4/52", "1/221", "1/169", "1/13"],
+      "correct": 2,
+      "points": 15,
+      "explanation": "P(Ace) = 4/52 = 1/13. With replacement: 1/13 × 1/13 = 1/169."
+    },
+    {
+      "id": 9,
+      "question": "A traffic light is red for 30 seconds, yellow for 5 seconds, and green for 45 seconds in each cycle. What is the probability a car arriving at random finds the light not red?",
+      "options": ["1/2", "3/8", "5/8", "1/4"],
+      "correct": 2,
+      "points": 15,
+      "explanation": "Total cycle = 80 seconds. Not red = 5 + 45 = 50 seconds. P = 50/80 = 5/8."
+    },
+    {
+      "id": 10,
+      "question": "A factory produces items where 5% are defective. If 3 items are chosen at random, what is the probability all 3 are not defective?",
+      "options": ["0.05", "0.15", "0.95", "0.857"],
       "correct": 3,
-      "points": 12,
-      "time": 60,
-      "explanation": "Total = 8+x. x/(8+x) = 1/3 → 3x = 8+x → x = 4."
+      "points": 18,
+      "explanation": "P(not defective) = 0.95. For 3 items: 0.95 × 0.95 × 0.95 = 0.857 (approx)."
     },
     {
-      "question": "Two fair dice are rolled. What is the probability that the product of the two numbers is a perfect square?",
-      "options": [
-        "1/6",
-        "5/18",
-        "2/9",
-        "1/4"
-      ],
+      "id": 11,
+      "question": "In a survey, 70% of people like pizza and 60% like burgers. If 40% like both, what percentage like pizza only?",
+      "options": ["60%", "70%", "30%", "40%"],
+      "correct": 2,
+      "points": 15,
+      "explanation": "Pizza only = Total pizza - Both = 70% - 40% = 30%."
+    },
+    {
+      "id": 12,
+      "question": "A bag has 6 white balls and 4 black balls. Two balls are drawn without replacement. What is the probability the first is white and the second is black?",
+      "options": ["4/10", "6/10", "4/15", "24/100"],
       "correct": 2,
       "points": 18,
-      "time": 120,
-      "explanation": "Favorable pairs: (1,1), (1,4), (2,2), (3,3), (4,1), (4,4), (5,5), (6,6) = 8 pairs. P = 8/36 = 2/9."
+      "explanation": "P(white first) = 6/10. P(black second) = 4/9. Multiply: 6/10 × 4/9 = 24/90 = 4/15."
+    },
+    {
+      "id": 13,
+      "question": "Two dice are rolled. What is the probability that the sum is 7 or 11?",
+      "options": ["5/18", "1/6", "2/9", "1/9"],
+      "correct": 2,
+      "points": 18,
+      "explanation": "Sum 7: (1,6), (2,5), (3,4), (4,3), (5,2), (6,1) = 6 outcomes. Sum 11: (5,6), (6,5) = 2 outcomes. Total = 8/36 = 2/9."
+    },
+    {
+      "id": 14,
+      "question": "A machine has a 90% chance of working properly each day. What is the probability it works properly for 3 consecutive days?",
+      "options": ["0.27", "0.9", "0.81", "0.729"],
+      "correct": 3,
+      "points": 15,
+      "explanation": "Multiply for 3 days: 0.9 × 0.9 × 0.9 = 0.729."
+    },
+    {
+      "id": 15,
+      "question": "In a group, 45% speak English, 40% speak Mandarin, and 15% speak both. What percentage speak neither language?",
+      "options": ["20%", "25%", "30%", "35%"],
+      "correct": 2,
+      "points": 18,
+      "explanation": "P(at least one) = 45% + 40% - 15% = 70%. Neither = 100% - 70% = 30%."
+    },
+    {
+      "id": 16,
+      "question": "A lottery ticket has a 1 in 1000 chance of winning. If someone buys 5 tickets, what is the probability none of them win? (Assume each ticket does not affect the others)",
+      "options": ["0.005", "0.95", "0.995", "0.05"],
+      "correct": 2,
+      "points": 18,
+      "explanation": "P(not win) = 999/1000 = 0.999. For 5 tickets: 0.999^5 ≈ 0.995."
+    },
+    {
+      "id": 17,
+      "question": "A class has 12 boys and 18 girls. Two students are chosen at random without replacement. What is the probability both are girls?",
+      "options": ["18/30", "9/25", "51/145", "3/5"],
+      "correct": 2,
+      "points": 18,
+      "explanation": "P(first girl) = 18/30. P(second girl) = 17/29. Multiply: 18/30 × 17/29 = 306/870 = 51/145."
+    },
+    {
+      "id": 18,
+      "question": "A weather forecast says there is a 30% chance of rain on Saturday and 40% chance on Sunday. If the events do not affect each other, what is the probability it rains on both days?",
+      "options": ["0.10", "0.70", "0.82", "0.12"],
+      "correct": 3,
+      "points": 15,
+      "explanation": "Multiply the probabilities: 0.3 × 0.4 = 0.12."
+    },
+    {
+      "id": 19,
+      "question": "A box contains red, blue, and green balls. P(red) = 1/3, P(blue) = 1/4. What is P(green)?",
+      "options": ["7/12", "1/2", "5/12", "1/12"],
+      "correct": 2,
+      "points": 12,
+      "explanation": "Total probability = 1. P(green) = 1 - 1/3 - 1/4 = 12/12 - 4/12 - 3/12 = 5/12."
+    },
+    {
+      "id": 20,
+      "question": "In a game, a player wins if they roll a 6 on a die and get Heads on a coin toss (both must happen). What is the probability of winning?",
+      "options": ["2/3", "1/2", "1/6", "1/12"],
+      "correct": 3,
+      "points": 15,
+      "explanation": "P(6) = 1/6, P(Head) = 1/2. Both must happen: 1/6 × 1/2 = 1/12."
     }
   ]
 }
