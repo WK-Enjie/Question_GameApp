@@ -1,0 +1,251 @@
+{
+ "title": "Redox Reactions: Basics and Methods - Worksheet 1",
+ "topic": "Oxidation, Reduction and Redox Concepts",
+ "subject": "Pure Chemistry",
+ "level": "Upper Secondary",
+ "grade": "Sec 3",
+ "chapter": 10,
+ "worksheet": 1,
+ "questions": [
+  {
+   "question": "Which statement correctly defines oxidation in terms of oxygen transfer?",
+   "options": [
+    "Gain of oxygen",
+    "Loss of oxygen",
+    "Gain of hydrogen",
+    "Loss of electrons"
+   ],
+   "correct": 0,
+   "points": 10,
+   "explanation": "Oxidation is defined as the gain of oxygen. For example, when magnesium burns in air: 2Mg + O₂ → 2MgO, magnesium is oxidised because it gains oxygen."
+  },
+  {
+   "question": "In the reaction: CuO + H₂ → Cu + H₂O, which substance is reduced?",
+   "options": [
+    "H₂",
+    "CuO",
+    "Cu",
+    "H₂O"
+   ],
+   "correct": 1,
+   "points": 10,
+   "explanation": "Reduction is the loss of oxygen. CuO loses oxygen to form Cu, so copper(II) oxide is reduced. Hydrogen is the reducing agent."
+  },
+  {
+   "question": "Which statement correctly describes reduction in terms of hydrogen transfer?",
+   "options": [
+    "Gain of hydrogen",
+    "Loss of hydrogen",
+    "Gain of oxygen",
+    "Loss of electrons"
+   ],
+   "correct": 0,
+   "points": 10,
+   "explanation": "Reduction can be defined as the gain of hydrogen. For example, in the reaction Cl₂ + H₂ → 2HCl, chlorine is reduced because it gains hydrogen."
+  },
+  {
+   "question": "In the reaction: Zn + Cu²⁺ → Zn²⁺ + Cu, which species is oxidised?",
+   "options": [
+    "Cu²⁺",
+    "Cu",
+    "Zn",
+    "Zn²⁺"
+   ],
+   "correct": 2,
+   "points": 10,
+   "explanation": "Oxidation is the loss of electrons. Zn loses 2 electrons to form Zn²⁺: Zn → Zn²⁺ + 2e⁻. Therefore, zinc is oxidised."
+  },
+  {
+   "question": "What does the acronym OIL RIG stand for in redox reactions?",
+   "options": [
+    "Oxidation Is Loss, Reduction Is Gain (of electrons)",
+    "Oxidation Is Loss, Reduction Is Gain (of oxygen)",
+    "Oxidation Involves Loss, Reduction Involves Gain (of hydrogen)",
+    "Oxygen Involves Loss, Reduction Involves Gain"
+   ],
+   "correct": 0,
+   "points": 10,
+   "explanation": "OIL RIG is a mnemonic for electron transfer: Oxidation Is Loss (of electrons), Reduction Is Gain (of electrons). This helps remember the electron definition of redox."
+  },
+  {
+   "question": "In the reaction: 2Mg + O₂ → 2MgO, what is the change in oxidation state of magnesium?",
+   "options": [
+    "0 to +1",
+    "0 to +2",
+    "+2 to 0",
+    "+1 to 0"
+   ],
+   "correct": 1,
+   "points": 10,
+   "explanation": "Magnesium metal has oxidation state 0. In MgO, magnesium has oxidation state +2 (since O is -2). The change is 0 → +2, indicating oxidation."
+  },
+  {
+   "question": "Which of the following is NOT a redox reaction?",
+   "options": [
+    "2Na + Cl₂ → 2NaCl",
+    "HCl + NaOH → NaCl + H₂O",
+    "Zn + CuSO₄ → ZnSO₄ + Cu",
+    "2H₂ + O₂ → 2H₂O"
+   ],
+   "correct": 1,
+   "points": 10,
+   "explanation": "HCl + NaOH → NaCl + H₂O is a neutralisation reaction. No change in oxidation states occurs: H remains +1, Cl remains -1, Na remains +1, O remains -2. It is not a redox reaction."
+  },
+  {
+   "question": "What is the oxidation state of oxygen in most compounds?",
+   "options": [
+    "-1",
+    "-2",
+    "0",
+    "+2"
+   ],
+   "correct": 1,
+   "points": 10,
+   "explanation": "In most compounds, oxygen has an oxidation state of -2. Exceptions include peroxides (e.g., H₂O₂, where O is -1) and when bonded to fluorine."
+  },
+  {
+   "question": "In the reaction: Fe₂O₃ + 3CO → 2Fe + 3CO₂, which substance acts as the reducing agent?",
+   "options": [
+    "Fe₂O₃",
+    "CO",
+    "Fe",
+    "CO₂"
+   ],
+   "correct": 1,
+   "points": 10,
+   "explanation": "The reducing agent is the substance that is oxidised. CO gains oxygen to form CO₂, so CO is oxidised and acts as the reducing agent. Fe₂O₃ is reduced to Fe."
+  },
+  {
+   "question": "What is the oxidation state of hydrogen in most compounds?",
+   "options": [
+    "-1",
+    "0",
+    "+1",
+    "+2"
+   ],
+   "correct": 2,
+   "points": 10,
+   "explanation": "In most compounds, hydrogen has an oxidation state of +1. An exception is in metal hydrides (e.g., NaH), where hydrogen has oxidation state -1."
+  },
+  {
+   "question": "Which equation correctly represents the reduction of copper(II) ions?",
+   "options": [
+    "Cu → Cu²⁺ + 2e⁻",
+    "Cu²⁺ + 2e⁻ → Cu",
+    "Cu²⁺ → Cu + 2e⁻",
+    "Cu + 2e⁻ → Cu²⁺"
+   ],
+   "correct": 1,
+   "points": 10,
+   "explanation": "Reduction is the gain of electrons. Cu²⁺ gains 2 electrons to form copper metal: Cu²⁺ + 2e⁻ → Cu. This is the reduction half-equation."
+  },
+  {
+   "question": "In the reaction: Cl₂ + 2KI → 2KCl + I₂, which element is oxidised?",
+   "options": [
+    "Cl",
+    "K",
+    "I",
+    "None"
+   ],
+   "correct": 2,
+   "points": 10,
+   "explanation": "Iodide ions (I⁻) lose electrons to form iodine: 2I⁻ → I₂ + 2e⁻. Loss of electrons is oxidation, so iodine is oxidised. Chlorine is reduced."
+  },
+  {
+   "question": "What is the oxidation state of an element in its free (uncombined) state?",
+   "options": [
+    "-1",
+    "0",
+    "+1",
+    "Variable"
+   ],
+   "correct": 1,
+   "points": 10,
+   "explanation": "An element in its free state (e.g., O₂, H₂, Fe, Cu) has an oxidation state of 0 because it is not combined with any other element."
+  },
+  {
+   "question": "Which statement correctly identifies the oxidising agent in a redox reaction?",
+   "options": [
+    "The substance that is oxidised",
+    "The substance that is reduced",
+    "The substance that gains hydrogen",
+    "The substance that loses oxygen"
+   ],
+   "correct": 1,
+   "points": 10,
+   "explanation": "The oxidising agent is the substance that causes oxidation by being reduced itself. It accepts electrons from the substance being oxidised."
+  },
+  {
+   "question": "In the reaction: 2H₂S + SO₂ → 3S + 2H₂O, what happens to sulfur in H₂S?",
+   "options": [
+    "It is oxidised from -2 to 0",
+    "It is reduced from -2 to 0",
+    "It is oxidised from +4 to 0",
+    "It is reduced from +4 to 0"
+   ],
+   "correct": 0,
+   "points": 10,
+   "explanation": "In H₂S, sulfur has oxidation state -2. In elemental sulfur (S), oxidation state is 0. The change -2 → 0 is an increase, indicating oxidation."
+  },
+  {
+   "question": "Which of the following represents a reduction half-equation?",
+   "options": [
+    "Fe → Fe²⁺ + 2e⁻",
+    "Cl₂ + 2e⁻ → 2Cl⁻",
+    "2O²⁻ → O₂ + 4e⁻",
+    "Zn → Zn²⁺ + 2e⁻"
+   ],
+   "correct": 1,
+   "points": 10,
+   "explanation": "Reduction involves gain of electrons. Cl₂ gains 2 electrons to form 2Cl⁻: Cl₂ + 2e⁻ → 2Cl⁻. This is a reduction half-equation."
+  },
+  {
+   "question": "What is the oxidation state of chlorine in NaCl?",
+   "options": [
+    "-1",
+    "0",
+    "+1",
+    "+7"
+   ],
+   "correct": 0,
+   "points": 10,
+   "explanation": "In NaCl, sodium has oxidation state +1. Since the compound is neutral, chlorine must have oxidation state -1 to balance the charge."
+  },
+  {
+   "question": "In the reaction: Mg + 2HCl → MgCl₂ + H₂, which substance is the reducing agent?",
+   "options": [
+    "HCl",
+    "MgCl₂",
+    "H₂",
+    "Mg"
+   ],
+   "correct": 3,
+   "points": 10,
+   "explanation": "The reducing agent is the substance that is oxidised. Mg loses electrons to form Mg²⁺: Mg → Mg²⁺ + 2e⁻. Therefore, magnesium is the reducing agent."
+  },
+  {
+   "question": "Which statement about redox reactions is correct?",
+   "options": [
+    "Oxidation and reduction always occur separately",
+    "Oxidation and reduction always occur together",
+    "Only one substance can be oxidised in a reaction",
+    "Redox reactions do not involve electron transfer"
+   ],
+   "correct": 1,
+   "points": 10,
+   "explanation": "In every redox reaction, oxidation and reduction occur simultaneously. Electrons lost by the oxidised substance are gained by the reduced substance."
+  },
+  {
+   "question": "What is the oxidation state of sulfur in SO₂?",
+   "options": [
+    "-2",
+    "0",
+    "+2",
+    "+4"
+   ],
+   "correct": 3,
+   "points": 10,
+   "explanation": "Oxygen has oxidation state -2. In SO₂: S + 2(-2) = 0 (neutral compound). Therefore, S - 4 = 0, so S = +4."
+  }
+ ]
+}
