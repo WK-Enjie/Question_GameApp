@@ -1,0 +1,251 @@
+{
+ "title": "Identifying Bonding Types from Properties - Worksheet 3",
+ "topic": "Structure, Bonding and Physical Properties",
+ "subject": "Pure Chemistry",
+ "level": "Upper Secondary",
+ "grade": "Sec 3",
+ "chapter": 5,
+ "worksheet": 3,
+ "questions": [
+  {
+   "question": "A compound has a high melting point, conducts electricity when molten but not when solid, and dissolves in water. What type of bonding does it most likely have?",
+   "options": [
+    "Ionic bonding",
+    "Simple covalent bonding",
+    "Metallic bonding",
+    "Giant covalent bonding"
+   ],
+   "correct": 0,
+   "points": 10,
+   "explanation": "These properties are characteristic of ionic compounds: high melting point due to strong electrostatic forces, conductivity when molten due to mobile ions, and solubility in water due to polar interactions."
+  },
+  {
+   "question": "Element X is in Group 1 and Element Y is in Group 17. What type of bonding is most likely in the compound they form?",
+   "options": [
+    "Simple covalent bonding",
+    "Ionic bonding",
+    "Metallic bonding",
+    "Giant covalent bonding"
+   ],
+   "correct": 1,
+   "points": 10,
+   "explanation": "Group 1 elements are metals that lose electrons easily; Group 17 elements are non-metals that gain electrons readily. The transfer of electrons forms oppositely charged ions held by ionic bonding."
+  },
+  {
+   "question": "A substance is a liquid at room temperature, does not conduct electricity, and evaporates easily. What type of structure does it most likely have?",
+   "options": [
+    "Giant ionic lattice",
+    "Giant covalent structure",
+    "Simple covalent molecules",
+    "Metallic lattice"
+   ],
+   "correct": 2,
+   "points": 10,
+   "explanation": "Simple covalent molecules have weak intermolecular forces, resulting in low melting/boiling points, no electrical conductivity, and often liquid or gaseous states at room temperature."
+  },
+  {
+   "question": "Element A is in Period 3, Group 14. Element B is in Period 2, Group 16. What type of bonding is most likely in the compound they form?",
+   "options": [
+    "Ionic bonding",
+    "Metallic bonding",
+    "Giant covalent bonding",
+    "Simple covalent bonding"
+   ],
+   "correct": 3,
+   "points": 10,
+   "explanation": "Both elements are non-metals (Group 14 and 16). Non-metals bond by sharing electrons to form simple covalent molecules with weak intermolecular forces between them."
+  },
+  {
+   "question": "A white solid dissolves in water to form a solution that conducts electricity. The solid itself does not conduct. What type of compound is it?",
+   "options": [
+    "Ionic compound",
+    "Simple covalent molecule",
+    "Metal",
+    "Giant covalent substance"
+   ],
+   "correct": 0,
+   "points": 10,
+   "explanation": "Ionic compounds do not conduct when solid (ions fixed) but conduct when dissolved (ions mobile). Solubility in water and conductivity in solution are key indicators of ionic bonding."
+  },
+  {
+   "question": "Element M is a metal in Group 2. Element N is a non-metal in Group 16. What is the most likely formula and bonding type of their compound?",
+   "options": [
+    "MN, simple covalent",
+    "MN, ionic",
+    "M₂N, ionic",
+    "MN₂, simple covalent"
+   ],
+   "correct": 1,
+   "points": 10,
+   "explanation": "Group 2 metals form 2+ ions; Group 16 non-metals form 2- ions. The charges balance in a 1:1 ratio (MN), and the metal-non-metal combination indicates ionic bonding."
+  },
+  {
+   "question": "A colourless gas at room temperature does not dissolve in water but dissolves in hexane. It does not conduct electricity. What type of bonding does it have?",
+   "options": [
+    "Ionic bonding",
+    "Metallic bonding",
+    "Simple covalent bonding",
+    "Giant covalent bonding"
+   ],
+   "correct": 2,
+   "points": 10,
+   "explanation": "Simple covalent molecules are often gases/liquids at room temperature, insoluble in water but soluble in organic solvents like hexane, and do not conduct electricity due to lack of mobile charges."
+  },
+  {
+   "question": "Element P has proton number 11. Element Q has proton number 17. What type of bonding is present in the compound they form?",
+   "options": [
+    "Simple covalent",
+    "Metallic",
+    "Giant covalent",
+    "Ionic"
+   ],
+   "correct": 3,
+   "points": 10,
+   "explanation": "Proton number 11 = sodium (Group 1 metal); proton number 17 = chlorine (Group 17 non-metal). Metal + non-metal forms ionic bonding through electron transfer."
+  },
+  {
+   "question": "A hard, brittle solid has a very high melting point and does not conduct electricity in any state. It is insoluble in water and organic solvents. What type of structure is this?",
+   "options": [
+    "Simple covalent molecules",
+    "Giant covalent structure",
+    "Ionic lattice",
+    "Metallic lattice"
+   ],
+   "correct": 1,
+   "points": 10,
+   "explanation": "Giant covalent structures (e.g., diamond, silicon dioxide) have very high melting points due to strong covalent bonds throughout, are hard and brittle, and do not conduct (except graphite)."
+  },
+  {
+   "question": "Element R is in Period 4, Group 1. Element S is in Period 3, Group 17. Which statement about their compound is correct?",
+   "options": [
+    "It has simple covalent molecules with weak intermolecular forces",
+    "It has a giant ionic lattice with strong electrostatic forces",
+    "It has delocalised electrons and conducts in solid state",
+    "It has a low melting point due to weak covalent bonds"
+   ],
+   "correct": 1,
+   "points": 10,
+   "explanation": "Group 1 metal + Group 17 non-metal forms an ionic compound with a giant lattice. Strong electrostatic forces between oppositely charged ions give high melting point and conductivity when molten."
+  },
+  {
+   "question": "A substance melts at -78°C, does not conduct electricity, and its molecules are held together by weak forces. What type of bonding is within the molecules?",
+   "options": [
+    "Ionic bonding",
+    "Metallic bonding",
+    "Covalent bonding",
+    "Electrostatic bonding"
+   ],
+   "correct": 2,
+   "points": 10,
+   "explanation": "The low melting point and weak forces between molecules indicate simple covalent structure. Within each molecule, atoms are held by strong covalent bonds (shared electron pairs)."
+  },
+  {
+   "question": "Element T has electronic configuration 2,8,2. Element U has configuration 2,8,7. What type of compound do they form?",
+   "options": [
+    "TU, simple covalent",
+    "T₂U, ionic",
+    "TU₂, ionic",
+    "TU, metallic"
+   ],
+   "correct": 2,
+   "points": 10,
+   "explanation": "Configuration 2,8,2 = magnesium (Group 2, loses 2e⁻ to form Mg²⁺). Configuration 2,8,7 = chlorine (Group 17, gains 1e⁻ to form Cl⁻). Formula is MgCl₂ (TU₂), with ionic bonding."
+  },
+  {
+   "question": "A compound is soluble in water, has a high melting point, and its aqueous solution conducts electricity. Which pair of elements could form this compound?",
+   "options": [
+    "Carbon and oxygen",
+    "Sodium and chlorine",
+    "Nitrogen and hydrogen",
+    "Phosphorus and chlorine"
+   ],
+   "correct": 1,
+   "points": 10,
+   "explanation": "Sodium (metal) + chlorine (non-metal) forms ionic NaCl, which is soluble in water, has high melting point, and conducts when dissolved due to mobile Na⁺ and Cl⁻ ions."
+  },
+  {
+   "question": "Element V is a non-metal in Group 15. Element W is a non-metal in Group 17. What type of bonding is most likely in VW₃?",
+   "options": [
+    "Ionic bonding",
+    "Metallic bonding",
+    "Simple covalent bonding",
+    "Giant covalent bonding"
+   ],
+   "correct": 2,
+   "points": 10,
+   "explanation": "Both elements are non-metals. Non-metal + non-metal compounds form simple covalent molecules by sharing electrons. VW₃ (e.g., NCl₃) has covalent bonds within molecules."
+  },
+  {
+   "question": "A solid does not conduct electricity, has a low melting point, and sublimes easily. When dissolved in organic solvent, the solution does not conduct. What is its structure?",
+   "options": [
+    "Giant ionic lattice",
+    "Simple covalent molecules",
+    "Metallic lattice",
+    "Giant covalent network"
+   ],
+   "correct": 1,
+   "points": 10,
+   "explanation": "Low melting point, sublimation, no conductivity in any state, and solubility in organic solvents are all characteristic of simple covalent molecules with weak intermolecular forces."
+  },
+  {
+   "question": "Element X has proton number 6. Element Y has proton number 8. What type of bonding is in the compound XY₂?",
+   "options": [
+    "Ionic bonding",
+    "Metallic bonding",
+    "Simple covalent bonding",
+    "Giant ionic bonding"
+   ],
+   "correct": 2,
+   "points": 10,
+   "explanation": "Proton number 6 = carbon (non-metal); proton number 8 = oxygen (non-metal). CO₂ is a simple covalent molecule with covalent bonds within molecules and weak forces between them."
+  },
+  {
+   "question": "A compound conducts electricity when molten, is brittle, and has a high melting point. It is formed from elements in Groups 2 and 16. What is its bonding type?",
+   "options": [
+    "Simple covalent",
+    "Ionic",
+    "Metallic",
+    "Giant covalent"
+   ],
+   "correct": 1,
+   "points": 10,
+   "explanation": "Group 2 metal + Group 16 non-metal forms ionic compound. High melting point, brittleness, and conductivity when molten (mobile ions) confirm ionic bonding."
+  },
+  {
+   "question": "Element A is in Period 2, Group 14. Element B is in Period 2, Group 17. What is the most likely formula and bonding in their compound?",
+   "options": [
+    "AB₄, ionic",
+    "AB₂, simple covalent",
+    "AB₄, simple covalent",
+    "A₂B, ionic"
+   ],
+   "correct": 2,
+   "points": 10,
+   "explanation": "Group 14 non-metal (e.g., carbon) forms 4 covalent bonds; Group 17 non-metal (e.g., chlorine) forms 1. Formula is AB₄ (e.g., CCl₄), with simple covalent bonding."
+  },
+  {
+   "question": "A substance has a very high melting point, is hard, and does not conduct electricity. It is insoluble in all solvents. What type of structure is this?",
+   "options": [
+    "Simple covalent molecules",
+    "Giant covalent structure",
+    "Ionic lattice",
+    "Metallic lattice"
+   ],
+   "correct": 1,
+   "points": 10,
+   "explanation": "Very high melting point, hardness, insolubility, and no conductivity indicate a giant covalent structure (e.g., diamond) where strong covalent bonds extend throughout the lattice."
+  },
+  {
+   "question": "Element M has configuration 2,8,1. Element N has configuration 2,8,8,7. What type of compound do they form?",
+   "options": [
+    "MN, simple covalent",
+    "M₂N, ionic",
+    "MN, ionic",
+    "MN₂, simple covalent"
+   ],
+   "correct": 2,
+   "points": 10,
+   "explanation": "Configuration 2,8,1 = sodium (Group 1, loses 1e⁻ → Na⁺). Configuration 2,8,8,7 = bromine (Group 17, gains 1e⁻ → Br⁻). Formula is NaBr (MN), with ionic bonding."
+  }
+ ]
+}
