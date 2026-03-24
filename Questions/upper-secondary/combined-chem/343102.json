@@ -1,0 +1,251 @@
+{
+ "title": "Redox Reactions: Advanced Concepts - Worksheet 2",
+ "topic": "Oxidation, Reduction and Redox Concepts",
+ "subject": "Pure Chemistry",
+ "level": "Upper Secondary",
+ "grade": "Sec 3",
+ "chapter": 10,
+ "worksheet": 2,
+ "questions": [
+  {
+   "question": "In the reaction: 2FeCl₂ + Cl₂ → 2FeCl₃, which statement is correct?",
+   "options": [
+    "Fe²⁺ is oxidised to Fe³⁺",
+    "Fe³⁺ is reduced to Fe²⁺",
+    "Cl₂ is oxidised to Cl⁻",
+    "Fe²⁺ is reduced to Fe³⁺"
+   ],
+   "correct": 0,
+   "points": 10,
+   "explanation": "Fe²⁺ loses an electron to become Fe³⁺ (oxidation state increases from +2 to +3). Cl₂ gains electrons to become Cl⁻ (reduced). Fe²⁺ is the reducing agent, Cl₂ is the oxidising agent."
+  },
+  {
+   "question": "What is the oxidation state of manganese in KMnO₄?",
+   "options": [
+    "+4",
+    "+5",
+    "+6",
+    "+7"
+   ],
+   "correct": 3,
+   "points": 10,
+   "explanation": "K = +1, O = -2 (×4 = -8). For neutral KMnO₄: +1 + Mn + (-8) = 0. Therefore Mn = +7."
+  },
+  {
+   "question": "Which substance acts as the oxidising agent in the reaction: Zn + CuSO₄ → ZnSO₄ + Cu?",
+   "options": [
+    "Zn",
+    "CuSO₄",
+    "ZnSO₄",
+    "Cu"
+   ],
+   "correct": 1,
+   "points": 10,
+   "explanation": "The oxidising agent is reduced. Cu²⁺ in CuSO₄ gains electrons to form Cu (Cu²⁺ + 2e⁻ → Cu). Therefore CuSO₄ is the oxidising agent."
+  },
+  {
+   "question": "In which reaction does sulfur undergo oxidation?",
+   "options": [
+    "H₂S → S",
+    "SO₂ → S",
+    "S → H₂S",
+    "SO₃ → SO₂"
+   ],
+   "correct": 0,
+   "points": 10,
+   "explanation": "In H₂S, S has oxidation state -2. In elemental S, oxidation state is 0. Change from -2 to 0 is oxidation (increase in oxidation state)."
+  },
+  {
+   "question": "What is the oxidation state of chromium in K₂Cr₂O₇?",
+   "options": [
+    "+3",
+    "+5",
+    "+6",
+    "+7"
+   ],
+   "correct": 2,
+   "points": 10,
+   "explanation": "K = +1 (×2 = +2), O = -2 (×7 = -14). For neutral K₂Cr₂O₇: +2 + 2Cr + (-14) = 0. Therefore 2Cr = +12, Cr = +6."
+  },
+  {
+   "question": "Which half-equation represents oxidation?",
+   "options": [
+    "Fe³⁺ + e⁻ → Fe²⁺",
+    "2H⁺ + 2e⁻ → H₂",
+    "Fe²⁺ → Fe³⁺ + e⁻",
+    "Cu²⁺ + 2e⁻ → Cu"
+   ],
+   "correct": 2,
+   "points": 10,
+   "explanation": "Oxidation is loss of electrons. Fe²⁺ loses an electron to become Fe³⁺. The electrons appear on the product side of the equation."
+  },
+  {
+   "question": "In the reaction: 2Mg + CO₂ → 2MgO + C, which substance is the reducing agent?",
+   "options": [
+    "Mg",
+    "CO₂",
+    "MgO",
+    "C"
+   ],
+   "correct": 0,
+   "points": 10,
+   "explanation": "The reducing agent is oxidised. Mg loses electrons to form Mg²⁺ in MgO (oxidation state 0 to +2). Mg is the reducing agent."
+  },
+  {
+   "question": "What is the change in oxidation state of nitrogen when NH₃ is converted to NO?",
+   "options": [
+    "-3 to +2",
+    "-3 to +4",
+    "+3 to +2",
+    "0 to +2"
+   ],
+   "correct": 0,
+   "points": 10,
+   "explanation": "In NH₃: N + 3(+1) = 0, so N = -3. In NO: N + (-2) = 0, so N = +2. Change is -3 to +2 (oxidation)."
+  },
+  {
+   "question": "Which ion can act as both an oxidising and reducing agent?",
+   "options": [
+    "Fe²⁺",
+    "Fe³⁺",
+    "Na⁺",
+    "Cl⁻"
+   ],
+   "correct": 0,
+   "points": 10,
+   "explanation": "Fe²⁺ can be oxidised to Fe³⁺ (losing 1 electron) or reduced to Fe (gaining 2 electrons). Fe³⁺ can only be reduced, Na⁺ and Cl⁻ are stable ions."
+  },
+  {
+   "question": "In the reaction: 3Cl₂ + 6NaOH → 5NaCl + NaClO₃ + 3H₂O, what happens to chlorine?",
+   "options": [
+    "Only oxidised",
+    "Only reduced",
+    "Both oxidised and reduced",
+    "Neither oxidised nor reduced"
+   ],
+   "correct": 2,
+   "points": 10,
+   "explanation": "This is a disproportionation reaction. Cl₂ (oxidation state 0) forms Cl⁻ in NaCl (-1, reduced) and Cl⁵⁺ in NaClO₃ (+5, oxidised). Chlorine is both oxidised and reduced."
+  },
+  {
+   "question": "What is the oxidation state of phosphorus in H₃PO₄?",
+   "options": [
+    "+3",
+    "+4",
+    "+5",
+    "+6"
+   ],
+   "correct": 2,
+   "points": 10,
+   "explanation": "H = +1 (×3 = +3), O = -2 (×4 = -8). For neutral H₃PO₄: +3 + P + (-8) = 0. Therefore P = +5."
+  },
+  {
+   "question": "Which metal will displace copper from copper(II) sulfate solution?",
+   "options": [
+    "Silver",
+    "Gold",
+    "Zinc",
+    "Platinum"
+   ],
+   "correct": 2,
+   "points": 10,
+   "explanation": "Zinc is more reactive than copper (higher in reactivity series). Zn + CuSO₄ → ZnSO₄ + Cu. Silver, gold and platinum are less reactive than copper."
+  },
+  {
+   "question": "In the reaction: 2KI + Cl₂ → 2KCl + I₂, which statement is correct?",
+   "options": [
+    "I⁻ is oxidised to I₂",
+    "Cl₂ is oxidised to Cl⁻",
+    "K⁺ is reduced to K",
+    "I₂ is reduced to I⁻"
+   ],
+   "correct": 0,
+   "points": 10,
+   "explanation": "I⁻ loses electrons to form I₂ (2I⁻ → I₂ + 2e⁻). This is oxidation. Cl₂ gains electrons to form Cl⁻ (reduced). I⁻ is the reducing agent."
+  },
+  {
+   "question": "What is the oxidation state of oxygen in H₂O₂ (hydrogen peroxide)?",
+   "options": [
+    "-2",
+    "-1",
+    "0",
+    "+1"
+   ],
+   "correct": 1,
+   "points": 10,
+   "explanation": "In peroxides, oxygen has oxidation state -1 (exception to the usual -2). H = +1 (×2 = +2). For neutral H₂O₂: +2 + 2O = 0, so O = -1."
+  },
+  {
+   "question": "Which reaction is NOT a redox reaction?",
+   "options": [
+    "Zn + 2HCl → ZnCl₂ + H₂",
+    "NaOH + HCl → NaCl + H₂O",
+    "2Mg + O₂ → 2MgO",
+    "CuO + H₂ → Cu + H₂O"
+   ],
+   "correct": 1,
+   "points": 10,
+   "explanation": "NaOH + HCl → NaCl + H₂O is a neutralisation reaction. No change in oxidation states: Na (+1), O (-2), H (+1), Cl (-1) remain unchanged throughout."
+  },
+  {
+   "question": "In the reaction: Cr₂O₇²⁻ + 14H⁺ + 6e⁻ → 2Cr³⁺ + 7H₂O, what happens to chromium?",
+   "options": [
+    "Oxidised from +3 to +6",
+    "Reduced from +6 to +3",
+    "Oxidised from +6 to +3",
+    "Reduced from +3 to +6"
+   ],
+   "correct": 1,
+   "points": 10,
+   "explanation": "In Cr₂O₇²⁻, Cr has oxidation state +6. In Cr³⁺, Cr has oxidation state +3. Gain of electrons (6e⁻ on reactant side) indicates reduction from +6 to +3."
+  },
+  {
+   "question": "Disproportionation is a redox reaction where the same element is both oxidised and reduced. Which reaction shows disproportionation?",
+   "options": [
+    "2H₂ + O₂ → 2H₂O",
+    "Cl₂ + 2KI → 2KCl + I₂",
+    "2H₂O₂ → 2H₂O + O₂",
+    "Zn + Cu²⁺ → Zn²⁺ + Cu"
+   ],
+   "correct": 2,
+   "points": 10,
+   "explanation": "In 2H₂O₂ → 2H₂O + O₂, oxygen in H₂O₂ has oxidation state -1. In H₂O, O is -2 (reduced). In O₂, O is 0 (oxidised). Oxygen is both oxidised and reduced."
+  },
+  {
+   "question": "What is the oxidation state of sulfur in Na₂S₂O₃ (sodium thiosulfate)?",
+   "options": [
+    "+2",
+    "+3",
+    "+4",
+    "+6"
+   ],
+   "correct": 0,
+   "points": 10,
+   "explanation": "Na = +1 (×2 = +2), O = -2 (×3 = -6). For neutral Na₂S₂O₃: +2 + 2S + (-6) = 0. Therefore 2S = +4, S = +2 (average oxidation state)."
+  },
+  {
+   "question": "Which substance is the reducing agent in: 2Fe³⁺ + 2I⁻ → 2Fe²⁺ + I₂?",
+   "options": [
+    "Fe³⁺",
+    "I⁻",
+    "Fe²⁺",
+    "I₂"
+   ],
+   "correct": 1,
+   "points": 10,
+   "explanation": "The reducing agent is oxidised. I⁻ loses electrons to form I₂ (2I⁻ → I₂ + 2e⁻). Therefore I⁻ is the reducing agent. Fe³⁺ is reduced to Fe²⁺ (oxidising agent)."
+  },
+  {
+   "question": "In which compound does nitrogen have the lowest oxidation state?",
+   "options": [
+    "NO₂",
+    "HNO₃",
+    "NH₃",
+    "N₂O"
+   ],
+   "correct": 2,
+   "points": 10,
+   "explanation": "In NH₃: N + 3(+1) = 0, so N = -3. In NO₂: N = +4. In HNO₃: N = +5. In N₂O: N = +1. NH₃ has the lowest oxidation state (-3)."
+  }
+ ]
+}
