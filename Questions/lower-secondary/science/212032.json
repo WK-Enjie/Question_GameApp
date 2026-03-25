@@ -156,24 +156,24 @@
       "options": [
         "Magnesium + oxygen → magnesium oxide",
         "Calcium carbonate → calcium oxide + carbon dioxide",
-        "Hydrochloric acid + sodium hydroxide → sodium chloride + water",
-        "Iron + oxygen + water → rust"
+        "Iron + oxygen + water → rust",
+        "Hydrochloric acid + potassium hydroxide → potassium chloride + water"
       ],
-      "correct": 2,
+      "correct": 3,
       "points": 15,
       "explanation": "Neutralisation is when an acid reacts with an alkali to produce a salt and water."
     },
     {
       "question": "Which of the following is an example of oxidation?",
       "options": [
-        "Magnesium + oxygen → magnesium oxide",
+        "Zinc + oxygen → zinc oxide",
         "Calcium carbonate → calcium oxide + carbon dioxide",
         "Hydrochloric acid + sodium hydroxide → sodium chloride + water",
         "Water → steam"
       ],
       "correct": 0,
       "points": 15,
-      "explanation": "Oxidation is a reaction with oxygen. Magnesium reacting with oxygen to form magnesium oxide is an oxidation reaction."
+      "explanation": "Oxidation is a reaction with oxygen. Zinc reacting with oxygen to form zinc oxide is an oxidation reaction."
     },
     {
       "question": "Cellular respiration is an example of which reaction type?",
@@ -190,12 +190,12 @@
     {
       "question": "Photosynthesis is the opposite of which reaction type?",
       "options": [
-        "Combustion",
-        "Thermal decomposition",
         "Oxidation (cellular respiration)",
+        "Thermal decomposition",
+        "Combustion",
         "Neutralisation"
       ],
-      "correct": 2,
+      "correct": 0,
       "points": 15,
       "explanation": "Photosynthesis uses carbon dioxide and produces oxygen. Cellular respiration (an oxidation reaction) uses oxygen and produces carbon dioxide. They are essentially opposite processes."
     },
