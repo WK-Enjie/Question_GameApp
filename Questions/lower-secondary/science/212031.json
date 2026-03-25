@@ -10,12 +10,12 @@
     {
       "question": "Which of the following is a physical change?",
       "options": [
-        "Ice melting to form water",
         "Iron rusting",
+        "Ice melting to form water",
         "Wood burning",
         "Milk turning sour"
       ],
-      "correct": 0,
+      "correct": 1,
       "points": 10,
       "explanation": "Melting ice is a physical change because water changes from solid to liquid state, but it is still water. No new substance is formed."
     },
@@ -23,11 +23,11 @@
       "question": "Which observation is the BEST evidence that a chemical change has occurred?",
       "options": [
         "The substance changes from solid to liquid",
-        "A new gas is produced that was not present before",
+        "The substance changes shape",
         "The substance becomes smaller in size",
-        "The substance changes shape"
+        "A new gas is produced that was not present before"
       ],
-      "correct": 1,
+      "correct": 3,
       "points": 15,
       "explanation": "The production of a new gas indicates that new substances have been formed, which is definitive evidence of a chemical change."
     },
@@ -36,10 +36,10 @@
       "options": [
         "Water boiling to form steam",
         "Sugar dissolving in water",
-        "Paper burning to form ash",
-        "Glass breaking into pieces"
+        "Glass breaking into pieces",
+        "Paper burning to form ash"
       ],
-      "correct": 2,
+      "correct": 3,
       "points": 10,
       "explanation": "Burning paper produces ash and smoke, which are new substances with different properties from the original paper."
     },
@@ -83,25 +83,25 @@
       "question": "Magnesium burns in air to form magnesium oxide. Which substance is the reactant?",
       "options": [
         "Magnesium oxide",
-        "Magnesium",
-        "Oxygen only",
-        "Both magnesium and magnesium oxide"
+        "Magnesium and air",
+        "Oxygen and magnesium",
+        "Magnesium and magnesium oxide"
       ],
-      "correct": 1,
+      "correct": 2,
       "points": 15,
       "explanation": "Magnesium is a reactant (starting substance). Oxygen from air is also a reactant. Magnesium oxide is the product formed."
     },
     {
-      "question": "Magnesium burns in air to form magnesium oxide. Which substance is the product?",
+      "question": "Iron burns in air to form iron oxide. Which substance is the product?",
       "options": [
         "Magnesium",
         "Oxygen",
-        "Magnesium oxide",
+        "iron oxide",
         "Air"
       ],
       "correct": 2,
       "points": 15,
-      "explanation": "Magnesium oxide is the product (new substance formed). Magnesium and oxygen are the reactants."
+      "explanation": "Iron oxide is the product (new substance formed). Iron and oxygen are the reactants."
     },
     {
       "question": "Which statement correctly describes a physical change?",
@@ -118,12 +118,12 @@
     {
       "question": "Which statement correctly describes a chemical change?",
       "options": [
-        "The substance changes state but remains the same substance",
         "One or more new substances with different properties are formed",
+        "The substance changes state but remains the same substance",
         "The change can always be easily reversed",
         "Only the size of the substance changes"
       ],
-      "correct": 1,
+      "correct": 0,
       "points": 10,
       "explanation": "A chemical change involves the formation of new substances with different properties from the original substances."
     },
@@ -140,16 +140,16 @@
       "explanation": "Freezing water is a physical change. Water changes from liquid to solid state, but it is still water. No new substance is formed."
     },
     {
-      "question": "Iron reacts with oxygen to form rust. Is this a physical or chemical change?",
+      "question": "Iron reacts with oxygen to form rust. Which one of the following cannot prevent rusting?",
       "options": [
-        "Physical change",
-        "Chemical change",
-        "Both physical and chemical change",
-        "Neither physical nor chemical change"
+        "Cover the iron with a layer of metal by electroplating",
+        "Coat the iron with a layer of plastic",
+        "Place the iron in oil",
+        "Place the iron in a wooden container that is not airtight"
       ],
-      "correct": 1,
+      "correct": 3,
       "points": 10,
-      "explanation": "Rusting is a chemical change. Iron reacts with oxygen to form rust, which is a new substance with different properties."
+      "explanation": "Iron reacts with oxygen in the presence of water to form rust."
     },
     {
       "question": "In the word equation: hydrogen + oxygen → water, which substances are the reactants?",
@@ -192,10 +192,10 @@
       "options": [
         "Only physical changes occurred because the sugar melted",
         "Only chemical changes occurred because the colour changed",
-        "Both physical and chemical changes occurred",
-        "Neither physical nor chemical changes occurred"
+        "Neither physical nor chemical changes occurred",
+        "Both physical and chemical changes occurred"
       ],
-      "correct": 2,
+      "correct": 3,
       "points": 20,
       "explanation": "Melting is a physical change (state change). The browning and blackening with a new smell indicate chemical changes where new substances are formed."
     },
@@ -239,9 +239,9 @@
       "question": "What is the main difference between reactants and products in a chemical reaction?",
       "options": [
         "Reactants are formed during the reaction; products are used up",
-        "Reactants are the starting substances; products are the new substances formed",
+        "Products are always solids; reactants are always liquids or gases",
         "Reactants and products are always the same substances",
-        "Products are always solids; reactants are always liquids or gases"
+        "Reactants are the starting substances; products are the new substances formed"
       ],
       "correct": 1,
       "points": 15,
