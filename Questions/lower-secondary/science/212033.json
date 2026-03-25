@@ -1,5 +1,5 @@
 {
-  "title": "Chemical Changes: Word Equations from Descriptions",
+  "title": "Chemical Changes: Word Equations and Reaction Understanding",
   "topic": "Chemical Changes - Word Equations and Basic Reactions",
   "subject": "Science",
   "level": "Secondary",
@@ -8,244 +8,244 @@
   "worksheet": 3,
   "questions": [
     {
-      "question": "Magnesium burns in air to form magnesium oxide. The word equation is: magnesium + oxygen → __________.",
+      "question": "In the word equation: magnesium + oxygen → magnesium oxide, which substances are the reactants?",
       "options": [
-        "magnesium",
-        "oxygen",
-        "magnesium oxide",
-        "magnesium oxygen"
+        "Magnesium oxide only",
+        "Magnesium and oxygen",
+        "Magnesium only",
+        "Oxygen only"
+      ],
+      "correct": 1,
+      "points": 10,
+      "explanation": "Reactants are the starting substances written on the left side of the arrow. Magnesium and oxygen react together to form magnesium oxide."
+    },
+    {
+      "question": "In the word equation: magnesium + oxygen → magnesium oxide, which substance is the product?",
+      "options": [
+        "Magnesium",
+        "Oxygen",
+        "Magnesium oxide",
+        "Both magnesium and oxygen"
       ],
       "correct": 2,
       "points": 10,
-      "explanation": "When magnesium burns in air, it reacts with oxygen to form magnesium oxide. The product is written on the right side of the arrow."
+      "explanation": "Products are the new substances formed, written on the right side of the arrow. Magnesium oxide is the only product in this reaction."
     },
     {
-      "question": "Rusting of iron requires iron, oxygen and __________.",
+      "question": "A student heats copper carbonate strongly. The green powder turns black and a gas is produced that forms white solids in limewater. Which word equation represents this reaction?",
       "options": [
-        "carbon dioxide",
-        "water",
-        "nitrogen",
-        "hydrogen"
+        "copper carbonate + oxygen → copper oxide + carbon dioxide",
+        "copper carbonate → copper oxide + carbon dioxide",
+        "copper oxide + carbon dioxide → copper carbonate",
+        "copper carbonate → copper + carbon dioxide"
       ],
       "correct": 1,
-      "points": 10,
-      "explanation": "Rusting is an oxidation reaction that requires both oxygen and water. Iron reacts with oxygen and water to form rust."
+      "points": 15,
+      "explanation": "This is thermal decomposition. One reactant (copper carbonate) breaks down into two products when heated. Heat is a condition, not a reactant, so it is not written on the left side."
     },
     {
-      "question": "Photosynthesis is a chemical reaction that occurs in plants. The word equation is: carbon dioxide + water → glucose + __________.",
+      "question": "A student adds dilute hydrochloric acid to zinc metal. Bubbles of gas are observed. Which word equation correctly represents this reaction?",
       "options": [
-        "carbon dioxide",
-        "water",
-        "glucose",
-        "oxygen"
+        "hydrochloric acid + zinc → zinc chloride + hydrogen",
+        "hydrochloric acid + zinc → zinc chloride + water",
+        "hydrochloric acid + zinc → zinc hydride + chlorine",
+        "zinc + acid → zinc acid + hydrogen"
       ],
-      "correct": 3,
-      "points": 10,
-      "explanation": "In photosynthesis, plants use carbon dioxide and water, with light energy, to produce glucose and oxygen. Oxygen is released as a product."
+      "correct": 0,
+      "points": 15,
+      "explanation": "When acid reacts with a metal, the products are a salt and hydrogen gas. The salt name combines the metal name with the acid name (hydrochloric acid produces chloride salts)."
     },
     {
-      "question": "The condition required for photosynthesis to occur is __________.",
+      "question": "A student adds dilute sulfuric acid to calcium carbonate. Bubbles of gas are produced. Which gas is produced?",
       "options": [
-        "heat",
-        "light",
-        "a catalyst",
-        "pressure"
-      ],
-      "correct": 1,
-      "points": 10,
-      "explanation": "Light energy is required for photosynthesis to occur. It is often written above the arrow in the word equation as a condition, not as a reactant."
-    },
-    {
-      "question": "Aerobic respiration is a chemical reaction that occurs in living cells. The word equation is: glucose + oxygen → carbon dioxide + water + __________.",
-      "options": [
-        "light energy",
-        "thermal energy",
-        "oxygen",
-        "glucose"
-      ],
-      "correct": 1,
-      "points": 10,
-      "explanation": "Aerobic respiration is an oxidation reaction where glucose reacts with oxygen to release thermal energy and produce carbon dioxide and water."
-    },
-    {
-      "question": "Combustion is a reaction with oxygen that releases __________.",
-      "options": [
-        "light energy only",
-        "thermal energy and often light",
-        "sound energy only",
-        "electrical energy"
-      ],
-      "correct": 1,
-      "points": 10,
-      "explanation": "Combustion is a reaction that releases thermal energy and often produces light (flame). Examples include burning fuels and magnesium ribbon."
-    },
-    {
-      "question": "When methane burns in air, the word equation is: methane + __________ → carbon dioxide + water.",
-      "options": [
-        "air",
-        "oxygen",
-        "carbon dioxide",
-        "water"
-      ],
-      "correct": 1,
-      "points": 10,
-      "explanation": "Combustion is a reaction with oxygen that releases thermal energy. Methane reacts with oxygen (not 'air' as a whole) to produce carbon dioxide and water."
-    },
-    {
-      "question": "A condition often required to start a combustion reaction is __________.",
-      "options": [
-        "light",
-        "heat or a spark",
-        "a catalyst",
-        "pressure"
-      ],
-      "correct": 1,
-      "points": 10,
-      "explanation": "Combustion reactions often require heat or a spark to provide the activation energy needed to start the reaction. This condition is written above the arrow."
-    },
-    {
-      "question": "When hydrogen burns in oxygen, the word equation is: hydrogen + oxygen → __________.",
-      "options": [
-        "hydrogen oxide",
-        "water",
-        "hydrogen peroxide",
-        "oxygen water"
-      ],
-      "correct": 1,
-      "points": 10,
-      "explanation": "Hydrogen and oxygen react to form water. This is a combustion reaction that releases a large amount of thermal energy."
-    },
-    {
-      "question": "A candle burns in air. The word equation is: wax + oxygen → carbon dioxide + water + __________.",
-      "options": [
-        "light energy",
-        "thermal energy",
-        "sound energy",
-        "electrical energy"
-      ],
-      "correct": 1,
-      "points": 10,
-      "explanation": "Candle wax (a hydrocarbon) burns in oxygen to produce carbon dioxide, water, and thermal energy. This is a typical combustion reaction."
-    },
-    {
-      "question": "Rusting can be prevented by keeping iron away from __________.",
-      "options": [
-        "oxygen only",
-        "water only",
-        "both oxygen and water",
-        "carbon dioxide"
-      ],
-      "correct": 2,
-      "points": 10,
-      "explanation": "Rusting requires both oxygen and water. Preventing contact with either oxygen or water can slow down or prevent rusting."
-    },
-    {
-      "question": "The product of rusting is called __________.",
-      "options": [
-        "iron oxide",
-        "rust",
-        "iron hydroxide",
-        "iron carbonate"
-      ],
-      "correct": 1,
-      "points": 10,
-      "explanation": "The product of rusting is called rust. It has different properties from iron."
-    },
-    {
-      "question": "Photosynthesis and aerobic respiration are __________ processes.",
-      "options": [
-        "identical",
-        "opposite",
-        "unrelated",
-        "the same"
-      ],
-      "correct": 1,
-      "points": 10,
-      "explanation": "Photosynthesis uses carbon dioxide and produces oxygen. Aerobic respiration uses oxygen and produces carbon dioxide. They are essentially opposite processes."
-    },
-    {
-      "question": "In the word equation for combustion, the reactant that is always required is __________.",
-      "options": [
-        "water",
-        "carbon dioxide",
-        "oxygen",
-        "hydrogen"
-      ],
-      "correct": 2,
-      "points": 10,
-      "explanation": "Combustion is a reaction with oxygen. Oxygen is always required as a reactant in combustion reactions."
-    },
-    {
-      "question": "The word equation for the reaction between iron and oxygen to form rust is: iron + oxygen + water → __________.",
-      "options": [
-        "iron oxide",
-        "rust",
-        "iron hydroxide",
-        "iron carbonate"
-      ],
-      "correct": 1,
-      "points": 10,
-      "explanation": "Rusting requires both oxygen and water. The product is called rust."
-    },
-    {
-      "question": "In photosynthesis, the product that is released into the atmosphere is __________.",
-      "options": [
-        "carbon dioxide",
-        "water",
-        "glucose",
-        "oxygen"
-      ],
-      "correct": 3,
-      "points": 10,
-      "explanation": "In photosynthesis, oxygen is produced as a product and released into the atmosphere. This oxygen is essential for aerobic respiration in living organisms."
-    },
-    {
-      "question": "A condition that is NOT required for rusting to occur is __________.",
-      "options": [
-        "oxygen",
-        "water",
-        "iron",
-        "light"
-      ],
-      "correct": 3,
-      "points": 10,
-      "explanation": "Rusting requires iron, oxygen, and water. Light is not required for rusting to occur; rusting can happen in the dark."
-    },
-    {
-      "question": "In the word equation: glucose + oxygen → carbon dioxide + water + thermal energy, which substances are the reactants?",
-      "options": [
-        "Carbon dioxide and water",
-        "Glucose and oxygen",
-        "Thermal energy only",
-        "Carbon dioxide, water and thermal energy"
-      ],
-      "correct": 1,
-      "points": 10,
-      "explanation": "Reactants are written on the left side of the arrow. Glucose and oxygen are the starting substances that react in aerobic respiration."
-    },
-    {
-      "question": "In the word equation for photosynthesis, which substance is a product that is released into the atmosphere?",
-      "options": [
+        "Hydrogen",
+        "Oxygen",
         "Carbon dioxide",
-        "Water",
-        "Glucose",
-        "Oxygen"
+        "Nitrogen"
       ],
-      "correct": 3,
+      "correct": 2,
       "points": 10,
-      "explanation": "In photosynthesis, oxygen is produced as a product and released into the atmosphere. This oxygen is essential for aerobic respiration in living organisms."
+      "explanation": "When acid reacts with a carbonate, carbon dioxide gas is produced. This can be confirmed by bubbling the gas through limewater which turns milky."
     },
     {
-      "question": "Which word equation correctly represents the combustion of methane?",
+      "question": "Which word equation correctly represents the reaction between nitric acid and sodium hydroxide?",
       "options": [
-        "methane + air → carbon dioxide + water",
-        "methane + oxygen → carbon dioxide + water",
-        "carbon dioxide + water → methane + oxygen",
-        "methane → carbon dioxide + water"
+        "nitric acid + sodium hydroxide → sodium nitrate + water",
+        "nitric acid + sodium hydroxide → sodium nitrate + hydrogen",
+        "nitric acid + sodium hydroxide → sodium nitrate + carbon dioxide",
+        "nitric acid + sodium → sodium nitrate + water"
+      ],
+      "correct": 0,
+      "points": 15,
+      "explanation": "This is neutralisation (acid + alkali). The products are always a salt and water. The salt name combines the metal from the alkali with the acid name (nitric acid produces nitrate salts)."
+    },
+    {
+      "question": "A student observes that iron nails rust faster when placed in salt water compared to fresh water. What does this observation suggest?",
+      "options": [
+        "Salt water prevents rusting",
+        "Salt water has no effect on rusting",
+        "Salt water speeds up the rusting process",
+        "Only fresh water causes rusting"
+      ],
+      "correct": 2,
+      "points": 10,
+      "explanation": "The observation shows that rusting occurs faster in salt water. Dissolved salts act as a catalyst that speeds up the oxidation reaction between iron, oxygen and water."
+    },
+    {
+      "question": "In the reaction: glucose + oxygen → carbon dioxide + water + thermal energy, which elements are present in the reactants?",
+      "options": [
+        "Carbon, hydrogen, and oxygen",
+        "Carbon and oxygen only",
+        "Hydrogen and oxygen only",
+        "Carbon, hydrogen, oxygen, and nitrogen"
+      ],
+      "correct": 0,
+      "points": 15,
+      "explanation": "Glucose contains carbon, hydrogen and oxygen. Oxygen gas contains oxygen. These are the only elements in the reactants, and the same elements must be present in the products."
+    },
+    {
+      "question": "Why can nitrogen gas NOT be produced when magnesium burns in air?",
+      "options": [
+        "Nitrogen is too heavy to be produced",
+        "Nitrogen is not present in the reactants",
+        "Nitrogen is a liquid at room temperature",
+        "Nitrogen reacts too quickly with magnesium"
+      ],
+      "correct": 1,
+      "points": 15,
+      "explanation": "In chemical reactions, atoms are rearranged but not created or destroyed. Only elements present in the reactants can appear in the products. Magnesium and oxygen do not contain nitrogen."
+    },
+    {
+      "question": "A student heats potassium chlorate (KClO3) strongly. Oxygen gas is produced. Which type of reaction is this?",
+      "options": [
+        "Combustion",
+        "Thermal decomposition",
+        "Neutralisation",
+        "Oxidation"
       ],
       "correct": 1,
       "points": 10,
-      "explanation": "Combustion is a reaction with oxygen that releases thermal energy. Methane reacts with oxygen (not 'air' as a whole) to produce carbon dioxide and water."
+      "explanation": "Thermal decomposition is when a single substance breaks down into simpler substances when heated. One reactant produces two or more products."
+    },
+    {
+      "question": "Which observation provides evidence that a chemical reaction has occurred when acid is added to carbonate?",
+      "options": [
+        "The mixture becomes warmer",
+        "The volume of liquid mixture increases",
+        "The solid dissolves",
+        "Bubbles of gas are produced"
+      ],
+      "correct": 3,
+      "points": 10,
+      "explanation": "Production of a new gas (seen as bubbles) indicates a new substance has been formed, which is evidence of a chemical change. Temperature change alone could be physical."
+    },
+    {
+      "question": "In the word equation for photosynthesis: carbon dioxide + water → glucose + oxygen, what condition is required?",
+      "options": [
+        "Heat",
+        "Light",
+        "A catalyst",
+        "Pressure"
+      ],
+      "correct": 1,
+      "points": 10,
+      "explanation": "Light energy is required for photosynthesis. It is written above the arrow as a condition, not on the left side as a reactant, because light is not consumed in the reaction."
+    },
+    {
+      "question": "A student tests a gas with a lit splint. The flame is extinguished with a pop sound. Which reaction most likely produced this gas?",
+      "options": [
+        "Acid + alkali",
+        "Thermal decomposition",
+        "Acid + carbonate",
+        "Acid + metal"
+      ],
+      "correct": 3,
+      "points": 15,
+      "explanation": "The pop test confirms hydrogen gas. Hydrogen is produced when acid reacts with a metal. Acid + carbonate produces carbon dioxide (limewater test), acid + alkali produces no gas."
+    },
+    {
+      "question": "Which statement correctly describes what happens to atoms during a chemical reaction?",
+      "options": [
+        "Atoms are created during the reaction",
+        "Atoms are destroyed during the reaction",
+        "Atoms are rearranged but not created or destroyed",
+        "Atoms change into different types of atoms"
+      ],
+      "correct": 2,
+      "points": 10,
+      "explanation": "Chemical reactions involve rearrangement of atoms. The same types and number of atoms are present in reactants and products. This is why mass is conserved."
+    },
+    {
+      "question": "A student writes this word equation: copper + oxygen → copper oxide. What information is missing?",
+      "options": [
+        "The condition (heat) needed for the reaction",
+        "The state symbols for each substance",
+        "The mass of each substance",
+        "The colour of each substance"
+      ],
+      "correct": 0,
+      "points": 10,
+      "explanation": "Copper does not react with oxygen at room temperature. Heat is required to start the reaction. Conditions are written above the arrow in word equations."
+    },
+    {
+      "question": "Which word equation correctly represents neutralisation?",
+      "options": [
+        "acid + metal → salt + hydrogen",
+        "acid + carbonate → salt + water + carbon dioxide",
+        "acid + alkali → salt + water",
+        "metal + oxygen → metal oxide"
+      ],
+      "correct": 2,
+      "points": 10,
+      "explanation": "Neutralisation is specifically the reaction between an acid and an alkali. The products are always a salt and water. No gas is produced in neutralisation."
+    },
+    {
+      "question": "A student observes a colour change from green to black when heating a powder. The gas produced forms white precipitate in limewater milky. What was the original powder?",
+      "options": [
+        "Copper metal",
+        "Copper carbonate",
+        "Copper oxide",
+        "Copper sulfate"
+      ],
+      "correct": 1,
+      "points": 15,
+      "explanation": "Copper carbonate is green. When heated, it decomposes to black copper oxide and carbon dioxide gas. Carbon dioxide turns limewater milky. This matches all observations."
+    },
+    {
+      "question": "In the reaction: hydrochloric acid + sodium hydroxide → sodium chloride + water, which elements are present in the products?",
+      "options": [
+        "Sodium, chlorine, hydrogen, and oxygen",
+        "Sodium and chlorine only",
+        "Hydrogen and oxygen only",
+        "Sodium, chlorine, and hydrogen only"
+      ],
+      "correct": 0,
+      "points": 15,
+      "explanation": "Sodium chloride contains sodium and chlorine. Water contains hydrogen and oxygen. These same elements must be present in the reactants (hydrochloric acid and sodium hydroxide)."
+    },
+    {
+      "question": "Which condition is needed for rusting but NOT for combustion?",
+      "options": [
+        "Oxygen",
+        "A fuel",
+        "Heat to start",
+        "Water"
+      ],
+      "correct": 3,
+      "points": 10,
+      "explanation": "Rusting requires both oxygen AND water. Combustion requires oxygen and a fuel, plus heat to start, but water is not required. Rusting is a slow oxidation that occurs at room temperature."
+    },
+    {
+      "question": "A student claims that heating calcium carbonate produces calcium, carbon and oxygen gas. Why is this claim incorrect?",
+      "options": [
+        "The products should be calcium oxide and carbon dioxide, not separate elements",
+        "Calcium carbonate does not react when heated",
+        "Oxygen gas cannot be produced from heating",
+        "Carbon cannot be produced from a carbonate"
+      ],
+      "correct": 0,
+      "points": 15,
+      "explanation": "In thermal decomposition, compounds break into simpler compounds, not necessarily into elements. Calcium carbonate decomposes to calcium oxide (a compound) and carbon dioxide (a compound), not to separate elements."
     }
   ]
 }
