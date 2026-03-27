@@ -48,10 +48,10 @@
       "options": [
         "gains",
         "absorbs",
-        "loses",
-        "reflects"
+        "reflects",
+        "loses"
       ],
-      "correct": 2,
+      "correct": 3,
       "points": 12,
       "explanation": "At night, without sunlight, both land surface and sea surface lose thermal energy. However, the land surface cools down faster, so it loses thermal energy at a faster rate."
     },
@@ -72,10 +72,10 @@
       "options": [
         "conduction",
         "radiation",
-        "convection",
-        "electrical"
+        "electrical",
+        "convection"
       ],
-      "correct": 2,
+      "correct": 3,
       "points": 10,
       "explanation": "Convection currents are formed when fluids (liquids or gases) circulate due to differences in density caused by temperature differences."
     },
@@ -94,12 +94,12 @@
     {
       "question": "In convection, thermal energy is transferred through the _______ of the fluid itself.",
       "options": [
-        "vibration",
-        "collision",
         "bulk movement",
+        "collision",
+        "vibration",
         "compression"
       ],
-      "correct": 2,
+      "correct": 0,
       "points": 10,
       "explanation": "Unlike conduction where particles vibrate in fixed positions, convection involves the bulk movement (flow) of the fluid carrying thermal energy from one place to another."
     },
@@ -120,10 +120,10 @@
       "options": [
         "mountains",
         "inland areas",
-        "sea surface",
-        "forest"
+        "forest",
+        "sea surface"
       ],
-      "correct": 2,
+      "correct": 3,
       "points": 12,
       "explanation": "The warm air that rises above the land surface moves towards the sea surface at higher altitudes. There it cools, becomes denser, and sinks, completing the convection cycle."
     },
@@ -262,12 +262,12 @@
     {
       "question": "The rising warm air carries thermal energy _______ from the heated surface.",
       "options": [
-        "towards",
         "away",
+        "towards",
         "parallel to",
         "below"
       ],
-      "correct": 1,
+      "correct": 0,
       "points": 10,
       "explanation": "Convection transfers thermal energy by moving heated fluid away from the heat source. Rising warm air carries thermal energy away from the heated surface."
     },
@@ -324,10 +324,10 @@
       "options": [
         "vibrate",
         "collide",
-        "move",
-        "compress"
+        "compress",
+        "move"
       ],
-      "correct": 2,
+      "correct": 3,
       "points": 12,
       "explanation": "In fluids, particles can move freely from place to place. This bulk movement of particles carrying thermal energy is faster than the particle-to-particle vibration in conduction."
     },
@@ -358,12 +358,12 @@
     {
       "question": "During a sea breeze, the air completes a _______ path, rising over the land surface and sinking over the sea surface.",
       "options": [
-        "straight",
-        "random",
         "circular",
+        "random",
+        "straight",
         "zigzag"
       ],
-      "correct": 2,
+      "correct": 0,
       "points": 10,
       "explanation": "The convection current forms a circular (loop) path: air rises over land surface → moves towards sea at high altitude → sinks over sea surface → flows back to land at ground level."
     }
