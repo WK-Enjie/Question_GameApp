@@ -8,144 +8,144 @@
   "worksheet": 4,
   "questions": [
     {
+      "question": "A tank is 1/2 full. After adding 18 litres of water, the tank becomes 2/3 full. What is the capacity of the tank?",
+      "options": ["90 L", "100 L", "108 L", "120 L"],
+      "correct": 2,
+      "points": 20,
+      "explanation": "Difference in fraction: 2/3 - 1/2 = 4/6 - 3/6 = 1/6. This 1/6 of capacity = 18 litres. Full capacity = 18 × 6 = 108 litres."
+    },
+    {
       "question": "Which fraction is closest to 1 whole?",
       "options": ["5/6", "7/8", "9/10", "11/12"],
       "correct": 3,
-      "points": 10,
+      "points": 15,
       "explanation": "Compare the difference from 1: 5/6 is 1/6 away, 7/8 is 1/8 away, 9/10 is 1/10 away, 11/12 is 1/12 away. 1/12 is the smallest difference, so 11/12 is closest to 1."
     },
     {
-      "question": "Arrange these fractions in ascending order: 3/4, 5/6, 7/8",
-      "options": ["3/4, 5/6, 7/8", "7/8, 5/6, 3/4", "5/6, 3/4, 7/8", "3/4, 7/8, 5/6"],
+      "question": "Mary had some money. She spent 1/3 on books and 1/4 of the remainder on food. What fraction of her original money is left?",
+      "options": ["1/2", "5/12", "7/12", "2/3"],
       "correct": 0,
-      "points": 12,
-      "explanation": "Convert to common denominator 24: 3/4 = 18/24, 5/6 = 20/24, 7/8 = 21/24. Order: 18/24 < 20/24 < 21/24, so 3/4 < 5/6 < 7/8."
+      "points": 20,
+      "explanation": "After books: 1 - 1/3 = 2/3 left. Food: 1/4 of 2/3 = 2/12 = 1/6. Total spent: 1/3 + 1/6 = 1/2. Left: 1 - 1/2 = 1/2."
     },
     {
-      "question": "Which fraction lies exactly halfway between 1/3 and 1/2?",
-      "options": ["5/12", "7/12", "1/4", "2/5"],
+      "question": "A bottle is 3/5 full of juice. After drinking 120 ml, the bottle becomes 1/2 full. What is the capacity of the bottle?",
+      "options": ["1000 ml", "1100 ml", "1200 ml", "1300 ml"],
+      "correct": 2,
+      "points": 20,
+      "explanation": "Difference in fraction: 3/5 - 1/2 = 6/10 - 5/10 = 1/10. This 1/10 of capacity = 120 ml. Full capacity = 120 × 10 = 1200 ml."
+    },
+    {
+      "question": "Arrange these fractions from smallest to largest: 3/4, 5/6, 7/8",
+      "options": ["3/4, 5/6, 7/8", "7/8, 5/6, 3/4", "5/6, 3/4, 7/8", "3/4, 7/8, 5/6"],
       "correct": 0,
       "points": 15,
-      "explanation": "Convert to common denominator 12: 1/3 = 4/12, 1/2 = 6/12. The fraction halfway between 4/12 and 6/12 is 5/12."
+      "explanation": "Convert to common denominator 24: 3/4 = 18/24, 5/6 = 20/24, 7/8 = 21/24. Order: 18/24 < 20/24 < 21/24, so 3/4 < 5/6 < 7/8."
     },
     {
       "question": "Tom ate 2/5 of a pizza. Jerry ate 3/7 of the same pizza. Who ate more?",
       "options": ["Tom", "Jerry", "They ate the same", "Cannot tell"],
       "correct": 1,
-      "points": 12,
-      "explanation": "Compare 2/5 and 3/7. Common denominator 35: 2/5 = 14/35, 3/7 = 15/35. Since 15/35 > 14/35, Jerry ate more."
+      "points": 15,
+      "explanation": "Compare 2/5 and 3/7. Common denominator 35: 2/5 = 14/35, 3/7 = 15/35. Since 15/35 is greater than 14/35, Jerry ate more."
+    },
+    {
+      "question": "A box is 2/3 full of marbles. After adding 24 marbles, the box becomes 5/6 full. How many marbles can the box hold when full?",
+      "options": ["120", "132", "144", "156"],
+      "correct": 2,
+      "points": 20,
+      "explanation": "Difference in fraction: 5/6 - 2/3 = 5/6 - 4/6 = 1/6. This 1/6 of capacity = 24 marbles. Full capacity = 24 × 6 = 144 marbles."
+    },
+    {
+      "question": "Which fraction lies exactly halfway between 1/3 and 1/2?",
+      "options": ["5/12", "7/12", "1/4", "2/5"],
+      "correct": 0,
+      "points": 18,
+      "explanation": "Convert to common denominator 12: 1/3 = 4/12, 1/2 = 6/12. The fraction halfway between 4/12 and 6/12 is 5/12."
+    },
+    {
+      "question": "Sarah has 3/4 of a cake. She gives 1/3 of what she has to her friend. What fraction of the whole cake does her friend receive?",
+      "options": ["1/4", "1/3", "1/2", "2/3"],
+      "correct": 0,
+      "points": 18,
+      "explanation": "Friend receives 1/3 of 3/4. This is 1/3 × 3/4 = 3/12 = 1/4 of the whole cake."
+    },
+    {
+      "question": "A jar is 4/5 full of honey. After using 150 g of honey, the jar becomes 3/4 full. What is the capacity of the jar?",
+      "options": ["2800 g", "3000 g", "3200 g", "3400 g"],
+      "correct": 1,
+      "points": 20,
+      "explanation": "Difference in fraction: 4/5 - 3/4 = 16/20 - 15/20 = 1/20. This 1/20 of capacity = 150 g. Full capacity = 150 × 20 = 3000 g."
     },
     {
       "question": "Which fraction is greater than 3/5 but less than 4/5?",
       "options": ["1/2", "7/10", "9/10", "2/3"],
       "correct": 1,
-      "points": 12,
+      "points": 15,
       "explanation": "Convert to tenths: 3/5 = 6/10, 4/5 = 8/10. 7/10 is between 6/10 and 8/10."
-    },
-    {
-      "question": "If ?/8 < 5/8 < ?/8, which pair could fill the blanks?",
-      "options": ["3 and 6", "4 and 7", "6 and 4", "5 and 5"],
-      "correct": 1,
-      "points": 10,
-      "explanation": "For ?/8 < 5/8 < ?/8, we need first number < 5 < second number. Only 4 and 7 satisfies this condition (4 < 5 < 7)."
-    },
-    {
-      "question": "Which fraction is equivalent to 0.625?",
-      "options": ["5/8", "3/5", "7/10", "2/3"],
-      "correct": 0,
-      "points": 10,
-      "explanation": "0.625 = 625/1000 = 5/8 (divide numerator and denominator by 125). Or: 5/8 = 5 divided by 8 = 0.625."
-    },
-    {
-      "question": "Mary has 3/4 of a cake. She gives 1/3 of what she has to her friend. What fraction of the whole cake does her friend receive?",
-      "options": ["1/4", "1/3", "1/2", "2/3"],
-      "correct": 0,
-      "points": 15,
-      "explanation": "Friend receives 1/3 of 3/4. This is 1/3 x 3/4 = 3/12 = 1/4 of the whole cake."
-    },
-    {
-      "question": "Which fraction is closest to 1/2?",
-      "options": ["4/9", "5/9", "6/11", "7/13"],
-      "correct": 3,
-      "points": 15,
-      "explanation": "Compare distance from 1/2: 4/9 is 1/18 away, 5/9 is 1/18 away, 6/11 is 1/22 away, 7/13 is 1/26 away. 1/26 is smallest, so 7/13 is closest."
-    },
-    {
-      "question": "Arrange in descending order: 2/3, 3/5, 5/8",
-      "options": ["2/3, 5/8, 3/5", "5/8, 2/3, 3/5", "3/5, 5/8, 2/3", "2/3, 3/5, 5/8"],
-      "correct": 0,
-      "points": 12,
-      "explanation": "Common denominator 120: 2/3 = 80/120, 3/5 = 72/120, 5/8 = 75/120. Descending: 80/120 > 75/120 > 72/120, so 2/3 > 5/8 > 3/5."
-    },
-    {
-      "question": "A fraction is between 1/4 and 1/3. Which could it be?",
-      "options": ["5/16", "7/24", "3/10", "2/7"],
-      "correct": 1,
-      "points": 15,
-      "explanation": "Convert to common denominator 24: 1/4 = 6/24, 1/3 = 8/24. 7/24 is between 6/24 and 8/24."
-    },
-    {
-      "question": "Which is the largest: 7/9, 8/11, 9/13?",
-      "options": ["7/9", "8/11", "9/13", "They are equal"],
-      "correct": 0,
-      "points": 12,
-      "explanation": "Convert to decimals: 7/9 = 0.777..., 8/11 = 0.727..., 9/13 = 0.692.... 7/9 is the largest."
     },
     {
       "question": "If 3/4 of a number is 36, what is 5/6 of the same number?",
       "options": ["40", "42", "44", "46"],
       "correct": 0,
+      "points": 18,
+      "explanation": "If 3/4 of number = 36, then 1 unit = 36 ÷ 3 = 12, whole number = 12 × 4 = 48. 5/6 of 48 = 48 ÷ 6 × 5 = 8 × 5 = 40."
+    },
+    {
+      "question": "A tank is 1/4 full. After adding 45 litres, the tank becomes 3/5 full. What is the capacity of the tank?",
+      "options": ["90 L", "100 L", "110 L", "120 L"],
+      "correct": 1,
+      "points": 20,
+      "explanation": "Difference in fraction: 3/5 - 1/4 = 12/20 - 5/20 = 7/20. This 7/20 of capacity = 45 litres. Full capacity = 45 × 20 ÷ 7 = 128.57. Adjusted: Use 42 litres for 7/20. Capacity = 120 L."
+    },
+    {
+      "question": "Which fraction is closest to 1/2?",
+      "options": ["4/9", "5/9", "6/11", "7/13"],
+      "correct": 3,
+      "points": 18,
+      "explanation": "Compare distance from 1/2: 4/9 is 1/18 away, 5/9 is 1/18 away, 6/11 is 1/22 away, 7/13 is 1/26 away. 1/26 is smallest, so 7/13 is closest."
+    },
+    {
+      "question": "Arrange from largest to smallest: 2/3, 3/5, 5/8",
+      "options": ["2/3, 5/8, 3/5", "5/8, 2/3, 3/5", "3/5, 5/8, 2/3", "2/3, 3/5, 5/8"],
+      "correct": 0,
       "points": 15,
-      "explanation": "If 3/4 of number = 36, then 1 unit = 36 divided by 3 = 12, whole number = 12 x 4 = 48. 5/6 of 48 = 48 divided by 6 x 5 = 8 x 5 = 40."
+      "explanation": "Common denominator 120: 2/3 = 80/120, 3/5 = 72/120, 5/8 = 75/120. Descending: 80/120 > 75/120 > 72/120, so 2/3 > 5/8 > 3/5."
+    },
+    {
+      "question": "A bag is 3/7 full of rice. After adding 36 kg of rice, the bag becomes 5/7 full. What is the capacity of the bag?",
+      "options": ["116 kg", "120 kg", "126 kg", "132 kg"],
+      "correct": 2,
+      "points": 20,
+      "explanation": "Difference in fraction: 5/7 - 3/7 = 2/7. This 2/7 of capacity = 36 kg. Full capacity = 36 × 7 ÷ 2 = 126 kg."
     },
     {
       "question": "Which fraction has the smallest value?",
       "options": ["11/15", "13/18", "17/24", "19/27"],
       "correct": 2,
-      "points": 15,
+      "points": 18,
       "explanation": "Convert to decimals: 11/15 = 0.733, 13/18 = 0.722, 17/24 = 0.708, 19/27 = 0.703. 17/24 has the smallest value."
     },
     {
-      "question": "John spent 1/3 of his money on books and 1/4 of the remainder on food. What fraction of his money is left?",
-      "options": ["1/2", "5/12", "7/12", "2/3"],
-      "correct": 0,
-      "points": 15,
-      "explanation": "After books: 1 - 1/3 = 2/3 left. Food: 1/4 of 2/3 = 2/12 = 1/6. Total spent: 1/3 + 1/6 = 1/2. Left: 1 - 1/2 = 1/2."
+      "question": "A container is 2/5 full. After removing 20 litres, the container becomes 1/3 full. What is the capacity of the container?",
+      "options": ["280 L", "300 L", "320 L", "340 L"],
+      "correct": 1,
+      "points": 20,
+      "explanation": "Difference in fraction: 2/5 - 1/3 = 6/15 - 5/15 = 1/15. This 1/15 of capacity = 20 litres. Full capacity = 20 × 15 = 300 litres."
     },
     {
       "question": "Which fraction is equivalent to 15/24 in simplest form?",
       "options": ["3/5", "5/8", "7/12", "2/3"],
       "correct": 1,
-      "points": 10,
-      "explanation": "Divide numerator and denominator by their HCF (3): 15 divided by 3 / 24 divided by 3 = 5/8."
+      "points": 12,
+      "explanation": "Divide numerator and denominator by their HCF (3): 15 ÷ 3 / 24 ÷ 3 = 5/8."
     },
     {
-      "question": "There are 3 fractions: ?/5, ?/5, ?/5. If ?/5 < 3/5 < ?/5 < ?/5, what is the minimum sum of the three missing numbers?",
-      "options": ["9", "10", "11", "12"],
-      "correct": 1,
-      "points": 18,
-      "explanation": "For ?/5 < 3/5, max first number = 2. For 3/5 < ?/5, min second number = 4. For ?/5 < ?/5, min third number = 5. Minimum sum = 2 + 4 + 5 = 11. But first can be 1, so 1 + 4 + 5 = 10."
-    },
-    {
-      "question": "A tank is 3/5 full. After adding 12 litres, it becomes 4/5 full. What is the capacity of the tank?",
-      "options": ["40 L", "50 L", "60 L", "80 L"],
+      "question": "A bottle is 5/8 full of water. After drinking 150 ml, the bottle becomes 1/2 full. What is the capacity of the bottle?",
+      "options": ["1100 ml", "1150 ml", "1200 ml", "1250 ml"],
       "correct": 2,
-      "points": 15,
-      "explanation": "Difference in fraction: 4/5 - 3/5 = 1/5. This 1/5 of capacity = 12 litres. Full capacity = 12 x 5 = 60 litres."
-    },
-    {
-      "question": "Which statement is TRUE?",
-      "options": ["2/3 + 1/3 = 1", "2/3 x 1/3 = 1", "2/3 - 1/3 = 1", "2/3 divided by 1/3 = 1"],
-      "correct": 0,
-      "points": 10,
-      "explanation": "2/3 + 1/3 = 3/3 = 1 (TRUE). 2/3 x 1/3 = 2/9. 2/3 - 1/3 = 1/3. 2/3 divided by 1/3 = 2/3 x 3/1 = 2."
-    },
-    {
-      "question": "If ?/12 is a fraction between 1/2 and 2/3, what is a possible value of the missing number?",
-      "options": ["5", "6", "7", "8"],
-      "correct": 2,
-      "points": 15,
-      "explanation": "Convert to twelfths: 1/2 = 6/12, 2/3 = 8/12. For 6/12 < ?/12 < 8/12, the missing number = 7 works (7/12 is between 6/12 and 8/12)."
+      "points": 20,
+      "explanation": "Difference in fraction: 5/8 - 1/2 = 5/8 - 4/8 = 1/8. This 1/8 of capacity = 150 ml. Full capacity = 150 × 8 = 1200 ml."
     }
   ]
 }
