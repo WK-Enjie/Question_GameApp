@@ -13,10 +13,10 @@
       "options": [
         "Radiation",
         "Convection",
-        "Conduction",
-        "Evaporation"
+        "Evaporation",
+        "Conduction"
       ],
-      "correct": 2,
+      "correct": 3,
       "points": 15,
       "explanation": "Conduction transfers heat through direct contact between particles. In metals, vibrating particles pass kinetic energy to neighboring particles along the rod. Free electrons also help transfer energy quickly, making metals good conductors."
     },
@@ -49,34 +49,34 @@
       "options": [
         "Through conduction via air particles",
         "Through convection currents in the air",
-        "Through radiation as infrared waves",
-        "Through evaporation of moisture in the air"
+        "Through evaporation of moisture in the air",
+        "Through radiation as infrared radiation"
       ],
-      "correct": 2,
+      "correct": 3,
       "points": 15,
       "explanation": "Radiation transfers heat as invisible infrared waves that travel in straight lines through air (or even a vacuum). You feel warmth on your face because these waves are absorbed by your skin—even if the air between you and the fire is cold."
     },
     {
       "question": "Which material would be BEST to use for a pot holder when removing a hot dish from the oven?",
       "options": [
-        "Aluminum foil",
-        "Copper wire mesh",
         "Thick cotton cloth",
+        "Copper wire mesh",
+        "Aluminum foil",
         "Thin steel sheet"
       ],
-      "correct": 2,
+      "correct": 0,
       "points": 15,
       "explanation": "Thick cotton cloth is a poor conductor of heat (insulator). Its loosely packed fibers trap air, which also conducts heat poorly. This slows heat transfer from the hot dish to your hands. Metals like aluminum, copper, and steel conduct heat rapidly and would cause burns."
     },
     {
       "question": "Why does a room heat up more evenly when a fan is used with a heater?",
       "options": [
-        "The fan increases radiation from the heater",
-        "The fan reduces conduction through walls",
         "The fan speeds up convection by circulating warm air",
+        "The fan reduces conduction through walls",
+        "The fan increases radiation from the heater",
         "The fan converts electrical energy to thermal energy"
       ],
-      "correct": 2,
+      "correct": 0,
       "points": 20,
       "explanation": "A fan forces air movement, speeding up convection. It pushes warm air (which naturally rises) downward and circulates it throughout the room. This distributes heat more evenly instead of letting warm air collect near the ceiling."
     },
@@ -107,12 +107,12 @@
     {
       "question": "What happens to air particles when they are heated near a warm surface?",
       "options": [
-        "They slow down and move closer together",
         "They gain kinetic energy and move farther apart",
+        "They slow down and move closer together",
         "They stop vibrating completely",
         "They change into liquid particles"
       ],
-      "correct": 1,
+      "correct": 0,
       "points": 20,
       "explanation": "According to kinetic particle theory, heating gives particles more kinetic energy. They vibrate or move faster and collide more forcefully, pushing neighboring particles farther away. This causes expansion and decreased density—driving convection."
     },
