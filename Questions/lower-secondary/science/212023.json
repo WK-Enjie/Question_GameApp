@@ -47,12 +47,12 @@
     {
       "question": "What is one effect when a metal bridge gains thermal energy on a hot day?",
       "options": [
-        "The bridge contracts and becomes shorter",
         "The bridge expands and may increase in length",
+        "The bridge contracts and becomes shorter",
         "The bridge changes state from solid to liquid",
         "The bridge emits less radiation"
       ],
-      "correct": 1,
+      "correct": 0,
       "points": 15,
       "explanation": "When materials gain thermal energy, their particles vibrate more vigorously and move slightly farther apart. This causes expansion—solids like metal bridges increase in length, which is why expansion joints are built into structures."
     },
@@ -95,12 +95,12 @@
     {
       "question": "In a room with a heater placed near the floor, why does thermal energy spread throughout the room over time?",
       "options": [
+        "Warm air near the heater becomes less dense, rises, and cooler, denser air sinks to replace it, creating a convection current",
         "Thermal energy is conducted rapidly through the air from floor to ceiling",
-        "Warm air near the heater becomes less dense, rises, and cooler air sinks to replace it, creating a convection current",
         "Radiation from the heater pushes air molecules directly upward",
         "Air particles evaporate and carry thermal energy upward"
       ],
-      "correct": 1,
+      "correct": 0,
       "points": 20,
       "explanation": "Air near the heater gains thermal energy, expands, and becomes less dense. This warm air rises; cooler, denser air sinks to take its place. This continuous circulation—a convection current—distributes thermal energy throughout the room."
     },
