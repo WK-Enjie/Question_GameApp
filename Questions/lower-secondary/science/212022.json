@@ -46,24 +46,24 @@
     {
       "question": "When a bimetallic strip is cooled below room temperature, it bends in the _______ direction compared to when it is heated.",
       "options": [
-        "same",
         "opposite",
+        "same",
         "perpendicular",
         "random"
       ],
-      "correct": 1,
+      "correct": 0,
       "points": 15,
       "explanation": "When cooled, the metal that normally expands more will now contract more. This causes the strip to bend in the opposite direction compared to heating."
     },
     {
       "question": "In a fire alarm using a bimetallic strip, the strip bends when heated and _______ an electrical circuit to trigger the alarm.",
       "options": [
-        "breaks",
         "completes",
+        "breaks",
         "insulates",
         "bypasses"
       ],
-      "correct": 1,
+      "correct": 0,
       "points": 12,
       "explanation": "In most fire alarms, the bimetallic strip bends when heated and touches a contact, completing the electrical circuit and triggering the alarm."
     },
@@ -106,12 +106,12 @@
     {
       "question": "The continuous bending and straightening of the bimetallic strip in a thermostat keeps the temperature within a _______ range.",
       "options": [
-        "wide",
         "narrow",
+        "wide",
         "random",
         "unlimited"
       ],
-      "correct": 1,
+      "correct": 0,
       "points": 12,
       "explanation": "The thermostat switches the heater on and off repeatedly, keeping the temperature within a narrow range around the set point, rather than allowing large fluctuations."
     },
@@ -132,10 +132,10 @@
       "options": [
         "contract",
         "shrink",
-        "expand",
-        "break apart"
+        "break apart",
+        "expand"
       ],
-      "correct": 2,
+      "correct": 3,
       "points": 12,
       "explanation": "Tracks laid without gaps on a cold day have no room to expand when heated. On a hot day, they expand but have nowhere to go, causing them to buckle and deform."
     },
@@ -167,11 +167,11 @@
       "question": "On a hot day, power lines appear to _______ more than usual because the metal expands and lengthens.",
       "options": [
         "tighten",
-        "sag",
+        "glow",
         "vibrate",
-        "glow"
+        "sag"
       ],
-      "correct": 1,
+      "correct": 3,
       "points": 10,
       "explanation": "When heated, power lines expand and become longer. Since the poles are fixed, the extra length causes the lines to hang lower and sag more."
     },
@@ -179,11 +179,11 @@
       "question": "A metal lid on a glass jar is difficult to open. Running hot water over the lid helps because the metal lid expands _______ than the glass.",
       "options": [
         "less",
-        "more",
+        "slower",
         "at the same rate",
-        "slower"
+        "more"
       ],
-      "correct": 1,
+      "correct": 3,
       "points": 12,
       "explanation": "Metals generally expand more than glass when heated. Hot water causes the metal lid to expand more than the glass jar, loosening the lid and making it easier to open."
     },
@@ -202,12 +202,12 @@
     {
       "question": "When the same bimetallic strip (copper and steel) is cooled, copper contracts more than steel. The strip will now bend with copper on the _______.",
       "options": [
-        "outside",
         "inside",
+        "outside",
         "same side as when heated",
         "neither side"
       ],
-      "correct": 1,
+      "correct": 0,
       "points": 15,
       "explanation": "When cooled, copper contracts more than steel, so copper becomes shorter. The shorter metal goes to the inside of the curve. This is opposite to the bending when heated."
     },
@@ -238,12 +238,12 @@
     {
       "question": "A bimetallic strip is straight at room temperature. When placed in ice water, the strip will _______.",
       "options": [
-        "remain straight",
         "bend",
+        "remain straight",
         "melt",
         "break"
       ],
-      "correct": 1,
+      "correct": 0,
       "points": 10,
       "explanation": "In ice water, both metals contract, but one contracts more than the other. This unequal contraction causes the strip to bend, just in the opposite direction to heating."
     },
@@ -275,11 +275,11 @@
       "question": "Thermometers that use bimetallic strips are often coiled into a spiral so that a small temperature change produces a _______ movement of the pointer.",
       "options": [
         "smaller",
-        "larger",
+        "random",
         "slower",
-        "random"
+        "larger"
       ],
-      "correct": 1,
+      "correct": 3,
       "points": 15,
       "explanation": "Coiling the strip makes it effectively longer, amplifying the bending effect. This produces a larger rotation of the pointer for the same temperature change, making the thermometer more sensitive."
     },
