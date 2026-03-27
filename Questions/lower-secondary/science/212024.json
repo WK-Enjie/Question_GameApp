@@ -83,12 +83,12 @@
     {
       "question": "When a substance gains thermal energy, what generally happens to its size?",
       "options": [
-        "Most substances become smaller",
         "Most substances expand and take up more space",
+        "Most substances become smaller",
         "The size does not change at all",
         "Only liquids change size, solids and gases do not"
       ],
-      "correct": 1,
+      "correct": 0,
       "points": 20,
       "explanation": "Generally, solids, liquids and gases expand when they gain thermal energy and contract when they give out thermal energy. This change in size is called thermal expansion."
     },
@@ -107,12 +107,12 @@
     {
       "question": "Why does a dull black surface feel warmer than a shiny white surface when both are exposed to sunlight for the same time?",
       "options": [
-        "Dull black surfaces conduct thermal energy better than shiny white surfaces",
         "Dull black surfaces absorb more radiation; shiny white surfaces reflect more",
+        "Dull black surfaces conduct thermal energy better than shiny white surfaces",
         "Shiny white surfaces create stronger convection currents",
         "Dull black surfaces produce thermal energy through chemical reactions"
       ],
-      "correct": 1,
+      "correct": 0,
       "points": 25,
       "explanation": "Dark, dull surfaces are good absorbers of radiation—they take in more incoming radiation and convert it to thermal energy, raising their temperature. Light, shiny surfaces reflect more radiation away, so they gain less thermal energy and feel cooler."
     },
