@@ -122,7 +122,7 @@
     {
       "question": "Which fraction has the smallest value?",
       "options": ["11/15", "13/18", "17/24", "19/27"],
-      "correct": 2,
+      "correct": 3,
       "points": 18,
       "explanation": "Convert to decimals: 11/15 = 0.733, 13/18 = 0.722, 17/24 = 0.708, 19/27 = 0.703. 17/24 has the smallest value."
     },
