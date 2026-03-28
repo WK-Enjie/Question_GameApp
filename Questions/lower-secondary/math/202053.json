@@ -1,0 +1,115 @@
+{
+  "title": "Secondary 2 Mathematics - Chapter 5",
+  "topic": "Quadratic Equations (Word Problems & Applications)",
+  "subject": "Mathematics",
+  "grade": "Sec 2",
+  "chapter": 5,
+  "worksheet": 3,
+  "questions": [
+    {
+      "question": "One solution of the equation x² + kx - 12 = 0 is x = 3. Find the value of k and the other solution.",
+      "options": ["k = 1, other solution = -4", "k = -1, other solution = 4", "k = 1, other solution = 4", "k = -1, other solution = -4"],
+      "correct": 0,
+      "points": 25,
+      "explanation": "Sub x = 3: 3² + 3k - 12 = 0 → 9 + 3k - 12 = 0 → 3k = 3 → k = 1. Equation: x² + x - 12 = 0 → (x + 4)(x - 3) = 0. Other solution: x = -4."
+    },
+    {
+      "question": "Five years ago, Sarah was twice as old as John. The product of their current ages is 150. How old is Sarah now?",
+      "options": ["20", "15", "25", "30"],
+      "correct": 1,
+      "points": 30,
+      "explanation": "Let Sarah = S, John = J. S - 5 = 2(J - 5) → S = 2J - 5. Also SJ = 150. (2J - 5)J = 150 → 2J² - 5J - 150 = 0 → (2J + 15)(J - 10) = 0. J = 10. Sarah = 2(10) - 5 = 15."
+    },
+    {
+      "question": "Solve the equation 2y² - 7y + 3 = 0. Hence, find the value of 2y + 1 when y is the larger solution.",
+      "options": ["5", "6", "7", "8"],
+      "correct": 2,
+      "points": 25,
+      "explanation": "Factorise: (2y - 1)(y - 3) = 0. Solutions: y = 1/2, 3. Larger solution y = 3. Value: 2(3) + 1 = 7."
+    },
+    {
+      "question": "A rectangular garden has a perimeter of 34 m and an area of 60 m². Find the length of the garden (where length > width).",
+      "options": ["10 m", "12 m", "15 m", "20 m"],
+      "correct": 1,
+      "points": 30,
+      "explanation": "2(L + W) = 34 → L + W = 17 → W = 17 - L. Area: L(17 - L) = 60 → 17L - L² = 60 → L² - 17L + 60 = 0 → (L - 12)(L - 5) = 0. L = 12 or 5. Since L > W, L = 12."
+    },
+    {
+      "question": "The tens digit of a two-digit number is 2 more than the units digit. The product of the digits is 24. What is the number?",
+      "options": ["46", "64", "84", "48"],
+      "correct": 1,
+      "points": 25,
+      "explanation": "Let units = u, tens = u + 2. Product: u(u + 2) = 24 → u² + 2u - 24 = 0 → (u + 6)(u - 4) = 0. u = 4. Tens = 6. Number = 64."
+    },
+    {
+      "question": "Given that x = -2 is a solution to 3x² + px - 10 = 0, find the value of p and the other solution.",
+      "options": ["p = 1, other = 5/3", "p = -1, other = -5/3", "p = 1, other = -5/3", "p = -1, other = 5/3"],
+      "correct": 0,
+      "points": 25,
+      "explanation": "Sub x = -2: 3(4) - 2p - 10 = 0 → 12 - 2p - 10 = 0 → 2p = 2 → p = 1. Eq: 3x² + x - 10 = 0 → (3x - 5)(x + 2) = 0. Other solution: x = 5/3."
+    },
+    {
+      "question": "A shop sells pens at $x each. A customer buys $60 worth. If the price was $1 less, she could buy 3 more pens. Find x.",
+      "options": ["4", "5", "6", "10"],
+      "correct": 1,
+      "points": 30,
+      "explanation": "Original quantity = 60/x. New quantity = 60/(x-1). Equation: 60/(x-1) - 60/x = 3. Simplify: 60x - 60(x-1) = 3x(x-1) → 60 = 3x² - 3x → x² - x - 20 = 0 → (x - 5)(x + 4) = 0. Since price > 0, x = 5."
+    },
+    {
+      "question": "Solve the equation x² - 5x + 6 = 0. Hence, find the possible values of x².",
+      "options": ["4 only", "9 only", "4 and 9", "5 and 6"],
+      "correct": 2,
+      "points": 25,
+      "explanation": "Factorise: (x - 2)(x - 3) = 0. Solutions: x = 2, 3. Possible values of x²: 2² = 4, 3² = 9."
+    },
+    {
+      "question": "The height of a triangle is (x + 2) cm and the base is x cm. The area is 12 cm². Find the height of the triangle.",
+      "options": ["4 cm", "6 cm", "8 cm", "10 cm"],
+      "correct": 1,
+      "points": 25,
+      "explanation": "Area = 1/2 × base × height → 1/2 × x × (x + 2) = 12 → x(x + 2) = 24 → x² + 2x - 24 = 0 → (x + 6)(x - 4) = 0. x = 4. Height = 4 + 2 = 6 cm."
+    },
+    {
+      "question": "Two consecutive odd numbers have a product of 143. Find the larger number.",
+      "options": ["11", "13", "15", "17"],
+      "correct": 1,
+      "points": 25,
+      "explanation": "Let numbers be n and n+2. n(n+2) = 143 → n² + 2n - 143 = 0 → (n + 13)(n - 11) = 0. Since positive, n = 11. Larger number = 11 + 2 = 13."
+    },
+    {
+      "question": "If (x - 3) is a factor of 2x² + kx - 15 = 0, find the value of k and the other factor.",
+      "options": ["k = 1, (2x + 5)", "k = -1, (2x - 5)", "k = 1, (2x - 5)", "k = -1, (2x + 5)"],
+      "correct": 3,
+      "points": 25,
+      "explanation": "If (x - 3) is a factor, x = 3 is a solution. 2(9) + 3k - 15 = 0 → 18 + 3k - 15 = 0 → 3k = -3 → k = -1. Eq: 2x² - x - 15 = 0. Factors: (x - 3)(2x + 5). So k = -1, other factor (2x + 5)."
+    },
+    {
+      "question": "A square has side length x cm. If each side is increased by 3 cm, the area increases by 39 cm². Find x.",
+      "options": ["5 cm", "6 cm", "7 cm", "8 cm"],
+      "correct": 0,
+      "points": 30,
+      "explanation": "New Area - Old Area = 39 → (x + 3)² - x² = 39 → x² + 6x + 9 - x² = 39 → 6x = 30 → x = 5."
+    },
+    {
+      "question": "Solve the equation 5x² - 20 = 0. Hence, find the value of 3x.",
+      "options": ["6", "-6", "6 or -6", "10"],
+      "correct": 2,
+      "points": 20,
+      "explanation": "5x² = 20 → x² = 4 → x = 2, -2. Value of 3x: 3(2) = 6 or 3(-2) = -6."
+    },
+    {
+      "question": "The sum of two numbers is 12 and their product is 32. Form a quadratic equation and find the numbers.",
+      "options": ["4 and 8", "2 and 10", "6 and 6", "5 and 7"],
+      "correct": 0,
+      "points": 25,
+      "explanation": "Let numbers be roots of t² - (sum)t + (product) = 0 → t² - 12t + 32 = 0 → (t - 4)(t - 8) = 0. Numbers are 4 and 8."
+    },
+    {
+      "question": "A train travels 120 km. If its speed was 10 km/h faster, the journey would take 1 hour less. Find the original speed.",
+      "options": ["30 km/h", "40 km/h", "50 km/h", "60 km/h"],
+      "correct": 0,
+      "points": 35,
+      "explanation": "Let speed = v. Time = 120/v. New equation: 120/v - 120/(v+10) = 1. Simplify: 120(v+10) - 120v = v(v+10) → 1200 = v² + 10v → v² + 10v - 1200 = 0 → (v + 40)(v - 30) = 0. v = 30."
+    }
+  ]
+}

@@ -1,0 +1,130 @@
+{
+  "title": "Secondary 2 Mathematics - Chapter 5",
+  "topic": "Quadratic Equations (Word Problems)",
+  "subject": "Mathematics",
+  "grade": "Sec 2",
+  "chapter": 5,
+  "worksheet": 4,
+  "questions": [
+    {
+      "id": 1,
+      "question": "A rectangular garden has a uniform border of width x metres around a 10 m by 8 m lawn. The total area including the border is 120 m². Find x.",
+      "options": ["1", "2", "3", "4"],
+      "correct": 0,
+      "points": 25,
+      "explanation": "Total dimensions: (10 + 2x) by (8 + 2x). Equation: (10 + 2x)(8 + 2x) = 120. Expand: 80 + 36x + 4x² = 120. Simplify: 4x² + 36x - 40 = 0 → x² + 9x - 10 = 0. Factorise: (x + 10)(x - 1) = 0. x = 1 or x = -10. Reject x = -10 (width cannot be negative). Answer: x = 1."
+    },
+    {
+      "id": 2,
+      "question": "The sum of the squares of two consecutive positive integers is 145. Find the larger integer.",
+      "options": ["8", "9", "10", "11"],
+      "correct": 1,
+      "points": 20,
+      "explanation": "Let integers be n and n + 1. Equation: n² + (n + 1)² = 145. Expand: 2n² + 2n + 1 = 145. Simplify: 2n² + 2n - 144 = 0 → n² + n - 72 = 0. Factorise: (n + 9)(n - 8) = 0. n = 8 or n = -9. Reject n = -9 (must be positive). Integers are 8 and 9. Larger = 9."
+    },
+    {
+      "id": 3,
+      "question": "A rectangular garden 12 m by 8 m has a path of uniform width x metres around it. The total area including path is 192 m². Find x.",
+      "options": ["1", "2", "3", "4"],
+      "correct": 1,
+      "points": 25,
+      "explanation": "Total dimensions: (12 + 2x) by (8 + 2x). Equation: (12 + 2x)(8 + 2x) = 192. Expand: 96 + 40x + 4x² = 192. Simplify: 4x² + 40x - 96 = 0 → x² + 10x - 24 = 0. Factorise: (x + 12)(x - 2) = 0. x = 2 or x = -12. Reject x = -12. Answer: x = 2."
+    },
+    {
+      "id": 4,
+      "question": "The product of two positive integers is 60. One integer is 4 more than the other. Find the larger integer.",
+      "options": ["8", "10", "12", "15"],
+      "correct": 1,
+      "points": 20,
+      "explanation": "Let smaller = x, larger = x + 4. Equation: x(x + 4) = 60. Expand: x² + 4x - 60 = 0. Factorise: (x + 10)(x - 6) = 0. x = 6 or x = -10. Reject x = -10. Integers are 6 and 10. Larger = 10."
+    },
+    {
+      "id": 5,
+      "question": "A rectangular sheet 40 cm by 30 cm has squares of side x cm cut from each corner. The sides are folded to make an open box with base area 600 cm². Find x.",
+      "options": ["3", "4", "5", "6"],
+      "correct": 2,
+      "points": 25,
+      "explanation": "Base dimensions: (40 - 2x) by (30 - 2x). Equation: (40 - 2x)(30 - 2x) = 600. Expand: 1200 - 140x + 4x² = 600. Simplify: 4x² - 140x + 600 = 0 → x² - 35x + 150 = 0. Factorise: (x - 30)(x - 5) = 0. x = 5 or x = 30. Reject x = 30 (base would be negative). Answer: x = 5."
+    },
+    {
+      "id": 6,
+      "question": "A rectangular garden has length 5 m more than its width. The area is 84 m². Find the width.",
+      "options": ["6 m", "7 m", "8 m", "9 m"],
+      "correct": 1,
+      "points": 20,
+      "explanation": "Let width = x, length = x + 5. Area: x(x + 5) = 84. Expand: x² + 5x - 84 = 0. Factorise: (x + 12)(x - 7) = 0. x = 7 or x = -12. Reject x = -12. Answer: x = 7 m."
+    },
+    {
+      "id": 7,
+      "question": "The sum of a two-digit number and the number formed by reversing its digits is 110. The product of the digits is 24. Find the original number.",
+      "options": ["46", "64", "38", "83"],
+      "correct": 0,
+      "points": 25,
+      "explanation": "Let tens = t, units = u. Sum: 11t + 11u = 110 → t + u = 10. Product: tu = 24. Solve: t = 10 - u. So (10 - u)u = 24 → u² - 10u + 24 = 0. Factorise: (u - 4)(u - 6) = 0. u = 4 or u = 6. If u = 4, t = 6, number = 64. If u = 6, t = 4, number = 46. Both valid. Answer: 46."
+    },
+    {
+      "id": 8,
+      "question": "A rectangular pool 25 m by 15 m has a deck of uniform width x metres around it. The total area is 675 m². Find x.",
+      "options": ["2", "2.5", "3", "5"],
+      "correct": 2,
+      "points": 25,
+      "explanation": "Total dimensions: (25 + 2x) by (15 + 2x). Equation: (25 + 2x)(15 + 2x) = 675. Expand: 375 + 80x + 4x² = 675. Simplify: 4x² + 80x - 300 = 0 → x² + 20x - 75 = 0. Factorise: (x + 25)(x - 3) = 0. x = 3 or x = -25. Reject x = -25. Answer: x = 3."
+    },
+    {
+      "id": 9,
+      "question": "The sum of the squares of two positive integers is 117. One integer is 3 more than the other. Find the larger integer.",
+      "options": ["6", "7", "8", "9"],
+      "correct": 3,
+      "points": 20,
+      "explanation": "Let smaller = x, larger = x + 3. Equation: x² + (x + 3)² = 117. Expand: 2x² + 6x + 9 = 117. Simplify: 2x² + 6x - 108 = 0 → x² + 3x - 54 = 0. Factorise: (x + 9)(x - 6) = 0. x = 6 or x = -9. Reject x = -9. Integers are 6 and 9. Larger = 9."
+    },
+    {
+      "id": 10,
+      "question": "A rectangular garden 50 m by 40 m has a cross-path of uniform width x metres. The path area is 800 m². Find x.",
+      "options": ["4", "5", "8", "10"],
+      "correct": 3,
+      "points": 25,
+      "explanation": "Path area = 50x + 40x - x² (subtract overlap). Equation: 90x - x² = 800. Rearrange: x² - 90x + 800 = 0. Factorise: (x - 10)(x - 80) = 0. x = 10 or x = 80. Reject x = 80 (wider than garden). Answer: x = 10."
+    },
+    {
+      "id": 11,
+      "question": "The sum of the squares of the digits of a two-digit number is 52. The tens digit is 2 more than the units digit. Find the number.",
+      "options": ["46", "64", "58", "85"],
+      "correct": 1,
+      "points": 25,
+      "explanation": "Let units = u, tens = u + 2. Sum of squares: (u + 2)² + u² = 52. Expand: 2u² + 4u + 4 = 52. Simplify: 2u² + 4u - 48 = 0 → u² + 2u - 24 = 0. Factorise: (u + 6)(u - 4) = 0. u = 4 or u = -6. Reject u = -6. So u = 4, tens = 6. Number = 64. Check: 6² + 4² = 36 + 16 = 52 ✓."
+    },
+    {
+      "id": 12,
+      "question": "A rectangular field is 30 m long and 20 m wide. A path of uniform width x metres runs around the inside edge. The inner area is 384 m². Find x.",
+      "options": ["2", "2.5", "3", "5"],
+      "correct": 2,
+      "points": 25,
+      "explanation": "Inner dimensions: (30 - 2x) by (20 - 2x). Equation: (30 - 2x)(20 - 2x) = 384. Expand: 600 - 100x + 4x² = 384. Simplify: 4x² - 100x + 216 = 0 → x² - 25x + 54 = 0. Factorise: (x - 3)(x - 22) = 0. x = 3 or x = 22. Reject x = 22 (would make inner dimensions negative). Answer: x = 3."
+    },
+    {
+      "id": 13,
+      "question": "Two positive integers differ by 3. The sum of their squares is 117. Find the larger integer.",
+      "options": ["6", "7", "8", "9"],
+      "correct": 3,
+      "points": 20,
+      "explanation": "Let smaller = x, larger = x + 3. Equation: x² + (x + 3)² = 117. Expand: 2x² + 6x + 9 = 117. Simplify: 2x² + 6x - 108 = 0 → x² + 3x - 54 = 0. Factorise: (x + 9)(x - 6) = 0. x = 6 or x = -9. Reject x = -9. Integers are 6 and 9. Larger = 9."
+    },
+    {
+      "id": 14,
+      "question": "A rectangular photo 12 cm by 8 cm has a uniform border. The total area is 180 cm². Find the border width x.",
+      "options": ["1", "2", "3", "4"],
+      "correct": 2,
+      "points": 25,
+      "explanation": "Total dimensions: (12 + 2x) by (8 + 2x). Equation: (12 + 2x)(8 + 2x) = 180. Expand: 96 + 40x + 4x² = 180. Simplify: 4x² + 40x - 84 = 0 → x² + 10x - 21 = 0. Factorise: (x + 14)(x - 3) = 0. x = 3 or x = -14. Reject x = -14. Answer: x = 3."
+    },
+    {
+      "id": 15,
+      "question": "The product of two consecutive positive even integers is 168. Find the larger integer.",
+      "options": ["12", "14", "16", "18"],
+      "correct": 1,
+      "points": 20,
+      "explanation": "Let integers be 2n and 2n + 2. Equation: 2n(2n + 2) = 168. Simplify: 4n² + 4n - 168 = 0 → n² + n - 42 = 0. Factorise: (n + 7)(n - 6) = 0. n = 6 or n = -7. Reject n = -7. Integers are 12 and 14. Larger = 14."
+    }
+  ]
+}

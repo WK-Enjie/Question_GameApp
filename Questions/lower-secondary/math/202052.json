@@ -1,0 +1,115 @@
+{
+  "title": "Secondary 2 Mathematics - Chapter 5",
+  "topic": "Quadratic Equations (Factorisation Method)",
+  "subject": "Mathematics",
+  "grade": "Sec 2",
+  "chapter": 5,
+  "worksheet": 2,
+  "questions": [
+    {
+      "question": "Solve the quadratic equation: x² + 7x + 10 = 0",
+      "options": ["x = -2, -5", "x = 2, 5", "x = -1, -10", "x = 1, 10"],
+      "correct": 0,
+      "points": 10,
+      "explanation": "Factorise: (x + 2)(x + 5) = 0. So x = -2 or x = -5."
+    },
+    {
+      "question": "Solve the equation: x² - 49 = 0",
+      "options": ["x = 7", "x = -7", "x = 7, -7", "x = 49, -49"],
+      "correct": 2,
+      "points": 10,
+      "explanation": "Difference of two squares: (x - 7)(x + 7) = 0. So x = 7 or x = -7."
+    },
+    {
+      "question": "Solve the equation: x² - 9x = 0",
+      "options": ["x = 9", "x = 0", "x = 0, 9", "x = -9, 0"],
+      "correct": 2,
+      "points": 10,
+      "explanation": "Take out common factor x: x(x - 9) = 0. So x = 0 or x = 9."
+    },
+    {
+      "question": "Solve the equation: 2x² - 8 = 0",
+      "options": ["x = 2", "x = -2", "x = 4, -4", "x = 2, -2"],
+      "correct": 3,
+      "points": 15,
+      "explanation": "Divide by 2: x² - 4 = 0. Factorise: (x - 2)(x + 2) = 0. Solutions: x = 2, -2."
+    },
+    {
+      "question": "Solve the equation: x² - 6x + 9 = 0",
+      "options": ["x = 3", "x = -3", "x = 3, -3", "x = 9"],
+      "correct": 0,
+      "points": 15,
+      "explanation": "Perfect square trinomial: (x - 3)² = 0. So x = 3 (repeated root)."
+    },
+    {
+      "question": "Solve the equation: 2x² - 5x - 3 = 0",
+      "options": ["x = 3, -1/2", "x = -3, 1/2", "x = 3, 1/2", "x = -3, -1/2"],
+      "correct": 0,
+      "points": 20,
+      "explanation": "Factorise: (2x + 1)(x - 3) = 0. So 2x = -1 → x = -1/2, or x = 3."
+    },
+    {
+      "question": "Solve the equation: (x + 4)(x - 1) = 0",
+      "options": ["x = 4, 1", "x = -4, -1", "x = -4, 1", "x = 4, -1"],
+      "correct": 2,
+      "points": 10,
+      "explanation": "Zero Product Property: x + 4 = 0 → x = -4, or x - 1 = 0 → x = 1."
+    },
+    {
+      "question": "Solve the equation: x² = 16x",
+      "options": ["x = 16", "x = 0", "x = 0, 16", "x = -16, 0"],
+      "correct": 2,
+      "points": 15,
+      "explanation": "Rearrange: x² - 16x = 0. Factorise: x(x - 16) = 0. Solutions: x = 0, 16."
+    },
+    {
+      "question": "The product of two consecutive positive integers is 20. What is the smaller integer?",
+      "options": ["3", "4", "5", "6"],
+      "correct": 1,
+      "points": 20,
+      "explanation": "Let integers be n and n+1. n(n+1) = 20 → n² + n - 20 = 0 → (n+5)(n-4) = 0. Since positive, n = 4."
+    },
+    {
+      "question": "A rectangle has length (x + 5) cm and width x cm. Its area is 24 cm². Find x.",
+      "options": ["3", "4", "5", "8"],
+      "correct": 1,
+      "points": 20,
+      "explanation": "Area = x(x + 5) = 24 → x² + 5x - 24 = 0 → (x + 8)(x - 3) = 0. Since length > 0, x = 3."
+    },
+    {
+      "question": "Solve the equation: 3x² - 27 = 0",
+      "options": ["x = 3", "x = -3", "x = 9, -9", "x = 3, -3"],
+      "correct": 3,
+      "points": 15,
+      "explanation": "Divide by 3: x² - 9 = 0. Factorise: (x - 3)(x + 3) = 0. Solutions: x = 3, -3."
+    },
+    {
+      "question": "The sum of a number and its square is 12. Find the positive number.",
+      "options": ["2", "3", "4", "5"],
+      "correct": 1,
+      "points": 20,
+      "explanation": "Let number be x. x + x² = 12 → x² + x - 12 = 0 → (x + 4)(x - 3) = 0. Since positive, x = 3."
+    },
+    {
+      "question": "Solve the equation: 4x² - 1 = 0",
+      "options": ["x = 1/2, -1/2", "x = 1, -1", "x = 1/4, -1/4", "x = 2, -2"],
+      "correct": 0,
+      "points": 20,
+      "explanation": "Difference of squares: (2x - 1)(2x + 1) = 0. So 2x = 1 → x = 1/2, or 2x = -1 → x = -1/2."
+    },
+    {
+      "question": "Which of the following is the correct factorisation of x² - 8x + 16?",
+      "options": ["(x - 4)(x + 4)", "(x - 4)(x - 4)", "(x - 8)(x - 2)", "(x + 4)(x + 4)"],
+      "correct": 1,
+      "points": 10,
+      "explanation": "Perfect square: (x - 4)² = (x - 4)(x - 4). Expands to x² - 4x - 4x + 16 = x² - 8x + 16."
+    },
+    {
+      "question": "Solve the equation: x² - 11x + 30 = 0",
+      "options": ["x = 5, 6", "x = -5, -6", "x = 3, 10", "x = -3, -10"],
+      "correct": 0,
+      "points": 15,
+      "explanation": "Factorise: (x - 5)(x - 6) = 0. Solutions: x = 5, 6."
+    }
+  ]
+}
