@@ -1,0 +1,115 @@
+{
+  "title": "Secondary 1 Mathematics - Chapter 4",
+  "topic": "Algebraic Manipulation (Complex Expressions)",
+  "subject": "Mathematics",
+  "grade": "Sec 1",
+  "chapter": 4,
+  "worksheet": 3,
+  "questions": [
+    {
+      "question": "Simplify: 3(x + 5) - [4(2x - 3) + 5x - 4]",
+      "options": ["-10x + 31", "10x + 31", "-10x - 31", "-10x + 19"],
+      "correct": 0,
+      "points": 20,
+      "explanation": "3x + 15 - [8x - 12 + 5x - 4] = 3x + 15 - [13x - 16] = 3x + 15 - 13x + 16 = -10x + 31."
+    },
+    {
+      "question": "Simplify: 4(3x - 2) - [5x - 3(2x - 1) + 4]",
+      "options": ["13x - 9", "13x - 15", "7x - 15", "13x + 15"],
+      "correct": 1,
+      "points": 20,
+      "explanation": "12x - 8 - [5x - 6x + 3 + 4] = 12x - 8 - [-x + 7] = 12x - 8 + x - 7 = 13x - 15."
+    },
+    {
+      "question": "Simplify: 3y - 2[4y - 3(y + 2) + 5] - 4y",
+      "options": ["3y + 2", "-3y + 2", "-3y - 2", "-3y + 8"],
+      "correct": 1,
+      "points": 20,
+      "explanation": "3y - 2[4y - 3y - 6 + 5] - 4y = 3y - 2[y - 1] - 4y = 3y - 2y + 2 - 4y = -3y + 2."
+    },
+    {
+      "question": "Simplify: 2[3(x - 2) + 4] - 5[x - 2(x + 1)]",
+      "options": ["11x - 6", "x + 6", "-11x + 6", "11x + 6"],
+      "correct": 3,
+      "points": 20,
+      "explanation": "2[3x - 6 + 4] - 5[x - 2x - 2] = 2[3x - 2] - 5[-x - 2] = 6x - 4 + 5x + 10 = 11x + 6."
+    },
+    {
+      "question": "Simplify: 5(2a - 3) - 2[3a - 4(a - 1) + 5]",
+      "options": ["12a - 33", "12a + 33", "-12a + 33", "12a - 23"],
+      "correct": 0,
+      "points": 20,
+      "explanation": "10a - 15 - 2[3a - 4a + 4 + 5] = 10a - 15 - 2[-a + 9] = 10a - 15 + 2a - 18 = 12a - 33."
+    },
+    {
+      "question": "Simplify: 3[2(x + 1) - 5] + 4[3 - 2(x - 1)]",
+      "options": ["2x + 11", "2x - 11", "-2x + 11", "-2x - 11"],
+      "correct": 2,
+      "points": 20,
+      "explanation": "3[2x + 2 - 5] + 4[3 - 2x + 2] = 3[2x - 3] + 4[5 - 2x] = 6x - 9 + 20 - 8x = -2x + 11."
+    },
+    {
+      "question": "Simplify: 2y - 3[4y - 2(y - 3) + 5] + 7y",
+      "options": ["-3y + 33", "3y + 33", "-3y - 33", "3y - 33"],
+      "correct": 3,
+      "points": 20,
+      "explanation": "2y - 3[4y - 2y + 6 + 5] + 7y = 2y - 3[2y + 11] + 7y = 2y - 6y - 33 + 7y = 3y - 33."
+    },
+    {
+      "question": "Simplify: 5[a - 2(3 - a)] - 3[2a - 4(a + 1)]",
+      "options": ["21a + 18", "21a - 8", "-21a + 18", "21a - 18"],
+      "correct": 3,
+      "points": 20,
+      "explanation": "5[a - 6 + 2a] - 3[2a - 4a - 4] = 5[3a - 6] - 3[-2a - 4] = 15a - 30 + 6a + 12 = 21a - 18."
+    },
+    {
+      "question": "Simplify: 3(2x - 5) - 4[x - 2(3 - x) + 1]",
+      "options": ["6x + 5", "6x - 5", "-6x + 5", "-6x - 5"],
+      "correct": 2,
+      "points": 20,
+      "explanation": "6x - 15 - 4[x - 6 + 2x + 1] = 6x - 15 - 4[3x - 5] = 6x - 15 - 12x + 20 = -6x + 5."
+    },
+    {
+      "question": "Simplify: 2[3(a + 2) - 4(a - 1)] + 5[2 - 3(a + 1)]",
+      "options": ["-17a + 15", "17a + 15", "-17a - 15", "17a - 15"],
+      "correct": 0,
+      "points": 20,
+      "explanation": "2[3a + 6 - 4a + 4] + 5[2 - 3a - 3] = 2[-a + 10] + 5[-3a - 1] = -2a + 20 - 15a - 5 = -17a + 15."
+    },
+    {
+      "question": "Simplify: 4(2x + 3) - 3[2x - 5(x - 1) + 2]",
+      "options": ["17x + 9", "-17x + 9", "17x - 19", "17x - 9"],
+      "correct": 3,
+      "points": 20,
+      "explanation": "8x + 12 - 3[2x - 5x + 5 + 2] = 8x + 12 - 3[-3x + 7] = 8x + 12 + 9x - 21 = 17x - 9."
+    },
+    {
+      "question": "Simplify: 5[2(x - 3) + 4] - 3[5 - 2(x + 1)]",
+      "options": ["16x - 19", "16x + 19", "-16x + 19", "16x - 29"],
+      "correct": 0,
+      "points": 20,
+      "explanation": "5[2x - 6 + 4] - 3[5 - 2x - 2] = 5[2x - 2] - 3[3 - 2x] = 10x - 10 - 9 + 6x = 16x - 19."
+    },
+    {
+      "question": "Simplify: 2[3a - 4(2 - a)] + 5[3 - 2(a + 1)]",
+      "options": ["4a - 11", "4a + 11", "-4a + 11", "4a - 21"],
+      "correct": 0,
+      "points": 20,
+      "explanation": "2[3a - 8 + 4a] + 5[3 - 2a - 2] = 2[7a - 8] + 5[1 - 2a] = 14a - 16 + 5 - 10a = 4a - 11."
+    },
+    {
+      "question": "Simplify: 4[x - 2(3 - x)] - 3[2x - 5(x + 1) + 4]",
+      "options": ["21x - 21", "17x + 13", "-17x + 13", "17x - 7"],
+      "correct": 0,
+      "points": 25,
+      "explanation": "4[x - 6 + 2x] - 3[2x - 5x - 5 + 4] = 4[3x - 6] - 3[-3x - 1] = 12x - 24 + 9x + 3 = 21x - 21."
+    },
+    {
+      "question": "Simplify: 6(2x - 3) - 2[4x - 3(x + 1) + 5]",
+      "options": ["10x - 22", "10x + 22", "-10x + 22", "10x - 16"],
+      "correct": 0,
+      "points": 20,
+      "explanation": "12x - 18 - 2[4x - 3x - 3 + 5] = 12x - 18 - 2[x + 2] = 12x - 18 - 2x - 4 = 10x - 22."
+    }
+  ]
+}
