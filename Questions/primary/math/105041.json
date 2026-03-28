@@ -1,0 +1,151 @@
+{
+  "title": "Area of Triangles - Linked to Squares and Rectangles",
+  "topic": "Area of Triangles",
+  "subject": "Mathematics",
+  "level": "Primary",
+  "grade": "P5",
+  "chapter": 4,
+  "worksheet": 1,
+  "questions": [
+    {
+      "question": "A rectangle has length 10 cm and width 6 cm. A triangle is drawn inside it with the same base and height. What is the area of the triangle?",
+      "options": ["36 cm²", "30 cm²", "60 cm²", "24 cm²"],
+      "correct": 1,
+      "points": 15,
+      "explanation": "Rectangle area = 10 × 6 = 60 cm². Triangle area = ½ × rectangle area = ½ × 60 = 30 cm². Or: ½ × 10 × 6 = 30 cm²."
+    },
+    {
+      "question": "A square has side 8 cm. A triangle is drawn inside it with the same base and height. What is the area of the triangle?",
+      "options": ["32 cm²", "36 cm²", "28 cm²", "64 cm²"],
+      "correct": 0,
+      "points": 15,
+      "explanation": "Square area = 8 × 8 = 64 cm². Triangle area = ½ × 64 = 32 cm². Or: ½ × 8 × 8 = 32 cm²."
+    },
+    {
+      "question": "Find the area of a triangle with base 12 cm and height 8 cm.",
+      "options": ["54 cm²", "42 cm²", "48 cm²", "96 cm²"],
+      "correct": 2,
+      "points": 12,
+      "explanation": "Area = ½ × base × height = ½ × 12 × 8 = 48 cm²."
+    },
+    {
+      "question": "A rectangle has area 80 cm². A triangle with the same base and height is drawn inside it. What is the area of the triangle?",
+      "options": ["45 cm²", "40 cm²", "35 cm²", "30 cm²"],
+      "correct": 1,
+      "points": 15,
+      "explanation": "Triangle area = ½ × rectangle area = ½ × 80 = 40 cm²."
+    },
+    {
+      "question": "A triangle has base 15 cm and height 4 cm. What is its area?",
+      "options": ["32 cm²", "28 cm²", "30 cm²", "24 cm²"],
+      "correct": 2,
+      "points": 12,
+      "explanation": "Area = ½ × 15 × 4 = 30 cm²."
+    },
+    {
+      "question": "A square has area 100 cm². A triangle with the same base and height is drawn inside it. What is the area of the triangle?",
+      "options": ["55 cm²", "50 cm²", "45 cm²", "40 cm²"],
+      "correct": 1,
+      "points": 15,
+      "explanation": "Triangle area = ½ × square area = ½ × 100 = 50 cm²."
+    },
+    {
+      "question": "The area of a triangle is 24 cm². If the height is 6 cm, what is the base?",
+      "options": ["7 cm", "8 cm", "9 cm", "6 cm"],
+      "correct": 1,
+      "points": 18,
+      "explanation": "Area = ½ × base × height. 24 = ½ × base × 6. 24 = 3 × base. Base = 24 ÷ 3 = 8 cm."
+    },
+    {
+      "question": "A rectangle has length 14 cm and width 10 cm. What is the area of a triangle with the same base and height?",
+      "options": ["70 cm²", "75 cm²", "65 cm²", "60 cm²"],
+      "correct": 0,
+      "points": 15,
+      "explanation": "Rectangle area = 14 × 10 = 140 cm². Triangle area = ½ × 140 = 70 cm²."
+    },
+    {
+      "question": "A triangle has area 36 cm² and base 9 cm. What is its height?",
+      "options": ["9 cm", "6 cm", "8 cm", "7 cm"],
+      "correct": 2,
+      "points": 18,
+      "explanation": "Area = ½ × base × height. 36 = ½ × 9 × height. 36 = 4.5 × height. Height = 36 ÷ 4.5 = 8 cm."
+    },
+    {
+      "question": "Two identical triangles can be joined to form a rectangle with length 16 cm and width 5 cm. What is the area of one triangle?",
+      "options": ["45 cm²", "40 cm²", "35 cm²", "50 cm²"],
+      "correct": 1,
+      "points": 18,
+      "explanation": "Rectangle area = 16 × 5 = 80 cm². One triangle = ½ × 80 = 40 cm²."
+    },
+    {
+      "question": "A triangle has base 20 cm and height 3 cm. What is its area?",
+      "options": ["32 cm²", "28 cm²", "24 cm²", "30 cm²"],
+      "correct": 3,
+      "points": 12,
+      "explanation": "Area = ½ × 20 × 3 = 30 cm²."
+    },
+    {
+      "question": "A square has side 12 cm. A triangle is drawn inside it with the same base and height. What is the area of the triangle?",
+      "options": ["72 cm²", "76 cm²", "66 cm²", "70 cm²"],
+      "correct": 0,
+      "points": 15,
+      "explanation": "Square area = 12 × 12 = 144 cm². Triangle area = ½ × 144 = 72 cm²."
+    },
+    {
+      "question": "The area of a triangle is 48 cm². If the base is 12 cm, what is the height?",
+      "options": ["9 cm", "7 cm", "8 cm", "6 cm"],
+      "correct": 2,
+      "points": 18,
+      "explanation": "Area = ½ × base × height. 48 = ½ × 12 × height. 48 = 6 × height. Height = 48 ÷ 6 = 8 cm."
+    },
+    {
+      "question": "A rectangle has area 120 cm². A triangle with the same base and height is drawn inside it. What is the area of the triangle?",
+      "options": ["65 cm²", "60 cm²", "55 cm²", "50 cm²"],
+      "correct": 1,
+      "points": 15,
+      "explanation": "Triangle area = ½ × rectangle area = ½ × 120 = 60 cm²."
+    },
+    {
+      "question": "Find the area of a triangle with base 18 cm and height 6 cm.",
+      "options": ["54 cm²", "58 cm²", "48 cm²", "52 cm²"],
+      "correct": 0,
+      "points": 12,
+      "explanation": "Area = ½ × 18 × 6 = 54 cm²."
+    },
+    {
+      "question": "A triangle has area 50 cm² and height 10 cm. What is its base?",
+      "options": ["9 cm", "11 cm", "10 cm", "8 cm"],
+      "correct": 2,
+      "points": 18,
+      "explanation": "Area = ½ × base × height. 50 = ½ × base × 10. 50 = 5 × base. Base = 50 ÷ 5 = 10 cm."
+    },
+    {
+      "question": "A rectangular garden is 10 m long and 8 m wide. A triangular flower bed with the same base and height is inside it. What is the area of the flower bed?",
+      "options": ["40 m²", "44 m²", "36 m²", "32 m²"],
+      "correct": 0,
+      "points": 15,
+      "explanation": "Rectangle area = 10 × 8 = 80 m². Triangle area = ½ × 80 = 40 m²."
+    },
+    {
+      "question": "A triangle has base 16 cm and height 5 cm. What is its area?",
+      "options": ["42 cm²", "35 cm²", "38 cm²", "40 cm²"],
+      "correct": 3,
+      "points": 12,
+      "explanation": "Area = ½ × 16 × 5 = 40 cm²."
+    },
+    {
+      "question": "The area of a triangle is 60 cm². If the height is 12 cm, what is the base?",
+      "options": ["11 cm", "10 cm", "9 cm", "8 cm"],
+      "correct": 1,
+      "points": 18,
+      "explanation": "Area = ½ × base × height. 60 = ½ × base × 12. 60 = 6 × base. Base = 60 ÷ 6 = 10 cm."
+    },
+    {
+      "question": "Two identical triangles form a square with side 14 cm. What is the area of one triangle?",
+      "options": ["98 cm²", "100 cm²", "96 cm²", "92 cm²"],
+      "correct": 0,
+      "points": 18,
+      "explanation": "Square area = 14 × 14 = 196 cm². One triangle = ½ × 196 = 98 cm²."
+    }
+  ]
+}
