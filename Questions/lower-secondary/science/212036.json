@@ -1,0 +1,251 @@
+{
+  "title": "Chemical Changes: pH Indicators, Neutralisation and Applications",
+  "topic": "Chemical Changes - pH, Indicators and Real-World Applications",
+  "subject": "Science",
+  "level": "Secondary",
+  "grade": "Sec 2",
+  "chapter": 3,
+  "worksheet": 6,
+  "questions": [
+    {
+      "question": "A student tests four solutions with Universal Indicator. Solution P turns red, Solution Q turns green, Solution R turns purple, Solution S turns yellow. Which solution is neutral?",
+      "options": [
+        "Solution S",
+        "Solution Q",
+        "Solution P",
+        "Solution R"
+      ],
+      "correct": 1,
+      "points": 15,
+      "explanation": "Universal Indicator turns green in neutral solutions (pH 7). Red indicates strongly acidic, yellow indicates weakly acidic, and purple indicates alkaline."
+    },
+    {
+      "question": "The table shows Universal Indicator colours for different pH ranges. A solution turns orange with Universal Indicator. What is its approximate pH range?",
+      "options": [
+        "pH 8-14 (alkaline)",
+        "pH 4-6 (weakly acidic)",
+        "pH 1-3 (strongly acidic)",
+        "pH 7 (neutral)"
+      ],
+      "correct": 1,
+      "points": 15,
+      "explanation": "Universal Indicator turns orange in weakly acidic solutions (pH 4-6). Red indicates strongly acidic (pH 1-3), green is neutral (pH 7), and blue/purple is alkaline (pH 8-14)."
+    },
+    {
+      "question": "A student tests a solution with both red and blue litmus paper. The blue litmus paper turns red, but the red litmus paper shows no change. What can be concluded about the solution?",
+      "options": [
+        "The litmus papers are faulty",
+        "The solution is neutral",
+        "The solution is acidic",
+        "The solution is alkaline"
+      ],
+      "correct": 2,
+      "points": 15,
+      "explanation": "Blue litmus paper turns red in acidic solutions. Red litmus paper stays red in acidic solutions. This confirms the solution is acidic."
+    },
+    {
+      "question": "A farmer tests the soil pH in his field. The soil turns Universal Indicator yellow. Which crop would grow BEST in this soil?",
+      "options": [
+        "Beans (prefer neutral soil, pH 6.5-7.5)",
+        "Potatoes (prefer acidic soil, pH 4.5-6.0)",
+        "All crops grow equally well",
+        "Spinach (prefer alkaline soil, pH 7.0-8.0)"
+      ],
+      "correct": 1,
+      "points": 15,
+      "explanation": "Yellow with Universal Indicator indicates weakly acidic soil (pH 4-6). Potatoes grow best in acidic soil, while beans prefer neutral and spinach prefer alkaline conditions."
+    },
+    {
+      "question": "Acid rain lowers the pH of soil. Which observation suggests acid rain has affected a field?",
+      "options": [
+        "Soil colour does not change",
+        "Soil turns Universal Indicator red or orange",
+        "Soil turns Universal Indicator purple",
+        "Soil turns Universal Indicator green"
+      ],
+      "correct": 1,
+      "points": 15,
+      "explanation": "Acid rain makes soil more acidic. Universal Indicator turns red or orange in acidic conditions, indicating a lower pH."
+    },
+    {
+      "question": "Some plants like blueberries grow better in acidic soil. If a farmer wants to grow blueberries, what should the soil pH be?",
+      "options": [
+        "Any pH is suitable",
+        "Above 7 (alkaline)",
+        "Below 7 (acidic)",
+        "Exactly 7 (neutral)"
+      ],
+      "correct": 2,
+      "points": 15,
+      "explanation": "Blueberries and some other crops prefer acidic soil (pH below 7). Farmers may add acidic materials to lower soil pH for these crops."
+    },
+    {
+      "question": "A person has excess stomach acid causing discomfort. An antacid tablet containing calcium carbonate is taken. What type of chemical reaction occurs in the stomach?",
+      "options": [
+        "Oxidation",
+        "Combustion",
+        "Neutralisation",
+        "Thermal decomposition"
+      ],
+      "correct": 2,
+      "points": 15,
+      "explanation": "Antacids containing carbonates react with excess stomach acid (hydrochloric acid) in a neutralisation reaction to form salt, water and carbon dioxide, reducing acidity."
+    },
+    {
+      "question": "An antacid contains calcium carbonate. Which word equation represents its reaction with stomach acid (hydrochloric acid)?",
+      "options": [
+        "calcium carbonate + hydrochloric acid → calcium chloride + water + carbon dioxide",
+        "calcium carbonate → calcium oxide + carbon dioxide",
+        "calcium carbonate + hydrochloric acid → calcium chloride + hydrogen",
+        "calcium carbonate + hydrochloric acid → calcium + water + chlorine"
+      ],
+      "correct": 0,
+      "points": 15,
+      "explanation": "This is a neutralisation reaction: carbonate + acid → salt + water + carbon dioxide. Calcium carbonate reacts with hydrochloric acid to form calcium chloride, water and carbon dioxide."
+    },
+    {
+      "question": "Why should antacids not be taken in very large amounts?",
+      "options": [
+        "They have no effect if taken in large amounts",
+        "They can make the stomach too alkaline, affecting digestion",
+        "They make the stomach too acidic",
+        "They cause combustion in the stomach"
+      ],
+      "correct": 1,
+      "points": 15,
+      "explanation": "Taking too much antacid can make the stomach too alkaline, which may interfere with normal digestion that requires some acid."
+    },
+    {
+      "question": "A student tests rainwater with Universal Indicator. It turns yellow-orange. What does this suggest about the rainwater?",
+      "options": [
+        "It contains no dissolved substances",
+        "It is acidic, possibly due to acid rain",
+        "It is neutral and safe for plants",
+        "It is alkaline and good for soil"
+      ],
+      "correct": 1,
+      "points": 15,
+      "explanation": "Yellow-orange with Universal Indicator indicates acidic conditions (pH 4-6). This suggests the rainwater may be acid rain, which can harm the environment."
+    },
+    {
+      "question": "Which statement about acid rain is correct?",
+      "options": [
+        "Acid rain has no effect on the environment",
+        "Acid rain can lower soil pH, affecting which crops can grow",
+        "Acid rain only affects buildings, not soil or plants",
+        "Acid rain makes soil more alkaline, helping all crops grow"
+      ],
+      "correct": 1,
+      "points": 15,
+      "explanation": "Acid rain lowers soil pH (makes it more acidic), which can harm some crops but may benefit others that prefer acidic conditions."
+    },
+    {
+      "question": "A wasp sting is alkaline. Which substance could be used to neutralise the pain?",
+      "options": [
+        "Soap solution (alkaline)",
+        "Vinegar (acidic)",
+        "Pure water (neutral)",
+        "Baking soda solution (alkaline)"
+      ],
+      "correct": 1,
+      "points": 15,
+      "explanation": "A wasp sting is alkaline. An acidic substance like vinegar can neutralise it through a neutralisation reaction, reducing pain."
+    },
+    {
+      "question": "A bee sting is acidic. Which substance could be used to neutralise the pain?",
+      "options": [
+        "Vinegar (acidic)",
+        "Baking soda solution (alkaline)",
+        "Pure water (neutral)",
+        "Lemon juice (acidic)"
+      ],
+      "correct": 1,
+      "points": 15,
+      "explanation": "A bee sting is acidic. An alkaline substance like baking soda solution can neutralise it through a neutralisation reaction, reducing pain."
+    },
+    {
+      "question": "Which observation would confirm that a solution is alkaline using litmus paper?",
+      "options": [
+        "Blue litmus paper stays blue and red litmus paper stays red",
+        "Red litmus paper turns blue",
+        "Both litmus papers stay the same colour",
+        "Blue litmus paper turns red"
+      ],
+      "correct": 1,
+      "points": 15,
+      "explanation": "Red litmus paper turns blue in alkaline solutions. Blue litmus paper stays blue in alkaline solutions but turns red in acidic solutions."
+    },
+    {
+      "question": "A student has three colourless solutions: acid, alkali, and water. Which test would BEST distinguish all three?",
+      "options": [
+        "Test by tasting each solution",
+        "Test with Universal Indicator",
+        "Test with red litmus paper only",
+        "Test with blue litmus paper only"
+      ],
+      "correct": 1,
+      "points": 15,
+      "explanation": "Universal Indicator shows different colours for acid (red/yellow), neutral (green), and alkali (blue/purple), allowing all three to be distinguished. Litmus paper only shows acid or alkali, not neutral."
+    },
+    {
+      "question": "A farmer adds lime (calcium hydroxide) to acidic soil. What is the purpose of this?",
+      "options": [
+        "To make the soil dry faster",
+        "To neutralise the acidity and raise the soil pH",
+        "To make the soil more acidic for certain crops",
+        "To add nutrients only, not change pH"
+      ],
+      "correct": 1,
+      "points": 15,
+      "explanation": "Lime is an alkali that neutralises acidic soil, raising the pH to a level more suitable for most crops. This is an application of neutralisation."
+    },
+    {
+      "question": "Which statement about electrolysis is correct for Sec 2 level?",
+      "options": [
+        "Electrolysis is the same as electroplating",
+        "Electrolysis uses an electric current to cause chemical changes",
+        "Electrolysis only works with solid substances",
+        "Electrolysis uses heat to break down compounds"
+      ],
+      "correct": 1,
+      "points": 15,
+      "explanation": "Electrolysis uses an electric current to cause chemical reactions, such as breaking down compounds or depositing metals in electroplating."
+    },
+    {
+      "question": "Why might a gardener add compost to soil that has been affected by acid rain?",
+      "options": [
+        "Compost makes soil dry out faster",
+        "Compost can help neutralise acidity and improve soil structure",
+        "Compost has no effect on soil pH",
+        "Compost makes soil more acidic"
+      ],
+      "correct": 1,
+      "points": 15,
+      "explanation": "Compost can help buffer soil pH, reducing the effects of acid rain. It also improves soil structure and adds nutrients, helping plants grow better."
+    },
+    {
+      "question": "A student tests a solution with Universal Indicator. It turns blue. Which statement is correct?",
+      "options": [
+        "The solution is acidic and will not change red litmus paper",
+        "The solution is alkaline and will turn red litmus paper blue",
+        "The solution is neutral and will not change either litmus paper",
+        "The solution is acidic and will turn blue litmus paper red"
+      ],
+      "correct": 1,
+      "points": 15,
+      "explanation": "Blue with Universal Indicator indicates an alkaline solution (pH 8-14). Alkaline solutions turn red litmus paper blue."
+    },
+    {
+      "question": "An antacid tablet containing calcium carbonate is added to hydrochloric acid. The mixture fizzes and becomes less acidic. What has happened?",
+      "options": [
+        "The acid has been completely used up in a neutralisation reaction",
+        "A combustion reaction has occurred",
+        "The acid has become stronger",
+        "The antacid has dissolved without reacting"
+      ],
+      "correct": 0,
+      "points": 15,
+      "explanation": "Antacids containing carbonates react with acids in a neutralisation reaction. The fizzing is carbon dioxide gas being produced. When the acid is neutralised, the solution becomes less acidic or neutral."
+    }
+  ]
+}
