@@ -77,7 +77,7 @@
       "explanation": "Let numbers be n and n+2. n(n+2) = 143 → n² + 2n - 143 = 0 → (n + 13)(n - 11) = 0. Since positive, n = 11. Larger number = 11 + 2 = 13."
     },
     {
-      "question": "If (x - 3) is a factor of 2x² + kx - 15 = 0, find the value of k and the other factor.",
+      "question": "If (x - 3) is a factor of 2x² + kx - 15, find the value of k and the other factor.",
       "options": ["k = 1, (2x + 5)", "k = -1, (2x - 5)", "k = 1, (2x - 5)", "k = -1, (2x + 5)"],
       "correct": 3,
       "points": 25,
