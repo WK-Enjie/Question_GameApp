@@ -1,6 +1,6 @@
 {
-  "title": "Quadratic Factorisation - Advanced Techniques",
-  "topic": "Multi-variable Grouping, Difference of Squares, Complex Factorisation",
+  "title": "Quadratic Expansion & Factorisation - Worksheet 1",
+  "topic": "Basic Expansion, Grouping, Cross Method",
   "subject": "Mathematics",
   "level": "Lower Secondary",
   "grade": "S2",
@@ -8,60 +8,88 @@
   "worksheet": 2,
   "questions": [
     {
-      "question": "Factorise by grouping: 4a² + 10a + 6a + 15",
-      "options": ["(4a + 6)(a + 2.5)", "(2a + 5)(2a + 3)", "(2a + 3)(2a + 5)", "(4a + 10)(a + 1.5)"],
-      "correct": 2,
-      "points": 15,
-      "explanation": "Group: (4a² + 10a) + (6a + 15) = 2a(2a + 5) + 3(2a + 5) = (2a + 3)(2a + 5). Using variable 'a' instead of 'x' tests conceptual understanding."
-    },
-    {
-      "question": "Factorise completely: 9p² - 25",
-      "options": ["(9p - 5)(p + 5)", "9(p² - 25)", "(3p - 5)(3p + 5)", "(9p - 25)(p + 1)"],
-      "correct": 2,
-      "points": 15,
-      "explanation": "Difference of squares: 9p² = (3p)², 25 = 5² → (3p)² - 5² = (3p - 5)(3p + 5). Variable 'p' reinforces the pattern works for any letter."
-    },
-    {
-      "question": "Factorise completely: 6m² + 16m + 8",
-      "options": ["2(3m² + 8m + 4)", "2(3m + 2)(m + 2)", "(6m + 4)(m + 2)", "2(m + 2)(3m + 2)"],
-      "correct": 1,
-      "points": 20,
-      "explanation": "First take HCF: 2(3m² + 8m + 4). Then cross method: 3m² + 8m + 4 = (3m + 2)(m + 2). So 6m² + 16m + 8 = 2(3m + 2)(m + 2)."
-    },
-    {
-      "question": "Factorise completely: 16q² - 81",
-      "options": ["(16q - 9)(q + 9)", "16(q² - 81)", "(4q - 9)(4q + 9)", "(8q - 9)(2q + 9)"],
-      "correct": 2,
-      "points": 20,
-      "explanation": "Difference of squares: 16q² = (4q)², 81 = 9² → (4q)² - 9² = (4q - 9)(4q + 9). Larger coefficients increase difficulty."
-    },
-    {
-      "question": "Factorise by grouping: 3ab + 9a + 2b + 6",
-      "options": ["(3a + 2)(b + 3)", "(3b + 2)(a + 3)", "(a + 3)(3b + 2)", "(b + 3)(3a + 2)"],
-      "correct": 0,
-      "points": 25,
-      "explanation": "Group: (3ab + 9a) + (2b + 6) = 3a(b + 3) + 2(b + 3) = (3a + 2)(b + 3). Two different variables (a,b) significantly increases complexity."
-    },
-    {
-      "question": "Factorise completely: 10n² - 35n + 25",
-      "options": ["5(2n² - 7n + 5)", "5(2n - 5)(n - 1)", "(10n - 25)(n - 1)", "5(n - 1)(2n - 5)"],
-      "correct": 1,
-      "points": 25,
-      "explanation": "First take HCF: 5(2n² - 7n + 5). Then cross method: 2n² - 7n + 5 = (2n - 5)(n - 1). So 10n² - 35n + 25 = 5(2n - 5)(n - 1)."
-    },
-    {
-      "question": "Factorise completely: 18x² - 50",
-      "options": ["2(9x² - 25)", "2(3x - 5)²", "(18x - 50)(x + 1)", "2(3x - 5)(3x + 5)"],
+      "question": "Expand and simplify: (x + 3)(x + 5)",
+      "options": ["x² + 15x + 8", "x² + 8x + 8", "x² + 15x + 15", "x² + 8x + 15"],
       "correct": 3,
-      "points": 30,
-      "explanation": "First take HCF: 2(9x² - 25). Then difference of squares: 9x² - 25 = (3x)² - 5² = (3x - 5)(3x + 5). So 18x² - 50 = 2(3x - 5)(3x + 5). Two-step factorisation with coefficients."
+      "points": 10,
+      "explanation": "Use Rainbow method: First: x·x = x², Outer: x·5 = 5x, Inner: 3·x = 3x, Last: 3·5 = 15. Combine: x² + 5x + 3x + 15 = x² + 8x + 15."
     },
     {
-      "question": "Factorise by grouping: 6pq + 15p + 4q + 10",
-      "options": ["(3p + 2)(2q + 5)", "(2p + 5)(3q + 2)", "(6p + 4)(q + 2.5)", "(3q + 2)(2p + 5)"],
+      "question": "Expand and simplify: (2x - 3)²",
+      "options": ["4x² + 12x + 9", "4x² - 6x + 9", "4x² - 9", "4x² - 12x + 9"],
+      "correct": 3,
+      "points": 10,
+      "explanation": "Use (a-b)² = a² - 2ab + b²: (2x)² - 2(2x)(3) + 3² = 4x² - 12x + 9."
+    },
+    {
+      "question": "Factorise completely: 3x² + 12x",
+      "options": ["x(3x + 12)", "3(x² + 4x)", "12x(x + 1)", "3x(x + 4)"],
+      "correct": 3,
+      "points": 10,
+      "explanation": "HCF of 3x² and 12x is 3x. So 3x² + 12x = 3x(x + 4)."
+    },
+    {
+      "question": "Expand and simplify: (x - 4)(x + 4)",
+      "options": ["x² - 16", "x² + 16", "x² - 8x + 16", "x² + 8x - 16"],
+      "correct": 0,
+      "points": 15,
+      "explanation": "Difference of squares: (a-b)(a+b) = a² - b² = x² - 4² = x² - 16."
+    },
+    {
+      "question": "Factorise by grouping: 2x² + 6x + x + 3",
+      "options": ["(x + 1)(2x + 3)", "(x + 3)(2x + 3)", "(2x + 3)(x + 1)", "(2x + 1)(x + 3)"],
+      "correct": 3,
+      "points": 15,
+      "explanation": "Group: (2x² + 6x) + (x + 3) = 2x(x + 3) + 1(x + 3) = (2x + 1)(x + 3)."
+    },
+    {
+      "question": "Expand and simplify: (3x + 2)(2x - 5)",
+      "options": ["6x² + 19x - 10", "6x² - 19x - 10", "6x² + 11x - 10", "6x² - 11x - 10"],
+      "correct": 3,
+      "points": 20,
+      "explanation": "Rainbow: 3x·2x = 6x², 3x·(-5) = -15x, 2·2x = 4x, 2·(-5) = -10 → 6x² - 11x - 10."
+    },
+    {
+      "question": "Factorise using cross method: x² + 7x + 12",
+      "options": ["(x + 1)(x + 12)", "(x - 3)(x - 4)", "(x + 2)(x + 6)", "(x + 3)(x + 4)"],
+      "correct": 3,
+      "points": 20,
+      "explanation": "Numbers multiplying to 12 and adding to 7: 3 and 4 → (x + 3)(x + 4)."
+    },
+    {
+      "question": "Expand and simplify: (x + 2)² - (x - 2)²",
+      "options": ["4x", "8", "0", "8x"],
+      "correct": 3,
+      "points": 25,
+      "explanation": "(x² + 4x + 4) - (x² - 4x + 4) = 8x. The x² and constant terms cancel out."
+    },
+    {
+      "question": "Factorise using cross method: x² - 5x + 6",
+      "options": ["(x + 2)(x + 3)", "(x - 1)(x - 6)", "(x - 2)(x - 3)", "(x + 1)(x + 6)"],
+      "correct": 2,
+      "points": 20,
+      "explanation": "Numbers multiplying to 6 and adding to -5: -2 and -3 → (x - 2)(x - 3)."
+    },
+    {
+      "question": "Expand and simplify: (4x - 3)(2x + 1)",
+      "options": ["8x² + 2x - 3", "8x² - 2x - 3", "6x² - 2x - 3", "8x² - 5x - 3"],
+      "correct": 1,
+      "points": 20,
+      "explanation": "Expand: 4x·2x = 8x², 4x·1 = 4x, -3·2x = -6x, -3·1 = -3. Combine: 8x² - 2x - 3."
+    },
+    {
+      "question": "Factorise completely: 16x² - 25",
+      "options": ["(16x - 5)(16x + 5)", "(4x - 5)²", "(4x + 5)²", "(4x - 5)(4x + 5)"],
+      "correct": 3,
+      "points": 25,
+      "explanation": "Difference of two squares: (4x)² - 5² = (4x - 5)(4x + 5)."
+    },
+    {
+      "question": "Expand and simplify: 2(x + 3)² - 4(x + 1)",
+      "options": ["2x² + 8x + 14", "2x² + 12x + 14", "2x² + 8x + 10", "x² + 8x + 14"],
       "correct": 0,
       "points": 30,
-      "explanation": "Group: (6pq + 15p) + (4q + 10) = 3p(2q + 5) + 2(2q + 5) = (3p + 2)(2q + 5). Three variables (p,q) in grouping creates highest difficulty level for Sec 2."
+      "explanation": "Expand: 2(x² + 6x + 9) - 4x - 4 = 2x² + 12x + 18 - 4x - 4. Combine: 2x² + 8x + 14."
     }
   ]
 }

@@ -1,0 +1,67 @@
+{
+  "title": "Quadratic Factorisation - Advanced Techniques",
+  "topic": "Multi-variable Grouping, Difference of Squares, Complex Factorisation",
+  "subject": "Mathematics",
+  "level": "Lower Secondary",
+  "grade": "S2",
+  "chapter": 3,
+  "worksheet": 3,
+  "questions": [
+    {
+      "question": "Factorise by grouping: 4a² + 10a + 6a + 15",
+      "options": ["(4a + 10)(a + 1.5)", "(2a + 3)(2a + 5)", "(2a + 5)(2a + 2)", "(4a + 6)(a + 2.5)"],
+      "correct": 1,
+      "points": 15,
+      "explanation": "Group: (4a² + 10a) + (6a + 15) = 2a(2a + 5) + 3(2a + 5) = (2a + 3)(2a + 5)."
+    },
+    {
+      "question": "Factorise completely: 9p² - 25",
+      "options": ["(9p - 25)(p + 1)", "(3p - 5)(3p + 5)", "9(p² - 25)", "(9p - 5)(p + 5)"],
+      "correct": 1,
+      "points": 15,
+      "explanation": "Difference of squares: 9p² = (3p)², 25 = 5² → (3p)² - 5² = (3p - 5)(3p + 5)."
+    },
+    {
+      "question": "Factorise completely: 6m² + 16m + 8",
+      "options": ["2(m + 2)(3m + 1)", "(6m + 4)(m + 2)", "2(3m + 2)(m + 2)", "2(3m² + 8m + 4)"],
+      "correct": 2,
+      "points": 20,
+      "explanation": "First take HCF: 2(3m² + 8m + 4). Then cross method: 3m² + 8m + 4 = (3m + 2)(m + 2). So 6m² + 16m + 8 = 2(3m + 2)(m + 2)."
+    },
+    {
+      "question": "Factorise completely: 16q² - 81",
+      "options": ["(4q - 9)(4q + 9)", "16(q² - 81)", "(8q - 9)(2q + 9)", "(16q - 9)(q + 9)"],
+      "correct": 0,
+      "points": 20,
+      "explanation": "Difference of squares: 16q² = (4q)², 81 = 9² → (4q)² - 9² = (4q - 9)(4q + 9)."
+    },
+    {
+      "question": "Factorise by grouping: 3ab + 9a + 2b + 6",
+      "options": ["(a + 3)(3b + 2)", "(3a + 2)(b + 3)", "(b + 3)(3a + 3)", "(3b + 2)(a + 3)"],
+      "correct": 1,
+      "points": 25,
+      "explanation": "Group: (3ab + 9a) + (2b + 6) = 3a(b + 3) + 2(b + 3) = (3a + 2)(b + 3)."
+    },
+    {
+      "question": "Factorise completely: 10n² - 35n + 25",
+      "options": ["5(n - 1)(2n - 1)", "(10n - 25)(n - 1)", "5(2n - 5)(n - 1)", "5(2n² - 7n + 5)"],
+      "correct": 2,
+      "points": 25,
+      "explanation": "First take HCF: 5(2n² - 7n + 5). Then cross method: 2n² - 7n + 5 = (2n - 5)(n - 1). So 10n² - 35n + 25 = 5(2n - 5)(n - 1)."
+    },
+    {
+      "question": "Factorise completely: 18x² - 50",
+      "options": ["2(3x - 5)(3x + 5)", "(18x - 50)(x + 1)", "2(9x² - 25)", "2(3x - 5)²"],
+      "correct": 0,
+      "points": 30,
+      "explanation": "First take HCF: 2(9x² - 25). Then difference of squares: 9x² - 25 = (3x)² - 5² = (3x - 5)(3x + 5). So 18x² - 50 = 2(3x - 5)(3x + 5)."
+    },
+    {
+      "question": "Factorise by grouping: 6pq + 15p + 4q + 10",
+      "options": ["(3q + 2)(2p + 5)", "(3p + 2)(2q + 5)", "(6p + 4)(q + 2.5)", "(2p + 5)(3q + 2)"],
+      "correct": 1,
+      "points": 30,
+      "explanation": "Group: (6pq + 15p) + (4q + 10) = 3p(2q + 5) + 2(2q + 5) = (3p + 2)(2q + 5)."
+    }
+  ]
+}
