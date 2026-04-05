@@ -56,11 +56,11 @@
     },
     {
       "id": 7,
-      "question": "The sum of a two-digit number and the number formed by reversing its digits is 110. The product of the digits is 24. Find the original number.",
+      "question": "The sum of a two-digit number and the number formed by reversing its digits is 110. The product of the digits is 24. The tens digit is larger than the units digit. Find the original number.",
       "options": ["46", "64", "38", "83"],
-      "correct": 0,
+      "correct": 1,
       "points": 25,
-      "explanation": "Let tens = t, units = u. Sum: 11t + 11u = 110 → t + u = 10. Product: tu = 24. Solve: t = 10 - u. So (10 - u)u = 24 → u² - 10u + 24 = 0. Factorise: (u - 4)(u - 6) = 0. u = 4 or u = 6. If u = 4, t = 6, number = 64. If u = 6, t = 4, number = 46. Both valid. Answer: 46."
+      "explanation": "Let tens = t, units = u. Sum: 11t + 11u = 110 → t + u = 10. Product: tu = 24. Solve: t = 10 - u. So (10 - u)u = 24 → u² - 10u + 24 = 0. Factorise: (u - 4)(u - 6) = 0. u = 4 or u = 6. If u = 4, t = 6, number = 64. If u = 6, t = 4, number = 46. Since tens digit is larger, t = 6, u = 4. Answer: 64."
     },
     {
       "id": 8,
@@ -104,19 +104,19 @@
     },
     {
       "id": 13,
-      "question": "Two positive integers differ by 3. The sum of their squares is 117. Find the larger integer.",
-      "options": ["6", "7", "8", "9"],
-      "correct": 3,
+      "question": "The sum of two positive integers is 12. The sum of their squares is 74. Find the larger integer.",
+      "options": ["5", "6", "7", "8"],
+      "correct": 2,
       "points": 20,
-      "explanation": "Let smaller = x, larger = x + 3. Equation: x² + (x + 3)² = 117. Expand: 2x² + 6x + 9 = 117. Simplify: 2x² + 6x - 108 = 0 → x² + 3x - 54 = 0. Factorise: (x + 9)(x - 6) = 0. x = 6 or x = -9. Reject x = -9. Integers are 6 and 9. Larger = 9."
+      "explanation": "Let integers be x and (12 - x). Equation: x² + (12 - x)² = 74. Expand: x² + 144 - 24x + x² = 74. Simplify: 2x² - 24x + 70 = 0 → x² - 12x + 35 = 0. Factorise: (x - 5)(x - 7) = 0. x = 5 or x = 7. Integers are 5 and 7. Larger = 7."
     },
     {
       "id": 14,
-      "question": "A rectangular photo 12 cm by 8 cm has a uniform border. The total area is 180 cm². Find the border width x.",
+      "question": "A rectangular photo 12 cm by 8 cm has a uniform border. The total area is 252 cm². Find the border width x.",
       "options": ["1", "2", "3", "4"],
       "correct": 2,
       "points": 25,
-      "explanation": "Total dimensions: (12 + 2x) by (8 + 2x). Equation: (12 + 2x)(8 + 2x) = 180. Expand: 96 + 40x + 4x² = 180. Simplify: 4x² + 40x - 84 = 0 → x² + 10x - 21 = 0. Factorise: (x + 14)(x - 3) = 0. x = 3 or x = -14. Reject x = -14. Answer: x = 3."
+      "explanation": "Total dimensions: (12 + 2x) by (8 + 2x). Equation: (12 + 2x)(8 + 2x) = 252. Expand: 96 + 40x + 4x² = 252. Simplify: 4x² + 40x - 156 = 0 → x² + 10x - 39 = 0. Factorise: (x + 13)(x - 3) = 0. x = 3 or x = -13. Reject x = -13. Answer: x = 3."
     },
     {
       "id": 15,
