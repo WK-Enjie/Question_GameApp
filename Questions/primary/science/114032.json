@@ -29,7 +29,7 @@
       ],
       "correct": 1,
       "points": 10,
-      "explanation": "Fabric and rubber are poor conductors (insulators) of heat. They slow down heat transfer from the hot oven to your hands, protecting you from burns. Insulators reduce the rate of heat flow."
+      "explanation": "Fabric and rubber are poor conductors of heat. They slow down heat transfer from the hot oven to your hands, protecting you from burns. Poor conductors reduce the rate of heat flow."
     },
     {
       "question": "A metal door knob feels colder than a wooden door in the same room. Why?",
@@ -65,7 +65,7 @@
       ],
       "correct": 2,
       "points": 10,
-      "explanation": "Wood is a poor conductor of heat (insulator). A wooden handle stays cool even when the metal pan gets hot, allowing you to hold it safely without burning your hand. Good conductors would transfer heat to your hand too quickly."
+      "explanation": "Wood is a poor conductor of heat. A wooden handle stays cool even when the metal pan gets hot, allowing you to hold it safely without burning your hand. Good conductors would transfer heat to your hand too quickly."
     },
     {
       "question": "Why does a metal spoon left in a hot cup of soup become hot all the way to the handle?",
@@ -101,7 +101,7 @@
       ],
       "correct": 1,
       "points": 15,
-      "explanation": "Fluffing feathers traps a layer of air close to the bird's body. Air is a poor conductor of heat, so this trapped air layer acts as insulation, reducing heat loss from the bird's body. This is a natural adaptation for heat conservation."
+      "explanation": "Fluffing feathers traps a layer of air close to the bird's body. Air is a poor conductor of heat, so this trapped air layer reduces heat loss from the bird's body. This is a natural adaptation for heat conservation."
     },
     {
       "question": "Which of the following is an effect of heat gain in everyday life?",
@@ -125,7 +125,7 @@
       ],
       "correct": 1,
       "points": 15,
-      "explanation": "Air is a poor conductor of heat. The trapped air layer between the two glass panes acts as insulation, slowing down heat transfer from the warm inside to the cold outside. This helps keep buildings warm and saves energy."
+      "explanation": "Air is a poor conductor of heat. The trapped air layer between the two glass panes slows down heat transfer from the warm inside to the cold outside. This helps keep buildings warm and saves energy."
     },
     {
       "question": "A student places identical ice cubes on a metal tray and a plastic tray at room temperature. Which ice cube will melt faster and why?",
@@ -140,18 +140,6 @@
       "explanation": "Metal is a good conductor of heat. It transfers heat from the room to the ice cube more quickly than plastic (a poor conductor), so the ice on metal gains heat faster and melts sooner. This demonstrates how material choice affects heat transfer rate."
     },
     {
-      "question": "Why do electrical wires have plastic or rubber coating?",
-      "options": [
-        "To make them colorful",
-        "Plastic and rubber are poor conductors of heat and electricity",
-        "To make wires heavier",
-        "To help electricity flow faster"
-      ],
-      "correct": 1,
-      "points": 10,
-      "explanation": "Plastic and rubber are poor conductors (insulators) of both heat and electricity. The coating prevents electric shock and reduces heat transfer, keeping users safe. This is an important safety application of insulating materials."
-    },
-    {
       "question": "What happens to a metal ball that just fits through a metal ring when the ball is heated?",
       "options": [
         "It still fits perfectly",
@@ -164,18 +152,6 @@
       "explanation": "When heated, the metal ball expands (it takes up more space). If it was just fitting before heating, after expansion it will be too large to pass through the unchanged ring. This classic experiment demonstrates thermal expansion of solids."
     },
     {
-      "question": "Why is the inside of a thermos flask shiny and silver?",
-      "options": [
-        "To look attractive",
-        "Shiny surfaces reflect heat, reducing heat transfer",
-        "Silver conducts heat well",
-        "To make the flask lighter"
-      ],
-      "correct": 1,
-      "points": 20,
-      "explanation": "Shiny, silver surfaces reflect heat. In a thermos, this helps keep hot drinks hot (by reflecting heat back in) and cold drinks cold (by reflecting external heat away), reducing heat transfer. This is an application of controlling heat flow."
-    },
-    {
       "question": "In winter, why do we wear multiple thin layers of clothing instead of one thick layer?",
       "options": [
         "Thin layers are more fashionable",
@@ -185,7 +161,31 @@
       ],
       "correct": 1,
       "points": 15,
-      "explanation": "Each layer of clothing traps a thin layer of air. Air is a poor conductor of heat, so multiple trapped air layers provide better insulation than one thick layer, keeping body heat from escaping. This is a practical application of heat conservation."
+      "explanation": "Each layer of clothing traps a thin layer of air. Air is a poor conductor of heat, so multiple trapped air layers provide better heat conservation than one thick layer, keeping body heat from escaping. This is a practical application of heat conservation."
+    },
+    {
+      "question": "Why are handles of cooking utensils often made of wood or plastic?",
+      "options": [
+        "Wood and plastic are good conductors of heat",
+        "Wood and plastic are poor conductors of heat and stay cooler",
+        "Wood and plastic are lighter than metal",
+        "Wood and plastic look more attractive"
+      ],
+      "correct": 1,
+      "points": 10,
+      "explanation": "Wood and plastic are poor conductors of heat. They stay cooler than the metal part of the utensil, allowing you to hold them safely without burning your hand."
+    },
+    {
+      "question": "A metal bridge has expansion joints (gaps) in it. What is the purpose of these gaps?",
+      "options": [
+        "To make the bridge look decorative",
+        "To allow the bridge to expand on hot days without bending",
+        "To reduce the weight of the bridge",
+        "To let rainwater drain through"
+      ],
+      "correct": 1,
+      "points": 15,
+      "explanation": "Metals expand when heated. On hot days, a metal bridge can expand. The gaps (expansion joints) provide space for this expansion, preventing the bridge from bending or getting damaged."
     }
   ]
 }
