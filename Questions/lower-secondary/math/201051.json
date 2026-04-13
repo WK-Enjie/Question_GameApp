@@ -1,0 +1,115 @@
+{
+  "title": "Secondary 1 Mathematics - Chapter 5",
+  "topic": "Linear Equations (Basic)",
+  "subject": "Mathematics",
+  "grade": "Sec 1",
+  "chapter": 5,
+  "worksheet": 1,
+  "questions": [
+    {
+      "question": "Solve the equation: x + 5 = 12",
+      "options": ["x = 5", "x = 7", "x = 17", "x = 6"],
+      "correct": 1,
+      "points": 10,
+      "explanation": "Subtract 5 from both sides: x = 12 - 5 = 7."
+    },
+    {
+      "question": "Solve the equation: 3x = 15",
+      "options": ["x = 3", "x = 5", "x = 12", "x = 45"],
+      "correct": 1,
+      "points": 10,
+      "explanation": "Divide both sides by 3: x = 15 / 3 = 5."
+    },
+    {
+      "question": "Solve the equation: 2x - 4 = 10",
+      "options": ["x = 3", "x = 7", "x = 6", "x = 14"],
+      "correct": 1,
+      "points": 15,
+      "explanation": "Add 4: 2x = 14. Divide by 2: x = 7."
+    },
+    {
+      "question": "Solve the equation: 5(x + 2) = 20",
+      "options": ["x = 2", "x = 3", "x = 4", "x = 5"],
+      "correct": 0,
+      "points": 15,
+      "explanation": "Divide by 5: x + 2 = 4. Subtract 2: x = 2."
+    },
+    {
+      "question": "Solve the equation: 4x + 3 = 2x + 9",
+      "options": ["x = 3", "x = 6", "x = 2", "x = 4"],
+      "correct": 0,
+      "points": 20,
+      "explanation": "Subtract 2x: 2x + 3 = 9. Subtract 3: 2x = 6. Divide by 2: x = 3."
+    },
+    {
+      "question": "Solve the equation: 7 - x = 3",
+      "options": ["x = 4", "x = -4", "x = 10", "x = -10"],
+      "correct": 0,
+      "points": 15,
+      "explanation": "Add x: 7 = 3 + x. Subtract 3: 4 = x."
+    },
+    {
+      "question": "Solve the equation: 3(x - 1) = 2(x + 2)",
+      "options": ["x = 5", "x = 7", "x = 3", "x = 1"],
+      "correct": 1,
+      "points": 20,
+      "explanation": "Expand: 3x - 3 = 2x + 4. Subtract 2x: x - 3 = 4. Add 3: x = 7."
+    },
+    {
+      "question": "Solve the equation: x/2 = 6",
+      "options": ["x = 3", "x = 12", "x = 4", "x = 8"],
+      "correct": 1,
+      "points": 15,
+      "explanation": "Multiply both sides by 2: x = 12."
+    },
+    {
+      "question": "Solve the equation: 2x + 5 = 5",
+      "options": ["x = 5", "x = 1", "x = 0", "x = -5"],
+      "correct": 2,
+      "points": 15,
+      "explanation": "Subtract 5: 2x = 0. Divide by 2: x = 0."
+    },
+    {
+      "question": "Solve the equation: 4x - 7 = 2x + 1",
+      "options": ["x = 3", "x = 4", "x = 2", "x = 6"],
+      "correct": 1,
+      "points": 20,
+      "explanation": "Subtract 2x: 2x - 7 = 1. Add 7: 2x = 8. Divide by 2: x = 4."
+    },
+    {
+      "question": "Solve the equation: 3(2x - 1) = 9",
+      "options": ["x = 1", "x = 2", "x = 3", "x = 4"],
+      "correct": 1,
+      "points": 15,
+      "explanation": "Divide by 3: 2x - 1 = 3. Add 1: 2x = 4. Divide by 2: x = 2."
+    },
+    {
+      "question": "Solve the equation: 5x = 3x + 10",
+      "options": ["x = 10", "x = 5", "x = 2", "x = 3"],
+      "correct": 1,
+      "points": 15,
+      "explanation": "Subtract 3x: 2x = 10. Divide by 2: x = 5."
+    },
+    {
+      "question": "Solve the equation: 2(x + 3) = 14",
+      "options": ["x = 4", "x = 5", "x = 6", "x = 7"],
+      "correct": 0,
+      "points": 15,
+      "explanation": "Divide by 2: x + 3 = 7. Subtract 3: x = 4."
+    },
+    {
+      "question": "Solve the equation: 6x - 5 = 3x + 4",
+      "options": ["x = 3", "x = 2", "x = 4", "x = 1"],
+      "correct": 0,
+      "points": 20,
+      "explanation": "Subtract 3x: 3x - 5 = 4. Add 5: 3x = 9. Divide by 3: x = 3."
+    },
+    {
+      "question": "Solve the equation: 10 - 2x = 4",
+      "options": ["x = 3", "x = 7", "x = 2", "x = 4"],
+      "correct": 0,
+      "points": 15,
+      "explanation": "Subtract 10: -2x = -6. Divide by -2: x = 3."
+    }
+  ]
+}

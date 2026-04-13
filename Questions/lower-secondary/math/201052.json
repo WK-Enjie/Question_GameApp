@@ -1,0 +1,115 @@
+{
+  "title": "Secondary 1 Mathematics - Chapter 5",
+  "topic": "Linear Equations (Word Problems)",
+  "subject": "Mathematics",
+  "grade": "Sec 1",
+  "chapter": 5,
+  "worksheet": 2,
+  "questions": [
+    {
+      "question": "15 more than 3 times a number x is equal to 5 more than the number. Find x.",
+      "options": ["x = -5", "x = 5", "x = -3", "x = 3"],
+      "correct": 0,
+      "points": 25,
+      "explanation": "Equation: 3x + 15 = x + 5. Subtract x: 2x + 15 = 5. Subtract 15: 2x = -10. x = -5."
+    },
+    {
+      "question": "The sum of three consecutive integers is 42. Find the largest integer.",
+      "options": ["13", "14", "15", "16"],
+      "correct": 2,
+      "points": 25,
+      "explanation": "Let integers be n, n+1, n+2. Sum: 3n + 3 = 42 → 3n = 39 → n = 13. Largest = 13 + 2 = 15."
+    },
+    {
+      "question": "John is 3 times as old as Mary. In 5 years, the sum of their ages will be 50. How old is Mary now?",
+      "options": ["10", "12", "15", "8"],
+      "correct": 0,
+      "points": 30,
+      "explanation": "Let Mary = x, John = 3x. In 5 years: (x+5) + (3x+5) = 50 → 4x + 10 = 50 → 4x = 40 → x = 10."
+    },
+    {
+      "question": "A number is multiplied by 4 and then 7 is subtracted. The result is 25. Find the number.",
+      "options": ["6", "7", "8", "9"],
+      "correct": 2,
+      "points": 20,
+      "explanation": "Equation: 4x - 7 = 25 → 4x = 32 → x = 8."
+    },
+    {
+      "question": "The perimeter of a rectangle is 40 cm. The length is 3 times the width. Find the width.",
+      "options": ["5 cm", "10 cm", "15 cm", "20 cm"],
+      "correct": 0,
+      "points": 25,
+      "explanation": "Let width = x, length = 3x. Perimeter: 2(x + 3x) = 40 → 8x = 40 → x = 5."
+    },
+    {
+      "question": "Twice a number decreased by 5 is equal to the number increased by 10. Find the number.",
+      "options": ["10", "15", "20", "25"],
+      "correct": 1,
+      "points": 25,
+      "explanation": "Equation: 2x - 5 = x + 10 → x = 15."
+    },
+    {
+      "question": "Sarah has $50 more than Tom. Together they have $250. How much does Tom have?",
+      "options": ["$100", "$150", "$200", "$125"],
+      "correct": 0,
+      "points": 25,
+      "explanation": "Let Tom = x, Sarah = x + 50. Sum: x + x + 50 = 250 → 2x = 200 → x = 100."
+    },
+    {
+      "question": "If 10 is added to half of a number, the result is 25. Find the number.",
+      "options": ["20", "30", "40", "50"],
+      "correct": 1,
+      "points": 20,
+      "explanation": "Equation: x/2 + 10 = 25 → x/2 = 15 → x = 30."
+    },
+    {
+      "question": "The difference between two numbers is 8. Their sum is 30. Find the larger number.",
+      "options": ["11", "19", "22", "15"],
+      "correct": 1,
+      "points": 25,
+      "explanation": "Let numbers be x and y. x - y = 8, x + y = 30. Add: 2x = 38 → x = 19."
+    },
+    {
+      "question": "A bus has some passengers. At the first stop, 12 get off and 8 get on. There are now 30 passengers. How many were there at first?",
+      "options": ["30", "34", "38", "26"],
+      "correct": 1,
+      "points": 25,
+      "explanation": "Let initial = x. Equation: x - 12 + 8 = 30 → x - 4 = 30 → x = 34."
+    },
+    {
+      "question": "Three times a number is 20 more than the number. Find the number.",
+      "options": ["5", "10", "15", "20"],
+      "correct": 1,
+      "points": 20,
+      "explanation": "Equation: 3x = x + 20 → 2x = 20 → x = 10."
+    },
+    {
+      "question": "The sum of two numbers is 50. One number is 4 times the other. Find the smaller number.",
+      "options": ["10", "40", "20", "30"],
+      "correct": 0,
+      "points": 25,
+      "explanation": "Let smaller = x, larger = 4x. Sum: x + 4x = 50 → 5x = 50 → x = 10."
+    },
+    {
+      "question": "A number is doubled and then 3 is added. The result is 17. Find the number.",
+      "options": ["6", "7", "8", "9"],
+      "correct": 1,
+      "points": 20,
+      "explanation": "Equation: 2x + 3 = 17 → 2x = 14 → x = 7."
+    },
+    {
+      "question": "Five times a number minus 3 is equal to 3 times the number plus 9. Find the number.",
+      "options": ["3", "6", "9", "12"],
+      "correct": 1,
+      "points": 25,
+      "explanation": "Equation: 5x - 3 = 3x + 9 → 2x = 12 → x = 6."
+    },
+    {
+      "question": "The length of a rectangle is 5 cm more than its width. The perimeter is 34 cm. Find the length.",
+      "options": ["9 cm", "11 cm", "13 cm", "15 cm"],
+      "correct": 1,
+      "points": 30,
+      "explanation": "Let width = x, length = x + 5. Perimeter: 2(x + x + 5) = 34 → 4x + 10 = 34 → 4x = 24 → x = 6. Length = 6 + 5 = 11."
+    }
+  ]
+}
