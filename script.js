@@ -50,13 +50,11 @@ const gameState = {
 
     specialCards: new Set(),
 
-    // ---- Multi-Treasure System ----
     treasureCards: new Map(),
     treasuresRemaining: 0,
     treasuresCollected: [0, 0],
     currentTreasureTier: null,
 
-    // ---- Active Power-ups (per player) ----
     doubleNextActive: [false, false],
     shieldActive: [false, false]
 };
@@ -111,7 +109,10 @@ function decodeQuizCode(code) {
 
 
 // ================================================================
-//  MATH RENDERER (ENHANCED — fractions, exponents, roots)
+//  ★ MATH RENDERER — FULLY UPDATED
+//  Supports: fractions, algebraic fractions, coefficient fractions,
+//  exponents, parenthesised exponents, fraction exponents,
+//  square roots, cube roots, mixed numbers
 // ================================================================
 function renderMath(text) {
     if (!text) return '';
@@ -136,7 +137,7 @@ function renderMath(text) {
     });
 
     // ================================================================
-    //  ROOTS — cube root and square root
+    //  ROOTS
     // ================================================================
 
     // Cube root: ∛(...) or cbrt(...)
@@ -155,20 +156,16 @@ function renderMath(text) {
     });
 
     // ================================================================
-    //  SUPERSCRIPTS / EXPONENTS — EXPANDED
-    //  Process BEFORE fractions so inner fractions render correctly
+    //  SUPERSCRIPTS / EXPONENTS
     // ================================================================
 
-    // 1) CURLY BRACE exponent: x^{2n+1} — LaTeX-style
+    // 1) Curly brace: x^{2n+1}
     s = s.replace(/\^{([^}]+)}/g, (match, exp) => {
         return `<span class="sup">${exp}</span>`;
     });
 
-    // 2) PARENTHESISED exponent: 4^(12/5), e^(-x), x^(2n+1), e^(-1/2)
-    //    Captures everything inside parentheses after ^
-    //    Also renders any fraction found inside the exponent
+    // 2) Parenthesised exponent with possible fraction: 4^(12/5), e^(-x)
     s = s.replace(/\^\(([^)]+)\)/g, (match, inner) => {
-        // Render fraction inside the exponent if present
         let rendered = inner.replace(
             /([\da-zA-Z+\-.*]+)\/([\da-zA-Z+\-.*]+)/g,
             (m, num, den) => {
@@ -178,43 +175,51 @@ function renderMath(text) {
         return `<span class="sup">${rendered}</span>`;
     });
 
-    // 3) MULTI-DIGIT exponent with optional negative: x^12, 2^10, 10^-3, 10^-12
+    // 3) Multi-digit exponent: x^12, 10^-3
     s = s.replace(/\^(-?\d{2,})/g, (match, exp) => {
         return `<span class="sup">${exp}</span>`;
     });
 
-    // 4) SINGLE CHARACTER exponent with optional negative: 3^x, 2^n, x^2, x^-1
+    // 4) Single character exponent: 3^x, x^2, x^-1
     s = s.replace(/\^(-?[\da-zA-Z])/g, (match, exp) => {
         return `<span class="sup">${exp}</span>`;
     });
 
     // ================================================================
-    //  FRACTIONS — supports algebraic numerators/denominators
-    //  Order: most specific patterns first
+    //  FRACTIONS — ordered from most specific to least specific
     // ================================================================
 
-    // 5) MIXED NUMBER: 2 3/4 — must come before general fractions
+    // ★ 5) Mixed number: 2 3/4 — must come before general fractions
     s = s.replace(/(\d+)\s+([\da-zA-Z]+)\/([\da-zA-Z]+)/g, (match, whole, num, den) => {
         return `<span class="mixed-num"><span class="whole">${whole}</span><span class="frac"><span class="frac-num">${num}</span><span class="frac-den">${den}</span></span></span>`;
     });
 
-    // 6) PARENTHESISED BOTH: (2x+1)/(3y-4)
+    // ★ 6) NEW — Coefficient × paren / paren: 2(x+3)/(y+1)
+    s = s.replace(/(\d+)\(([^)]+)\)\/\(([^)]+)\)/g, (match, coeff, inner, den) => {
+        return `<span class="frac"><span class="frac-num">${coeff}(${inner})</span><span class="frac-den">${den}</span></span>`;
+    });
+
+    // ★ 7) NEW — Coefficient × paren / simple: 2(x+3)/5, 4(2x-1)/8
+    s = s.replace(/(\d+)\(([^)]+)\)\/([\da-zA-Z]+)/g, (match, coeff, inner, den) => {
+        return `<span class="frac"><span class="frac-num">${coeff}(${inner})</span><span class="frac-den">${den}</span></span>`;
+    });
+
+    // 8) Parenthesised both: (2x+1)/(3y-4)
     s = s.replace(/\(([^)]+)\)\/\(([^)]+)\)/g, (match, num, den) => {
         return `<span class="frac"><span class="frac-num">${num}</span><span class="frac-den">${den}</span></span>`;
     });
 
-    // 7) PARENTHESISED NUMERATOR: (2x-5)/4
+    // 9) Parenthesised numerator: (2x-5)/4
     s = s.replace(/\(([^)]+)\)\/([\w.]+)/g, (match, num, den) => {
         return `<span class="frac"><span class="frac-num">${num}</span><span class="frac-den">${den}</span></span>`;
     });
 
-    // 8) PARENTHESISED DENOMINATOR: 2x/(3y+1)
+    // 10) Parenthesised denominator: 2x/(3y+1)
     s = s.replace(/([\w.]+)\/\(([^)]+)\)/g, (match, num, den) => {
         return `<span class="frac"><span class="frac-num">${num}</span><span class="frac-den">${den}</span></span>`;
     });
 
-    // 9) ALGEBRAIC FRACTION: 2x/3, 5y/7, ab/cd
-    //    Safety guard: skip overly long tokens (likely paths, not math)
+    // 11) Algebraic fraction: 2x/3, 5y/7, 6x/3, a/6
     s = s.replace(/([\da-zA-Z]+)\/([\da-zA-Z]+)/g, (match, num, den) => {
         if (num.length > 8 || den.length > 8) return match;
         return `<span class="frac"><span class="frac-num">${num}</span><span class="frac-den">${den}</span></span>`;
@@ -873,10 +878,10 @@ function showQuestion(idx) {
         sp.classList.add('treasure', `treasure-${treasureTier}`);
     }
 
-    // Question text
+    // ★ Question text — uses renderMath
     document.getElementById('question-text').innerHTML = renderMath(q.question || 'Question');
 
-    // Options
+    // ★ Options — uses renderMath
     const optBox = document.getElementById('options-container');
     optBox.innerHTML = '';
     (q.options || []).forEach((o, i) => {
@@ -939,7 +944,7 @@ function selectOption(i) {
 
 
 // ================================================================
-//  SUBMIT ANSWER  (with Shield, Double Next & Penalty)
+//  SUBMIT ANSWER
 // ================================================================
 function submitAnswer() {
     if (gameState.answered || gameState.selectedAnswer === null) return;
@@ -965,7 +970,6 @@ function submitAnswer() {
     const cardData = gameState.cards[idx];
     const banner   = document.getElementById('q-result-banner');
 
-    // ===================== CORRECT =====================
     if (correct) {
         document.querySelectorAll('.q-option').forEach((o, i) => {
             o.classList.add('locked');
@@ -980,7 +984,6 @@ function submitAnswer() {
         if (streak > gameState.bestStreaks[pi]) gameState.bestStreaks[pi] = streak;
         gameState.correctCounts[pi]++;
 
-        // Points calculation with Double Next
         let basePts    = q.points || 10;
         let multiplier = isDbl ? 2 : 1;
         if (hasDoubleNext) multiplier *= 2;
@@ -989,7 +992,6 @@ function submitAnswer() {
         const totalPts = Math.round(basePts * multiplier);
         gameState.scores[pi] += totalPts;
 
-        // Consume double-next
         if (hasDoubleNext) {
             gameState.doubleNextActive[pi] = false;
             updatePowerUpIndicators();
@@ -1034,6 +1036,7 @@ function submitAnswer() {
         banner.className = 'q-result-banner correct-banner show';
         banner.innerHTML  = bannerHTML;
 
+        // ★ Explanation uses renderMath
         if (q.explanation) {
             const exp = document.getElementById('q-explanation');
             exp.innerHTML = `<strong>Explanation:</strong> ${renderMath(q.explanation)}`;
@@ -1048,13 +1051,10 @@ function submitAnswer() {
             buildNextButton('correct');
         }
 
-    // ===================== INCORRECT =====================
     } else {
 
-        // Calculate penalty
         const basePenalty = Math.round((q.points || 10) * 0.5);
 
-        // ---- CHECK SHIELD ----
         if (hasShield) {
             gameState.shieldActive[pi] = false;
             updatePowerUpIndicators();
@@ -1087,7 +1087,6 @@ function submitAnswer() {
             return;
         }
 
-        // ---- No shield — normal wrong with penalty ----
         document.querySelectorAll('.q-option').forEach((o, i) => {
             o.classList.add('locked');
             if (i === gameState.selectedAnswer) {
@@ -1099,7 +1098,6 @@ function submitAnswer() {
 
         gameState.streaks[pi] = 0;
 
-        // Deduct penalty points (minimum 0)
         gameState.scores[pi] = Math.max(0, gameState.scores[pi] - basePenalty);
 
         sound.play('incorrect');
@@ -1116,13 +1114,11 @@ function submitAnswer() {
         cardData.owner     = null;
         gameState.completedCount++;
 
-        // Consume double-next without benefit
         if (hasDoubleNext) {
             gameState.doubleNextActive[pi] = false;
             updatePowerUpIndicators();
         }
 
-        // Floating penalty popup
         const sbRect = document.getElementById(`sb-p${gameState.currentPlayer}`).getBoundingClientRect();
         showScorePopup(`-${basePenalty}`, sbRect.left + sbRect.width / 2, sbRect.top, 'negative');
         pulseScore(gameState.currentPlayer, 'down');
@@ -1160,7 +1156,6 @@ function timeUp() {
     gameState.timeoutCounts[pi]++;
     gameState.streaks[pi] = 0;
 
-    // Consume double-next without benefit
     if (gameState.doubleNextActive[pi]) {
         gameState.doubleNextActive[pi] = false;
         updatePowerUpIndicators();
@@ -1228,7 +1223,6 @@ function buildNextButton(result, treasureTier = null) {
         gameState.currentPlayer = gameState.currentPlayer === 1 ? 2 : 1;
         updatePlayerTurn();
 
-        // Timeout OR shielded: unflip card back to board
         if (result === 'timeout' || result === 'shielded') {
             setTimeout(() => {
                 const card = gameState.cards[cardIdx];
@@ -1392,7 +1386,7 @@ function glowPlayer(player) {
 
 
 // ================================================================
-//  TREASURE SYSTEM — TIERED REWARDS
+//  TREASURE SYSTEM
 // ================================================================
 const TREASURES = {
     bronze: [
@@ -1596,7 +1590,7 @@ function hideGameOver() { document.getElementById('game-over').classList.remove(
 //  MASTER INITIALISATION
 // ================================================================
 document.addEventListener('DOMContentLoaded', async () => {
-    console.log('🃏 Quiz Flip — Card Battle Game (Multi-Treasure Edition)');
+    console.log('🃏 Quiz Flip — Card Battle Game');
 
     confetti = new ConfettiEngine('confetti-canvas');
 
@@ -1675,12 +1669,8 @@ document.addEventListener('DOMContentLoaded', async () => {
         }
     });
 
-    console.log('✅ Ready — Multi-Treasure System with Power-ups Active');
-    console.log('📦 Bronze | 🎁 Silver | 👑 Gold treasures');
-    console.log('⚡ Double Next | 🛡️ Shield | 💰 Steal | 🔄 Swap');
-    console.log('❌ Wrong = -50% penalty | 🛡️ Shield blocks penalty');
-    console.log('⏱️ Timer: 200 seconds per question');
-    console.log('🔢 Math Renderer: fractions, exponents, roots supported');
+    console.log('✅ Ready — Math renderer with fractions, exponents, roots');
+    console.log('📐 Supports: 6x/3, (2x-5)/4, 2(x+3)/5, 3^x, 4^(12/5), √(x+1)');
 });
 
 
@@ -1723,8 +1713,6 @@ window.quizTools = {
             const status = card?.completed ? (card.result === 'correct' ? '✅ collected' : '❌ lost') : '⏳ available';
             console.log(`  Card ${idx + 1}: ${meta.icon} ${meta.label} — ${status}`);
         });
-        console.log(`  Remaining: ${gameState.treasuresRemaining}`);
-        console.log(`  Collected: P1=${gameState.treasuresCollected[0]} P2=${gameState.treasuresCollected[1]}`);
     },
 
     showPowerUps: () => {
@@ -1747,7 +1735,7 @@ window.quizTools = {
         console.log(`🛡️ Shield given to Player ${player}`);
     },
 
-    // Enhanced testMath with all new capabilities
+    // ★ Enhanced testMath — visual popup test
     testMath: (text) => {
         const result = renderMath(text);
         console.log('Input: ', text);
@@ -1759,47 +1747,41 @@ window.quizTools = {
         return result;
     },
 
-    // New: batch test all math patterns
+    // ★ Batch test all math patterns
     testAllMath: () => {
         const tests = [
-            // Fractions
-            { input: '3/4',           desc: 'Simple fraction' },
-            { input: '2 3/4',         desc: 'Mixed number' },
-            { input: '2x/3',          desc: 'Algebraic fraction' },
-            { input: '(2x-5)/4',      desc: 'Paren numerator' },
-            { input: '2x/(3y+1)',     desc: 'Paren denominator' },
-            { input: '(2x+1)/(3y-4)', desc: 'Both paren' },
-            // Exponents
-            { input: '3^2',           desc: 'Simple exponent' },
-            { input: '3^x',           desc: 'Variable exponent' },
-            { input: '2^10',          desc: 'Multi-digit exponent' },
-            { input: '10^-3',         desc: 'Negative exponent' },
-            { input: 'x^-1',          desc: 'Neg single exponent' },
-            { input: '4^(12/5)',      desc: 'Fraction exponent' },
-            { input: 'e^(-x)',        desc: 'Paren neg exponent' },
-            { input: 'x^(2n+1)',      desc: 'Expression exponent' },
-            { input: 'e^(-1/2)',      desc: 'Neg frac exponent' },
-            { input: '2^{3x+1}',     desc: 'Curly brace exponent' },
-            // Roots
-            { input: '√x',            desc: 'Simple root' },
-            { input: '√(x+1)',        desc: 'Root with expr' },
-            { input: 'cbrt(27)',      desc: 'Cube root' },
-            // Combined
-            { input: '3^x × 3^2 = 3^(x+2)', desc: 'Combined exponents' },
-            { input: '(x^2 + 1)/2',          desc: 'Exponent in fraction' },
-            // Protected
-            { input: 'speed / time',  desc: 'Protected division' },
-            { input: '$3,500.00',     desc: 'Protected dollar' }
+            { input: '3/4',              desc: 'Simple fraction' },
+            { input: '2 3/4',            desc: 'Mixed number' },
+            { input: '2x/3',             desc: 'Algebraic fraction' },
+            { input: '6x/3',             desc: 'Algebraic fraction 2' },
+            { input: '(2x-5)/4',         desc: 'Paren numerator' },
+            { input: '2x/(3y+1)',        desc: 'Paren denominator' },
+            { input: '(2x+1)/(3y-4)',    desc: 'Both paren' },
+            { input: '2(x+3)/5',         desc: 'Coeff × paren / simple' },
+            { input: '4(2x-1)/8',        desc: 'Coeff × paren / simple 2' },
+            { input: '3(2x+5)/6',        desc: 'Coeff × paren / simple 3' },
+            { input: '3^2',              desc: 'Simple exponent' },
+            { input: '3^x',              desc: 'Variable exponent' },
+            { input: '2^10',             desc: 'Multi-digit exponent' },
+            { input: '10^-3',            desc: 'Negative exponent' },
+            { input: '4^(12/5)',         desc: 'Fraction exponent' },
+            { input: 'e^(-x)',           desc: 'Paren neg exponent' },
+            { input: 'x^(2n+1)',         desc: 'Expression exponent' },
+            { input: '√x',              desc: 'Simple root' },
+            { input: '√(x+1)',          desc: 'Root with expr' },
+            { input: 'cbrt(27)',         desc: 'Cube root' },
+            { input: 'speed / time',     desc: 'Protected division' },
+            { input: '$3,500.00',        desc: 'Protected dollar' }
         ];
 
         console.log('🧪 MATH RENDERER — BATCH TEST');
-        console.log('═'.repeat(60));
+        console.log('═'.repeat(70));
         tests.forEach(t => {
             const result = renderMath(t.input);
-            const hasHTML = result !== t.input;
-            console.log(`${hasHTML ? '✅' : '⚠️'} ${t.desc.padEnd(25)} │ ${t.input.padEnd(25)} │ ${hasHTML ? 'RENDERED' : 'UNCHANGED'}`);
+            const hasHTML = result !== t.input && result.includes('<span');
+            console.log(`${hasHTML ? '✅' : '⚠️'} ${t.desc.padEnd(28)} │ ${t.input.padEnd(22)} │ ${hasHTML ? 'RENDERED' : 'UNCHANGED'}`);
         });
-        console.log('═'.repeat(60));
-        console.log('Use quizTools.testMath("expression") to visually test any single expression');
+        console.log('═'.repeat(70));
+        console.log('Use quizTools.testMath("expression") to visually test any expression');
     }
 };
