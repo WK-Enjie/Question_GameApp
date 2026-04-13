@@ -111,7 +111,7 @@ function decodeQuizCode(code) {
 
 
 // ================================================================
-//  MATH RENDERER
+//  MATH RENDERER (ENHANCED — fractions, exponents, roots)
 // ================================================================
 function renderMath(text) {
     if (!text) return '';
@@ -121,41 +121,108 @@ function renderMath(text) {
         .replace(/</g, '&lt;')
         .replace(/>/g, '&gt;');
 
+    // ---- Protect "word / word" (division context like "speed / time") ----
     const protectedDivs = [];
     s = s.replace(/(\w+)\s+\/\s+(\w+)/g, (match) => {
         protectedDivs.push(match);
         return `__PDIV${protectedDivs.length - 1}__`;
     });
 
+    // ---- Protect dollar amounts like $3,500.00 ----
     const protectedDollars = [];
     s = s.replace(/\$[\d,]+(\.\d+)?/g, (match) => {
         protectedDollars.push(match);
         return `__PDOL${protectedDollars.length - 1}__`;
     });
 
+    // ================================================================
+    //  ROOTS — cube root and square root
+    // ================================================================
+
+    // Cube root: ∛(...) or cbrt(...)
     s = s.replace(/(?:∛|cbrt)\(([^)]+)\)/g, (match, content) => {
         return `<span class="cbrt-wrap"><span class="cbrt-index">3</span><span class="cbrt-sign">√</span><span class="cbrt-content">${content}</span></span>`;
     });
 
+    // Square root with parentheses: √(...)
     s = s.replace(/√\(([^)]+)\)/g, (match, content) => {
         return `<span class="sqrt-wrap"><span class="sqrt-sign">√</span><span class="sqrt-content">${content}</span></span>`;
     });
 
+    // Square root of single variable: √x
     s = s.replace(/√([a-zA-Z])/g, (match, v) => {
         return `<span class="sqrt-wrap"><span class="sqrt-sign">√</span><span class="sqrt-content">${v}</span></span>`;
     });
 
-    s = s.replace(/\^{([^}]+)}/g, (match, exp) => `<span class="sup">${exp}</span>`);
-    s = s.replace(/\^(\d+|[a-zA-Z])/g, (match, exp) => `<span class="sup">${exp}</span>`);
+    // ================================================================
+    //  SUPERSCRIPTS / EXPONENTS — EXPANDED
+    //  Process BEFORE fractions so inner fractions render correctly
+    // ================================================================
 
-    s = s.replace(/(\d+)\s+(\d+)\/(\d+)/g, (match, whole, num, den) => {
+    // 1) CURLY BRACE exponent: x^{2n+1} — LaTeX-style
+    s = s.replace(/\^{([^}]+)}/g, (match, exp) => {
+        return `<span class="sup">${exp}</span>`;
+    });
+
+    // 2) PARENTHESISED exponent: 4^(12/5), e^(-x), x^(2n+1), e^(-1/2)
+    //    Captures everything inside parentheses after ^
+    //    Also renders any fraction found inside the exponent
+    s = s.replace(/\^\(([^)]+)\)/g, (match, inner) => {
+        // Render fraction inside the exponent if present
+        let rendered = inner.replace(
+            /([\da-zA-Z+\-.*]+)\/([\da-zA-Z+\-.*]+)/g,
+            (m, num, den) => {
+                return `<span class="frac frac-small"><span class="frac-num">${num}</span><span class="frac-den">${den}</span></span>`;
+            }
+        );
+        return `<span class="sup">${rendered}</span>`;
+    });
+
+    // 3) MULTI-DIGIT exponent with optional negative: x^12, 2^10, 10^-3, 10^-12
+    s = s.replace(/\^(-?\d{2,})/g, (match, exp) => {
+        return `<span class="sup">${exp}</span>`;
+    });
+
+    // 4) SINGLE CHARACTER exponent with optional negative: 3^x, 2^n, x^2, x^-1
+    s = s.replace(/\^(-?[\da-zA-Z])/g, (match, exp) => {
+        return `<span class="sup">${exp}</span>`;
+    });
+
+    // ================================================================
+    //  FRACTIONS — supports algebraic numerators/denominators
+    //  Order: most specific patterns first
+    // ================================================================
+
+    // 5) MIXED NUMBER: 2 3/4 — must come before general fractions
+    s = s.replace(/(\d+)\s+([\da-zA-Z]+)\/([\da-zA-Z]+)/g, (match, whole, num, den) => {
         return `<span class="mixed-num"><span class="whole">${whole}</span><span class="frac"><span class="frac-num">${num}</span><span class="frac-den">${den}</span></span></span>`;
     });
 
-    s = s.replace(/(\d+)\/(\d+)/g, (match, num, den) => {
+    // 6) PARENTHESISED BOTH: (2x+1)/(3y-4)
+    s = s.replace(/\(([^)]+)\)\/\(([^)]+)\)/g, (match, num, den) => {
         return `<span class="frac"><span class="frac-num">${num}</span><span class="frac-den">${den}</span></span>`;
     });
 
+    // 7) PARENTHESISED NUMERATOR: (2x-5)/4
+    s = s.replace(/\(([^)]+)\)\/([\w.]+)/g, (match, num, den) => {
+        return `<span class="frac"><span class="frac-num">${num}</span><span class="frac-den">${den}</span></span>`;
+    });
+
+    // 8) PARENTHESISED DENOMINATOR: 2x/(3y+1)
+    s = s.replace(/([\w.]+)\/\(([^)]+)\)/g, (match, num, den) => {
+        return `<span class="frac"><span class="frac-num">${num}</span><span class="frac-den">${den}</span></span>`;
+    });
+
+    // 9) ALGEBRAIC FRACTION: 2x/3, 5y/7, ab/cd
+    //    Safety guard: skip overly long tokens (likely paths, not math)
+    s = s.replace(/([\da-zA-Z]+)\/([\da-zA-Z]+)/g, (match, num, den) => {
+        if (num.length > 8 || den.length > 8) return match;
+        return `<span class="frac"><span class="frac-num">${num}</span><span class="frac-den">${den}</span></span>`;
+    });
+
+    // ================================================================
+    //  RESTORE PROTECTED TOKENS
+    // ================================================================
     protectedDivs.forEach((val, i) => { s = s.replace(`__PDIV${i}__`, val); });
     protectedDollars.forEach((val, i) => { s = s.replace(`__PDOL${i}__`, val); });
 
@@ -1613,6 +1680,7 @@ document.addEventListener('DOMContentLoaded', async () => {
     console.log('⚡ Double Next | 🛡️ Shield | 💰 Steal | 🔄 Swap');
     console.log('❌ Wrong = -50% penalty | 🛡️ Shield blocks penalty');
     console.log('⏱️ Timer: 200 seconds per question');
+    console.log('🔢 Math Renderer: fractions, exponents, roots supported');
 });
 
 
@@ -1679,6 +1747,7 @@ window.quizTools = {
         console.log(`🛡️ Shield given to Player ${player}`);
     },
 
+    // Enhanced testMath with all new capabilities
     testMath: (text) => {
         const result = renderMath(text);
         console.log('Input: ', text);
@@ -1688,5 +1757,49 @@ window.quizTools = {
         div.innerHTML = `<div style="font-size:0.7rem;color:#94a3b8;margin-bottom:10px;">MATH RENDER TEST</div>${result}<div style="font-size:0.7rem;color:#64748b;margin-top:15px;cursor:pointer;" onclick="this.parentElement.remove()">Click to close</div>`;
         document.body.appendChild(div);
         return result;
+    },
+
+    // New: batch test all math patterns
+    testAllMath: () => {
+        const tests = [
+            // Fractions
+            { input: '3/4',           desc: 'Simple fraction' },
+            { input: '2 3/4',         desc: 'Mixed number' },
+            { input: '2x/3',          desc: 'Algebraic fraction' },
+            { input: '(2x-5)/4',      desc: 'Paren numerator' },
+            { input: '2x/(3y+1)',     desc: 'Paren denominator' },
+            { input: '(2x+1)/(3y-4)', desc: 'Both paren' },
+            // Exponents
+            { input: '3^2',           desc: 'Simple exponent' },
+            { input: '3^x',           desc: 'Variable exponent' },
+            { input: '2^10',          desc: 'Multi-digit exponent' },
+            { input: '10^-3',         desc: 'Negative exponent' },
+            { input: 'x^-1',          desc: 'Neg single exponent' },
+            { input: '4^(12/5)',      desc: 'Fraction exponent' },
+            { input: 'e^(-x)',        desc: 'Paren neg exponent' },
+            { input: 'x^(2n+1)',      desc: 'Expression exponent' },
+            { input: 'e^(-1/2)',      desc: 'Neg frac exponent' },
+            { input: '2^{3x+1}',     desc: 'Curly brace exponent' },
+            // Roots
+            { input: '√x',            desc: 'Simple root' },
+            { input: '√(x+1)',        desc: 'Root with expr' },
+            { input: 'cbrt(27)',      desc: 'Cube root' },
+            // Combined
+            { input: '3^x × 3^2 = 3^(x+2)', desc: 'Combined exponents' },
+            { input: '(x^2 + 1)/2',          desc: 'Exponent in fraction' },
+            // Protected
+            { input: 'speed / time',  desc: 'Protected division' },
+            { input: '$3,500.00',     desc: 'Protected dollar' }
+        ];
+
+        console.log('🧪 MATH RENDERER — BATCH TEST');
+        console.log('═'.repeat(60));
+        tests.forEach(t => {
+            const result = renderMath(t.input);
+            const hasHTML = result !== t.input;
+            console.log(`${hasHTML ? '✅' : '⚠️'} ${t.desc.padEnd(25)} │ ${t.input.padEnd(25)} │ ${hasHTML ? 'RENDERED' : 'UNCHANGED'}`);
+        });
+        console.log('═'.repeat(60));
+        console.log('Use quizTools.testMath("expression") to visually test any single expression');
     }
 };
