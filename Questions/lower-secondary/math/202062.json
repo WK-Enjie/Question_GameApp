@@ -1,0 +1,122 @@
+{
+  "title": "Secondary 2 Mathematics - Chapter 6",
+  "topic": "Fractional Expressions (Advanced Simplification)",
+  "subject": "Mathematics",
+  "grade": "Sec 2",
+  "chapter": 6,
+  "worksheet": 2,
+  "questions": [
+    {
+      "question": "Simplify: (x^2 - 4x + 4) / (x^2 - 4)",
+      "options": ["(x - 2)/(x + 2)", "(x + 2)/(x - 2)", "1", "-1"],
+      "correct": 0,
+      "points": 20,
+      "explanation": "Num: (x - 2)^2. Denom: (x - 2)(x + 2). Cancel (x - 2): (x - 2)/(x + 2)."
+    },
+    {
+      "question": "Simplify: (3x + 6) / (x^2 + 4x + 4)",
+      "options": ["3/(x + 2)", "3/(x - 2)", "(x + 2)/3", "3(x + 2)"],
+      "correct": 0,
+      "points": 20,
+      "explanation": "Num: 3(x + 2). Denom: (x + 2)^2. Cancel (x + 2): 3/(x + 2)."
+    },
+    {
+      "question": "Simplify: (x^2 - 9) / (2x^2 - 5x - 3)",
+      "options": ["(x - 3)/(2x + 1)", "(x + 3)/(2x + 1)", "(x - 3)/(2x - 1)", "(x + 3)/(2x - 1)"],
+      "correct": 1,
+      "points": 25,
+      "explanation": "Num: (x - 3)(x + 3). Denom: (2x + 1)(x - 3). Cancel (x - 3): (x + 3)/(2x + 1)."
+    },
+    {
+      "question": "Simplify: (2x^2 - 8) / (x^2 - 4x + 4)",
+      "options": ["2(x - 2)/(x + 2)", "(x + 2)/(x - 2)", "2(x + 2)", "2(x + 2)/(x - 2)"],
+      "correct": 3,
+      "points": 25,
+      "explanation": "Num: 2(x^2 - 4) = 2(x - 2)(x + 2). Denom: (x - 2)^2. Cancel (x - 2): 2(x + 2)/(x - 2)."
+    },
+    {
+      "question": "Simplify: (x - 5) / (25 - x^2)",
+      "options": ["1/(x - 5)", "-1/(x - 5)", "1/(x + 5)", "-1/(x + 5)"],
+      "correct": 3,
+      "points": 25,
+      "explanation": "Denom: (5 - x)(5 + x) = -(x - 5)(x + 5). Cancel (x - 5): 1/-(x + 5) = -1/(x + 5)."
+    },
+    {
+      "question": "Simplify: (x^2 - x - 6) / (x^2 - 5x + 6)",
+      "options": ["(x - 2)/(x + 2)", "(x + 3)/(x - 3)", "(x - 3)/(x + 3)", "(x + 2)/(x - 2)"],
+      "correct": 3,
+      "points": 25,
+      "explanation": "Num: (x - 3)(x + 2). Denom: (x - 3)(x - 2). Cancel (x - 3): (x + 2)/(x - 2)."
+    },
+    {
+      "question": "Simplify: (4 - x^2) / (x^2 + 4x + 4)",
+      "options": ["(x - 2)/(x + 2)", "-1", "1", "(2 - x)/(x + 2)"],
+      "correct": 3,
+      "points": 25,
+      "explanation": "Num: (2 - x)(2 + x). Denom: (x + 2)^2. Cancel (x + 2): (2 - x)/(x + 2)."
+    },
+    {
+      "question": "Simplify: (x^2 - 1) / (x^2 - 2x + 1)",
+      "options": ["(x - 1)/(x + 1)", "1", "-1", "(x + 1)/(x - 1)"],
+      "correct": 3,
+      "points": 25,
+      "explanation": "Num: (x - 1)(x + 1). Denom: (x - 1)^2. Cancel (x - 1): (x + 1)/(x - 1)."
+    },
+    {
+      "question": "Simplify: (x^2 - (x - 3)^2) / (6x - 9)",
+      "options": ["2", "1/2", "3", "1"],
+      "correct": 3,
+      "points": 30,
+      "explanation": "Num: x^2 - (x^2 - 6x + 9) = 6x - 9. Denom: 6x - 9. Cancel: 1."
+    },
+    {
+      "question": "Simplify: ((x + 2)^2 - x^2) / (4x + 4)",
+      "options": ["2", "1", "1/2", "x"],
+      "correct": 1,
+      "points": 30,
+      "explanation": "Num: (x^2 + 4x + 4) - x^2 = 4x + 4. Denom: 4x + 4. Cancel: 1."
+    },
+    {
+      "question": "Simplify: ((2x + 1)^2 - (x + 1)^2) / (3x^2 + 2x)",
+      "options": ["3", "x", "3/x", "1"],
+      "correct": 3,
+      "points": 30,
+      "explanation": "Num: (4x^2 + 4x + 1) - (x^2 + 2x + 1) = 3x^2 + 2x. Denom: 3x^2 + 2x. Cancel: 1."
+    },
+    {
+      "question": "Simplify: (9x^2 - 16) / (6x^2 - 11x + 4)",
+      "options": ["(3x - 4)/(2x - 1)", "(3x + 4)/(2x + 1)", "(3x - 4)/(2x + 1)", "(3x + 4)/(2x - 1)"],
+      "correct": 3,
+      "points": 30,
+      "explanation": "Num: (3x - 4)(3x + 4). Denom: (3x - 4)(2x - 1). Cancel (3x - 4): (3x + 4)/(2x - 1)."
+    },
+    {
+      "question": "Simplify: (x^3 - x) / (x^2 + 2x + 1)",
+      "options": ["x - 1", "x + 1", "x(x - 1)/(x + 1)", "x(x + 1)/(x - 1)"],
+      "correct": 2,
+      "points": 30,
+      "explanation": "Num: x(x^2 - 1) = x(x - 1)(x + 1). Denom: (x + 1)^2. Cancel (x + 1): x(x - 1)/(x + 1)."
+    },
+    {
+      "question": "Simplify: (2x^2 - 3x - 2) / (4x^2 - 1)",
+      "options": ["(x + 2)/(2x - 1)", "(x + 2)/(2x + 1)", "(x - 2)/(2x + 1)", "(x - 2)/(2x - 1)"],
+      "correct": 2,
+      "points": 30,
+      "explanation": "Num: (2x + 1)(x - 2). Denom: (2x - 1)(2x + 1). Cancel (2x + 1): (x - 2)/(2x - 1)."
+    },
+    {
+      "question": "Simplify: (x^2 - 4) / (x^2 - 4x + 4)",
+      "options": ["(x + 2)/(x - 2)", "(x - 2)/(x + 2)", "1", "-1"],
+      "correct": 0,
+      "points": 25,
+      "explanation": "Num: (x - 2)(x + 2). Denom: (x - 2)^2. Cancel (x - 2): (x + 2)/(x - 2)."
+    },
+    {
+      "question": "Simplify: (3x^2 - 12) / (x^2 - 4x + 4)",
+      "options": ["3(x + 2)/(x - 2)", "3(x - 2)/(x + 2)", "(x + 2)/(x - 2)", "3(x - 2)"],
+      "correct": 0,
+      "points": 25,
+      "explanation": "Num: 3(x^2 - 4) = 3(x - 2)(x + 2). Denom: (x - 2)^2. Cancel (x - 2): 3(x + 2)/(x - 2)."
+    }
+  ]
+}
