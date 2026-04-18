@@ -1,0 +1,123 @@
+{
+  "title": "Secondary 2 Mathematics - Chapter 4",
+  "topic": "Algebraic Identities (Expansion & Mental Calculation)",
+  "subject": "Mathematics",
+  "level": "Lower Secondary",
+  "grade": "Sec 2",
+  "chapter": 4,
+  "worksheet": 1,
+  "questions": [
+    {
+      "question": "Expand: (x + 5)^2",
+      "options": ["x^2 + 25", "x^2 + 5x + 25", "x^2 + 10x + 25", "x^2 + 10x + 10"],
+      "correct": 2,
+      "points": 10,
+      "explanation": "Using (a + b)^2 = a^2 + 2ab + b^2. So (x + 5)^2 = x^2 + 2(x)(5) + 5^2 = x^2 + 10x + 25."
+    },
+    {
+      "question": "Expand: (2x - 3)^2",
+      "options": ["4x^2 - 9", "4x^2 - 6x + 9", "4x^2 - 12x + 9", "4x^2 + 12x + 9"],
+      "correct": 2,
+      "points": 12,
+      "explanation": "Using (a - b)^2 = a^2 - 2ab + b^2. So (2x - 3)^2 = (2x)^2 - 2(2x)(3) + 3^2 = 4x^2 - 12x + 9."
+    },
+    {
+      "question": "Expand: (x + 4)(x - 4)",
+      "options": ["x^2 - 16", "x^2 + 16", "x^2 - 8", "x^2 - 4"],
+      "correct": 0,
+      "points": 10,
+      "explanation": "Using (a + b)(a - b) = a^2 - b^2. So (x + 4)(x - 4) = x^2 - 4^2 = x^2 - 16."
+    },
+    {
+      "question": "Evaluate without a calculator: 102^2",
+      "options": ["10404", "10204", "10004", "10400"],
+      "correct": 0,
+      "points": 15,
+      "explanation": "102^2 = (100 + 2)^2 = 100^2 + 2(100)(2) + 2^2 = 10000 + 400 + 4 = 10404."
+    },
+    {
+      "question": "Evaluate without a calculator: 98^2",
+      "options": ["9604", "9804", "9600", "9404"],
+      "correct": 0,
+      "points": 15,
+      "explanation": "98^2 = (100 - 2)^2 = 100^2 - 2(100)(2) + 2^2 = 10000 - 400 + 4 = 9604."
+    },
+    {
+      "question": "Evaluate without a calculator: 103 × 97",
+      "options": ["9991", "9999", "10001", "9891"],
+      "correct": 0,
+      "points": 15,
+      "explanation": "103 × 97 = (100 + 3)(100 - 3) = 100^2 - 3^2 = 10000 - 9 = 9991."
+    },
+    {
+      "question": "Expand: (3x + 2y)^2",
+      "options": ["9x^2 + 4y^2", "9x^2 + 6xy + 4y^2", "9x^2 + 12xy + 4y^2", "9x^2 + 12xy + 2y^2"],
+      "correct": 2,
+      "points": 12,
+      "explanation": "Using (a + b)^2 = a^2 + 2ab + b^2. So (3x + 2y)^2 = 9x^2 + 2(3x)(2y) + 4y^2 = 9x^2 + 12xy + 4y^2."
+    },
+    {
+      "question": "Evaluate without a calculator: 1005^2",
+      "options": ["1010025", "1005025", "1010005", "1000025"],
+      "correct": 0,
+      "points": 15,
+      "explanation": "1005^2 = (1000 + 5)^2 = 1000^2 + 2(1000)(5) + 5^2 = 1000000 + 10000 + 25 = 1010025."
+    },
+    {
+      "question": "Expand: (5a - 4b)(5a + 4b)",
+      "options": ["25a^2 - 16b^2", "25a^2 + 16b^2", "25a^2 - 8b^2", "5a^2 - 4b^2"],
+      "correct": 0,
+      "points": 12,
+      "explanation": "Using (a - b)(a + b) = a^2 - b^2. So (5a - 4b)(5a + 4b) = (5a)^2 - (4b)^2 = 25a^2 - 16b^2."
+    },
+    {
+      "question": "Evaluate without a calculator: 998^2",
+      "options": ["996004", "998004", "996000", "994004"],
+      "correct": 0,
+      "points": 15,
+      "explanation": "998^2 = (1000 - 2)^2 = 1000^2 - 2(1000)(2) + 2^2 = 1000000 - 4000 + 4 = 996004."
+    },
+    {
+      "question": "Evaluate without a calculator: 96 × 104",
+      "options": ["9984", "9994", "10004", "9884"],
+      "correct": 0,
+      "points": 15,
+      "explanation": "96 × 104 = (100 - 4)(100 + 4) = 100^2 - 4^2 = 10000 - 16 = 9984."
+    },
+    {
+      "question": "Expand: (x/2 + 3)^2",
+      "options": ["x^2/4 + 9", "x^2/4 + 3x + 9", "x^2/2 + 3x + 9", "x^2/4 + 6x + 9"],
+      "correct": 1,
+      "points": 15,
+      "explanation": "Using (a + b)^2 = a^2 + 2ab + b^2. So (x/2 + 3)^2 = x^2/4 + 2(x/2)(3) + 9 = x^2/4 + 3x + 9."
+    },
+    {
+      "question": "Evaluate without a calculator: 105^2 - 5^2",
+      "options": ["11000", "10500", "11025", "10000"],
+      "correct": 0,
+      "points": 15,
+      "explanation": "Using a^2 - b^2 = (a + b)(a - b). So 105^2 - 5^2 = (105 + 5)(105 - 5) = 110 × 100 = 11000."
+    },
+    {
+      "question": "Expand: (2x + 1/2)^2",
+      "options": ["4x^2 + 1/4", "4x^2 + 2x + 1/4", "4x^2 + x + 1/4", "4x^2 + 2x + 1/2"],
+      "correct": 1,
+      "points": 15,
+      "explanation": "Using (a + b)^2 = a^2 + 2ab + b^2. So (2x + 1/2)^2 = 4x^2 + 2(2x)(1/2) + 1/4 = 4x^2 + 2x + 1/4."
+    },
+    {
+      "question": "Evaluate without a calculator: 1001 × 999",
+      "options": ["1000000", "999999", "1000999", "998999"],
+      "correct": 1,
+      "points": 15,
+      "explanation": "1001 × 999 = (1000 + 1)(1000 - 1) = 1000^2 - 1^2 = 1000000 - 1 = 999999."
+    },
+    {
+      "question": "Expand: (√x + 2)(√x - 2)",
+      "options": ["x - 4", "x + 4", "x - 2", "√x - 4"],
+      "correct": 0,
+      "points": 15,
+      "explanation": "Using (a + b)(a - b) = a^2 - b^2. So (√x + 2)(√x - 2) = (√x)^2 - 2^2 = x - 4."
+    }
+  ]
+}
