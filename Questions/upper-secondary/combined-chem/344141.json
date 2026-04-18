@@ -1,155 +1,203 @@
 {
-  "title": "Rate of Reactions - Collision Theory & Experiments",
-  "topic": "Factors Affecting Rate of Reaction (Temperature, Concentration, Pressure, Surface Area)",
+  "title": "Rate of Reactions - Factors Affecting Reaction Speed",
+  "topic": "Factors Affecting Rate of Reaction (Temperature, Pressure, Concentration, Surface Area)",
   "subject": "Chemistry",
   "level": "Upper Secondary",
   "grade": "Sec 4",
-  "chapter": 14,
+  "chapter": 10,
   "worksheet": 1,
   "questions": [
     {
-      "question": "A student studies how temperature affects the speed of magnesium reacting with dilute hydrochloric acid. Two trials are performed using identical masses of magnesium and equal volumes/concentrations of acid.\n\nTrial 1: Room temperature (25°C)\nTrial 2: Warm water bath (45°C)\n\nWhich observation BEST confirms that Trial 2 has a faster reaction rate compared to Trial 1?",
+      "question": "A student measures how fast magnesium reacts with dilute hydrochloric acid at two different temperatures. Both experiments use the same mass of magnesium and same volume of acid.",
       "options": [
-        "Trial 2 produces a larger total volume of hydrogen gas",
-        "Trial 2 produces hydrogen gas at a steady pace while Trial 1 slows down",
-        "Trial 2 reaches its maximum gas volume in less time than Trial 1",
-        "Trial 1 takes longer because higher temperatures prevent bubbles from forming"
+        "The hotter mixture produces hydrogen gas faster and finishes sooner",
+        "The colder mixture produces hydrogen gas faster because particles are slower",
+        "Both mixtures produce gas at exactly the same rate regardless of temperature",
+        "The hotter mixture stops producing gas earlier than the cold one"
+      ],
+      "correct": 0,
+      "points": 12,
+      "explanation": "Higher temperature means particles have more kinetic energy → move faster → collide more frequently with greater force → more successful collisions per second → faster reaction rate."
+    },
+    {
+      "question": "Magnesium powder reacts much faster with acid than equal mass of magnesium ribbon even though both contain same amount of metal. Why is this?",
+      "options": [
+        "Powder has less total surface area exposed to reactants",
+        "Powder exposes more surface area allowing more collisions per second",
+        "Ribbon contains impurities that slow down the reaction",
+        "Powder dissolves completely which changes the reaction type"
+      ],
+      "correct": 1,
+      "points": 15,
+      "explanation": "Smaller particles = greater total surface area for same mass. More surface atoms exposed to acid molecules = more simultaneous collision opportunities = faster observed rate."
+    },
+    {
+      "question": "When investigating one factor affecting reaction rate, why must you keep all other conditions identical between trials?",
+      "options": [
+        "It makes the experiment easier to set up",
+        "Only then can you be sure which factor caused the difference in speed",
+        "Teachers prefer experiments that follow strict rules",
+        "More variable tests give more accurate equipment measurements"
+      ],
+      "correct": 1,
+      "points": 12,
+      "explanation": "Fair test principle: Changing only one variable at a time allows clear cause-effect relationship. If multiple factors change simultaneously, results become impossible to interpret properly."
+    },
+    {
+      "question": "Graph comparison: Two experiments measure hydrogen gas collected over time using same mass zinc but different acid volumes. Curve A rises quickly and levels off first. Curve B rises slowly and reaches plateau later. Both plateaus at same height. What does the plateau height represent?",
+      "options": [
+        "Maximum amount of product possible when limiting reactant used up",
+        "Total time taken for the reaction to complete",
+        "Average speed of all particles during the experiment",
+        "Concentration of the strongest acid solution used"
+      ],
+      "correct": 0,
+      "points": 15,
+      "explanation": "Plateau height shows maximum product formed when limiting reactant fully consumed. Different slopes mean different rates, but same starting materials mean same final yield possible."
+    },
+    {
+      "question": "Student observes calcium carbonate reacting with acid. Powder form produces bubbles much faster than marble chips of equal mass. After both reactions complete, what can you expect about carbon dioxide produced?",
+      "options": [
+        "Powder produces more CO₂ than chips because it reacted faster",
+        "Chips produce more CO₂ because they contained more mass",
+        "Both produce same volume of CO₂ if masses were equal",
+        "No CO₂ produced since calcium carbonate is insoluble"
       ],
       "correct": 2,
       "points": 15,
-      "explanation": "Rate refers to how fast reactants turn into products. Higher temperature gives particles more kinetic energy, meaning they move faster and collide more frequently. Both trials produce the same total gas (limited by magnesium mass), but Trial 2 finishes sooner because the particles collide more often."
+      "explanation": "Surface area affects SPEED not TOTAL PRODUCT. Same mass CaCO₃ means same theoretical yield regardless of how fast reaction proceeds to completion."
     },
     {
-      "question": "In an experiment measuring carbon dioxide produced from calcium carbonate and acid, powder reacts much faster than large marble chips even though equal masses were used.\n\nAccording to collision theory, why does the powder react faster?",
+      "question": "Two gas-phase reactions studied at different pressures while keeping temperature constant. Experiment Q uses double the pressure of Experiment P. Which outcome correctly describes collision behavior?",
       "options": [
-        "Powder contains more impurities that act as heat sources",
-        "Powder exposes more surface area allowing more simultaneous collisions per second",
-        "Large chips absorb more liquid making the reaction slower over time",
-        "Powder lowers the temperature of the mixture naturally due to high surface area"
-      ],
-      "correct": 1,
-      "points": 15,
-      "explanation": "Smaller particles mean greater total surface area for the same mass. This allows more reactant particles to be exposed and collide with acid molecules simultaneously, increasing the number of successful collisions per unit time."
-    },
-    {
-      "question": "A researcher measures oxygen volume collected over time from hydrogen peroxide decomposition:\n\nExperiment A: Low concentration H₂O₂ → Takes 120 seconds to finish\nExperiment B: High concentration H₂O₂ → Takes 30 seconds to finish\n\nBoth experiments used the same starting mass of solute dissolved in the same final volume before decomposition started. How does higher concentration affect the reaction?",
-      "options": [
-        "Higher concentration increases number of particles per unit volume leading to more frequent collisions",
-        "Higher concentration reduces the total energy available to break bonds slowly",
-        "Higher concentration forces water molecules to push hydrogen peroxide apart mechanically",
-        "Lower concentration creates more space preventing all possible collisions"
-      ],
-      "correct": 0,
-      "points": 12,
-      "explanation": "Increasing concentration packs more solute particles into the same volume. This increases the probability of collisions occurring between reactive particles each second, speeding up the overall process."
-    },
-    {
-      "question": "For reactions involving only gases, what happens when the system pressure is increased while keeping temperature constant?",
-      "options": [
-        "Gas particles move apart reducing collision frequency",
-        "Gas particles are forced closer together increasing collision frequency",
-        "Pressure has no effect on gaseous reaction speeds",
-        "Lower pressure causes gas particles to vibrate faster randomly"
+        "Particles in Q move faster simply because pressure increased",
+        "Particles in Q collide more often because packed closer together",
+        "Pressure doesn't affect gas reaction speeds at all",
+        "Lower pressure causes spontaneous formation of new chemical bonds"
       ],
       "correct": 1,
       "points": 12,
-      "explanation": "Increasing pressure compresses gas into a smaller volume. This effectively increases the concentration of gas particles, bringing them closer together so they collide more frequently."
+      "explanation": "Higher pressure compresses gases into smaller space = more particles per unit volume = closer proximity = increased collision frequency = faster rate."
     },
     {
-      "question": "When designing an experiment to test the effect of one factor on reaction rate, which variables MUST remain unchanged across all trials to ensure fair comparison?",
+      "question": "A curve showing hydrogen volume versus time has steep initial slope then flattens toward horizontal line. What explains why the slope gets shallower as reaction continues?",
       "options": [
-        "Only the factor being investigated should vary; all other conditions must stay constant",
-        "Temperature should change along with the independent variable to simulate real life",
-        "Different amounts of apparatus should be used for variety in measurements",
-        "The limiting reagent amount should vary to test multiple scenarios simultaneously"
+        "Acid concentration decreases as reactants used up = fewer collisions per second",
+        "Temperature drops during reaction causing all particles to stop moving",
+        "Magnesium ribbon becomes smoother making it harder for acid to attack",
+        "Hydrogen gas produced blocks further acid contact with metal"
+      ],
+      "correct": 0,
+      "points": 15,
+      "explanation": "As reactants get consumed their concentration drops = fewer particles available per unit space = reduced collision frequency = slower rate observed by declining gradient."
+    },
+    {
+      "question": "Which statement BEST summarises why increasing temperature accelerates most chemical reactions?",
+      "options": [
+        "Particles gain energy needed to collide effectively more often",
+        "Molecular bonds weaken completely eliminating reaction barriers",
+        "Chemical identity changes at higher temperatures allowing new pathways",
+        "All collisions automatically become successful without any threshold"
+      ],
+      "correct": 0,
+      "points": 15,
+      "explanation": "Higher T increases average kinetic energy → larger fraction of collisions possess sufficient energy → more successful collisions per unit time = faster observed rate."
+    },
+    {
+      "question": "Comparing two sets of experimental runs measuring oxygen produced from hydrogen peroxide decomposition: First set at room temperature completes in 6 minutes. Second set heated to 40°C completes in 1.5 minutes. Assuming same starting material amounts, what conclusion applies?",
+      "options": [
+        "Higher temperature produced four times more oxygen gas",
+        "Higher temperature made reaction proceed four times faster",
+        "Room temperature experiment stopped prematurely due to error",
+        "Both experiments produced identical oxygen despite different completion times"
+      ],
+      "correct": 1,
+      "points": 12,
+      "explanation": "Completion time shorter at higher temperature indicates faster rate (6÷1.5=4 times faster). Same starting materials means same final oxygen yield regardless of path speed."
+    },
+    {
+      "question": "For a valid scientific investigation comparing reaction rates, which experimental design correctly identifies and controls variables?",
+      "options": [
+        "Change temperature AND concentration together to test real-world conditions",
+        "Keep all conditions constant except ONE factor you deliberately vary",
+        "Vary apparatus type randomly to check measurement reliability across tools",
+        "Change three variables simultaneously hoping one will show effect clearly"
+      ],
+      "correct": 1,
+      "points": 12,
+      "explanation": "Single-variable isolation ensures any observed difference in rate directly links to changed factor rather than confounding influences from other changing parameters."
+    },
+    {
+      "question": "In an experiment where sulfuric acid concentration affects copper sulfate crystal formation rate:\n\nTrial X uses concentrated acid solution\nTrial Y uses diluted acid solution\nBoth use same mass of copper oxide and same volume.\n\nWhat observation would confirm Trial X has faster rate?",
+      "options": [
+        "Trial X crystals form in shorter time period than Trial Y",
+        "Trial X produces more copper sulfate crystals overall",
+        "Trial Y crystals appear clearer than Trial X crystals",
+        "Both trials reach same endpoint at identical times"
       ],
       "correct": 0,
       "points": 12,
-      "explanation": "To identify cause and effect accurately, scientists isolate one variable. If multiple factors change simultaneously, it becomes impossible to determine which specific factor caused the observed difference in rate."
+      "explanation": "Higher concentration provides more H₂SO₄ molecules per unit volume → more frequent collisions with CuO particles → faster reaction rate → shorter completion time. Final product amount depends on CuO mass."
     },
     {
-      "question": "A graph plots volume of hydrogen gas versus time for zinc reacting with two different concentrations of acid:\n\nCurve 1: Steeper slope, reaches plateau quickly\nCurve 2: Shallower slope, reaches plateau slowly\nBoth curves end at the exact same height.\n\nWhat explains the difference in the initial steepness of the curves?",
+      "question": "Why do fine wood shavings burn faster than thick wooden logs despite containing same total mass of wood?",
       "options": [
-        "Steeper curve indicates higher concentration provides more colliding particles per second",
-        "Shallower curve indicates lower concentration destroys product as it forms",
-        "Plateau height differs due to varying amounts of zinc metal used",
-        "Steepness depends only on container shape regardless of chemical properties"
+        "Shavings have greater surface area allowing more oxygen collisions per second",
+        "Logs contain more water content slowing combustion significantly",
+        "Heat dissipates differently based on wood color variations",
+        "Air flow restrictions around large pieces prevent complete burning"
       ],
       "correct": 0,
       "points": 15,
-      "explanation": "Gradient (slope) represents rate. Higher concentration = more frequent collisions = steeper initial line. Identical plateau heights confirm same final yield was reached despite different speeds."
+      "explanation": "Greater surface area exposure allows simultaneous oxygen contact with more wood particles → increased collision frequency → faster burning rate without changing total combustible material available."
     },
     {
-      "question": "Why does temperature increase accelerate reaction rates according to kinetic particle theory?",
+      "question": "A student plots graphs showing methane gas volume produced over time from two different experimental setups:\n\nSetup 1: High pressure container\nSetup 2: Normal pressure container\nBoth use identical hydrogen and carbon reactants.\n\nWhat graph feature distinguishes Setup 1 from Setup 2?",
       "options": [
-        "Particles gain sufficient kinetic energy to collide successfully more often",
-        "Molecular bond strengths weaken completely eliminating need for external energy input",
-        "Higher temperatures cause spontaneous formation of intermediate compounds uncontrolled",
-        "Temperature raises pressure inside container forcing all collisions to become productive"
-      ],
-      "correct": 0,
-      "points": 15,
-      "explanation": "Higher temperature increases average kinetic energy of particles. This leads to a higher fraction of collisions possessing enough energy to react and more frequent collisions overall."
-    },
-    {
-      "question": "Two students design an experiment testing concentration effect:\n\nStudent A keeps temperature, mass of solid, stirring speed constant.\nStudent B varies temperature AND concentration simultaneously.\n\nWhich experimental design properly isolates the effect of concentration alone?",
-      "options": [
-        "Student A controls all variables except concentration enabling direct causal attribution",
-        "Student B gathers more comprehensive data despite lack of variable isolation",
-        "Both designs equally valid since final product volume determines overall success",
-        "Neither design acceptable since concentration cannot be varied meaningfully"
+        "Setup 1 shows steeper rising curve reaching plateau faster",
+        "Setup 1 shows lower final plateau height indicating less methane",
+        "Setup 2 reaches plateau first due to better gas mixing",
+        "Both graphs overlap perfectly since pressure doesn't matter"
       ],
       "correct": 0,
       "points": 12,
-      "explanation": "Scientific rigor requires single-variable testing. Student B confounds effects of temperature and concentration making results uninterpretable. Student A follows controlled experiment methodology appropriately."
+      "explanation": "Higher pressure = gas particles packed closer = more frequent collisions between reactants = faster rate = steeper initial slope and earlier plateau achievement. Final yield stays same if reactant amounts identical."
     },
     {
-      "question": "Comparing gas phase reactions at different pressures, what characteristic best describes the relationship between pressure and reaction rate?",
+      "question": "During a lab experiment measuring hydrogen gas production from zinc reacting with acids:\n\nBeaker A contains powdered zinc\nBeaker B contains lumps of zinc\nEqual volumes and concentrations of acid added to both.\n\nWhat happens after BOTH reactions finish completely?",
       "options": [
-        "Increasing pressure increases collision frequency, thus speeding up the reaction",
-        "Decreasing pressure makes gas particles lighter allowing faster movement",
-        "Pressure changes do not affect gaseous collisions significantly",
-        "High pressure causes side reactions to dominate instead of main pathway"
+        "Both beakers contain equal hydrogen gas volume",
+        "Beaker A contains more hydrogen gas due to faster reaction",
+        "Beaker B contains more hydrogen gas due to slower heat loss",
+        "Neither reaction produces any measurable hydrogen"
       ],
       "correct": 0,
+      "points": 15,
+      "explanation": "Same zinc mass means same potential electron donation = same theoretical H₂ produced. Particle size affects rate not final quantity. Both reach identical gas volumes eventually if reaction completes fully."
+    },
+    {
+      "question": "A researcher compares reaction speeds for sodium thiosulphate plus hydrochloric acid at different temperatures. Results show:\n\nCold water bath: Cross disappears after 120 seconds\nWarm water bath: Cross disappears after 45 seconds\n\nWhat primary reason explains this difference?",
+      "options": [
+        "Warm water provides more thermal energy for successful collisions",
+        "Cold water chemically reacts with thiosulphate reducing effective concentration",
+        "Time measurement errors occurred more frequently at low temperatures",
+        "Light visibility through cloudy solution differs based on container temperature"
+      ],
+      "correct": 0,
+      "points": 15,
+      "explanation": "Higher temperature increases molecular kinetic energy → more particles exceed minimum energy threshold → higher frequency of effective collisions → faster precipitation formation obscuring cross marker."
+    },
+    {
+      "question": "Identify the scenario that demonstrates proper control of variables when testing concentration effect on reaction rate:",
+      "options": [
+        "Using different masses of solid in each trial",
+        "Keeping temperature constant while varying only acid concentration",
+        "Changing both temperature and concentration simultaneously",
+        "Using different volumes of acid without controlling other factors"
+      ],
+      "correct": 1,
       "points": 12,
-      "explanation": "Higher pressure = gas particles occupy smaller volume = more particles per unit volume = increased collision frequency = faster forward reaction rate."
-    },
-    {
-      "question": "Why does powdered iron filings burn rapidly producing intense sparks compared to solid iron nail burning slowly when exposed to oxygen flame?\n\nThis demonstrates which principle governing reaction kinetics?",
-      "options": [
-        "Greater surface area exposure allows more simultaneous collisions determining observable speed",
-        "Ignition temperature threshold lowered sufficiently allowing spontaneous combustion initiation",
-        "Particle size reduction generates static electrical charges promoting faster attack mechanisms",
-        "Heat dissipation capability altered preventing runaway thermal runaway scenarios"
-      ],
-      "correct": 0,
-      "points": 15,
-      "explanation": "Fine powder exposes vastly larger atomic surface area simultaneously to surrounding oxygen molecules = massive collision site count per second = explosive combustion rate compared to limited surface exposure from solid metal object."
-    },
-    {
-      "question": "A student observes two experiments measuring mass lost during thermal decomposition of limestone:\n\nHeating strong flame on large chunks takes 45 minutes to reach constant mass\nHeating moderate flame on finely ground limestone takes 15 minutes to reach same constant mass\n\nWhat conclusion about surface area is supported by this evidence?",
-      "options": [
-        "Greater surface area provides more contact sites with heat source resulting in faster decomposition rate",
-        "Finer grinding introduces impurities acting as unintended catalysts reducing actual time",
-        "Smaller pieces store less internal energy requiring less time to achieve full breakdown",
-        "Constant mass indicates surface area has no measurable effect on decomposition kinetics"
-      ],
-      "correct": 0,
-      "points": 15,
-      "explanation": "Time difference shows rate effect clearly. Same mass loss confirms stoichiometric limit unchanged. More surface atoms exposed to heat = more bonds breaking simultaneously per second = accelerated decomposition without altering final outcome."
-    },
-    {
-      "question": "Data table shows hydrogen volume produced over time for Mg + HCl reaction:\n\n| Time(s) | 0.5M Volume(cm³) | 1.0M Volume(cm³) |\n|---------|------------------|------------------|\n| 0       | 0                | 0                |\n| 30      | 10               | 25               |\n| 60      | 22               | 50(max)          |\n| 90      | 35               | 50(max)          |\n| 120     | 50(max)          | 50(max)          |\n\nComparing 0.5M to 1.0M concentration trials, what relationship exists?",
-      "options": [
-        "Doubling concentration halves completion time while maintaining identical final yield",
-        "Doubling concentration increases maximum yield achievable by same factor",
-        "Lower concentration achieves higher peak volume before declining toward stable value",
-        "Rate remains unchanged regardless of concentration differences within range studied"
-      ],
-      "correct": 0,
-      "points": 15,
-      "explanation": "Same max volume (50 cm³) means same limiting reagent quantity consumed. Faster approach to plateau (60s vs 120s) confirms concentration increases collision frequency affecting rate not total product quantity."
+      "explanation": "Valid experiment isolates single independent variable. Temperature must remain constant while concentration varies systematically to establish clear relationship between these two factors alone."
     }
   ]
 }
