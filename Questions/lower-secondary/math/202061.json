@@ -1,0 +1,122 @@
+{
+  "title": "Secondary 2 Mathematics - Chapter 6",
+  "topic": "Fractional Expressions (Simplification)",
+  "subject": "Mathematics",
+  "grade": "Sec 2",
+  "chapter": 6,
+  "worksheet": 1,
+  "questions": [
+    {
+      "question": "Simplify: 6x / 3",
+      "options": ["2x", "3x", "6x", "x/2"],
+      "correct": 0,
+      "points": 10,
+      "explanation": "Divide coefficients: 6/3 = 2. So 6x/3 = 2x."
+    },
+    {
+      "question": "Simplify: 10a^2 / 5a",
+      "options": ["5a", "2a", "2a^2", "a/2"],
+      "correct": 1,
+      "points": 10,
+      "explanation": "Divide coefficients: 10/5 = 2. Subtract powers of a: a^2/a = a. So 10a^2/5a = 2a."
+    },
+    {
+      "question": "Simplify: (5x + 10) / 5",
+      "options": ["x", "5x + 2", "x + 2", "x + 10"],
+      "correct": 2,
+      "points": 15,
+      "explanation": "Factorise numerator: 5(x + 2). Cancel 5: (5(x + 2))/5 = x + 2."
+    },
+    {
+      "question": "Simplify: (x^2 - 9) / (x + 3)",
+      "options": ["x + 9", "x - 9", "x + 3", "x - 3"],
+      "correct": 3,
+      "points": 15,
+      "explanation": "Difference of squares: (x - 3)(x + 3). Cancel (x + 3): (x - 3)(x + 3)/(x + 3) = x - 3."
+    },
+    {
+      "question": "Simplify: (2x^2 + 4x) / 2x",
+      "options": ["x + 2", "x + 4", "2x + 2", "x"],
+      "correct": 0,
+      "points": 15,
+      "explanation": "Factorise numerator: 2x(x + 2). Cancel 2x: 2x(x + 2)/2x = x + 2."
+    },
+    {
+      "question": "Simplify: (x^2 - 5x + 6) / (x - 2)",
+      "options": ["x + 2", "x - 3", "x + 3", "x - 2"],
+      "correct": 1,
+      "points": 20,
+      "explanation": "Factorise numerator: (x - 2)(x - 3). Cancel (x - 2): (x - 2)(x - 3)/(x - 2) = x - 3."
+    },
+    {
+      "question": "Simplify: (3x - 9) / (x^2 - 9)",
+      "options": ["3/x", "3/(x - 3)", "3/(x + 3)", "1/(x + 3)"],
+      "correct": 2,
+      "points": 20,
+      "explanation": "Num: 3(x - 3). Denom: (x - 3)(x + 3). Cancel (x - 3): 3/(x + 3)."
+    },
+    {
+      "question": "Simplify: (x^2 - 1) / (x^2 + 2x + 1)",
+      "options": ["1", "(x + 1)/(x - 1)", "-1", "(x - 1)/(x + 1)"],
+      "correct": 3,
+      "points": 20,
+      "explanation": "Num: (x - 1)(x + 1). Denom: (x + 1)^2. Cancel (x + 1): (x - 1)/(x + 1)."
+    },
+    {
+      "question": "Simplify: (2x^2 - 8) / (x - 2)",
+      "options": ["2x - 4", "2x + 4", "x + 4", "2x + 2"],
+      "correct": 1,
+      "points": 20,
+      "explanation": "Num: 2(x^2 - 4) = 2(x - 2)(x + 2). Cancel (x - 2): 2(x + 2) = 2x + 4."
+    },
+    {
+      "question": "Simplify: (x^2 - 4x + 4) / (x^2 - 4)",
+      "options": ["(x - 2)/(x + 2)", "-1", "1", "(x + 2)/(x - 2)"],
+      "correct": 0,
+      "points": 20,
+      "explanation": "Num: (x - 2)^2. Denom: (x - 2)(x + 2). Cancel (x - 2): (x - 2)/(x + 2)."
+    },
+    {
+      "question": "Simplify: (x - 1) / (1 - x)",
+      "options": ["x", "1", "-1", "0"],
+      "correct": 2,
+      "points": 20,
+      "explanation": "Factor out -1 from denom: (x - 1)/-(x - 1). Cancel (x - 1): 1/-1 = -1."
+    },
+    {
+      "question": "Simplify: (2 - x) / (x^2 - 4)",
+      "options": ["1/(x - 2)", "-1/(x - 2)", "1/(x + 2)", "-1/(x + 2)"],
+      "correct": 3,
+      "points": 25,
+      "explanation": "Num: -(x - 2). Denom: (x - 2)(x + 2). Cancel (x - 2): -1/(x + 2)."
+    },
+    {
+      "question": "Simplify: (1 - x^2) / (x^2 + 2x + 1)",
+      "options": ["1", "(1 - x)/(1 + x)", "-1", "(x - 1)/(x + 1)"],
+      "correct": 1,
+      "points": 25,
+      "explanation": "Num: (1 - x)(1 + x). Denom: (1 + x)^2. Cancel (1 + x): (1 - x)/(1 + x)."
+    },
+    {
+      "question": "Simplify: (x^2 - 3x) / (3 - x)",
+      "options": ["-3", "3", "x", "-x"],
+      "correct": 3,
+      "points": 25,
+      "explanation": "Num: x(x - 3). Denom: -(x - 3). Cancel (x - 3): x/-1 = -x."
+    },
+    {
+      "question": "Simplify: (6 - 2x) / (x^2 - 9)",
+      "options": ["-2/(x + 3)", "2/(x + 3)", "-2/(x - 3)", "2/(x - 3)"],
+      "correct": 0,
+      "points": 25,
+      "explanation": "Num: -2(x - 3). Denom: (x - 3)(x + 3). Cancel (x - 3): -2/(x + 3)."
+    },
+    {
+      "question": "Simplify: (x^2 - 5x + 6) / (2 - x)",
+      "options": ["x + 3", "-3 - x", "3 - x", "x - 3"],
+      "correct": 2,
+      "points": 25,
+      "explanation": "Num: (x - 2)(x - 3). Denom: -(x - 2). Cancel (x - 2): (x - 3)/-1 = 3 - x."
+    }
+  ]
+}
