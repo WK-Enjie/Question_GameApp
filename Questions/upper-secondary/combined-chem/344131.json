@@ -1,0 +1,226 @@
+{
+  "title": "Chemical Energetics - Identifying Energy Changes",
+  "topic": "Chemical Energetics - Endothermic and Exothermic Reactions",
+  "subject": "Chemistry",
+  "level": "Upper Secondary",
+  "grade": "Sec 4",
+  "chapter": 13,
+  "worksheet": 1,
+  "questions": [
+    {
+      "question": "A student mixes solutions of sodium hydroxide and hydrochloric acid. The thermometer reading increases from 25°C to 35°C during the reaction.\n\nWhich statement correctly describes this reaction?",
+      "options": [
+        "Energy was absorbed from the surroundings causing cooling",
+        "Energy was transferred to the surroundings causing heating",
+        "No energy change occurred because mass was conserved",
+        "Energy remained trapped inside the solution"
+      ],
+      "correct": 1,
+      "points": 12,
+      "explanation": "Temperature increase indicates energy transfer to surroundings = Exothermic reaction. Heat is released from system into the solution/environment."
+    },
+    {
+      "question": "Ammonium nitrate crystals are dissolved in water. The beaker feels cold and the temperature drops from 25°C to 18°C.\n\nWhat type of process is dissolving ammonium nitrate in water?",
+      "options": [
+        "Exothermic because crystals break down into smaller pieces",
+        "Endothermic because energy is absorbed from surroundings",
+        "Exothermic because ions form in solution releasing heat",
+        "Endothermic because water molecules lose kinetic energy spontaneously"
+      ],
+      "correct": 1,
+      "points": 12,
+      "explanation": "Temperature drop means heat has left the surroundings and entered the system. Endothermic processes take in energy, causing cooling effect."
+    },
+    {
+      "question": "Combustion of methane gas releases a large amount of heat:\n\nCH₄(g) + 2O₂(g) → CO₂(g) + 2H₂O(l)\n\nWhich classification BEST fits this reaction type?",
+      "options": [
+        "Endothermic because oxygen combines with carbon",
+        "Exothermic because energy is released to surroundings",
+        "Neutral because no temperature change occurs",
+        "Isothermic because both reactants and products have similar energy"
+      ],
+      "correct": 1,
+      "points": 12,
+      "explanation": "All combustion reactions release energy as heat and light. Burning fuels transfers stored chemical energy to surroundings = Exothermic."
+    },
+    {
+      "question": "When bonds are broken during a chemical reaction, what energy change ALWAYS occurs?",
+      "options": [
+        "Energy is released because atoms move apart naturally",
+        "Energy is absorbed to overcome electrostatic attraction",
+        "No energy needed since bonds already exist in stable state",
+        "Energy fluctuates randomly without consistent pattern"
+      ],
+      "correct": 1,
+      "points": 15,
+      "explanation": "Breaking bonds ALWAYS requires input of energy (endothermic step). Strong forces between atoms must be overcome by external energy."
+    },
+    {
+      "question": "During the formation of water from hydrogen and oxygen, new O-H bonds are created in the product.\n\nWhat happens energetically during bond formation?",
+      "options": [
+        "Energy is absorbed to connect atoms together",
+        "Energy is released because stable bonds lower system energy",
+        "No net energy once bonds fully form",
+        "Energy remains trapped inside newly formed molecules indefinitely"
+      ],
+      "correct": 1,
+      "points": 15,
+      "explanation": "Bond formation ALWAYS releases energy (exothermic step). Atoms reach more stable lower energy state when connected; excess energy released."
+    },
+    {
+      "question": "Photosynthesis converts carbon dioxide and water into glucose:\n\n6CO₂ + 6H₂O → C₆H₁₂O₆ + 6O₂ (requires sunlight)\n\nWhy is this classified as endothermic?",
+      "options": [
+        "Plants absorb sunlight providing required energy input",
+        "Carbon dioxide naturally loses energy when combining with water",
+        "Glucose molecules contain less energy than reactant molecules",
+        "Oxygen release indicates energy production rather than consumption"
+      ],
+      "correct": 0,
+      "points": 12,
+      "explanation": "Photosynthesis requires continuous external energy input from sunlight. Light energy absorbed and stored in chemical bonds of glucose = Endothermic."
+    },
+    {
+      "question": "In an experiment measuring temperature changes, Student A observes heating while mixing chemicals while Student B observes cooling.\n\nWhich combination correctly matches observations with reaction types?",
+      "options": [
+        "A: exothermic, B: endothermic",
+        "A: endothermic, B: exothermic",
+        "Both observed exothermic reactions",
+        "Both observed endothermic reactions"
+      ],
+      "correct": 0,
+      "points": 12,
+      "explanation": "Heating sensation means energy leaving system to surroundings = exothermic. Cooling sensation means energy entering system from surroundings = endothermic."
+    },
+    {
+      "question": "Identify the correct statement about temperature changes in exothermic reactions.",
+      "options": [
+        "The surroundings get colder because energy enters system",
+        "The temperature decreases significantly over time",
+        "The surroundings get warmer because energy leaves system",
+        "Temperature remains exactly constant throughout"
+      ],
+      "correct": 2,
+      "points": 12,
+      "explanation": "Exothermic reactions transfer heat outward. Measuring instruments in the immediate environment record a rise in temperature."
+    },
+    {
+      "question": "Compare two reactions:\nReaction X: Releases energy to surroundings\nReaction Y: Takes in energy from surroundings\n\nWhich statement is correct?",
+      "options": [
+        "X is endothermic and Y is exothermic",
+        "Both are exothermic",
+        "X is exothermic and Y is endothermic",
+        "Both are endothermic"
+      ],
+      "correct": 2,
+      "points": 15,
+      "explanation": "Releasing energy = exothermic. Taking in energy = endothermic. These define opposite energy flow directions relative to system."
+    },
+    {
+      "question": "Which type of reaction would you expect to cause the container to feel hot to touch after mixing?",
+      "options": [
+        "Endothermic dissolution only",
+        "Exothermic neutralisation only",
+        "Both exothermic and endothermic equally",
+        "Neutralisation never affects temperature"
+      ],
+      "correct": 1,
+      "points": 12,
+      "explanation": "Hot container = energy transferred to surroundings = exothermic reaction. Neutralisation reactions typically release heat."
+    },
+    {
+      "question": "Complete the sentence: In every chemical reaction, energy is _____ to break existing bonds and energy is _____ when new bonds form.",
+      "options": [
+        "absorbed...released",
+        "released...absorbed",
+        "transferred...stored",
+        "created...destroyed"
+      ],
+      "correct": 0,
+      "points": 12,
+      "explanation": "Fundamental principle: Breaking bonds always absorbs energy (endothermic step). Forming bonds always releases energy (exothermic step)."
+    },
+    {
+      "question": "A student heats calcium carbonate strongly until it decomposes:\nCaCO₃(s) → CaO(s) + CO₂(g)\nThe reaction stops immediately when heating is removed.\n\nWhat does this indicate?",
+      "options": [
+        "Reaction is exothermic and continues once started",
+        "Reaction is endothermic and needs continuous energy supply",
+        "Heat acts as catalyst lowering energy requirement",
+        "Carbon dioxide produced speeds up reaction rate"
+      ],
+      "correct": 1,
+      "explanation": "Depends on continuous heat input. When source removed, reaction halts immediately = endothermic requiring constant energy absorption."
+    },
+    {
+      "question": "Thermal decomposition of metal carbonates generally requires heating:\n\nMgCO₃ + Heat → MgO + CO₂\n\nWhy does this make them endothermic processes?",
+      "options": [
+        "Metal oxides are cooler than carbonates naturally",
+        "Strong bonds in carbonate require energy input to break",
+        "Heat lowers the stability of carbon dioxide product",
+        "Metal carbonates absorb moisture from air"
+      ],
+      "correct": 1,
+      "points": 15,
+      "explanation": "Decomposition requires breaking strong ionic/covalent bonds within carbonate structure. External heat provides necessary energy input = endothermic."
+    },
+    {
+      "question": "Identify the pair of processes where FIRST is endothermic and SECOND is exothermic:",
+      "options": [
+        "Melting ice ... Freezing water",
+        "Freezing water ... Melting ice",
+        "Condensing steam ... Boiling water",
+        "Sublimation ... Condensation"
+      ],
+      "correct": 0,
+      "points": 12,
+      "explanation": "Melting (solid→liquid) absorbs heat = endothermic. Freezing (liquid→solid) releases heat = exothermic. Same substance phase changes show opposite energy flows."
+    },
+    {
+      "question": "A reaction releases more energy when forming new bonds than it uses to break old bonds.\n\nHow is this reaction classified?",
+      "options": [
+        "Endothermic because some energy was used",
+        "Exothermic because net energy was released",
+        "Neutral because energy was neither lost nor gained",
+        "Impossible under normal conditions"
+      ],
+      "correct": 1,
+      "points": 15,
+      "explanation": "Net release occurs when forming bonds releases more energy than breaking bonds consumes. Result = Exothermic overall."
+    },
+    {
+      "question": "Why do explosives like TNT release massive amounts of energy upon detonation?",
+      "options": [
+        "TNT contains unstable bonds that break requiring huge energy input",
+        "Formation of very stable N₂, H₂O, CO₂ releases far more energy than used to break TNT bonds",
+        "Detonation triggers nuclear fission rather than chemical reaction",
+        "Slow decomposition produces small amounts continuously"
+      ],
+      "correct": 1,
+      "points": 15,
+      "explanation": "Explosives produce MORE stable bonds in products than were present in original compound. Large difference in bond energies = massive net energy release."
+    },
+    {
+      "question": "In the reaction between magnesium ribbon and dilute hydrochloric acid:\nMg(s) + 2HCl(aq) → MgCl₂(aq) + H₂(g)\n\nTemperature rises from 22°C to 35°C.\n\nWhat energy change occurs?",
+      "options": [
+        "Energy was absorbed from surroundings",
+        "Energy was released to surroundings",
+        "No energy change occurred",
+        "Energy was converted to electrical energy"
+      ],
+      "correct": 1,
+      "points": 12,
+      "explanation": "Temperature rise indicates energy flowing from system to surroundings = Exothermic reaction. Magnesium reacts vigorously releasing heat."
+    },
+    {
+      "question": "Select the reaction type that ALWAYS releases energy to surroundings.",
+      "options": [
+        "Electrolysis of water",
+        "Combustion of fuels",
+        "Thermal decomposition",
+        "Dissolving most salts in water"
+      ],
+      "correct": 1,
+      "points": 12,
+      "explanation": "Combustion consistently releases energy. Electrolysis and thermal decomposition require energy input. Dissolution varies by salt type."
+    }
+  ]
+}
