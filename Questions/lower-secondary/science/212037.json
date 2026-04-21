@@ -1,0 +1,227 @@
+{
+  "title": "Acid Reactions: Practical Skills & Observations",
+  "topic": "Acid Reactions with Metals, Carbonates & Alkalis",
+  "subject": "Science",
+  "level": "Secondary",
+  "grade": "Sec 2",
+  "chapter": 3,
+  "worksheet": 7,
+  "questions": [
+    {
+      "question": "A student adds a small piece of magnesium ribbon to dilute hydrochloric acid in a test tube. Which observation shows that a chemical reaction is taking place?",
+      "options": [
+        "The solution turns blue",
+        "Effervescence is observed and the magnesium disappears",
+        "The test tube becomes very cold",
+        "The magnesium turns black"
+      ],
+      "correct": 1,
+      "points": 15,
+      "explanation": "Magnesium reacts with dilute hydrochloric acid to produce hydrogen gas (effervescence) and magnesium chloride. The magnesium metal is used up, so it disappears. The test tube becomes warm, not cold."
+    },
+    {
+      "question": "A student tests the gas produced when zinc reacts with dilute sulfuric acid. She brings a burning splint near the mouth of the test tube. A small ‘pop’ sound is heard. What gas is present?",
+      "options": [
+        "Oxygen",
+        "Carbon dioxide",
+        "Hydrogen",
+        "Nitrogen"
+      ],
+      "correct": 2,
+      "points": 15,
+      "explanation": "Hydrogen gas burns with a characteristic ‘pop’ sound when a lighted splint is introduced. This is the standard test for hydrogen."
+    },
+    {
+      "question": "A student adds dilute hydrochloric acid to a solid in a test tube. Effervescence is observed. She bubbles the gas through limewater, and a white precipitate forms. What is the solid most likely to be?",
+      "options": [
+        "Magnesium ribbon",
+        "Copper metal",
+        "Calcium carbonate",
+        "Sodium chloride"
+      ],
+      "correct": 2,
+      "points": 15,
+      "explanation": "Carbon dioxide produces a white precipitate with limewater (calcium carbonate). Metal carbonates (e.g., calcium carbonate) react with acids to produce carbon dioxide. Metals produce hydrogen, which does not give a precipitate with limewater, and sodium chloride does not react with acid to give a gas."
+    },
+    {
+      "question": "A student evaporates the solution left after reacting magnesium with excess dilute hydrochloric acid. A white solid remains. What is the name of this solid?",
+      "options": [
+        "Magnesium oxide",
+        "Magnesium chloride",
+        "Magnesium hydroxide",
+        "Magnesium sulfate"
+      ],
+      "correct": 1,
+      "points": 15,
+      "explanation": "Magnesium + hydrochloric acid → magnesium chloride + hydrogen. After the reaction, the solution contains magnesium chloride. On evaporation, solid magnesium chloride remains."
+    },
+    {
+      "question": "Which word equation correctly represents the reaction between calcium carbonate and dilute nitric acid?",
+      "options": [
+        "calcium carbonate + nitric acid → calcium nitrate + water + carbon dioxide",
+        "calcium carbonate + nitric acid → calcium oxide + water + carbon dioxide",
+        "calcium carbonate + nitric acid → calcium + water + carbon dioxide",
+        "calcium carbonate + nitric acid → calcium nitrate + hydrogen"
+      ],
+      "correct": 0,
+      "points": 15,
+      "explanation": "General pattern: metal carbonate + acid → salt + water + carbon dioxide. Here the salt is calcium nitrate."
+    },
+    {
+      "question": "A student tests a colourless solution with blue litmus paper. The blue litmus paper turns red. What does this tell her about the solution?",
+      "options": [
+        "The solution is alkaline",
+        "The solution is acidic",
+        "The solution is neutral",
+        "The litmus paper is faulty"
+      ],
+      "correct": 1,
+      "points": 15,
+      "explanation": "Blue litmus paper turns red in acidic solutions. Red litmus paper turns blue in alkaline solutions."
+    },
+    {
+      "question": "A student has two unlabelled solutions: one is dilute hydrochloric acid, the other is sodium hydroxide solution (an alkali). She uses Universal Indicator. Which set of colours would distinguish them?",
+      "options": [
+        "Acid turns green, alkali turns purple",
+        "Acid turns red/orange, alkali turns blue/purple",
+        "Acid turns blue, alkali turns red",
+        "Both turn green"
+      ],
+      "correct": 1,
+      "points": 15,
+      "explanation": "Universal Indicator is red/orange in acidic solutions and blue/purple in alkaline solutions. Green indicates neutral (pH 7)."
+    },
+    {
+      "question": "A student adds a spatula of copper(II) carbonate (a black powder) to dilute sulfuric acid. She warms the mixture. Which observations would she see?",
+      "options": [
+        "Effervescence of a colourless gas that forms a white precipitate with limewater, and the black solid disappears",
+        "A colourless gas that pops with a lighted splint, and the solution remains colourless",
+        "No reaction occurs because copper is unreactive",
+        "The mixture fizzes and a brown gas is given off"
+      ],
+      "correct": 0,
+      "points": 15,
+      "explanation": "Copper(II) carbonate is a metal carbonate. It reacts with acid to produce carbon dioxide (which gives a white precipitate with limewater) and water, and the salt copper(II) sulfate forms. The black solid disappears. (Students do not need to know the colour of the solution.)"
+    },
+    {
+      "question": "A student sets up an experiment to test the gas from a reaction between magnesium and hydrochloric acid. She collects the gas in a test tube by downward displacement of water. Which gas is she collecting, and why is this method suitable?",
+      "options": [
+        "Carbon dioxide – it is denser than air",
+        "Oxygen – it is slightly soluble in water",
+        "Hydrogen – it is insoluble in water and less dense than air",
+        "Nitrogen – it is unreactive"
+      ],
+      "correct": 2,
+      "points": 15,
+      "explanation": "Hydrogen is insoluble in water and can be collected by displacement of water (downward displacement of water). It is less dense than air, but the water method works well for insoluble gases."
+    },
+    {
+      "question": "A student evaporates the solution obtained after reacting copper(II) carbonate with dilute sulfuric acid. A crystalline solid remains. What is the name of this solid?",
+      "options": [
+        "Copper(II) sulfate",
+        "Copper(II) oxide",
+        "Copper(II) chloride",
+        "Copper(II) carbonate"
+      ],
+      "correct": 0,
+      "points": 15,
+      "explanation": "Copper(II) carbonate + sulfuric acid → copper(II) sulfate + water + carbon dioxide. On evaporation, copper(II) sulfate crystals remain. (Students only need to know the name, not the colour.)"
+    },
+    {
+      "question": "A student adds a small piece of calcium metal to water. Effervescence is observed and a gas is produced. She tests the gas with a burning splint – it pops. She then adds a few drops of Universal Indicator to the remaining solution. What colour would the indicator turn?",
+      "options": [
+        "Red (acidic)",
+        "Green (neutral)",
+        "Purple (alkaline)",
+        "Orange (weakly acidic)"
+      ],
+      "correct": 2,
+      "points": 15,
+      "explanation": "Calcium reacts with water to produce hydrogen gas (pops) and calcium hydroxide, which is an alkali. Universal Indicator turns purple in alkaline solutions."
+    },
+    {
+      "question": "A student adds dilute hydrochloric acid to a solid X. Effervescence is observed. She collects some of the gas and bubbles it through limewater – a white precipitate forms. She then evaporates the remaining solution to dryness and obtains a white solid. Which of the following could be solid X?",
+      "options": [
+        "Zinc metal",
+        "Sodium carbonate",
+        "Copper metal",
+        "Sodium chloride"
+      ],
+      "correct": 1,
+      "points": 15,
+      "explanation": "Only a metal carbonate (or hydrogencarbonate) produces CO₂ (white precipitate with limewater) with an acid. Sodium carbonate is a metal carbonate. Zinc metal would give hydrogen (pop, not a white precipitate). Copper metal does not react with dilute HCl. Sodium chloride does not react."
+    },
+    {
+      "question": "A student accidentally splashes some sodium hydroxide solution (an alkali) on her hand. She washes it immediately with plenty of water. Why is washing with water an appropriate first aid?",
+      "options": [
+        "Water neutralises the alkali",
+        "Water dilutes and removes the alkali, reducing harm",
+        "Water reacts with alkali to form a harmless salt",
+        "Water turns the alkali into an acid"
+      ],
+      "correct": 1,
+      "points": 15,
+      "explanation": "Water does not neutralise alkalis; it dilutes them and washes them away, reducing contact time with skin. Neutralisation would require an acid, which should not be used on skin as it could cause heat or further damage."
+    },
+    {
+      "question": "A student mixes dilute hydrochloric acid with sodium hydroxide solution in a test tube. She touches the outside of the test tube and feels that it is warm. She then tests the mixture with Universal Indicator and it turns green. What type of reaction has occurred?",
+      "options": [
+        "Oxidation",
+        "Displacement",
+        "Neutralisation",
+        "Decomposition"
+      ],
+      "correct": 2,
+      "points": 15,
+      "explanation": "Acid + alkali → salt + water. This is a neutralisation reaction, which is exothermic (gives out heat). The Universal Indicator turns green at pH 7, confirming neutrality."
+    },
+    {
+      "question": "A student adds dilute sulfuric acid to a solid Y. She observes effervescence. She tests the gas with a burning splint – the splint goes out. She then takes a small amount of the remaining solution and evaporates it to dryness. The solid left is calcium sulfate. What was solid Y?",
+      "options": [
+        "Calcium metal",
+        "Calcium carbonate",
+        "Calcium hydroxide",
+        "Calcium chloride"
+      ],
+      "correct": 1,
+      "points": 15,
+      "explanation": "The gas that extinguishes a burning splint is carbon dioxide (also gives white precipitate with limewater, not tested here). Metal carbonate + acid → salt + water + CO₂. Calcium carbonate + sulfuric acid → calcium sulfate + water + carbon dioxide. The solid left after evaporation is calcium sulfate. Calcium metal would give hydrogen (pop), not CO₂."
+    },
+    {
+      "question": "A student has three unlabelled test tubes containing dilute hydrochloric acid, sodium hydroxide solution, and distilled water. She has only red litmus paper. How can she identify the sodium hydroxide solution?",
+      "options": [
+        "Dip red litmus into each – the one that turns blue is sodium hydroxide",
+        "Dip red litmus into each – the one that turns red is sodium hydroxide",
+        "Dip red litmus into each – the one with no colour change is sodium hydroxide",
+        "It is impossible with only red litmus"
+      ],
+      "correct": 0,
+      "points": 15,
+      "explanation": "Red litmus turns blue in alkalis (sodium hydroxide). In acid (HCl) it stays red. In water it may show no change or slight purple but not blue. So the one that turns blue is the alkali."
+    },
+    {
+      "question": "A student reacts a metal carbonate with an acid. She collects the gas and bubbles it through limewater – a white precipitate forms. She then takes a small sample of the remaining solution and evaporates it to dryness. The solid left is sodium chloride. What were the reactants?",
+      "options": [
+        "Sodium carbonate and hydrochloric acid",
+        "Calcium carbonate and sulfuric acid",
+        "Sodium hydrogencarbonate and ethanoic acid",
+        "Copper carbonate and nitric acid"
+      ],
+      "correct": 0,
+      "points": 15,
+      "explanation": "The salt formed is sodium chloride, so the metal must be sodium and the acid must be hydrochloric acid. Sodium carbonate + hydrochloric acid → sodium chloride + water + CO₂."
+    },
+    {
+      "question": "A student tests a gas produced by reacting calcium carbonate with hydrochloric acid. She bubbles the gas through limewater – a white precipitate forms. She then tests the same gas with a burning splint – the splint goes out. What is the gas?",
+      "options": [
+        "Hydrogen",
+        "Oxygen",
+        "Carbon dioxide",
+        "Chlorine"
+      ],
+      "correct": 2,
+      "points": 15,
+      "explanation": "Carbon dioxide produces a white precipitate with limewater and does not support combustion – it extinguishes a burning splint. Hydrogen would pop, oxygen would relight a glowing splint."
+    }
+  ]
+}
