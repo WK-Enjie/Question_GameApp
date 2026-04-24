@@ -1,0 +1,193 @@
+```json
+{
+  "title": "Primary 6 Review",
+  "topic": "Mixed Topics: Volume, Number Patterns, Money, Ratio, Excess and Shortage",
+  "subject": "Mathematics",
+  "level": "Primary",
+  "grade": "Primary 6",
+  "chapter": 0,
+  "worksheet": 106001,
+  "questions": [
+    {
+      "question": "A rectangular tank is 3/4 full of water. After 240 cm³ of water is poured out, the tank becomes 1/2 full. Find the volume of the tank.",
+      "options": [
+        "800 cm³",
+        "960 cm³",
+        "720 cm³",
+        "1080 cm³"
+      ],
+      "correct": 1,
+      "points": 10,
+      "explanation": "Let the volume of the tank be V cm³. Initially, water = (3/4)V. After pouring out 240 cm³, water = (1/2)V. So (3/4)V − 240 = (1/2)V → (3/4 − 1/2)V = 240 → (1/4)V = 240 → V = 960 cm³."
+    },
+    {
+      "question": "A student writes a list of 10 numbers in order such that each next number is 7 more than the previous one. Find the difference between the largest and smallest number in the list.",
+      "options": [
+        "56",
+        "70",
+        "63",
+        "49"
+      ],
+      "correct": 2,
+      "points": 10,
+      "explanation": "There are 9 gaps between 10 numbers, each gap = 7, so difference = 9 × 7 = 63."
+    },
+    {
+      "question": "A student writes a list of 10 numbers in order such that each next number is 7 more than the previous one. Given that the sum of the 3rd smallest and 4th largest number is 84, find the sum of all the numbers.",
+      "options": [
+        "490",
+        "525",
+        "560",
+        "455"
+      ],
+      "correct": 3,
+      "points": 15,
+      "explanation": "Let the smallest number be a. The numbers are a, a+7, ..., a+63. The 3rd smallest = a+14. The 4th largest = (a+63) − 3×7 = a+42. Sum = (a+14)+(a+42)=2a+56=84 → a=14. Sum of all 10 numbers = 10/2 × (first+last) = 5 × (14 + 77) = 5 × 91 = 455."
+    },
+    {
+      "question": "Ada has the same number of $2 and $10 notes. She spends $30 using only $10 notes. Then she exchanges all her remaining $10 notes for $5 notes. After the exchange, she has the same number of $2 notes as $5 notes. How much money did she have at first?",
+      "options": [
+        "$60",
+        "$84",
+        "$72",
+        "$96"
+      ],
+      "correct": 2,
+      "points": 15,
+      "explanation": "Let the number of each type of note be n. She spends 3 ten-dollar notes (since $30). Remaining ten-dollar notes = n−3, which become 2(n−3) five-dollar notes. The number of $2 notes remains n. Condition: n = 2(n−3) → n = 6. Initially she has 6×$2 + 6×$10 = $12 + $60 = $72."
+    },
+    {
+      "question": "Ada has the same number of $2 and $10 notes. She spends $40 using only $10 notes. Then she exchanges all her remaining $10 notes for $5 notes. After the exchange, she has the same number of $2 notes as $5 notes. How much money did she have at first?",
+      "options": [
+        "$80",
+        "$96",
+        "$64",
+        "$112"
+      ],
+      "correct": 1,
+      "points": 15,
+      "explanation": "Let the number of each type be n. She spends 4 ten-dollar notes (since $40). Remaining tens = n−4 → become 2(n−4) five-dollar notes. Condition: n = 2(n−4) → n = 8. Initial money = 8×$2 + 8×$10 = $16 + $80 = $96."
+    },
+    {
+      "question": "Ben has the same number of $5 and $20 notes. He spends $60 using only $20 notes. Then he exchanges all his remaining $20 notes for $10 notes. After the exchange, he has the same number of $5 notes as $10 notes. How much money did he have at first?",
+      "options": [
+        "$125",
+        "$100",
+        "$150",
+        "$175"
+      ],
+      "correct": 2,
+      "points": 15,
+      "explanation": "Let the number of each type be n. He spends 3 twenty-dollar notes (since $60). Remaining twenties = n−3 → each $20 becomes two $10, so number of $10 notes = 2(n−3). Condition: n = 2(n−3) → n = 6. Initial money = 6×$5 + 6×$20 = $30 + $120 = $150."
+    },
+    {
+      "question": "A teacher bought 7 more pencils than pens. Each pencil costs $2 and each pen costs $5. The total spent on pens was $10 more than the total spent on pencils. How many pencils were bought?",
+      "options": [
+        "12",
+        "18",
+        "15",
+        "20"
+      ],
+      "correct": 2,
+      "points": 15,
+      "explanation": "Let the number of pens be p. Then pencils = p+7. Cost of pencils = 2(p+7), cost of pens = 5p. Pens cost $10 more: 5p = 2(p+7) + 10 → 5p = 2p + 14 + 10 → 3p = 24 → p = 8. Pencils = 8 + 7 = 15."
+    },
+    {
+      "question": "The ratio of chairs to tables is 5 : 3. Each chair costs $20 and each table costs $50. The total cost of tables is $200 more than the total cost of chairs. How many chairs are there?",
+      "options": [
+        "25",
+        "20",
+        "15",
+        "30"
+      ],
+      "correct": 1,
+      "points": 15,
+      "explanation": "Let the common multiple be u. Chairs = 5u, tables = 3u. Cost chairs = 20×5u = 100u, cost tables = 50×3u = 150u. Difference = 150u − 100u = 50u = $200 → u = 4. Chairs = 5×4 = 20."
+    },
+    {
+      "question": "The ratio of apples to oranges is 7 : 3. Each apple costs $0.50 and each orange costs $0.80. The total spent on oranges is $22 less than the total spent on apples. How many apples are there?",
+      "options": [
+        "140",
+        "120",
+        "100",
+        "160"
+      ],
+      "correct": 0,
+      "points": 15,
+      "explanation": "Let common multiple be u. Apples = 7u, oranges = 3u. Cost apples = 0.5×7u = 3.5u, cost oranges = 0.8×3u = 2.4u. Difference = 3.5u − 2.4u = 1.1u = $22 → u = 20. Apples = 7×20 = 140."
+    },
+    {
+      "question": "Ali and Ben went shopping with $96 altogether. Ali spent twice as much as Ben. The amount Ben had left was $10 more than what he spent. In the end, Ben had twice as much as Ali. How much money do they have in total now?",
+      "options": [
+        "$36",
+        "$42",
+        "$48",
+        "$54"
+      ],
+      "correct": 1,
+      "points": 20,
+      "explanation": "Let Ben spend = x. Then Ali spend = 2x. Ben left = x+10 → Ben initial = 2x+10. Ali initial = 96 − (2x+10) = 86−2x. Ali left = (86−2x) − 2x = 86−4x. Condition: Ben left = 2 × Ali left → x+10 = 2(86−4x) → x+10 = 172−8x → 9x = 162 → x=18. Total left = (x+10)+(86−4x) = 96−3x = 96−54 = 42."
+    },
+    {
+      "question": "Paul and Sam went shopping with $150 altogether. Paul spent twice as much as Sam. The amount Sam had left was $10 more than what he spent. In the end, Sam had twice as much as Paul. How much money do they have in total now?",
+      "options": [
+        "$50",
+        "$55",
+        "$60",
+        "$65"
+      ],
+      "correct": 2,
+      "points": 20,
+      "explanation": "Let Sam spend = x. Then Paul spend = 2x. Sam left = x+10 → Sam initial = 2x+10. Paul initial = 150 − (2x+10) = 140−2x. Paul left = (140−2x) − 2x = 140−4x. Condition: Sam left = 2 × Paul left → x+10 = 2(140−4x) → x+10 = 280−8x → 9x = 270 → x=30. Total left = (x+10)+(140−4x) = 150−3x = 150−90 = 60."
+    },
+    {
+      "question": "Tom and Jerry had $100 altogether. Tom spent three times as much as Jerry. Jerry had $15 more left than what he spent. In the end, Jerry had three times as much as Tom. How much money do they have in total now?",
+      "options": [
+        "$30",
+        "$35",
+        "$40",
+        "$45"
+      ],
+      "correct": 2,
+      "points": 20,
+      "explanation": "Let Jerry spend = x. Then Tom spend = 3x. Jerry left = x+15 → Jerry initial = 2x+15. Tom initial = 100 − (2x+15) = 85−2x. Tom left = (85−2x) − 3x = 85−5x. Condition: Jerry left = 3 × Tom left → x+15 = 3(85−5x) → x+15 = 255−15x → 16x = 240 → x=15. Total left = (x+15)+(85−5x) = 100−4x = 100−60 = 40."
+    },
+    {
+      "question": "A rope of length 300 m is cut into three pieces: P, Q, R. P is a multiple of both 5 and 9. Q is 3 times the length of P. R is longer than P but shorter than Q. Find the length of R and the total length of P and Q.",
+      "options": [
+        "R=120 m, P+Q=180 m",
+        "R=135 m, P+Q=180 m",
+        "R=120 m, P+Q=200 m",
+        "R=150 m, P+Q=180 m"
+      ],
+      "correct": 0,
+      "points": 20,
+      "explanation": "P is a multiple of LCM(5,9)=45. Try P=45 → Q=135 → P+Q=180 → R=300−180=120. Check condition: 45 < 120 < 135 is true. P=90 gives Q=270 → P+Q=360 → R negative, so only P=45 works."
+    },
+    {
+      "question": "A string of length 800 m is cut into three pieces: X, Y, Z. X is a multiple of both 4 and 11. Y is 5 times X. The sum of X and Y is less than 550 m. Z is longer than X but shorter than Y. Find the length of Z and the total length of X and Y.",
+      "options": [
+        "Z=272 m, X+Y=528 m",
+        "Z=264 m, X+Y=536 m",
+        "Z=280 m, X+Y=520 m",
+        "Z=260 m, X+Y=540 m"
+      ],
+      "correct": 0,
+      "points": 20,
+      "explanation": "X is a multiple of LCM(4,11)=44. Try X=44 → Y=220 → X+Y=264 (<550) → Z=800−264=536, but 536 is not less than Y=220, fails. Try X=88 → Y=440 → X+Y=528 (<550) → Z=272. Check: 88 < 272 < 440, true. So X=88, Y=440, X+Y=528, Z=272."
+    },
+    {
+      "question": "In a school, the ratio of students in Class X to Class Y is 3 : 7. When each student in X gets 2 books and each in Y gets 1 book, there are 9 books left. If each in X gets 3 books and each in Y gets 2 books, there is a shortage of 11 books. How many storybooks are there in total?",
+      "options": [
+        "28",
+        "35",
+        "42",
+        "49"
+      ],
+      "correct": 1,
+      "points": 20,
+      "explanation": "Let the common multiple be u. Then X = 3u, Y = 7u. First distribution: books used = 3u×2 + 7u×1 = 13u, total books = 13u+9. Second: books used = 3u×3 + 7u×2 = 23u, total books = 23u−11. Equate: 13u+9 = 23u−11 → 10u = 20 → u=2. Total books = 13×2+9 = 35."
+    }
+  ]
+}
+```
