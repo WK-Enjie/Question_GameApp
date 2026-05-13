@@ -1,0 +1,125 @@
+```json
+{
+  "title": "P4 Mathematics Worksheet 3: Advanced Problem Sums & Fractions",
+  "topic": "Factors, Multiples, Models, Transfer & Fractions",
+  "subject": "Mathematics",
+  "level": "Primary",
+  "grade": "P4",
+  "chapter": 1,
+  "worksheet": 3,
+  "questions": [
+    {
+      "question": "A rectangular garden measures 72m by 48m. Square tiles of equal size are to be placed to cover it exactly without cutting. What is the largest possible side length of each tile?",
+      "options": ["8 m", "12 m", "16 m", "24 m"],
+      "correct": 3,
+      "points": 12,
+      "explanation": "To find the largest tile that fits exactly into both sides, we need the greatest common factor (GCF) of 72 and 48. The factors of 72 are 1, 2, 3, 4, 6, 8, 9, 12, 18, 24, 36, 72. The factors of 48 are 1, 2, 3, 4, 6, 8, 12, 16, 24, 48. The greatest common number is 24, so the largest tile side is 24 m."
+    },
+    {
+      "question": "Two buses leave a terminal at the same time. Bus A returns every 14 minutes, and Bus B returns every 21 minutes. After how many minutes will both buses be at the terminal together again for the first time?",
+      "options": ["28 min", "42 min", "56 min", "63 min"],
+      "correct": 1,
+      "points": 10,
+      "explanation": "We need the least common multiple (LCM) of 14 and 21. Multiples of 14: 14, 28, 42... Multiples of 21: 21, 42... The first common multiple is 42, so they will meet again after 42 minutes."
+    },
+    {
+      "question": "Ryan has 3 times as many stickers as Kevin. If Ryan has 48 more stickers than Kevin, how many stickers does Ryan have?",
+      "options": ["24", "48", "72", "96"],
+      "correct": 2,
+      "points": 12,
+      "explanation": "Let Kevin have 1 unit and Ryan have 3 units. The difference is 2 units, which equals 48 stickers. So 1 unit = 48 ÷ 2 = 24. Ryan has 3 units: 3 × 24 = 72 stickers."
+    },
+    {
+      "question": "Class A has 64 students and Class B has 32 students. How many students must move from Class A to Class B so that Class B has twice as many students as Class A?",
+      "options": ["16", "24", "32", "40"],
+      "correct": 2,
+      "points": 15,
+      "explanation": "Total students = 64 + 32 = 96. After moving, the total stays 96. For Class B to have twice as many as A, the ratio is A:B = 1:2. Total parts = 3. One part = 96 ÷ 3 = 32. Class A must end with 32 students. Since it started with 64, 64 - 32 = 32 students must be transferred."
+    },
+    {
+      "question": "Emma is 9 years old. Her brother is 15 years older than her. In how many years will her brother be exactly twice as old as Emma?",
+      "options": ["3", "5", "6", "9"],
+      "correct": 2,
+      "points": 15,
+      "explanation": "The age difference is always 15 years. When the brother is twice as old, the difference of 15 years equals 1 unit (2 - 1). So Emma will be 15. She is currently 9, so 15 - 9 = 6 years from now."
+    },
+    {
+      "question": "Convert the sum of 2 3/8 and 1 1/4 into an improper fraction.",
+      "options": ["25/8", "27/8", "29/8", "31/8"],
+      "correct": 2,
+      "points": 10,
+      "explanation": "Convert to improper fractions: 2 3/8 = 19/8 and 1 1/4 = 5/4 = 10/8. Add them: 19/8 + 10/8 = 29/8."
+    },
+    {
+      "question": "John and Mary have $240 altogether. After John gives $20 to Mary, John still has $10 more than Mary. How much did John have at first?",
+      "options": ["$100", "$130", "$145", "$160"],
+      "correct": 2,
+      "points": 15,
+      "explanation": "The total remains $240. After the transfer, John has $10 more than Mary. Using the sum-difference concept: John's final amount = (240 + 10) ÷ 2 = $125. Since he gave away $20, he originally had 125 + 20 = $145."
+    },
+    {
+      "question": "A grandfather is 72 years old and his grandson is 12 years old. In how many years will the grandfather's age be exactly 5 times the grandson's age?",
+      "options": ["1", "2", "3", "4"],
+      "correct": 2,
+      "points": 15,
+      "explanation": "The age difference is always 72 - 12 = 60 years. When the grandfather is 5 times older, the 60-year difference represents 4 units (5 - 1). So 1 unit = 15 years. The grandson will be 15, which is 15 - 12 = 3 years from now."
+    },
+    {
+      "question": "A baker packs cookies into bags. If he packs 6 or 8 or 10 cookies per bag, he always has 2 cookies left over. What is the smallest number of cookies he could have?",
+      "options": ["62", "122", "152", "242"],
+      "correct": 1,
+      "points": 12,
+      "explanation": "Find the LCM of 6, 8, and 10, which is 120. Since there are always 2 cookies left over regardless of the packing method, add 2 to the LCM: 120 + 2 = 122 cookies."
+    },
+    {
+      "question": "Sarah has $45 more than Tom. If Sarah spends $30 and Tom saves $15, how much more money will Sarah have than Tom now?",
+      "options": ["$0", "$15", "$30", "$45"],
+      "correct": 0,
+      "points": 10,
+      "explanation": "The initial difference is $45. Sarah losing $30 reduces the difference by 30. Tom gaining $15 reduces it by another 15. New difference = 45 - 30 - 15 = $0. They now have the exact same amount."
+    },
+    {
+      "question": "A rope is cut into pieces. 2/5 of it is used to tie boxes. 1/3 of the remaining rope is used to wrap gifts. If 12 meters of rope are left, what was the original length of the rope?",
+      "options": ["30 m", "36 m", "45 m", "50 m"],
+      "correct": 0,
+      "points": 15,
+      "explanation": "After using 2/5, 3/5 remains. Then 1/3 of that remainder is used, leaving 2/3 of the 3/5. (2/3) × (3/5) = 2/5 of the original length. Since 2/5 = 12 m, then 1/5 = 6 m. The full length (5/5) is 6 × 5 = 30 m."
+    },
+    {
+      "question": "Container X has 4 times as much water as Container Y. If 10 litres are poured from X to Y, X will have twice as much as Y. How much water was in Y at first?",
+      "options": ["10 L", "15 L", "20 L", "25 L"],
+      "correct": 1,
+      "points": 15,
+      "explanation": "Let Y be 1 unit and X be 4 units. After pouring 10 L, X = 4u - 10 and Y = u + 10. Since X is twice Y: 4u - 10 = 2(u + 10). Solving: 4u - 10 = 2u + 20 → 2u = 30 → u = 15. Container Y had 15 L at first."
+    },
+    {
+      "question": "Alice is 10 years older than Bob. In 4 years, Alice will be twice as old as Bob. How old is Bob now?",
+      "options": ["4", "5", "6", "7"],
+      "correct": 2,
+      "points": 15,
+      "explanation": "The age difference is always 10 years. In 4 years, when Alice is twice Bob's age, the 10-year difference equals 1 unit. Bob will be 10 then. Currently, Bob is 10 - 4 = 6 years old."
+    },
+    {
+      "question": "Which of the following improper fractions is the largest?",
+      "options": ["13/4", "19/6", "22/8", "29/12"],
+      "correct": 0,
+      "points": 10,
+      "explanation": "Convert to a common denominator of 24: 13/4 = 78/24, 19/6 = 76/24, 22/8 = 66/24, 29/12 = 58/24. Comparing numerators, 78 is the largest, so 13/4 is the greatest."
+    },
+    {
+      "question": "Find the largest 2-digit number that leaves a remainder of 4 when divided by 9 and a remainder of 6 when divided by 11.",
+      "options": ["85", "90", "94", "98"],
+      "correct": 2,
+      "points": 12,
+      "explanation": "Notice that 9 - 4 = 5 and 11 - 6 = 5. This means if we add 5 to the number, it will be perfectly divisible by both 9 and 11. The LCM of 9 and 11 is 99. The largest multiple of 99 that keeps the number a 2-digit number is 99 itself. Subtract the 5 we added: 99 - 5 = 94."
+    },
+    {
+      "question": "A bag contains red, blue, and green marbles. 1/3 are red, 1/4 are blue, and the remaining 30 marbles are green. How many marbles are in the bag?",
+      "options": ["60", "72", "80", "90"],
+      "correct": 1,
+      "points": 15,
+      "explanation": "Red is 1/3 (4/12) and blue is 1/4 (3/12). Together they make 7/12 of the marbles. Green makes up the remaining 5/12. Since 5/12 = 30 marbles, 1/12 = 6 marbles. The total bag (12/12) contains 6 × 12 = 72 marbles."
+    }
+  ]
+}
+```
