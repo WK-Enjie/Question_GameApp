@@ -1,0 +1,150 @@
+{
+  "title": "Direct and Inverse Proportion – Applications & Compound Problems",
+  "topic": "Direct and Inverse Proportions",
+  "subject": "Mathematics",
+  "grade": "Sec 2",
+  "chapter": 7,
+  "worksheet": 2,
+  "questions": [
+    {
+      "question": "3 workers can paint 2 houses in 8 days. How many days will 6 workers take to paint 5 houses, assuming all work at the same rate?",
+      "options": ["8", "15", "10", "12"],
+      "correct": 2,
+      "points": 25,
+      "explanation": "Worker-days per house: (3×8)/2 = 12 worker-days/house. For 5 houses: 5×12 = 60 worker-days. With 6 workers: days = 60/6 = 10."
+    },
+    {
+      "question": "y is directly proportional to x. When x = 10, y = 25. If x is doubled, what is the new value of y?",
+      "options": ["50", "12.5", "30", "75"],
+      "correct": 0,
+      "points": 20,
+      "explanation": "k = 25/10 = 2.5. New x = 20 → y = 2.5×20 = 50."
+    },
+    {
+      "question": "y is inversely proportional to x. When x = 4, y = 9. If x is tripled, find y.",
+      "options": ["6", "27", "12", "3"],
+      "correct": 3,
+      "points": 20,
+      "explanation": "k = 4×9 = 36. New x = 12 → y = 36/12 = 3."
+    },
+    {
+      "question": "The number of days needed to build a wall is inversely proportional to the number of workers. If 4 workers take 15 days, how many workers are needed to complete the wall in 6 days?",
+      "options": ["12", "10", "6", "8"],
+      "correct": 1,
+      "points": 20,
+      "explanation": "Workers × days = constant: 4×15 = 60. So for 6 days, workers = 60/6 = 10."
+    },
+    {
+      "question": "5 machines can produce 2000 toys in 8 hours. How many toys can 8 machines produce in 5 hours?",
+      "options": ["1600", "2000", "3200", "2500"],
+      "correct": 1,
+      "points": 25,
+      "explanation": "1 machine in 1 hour: 2000/(5×8) = 50 toys. 8 machines in 5 hours = 8×5×50 = 2000."
+    },
+    {
+      "question": "z is directly proportional to x and inversely proportional to y. When x=6, y=4, z=18. Find z when x=10, y=5.",
+      "options": ["24", "30", "20", "15"],
+      "correct": 0,
+      "points": 25,
+      "explanation": "z = kx/y. k = zy/x = (18×4)/6 = 12. So z = 12×10/5 = 24."
+    },
+    {
+      "question": "The cost of wire is directly proportional to its length. 12 metres cost $8.40. What is the cost of 20 metres?",
+      "options": ["$12.60", "$14.00", "$15.00", "$16.80"],
+      "correct": 1,
+      "points": 20,
+      "explanation": "k = $8.40/12 = $0.70 per metre. 20 × 0.70 = $14.00."
+    },
+    {
+      "question": "A printer can print 120 pages in 4 minutes. How many pages can 3 such printers print in 10 minutes?",
+      "options": ["480", "360", "400", "900"],
+      "correct": 3,
+      "points": 25,
+      "explanation": "1 printer in 1 min: 120/4 = 30 pages. 3 printers in 10 min = 3×10×30 = 900."
+    },
+    {
+      "question": "y varies directly as x². When x = 2, y = 12. Find y when x is increased to 6.",
+      "options": ["18", "108", "72", "36"],
+      "correct": 1,
+      "points": 20,
+      "explanation": "y = kx². k = 12/4 = 3. When x=6, y = 3×36 = 108."
+    },
+    {
+      "question": "y ∝ 1/√x. When x = 25, y = 4. Find y when x = 100.",
+      "options": ["2", "8", "1", "16"],
+      "correct": 0,
+      "points": 20,
+      "explanation": "y = k/√x. k = y√x = 4×5 = 20. When x=100, y = 20/10 = 2."
+    },
+    {
+      "question": "A car travels 240 km on 20 litres of petrol. How far can it travel on 35 litres? (Assume direct proportion.)",
+      "options": ["300 km", "480 km", "360 km", "420 km"],
+      "correct": 3,
+      "points": 15,
+      "explanation": "Distance/litre = 240/20 = 12 km/L. 35×12 = 420 km."
+    },
+    {
+      "question": "8 men can complete a job in 12 days. How many days will 6 men take to complete the same job?",
+      "options": ["9", "16", "10", "18"],
+      "correct": 1,
+      "points": 20,
+      "explanation": "Total man-days = 8×12 = 96. For 6 men: 96/6 = 16 days."
+    },
+    {
+      "question": "The pressure P of a gas varies inversely as its volume V. When V = 24, P = 15. Find P when V = 10.",
+      "options": ["36", "6.25", "30", "24"],
+      "correct": 0,
+      "points": 20,
+      "explanation": "k = PV = 24×15 = 360. P = 360/10 = 36."
+    },
+    {
+      "question": "A school plans a camp. The number of days the food lasts is inversely proportional to the number of students. For 50 students, food lasts 12 days. If 10 more students join, how many days will the food last?",
+      "options": ["7.5", "9", "10", "8"],
+      "correct": 2,
+      "points": 25,
+      "explanation": "k = 50×12 = 600. New students = 60. Days = 600/60 = 10 days."
+    },
+    {
+      "question": "y is directly proportional to x. When x = 7, y = 14. What is the value of y when x is halved?",
+      "options": ["2", "7", "28", "3.5"],
+      "correct": 1,
+      "points": 15,
+      "explanation": "k = 14/7 = 2. y = 2x. When x = 3.5, y = 7."
+    },
+    {
+      "question": "y is inversely proportional to x². When x = 4, y = 9. Find y when x = 12.",
+      "options": ["81", "1", "27", "3"],
+      "correct": 1,
+      "points": 20,
+      "explanation": "y = k/x² → k = 9×16 = 144. When x=12, y = 144/144 = 1."
+    },
+    {
+      "question": "12 workers can dig a trench in 18 days. How many days would it take 9 workers to dig the same trench?",
+      "options": ["24", "13.5", "16", "27"],
+      "correct": 0,
+      "points": 20,
+      "explanation": "Worker-days: 12×18 = 216. Days for 9 workers = 216/9 = 24."
+    },
+    {
+      "question": "The number of paving stones needed is directly proportional to the area. If 150 stones cover 30 m², how many stones are needed for 50 m²?",
+      "options": ["200", "300", "250", "225"],
+      "correct": 2,
+      "points": 20,
+      "explanation": "Stones/m² = 150/30 = 5. For 50 m²: 5×50 = 250."
+    },
+    {
+      "question": "y ∝ x. When x = 16, y = 48. When x is decreased by 25%, what is y?",
+      "options": ["12", "60", "36", "24"],
+      "correct": 2,
+      "points": 20,
+      "explanation": "k = 48/16 = 3. New x = 0.75×16 = 12 → y = 3×12 = 36."
+    },
+    {
+      "question": "A water tank is filled by a pump at a constant rate. If 4 litres enter in 3 seconds, how long to fill 60 litres?",
+      "options": ["80 seconds", "36 seconds", "20 seconds", "45 seconds"],
+      "correct": 3,
+      "points": 15,
+      "explanation": "Rate = 4/3 L/s. Time = 60 ÷ (4/3) = 60 × 3/4 = 45 seconds."
+    }
+  ]
+}

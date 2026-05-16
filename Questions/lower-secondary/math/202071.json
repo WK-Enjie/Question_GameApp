@@ -1,0 +1,150 @@
+{
+  "title": "Direct and Inverse Proportion – Finding k & Identifying Relationships",
+  "topic": "Direct and Inverse Proportions",
+  "subject": "Mathematics",
+  "grade": "Sec 2",
+  "chapter": 7,
+  "worksheet": 1,
+  "questions": [
+    {
+      "question": "y is directly proportional to x. When x = 4, y = 20. Find the constant of proportionality, k.",
+      "options": ["0.2", "24", "5", "80"],
+      "correct": 2,
+      "points": 12,
+      "explanation": "y = kx. Substitute: 20 = k(4) → k = 5."
+    },
+    {
+      "question": "y varies inversely as x. When x = 6, y = 3. Find the constant of proportionality, k.",
+      "options": ["2", "9", "18", "0.5"],
+      "correct": 2,
+      "points": 12,
+      "explanation": "y = k/x. So k = xy = 6 × 3 = 18."
+    },
+    {
+      "question": "Which equation shows a direct proportion between x and y?",
+      "options": ["y = x²", "y = 3x", "y = 3/x", "y = 3x + 1"],
+      "correct": 1,
+      "points": 10,
+      "explanation": "Direct proportion is y = kx. Only y = 3x is of that form."
+    },
+    {
+      "question": "Which graph represents a direct proportion?",
+      "options": ["A horizontal line", "A curve that decreases as x increases", "A straight line passing through the origin", "A straight line not passing through the origin"],
+      "correct": 2,
+      "points": 10,
+      "explanation": "A direct proportion is a straight line passing through (0,0)."
+    },
+    {
+      "question": "y is inversely proportional to x. Write down the equation connecting y and x if y = 10 when x = 2.",
+      "options": ["y = 5/x", "y = 0.2/x", "y = 20/x", "y = 20x"],
+      "correct": 2,
+      "points": 15,
+      "explanation": "k = xy = 2×10 = 20. So y = 20/x."
+    },
+    {
+      "question": "Given that y ∝ x and y = 24 when x = 8, find y when x = 12.",
+      "options": ["4", "16", "32", "36"],
+      "correct": 3,
+      "points": 15,
+      "explanation": "k = 24/8 = 3, so y = 3x. When x = 12, y = 3×12 = 36."
+    },
+    {
+      "question": "y is inversely proportional to x. If y = 6 when x = 5, find y when x = 10.",
+      "options": ["0.3", "3", "12", "30"],
+      "correct": 1,
+      "points": 15,
+      "explanation": "k = 5×6 = 30. y = 30/x. When x = 10, y = 30/10 = 3."
+    },
+    {
+      "question": "Which table shows a direct proportion between x and y?",
+      "options": ["x: 1, 2, 3 | y: 2, 3, 4", "x: 2, 4, 6 | y: 12, 6, 4", "x: 2, 4, 6 | y: 6, 12, 18", "x: 1, 2, 3 | y: 1, 4, 9"],
+      "correct": 2,
+      "points": 12,
+      "explanation": "Option C: y/x = 3 constant. A is y = x+1 (not direct). B is inverse. D is quadratic."
+    },
+    {
+      "question": "y varies inversely as the square of x. When x = 2, y = 9. Find k.",
+      "options": ["4.5", "36", "3", "18"],
+      "correct": 1,
+      "points": 18,
+      "explanation": "y = k/x² → k = yx² = 9 × 4 = 36."
+    },
+    {
+      "question": "y is directly proportional to √x. When x = 16, y = 8. Find the equation.",
+      "options": ["y = 8√x", "y = 0.5√x", "y = (1/2)√x", "y = 2√x"],
+      "correct": 3,
+      "points": 18,
+      "explanation": "y = k√x. 8 = k√16 = 4k → k = 2. So y = 2√x."
+    },
+    {
+      "question": "p is directly proportional to q. If p = 15 when q = 3, find p when q = 7.",
+      "options": ["45", "19", "35", "21"],
+      "correct": 2,
+      "points": 15,
+      "explanation": "k = 15/3 = 5. p = 5q. When q = 7, p = 5×7 = 35."
+    },
+    {
+      "question": "Which relationship is NOT a direct proportion?",
+      "options": ["y = 5x - 3", "Distance = speed × time (constant speed)", "y = (1/2)x", "Cost of apples at $2 per apple"],
+      "correct": 0,
+      "points": 10,
+      "explanation": "Direct proportion has form y = kx. y = 5x - 3 has a constant term."
+    },
+    {
+      "question": "The time taken to travel a fixed distance is inversely proportional to speed. If a car travels at 60 km/h and takes 2 hours, how long will it take at 80 km/h?",
+      "options": ["3 hours", "1.2 hours", "2.5 hours", "1.5 hours"],
+      "correct": 3,
+      "points": 15,
+      "explanation": "Distance = 60×2 = 120 km. Time = distance/speed = 120/80 = 1.5 hours. Inverse proportion: t = k/s; k = 120."
+    },
+    {
+      "question": "y ∝ 1/x. When x = 10, y = 5. What is the missing value in the table? x: 5, ? | y: 10, 2",
+      "options": ["50", "15", "25", "20"],
+      "correct": 2,
+      "points": 15,
+      "explanation": "k = 10×5 = 50. For y=2, x = k/y = 50/2 = 25."
+    },
+    {
+      "question": "Which of these statements is true about an inverse proportion?",
+      "options": ["As x increases, y increases.", "The graph is a straight line through the origin.", "The product of the two variables is constant.", "The ratio of the two variables is constant."],
+      "correct": 2,
+      "points": 10,
+      "explanation": "In inverse proportion, xy = k (constant product)."
+    },
+    {
+      "question": "y is directly proportional to x. When x is increased by 50%, y becomes 18. Find the original value of y.",
+      "options": ["27", "13.5", "12", "9"],
+      "correct": 2,
+      "points": 18,
+      "explanation": "1.5x gives y=18. Since y = kx, 18 = k(1.5x0) => original y0 = kx0 = 18/1.5 = 12."
+    },
+    {
+      "question": "y varies inversely as x. When x = 2, y = 18. Find y when x = 0.5.",
+      "options": ["4.5", "36", "9", "72"],
+      "correct": 3,
+      "points": 15,
+      "explanation": "k = 2×18 = 36. y = 36/0.5 = 72."
+    },
+    {
+      "question": "The graph of y against x is a curve that gets closer to the axes as x increases. This suggests y is __________ proportional to x.",
+      "options": ["linearly", "not", "inversely", "directly"],
+      "correct": 2,
+      "points": 10,
+      "explanation": "Inverse proportion graph is a hyperbola approaching both axes."
+    },
+    {
+      "question": "Given that y ∝ 1/x and y = 8 when x = 3, find x when y = 24.",
+      "options": ["2", "6", "1", "9"],
+      "correct": 2,
+      "points": 15,
+      "explanation": "k = 3×8 = 24. x = 24/24 = 1."
+    },
+    {
+      "question": "A machine produces 60 toys in 5 minutes. How many toys can it produce in 12 minutes if the rate is constant? (Direct proportion)",
+      "options": ["120", "72", "144", "25"],
+      "correct": 2,
+      "points": 15,
+      "explanation": "Toys/min = 60/5 = 12. In 12 min → 12×12 = 144."
+    }
+  ]
+}
