@@ -9,157 +9,143 @@
   "questions": [
     {
       "question": "Alice spent 1/3 of her money on books and 1/2 of the remainder on food. What fraction of her original money was left?",
-      "options": ["1/3", "1/6", "1/4", "1/2"],
-      "correct": 0,
+      "options": ["1/6", "1/3", "1/2", "1/4"],
+      "correct": 1,
       "points": 15,
       "explanation": "After books: 1 - 1/3 = 2/3 left. Food: 1/2 of 2/3 = 1/3. Total spent: 1/3 + 1/3 = 2/3. Left: 1 - 2/3 = 1/3."
     },
     {
       "question": "Ben had some stamps. He gave 1/4 to his brother and 2/5 of the remainder to his sister. What fraction of his original stamps did he have left?",
-      "options": ["3/10", "3/20", "9/20", "1/2"],
-      "correct": 0,
+      "options": ["3/10", "1/2", "9/20", "3/20"],
+      "correct": 2,
       "points": 15,
-      "explanation": "After brother: 1 - 1/4 = 3/4 left. Sister: 2/5 of 3/4 = 6/20 = 3/10. Total given: 1/4 + 3/10 = 5/20 + 6/20 = 11/20. Left: 1 - 11/20 = 9/20. Wait, let's recompute. Left after sister = 3/5 of 3/4 = 9/20. Option 0 is 3/10 (incorrect). Option 2 is 9/20 (correct). Updating correct index."
+      "explanation": "After brother: 1 - 1/4 = 3/4 left. Sister: 2/5 of 3/4 = 6/20 = 3/10. Left: 3/4 - 3/10 = 15/20 - 6/20 = 9/20."
     },
     {
-      "question": "Carol spent 3/5 of her money on a dress and 1/4 of the remainder on shoes. What fraction of her original money was left?",
-      "options": ["3/10", "1/5", "2/5", "1/4"],
-      "correct": 0,
-      "points": 18,
-      "explanation": "After dress: 1 - 3/5 = 2/5 left. Shoes: 1/4 of 2/5 = 2/20 = 1/10. Total spent: 3/5 + 1/10 = 6/10 + 1/10 = 7/10. Left: 1 - 7/10 = 3/10."
-    },
-    {
-      "question": "Dan had 200 dollars. He spent 1/5 on food and 3/4 of the remainder on transport. How much money did he have left?",
-      "options": ["40 dollars", "50 dollars", "60 dollars", "30 dollars"],
-      "correct": 0,
+      "question": "Tom saved some money. He spent 1/3 on toys, then $24 on snacks. He was left with exactly 2/5 of his original savings. How much did he save at first?",
+      "options": ["$80", "$105", "$90", "$75"],
+      "correct": 2,
       "points": 20,
-      "explanation": "After food: 200 × 4/5 = 160 dollars left. Transport: 3/4 of 160 = 120 dollars. Left: 160 - 120 = 40 dollars."
+      "explanation": "Fraction spent on snacks = 1 - 1/3 - 2/5 = 4/15. 4/15 of total = $24. 1/15 = $6. Total (15/15) = 6 × 15 = $90."
     },
     {
-      "question": "Emily had some oranges. She sold 2/7 of them and gave 1/2 of the remainder to her neighbour. What fraction of her original oranges was left?",
-      "options": ["5/14", "5/7", "2/7", "9/14"],
-      "correct": 0,
-      "points": 18,
-      "explanation": "After sold: 1 - 2/7 = 5/7 left. Neighbour: 1/2 of 5/7 = 5/14. Total gone: 2/7 + 5/14 = 4/14 + 5/14 = 9/14. Left: 1 - 9/14 = 5/14."
-    },
-    {
-      "question": "A tank contained 300 litres of water. 1/5 was used for cleaning and 2/3 of the remainder was used for gardening. How much water was left?",
-      "options": ["80 L", "60 L", "100 L", "120 L"],
-      "correct": 0,
+      "question": "Dan had $200. He spent 1/5 on food and 3/4 of the remainder on transport. How much money did he have left?",
+      "options": ["$50", "$40", "$60", "$30"],
+      "correct": 1,
       "points": 20,
-      "explanation": "After cleaning: 300 × 4/5 = 240 L left. Gardening: 2/3 of 240 = 160 L. Left: 240 - 160 = 80 L."
+      "explanation": "After food: 200 × 4/5 = $160 left. Transport: 3/4 of 160 = $120. Left: 160 - 120 = $40."
     },
     {
-      "question": "Frank spent 1/6 of his money on games and 2/5 of the remainder on snacks. What fraction of his original money was left?",
-      "options": ["1/2", "3/5", "2/3", "4/5"],
+      "question": "A bag contains some marbles. 3/8 are red. 1/4 of the remainder are blue. The rest are 45 green marbles. How many marbles are in the bag?",
+      "options": ["96", "108", "80", "90"],
       "correct": 0,
-      "points": 15,
-      "explanation": "After games: 1 - 1/6 = 5/6 left. Snacks: 2/5 of 5/6 = 2/6 = 1/3. Total spent: 1/6 + 1/3 = 1/6 + 2/6 = 3/6 = 1/2. Left: 1 - 1/2 = 1/2."
+      "points": 25,
+      "explanation": "Red = 3/8. Remainder = 5/8. Blue = 1/4 of 5/8 = 5/32. Green fraction = 5/8 - 5/32 = 15/32. 15/32 → 45. 1/32 → 3. Total = 32 × 3 = 96."
     },
     {
       "question": "There were 210 students in a hall. 3/7 were boys and 1/4 of the girls wore glasses. How many girls did not wear glasses?",
-      "options": ["90", "80", "100", "85"],
-      "correct": 0,
+      "options": ["80", "100", "85", "90"],
+      "correct": 3,
       "points": 20,
       "explanation": "Boys: 210 × 3/7 = 90. Girls: 210 - 90 = 120. Girls with glasses: 120 × 1/4 = 30. Girls without glasses: 120 - 30 = 90."
     },
     {
+      "question": "Maya spent $35 on a dress and 2/5 of the remainder on shoes. She had $24 left. How much money did she have at first?",
+      "options": ["$80", "$70", "$75", "$65"],
+      "correct": 2,
+      "points": 20,
+      "explanation": "After shoes, she had 3/5 of the remainder left. 3/5 rem = $24 → 1/5 rem = $8 → full rem = $40. Original = Dress + Remainder = 35 + 40 = $75."
+    },
+    {
       "question": "Grace used 1/8 of her flour for cakes and 3/7 of the remainder for cookies. What fraction of her original flour was left?",
-      "options": ["1/2", "3/8", "5/8", "2/7"],
-      "correct": 0,
+      "options": ["3/8", "5/8", "2/7", "1/2"],
+      "correct": 3,
       "points": 18,
-      "explanation": "After cakes: 1 - 1/8 = 7/8 left. Cookies: 3/7 of 7/8 = 3/8. Total used: 1/8 + 3/8 = 4/8 = 1/2. Left: 1 - 1/2 = 1/2."
+      "explanation": "After cakes: 1 - 1/8 = 7/8 left. Cookies: 3/7 of 7/8 = 3/8. Total used: 1/8 + 3/8 = 1/2. Left: 1 - 1/2 = 1/2."
     },
     {
-      "question": "A shop had 400 shirts. They sold 1/5 in the morning and 3/8 of the remainder in the afternoon. How many shirts were left?",
-      "options": ["175", "180", "185", "190"],
-      "correct": 0,
-      "points": 20,
-      "explanation": "After morning: 400 × 4/5 = 320 shirts left. Afternoon: 3/8 of 320 = 120 shirts. Left: 320 - 120 = 200. Wait, 320-120=200. Options need update. Let's change afternoon fraction to 1/4. 1/4 of 320 = 80. Left 240. Let's change sold morning to 1/4. 400*3/4=300. Afternoon 3/8 of 300 (not integer). Let's change Total to 480. Sold 1/5 (96). Rem 384. 3/8 of 384 = 144. Left 240. Let's stick to simple numbers. Total 400. Sold 1/4 (100). Rem 300. Sold 1/3 (100). Left 200. Okay, updating question."
-    },
-    {
-      "question": "A shop had 400 shirts. They sold 1/4 in the morning and 1/3 of the remainder in the afternoon. How many shirts were left?",
-      "options": ["200", "210", "220", "230"],
-      "correct": 0,
-      "points": 20,
-      "explanation": "After morning: 400 × 3/4 = 300 shirts left. Afternoon: 1/3 of 300 = 100 shirts. Left: 300 - 100 = 200 shirts."
-    },
-    {
-      "question": "Henry spent 2/5 of his money on a bike and 1/3 of the remainder on a helmet. What fraction of his original money was left?",
-      "options": ["2/5", "3/5", "4/15", "11/15"],
-      "correct": 0,
+      "question": "Ivy ate 1/5 of a cake and gave 1/2 of the remainder to her friend. What fraction of the original cake was left?",
+      "options": ["1/2", "3/10", "2/5", "7/10"],
+      "correct": 2,
       "points": 18,
-      "explanation": "After bike: 1 - 2/5 = 3/5 left. Helmet: 1/3 of 3/5 = 1/5. Total spent: 2/5 + 1/5 = 3/5. Left: 1 - 3/5 = 2/5."
+      "explanation": "After ate: 1 - 1/5 = 4/5 left. Friend: 1/2 of 4/5 = 2/5. Total gone: 1/5 + 2/5 = 3/5. Left: 1 - 3/5 = 2/5."
+    },
+    {
+      "question": "Mr. Tan gave 1/4 of his apples to his neighbour. He then gave 2/5 of the remainder to his son. The remaining apples were shared equally among his 3 daughters, and each received 18 apples. How many apples did he have at first?",
+      "options": ["120", "100", "140", "150"],
+      "correct": 0,
+      "points": 25,
+      "explanation": "After son: 3/5 of 3/4 = 9/20 left. Shared by 3 daughters → each gets 3/20. 3/20 = 18 → 1/20 = 6. Total (20/20) = 6 × 20 = 120."
+    },
+    {
+      "question": "Jack spent 1/7 of his money on books and 1/2 of the remainder on food. What fraction of his original money was left?",
+      "options": ["4/7", "3/14", "3/7", "11/14"],
+      "correct": 2,
+      "points": 18,
+      "explanation": "After books: 1 - 1/7 = 6/7 left. Food: 1/2 of 6/7 = 3/7. Total spent: 1/7 + 3/7 = 4/7. Left: 1 - 4/7 = 3/7."
+    },
+    {
+      "question": "Sarah spent $30 on lunch. She then spent 1/4 of the remainder on stationery. She was left with exactly 1/3 of her original money. How much did she have at first?",
+      "options": ["$60", "$45", "$54", "$72"],
+      "correct": 2,
+      "points": 20,
+      "explanation": "After stationery, 3/4 of the remainder was left. 3/4(Original - 30) = 1/3 Original. Cross-multiply: 9(Original - 30) = 4Original → 5Original = 270 → Original = $54."
+    },
+    {
+      "question": "There were 560 marbles in a bag. 1/7 were green and 2/3 of the remainder were yellow. How many marbles were neither green nor yellow?",
+      "options": ["170", "160", "150", "180"],
+      "correct": 1,
+      "points": 20,
+      "explanation": "Green: 560 × 1/7 = 80. Remainder: 480. Yellow: 480 × 2/3 = 320. Neither: 480 - 320 = 160."
+    },
+    {
+      "question": "A school had 600 students. 1/4 were in Primary 6 and 1/2 of the remainder were in Primary 5. How many students were in neither Primary 6 nor Primary 5?",
+      "options": ["230", "240", "225", "235"],
+      "correct": 2,
+      "points": 20,
+      "explanation": "P6: 600 × 1/4 = 150. Remainder: 450. P5: 450 × 1/2 = 225. Neither: 450 - 225 = 225."
+    },
+    {
+      "question": "A water tank was 3/4 full. 1/5 of the water in the tank was drained. Then 12 litres were added, and the tank became exactly full. What is the capacity of the tank?",
+      "options": ["28 L", "36 L", "25 L", "30 L"],
+      "correct": 3,
+      "points": 25,
+      "explanation": "Drained = 1/5 of 3/4 = 3/20. Left = 3/4 - 3/20 = 12/20 = 3/5. Added 12 L fills to 1. So 12 L = 2/5 capacity. 1/5 = 6 L. Full capacity = 5 × 6 = 30 L."
+    },
+    {
+      "question": "Leo spent 3/10 of his money on a toy and 1/3 of the remainder on candy. What fraction of his original money was left?",
+      "options": ["8/15", "7/15", "1/2", "2/5"],
+      "correct": 1,
+      "points": 20,
+      "explanation": "After toy: 1 - 3/10 = 7/10 left. Candy: 1/3 of 7/10 = 7/30. Total spent: 3/10 + 7/30 = 16/30 = 8/15. Left: 1 - 8/15 = 7/15."
+    },
+    {
+      "question": "Kelly used 1/5 of her ribbon for a gift and 3/4 of the remainder for a craft. What fraction of her original ribbon was left?",
+      "options": ["1/4", "2/5", "1/5", "1/3"],
+      "correct": 2,
+      "points": 15,
+      "explanation": "After gift: 1 - 1/5 = 4/5 left. Craft: 3/4 of 4/5 = 3/5. Total used: 1/5 + 3/5 = 4/5. Left: 1 - 4/5 = 1/5."
+    },
+    {
+      "question": "A farmer had 450 chickens. He sold 1/3 of them and gave 1/5 of the remainder to his neighbour. How many chickens did he have left?",
+      "options": ["250", "240", "260", "270"],
+      "correct": 1,
+      "points": 20,
+      "explanation": "After sold: 450 × 2/3 = 300 left. Neighbour: 1/5 of 300 = 60. Left: 300 - 60 = 240."
     },
     {
       "question": "There were 360 pencils in a box. 1/3 were red and 3/5 of the remainder were blue. How many pencils were neither red nor blue?",
       "options": ["96", "90", "84", "100"],
       "correct": 0,
       "points": 20,
-      "explanation": "Red: 360 × 1/3 = 120. Remainder: 360 - 120 = 240. Blue: 240 × 3/5 = 144. Neither: 240 - 144 = 96."
+      "explanation": "Red: 360 × 1/3 = 120. Remainder: 240. Blue: 240 × 3/5 = 144. Neither: 240 - 144 = 96."
     },
     {
-      "question": "Ivy ate 1/5 of a cake and gave 1/2 of the remainder to her friend. What fraction of the original cake was left?",
-      "options": ["2/5", "3/10", "7/10", "1/2"],
-      "correct": 0,
-      "points": 18,
-      "explanation": "After ate: 1 - 1/5 = 4/5 left. Friend: 1/2 of 4/5 = 2/5. Total gone: 1/5 + 2/5 = 3/5. Left: 1 - 3/5 = 2/5."
-    },
-    {
-      "question": "A farmer had 450 chickens. He sold 1/3 of them and gave 1/5 of the remainder to his neighbour. How many chickens did he have left?",
-      "options": ["240", "250", "260", "270"],
-      "correct": 0,
+      "question": "A shop had 400 shirts. They sold 1/4 in the morning and 1/3 of the remainder in the afternoon. How many shirts were left?",
+      "options": ["210", "200", "190", "220"],
+      "correct": 1,
       "points": 20,
-      "explanation": "After sold: 450 × 2/3 = 300 chickens left. Neighbour: 1/5 of 300 = 60 chickens. Left: 300 - 60 = 240 chickens."
-    },
-    {
-      "question": "Jack spent 1/7 of his money on books and 1/2 of the remainder on food. What fraction of his original money was left?",
-      "options": ["3/7", "4/7", "3/14", "11/14"],
-      "correct": 0,
-      "points": 18,
-      "explanation": "After books: 1 - 1/7 = 6/7 left. Food: 1/2 of 6/7 = 3/7. Total spent: 1/7 + 3/7 = 4/7. Left: 1 - 4/7 = 3/7."
-    },
-    {
-      "question": "There were 560 marbles in a bag. 1/7 were green and 2/3 of the remainder were yellow. How many marbles were neither green nor yellow?",
-      "options": ["160", "150", "170", "180"],
-      "correct": 0,
-      "points": 20,
-      "explanation": "Green: 560 × 1/7 = 80. Remainder: 560 - 80 = 480. Yellow: 480 × 2/3 = 320. Neither: 480 - 320 = 160."
-    },
-    {
-      "question": "Kelly used 1/5 of her ribbon for a gift and 3/4 of the remainder for a craft. What fraction of her original ribbon was left?",
-      "options": ["1/5", "1/4", "1/3", "2/5"],
-      "correct": 0,
-      "points": 15,
-      "explanation": "After gift: 1 - 1/5 = 4/5 left. Craft: 3/4 of 4/5 = 3/5. Total used: 1/5 + 3/5 = 4/5. Left: 1 - 4/5 = 1/5."
-    },
-    {
-      "question": "A school had 600 students. 1/4 were in Primary 6 and 1/2 of the remainder were in Primary 5. How many students were in neither Primary 6 nor Primary 5?",
-      "options": ["225", "230", "235", "240"],
-      "correct": 0,
-      "points": 20,
-      "explanation": "P6: 600 × 1/4 = 150. Remainder: 600 - 150 = 450. P5: 450 × 1/2 = 225. Neither: 450 - 225 = 225."
-    },
-    {
-      "question": "Leo spent 3/10 of his money on a toy and 1/3 of the remainder on candy. What fraction of his original money was left?",
-      "options": ["7/15", "8/15", "1/2", "2/5"],
-      "correct": 0,
-      "points": 20,
-      "explanation": "After toy: 1 - 3/10 = 7/10 left. Candy: 1/3 of 7/10 = 7/30. Total spent: 3/10 + 7/30 = 9/30 + 7/30 = 16/30 = 8/15. Left: 1 - 8/15 = 7/15."
-    },
-    {
-      "question": "There were 720 books in a library. 1/8 were fiction and 3/7 of the remainder were non-fiction. How many books were neither fiction nor non-fiction?",
-      "options": ["270", "280", "290", "300"],
-      "correct": 0,
-      "points": 20,
-      "explanation": "Fiction: 720 × 1/8 = 90. Remainder: 720 - 90 = 630. Non-fiction: 630 × 3/7 = 270. Neither: 630 - 270 = 360. Wait, 360 is not in options. Updating options."
-    },
-    {
-      "question": "There were 720 books in a library. 1/8 were fiction and 3/7 of the remainder were non-fiction. How many books were neither fiction nor non-fiction?",
-      "options": ["360", "270", "280", "300"],
-      "correct": 0,
-      "points": 20,
-      "explanation": "Fiction: 720 × 1/8 = 90. Remainder: 720 - 90 = 630. Non-fiction: 630 × 3/7 = 270. Neither: 630 - 270 = 360."
+      "explanation": "After morning: 400 × 3/4 = 300 left. Afternoon: 1/3 of 300 = 100. Left: 300 - 100 = 200."
     }
   ]
 }
