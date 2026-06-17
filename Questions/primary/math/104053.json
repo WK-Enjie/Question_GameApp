@@ -1,0 +1,101 @@
+{
+  "title": "Primary 5 Fractions – Unit Concept (Worksheet 3)",
+  "questions": [
+    {
+      "question": "Ali ate 1/3 of a bag of sweets in the morning, ate 10 more in the afternoon than in the morning, and had 20 sweets left. How many sweets were in the bag at first?",
+      "options": ["80", "90", "100", "110"],
+      "correct": 1,
+      "points": 12,
+      "time": 200,
+      "explanation": "Let total = T. Morning = T/3. Afternoon = T/3 + 10. Left = 20. Equation: T/3 + (T/3 + 10) + 20 = T → 2T/3 + 30 = T → 30 = T/3 → T = 90."
+    },
+    {
+      "question": "A farmer sold 1/4 of his chickens in the morning, sold 12 more in the afternoon than in the morning, and had 24 chickens left. How many chickens did he have at first?",
+      "options": ["60", "72", "84", "96"],
+      "correct": 1,
+      "points": 12,
+      "time": 200,
+      "explanation": "Let total = T. Morning = T/4. Afternoon = T/4 + 12. Left = 24. Equation: T/4 + (T/4 + 12) + 24 = T → T/2 + 36 = T → 36 = T/2 → T = 72."
+    },
+    {
+      "question": "A painter painted 2/5 of a wall in the morning, painted 15 m² more in the afternoon than in the morning, and had 25 m² left. What is the total area of the wall?",
+      "options": ["180", "200", "220", "240"],
+      "correct": 1,
+      "points": 12,
+      "time": 200,
+      "explanation": "Let total = T. Morning = 2T/5. Afternoon = 2T/5 + 15. Left = 25. Equation: 2T/5 + (2T/5 + 15) + 25 = T → 4T/5 + 40 = T → 40 = T/5 → T = 200."
+    },
+    {
+      "question": "A baker used 3/8 of a bag of flour in the morning, used 10 kg more in the afternoon than in the morning, and had 14 kg left. How many kg of flour were in the bag initially?",
+      "options": ["84", "96", "108", "120"],
+      "correct": 1,
+      "points": 12,
+      "time": 200,
+      "explanation": "Let total = T. Morning = 3T/8. Afternoon = 3T/8 + 10. Left = 14. Equation: 3T/8 + (3T/8 + 10) + 14 = T → 3T/4 + 24 = T → 24 = T/4 → T = 96."
+    },
+    {
+      "question": "A shop sold 2/7 of its stock in the morning, sold 12 more in the afternoon than in the morning, and had 18 items left. How many items did the shop have at first?",
+      "options": ["60", "70", "80", "90"],
+      "correct": 1,
+      "points": 12,
+      "time": 200,
+      "explanation": "Let total = T. Morning = 2T/7. Afternoon = 2T/7 + 12. Left = 18. Equation: 2T/7 + (2T/7 + 12) + 18 = T → 4T/7 + 30 = T → 30 = 3T/7 → T = 70."
+    },
+    {
+      "question": "A student read 1/6 of a book in the morning, read 8 more pages in the afternoon than in the morning, and had 16 pages left. How many pages does the book have?",
+      "options": ["30", "36", "42", "48"],
+      "correct": 1,
+      "points": 12,
+      "time": 200,
+      "explanation": "Let total = T. Morning = T/6. Afternoon = T/6 + 8. Left = 16. Equation: T/6 + (T/6 + 8) + 16 = T → T/3 + 24 = T → 24 = 2T/3 → T = 36."
+    },
+    {
+      "question": "A gardener planted 3/10 of his seeds in the morning, planted 10 more in the afternoon than in the morning, and had 18 seeds left. How many seeds did he have initially?",
+      "options": ["60", "70", "80", "90"],
+      "correct": 1,
+      "points": 12,
+      "time": 200,
+      "explanation": "Let total = T. Morning = 3T/10. Afternoon = 3T/10 + 10. Left = 18. Equation: 3T/10 + (3T/10 + 10) + 18 = T → 3T/5 + 28 = T → 28 = 2T/5 → T = 70."
+    },
+    {
+      "question": "A driver travelled 2/9 of his journey in the morning, travelled 10 km more in the afternoon than in the morning, and had 15 km left. What was the total distance?",
+      "options": ["40", "45", "50", "55"],
+      "correct": 1,
+      "points": 12,
+      "time": 200,
+      "explanation": "Let total = T. Morning = 2T/9. Afternoon = 2T/9 + 10. Left = 15. Equation: 2T/9 + (2T/9 + 10) + 15 = T → 4T/9 + 25 = T → 25 = 5T/9 → T = 45."
+    },
+    {
+      "question": "A mother gave 1/5 of her savings to her son, gave 8 more to her daughter than to her son, and had 13 left. How much money did she have initially?",
+      "options": ["30", "35", "40", "45"],
+      "correct": 1,
+      "points": 12,
+      "time": 200,
+      "explanation": "Let total = T. To son = T/5. To daughter = T/5 + 8. Left = 13. Equation: T/5 + (T/5 + 8) + 13 = T → 2T/5 + 21 = T → 21 = 3T/5 → T = 35."
+    },
+    {
+      "question": "A factory produced 3/7 of its daily quota in the morning, produced 12 more units in the afternoon than in the morning, and had 16 units left to reach the quota. What is the daily quota?",
+      "options": ["180", "196", "210", "224"],
+      "correct": 1,
+      "points": 12,
+      "time": 200,
+      "explanation": "Let total = T. Morning = 3T/7. Afternoon = 3T/7 + 12. Left = 16. Equation: 3T/7 + (3T/7 + 12) + 16 = T → 6T/7 + 28 = T → 28 = T/7 → T = 196."
+    },
+    {
+      "question": "A chef used 4/9 of a bag of sugar in the morning, used 14 more grams in the afternoon than in the morning, and had 22 grams left. How many grams were in the bag initially?",
+      "options": ["300", "324", "340", "360"],
+      "correct": 1,
+      "points": 12,
+      "time": 200,
+      "explanation": "Let total = T. Morning = 4T/9. Afternoon = 4T/9 + 14. Left = 22. Equation: 4T/9 + (4T/9 + 14) + 22 = T → 8T/9 + 36 = T → 36 = T/9 → T = 324."
+    },
+    {
+      "question": "A worker completed 1/7 of a task in the morning, completed 9 more tasks in the afternoon than in the morning, and had 6 tasks left. How many tasks were there in total?",
+      "options": ["14", "21", "28", "35"],
+      "correct": 1,
+      "points": 12,
+      "time": 200,
+      "explanation": "Let total = T. Morning = T/7. Afternoon = T/7 + 9. Left = 6. Equation: T/7 + (T/7 + 9) + 6 = T → 2T/7 + 15 = T → 15 = 5T/7 → T = 21."
+    }
+  ]
+}
