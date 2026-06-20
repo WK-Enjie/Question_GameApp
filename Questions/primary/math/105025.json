@@ -1,0 +1,251 @@
+{
+  "title": "Fractions & Word Problems – Model Method (No Algebra)",
+  "topic": "Fraction to Decimal Conversion, Rounding, and Comparative Word Problems",
+  "subject": "Mathematics",
+  "level": "Primary",
+  "grade": "P5",
+  "chapter": 2,
+  "worksheet": 5,
+  "questions": [
+    {
+      "question": "There are an equal number of boys and girls at first. After 3/4 of the boys and 1/3 of the girls left the room, there are 35 more girls than boys. How many students were in the room at first?",
+      "options": [
+        "120",
+        "144",
+        "168",
+        "180"
+      ],
+      "correct": 2,
+      "points": 15,
+      "explanation": "Boys left: 1/4. Girls left: 2/3. Compare: 2/3 – 1/4 = 5/12. This 5/12 equals 35 girls. So 1/12 = 7. Total parts = 12 × 7 × 2 = 168 students."
+    },
+    {
+      "question": "There are an equal number of red and blue pens at first. After 3/4 of the red pens and 2/5 of the blue pens are left, there are 28 more red pens than blue pens. How many red pens were there at first?",
+      "options": [
+        "60",
+        "70",
+        "80",
+        "90"
+      ],
+      "correct": 2,
+      "points": 15,
+      "explanation": "Red left = 3/4, blue left = 2/5. Difference = 3/4 – 2/5 = 7/20. 7/20 equals 28 pens. So 1/20 = 4. Red pens = 20 × 4 = 80."
+    },
+    {
+      "question": "There are an equal number of apples and oranges at first. After 2/3 of the apples and 1/2 of the oranges are left, there are 12 more apples than oranges. How many apples were there at first?",
+      "options": [
+        "60",
+        "66",
+        "72",
+        "78"
+      ],
+      "correct": 2,
+      "points": 15,
+      "explanation": "Apples left = 2/3, oranges left = 1/2. Difference = 2/3 – 1/2 = 1/6. 1/6 equals 12 apples. So whole = 6 × 12 = 72 apples."
+    },
+    {
+      "question": "There are an equal number of cats and dogs at first. After 1/4 of the cats and 3/5 of the dogs are left, there are 21 more dogs than cats. How many dogs were there at first?",
+      "options": [
+        "50",
+        "55",
+        "60",
+        "65"
+      ],
+      "correct": 2,
+      "points": 15,
+      "explanation": "Dogs left = 3/5, cats left = 1/4. Difference = 3/5 – 1/4 = 7/20. 7/20 equals 21 dogs. So 1/20 = 3. Dogs = 20 × 3 = 60."
+    },
+    {
+      "question": "There are an equal number of chocolates and candies at first. After 2/3 of the chocolates and 5/6 of the candies are left, there are 20 more candies than chocolates. How many candies were there at first?",
+      "options": [
+        "100",
+        "110",
+        "120",
+        "130"
+      ],
+      "correct": 2,
+      "points": 15,
+      "explanation": "Candies left = 5/6, chocolates left = 2/3 = 4/6. Difference = 5/6 – 4/6 = 1/6. 1/6 equals 20 candies. So whole = 6 × 20 = 120."
+    },
+    {
+      "question": "There are an equal number of shirts and pants at first. After 3/4 of the shirts and 2/3 of the pants are left, there are 18 more shirts than pants. How many shirts were there at first?",
+      "options": [
+        "180",
+        "200",
+        "216",
+        "220"
+      ],
+      "correct": 2,
+      "points": 15,
+      "explanation": "Shirts left = 3/4, pants left = 2/3. Difference = 3/4 – 2/3 = 1/12. 1/12 equals 18 shirts. So whole = 12 × 18 = 216."
+    },
+    {
+      "question": "There are an equal number of fiction and non-fiction books at first. After 2/5 of the fiction and 1/4 of the non-fiction books are left, there are 21 more fiction books than non-fiction. How many fiction books were there at first?",
+      "options": [
+        "120",
+        "130",
+        "140",
+        "150"
+      ],
+      "correct": 2,
+      "points": 15,
+      "explanation": "Fiction left = 2/5, non-fiction left = 1/4. Difference = 2/5 – 1/4 = 3/20. 3/20 equals 21 books. So 1/20 = 7. Fiction = 20 × 7 = 140."
+    },
+    {
+      "question": "Amy bought an equal number of pencil cases and pencils. She gave 10 pencil cases and 40 pencils away. As a result, she now has 4 times as many pencil cases as pencils. How many pencil cases did she buy at first?",
+      "options": [
+        "40",
+        "45",
+        "50",
+        "55"
+      ],
+      "correct": 2,
+      "points": 15,
+      "explanation": "Imagine drawing bars. Cases left is 4 parts, pencils left is 1 part. Difference between them is 3 parts = 40 – 10 = 30. So 1 part = 10. Cases left = 40. She gave 10 away, so at first = 40 + 10 = 50."
+    },
+    {
+      "question": "Tom has an equal number of UK and USA stamps. He gives 15 UK stamps and 45 USA stamps away. He now has 3 times as many UK stamps as USA stamps. How many UK stamps did he have at first?",
+      "options": [
+        "50",
+        "55",
+        "60",
+        "65"
+      ],
+      "correct": 2,
+      "points": 15,
+      "explanation": "UK left is 3 parts, USA left is 1 part. Difference = 2 parts = 45 – 15 = 30. So 1 part = 15. UK left = 45. He gave 15 away, so at first = 45 + 15 = 60."
+    },
+    {
+      "question": "There are an equal number of red and blue beads. She uses 20 red beads and 50 blue beads to make a necklace. She now has 2 times as many red beads as blue beads. How many red beads did she have at first?",
+      "options": [
+        "60",
+        "70",
+        "80",
+        "90"
+      ],
+      "correct": 2,
+      "points": 15,
+      "explanation": "Red left is 2 parts, blue left is 1 part. Difference = 1 part = 50 – 20 = 30. Red left = 60. She used 20, so at first = 60 + 20 = 80."
+    },
+    {
+      "question": "There are an equal number of boys and girls at first. After 3/4 of the boys and 1/3 of the girls left the room, there are 30 more girls than boys. How many students were in the room at first?",
+      "options": [
+        "120",
+        "144",
+        "160",
+        "180"
+      ],
+      "correct": 1,
+      "points": 15,
+      "explanation": "Boys left = 1/4, girls left = 2/3. Difference = 2/3 – 1/4 = 5/12. 5/12 equals 30 girls. So 1/12 = 6. Each side = 12 × 6 = 72. Total = 72 × 2 = 144."
+    },
+    {
+      "question": "There are an equal number of red and blue pens at first. After selling 2/5 of the red pens and 3/4 of the blue pens, there are 35 more red pens left than blue pens. How many red pens were there at first?",
+      "options": [
+        "80",
+        "90",
+        "100",
+        "120"
+      ],
+      "correct": 2,
+      "points": 15,
+      "explanation": "Red left = 3/5, blue left = 1/4. Difference = 3/5 – 1/4 = 7/20. 7/20 equals 35 pens. So 1/20 = 5. Red pens = 20 × 5 = 100."
+    },
+    {
+      "question": "Rachel has 80 oranges and apples at first. After she ate 10 oranges and 20 apples, 3/5 of the fruits left are apples. How many apples did Rachel have at first?",
+      "options": [
+        "40",
+        "45",
+        "50",
+        "55"
+      ],
+      "correct": 2,
+      "points": 15,
+      "explanation": "Fruits left = 80 – 10 – 20 = 50. Apples left = 3/5 of 50 = 30. She ate 20 apples, so at first = 30 + 20 = 50."
+    },
+    {
+      "question": "A bag contains 90 marbles, some red and some blue. After 20 red and 10 blue marbles are lost, 2/3 of the marbles left are red. How many red marbles were there at first?",
+      "options": [
+        "50",
+        "55",
+        "60",
+        "65"
+      ],
+      "correct": 2,
+      "points": 15,
+      "explanation": "Marbles left = 90 – 20 – 10 = 60. Red left = 2/3 of 60 = 40. Red at first = 40 + 20 = 60."
+    },
+    {
+      "question": "A jar has 100 sweets, some chocolate and some strawberry. After 30 chocolate and 20 strawberry sweets are eaten, 1/2 of the sweets left are strawberry. How many strawberry sweets were there at first?",
+      "options": [
+        "40",
+        "45",
+        "50",
+        "55"
+      ],
+      "correct": 1,
+      "points": 15,
+      "explanation": "Sweets left = 100 – 30 – 20 = 50. Strawberry left = 1/2 of 50 = 25. Strawberry at first = 25 + 20 = 45."
+    },
+    {
+      "question": "A class of 120 students has some boys and girls. 30 boys and 40 girls wear glasses. Of those without glasses, 2/5 are girls. How many girls are there in total?",
+      "options": [
+        "50",
+        "55",
+        "60",
+        "65"
+      ],
+      "correct": 2,
+      "points": 15,
+      "explanation": "Without glasses = 120 – 30 – 40 = 50. Girls without glasses = 2/5 of 50 = 20. Total girls = 20 + 40 = 60."
+    },
+    {
+      "question": "A salesman sold 2/3 of his stock on Monday and 1/4 of the remaining stock on Tuesday. He had 15 items left. How many items did he have at first?",
+      "options": [
+        "40",
+        "50",
+        "60",
+        "70"
+      ],
+      "correct": 2,
+      "points": 15,
+      "explanation": "After Monday, 1/3 left. Tuesday sold 1/4 of that, so left 3/4 of 1/3 = 1/4 of original. 1/4 equals 15 items. Whole = 4 × 15 = 60."
+    },
+    {
+      "question": "A student read 2/5 of a book on Day 1, and 1/3 of the remaining pages on Day 2. He had 40 pages left. How many pages does the book have?",
+      "options": [
+        "80",
+        "90",
+        "100",
+        "120"
+      ],
+      "correct": 2,
+      "points": 15,
+      "explanation": "After Day 1, 3/5 left. Day 2 read 1/3 of that, so left 2/3 of 3/5 = 2/5 of book. 2/5 equals 40 pages. So 1/5 = 20, whole = 100."
+    },
+    {
+      "question": "A school has 240 students. 5/8 of them are girls. How many more girls than boys are there?",
+      "options": [
+        "40",
+        "50",
+        "60",
+        "70"
+      ],
+      "correct": 2,
+      "points": 15,
+      "explanation": "Girls = 5/8, boys = 3/8. Difference = 2/8 = 1/4. 1/4 of 240 = 60 more girls."
+    },
+    {
+      "question": "There are an equal number of red and blue marbles. After 1/2 of the red marbles and 1/3 of the blue marbles are taken, there are 15 more red marbles left than blue marbles. How many marbles are there in total?",
+      "options": [
+        "150",
+        "160",
+        "180",
+        "200"
+      ],
+      "correct": 2,
+      "points": 15,
+      "explanation": "Red left = 1/2, blue left = 2/3. Difference = 2/3 – 1/2 = 1/6. 1/6 equals 15 marbles. So 1/6 = 15 → each side = 6 × 15 = 90. Total = 90 × 2 = 180."
+    }
+  ]
+}
