@@ -1,0 +1,371 @@
+{
+  "title": "Adaptations: Survival Strategies (Data Analysis)",
+  "topic": "Adaptations",
+  "subject": "Science",
+  "level": "Primary",
+  "grade": "P6",
+  "chapter": "Adaptations",
+  "worksheet": 1,
+  "questions": [
+    {
+      "question": "A student observes a plant in a desert. It has a thick, waxy stem and small needle-like leaves. Data shows the plant loses very little water even on hot days. What does this observation suggest?",
+      "options": [
+        "The plant photosynthesizes at night to avoid the heat",
+        "The waxy stem and needles are structural adaptations to reduce water loss",
+        "The needles are for defense, not water saving",
+        "The plant prefers high-temperature environments"
+      ],
+      "correct": 1,
+      "points": 10,
+      "explanation": "The small surface area (needles) and waxy covering directly correlate with lower water loss, proving these are structural adaptations for the dry environment."
+    },
+    {
+      "question": "An experiment measures the activity of an animal over 24 hours. The data shows it is inactive from 8:00 AM to 6:00 PM and highly active from 8:00 PM to 4:00 AM. What is the most logical conclusion?",
+      "options": [
+        "The animal is a producer",
+        "The animal is nocturnal and avoids high temperatures or predators",
+        "The animal is a diurnal hunter",
+        "The animal is hibernating"
+      ],
+      "correct": 1,
+      "points": 10,
+      "explanation": "The data shows a distinct behavioral pattern of being active only at night, which is a behavioral adaptation known as being nocturnal."
+    },
+    {
+      "question": "Two birds of the same species are observed. Bird A lives in a lake with strong currents; Bird B lives in a pond with stagnant water. Bird A has much larger, webbed feet than Bird B. What can you infer?",
+      "options": [
+        "Bird B is younger than Bird A",
+        "Bird A's feet are a structural adaptation to help it paddle against the current",
+        "Bird A eats fish while Bird B eats weeds",
+        "The size of the feet is unrelated to the environment"
+      ],
+      "correct": 1,
+      "points": 10,
+      "explanation": "The difference in foot structure corresponds to the different environmental demands (strong current vs. still water), showing an adaptation for movement."
+    },
+    {
+      "question": "A fish is caught in a deep ocean zone where there is zero sunlight. It has a large jaw and a glowing lure attached to its head. How does this lure help it survive?",
+      "options": [
+        "To help it swim faster",
+        "To attract prey in the darkness of the deep ocean",
+        "To heat up the cold water",
+        "To warn predators of its size"
+      ],
+      "correct": 1,
+      "points": 10,
+      "explanation": "In an environment with no light, having a glowing appendage is a structural adaptation specifically used to lure prey toward the mouth."
+    },
+    {
+      "question": "Data shows that squirrels store nuts during autumn but do not do so in summer. What type of adaptation is this?",
+      "options": [
+        "Behavioral adaptation, because it is an action taken to survive seasonal changes",
+        "Structural adaptation, because it involves moving objects",
+        "Structural adaptation, because it involves the squirrel's body",
+        "No adaptation, just a learned habit"
+      ],
+      "correct": 0,
+      "points": 10,
+      "explanation": "Storing food is an action (a behavior) performed in response to the changing environment, making it a behavioral adaptation."
+    },
+    {
+      "question": "A desert fox has very large ears, while a snow fox of the same size has small, thick ears. What can you analyze from this?",
+      "options": [
+        "The desert fox needs larger ears to hear better in the sand",
+        "Large ears help the desert fox lose heat at a higher rate; small ears help the snow fox lose heat at a lower rate",
+        "The snow fox has smaller ears because it is younger",
+        "The snow fox's ears are thick because it is cold"
+      ],
+      "correct": 1,
+      "points": 10,
+      "explanation": "Large surface areas (ears) allow for more heat loss in hot climates, while smaller, insulated ears conserve body heat in cold climates."
+    },
+    {
+      "question": "Observations of a forest canopy show that many trees have large, broad leaves at the top, but fewer at the bottom. Why?",
+      "options": [
+        "Broad leaves at the top maximize sunlight absorption for photosynthesis",
+        "Trees at the bottom are sick",
+        "The wind blows the leaves off the bottom trees",
+        "Animals only eat leaves at the bottom"
+      ],
+      "correct": 0,
+      "points": 10,
+      "explanation": "Broad leaves are a structural adaptation to capture maximum sunlight, which is most available at the top of the canopy."
+    },
+    {
+      "question": "A group of animals is observed huddling together in a circle during a blizzard. What is the benefit of this behavior?",
+      "options": [
+        "They are minimizing exposed surface area to reduce heat loss",
+        "They are playing",
+        "They are hiding from predators",
+        "They are trying to block the wind for each other"
+      ],
+      "correct": 0,
+      "points": 10,
+      "explanation": "Huddling reduces the amount of body surface area exposed to the freezing air, which is a behavioral adaptation to conserve body heat."
+    },
+    {
+      "question": "In a simulation, a stick insect is placed on a green leaf and a brown twig. It is eaten by birds when on the leaf but survives on the twig. What is the adaptation?",
+      "options": [
+        "The insect is actually a plant",
+        "The insect uses mimicry that help it camouflage to blend into the twig",
+        "The insect has no adaptation",
+        "The birds are color-blind"
+      ],
+      "correct": 1,
+      "points": 10,
+      "explanation": "The insect's physical form (structural) allows it to blend into its surroundings, providing a survival advantage."
+    },
+    {
+      "question": "A certain flower opens its petals only during the day and closes them at night. What is the most likely reason?",
+      "options": [
+        "To protect its pollen from nocturnal insects",
+        "To save energy by not growing at night",
+        "To prevent water loss at night",
+        "To avoid the moon's light"
+      ],
+      "correct": 0,
+      "points": 10,
+      "explanation": "This behavior is synchronized with the activity times of its specific pollinators, which are active during the day."
+    },
+    {
+      "question": "Some plants in a rainforest grow on top of taller trees to reach sunlight. This is an example of what?",
+      "options": [
+        "Structural adaptation to reach light resources",
+        "Behavioral adaptation where the plant climbs",
+        "A parasite living on a host",
+        "A way to get more water from the air"
+      ],
+      "correct": 0,
+      "points": 10,
+      "explanation": "Growing on other plants is a structural/positional adaptation that allows the plant to access sunlight in a dense forest."
+    },
+    {
+      "question": "Data shows that male peacocks have large, colorful tails. When a predator approaches, they often shake these tails. What is the primary purpose?",
+      "options": [
+        "To distract or startle the predator",
+        "To fly away",
+        "To camouflage with the grass",
+        "To absorb sunlight"
+      ],
+      "correct": 0,
+      "points": 10,
+      "explanation": "Shaking the large, colorful feathers is a behavioral adaptation used to startle or confuse a predator."
+    },
+    {
+      "question": "If an animal has sharp, curved claws, what can you infer about its diet?",
+      "options": [
+        "It likely eats nectar",
+        "It likely eats tough grass",
+        "It likely hunts and grasps prey",
+        "It is a scavenger that eats soft fruits"
+      ],
+      "correct": 2,
+      "points": 10,
+      "explanation": "Curved claws are structural adaptations used for gripping and holding struggling prey."
+    },
+    {
+      "question": "A fish is observed constantly swimming against a river current. If it stops, it is swept away. What does this suggest?",
+      "options": [
+        "It has a behavioral adaptation to stay in high-oxygen areas",
+        "It is weak and cannot swim",
+        "It prefers to die",
+        "The river is too shallow"
+      ],
+      "correct": 0,
+      "points": 10,
+      "explanation": "Staying in flowing water often provides more oxygen and food, requiring behavioral persistence."
+    },
+    {
+      "question": "Many cacti have shallow, widespread roots. What environmental challenge does this structure solve?",
+      "options": [
+        "The need to anchor the plant in deep soil",
+        "The need to absorb quickly occurring, light rainfall",
+        "The need to reach deep groundwater",
+        "The need to defend against desert animals"
+      ],
+      "correct": 1,
+      "points": 10,
+      "explanation": "Shallow, widespread roots allow the plant to absorb water quickly from the surface before it evaporates in the desert heat."
+    },
+    {
+      "question": "Some animals hibernate during winter. What data would best support that this is an adaptation for survival?",
+      "options": [
+        "Observation that they build homes",
+        "Observation that they gain weight before winter and have low heart rates during",
+        "Observation that they migrate to warmer climates",
+        "Observation that they die if they don't sleep"
+      ],
+      "correct": 1,
+      "points": 10,
+      "explanation": "Weight gain is for energy storage, and low heart rate is to reduce energy expenditure, proving it's an adaptation to survive food scarcity."
+    },
+    {
+      "question": "A sea urchin has long, sharp spines. How does this aid survival?",
+      "options": [
+        "It acts as a physical defense against predators",
+        "It helps it capture light for food",
+        "It helps it swim",
+        "It helps it hold onto rocks"
+      ],
+      "correct": 0,
+      "points": 10,
+      "explanation": "Sharp spines are a structural adaptation providing protection against being eaten by predators."
+    },
+    {
+      "question": "Why do schools of fish swim in a tight formation?",
+      "options": [
+        "To look like one large organism and confuse predators",
+        "To save energy by swimming in a line",
+        "To keep the water warm",
+        "To share food more easily"
+      ],
+      "correct": 0,
+      "points": 10,
+      "explanation": "Swimming in a formation is a behavioral adaptation that makes the group look like a single, large entity, deterring predators."
+    },
+    {
+      "question": "A bird living on an island with only hard nuts has a thick, short, and strong beak. What can you analyze?",
+      "options": [
+        "The bird chose this beak through training",
+        "The beak is a structural adaptation for crushing hard food",
+        "The beak changes shape when the bird is hungry",
+        "The bird is unrelated to its environment"
+      ],
+      "correct": 1,
+      "points": 10,
+      "explanation": "A thick, strong beak is a structural adaptation for the specific task of breaking open hard shells."
+    },
+    {
+      "question": "Which of these is a behavioral adaptation used by animals to deal with extreme heat?",
+      "options": [
+        "Digging burrows to sleep in during the day",
+        "Having thick fur",
+        "Having long legs",
+        "Having white fur to reflect light"
+      ],
+      "correct": 0,
+      "points": 10,
+      "explanation": "Digging a burrow is an action (behavior) taken to escape harsh conditions; the others are structural traits."
+    },
+    {
+      "question": "A plant has large, flat, floating leaves. What environment is it most likely from?",
+      "options": [
+        "A windy grassland",
+        "A rocky mountain",
+        "A pond with still water",
+        "A desert"
+      ],
+      "correct": 2,
+      "points": 10,
+      "explanation": "Large, flat floating leaves are structural adaptations to maximize sunlight exposure on the surface of a pond."
+    },
+    {
+      "question": "Animals that live in the Arctic often have small ears and short tails. Why?",
+      "options": [
+        "To run faster on ice",
+        "To reduce surface area and lose less body heat",
+        "To grow faster",
+        "To hide from polar bears"
+      ],
+      "correct": 1,
+      "points": 10,
+      "explanation": "Reducing surface area is a structural adaptation that helps minimize heat loss in freezing temperatures."
+    },
+    {
+      "question": "Migration is a behavioral adaptation. What data would confirm a species is migratory?",
+      "options": [
+        "They sleep for six months",
+        "They travel long distances between feeding and breeding grounds seasonally",
+        "They are seen in the same forest all year",
+        "They eat only one type of plant"
+      ],
+      "correct": 1,
+      "points": 10,
+      "explanation": "Seasonal movement to different locations is the definition of migration, an adaptation to seasonal changes in resources."
+    },
+    {
+      "question": "Why do some insects have bright, warning colors such as monarch butterflies?",
+      "options": [
+        "To warn predators that they are poisonous or bad-tasting",
+        "To attract a mate",
+        "To blend in with flowers",
+        "To absorb more heat"
+      ],
+      "correct": 0,
+      "points": 10,
+      "explanation": "Bright colors in this context are a structural adaptation to signal danger, causing predators to avoid eating them."
+    },
+    {
+      "question": "An animal has webbed feet but lives on land. Why might this be disadvantageous?",
+      "options": [
+        "It will be too visible to predators",
+        "It will get too cold",
+        "It cannot run fast on hard ground",
+        "It will eat too much food"
+      ],
+      "correct": 2,
+      "points": 10,
+      "explanation": "Webbed feet are structurally adapted for swimming, not walking on land; therefore, they are inefficient for terrestrial locomotion."
+    },
+    {
+      "question": "Plants in a windy environment often have flexible stems. Why?",
+      "options": [
+        "To sway and attract bees",
+        "To avoid breaking under high wind pressure",
+        "To catch more rain",
+        "To grow taller"
+      ],
+      "correct": 1,
+      "points": 10,
+      "explanation": "Flexibility is a structural adaptation that prevents the stem from snapping during strong winds."
+    },
+    {
+      "question": "A fish changes its skin pattern to look exactly like the surrounding rocks. What is this?",
+      "options": [
+        "Camouflage (a structural adaptation)",
+        "Mimicry (a behavioral adaptation)",
+        "A random mutation",
+        "A way to warm up"
+      ],
+      "correct": 0,
+      "points": 10,
+      "explanation": "The ability to match the surroundings is a structural feature that provides camouflage."
+    },
+    {
+      "question": "Data shows a bird species uses a twig to pry insects out of tree bark. What kind of adaptation is this?",
+      "options": [
+        "Structural adaptation, because the beak is used",
+        "Behavioral adaptation, because the bird uses a tool",
+        "It is not an adaptation",
+        "Structural adaptation, because the claws are used"
+      ],
+      "correct": 1,
+      "points": 10,
+      "explanation": "Using a tool is an action or strategy (behavior) to obtain food, making it a behavioral adaptation."
+    },
+    {
+      "question": "A desert lizard performs 'push-ups' on hot sand. Why?",
+      "options": [
+        "To catch flies",
+        "To lift its body off the hot surface and reduce heat absorption",
+        "To exercise",
+        "To look scary to predators"
+      ],
+      "correct": 1,
+      "points": 10,
+      "explanation": "This behavior limits the contact area with the hot sand, reducing heat conduction into the lizard's body."
+    },
+    {
+      "question": "Why do some trees drop their leaves in autumn?",
+      "options": [
+        "To grow new branches",
+        "To save energy and reduce water loss during the cold season",
+        "To feed the insects on the ground",
+        "To become lighter"
+      ],
+      "correct": 1,
+      "points": 10,
+      "explanation": "Dropping leaves is a behavioral adaptation to survive the cold, dry winter when photosynthesis is less efficient."
+    }
+  ]
+}
