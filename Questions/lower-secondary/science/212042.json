@@ -1,0 +1,299 @@
+{
+  "title": "Ecosystems Worksheet 2: Energy Flow, Nutrient Cycling, and Adaptations",
+  "topic": "Energy Transfer and Organism Adaptations",
+  "subject": "Science",
+  "level": "Secondary",
+  "grade": "Sec 2",
+  "chapter": "Ecosystems",
+  "worksheet": 2,
+  "questions": [
+    {
+      "question": "Which statement correctly highlights the fundamental difference between how energy and chemical nutrients move through an ecosystem?",
+      "options": [
+        "Energy cycles continuously, while nutrients flow in a one-way path.",
+        "Both energy and nutrients cycle continuously without being lost.",
+        "Energy flows in a non-cyclical, one-directional path, while nutrients are recycled continuously.",
+        "Both energy and nutrients follow a strict one-way path from consumers to producers."
+      ],
+      "correct": 2,
+      "points": 1,
+      "explanation": "Energy enters from the Sun, flows through organisms, is lost as heat, and never cycles back (one-way). Chemical nutrients are taken by plants, eaten by animals, broken down by decomposers, and returned to the soil to be reused (cyclical)."
+    },
+    {
+      "question": "What is the primary source of energy that sustains almost all natural food chains on Earth?",
+      "options": [
+        "The internal heat stored in the Earth's core",
+        "Light energy radiating from the Sun",
+        "Chemical energy produced by decomposers in the soil",
+        "Kinetic energy created by ocean tides and wind systems"
+      ],
+      "correct": 1,
+      "points": 1,
+      "explanation": "Solar energy provides the initial light energy that green plants capture during photosynthesis to kickstart energy input into nearly all ecosystems."
+    },
+    {
+      "question": "According to the ecological 10% rule, what happens when energy is transferred from one trophic level to the next?",
+      "options": [
+        "Approximately 10% of the energy is lost as heat, and 90% is stored by the consumer.",
+        "Exactly 10% of the energy is returned to the Sun, and 90% goes to decomposers.",
+        "Only about 10% of the available energy is passed on and incorporated into the next level, while roughly 90% is lost to the surroundings.",
+        "Energy multiplies by 10 times at every feeding step along a chain."
+      ],
+      "correct": 2,
+      "points": 1,
+      "explanation": "The 10% rule states that only about 10% of the energy available at one trophic level is successfully transferred and stored as tissue in the next level."
+    },
+    {
+      "question": "A patch of wild grass captures and converts sunlight into 40,000 Joules (J) of chemical energy stored in its tissues. If a swarm of grasshoppers grazes on this grass, approximately how many Joules of energy will be incorporated into the bodies of these grasshoppers?",
+      "options": [
+        "40,000 J",
+        "4,000 J",
+        "400 J",
+        "40 J"
+      ],
+      "correct": 1,
+      "points": 1,
+      "explanation": "Applying the 10% rule: 10% of 40,000 J = 0.10 * 40,000 = 4,000 J of energy is passed to the primary consumers (grasshoppers)."
+    },
+    {
+      "question": "Consider this food chain: \n`Algae -> Tadpole -> Small Fish -> Kingfisher` \nIf the Small Fish population contains 1,500 J of available energy, how much energy is expected to be transferred into the bodies of the Kingfisher birds?",
+      "options": [
+        "15,000 J",
+        "1,500 J",
+        "150 J",
+        "15 J"
+      ],
+      "correct": 2,
+      "points": 1,
+      "explanation": "The Kingfisher is one step above the Small Fish. Based on the 10% rule, it receives 10% of the small fish's energy: 10% of 1,500 J = 150 J."
+    },
+    {
+      "question": "A caterpillar chews on leaves and ingests 3,000 J of chemical energy. It passes out 1,800 J in its undigested feces and releases 900 J as heat during cellular respiration. How much energy remains available in the caterpillar's body tissues to be passed on to a bird predator?",
+      "options": [
+        "2,700 J",
+        "1,200 J",
+        "300 J",
+        "100 J"
+      ],
+      "correct": 2,
+      "points": 1,
+      "explanation": "Energy retained for growth = Total energy ingested - (Energy lost in waste + Energy lost via respiration). 3,000 J - (1,800 J + 900 J) = 3,000 J - 2,700 J = 300 J."
+    },
+    {
+      "question": "Why do food chains rarely contain more than 4 or 5 organisms?",
+      "options": [
+        "Organisms at higher levels run out of physical space to hide.",
+        "Top predators live too long and do not need to eat frequently.",
+        "The continuous 90% loss of energy at each step leaves too little energy to support another population level.",
+        "Decomposers eliminate higher consumers before they can be hunted."
+      ],
+      "correct": 2,
+      "points": 1,
+      "explanation": "Because energy drops significantly (by ~90%) at each consecutive step, the energy trickles down to a minimal amount by the 4th or 5th level, making it insufficient to sustain another group of consumers."
+    },
+    {
+      "question": "Which biological process is responsible for the largest loss of energy as HEAT from an animal's body into the environment?",
+      "options": [
+        "Photosynthesis",
+        "Cellular Respiration",
+        "Decomposition",
+        "Egestion of feces"
+      ],
+      "correct": 1,
+      "points": 1,
+      "explanation": "Cellular respiration breaks down glucose to release energy for life processes. This conversion is not perfectly efficient, and a significant portion is lost to the surroundings as heat."
+    },
+    {
+      "question": "Which of the following does NOT count as a way energy is lost or made unavailable between an organism and its consumer?",
+      "options": [
+        "Energy trapped inside bones, teeth, and fur that the predator leaves behind.",
+        "Energy lost in feces because the consumer cannot digest the cell walls.",
+        "Energy stored as sugars within flesh or roots that are successfully eaten.",
+        "Energy released as body heat during active movement."
+      ],
+      "correct": 2,
+      "points": 1,
+      "explanation": "Energy stored as sugars in parts that are successfully eaten represents energy that is *transferred* to the consumer, not lost."
+    },
+    {
+      "question": "What is the primary ecological service performed by decomposers like bacteria and fungi?",
+      "options": [
+        "They capture solar rays to manufacture new starches for animals.",
+        "They break down dead organisms and organic wastes, returning essential mineral nutrients to the soil.",
+        "They trap heat energy within the soil to keep plant roots warm at night.",
+        "They hunt weak primary consumers to regulate the population."
+      ],
+      "correct": 1,
+      "points": 1,
+      "explanation": "Decomposers break down complex organic matter from dead organisms into simple inorganic minerals, recycling them back into the environment for producers to reuse."
+    },
+    {
+      "question": "If a disease completely wipes out all soil bacteria and fungi in a forest, what will be the long-term consequence for the trees?",
+      "options": [
+        "Trees will grow faster because there are no microbes attacking them.",
+        "The trees will eventually die or stunt in growth because the soil will run out of recycled mineral nutrients.",
+        "Trees will take over the role of bacteria and absorb dead leaves directly through their bark.",
+        "There will be no impact because trees rely exclusively on sunlight and water."
+      ],
+      "correct": 1,
+      "points": 1,
+      "explanation": "Without decomposers, nutrients remain locked inside dead organic matter. The nutrient cycle breaks down, leaving the soil depleted of minerals essential for plant growth."
+    },
+    {
+      "question": "How do structural adaptations differ from behavioural adaptations?",
+      "options": [
+        "Structural adaptations are physical features of an organism's body, while behavioural adaptations are actions or choices the organism carries out.",
+        "Structural adaptations can change in seconds, whereas behavioural adaptations take millions of years.",
+        "Structural adaptations apply only to plants, while behavioural adaptations apply only to mammals.",
+        "Structural adaptations are learned, whereas behavioural adaptations are purely inherited anatomy."
+      ],
+      "correct": 0,
+      "points": 1,
+      "explanation": "Structural adaptations involve physical body parts (e.g., camel humps, sharp talons). Behavioral adaptations are actions or behaviors organisms perform to survive (e.g., nocturnal lifestyle, burrowing)."
+    },
+    {
+      "question": "An arctic fox develops a thick coat of white fur during winter to trap body heat and blend into the snow. What type of adaptation is this?",
+      "options": [
+        "Behavioural adaptation",
+        "Structural adaptation",
+        "Climatic choice",
+        "Nutrient adaptation"
+      ],
+      "correct": 1,
+      "points": 1,
+      "explanation": "The thickness and color of the fur are physical, anatomical traits of the animal's body, classifying it as a structural adaptation."
+    },
+    {
+      "question": "Desert scorpions spend the blazing hot daylight hours deep inside cool underground burrows and emerge to hunt only at night. This is an example of a/an __________.",
+      "options": [
+        "structural adaptation",
+        "behavioural adaptation",
+        "abiotic adaptation",
+        "chemical structure"
+      ],
+      "correct": 1,
+      "points": 1,
+      "explanation": "Choosing to hide in a burrow during the day and hunt at night is an active behavior or habit, making it a behavioral adaptation."
+    },
+    {
+      "question": "A desert cactus has leaves that are modified into sharp, narrow spines. How does this feature help it survive?",
+      "options": [
+        "Spines allow the cactus to absorb moisture directly from desert winds.",
+        "Spines reduce surface area, minimizing the amount of water lost through transpiration.",
+        "Spines increase photosynthesis rates in low light.",
+        "Spines attract insects to provide the plant with alternative energy."
+      ],
+      "correct": 1,
+      "points": 1,
+      "explanation": "Modified spines drastically reduce the surface area exposed to dry air compared to broad leaves, which helps cut down water loss through transpiration."
+    },
+    {
+      "question": "Consider this simple food web: \n`Grass -> Wild Rabbit -> Leopard` \nIf a highly contagious virus completely eliminates the Wild Rabbit population, what short-term changes would be expected in the other populations?",
+      "options": [
+        "The Grass population will decrease; the Leopard population will increase.",
+        "The Grass population will increase; the Leopard population will decrease.",
+        "Both Grass and Leopard populations will increase rapidly.",
+        "The Grass population will stay the same; leopards will start eating grass."
+      ],
+      "correct": 1,
+      "points": 1,
+      "explanation": "Without rabbits to graze on it, the grass population will increase. Without rabbits as their food source, leopards will face starvation and their numbers will drop."
+    },
+    {
+      "question": "Study this food web:\n- Leafy Plants -> Aphid Insects -> Spiders -> Small Birds\n- Leafy Plants -> Caterpillars -> Small Birds\n\nIf an invasive pest species kills off all the Spiders, what is the immediate expected effect on the Aphid Insect population?",
+      "options": [
+        "The Aphid population will decrease because spiders are no longer protecting them.",
+        "The Aphid population will increase because one of their direct predators has been removed.",
+        "The Aphid population will turn into caterpillars to compensate.",
+        "There will be no effect because aphids only interact with leafy plants."
+      ],
+      "correct": 1,
+      "points": 1,
+      "explanation": "Spiders eat aphids. Removing spiders eliminates a major source of predation pressure on the aphids, leading to an initial rise in their population."
+    },
+    {
+      "question": "Why is the movement of energy through a food chain described as 'one-directional' or 'non-cyclical'?",
+      "options": [
+        "Energy can only travel from large apex predators down to tiny producers.",
+        "Energy lost as heat cannot be recaptured by plants or recycled back into the food chain.",
+        "Producers absorb energy from consumers at night when there is no sun.",
+        "Decomposers turn heat energy back into light energy to reuse."
+      ],
+      "correct": 1,
+      "points": 1,
+      "explanation": "Once chemical energy is converted into heat during respiration and radiated out into the environment, organisms cannot convert it back into chemical energy. It is lost from the system forever."
+    },
+    {
+      "question": "A research group measures the total energy stored in the tissues of organisms across a stable food chain. Which sequence demonstrates the correct trend in available energy values?",
+      "options": [
+        "Producer: 80 J -> Primary Consumer: 800 J -> Secondary Consumer: 8,000 J",
+        "Producer: 6,500 J -> Primary Consumer: 650 J -> Secondary Consumer: 65 J",
+        "Producer: 500 J -> Primary Consumer: 500 J -> Secondary Consumer: 500 J",
+        "Producer: 12 J -> Primary Consumer: 120 J -> Secondary Consumer: 1,200 J"
+      ],
+      "correct": 1,
+      "points": 1,
+      "explanation": "Due to continuous energy loss at each step, available energy must decrease significantly as you move up the food chain. Only the second option reflects this steady decline."
+    },
+    {
+      "question": "Which of the following describes an animal using a behavioural adaptation to escape freezing winter temperatures?",
+      "options": [
+        "Growing a thick layer of insulating fat beneath the skin.",
+        "Migrating long distances to warmer southern regions.",
+        "Shedding dark fur to reveal a white undercoat.",
+        "Developing smaller appendages like ears to reduce heat loss."
+      ],
+      "correct": 1,
+      "points": 1,
+      "explanation": "Migration is an active behavioral response to changing seasons. The other options describe structural changes to the animal's physical body."
+    },
+    {
+      "question": "A type of small bird builds its nests inside the thorny canopy of a specific acacia tree species. The thorns protect the bird's chicks from tree snakes. If a plant disease wipes out all the acacia trees in the habitat, what is the likely impact on the bird population?",
+      "options": [
+        "The birds will instantly grow thorns on their own wings.",
+        "The bird population will likely drop because their eggs and chicks will be heavily preyed upon by snakes.",
+        "The bird population will double because they will migrate to a habitat without snakes.",
+        "The birds will stop laying eggs until new trees grow back."
+      ],
+      "correct": 1,
+      "points": 1,
+      "explanation": "Losing their protected nesting grounds exposes the birds' vulnerable offspring to snakes, which increases predation and causes the bird population to decline over time."
+    },
+    {
+      "question": "An eagle catches and consumes a mouse. If the mouse had stored 250 J of energy in its muscles and tissues, why does the eagle only gain about 25 J of energy from eating it?",
+      "options": [
+        "The eagle lacks the digestive chemicals needed to process 90% of mouse meat.",
+        "The mouse expended most of its energy on running, heat regulation, and respiration while it was alive.",
+        "Energy automatically evaporates from an animal's body the moment it is caught.",
+        "The eagle stores the remaining energy in the air around it."
+      ],
+      "correct": 1,
+      "points": 1,
+      "explanation": "Most of the energy the mouse consumed was already used up for its own daily metabolic activities (respiration, heat production, movement), leaving only about 10% stored in its tissues for the eagle."
+    },
+    {
+      "question": "Which statement best explains how decomposers contribute to nutrient cycling but NOT energy cycling?",
+      "options": [
+        "Decomposers release chemical energy back to the Sun, but lock nutrients in the ground.",
+        "Decomposers return essential minerals to the soil for plants to absorb, but the energy they extract from dead matter is released as heat and cannot be reused.",
+        "Decomposers turn minerals into light energy while using up 100% of soil nutrients.",
+        "Decomposers do not perform respiration and therefore do not lose energy."
+      ],
+      "correct": 1,
+      "points": 1,
+      "explanation": "Decomposers recycle matter by breaking down organic components into minerals for plants. However, the energy contained within that dead matter is released as heat during the decomposers' own respiration and is lost from the food web."
+    },
+    {
+      "question": "A student builds a completely sealed glass ecosphere containing aquatic plants, snails, water, and soil microbes. It is kept near a window. After several months, the system remains stable and balanced. What crucial role do the soil microbes play in keeping this closed ecosystem alive?",
+      "options": [
+        "They generate extra light energy for the plants inside the ecosphere.",
+        "They act as decomposers, recycling nutrients from dead organic waste back into the water for plant absorption.",
+        "They consume the snails to keep the snail population from growing out of control.",
+        "They produce water molecules to prevent the system from drying out."
+      ],
+      "correct": 1,
+      "points": 1,
+      "explanation": "The microbes decompose waste materials and dead matter from the plants and snails, converting them back into simple inorganic nutrients. This allows the plants to continue growing and sustaining the system."
+    }
+  ]
+}

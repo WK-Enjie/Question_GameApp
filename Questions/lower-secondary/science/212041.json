@@ -1,0 +1,299 @@
+{
+  "title": "Ecosystems Worksheet 1: Components, Interactions, and Abiotic Factors",
+  "topic": "Interactions within Ecosystems",
+  "subject": "Science",
+  "level": "Secondary",
+  "grade": "Sec 2",
+  "chapter": "Ecosystems",
+  "worksheet": 1,
+  "questions": [
+    {
+      "question": "Which of the following correctly describes a 'population' in an ecosystem?",
+      "options": [
+        "All the living things and non-living components interacting in an environment.",
+        "A group of organisms of the same species living together in a specific habitat at a given time.",
+        "Different species of plants and animals living and interacting within the same area.",
+        "The physical place where a particular organism grows, feeds, and reproduces."
+      ],
+      "correct": 1,
+      "points": 1,
+      "explanation": "A population is defined as a group of individuals belonging to the same species living in a specific geographical area or habitat at the same time."
+    },
+    {
+      "question": "A community is best defined as:",
+      "options": [
+        "A group of identical organisms living in an environment.",
+        "The physical surroundings, including rocks, water, and temperature conditions.",
+        "All the different populations of organisms living and interacting together in a specific habitat.",
+        "The movement of chemical nutrients through a biological food chain."
+      ],
+      "correct": 2,
+      "points": 1,
+      "explanation": "A community consists of all the living populations (plants, animals, microbes) that live and interact with one another in a particular habitat."
+    },
+    {
+      "question": "Which of the following represents an entire 'ecosystem'?",
+      "options": [
+        "A single species of freshwater fish swimming in a stream.",
+        "All the frogs, insects, and floating weeds found living inside a pond.",
+        "A tropical rainforest community interacting with its physical environment like soil, water, and sunlight.",
+        "The temperature, rainfall, and humidity levels recorded in a desert over one year."
+      ],
+      "correct": 2,
+      "points": 1,
+      "explanation": "An ecosystem consists of a biological community (biotic factors) interacting closely with its non-living physical environment (abiotic factors)."
+    },
+    {
+      "question": "What is a 'habitat'?",
+      "options": [
+        "The role an organism plays within its food web.",
+        "The specific physical environment where an organism naturally lives and finds its basic needs.",
+        "The total count of all predators living in a forest.",
+        "The process of plants manufacturing chemical food using solar energy."
+      ],
+      "correct": 1,
+      "points": 1,
+      "explanation": "A habitat is simply the physical place or locality where an organism lives, which provides it with food, water, and shelter."
+    },
+    {
+      "question": "Why are green plants referred to as 'producers' in an ecosystem?",
+      "options": [
+        "They break down dead matter to produce rich soil nutrients.",
+        "They make their own food through photosynthesis using light energy, water, and carbon dioxide.",
+        "They produce oxygen gas for themselves and do not require any external energy.",
+        "They consume smaller plant-eating insects to get vitamins."
+      ],
+      "correct": 1,
+      "points": 1,
+      "explanation": "Producers are autotrophs; they convert light energy into chemical energy (glucose) via photosynthesis, producing food for the rest of the ecosystem."
+    },
+    {
+      "question": "An organism that cannot synthesize its own food and must feed on other organisms to obtain energy is called a:",
+      "options": [
+        "Producer",
+        "Abiotic component",
+        "Consumer",
+        "Decomposer"
+      ],
+      "correct": 2,
+      "points": 1,
+      "explanation": "Consumers are heterotrophs. They cannot make their own food and must ingest other plants or animals to acquire energy and building blocks."
+    },
+    {
+      "question": "Which of the following contains ONLY physical (abiotic) factors of an ecosystem?",
+      "options": [
+        "Light intensity, soil pH, temperature, and dissolved oxygen",
+        "Fungi, earthworms, water availability, and decaying logs",
+        "Bacteria, predators, humidity, and mineral salts",
+        "Wind speed, floating algae, water temperature, and fish populations"
+      ],
+      "correct": 0,
+      "points": 1,
+      "explanation": "Abiotic factors are non-living chemical and physical parts of the environment. Light, pH, temperature, and oxygen are entirely non-living environmental factors."
+    },
+    {
+      "question": "Which of the following is considered a biological (biotic) factor that can directly limit the growth of a plant population?",
+      "options": [
+        "An unexpected drop in weekly rainfall.",
+        "An infestation of herbivorous caterpillars chewing on the leaves.",
+        "The lack of dissolved nitrate minerals in the soil.",
+        "Low light intensity caused by heavy cloud cover."
+      ],
+      "correct": 1,
+      "points": 1,
+      "explanation": "Caterpillars are living organisms acting as herbivores. Their feeding behavior is a biotic factor. The other choices represent physical or chemical abiotic conditions."
+    },
+    {
+      "question": "An experiment tests the survival of four aquatic species (A, B, C, and D) in water tanks with different pH settings. The lowest pH value at which each species can survive is recorded below:\n- Species A: pH 6.2\n- Species B: pH 4.0\n- Species C: pH 5.5\n- Species D: pH 3.2\n\nWhich species is the MOST tolerant to highly acidic water?",
+      "options": [
+        "Species A",
+        "Species B",
+        "Species C",
+        "Species D"
+      ],
+      "correct": 3,
+      "points": 1,
+      "explanation": "A lower pH value represents a more acidic environment. Since Species D can survive down to a very low pH of 3.2, it is the most tolerant to acidic conditions."
+    },
+    {
+      "question": "A study on a species of freshwater snail revealed the following population behaviors across different water pH values:\n- pH 3.5 - 4.5: All snails die within 24 hours.\n- pH 5.0 - 5.5: Snails survive but display zero reproduction.\n- pH 6.5 - 7.5: Snails reproduce rapidly and the population triples.\n- pH 8.5 - 9.0: Snails survive but their numbers steadily drop due to low hatching rates.\n\nBased on this data, what is the 'thriving zone' for this snail population?",
+      "options": [
+        "pH 3.5 - 4.5",
+        "pH 5.0 - 5.5",
+        "pH 6.5 - 7.5",
+        "pH 8.5 - 9.0"
+      ],
+      "correct": 2,
+      "points": 1,
+      "explanation": "An organism 'thrives' in an environmental range where it can actively grow and reproduce successfully, which occurs in the pH 6.5 - 7.5 range."
+    },
+    {
+      "question": "Why do floating microscopic plants (phytoplankton) thrive mostly in the upper layers of an ocean compared to the deep sea floor?",
+      "options": [
+        "The deep sea floor has too much dissolved oxygen gas.",
+        "Water pressure at the surface is high enough to stimulate plant growth.",
+        "Light intensity is highest at the surface, allowing them to perform photosynthesis.",
+        "Surface waters are completely free of any consumer organisms."
+      ],
+      "correct": 2,
+      "points": 1,
+      "explanation": "Phytoplankton are producers that need light to photosynthesize. Because light intensity decreases rapidly with ocean depth, they are restricted to the illuminated surface layers."
+    },
+    {
+      "question": "During a massive dry spell, the dissolved oxygen level in a slow-moving river drops significantly. How does this change affect the fish population?",
+      "options": [
+        "Fish populations will increase because they switch to breathing carbon dioxide.",
+        "Fish will suffer from suffocation and die because they lack oxygen for cellular respiration.",
+        "Fish will grow thicker scales to extract oxygen directly from air pockets.",
+        "The fish will become producers to cope with the lack of dissolved oxygen."
+      ],
+      "correct": 1,
+      "points": 1,
+      "explanation": "Fish require dissolved oxygen in water to carry out respiration. A severe drop in dissolved oxygen leads to respiratory distress and widespread mortality."
+    },
+    {
+      "question": "A student looks for woodlice in a school eco-garden. She finds dozens of them clustered underneath damp, rotting logs but notes they are completely absent from the open, dry concrete footpaths. Which pair of abiotic factors best explains this distribution?",
+      "options": [
+        "High light intensity and high wind speeds.",
+        "Low moisture levels and high temperature settings.",
+        "Low light intensity and high moisture levels.",
+        "High oxygen percentage and low organic salt content."
+      ],
+      "correct": 2,
+      "points": 1,
+      "explanation": "Woodlice are organisms prone to drying out. They prefer dark (low light intensity) and damp (high moisture) environments, which are provided under rotting logs."
+    },
+    {
+      "question": "Mangrove swamps are known for having waterlogged, mud-filled soils that are extremely poor in oxygen. This lack of oxygen is an example of an environmental constraint caused by a/an __________ factor.",
+      "options": [
+        "biotic",
+        "abiotic",
+        "biological",
+        "predatory"
+      ],
+      "correct": 1,
+      "points": 1,
+      "explanation": "The amount of dissolved oxygen gas in soil or water is a non-living, chemical property, which categorizes it as an abiotic factor."
+    },
+    {
+      "question": "Study this simple linear relationship: \n`Hibiscus leaf -> Caterpillar -> Bird` \nWhich organism functions as the 'primary consumer' in this line of feeding?",
+      "options": [
+        "Hibiscus leaf",
+        "Caterpillar",
+        "Bird",
+        "None of them"
+      ],
+      "correct": 1,
+      "points": 1,
+      "explanation": "The hibiscus leaf is the producer. The caterpillar is the primary consumer because it feeds directly on the producer (herbivore)."
+    },
+    {
+      "question": "Consider the food chain: \n`Pond Weeds -> Water Flea -> Beetle -> Frog -> Snake` \nWhich organism occupies the position of the 'tertiary consumer'?",
+      "options": [
+        "Water Flea",
+        "Beetle",
+        "Frog",
+        "Snake"
+      ],
+      "correct": 2,
+      "points": 1,
+      "explanation": "Pond Weeds = Producer; Water Flea = Primary Consumer; Beetle = Secondary Consumer; Frog = Tertiary Consumer; Snake = Quaternary Consumer."
+    },
+    {
+      "question": "Study the following text-based description of a backyard food web:\n- Rose bushes are eaten by both Aphids and Caterpillars.\n- Aphids are eaten by Ladybird Beetles.\n- Caterpillars and Ladybird Beetles are both eaten by Mynah Birds.\n\nHow many distinct food chains make up this web?",
+      "options": [
+        "2",
+        "3",
+        "4",
+        "5"
+      ],
+      "correct": 0,
+      "points": 1,
+      "explanation": "The distinct food chains are: (1) Rose bushes -> Aphid -> Ladybird Beetle -> Mynah Bird, and (2) Rose bushes -> Caterpillar -> Mynah Bird. This makes a total of 2 chains."
+    },
+    {
+      "question": "Using the backyard food web from the previous question, what is the feeding role of the Mynah Bird?",
+      "options": [
+        "It acts exclusively as a primary consumer.",
+        "It acts as both a secondary consumer and a tertiary consumer.",
+        "It acts as a producer because it feeds at the end of the chain.",
+        "It acts as an abiotic factor regulating insect populations."
+      ],
+      "correct": 1,
+      "points": 1,
+      "explanation": "In the chain `Rose bushes -> Caterpillar -> Mynah Bird`, it is a secondary consumer. In `Rose bushes -> Aphid -> Ladybird Beetle -> Mynah Bird`, it is a tertiary consumer."
+    },
+    {
+      "question": "The table below lists the percentage survival of a plant seed at different soil temperatures:\n\nTemperature (°C) | Seed Survival Rate (%)\n5 | 0%\n15 | 35%\n25 | 88%\n35 | 90%\n45 | 15%\n\nWhat is the most accurate conclusion regarding the effect of temperature on these seeds?",
+      "options": [
+        "Seeds survive best at freezing temperatures below 5°C.",
+        "The optimum temperature range for seed survival is between 25°C and 35°C.",
+        "Survival rates increase consistently and infinitely as the temperature climbs.",
+        "Temperature has no measurable impact on seed survival."
+      ],
+      "correct": 1,
+      "points": 1,
+      "explanation": "The survival rate peaks at 88% and 90% when the temperature is between 25°C and 35°C, making this range the optimum zone for survival."
+    },
+    {
+      "question": "Two different species of birds live in the same banyan tree and both hunt for the exact same species of fruit beetle. This interaction between the two bird species is a biotic factor known as __________.",
+      "options": [
+        "mutualism",
+        "predation",
+        "competition",
+        "decomposition"
+      ],
+      "correct": 2,
+      "points": 1,
+      "explanation": "Competition occurs when different organisms or species vie for the same limited resource (in this case, the same food source) in a habitat."
+    },
+    {
+      "question": "If a sudden toxic chemical spill kills off all the primary consumers in a stable lake ecosystem, what is the most likely immediate outcome for the producers?",
+      "options": [
+        "The producer population will decline immediately due to a lack of food.",
+        "The producer population will grow rapidly at first because there are no herbivores eating them.",
+        "The producers will leave the lake and find a new land habitat.",
+        "Producers will stop performing photosynthesis and become decomposers."
+      ],
+      "correct": 1,
+      "points": 1,
+      "explanation": "Primary consumers are herbivores that graze on producers. If they are removed, the grazing pressure drops to zero, allowing the plant/algae population to grow unchecked initially."
+    },
+    {
+      "question": "A data logger recorded light intensity values at noon in two zones of a nature reserve: Zone 1 (open grass clearing) and Zone 2 (floor of a mature forest dense with canopy trees). Zone 2 received less than 3% of the light intensity measured in Zone 1. What physical adaptation would you expect from wild plants growing successfully on the forest floor in Zone 2?",
+      "options": [
+        "Narrow, needle-thin leaves to prevent evaporation.",
+        "Broad, thin leaves with large surface areas to absorb as much dim light as possible.",
+        "A complete lack of green chlorophyll pigments to avoid sun damage.",
+        "The lack of roots so they can float up toward the tree tops."
+      ],
+      "correct": 1,
+      "points": 1,
+      "explanation": "Plants in low-light environments (understory/forest floors) develop broad leaves with large surface areas to optimize the capture of limited light for photosynthesis."
+    },
+    {
+      "question": "Which of the following scenarios describes a change in a chemical abiotic factor that drastically alters organism survival?",
+      "options": [
+        "An increase in wolf numbers reducing the deer population.",
+        "The clearing of trees reducing the nesting spots for eagles.",
+        "Runoff from an industrial site increasing the acidity of a pond, killing fish embryos.",
+        "A herd of elephants trampling bushes as they walk across a savannah."
+      ],
+      "correct": 2,
+      "points": 1,
+      "explanation": "Water acidity (measured by pH) is a chemical abiotic factor. Its change directly affects the survival of aquatic organisms."
+    },
+    {
+      "question": "Which of the following is an example of an abiotic factor affecting another abiotic factor in a field?",
+      "options": [
+        "An increase in soil water content allows more ferns to grow.",
+        "Heavy rain showers wash away loose topsoil, reducing soil nutrients.",
+        "Earthworms tunneling through soil increase aeration for plant roots.",
+        "Cows chewing grass leave behind dung that fertilizes the field."
+      ],
+      "correct": 1,
+      "points": 1,
+      "explanation": "Rain showers (abiotic) washing away soil/nutrients (abiotic) is an interaction between two non-living components. All other options involve a living thing (biotic) interacting with an abiotic component."
+    }
+  ]
+}
