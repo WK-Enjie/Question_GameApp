@@ -1,0 +1,190 @@
+{
+  "title": "Primary 4 Science Topical Revision – Light and Shadows",
+  "questions": [
+    {
+      "question": "Which of the following is a source of light?",
+      "options": ["A polished silver mirror", "A television screen that is turned on", "The planet Mars", "A cat's eyes reflecting car headlights"],
+      "correct": 1,
+      "points": 2,
+      "time": 50,
+      "explanation": "A source of light must be able to produce and emit its own light. A turned-on television screen produces its own light, whereas mirrors, planets, and animal eyes only reflect light from external sources."
+    },
+    {
+      "question": "Siti arranged four sheets of cardboard in a straight line and punched a small hole through the center of each sheet. She placed a lit candle at one end. Why does she fail to see the candle flame when she shifts the second cardboard slightly to the left?",
+      "options": ["Light is reflected away by the moved cardboard.", "Light travels in straight lines and cannot bend through the misaligned hole.", "The shifted cardboard absorbs all the light from the candle.", "Light cannot travel through air when objects are moving."],
+      "correct": 1,
+      "points": 2,
+      "time": 75,
+      "explanation": "Light travels in a straight line. When the second hole is shifted out of alignment, the straight path of the light is blocked by the solid cardboard, meaning the light cannot reach Siti's eyes."
+    },
+    {
+      "question": "Which of the following statements explains how shadows are formed?",
+      "options": ["Light bends around an object and meets on the other side.", "Light bounces off a smooth surface into our eyes.", "Light traveling in straight lines is blocked by an opaque or translucent object.", "An object reflects its own darkness onto a nearby screen."],
+      "correct": 2,
+      "points": 2,
+      "time": 50,
+      "explanation": "Shadows are created because light travels in straight lines and cannot bend around objects. When an opaque or translucent object gets in the way, it blocks the light rays, creating an area of darkness behind it."
+    },
+    {
+      "question": "Muthu is standing near a street lamp at night. As he walks away from the street lamp in a straight path, what happens to the length of his shadow?",
+      "options": ["It becomes shorter.", "It becomes longer.", "It remains the same length.", "It becomes shorter at first, then longer."],
+      "correct": 1,
+      "points": 2,
+      "time": 65,
+      "explanation": "As Muthu walks away from the lamp, the light rays from the lamp strike him at a lower angle. This causes his body to block light over a longer area on the ground, making his shadow longer."
+    },
+    {
+      "question": "An object was placed between a torch and a screen. The distance between the torch and the object was 10 cm, and the shadow formed on the screen was 15 cm tall. If the object is moved so that its distance from the torch is now 5 cm, what will happen to the size of its shadow?",
+      "options": ["The shadow will become smaller.", "The shadow will become larger.", "The shadow will remain at 15 cm.", "No shadow will be formed at all."],
+      "correct": 1,
+      "points": 2,
+      "time": 80,
+      "explanation": "When the object is moved closer to the torch (from 10 cm to 5 cm), it blocks a wider angle of light rays coming from the source. This casts a larger shadow on the screen."
+    },
+    {
+      "question": "Meiling is designing a traditional shadow puppet show. She wants the audience to see clear, dark shapes of her puppets on the screen, but she does not want the audience to see her hands moving behind the screen. Which materials should she choose for the puppets and the screen?",
+      "options": [
+        "Puppets: Transparent plastic; Screen: Opaque cardboard",
+        "Puppets: Translucent tracing paper; Screen: Transparent glass",
+        "Puppets: Opaque cardboard; Screen: Translucent white cloth",
+        "Puppets: Opaque cardboard; Screen: Opaque wooden board"
+      ],
+      "correct": 2,
+      "points": 2,
+      "time": 90,
+      "explanation": "Puppets must be opaque (cardboard) to block all light and cast sharp, dark shadows. The screen must be translucent (white cloth) so that the shadows can be clearly seen from the other side by the audience, while hiding Meiling's hands."
+    },
+    {
+      "question": "Four different materials, A, B, C, and D, were tested using a light sensor and a data-logger to see how much light could pass through them. The results are shown below:\n\nMaterial A: 450 units\nMaterial B: 0 units\nMaterial C: 980 units\nMaterial D: 120 units\n\nIf the clear surrounding air registers 1000 units of light, which material should be used to make a shadow puppet that needs to cast the darkest shadow?",
+      "options": ["Material A", "Material B", "Material C", "Material D"],
+      "correct": 1,
+      "points": 2,
+      "time": 80,
+      "explanation": "Material B allowed 0 units of light to pass through, meaning it is completely opaque. Opaque materials block all light, making them perfect for creating the darkest and sharpest shadows."
+    },
+    {
+      "question": "An experiment was set up where an object was placed at various distances from a light source, and the height of the shadow cast on a fixed wall was recorded in the table below:\n\nDistance from light source (cm) | Height of shadow (cm)\n15 | 30\n20 | 22\n25 | 16\n30 | X\n\nBased on the pattern in the table, what is the most likely value of X?",
+      "options": ["36 cm", "24 cm", "11 cm", "0 cm"],
+      "correct": 2,
+      "points": 2,
+      "time": 85,
+      "explanation": "The data shows that as the distance from the light source increases, the height of the shadow decreases (30 -> 22 -> 16). Therefore, at 30 cm, the shadow height must be less than 16 cm. 11 cm is the only logical choice."
+    },
+    {
+      "question": "A group of students set up a torch, a wooden block, and a screen in a dark room. Which of the following changes will result in a SMALLER shadow on the screen?",
+      "options": ["Moving the screen further away from the wooden block.", "Moving the torch closer to the wooden block.", "Moving the wooden block closer to the screen.", "Replacing the wooden block with a larger one."],
+      "correct": 2,
+      "points": 2,
+      "time": 75,
+      "explanation": "Moving the block closer to the screen (and further from the torch) causes it to block fewer light rays, which shrinks the size of the shadow cast on the screen."
+    },
+    {
+      "question": "Which of the following items is correctly paired with its property regarding light?",
+      "options": ["Frosted glass – Opaque", "Clear glass window – Translucent", "Thick ceramic mug – Opaque", "Tracing paper – Transparent"],
+      "correct": 2,
+      "points": 2,
+      "time": 50,
+      "explanation": "A thick ceramic mug is opaque because it does not allow any light to pass through it. Frosted glass and tracing paper are translucent, while a clear glass window is transparent."
+    },
+    {
+      "question": "At 8:00 AM, the Sun is low in the eastern sky. In which direction will the shadow of a school building be cast, and how will its length compare to the shadow at noon?",
+      "options": [
+        "Shadow points East and is shorter than at noon.",
+        "Shadow points West and is longer than at noon.",
+        "Shadow points West and is shorter than at noon.",
+        "Shadow points East and is longer than at noon."
+      ],
+      "correct": 1,
+      "points": 2,
+      "time": 70,
+      "explanation": "Since light travels in straight lines, the shadow forms on the side opposite the light source. With the Sun in the East, the shadow points West. Shadows are longer in the morning when the Sun is low, and shortest at noon when the Sun is directly overhead."
+    },
+    {
+      "question": "Why is a sheet of clear plastic not suitable to be used as a shadow puppet in a shadow play?",
+      "options": ["It bends the light around it, causing an irregular shadow.", "It allows almost all light to pass through, so it will not form a clear shadow.", "It reflects the torch light back into the puppeteer's eyes.", "It absorbs all the light from the torch and gets too hot."],
+      "correct": 1,
+      "points": 2,
+      "time": 60,
+      "explanation": "Clear plastic is transparent. Since it allows almost all light to pass right through it, it cannot block the light paths effectively to form a visible shadow on the screen."
+    },
+    {
+      "question": "A solid wooden cone is held between a torch and a wall. If the flat circular base of the cone faces the torch directly, what shape will the shadow on the wall be?",
+      "options": ["A triangle", "A rectangle", "A circle", "A square"],
+      "correct": 2,
+      "points": 2,
+      "time": 75,
+      "explanation": "A shadow represents the 2D outline of the part of the object blocking the light. Because the flat circular base faces the light source directly, it blocks the light in a circular shape."
+    },
+    {
+      "question": "A student conducted an experiment by shifting an object between a fixed torch and a fixed screen. The table below shows the results:\n\nSetup | Distance from Torch to Object (cm) | Distance from Object to Screen (cm) | Size of Shadow\nP | 12 | 20 | Medium\nQ | 20 | 12 | Small\nR | 6 | 26 | Large\n\nWhat conclusion can be drawn from this experiment?",
+      "options": [
+        "The closer the object is to the screen, the larger the shadow.",
+        "The closer the object is to the light source, the larger the shadow.",
+        "The distance between the light source and the screen does not matter.",
+        "The size of the shadow depends only on the size of the screen."
+      ],
+      "correct": 1,
+      "points": 2,
+      "time": 85,
+      "explanation": "By comparing setups R (6 cm from torch = Large shadow) and Q (20 cm from torch = Small shadow), it is clear that reducing the distance between the object and the light source increases the size of the shadow."
+    },
+    {
+      "question": "Which of the following things does NOT produce its own light?",
+      "options": ["A lightning bolt", "A lit matchstick", "A glowing computer monitor", "A reflective safety vest"],
+      "correct": 3,
+      "points": 2,
+      "time": 50,
+      "explanation": "A reflective safety vest does not create its own light. It is coated with materials that bounce back light from external sources, like car headlights, to appear bright."
+    },
+    {
+      "question": "An opaque object is placed 15 cm away from a torch, casting a shadow on a screen placed 15 cm behind the object. If the torch is moved further away from the object, what will happen to the shadow?",
+      "options": ["It will get bigger.", "It will get smaller.", "It will stay the same size.", "It will disappear completely."],
+      "correct": 1,
+      "points": 2,
+      "time": 75,
+      "explanation": "Moving the light source further away from the object means the object blocks a narrower angle of light rays. This results in a smaller shadow being projected onto the screen."
+    },
+    {
+      "question": "Three sheets of different materials (X, Y, and Z) were placed between a torch and a wall. \n- Light could pass through X, and you could see the wall behind it clearly.\n- Light could pass through Y, but you could not see through it clearly.\n- No light could pass through Z.\n\nWhich material would make the best window blinds if you want to completely block sunlight from entering a bedroom?",
+      "options": ["Material X", "Material Y", "Material Z", "None of the materials"],
+      "correct": 2,
+      "points": 2,
+      "time": 70,
+      "explanation": "Material X is transparent, Y is translucent, and Z is opaque. To completely block out sunlight, an opaque material (Z) must be used because it stops all light from passing through."
+    },
+    {
+      "question": "A street lamp stands at a fixed position. Bala walks toward the lamp post from a distance, passes directly under it, and then continues walking away from it. Describe the changes to the length of his shadow.",
+      "options": [
+        "It gets longer, then gets shorter.",
+        "It gets shorter, then gets longer.",
+        "It stays short the entire time.",
+        "It stays long the entire time."
+      ],
+      "correct": 1,
+      "points": 2,
+      "time": 80,
+      "explanation": "As Bala approaches the lamp, the light source gets higher relative to his position, shortening his shadow until it is directly underneath him. As he walks away, the angle decreases, making his shadow stretch out and become longer again."
+    },
+    {
+      "question": "Why can we see the reflection of trees on the surface of a completely still pond, but we cannot see them clearly when the water surface is rippled by the wind?",
+      "options": [
+        "Rippled water absorbs all the light hitting it.",
+        "Still water acts as a source of light, but rippled water does not.",
+        "Still water reflects light uniformly in an orderly way, while rippled water scatters reflected light in different directions.",
+        "Light travels in wavy lines when passing over rippled water surfaces."
+      ],
+      "correct": 2,
+      "points": 2,
+      "time": 80,
+      "explanation": "A smooth, still water surface reflects light evenly in a single direction to create a clear image. When the water is rippled, the uneven surface scatters the reflected light rays in many different directions, distorting the image."
+    },
+    {
+      "question": "Four identical blocks made of different materials were placed at equal distances from a lamp. A light sensor measured the amount of light passing through each block. The results were recorded in percentages:\n\nBlock 1: 95%\nBlock 2: 50%\nBlock 3: 5%\nBlock 4: 0%\n\nWhich block cast the clearest, most distinct shadow on the screen?",
+      "options": ["Block 1", "Block 2", "Block 3", "Block 4"],
+      "correct": 3,
+      "points": 2,
+      "time": 75,
+      "explanation": "Block 4 allowed 0% of the light to pass through, meaning it blocked 100% of the light rays. This complete blockage produces the sharpest, darkest, and most well-defined shadow compared to the others."
+    }
+  ]
+}

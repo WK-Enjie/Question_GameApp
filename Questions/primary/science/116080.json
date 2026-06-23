@@ -10,60 +10,60 @@
     {
       "question": "In a tug-of-war, Team A pulls a rope to the left, causing Team B to slide forward (to the left). In which direction is the friction acting on Team B's shoes?",
       "options": [
-        "To the left",
-        "To the right",
         "Downwards into the ground",
-        "There is no friction acting on the shoes"
+        "To the left",
+        "There is no friction acting on the shoes",
+        "To the right"
       ],
-      "correct": 1,
+      "correct": 3,
       "points": 10,
       "explanation": "Friction always acts in the direction opposite to the intended motion. Since Team B is being pulled to the left, friction acts to the right to oppose this movement."
     },
     {
       "question": "A student performs a tug-of-war against a wall. To win (not move), they push their feet hard against the floor. Which force allows them to stay in place?",
       "options": [
-        "Magnetic force",
-        "Air resistance",
         "Friction between the floor and the shoes",
+        "Air resistance",
+        "Magnetic force",
         "Gravitational force pulling them down"
       ],
-      "correct": 2,
+      "correct": 0,
       "points": 10,
       "explanation": "To stay in place, the friction from the floor must push the student forward, opposing the backward pull of the rope."
     },
     {
       "question": "An experiment measures the distance a wooden block slides on three surfaces after a push: Surface A (glass), Surface B (wood), Surface C (sandpaper). The distances are 150cm, 80cm, and 20cm. Which surface has the MOST friction?",
       "options": [
-        "Surface A",
         "Surface B",
-        "Surface C",
-        "They all have the same friction"
+        "They all have the same friction",
+        "Surface A",
+        "Surface C"
       ],
-      "correct": 2,
+      "correct": 3,
       "points": 10,
       "explanation": "Higher friction causes the object to stop sooner. Since the block traveled the shortest distance (20cm) on Surface C, it must have the highest friction."
     },
     {
       "question": "To reduce air resistance for a racing car, which design feature is most effective?",
       "options": [
-        "Making the car wider",
         "Streamlining the shape",
-        "Adding a larger plate to catch air",
-        "Using a rougher paint finish"
+        "Using a rougher paint finish",
+        "Making the car wider",
+        "Adding a larger plate to catch air"
       ],
-      "correct": 1,
+      "correct": 0,
       "points": 10,
       "explanation": "Streamlining allows air to flow smoothly around the object, reducing the air resistance that slows it down."
     },
     {
       "question": "Data shows a parachute with a surface area of 1m² falls at 5m/s. A parachute with 3m² area falls at 2m/s. What can you conclude?",
       "options": [
-        "Larger surface area increases air resistance, slowing the fall",
-        "Larger surface area decreases air resistance, speeding the fall",
         "Surface area has no effect on air resistance",
-        "The weight of the parachute caused the speed change"
+        "The weight of the parachute caused the speed change",
+        "Larger surface area increases air resistance, slowing the fall",
+        "Larger surface area decreases air resistance, speeding the fall"
       ],
-      "correct": 0,
+      "correct": 2,
       "points": 10,
       "explanation": "Increased surface area collides with more air particles, increasing upward air resistance and slowing the descent."
     },
@@ -71,83 +71,83 @@
       "question": "A student finds that a magnet picks up 10 paperclips at 1cm, but 0 paperclips at 10cm. What is the aim of this experiment?",
       "options": [
         "To test if paperclips are magnetic",
-        "To see how magnet strength changes with distance",
+        "To see if the paperclips are heavy",
         "To see if the magnet loses strength over time",
-        "To see if the paperclips are heavy"
+        "To see how magnet strength changes with distance"
       ],
-      "correct": 1,
+      "correct": 3,
       "points": 10,
       "explanation": "By changing the distance (changed variable) and counting paperclips (measured variable), the student is investigating the effect of distance on magnetic force."
     },
     {
       "question": "If you hold two North poles of magnets together, they push apart. This demonstrates:",
       "options": [
-        "Gravitational force",
         "Magnetic force of repulsion",
         "Frictional resistance",
+        "Gravitational force",
         "Elastic spring force"
       ],
-      "correct": 1,
+      "correct": 0,
       "points": 10,
       "explanation": "Like poles (North-North or South-South) exert a repulsive magnetic force on each other."
     },
     {
       "question": "A spring has an original length of 10cm. When a weight is added, the total length becomes 15cm. What is the extension of the spring?",
       "options": [
-        "5cm",
         "10cm",
+        "5cm",
         "15cm",
         "25cm"
       ],
-      "correct": 0,
+      "correct": 1,
       "points": 10,
       "explanation": "Extension is calculated by subtracting the original length from the final length (15cm - 10cm = 5cm)."
     },
     {
       "question": "Spring A and Spring B are pulled with the exact same force. Spring A extends by 2cm, while Spring B extends by 6cm. Which spring is stiffer?",
       "options": [
-        "Spring A is stiffer because it extends less",
         "Spring B is stiffer because it extends more",
+        "Spring A is stiffer because it extends less",
         "Both are equally stiff",
         "Cannot be determined"
       ],
-      "correct": 0,
+      "correct": 1,
       "points": 10,
       "explanation": "A stiffer spring is harder to stretch, so it extends less than a less-stiff spring when the same force is applied."
     },
     {
       "question": "Why do objects fall to the ground when dropped?",
       "options": [
+        "Because of magnetic force in the soil",
         "Because of air resistance pulling them down",
         "Because of gravitational force pulling them towards the center of the Earth",
-        "Because of magnetic force in the soil",
         "Because friction slows their fall"
       ],
-      "correct": 1,
+      "correct": 2,
       "points": 10,
       "explanation": "Gravitational force is the attractive force that pulls all objects with mass toward the Earth."
     },
     {
       "question": "A ball is thrown upwards. It slows down and eventually falls back down. Which force is responsible for slowing it down as it rises?",
       "options": [
+        "Only friction",
         "Gravity pulling it down and Air Resistance acting downwards",
         "Magnetic force pulling it to the side",
-        "Elastic force from the ground",
-        "Only friction"
+        "Elastic force from the ground"
       ],
-      "correct": 0,
+      "correct": 1,
       "points": 10,
       "explanation": "Both gravity and air resistance act against the upward motion, slowing the ball down."
     },
     {
       "question": "In a spring experiment, if the spring does not return to its original length after removing the weight, what has happened?",
       "options": [
+        "It was stretched beyond its elastic limit",
         "The spring is too short",
         "It is now stronger",
-        "It was compressed too much",
-        "It was stretched beyond its elastic limit"
+        "It was compressed too much"
       ],
-      "correct": 3,
+      "correct": 0,
       "points": 10,
       "explanation": "When an elastic material is stretched beyond its elastic limit, it undergoes permanent deformation and cannot return to its original length."
     },
@@ -155,11 +155,11 @@
       "question": "Which surface would generate the least amount of friction when a box is pushed across it?",
       "options": [
         "Carpet",
-        "Polished concrete",
         "Sandpaper",
-        "Grass"
+        "Grass",
+        "Polished concrete"
       ],
-      "correct": 1,
+      "correct": 3,
       "points": 10,
       "explanation": "Smoother surfaces generally produce less friction than rough, uneven surfaces like carpet or grass."
     },
@@ -167,19 +167,19 @@
       "question": "When a bicycle is moving, what force causes it to eventually slow down and stop if the rider stops pedaling?",
       "options": [
         "The bicycle 'wants' to stop",
-        "Gravity pulls it to a stop",
         "Friction and air resistance act against the motion",
+        "Gravity pulls it to a stop",
         "There is no force acting on it"
       ],
-      "correct": 2,
+      "correct": 1,
       "points": 10,
       "explanation": "Objects in motion will slow down because of forces like friction and air resistance that oppose the movement."
     },
     {
       "question": "Which of the following correctly describes the behavior of friction?",
       "options": [
-        "Friction only happens on rough surfaces",
         "Friction acts in the same direction as motion",
+        "Friction only happens on rough surfaces",
         "Friction opposes motion and acts against the direction of movement",
         "Friction increases as an object's speed increases without limit"
       ],
@@ -188,62 +188,62 @@
       "explanation": "Friction is a contact force that acts in the opposite direction to the movement of the object, causing it to slow down."
     },
     {
-      "question": "A metal block is placed on a spring balance. The spring stretches by 5cm. If we place the block on a rougher table, how much will the spring stretch?",
+      "question": "A student uses a spring balance horizontally to pull a metal block at a constant speed across a smooth glass table. The spring balance shows an extension of 5 cm. If the student pulls the same block at the same speed across a rough wooden table, what will happen to the extension of the spring?",
       "options": [
-        "More than 5cm",
-        "Less than 5cm",
-        "Exactly 5cm",
-        "It will not stretch"
+        "It will be exactly 5 cm.",
+        "The spring will not stretch at all.",
+        "It will be less than 5 cm.",
+        "It will be more than 5 cm."
       ],
-      "correct": 2,
+      "correct": 3,
       "points": 10,
-      "explanation": "The spring balance measures the gravitational pull on the block. Changing the surface texture changes friction, not the gravitational pull."
+      "explanation": "A rougher wooden table creates more friction against the moving block than a smooth glass table. To overcome this greater frictional force and keep the block moving, a larger pulling force is required, which stretches the spring further (more than 5 cm)."
     },
     {
       "question": "Why does a plane need to be streamlined?",
       "options": [
         "To look better to passengers",
-        "To minimize air resistance at high speeds",
         "To increase friction with the air",
+        "To minimize air resistance at high speeds",
         "To make it easier to park"
       ],
-      "correct": 1,
+      "correct": 2,
       "points": 10,
       "explanation": "Streamlining minimizes air resistance, allowing the plane to move through the air efficiently."
     },
     {
       "question": "Two magnets are stuck together. What is the most likely reason?",
       "options": [
-        "Opposite poles are facing each other",
         "They are held together by gravity",
+        "Opposite poles are facing each other",
         "They are held together by air pressure",
         "They are the same pole"
       ],
-      "correct": 0,
+      "correct": 1,
       "points": 10,
       "explanation": "Opposite poles (North and South) attract each other."
     },
     {
       "question": "A block is pulled across a table. If we put wheels under the block, it becomes easier to pull. Why?",
       "options": [
-        "Wheels create more friction",
         "Wheels reduce the friction acting on the object, making it easier to pull",
+        "Wheels create more friction",
         "Wheels increase the weight of the block",
         "Wheels repel the table magnetically"
       ],
-      "correct": 1,
+      "correct": 0,
       "points": 10,
       "explanation": "Using wheels helps reduce the overall friction acting on the object, making it easier to pull."
     },
     {
       "question": "A student measures the time taken for a marble to roll down a ramp. If the ramp is made steeper, what happens to the marble?",
       "options": [
-        "It takes longer because of more friction",
-        "It takes less time because gravity pulls it down faster",
         "It stops halfway",
-        "The speed is unrelated to the angle"
+        "It takes longer because of more friction",
+        "The speed is unrelated to the angle",
+        "It takes less time because gravity pulls it down faster"
       ],
-      "correct": 1,
+      "correct": 3,
       "points": 10,
       "explanation": "A steeper ramp increases the component of gravitational force acting along the ramp, increasing speed."
     },
@@ -251,11 +251,11 @@
       "question": "When a stretched rubber band is released, it snaps back. What force is this?",
       "options": [
         "Magnetic force",
-        "Elastic spring force",
         "Gravitational force",
+        "Elastic spring force",
         "Air resistance"
       ],
-      "correct": 1,
+      "correct": 2,
       "points": 10,
       "explanation": "Elastic materials exert a force to return to their original shape after being stretched or compressed."
     },
@@ -275,23 +275,23 @@
       "question": "A magnet is used to separate a mixture of iron filings and sand. What property of the iron filings is being used?",
       "options": [
         "They are lighter than sand",
-        "They are magnetic",
         "They are smoother than sand",
+        "They are magnetic",
         "They dissolve in water"
       ],
-      "correct": 1,
+      "correct": 2,
       "points": 10,
       "explanation": "Magnetic materials are attracted to magnets; sand is not."
     },
     {
       "question": "A car's brakes work by using friction. When the driver presses the pedal, what happens?",
       "options": [
-        "Friction between brake pads and wheels slows the car down",
         "Gravity pulls the car to a stop",
+        "Friction between brake pads and wheels slows the car down",
         "Magnetic force repels the tires",
         "The car engine produces air resistance"
       ],
-      "correct": 0,
+      "correct": 1,
       "points": 10,
       "explanation": "Braking pads rub against the wheel (or a connected disc) to convert the car's kinetic energy into heat through friction."
     },
@@ -299,11 +299,12 @@
       "question": "When you lift a bag from the table, what force are you pulling against?",
       "options": [
         "Air resistance",
-        "Gravitational force",
         "Magnetic force",
-        "Wheels/Friction"
+        "Wheels/Friction",
+        "Gravitational force"
       ],
-      "correct": 1,
+      "correct": 4,
+      "correct": 3,
       "points": 10,
       "explanation": "Lifting an object requires applying a force equal to or greater than the gravitational force acting on it."
     },
@@ -311,23 +312,23 @@
       "question": "Which of these items would be most useful in a 'tug-of-war' to prevent slipping?",
       "options": [
         "Socks",
-        "Shoes with rubber soles",
         "Ice skates",
+        "Shoes with rubber soles",
         "Shoes with polished soles"
       ],
-      "correct": 1,
+      "correct": 2,
       "points": 10,
       "explanation": "Rubber soles have a high amount of friction, providing a good grip against the ground."
     },
     {
       "question": "An airplane wing is shaped to:",
       "options": [
-        "Catch as much air as possible",
         "Generate lift by interacting with air resistance/flow",
+        "Catch as much air as possible",
         "Repel magnetic fields",
         "Increase friction with the clouds"
       ],
-      "correct": 1,
+      "correct": 0,
       "points": 10,
       "explanation": "The shape of the wing creates a pressure difference as air flows over it, generating lift to keep the plane in the air."
     },
@@ -335,23 +336,23 @@
       "question": "If a spring is compressed (squashed), what force does it exert?",
       "options": [
         "An attractive force inward",
+        "A repulsive force outward, trying to return to original shape",
         "Gravity",
-        "No force",
-        "A repulsive force outward, trying to return to original shape"
+        "No force"
       ],
-      "correct": 3,
+      "correct": 1,
       "points": 10,
       "explanation": "Like stretching, compressing a spring creates an elastic force that tries to push back to the equilibrium position."
     },
     {
       "question": "You place a magnet under a piece of paper and move a paperclip on top. The paperclip follows the magnet. Why?",
       "options": [
-        "Magnetic force can act through non-magnetic materials like paper",
         "The paper is magnetic",
         "Gravity is pulling the paperclip",
+        "Magnetic force can act through non-magnetic materials like paper",
         "The paperclip is rolling"
       ],
-      "correct": 0,
+      "correct": 2,
       "points": 10,
       "explanation": "Magnetic force is an invisible force that can act through non-magnetic materials such as paper, plastic, and wood."
     },
@@ -359,11 +360,11 @@
       "question": "Which force is always acting on you while you are on Earth?",
       "options": [
         "Magnetic force from the Earth's core",
-        "Gravitational force",
         "Elastic force from your shoes",
-        "Air resistance while sitting still"
+        "Air resistance while sitting still",
+        "Gravitational force"
       ],
-      "correct": 1,
+      "correct": 3,
       "points": 10,
       "explanation": "Gravity is constantly pulling every object with mass toward the center of the Earth."
     }
