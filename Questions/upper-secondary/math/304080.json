@@ -1,0 +1,165 @@
+{
+  "title": "Sec 4 O-Level Revision – Percentage, Ratio, Speed, Rate & Standard Form",
+  "questions": [
+    {
+      "question": "A sum of $8,000 is deposited in a savings account that pays an interest rate of 3% per annum compounded half-yearly. Find the total interest earned by the end of 2 years, correct to the nearest dollar.",
+      "options": ["$480", "$487", "$491", "$982"],
+      "correct": 2,
+      "points": 12,
+      "time": 180,
+      "explanation": "Since interest is compounded half-yearly, there are 2 × 2 = 4 interest periods, and the interest rate per period is 3% ÷ 2 = 1.5%. Total accumulated amount = $8,000 × (1 + 0.015)⁴ = $8,000 × 1.06136 = $8,490.91. Total interest earned = $8,490.91 - $8,000 = $490.91, which rounds to $491."
+    },
+    {
+      "question": "On a map with a scale of 1 : 25 000, a nature reservoir has an actual area of 3.5 km². Find the area of the reservoir represented on the map in square centimeters (cm²).",
+      "options": ["14 cm²", "28 cm²", "56 cm²", "140 cm²"],
+      "correct": 2,
+      "points": 14,
+      "time": 180,
+      "explanation": "Linear scale: 1 cm to 25,000 cm → 1 cm to 0.25 km. Area scale: (1 cm)² to (0.25 km)² → 1 cm² to 0.0625 km². Map area = Actual Area ÷ 0.0625 = 3.5 ÷ 0.0625 = 56 cm²."
+    },
+    {
+      "question": "A motorist travels from Town A to Town B at an average speed of 60 km/h for 45 minutes, and then from Town B to Town C at an average speed of 90 km/h for 15 minutes. Find the average speed for the entire journey from Town A to Town C.",
+      "options": ["67.5 km/h", "72.0 km/h", "75.0 km/h", "82.5 km/h"],
+      "correct": 0,
+      "points": 12,
+      "time": 160,
+      "explanation": "Distance 1 = 60 km/h × (45/60) h = 45 km. Distance 2 = 90 km/h × (15/60) h = 22.5 km. Total Distance = 45 + 22.5 = 67.5 km. Total Time = 45 mins + 15 mins = 60 minutes = 1 hour. Average Speed = Total Distance ÷ Total Time = 67.5 km ÷ 1 h = 67.5 km/h."
+    },
+    {
+      "question": "Machine A can print 500 pages in 20 minutes, while Machine B can print 500 pages in 30 minutes. If both machines operate concurrently, how long will they take to print a total of 1,500 pages?",
+      "options": ["24 minutes", "30 minutes", "36 minutes", "50 minutes"],
+      "correct": 2,
+      "points": 12,
+      "time": 150,
+      "explanation": "Rate of Machine A = 500 ÷ 20 = 25 pages/min. Rate of Machine B = 500 ÷ 30 = 50/3 pages/min. Combined rate = 25 + 50/3 = 125/3 pages/min. Time required = 1,500 ÷ (125/3) = 1,500 × 3 ÷ 125 = 36 minutes."
+    },
+    {
+      "question": "Evaluate (2.4 × 10⁻⁴) + (3.6 × 10⁻⁵), expressing your final answer in standard form.",
+      "options": ["2.76 × 10⁻⁴", "2.76 × 10⁻⁵", "6.00 × 10⁻⁴", "6.00 × 10⁻⁵"],
+      "correct": 0,
+      "points": 10,
+      "time": 150,
+      "explanation": "Convert both terms to share the same power of 10: 3.6 × 10⁻⁵ = 0.36 × 10⁻⁴. Add the coefficients: (2.4 + 0.36) × 10⁻⁴ = 2.76 × 10⁻⁴."
+    },
+    {
+      "question": "The retail price of a laptop inclusive of 9% Goods and Services Tax (GST) is $1,635. A student is eligible for a 10% discount on the price before GST. How much does the student pay for the laptop inclusive of the 9% GST?",
+      "options": ["$1,455.00", "$1,471.50", "$1,486.50", "$1,500.00"],
+      "correct": 1,
+      "points": 14,
+      "time": 180,
+      "explanation": "Original price before GST = $1,635 ÷ 1.09 = $1,500. Discounted price before GST = $1,500 × 0.90 = $1,350. Final price with 9% GST applied to the discounted price = $1,350 × 1.09 = $1,471.50."
+    },
+    {
+      "question": "The ratio of the number of local stamps to foreign stamps in a collection was 4 : 3. After 12 foreign stamps were added to the collection, the ratio became 2 : 3. Find the initial total number of stamps in the collection.",
+      "options": ["24", "28", "32", "48"],
+      "correct": 1,
+      "points": 14,
+      "time": 180,
+      "explanation": "Since the number of local stamps remains constant, equalize the local stamp units across both ratios. Initial ratio L : F = 4 : 3. New ratio L : F = 2 : 3 = 4 : 6. The increase in foreign stamps is 6 units - 3 units = 3 units. Given 3 units = 12 stamps, 1 unit = 4 stamps. Initial total number of stamps = 4 + 3 = 7 units = 7 × 4 = 28."
+    },
+    {
+      "question": "Cyclist X leaves a specific point traveling at a constant speed of 18 km/h. Exactly 20 minutes later, Cyclist Y leaves the same point and travels along the same route at a constant speed of 24 km/h. How far from the starting point will Cyclist Y catch up with Cyclist X?",
+      "options": ["18 km", "24 km", "30 km", "36 km"],
+      "correct": 1,
+      "points": 14,
+      "time": 200,
+      "explanation": "In 20 minutes (1/3 of an hour), Cyclist X covers a head start distance of 18 km/h × 1/3 h = 6 km. The relative catching-up speed of Cyclist Y is 24 - 18 = 6 km/h. Time taken for Cyclist Y to catch up = 6 km ÷ 6 km/h = 1 hour. Total distance traveled by Cyclist Y in 1 hour = 24 km/h × 1 h = 24 km."
+    },
+    {
+      "question": "A metal alloy block has a mass of 4.5 kg and a volume of 500 cm³. If the alloy is valued at $12 per kilogram, find the cost of a solid cube made of the same alloy with a side length of 4 cm.",
+      "options": ["$5.76", "$6.91", "$7.20", "$8.64"],
+      "correct": 1,
+      "points": 12,
+      "time": 160,
+      "explanation": "Density of the alloy = 4.5 kg ÷ 500 cm³ = 0.009 kg/cm³. Volume of the new cube = 4 cm × 4 cm × 4 cm = 64 cm³. Mass of the new cube = 64 cm³ × 0.009 kg/cm³ = 0.576 kg. Total cost = 0.576 kg × $12/kg = $6.912, which rounds to $6.91."
+    },
+    {
+      "question": "Three automated factory alarms are set to ring at regular intervals of 12 minutes, 15 minutes, and 18 minutes respectively. If all three alarms ring together at 09 00, at what time will they next ring simultaneously?",
+      "options": ["10 30", "11 00", "12 00", "15 00"],
+      "correct": 2,
+      "points": 12,
+      "time": 150,
+      "explanation": "Find the Least Common Multiple (LCM) of 12, 15, and 18. Prime factorizations: 12 = 2² × 3, 15 = 3 × 5, 18 = 2 × 3². LCM = 2² × 3² × 5 = 4 × 9 × 5 = 180 minutes. 180 minutes = 3 hours. 3 hours after 09 00 is 12 00."
+    },
+    {
+      "question": "Given that p = 6 × 10⁷ and q = 8 × 10⁵, evaluate standard form expression p² / q.",
+      "options": ["4.5 × 10⁸", "4.5 × 10⁹", "7.5 × 10⁸", "7.5 × 10⁹"],
+      "correct": 1,
+      "points": 10,
+      "time": 150,
+      "explanation": "Calculate p² = (6 × 10⁷)² = 36 × 10¹⁴. Divide by q: (36 × 10¹⁴) ÷ (8 × 10⁵) = (36 ÷ 8) × 10¹⁴⁻⁵ = 4.5 × 10⁹."
+    },
+    {
+      "question": "A merchant bought 500 mobile phone accessories for a total cost of $2,500. He sold 300 of them at a profit of 40% and liquidated the remaining accessories at a loss of 10%. Calculate his overall percentage profit on the entire initial cost price.",
+      "options": ["15%", "20%", "25%", "30%"],
+      "correct": 1,
+      "points": 14,
+      "time": 180,
+      "explanation": "Cost price per accessory = $2,500 ÷ 500 = $5. Revenue from first batch = 300 × $5 × 1.40 = $2,100. Revenue from remaining batch = 200 × $5 × 0.90 = $900. Total Revenue = $2,100 + $900 = $3,000. Net Profit = $3,000 - $2,500 = $500. Overall profit percentage = ($500 ÷ $2,500) × 100% = 20%."
+    },
+    {
+      "question": "Variable x is inversely proportional to the square root of y. If the ratio of two distinct values of y is 4 : 9, determine the corresponding ratio of the two values of x.",
+      "options": ["2 : 3", "3 : 2", "4 : 9", "9 : 4"],
+      "correct": 1,
+      "points": 14,
+      "time": 170,
+      "explanation": "The inverse relationship implies x₁/x₂ = √(y₂)/√(y₁). Given y₁/y₂ = 4/9, it follows that y₂/y₁ = 9/4. Substituting this into the root equation gives x₁/x₂ = √(9/4) = 3/2. Therefore, the ratio x₁ : x₂ is 3 : 2."
+    },
+    {
+      "question": "A train slows down uniformly from an initial speed of v m/s to a complete stop in 40 seconds. Given that the distance traveled during this deceleration period is 600 meters, calculate the value of v.",
+      "options": ["15", "20", "30", "45"],
+      "correct": 2,
+      "points": 12,
+      "time": 160,
+      "explanation": "The distance traveled under uniform deceleration corresponds to the area of a right-angled triangle on a speed-time graph. Distance = 0.5 × base × height → 600 = 0.5 × 40 × v → 600 = 20v → v = 30."
+    },
+    {
+      "question": "A tourist exchanges 1,000 Singapore Dollars (SGD) into Japanese Yen (JPY) at an exchange rate of 1 SGD = 110 JPY. After spending 54,000 JPY, she converts all remaining JPY back to SGD at a new exchange rate of 1 SGD = 112 JPY. How much SGD does she receive?",
+      "options": ["$450", "$500", "$520", "$550"],
+      "correct": 1,
+      "points": 12,
+      "time": 160,
+      "explanation": "Initial JPY acquired = 1,000 × 110 = 110,000 JPY. Remaining JPY after expenditure = 110,000 - 54,000 = 56,000 JPY. Conversion back to SGD = 56,000 ÷ 112 = $500."
+    },
+    {
+      "question": "Given that the prime factorization of an integer N is 2⁴ × 3³ × 5¹, find the smallest positive integer k such that Nk is a perfect cube.",
+      "options": ["10", "30", "60", "100"],
+      "correct": 3,
+      "points": 12,
+      "time": 150,
+      "explanation": "For a number to be a perfect cube, all exponents in its prime factorization must be multiples of 3. For 2⁴, we need 2² to reach 2⁶. For 3³, the exponent is already a multiple of 3. For 5¹, we need 5² to reach 5³. Thus, k = 2² × 5² = 4 × 25 = 100."
+    },
+    {
+      "question": "The diameter of a human red blood cell is approximately 7.5 × 10⁻⁶ meters. Express this diameter in millimeters (mm), leaving your answer in standard form.",
+      "options": ["7.5 × 10⁻³ mm", "7.5 × 10⁻⁴ mm", "7.5 × 10⁻⁸ mm", "7.5 × 10⁻⁹ mm"],
+      "correct": 0,
+      "points": 10,
+      "time": 150,
+      "explanation": "To convert meters to millimeters, multiply by 1,000 (or 10³). Thus, (7.5 × 10⁻⁶) × 10³ = 7.5 × 10⁻⁶⁺³ = 7.5 × 10⁻³ mm."
+    },
+    {
+      "question": "The length of a rectangle is increased by 25% while its width is decreased by 10%. Find the overall percentage change in the total area of the rectangle.",
+      "options": ["Decrease of 2.5%", "Increase of 12.5%", "Increase of 15.0%", "Increase of 35.0%"],
+      "correct": 1,
+      "points": 12,
+      "time": 160,
+      "explanation": "Let initial length be L and width be W, making initial Area = LW. New length = 1.25L and new width = 0.90W. New Area = 1.25L × 0.90W = 1.125LW. The area factor shifted from 1.00 to 1.125, which represents a 12.5% increase."
+    },
+    {
+      "question": "A sum of money is shared among Alex, Ben, and Carl in the ratio 3 : 4 : 5. If Carl decides to give 20% of his share to Alex, find the new ratio of Alex's share to Ben's share to Carl's share.",
+      "options": ["1 : 1 : 1", "4 : 4 : 5", "3 : 4 : 4", "2 : 2 : 3"],
+      "correct": 0,
+      "points": 14,
+      "time": 170,
+      "explanation": "Let initial shares be Alex = 3 units, Ben = 4 units, and Carl = 5 units. Carl gives away 20% of 5 units = 1 unit. Carl's remaining share = 5 - 1 = 4 units. Alex's new share = 3 + 1 = 4 units. Ben's share remains 4 units. The new ratio is 4 : 4 : 4, which simplifies to 1 : 1 : 1."
+    },
+    {
+      "question": "A courier driver travels from the distribution headquarters to a delivery destination at an average speed of 40 km/h. He returns immediately along the identical route at an average speed of 60 km/h. Calculate his average speed for the entire round trip.",
+      "options": ["48 km/h", "50 km/h", "52 km/h", "54 km/h"],
+      "correct": 0,
+      "points": 14,
+      "time": 180,
+      "explanation": "Let the one-way distance be d km. Time taken to destination = d/40 hours. Time taken to return = d/60 hours. Total round-trip time = d/40 + d/60 = 5d/120 = d/24 hours. Total distance covered = 2d km. Average speed = Total Distance ÷ Total Time = 2d ÷ (d/24) = 2 × 24 = 48 km/h."
+    }
+  ]
+}
