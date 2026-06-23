@@ -1,0 +1,253 @@
+{
+  "title": "P5/6 Revision – Ratio, Fraction, Percentage & Whole Numbers",
+  "questions": [
+    {
+      "question": "The ratio of the number of apples to oranges in a box is 3:5. After 12 oranges are replaced by 12 apples, the ratio of apples to oranges becomes 1:1. How many fruits are there in the box in total?",
+      "options": ["48", "72", "96", "120"],
+      "correct": 2,
+      "points": 12,
+      "time": 180,
+      "explanation": "Since oranges are replaced by the same number of apples, the total number of fruits remains unchanged. Initial ratio A:O = 3:5 (Total 8 units). New ratio A:O = 1:1 = 4:4 (Total 8 units). The increase in apples is 4 units - 3 units = 1 unit. Given 1 unit = 12 fruits, the total number of fruits = 8 units = 8 × 12 = 96."
+    },
+    {
+      "question": "There are some apples and oranges. After 1/4 of the apples and 2/3 of the oranges were sold, 6/7 of the fruits left were apples. What fraction of the fruits sold were apples?",
+      "options": ["1/4", "1/3", "1/2", "2/3"],
+      "correct": 2,
+      "points": 14,
+      "time": 200,
+      "explanation": "Let the initial number of apples be 8 units and oranges be 3 units. Remaining apples = 3/4 × 8 units = 6 units. Remaining oranges = 1/3 × 3 units = 1 unit. Total remaining = 6 + 1 = 7 units (where apples form 6/7). Sold apples = 1/4 × 8 units = 2 units. Sold oranges = 2/3 × 3 units = 2 units. Total sold = 2 + 2 = 4 units. Fraction of sold fruits that were apples = 2/4 = 1/2."
+    },
+    {
+      "question": "The ratio of boys to girls in a hall was 3:2. After 18 girls left the hall, the ratio of boys to girls became 9:4. How many boys were there in the hall?",
+      "options": ["36", "54", "72", "81"],
+      "correct": 3,
+      "points": 14,
+      "time": 200,
+      "explanation": "Since the number of boys remains unchanged, equalize the units for boys across both ratios. Initial ratio B:G = 3:2 = 9:6. New ratio B:G = 9:4. The decrease in girls is 6 units - 4 units = 2 units. Given 2 units = 18 girls, 1 unit = 9. The number of boys = 9 units = 9 × 9 = 81."
+    },
+    {
+      "question": "There are 50 students in a club. The ratio of the number of boys to the number of girls is 2:3. If 5 more boys join the club, what is the new ratio of the number of boys to the number of girls?",
+      "options": ["2:3", "3:4", "4:5", "5:6"],
+      "correct": 3,
+      "points": 12,
+      "time": 180,
+      "explanation": "Total parts initially = 2 + 3 = 5 units. 5 units = 50 students, so 1 unit = 10 students. Initial number of boys = 2 × 10 = 20. Initial number of girls = 3 × 10 = 30. After 5 boys join, the new number of boys = 20 + 5 = 25. The number of girls remains 30. The new ratio of boys to girls is 25 : 30, which simplifies to 5 : 6."
+    },
+    {
+      "question": "A number is increased by 20% and then decreased by 20%. The final number is what percentage of the original?",
+      "options": ["100%", "96%", "104%", "90%"],
+      "correct": 1,
+      "points": 12,
+      "time": 180,
+      "explanation": "Assume the original number is 100. After a 20% increase, the number becomes 100 × 1.20 = 120. After a 20% decrease from this value, the final number becomes 120 × 0.80 = 96. Therefore, the final number is 96% of the original number."
+    },
+    {
+      "question": "The price of a book is $40. It is increased by 25% and then decreased by 20%. What is the final price?",
+      "options": ["$40", "$42", "$44", "$48"],
+      "correct": 0,
+      "points": 10,
+      "time": 150,
+      "explanation": "Price after the 25% increase = $40 × 1.25 = $50. Price after the subsequent 20% decrease = $50 × 0.80 = $40."
+    },
+    {
+      "question": "There are 120 apples and oranges in a container. If 1/3 of the apples and 1/4 of the oranges are rotten, and the total number of rotten fruits is 35, how many apples are there?",
+      "options": ["60", "72", "80", "84"],
+      "correct": 0,
+      "points": 14,
+      "time": 200,
+      "explanation": "If all 120 fruits were oranges, the number of rotten fruits would be 1/4 × 120 = 30. The actual number of rotten fruits is 35, which leaves an excess of 35 - 30 = 5. The difference between the fraction of rotten apples and rotten oranges is 1/3 - 1/4 = 1/12. Therefore, 1/12 of the apples = 5, which means the total number of apples = 5 × 12 = 60."
+    },
+    {
+      "question": "John has 20% more money than Mary. If John has $120, how much does Mary have?",
+      "options": ["$96", "$100", "$104", "$110"],
+      "correct": 1,
+      "points": 10,
+      "time": 150,
+      "explanation": "John has 20% more than Mary, which means John's money represents 120% of Mary's money. Since 120% = $120, 1% = $1. Mary's money (100%) = $100."
+    },
+    {
+      "question": "A store sells a shirt at a 25% profit. If the cost price is $32, what is the selling price?",
+      "options": ["$36", "$38", "$40", "$42"],
+      "correct": 2,
+      "points": 10,
+      "time": 150,
+      "explanation": "Profit = 25% of $32 = 0.25 × $32 = $8. Selling Price = Cost Price + Profit = $32 + $8 = $40."
+    },
+    {
+      "question": "The ratio of the number of boys to girls in a school is 5:7. There are 240 boys. If some girls leave the school, the ratio becomes 1:1. How many girls left?",
+      "options": ["48", "72", "96", "120"],
+      "correct": 2,
+      "points": 14,
+      "time": 180,
+      "explanation": "5 units = 240 boys. 1 unit = 240 ÷ 5 = 48. Initial number of girls = 7 units = 7 × 48 = 336. Since the number of boys remains 240, a new ratio of 1:1 means there must be 240 girls remaining. Number of girls who left = 336 - 240 = 96."
+    },
+    {
+      "question": "A fruit seller had 200 apples. He sold 30% of them on Monday and 25% of the remaining on Tuesday. How many apples are left?",
+      "options": ["90", "100", "105", "110"],
+      "correct": 2,
+      "points": 12,
+      "time": 180,
+      "explanation": "Percentage of apples left after Monday = 100% - 30% = 70%. Number of apples left after Monday = 70% of 200 = 140. On Tuesday, he sold 25% of these 140 apples, meaning 75% are left. Remaining apples = 75% of 140 = 0.75 × 140 = 105."
+    },
+    {
+      "question": "In a bag, the ratio of red to blue marbles is 3:4. If 3 red marbles are added, the ratio becomes 5:6. How many blue marbles are there?",
+      "options": ["24", "30", "36", "42"],
+      "correct": 2,
+      "points": 14,
+      "time": 200,
+      "explanation": "Since no blue marbles are added, the number of blue marbles remains constant. Equate the blue units using the lowest common multiple of 4 and 6, which is 12. Initial ratio R:B = 3:4 = 9:12. New ratio R:B = 5:6 = 10:12. The increase in red marbles is 10 units - 9 units = 1 unit. Given 1 unit = 3 marbles, the total number of blue marbles = 12 units = 12 × 3 = 36."
+    },
+    {
+      "question": "A number when increased by 10% becomes 110. What is the original number?",
+      "options": ["90", "100", "110", "120"],
+      "correct": 1,
+      "points": 10,
+      "time": 150,
+      "explanation": "An increase of 10% means 110% of the original number is equal to 110. Therefore, 100% of the original number = (110 ÷ 110) × 100 = 100."
+    },
+    {
+      "question": "The price of a television is decreased by 15% to $510. What was the original price?",
+      "options": ["$580", "$600", "$620", "$650"],
+      "correct": 1,
+      "points": 10,
+      "time": 150,
+      "explanation": "A decrease of 15% means the sale price is 100% - 15% = 85% of the original price. 85% = $510, so 1% = $510 ÷ 85 = $6. The original price (100%) = $6 × 100 = $600."
+    },
+    {
+      "question": "There are 60 students in a class. The ratio of boys to girls is 7:5. If 5 more boys join, what is the new ratio of boys to girls?",
+      "options": ["5:3", "4:3", "8:5", "3:2"],
+      "correct": 2,
+      "points": 12,
+      "time": 180,
+      "explanation": "Total initial units = 7 + 5 = 12 units. 12 units = 60 students, so 1 unit = 5 students. Initial number of boys = 7 × 5 = 35. Initial number of girls = 5 × 5 = 25. After 5 boys join, the new number of boys = 35 + 5 = 40. The new ratio of boys to girls is 40 : 25, which simplifies to 8 : 5."
+    },
+    {
+      "question": "A bakery sells 1/3 of its cakes in the morning and 1/4 of the remaining in the afternoon. If 12 cakes are left, how many cakes were there initially?",
+      "options": ["18", "20", "24", "28"],
+      "correct": 2,
+      "points": 12,
+      "time": 180,
+      "explanation": "Remaining fraction after morning sales = 1 - 1/3 = 2/3. Afternoon sales = 1/4 × 2/3 = 1/6. Total fraction left = 2/3 - 1/6 = 3/6 = 1/2. Given 1/2 of total cakes = 12, the initial number of cakes = 12 × 2 = 24."
+    },
+    {
+      "question": "The ratio of the number of apples to oranges is 4:3. After 15 oranges are added, the ratio becomes 2:3. How many apples are there?",
+      "options": ["20", "25", "30", "35"],
+      "correct": 0,
+      "points": 14,
+      "time": 200,
+      "explanation": "Since the number of apples remains unchanged, equalize the apple units across both ratios. Initial ratio A:O = 4:3. New ratio A:O = 2:3 = 4:6. The increase in oranges is 6 units - 3 units = 3 units. Given 3 units = 15 oranges, 1 unit = 5 oranges. The number of apples = 4 units = 4 × 5 = 20."
+    },
+    {
+      "question": "A shopkeeper bought 80 kg of rice. He sold 40% of it and then another 25% of the remaining. How much rice is left?",
+      "options": ["24 kg", "30 kg", "36 kg", "40 kg"],
+      "correct": 2,
+      "points": 10,
+      "time": 150,
+      "explanation": "Amount left after selling 40% = 60% of 80 kg = 48 kg. Amount left after selling 25% of the remaining balance = 75% of 48 kg = 0.75 × 48 = 36 kg."
+    },
+    {
+      "question": "In a club, the ratio of boys to girls is 3:2. There are 50 members. After some boys leave, 1/3 of the remaining members are boys. How many boys left?",
+      "options": ["5", "10", "15", "20"],
+      "correct": 3,
+      "points": 14,
+      "time": 200,
+      "explanation": "Initial units = 3 + 2 = 5 units. 5 units = 50 members, so 1 unit = 10. Initial boys = 30, initial girls = 20. Since only boys leave, the number of girls remains 20. In the final group, boys make up 1/3, meaning girls make up 2/3. Thus, 2 parts = 20 girls, which means 1 part = 10 boys remaining. Number of boys who left = 30 - 10 = 20."
+    },
+    {
+      "question": "A number is decreased by 15% and then increased by 15%. What is the overall percentage change?",
+      "options": ["0%", "-2.25%", "2.25%", "0.25%"],
+      "correct": 1,
+      "points": 12,
+      "time": 180,
+      "explanation": "Let the original number be 100. After a 15% decrease, the value is 100 × 0.85 = 85. After a 15% increase on 85, the final value is 85 × 1.15 = 97.75. The overall percentage change is 97.75% - 100% = -2.25% (a decrease of 2.25%)."
+    },
+    {
+      "question": "There are 200 students. 60% of them are boys. If 20 more girls join, what percentage of the students are boys now?",
+      "options": ["50%", "54.5%", "60%", "66.7%"],
+      "correct": 1,
+      "points": 12,
+      "time": 180,
+      "explanation": "Initial number of boys = 60% of 200 = 120. After 20 girls join, the new total number of students = 200 + 20 = 220. The number of boys remains 120. New percentage of boys = (120 ÷ 220) × 100% ≈ 54.5%."
+    },
+    {
+      "question": "A man had $500. He spent 1/5 of it on food and 1/4 of the remaining on transport. How much money does he have left?",
+      "options": ["$200", "$250", "$300", "$350"],
+      "correct": 2,
+      "points": 10,
+      "time": 150,
+      "explanation": "Fraction remaining after food spending = 4/5. Fraction remaining after transport spending = 3/4 × 4/5 = 3/5. Total money left = 3/5 × $500 = $300."
+    },
+    {
+      "question": "The ratio of red to green marbles is 5:2. If there are 18 more red marbles than green marbles, how many red marbles are there?",
+      "options": ["12", "24", "30", "42"],
+      "correct": 2,
+      "points": 12,
+      "time": 150,
+      "explanation": "Difference in units = 5 - 2 = 3 units. Given 3 units = 18 marbles, 1 unit = 18 ÷ 3 = 6 marbles. Total number of red marbles = 5 units = 5 × 6 = 30."
+    },
+    {
+      "question": "A number is increased by 30% to become 130. What is the original number?",
+      "options": ["90", "95", "100", "105"],
+      "correct": 2,
+      "points": 10,
+      "time": 150,
+      "explanation": "A 30% increase means 130% of the original number is 130. Therefore, 100% of the original number is 100."
+    },
+    {
+      "question": "In a hall, 40% of the students are boys and the rest are girls. 20% of the boys wear glasses. If there are 80 boys in total, how many boys do not wear glasses?",
+      "options": ["16", "32", "64", "120"],
+      "correct": 2,
+      "points": 12,
+      "time": 160,
+      "explanation": "The total number of boys is 80. Since 20% of the boys wear glasses, the percentage of boys who do not wear glasses is 100% - 20% = 80%. Number of boys who do not wear glasses = 80% of 80 = 0.80 × 80 = 64."
+    },
+    {
+      "question": "A shop had 200 kg of sugar. It sold 40% of it on Monday and 25% of the remaining on Tuesday. How much sugar was left?",
+      "options": ["80 kg", "90 kg", "100 kg", "110 kg"],
+      "correct": 1,
+      "points": 12,
+      "time": 180,
+      "explanation": "Amount left after Monday = 100% - 40% = 60%. Remaining sugar after Monday = 60% of 200 kg = 120 kg. Amount left after Tuesday = 100% - 25% = 75%. Final sugar left = 75% of 120 kg = 0.75 × 120 = 90 kg."
+    },
+    {
+      "question": "The ratio of boys to girls is 7:3. If there are 20 more boys than girls, how many students are there in total?",
+      "options": ["40", "50", "60", "70"],
+      "correct": 1,
+      "points": 12,
+      "time": 180,
+      "explanation": "Difference in units = 7 - 3 = 4 units. Given 4 units = 20 students, 1 unit = 5 students. Total students = 7 + 3 = 10 units = 10 × 5 = 50."
+    },
+    {
+      "question": "A book costs $50 after a 20% discount. What was the original price?",
+      "options": ["$60", "$62.50", "$65", "$70"],
+      "correct": 1,
+      "points": 10,
+      "time": 150,
+      "explanation": "A 20% discount means the sale price of $50 represents 80% of the original price. 80% = $50, so 100% = ($50 ÷ 80) × 100 = $62.50."
+    },
+    {
+      "question": "There are 80 fruits. The ratio of apples to oranges is 3:5. If 10 apples are added, what is the new ratio of apples to oranges?",
+      "options": ["1:1", "4:5", "5:7", "7:9"],
+      "correct": 1,
+      "points": 12,
+      "time": 180,
+      "explanation": "Total units initially = 3 + 5 = 8 units. 8 units = 80 fruits, so 1 unit = 10 fruits. Initial apples = 30, initial oranges = 50. After adding 10 apples, the new number of apples = 30 + 10 = 40. The number of oranges remains 50. The new ratio of apples to oranges is 40 : 50 = 4 : 5."
+    },
+    {
+      "question": "A farmer had 120 chickens. He sold 1/3 of them and then 1/4 of the remaining balance. How many chickens are left?",
+      "options": ["30", "40", "50", "60"],
+      "correct": 3,
+      "points": 10,
+      "time": 150,
+      "explanation": "Number of chickens remaining after the first sale = 1 - 1/3 = 2/3 of 120 = 80. The second sale takes 1/4 of these 80 chickens, leaving 3/4 behind. Final chickens left = 3/4 × 80 = 60."
+    },
+    {
+      "question": "There are 50 students. The ratio of boys to girls is 2:3. If 5 boys leave, what is the new ratio of boys to girls?",
+      "options": ["1:2", "2:3", "3:5", "5:7"],
+      "correct": 0,
+      "points": 12,
+      "time": 180,
+      "explanation": "Total initial parts = 2 + 3 = 5 units. 5 units = 50 students, so 1 unit = 10 students. Initial boys = 20, initial girls = 30. After 5 boys leave, the new number of boys = 20 - 5 = 15. The number of girls remains 30. The new ratio of boys to girls is 15 : 30 = 1 : 2."
+    }
+  ]
+}
