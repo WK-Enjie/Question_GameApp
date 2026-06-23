@@ -1,0 +1,203 @@
+{
+  "title": "Forming Quadratic Equations Worksheet",
+  "topic": "Forming Expressions and Quadratic Equations from Word Problems",
+  "subject": "Mathematics",
+  "level": "Secondary",
+  "grade": "Sec 2",
+  "chapter": 3,
+  "worksheet": 4,
+  "questions": [
+    {
+      "question": "A rectangle has a length of $(x + 5)$ cm and a width of $(x - 2)$ cm. Given that the area of the rectangle is 60 cm², form a simplified quadratic equation in terms of $x$.",
+      "options": [
+        "$x^2 + 3x - 10 = 0$",
+        "$x^2 + 3x - 70 = 0$",
+        "$x^2 - 3x - 70 = 0$",
+        "$x^2 + 3x + 50 = 0$"
+      ],
+      "correct": 1,
+      "points": 1,
+      "explanation": "Area = $\\text{length} \\times \\text{width}$. Therefore, $(x + 5)(x - 2) = 60$. Expanding gives $x^2 - 2x + 5x - 10 = 60$, which simplifies to $x^2 + 3x - 10 = 60$. Moving 60 to the left side yields $x^2 + 3x - 70 = 0$."
+    },
+    {
+      "question": "The perimeter of a rectangular continuous banner is 40 m. The area of the banner is 96 m². If the length of the banner is $x$ m, form a simplified quadratic equation in terms of $x$.",
+      "options": [
+        "$x^2 - 20x + 96 = 0$",
+        "$x^2 + 20x - 96 = 0$",
+        "$x^2 - 40x + 96 = 0$",
+        "$x^2 - 20x - 96 = 0$"
+      ],
+      "correct": 0,
+      "points": 1,
+      "explanation": "Perimeter = $2(\\text{length} + \\text{width}) = 40$, so $\\text{length} + \\text{width} = 20$. Since length is $x$, width must be $(20 - x)$. Area = $\\text{length} \\times \\text{width} \\implies x(20 - x) = 96 \\implies 20x - x^2 = 96$. Rearranging into standard form gives $x^2 - 20x + 96 = 0$."
+    },
+    {
+      "question": "A retail manager spends a total of $120 on buying $x$ identical gifts. If the cost price of each gift increases by $2, she would be able to buy 3 fewer gifts for the same total amount of $120. Form a simplified quadratic equation to represent this scenario.",
+      "options": [
+        "$x^2 - 3x - 120 = 0$",
+        "$x^2 + 3x - 180 = 0$",
+        "$x^2 - 3x - 180 = 0$",
+        "$2x^2 - 6x - 120 = 0$"
+      ],
+      "correct": 2,
+      "points": 1,
+      "explanation": "The original cost per gift is $\\frac{120}{x}$. The new cost per gift is $\\frac{120}{x - 3}$. Since the new cost is $2 more, $\\frac{120}{x - 3} - \\frac{120}{x} = 2$. Multiplying throughout by $x(x - 3)$ gives $120x - 120(x - 3) = 2x(x - 3) \\implies 360 = 2x^2 - 6x$. Dividing by 2 and moving terms gives $x^2 - 3x - 180 = 0$."
+    },
+    {
+      "question": "A shopkeeper buys $x$ ceramic mugs for a total of $120. During shipping, 5 mugs are completely broken and cannot be sold. He sells each remaining mug at a markup price that is $4 more than its original cost price. He breaks even exactly, making a total sales revenue of $120. Form a simplified quadratic equation.",
+      "options": [
+        "$x^2 - 5x - 150 = 0$",
+        "$x^2 + 5x - 150 = 0$",
+        "$x^2 - 5x - 120 = 0$",
+        "$x^2 - 25x - 150 = 0$"
+      ],
+      "correct": 0,
+      "points": 1,
+      "explanation": "Original cost per mug is $\\frac{120}{x}$. The selling price per mug is $\\frac{120}{x} + 4$. The number of sold mugs is $(x - 5)$. Total revenue is $(x - 5)(\\frac{120}{x} + 4) = 120$. Expanding gives $120 + 4x - \\frac{600}{x} - 20 = 120 \\implies 4x - 20 - \\frac{600}{x} = 0$. Multiplying by $x$ gives $4x^2 - 20x - 600 = 0$, which simplifies to $x^2 - 5x - 150 = 0$."
+    },
+    {
+      "question": "A cyclist travels a distance of 12 km at a constant speed of $x$ km/h. If her speed is increased by 2 km/h, the time taken for the journey is reduced by 1 hour. Form a simplified quadratic equation to find $x$.",
+      "options": [
+        "$x^2 + 2x - 12 = 0$",
+        "$x^2 - 2x - 24 = 0$",
+        "$x^2 + 2x - 24 = 0$",
+        "$x^2 + 2x + 24 = 0$"
+      ],
+      "correct": 2,
+      "points": 1,
+      "explanation": "Original time taken = $\\frac{12}{x}$ hours. New time taken = $\\frac{12}{x + 2}$ hours. The difference in time is 1 hour, so $\\frac{12}{x} - \\frac{12}{x + 2} = 1$. Multiplying by $x(x + 2)$ gives $12(x + 2) - 12x = x(x + 2) \\implies 24 = x^2 + 2x$. Thus, $x^2 + 2x - 24 = 0$."
+    },
+    {
+      "question": "An independent contractor is paid a lump sum of $120 for completing a task. It takes him $x$ hours to finish. If he takes 2 hours longer to complete the same task, his effective hourly rate drops by $2. Form a simplified quadratic equation.",
+      "options": [
+        "$x^2 + 2x - 120 = 0$",
+        "$x^2 - 2x - 120 = 0$",
+        "$x^2 + 2x - 240 = 0$",
+        "$x^2 + x - 60 = 0$"
+      ],
+      "correct": 0,
+      "points": 1,
+      "explanation": "Original hourly rate = $\\frac{120}{x}$. New hourly rate = $\\frac{120}{x + 2}$. The difference in rate is $2, so $\\frac{120}{x} - \\frac{120}{x + 2} = 2$. Multiplying by $x(x + 2)$ yields $120(x + 2) - 120x = 2x(x + 2) \\implies 240 = 2x^2 + 4x$. Dividing by 2 and rearranging gives $x^2 + 2x - 120 = 0$."
+    },
+    {
+      "question": "A teacher spends $40 to buy $x$ identical clear files. If each file is on sale for $1 cheaper, she could buy 2 more files for the exact same total amount of $40. Form a simplified quadratic equation to find $x$.",
+      "options": [
+        "$x^2 + 2x - 40 = 0$",
+        "$x^2 + 2x - 80 = 0$",
+        "$x^2 - 2x - 80 = 0$",
+        "$x^2 + 2x + 80 = 0$"
+      ],
+      "correct": 1,
+      "points": 1,
+      "explanation": "Original price per file = $\\frac{40}{x}$. Sale price per file = $\\frac{40}{x + 2}$. Since the sale price is $1 less: $\\frac{40}{x} - \\frac{40}{x + 2} = 1$. Multiplying by $x(x + 2)$ gives $40(x + 2) - 40x = x(x + 2) \\implies 80 = x^2 + 2x$. In standard form, this is $x^2 + 2x - 80 = 0$."
+    },
+    {
+      "question": "A florist buys $x$ glass vases for a total of $160. Two of the vases are chipped during unpacking and cannot be sold. She sells the remaining vases at a profit of $4 above the original cost price each, resulting in a total sales revenue of $168. Form a simplified quadratic equation.",
+      "options": [
+        "$x^2 - 4x - 80 = 0$",
+        "$x^2 + 4x - 80 = 0$",
+        "$x^2 - 4x - 160 = 0$",
+        "$x^2 - 2x - 40 = 0$"
+      ],
+      "correct": 0,
+      "points": 1,
+      "explanation": "Original cost price per vase = $\\frac{160}{x}$. Selling price per vase = $\\frac{160}{x} + 4$. Total revenue from $(x - 2)$ vases is $(x - 2)(\\frac{160}{x} + 4) = 168$. Expanding gives $160 + 4x - \\frac{320}{x} - 8 = 168 \\implies 4x - 16 - \\frac{320}{x} = 0$. Multiplying by $x$ gives $4x^2 - 16x - 320 = 0$. Dividing by 4 yields $x^2 - 4x - 80 = 0$."
+    },
+    {
+      "question": "A rectangular art print measures 15 cm by 10 cm. A protective border of uniform width $x$ cm is added all around the outside of the print. If the total combined area of the print and the border is 176 cm², form a simplified quadratic equation.",
+      "options": [
+        "$4x^2 + 50x - 176 = 0$",
+        "$2x^2 + 25x - 13 = 0$",
+        "$2x^2 + 25x + 13 = 0$",
+        "$x^2 + 25x - 26 = 0$"
+      ],
+      "correct": 1,
+      "points": 1,
+      "explanation": "The new length is $(15 + 2x)$ cm and the new width is $(10 + 2x)$ cm. Combined area = $(15 + 2x)(10 + 2x) = 176$. Expanding gives $150 + 30x + 20x + 4x^2 = 176 \\implies 4x^2 + 50x - 26 = 0$. Dividing the entire equation by 2 gives $2x^2 + 25x - 13 = 0$."
+    },
+    {
+      "question": "A right-angled triangle has a base of $x$ cm. Its perpendicular height is 2 cm shorter than twice its base. Given that the hypotenuse is 10 cm, use Pythagoras' Theorem to form a simplified quadratic equation.",
+      "options": [
+        "$5x^2 - 8x - 96 = 0$",
+        "$5x^2 - 4x - 96 = 0$",
+        "$3x^2 - 8x - 96 = 0$",
+        "$5x^2 - 8x + 104 = 0$"
+      ],
+      "correct": 0,
+      "points": 1,
+      "explanation": "The height is $(2x - 2)$ cm. By Pythagoras' Theorem, $\\text{base}^2 + \\text{height}^2 = \\text{hypotenuse}^2 \\implies x^2 + (2x - 2)^2 = 10^2$. Expanding gives $x^2 + 4x^2 - 8x + 4 = 100 \\implies 5x^2 - 8x + 4 = 100$. Subtracting 100 from both sides gives $5x^2 - 8x - 96 = 0$."
+    },
+    {
+      "question": "A group of $x$ friends agree to split a restaurant dinner bill of $120 equally. At the end of the meal, 3 friends realize they forgot their wallets, meaning the remaining friends each have to pay $2 more than their original share. Form a simplified quadratic equation.",
+      "options": [
+        "$x^2 - 3x - 120 = 0$",
+        "$x^2 - 3x - 180 = 0$",
+        "$x^2 + 3x - 180 = 0$",
+        "$x^2 - 3x + 180 = 0$"
+      ],
+      "correct": 1,
+      "points": 1,
+      "explanation": "Original share per person = $\\frac{120}{x}$. New share per person = $\\frac{120}{x - 3}$. The difference is $2, so $\\frac{120}{x - 3} - \\frac{120}{x} = 2$. Multiplying by $x(x - 3)$ gives $120x - 120(x - 3) = 2x(x - 3) \\implies 360 = 2x^2 - 6x$. Rearranging and dividing by 2 leads to $x^2 - 3x - 180 = 0$."
+    },
+    {
+      "question": "The product of two consecutive positive even integers is 168. If the smaller even integer is represented by $x$, form a simplified quadratic equation.",
+      "options": [
+        "$x^2 + 2x - 168 = 0$",
+        "$x^2 + x - 168 = 0$",
+        "$x^2 + 2x + 168 = 0$",
+        "$x^2 - 2x - 168 = 0$"
+      ],
+      "correct": 0,
+      "points": 1,
+      "explanation": "If the smaller positive even integer is $x$, the next consecutive even integer is $(x + 2)$. Their product is $x(x + 2) = 168 \\implies x^2 + 2x = 168$. Shifting 168 to the left side results in $x^2 + 2x - 168 = 0$."
+    },
+    {
+      "question": "A store owner purchases $x$ customized notebooks for a total cost of $100. He managed to sell all of them at a profit of $(x - 3)$ dollars on each notebook. If his total net profit from selling all the notebooks is $40, form a simplified quadratic equation.",
+      "options": [
+        "$x^2 - 3x + 40 = 0$",
+        "$x^2 - 3x - 40 = 0$",
+        "$x^2 + 3x - 40 = 0$",
+        "$x^2 - 3x - 140 = 0$"
+      ],
+      "correct": 1,
+      "points": 1,
+      "explanation": "Total profit = $\\text{number of items} \\times \\text{profit per item}$. Therefore, $x(x - 3) = 40$. Expanding this gives $x^2 - 3x = 40$. Moving 40 to the left side yields $x^2 - 3x - 40 = 0$."
+    },
+    {
+      "question": "A rectangular photo measuring 14 cm by 10 cm has a uniform decorative border of width $x$ cm cut off evenly from all four inside edges. If the remaining inner area of the photo is exactly 60 cm², form a simplified quadratic equation.",
+      "options": [
+        "$x^2 - 12x + 20 = 0$",
+        "$x^2 - 24x + 20 = 0$",
+        "$x^2 - 12x + 35 = 0$",
+        "$x^2 + 12x + 20 = 0$"
+      ],
+      "correct": 0,
+      "points": 1,
+      "explanation": "Trimming a border of width $x$ from both sides reduces the length to $(14 - 2x)$ cm and the width to $(10 - 2x)$ cm. Remaining Area = $(14 - 2x)(10 - 2x) = 60 \\implies 140 - 28x - 20x + 4x^2 = 60 \\implies 4x^2 - 48x + 80 = 0$. Dividing by 4 gives $x^2 - 12x + 20 = 0$."
+    },
+    {
+      "question": "A tourist ferry travels 48 km upstream against the current at a constant speed of $x$ km/h. On the return journey downstream with the current, its speed increases by 4 km/h. Given that the total time taken for the entire round trip is 5 hours, form a simplified quadratic equation.",
+      "options": [
+        "$5x^2 - 76x - 192 = 0$",
+        "$5x^2 + 76x - 192 = 0$",
+        "$5x^2 - 20x - 192 = 0$",
+        "$5x^2 - 76x + 192 = 0$"
+      ],
+      "correct": 0,
+      "points": 1,
+      "explanation": "Time upstream = $\\frac{48}{x}$. Time downstream = $\\frac{48}{x + 4}$. Total time = $\\frac{48}{x} + \\frac{48}{x + 4} = 5$. Multiplying by $x(x + 4)$ gives $48(x + 4) + 48x = 5x(x + 4) \\implies 48x + 192 + 48x = 5x^2 + 20x \\implies 96x + 192 = 5x^2 + 20x$. Rearranging into standard form gives $5x^2 - 76x - 192 = 0$."
+    },
+    {
+      "question": "An event coordinator buys $x$ party balloons for $20. Two balloons pop during setup. To ensure she recovers her exact costs, she sells each remaining balloon for $1 more than its original cost price, breaking even with a total revenue of $20. Form a simplified quadratic equation.",
+      "options": [
+        "$x^2 - 2x + 40 = 0$",
+        "$x^2 + 2x - 40 = 0$",
+        "$x^2 - 2x - 40 = 0$",
+        "$x^2 - 2x - 20 = 0$"
+      ],
+      "correct": 2,
+      "points": 1,
+      "explanation": "Original cost per balloon = $\\frac{20}{x}$. Selling price per balloon = $\\frac{20}{x} + 1$. The number of sold balloons is $(x - 2)$. Total revenue is $(x - 2)(\\frac{20}{x} + 1) = 20$. Expanding gives $20 + x - \\frac{40}{x} - 2 = 20 \\implies x - 2 - \\frac{40}{x} = 0$. Multiplying by $x$ gives $x^2 - 2x - 40 = 0$."
+    }
+  ]
+}
