@@ -1,0 +1,251 @@
+{
+  "title": "Human Digestion and Nutrition Quiz",
+  "topic": "Physical vs Chemical Digestion, Nutrient Classes, and Enzyme Actions",
+  "subject": "Science",
+  "level": "Secondary",
+  "grade": "Sec 2",
+  "chapter": 4,
+  "worksheet": 1,
+  "questions": [
+    {
+      "question": "What is the primary reason why food must undergo digestion in the human body?",
+      "options": [
+        "To change the color and flavor of the food before it enters the blood.",
+        "To break down large, complex food substances into smaller, simpler, and soluble molecules for absorption.",
+        "To mix the food with water so it can flow through the body as a gas.",
+        "To turn all types of nutrients into proteins for immediate muscle growth."
+      ],
+      "correct": 1,
+      "points": 5,
+      "explanation": "Digestion is necessary because the food we eat consists of large, complex, and insoluble molecules that cannot pass through the walls of our digestive system. It must be broken down into smaller, simpler, and soluble molecules so it can be absorbed into the body."
+    },
+    {
+      "question": "Which of the following describes the key physical property that nutrient molecules must have in order to be successfully absorbed into our bloodstream?",
+      "options": [
+        "They must be large and insoluble.",
+        "They must be converted into solid crystals.",
+        "They must be small and soluble.",
+        "They must be completely gaseous."
+      ],
+      "correct": 2,
+      "points": 5,
+      "explanation": "Only substances that are small and soluble can dissolve and pass through the living membranes of the digestive tract to enter the bloodstream for the body to use."
+    },
+    {
+      "question": "Which statement best defines the process of physical digestion?",
+      "options": [
+        "The use of chemical agents called enzymes to create entirely new substances.",
+        "The transport of nutrients from the blood directly into the bone cells.",
+        "The mechanical breakdown of food into smaller pieces without changing the chemical nature of the food.",
+        "The absorption of water molecules from food into the large intestine."
+      ],
+      "correct": 2,
+      "points": 5,
+      "explanation": "Physical digestion involves mechanically breaking large pieces of food into smaller pieces (like chewing with teeth). This changes the physical size of the food but does not break down the chemical bonds of the molecules."
+    },
+    {
+      "question": "What occurs during chemical digestion that does not happen during physical digestion?",
+      "options": [
+        "Food is cut and crushed into smaller physical fragments.",
+        "Large, complex molecules are chemically broken down into new, simpler, and soluble molecules with the help of enzymes.",
+        "Food is moved along the digestive track by muscle contractions.",
+        "Liquid water is mixed with food to soften it up."
+      ],
+      "correct": 1,
+      "points": 5,
+      "explanation": "Chemical digestion involves a chemical change where large, complex food molecules are broken down into entirely new, simpler, and soluble molecules. This process requires digestive enzymes."
+    },
+    {
+      "question": "Which of the following is an example of physical digestion?",
+      "options": [
+        "Protease breaking down a protein molecule into amino acids.",
+        "Teeth grinding and chewing a piece of bread into smaller bits.",
+        "Carbohydrase splitting starch into simple sugars.",
+        "Lipase breaking down oil droplets into fatty acids."
+      ],
+      "correct": 1,
+      "points": 5,
+      "explanation": "Chewing and grinding food with teeth reduces the physical size of the food particles, increasing their surface area, which makes it a classic example of physical digestion."
+    },
+    {
+      "question": "Which of the following processes represents chemical digestion?",
+      "options": [
+        "The churning and mixing of food within a digestive organ.",
+        "Breaking a large piece of chocolate into smaller cubes using your hands.",
+        "Enzymes breaking down large insoluble starch molecules into small soluble simple sugars.",
+        "Dissolving a spoonful of pure sugar crystals into a glass of warm water."
+      ],
+      "correct": 2,
+      "points": 5,
+      "explanation": "The breakdown of starch into simple sugars by enzymes involves changing the chemical identity of the molecule from complex to simple, which is the definition of chemical digestion."
+    },
+    {
+      "question": "A student wants to plan a meal that provides a rich source of carbohydrates. Which group of foods should they include?",
+      "options": [
+        "Steak, fish, and egg whites",
+        "Butter, olive oil, and cheese",
+        "Rice, bread, and potatoes",
+        "Water, salt, and lettuce leaves"
+      ],
+      "correct": 2,
+      "points": 5,
+      "explanation": "Starchy foods like rice, bread, potatoes, and pasta are excellent sources of carbohydrates."
+    },
+    {
+      "question": "Which of the following foods would be the best choice for an athlete looking to consume a meal rich in proteins for tissue repair?",
+      "options": [
+        "Honey, jam, and soft drinks",
+        "Chicken breast, tofu, and fish",
+        "Margarine, lard, and vegetable oil",
+        "Apples, oranges, and cucumbers"
+      ],
+      "correct": 1,
+      "points": 5,
+      "explanation": "Meat (like chicken), fish, eggs, tofu, and legumes are packed with proteins, which are essential for growth and repair in the body."
+    },
+    {
+      "question": "Which of the following items are rich sources of lipids (fats)?",
+      "options": [
+        "Butter, cooking oil, and nuts",
+        "White rice, brown sugar, and oats",
+        "Lean beef, skimmed milk, and prawns",
+        "Carrots, tomatoes, and spinach"
+      ],
+      "correct": 0,
+      "points": 5,
+      "explanation": "Lipids include fats and oils. Dairy products like butter, vegetable oils, and nuts contain high concentrations of lipids."
+    },
+    {
+      "question": "What is the primary function of carbohydrates in the human body?",
+      "options": [
+        "To act as the main building blocks for making new muscle fibers.",
+        "To provide the body with its primary and immediate source of energy.",
+        "To catalyze chemical reactions as biological helpers.",
+        "To transport oxygen throughout our circulatory system."
+      ],
+      "correct": 1,
+      "points": 5,
+      "explanation": "Carbohydrates are broken down into simple sugars, which are then used by our body cells during respiration to release energy for daily activities."
+    },
+    {
+      "question": "Why does a growing child require a sufficient daily intake of protein-rich foods?",
+      "options": [
+        "Proteins provide the quickest source of instant energy for running.",
+        "Proteins are necessary for the growth of new cells and the repair of damaged tissues.",
+        "Proteins dissolve vitamins so they can be exhaled easily.",
+        "Proteins turn directly into body fat to protect internal organs."
+      ],
+      "correct": 1,
+      "points": 5,
+      "explanation": "Proteins provide the essential materials needed to build new cytoplasm, grow new cells, and repair worn-out or damaged tissues in the body."
+    },
+    {
+      "question": "Which of the following is a primary function of lipids (fats) in the human body?",
+      "options": [
+        "They are used as a long-term energy storage material and help cushion internal organs.",
+        "They are the main source of instant energy for the brain.",
+        "They carry genetic code information from parents to children.",
+        "They are used exclusively to build hard structures like teeth and bones."
+      ],
+      "correct": 0,
+      "points": 5,
+      "explanation": "Lipids serve as an efficient long-term energy reserve for the body, storing twice as much energy per gram as carbohydrates, and they provide protective cushioning around vital organs."
+    },
+    {
+      "question": "Which broad class of digestive enzymes is responsible for breaking down complex carbohydrates into simpler forms?",
+      "options": [
+        "Protease",
+        "Lipase",
+        "Carbohydrase",
+        "Mineralase"
+      ],
+      "correct": 2,
+      "points": 5,
+      "explanation": "Carbohydrases are the group of enzymes specifically designed to target and break the chemical bonds in carbohydrate molecules."
+    },
+    {
+      "question": "If a person eats a meal rich in protein, such as boiled egg whites, which broad class of enzymes will be required to chemically digest it?",
+      "options": [
+        "Carbohydrase",
+        "Protease",
+        "Lipase",
+        "Amylase"
+      ],
+      "correct": 1,
+      "points": 5,
+      "explanation": "Proteases are enzymes that specifically break down large, complex protein molecules into their simpler constituent components."
+    },
+    {
+      "question": "Which broad class of enzymes is responsible for the chemical digestion of fats and oils (lipids)?",
+      "options": [
+        "Lipase",
+        "Protease",
+        "Carbohydrase",
+        "Glycerolase"
+      ],
+      "correct": 0,
+      "points": 5,
+      "explanation": "Lipases are the specific class of digestive enzymes that break down lipid molecules into smaller, soluble units."
+    },
+    {
+      "question": "What is the final, soluble end-product of carbohydrate digestion that can be absorbed by the body?",
+      "options": [
+        "Amino acids",
+        "Simple sugars",
+        "Fatty acids",
+        "Glycerol"
+      ],
+      "correct": 1,
+      "points": 5,
+      "explanation": "Large, complex carbohydrates (like starch) are chemically digested by carbohydrases down into their smallest, simplest unit, which is simple sugars (like glucose)."
+    },
+    {
+      "question": "Proteins are large molecules made of smaller units linked together. What are the final, soluble end-products of protein digestion?",
+      "options": [
+        "Simple sugars",
+        "Fatty acids only",
+        "Amino acids",
+        "Glycerol units"
+      ],
+      "correct": 2,
+      "points": 5,
+      "explanation": "When proteases finish digesting protein molecules, the chemical chains are completely broken apart into individual, small, and soluble units called amino acids."
+    },
+    {
+      "question": "What are the final, soluble end-products produced when lipases fully digest a lipid molecule?",
+      "options": [
+        "Simple sugars and amino acids",
+        "Fatty acids and glycerol",
+        "Starch and water molecules",
+        "Proteins and simple sugars"
+      ],
+      "correct": 1,
+      "points": 5,
+      "explanation": "The chemical digestion of a lipid molecule yields two distinct types of smaller, soluble end-products: fatty acids and glycerol."
+    },
+    {
+      "question": "How does physical digestion assist and speed up the process of chemical digestion?",
+      "options": [
+        "Physical digestion destroys the enzymes so they do not overwork.",
+        "Physical digestion chemically turns all lipids into soluble simple sugars directly.",
+        "Physical digestion breaks food into smaller pieces, increasing the surface area for enzymes to interact with and work on more efficiently.",
+        "Physical digestion cools down the food to make chemical reactions stop."
+      ],
+      "correct": 2,
+      "points": 5,
+      "explanation": "By breaking large food chunks into millions of tiny pieces, physical digestion vastly increases the total surface area of the food exposed to digestive juices, allowing enzymes to break down the food molecules much faster."
+    },
+    {
+      "question": "A student tracks the digestion of a chicken salad meal. Which of the following correctly pairs a nutrient found in the meal with its correct broad class of enzyme and final absorbed product?",
+      "options": [
+        "Carbohydrate (from croutons) -> Lipase -> Amino acids",
+        "Protein (from chicken) -> Protease -> Amino acids",
+        "Lipid (from dressing) -> Carbohydrase -> Glycerol and fatty acids",
+        "Protein (from chicken) -> Carbohydrase -> Simple sugars"
+      ],
+      "correct": 1,
+      "points": 5,
+      "explanation": "Proteins from the chicken are chemically broken down by the enzyme class called protease to form individual, soluble amino acids, which can then be absorbed into the body."
+    }
+  ]
+}
