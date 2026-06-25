@@ -1,0 +1,85 @@
+{
+  "title": "Sec 4 O-Level Revision (Advanced) – Percentage, Ratio, Speed, Rate & Standard Form",
+  "questions": [
+    {
+      "question": "A retailer increases the cost price of a smartphone by x% for its retail launch, but later offers a storewide discount of x% during a seasonal sale. The final promotional price, before tax, is exactly 4% lower than the initial cost price. A customer buys the phone during the sale and pays a total of $1,046.40, which includes a 9% Goods and Services Tax (GST). Calculate the initial cost price of the smartphone.",
+      "options": ["$1,000", "$1,040", "$1,080", "$1,100"],
+      "correct": 0,
+      "points": 15,
+      "time": 210,
+      "explanation": "Step 1: Reverse the 9% GST to find the promotional price before tax. Price before GST = $1,046.40 ÷ 1.09 = $960. Step 2: Relate this to the initial cost price. Since the price is 4% lower than the initial price, $960 represents 96% of the initial cost price. Initial cost price = $960 ÷ 0.96 = $1,000."
+    },
+    {
+      "question": "A layout map of an industrial estate has a scale of 1 : 10 000. On this map, a plot of land has an area of 24 cm². The layout is later reprinted on a smaller marketing flyer with a new scale of 1 : 40 000. Find the area of the plot of land represented on the flyer.",
+      "options": ["1.5 cm²", "6.0 cm²", "9.6 cm²", "96.0 cm²"],
+      "correct": 0,
+      "points": 15,
+      "time": 180,
+      "explanation": "Linear scale ratio between Map 1 and Map 2 is 10,000 : 40,000 = 1 : 4. This means dimensions on the flyer are 1/4 the size of the original map. The area scale ratio is the square of the linear scale ratio: (1/4)² = 1/16. Therefore, the area on the flyer = 24 cm² ÷ 16 = 1.5 cm²."
+    },
+    {
+      "question": "Runner X leaves a checkpoint at 09 00 running at a constant speed of 12 km/h. At 09 15, Runner Y leaves the same checkpoint along the identical route at a constant speed of 15 km/h. At 09 45, Runner X tires and reduces his speed to a constant 10 km/h, while Runner Y maintains her speed. At what time does Runner Y catch up with Runner X?",
+      "options": ["09 57", "10 00", "10 03", "10 12"],
+      "correct": 2,
+      "points": 16,
+      "time": 240,
+      "explanation": "Calculate the positions at 09 45 (when X slows down). Runner X has traveled for 45 mins (0.75 h): 12 km/h × 0.75 h = 9 km. Runner Y has traveled for 30 mins (0.5 h): 15 km/h × 0.5 h = 7.5 km. The gap between them at 09 45 is 9 - 7.5 = 1.5 km. After 09 45, X runs at 10 km/h and Y runs at 15 km/h. Their relative catching-up speed is 15 - 10 = 5 km/h. Time taken to close the gap = 1.5 km ÷ 5 km/h = 0.3 hours = 18 minutes. Overtaking time = 09 45 + 18 minutes = 10 03."
+    },
+    {
+      "question": "Contractor A can complete a painting project alone in 10 days, while Contractor B takes 15 days to complete the same project alone. Contractor A begins the project alone and works for 2 days, before being joined by Contractor B. They work together for exactly 3 days, after which Contractor A is reassigned to another site. How many additional days will Contractor B take working completely alone to finish the remaining painting work?",
+      "options": ["3.5 days", "4.0 days", "4.5 days", "5.0 days"],
+      "correct": 2,
+      "points": 14,
+      "time": 200,
+      "explanation": "Work rates per day: A = 1/10, B = 1/15. First 2 days (A alone): Work done = 2 × (1/10) = 1/5. Next 3 days (A & B together): Combined daily rate = 1/10 + 1/15 = 5/30 = 1/6. Work done in 3 days = 3 × (1/6) = 1/2. Total work completed so far = 1/5 + 1/2 = 7/10. Remaining work = 1 - 7/10 = 3/10. Extra time needed by B = (3/10) ÷ (1/15) = (3/10) × 15 = 4.5 days."
+    },
+    {
+      "question": "A high-performance supercomputer can perform 4.5 × 10¹⁵ floating-point operations per second. A complex climate simulation requires a total of 1.215 × 10²⁰ operations. If the simulation workload is split equally across 15 identical supercomputers working concurrently, calculate the total execution time required, expressing your answer in standard form.",
+      "options": ["1.8 × 10² seconds", "1.8 × 10³ seconds", "2.7 × 10³ seconds", "2.7 × 10⁴ seconds"],
+      "correct": 1,
+      "points": 14,
+      "time": 180,
+      "explanation": "Total operations allocated per supercomputer = (1.215 × 10²⁰) ÷ 15 = 0.081 × 10²⁰ = 8.1 × 10¹⁸ operations. Time taken by each supercomputer = (8.1 × 10¹⁸) ÷ (4.5 × 10¹⁵) = (8.1 ÷ 4.5) × 10¹⁸⁻¹⁵ = 1.8 × 10³ seconds."
+    },
+    {
+      "question": "The ratio of the volume of water in Tank A to Tank B is 3 : 2. Due to a physical defect, Tank A loses 20% of its initial water via leakage, while 45 liters of water are simultaneously pumped into Tank B. The new ratio of the volume of water in Tank A to Tank B becomes 4 : 5. Find the initial volume of water in Tank A.",
+      "options": ["90 liters", "120 liters", "135 liters", "150 liters"],
+      "correct": 2,
+      "points": 15,
+      "time": 210,
+      "explanation": "Let the initial volumes be Tank A = 3u and Tank B = 2u. After changes, Tank A retains 80% of its water: 0.8 × 3u = 2.4u. Tank B becomes 2u + 45. Set up the new ratio equation: 2.4u / (2u + 45) = 4 / 5. Cross-multiplying gives 5(2.4u) = 4(2u + 45) → 12u = 8u + 180 → 4u = 180 → u = 45. Initial volume of Tank A = 3u = 3 × 45 = 135 liters."
+    },
+    {
+      "question": "A test vehicle accelerates from rest to a constant speed of V m/s in 10 seconds, cruises at this speed for 20 seconds, and then decelerates uniformly to a complete stop over a duration of T seconds. Given that the total distance covered across the entire journey is 600 meters and the overall average speed is 15 m/s, determine the deceleration duration T.",
+      "options": ["5 seconds", "10 seconds", "15 seconds", "20 seconds"],
+      "correct": 1,
+      "points": 15,
+      "time": 200,
+      "explanation": "Total journey time = Total Distance ÷ Average Speed = 600 m ÷ 15 m/s = 40 seconds. Since the journey consists of acceleration (10s), cruising (20s), and deceleration (T), the total time equation is 10 + 20 + T = 40. Solving for T gives T = 40 - 30 = 10 seconds."
+    },
+    {
+      "question": "An investor deposits $10,000 in a fixed deposit wealth account for a total duration of 2 years. Throughout the first year, the account accumulates interest at a rate of 4% per annum compounded quarterly. Throughout the second year, the bank modifies the rate to 5% per annum compounded semi-annually. Find the total compound interest earned by the end of the 2-year period, correct to the nearest dollar.",
+      "options": ["$900", "$921", "$933", "$945"],
+      "correct": 2,
+      "points": 15,
+      "time": 220,
+      "explanation": "Year 1 (Quarterly compounding): 4 quarters, rate per quarter = 4% ÷ 4 = 1%. Amount after Year 1 = $10,000 × (1 + 0.01)⁴ = $10,406.04. Year 2 (Semi-annual compounding): This amount becomes the new principal. 2 interest periods, rate per period = 5% ÷ 2 = 2.5%. Final accumulated amount = $10,406.04 × (1 + 0.025)² = $10,406.04 × 1.050625 = $10,932.81. Total interest earned = $10,932.81 - $10,000 = $932.81, which rounds to $933."
+    },
+    {
+      "question": "The operational cost C of running a research laboratory is directly proportional to the square of the number of active projects P, and inversely proportional to the efficiency rating E of its central ventilation system. If the number of active projects is increased by 40% and the ventilation efficiency rating is improved by 12%, calculate the net percentage change in the laboratory's operational cost.",
+      "options": ["Increase of 25%", "Increase of 48%", "Increase of 75%", "Decrease of 12%"],
+      "correct": 2,
+      "points": 16,
+      "time": 190,
+      "explanation": "The proportionality relation is expressed as C = k × (P² / E). When P increases by 40%, the new project factor is 1.4P, and its square becomes (1.4)² = 1.96. When E increases by 12%, the new efficiency factor is 1.12E. The new cost calculation is C_new = k × (1.96P² / 1.12E) = (1.96 ÷ 1.12) × C = 1.75C. An operational cost factor shifting from 1.00 to 1.75 represents a net increase of 75%."
+    },
+    {
+      "question": "A chemical manufacturing plant dispenses industrial liquid at a constant volumetric rate of 2.5 liters per minute. The liquid has a physical mass density of 1.2 g/cm³. If the production line runs continuously for 1.5 hours, find the total mass of the liquid dispensed, expressing your answer in kilograms in standard form.",
+      "options": ["2.7 × 10¹ kg", "2.7 × 10² kg", "2.7 × 10³ kg", "2.7 × 10⁴ kg"],
+      "correct": 1,
+      "points": 15,
+      "time": 210,
+      "explanation": "Total runtime = 1.5 hours = 90 minutes. Total volume dispensed = 2.5 liters/min × 90 min = 225 liters. Convert volume to cubic centimeters: Since 1 liter = 1,000 cm³, 225 liters = 225,000 cm³. Calculate total mass: Mass = Volume × Density = 225,000 cm³ × 1.2 g/cm³ = 270,000 grams. Convert grams to kilograms: 270,000 g ÷ 1,000 = 270 kg. Converting 270 kg to standard form yields 2.7 × 10² kg."
+    }
+  ]
+}
