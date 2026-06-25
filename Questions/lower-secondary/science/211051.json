@@ -1,0 +1,251 @@
+{
+  "title": "Light: Reflection and Refraction - Worksheet 1",
+  "topic": "Properties of Mirrors, Reflection, and Basic Refraction",
+  "subject": "Lower Secondary Science",
+  "level": "Lower Secondary",
+  "grade": "Sec 1",
+  "chapter": 5,
+  "worksheet": 1,
+  "questions": [
+    {
+      "question": "Which of the following correctly describes the nature of an image formed by a flat plane mirror?",
+      "options": [
+        "Real, inverted, and larger than the object",
+        "Virtual, upright, and the same size as the object",
+        "Real, upright, and smaller than the object",
+        "Virtual, inverted, and larger than the object"
+      ],
+      "correct": 1,
+      "points": 5,
+      "explanation": "A plane mirror always forms an image that is virtual (cannot be caught on a screen), upright, and the exact same size as the object."
+    },
+    {
+      "question": "A student stands 4 meters away from a vertical plane mirror. What is the total distance between the student and their image?",
+      "options": [
+        "2 meters",
+        "4 meters",
+        "8 meters",
+        "16 meters"
+      ],
+      "correct": 2,
+      "points": 5,
+      "explanation": "In a plane mirror, the distance from the object to the mirror equals the distance from the image to the mirror. If the student is 4 meters in front of the mirror, the image is 4 meters behind the mirror, making the total distance 4 + 4 = 8 meters."
+    },
+    {
+      "question": "If you walk 2 meters closer to a large plane mirror, what happens to the distance between you and your image?",
+      "options": [
+        "It decreases by 2 meters",
+        "It decreases by 4 meters",
+        "It increases by 2 meters",
+        "It remains completely unchanged"
+      ],
+      "correct": 1,
+      "points": 5,
+      "explanation": "Walking 2 meters closer reduces your distance to the mirror by 2 meters, and also reduces the image distance to the mirror by 2 meters. Therefore, the total distance between you and your image decreases by 2 + 2 = 4 meters."
+    },
+    {
+      "question": "When looking into a plane mirror, you raise your left hand but your image appears to raise its right hand. What is this phenomenon called?",
+      "options": [
+        "Refraction",
+        "Upright inversion",
+        "Lateral inversion",
+        "Dispersion"
+      ],
+      "correct": 2,
+      "points": 5,
+      "explanation": "Lateral inversion is the effect where the left side of the object appears as the right side of the image in a plane mirror."
+    },
+    {
+      "question": "Why can an image formed by a plane mirror NOT be projected onto a white piece of paper placed behind the mirror?",
+      "options": [
+        "The image is real, so light rays pass directly through it",
+        "The image is virtual, meaning no light rays actually meet behind the mirror",
+        "The mirror absorbs all the light rays, preventing them from reflecting",
+        "The paper blocks the real light rays from forming"
+      ],
+      "correct": 1,
+      "points": 5,
+      "explanation": "Virtual images are formed where light rays appear to come from but do not actually meet. Because no real light rays pass behind the mirror, the image cannot be captured on a physical screen."
+    },
+    {
+      "question": "Why are convex mirrors installed at blind corners in multi-story car parks?",
+      "options": [
+        "They turn the images upside down to alert drivers",
+        "They provide a wider field of vision for drivers to see oncoming traffic",
+        "They magnify distant objects so they appear much closer",
+        "They block out blinding headlights from other vehicles"
+      ],
+      "correct": 1,
+      "points": 5,
+      "explanation": "Convex mirrors curve outwards, which allows them to collect light from a broader angle. This provides a wider field of vision compared to a plane mirror of the same size."
+    },
+    {
+      "question": "Why can you see your clear reflection in a smooth glass window but not in a rough concrete wall?",
+      "options": [
+        "Smooth glass causes regular reflection, while the rough wall causes diffused reflection",
+        "Smooth glass absorbs all light, while the rough wall reflects it in one direction",
+        "Smooth glass causes refraction, while the rough wall causes no reflection at all",
+        "Smooth glass bends light away from the normal, while the rough wall creates a virtual image"
+      ],
+      "correct": 0,
+      "points": 5,
+      "explanation": "A smooth surface like glass reflects parallel light rays in a single direction, which is called regular reflection. A rough surface like concrete reflects light rays scattered in many different directions, which is called diffused reflection, preventing a clear image from forming."
+    },
+    {
+      "question": "A security mirror in a retail shop is curved so that a shopkeeper can monitor many aisles at once. What is the primary reason this curved mirror is chosen over a flat mirror?",
+      "options": [
+        "It makes the images look much brighter",
+        "It turns distant objects upside down for better tracking",
+        "It provides a wider field of vision to see a larger area",
+        "It creates a real image on the ceiling of the shop"
+      ],
+      "correct": 2,
+      "points": 5,
+      "explanation": "Convex mirrors are widely used as security mirrors because their outward curve provides a wider field of view, allowing large areas of a shop to be monitored easily."
+    },
+    {
+      "question": "A dentist uses a small specialized mirror to see an upright, enlarged view of a tooth. What type of mirror is being used?",
+      "options": [
+        "A concave mirror held very close to the tooth",
+        "A convex mirror held very far from the tooth",
+        "A plane mirror held at an angle of forty-five degrees",
+        "A concave mirror held very far from the tooth"
+      ],
+      "correct": 0,
+      "points": 5,
+      "explanation": "When an object is placed very close to a concave mirror, it produces a magnified, upright image, making it ideal for dental examinations where fine details need to be seen."
+    },
+    {
+      "question": "Under what condition will a concave mirror form an upright and magnified image of an object?",
+      "options": [
+        "The object must be placed extremely far away from the mirror",
+        "The object must be placed very close to the surface of the mirror",
+        "The object must be viewed under underwater conditions",
+        "The object must be illuminated by a single color of light"
+      ],
+      "correct": 1,
+      "points": 5,
+      "explanation": "Concave mirrors only form a magnified, upright image when the object is positioned very close to the mirror surface. If the object is moved far away, the image properties change completely."
+    },
+    {
+      "question": "Which type of mirror is commonly utilized in shaving or makeup mirrors to help users see fine details on their face?",
+      "options": [
+        "Convex mirror",
+        "Concave mirror",
+        "Plane mirror",
+        "Semi-transparent mirror"
+      ],
+      "correct": 1,
+      "points": 5,
+      "explanation": "Concave mirrors are used for shaving or makeup because they create a magnified image when your face is near the mirror, helping you see skin details clearly."
+    },
+    {
+      "question": "According to the laws of reflection, if a ray of light hits a smooth plane mirror with an angle of incidence of thirty degrees, what is the angle of reflection?",
+      "options": [
+        "Zero degrees",
+        "Thirty degrees",
+        "Sixty degrees",
+        "Ninety degrees"
+      ],
+      "correct": 1,
+      "points": 5,
+      "explanation": "The law of reflection states that the angle of incidence is always equal to the angle of reflection when measured from the normal line."
+    },
+    {
+      "question": "A ray of light strikes a plane mirror. If the angle between the incident ray and the mirror surface itself is forty degrees, what is the angle of reflection?",
+      "options": [
+        "Forty degrees",
+        "Fifty degrees",
+        "Eighty degrees",
+        "One hundred and forty degrees"
+      ],
+      "correct": 1,
+      "points": 5,
+      "explanation": "The normal line is perpendicular (ninety degrees) to the mirror surface. If the angle to the surface is forty degrees, the angle of incidence is 90 minus 40 = 50 degrees. Since angle of incidence equals angle of reflection, the angle of reflection is fifty degrees."
+    },
+    {
+      "question": "What happens to a light ray that hits a plane mirror perfectly perpendicular to the mirror surface along the normal line?",
+      "options": [
+        "It bends by ninety degrees and travels along the mirror surface",
+        "It passes straight through the mirror without changing direction",
+        "It reflects directly back along the exact same path it came",
+        "It splits into a spectrum of seven distinct colors"
+      ],
+      "correct": 2,
+      "points": 5,
+      "explanation": "When light hits a mirror normally, the angle of incidence is zero degrees. Therefore, the angle of reflection is also zero degrees, causing the ray to bounce straight back along its original path."
+    },
+    {
+      "question": "How does an image formed by a plane mirror differ fundamentally from an image of an object seen through water due to refraction?",
+      "options": [
+        "The mirror image is real, while the refraction image is always virtual",
+        "The mirror image is formed by bouncing light rays, while the refraction image is formed by the bending of light rays across a boundary",
+        "The mirror image is always smaller, while the refraction image is always larger",
+        "The mirror image is inverted, while the refraction image is always upside down"
+      ],
+      "correct": 1,
+      "points": 5,
+      "explanation": "Images in a plane mirror are caused by reflection, where light bounces off a reflective coating. Objects viewed in water appear shifted or altered due to refraction, where light bends as it changes speed between water and air."
+    },
+    {
+      "question": "A person looks straight down at a coin resting at the bottom of a clear swimming pool. How does the coin appear compared to its actual position?",
+      "options": [
+        "It appears deeper than it actually is because light speeds up in water",
+        "It appears closer to the surface than it actually is due to the bending of light at the boundary",
+        "It appears to be shifted far to the left and flipped upside down",
+        "It appears exactly at its true physical depth without any change"
+      ],
+      "correct": 1,
+      "points": 5,
+      "explanation": "Due to refraction, light rays traveling from the water into the air bend away from the normal. When our eyes trace these rays straight back, the coin appears to be at a shallower depth, meaning it looks closer to the surface than it actually is."
+    },
+    {
+      "question": "In the study of light, what is meant by the term optical density?",
+      "options": [
+        "The total mass of a transparent material per unit volume",
+        "The thickness of a glass block or a pool of liquid water",
+        "A measure of how much a medium slows down the speed of traveling light rays",
+        "The ability of a material to absorb all incoming visible wavelengths"
+      ],
+      "correct": 2,
+      "points": 5,
+      "explanation": "Optical density is a property of a transparent material that indicates how much it slows down light waves. It is completely separate from physical mass density."
+    },
+    {
+      "question": "When a light ray travels at an angle from air into a rectangular glass block, how does its path change inside the glass?",
+      "options": [
+        "It bends towards the normal line because glass has a higher optical density than air",
+        "It bends away from the normal line because glass has a lower optical density than air",
+        "It continues in a perfectly straight line because air and glass have identical optical densities",
+        "It stops moving entirely because glass is too dense for light to pass through"
+      ],
+      "correct": 0,
+      "points": 5,
+      "explanation": "Glass has a higher optical density than air, meaning light travels slower in glass. When light enters a more optically dense medium at an angle, it bends towards the normal line."
+    },
+    {
+      "question": "A ray of light leaves a clear glass block and enters the surrounding air at an angle. Which statement correctly describes its behavior at the boundary?",
+      "options": [
+        "It bends towards the normal because air is more optically dense than glass",
+        "It bends away from the normal because air is less optically dense than glass",
+        "It reflects entirely back into the glass without escaping",
+        "It continues straight ahead without any deviation"
+      ],
+      "correct": 1,
+      "points": 5,
+      "explanation": "Air has a lower optical density than glass, meaning light speeds up as it enters the air. When light enters a less optically dense medium at an angle, it bends away from the normal line."
+    },
+    {
+      "question": "A straight drinking straw placed inside a glass of water looks broken or bent at the water surface when viewed from the side. What is the root cause of this optical illusion?",
+      "options": [
+        "The water chemically dissolves the structure of the straw",
+        "Light reflects off the straw and gets trapped inside the water completely",
+        "Light changes speed and bends as it passes from the water into the air",
+        "The glass container acts as a curved mirror that distorts the straight lines"
+      ],
+      "correct": 2,
+      "points": 5,
+      "explanation": "The bending of the straw is an example of refraction. Light rays reflecting from the underwater part of the straw change speed and bend at the boundary between water and air, making that portion of the straw appear shifted to our eyes."
+    }
+  ]
+}

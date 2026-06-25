@@ -1,0 +1,251 @@
+{
+  "title": "Light and Radiation: Effects, Spectrum, and Medium Density - Worksheet 2",
+  "topic": "UV and Visible Light Effects, White Light Spectrum, and Optical Density",
+  "subject": "Lower Secondary Science",
+  "level": "Lower Secondary",
+  "grade": "Sec 1",
+  "chapter": 16,
+  "worksheet": 2,
+  "questions": [
+    {
+      "question": "Which of the following is a useful health benefit of controlled exposure to ultraviolet (UV) radiation from the Sun?",
+      "options": [
+        "It helps the human body synthesize Vitamin D for strong bones",
+        "It destroys harmful red blood cells to prevent clotting",
+        "It cools down the internal temperature of human skin tissues",
+        "It increases the concentration of oxygen in the lungs"
+      ],
+      "correct": 0,
+      "points": 5,
+      "explanation": "Our skin uses ultraviolet-B radiation from sunlight to manufacture Vitamin D, which is essential for calcium absorption and maintaining healthy bones."
+    },
+    {
+      "question": "Which industrial or medical application relies on the use of ultraviolet (UV) radiation?",
+      "options": [
+        "Illuminating normal classrooms for reading purposes",
+        "Sterilizing medical instruments and water by destroying microorganisms",
+        "Transmitting long-distance voice signals over radio towers",
+        "Heating up frozen food items inside commercial ovens"
+      ],
+      "correct": 1,
+      "points": 5,
+      "explanation": "UV radiation carries high energy that can disrupt the genetic material of bacteria, viruses, and fungi, making it an effective tool for sterilization and disinfection."
+    },
+    {
+      "question": "How do banks utilize ultraviolet (UV) radiation to combat financial fraud?",
+      "options": [
+        "They use it to print visible colored ink patterns on standard checks",
+        "They shine UV light on banknotes to reveal hidden fluorescent security features",
+        "They use UV rays to magnetically lock cash vault doors at night",
+        "They scan customers' eyes to verify their identity instantly"
+      ],
+      "correct": 1,
+      "points": 5,
+      "explanation": "Genuine banknotes contain special fluorescent dyes that glow when exposed to ultraviolet light, allowing bank tellers to easily detect counterfeit money."
+    },
+    {
+      "question": "What is a major harmful effect of long-term, unprotected exposure to ultraviolet (UV) radiation from the sun?",
+      "options": [
+        "Sudden loss of physical bone mass",
+        "Increased risk of skin cancer and premature skin aging",
+        "Permanent discoloration of the teeth",
+        "The turning of skin cells into transparent structures"
+      ],
+      "correct": 1,
+      "points": 5,
+      "explanation": "Excessive UV radiation damages the DNA within skin cells. Over time, this damage can lead to mutations that cause skin cancers, as well as breaking down collagen, leading to wrinkles and premature aging."
+    },
+    {
+      "question": "How can ultraviolet (UV) radiation negatively affect human eyes if proper protective sunglasses are not worn?",
+      "options": [
+        "It can cause the eyes to grow larger in physical size",
+        "It can lead to the formation of cataracts, which cloud the lens of the eye",
+        "It completely freezes the movement of the iris muscles",
+        "It converts visible light inside the eye into harmful x-rays"
+      ],
+      "correct": 1,
+      "points": 5,
+      "explanation": "Chronic exposure to UV radiation can damage proteins in the eye lens, leading to cataracts, a condition where the lens becomes cloudy and progressively impairs vision."
+    },
+    {
+      "question": "Which safety measure is most effective at protecting the skin against the harmful effects of solar UV radiation?",
+      "options": [
+        "Washing the skin with warm water immediately after going outdoors",
+        "Applying a broad-spectrum sunscreen with a high Sun Protection Factor",
+        "Drinking large volumes of glucose solution before outdoor exercise",
+        "Wearing thin, brightly colored cotton clothing that lets light through"
+      ],
+      "correct": 1,
+      "points": 5,
+      "explanation": "Sunscreen contains chemical or physical barriers that absorb or reflect harmful UV rays before they can penetrate and damage the underlying skin cells."
+    },
+    {
+      "question": "What is a negative environmental effect of excessive or poorly directed visible light at night, known as light pollution?",
+      "options": [
+        "It causes the atmosphere to lose its oxygen content completely",
+        "It disrupts the navigation and behavior of nocturnal animals and migratory birds",
+        "It accelerates the rate of limestone weathering on ancient buildings",
+        "It prevents trees from undergoing any cellular respiration at night"
+      ],
+      "correct": 1,
+      "points": 5,
+      "explanation": "Excessive artificial light at night confuses nocturnal creatures that rely on darkness for hunting or mating, and disorients birds that navigate using stars."
+    },
+    {
+      "question": "How can overexposure to bright visible light from digital screens late at night negatively impact human health?",
+      "options": [
+        "It stops the digestive system from absorbing nutrients from dinner",
+        "It suppresses melatonin production, disrupting natural sleep cycles",
+        "It lowers the physical temperature of the brain tissues significantly",
+        "It causes the body to stop producing red blood cells permanently"
+      ],
+      "correct": 1,
+      "points": 5,
+      "explanation": "Bright visible light, particularly the blue wavelengths from digital screens, tricks the brain into thinking it is daytime, suppressing the hormone melatonin which is needed to fall asleep."
+    },
+    {
+      "question": "Which specific component of visible light emitted by electronic screens is most frequently associated with digital eye strain and sleep disruption?",
+      "options": [
+        "Red light",
+        "Green light",
+        "Blue light",
+        "Yellow light"
+      ],
+      "correct": 2,
+      "points": 5,
+      "explanation": "Blue light has shorter wavelengths and higher energy within the visible spectrum. Prolonged exposure causes eye strain and interferes heavily with our sleep-wake cycle."
+    },
+    {
+      "question": "What happens when a narrow beam of white light passes through a triangular glass prism?",
+      "options": [
+        "It turns into a uniform beam of pure green light",
+        "It reflects completely off the front surface and never enters the glass",
+        "It undergoes dispersion and splits into a spectrum of seven distinct colors",
+        "It loses all its energy and disappears completely inside the prism"
+      ],
+      "correct": 3,
+      "points": 5,
+      "explanation": "White light is a mixture of different colors. When it enters a prism, each color bends by a slightly different amount due to its specific wavelength, splitting the light into a spectrum."
+    },
+    {
+      "question": "Which of the following lists the correct sequence of colors seen in the spectrum of white light, starting from the color that bends the least?",
+      "options": [
+        "Violet, Indigo, Blue, Green, Yellow, Orange, Red",
+        "Red, Orange, Yellow, Green, Blue, Indigo, Violet",
+        "Green, Yellow, Orange, Red, Violet, Indigo, Blue",
+        "Blue, Green, Yellow, Red, Orange, Violet, Indigo"
+      ],
+      "correct": 1,
+      "points": 5,
+      "explanation": "Red light is bent the least by a glass prism, followed by orange, yellow, green, blue, indigo, and violet, which is bent the most."
+    },
+    {
+      "question": "Why do the different component colors of white light separate when passing through a glass prism?",
+      "options": [
+        "The prism adds different pigments to the light beam as it travels through",
+        "Different colors of light travel at different speeds in glass and bend by different amounts",
+        "The glass material is chemically unstable and alters the nature of the light rays",
+        "Some colors are completely absorbed while others are created inside the prism"
+      ],
+      "correct": 1,
+      "points": 5,
+      "explanation": "Refraction depends on changes in speed. In glass, different colors of light travel at slightly different speeds, meaning they bend by different angles at the boundaries, causing them to separate."
+    },
+    {
+      "question": "Which color of visible light experiences the greatest reduction in speed and bends the most when entering a glass prism from the air?",
+      "options": [
+        "Red light",
+        "Yellow light",
+        "Green light",
+        "Violet light"
+      ],
+      "correct": 3,
+      "points": 5,
+      "explanation": "Violet light slows down the most in glass compared to all other visible colors, which causes it to experience the greatest amount of bending (deviation) from its original path."
+    },
+    {
+      "question": "Which color of visible light travels the fastest in glass and bends the least when passing through a prism?",
+      "options": [
+        "Red light",
+        "Blue light",
+        "Indigo light",
+        "Orange light"
+      ],
+      "correct": 0,
+      "points": 5,
+      "explanation": "Red light maintains the highest speed inside the glass medium among all visible wavelengths, meaning it undergoes the least amount of refraction and bends the least."
+    },
+    {
+      "question": "What scientific term is used to describe the splitting of white light into its component colors when it passes through a medium like a prism?",
+      "options": [
+        "Reflection",
+        "Dispersion",
+        "Absorption",
+        "Conduction"
+      ],
+      "correct": 1,
+      "points": 5,
+      "explanation": "Dispersion is defined specifically as the separation of a complex light beam, like white light, into its individual component colors due to differing amounts of bending."
+    },
+    {
+      "question": "If Medium A has a higher optical density than Medium B, what can be correctly deduced about the speed of light in these two mediums?",
+      "options": [
+        "Light travels faster in Medium A than in Medium B",
+        "Light travels slower in Medium A than in Medium B",
+        "Light travels at the exact same speed in both mediums",
+        "Light cannot travel through Medium B at all"
+      ],
+      "correct": 1,
+      "points": 5,
+      "explanation": "A higher optical density indicates that a material opposes the propagation of light waves more strongly, meaning light will travel at a slower speed through that material."
+    },
+    {
+      "question": "A ray of light enters a block of clear plastic from the air. If the light ray does not bend at all at the boundary, what must be true about how the light entered?",
+      "options": [
+        "The plastic block has an optical density equal to zero",
+        "The light ray struck the boundary perpendicularly along the normal line",
+        "The plastic block is completely opaque to incoming light rays",
+        "The experiment was conducted in complete physical darkness"
+      ],
+      "correct": 1,
+      "points": 5,
+      "explanation": "Even if two mediums have different optical densities, light will pass straight through without bending if it hits the boundary at an angle of incidence of zero degrees (along the normal)."
+    },
+    {
+      "question": "Light travels from Medium X into Medium Y at an angle. If the light ray bends away from the normal line after crossing the boundary, what is the relationship between their optical densities?",
+      "options": [
+        "Medium X has a higher optical density than Medium Y",
+        "Medium X has a lower optical density than Medium Y",
+        "Medium X and Medium Y have identical optical densities",
+        "Medium Y is completely solid while Medium X is a gas"
+      ],
+      "correct": 0,
+      "points": 5,
+      "explanation": "Bending away from the normal line indicates that the light ray has speeded up upon entering the second medium. Light speeds up when transitioning from a more optically dense medium into a less optically dense medium."
+    },
+    {
+      "question": "In which of the following environments or materials does a light wave travel at its maximum possible speed?",
+      "options": [
+        "Deep clear ocean water",
+        "A thick block of solid glass",
+        "A complete vacuum or empty space",
+        "A clear diamond gemstone"
+      ],
+      "correct": 2,
+      "points": 5,
+      "explanation": "A vacuum has no particles and the lowest possible optical density, allowing light to travel at its absolute maximum speed. Air is slightly denser but very close to a vacuum."
+    },
+    {
+      "question": "Why does a light ray bend when it passes at an angle from air into a pool of water?",
+      "options": [
+        "The water surface acts as a plane mirror that filters out the rays",
+        "The light ray changes its speed abruptly due to the difference in optical density between air and water",
+        "The gravitational pull of the water pulls the light ray downwards",
+        "The water molecules chemically absorb the red wavelengths instantly"
+      ],
+      "correct": 1,
+      "points": 5,
+      "explanation": "Refraction is caused entirely by a change in the speed of light. Because water has a higher optical density than air, light slows down when it hits the water, causing its path to bend if it arrives at an angle."
+    }
+  ]
+}
