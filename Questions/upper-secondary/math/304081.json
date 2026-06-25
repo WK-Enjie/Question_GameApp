@@ -2,7 +2,7 @@
   "title": "Sec 4 O-Level Revision (Advanced) – Percentage, Ratio, Speed, Rate & Standard Form",
   "questions": [
     {
-      "question": "A retailer increases the cost price of a smartphone by x% for its retail launch, but later offers a storewide discount of x% during a seasonal sale. The final promotional price, before tax, is exactly 4% lower than the initial cost price. A customer buys the phone during the sale and pays a total of $1,046.40, which includes a 9% Goods and Services Tax (GST). Calculate the initial cost price of the smartphone.",
+      "question": "A retailer increases the cost price of a smartphone by x% for its retail launch, but later offers a storewide discount of x% off this retail launch price during a seasonal sale. The final promotional price, before tax, is exactly 4% lower than the initial cost price. A customer buys the phone during the sale and pays a total of $1,046.40, which includes a 9% Goods and Services Tax (GST). Calculate the initial cost price of the smartphone.",
       "options": ["$1,000", "$1,040", "$1,080", "$1,100"],
       "correct": 0,
       "points": 15,
@@ -18,12 +18,12 @@
       "explanation": "Linear scale ratio between Map 1 and Map 2 is 10,000 : 40,000 = 1 : 4. This means dimensions on the flyer are 1/4 the size of the original map. The area scale ratio is the square of the linear scale ratio: (1/4)² = 1/16. Therefore, the area on the flyer = 24 cm² ÷ 16 = 1.5 cm²."
     },
     {
-      "question": "Runner X leaves a checkpoint at 09 00 running at a constant speed of 12 km/h. At 09 15, Runner Y leaves the same checkpoint along the identical route at a constant speed of 15 km/h. At 09 45, Runner X tires and reduces his speed to a constant 10 km/h, while Runner Y maintains her speed. At what time does Runner Y catch up with Runner X?",
+      "question": "Runner X leaves a checkpoint at 09 00, running at an initial constant speed of 12 km/h. Exactly 15 minutes later, at 09 15, Runner Y leaves the same checkpoint and follows the identical route at a constant speed of 15 km/h. Later, at 09 45, Runner X tires and immediately reduces his speed to a constant 10 km/h, while Runner Y maintains her pace. At what time does Runner Y overtake Runner X?",
       "options": ["09 57", "10 00", "10 03", "10 12"],
       "correct": 2,
       "points": 16,
       "time": 240,
-      "explanation": "Calculate the positions at 09 45 (when X slows down). Runner X has traveled for 45 mins (0.75 h): 12 km/h × 0.75 h = 9 km. Runner Y has traveled for 30 mins (0.5 h): 15 km/h × 0.5 h = 7.5 km. The gap between them at 09 45 is 9 - 7.5 = 1.5 km. After 09 45, X runs at 10 km/h and Y runs at 15 km/h. Their relative catching-up speed is 15 - 10 = 5 km/h. Time taken to close the gap = 1.5 km ÷ 5 km/h = 0.3 hours = 18 minutes. Overtaking time = 09 45 + 18 minutes = 10 03."
+      "explanation": "Step 1: Track both runners' total distance covered up to the critical speed-shift moment at 09 45. Runner X has run from 09 00 to 09 45 (45 mins or 0.75 h): 12 km/h × 0.75 h = 9 km. Runner Y has run from 09 15 to 09 45 (30 mins or 0.5 h): 15 km/h × 0.5 h = 7.5 km. Step 2: Find the distance gap between them at 09 45. Gap = 9 km - 7.5 km = 1.5 km. Step 3: Analyze the tracking phase after 09 45. X runs at 10 km/h and Y runs at 15 km/h. Their relative catching-up speed is 15 - 10 = 5 km/h. Step 4: Calculate the time required for Y to close the 1.5 km gap. Time = 1.5 km ÷ 5 km/h = 0.3 hours = 18 minutes. Step 5: Add this to the speed-shift baseline time. 09 45 + 18 minutes = 10 03."
     },
     {
       "question": "Contractor A can complete a painting project alone in 10 days, while Contractor B takes 15 days to complete the same project alone. Contractor A begins the project alone and works for 2 days, before being joined by Contractor B. They work together for exactly 3 days, after which Contractor A is reassigned to another site. How many additional days will Contractor B take working completely alone to finish the remaining painting work?",
@@ -98,12 +98,12 @@
       "explanation": "Linear scale: 1 cm to 50,000 cm → 1 cm to 0.5 km. Area scale: (1 cm)² to (0.5 km)² → 1 cm² to 0.25 km². Total map area for the whole zone = 12 km² ÷ 0.25 km²/cm² = 48 cm². The Cultivated land represents 5 parts out of 8 total parts (5 + 3). Cultivated map area = 48 cm² × (5 ÷ 8) = 30 cm²."
     },
     {
-      "question": "The total transit distance between Station P and Station Q is exactly 50 km. Cyclist A departs P heading toward Q at 08 00, maintaining a constant speed of 16 km/h. Cyclist B departs Q heading toward P at 08 30, maintaining a constant speed of 20 km/h. At what time will the two cyclists pass each other along the route?",
+      "question": "The total distance along a straight road connecting Station P and Station Q is exactly 50 km. Cyclist A departs from Station P at 08 00 and travels directly towards Station Q at a constant speed of 16 km/h. Exactly 30 minutes later, at 08 30, Cyclist B departs from Station Q and travels along the identical road towards Station P at a constant speed of 20 km/h. At what time will the two cyclists pass each other?",
       "options": ["09 30", "09 40", "09 50", "10 00"],
       "correct": 1,
       "points": 16,
       "time": 200,
-      "explanation": "By 08 30, Cyclist A has traveled alone for 30 minutes (0.5 hours), covering 16 km/h × 0.5 h = 8 km. The remaining distance between them at 08 30 is 50 - 8 = 42 km. Since they move towards each other, their relative closing speed is 16 + 20 = 36 km/h. Time to meet after 08 30 = 42 km ÷ 36 km/h = 7/6 hours = 1 hour 10 minutes. Intersection time = 08 30 + 1 hour 10 minutes = 09 40."
+      "explanation": "Step 1: Calculate the distance Cyclist A covers before Cyclist B even starts. From 08 00 to 08 30 is 30 minutes (0.5 hours). Distance covered by A = 16 km/h × 0.5 h = 8 km. Step 2: Determine the remaining distance between them at 08 30. Remaining distance = 50 km - 8 km = 42 km. Step 3: Since they are moving toward each other, combine their speeds to find the relative closing speed. Relative speed = 16 km/h + 20 km/h = 36 km/h. Step 4: Calculate the time needed to close the gap after 08 30. Time = 42 km ÷ 36 km/h = 7/6 hours = 1 hour and 10 minutes. Step 5: Add this transit time to the 08 30 synchronized starting baseline. 08 30 + 1 hour 10 minutes = 09 40."
     },
     {
       "question": "Supply Pipe X can fill an empty reservoir entirely in 4 hours, while Supply Pipe Y can fill the same reservoir in 6 hours. Conversely, Drainage Valve Z can empty a completely filled reservoir in 12 hours. If the reservoir starts completely empty and all three pathways are opened concurrently, how long will it take to fill the reservoir to exactly 80% of its total capacity?",
