@@ -1,0 +1,131 @@
+{
+  "title": "Stoichiometry: Core Mole Concepts and Solutions - Worksheet 3",
+  "topic": "Mole Calculations, Gas Volumes, Concentrations, and Ion Ratios",
+  "subject": "Pure Chemistry",
+  "level": "Upper Secondary",
+  "grade": "Sec 4",
+  "chapter": 7,
+  "worksheet": 3,
+  "questions": [
+    {
+      "question": "What is the mass of a 0.25 mol sample of anhydrous sodium carbonate, Na2CO3?\n[Relative atomic masses: C = 12, O = 16, Na = 23]",
+      "options": [
+        "13.25 g",
+        "26.50 g",
+        "53.00 g",
+        "106.00 g"
+      ],
+      "correct": 1,
+      "points": 10,
+      "explanation": "The molar mass (Mr) of Na2CO3 = (23 x 2) + 12 + (16 x 3) = 106 g/mol. Mass = Number of moles x Molar mass = 0.25 mol x 106 g/mol = 26.50 g."
+    },
+    {
+      "question": "What volume is occupied by 11.0 g of carbon dioxide gas (CO2) at room temperature and pressure (r.t.p.)?\n[Relative atomic masses: C = 12, O = 16; Molar volume of gas = 24 dm3/mol at r.t.p.]",
+      "options": [
+        "6.0 dm3",
+        "12.0 dm3",
+        "24.0 dm3",
+        "5.5 dm3"
+      ],
+      "correct": 0,
+      "points": 10,
+      "explanation": "Mr of CO2 = 12 + (16 x 2) = 44 g/mol. Number of moles of CO2 = 11.0 g / 44 g/mol = 0.25 mol. Volume of gas = Moles x Molar volume = 0.25 mol x 24 dm3/mol = 6.0 dm3."
+    },
+    {
+      "question": "A student dissolves 4.0 g of sodium hydroxide (NaOH) pellets in distilled water to prepare a 250 cm3 solution. What is the concentration of this solution in mol/dm3?\n[Relative atomic masses: H = 1, O = 16, Na = 23]",
+      "options": [
+        "0.10 mol/dm3",
+        "1.00 mol/dm3",
+        "0.40 mol/dm3",
+        "16.00 mol/dm3"
+      ],
+      "correct": 2,
+      "points": 10,
+      "explanation": "Mr of NaOH = 23 + 16 + 1 = 40 g/mol. Moles of NaOH = 4.0 g / 40 g/mol = 0.10 mol. Volume in dm3 = 250 cm3 / 1000 = 0.25 dm3. Concentration = Moles / Volume = 0.10 mol / 0.25 dm3 = 0.40 mol/dm3."
+    },
+    {
+      "question": "A 0.10 mol sample of a pure divalent metal oxide with the chemical formula MO has an exact mass of 4.0 g. Identify the element M.\n[Relative atomic mass: O = 16]",
+      "options": [
+        "Calcium",
+        "Magnesium",
+        "Copper",
+        "Zinc"
+      ],
+      "correct": 1,
+      "points": 10,
+      "explanation": "Molar mass (Mr) of MO = Mass / Moles = 4.0 g / 0.10 mol = 40 g/mol. Since Mr of MO = Ar of M + 16, we set up the equation: Ar of M + 16 = 40, which yields Ar of M = 24. Looking at the periodic table, the element with an Ar of 24 is Magnesium."
+    },
+    {
+      "question": "Calculate the percentage by mass of nitrogen present in a pure sample of ammonium nitrate fertilizer, NH4NO3.\n[Relative atomic masses: H = 1, N = 14, O = 16]",
+      "options": [
+        "17.5%",
+        "28.0%",
+        "42.3%",
+        "35.0%"
+      ],
+      "correct": 3,
+      "points": 10,
+      "explanation": "Mr of NH4NO3 = 14 + (1 x 4) + 14 + (16 x 3) = 80 g/mol. There are two nitrogen atoms in the formula unit, so the mass of nitrogen = 14 x 2 = 28 g. Percentage by mass = (28 / 80) x 100% = 35.0%."
+    },
+    {
+      "question": "An unknown gaseous hydrocarbon is analyzed and found to contain 85.7% carbon by mass. If a quantitative sample of this gas contains exactly 3.0 moles of carbon atoms, how many moles of hydrogen atoms are present in that same sample?\n[Relative atomic masses: H = 1, C = 12]",
+      "options": [
+        "6.0 moles",
+        "3.0 moles",
+        "1.5 moles",
+        "12.0 moles"
+      ],
+      "correct": 0,
+      "points": 10,
+      "explanation": "Percentage of Hydrogen = 100% - 85.7% = 14.3%. Mole calculation: Moles of C = 85.7 / 12 = 7.14 mol. Moles of H = 14.3 / 1 = 14.3 mol. The simplistic mole ratio C : H is 7.14 : 14.3, which reduces to 1 : 2. If there are 3.0 moles of carbon atoms, there must be double the amount of hydrogen atoms: 3.0 x 2 = 6.0 moles."
+    },
+    {
+      "question": "What is the total number of moles of ions present in 200 cm3 of an aqueous aluminium sulfate solution, Al2(SO4)3, with a concentration of 0.50 mol/dm3?",
+      "options": [
+        "0.10 mol",
+        "0.30 mol",
+        "0.50 mol",
+        "0.20 mol"
+      ],
+      "correct": 2,
+      "points": 10,
+      "explanation": "Moles of Al2(SO4)3 solute = Concentration x Volume = 0.50 mol/dm3 x (200 / 1000) dm3 = 0.10 mol. Each formula unit of Al2(SO4)3 fully dissociates into 2 Al3+ ions and 3 SO42- ions, giving 5 ions in total. Total moles of dissolved ions = 0.10 mol x 5 = 0.50 mol."
+    },
+    {
+      "question": "A 1.20 g sample of a reactive Group II metal X reacts fully with excess hydrochloric acid. The reaction liberates 720 cm3 of hydrogen gas measured at r.t.p. Identify metal X.\n[Molar volume of gas = 24 dm3/mol at r.t.p.]",
+      "options": [
+        "Magnesium",
+        "Calcium",
+        "Strontium",
+        "Barium"
+      ],
+      "correct": 1,
+      "points": 10,
+      "explanation": "The general equation is X + 2HCl -> XCl2 + H2. Moles of H2 gas released = (720 / 1000) / 24 = 0.030 mol. Based on the 1:1 mole ratio, moles of metal X consumed = 0.030 mol. Relative atomic mass (Ar) of X = Mass / Moles = 1.20 g / 0.030 mol = 40. The Group II element with an Ar of 40 is Calcium."
+    },
+    {
+      "question": "An aqueous solution of sulfuric acid (H2SO4) has a concentration of 4.9 g/dm3. Express this concentration value in units of mol/dm3.\n[Relative atomic masses: H = 1, S = 32, O = 16]",
+      "options": [
+        "0.05 mol/dm3",
+        "0.10 mol/dm3",
+        "0.50 mol/dm3",
+        "0.02 mol/dm3"
+      ],
+      "correct": 0,
+      "points": 10,
+      "explanation": "The molar mass (Mr) of H2SO4 = (1 x 2) + 32 + (16 x 4) = 98 g/mol. To convert concentration from g/dm3 to mol/dm3, divide by the molar mass: 4.9 g/dm3 / 98 g/mol = 0.05 mol/dm3."
+    },
+    {
+      "question": "A student mixes 100 cm3 of 0.20 mol/dm3 NaCl solution with 100 cm3 of 0.10 mol/dm3 CaCl2 solution. Assuming volumes are additive, what is the final concentration of chloride ions (Cl-) in the mixed solution?",
+      "options": [
+        "0.15 mol/dm3",
+        "0.20 mol/dm3",
+        "0.30 mol/dm3",
+        "0.40 mol/dm3"
+      ],
+      "correct": 1,
+      "points": 10,
+      "explanation": "Moles of Cl- from NaCl = 0.100 dm3 x 0.20 mol/dm3 = 0.020 mol. Moles of Cl- from CaCl2 = 0.100 dm3 x 0.10 mol/dm3 x 2 = 0.020 mol (since each CaCl2 releases 2 Cl-). Total moles of Cl- = 0.020 + 0.020 = 0.040 mol. Total mixed volume = 100 + 100 = 200 cm3 = 0.200 dm3. Concentration of Cl- = 0.040 mol / 0.200 dm3 = 0.20 mol/dm3."
+    }
+  ]
+}
