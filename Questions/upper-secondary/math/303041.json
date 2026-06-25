@@ -1,0 +1,167 @@
+{
+  "title": "Coordinate Geometry Worksheet 1",
+  "topic": "Gradient, Straight Line Equations, Line Lengths, and Intercepts",
+  "subject": "Mathematics",
+  "level": "Secondary",
+  "grade": "Sec 3",
+  "chapter": 4,
+  "worksheet": 1,
+  "questions": [
+    {
+      "question": "Find the gradient of the straight line passing through the points A(2, 5) and B(5, 14).",
+      "options": [
+        "3",
+        "2",
+        "1/3",
+        "9"
+      ],
+      "correct": 0,
+      "points": 1,
+      "time": 90,
+      "explanation": "The gradient formula is m = (y2 - y1) / (x2 - x1). Substituting the points gives m = (14 - 5) / (5 - 2) = 9 / 3 = 3."
+    },
+    {
+      "question": "Calculate the length of the line segment connecting the points P(3, 2) and Q(7, 5).",
+      "options": [
+        "7 units",
+        "5 units",
+        "25 units",
+        "sqrt(13) units"
+      ],
+      "correct": 1,
+      "points": 1,
+      "time": 100,
+      "explanation": "The distance formula is sqrt((x2 - x1)^2 + (y2 - y1)^2). Substituting the coordinates gives sqrt((7 - 3)^2 + (5 - 2)^2) = sqrt(4^2 + 3^2) = sqrt(16 + 9) = sqrt(25) = 5 units."
+    },
+    {
+      "question": "Find the equation of the straight line that has a gradient of -2 and passes through the point (3, 1).",
+      "options": [
+        "y = -2x + 5",
+        "y = -2x + 7",
+        "y = -2x + 1",
+        "y = 2x - 5"
+      ],
+      "correct": 1,
+      "points": 1,
+      "time": 120,
+      "explanation": "Using the line equation form y = mx + c, substitute m = -2, x = 3, and y = 1 to solve for c. This results in 1 = -2(3) + c => 1 = -6 + c => c = 7. Thus, the equation is y = -2x + 7."
+    },
+    {
+      "question": "Determine the y-intercept of the straight line represented by the equation 4x - 2y = 10.",
+      "options": [
+        "5",
+        "-5",
+        "10",
+        "-10"
+      ],
+      "correct": 1,
+      "points": 1,
+      "time": 90,
+      "explanation": "A line intersects the y-axis where x = 0. Substituting x = 0 into the equation gives 4(0) - 2y = 10 => -2y = 10 => y = -5. Therefore, the y-intercept is -5."
+    },
+    {
+      "question": "Determine the x-intercept of the straight line represented by the equation 3x + 2y = 12.",
+      "options": [
+        "4",
+        "6",
+        "12",
+        "3"
+      ],
+      "correct": 0,
+      "points": 1,
+      "time": 90,
+      "explanation": "A line intersects the x-axis where y = 0. Substituting y = 0 into the equation gives 3x + 2(0) = 12 => 3x = 12 => x = 4. Therefore, the x-intercept is 4."
+    },
+    {
+      "question": "A straight line has an x-intercept of 3 and a y-intercept of -6. Find the equation of this line.",
+      "options": [
+        "y = 2x - 6",
+        "y = -2x - 6",
+        "y = 2x + 3",
+        "y = 1/2 x - 6"
+      ],
+      "correct": 0,
+      "points": 1,
+      "time": 130,
+      "explanation": "The intercepts give us two coordinates: (3, 0) and (0, -6). The gradient m = (-6 - 0) / (0 - 3) = -6 / -3 = 2. Since the y-intercept is -6, c = -6. Substituting these into y = mx + c gives y = 2x - 6."
+    },
+    {
+      "question": "Find the distance between the x-intercept and the y-intercept of the straight line 3x + 4y = 12.",
+      "options": [
+        "7 units",
+        "5 units",
+        "sqrt(7) units",
+        "12 units"
+      ],
+      "correct": 1,
+      "points": 1,
+      "time": 140,
+      "explanation": "First, find the intercepts. For the x-intercept (y=0): 3x = 12 => x = 4, giving the point (4, 0). For the y-intercept (x=0): 4y = 12 => y = 3, giving the point (0, 3). The distance between (4, 0) and (0, 3) is sqrt((4 - 0)^2 + (0 - 3)^2) = sqrt(16 + 9) = sqrt(25) = 5 units."
+    },
+    {
+      "question": "The x-intercept of the straight line 2x - 5y = k is known to be 6. Find the value of the constant k by substitution.",
+      "options": [
+        "k = 12",
+        "k = -30",
+        "k = 3",
+        "k = 6"
+      ],
+      "correct": 0,
+      "points": 1,
+      "time": 100,
+      "explanation": "An x-intercept of 6 means the line passes through the coordinate point (6, 0). Substituting x = 6 and y = 0 into the equation gives 2(6) - 5(0) = k => 12 = k."
+    },
+    {
+      "question": "A straight line features an x-intercept of -2 and a y-intercept of 5. Calculate the gradient of this line.",
+      "options": [
+        "-2/5",
+        "-5/2",
+        "5/2",
+        "2/5"
+      ],
+      "correct": 2,
+      "points": 1,
+      "time": 110,
+      "explanation": "The intercepts translate directly to the points (-2, 0) and (0, 5). Using the gradient formula: m = (5 - 0) / (0 - (-2)) = 5 / 2."
+    },
+    {
+      "question": "The coordinate point (a, -3) lies on the straight line 2x - 3y = 15. Find the value of a.",
+      "options": [
+        "a = 12",
+        "a = 3",
+        "a = 6",
+        "a = -3"
+      ],
+      "correct": 1,
+      "points": 1,
+      "time": 110,
+      "explanation": "Substitute x = a and y = -3 into the equation of the line: 2(a) - 3(-3) = 15 => 2a + 9 = 15. Subtracting 9 from both sides gives 2a = 6, which simplifies to a = 3."
+    },
+    {
+      "question": "Find the area of the triangle enclosed by the x-axis, the y-axis, and the straight line 2x + 3y = 12.",
+      "options": [
+        "24 square units",
+        "12 square units",
+        "6 square units",
+        "10 square units"
+      ],
+      "correct": 1,
+      "points": 1,
+      "time": 140,
+      "explanation": "Find where the line cuts the axes to get the base and height. x-intercept (y=0): 2x = 12 => x = 6 (base = 6). y-intercept (x=0): 3y = 12 => y = 4 (height = 4). Area of a triangle = 1/2 * base * height = 1/2 * 6 * 4 = 12 square units."
+    },
+    {
+      "question": "Which of the following straight line equations has a y-intercept of exactly 3?",
+      "options": [
+        "2x + y = 3",
+        "y = 3x - 5",
+        "3x + 2y = 12",
+        "y = -x - 3"
+      ],
+      "correct": 0,
+      "points": 1,
+      "time": 100,
+      "explanation": "Rearrange the equations into standard form y = mx + c to check the value of c. Rearranging 2x + y = 3 gives y = -2x + 3, where the y-intercept c is equal to 3."
+    }
+  ]
+}
