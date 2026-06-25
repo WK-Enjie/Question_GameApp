@@ -80,6 +80,54 @@
       "points": 15,
       "time": 210,
       "explanation": "Total runtime = 1.5 hours = 90 minutes. Total volume dispensed = 2.5 liters/min × 90 min = 225 liters. Convert volume to cubic centimeters: Since 1 liter = 1,000 cm³, 225 liters = 225,000 cm³. Calculate total mass: Mass = Volume × Density = 225,000 cm³ × 1.2 g/cm³ = 270,000 grams. Convert grams to kilograms: 270,000 g ÷ 1,000 = 270 kg. Converting 270 kg to standard form yields 2.7 × 10² kg."
+    },
+    {
+      "question": "A technology conglomerate's annual revenue increased by 20% during the first fiscal year. Due to market corrections, its revenue contracted by 15% in the second year, followed by a strong recovery of 10% growth in the third year. If the recorded revenue at the end of the third year is $1,122,000, determine the initial revenue before the three-year tracking cycle began.",
+      "options": ["$950,000", "$1,000,000", "$1,050,000", "$1,100,000"],
+      "correct": 1,
+      "points": 15,
+      "time": 180,
+      "explanation": "Let initial revenue be R. Year 1 factor = 1.20, Year 2 factor = 0.85, Year 3 factor = 1.10. Sequential multiplication yields: R × 1.20 × 0.85 × 1.10 = 1,122,000 → R × 1.122 = 1,122,000. Solving for R gives R = 1,122,000 ÷ 1.122 = $1,000,000."
+    },
+    {
+      "question": "An agricultural zone has an actual total ground surface area of 12 km². On a regional survey map, this entire zone is drawn using a scale of 1 : 50 000. The land is structurally divided into two partitions, Cultivated and Non-cultivated land, following a strict ratio of 5 : 3. Calculate the map area representing the Cultivated partition in square centimeters (cm²).",
+      "options": ["18 cm²", "24 cm²", "30 cm²", "45 cm²"],
+      "correct": 2,
+      "points": 15,
+      "time": 190,
+      "explanation": "Linear scale: 1 cm to 50,000 cm → 1 cm to 0.5 km. Area scale: (1 cm)² to (0.5 km)² → 1 cm² to 0.25 km². Total map area for the whole zone = 12 km² ÷ 0.25 km²/cm² = 48 cm². The Cultivated land represents 5 parts out of 8 total parts (5 + 3). Cultivated map area = 48 cm² × (5 ÷ 8) = 30 cm²."
+    },
+    {
+      "question": "The total transit distance between Station P and Station Q is exactly 50 km. Cyclist A departs P heading toward Q at 08 00, maintaining a constant speed of 16 km/h. Cyclist B departs Q heading toward P at 08 30, maintaining a constant speed of 20 km/h. At what time will the two cyclists pass each other along the route?",
+      "options": ["09 30", "09 40", "09 50", "10 00"],
+      "correct": 1,
+      "points": 16,
+      "time": 200,
+      "explanation": "By 08 30, Cyclist A has traveled alone for 30 minutes (0.5 hours), covering 16 km/h × 0.5 h = 8 km. The remaining distance between them at 08 30 is 50 - 8 = 42 km. Since they move towards each other, their relative closing speed is 16 + 20 = 36 km/h. Time to meet after 08 30 = 42 km ÷ 36 km/h = 7/6 hours = 1 hour 10 minutes. Intersection time = 08 30 + 1 hour 10 minutes = 09 40."
+    },
+    {
+      "question": "Supply Pipe X can fill an empty reservoir entirely in 4 hours, while Supply Pipe Y can fill the same reservoir in 6 hours. Conversely, Drainage Valve Z can empty a completely filled reservoir in 12 hours. If the reservoir starts completely empty and all three pathways are opened concurrently, how long will it take to fill the reservoir to exactly 80% of its total capacity?",
+      "options": ["1 hour 48 minutes", "2 hours 00 minutes", "2 hours 12 minutes", "2 hours 24 minutes"],
+      "correct": 3,
+      "points": 15,
+      "time": 190,
+      "explanation": "Hourly operational rates: X = +1/4, Y = +1/6, Z = -1/12. Combined hourly filling rate = 1/4 + 1/6 - 1/12 = 3/12 + 2/12 - 1/12 = 4/12 = 1/3 of the reservoir per hour. Time needed for 100% full capacity = 1 ÷ (1/3) = 3 hours. Time needed for 80% capacity = 3 hours × 0.80 = 2.4 hours. Convert decimal hours to minutes: 0.4 × 60 minutes = 24 minutes. Total execution time = 2 hours 24 minutes."
+    },
+    {
+      "question": "The physical mass of a single atom of an exotic element is measured at 3.2 × 10⁻²⁴ grams. A secure sample vial contains a total count of 2.5 × 10²⁵ atoms of this element. If a lab technician extracts exactly 25% of the total element mass for testing, calculate the remaining mass left inside the vial, expressing your answer in kilograms in standard form.",
+      "options": ["6.0 × 10⁻² kg", "6.0 × 10⁻³ kg", "2.0 × 10⁻² kg", "2.0 × 10⁻³ kg"],
+      "correct": 0,
+      "points": 14,
+      "time": 180,
+      "explanation": "Total starting mass in grams = (3.2 × 10⁻²⁴ g) × (2.5 × 10²⁵) = 8.0 × 10¹ = 80 grams. If 25% is removed, the remaining mass portion is 75%. Remaining mass in grams = 80 g × 0.75 = 60 grams. Convert grams to kilograms: 60 g ÷ 1000 = 0.06 kg. Expressing 0.06 kg in standard scientific notation gives 6.0 × 10⁻² kg."
+    },
+    {
+      "question": "In an auditorium, the initial ratio of the number of adults to children was 7 : 3. Among the adults present, the ratio of the number of men to women was 4 : 3. During an intermission block, exactly 40 women left the auditorium, which caused the headcount of remaining women to become exactly half the number of men. Find the initial number of children inside the auditorium.",
+      "options": ["80", "120", "160", "280"],
+      "correct": 1,
+      "points": 16,
+      "time": 210,
+      "explanation": "Combine the ratio scales. Let Adults = 7u and Children = 3u. The adult breakdown is Men : Women = 4 : 3, meaning Men + Women = 7 parts, matching the main 7u perfectly. Thus, Men = 4u, Women = 3u, and Children = 3u. After 40 women exit, the new count of women is 3u - 40. We are given: 3u - 40 = 0.5 × (4u) → 3u - 40 = 2u → u = 40. The original number of children is 3u = 3 × 40 = 120."
     }
   ]
 }
