@@ -1,0 +1,165 @@
+{
+  "title": "Sec 1 Mathematics Worksheet – Advanced Financial Arithmetic",
+  "questions": [
+    {
+      "question": "A mountain bicycle is priced at $480. During a year-end sale, the sports store offers a 15% discount on all bicycles. Calculate the sale price of the bicycle.",
+      "options": ["$72", "$408", "$420", "$465"],
+      "correct": 1,
+      "points": 3,
+      "time": 90,
+      "explanation": "Step 1: Calculate the discount amount. 15% of $480 = 0.15 × $480 = $72. Step 2: Subtract the discount from the original price. Sale price = $480 - $72 = $408."
+    },
+    {
+      "question": "The marked price of a laptop computer is $1,200 before tax. In Singapore, a 9% Goods and Services Tax (GST) is applied to the item. Find the total amount a customer has to pay for the laptop inclusive of GST.",
+      "options": ["$108", "$1,209", "$1,308", "$1,408"],
+      "correct": 2,
+      "points": 3,
+      "time": 90,
+      "explanation": "Step 1: Calculate the GST amount. 9% of $1,200 = 0.09 × $1,200 = $108. Step 2: Add the GST to the marked price. Total price = $1,200 + $108 = $1,308."
+    },
+    {
+      "question": "A family has dinner at a restaurant where the food subtotal is $150. The restaurant levies a 10% service charge, and a 9% GST is then applied to the total amount inclusive of the service charge. Calculate the final bill that the family has to pay.",
+      "options": ["$165.00", "$178.50", "$179.85", "$180.00"],
+      "correct": 2,
+      "points": 4,
+      "time": 120,
+      "explanation": "Step 1: Calculate the subtotal after the 10% service charge. $150 × 1.10 = $165. Step 2: Apply the 9% GST on this new amount. Final bill = $165 × 1.09 = $179.85."
+    },
+    {
+      "question": "Siti deposits $4,500 into a savings account that pays a simple interest rate of 2% per annum. Calculate the total interest she will earn at the end of 3 years.",
+      "options": ["$90", "$270", "$4,590", "$4,770"],
+      "correct": 1,
+      "points": 3,
+      "time": 90,
+      "explanation": "Use the simple interest formula I = PRT / 100. Interest = ($4,500 × 2 × 3) / 100 = $270."
+    },
+    {
+      "question": "The cash price of a television set is $1,400. Under a hire purchase plan, a buyer pays a deposit of $200 followed by 12 monthly installments of $115 each. Calculate the total cost of the television set under the hire purchase plan.",
+      "options": ["$1,180", "$1,380", "$1,580", "$1,600"],
+      "correct": 2,
+      "points": 3,
+      "time": 90,
+      "explanation": "Step 1: Calculate the total amount paid in installments. 12 × $115 = $1,380. Step 2: Add the initial deposit. Total hire purchase cost = $200 + $1,380 = $1,580."
+    },
+    {
+      "question": "Given that the exchange rate between Singapore Dollars (SGD) and Malaysian Ringgit (MYR) is 1 SGD = 3.30 MYR, convert 250 SGD into Malaysian Ringgit.",
+      "options": ["75.76 MYR", "825.00 MYR", "850.00 MYR", "900.00 MYR"],
+      "correct": 1,
+      "points": 3,
+      "time": 90,
+      "explanation": "Multiply the SGD amount by the exchange rate value. 250 SGD = 250 × 3.30 = 825.00 MYR."
+    },
+    {
+      "question": "A family dines at a restaurant where the bill's initial food subtotal is $200. Because they are members, they receive a 15% discount on the food subtotal. The restaurant then applies a 10% service charge on the discounted subtotal, followed by a 9% GST on the service-charge-inclusive amount. Find the absolute final amount paid by the family.",
+      "options": ["$187.00", "$201.62", "$203.83", "$218.00"],
+      "correct": 2,
+      "points": 5,
+      "time": 150,
+      "explanation": "Step 1: Apply the 15% membership discount to the subtotal. New food subtotal = $200 × 0.85 = $170. Step 2: Add the 10% service charge. Service inclusive total = $170 × 1.10 = $187. Step 3: Add 9% GST on the service inclusive total. Final amount = $187 × 1.09 = $203.83."
+    },
+    {
+      "question": "The cash price of a high-end laptop is $1,500. Under an installment plan, a buyer pays a 20% down-payment deposit upfront. A simple interest rate of 4% per annum is charged on the remaining outstanding balance for a duration of 2 years. Calculate the value of each monthly installment.",
+      "options": ["$50.00", "$54.00", "$62.50", "$64.00"],
+      "correct": 1,
+      "points": 5,
+      "time": 160,
+      "explanation": "Step 1: Find the deposit and remaining balance. Deposit = 20% of $1,500 = $300. Remaining balance = $1,500 - $300 = $1,200. Step 2: Calculate simple interest on the remaining balance over 2 years. Interest = ($1,200 × 4 × 2) / 100 = $96. Step 3: Add interest to the outstanding balance to find total loan repayment. Total repayment = $1,200 + $96 = $1,296. Step 4: Divide by the total number of installment months (24 months). Monthly payment = $1,296 ÷ 24 = $54.00."
+    },
+    {
+      "question": "A seasonal winter jacket is sold at a promotional discount of 20% off its original marked price. A 9% GST is subsequently added to this discounted sale price. If a customer stands at the cashier counter and pays a total of $104.64 inclusive of tax, determine the original marked price of the jacket before any discount.",
+      "options": ["$100.00", "$115.00", "$120.00", "$130.00"],
+      "correct": 2,
+      "points": 5,
+      "time": 150,
+      "explanation": "Step 1: Reverse the 9% GST to find the promotional price before tax. Discounted price = $104.64 ÷ 1.09 = $96.00. Step 2: Link the discounted price back to the original marked price. Since a 20% discount was applied, $96.00 represents 80% of the original marked price. Original price = $96.00 ÷ 0.80 = $120.00."
+    },
+    {
+      "question": "An online storefront in the United Kingdom sells a professional microphone for £120 (British Pounds), with an additional flat international shipping fee of £15. A local retail outlet in Singapore sells the exact same microphone for $240 (Singapore Dollars) inclusive of all taxes. Given that the fixed exchange rate is 1 £ = 1.72 SGD, which buying option is cheaper and by how much in Singapore Dollars?",
+      "options": ["The local store option is cheaper by $7.80", "The UK online storefront option is cheaper by $7.80", "The UK online storefront option is cheaper by $25.80", "Both options cost exactly the same amount"],
+      "correct": 1,
+      "points": 5,
+      "time": 140,
+      "explanation": "Step 1: Sum up the total costs in British Pounds. Total UK cost = £120 + £15 = £135. Step 2: Convert the total UK currency value to Singapore Dollars using the exchange rate. Cost in SGD = 135 × 1.72 = $232.20. Step 3: Compare with the local retail price. Difference = $240.00 - $232.20 = $7.80. The UK online storefront option is cheaper by $7.80."
+    },
+    {
+      "question": "The absolute final payment receipt at a cafe, which includes a 10% service charge and a 9% GST added sequentially (tax applied to the service-inclusive total), displays a sum of $239.80. Find the original menu subtotal of the food dishes before the service charge and GST were added.",
+      "options": ["$198.00", "$200.00", "$218.00", "$220.00"],
+      "correct": 1,
+      "points": 5,
+      "time": 160,
+      "explanation": "Step 1: Reverse the 9% GST process. Amount before GST = $239.80 ÷ 1.09 = $220.00. Step 2: Reverse the 10% service charge process to arrive at the original food subtotal. Menu subtotal = $220.00 ÷ 1.10 = $200.00."
+    },
+    {
+      "question": "Mr. Lim has a capital sum of $10,000. He deposits 60% of it into Bank A, which offers a simple interest rate of 2.5% per annum, and places the remaining balance into Bank B, which offers a simple interest rate of 3% per annum. Calculate the combined total simple interest he will accumulate across both bank accounts at the end of 3 years.",
+      "options": ["$550", "$750", "$810", "$1,650"],
+      "correct": 2,
+      "points": 5,
+      "time": 140,
+      "explanation": "Step 1: Determine the principal allocations. Bank A Principal = 0.60 × $10,000 = $6,000. Bank B Principal = $10,000 - $6,000 = $4,000. Step 2: Compute simple interest earned from Bank A over 3 years. Interest A = ($6,000 × 2.5 × 3) / 100 = $450. Step 3: Compute simple interest earned from Bank B over 3 years. Interest B = ($4,000 × 3 × 3) / 100 = $360. Step 4: Add the two interest values. Total interest accumulated = $450 + $360 = $810."
+    },
+    {
+      "question": "An ergonomic massage chair has a flat cash price of $3,000. A home appliance store offers two different financing options. Plan X requires a 10% down-payment deposit and 24 monthly installments of $130 each. Plan Y requires 0% down-payment deposit but 36 monthly installments of $90 each. Which installment plan is cheaper overall, and by how much?",
+      "options": ["Plan X is cheaper by $180", "Plan Y is cheaper by $180", "Plan Y is cheaper by $300", "Both financing plans result in the exact same cost"],
+      "correct": 1,
+      "points": 5,
+      "time": 150,
+      "explanation": "Step 1: Compute total cost of Plan X. Deposit = 10% of $3,000 = $300. Installment sum = 24 × $130 = $3,120. Total Plan X cost = $300 + $3,120 = $3,420. Step 2: Compute total cost of Plan Y. Total Plan Y cost = 36 × $90 = $3,240. Step 3: Determine the gap between options. Cost difference = $3,420 - $3,240 = $180. Therefore, Plan Y is cheaper by $180."
+    },
+    {
+      "question": "A corporate investment fund of $5,000 is left in a fixed deposit growth block. It accumulates simple interest at a rate of 2% per annum for the first 2 years. After the second year, the bank increases the simple interest rate to 2.8% per annum for the subsequent 3 years. Calculate the total simple interest accumulated across the entire 5-year timeline.",
+      "options": ["$480", "$580", "$620", "$700"],
+      "correct": 2,
+      "points": 4,
+      "time": 130,
+      "explanation": "Step 1: Compute interest for the initial 2 years. Interest Phase 1 = ($5,000 × 2 × 2) / 100 = $200. Step 2: Compute interest for the remaining 3 years. Interest Phase 2 = ($5,000 × 2.8 × 3) / 100 = $420. Step 3: Sum the interest components. Total interest accumulated = $200 + $420 = $620."
+    },
+    {
+      "question": "A lifestyle clothing shop sells basic graphic T-shirts at a fixed price of $25 each. The shop runs a bulk multi-buy deal: 'Buy 2 T-shirts at full price and get a 3rd T-shirt at a 50% discount'. A student picks out exactly 3 T-shirts. If a 9% GST is added to the checkout value after the multi-buy discount, find the absolute final price the student has to pay.",
+      "options": ["$62.50", "$68.13", "$73.58", "$81.75"],
+      "correct": 1,
+      "points": 5,
+      "time": 140,
+      "explanation": "Step 1: Calculate the promotional price before tax. Cost = $25 + $25 + (0.50 × $25) = $25 + $25 + $12.50 = $62.50. Step 2: Apply the 9% GST to the promotional subtotal. Total checkout cost = $62.50 × 1.09 = $68.125. Rounding to the nearest cent yields $68.13."
+    },
+    {
+      "question": "A technical gadget listed on an overseas portal costs 450 USD (United States Dollars). The base local currency conversion rate is 1 USD = 1.36 SGD. Additionally, an international freight forwarder charges a flat handling fee of 25 SGD to ship the item back to Singapore. Calculate the total cost incurred in Singapore Dollars to acquire the gadget.",
+      "options": ["$612.00", "$637.00", "$646.00", "$673.00"],
+      "correct": 1,
+      "points": 4,
+      "time": 110,
+      "explanation": "Step 1: Convert the gadget's price from USD to SGD. Item cost in SGD = 450 × 1.36 = $612.00. Step 2: Add the flat international handling fee. Total cost = $612.00 + $25.00 = $637.00."
+    },
+    {
+      "question": "A student sets a savings goal to earn exactly $450 in simple interest over a duration of 3 years to purchase a gaming console system. If the local financial institution offers a fixed simple interest rate of 2.5% per annum, what is the minimum initial principal sum she needs to deposit into this account?",
+      "options": ["$4,500", "$5,400", "$6,000", "$7,500"],
+      "correct": 2,
+      "points": 5,
+      "time": 140,
+      "explanation": "Rearrange the basic simple interest formula I = PRT / 100 to solve for the principal P: P = (I × 100) / (R × T). Substituting the target variables: P = ($450 × 100) / (2.5 × 3) = 45,000 / 7.5 = $6,000."
+    },
+    {
+      "question": "The cash price of a luxury leather sofa is $1,800. Under an installment contract, a customer pays an initial down-payment deposit of $300, and agrees to settle the rest via a sequence of monthly installments of $75 each. If the total cumulative hire purchase price works out to be exactly 25% higher than the flat cash price, calculate the number of monthly installments required.",
+      "options": ["20 months", "24 months", "26 months", "30 months"],
+      "correct": 2,
+      "points": 5,
+      "time": 150,
+      "explanation": "Step 1: Determine the total hire purchase cost. Hire Purchase Price = $1,800 × 1.25 = $2,250. Step 2: Deduct the down-payment deposit to find the total sum paid via installments. Total installment value = $2,250 - $300 = $1,950. Step 3: Divide the total installment value by the single monthly installment rate. Number of installments = $1,950 ÷ $75 = 26 months."
+    },
+    {
+      "question": "A retail manager purchases wholesale hardware items marked at an original catalog list price of $1,000. Because of commercial volume, he receives a 10% loyalty discount from the supplier. If he settles the payment within a 7-day window, he is granted an additional cash discount of 2% calculated off the already discounted price. If a 9% GST is then added to the final adjusted value at checkout, find the final total amount paid.",
+      "options": ["$882.00", "$961.38", "$970.10", "$981.00"],
+      "correct": 1,
+      "points": 5,
+      "time": 160,
+      "explanation": "Step 1: Apply the first 10% volume loyalty discount. First lower tier price = $1,000 × 0.90 = $900. Step 2: Apply the 2% early cash settlement discount on the new price base. Adjusted subtotal = $900 × 0.98 = $882. Step 3: Add the 9% GST on this final adjusted subtotal. Total checkout cost = $882 × 1.09 = $961.38."
+    },
+    {
+      "question": "A smart refrigerator has a listed cash price of $1,200. Under a hire purchase scheme, a buyer puts down a deposit of $200 upfront. The remaining outstanding principal balance is paid off over 12 months at a monthly installment rate of $90. Calculate the simple interest rate per annum charged on the remaining balance.",
+      "options": ["6.0%", "6.7%", "8.0%", "10.0%"],
+      "correct": 2,
+      "points": 5,
+      "time": 160,
+      "explanation": "Step 1: Determine the actual principal balance left after deposit. Balance = $1,200 - $200 = $1,000. Step 2: Calculate total amount paid in installments over the 1 year (12 months). Total installments = 12 × $90 = $1,080. Step 3: Find the absolute simple interest charged. Interest = $1,080 - $1,000 = $80. Step 4: Use the formula I = PRT / 100 where T = 1 year to isolate R. 80 = ($1,000 × R × 1) / 100 → 80 = 10R → R = 8% per annum."
+    }
+  ]
+}

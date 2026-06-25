@@ -1,0 +1,165 @@
+{
+  "title": "Sec 1 Mathematics Worksheet – Speed, Rate & Core Ratio Heuristics",
+  "questions": [
+    {
+      "question": "The counts of two raw manufacturing components, x and y, satisfy the balancing equation 4x + 3y = 2(3x - y). Determine the value of the algebraic ratio fraction x/y.",
+      "options": ["2/5", "5/2", "3/4", "4/3"],
+      "correct": 1,
+      "points": 3,
+      "time": 90,
+      "explanation": "Step 1: Expand the right side of the equation. 4x + 3y = 6x - 2y. Step 2: Rearrange to group like terms. 3y + 2y = 6x - 4x → 5y = 2x. Step 3: Rearrange variables to isolate x/y. Dividing both sides by y and by 2 gives x/y = 5/2."
+    },
+    {
+      "question": "A motorist drives the first 60 km of a journey at a constant speed of 40 km/h, and the remaining 60 km of the journey at a constant speed of 60 km/h. Calculate the average speed of the motorist for the entire journey.",
+      "options": ["45 km/h", "48 km/h", "50 km/h", "52 km/h"],
+      "correct": 1,
+      "points": 4,
+      "time": 120,
+      "explanation": "Step 1: Find the time for the first part. Time 1 = 60 km ÷ 40 km/h = 1.5 hours. Step 2: Find the time for the second part. Time 2 = 60 km ÷ 60 km/h = 1 hour. Step 3: Compute total distance and total time. Total distance = 60 + 60 = 120 km; Total time = 1.5 + 1 = 2.5 hours. Step 4: Calculate average speed. Average speed = 120 km ÷ 2.5 hours = 48 km/h."
+    },
+    {
+      "question": "Industrial Printer X can print a standard booklets run in 5 minutes, while Printer Y takes 4 minutes to print the exact same run. If both printers work simultaneously, how many minutes will they take to complete a massive job equivalent to 9 of these booklet runs?",
+      "options": ["4.0 minutes", "4.5 minutes", "5.0 minutes", "20.0 minutes"],
+      "correct": 2,
+      "points": 4,
+      "time": 130,
+      "explanation": "Step 1: Find individual printing rates per minute. Printer X rate = 1/5 run/min; Printer Y rate = 1/4 run/min. Step 2: Find their combined rate. 1/5 + 1/4 = 4/20 + 5/20 = 9/20 runs per minute. Step 3: Divide total target work by the combined rate. Time = 9 runs ÷ (9/20 runs/min) = 9 × (20/9) = 20 minutes for 9 runs."
+    },
+    {
+      "question": "[UNCHANGED QUANTITY] The ratio of Abel's stamps to Ben's stamps is 5 : 3. After Abel gives away 12 of his stamps to a charity drive, the ratio of Abel's stamps to Ben's stamps becomes 1 : 1. Calculate the total number of stamps both boys had initially.",
+      "options": ["32", "48", "60", "72"],
+      "correct": 1,
+      "points": 4,
+      "time": 140,
+      "explanation": "Step 1: Identify that Ben's stamp count remains unchanged. Step 2: Adjust ratios to make Ben's units equal. Initial ratio A : B = 5 : 3. New ratio A : B = 1 : 1 = 3 : 3. Step 3: Observe the change in Abel's units. Abel drops from 5 units to 3 units, a loss of 2 units. Step 4: Map units to real quantities. 2 units = 12 stamps → 1 unit = 6 stamps. Step 5: Find initial total units. Initial total = 5 + 3 = 8 units. Total = 8 × 6 = 48 stamps."
+    },
+    {
+      "question": "Two variables x and y are related such that 7y - 3x = x + 2y. Find the absolute value of the algebraic expression 2x/5y.",
+      "options": ["1/5", "2/5", "1/2", "1"],
+      "correct": 2,
+      "points": 4,
+      "time": 110,
+      "explanation": "Step 1: Collect like terms on opposite sides. 7y - 2y = x + 3x → 5y = 4x. Step 2: Isolate the base ratio fraction. x/y = 5/4. Step 3: Evaluate the target expression by substituting x/y. 2x/5y = (2/5) × (x/y) = (2/5) × (5/4) = 2/4 = 1/2."
+    },
+    {
+      "question": "A delivery van sets off from a logistics hub traveling at a constant speed of 50 km/h. Exactly 1 hour later, a dispatch car leaves the same hub and travels along the identical path at a constant speed of 75 km/h to catch up. How many hours will the dispatch car take to overtake the van?",
+      "options": ["1.0 hour", "1.5 hours", "2.0 hours", "3.0 hours"],
+      "correct": 2,
+      "points": 4,
+      "time": 120,
+      "explanation": "Step 1: Calculate the lead distance established by the van during its 1-hour head start. Lead distance = 50 km/h × 1 h = 50 km. Step 2: Determine the relative catching speed. Relative speed = 75 km/h - 50 km/h = 25 km/h. Step 3: Divide the lead distance by relative catching speed. Time to overtake = 50 km ÷ 25 km/h = 2.0 hours."
+    },
+    {
+      "question": "At a baking supplier warehouse, a 2.5 kg bag of premium organic baking flour is priced at $6.00. Assuming the price scales perfectly, calculate the cost of purchasing exactly 4 kg of this baking flour.",
+      "options": ["$8.40", "$9.00", "$9.60", "$10.40"],
+      "correct": 2,
+      "points": 3,
+      "time": 90,
+      "explanation": "Step 1: Find the unit rate cost per kilogram. Price per kg = $6.00 ÷ 2.5 kg = $2.40/kg. Step 2: Multiply the unit rate by the target mass. Total cost = 4 kg × $2.40/kg = $9.60."
+    },
+    {
+      "question": "[CONSTANT TOTAL] Samuel and Theodore share a pool of game tokens in the ratio 7 : 5. After Samuel hands over 15 of his personal tokens directly to Theodore, they find they now have an identical number of tokens (ratio 1 : 1). Find the total number of game tokens shared between them.",
+      "options": ["90", "150", "180", "240"],
+      "correct": 2,
+      "points": 5,
+      "time": 150,
+      "explanation": "Step 1: Identify that the total number of tokens remains constant because it is an internal transfer. Step 2: Express total parts for both scenarios. Initial ratio total parts = 7 + 5 = 12 units. New ratio total parts = 1 + 1 = 2 units. Step 3: Scale the new ratio to match the constant total of 12 units. New ratio S : T = 6 : 6 (total 12 units). Step 4: Track the unit shift. Samuel goes from 7 units down to 6 units, which is a drop of 1 unit. Step 5: Equate unit value to quantities. 1 unit = 15 tokens. Total pool = 12 units = 12 × 15 = 180 tokens."
+    },
+    {
+      "question": "If the evaluation parameters for a physical layout hold the constraint equation (5y - 3x) / (2x + y) = 2, find the value of the algebraic expression 4x/y.",
+      "options": ["3/7", "12/7", "7/3", "4/3"],
+      "correct": 1,
+      "points": 4,
+      "time": 130,
+      "explanation": "Step 1: Cross-multiply to remove the denominator. 5y - 3x = 2(2x + y) → 5y - 3x = 4x + 2y. Step 2: Rearrange terms to separate variables. 5y - 2y = 4x + 3x → 3y = 7x. Step 3: Find the basic fractional ratio of x/y. x/y = 3/7. Step 4: Multiply by 4 to get the value of 4x/y. 4 × (3/7) = 12/7."
+    },
+    {
+      "question": "A high-speed passenger train travels at a uniform cruising speed of 90 km/h. Calculate the absolute distance in meters that this train will cover in a brief window of exactly 12 seconds.",
+      "options": ["180 meters", "250 meters", "300 meters", "1,080 meters"],
+      "correct": 2,
+      "points": 4,
+      "time": 110,
+      "explanation": "Step 1: Convert the train's speed from km/h to m/s by dividing by the standard scale factor 3.6. Speed = 90 ÷ 3.6 = 25 m/s. Step 2: Multiply the speed in meters per second by the time duration. Distance = 25 m/s × 12 seconds = 300 meters."
+    },
+    {
+      "question": "An overhead inlet water tap can fill a decorative garden pond completely in 6 hours, while an emergency drainage valve at the bottom can empty the full pond completely in 12 hours. If the pond is empty and both the tap and valve are opened at the same time, how long will it take to fill the pond completely?",
+      "options": ["4 hours", "8 hours", "12 hours", "18 hours"],
+      "correct": 2,
+      "points": 4,
+      "time": 140,
+      "explanation": "Step 1: Determine the hourly filling and emptying rates. Tap rate = +1/6 pond per hour. Valve drainage rate = -1/12 pond per hour. Step 2: Find the net combined filling rate per hour. Combined rate = 1/6 - 1/12 = 2/12 - 1/12 = 1/12 pond per hour. Step 3: Invert the net hourly rate to find the total time required. Time = 1 ÷ (1/12) = 12 hours."
+    },
+    {
+      "question": "[CONSTANT DIFFERENCE] The present ratio of a father's age to his son's age is 4 : 1. In exactly 6 years' time, the ratio of their ages will shift to become 3 : 1. Determine the present age of the father.",
+      "options": ["36 years", "42 years", "48 years", "54 years"],
+      "correct": 2,
+      "points": 5,
+      "time": 160,
+      "explanation": "Step 1: Recognize that the age difference between two people remains constant over time. Step 2: Check the difference in parts for both ratios. Present ratio F : S = 4 : 1 (Difference = 3 units). Future ratio F : S = 3 : 1 (Difference = 2 units). Step 3: Make the difference units equal by finding the LCM of 3 and 2, which is 6. Present ratio (multiply by 2) = 8 : 2 (Difference = 6 units). Future ratio (multiply by 3) = 9 : 3 (Difference = 6 units). Step 4: Analyze the growth over time. The son grows from 2 units to 3 units, an increase of 1 unit. Step 5: Connect units to real time. 1 unit = 6 years. Present age of father = 8 units = 8 × 6 = 48 years."
+    },
+    {
+      "question": "Two engineering values satisfy the formula 9x - 2y = 3(x + y). Find the simplified value of the fractional ratio expression 3x/5y.",
+      "options": ["1/4", "1/2", "5/6", "1"],
+      "correct": 1,
+      "points": 4,
+      "time": 120,
+      "explanation": "Step 1: Expand the right side of the equation. 9x - 2y = 3x + 3y. Step 2: Re-group variables on opposite sides. 9x - 3x = 3y + 2y → 6x = 5y. Step 3: Isolate the ratio fraction x/y. x/y = 5/6. Step 4: Substitute this fraction into the target expression. 3x/5y = (3/5) × (x/y) = (3/5) × (5/6) = 15/30 = 1/2."
+    },
+    {
+      "question": "Two athletes stand at opposite ends of a straight 1.2 km running track. They start running directly towards each other at the exact same moment. Runner A maintains a constant speed of 3 m/s, while Runner B maintains a constant speed of 5 m/s. Calculate how many seconds pass before they meet.",
+      "options": ["100 seconds", "150 seconds", "240 seconds", "400 seconds"],
+      "correct": 1,
+      "points": 4,
+      "time": 130,
+      "explanation": "Step 1: Convert the track distance from kilometers to meters. 1.2 km = 1,200 meters. Step 2: Determine their combined relative closing speed because they move towards each other. Combined speed = 3 m/s + 5 m/s = 8 m/s. Step 3: Divide total distance by the combined closing speed. Time = 1,200 meters ÷ 8 m/s = 150 seconds."
+    },
+    {
+      "question": "A team of 4 identical construction workers takes 9 days to lay the brick foundation of a boundary wall. Assuming all workers perform at the exact same uniform rate, how many days would it take a team of 6 of these identical workers to build the same foundation?",
+      "options": "[\"5 days\", \"6 days\", \"11.5 days\", \"13.5 days\"]",
+      "correct": 1,
+      "points": 4,
+      "time": 110,
+      "explanation": "Step 1: This is an inverse proportion problem. Find the total effort required in terms of man-days. Effort = 4 workers × 9 days = 36 man-days. Step 2: Divide the total required man-days by the new number of workers. Time = 36 man-days ÷ 6 workers = 6 days."
+    },
+    {
+      "question": "[UNCHANGED QUANTITY] A storage container contains black buttons and white buttons in the ratio 3 : 4. After exactly 20 more white buttons are added into the container, the ratio of the number of black buttons to white buttons becomes 1 : 2. Find the initial total number of buttons inside the container.",
+      "options": ["50", "60", "70", "80"],
+      "correct": 2,
+      "points": 5,
+      "time": 150,
+      "explanation": "Step 1: Identify that the quantity of black buttons remains unchanged. Step 2: Adjust the ratios to keep black units constant. Initial ratio B : W = 3 : 4. New ratio B : W = 1 : 2 = 3 : 6. Step 3: Observe the change in white button units. White units increase from 4 units to 6 units, which is a gain of 2 units. Step 4: Map units to quantities. 2 units = 20 white buttons → 1 unit = 10 buttons. Step 5: Find the initial total units. Initial total = 3 + 4 = 7 units. Total = 7 × 10 = 70 buttons."
+    },
+    {
+      "question": "Given that the structural balanced equation of two architectural loads is 5(2y - x) = 3x + y, find the absolute numerical value of the expression 2x/3y.",
+      "options": ["3/4", "4/3", "9/8", "2/3"],
+      "correct": 0,
+      "points": 4,
+      "time": 120,
+      "explanation": "Step 1: Expand the left-hand side expansion block. 10y - 5x = 3x + y. Step 2: Group variables systematically. 10y - y = 3x + 5x → 9y = 8x. Step 3: Determine the core fraction ratio of x/y. x/y = 9/8. Step 4: Substitute into the target question block. 2x/3y = (2/3) × (x/y) = (2/3) × (9/8) = 18/24 = 3/4."
+    },
+    {
+      "question": "A motorist drives for 2 hours at a uniform speed of 75 km/h, takes a break and rests for exactly 30 minutes, and then continues to drive for another 1.5 hours at a uniform speed of 90 km/h. Calculate the average speed of the motorist for the entire journey, including the rest period.",
+      "options": ["71.25 km/h", "75.00 km/h", "81.43 km/h", "82.50 km/h"],
+      "correct": 0,
+      "points": 4,
+      "time": 140,
+      "explanation": "Step 1: Calculate individual distances covered. Distance 1 = 75 km/h × 2 h = 150 km. Distance 2 = 90 km/h × 1.5 h = 135 km. Total distance = 150 + 135 = 285 km. Step 2: Calculate total time elapsed including rest. Convert 30 minutes to 0.5 hours. Total time = 2 + 0.5 + 1.5 = 4 hours. Step 3: Compute average speed. Average speed = 285 km ÷ 4 hours = 71.25 km/h."
+    },
+    {
+      "question": "An online server node downloads digital data at a uniform rate of 12 Megabytes per second (MB/s). How long will it take to download a video file that has a storage size of 2.7 Gigabytes (GB), given that 1 GB is equivalent to exactly 1,000 MB?",
+      "options": ["2 minutes 15 seconds", "3 minutes 00 seconds", "3 minutes 45 seconds", "4 minutes 30 seconds"],
+      "correct": 2,
+      "points": 4,
+      "time": 130,
+      "explanation": "Step 1: Convert the file size from Gigabytes to Megabytes. Size = 2.7 GB × 1,000 MB/GB = 2,700 MB. Step 2: Divide the total file size by the download rate to find time in seconds. Time = 2,700 MB ÷ 12 MB/s = 225 seconds. Step 3: Convert seconds to minutes and seconds. 225 seconds = 3 minutes and 45 seconds."
+    },
+    {
+      "question": "[CONSTANT TOTAL] In Lecture Room A and Lecture Room B, the initial ratio of the number of students is 3 : 2. After exactly 8 students walk out of Room A and enter Room B, the number of students in both rooms becomes equal (ratio 1 : 1). Find the total number of students across both lecture rooms.",
+      "options": ["40", "60", "80", "100"],
+      "correct": 2,
+      "points": 5,
+      "time": 150,
+      "explanation": "Step 1: Realize that moving students between rooms keeps the total number of students constant. Step 2: Check total units. Initial total units = 3 + 2 = 5 units. New total units = 1 + 1 = 2 units. Step 3: Find the LCM of 5 and 2, which is 10, and rescale both ratios. Initial ratio R_A : R_B = 6 : 4 (Total = 10 units). New ratio R_A : R_B = 5 : 5 (Total = 10 units). Step 4: Track the room population change. Room A drops from 6 units to 5 units, a shift of 1 unit. Step 5: Link units to values. 1 unit = 8 students. Total student population = 10 units = 10 × 8 = 80 students."
+    }
+  ]
+}
