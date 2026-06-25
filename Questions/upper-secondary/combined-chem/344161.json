@@ -1,0 +1,251 @@
+{
+  "title": "O-Level Combined Science Chemistry: Alkanes and Alkenes",
+  "topic": "Naming, Properties, Homologous Series, and Chemical Reactions",
+  "subject": "Combined Science Chemistry",
+  "level": "Secondary 4",
+  "grade": "O-Level",
+  "chapter": 5087,
+  "worksheet": 2,
+  "questions": [
+    {
+      "question": "Which of the following is a key characteristic of members belonging to the same homologous series?",
+      "options": [
+        "They have identical physical properties such as melting points",
+        "They share the same general formula and functional group",
+        "They contain different ratios of carbon to hydrogen atoms",
+        "They react with water to form acidic solutions"
+      ],
+      "correct": 1,
+      "points": 5,
+      "explanation": "Members of a homologous series share the same general formula, possess the same functional group, exhibit similar chemical properties, and show a gradual change in physical properties."
+    },
+    {
+      "question": "In the naming of organic compounds, which prefix is used to indicate that a molecule contains a chain of exactly one carbon atom?",
+      "options": [
+        "Eth-",
+        "Meth-",
+        "Prop-",
+        "But-"
+      ],
+      "correct": 1,
+      "points": 5,
+      "explanation": "The prefix 'meth-' always denotes the presence of a single carbon atom in the main chain of an organic molecule."
+    },
+    {
+      "question": "An organic molecule contains a continuous chain of exactly four carbon atoms. Which prefix must be used at the beginning of its systematic name?",
+      "options": [
+        "Meth-",
+        "Eth-",
+        "Prop-",
+        "But-"
+      ],
+      "correct": 3,
+      "points": 5,
+      "explanation": "The prefix 'but-' is used in organic chemistry nomenclature to represent a molecule containing a chain of four carbon atoms."
+    },
+    {
+      "question": "What is the correct systematic chemical name for an unsaturated hydrocarbon that contains exactly two carbon atoms?",
+      "options": [
+        "Methane",
+        "Ethane",
+        "Ethene",
+        "Propene"
+      ],
+      "correct": 2,
+      "points": 5,
+      "explanation": "An unsaturated hydrocarbon with two carbon atoms belongs to the alkene series. The prefix for two carbons is 'eth-' and the suffix for an alkene is '-ene', giving the name ethene."
+    },
+    {
+      "question": "What is the correct chemical name for a saturated hydrocarbon that possesses the molecular formula C3H8?",
+      "options": [
+        "Propane",
+        "Propene",
+        "Butane",
+        "Butene"
+      ],
+      "correct": 0,
+      "points": 5,
+      "explanation": "The formula C3H8 fits the alkane general formula CnH2n+2. The prefix for three carbon atoms is 'prop-' and the suffix for a saturated alkane is '-ane', which results in the name propane."
+    },
+    {
+      "question": "What is the correct general formula for the alkane homologous series?",
+      "options": [
+        "CnH2n",
+        "CnH2n+2",
+        "CnH2n-2",
+        "CnHn"
+      ],
+      "correct": 1,
+      "points": 5,
+      "explanation": "Alkanes follow the general formula CnH2n+2, where n represents the number of carbon atoms starting from one."
+    },
+    {
+      "question": "Which of the following represents the general formula for the alkene homologous series?",
+      "options": [
+        "CnH2n+2",
+        "CnH2n",
+        "CnH2n-2",
+        "CnHn"
+      ],
+      "correct": 1,
+      "points": 5,
+      "explanation": "Alkenes follow the general formula CnH2n, where n represents the number of carbon atoms starting from two."
+    },
+    {
+      "question": "What is the specific functional group that defines an alkene molecule?",
+      "options": [
+        "A carbon to hydrogen single bond",
+        "A carbon to carbon double bond",
+        "A carbon to carbon single bond",
+        "A carbon to oxygen double bond"
+      ],
+      "correct": 1,
+      "points": 5,
+      "explanation": "The functional group of alkenes is the carbon to carbon double bond (C=C), which serves as the reactive site of the molecule."
+    },
+    {
+      "question": "Why is the compound named ethane classified as a saturated hydrocarbon?",
+      "options": [
+        "It contains only carbon to carbon single bonds",
+        "It contains a carbon to carbon double bond",
+        "It has a high boiling point and dissolves easily in water",
+        "It contains the maximum possible number of carbon atoms in the universe"
+      ],
+      "correct": 0,
+      "points": 5,
+      "explanation": "Saturated hydrocarbons like alkanes contain only single covalent bonds between carbon atoms, meaning they hold the maximum number of hydrogen atoms possible."
+    },
+    {
+      "question": "Which term best describes a hydrocarbon molecule that contains at least one carbon to carbon double bond?",
+      "options": [
+        "Saturated",
+        "Unsaturated",
+        "Polyatomic",
+        "Inorganic"
+      ],
+      "correct": 1,
+      "points": 5,
+      "explanation": "Unsaturated hydrocarbons, such as alkenes, contain one or more carbon to carbon double bonds, meaning they do not hold the maximum possible number of hydrogen atoms."
+    },
+    {
+      "question": "As the molecular size of alkanes increases down the homologous series, how do their boiling points change?",
+      "options": [
+        "The boiling points decrease because the molecules become lighter",
+        "The boiling points increase because the intermolecular forces become stronger",
+        "The boiling points remain completely unchanged",
+        "The boiling points drop below zero degrees Celsius"
+      ],
+      "correct": 1,
+      "points": 5,
+      "explanation": "As molecular size increases, the attractive forces between the molecules become stronger. More thermal energy is required to overcome these forces, leading to higher boiling points."
+    },
+    {
+      "question": "Which of the following physical property trends is correctly observed as the number of carbon atoms per molecule increases in the alkane family?",
+      "options": [
+        "The liquids become less viscous and flow more easily",
+        "The compounds become more flammable and ignite easily",
+        "The liquids become more viscous and less flammable",
+        "The compounds change from gases to solids instantly"
+      ],
+      "correct": 2,
+      "points": 5,
+      "explanation": "With increasing molecular size, hydrocarbons become more viscous (thicker) and less flammable because larger molecules do not vaporize or catch fire as easily as smaller ones."
+    },
+    {
+      "question": "When a sample of methane gas undergoes complete combustion in excess oxygen, what chemical products are formed?",
+      "options": [
+        "Carbon monoxide and hydrogen gas",
+        "Carbon dioxide and water vapor",
+        "Carbon soot and liquid water",
+        "Carbon dioxide and hydrogen gas"
+      ],
+      "correct": 1,
+      "points": 5,
+      "explanation": "Complete combustion of any hydrocarbon in a plentiful supply of oxygen always produces carbon dioxide and water vapor."
+    },
+    {
+      "question": "What is the primary purpose of performing a bromination test using aqueous bromine on an unknown hydrocarbon sample?",
+      "options": [
+        "To determine the exact number of hydrogen atoms in the sample",
+        "To distinguish between a saturated hydrocarbon and an unsaturated hydrocarbon",
+        "To increase the boiling point of the hydrocarbon sample",
+        "To test if the compound can conduct electricity"
+      ],
+      "correct": 1,
+      "points": 5,
+      "explanation": "The bromination test is a standard diagnostic test used to distinguish between saturated compounds (alkanes) and unsaturated compounds (alkenes)."
+    },
+    {
+      "question": "A student adds reddish-brown bromine water to ethene gas at room temperature in the dark. What is the expected observation?",
+      "options": [
+        "The solution remains reddish-brown indefinitely",
+        "The reddish-brown solution decolourises immediately",
+        "A dark black precipitate forms at the bottom",
+        "The solution changes to a deep blue color"
+      ],
+      "correct": 1,
+      "points": 5,
+      "explanation": "Alkenes react rapidly with bromine in an addition reaction. The reddish-brown bromine molecules add across the carbon to carbon double bond, causing the solution to become colourless immediately without needing light."
+    },
+    {
+      "question": "If a few drops of aqueous bromine are mixed with liquid ethane in a test tube kept completely away from light, what will be observed?",
+      "options": [
+        "The reddish-brown colour of bromine decolourises instantly",
+        "The reddish-brown colour of bromine remains unchanged",
+        "The mixture begins to boil violently and releases oxygen gas",
+        "The liquid separates into two brightly colored layers"
+      ],
+      "correct": 1,
+      "points": 5,
+      "explanation": "Alkanes are saturated and do not undergo addition reactions. Without ultraviolet light, they cannot undergo substitution reactions either, so the reddish-brown bromine remains unchanged."
+    },
+    {
+      "question": "Under what specific condition can an alkane react with a halogen like chlorine or bromine?",
+      "options": [
+        "In the presence of ultraviolet light",
+        "In the presence of a nickel catalyst",
+        "Dissolved in an alkaline solution",
+        "Under extremely low temperatures below freezing"
+      ],
+      "correct": 0,
+      "points": 5,
+      "explanation": "Alkanes undergo substitution reactions with halogens, but this process requires ultraviolet light (or sunlight) to provide the energy needed to break the covalent bonds."
+    },
+    {
+      "question": "When propene gas reacts with hydrogen gas in the presence of a nickel catalyst at one hundred and fifty degrees Celsius, what product is formed?",
+      "options": [
+        "Propane",
+        "Butane",
+        "Propyne",
+        "Ethane"
+      ],
+      "correct": 0,
+      "points": 5,
+      "explanation": "This addition reaction is known as hydrogenation. Hydrogen atoms add across the double bond of the unsaturated alkene (propene), converting it into the corresponding saturated alkane (propane)."
+    },
+    {
+      "question": "What type of chemical reaction occurs when ethene reacts with bromine water to form dibromoethane?",
+      "options": [
+        "Substitution reaction",
+        "Addition reaction",
+        "Combustion reaction",
+        "Decomposition reaction"
+      ],
+      "correct": 1,
+      "points": 5,
+      "explanation": "Alkenes undergo addition reactions where the carbon to carbon double bond opens up, allowing atoms to add to the molecule without eliminating any other atoms."
+    },
+    {
+      "question": "Based on chemical naming rules and general formulas, what is the correct molecular formula for the compound named butane?",
+      "options": [
+        "C4H6",
+        "C4H8",
+        "C4H10",
+        "C5H12"
+      ],
+      "correct": 2,
+      "points": 5,
+      "explanation": "The suffix '-ane' shows that butane is an alkane following the formula CnH2n+2. Since the prefix 'but-' means four carbon atoms, the formula is C4H(2 times 4 plus 2), which is C4H10."
+    }
+  ]
+}
