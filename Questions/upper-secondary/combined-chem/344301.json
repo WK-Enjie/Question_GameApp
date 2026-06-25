@@ -1,0 +1,371 @@
+{
+  "title": "O-Level Combined Science Chemistry Revision Worksheet",
+  "topic": "Chemical Formulas, Equations, Bonding Properties, and Atomic Structure",
+  "subject": "Combined Science Chemistry",
+  "level": "Secondary 4",
+  "grade": "O-Level",
+  "chapter": 30,
+  "worksheet": 1,
+  "questions": [
+    {
+      "question": "When the chemical equation for the complete combustion of ethane is fully balanced using the smallest whole numbers, what is the coefficient in front of oxygen gas? Equation: 2C2H6(g) + xO2(g) -> 4CO2(g) + 6H2O(l)",
+      "options": [
+        "Three",
+        "Five",
+        "Seven",
+        "Nine"
+      ],
+      "correct": 2,
+      "points": 1,
+      "explanation": "There are 4 carbon atoms and 12 hydrogen atoms on both sides. The right side has a total of 8 plus 6 which equals 14 oxygen atoms. Therefore, 7 molecules of oxygen gas are needed on the left side to provide 14 oxygen atoms."
+    },
+    {
+      "question": "Solid calcium carbonate reacts with dilute hydrochloric acid to produce aqueous calcium chloride, carbon dioxide gas, and liquid water. Which of the following lists the correct state symbols for the reactants in this specific order?",
+      "options": [
+        "(s) and (aq)",
+        "(s) and (l)",
+        "(aq) and (aq)",
+        "(s) and (g)"
+      ],
+      "correct": 0,
+      "points": 1,
+      "explanation": "Calcium carbonate is a solid, represented by (s). Dilute hydrochloric acid is a solution dissolved in water, which is represented by the aqueous state symbol (aq)."
+    },
+    {
+      "question": "What is the correct chemical formula for the compound formed between ammonium ions and sulfate ions?",
+      "options": [
+        "NH4SO4",
+        "(NH4)2SO4",
+        "NH4(SO4)2",
+        "(NH4)3SO4"
+      ],
+      "correct": 1,
+      "points": 1,
+      "explanation": "The ammonium ion has a charge of 1 plus, and the sulfate ion has a charge of 2 minus. To form a neutral compound, two ammonium ions are needed to balance one sulfate ion, giving the formula (NH4)2SO4."
+    },
+    {
+      "question": "What is the correct chemical name for the compound with the chemical formula Cu(NO3)2?",
+      "options": [
+        "Copper nitrate",
+        "Copper(I) nitrate",
+        "Copper(II) nitrate",
+        "Copper dinitrate"
+      ],
+      "correct": 2,
+      "points": 1,
+      "explanation": "Each nitrate ion carries a 1 minus charge. Since there are two nitrate ions, the copper ion must carry a 2 plus charge to ensure chemical neutrality. This is written as copper(II) nitrate."
+    },
+    {
+      "question": "Consider the following unbalanced equation: aCH4(g) + bO2(g) -> cCO2(g) + dH2O(l). What are the correct values for the coefficients a, b, c, and d to balance the equation perfectly?",
+      "options": [
+        "a = 1, b = 1, c = 1, d = 1",
+        "a = 1, b = 2, c = 1, d = 2",
+        "a = 2, b = 3, c = 2, d = 4",
+        "a = 1, b = 2, c = 2, d = 1"
+      ],
+      "correct": 1,
+      "points": 1,
+      "explanation": "One methane molecule reacts with two oxygen molecules to form one carbon dioxide molecule and two water molecules. This balances the carbon, hydrogen, and oxygen atoms on both sides perfectly."
+    },
+    {
+      "question": "What is the correct chemical formula for iron(III) carbonate?",
+      "options": [
+        "FeCO3",
+        "Fe2CO3",
+        "Fe3(CO3)2",
+        "Fe2(CO3)3"
+      ],
+      "correct": 3,
+      "points": 1,
+      "explanation": "The iron(III) ion has a 3 plus charge, and the carbonate ion has a 2 minus charge. To achieve a neutral charge overall, two iron(III) ions combine with three carbonate ions, resulting in Fe2(CO3)3."
+    },
+    {
+      "question": "When aqueous barium nitrate is mixed with aqueous sodium sulfate, a white precipitate of solid barium sulfate forms alongside aqueous sodium nitrate. What is the correct state symbol for the barium sulfate produced?",
+      "options": [
+        "(aq)",
+        "(l)",
+        "(s)",
+        "(g)"
+      ],
+      "correct": 2,
+      "points": 1,
+      "explanation": "A precipitate is an insoluble solid that forms out of an aqueous solution. Therefore, its state symbol must be written as (s)."
+    },
+    {
+      "question": "Which set of numbers correctly balances the chemical equation for the formation of magnesium oxide? xMg(s) + yO2(g) -> zMgO(s)",
+      "options": [
+        "x = 1, y = 1, z = 1",
+        "x = 2, y = 1, z = 2",
+        "x = 1, y = 2, z = 2",
+        "x = 2, y = 2, z = 2"
+      ],
+      "correct": 1,
+      "points": 1,
+      "explanation": "Two atoms of magnesium react with one diatomic oxygen molecule to yield two formula units of magnesium oxide, ensuring that both magnesium and oxygen atom counts balance."
+    },
+    {
+      "question": "Which of the following correctly states the name and formula of the only positively charged polyatomic ion required in your syllabus?",
+      "options": [
+        "Hydroxide ion, OH-",
+        "Ammonium ion, NH4+",
+        "Nitrate ion, NO3-",
+        "Sulfate ion, SO42-"
+      ],
+      "correct": 1,
+      "points": 1,
+      "explanation": "The ammonium ion, NH4+, is a polyatomic ion that carries a net positive charge of 1 plus. The others are all negatively charged anions."
+    },
+    {
+      "question": "What is the correct chemical formula and charge for the nitrate ion?",
+      "options": [
+        "NO3 with a 1 minus charge",
+        "NO3 with a 2 minus charge",
+        "NH4 with a 1 plus charge",
+        "CO3 with a 2 minus charge"
+      ],
+      "correct": 0,
+      "points": 1,
+      "explanation": "The nitrate ion consists of one nitrogen atom covalently bound to three oxygen atoms, carrying an overall charge of 1 minus. Its formula is written as NO3-."
+    },
+    {
+      "question": "What is the correct chemical formula for calcium hydroxide?",
+      "options": [
+        "CaOH",
+        "CaOH2",
+        "Ca(OH)2",
+        "Ca2OH"
+      ],
+      "correct": 2,
+      "points": 1,
+      "explanation": "Calcium is in Group 2 and forms a Ca2+ ion. The hydroxide ion is OH-. Two hydroxide ions are required to balance one calcium ion, so parentheses must be used, giving Ca(OH)2."
+    },
+    {
+      "question": "Which of the following polyatomic ions possesses a net charge of 2 minus?",
+      "options": [
+        "Nitrate and hydroxide",
+        "Sulfate and carbonate",
+        "Ammonium and sulfate",
+        "Carbonate and nitrate"
+      ],
+      "correct": 1,
+      "points": 1,
+      "explanation": "Both the sulfate ion (SO42-) and the carbonate ion (CO32-) carry a negative two charge, whereas nitrate and hydroxide carry a negative one charge."
+    },
+    {
+      "question": "What is the correct chemical formula for sodium carbonate?",
+      "options": [
+        "NaCO3",
+        "Na2CO3",
+        "Na(CO3)2",
+        "Na3CO3"
+      ],
+      "correct": 1,
+      "points": 1,
+      "explanation": "Sodium forms a 1 plus ion (Na+), and the carbonate ion carries a 2 minus charge (CO32-). Two sodium ions are needed to balance one carbonate ion, resulting in Na2CO3."
+    },
+    {
+      "question": "What is the correct chemical formula for the compound ammonium nitrate?",
+      "options": [
+        "NH4NO3",
+        "(NH4)2NO3",
+        "NH4(NO3)2",
+        "NH4NO2"
+      ],
+      "correct": 0,
+      "points": 1,
+      "explanation": "The ammonium ion is NH4+ and the nitrate ion is NO3-. Since their charges are equal and opposite, they combine in a simple one to one ratio to form NH4NO3."
+    },
+    {
+      "question": "What is the correct chemical formula for aluminium sulfate?",
+      "options": [
+        "AlSO4",
+        "Al2SO4",
+        "Al(SO4)3",
+        "Al2(SO4)3"
+      ],
+      "correct": 3,
+      "points": 1,
+      "explanation": "Aluminium forms an Al3+ ion, and sulfate is SO42-. To make the compound neutral, the total positive charge and total negative charge must balance at six, leading to the formula Al2(SO4)3."
+    },
+    {
+      "question": "Why does a giant ionic lattice compound, such as solid sodium chloride, fail to conduct electricity at room temperature?",
+      "options": [
+        "The ions are held tightly in fixed positions within the lattice and cannot move",
+        "There are no valence electrons present in the entire substance",
+        "The electrons are moving too quickly to carry an electrical current",
+        "The compound contains simple covalent molecules that insulate the charge"
+      ],
+      "correct": 0,
+      "points": 1,
+      "explanation": "In the solid state, ions in a giant ionic lattice are held firmly in place by strong electrostatic forces of attraction. Because the ions cannot move freely, the solid cannot conduct electricity."
+    },
+    {
+      "question": "Under which of the following conditions can a giant ionic lattice compound conduct electricity?",
+      "options": [
+        "Only when cooled down to an extremely low temperature solid state",
+        "When it is in molten liquid form or dissolved in water as an aqueous solution",
+        "Only when it is crushed into a very fine dry powder form",
+        "Ionic compounds can never conduct electricity under any circumstances"
+      ],
+      "correct": 1,
+      "points": 1,
+      "explanation": "When an ionic compound is melted or dissolved in water, the strong forces holding the giant lattice together are broken. This allows the ions to move freely and act as mobile charge carriers."
+    },
+    {
+      "question": "Carbon dioxide is a simple covalent substance. Why does it have a very low boiling point and exist as a gas at room temperature?",
+      "options": [
+        "The covalent bonds between the carbon and oxygen atoms are very weak",
+        "There are only weak intermolecular forces of attraction between the molecules",
+        "The giant structure contains many empty spaces that drop the temperature",
+        "The atoms inside the molecules break apart with minimal heat energy"
+      ],
+      "correct": 1,
+      "points": 1,
+      "explanation": "Simple covalent substances consist of molecules with strong internal covalent bonds but weak intermolecular forces between the molecules. Only a small amount of heat energy is needed to overcome these weak forces."
+    },
+    {
+      "question": "Which statement correctly compares the melting point of a giant ionic lattice compound with that of a simple covalent molecule?",
+      "options": [
+        "Ionic compounds have lower melting points because their bonds break easily",
+        "Ionic compounds have higher melting points because strong electrostatic forces throughout the lattice require large amounts of energy to break",
+        "Simple covalent molecules have higher melting points because covalent bonds are always stronger than ionic bonds",
+        "Both types of substances share identical melting points because they are both compounds"
+      ],
+      "correct": 1,
+      "points": 1,
+      "explanation": "Giant ionic lattices require large quantities of thermal energy to overcome the strong electrostatic attractions operating in all directions between oppositely charged ions, giving them high melting points."
+    },
+    {
+      "question": "An unknown solid substance X has a high melting point and conducts electricity when it is dissolved in water. What is the structural nature of substance X?",
+      "options": [
+        "It consists of a simple molecular covalent structure",
+        "It consists of a giant ionic lattice structure",
+        "It is an element belonging to the noble gas group",
+        "It is a liquid simple covalent compound"
+      ],
+      "correct": 1,
+      "points": 1,
+      "explanation": "High melting points and electrical conductivity in aqueous solutions are characteristic properties of substances with a giant ionic lattice structure."
+    },
+    {
+      "question": "Why are simple covalent molecules like methane and sulfur dioxide unable to conduct electricity in both solid and liquid states?",
+      "options": [
+        "They have too many mobile ions that neutralise each other",
+        "They do not possess any mobile ions or free moving electrons to carry charge",
+        "Their intermolecular forces are far too strong to allow current flow",
+        "They easily decompose into metallic elements when exposed to a voltage"
+      ],
+      "correct": 1,
+      "points": 1,
+      "explanation": "Simple covalent compounds are composed of neutral molecules. Since all valence electrons are localized in bonds and there are no ions, they lack mobile charge carriers."
+    },
+    {
+      "question": "Magnesium oxide has a giant ionic lattice structure while water is a simple covalent molecule. Which of the following is true regarding their melting behaviors?",
+      "options": [
+        "Water has a higher melting point than magnesium oxide",
+        "Magnesium oxide requires much more heat energy to melt than ice",
+        "Both substances will vaporize at the exact same temperature",
+        "Magnesium oxide melts easily at temperatures below room temperature"
+      ],
+      "correct": 1,
+      "points": 1,
+      "explanation": "Magnesium oxide features strong ionic bonds within a giant lattice that require massive energy to break. Ice melts at zero degrees Celsius because its intermolecular forces are weak."
+    },
+    {
+      "question": "What is the overall electric charge of the nucleus of an atom that contains 6 protons, 7 neutrons, and 6 electrons?",
+      "options": [
+        "Zero",
+        "6 minus",
+        "6 plus",
+        "13 plus"
+      ],
+      "correct": 2,
+      "points": 1,
+      "explanation": "The nucleus contains only protons and neutrons. Neutrons carry no charge, while each proton carries a 1 plus charge. Therefore, 6 protons give the nucleus an overall charge of 6 plus."
+    },
+    {
+      "question": "An atom of calcium has an atomic number of 20 and a mass number of 40. What is the correct electronic configuration of this neutral calcium atom?",
+      "options": [
+        "2, 8, 10",
+        "2, 8, 8, 2",
+        "2, 18, 0",
+        "2, 6, 6, 6"
+      ],
+      "correct": 1,
+      "points": 1,
+      "explanation": "A neutral calcium atom has 20 electrons. The electrons fill the shells in order: 2 in the first shell, 8 in the second, 8 in the third, and the remaining 2 in the fourth shell."
+    },
+    {
+      "question": "An ion has 11 protons, 12 neutrons, and 10 electrons. What is the identity and overall charge of this particle?",
+      "options": [
+        "A sodium ion with a 1 plus charge",
+        "A sodium atom with a neutral charge",
+        "A magnesium ion with a 2 plus charge",
+        "A fluorine ion with a 1 minus charge"
+      ],
+      "correct": 0,
+      "points": 1,
+      "explanation": "An atomic number of 11 corresponds to sodium. Since there are 11 positive protons and only 10 negative electrons, there is one excess positive charge, making it a sodium ion with a 1 plus charge."
+    },
+    {
+      "question": "Oxygen has an atomic number of 8. What is the correct electronic configuration of an oxide ion, O2-?",
+      "options": [
+        "2, 6",
+        "2, 8",
+        "2, 4",
+        "2, 8, 2"
+      ],
+      "correct": 1,
+      "points": 1,
+      "explanation": "A neutral oxygen atom has 8 electrons with a configuration of 2, 6. An oxide ion has gained 2 electrons to complete its outer shell, giving it 10 electrons and a configuration of 2, 8."
+    },
+    {
+      "question": "Which of the following correctly pairs the subatomic particle with its relative mass and relative charge?",
+      "options": [
+        "Proton: mass of 0, charge of 1 plus",
+        "Neutron: mass of 1, charge of 0",
+        "Electron: mass of 1, charge of 1 minus",
+        "Neutron: mass of 1, charge of 1 plus"
+      ],
+      "correct": 1,
+      "points": 1,
+      "explanation": "Neutrons have a relative mass of 1 and are electrically neutral (charge of 0). Protons have a mass of 1 and a charge of 1 plus. Electrons have negligible mass and a charge of 1 minus."
+    },
+    {
+      "question": "An atom of element X has an atomic number of 17. How many valence electrons are present in a single neutral atom of X?",
+      "options": [
+        "One",
+        "Two",
+        "Seven",
+        "Eight"
+      ],
+      "correct": 2,
+      "points": 1,
+      "explanation": "An atomic number of 17 means the neutral atom has 17 electrons. Its electronic configuration is 2, 8, 7. The number of electrons in the outermost shell is 7."
+    },
+    {
+      "question": "Why does a whole atom have no overall electrical charge, making it completely neutral?",
+      "options": [
+        "The nucleus contains equal numbers of protons and neutrons",
+        "The number of positive protons is exactly equal to the number of negative electrons",
+        "Neutrons shield the outer electrons from the positive nucleus",
+        "Electrons lose their negative charge when they move around the nucleus"
+      ],
+      "correct": 1,
+      "points": 1,
+      "explanation": "An atom is neutral because the total positive charge from the protons in the nucleus is perfectly balanced by the total negative charge from the electrons orbiting the nucleus."
+    },
+    {
+      "question": "The nucleus of a particular atom contains 9 protons and 10 neutrons. What is the atomic number of this element?",
+      "options": [
+        "Nine",
+        "Ten",
+        "Nineteen",
+        "One"
+      ],
+      "correct": 0,
+      "points": 1,
+      "explanation": "The atomic number is defined strictly as the number of protons found within the nucleus of an atom. In this case, the atomic number is 9, which corresponds to fluorine."
+    }
+  ]
+}
