@@ -53,7 +53,7 @@
     ],
     "correct": 1,
     "points": 10,
-    "explanation": "Catalytic converters use platinum/rhodium catalysts to convert CO to CO₂, NOₓ to N₂, and unburnt hydrocarbons to CO₂ and H₂O through redox reactions."
+    "explanation": "Catalytic converters use platinum or rhodium catalysts to convert CO to CO₂, NOₓ to N₂, and unburnt hydrocarbons to CO₂ and H₂O through redox reactions."
   },
   {
     "question": "Which reaction occurs in a catalytic converter to remove nitrogen monoxide?",
@@ -77,7 +77,7 @@
     ],
     "correct": 1,
     "points": 10,
-    "explanation": "FGD removes SO₂ by reacting it with CaCO₃ or CaO to form calcium sulfite/sulfate: CaCO₃ + SO₂ → CaSO₃ + CO₂. This prevents SO₂ from causing acid rain."
+    "explanation": "FGD removes SO₂ by reacting it with CaCO₃ or CaO to form calcium sulfite or sulfate: CaCO₃ + SO₂ → CaSO₃ + CO₂. This prevents SO₂ from causing acid rain."
   },
   {
     "question": "Which equation represents the reaction in flue gas desulfurisation using calcium carbonate?",
@@ -233,7 +233,7 @@
     ],
     "correct": 1,
     "points": 10,
-    "explanation": "CO binds to haemoglobin ~200× more strongly than O₂, forming carboxyhaemoglobin and reducing blood's oxygen-carrying capacity, causing headaches, dizziness or death at high levels."
+    "explanation": "CO binds to haemoglobin around 200 times more strongly than O₂, forming carboxyhaemoglobin and reducing blood's oxygen-carrying capacity, causing headaches, dizziness or death at high levels."
   },
   {
     "question": "Which of the following is a renewable energy source that can help reduce air pollution?",
@@ -247,5 +247,5 @@
     "points": 10,
     "explanation": "Solar power generates electricity without burning fossil fuels, producing no air pollutants or greenhouse gases during operation. It is renewable and helps reduce reliance on polluting energy sources."
   }
-]
+ ]
 }
