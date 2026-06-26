@@ -1,0 +1,251 @@
+{
+  "title": "Organic Chemistry: Alcohols, Carboxylic Acids and Esters - Worksheet 6",
+  "topic": "Properties, Homologous Series, Functional Groups, and Organic Reactions",
+  "subject": "Pure Chemistry",
+  "level": "Upper Secondary",
+  "grade": "Sec 4",
+  "chapter": 20,
+  "worksheet": 1,
+  "questions": [
+    {
+      "question": "Which of the following functional groups defines the alcohol homologous series?",
+      "options": [
+        "Amide group",
+        "Carboxyl group",
+        "Hydroxyl group",
+        "Ester linkage"
+      ],
+      "correct": 2,
+      "points": 5,
+      "explanation": "Alcohols are characterized by the presence of the hydroxyl group, represented chemically as –OH bound to a carbon chain."
+    },
+    {
+      "question": "How do the boiling points of alcohols change as the number of carbon atoms per molecule increases down the homologous series?",
+      "options": [
+        "The boiling points increase because the molecules become larger, creating stronger intermolecular forces of attraction",
+        "The boiling points decrease because small molecules pack more tightly together",
+        "The boiling points remain completely constant because all members share the same functional group",
+        "The boiling points drop below zero degrees Celsius due to structural instability"
+      ],
+      "correct": 0,
+      "points": 5,
+      "explanation": "As the molecular size and mass of the alcohol increase, the intermolecular forces between molecules become stronger. More heat energy is needed to overcome these forces, raising the boiling point."
+    },
+    {
+      "question": "Which of the following lists the correct environmental and industrial conditions required to produce ethanol through the fermentation of glucose?",
+      "options": [
+        "A plentiful supply of oxygen gas and high operating temperatures of two hundred degrees",
+        "The complete absence of oxygen, the presence of yeast, and a room temperature of about thirty-seven degrees",
+        "High atmospheric pressure conditions and a solid phosphoric acid catalyst",
+        "Mixing glucose directly with concentrated sulfuric acid in bright, strong sunlight"
+      ],
+      "correct": 1,
+      "points": 5,
+      "explanation": "Fermentation requires anaerobic conditions (no oxygen) to prevent ethanol from oxidising. Yeast provides the enzymes, and an optimal temperature of about thirty-seven degrees prevents enzyme denaturation."
+    },
+    {
+      "question": "What type of chemical reaction and conditions are used to manufacture ethanol from ethene on an industrial scale?",
+      "options": [
+        "A reversible substitution reaction requiring yeast at room temperature",
+        "An irreversible substitution reaction using atmospheric nitrogen as a catalyst",
+        "A complete combustion reaction inside a high temperature closed furnace",
+        "An addition reaction with steam requiring a phosphoric acid catalyst at high temperature and pressure"
+      ],
+      "correct": 3,
+      "points": 5,
+      "explanation": "Ethanol is manufactured industrially by the catalysed addition of steam to ethene (hydration) at high temperature and pressure using a phosphoric acid catalyst."
+    },
+    {
+      "question": "What is the expected observation when a sample of propanol is warmed with an aqueous solution of acidified potassium manganate(VII)?",
+      "options": [
+        "The purple solution turns colourless because propanol is oxidised to propanoic acid",
+        "The orange solution turns dark green because propanol undergoes rapid addition",
+        "A dense white precipitate forms instantly because propanol is chemically reduced",
+        "The solution remains a deep purple color because propanol is completely unreactive"
+      ],
+      "correct": 0,
+      "points": 5,
+      "explanation": "Acidified potassium manganate(VII) is a powerful oxidising agent that converts alcohols into carboxylic acids. During this redox process, the purple manganate(VII) ions are reduced to colourless manganese(II) ions."
+    },
+    {
+      "question": "Which of the following chemical formulas represents the functional group present in all carboxylic acids?",
+      "options": [
+        "–OH group",
+        "–COO– group",
+        "–CONH– group",
+        "–CO₂H group"
+      ],
+      "correct": 3,
+      "points": 5,
+      "explanation": "Carboxylic acids are defined by the carboxyl group, which is written structurally as –CO₂H bound to the carbon chain."
+    },
+    {
+      "question": "Why is ethanoic acid classified as a weak acid in aqueous solution?",
+      "options": [
+        "It fully dissociates in water to release a high concentration of hydroxide ions",
+        "It only partially ionises in water to release a low concentration of hydrogen ions",
+        "It does not dissolve in water and fails to alter universal indicator paper",
+        "It fully ionises to produce water and solid carbonate salts instantly"
+      ],
+      "correct": 1,
+      "points": 5,
+      "explanation": "Carboxylic acids are weak acids. Unlike strong mineral acids, they only partially dissociate into ions when dissolved in water, resulting in a lower concentration of free H⁺ ions and a higher pH."
+    },
+    {
+      "question": "What chemical products are formed when a sample of liquid ethanoic acid reacts with a strip of reactive zinc metal?",
+      "options": [
+        "Zinc ethanoate and hydrogen gas",
+        "Zinc oxide and water vapor",
+        "Zinc hydroxide and carbon dioxide gas",
+        "No reaction occurs because organic acids cannot react with metals"
+      ],
+      "correct": 0,
+      "points": 5,
+      "explanation": "Carboxylic acids behave as weak acids and undergo typical acid-metal reactions, producing a soluble salt (zinc ethanoate) and liberating hydrogen gas."
+    },
+    {
+      "question": "A student adds solid calcium carbonate into a flask containing excess propanoic acid. Which products are generated by this reaction?",
+      "options": [
+        "Calcium hydroxide and carbon dioxide gas",
+        "Propane gas and a calcium sulfate precipitate",
+        "Calcium propanoate, carbon dioxide gas, and water",
+        "Calcium oxide and liquid water only"
+      ],
+      "correct": 2,
+      "points": 5,
+      "explanation": "Carboxylic acids react with carbonates to yield a salt, carbon dioxide gas, and water. The reaction with propanoic acid produces the salt calcium propanoate."
+    },
+    {
+      "question": "A bottle of white wine containing ethanol is left uncorked and exposed to the open air for several weeks. The liquid turns sour and smells like vinegar. What chemical change has taken place?",
+      "options": [
+        "The ethanol has undergone addition polymerisation to form sour plastics",
+        "The ethanol has been chemically reduced by ambient atmospheric nitrogen gas",
+        "The ethanol has been oxidised by atmospheric oxygen to form ethanoic acid",
+        "The ethanol has broken down via thermal cracking into carbon dioxide gas"
+      ],
+      "correct": 2,
+      "points": 5,
+      "explanation": "Ethanol undergoes slow bacterial oxidation when exposed to atmospheric oxygen, converting the alcohol group into a carboxylic acid group to form ethanoic acid (vinegar)."
+    },
+    {
+      "question": "Which statement best describes the nature of the chemical reaction that occurs during esterification?",
+      "options": [
+        "An addition reaction between an alkene and a carboxylic acid",
+        "A condensation reaction between a carboxylic acid and an alcohol that eliminates a water molecule",
+        "A substitution reaction between an alkane and a metal hydroxide",
+        "A neutralisation reaction that generates a salt and hydrogen gas"
+      ],
+      "correct": 1,
+      "points": 5,
+      "explanation": "Esterification is a condensation reaction where a carboxylic acid molecule links with an alcohol molecule. The hydroxyl group from the acid and a hydrogen from the alcohol split off to form a water molecule byproduct."
+    },
+    {
+      "question": "What is the primary role of adding a few drops of concentrated sulfuric acid to the reaction flask during the preparation of an ester?",
+      "options": [
+        "It acts as a catalyst to speed up the reaction and as a dehydrating agent to remove water",
+        "It serves as the primary alkaline solvent to dissolve the organic reactants",
+        "It chemically reduces the ester product back into a volatile alcohol",
+        "It neutralises the basic functional groups of the alcohol before heating"
+      ],
+      "correct": 0,
+      "points": 5,
+      "explanation": "Concentrated sulfuric acid acts as a homogeneous catalyst that lowers the activation energy of esterification. It also removes water, shifting the position of the equilibrium to increase ester yield."
+    },
+    {
+      "question": "An ester is synthesized by reacting ethanol with propanoic acid under reflux conditions. What is the systematic chemical name of the resulting ester?",
+      "options": [
+        "Propyl ethanoate",
+        "Ethyl propanoate",
+        "Ethane propanoate",
+        "Methyl butanoate"
+      ],
+      "correct": 1,
+      "points": 5,
+      "explanation": "In naming esters, the first part of the name comes from the alcohol (ethanol becomes ethyl) and the second part comes from the parent carboxylic acid (propanoic acid becomes propanoate)."
+    },
+    {
+      "question": "Which of the following organic reaction configurations will successfully synthesize the ester named methyl ethanoate?",
+      "options": [
+        "Reacting methanol with ethanoic acid",
+        "Reacting ethanol with methanoic acid",
+        "Mixing methanoic acid with ethanoate solution",
+        "Reacting butanol with propanoic acid"
+      ],
+      "correct": 0,
+      "points": 5,
+      "explanation": "To produce methyl ethanoate, the alkyl prefix 'methyl' indicates that methanol must be the starting alcohol, and the suffix 'ethanoate' shows that ethanoic acid must be the reactant acid."
+    },
+    {
+      "question": "Which of the following represents a distinctive physical property shared by most small ester molecules?",
+      "options": [
+        "Very high melting points and excellent electrical conductivity as solids",
+        "Sharp, pungent vinegary smells and extreme solubility in water",
+        "Sweet, fruity smells and high volatility, making them evaporate easily",
+        "Highly corrosive to skin tissues and completely non flammable"
+      ],
+      "correct": 2,
+      "points": 5,
+      "explanation": "Esters are volatile organic liquids noted for their distinctive, pleasant, sweet, or fruity aromas, making them easily distinguishable from their parent carboxylic acids."
+    },
+    {
+      "question": "Based on their unique physical characteristics, what is a primary commercial application for synthetic ester compounds?",
+      "options": [
+        "As heavy industrial lubricants for structural steel manufacturing",
+        "As structural engine components due to their rigid macromolecular networks",
+        "As artificial flavorings in the food industry and ingredients in perfumes",
+        "As aqueous conducting electrolytes inside high voltage vehicle batteries"
+      ],
+      "correct": 2,
+      "points": 5,
+      "explanation": "Because of their pleasant, sweet, and fruity fragrances, esters are widely manufactured for use as artificial food flavorings, synthetic essences, cosmetic fragrances, and perfumes."
+    },
+    {
+      "question": "An unbranched alcohol molecule belongs to the standard homologous series and contains exactly four carbon atoms. What is its correct chemical formula?",
+      "options": [
+        "CH₃OH",
+        "C₂H₅OH",
+        "C₃H₇OH",
+        "C₄H₉OH"
+      ],
+      "correct": 3,
+      "points": 5,
+      "explanation": "Alcohols follow the general formula CₙH₂ₙ₊₁OH. If the carbon count 'n' is four (prefix 'but-', naming it butanol), the formula resolves to C₄H₍₂ multiplied by ₄ plus ₁₎OH, which is C₄H₉OH."
+    },
+    {
+      "question": "What is the correct chemical formula for propanoic acid?",
+      "options": [
+        "CH₃CO₂H",
+        "C₂H₅CO₂H",
+        "C₃H₇CO₂H",
+        "HCO₂H"
+      ],
+      "correct": 1,
+      "points": 5,
+      "explanation": "Propanoic acid contains a total of three carbon atoms (prefix 'prop-'). Since one carbon atom is locked inside the –CO₂H functional group, the remaining alkyl chain contains two carbon atoms, giving C₂H₅CO₂H."
+    },
+    {
+      "question": "How does the flammability of alcohols change as their molecular size increases down the homologous series?",
+      "options": [
+        "Flammability increases because more reactive hydroxyl groups are added",
+        "Flammability stays identical because all alcohols burn with the same flame color",
+        "Alcohols are entirely non flammable compounds that act as flame retardants",
+        "Flammability decreases because the percentage of carbon by mass rises, making combustion more difficult"
+      ],
+      "correct": 3,
+      "points": 5,
+      "explanation": "As the carbon chain grows longer, the percentage of carbon by mass increases. This requires more oxygen for complete combustion, making the larger molecules less volatile and more difficult to ignite cleanly."
+    },
+    {
+      "question": "An unknown ester compound is code named butyl methanoate. If this ester undergoes acid catalysed hydrolysis, what alcohol and carboxylic acid starting materials are recovered?",
+      "options": [
+        "Butanoic acid and methanol",
+        "Butane gas and methanoic acid",
+        "Ethanol and propanoic acid",
+        "Methanoic acid and butanol"
+      ],
+      "correct": 3,
+      "points": 5,
+      "explanation": "Hydrolysis breaks down the ester back into its constituents. The suffix 'methanoate' indicates the parent acid was methanoic acid, and the prefix 'butyl' indicates the parent alcohol was butanol."
+    }
+  ]
+}

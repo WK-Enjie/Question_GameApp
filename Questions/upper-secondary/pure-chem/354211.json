@@ -1,0 +1,251 @@
+{
+  "title": "Organic Chemistry: Polymers - Worksheet 5",
+  "topic": "Addition and Condensation Polymerisation, Polyesters, and Polyamides",
+  "subject": "Pure Chemistry",
+  "level": "Upper Secondary",
+  "grade": "Sec 4",
+  "chapter": 21,
+  "worksheet": 1,
+  "questions": [
+    {
+      "question": "Which statement best defines the term polymer?",
+      "options": [
+        "A small, highly reactive molecule containing a single covalent bond",
+        "A macromolecule built up from many small repeating units called monomers",
+        "A giant lattice structure composed entirely of oppositely charged ions",
+        "A mixture of different hydrocarbon fractions with identical boiling points"
+      ],
+      "correct": 1,
+      "points": 5,
+      "explanation": "Polymers are large macromolecules formed by linking thousands of small molecular units called monomers together."
+    },
+    {
+      "question": "During the formation of poly(ethene) from ethene monomers, what type of polymerisation reaction takes place?",
+      "options": [
+        "Condensation polymerisation",
+        "Substitution polymerisation",
+        "Addition polymerisation",
+        "Hydrolysis polymerisation"
+      ],
+      "correct": 2,
+      "points": 5,
+      "explanation": "Poly(ethene) is formed via addition polymerisation, where unsaturated ethene monomers join together without the loss of any other atoms or small molecules."
+    },
+    {
+      "question": "Which of the following is a necessary structural feature for monomers to undergo addition polymerisation?",
+      "options": [
+        "They must contain at least one reactive carbon to carbon double bond",
+        "They must have a dicarboxylic acid functional group at both ends",
+        "They must be completely saturated hydrocarbon molecules",
+        "They must possess an amino functional group and a hydroxyl group"
+      ],
+      "correct": 0,
+      "points": 5,
+      "explanation": "Addition polymerisation requires unsaturated monomers containing carbon to carbon double bonds (C=C), which open up to form single bonds linking the polymer chain."
+    },
+    {
+      "question": "How does the total mass of the polymer product compare to the total starting mass of the monomers in a pure addition polymerisation reaction?",
+      "options": [
+        "The total mass decreases because gas molecules are released",
+        "The total mass increases because oxygen atoms add to the chain",
+        "The total mass remains exactly the same",
+        "The total mass doubles due to the formation of cross links"
+      ],
+      "correct": 2,
+      "points": 5,
+      "explanation": "In addition polymerisation, monomers simply join together to form the polymer without losing any atoms, meaning mass is fully conserved and remains the same."
+    },
+    {
+      "question": "Which statement correctly describes a defining feature of condensation polymerisation?",
+      "options": [
+        "Monomers react together with the elimination of a small molecule such as water",
+        "Only monomers with carbon to carbon double bonds can react",
+        "The polymer formed has a lower relative molecular mass than the monomers",
+        "It can only take place inside a vacuum at low temperatures"
+      ],
+      "correct": 0,
+      "points": 5,
+      "explanation": "Condensation polymerisation involves the linking of monomers with the simultaneous loss of a small molecule, most commonly water (H₂O) or hydrogen chloride (HCl)."
+    },
+    {
+      "question": "What pair of functional groups must react together to produce a synthetic polyester chain?",
+      "options": [
+        "A dicarboxylic acid and a diamine",
+        "A dicarboxylic acid and a diol",
+        "An alkane molecule and an alkene molecule",
+        "A dialkali solution and a disulfate compound"
+      ],
+      "correct": 1,
+      "points": 5,
+      "explanation": "Polyesters are formed when dicarboxylic acid monomers react with diol monomers, creating ester linkages throughout the macromolecule."
+    },
+    {
+      "question": "Which of the following is a widely used artificial polyester mentioned in your syllabus?",
+      "options": [
+        "Nylon",
+        "Poly(ethene)",
+        "Terylene",
+        "Protein"
+      ],
+      "correct": 2,
+      "points": 5,
+      "explanation": "Terylene is a well known synthetic polyester built from ester linkages, used extensively in textiles and clothing fibers."
+    },
+    {
+      "question": "What is the structural formula representing an ester linkage inside a polyester molecule?",
+      "options": [
+        "–CONH–",
+        "–COO–",
+        "–C=C–",
+        "–O–"
+      ],
+      "correct": 1,
+      "points": 5,
+      "explanation": "An ester linkage consists of a carbonyl group bound to an oxygen atom, represented structurally as –COO–."
+    },
+    {
+      "question": "To form the synthetic polyamide known as Nylon, which two monomer functional groups are required to react?",
+      "options": [
+        "A dicarboxylic acid and a diol",
+        "A diol and a diamine",
+        "A dicarboxylic acid and a diamine",
+        "An alkene monomer and a dicarboxylic acid"
+      ],
+      "correct": 2,
+      "points": 5,
+      "explanation": "Nylon is a synthetic polyamide formed through condensation polymerisation between dicarboxylic acid monomers and diamine monomers."
+    },
+    {
+      "question": "What is the name of the linkage that joins the repeating units together in a polyamide like Nylon?",
+      "options": [
+        "Ester linkage",
+        "Amide linkage",
+        "Glycosidic linkage",
+        "Double covalent linkage"
+      ],
+      "correct": 1,
+      "points": 5,
+      "explanation": "Polyamides are defined by the presence of amide linkages (–CONH–) which hold the monomer units together."
+    },
+    {
+      "question": "Which of the following macromolecules is a natural polyamide found in living organisms?",
+      "options": [
+        "Terylene",
+        "Nylon",
+        "Protein",
+        "Starch"
+      ],
+      "correct": 2,
+      "points": 5,
+      "explanation": "Proteins are natural polyamides. They are built up from amino acid monomers linked together by amide linkages, which are biologically referred to as peptide bonds."
+    },
+    {
+      "question": "Amino acids are the building blocks of proteins. What functional groups must every amino acid monomer contain to form a natural polyamide?",
+      "options": [
+        "An amine group and a carboxylic acid group",
+        "An alcohol group and an alkene group",
+        "A carboxylic acid group and an alcohol group",
+        "An amine group and an alcohol group"
+      ],
+      "correct": 0,
+      "points": 5,
+      "explanation": "Amino acids are bi functional molecules containing both an amine group (–NH₂) and a carboxylic acid group (–CO₂H), allowing them to polymerise into natural polyamides."
+    },
+    {
+      "question": "How do the structural linkages of Nylon and natural proteins compare to one another?",
+      "options": [
+        "Nylon contains ester linkages, while proteins contain amide linkages",
+        "Nylon contains amide linkages, while proteins contain ester linkages",
+        "Both Nylon and proteins contain identical amide linkages joining their monomer units",
+        "Nylon is an addition polymer, while proteins are polyesters"
+      ],
+      "correct": 2,
+      "points": 5,
+      "explanation": "Both synthetic Nylon and natural proteins are polyamides, meaning they are both structurally held together by the same type of amide linkages (–CONH–)."
+    },
+    {
+      "question": "If 100 monomers react completely to form a single continuous condensation polymer chain, approximately how many small water molecules are eliminated?",
+      "options": [
+        "Exactly 50",
+        "Exactly 100",
+        "Approximately 99 or 100",
+        "Zero molecules"
+      ],
+      "correct": 2,
+      "points": 5,
+      "explanation": "Each linkage formed in a condensation polymerisation reaction eliminates a small molecule. Linking 100 monomers together creates around 99 to 100 links, freeing a matching number of water molecules."
+    },
+    {
+      "question": "What chemical process can break down a synthetic polyester or a natural protein back into its individual monomer components?",
+      "options": [
+        "Addition polymerisation",
+        "Acid catalysed hydrolysis",
+        "Physical melting",
+        "Fractional distillation"
+      ],
+      "correct": 1,
+      "points": 5,
+      "explanation": "Depolymerisation of polyesters or polyamides can be achieved via hydrolysis (reaction with water), which is typically accelerated using an acid catalyst."
+    },
+    {
+      "question": "A fiber sample is tested and found to contain natural ester bonds that form a complex network. Which classification does this material fall under?",
+      "options": [
+        "Natural polyamide",
+        "Natural polyester",
+        "Artificial polyamide",
+        "Artificial addition plastic"
+      ],
+      "correct": 1,
+      "points": 5,
+      "explanation": "A material containing naturally occurring ester bonds belongs to the group of natural polyesters, distinct from synthetic polyesters like Terylene."
+    },
+    {
+      "question": "Which of the following is a primary environmental problem associated with the disposal of non biodegradable synthetic plastics like poly(ethene)?",
+      "options": [
+        "They dissolve rapidly in rainwater, making lakes acidic",
+        "They accumulate in landfills and oceans because decomposers cannot break them down easily",
+        "They release oxygen gas that accelerates atmospheric warming trends",
+        "They react with nitrogen gas to create toxic ammonium clouds"
+      ],
+      "correct": 1,
+      "points": 5,
+      "explanation": "Non-biodegradable plastics do not get broken down by natural decomposers, leading to severe environmental accumulation, marine hazards, and landfill overcrowding."
+    },
+    {
+      "question": "What happens during the chemical recycling method of plastic depolymerisation?",
+      "options": [
+        "Plastics are shredded and melted directly into small physical pellets",
+        "Polymers are chemically broken down into their individual original monomers",
+        "Plastics are compressed into solid composite building blocks for construction",
+        "Polymers are mixed with sulfur to increase their elasticity properties"
+      ],
+      "correct": 1,
+      "points": 5,
+      "explanation": "Chemical recycling via depolymerisation breaks the bonds within the polymer chain to recover the starting chemical monomers, which can be reused as a fresh chemical feedstock."
+    },
+    {
+      "question": "Which of the following lists a typical everyday use for the synthetic polyamide Nylon?",
+      "options": [
+        "Disposable food wrappers and clingfilm",
+        "Fishing lines, parachutes, and sleeping bags",
+        "As an alkaline solution to neutralize acid soils",
+        "As a fuel feedstock for heavy industrial furnaces"
+      ],
+      "correct": 1,
+      "points": 5,
+      "explanation": "Due to its high strength, elasticity, and durability, Nylon is widely manufactured into items like clothing, fishing lines, curtains, and parachutes."
+    },
+    {
+      "question": "A polymer chain snippet shows a repeating sequence of alternating dicarboxylic acid blocks and diol blocks. Identify this polymer class.",
+      "options": [
+        "Addition polymer",
+        "Polyamide",
+        "Polyester",
+        "Natural polyunsaturated fat"
+      ],
+      "correct": 2,
+      "points": 5,
+      "explanation": "An alternating chain of dicarboxylic acids and diols establishes regular ester linkages, classifying the substance as a polyester."
+    }
+  ]
+}

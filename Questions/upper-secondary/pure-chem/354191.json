@@ -1,0 +1,251 @@
+{
+  "title": "O-Level Combined Science Chemistry: Hydrocarbons and Biofuels",
+  "topic": "Alkanes, Alkenes, Catalytic Cracking, Bioethanol, and Biodiesel",
+  "subject": "Combined Science Chemistry",
+  "level": "Secondary 4",
+  "grade": "O-Level",
+  "chapter": 19,
+  "worksheet": 1,
+  "questions": [
+    {
+      "question": "What chemical change occurs during the catalytic cracking of long-chain alkane fractions?",
+      "options": [
+        "Large hydrocarbon molecules are broken down into smaller alkanes and alkenes",
+        "Smaller unsaturated molecules combine to form large macromolecular polymer chains",
+        "Hydrogen atoms are substituted by halogen atoms in the presence of strong sunlight",
+        "Hydrocarbons react with liquid water to form sweet smelling ester compounds"
+      ],
+      "correct": 0,
+      "points": 5,
+      "explanation": "Cracking is a chemical process where large, less useful long-chain alkane molecules are broken down into smaller, highly demanded short-chain alkanes and alkenes using high temperatures and a catalyst."
+    },
+    {
+      "question": "Which combination of environmental conditions is necessary to carry out the industrial cracking of petroleum fractions?",
+      "options": [
+        "Room temperature conditions and the presence of a live yeast catalyst",
+        "High temperatures and a solid catalyst such as aluminium oxide",
+        "High atmospheric pressures inside a complete vacuum with zero heating",
+        "Mixing the petroleum fraction with concentrated phosphoric acid in the dark"
+      ],
+      "correct": 1,
+      "points": 5,
+      "explanation": "Industrial cracking requires high temperatures (typically about five hundred to six hundred degrees Celsius) and a catalyst such as porous pieces of aluminium oxide or silicon dioxide."
+    },
+    {
+      "question": "Why is the process of chemical cracking structurally vital to a modern petroleum refinery?",
+      "options": [
+        "It converts expensive short-chain alkanes into cheaper long-chain bitumen fractions",
+        "It produces toxic gases to help clean out heavy industrial chemical stacks safely",
+        "It matches the high market demand for short-chain fractions and produces useful hydrogen gas",
+        "It turns volatile alkenes into completely non-flammable solid blocks of plastic"
+      ],
+      "correct": 2,
+      "points": 5,
+      "explanation": "Cracking breaks down excess long-chain fractions (like naphtha or gas oil) into short-chain alkanes like petrol, produces alkenes for making plastics, and generates hydrogen gas which is used for other industrial operations."
+    },
+    {
+      "question": "Bioethanol is a renewable alternative fuel produced from plant material. What biochemical process is used to manufacture bioethanol?",
+      "options": [
+        "High pressure cracking of plant starches using phosphoric acid solutions",
+        "The addition of steam to ethene gas using an inorganic zinc catalyst",
+        "The substitution of methane gas with alcohol units in ultraviolet light",
+        "The fermentation of glucose solutions using yeast enzymes under anaerobic conditions"
+      ],
+      "correct": 3,
+      "points": 5,
+      "explanation": "Bioethanol is produced by fermenting sugar solutions (glucose) using yeast. The reaction must be anaerobic (without oxygen) and kept at an optimal temperature of about thirty-seven degrees Celsius."
+    },
+    {
+      "question": "Why are biofuels like bioethanol and biodiesel considered better for the environment regarding global warming compared to traditional fossil fuels?",
+      "options": [
+        "The carbon dioxide they release upon combustion was recently absorbed by the crops during photosynthesis",
+        "They release zero carbon dioxide or water vapor when they are burned in vehicle engines",
+        "They actively absorb carbon monoxide out of the surrounding atmosphere as vehicles drive",
+        "They chemically destroy the upper ozone layer to lower global temperatures effectively"
+      ],
+      "correct": 0,
+      "points": 5,
+      "explanation": "Biofuels are considered carbon-neutral because the carbon dioxide released when they burn is equal to the carbon dioxide that the plants absorbed from the air while growing via photosynthesis."
+    },
+    {
+      "question": "What is the primary raw material source used to manufacture commercial biodiesel?",
+      "options": [
+        "Heavy crude oil fractions extracted from deep underground lithospheric reserves",
+        "Vegetable oils and animal fats obtained from renewable biological sources",
+        "Simple molecular gases like methane collected from active volcanic outgassing",
+        "Synthetic addition polymers crushed and melted into liquid chemical fuels"
+      ],
+      "correct": 1,
+      "points": 5,
+      "explanation": "Biodiesel is produced by reacting vegetable oils (like palm oil or soybean oil) or animal fats with an alcohol, making it a renewable fuel source independent of crude oil deposits."
+    },
+    {
+      "question": "When an unsaturated alkene molecule undergoes an addition reaction with hydrogen gas, what type of compound is produced?",
+      "options": [
+        "A dicarboxylic acid",
+        "A polyester polymer",
+        "A saturated alkane",
+        "A volatile ester liquid"
+      ],
+      "correct": 2,
+      "points": 5,
+      "explanation": "During hydrogenation, hydrogen atoms add across the carbon to carbon double bond of an alkene, converting the unsaturated compound into a fully saturated alkane."
+    },
+    {
+      "question": "How does the combustion behavior of an alkene compare to the combustion of an alkane with the same number of carbon atoms?",
+      "options": [
+        "Alkenes burn with a much cleaner flame and produce no water vapor at all",
+        "Alkanes are completely non-flammable and act as outstanding fire extinguishers",
+        "Both compounds undergo melting instead of catching fire when heated in open air",
+        "Alkenes burn with a sootier flame because they possess a higher percentage of carbon by mass"
+      ],
+      "correct": 3,
+      "points": 5,
+      "explanation": "Alkenes have a higher carbon-to-hydrogen ratio than alkanes with the same carbon number. This means they have a higher percentage of carbon by mass, leading to incomplete combustion and a sootier flame."
+    },
+    {
+      "question": "Which statement correctly describes the difference between fractional distillation and the cracking of petroleum?",
+      "options": [
+        "Fractional distillation is a physical separation method based on boiling points, while cracking is a chemical breakdown using heat and a catalyst",
+        "Fractional distillation destroys the chemical structure of molecules, while cracking gently mixes them together",
+        "Fractional distillation requires a nickel catalyst, while cracking is done at zero degrees Celsius",
+        "Fractional distillation produces only alkenes, while cracking produces only simple polyamides"
+      ],
+      "correct": 0,
+      "points": 5,
+      "explanation": "Fractional distillation simply separates the pre-existing hydrocarbons in crude oil based on their different boiling points without breaking bonds. Cracking uses chemical reactions to break larger molecules into completely new, smaller molecules."
+    },
+    {
+      "question": "A student mixes a sample of liquid hexane with a few drops of reddish-brown bromine water. Under what condition will the reddish-brown colour slowly disappear?",
+      "options": [
+        "Kept inside a dark cupboard at exceptionally low temperatures",
+        "Exposed to ultraviolet light or strong, direct sunlight",
+        "Mixed with a large amount of solid sodium carbonate alkaline powder",
+        "Dissolved inside a large volume of cold distilled water"
+      ],
+      "correct": 1,
+      "points": 5,
+      "explanation": "Hexane is an alkane. Alkanes are saturated and can only react with bromine via a slow substitution reaction. This reaction requires ultraviolet light or sunlight to break the covalent bonds."
+    },
+    {
+      "question": "Why does propene gas decolourise reddish-brown bromine water immediately in the dark, whereas propane gas does not?",
+      "options": [
+        "Propene is highly toxic and breaks down the bromine molecules into single atoms",
+        "Propene contains only single covalent bonds that absorb the color of the solution",
+        "Propene undergoes a rapid addition reaction across its carbon to carbon double bond",
+        "Propene is an alkaline gas that neutralises the acidic bromine solution completely"
+      ],
+      "correct": 2,
+      "points": 5,
+      "explanation": "Propene is an alkene containing a reactive carbon to carbon double bond (C=C). Bromine molecules add across this double bond instantly in an addition reaction, which does not require light."
+    },
+    {
+      "question": "When the chemical equation for the complete combustion of ethene gas is fully balanced using the smallest whole numbers, what is the coefficient in front of the oxygen gas molecule?\nEquation: C₂H₄(g) + xO₂(g) → 2CO₂(g) + 2H₂O(g)",
+      "options": [
+        "One",
+        "Two",
+        "Four",
+        "Three"
+      ],
+      "correct": 3,
+      "points": 5,
+      "explanation": "The products contain a total of six oxygen atoms (four from 2CO₂ and two from 2H₂O). To balance the equation, three diatomic oxygen molecules (3O₂) are needed on the reactant side."
+    },
+    {
+      "question": "A long-chain alkane with the molecular formula C₁₀H₂₂ undergoes cracking. One of the products formed is an alkane with the formula C₆H₁₄. What is the molecular formula of the other product, assuming only one other molecule is made?",
+      "options": [
+        "C₄H₈",
+        "C₄H₁₀",
+        "C₃H₆",
+        "C₂H₄"
+      ],
+      "correct": 0,
+      "points": 5,
+      "explanation": "The total number of carbon and hydrogen atoms must balance. Carbon count: 10 minus 6 equals 4. Hydrogen count: 22 minus 14 equals 8. The other product is C₄H₈, which is the alkene named butene."
+    },
+    {
+      "question": "What is the correct balanced chemical equation for the complete combustion of bioethanol (C₂H₅OH) in a plentiful supply of oxygen gas?",
+      "options": [
+        "C₂H₅OH + O₂ → C₂H₆ + O₃",
+        "C₂H₅OH + 3O₂ → 2CO₂ + 3H₂O",
+        "C₂H₅OH + 2O₂ → 2CO + 3H₂O",
+        "2C₂H₅OH + O₂ → 4C + 6H₂O"
+      ],
+      "correct": 1,
+      "points": 5,
+      "explanation": "When bioethanol burns completely, it reacts with three moles of oxygen gas to yield two moles of carbon dioxide and three moles of water, balancing all carbon, hydrogen, and oxygen atoms perfectly."
+    },
+    {
+      "question": "A hydrocarbon molecule obtained from an industrial cracking unit is found to contain exactly 14 hydrogen atoms. If this molecule is a saturated alkane, how many carbon atoms does it possess?",
+      "options": [
+        "Seven",
+        "Twelve",
+        "Six",
+        "Four"
+      ],
+      "correct": 2,
+      "points": 5,
+      "explanation": "Alkanes follow the general formula CₙH₂ₙ₊₂. If the number of hydrogen atoms is fourteen, we set up the math: 2ₙ + 2 = 14, which simplifies to 2ₙ = 12, yielding ₙ = 6 carbon atoms (hexane)."
+    },
+    {
+      "question": "Which of the following molecular formulas represents an unsaturated alkene compound that will react with hydrogen gas over a heated nickel catalyst?",
+      "options": [
+        "CH₄",
+        "C₂H₆",
+        "C₃H₈",
+        "C₄H₈"
+      ],
+      "correct": 3,
+      "points": 5,
+      "explanation": "C₄H₈ fits the alkene general formula CₙH₂ₙ (where ₙ = 4, named butene). Because it is an unsaturated alkene containing a double bond, it can undergo an addition reaction with hydrogen gas."
+    },
+    {
+      "question": "What is a major socio-economic or environmental disadvantage of diverting massive areas of agricultural land to grow crops exclusively for biofuel production?",
+      "options": [
+        "It can reduce the amount of land available for food crops, leading to food shortages and higher food prices",
+        "It causes the agricultural soil to turn into solid glass blocks over time due to chemical crystallization",
+        "The growing biofuel crops actively release large volumes of toxic sulfur dioxide gas into the air",
+        "Bioethanol cannot be burned in vehicle engines because it is completely non-flammable"
+      ],
+      "correct": 0,
+      "points": 5,
+      "explanation": "Using fertile farmland to grow fuel crops instead of food crops can shrink the global food supply, driving up food prices and impacting global food security."
+    },
+    {
+      "question": "What type of covalent bonding structure exists between the carbon atoms in a molecule of propene compared to a molecule of propane?",
+      "options": [
+        "Propene contains only single bonds, while propane contains carbon triple bonds",
+        "Propene contains a carbon to carbon double bond, while propane contains only carbon to carbon single bonds",
+        "Propene contains weak ionic bonds, while propane contains simple metallic electron clouds",
+        "Both molecules are held together entirely by weak intermolecular forces with zero covalent bonds"
+      ],
+      "correct": 1,
+      "points": 5,
+      "explanation": "Propene is an alkene and contains one carbon to carbon double bond (C=C) along with single bonds. Propane is an alkane and contains exclusively single covalent bonds between its carbon atoms."
+    },
+    {
+      "question": "How do the viscosity and flammability properties of the short-chain hydrocarbon fractions produced by cracking compare to the original long-chain reactants?",
+      "options": [
+        "The short-chain fractions are more viscous and less flammable",
+        "The short-chain fractions are less viscous and less flammable",
+        "The short-chain fractions are less viscous and more flammable",
+        "Both fractions share identical viscosities and identical ignition temperatures"
+      ],
+      "correct": 2,
+      "points": 5,
+      "explanation": "Smaller hydrocarbon molecules have weaker intermolecular forces holding them together. As a result, they flow more easily (less viscous) and vaporize more easily, making them much more flammable."
+    },
+    {
+      "question": "Bioethanol contains carbon, hydrogen, and oxygen atoms. Why is bioethanol NOT classified as a hydrocarbon compound?",
+      "options": [
+        "It does not release any usable heat energy when it undergoes combustion",
+        "It is a complex solid polymer that cannot form a true independent molecular structure",
+        "It can only be produced by artificial industrial methods and never by biological cells",
+        "Hydrocarbons must contain only carbon and hydrogen atoms, but bioethanol also contains oxygen"
+      ],
+      "correct": 3,
+      "points": 5,
+      "explanation": "By definition, a hydrocarbon is a chemical compound that consists entirely and exclusively of carbon and hydrogen atoms. Since bioethanol (C₂H₅OH) includes an oxygen atom in its structure, it is classified as an alcohol, not a hydrocarbon."
+    }
+  ]
+}
