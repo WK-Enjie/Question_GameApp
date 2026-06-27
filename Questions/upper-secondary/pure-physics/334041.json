@@ -1,0 +1,251 @@
+{
+  "title": "Dynamics: Forces and Motion - Worksheet 1",
+  "topic": "Newton's Laws of Motion, Force Calculations, Free Fall, and Action-Reaction Pairs",
+  "subject": "Physics",
+  "level": "Secondary",
+  "grade": "O-Level",
+  "chapter": 4,
+  "worksheet": 1,
+  "questions": [
+    {
+      "question": "An object of mass 5 kg experiences a net unbalanced force of 20 N. What is the resulting acceleration of the object?",
+      "options": [
+        "0.25 m per s²",
+        "4.0 m per s²",
+        "15.0 m per s²",
+        "100.0 m per s²"
+      ],
+      "correct": 1,
+      "points": 5,
+      "explanation": "According to Newton's Second Law, Force equals mass multiplied by acceleration (F = ma). Rearranging the formula gives acceleration equals Force divided by mass, which is 20 N divided by 5 kg, resulting in 4.0 m per s²."
+    },
+    {
+      "question": "A toy car of mass 2 kg is pushed along a horizontal floor with a forward force of 10 N. If the friction force opposing the motion is 4 N, calculate the acceleration of the toy car.",
+      "options": [
+        "2.0 m per s²",
+        "3.0 m per s²",
+        "5.0 m per s²",
+        "7.0 m per s²"
+      ],
+      "correct": 1,
+      "points": 5,
+      "explanation": "First, determine the net force acting on the car by subtracting friction from the forward force: 10 N minus 4 N equals 6 N. Using F = ma, the acceleration equals the net force divided by mass, which is 6 N divided by 2 kg, resulting in 3.0 m per s²."
+    },
+    {
+      "question": "A constant net force of 15 N causes a trolley to accelerate from rest at a rate of 5 m per s². What is the mass of the trolley?",
+      "options": [
+        "3 kg",
+        "10 kg",
+        "20 kg",
+        "75 kg"
+      ],
+      "correct": 0,
+      "points": 5,
+      "explanation": "Using Newton's Second Law (F = ma), we can rearrange the equation to find mass. Mass equals net force divided by acceleration, which gives 15 N divided by 5 m per s², resulting in 3 kg."
+    },
+    {
+      "question": "An object is moving along a flat frictionless surface at a constant velocity of 8 m per s. If the mass of the object is 12 kg, what is the net force acting on it?",
+      "options": [
+        "0 N",
+        "1.5 N",
+        "20 N",
+        "96 N"
+      ],
+      "correct": 0,
+      "points": 5,
+      "explanation": "Constant velocity means that the object is not accelerating (acceleration equals 0 m per s²). According to F = ma, if acceleration is zero, the net unbalance force acting on the object must be exactly 0 N."
+    },
+    {
+      "question": "A braking force of 500 N is applied to a motorized scooter of total mass 100 kg that is traveling to the right. What is the acceleration of the scooter?",
+      "options": [
+        "5 m per s² to the left",
+        "5 m per s² to the right",
+        "0.2 m per s² to the left",
+        "50000 m per s² to the right"
+      ],
+      "correct": 0,
+      "points": 5,
+      "explanation": "The braking force acts in the direction opposite to the motion (to the left). Acceleration equals force divided by mass, which is 500 N divided by 100 kg, giving 5 m per s². Since the force opposes the motion, the acceleration is directed to the left, causing deceleration."
+    },
+    {
+      "question": "A heavy steel ball and a light plastic ball of identical size are dropped simultaneously from the top of a high tower inside a sealed vacuum chamber. Which statement correctly describes their fall?",
+      "options": [
+        "The steel ball hits the ground first because it experiences a larger gravitational acceleration.",
+        "The plastic ball hits the ground first because it has less inertia to overcome.",
+        "Both balls hit the ground at the exact same time because they accelerate at the same constant rate.",
+        "Both balls float mid-air because there is no air pressure to push them down."
+      ],
+      "correct": 2,
+      "points": 5,
+      "explanation": "In a vacuum, there is no air resistance. All objects near Earth's surface fall freely with the same constant gravitational acceleration of 10 m per s², regardless of their mass. Therefore, they will fall at the same rate and hit the ground together."
+    },
+    {
+      "question": "An object is released from rest and falls freely in a vacuum near the surface of the Earth. What happens to its acceleration and velocity as it falls?",
+      "options": [
+        "Both its acceleration and velocity increase continuously.",
+        "Its acceleration remains constant at 10 m per s² while its velocity increases at a steady rate.",
+        "Its acceleration decreases to zero while its velocity remains completely constant.",
+        "Its acceleration increases while its velocity remains completely constant."
+      ],
+      "correct": 1,
+      "points": 5,
+      "explanation": "Without air resistance, the object experiences free fall. The acceleration is constant and uniform at 10 m per s². Because of this constant acceleration, the velocity increases by 10 m per s during each second of the fall."
+    },
+    {
+      "question": "A stone is dropped from a cliff edge into a deep chasm where air resistance is negligible. If it takes exactly 3 seconds to reach the bottom, what is its final speed just before impact? [Take gravitational acceleration g = 10 m per s²]",
+      "options": [
+        "3.3 m per s",
+        "13.0 m per s",
+        "30.0 m per s",
+        "45.0 m per s"
+      ],
+      "correct": 2,
+      "points": 5,
+      "explanation": "Acceleration is the change in velocity per unit time. For an object falling from rest (initial speed equals 0 m per s) with a constant acceleration of 10 m per s², its speed increases by 10 m per s every second. After 3 seconds, the final speed is 10 multiplied by 3, which equals 30 m per s."
+    },
+    {
+      "question": "Why do a heavy stone and a light feather accelerate at the exact same rate of 10 m per s² when dropped in a complete vacuum?",
+      "options": [
+        "The gravitational force pulling on both objects is completely identical.",
+        "The vacuum chamber eliminates the mass of both objects, making them weightless.",
+        "The ratio of the weight of an object to its mass is a constant value for all objects near Earth.",
+        "The objects do not experience any forces at all when falling in a vacuum."
+      ],
+      "correct": 2,
+      "points": 5,
+      "explanation": "The heavy stone experiences a larger gravitational force (weight) than the feather, but it also has more mass (inertia) and requires a larger force to change its motion. Since acceleration equals weight divided by mass (mg divided by m), the mass cancels out, leaving acceleration equal to g, which is 10 m per s² for all objects."
+    },
+    {
+      "question": "An object is dropped from a stationary helicopter and falls through the air. What happens to the air resistance acting on the object during the first few seconds of its fall?",
+      "options": [
+        "The air resistance remains constant because the density of the air is uniform.",
+        "The air resistance increases as the speed of the falling object increases.",
+        "The air resistance decreases because the object cuts through the air more easily.",
+        "The air resistance drops to zero instantly as the object reaches constant acceleration."
+      ],
+      "correct": 1,
+      "points": 5,
+      "explanation": "Air resistance is a resistive force that depends directly on the speed of the object moving through the fluid. As the object drops and speeds up due to gravity, the air resistance opposing its downward motion increases."
+    },
+    {
+      "question": "An object falling through the atmosphere eventually reaches terminal velocity. Which of the following correctly describes the forces and motion at this point?",
+      "options": [
+        "The air resistance is zero, the net force is maximum, and the object moves with maximum acceleration.",
+        "The air resistance is equal to the weight of the object, the net force is zero, and the acceleration is zero.",
+        "The air resistance is greater than the weight, causing the object to slow down and stop mid-air.",
+        "The weight becomes zero, causing the object to move upwards at a constant speed."
+      ],
+      "correct": 1,
+      "points": 5,
+      "explanation": "As the speed of a falling object increases, the upward air resistance grows until it is exactly equal in magnitude to the downward weight of the object. When these forces are balanced, the net force becomes zero, meaning acceleration stops and the object continues downward at a constant terminal velocity."
+    },
+    {
+      "question": "A skydiver jumps out of an airplane. Which of the following lists the correct progression of the skydiver's acceleration from the moment of release until they reach terminal velocity?",
+      "options": [
+        "Starts at 10 m per s² and increases steadily until it reaches a maximum value.",
+        "Starts at 0 m per s² and increases until it balances the force of gravity.",
+        "Starts at 10 m per s² and gradually decreases over time until it becomes zero.",
+        "Remains constant at 10 m per s² throughout the entire duration of the fall."
+      ],
+      "correct": 2,
+      "points": 5,
+      "explanation": "At the instant of release, air resistance is zero, so acceleration is equal to g, which is 10 m per s². As the skydiver speeds up, upward air resistance increases, reducing the net downward force. Since net force decreases, the acceleration gradually decreases from 10 m per s² until it reaches zero at terminal velocity."
+    },
+    {
+      "question": "Two identical crates, Crate A weighing 500 N and Crate B weighing 800 N due to heavy contents, are dropped with identical parachutes. How will their terminal velocities compare?",
+      "options": [
+        "Crate A will have a higher terminal velocity because it is lighter and encounters less air friction.",
+        "Crate B will have a higher terminal velocity because it requires a larger air resistance force to balance its larger weight, which occurs at a higher speed.",
+        "Both crates will have the exact same terminal velocity because they use identical parachutes.",
+        "Neither crate can reach terminal velocity because the parachutes keep their acceleration constant."
+      ],
+      "correct": 1,
+      "points": 5,
+      "explanation": "Terminal velocity is reached when upward air resistance equals downward weight. Since Crate B is heavier (800 N), it requires a larger air resistance force of 800 N to achieve balance. To generate this larger resistive force, Crate B must fall faster through the air, giving it a higher terminal velocity than Crate A."
+    },
+    {
+      "question": "A heavy textbook rests motionless on a flat horizontal table surface. If the action force is the downward gravitational pull of the Earth on the textbook, what is the correct reaction force according to Newton's Third Law?",
+      "options": [
+        "The upward normal contact force exerted by the table surface on the textbook.",
+        "The downward contact force exerted by the textbook on the table surface.",
+        "The upward gravitational pull exerted by the textbook on the Earth.",
+        "The frictional force opposing any horizontal movement of the textbook."
+      ],
+      "correct": 2,
+      "points": 5,
+      "explanation": "Newton's Third Law states that action-reaction forces must be of the exact same type, equal in magnitude, opposite in direction, and act on two different interacting bodies. If the action is the Earth pulling gravitationally on the book, the reaction must be the book pulling gravitationally on the Earth."
+    },
+    {
+      "question": "When an athlete takes a step forward while running on a track, their running shoe pushes backwards on the ground with a horizontal force. What is the reaction force that accelerates the athlete forward?",
+      "options": [
+        "The upward normal force from the ground supporting the athlete's body weight.",
+        "The forward frictional force exerted by the track surface on the bottom of the shoe.",
+        "The air resistance pushing against the front of the athlete's body.",
+        "The downward gravitational force keeping the athlete attached to the track."
+      ],
+      "correct": 1,
+      "points": 5,
+      "explanation": "According to Newton's Third Law, when the shoe exerts a backward horizontal force on the track (action), the track simultaneously exerts an equal and opposite forward horizontal force on the shoe (reaction). This forward force is friction, which propels the athlete forward."
+    },
+    {
+      "question": "A massive heavy-duty truck collides head-on with a small lightweight passenger car. During the impact, how does the magnitude of the force exerted by the truck on the car compare to the force exerted by the car on the truck?",
+      "options": [
+        "The truck exerts a much larger force because it has a greater mass and inertia.",
+        "The car exerts a larger force because it undergoes a more violent change in shape.",
+        "The forces are exactly equal in magnitude according to Newton's Third Law.",
+        "The truck exerts a force, but the car does not exert any force back because it is moving backwards."
+      ],
+      "correct": 2,
+      "points": 1,
+      "explanation": "Newton's Third Law applies to all physical interactions regardless of mass or velocity. The force exerted by body A on body B is always equal in magnitude and opposite in direction to the force exerted by body B on body A. The car sustains more damage simply because its smaller structure cannot withstand the force as well."
+    },
+    {
+      "question": "An uncrewed spacecraft traveling through deep space has its propulsion engines turned on, creating a constant net force to the right. If the spacecraft is moving to the left, describe its motion.",
+      "options": [
+        "It will immediately turn around and move to the right at a constant speed.",
+        "It will slow down (decelerate) while continuing to move to the left.",
+        "It will accelerate and move faster towards the left side.",
+        "It will stop moving instantly and remain completely static."
+      ],
+      "correct": 1,
+      "points": 5,
+      "explanation": "When the net force is directed opposite to the direction of motion (velocity is to the left, force is to the right), the force opposes the movement. This creates a deceleration, causing the spacecraft to slow down while it continues its leftward path."
+    },
+    {
+      "question": "A passenger of mass 60 kg stands inside a lift that is accelerating upwards at a rate of 2 m per s². Calculate the upward contact force exerted by the lift floor on the passenger. [Take g = 10 m per s²]",
+      "options": [
+        "120 N",
+        "480 N",
+        "600 N",
+        "720 N"
+      ],
+      "correct": 3,
+      "points": 5,
+      "explanation": "The forces acting on the passenger are the upward contact force (R) and the downward weight (W = mg = 60 multiplied by 10 = 600 N). Since the lift accelerates upwards, the net force is R minus W. Using F = ma: R minus 600 equals 60 multiplied by 2. This resolves to R minus 600 equals 120, meaning R equals 120 plus 600, which equals 720 N."
+    },
+    {
+      "question": "A model rocket of mass 10 kg is launched vertically upwards from the launchpad. If the rocket engines produce a steady upward thrust of 150 N, calculate the initial vertical acceleration of the rocket. [Take g = 10 m per s²]",
+      "options": [
+        "5 m per s²",
+        "10 m per s²",
+        "15 m per s²",
+        "25 m per s²"
+      ],
+      "correct": 0,
+      "points": 5,
+      "explanation": "First, find the downward weight of the rocket: 10 kg multiplied by 10 m per s² equals 100 N. The net vertical force is the upward thrust minus the downward weight: 150 N minus 100 N equals 50 N upwards. Acceleration equals net force divided by mass, which is 50 N divided by 10 kg, resulting in 5 m per s²."
+    },
+    {
+      "question": "A driver applies a constant braking force to a car traveling along a straight road, causing it to slow down at a uniform rate until it stops. Which of the following describes the shape of its velocity-time graph?",
+      "options": [
+        "A horizontal straight line parallel to the time axis.",
+        "A straight line sloping downwards towards the time axis.",
+        "A curved line that becomes progressively steeper over time.",
+        "A straight line sloping upwards away from the time axis."
+      ],
+      "correct": 1,
+      "points": 5,
+      "explanation": "A constant braking force creates a constant uniform deceleration. On a velocity-time graph, acceleration or deceleration is represented by the gradient. Uniform deceleration results in a straight line with a constant negative slope heading downwards towards the time axis."
+    }
+  ]
+}

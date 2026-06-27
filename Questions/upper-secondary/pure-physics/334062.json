@@ -1,0 +1,251 @@
+{
+  "title": "Liquid Pressure and Atmospheric Instruments - Worksheet 2",
+  "topic": "Liquid Pressure Mechanics, Depth Variations, Density Effects, Barometers, and Manometers",
+  "subject": "Physics",
+  "level": "Upper Secondary",
+  "grade": "O-Level",
+  "chapter": 6,
+  "worksheet": 2,
+  "questions": [
+    {
+      "question": "Three containers of completely different shapes—one conical, one cylindrical, and one stepped—are filled with liquid water to the exact same vertical height. How does the liquid pressure at the base of the containers compare?",
+      "options": [
+        "The liquid pressure is identical at the base of all three containers",
+        "The cylindrical container has the highest pressure due to its uniform walls",
+        "The conical container has the lowest pressure because it holds the least volume of water",
+        "The stepped container has the highest pressure due to the internal corners"
+      ],
+      "correct": 0,
+      "points": 5,
+      "explanation": "Liquid pressure depends strictly on the formula pressure equals depth multiplied by density multiplied by gravitational field strength (P = hρg). Since the vertical height (depth) and the liquid (density) are identical, the base pressure is the same regardless of container shape or water volume."
+    },
+    {
+      "question": "Why are the concrete walls of hydro-electric river dams always constructed to be much thicker at the bottom than at the top?",
+      "options": [
+        "To resist the high velocity of surface water waves traveling downstream",
+        "To withstand the increasing liquid pressure that builds up at greater depths",
+        "To prevent underwater plants from damaging the concrete base foundations",
+        "To ensure the center of mass of the dam is kept below the water line"
+      ],
+      "correct": 1,
+      "points": 5,
+      "explanation": "Liquid pressure increases linearly with depth according to P = hρg. Because the water exerts a much greater horizontal force near the riverbed than at the surface, the bottom of the dam wall must be constructed thicker to withstand this immense pressure."
+    },
+    {
+      "question": "A research submarine dives vertically down into the ocean. If the submarine descends from a depth of 10 meters to a new depth of 30 meters, how does the liquid pressure acting on its outer hull change?",
+      "options": [
+        "The liquid pressure drops to one-third of its original value",
+        "The liquid pressure doubles because the submarine is moving faster",
+        "The liquid pressure triples because pressure is directly proportional to depth",
+        "The liquid pressure remains constant because the ocean density is uniform"
+      ],
+      "correct": 2,
+      "points": 5,
+      "explanation": "Liquid pressure is directly proportional to depth (h) when density and gravity are constant. Increasing the depth from 10 meters to 30 meters represents a threefold increase in depth, so the liquid pressure triples."
+    },
+    {
+      "question": "Two identical sensors are lowered into two separate tanks at the exact same vertical depth of 2 meters. Tank A contains pure fresh water, while Tank B contains dense liquid mercury. Which sensor records a higher pressure, and why?",
+      "options": [
+        "Tank A, because fresh water molecules move at a higher kinetic speed",
+        "Tank B, because mercury has a much higher density than fresh water",
+        "Both sensors record identical pressures because the depths are equal",
+        "Tank B, because mercury is a metal and exerts magnetic pressure forces"
+      ],
+      "correct": 1,
+      "points": 5,
+      "explanation": "Liquid pressure is directly proportional to the density of the fluid (P = hρg). Since mercury is significantly denser than fresh water, it exerts a much greater pressure than water at the same depth."
+    },
+    {
+      "question": "A scuba diver swims along a path inside a deep coral reef. If the diver moves 50 meters horizontally at a constant depth of 15 meters, describe the change in liquid pressure experienced by the diver.",
+      "options": [
+        "The liquid pressure remains completely constant throughout the horizontal movement",
+        "The liquid pressure increases steadily because horizontal distance adds force",
+        "The liquid pressure drops to zero because the diver is moving at a uniform velocity",
+        "The liquid pressure fluctuates violently due to the presence of coral boundaries"
+      ],
+      "correct": 0,
+      "points": 5,
+      "explanation": "Liquid pressure varies only with changes in vertical depth. Moving horizontally at a constant depth means the value of 'h' in the formula P = hρg is constant, so the experienced liquid pressure remains completely unchanged."
+    },
+    {
+      "question": "A student sets up a simple mercury barometer at sea level. If the glass tube is tilted slightly at an angle to the vertical position, what happens to the vertical height and the total length of mercury inside the tube?",
+      "options": [
+        "The vertical height decreases and the length along the tube increases",
+        "The vertical height remains the same but the length of mercury along the tube increases",
+        "Both the vertical height and the tube length drop to half their values",
+        "The vertical height increases to balance out the tilting force components"
+      ],
+      "correct": 1,
+      "points": 5,
+      "explanation": "Atmospheric pressure supports a specific vertical height of mercury (about 760 mm at sea level). Tilting the tube does not change atmospheric pressure, so the vertical height remains the same, but the mercury must occupy a longer length along the slanted glass tube."
+    },
+    {
+      "question": "Two mercury barometers, Barometer X with a tube diameter of 1 cm and Barometer Y with a tube diameter of 2 cm, are placed side by side. How do their vertical mercury columns compare?",
+      "options": [
+        "Barometer X has a column that is twice as high as Barometer Y",
+        "Barometer Y has a column that is twice as high as Barometer X",
+        "The vertical heights of the mercury columns are exactly identical in both barometers",
+        "Barometer Y fails to hold mercury because the wide tube destroys the vacuum"
+      ],
+      "correct": 2,
+      "points": 5,
+      "explanation": "Liquid pressure depends purely on vertical height and fluid density, not on the width or cross-sectional area of the tube. Since both experience the same atmospheric pressure, the vertical height supported is identical."
+    },
+    {
+      "question": "A tiny air bubble escapes from a diver's regulator at the bottom of a deep lake and rises towards the surface. What happens to the physical volume of this bubble as it climbs upwards?",
+      "options": [
+        "The volume decreases because the surrounding water temperature drops",
+        "The volume remains completely constant because air molecules are rigid",
+        "The volume fluctuates randomly based on the surface area of the lake",
+        "The volume increases because the surrounding liquid pressure decreases as depth decreases"
+      ],
+      "correct": 3,
+      "points": 5,
+      "explanation": "As the bubble rises, its depth below the surface decreases, which reduces the surrounding liquid pressure acting on it. With less pressure compressing the bubble, the air inside expands, causing its volume to increase."
+    },
+    {
+      "question": "A tiny crack develops at the top of a glass mercury barometer tube, allowing a small amount of atmospheric air to leak into the space above the mercury column. What is the effect on the mercury column?",
+      "options": [
+        "The mercury column drops downwards because the leaked air exerts a downward pressure on it",
+        "The mercury column rises to the top because air pulls the liquid upwards",
+        "The mercury column stays at the same level but begins to boil violently",
+        "The mercury column turns into solid metal due to rapid oxidation reactions"
+      ],
+      "correct": 0,
+      "points": 5,
+      "explanation": "Initially, the space above the mercury is a vacuum exerting zero pressure. When air leaks in, it occupies that space and exerts a downward pressure on top of the mercury column, working against atmospheric pressure and pushing the mercury column down."
+    },
+    {
+      "question": "A portable mercury barometer is carried by a hiker from sea level up to the summit of a high mountain peak. What change is observed in the barometer reading?",
+      "options": [
+        "The vertical height of the mercury column increases because gravity is weaker",
+        "The vertical height of the mercury column decreases because atmospheric pressure drops at higher altitudes",
+        "The mercury column disappears completely because the liquid freezes into solid metal",
+        "The reading stays completely identical because the vacuum space expands to compensate"
+      ],
+      "correct": 1,
+      "points": 5,
+      "explanation": "At higher altitudes, there are fewer air molecules above, so atmospheric pressure is lower than at sea level. Because the atmosphere pushes down less on the mercury pool at the base, it can support a shorter vertical column of mercury."
+    },
+    {
+      "question": "Why is liquid mercury used in standard laboratory barometers instead of clear liquid water?",
+      "options": [
+        "Mercury is a transparent substance that makes reading the scale easy",
+        "Water would react chemically with the glass tube and cause it to dissolve",
+        "Mercury has an exceptionally high density, keeping the supported column height practical at around seventy-six centimeters",
+        "Water has zero mass density and cannot experience gravitational forces"
+      ],
+      "correct": 2,
+      "points": 5,
+      "explanation": "Atmospheric pressure can support a column of water about 10.3 meters high, which is too tall for a practical laboratory instrument. Because mercury is 13.6 times denser than water, the required column height is reduced to a manageable 76 centimeters."
+    },
+    {
+      "question": "A open-ended U-tube liquid manometer is connected to a laboratory gas tap. When the gas valve is opened, the liquid levels in both arms of the U-tube remain perfectly horizontal and level. What does this tell us?",
+      "options": [
+        "The gas pressure is equal to zero pascals",
+        "The gas pressure is lower than the surrounding atmospheric pressure",
+        "The gas supply has run out and contains a perfect vacuum",
+        "The gas pressure is exactly equal to the surrounding atmospheric pressure"
+      ],
+      "correct": 3,
+      "points": 5,
+      "explanation": "A manometer measures pressure differences. One side is open to the atmosphere. If the liquid levels are perfectly equal, the pressure pushing down on the gas-connected side balances the atmospheric pressure pushing on the open side."
+    },
+    {
+      "question": "A U-tube manometer filled with water is connected to a container of pressurized gas. The water level in the arm connected to the gas container is pushed down, causing the water level in the open arm to rise by a vertical height difference of 20 cm. What is the value of the gas pressure?",
+      "options": [
+        "The gas pressure is greater than atmospheric pressure by an amount equal to 20 cm of water pressure",
+        "The gas pressure is less than atmospheric pressure by 20 cm of water pressure",
+        "The gas pressure is exactly equal to zero pascals because water is a balanced fluid",
+        "The gas pressure is exactly twenty times the atmospheric pressure value"
+      ],
+      "correct": 0,
+      "points": 5,
+      "explanation": "Since the liquid is pushed down on the gas side and up on the open side, the gas pressure is stronger than atmospheric pressure. The excess pressure is measured by the vertical height difference, which is 20 cm of water pressure."
+    },
+    {
+      "question": "A scientist wants to measure a very small pressure difference in a gas system. To make the U-tube manometer as sensitive as possible so that a small pressure change causes a large level shift, what type of liquid should be selected?",
+      "options": [
+        "A liquid with a very high density, such as mercury",
+        "A liquid with a very low density, such as a specialized light oil",
+        "A liquid that has an extremely high boiling point and changes color",
+        "The density of the liquid has no effect on the height movement of a manometer"
+      ],
+      "correct": 1,
+      "points": 5,
+      "explanation": "According to P = hρg, for a given small pressure difference P, a smaller liquid density ρ will result in a larger vertical height displacement h. This makes the instrument more sensitive and easier to read."
+    },
+    {
+      "question": "A custom manometer is built where the left glass arm has a cross-sectional area of 1 cm² and the right glass arm has a cross-sectional area of 3 cm². If this manometer is filled with water and connected to a gas supply, how does the width difference affect the height reading?",
+      "options": [
+        "The wider arm will show a liquid height shift that is three times greater",
+        "The narrower arm will hold all the water due to capillary forces",
+        "The vertical height difference between the two liquid surfaces remains accurate and unchanged",
+        "The manometer fails to function because uneven areas create a structural torque"
+      ],
+      "correct": 2,
+      "points": 5,
+      "explanation": "Liquid pressure depends solely on vertical depth and fluid density, completely independent of the cross-sectional area or volume of the tubes. The vertical height difference between the two levels depends only on the pressure difference."
+    },
+    {
+      "question": "A glass beaker is filled with a layer of dense salty water at the bottom, and a layer of less dense cooking oil floating directly on top of the water. How is the total liquid pressure at the absolute bottom of the beaker calculated?",
+      "options": [
+        "By taking the average density of both liquids and multiplying by the total depth",
+        "By multiplying the depth of the oil layer by the density of the salty water",
+        "By calculating the pressure of the oil layer using its density and subtracting the water pressure",
+        "By calculating the pressure exerted by the oil layer and adding the pressure exerted by the water layer"
+      ],
+      "correct": 3,
+      "points": 5,
+      "explanation": "Pressure adds up cumulatively with depth. The total fluid pressure at the base is the sum of the individual hydrostatic pressures exerted by each independent fluid layer: P = (depth of oil multiplied by oil density multiplied by g) + (depth of water multiplied by water density multiplied by g)."
+    },
+    {
+      "question": "A open vertical U-tube contains liquid water in equilibrium. If a small volume of cooking oil, which does not mix with water and has a lower density than water, is poured into the left arm, what happens to the final liquid levels?",
+      "options": [
+        "The top surface of the oil in the left arm will be higher than the top surface of the water in the right arm",
+        "The liquid levels will remain perfectly horizontal and level across both arms",
+        "The water in the right arm will be pushed completely out of the tube by the oil weight",
+        "The oil will sink to the bottom of the U-tube bend and create an asymmetric vacuum"
+      ],
+      "correct": 0,
+      "points": 5,
+      "explanation": "Since oil has a lower density than water, a taller column of oil is required to generate the exact same pressure as a shorter column of water. To balance the pressures at the bottom interface, the oil surface must sit higher than the water surface."
+    },
+    {
+      "question": "A deep sea submarine hull can withstand a maximum external fluid pressure of 5000000 pascals. If the submarine enters a zone of the ocean where the water density increases due to temperature drops, how does this affect its safe diving depth?",
+      "options": [
+        "The submarine can dive deeper because dense water provides better structural buoyancy forces",
+        "The maximum safe diving depth decreases because a higher density generates the limit pressure at a shallower depth",
+        "The safe diving depth stays identical because pressure depends only on the volume of the ship",
+        "The submarine must ascend to the surface instantly because dense water freezes the hull plates"
+      ],
+      "correct": 1,
+      "points": 5,
+      "explanation": "Since pressure equals depth multiplied by density multiplied by gravity (P = hρg), an increase in fluid density ρ means that the threshold pressure of 5,000,000 pascals will be reached at a smaller value of height/depth h, shrinking the safe depth zone."
+    },
+    {
+      "question": "Four different tubes are connected together at the base so that liquid can flow freely between them. If water is poured into this interconnected system, what will be observed regarding the water surfaces in the different tubes?",
+      "options": [
+        "The narrowest tube will have the highest water level due to pressure concentration",
+        "The widest tube will have the highest water level because it holds more mass",
+        "The water surfaces in all connected tubes will settle at the exact same horizontal level",
+        "The water will circulate continuously from the wide tubes into the narrow tubes"
+      ],
+      "correct": 2,
+      "points": 5,
+      "explanation": "This is the principle of communicating vessels (the liquid paradox). For the liquid to be at rest, the pressure at the shared base must be uniform. Since pressure depends only on vertical height, the liquid levels must align horizontally across all columns."
+    },
+    {
+      "question": "At sea level under normal weather conditions, the atmosphere exerts a pressure that can support a vertical column of mercury exactly 760 mm high. If the atmospheric pressure value is given as 100000 pascals, what is the equivalent column height if the atmosphere was measured using a liquid that is exactly half as dense as mercury?",
+      "options": [
+        "380 mm",
+        "760 mm",
+        "1140 mm",
+        "1520 mm"
+      ],
+      "correct": 3,
+      "points": 5,
+      "explanation": "According to the formula P = hρg, height and density are inversely proportional for a constant pressure value. If the density of the measuring fluid is cut in half, the column height must double to generate the same balancing pressure: 760 mm multiplied by 2 equals 1520 mm."
+    }
+  ]
+}

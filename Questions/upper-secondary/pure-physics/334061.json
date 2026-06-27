@@ -1,0 +1,251 @@
+{
+  "title": "Pressure on Surfaces - Worksheet 1",
+  "topic": "Conceptual Application of Force, Area, and Surface Pressure Variations",
+  "subject": "Physics",
+  "level": "Upper Secondary",
+  "grade": "O-Level",
+  "chapter": 6,
+  "worksheet": 1,
+  "questions": [
+    {
+      "question": "Which of the following statements best defines the physical quantity of pressure acting on a solid surface?",
+      "options": [
+        "The total perpendicular force acting on a surface area",
+        "The perpendicular force acting per unit surface area",
+        "The product of the applied force and the contact surface area",
+        "The parallel friction force distributed across a structural interface"
+      ],
+      "correct": 1,
+      "points": 5,
+      "explanation": "Pressure is defined strictly as the perpendicular force acting per unit area. It measures how concentrated a force is over a specific surface boundary."
+    },
+    {
+      "question": "A solid rectangular brick has dimensions of 5 cm by 10 cm by 20 cm. On which combination of sides should the brick be placed on a table to exert the maximum possible pressure?",
+      "options": [
+        "The 10 cm by 20 cm face",
+        "The 5 cm by 10 cm face",
+        "The 5 cm by 20 cm face",
+        "The pressure remains identical on all faces because the weight is constant"
+      ],
+      "correct": 1,
+      "points": 5,
+      "explanation": "To maximize pressure, the contact area must be minimized because pressure equals force divided by area. The smallest contact area is formed by the 5 cm multiplied by 10 cm face, which equals 50 cm²."
+    },
+    {
+      "question": "A uniform metallic block with dimensions 4 cm by 6 cm by 12 cm rests on a flat soft foam pad. Which face will cause the minimum indentation into the foam pad?",
+      "options": [
+        "The 4 cm by 6 cm face",
+        "The 4 cm by 12 cm face",
+        "The 6 cm by 12 cm face",
+        "All faces cause an identical indentation depth because the mass is unchanged"
+      ],
+      "correct": 2,
+      "points": 5,
+      "explanation": "The depth of indentation depends on pressure. Minimum indentation happens at minimum pressure, which requires the largest contact area. The largest face is 6 cm multiplied by 12 cm, which equals 72 cm²."
+    },
+    {
+      "question": "A student of mass 50 kg stands upright on an inflatable mattress with both feet flat on the ground. If the student suddenly lifts one foot and balances on a single leg, how do the total force and pressure exerted on the mattress surface change?",
+      "options": [
+        "Force doubles and pressure remains completely unchanged",
+        "Force remains unchanged and pressure is halved",
+        "Both the total force and the surface pressure double simultaneously",
+        "Force remains unchanged and pressure doubles"
+      ],
+      "correct": 3,
+      "points": 5,
+      "explanation": "The total force is the weight of the student, which remains unchanged. Standing on one foot cuts the contact surface area in half. Since pressure equals force divided by area, halving the area doubles the pressure."
+    },
+    {
+      "question": "An elephant has a much greater weight than a horse, yet a horse sinks deeper into soft desert sand than an elephant when walking. What is the root optical and physical explanation for this observation?",
+      "options": [
+        "The elephant has a much larger total foot surface area, resulting in a lower pressure on the sand",
+        "The horse moves at a higher velocity, which increases its impact force per unit area",
+        "The elephant's feet possess specialized muscles that cancel out the force of gravity",
+        "The horse concentrates its entire weight onto a single point that creates a vacuum"
+      ],
+      "correct": 0,
+      "points": 5,
+      "explanation": "Even though an elephant is significantly heavier, its feet have a very large surface area. This distributes its weight so effectively that the pressure exerted on the sand is lower than that of a horse with small hooves."
+    },
+    {
+      "question": "A standard thumb tack is engineered with a wide flat plastic top and a very sharp metal pin point at the opposite end. What is the precise purpose of this structural variance?",
+      "options": [
+        "To reduce force at the thumb side and increase force at the noticeboard side",
+        "To produce low pressure at the thumb side and high pressure at the noticeboard side",
+        "To create a vacuum seal at both ends when physical contact is established",
+        "To maximize the transfer of thermal energy from the thumb into the wall"
+      ],
+      "correct": 1,
+      "points": 5,
+      "explanation": "The force applied by the thumb is transmitted equally through the tack. The wide top creates a large area and low pressure, protecting the thumb. The sharp point has a tiny area, creating a huge pressure that easily pierces the wall."
+    },
+    {
+      "question": "Two identical rectangular wooden blocks are stacked vertically on top of each other on a wooden floor. If the top block is removed and placed flat beside the first block, how do the total force and pressure on the floor surface change compared to the initial vertical stack?",
+      "options": [
+        "The total force is halved and the surface pressure is halved",
+        "The total force remains unchanged and the surface pressure is halved",
+        "The total force is halved and the surface pressure remains unchanged",
+        "The total force remains unchanged and the surface pressure doubles"
+      ],
+      "correct": 1,
+      "points": 5,
+      "explanation": "Placing the blocks side by side means the total weight (force) pushing down on the floor is still the weight of both blocks, so force remains unchanged. However, the contact area doubles, which halves the pressure."
+    },
+    {
+      "question": "A student notices that carrying a heavy school bag with thin nylon strings as straps causes sharp pain in the shoulders, whereas wide padded straps are comfortable. Why is this?",
+      "options": [
+        "Thin strings increase the gravitational pull on the bag, increasing the downward force",
+        "Wide straps reduce the weight of the bag by absorbing internal tension",
+        "Thin strings concentrate the force over a smaller area, creating a painfully high pressure",
+        "Wide straps eliminate all contact forces by distributing charge across the nylon fibers"
+      ],
+      "correct": 2,
+      "points": 5,
+      "explanation": "The weight of the bag is identical in both cases. Thin strings have a small cross-sectional area, concentrating the force and generating high pressure on the shoulders. Wide straps distribute the force, lowering the pressure."
+    },
+    {
+      "question": "Why is it much easier to slice through an apple using the sharp edge of a knife rather than its blunt back edge?",
+      "options": [
+        "The sharp edge has a smaller contact area, creating a higher pressure with the same force",
+        "The sharp edge chemically reacts with the apple skin to weaken its fibers",
+        "The blunt edge increases the mass of the knife, reducing its downward velocity",
+        "The sharp edge multiplies the physical force applied by the user's hand"
+      ],
+      "correct": 0,
+      "points": 5,
+      "explanation": "A sharp edge minimizes the contact surface area. When a force is applied, this tiny area yields a very high pressure that easily overcomes the structural integrity of the apple fibers."
+    },
+    {
+      "question": "A person lies down flat on an inflatable air mattress, causing a slight uniform compression. If the person decides to stand up vertically on one spot of the mattress, what will happen to the indentation depth and internal air pressure?",
+      "options": [
+        "The indentation depth decreases because the contact area is now smaller",
+        "The indentation depth increases because the concentrated weight creates a higher local pressure",
+        "The indentation depth stays identical because the person's mass has not changed",
+        "The mattress collapses instantly because standing up creates a localized vacuum"
+      ],
+      "correct": 1,
+      "points": 5,
+      "explanation": "Standing up concentrates the person's entire weight onto the small area of their feet, creating a much higher local pressure on that region of the mattress, which results in a deeper indentation."
+    },
+    {
+      "question": "A heavy 4000 kg elephant stands on four large feet, while a 60 kg woman stands nearby balancing on a single sharp high heel shoe. How does the surface pressure under the woman's single heel compare to the pressure under one of the elephant's feet?",
+      "options": [
+        "The elephant's foot pressure is much higher because its mass is significantly greater",
+        "The pressures are exactly equal because the ratio of mass to area balances out in nature",
+        "The woman's heel pressure can be significantly higher because its surface area is extraordinarily small",
+        "The woman's heel pressure is zero because her total downward force is too low"
+      ],
+      "correct": 2,
+      "points": 5,
+      "explanation": "Pressure depends on the ratio of force to area. The surface area of a sharp high heel is tiny (a few square millimeters). This small denominator can create a pressure value that exceeds the pressure under an elephant's large, wide foot."
+    },
+    {
+      "question": "Heavy brick and concrete walls are always constructed on top of a foundation concrete base that is significantly wider than the wall itself. What is the engineering purpose of this design?",
+      "options": [
+        "To increase the friction force between the wall and the underlying ground",
+        "To prevent moisture from traveling upwards into the brick structures",
+        "To compress the soil molecules so that gravity pulls less on the building",
+        "To distribute the heavy weight of the wall over a larger area to reduce pressure on the ground"
+      ],
+      "correct": 3,
+      "points": 5,
+      "explanation": "A wide foundation base increases the contact area with the ground soil. By increasing the area, the immense downward pressure exerted by the building's weight is reduced, preventing the structure from sinking into the earth."
+    },
+    {
+      "question": "An axe with a dull, unsharpened blade is used to chop a log of wood. It fails to split the wood. What adjustment happens to the physical properties when the blade is sharpened?",
+      "options": [
+        "The contact area is reduced, allowing a smaller force to generate the high pressure needed to split the wood",
+        "The mass of the axe head is increased, yielding a larger downward force",
+        "The sharpening process infuses the metal with kinetic energy to multiply impact velocity",
+        "The blade surface becomes frictionless, allowing it to glide through solid matter without force"
+      ],
+      "correct": 0,
+      "points": 5,
+      "explanation": "Sharpening reduces the edge thickness, minimizing contact area. According to the relationship pressure equals force divided by area, a smaller area ensures that even a standard swing creates enough pressure to breach the wood."
+    },
+    {
+      "question": "A rescue worker needs to walk across a frozen lake covered in thin, fragile ice to reach a stranded animal. Why does the worker wear wide snowshoes or skis?",
+      "options": [
+        "To increase their horizontal speed so the ice does not have time to crack",
+        "To increase the contact area with the ice, lowering the pressure to prevent breaking through",
+        "To reduce the downward gravitational force acting on their body mass",
+        "To create a thermal insulation barrier that prevents the ice from melting"
+      ],
+      "correct": 1,
+      "points": 5,
+      "explanation": "Wide snowshoes or skis increase the total contact area with the ice sheet. This distributes the rescue worker's weight across a larger surface zone, reducing the pressure below the critical threshold that would crack the ice."
+    },
+    {
+      "question": "A solid uniform rectangular block of mass M rests flat on a table, exerting a pressure P. If the block is cut cleanly in half along a vertical line, and one half is removed, what is the pressure exerted on the table by the remaining half?",
+      "options": [
+        "The pressure drops to one-quarter of P",
+        "The pressure doubles to two times P",
+        "The pressure remains exactly equal to P",
+        "The pressure drops to half of P"
+      ],
+      "correct": 2,
+      "points": 5,
+      "explanation": "Cutting the block vertically halves its mass (and weight force), but it also halves the contact surface area. Since both force and area are divided by two, the ratio of force to area remains unchanged, so the pressure is still P."
+    },
+    {
+      "question": "Military tanks are exceptionally heavy vehicles, yet they can drive smoothly across soft mud or loose soil where regular cars get stuck. How is this achieved?",
+      "options": [
+        "They utilize low-density polymer wheels that float on mud surfaces",
+        "They use powerful engines that cancel out the downward force of gravity",
+        "They are equipped with vacuum suction units that pull the vehicle upwards",
+        "They use wide continuous tracks instead of wheels to maximize contact area and lower pressure"
+      ],
+      "correct": 3,
+      "points": 5,
+      "explanation": "The continuous tracks provide a massive surface area in contact with the ground compared to the small contact patches of regular tires. This large area keeps the pressure low, preventing the heavy vehicle from sinking into soft mud."
+    },
+    {
+      "question": "Heavy iron rails used for train tracks are always laid horizontally on top of wide concrete or wooden beams called sleepers. What is the mechanical function of these sleepers?",
+      "options": [
+        "To spread the immense force of the passing train over a larger area to reduce pressure on the ground track",
+        "To act as electrical insulators that block the current from entering the soil",
+        "To reduce the absolute weight of the steel rails by absorbing magnetic fields",
+        "To increase the velocity of the train wheels by reducing rolling resistance"
+      ],
+      "correct": 0,
+      "points": 5,
+      "explanation": "When a train passes, the rails experience an extreme downward force. The wide sleepers beneath the rails increase the contact surface area with the underlying ground, reducing the pressure so the tracks do not sink or warp."
+    },
+    {
+      "question": "A solid metal cube rests on a workbench. A machinist drills a vertical cylindrical hole straight through the center of the cube. How does this modification alter the pressure exerted by the modified block on the workbench?",
+      "options": [
+        "The pressure increases significantly because area decreases faster than weight",
+        "The pressure remains exactly the same because the reduction in weight matches the reduction in contact area",
+        "The pressure drops to zero because air can now flow through the center of the block",
+        "The pressure decreases because the overall weight of the block has been reduced"
+      ],
+      "correct": 1,
+      "points": 5,
+      "explanation": "For a uniform solid block with vertical sides, pressure is independent of the total cross-sectional area and depends only on height and density. Drilling a vertical hole removes a proportional amount of weight and contact area, leaving pressure unchanged."
+    },
+    {
+      "question": "A heavy decorative pyramid block stands upright on its wide square base, exerting a pressure P on a shelf. If the pyramid is inverted and balanced perfectly upside down on its sharp top apex point, how do the force and pressure change?",
+      "options": [
+        "Force increases and pressure remains completely unchanged",
+        "Force remains unchanged and pressure decreases significantly",
+        "Force remains unchanged and pressure increases dramatically",
+        "Both the force and pressure decrease to near-zero values"
+      ],
+      "correct": 2,
+      "points": 5,
+      "explanation": "The downward force is the weight of the pyramid, which does not change when inverted. However, balancing on the sharp apex reduces the contact area to a tiny fraction of the original base, causing the pressure to increase dramatically."
+    },
+    {
+      "question": "Ice skaters can glide smoothly across solid ice sheets because the thin metal blade of the skate creates a temporary layer of liquid water beneath it. What is the physical mechanism behind this?",
+      "options": [
+        "The blade chemically reacts with the ice molecules to release heat",
+        "The blade is heated by internal battery packs inside the skater's boots",
+        "The blade collects atmospheric pressure to push the ice downwards into a liquid state",
+        "The skater's weight is concentrated on a tiny blade area, creating a huge pressure that lowers the melting point of the ice"
+      ],
+      "correct": 3,
+      "points": 5,
+      "explanation": "The contact area of a thin skate blade is extremely small. When the skater's weight acts on this tiny area, it generates an immense localized pressure. This high pressure lowers the melting point of the ice, melting a thin layer into water to act as a lubricant."
+    }
+  ]
+}

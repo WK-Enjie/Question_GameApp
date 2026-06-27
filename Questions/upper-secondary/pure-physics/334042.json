@@ -1,0 +1,251 @@
+{
+  "title": "Dynamics: Advanced Forces and Motion - Worksheet 2",
+  "topic": "Newton's Laws Conceptual Scenarios, Non-Uniform Acceleration, Air Resistance, and Action-Reaction Deceptions",
+  "subject": "Physics",
+  "level": "Secondary",
+  "grade": "O-Level",
+  "chapter": 4,
+  "worksheet": 2,
+  "questions": [
+    {
+      "question": "A metal ball is dropped from a high cliff through the atmosphere. A student records its motion and notices that the gradient of its velocity-time graph is steadily decreasing over the first few seconds of flight. What does this observation directly indicate about the forces acting on the ball?",
+      "options": [
+        "Net force is constant, and air resistance is decreasing.",
+        "Net force is decreasing, and air resistance is increasing.",
+        "Net force is increasing, and air resistance is constant.",
+        "Both net force and air resistance are decreasing to zero simultaneously."
+      ],
+      "correct": 1,
+      "points": 5,
+      "explanation": "The gradient of a velocity-time graph represents acceleration. A decreasing gradient means acceleration is decreasing. Since acceleration equals net force divided by mass, the net force must be decreasing. As the ball speeds up, the upward air resistance force increases, which reduces the downward net force."
+    },
+    {
+      "question": "A person stands on a weighing scale inside a lift that is moving downwards but slowing down uniformly to a stop. How does the reading on the scale compare to the person's true weight, and what is the reason?",
+      "options": [
+        "The reading is higher than the true weight because the net force and acceleration are directed upwards.",
+        "The reading is equal to the true weight because the deceleration profile is uniform.",
+        "The reading is lower than the true weight because the physical movement of the lift is downwards.",
+        "The reading is zero because the person is experiencing a temporary state of absolute free fall."
+      ],
+      "correct": 0,
+      "points": 5,
+      "explanation": "Slowing down while moving downwards means the acceleration is directed upwards. According to Newton's Second Law, the net force must also be directed upwards. Therefore, the upward normal contact force from the scale must be greater than the downward weight of the person, causing a higher reading."
+    },
+    {
+      "question": "In a competitive tug-of-war match, Team Alpha pulls Team Beta across the dividing marker and wins the round. According to Newton's Third Law, how does the horizontal force exerted by Team Alpha on Team Beta compare to the horizontal force exerted by Team Beta on Team Alpha?",
+      "options": [
+        "Team Alpha exerted a larger force on Team Beta, which is why Team Alpha won.",
+        "Team Beta exerted a larger force on Team Alpha once Team Beta started moving backwards.",
+        "The force from Team Alpha was exactly double the force from Team Beta due to momentum.",
+        "Both teams exerted exactly equal and opposite forces on each other, but Team Alpha pushed harder horizontally against the ground."
+      ],
+      "correct": 3,
+      "points": 5,
+      "explanation": "According to Newton's Third Law, action and reaction forces are always equal in magnitude and opposite in direction between two interacting bodies. The force Team Alpha exerts on Team Beta is exactly equal to the force Team Beta exerts on Team Alpha. Team Alpha wins because they can exert a greater frictional force against the ground, resulting in a net forward force on the entire two-team system."
+    },
+    {
+      "question": "A spaceship cruising in deep space has an initial mass of 5000 kg. The propulsion system provides a constant forward thrust force of 10000 N. Over time, the engines expel large amounts of exhaust fuel mass, reducing the total mass of the spacecraft to 2500 kg while maintaining the exact same thrust force. What happens to the acceleration of the spaceship?",
+      "options": [
+        "The acceleration remains constant because the forward thrust force is constant.",
+        "The acceleration decreases by half because there is less fuel left to burn inside the tanks.",
+        "The acceleration doubles because the total mass of the spaceship has been halved.",
+        "The acceleration drops to zero as soon as the excess fuel mass leaves the exhaust nozzle."
+      ],
+      "correct": 2,
+      "points": 5,
+      "explanation": "Using Newton's Second Law, acceleration equals force divided by mass (a = F divided by m). Since the thrust force remains constant at 10000 N but the mass is halved from 5000 kg to 2500 kg, the resulting acceleration must double from 2 m per s² to 4 m per s²."
+    },
+    {
+      "question": "A skydiver reaches a steady terminal velocity of 50 m per s before deploying their parachute. At the exact split second the parachute fully expands, what is the state of the net force and subsequent motion of the skydiver?",
+      "options": [
+        "Net force is downwards, causing the skydiver to accelerate downwards at a faster rate.",
+        "Net force is upwards, causing the skydiver to decelerate while continuing to travel downwards.",
+        "Net force is upwards, forcing the skydiver to immediately change direction and move upwards.",
+        "Net force is zero, allowing the skydiver to continue moving downwards at a constant 50 m per s."
+      ],
+      "correct": 1,
+      "points": 5,
+      "explanation": "When the parachute opens, the surface area increases dramatically, creating an upward air resistance force that is much larger than the downward weight of the skydiver. The net force is therefore directed upwards. This creates an upward acceleration (deceleration), which slows the skydiver down while they continue to move downwards."
+    },
+    {
+      "question": "An astronaut transports a solid metal block of mass 10 kg from the Earth to the Moon, where the gravitational field strength is about one-sixth of that on Earth. Kicking the block horizontally on Earth hurts the astronaut's foot. If the astronaut kicks the same block horizontally with the exact same force on the Moon, how will the experience compare?",
+      "options": [
+        "It will hurt exactly the same because the block's inertia depends on its mass, which remains 10 kg.",
+        "It will hurt much less because the mass and horizontal inertia of the block drop significantly on the Moon.",
+        "It will hurt much more because the lack of an atmosphere makes the metal block become physically harder.",
+        "The block will not accelerate horizontally at all because there is no normal contact force on the Moon."
+      ],
+      "correct": 0,
+      "points": 5,
+      "explanation": "Inertia is the resistance of an object to a change in its state of motion, and it depends solely on mass. Since the mass of the block remains 10 kg on the Moon, its horizontal inertia is unchanged. Kicking it horizontally with the same force will produce the exact same acceleration and cause the exact same amount of pain."
+    },
+    {
+      "question": "Two wooden boxes, Box X of mass 3 kg and Box Y of mass 2 kg, are placed touching each other on a perfectly frictionless horizontal surface. A horizontal pushing force of 10 N is applied directly to Box X, causing both boxes to accelerate together to the right. What is the magnitude of the horizontal contact force that Box X exerts on Box Y?",
+      "options": [
+        "10 N",
+        "6 N",
+        "2 N",
+        "4 N"
+      ],
+      "correct": 3,
+      "points": 5,
+      "explanation": "First, calculate the common acceleration of the combined system: acceleration equals total force divided by total mass, which is 10 N divided by (3 + 2) kg, resulting in 2 m per s². Now, analyze Box Y independently: the only horizontal force acting on Box Y is the contact force from Box X. Using F = ma for Box Y, the force equals 2 kg multiplied by 2 m per s², which equals 4 N."
+    },
+    {
+      "question": "A heavy storage crate is pushed across a rough concrete floor by a worker with a constant horizontal force of 150 N, causing it to slide at a constant speed of 2 m per s. If the worker suddenly increases the horizontal pushing force to 200 N, describe the immediate acceleration profile of the crate.",
+      "options": [
+        "The crate continues moving at a higher constant speed of 2.5 m per s without accelerating.",
+        "The crate experiences a constant uniform acceleration because the net unbalanced force is now a constant 50 N.",
+        "The crate's acceleration increases continuously over time because its speed is increasing.",
+        "The crate stops moving instantly because the sliding friction force spikes up to match the push."
+      ],
+      "correct": 1,
+      "points": 5,
+      "explanation": "When moving at a constant speed, the net force is zero, meaning the friction force exactly equals the initial push of 150 N. Kinetic friction remains constant at 150 N when the push increases to 200 N. The new net force is 200 N minus 150 N, which equals 40 N or 50 N downwards/horizontally. Since this net force is constant, the resulting acceleration is also constant and uniform."
+    },
+    {
+      "question": "A feather and a heavy lead sphere are dropped from the same height at the exact same time inside a tall glass cylinder filled with normal atmospheric air. Halfway down the cylinder, which object experiences a greater absolute upward air resistance force?",
+      "options": [
+        "Both objects experience the exact same air resistance force because they are inside the same cylinder.",
+        "The feather, because it falls much more slowly and floats gently on the internal air columns.",
+        "The lead sphere, because it falls much faster and its higher speed generates a much larger air resistance force.",
+        "Neither object experiences any air resistance force because the air molecules move out of the way dynamically."
+      ],
+      "correct": 2,
+      "points": 5,
+      "explanation": "Air resistance increases as the speed of an object moving through the air increases. The heavy lead sphere accelerates rapidly and falls much faster than the feather. Due to its much higher speed, the lead sphere encounters a significantly larger absolute air resistance force than the slow-moving feather."
+    },
+    {
+      "question": "A constant horizontal force acts on a toy cart, causing it to accelerate along a smooth track. If a heavy block is suddenly dropped vertically into the moving cart, doubling the total mass of the system while the horizontal force remains constant, how does the acceleration change?",
+      "options": [
+        "The acceleration drops to exactly half of its original value.",
+        "The acceleration remains completely unchanged because the forward force is constant.",
+        "The acceleration doubles because the system now possesses a greater overall momentum.",
+        "The cart stops moving instantly and stays completely stationary due to the vertical impact."
+      ],
+      "correct": 0,
+      "points": 5,
+      "explanation": "According to Newton's Second Law, acceleration is inversely proportional to mass when the force is kept constant (a = F divided by m). If the mass of the cart system is doubled by dropping the block inside, the acceleration will drop to exactly one-half of its original value."
+    },
+    {
+      "question": "A powerful industrial electromagnet is bolted firmly to a workspace. A small iron nail is released near the electromagnet and accelerates rapidly towards it. According to Newton's Third Law, how does the magnitude of the magnetic force exerted by the electromagnet on the nail compare to the force exerted by the nail on the electromagnet?",
+      "options": [
+        "The electromagnet pulls with a much larger force because it has a greater mass and magnetic strength.",
+        "The nail does not exert any force on the electromagnet because it is a passive material.",
+        "The nail exerts a larger force on the electromagnet once it reaches a high velocity.",
+        "The forces are completely equal in magnitude and opposite in direction at every single instant."
+      ],
+      "correct": 3,
+      "points": 5,
+      "explanation": "Newton's Third Law states that for every action, there is an equal and opposite reaction. This rule is absolute and applies to magnetic forces as well. The force exerted by the electromagnet on the nail is exactly equal in magnitude to the force exerted by the nail on the electromagnet, regardless of their differences in mass."
+    },
+    {
+      "question": "An object of mass 4 kg is being pulled vertically upwards by a mechanical winch cable. If the object is observed to be moving upwards at a constant speed of 3 m per s, what is the tension force inside the cable? [Take gravitational acceleration g = 10 m per s²]",
+      "options": [
+        "0 N",
+        "12 N",
+        "40 N",
+        "52 N"
+      ],
+      "correct": 2,
+      "points": 5,
+      "explanation": "Moving at a constant speed means that the acceleration of the object is zero, which implies that the net force acting on it is also zero. The forces acting vertically are the upward tension (T) and the downward weight (W = mg = 4 kg multiplied by 10 m per s², which equals 40 N). For the net force to be zero, tension must equal weight, which is 40 N."
+    },
+    {
+      "question": "An object of mass 4 kg is being pulled vertically upwards by a mechanical winch cable. If the object is accelerating upwards at a steady uniform rate of 3 m per s², calculate the tension force present inside the cable. [Take gravitational acceleration g = 10 m per s²]",
+      "options": [
+        "12 N",
+        "28 N",
+        "40 N",
+        "52 N"
+      ],
+      "correct": 3,
+      "points": 5,
+      "explanation": "The downward weight of the object is mass multiplied by gravity: 4 kg multiplied by 10 m per s² equals 40 N. Since the object is accelerating upwards, the net vertical force equation is Tension minus Weight equals mass multiplied by acceleration (T minus W = ma). Substituting the values: T minus 40 = 4 multiplied by 3. This gives T minus 40 = 12, which resolves to T = 52 N."
+    },
+    {
+      "question": "A small solid metal ball is falling through a tall cylinder filled with a highly viscous engine oil and eventually reaches a stable terminal velocity. If this ball is replaced with a larger ball made of the exact same metal, how will its terminal velocity in the oil compare?",
+      "options": [
+        "The larger ball will have a higher terminal velocity because its weight increases faster than its surface area with size.",
+        "The larger ball will have a lower terminal velocity because it experiences a much greater fluid friction force.",
+        "Both balls will share the exact same terminal velocity because they are made of the identical metal type.",
+        "The larger ball will float on the surface of the oil and never reach a terminal velocity downward path."
+      ],
+      "correct": 0,
+      "points": 5,
+      "explanation": "When size increases, the volume (and therefore the mass and weight) grows proportional to the cube of the radius, while the surface area grows proportional to the square of the radius. The larger ball has a much greater weight relative to its surface area. It must reach a higher terminal velocity to generate a fluid resistance force large enough to balance its greater weight."
+    },
+    {
+      "question": "A passenger car is driving along a straight horizontal road, accelerating forward to the right. What is the correct direction of the friction force exerted by the road surface on the driving tires of the car?",
+      "options": [
+        "To the left, because friction forces always oppose the forward physical movement of a vehicle.",
+        "Vertically upwards, helping to support the heavy gravitational weight of the vehicle.",
+        "To the right, because the tires grip and push backwards on the road, causing the road to push forwards on the tires.",
+        "Zero, because friction forces only come into existence when a driver applies the braking system."
+      ],
+      "correct": 2,
+      "points": 5,
+      "explanation": "To move forward, the car's engine causes the driving tires to rotate and push backwards against the road surface. According to Newton's Third Law, the road exerts an equal and opposite reaction force pushing forwards (to the right) on the tires. This forward force is the friction force that propels the car forward."
+    },
+    {
+      "question": "An object is dropped from a stationary hot air balloon through the air. At a certain point during its downward fall before it reaches terminal velocity, the upward air resistance is found to be exactly equal to one-third of the object's weight. What is the instantaneous acceleration of the object at this moment? [Take g = 10 m per s²]",
+      "options": [
+        "3.3 m per s²",
+        "10.0 m per s²",
+        "0.0 m per s²",
+        "6.7 m per s²"
+      ],
+      "correct": 3,
+      "points": 5,
+      "explanation": "The net downward force is Weight (W) minus Air Resistance (R). Since R equals one-third of W, the net force equals W minus (1 divided by 3)W, which equals (2 divided by 3)W. Using Newton's Second Law: net force equals mass multiplied by acceleration, so (2 divided by 3)mg = ma. The mass cancels out, leaving acceleration equal to (2 divided by 3) multiplied by g, which is (2 divided by 3) multiplied by 10, resulting in 6.7 m per s²."
+    },
+    {
+      "question": "A research rocket in deep space fires its engines to accelerate forward. The engine operates by expelling hot exhaust chemical gases backwards out of its nozzle. Which force is directly responsible for propelling the rocket forward according to Newton's Third Law?",
+      "options": [
+        "The backward force of the expelling gas pushing against the surrounding atmospheric air molecules.",
+        "The forward reaction force exerted by the escaping exhaust gases on the internal body walls of the rocket engine.",
+        "The gravitational pull of distant star clusters pulling the ship forward through space.",
+        "The vacuum of space pulling the front tip of the rocket forward at a constant rate."
+      ],
+      "correct": 1,
+      "points": 5,
+      "explanation": "The rocket engine exerts a powerful backward force to push the exhaust gases out of the nozzle (action). Simultaneously, according to Newton's Third Law, the escaping gases exert an equal and opposite forward force on the engine walls (reaction). This internal reaction force propels the rocket forward, independent of any surrounding air."
+    },
+    {
+      "question": "A box of mass 6 kg is pulled across a smooth floor by two horizontal ropes pulling in the same direction. Rope A exerts a force of 18 N, and Rope B exerts a force of 12 N. A friction force of 6 N opposes the movement. Calculate the acceleration of the box.",
+      "options": [
+        "5.0 m per s²",
+        "2.0 m per s²",
+        "4.0 m per s²",
+        "1.0 m per s²"
+      ],
+      "correct": 2,
+      "points": 5,
+      "explanation": "The total forward force is the sum of the forces from both ropes: 18 N + 12 N = 30 N. The net horizontal force is the total forward force minus the opposing friction force: 30 N minus 6 N equals 24 N. Using F = ma, the acceleration equals net force divided by mass, which is 24 N divided by 6 kg, resulting in 4.0 m per s²."
+    },
+    {
+      "question": "An object is thrown vertically upwards into the air. At the absolute highest point of its flight path, when it is momentarily stationary, what are its velocity and acceleration? [Neglect air resistance and take gravitational acceleration g = 10 m per s²]",
+      "options": [
+        "Velocity is zero, and acceleration is zero.",
+        "Velocity is 10 m per s upwards, and acceleration is zero.",
+        "Velocity is zero, and acceleration is 10 m per s² directed downwards.",
+        "Both velocity and acceleration are directed upwards at maximum values."
+      ],
+      "correct": 2,
+      "points": 5,
+      "explanation": "At the highest point, the object stops moving changing direction, so its instantaneous velocity is zero. However, gravity does not stop acting on the object. The downward gravitational force (weight) is still present, meaning it still experiences a constant downward acceleration of 10 m per s²."
+    },
+    {
+      "question": "A construction crane is lowering a heavy concrete block of mass 200 kg vertically downwards. If the tension force supporting the block inside the crane cable is exactly 1600 N, describe the motion of the block. [Take gravitational acceleration g = 10 m per s²]",
+      "options": [
+        "The block moves downwards at a constant speed because it is being lowered smoothly.",
+        "The block accelerates downwards at a steady rate of 2.0 m per s².",
+        "The block accelerates upwards at a steady rate of 8.0 m per s².",
+        "The block slows down or accelerates downwards at a rate of 1.0 m per s²."
+      ],
+      "correct": 1,
+      "points": 5,
+      "explanation": "The downward weight of the concrete block is mass multiplied by gravity: 200 kg multiplied by 10 m per s² equals 2000 N. The upward tension is 1600 N. The net force is downward: 2000 N minus 1600 N equals 400 N downwards. Acceleration equals net force divided by mass, which is 400 N divided by 200 kg, resulting in a downward acceleration of 2.0 m per s²."
+    }
+  ]
+}
