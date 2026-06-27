@@ -17,7 +17,7 @@
       ],
       "correct": 1,
       "points": 10,
-      "time": 120,
+      "time": 280,
       "explanation": "Area = length * width. Therefore, (x + 5)(x - 2) = 60. Expanding the brackets gives x^2 - 2x + 5x - 10 = 60, which simplifies to x^2 + 3x - 10 = 60. Moving 60 to the left side by subtracting it yields x^2 + 3x - 70 = 0."
     },
     {
@@ -30,7 +30,7 @@
       ],
       "correct": 0,
       "points": 10,
-      "time": 140,
+      "time": 240,
       "explanation": "Perimeter = 2(length + width) = 40, which means length + width = 20. Given that the length is x, the width must be (20 - x). Area = length * width, so x(20 - x) = 96 => 20x - x^2 = 96. Rearranging all terms to the right side to make the coefficient of x^2 positive gives x^2 - 20x + 96 = 0."
     },
     {
@@ -43,7 +43,7 @@
       ],
       "correct": 2,
       "points": 10,
-      "time": 180,
+      "time": 360,
       "explanation": "The original cost per gift is $120/x. The new number of gifts bought is (x - 3), so the new cost per gift is $120/(x - 3). Since the new price is $2 more than the original price, the equation is: 120/(x - 3) - 120/x = 2. Multiplying the entire equation by the common denominator x(x - 3) gives 120x - 120(x - 3) = 2x(x - 3) => 120x - 120x + 360 = 2x^2 - 6x => 360 = 2x^2 - 6x. Dividing the entire equation by 2 gives 180 = x^2 - 3x. Rearranging into standard form yields x^2 - 3x - 180 = 0."
     },
     {
@@ -56,7 +56,7 @@
       ],
       "correct": 0,
       "points": 10,
-      "time": 180,
+      "time": 360,
       "explanation": "The original cost price per mug is $120/x. The selling price per mug is (120/x) + 4. The number of mugs sold is (x - 5). Since total revenue equals $120, we write: (x - 5)((120/x) + 4) = 120. Expanding the left-hand side gives 120 + 4x - 600/x - 20 = 120. Subtracting 120 from both sides leaves 4x - 20 - 600/x = 0. Multiplying through by x to clear the fraction gives 4x^2 - 20x - 600 = 0. Dividing the entire equation by 4 yields x^2 - 5x - 150 = 0."
     },
     {
@@ -69,7 +69,7 @@
       ],
       "correct": 2,
       "points": 10,
-      "time": 160,
+      "time": 320,
       "explanation": "Original time taken = 12/x hours. New time taken at the faster speed = 12/(x + 2) hours. The difference between the two times is 1 hour, so: 12/x - 12/(x + 2) = 1. Multiplying through by the common denominator x(x + 2) gives 12(x + 2) - 12x = 1x(x + 2) => 12x + 24 - 12x = x^2 + 2x => 24 = x^2 + 2x. Shifting 24 to the right side gives x^2 + 2x - 24 = 0."
     },
     {
@@ -82,7 +82,7 @@
       ],
       "correct": 0,
       "points": 10,
-      "time": 160,
+      "time": 320,
       "explanation": "Original hourly rate = $120/x. New hourly rate when taking longer = $120/(x + 2). The difference in rate is $2, so: 120/x - 120/(x + 2) = 2. Multiplying the whole equation by x(x + 2) results in 120(x + 2) - 120x = 2x(x + 2) => 120x + 240 - 120x = 2x^2 + 4x => 240 = 2x^2 + 4x. Dividing everything by 2 gives 120 = x^2 + 2x, which simplifies to x^2 + 2x - 120 = 0."
     },
     {
@@ -95,7 +95,7 @@
       ],
       "correct": 1,
       "points": 10,
-      "time": 160,
+      "time": 320,
       "explanation": "Original price per file = $40/x. Sale price per file = $40/(x + 2). Since the sale price is $1 cheaper, the difference is: 40/x - 40/(x + 2) = 1. Multiplying through by x(x + 2) yields 40(x + 2) - 40x = 1x(x + 2) => 40x + 80 - 40x = x^2 + 2x => 80 = x^2 + 2x. Moving 80 to the right side gives x^2 + 2x - 80 = 0."
     },
     {
@@ -108,7 +108,7 @@
       ],
       "correct": 0,
       "points": 10,
-      "time": 180,
+      "time": 360,
       "explanation": "Original cost price per vase = $160/x. Selling price per vase = (160/x) + 4. Total revenue generated from selling the remaining (x - 2) intact vases is 168: (x - 2)((160/x) + 4) = 168. Expanding this gives 160 + 4x - 320/x - 8 = 168 => 4x + 152 - 320/x = 168. Subtracting 168 from both sides gives 4x - 16 - 320/x = 0. Multiplying through by x to clear the denominator gives 4x^2 - 16x - 320 = 0. Dividing the entire expression by 4 results in x^2 - 4x - 80 = 0."
     },
     {
@@ -121,7 +121,7 @@
       ],
       "correct": 1,
       "points": 10,
-      "time": 150,
+      "time": 300,
       "explanation": "Adding a border of width x on all four sides increases both dimensions by 2x. The new length becomes (15 + 2x) and the new width becomes (10 + 2x). Combined area = (15 + 2x)(10 + 2x) = 176. Expanding gives 150 + 30x + 20x + 4x^2 = 176 => 4x^2 + 50x + 150 = 176. Subtracting 176 from both sides yields 4x^2 + 50x - 26 = 0. Dividing all terms by 2 simplifies the equation to 2x^2 + 25x - 13 = 0."
     },
     {
@@ -134,7 +134,7 @@
       ],
       "correct": 0,
       "points": 10,
-      "time": 150,
+      "time": 300,
       "explanation": "The base is x and the height is (2x - 2). By Pythagoras' Theorem, base^2 + height^2 = hypotenuse^2, which translates to x^2 + (2x - 2)^2 = 10^2. Expanding the binomial block gives x^2 + (4x^2 - 8x + 4) = 100 => 5x^2 - 8x + 4 = 100. Subtracting 100 from both sides yields 5x^2 - 8x - 96 = 0."
     },
     {
@@ -147,7 +147,7 @@
       ],
       "correct": 1,
       "points": 10,
-      "time": 170,
+      "time": 340,
       "explanation": "The original intended share per person is $120/x. The actual number of paying individuals is (x - 3), making their new individual share $120/(x - 3). Since this share is $2 higher, we write: 120/(x - 3) - 120/x = 2. Multiplying through by x(x - 3) leads to 120x - 120(x - 3) = 2x(x - 3) => 120x - 120x + 360 = 2x^2 - 6x => 360 = 2x^2 - 6x. Dividing through by 2 gives 180 = x^2 - 3x, which rearranges in standard form to x^2 - 3x - 180 = 0."
     },
     {
@@ -160,7 +160,7 @@
       ],
       "correct": 0,
       "points": 10,
-      "time": 100,
+      "time": 240,
       "explanation": "If the smaller even integer is x, the next consecutive positive even integer must be (x + 2). Their product is given as 168, so: x(x + 2) = 168 => x^2 + 2x = 168. Shifting 168 to the left side by subtracting it gives the standard form equation x^2 + 2x - 168 = 0."
     },
     {
@@ -173,7 +173,7 @@
       ],
       "correct": 1,
       "points": 10,
-      "time": 110,
+      "time": 240,
       "explanation": "Total profit is equal to the number of items sold multiplied by the net profit earned per item. Therefore, x(x - 3) = 40. Expanding this equation gives x^2 - 3x = 40. Subtracting 40 from both sides leaves us with the standard form quadratic equation x^2 - 3x - 40 = 0."
     },
     {
@@ -186,7 +186,7 @@
       ],
       "correct": 0,
       "points": 10,
-      "time": 150,
+      "time": 300,
       "explanation": "Trimming a uniform border of width x from all edges reduces both the length and width by 2x. The new inner dimensions are (14 - 2x) and (10 - 2x). Inner Area = (14 - 2x)(10 - 2x) = 60. Expanding the brackets yields 140 - 28x - 20x + 4x^2 = 60 => 4x^2 - 48x + 140 = 60. Subtracting 60 from both sides gives 4x^2 - 48x + 80 = 0. Dividing the entire equation by 4 simplifies it to x^2 - 12x + 20 = 0."
     },
     {
@@ -199,7 +199,7 @@
       ],
       "correct": 0,
       "points": 10,
-      "time": 190,
+      "time": 380,
       "explanation": "Time taken upstream = 48/x hours. Time taken downstream = 48/(x + 4) hours. The total round trip time is 5 hours, so: 48/x + 48/(x + 4) = 5. Multiplying through by the common denominator x(x + 4) gives 48(x + 4) + 48x = 5x(x + 4) => 48x + 192 + 48x = 5x^2 + 20x => 96x + 192 = 5x^2 + 20x. Moving all terms to the right-hand side to group them yields 5x^2 - 76x - 192 = 0."
     },
     {
@@ -212,7 +212,7 @@
       ],
       "correct": 2,
       "points": 10,
-      "time": 170,
+      "time": 340,
       "explanation": "Original cost price per balloon = $20/x. The selling price per balloon is set at (20/x) + 1. The number of balloons successfully sold is (x - 2). Total revenue equals $20, so: (x - 2)((20/x) + 1) = 20. Expanding the product gives 20 + x - 40/x - 2 = 20. Subtracting 20 from both sides leaves x - 2 - 40/x = 0. Multiplying through by x to completely clear the fractional denominator leaves the standard quadratic form: x^2 - 2x - 40 = 0."
     },
     {
@@ -225,7 +225,7 @@
       ],
       "correct": 0,
       "points": 10,
-      "time": 160,
+      "time": 320,
       "explanation": "The initial width is x and length is (x + 4). Adding a 1-meter pathway all around increases both the total width and total length by 2 meters. Therefore, the new width is (x + 2) and the new length is (x + 4 + 2) = (x + 6). The total combined area is 96 m², so: (x + 2)(x + 6) = 96. Expanding the brackets gives x^2 + 6x + 2x + 12 = 96 => x^2 + 8x + 12 = 96. Subtracting 96 from both sides gives x^2 + 8x - 84 = 0."
     },
     {
@@ -238,7 +238,7 @@
       ],
       "correct": 1,
       "points": 10,
-      "time": 180,
+      "time": 360,
       "explanation": "Draining rate of the main pump = 600/x liters/hour. Draining rate of the backup pump = 600/(x + 5) liters/hour. The difference between their rates is 10 liters/hour, which gives the equation: 600/x - 600/(x + 5) = 10. Dividing the entire equation by 10 simplifies it to: 60/x - 60/(x + 5) = 1. Multiplying through by the common denominator x(x + 5) gives 60(x + 5) - 60x = 1x(x + 5) => 60x + 300 - 60x = x^2 + 5x => 300 = x^2 + 5x. Rearranging into standard form gives x^2 + 5x - 300 = 0."
     },
     {
@@ -251,7 +251,7 @@
       ],
       "correct": 1,
       "points": 10,
-      "time": 170,
+      "time": 340,
       "explanation": "The initial target share per student is $300/x. The new share with the extra students included is $300/(x + 5). Since the individual cost is $10 less now, the difference relation is: 300/x - 300/(x + 5) = 10. Dividing the entire equation by 10 gives 30/x - 30/(x + 5) = 1. Multiplying by the common denominator x(x + 5) yields 30(x + 5) - 30x = 1x(x + 5) => 30x + 150 - 30x = x^2 + 5x => 150 = x^2 + 5x. Moving 150 over to the right side produces x^2 + 5x - 150 = 0."
     },
     {
@@ -264,7 +264,7 @@
       ],
       "correct": 1,
       "points": 10,
-      "time": 190,
+      "time": 380,
       "explanation": "Outbound time = 400/x hours. Inbound time against the headwind = 400/(x - 40) hours. The inbound trip takes 0.5 hours longer, so: 400/(x - 40) - 400/x = 0.5. Multiplying the entire equation by 2 to remove the decimal gives 800/(x - 40) - 800/x = 1. Clearing fractions by multiplying through by x(x - 40) yields 800x - 800(x - 40) = 1x(x - 40) => 800x - 800x + 32000 = x^2 - 40x => 32000 = x^2 - 40x. Rearranging into standard quadratic form gives x^2 - 40x - 32000 = 0."
     }
   ]
