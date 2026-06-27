@@ -1,0 +1,197 @@
+{
+  "title": "Primary 5 Mathematics – Decimals, Quantity Conversions & Unitary Method",
+  "questions": [
+    {
+      "question": "Express 45 centimeters in meters, leaving your answer as a decimal value.",
+      "options": ["0.045 m", "0.45 m", "4.5 m", "45.0 m"],
+      "correct": 1,
+      "points": 2,
+      "time": 45,
+      "explanation": "Since 1 meter = 100 centimeters, divide the value by 100 to convert to meters: 45 / 100 = 0.45 m."
+    },
+    {
+      "question": "Convert 2 litres and 350 millilitres entirely into litres, expressing the final value as a decimal.",
+      "options": ["2.035 litres", "2.35 litres", "23.5 litres", "2.355 litres"],
+      "correct": 1,
+      "points": 2,
+      "time": 45,
+      "explanation": "Since 1 litre = 1000 millilitres, 350 ml = 350 / 1000 = 0.35 litres. Combining this with the whole litres yields: 2 + 0.35 = 2.35 litres."
+    },
+    {
+      "question": "An industrial flask holds 1550 cubic centimeters (cm3) of chemical solution. Express this capacity in litres as a decimal value.",
+      "options": ["0.155 litres", "1.55 litres", "15.5 litres", "155.0 litres"],
+      "correct": 1,
+      "points": 2,
+      "time": 50,
+      "explanation": "Given that 1 litre = 1000 cubic centimeters (cm3), convert by dividing the capacity value by 1000: 1550 / 1000 = 1.55 litres."
+    },
+    {
+      "question": "A structural copper wire has a length measurement of 0.08 meters. Convert this measurement directly into centimeters.",
+      "options": ["0.8 cm", "8 cm", "80 cm", "800 cm"],
+      "correct": 1,
+      "points": 2,
+      "time": 40,
+      "explanation": "Since 1 meter = 100 centimeters, multiply the decimal value by 100 to scale down to centimeters: 0.08 * 100 = 8 cm."
+    },
+    {
+      "question": "Round off the decimal value 14.236 correct to 2 decimal places.",
+      "options": ["14.23", "14.24", "14.20", "14.30"],
+      "correct": 1,
+      "points": 2,
+      "time": 40,
+      "explanation": "To round off to 2 decimal places, look at the digit in the third decimal place, which is 6. Since 6 is 5 or greater, round up the second decimal place digit from 3 to 4, yielding 14.24."
+    },
+    {
+      "question": "Round off the decimal measurement 5.995 kilograms to the nearest hundredth.",
+      "options": ["5.99 kg", "6.0 kg", "6.00 kg", "6.10 kg"],
+      "correct": 2,
+      "points": 2,
+      "time": 50,
+      "explanation": "The hundredths place is the second decimal digit (9). The digit to its right is 5, requiring a round up. This carries over through the tenths place to the whole numbers: 5.995 rounds up to 6.00 kg."
+    },
+    {
+      "question": "Round off the number 0.742 to the nearest tenth.",
+      "options": ["0.7", "0.8", "0.74", "0.70"],
+      "correct": 0,
+      "points": 2,
+      "time": 40,
+      "explanation": "The tenths place is 7. The digit to its right is 4. Since 4 is less than 5, leave the tenths place digit unchanged, giving 0.7."
+    },
+    {
+      "question": "A package has an assessed mass of 128.45 kilograms. Round off this mass value to the nearest whole number.",
+      "options": ["128 kg", "129 kg", "128.4 kg", "128.5 kg"],
+      "correct": 0,
+      "points": 2,
+      "time": 40,
+      "explanation": "To round to the nearest whole number, evaluate the tenths place digit, which is 4. Since 4 is less than 5, round down to keep the whole number exactly at 128 kg."
+    },
+    {
+      "question": "Ribbon A has a length of 1.25 meters. Ribbon B is exactly 0.4 meters longer than Ribbon A. Calculate the combined total length of both ribbons.",
+      "options": ["1.65 m", "2.50 m", "2.90 m", "3.05 m"],
+      "correct": 2,
+      "points": 3,
+      "time": 90,
+      "explanation": "Step 1: Find the length of Ribbon B. Length of B = 1.25 + 0.4 = 1.65 meters. Step 2: Sum the two lengths together to find the total. Total length = 1.25 + 1.65 = 2.90 m."
+    },
+    {
+      "question": "Storage Box A has a gross mass of 4.2 kilograms. Storage Box B is exactly 1.35 kilograms lighter than Storage Box A. Find the absolute mass of Storage Box B.",
+      "options": ["2.85 kg", "2.95 kg", "3.15 kg", "5.55 kg"],
+      "correct": 0,
+      "points": 3,
+      "time": 80,
+      "explanation": "Subtract the difference value directly from the mass of Box A: 4.20 - 1.35 = 2.85 kg."
+    },
+    {
+      "question": "Ali has $12.50. Bala has $3.80 more than Ali, while Charles has $2.15 less than Bala. Calculate the exact amount of money Charles possesses.",
+      "options": ["$10.35", "$14.15", "$16.30", "$18.45"],
+      "correct": 1,
+      "points": 3,
+      "time": 100,
+      "explanation": "Step 1: Compute Bala's money. Bala = 12.50 + 3.80 = $16.30. Step 2: Compute Charles's money by subtracting from Bala's baseline. Charles = 16.30 - 2.15 = $14.15."
+    },
+    {
+      "question": "Water Tank A holds 15.6 litres of liquid. Water Tank B holds 4.25 litres less than Tank A. Calculate the total collective volume of water inside both tanks.",
+      "options": ["11.35 litres", "19.85 litres", "26.95 litres", "27.05 litres"],
+      "correct": 2,
+      "points": 3,
+      "time": 100,
+      "explanation": "Step 1: Compute the volume of Tank B. Volume of B = 15.60 - 4.25 = 11.35 litres. Step 2: Sum the volumes of both tanks. Total volume = 15.60 + 11.35 = 26.95 litres."
+    },
+    {
+      "question": "A structural drum filled with cooking oil weighs 5.4 kg. When the drum is exactly half full of oil, its total weight drops to 2.75 kg. Determine the weight of the empty drum container.",
+      "options": ["0.10 kg", "0.20 kg", "2.65 kg", "2.70 kg"],
+      "correct": 0,
+      "points": 4,
+      "time": 120,
+      "explanation": "Step 1: Find the mass of the half-portion of oil that was removed. Mass of half-oil = 5.40 - 2.75 = 2.65 kg. Step 2: Find the total weight of the full oil portion. Full oil mass = 2.65 * 2 = 5.30 kg. Step 3: Deduct the full oil weight from the starting total weight to get the container's weight. Empty drum = 5.40 - 5.30 = 0.10 kg."
+    },
+    {
+      "question": "String X is 3.6 meters long. String Y is exactly twice as long as String X. String Z is 1.45 meters shorter than String Y. Calculate the length of String Z.",
+      "options": ["2.15 m", "5.75 m", "7.20 m", "8.65 m"],
+      "correct": 1,
+      "points": 3,
+      "time": 110,
+      "explanation": "Step 1: Determine the length of String Y. Length of Y = 3.6 * 2 = 7.2 meters. Step 2: Subtract the difference factor to calculate String Z. Length of Z = 7.20 - 1.45 = 5.75 m."
+    },
+    {
+      "question": "A pack of 4 identical highlighter pens costs $6.20. Under the same uniform unit cost, calculate the purchase price for 7 of these highlighters.",
+      "options": ["$1.55", "$9.30", "$10.85", "$12.40"],
+      "correct": 2,
+      "points": 3,
+      "time": 90,
+      "explanation": "Step 1: Apply the unitary method to find the cost of a single highlighter pen. Cost per pen = 6.20 / 4 = $1.55. Step 2: Multiply this unit cost by the target quantity. Total cost = 1.55 * 7 = $10.85."
+    },
+    {
+      "question": "The total combined mass of 5 identical snack packets is 1.35 kg. Determine the total mass of 3 of these snack packets.",
+      "options": ["0.27 kg", "0.54 kg", "0.81 kg", "4.05 kg"],
+      "correct": 2,
+      "points": 3,
+      "time": 90,
+      "explanation": "Step 1: Compute the mass of a single snack packet. Unit mass = 1.35 / 5 = 0.27 kg. Step 2: Multiply this unit mass by 3. Combined mass = 0.27 * 3 = 0.81 kg."
+    },
+    {
+      "question": "An automated manufacturing machine prints 0.75 km of paper banner rolls every 3 minutes. Maintaining this exact uniform operating rate, what total length of banner roll can it print in 10 minutes?",
+      "options": ["2.25 km", "2.50 km", "3.00 km", "7.50 km"],
+      "correct": 1,
+      "points": 3,
+      "time": 90,
+      "explanation": "Step 1: Find the output rate per single minute. Output per minute = 0.75 / 3 = 0.25 km. Step 2: Multiply the single minute output by the target duration. Total length = 0.25 * 10 = 2.50 km."
+    },
+    {
+      "question": "A batch of 8 identical wooden crates containing mangoes has a verified combined weight of 113.6 kg. Find the specific mass of a single crate.",
+      "options": ["14.2 kg", "14.7 kg", "15.2 kg", "11.36 kg"],
+      "correct": 0,
+      "points": 3,
+      "time": 80,
+      "explanation": "Divide the total combined weight value directly by the number of units: 113.6 / 8 = 14.2 kg."
+    },
+    {
+      "question": "A hybrid car can travel an average distance of 14.25 km on 1 litre of fuel. How many total kilometers can this car cover using 6 litres of fuel?",
+      "options": ["71.25 km", "84.50 km", "85.50 km", "85.75 km"],
+      "correct": 1,
+      "points": 3,
+      "time": 80,
+      "explanation": "Multiply the unit baseline distance rate by the total fuel quantity: 14.25 * 6 = 85.50 km."
+    },
+    {
+      "question": "A long electrical wire measuring 9.6 m is cut cleanly into 8 equal parts. Determine the length of each individual piece.",
+      "options": ["1.1 m", "1.2 m", "1.3 m", "1.6 m"],
+      "correct": 1,
+      "points": 3,
+      "time": 60,
+      "explanation": "Divide the total length allocation directly by the number of split components: 9.6 / 8 = 1.2 m."
+    },
+    {
+      "question": "Three friends share a total restaurant dinner bill of $42.60 equally among themselves. How much money must each individual friend contribute?",
+      "options": ["$14.20", "$14.30", "$14.50", "$21.30"],
+      "correct": 0,
+      "points": 3,
+      "time": 70,
+      "explanation": "Divide the total shared expense value by the number of participating people: 42.60 / 3 = $14.20."
+    },
+    {
+      "question": "A warehouse supervisor distributes 14.7 kg of loose sugar equally into 6 smaller retail containers. Calculate the precise mass of sugar stored inside each retail container.",
+      "options": ["2.40 kg", "2.45 kg", "2.55 kg", "2.65 kg"],
+      "correct": 1,
+      "points": 3,
+      "time": 90,
+      "explanation": "Divide the initial bulk total allocation value by the count of containers: 14.7 / 6 = 2.45 kg."
+    },
+    {
+      "question": "Devi pours 4.5 litres of liquid fruit punch equally into 9 identical glass cups. Calculate the volume of fruit punch poured into each glass cup in millilitres.",
+      "options": ["0.5 ml", "50 ml", "500 ml", "5000 ml"],
+      "correct": 2,
+      "points": 4,
+      "time": 100,
+      "explanation": "Step 1: Convert the volume from litres to millilitres. 4.5 litres = 4.5 * 1000 = 4500 ml. Step 2: Divide this millilitre total value by the number of recipient units. Volume per cup = 4500 / 9 = 500 ml."
+    },
+    {
+      "question": "A long structural cable measuring 18.9 m is cut into two segments such that the longer piece is exactly twice as long as the shorter piece. Find the length of the longer piece.",
+      "options": ["6.3 m", "9.45 m", "12.6 m", "13.2 m"],
+      "correct": 2,
+      "points": 4,
+      "time": 110,
+      "explanation": "Step 1: Set up the model units. Shorter piece = 1 unit, Longer piece = 2 units. Total value = 3 units. Step 2: Determine the value of 1 unit. 3 units = 18.9 m => 1 unit = 18.9 / 3 = 6.3 m. Step 3: Compute the length of the longer piece (2 units). 6.3 * 2 = 12.6 m."
+    }
+  ]
+}

@@ -1,0 +1,149 @@
+{
+  "title": "Primary 5 Mathematics – Advanced Decimal Word Problems & Model Heuristics",
+  "questions": [
+    {
+      "question": "Abishek and Brandon started with equal masses of flour. After Abishek used 2.5 kg of his flour and Brandon used 0.9 kg of his flour, Brandon had exactly 3 times as much flour left as Abishek. Find the initial mass of flour each person had at first.",
+      "options": ["1.6 kg", "2.4 kg", "3.3 kg", "4.1 kg"],
+      "correct": 2,
+      "points": 4,
+      "time": 160,
+      "explanation": "Step 1: Analyze the difference between the amounts used. Difference = 2.5 - 0.9 = 1.6 kg. Since they started equal, this difference matches the difference in their remaining parts. Step 2: Set up the remaining model. Abishek remaining = 1 unit, Brandon remaining = 3 units. The difference is 2 units. Step 3: Equate the values. 2 units = 1.6 kg => 1 unit = 0.8 kg. Step 4: Calculate the initial amount. Initial amount = Abishek remaining + Abishek used = 0.8 + 2.5 = 3.3 kg."
+    },
+    {
+      "question": "Water Tank X and Water Tank Y contain 12.4 litres and 5.6 litres of water respectively. How much water must be transferred from Tank X to Tank Y so that Tank Y will contain exactly 3 times as much water as Tank X?",
+      "options": ["4.5 litres", "6.8 litres", "7.9 litres", "9.0 litres"],
+      "correct": 2,
+      "points": 4,
+      "time": 150,
+      "explanation": "Step 1: Calculate the total internal water volume, which remains constant. Total water = 12.4 + 5.6 = 18.0 litres. Step 2: Set up the final state units. Tank X = 1 unit, Tank Y = 3 units. Total parts = 4 units. Step 3: Find the value of 1 unit. 4 units = 18.0 litres => 1 unit = 18.0 / 4 = 4.5 litres. Tank X must end with 4.5 litres. Step 4: Determine the transferred amount. Amount moved = Initial Tank X - Final Tank X = 12.4 - 4.5 = 7.9 litres."
+    },
+    {
+      "question": "Container A contained 3 times as much juice as Container B. After 1.45 litres of juice were added to Container B and 0.35 litres of juice were used from Container A, both containers held an identical volume of juice. Find the initial volume of juice inside Container B.",
+      "options": ["0.90 litres", "1.10 litres", "1.80 litres", "2.70 litres"],
+      "correct": 0,
+      "points": 4,
+      "time": 140,
+      "explanation": "Step 1: Model the starting scenario. Container B = 1 unit, Container A = 3 units. Step 2: Track the absolute changes that create equality. 3 units - 0.35 litres = 1 unit + 1.45 litres. Step 3: Shift units and numbers to isolate values. 3 units - 1 unit = 1.45 + 0.35 => 2 units = 1.80 litres. Step 4: Solve for 1 unit, which represents Container B at first. 1 unit = 1.80 / 2 = 0.90 litres."
+    },
+    {
+      "question": "John is 1.4 m tall and his older brother is 1.72 m tall. After a few years, both brothers grow by the exact same height measurement. If the older brother is now exactly 1.2 times as tall as John, calculate John's new updated height.",
+      "options": ["1.52 m", "1.60 m", "1.80 m", "1.92 m"],
+      "correct": 1,
+      "points": 4,
+      "time": 160,
+      "explanation": "Step 1: Identify that the height difference between the two brothers remains constant over time. Height difference = 1.72 - 1.40 = 0.32 m. Step 2: Model the new height relationship. John's height = 1 unit, Brother's height = 1.2 units. The difference in parts is 0.2 units. Step 3: Connect parts to values. 0.2 units = 0.32 m => 1 unit = 0.32 / 0.2 = 1.60 m. Since John's new height is represented by 1 unit, it equals 1.60 m."
+    },
+    {
+      "question": "Parcel A, Parcel B, and Parcel C have a combined mass of 8.4 kg. Parcel A is exactly twice as heavy as Parcel B. Parcel C is 0.6 kg heavier than Parcel B. Find the specific mass of Parcel A.",
+      "options": ["1.95 kg", "2.55 kg", "3.90 kg", "4.50 kg"],
+      "correct": 2,
+      "points": 4,
+      "time": 150,
+      "explanation": "Step 1: Set up units relative to Parcel B. Parcel B = 1 unit, Parcel A = 2 units, Parcel C = 1 unit + 0.6 kg. Step 2: Sum up the model components to match the total weight. Total = 1 unit + 2 units + 1 unit + 0.6 kg = 4 units + 0.6 kg = 8.4 kg. Step 3: Isolate the units block. 4 units = 8.4 - 0.6 = 7.8 kg => 1 unit = 7.8 / 4 = 1.95 kg. Step 4: Calculate Parcel A (2 units). Mass of A = 1.95 * 2 = 3.90 kg."
+    },
+    {
+      "question": "Siti and Devi shared a total of 9.5 m of decorative cloth material. After Siti used 1.8 m of her cloth and Devi used 2.3 m of her cloth, they found they had an identical length of cloth left over. Find the initial length of cloth Siti possessed at first.",
+      "options": ["2.7 m", "4.5 m", "5.0 m", "5.4 m"],
+      "correct": 1,
+      "points": 4,
+      "time": 140,
+      "explanation": "Step 1: Calculate the total amount of cloth used up. Total used = 1.8 + 2.3 = 4.1 m. Step 2: Subtract the used cloth from the total pool to find what remains. Remaining total = 9.5 - 4.1 = 5.4 m. Step 3: Since they have equal amounts left, divide this remaining total by 2. Remaining per person = 5.4 / 2 = 2.7 m. Step 4: Restore Siti's used portion to find her starting value. Siti initial = 2.7 + 1.8 = 4.5 m."
+    },
+    {
+      "question": "Box P contains 15.35 kg of rice grains and Box Q contains 3.65 kg of rice grains. How many kilograms of rice must be moved from Box P into Box Q so that Box Q will end up with exactly 4 times as much rice as Box P?",
+      "options": ["3.80 kg", "11.40 kg", "11.55 kg", "11.70 kg"],
+      "correct": 2,
+      "points": 5,
+      "time": 170,
+      "explanation": "Step 1: Find the combined total weight, which remains constant during internal shifting. Total mass = 15.35 + 3.65 = 19.00 kg. Step 2: Model the final distribution parts. Box P = 1 unit, Box Q = 4 units. Total allocation = 5 units. Step 3: Calculate the value of 1 unit. 5 units = 19.00 kg => 1 unit = 19.00 / 5 = 3.80 kg. Box P must finish with 3.80 kg. Step 4: Determine the transferred amount. Mass transferred = 15.35 - 3.80 = 11.55 kg."
+    },
+    {
+      "question": "Two identical commercial storage tanks, Tank A and Tank B, contained the exact same volume of water at first. After 4.8 cubic meters of water were drained out of Tank A and 3.6 cubic meters of water were added into Tank B, Tank B contained exactly 4 times as much water as Tank A. Find the starting initial volume of water inside each tank.",
+      "options": ["2.8 cubic meters", "7.6 cubic meters", "8.4 cubic meters", "11.2 cubic meters"],
+      "correct": 1,
+      "points": 4,
+      "time": 160,
+      "explanation": "Step 1: Express the final states algebraically or via a comparison block where the initial value is identical. Let initial be U. Tank A final = U - 4.8, Tank B final = U + 3.6. Step 2: Apply the multiplication factor rule. 4 * (U - 4.8) = U + 3.6 => 4U - 19.2 = U + 3.6. Step 3: Group units together. 4U - U = 3.6 + 19.2 => 3U = 22.8. Step 4: Solve for U. U = 22.8 / 3 = 7.6 cubic meters."
+    },
+    {
+      "question": "Meiling has exactly 3 times as much money as Kumar. If Meiling gives Kumar a sum of $4.50, Meiling's remaining money becomes exactly twice the amount of Kumar's new total money. Calculate the amount of money Meiling had at first.",
+      "options": ["$13.50", "$27.00", "$31.50", "$40.50"],
+      "correct": 3,
+      "points": 5,
+      "time": 180,
+      "explanation": "Step 1: Set up the initial ratio models. Kumar = 1 unit, Meiling = 3 units. Step 2: Track the internal transfer change. Meiling final = 3 units - 4.50, Kumar final = 1 unit + 4.50. Step 3: Form the final relational equation. 3 units - 4.50 = 2 * (1 unit + 4.50) => 3 units - 4.50 = 2 units + 9.00. Step 4: Group like items to find 1 unit. 3 units - 2 units = 9.00 + 4.50 => 1 unit = $13.50. Step 5: Calculate Meiling's initial balance (3 units). Initial Meiling = 13.50 * 3 = $40.50."
+    },
+    {
+      "question": "Caleb and Daniel saved some pocket money. Caleb's savings was exactly 0.5 of Daniel's savings. After Daniel spent $24.60 and Caleb added another $15.40 to his personal savings, they discovered they had an identical amount of money. How much money did Daniel have at first?",
+      "options": ["$40.00", "$60.00", "$80.00", "$120.00"],
+      "correct": 2,
+      "points": 4,
+      "time": 150,
+      "explanation": "Step 1: Translate the decimal ratio. Caleb = 0.5 of Daniel means Caleb = 1 unit and Daniel = 2 units. Step 2: Set up the equality relation after their separate transactions. 1 unit + 15.40 = 2 units - 24.60. Step 3: Isolate the unit variable. 2 units - 1 unit = 15.40 + 24.60 => 1 unit = $40.00. Step 4: Compute Daniel's starting profile (2 units). Starting Daniel = 40.00 * 2 = $80.00."
+    },
+    {
+      "question": "A school teacher bought a collection of files and pens. Each clear file costs $3.20 and each pen costs $1.50. She bought exactly twice as many pens as files, spending an absolute total of $55.80. How many clear files did she purchase?",
+      "options": ["6", "9", "12", "18"],
+      "correct": 1,
+      "points": 5,
+      "time": 160,
+      "explanation": "Step 1: Form a single strategic comparison group. 1 clear file + 2 pens = 1 set group. Step 2: Compute the cost value of one complete group. Group cost = 3.20 + (2 * 1.50) = 3.20 + 3.00 = $6.20. Step 3: Divide the total expenditure by this single group cost to see how many sets were bought. Number of groups = 55.80 / 6.20 = 9 groups. Since each group contains exactly 1 clear file, she bought 9 clear files."
+    },
+    {
+      "question": "Mrs. Tan has a bag containing 8.5 kg of baking flour. She uses 2.2 kg of it to bake muffins, and then distributes the remaining flour pool equally into 4 small storage bags. Find the precise mass of flour packed inside each small storage bag.",
+      "options": ["1.575 kg", "1.585 kg", "2.125 kg", "6.300 kg"],
+      "correct": 0,
+      "points": 4,
+      "time": 110,
+      "explanation": "Step 1: Deduct the used volume to isolate the remainder mass. Remainder = 8.5 - 2.2 = 6.3 kg. Step 2: Divide this remainder value equally by 4 components. Mass per bag = 6.3 / 4 = 1.575 kg."
+    },
+    {
+      "question": "Liquid Tank A contains 3.5 litres more water than Tank B. Tank C contains exactly twice as much water as Tank A. If the total collective volume of water across all three tanks is 24.5 litres, find the volume of water stored inside Tank B.",
+      "options": ["3.5 litres", "7.0 litres", "14.0 litres", "17.5 litres"],
+      "correct": 0,
+      "points": 4,
+      "time": 160,
+      "explanation": "Step 1: Set up the model profiles based on Tank B. Tank B = 1 unit, Tank A = 1 unit + 3.5 litres, Tank C = 2 * (1 unit + 3.5) = 2 units + 7.0 litres. Step 2: Combine all elements to match the total boundary volume. Total = 1 unit + (1 unit + 3.5) + (2 units + 7.0) = 4 units + 10.5 litres = 24.5 litres. Step 3: Isolate the core units block. 4 units = 24.5 - 10.5 = 14.0 litres. Step 4: Solve for 1 unit (Tank B). Volume of B = 14.0 / 4 = 3.5 litres."
+    },
+    {
+      "question": "Seafood Outlets A and B held a total combined stock of 82.4 kg of crabs at first. After Outlet A sold 14.8 kg of its stock, and Outlet B received an additional delivery supply of 6.4 kg of crabs, Outlet A's remaining stock was exactly 3 times the amount of Outlet B's new updated stock. Find the starting initial mass of crabs stored inside Outlet A.",
+      "options": ["18.5 kg", "55.5 kg", "67.6 kg", "70.3 kg"],
+      "correct": 3,
+      "points": 5,
+      "time": 180,
+      "explanation": "Step 1: Calculate the new total net inventory value. New Total = 82.4 - 14.8 + 6.4 = 74.0 kg. Step 2: Model the final distribution parts. Outlet B = 1 unit, Outlet A = 3 units. Combined sum = 4 units. Step 3: Compute the value of 1 unit. 4 units = 74.0 kg => 1 unit = 74.0 / 4 = 18.5 kg. Step 4: Find Outlet A's final state configuration. Outlet A final = 18.5 * 3 = 55.5 kg. Step 5: Reverse the sales transaction to determine Outlet A's starting baseline mass. Outlet A initial = 55.5 + 14.8 = 70.3 kg."
+    },
+    {
+      "question": "Xavier and Yolanda possessed a combined total sum of $150 at first. Xavier spent $35.50 on clothes and Yolanda spent $54.50 on groceries. They then noticed they both had an identical amount of remaining pocket cash left over. How much money did Xavier possess at first?",
+      "options": ["$30.00", "$65.50", "$84.50", "$95.50"],
+      "correct": 1,
+      "points": 4,
+      "time": 130,
+      "explanation": "Step 1: Sum up the total combined expenditure. Total spent = 35.50 + 54.50 = $90.00. Step 2: Deduct this amount from the starting pool to see the total remaining pool. Total left = 150.00 - 90.00 = $60.00. Step 3: Since they hold equal amounts now, split the remaining pool by 2. Cash left per person = 60.00 / 2 = $30.00. Step 4: Add back Xavier's personal spending amount. Xavier initial = 30.00 + 35.50 = $65.50."
+    },
+    {
+      "question": "A transport crate filled with oranges is exactly 3 times as heavy as a transport crate filled with grapes. When 4.25 kg of oranges are removed from their crate and placed directly into the grapes crate instead, both crates weigh the exact same amount. Find the initial mass of the grapes crate at first.",
+      "options": ["2.125 kg", "4.250 kg", "8.500 kg", "12.750 kg"],
+      "correct": 1,
+      "points": 4,
+      "time": 140,
+      "explanation": "Step 1: Set up the units framework. Grapes crate = 1 unit, Oranges crate = 3 units. Step 2: Map the shifting event equation. 3 units - 4.25 kg = 1 unit + 4.25 kg. Step 3: Restructure terms to isolate variables. 3 units - 1 unit = 4.25 + 4.25 => 2 units = 8.50 kg. Step 4: Find 1 unit (Grapes initial mass). 1 unit = 8.50 / 2 = 4.25 kg."
+    },
+    {
+      "question": "A research lab has two fluid samples, P and Q. Sample P's volume is exactly 2.5 times the volume of Sample Q. If technicians extract and move 1.55 litres of liquid directly from Sample P into Sample Q, Sample P's updated volume becomes exactly 1.5 times Sample Q's new volume. Find the original volume of Sample Q. (Round off your final calculation answer to 1 decimal place).",
+      "options": ["3.5 litres", "3.9 litres", "4.2 litres", "5.4 litres"],
+      "correct": 1,
+      "points": 5,
+      "time": 200,
+      "explanation": "Step 1: Define initial values using units. Q = 1 unit, P = 2.5 units. Step 2: Write the internal transfer state values. P final = 2.5 units - 1.55, Q final = 1 unit + 1.55. Step 3: Establish the new ratio condition equation. 2.5 units - 1.55 = 1.5 * (1 unit + 1.55) => 2.5 units - 1.55 = 1.5 units + 2.325. Step 4: Collate matching variables. 2.5 units - 1.55 units = 2.325 + 1.55 => 1 unit = 3.875 litres. Step 5: Round off this unit value representing original Sample Q to 1 decimal place: 3.875 rounds up to 3.9 litres."
+    },
+    {
+      "question": "A fruit farmer harvested 45.6 kg of wild berries. He completely threw away 3.6 kg of squashed berries and packed the remaining good berries into commercial boxes. He filled exactly 5 large boxes with 4.2 kg of berries each. He then packed all the remaining berries into small custom boxes holding 1.5 kg each. How many small boxes did he fill?",
+      "options": ["10", "14", "15", "21"],
+      "correct": 1,
+      "points": 4,
+      "time": 150,
+      "explanation": "Step 1: Deduct the waste material from the total weight pool. Useful pool = 45.6 - 3.6 = 42.0 kg. Step 2: Compute total weight allocated to large boxes. Large boxes total = 5 * 4.2 = 21.0 kg. Step 3: Find the remaining weight left over for small boxes. Small boxes pool = 42.0 - 21.0 = 21.0 kg. Step 4: Divide this pool by the unit box capacity rate. Count of small boxes = 21.0 / 1.5 = 14 boxes."
+    }
+  ]
+}
