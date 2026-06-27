@@ -1,0 +1,371 @@
+{
+  "title": "Digestive Tract, Diabetes, and Digestive Health",
+  "topic": "Digestive Tract Organs, Diabetes, and Conditions",
+  "subject": "Science",
+  "level": "Secondary",
+  "grade": "Sec 2",
+  "chapter": 4,
+  "worksheet": 2,
+  "questions": [
+    {
+      "question": "Which organ is the primary site for both the final stages of chemical digestion and the absorption of nutrients into the bloodstream?",
+      "options": [
+        "Large Intestine",
+        "Stomach",
+        "Small Intestine",
+        "Esophagus"
+      ],
+      "correct": 2,
+      "points": 5,
+      "explanation": "The small intestine provides a large surface area for the completion of chemical digestion and the efficient absorption of soluble food molecules into the blood."
+    },
+    {
+      "question": "What is the main function of the large intestine?",
+      "options": [
+        "To absorb water and mineral salts from undigested food",
+        "To digest proteins into amino acids",
+        "To produce bile for fat digestion",
+        "To store food before it enters the stomach"
+      ],
+      "correct": 0,
+      "points": 5,
+      "explanation": "The large intestine is responsible for absorbing water and remaining mineral salts from the undigested food material, forming feces."
+    },
+    {
+      "question": "Which organ produces bile to help break down large fat droplets into smaller ones, increasing their surface area?",
+      "options": [
+        "Pancreas",
+        "Liver",
+        "Stomach",
+        "Gallbladder"
+      ],
+      "correct": 1,
+      "points": 5,
+      "explanation": "The liver produces bile, which is stored in the gallbladder and released into the small intestine to emulsify fats, assisting in their chemical digestion."
+    },
+    {
+      "question": "Where does the chemical digestion of carbohydrates primarily begin?",
+      "options": [
+        "Stomach",
+        "Small Intestine",
+        "Mouth",
+        "Large Intestine"
+      ],
+      "correct": 2,
+      "points": 5,
+      "explanation": "Chemical digestion of carbohydrates starts in the mouth, where salivary amylase begins breaking down starch into maltose."
+    },
+    {
+      "question": "In which part of the digestive tract does the chemical digestion of proteins primarily begin?",
+      "options": [
+        "Mouth",
+        "Small Intestine",
+        "Rectum",
+        "Stomach"
+      ],
+      "correct": 3,
+      "points": 5,
+      "explanation": "The stomach contains gastric juice, which includes proteases that start the chemical digestion of proteins."
+    },
+    {
+      "question": "What is the primary cause of Type 2 Diabetes?",
+      "options": [
+        "Eating too much protein",
+        "A lack of fiber in the diet",
+        "The body cannot properly use or produce enough insulin to regulate blood sugar",
+        "The stomach is unable to produce acid"
+      ],
+      "correct": 2,
+      "points": 5,
+      "explanation": "Type 2 Diabetes occurs when the body's cells do not respond properly to insulin or when the pancreas cannot produce enough insulin to control blood glucose levels."
+    },
+    {
+      "question": "Which of the following is a common long-term consequence of uncontrolled diabetes?",
+      "options": [
+        "Excessive muscle growth",
+        "A constant need to eat protein",
+        "Damage to eyes, kidneys, and blood vessels",
+        "The body becomes unable to digest fats"
+      ],
+      "correct": 2,
+      "points": 5,
+      "explanation": "High blood sugar levels over a long period can damage blood vessels, leading to complications in organs like the eyes, kidneys, and nerves."
+    },
+    {
+      "question": "Which lifestyle habit is most effective for mitigating (reducing) the risk of Type 2 Diabetes?",
+      "options": [
+        "Maintaining a balanced diet and regular physical activity",
+        "Increasing intake of sugary drinks",
+        "Sleeping for more than 12 hours a day",
+        "Avoiding all forms of carbohydrates"
+      ],
+      "correct": 0,
+      "points": 5,
+      "explanation": "Regular exercise and a healthy, balanced diet help the body maintain healthy blood sugar levels and improve insulin sensitivity."
+    },
+    {
+      "question": "What is the function of the esophagus?",
+      "options": [
+        "To absorb nutrients",
+        "To secrete enzymes for fat digestion",
+        "To store waste",
+        "To transport food from the mouth to the stomach via peristalsis"
+      ],
+      "correct": 3,
+      "points": 5,
+      "explanation": "The esophagus is a muscular tube that uses wave-like contractions (peristalsis) to move food to the stomach."
+    },
+    {
+      "question": "Which digestive condition is caused by the stomach acid leaking back into the esophagus?",
+      "options": [
+        "Constipation",
+        "Diabetes",
+        "Gastric reflux (heartburn)",
+        "Stomach ulcer"
+      ],
+      "correct": 2,
+      "points": 5,
+      "explanation": "Gastric reflux occurs when the ring of muscle at the top of the stomach does not close properly, allowing acid to irritate the esophagus lining."
+    },
+    {
+      "question": "Why is fiber important for the digestive system, even though humans cannot digest it?",
+      "options": [
+        "It provides energy for the brain",
+        "It turns directly into protein in the large intestine",
+        "It helps prevent constipation by adding bulk to food and aiding bowel movements",
+        "It is the main source of vitamins"
+      ],
+      "correct": 2,
+      "points": 5,
+      "explanation": "Fiber adds bulk to the food, which stimulates the muscles of the digestive tract to push food along, helping to prevent constipation."
+    },
+    {
+      "question": "What is the primary role of the pancreas in digestion?",
+      "options": [
+        "To produce digestive enzymes that are secreted into the small intestine",
+        "To store bile",
+        "To absorb simple sugars",
+        "To kill bacteria with strong acid"
+      ],
+      "correct": 0,
+      "points": 5,
+      "explanation": "The pancreas produces a cocktail of enzymes (for carbohydrates, proteins, and fats) and releases them into the small intestine."
+    },
+    {
+      "question": "Which of these is a symptom of constipation?",
+      "options": [
+        "Rapid weight loss",
+        "Excessive appetite",
+        "High blood sugar levels",
+        "Infrequent or difficult bowel movements"
+      ],
+      "correct": 3,
+      "points": 5,
+      "explanation": "Constipation is a condition where bowel movements become infrequent or difficult, often due to a lack of fiber or water."
+    },
+    {
+      "question": "What is the purpose of the villi found in the small intestine?",
+      "options": [
+        "To increase the surface area for absorption of nutrients",
+        "To churn food",
+        "To secrete acid",
+        "To store feces"
+      ],
+      "correct": 0,
+      "points": 5,
+      "explanation": "Villi are tiny finger-like projections that vastly increase the internal surface area of the small intestine for maximum absorption."
+    },
+    {
+      "question": "Which of the following describes the condition of a stomach ulcer?",
+      "options": [
+        "A blockage in the large intestine",
+        "An overproduction of bile by the liver",
+        "An open sore that develops on the inside lining of the stomach",
+        "A type of diabetes"
+      ],
+      "correct": 2,
+      "points": 5,
+      "explanation": "An ulcer is an open sore on the lining of the stomach or small intestine, often caused by bacterial infection or overuse of certain medications."
+    },
+    {
+      "question": "How does the stomach protect its own lining from being digested by its own acid?",
+      "options": [
+        "By producing enzymes that neutralize acid",
+        "By producing a thick layer of mucus",
+        "By staying empty most of the time",
+        "By constantly replacing its own cells with skin cells"
+      ],
+      "correct": 1,
+      "points": 5,
+      "explanation": "The stomach lining secretes a protective layer of mucus that acts as a barrier against the harsh gastric acid."
+    },
+    {
+      "question": "Which nutrient class does NOT undergo chemical digestion in the human body?",
+      "options": [
+        "Carbohydrates",
+        "Vitamins and minerals",
+        "Proteins",
+        "Fats"
+      ],
+      "correct": 1,
+      "points": 5,
+      "explanation": "Vitamins and minerals are already small and soluble; they are absorbed directly by the digestive system without needing to be broken down by enzymes."
+    },
+    {
+      "question": "What happens if someone has a diet consistently too low in fiber?",
+      "options": [
+        "They will gain weight too quickly",
+        "They will develop diabetes",
+        "Their stomach will stop producing acid",
+        "They are more likely to develop constipation"
+      ],
+      "correct": 3,
+      "points": 5,
+      "explanation": "Fiber adds bulk to feces and helps move food through the digestive system; a lack of it often leads to constipation."
+    },
+    {
+      "question": "Which of these is a risk factor for Type 2 Diabetes?",
+      "options": [
+        "Eating a diet rich in vegetables",
+        "Drinking too much water",
+        "Being physically inactive and overweight",
+        "Eating too much fiber"
+      ],
+      "correct": 2,
+      "points": 5,
+      "explanation": "Physical inactivity and being overweight are significant risk factors that make it harder for the body to use insulin correctly."
+    },
+    {
+      "question": "What is the role of the rectum?",
+      "options": [
+        "To store feces before it is passed out through the anus",
+        "To absorb nutrients",
+        "To digest fats",
+        "To neutralize stomach acid"
+      ],
+      "correct": 0,
+      "points": 5,
+      "explanation": "The rectum is the final section of the large intestine, where feces are stored until they are eliminated from the body."
+    },
+    {
+      "question": "Why is the small intestine very long?",
+      "options": [
+        "To store food for a long time",
+        "To make it easier for the body to cool down",
+        "To provide enough time and space for complete digestion and absorption",
+        "To prevent food from moving too fast"
+      ],
+      "correct": 2,
+      "points": 5,
+      "explanation": "The great length of the small intestine ensures that food has ample time to be fully broken down and that all nutrients can be absorbed."
+    },
+    {
+      "question": "Which hormone is critical for regulating blood glucose levels?",
+      "options": [
+        "Amylase",
+        "Bile",
+        "Mucus",
+        "Insulin"
+      ],
+      "correct": 3,
+      "points": 5,
+      "explanation": "Insulin is a hormone produced by the pancreas that allows cells to take in glucose from the blood, thereby lowering blood sugar levels."
+    },
+    {
+      "question": "What is 'diarrhea'?",
+      "options": [
+        "A buildup of fat in the liver",
+        "Frequent, loose, or watery bowel movements",
+        "A lack of insulin in the body",
+        "The inability to digest protein"
+      ],
+      "correct": 1,
+      "points": 5,
+      "explanation": "Diarrhea occurs when the intestines do not absorb enough water, often due to infection, leading to frequent and watery stools."
+    },
+    {
+      "question": "Why might a doctor suggest a low-fat diet for someone whose gallbladder has been removed?",
+      "options": [
+        "Because they cannot produce bile anymore",
+        "Because fats are no longer useful to them",
+        "Because they lack a storage area for bile, making large amounts of fat harder to digest",
+        "Because they will become diabetic"
+      ],
+      "correct": 2,
+      "points": 5,
+      "explanation": "The gallbladder stores bile produced by the liver. Without it, bile is released continuously in small amounts, making it difficult to digest large, fatty meals."
+    },
+    {
+      "question": "Which of these is a simple sugar that is a common end-product of carbohydrate digestion?",
+      "options": [
+        "Glucose",
+        "Starch",
+        "Protein",
+        "Cellulose"
+      ],
+      "correct": 0,
+      "points": 5,
+      "explanation": "Glucose is a simple sugar and the primary end-product of the digestion of many complex carbohydrates."
+    },
+    {
+      "question": "What is the main function of gastric juice in the stomach?",
+      "options": [
+        "To emulsify fats",
+        "To absorb simple sugars",
+        "To kill bacteria and provide an acidic environment for protease",
+        "To neutralize bile"
+      ],
+      "correct": 2,
+      "points": 5,
+      "explanation": "Gastric juice contains hydrochloric acid, which kills many bacteria in food and provides the acidic pH required for stomach proteases to work."
+    },
+    {
+      "question": "What does 'emulsification' refer to in fat digestion?",
+      "options": [
+        "Breaking fat into fatty acids",
+        "Turning fat into protein",
+        "Mixing fat with stomach acid",
+        "Breaking large fat globules into smaller droplets"
+      ],
+      "correct": 3,
+      "points": 5,
+      "explanation": "Bile emulsifies fats, which means it breaks large fat droplets into much smaller ones, creating a larger surface area for lipase enzymes to work on."
+    },
+    {
+      "question": "Which of the following is NOT a part of the human digestive tract?",
+      "options": [
+        "Esophagus",
+        "Lungs",
+        "Small intestine",
+        "Stomach"
+      ],
+      "correct": 1,
+      "points": 5,
+      "explanation": "The lungs are part of the respiratory system, not the digestive system."
+    },
+    {
+      "question": "How does exercise help manage blood sugar?",
+      "options": [
+        "It produces insulin",
+        "It stops the stomach from digesting food",
+        "It helps muscles use glucose for energy, reducing blood sugar levels",
+        "It removes sugar from the body through sweat"
+      ],
+      "correct": 2,
+      "points": 5,
+      "explanation": "Physical activity increases the amount of glucose that muscle cells take from the blood to use for energy, which helps lower blood glucose levels."
+    },
+    {
+      "question": "What is the role of the anus?",
+      "options": [
+        "To absorb minerals",
+        "To control the elimination of feces from the body",
+        "To produce enzymes",
+        "To churn food"
+      ],
+      "correct": 1,
+      "points": 5,
+      "explanation": "The anus is a ring of muscle (sphincter) that controls the release of feces from the body."
+    }
+  ]
+}
