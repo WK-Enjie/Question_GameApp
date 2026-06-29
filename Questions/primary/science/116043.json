@@ -1,0 +1,131 @@
+{
+  "title": "Adaptations: Body Parts, Movement, and Diet",
+  "topic": "Adaptations",
+  "subject": "Science",
+  "level": "Primary",
+  "grade": "P6",
+  "chapter": "Adaptations",
+  "worksheet": 3,
+  "questions": [
+    {
+      "question": "An observer noticed Bird X has a long, needle-like bill, while Bird Y has a wide, flat bill with fringed edges. When tracking their feeding zones, Bird X was seen dipping its bill into deep tubular flowers, while Bird Y scooped up muddy surface water. What does this indicate?",
+      "options": [
+        "Bird Y uses its bill shape as a behavioral warning to keep other birds away.",
+        "Bird X's bill is a structural adaptation for sucking nectar, while Bird Y's bill is a structural adaptation for straining food from water.",
+        "Both birds have the same diet but look different due to their ages.",
+        "The shape of the bills changes dynamically depending on the temperature of the water."
+      ],
+      "correct": 1,
+      "points": 10,
+      "explanation": "The distinct physical shapes of the bills are structural adaptations directly matched to their specific food sources and feeding methods."
+    },
+    {
+      "question": "A marine simulation tracked two underwater organisms. Organism A has rigid, wide flippers, while Organism B has long, jointed legs with claws. Organism A swam continuously in open water to catch fast fish, while Organism B crawled slowly along the rocky seabed to crack open crabs. What can you analyze about Organism A?",
+      "options": [
+        "Its flippers are structural adaptations that reduce water resistance and provide thrust for swimming.",
+        "Its flippers are a behavioral strategy used to hide under sea plants.",
+        "It is physically weaker than Organism B because it cannot crawl.",
+        "It developed flippers by practicing swimming every day."
+      ],
+      "correct": 0,
+      "points": 10,
+      "explanation": "Flippers are flattened, paddle-like structural modifications optimized for movement through open water, providing speed and agility."
+    },
+    {
+      "question": "A student compared three types of bird feet. Foot 1 has long, widely spread toes with sharp talons. Foot 2 has webbed skin joining the toes. Foot 3 has two toes pointing forward and two pointing backward. If the student wants to identify which bird is best adapted for grasping moving prey from the air, which foot should they choose?",
+      "options": [
+        "Foot 2, because the webbed skin creates a larger surface area to slap prey.",
+        "Foot 3, because the opposite toes allow it to run quickly on the ground.",
+        "Foot 1, because the sharp talons are structural adaptations designed to pierce and hold struggling animals.",
+        "Any of the feet, because all birds hunt the same way."
+      ],
+      "correct": 2,
+      "points": 10,
+      "explanation": "Sharp, curved talons are specific structural adaptations found on birds of prey (like eagles or hawks) used to catch and securely hold their food."
+    },
+    {
+      "question": "An experiment monitored the swimming efficiency of two fish models. Model 1 had a large, split tail fin (caudal fin) and smooth side fins. Model 2 had no tail fin but large, round side fins. Model 1 moved forward three times faster than Model 2 with the same mechanical force. What does this prove?",
+      "options": [
+        "Side fins are behavioral tools used to navigate away from predators.",
+        "The tail fin is a structural adaptation that acts as the primary propeller to push water backward and drive the fish forward.",
+        "Model 2 is slower because it is heavier than Model 1.",
+        "Fish do not need tail fins if the water is shallow."
+      ],
+      "correct": 1,
+      "points": 10,
+      "explanation": "The tail fin is structurally designed to flex and push against water, generating the main forward thrust needed for efficient locomotion in fish."
+    },
+    {
+      "question": "A field biologist observed a coastal bird that spends hours wading in shallow mudflats to catch small crabs. Which combination of structural body parts would be most advantageous for this bird's survival?",
+      "options": [
+        "Short, webbed legs and a tiny, blunt beak.",
+        "Thick, heavy wings and short, powerful claws.",
+        "Long, slender legs to keep its body above water and a long, pointed beak to spear prey.",
+        "Broad, flat flippers and a waxy, round stem."
+      ],
+      "correct": 2,
+      "points": 10,
+      "explanation": "Long legs allow wading birds to walk through water without submerging their feathers, and a long beak lets them reach into the water or mud to capture food."
+    },
+    {
+      "question": "Wildlife data shows that the Emperor Penguin has stiff, scale-like feathers packed tightly across its body, a thick layer of blubber under its skin, and small, paddle-like flippers instead of broad wings. How do these structural features help it survive in cold Antarctic waters?",
+      "options": [
+        "They are behavioral traits that allow the penguin to fly faster in the sky.",
+        "They are structural adaptations that minimize heat loss and reduce drag while swimming.",
+        "They help the penguin absorb more salt from the ocean water to stay warm.",
+        "They are designed to make the penguin look larger to scare away seals."
+      ],
+      "correct": 1,
+      "points": 10,
+      "explanation": "The combination of insulated skin (blubber and dense feathers) and streamlined flippers are physical structures optimized for heat conservation and underwater movement."
+    },
+    {
+      "question": "A student collected data on two mammal species. Species 1 has wide, flat hooves with padded soles. Species 2 has sharp, pointed hooves. When tested on loose, shifting desert sand, Species 1 could walk effortlessly, while Species 2 kept sinking into the ground. What does this suggest about Species 1?",
+      "options": [
+        "Its flat hooves are structural adaptations that increase surface area to reduce pressure on the sand.",
+        "It uses a behavioral trick to make the sand harder before stepping on it.",
+        "It is much lighter in body mass than Species 2.",
+        "Its padded soles are designed to change the temperature of the desert floor."
+      ],
+      "correct": 0,
+      "points": 10,
+      "explanation": "Wider hooves distribute the animal's weight over a larger surface area, preventing it from sinking into soft environments like sand or snow."
+    },
+    {
+      "question": "An analysis of tree-dwelling mammals showed that the spider monkey possesses a strong, flexible prehensile tail that can wrap completely around branches. Observation logs show the monkey can hang upside down from its tail while using both hands to gather fruit. What type of adaptation is this tail?",
+      "options": [
+        "A behavioral adaptation because hanging upside down is an action.",
+        "A structural adaptation that increases the monkey's reach and stability in the canopy.",
+        "A temporary physical change that disappears when the monkey is sleeping.",
+        "No adaptation, just an accidental use of a body part."
+      ],
+      "correct": 1,
+      "points": 10,
+      "explanation": "The prehensile tail is a permanent physical body structure that provides a clear survival advantage by acting as an extra gripping limb."
+    },
+    {
+      "question": "A dissection of a predatory deep-sea squid revealed it has large, circular eyes that take up 40% of its head area. Knowing that almost no sunlight reaches this zone, how does this body part aid survival?",
+      "options": [
+        "Large eyes are structural adaptations designed to capture tiny amounts of faint light or bioluminescence to spot prey.",
+        "They are behavioral structures used to frighten predators by blinking.",
+        "Large eyes help the squid produce its own heat energy.",
+        "The eyes grow larger purely due to the high water pressure at the ocean floor."
+      ],
+      "correct": 0,
+      "points": 10,
+      "explanation": "An oversized eye structure maximizes the collection of available light, which is essential for vision in near-total darkness."
+    },
+    {
+      "question": "An insect species was studied in an agricultural zone. It possesses highly enlarged, muscular hind legs. When a mechanical predator arm dropped down to grab it, the insect instantly launched itself 1 meter into the air to escape. What can be inferred about this insect's hind legs?",
+      "options": [
+        "They are behavioral tools used to dig deep burrows quickly.",
+        "They are structural adaptations specialized for jumping to escape danger rapidly.",
+        "They are designed to make the insect look like a plant stem.",
+        "They absorb heat from the soil to give the insect energy."
+      ],
+      "correct": 1,
+      "points": 10,
+      "explanation": "Enlarged, muscular hind limbs are a physical structural adaptation seen in jumping organisms (like grasshoppers or frogs) for quick locomotion away from threats."
+    }
+  ]
+}
