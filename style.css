@@ -145,7 +145,6 @@ body {
     top: -0.1em;
 }
 
-/* ---- Small fractions INSIDE superscripts (e.g. 4^(12/5)) ---- */
 .sup .frac-small,
 .sup .frac {
     font-size: 0.75em;
@@ -281,6 +280,87 @@ body {
 .q-result-banner .frac { font-size: 0.8em; }
 .q-result-banner .sup { font-size: 0.7em; }
 .card-result-label .frac { font-size: 0.75em; }
+
+
+/* ================================================================
+   INLINE QUESTION TABLES
+   ================================================================ */
+.q-table {
+    border-collapse: collapse;
+    margin: 6px 0;
+    font-size: 0.92em;
+    border-radius: 8px;
+    overflow: hidden;
+    border: 1px solid var(--border);
+    background: var(--bg);
+    width: auto;
+    display: inline-table;
+    vertical-align: middle;
+}
+
+.q-table-header {
+    background: var(--primary);
+    color: white;
+    font-weight: 700;
+    padding: 5px 12px;
+    text-align: center;
+    font-size: 0.88em;
+    border: 1px solid rgba(255, 255, 255, 0.15);
+    white-space: nowrap;
+}
+
+.q-table-cell {
+    background: var(--surface2);
+    color: var(--text);
+    padding: 5px 14px;
+    text-align: center;
+    font-weight: 600;
+    border: 1px solid var(--border);
+    min-width: 36px;
+    white-space: nowrap;
+}
+
+.q-table tr:hover .q-table-cell {
+    background: rgba(102, 126, 234, 0.08);
+}
+
+/* Tables inside option buttons */
+.q-option .q-table {
+    font-size: 0.85em;
+    margin: 0;
+}
+
+.q-option .q-table-header {
+    padding: 4px 10px;
+}
+
+.q-option .q-table-cell {
+    padding: 4px 10px;
+}
+
+/* Tables inside question text */
+.q-text .q-table {
+    margin: 8px 0;
+    font-size: 0.88em;
+}
+
+/* Tables inside explanations */
+.q-explanation .q-table {
+    font-size: 0.82em;
+    margin: 4px 0;
+}
+
+/* Responsive — shrink on small screens */
+@media (max-width: 480px) {
+    .q-table {
+        font-size: 0.78em;
+    }
+
+    .q-table-header,
+    .q-table-cell {
+        padding: 4px 8px;
+    }
+}
 
 
 /* ================================================================
