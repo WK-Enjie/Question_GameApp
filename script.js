@@ -109,13 +109,66 @@ function decodeQuizCode(code) {
 
 
 // ================================================================
+//  TABLE RENDERER
+//  Converts pipe-format strings like "x: 1, 2, 3 | y: 4, 5, 6"
+//  into a proper HTML table
+// ================================================================
+function renderTable(text) {
+    if (!text) return text;
+
+    // Pattern: one or more rows separated by " | "
+    // Each row looks like "label: v1, v2, v3"
+    // Must have at least 2 rows and 2 values to qualify as a table
+    const pipeRowPattern = /^([a-zA-Z0-9_\s]+:\s*[^|]+)(\|\s*[a-zA-Z0-9_\s]+:\s*[^|]+)+$/;
+
+    if (!pipeRowPattern.test(text.trim())) return text;
+
+    const rows = text.split('|').map(r => r.trim());
+
+    // Parse each row: "label: v1, v2, v3"
+    const parsed = rows.map(row => {
+        const colonIdx = row.indexOf(':');
+        if (colonIdx === -1) return null;
+        const label  = row.substring(0, colonIdx).trim();
+        const values = row.substring(colonIdx + 1).split(',').map(v => v.trim());
+        return { label, values };
+    }).filter(Boolean);
+
+    if (parsed.length < 2) return text;
+
+    // Make sure all rows have the same number of values
+    const colCount = parsed[0].values.length;
+    if (!parsed.every(r => r.values.length === colCount)) return text;
+
+    // Build the HTML table
+    let html = '<table class="q-table">';
+    parsed.forEach(row => {
+        html += '<tr>';
+        html += `<th class="q-table-header">${row.label}</th>`;
+        row.values.forEach(val => {
+            html += `<td class="q-table-cell">${renderMath(val)}</td>`;
+        });
+        html += '</tr>';
+    });
+    html += '</table>';
+
+    return html;
+}
+
+
+// ================================================================
 //  ★ MATH RENDERER — FULLY UPDATED
 //  Supports: fractions, algebraic fractions, coefficient fractions,
 //  exponents, parenthesised exponents, fraction exponents,
-//  square roots, cube roots, mixed numbers
+//  square roots, cube roots, mixed numbers, inline tables
 // ================================================================
 function renderMath(text) {
     if (!text) return '';
+
+    // ---- Render pipe-format tables first ----
+    // Check if the entire string is a table pattern before HTML-escaping
+    const tableResult = renderTable(text);
+    if (tableResult !== text) return tableResult;
 
     let s = text
         .replace(/&/g, '&amp;')
@@ -1669,8 +1722,9 @@ document.addEventListener('DOMContentLoaded', async () => {
         }
     });
 
-    console.log('✅ Ready — Math renderer with fractions, exponents, roots');
+    console.log('✅ Ready — Math renderer with fractions, exponents, roots, and tables');
     console.log('📐 Supports: 6x/3, (2x-5)/4, 2(x+3)/5, 3^x, 4^(12/5), √(x+1)');
+    console.log('📊 Supports: pipe-format tables — "x: 1, 2, 3 | y: 4, 5, 6"');
 });
 
 
@@ -1735,7 +1789,6 @@ window.quizTools = {
         console.log(`🛡️ Shield given to Player ${player}`);
     },
 
-    // ★ Enhanced testMath — visual popup test
     testMath: (text) => {
         const result = renderMath(text);
         console.log('Input: ', text);
@@ -1747,41 +1800,53 @@ window.quizTools = {
         return result;
     },
 
-    // ★ Batch test all math patterns
+    testTable: (text) => {
+        const result = renderTable(text);
+        console.log('Input: ', text);
+        console.log('Output:', result);
+        const div = document.createElement('div');
+        div.style.cssText = 'position:fixed;top:20px;left:50%;transform:translateX(-50%);background:#1e293b;color:#f1f5f9;padding:30px;border-radius:16px;z-index:99999;font-size:1.2rem;border:2px solid #667eea;box-shadow:0 20px 60px rgba(0,0,0,0.5);min-width:300px;text-align:center;';
+        div.innerHTML = `<div style="font-size:0.7rem;color:#94a3b8;margin-bottom:10px;">TABLE RENDER TEST</div>${result}<div style="font-size:0.7rem;color:#64748b;margin-top:15px;cursor:pointer;" onclick="this.parentElement.remove()">Click to close</div>`;
+        document.body.appendChild(div);
+        return result;
+    },
+
     testAllMath: () => {
         const tests = [
-            { input: '3/4',              desc: 'Simple fraction' },
-            { input: '2 3/4',            desc: 'Mixed number' },
-            { input: '2x/3',             desc: 'Algebraic fraction' },
-            { input: '6x/3',             desc: 'Algebraic fraction 2' },
-            { input: '(2x-5)/4',         desc: 'Paren numerator' },
-            { input: '2x/(3y+1)',        desc: 'Paren denominator' },
-            { input: '(2x+1)/(3y-4)',    desc: 'Both paren' },
-            { input: '2(x+3)/5',         desc: 'Coeff × paren / simple' },
-            { input: '4(2x-1)/8',        desc: 'Coeff × paren / simple 2' },
-            { input: '3(2x+5)/6',        desc: 'Coeff × paren / simple 3' },
-            { input: '3^2',              desc: 'Simple exponent' },
-            { input: '3^x',              desc: 'Variable exponent' },
-            { input: '2^10',             desc: 'Multi-digit exponent' },
-            { input: '10^-3',            desc: 'Negative exponent' },
-            { input: '4^(12/5)',         desc: 'Fraction exponent' },
-            { input: 'e^(-x)',           desc: 'Paren neg exponent' },
-            { input: 'x^(2n+1)',         desc: 'Expression exponent' },
-            { input: '√x',              desc: 'Simple root' },
-            { input: '√(x+1)',          desc: 'Root with expr' },
-            { input: 'cbrt(27)',         desc: 'Cube root' },
-            { input: 'speed / time',     desc: 'Protected division' },
-            { input: '$3,500.00',        desc: 'Protected dollar' }
+            { input: '3/4',                           desc: 'Simple fraction' },
+            { input: '2 3/4',                         desc: 'Mixed number' },
+            { input: '2x/3',                          desc: 'Algebraic fraction' },
+            { input: '6x/3',                          desc: 'Algebraic fraction 2' },
+            { input: '(2x-5)/4',                      desc: 'Paren numerator' },
+            { input: '2x/(3y+1)',                     desc: 'Paren denominator' },
+            { input: '(2x+1)/(3y-4)',                 desc: 'Both paren' },
+            { input: '2(x+3)/5',                      desc: 'Coeff × paren / simple' },
+            { input: '4(2x-1)/8',                     desc: 'Coeff × paren / simple 2' },
+            { input: '3(2x+5)/6',                     desc: 'Coeff × paren / simple 3' },
+            { input: '3^2',                           desc: 'Simple exponent' },
+            { input: '3^x',                           desc: 'Variable exponent' },
+            { input: '2^10',                          desc: 'Multi-digit exponent' },
+            { input: '10^-3',                         desc: 'Negative exponent' },
+            { input: '4^(12/5)',                      desc: 'Fraction exponent' },
+            { input: 'e^(-x)',                        desc: 'Paren neg exponent' },
+            { input: 'x^(2n+1)',                      desc: 'Expression exponent' },
+            { input: '√x',                           desc: 'Simple root' },
+            { input: '√(x+1)',                       desc: 'Root with expr' },
+            { input: 'cbrt(27)',                      desc: 'Cube root' },
+            { input: 'speed / time',                  desc: 'Protected division' },
+            { input: '$3,500.00',                     desc: 'Protected dollar' },
+            { input: 'x: 1, 2, 3 | y: 2, 4, 6',     desc: 'Simple table' },
+            { input: 'x: 2, 4, 6 | y: 6, 12, 18',   desc: 'Proportion table' }
         ];
 
         console.log('🧪 MATH RENDERER — BATCH TEST');
         console.log('═'.repeat(70));
         tests.forEach(t => {
             const result = renderMath(t.input);
-            const hasHTML = result !== t.input && result.includes('<span');
-            console.log(`${hasHTML ? '✅' : '⚠️'} ${t.desc.padEnd(28)} │ ${t.input.padEnd(22)} │ ${hasHTML ? 'RENDERED' : 'UNCHANGED'}`);
+            const hasHTML = result !== t.input && result.includes('<');
+            console.log(`${hasHTML ? '✅' : '⚠️'} ${t.desc.padEnd(28)} │ ${t.input.padEnd(28)} │ ${hasHTML ? 'RENDERED' : 'UNCHANGED'}`);
         });
         console.log('═'.repeat(70));
-        console.log('Use quizTools.testMath("expression") to visually test any expression');
+        console.log('Use quizTools.testMath("expr") or quizTools.testTable("x: 1,2 | y: 3,4")');
     }
 };
