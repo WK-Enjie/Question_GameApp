@@ -1,0 +1,181 @@
+{
+  "title": "Primary 4 Mathematics Worksheet – Decimals Mastery",
+  "topic": "Decimal Place Value, Conversions, Comparing and Ordering, Operations and Word Problems",
+  "subject": "Mathematics",
+  "level": "Primary",
+  "grade": "Pri 4",
+  "chapter": 6,
+  "worksheet": 1,
+  "questions": [
+    {
+      "question": "Express the fraction 7/10 as a decimal.",
+      "options": ["0.07", "0.7", "7.0", "0.007"],
+      "correct": 1,
+      "points": 2,
+      "time": 45,
+      "explanation": "Tenths represent the first digit to the right of the decimal point. Therefore, 7/10 is written as 0.7."
+    },
+    {
+      "question": "Convert the mixed number 3 wholes and 45/1000 into a decimal value.",
+      "options": ["3.45", "3.405", "3.045", "3.0045"],
+      "correct": 2,
+      "points": 2,
+      "time": 50,
+      "explanation": "The fraction 45/1000 means 45 thousandths, which takes up the thousandths place (the third decimal slot). This gives 0.045. Combining it with the 3 wholes yields 3.045."
+    },
+    {
+      "question": "Convert the fraction 18/25 into a decimal value.",
+      "options": ["0.18", "0.72", "0.64", "1.82"],
+      "correct": 1,
+      "points": 2,
+      "time": 60,
+      "explanation": "Multiply both the numerator and the denominator by 4 to convert the fraction base to hundredths: 18/25 = (18 * 4) / (25 * 4) = 72/100. Written as a decimal, 72/100 is 0.72."
+    },
+    {
+      "question": "Express the decimal value 0.65 as a fraction in its simplest form.",
+      "options": ["65/100", "13/20", "6/5", "13/25"],
+      "correct": 1,
+      "points": 2,
+      "time": 60,
+      "explanation": "Step 1: Write 0.65 as a fraction over one hundred: 65/100. Step 2: Divide the numerator and denominator by their greatest common factor, which is 5. 65 / 5 = 13 and 100 / 5 = 20. The simplest form is 13/20."
+    },
+    {
+      "question": "Convert the decimal value 0.008 into a fraction in its simplest form.",
+      "options": ["8/100", "1/125", "2/25", "4/500"],
+      "correct": 1,
+      "points": 2,
+      "time": 60,
+      "explanation": "Step 1: 0.008 has three decimal places, meaning it represents 8 thousandths, or 8/1000. Step 2: Simplify the fraction by dividing both the top and bottom numbers by 8. 8 / 8 = 1 and 1000 / 8 = 125. This yields 1/125."
+    },
+    {
+      "question": "In the decimal number 72.485, what is the place value of the digit 8?",
+      "options": ["Tenths", "Hundredths", "Thousandths", "Tens"],
+      "correct": 1,
+      "points": 2,
+      "time": 45,
+      "explanation": "Looking at the decimal digits from left to right: 4 is in the tenths place, 8 is in the hundredths place, and 5 is in the thousandths place. Therefore, the digit 8 stands for 8 hundredths."
+    },
+    {
+      "question": "Which of the following decimal numbers has the smallest absolute value?",
+      "options": ["0.42", "0.042", "0.402", "4.002"],
+      "correct": 1,
+      "points": 2,
+      "time": 50,
+      "explanation": "Compare the placeholders starting from the tenths digit. 0.042 has a 0 in the tenths place, whereas 0.42 and 0.402 have a 4 in the tenths place. 4.002 has 4 wholes. Therefore, 0.042 is the smallest."
+    },
+    {
+      "question": "Which of the following correctly describes the relationship between the numbers 0.58 and 0.508?",
+      "options": ["0.58 is smaller than 0.508", "0.58 is equal to 0.508", "0.58 is bigger than 0.508", "0.508 is bigger than 0.58"],
+      "correct": 2,
+      "points": 2,
+      "time": 50,
+      "explanation": "Compare the place values. Both numbers have 5 in the tenths place. Looking at the hundredths place, 0.58 has an 8 while 0.508 has a 0. Since 8 is greater than 0, 0.58 is bigger than 0.508."
+    },
+    {
+      "question": "Arrange the following numbers in order, starting from the smallest to the largest: 1.6, 1.06, 1.606, 1.066.",
+      "options": [
+        "1.06, 1.066, 1.6, 1.606",
+        "1.066, 1.06, 1.6, 1.606",
+        "1.606, 1.6, 1.066, 1.06",
+        "1.06, 1.6, 1.066, 1.606"
+      ],
+      "correct": 0,
+      "points": 3,
+      "time": 90,
+      "explanation": "To compare easily, add trailing zeros to pad the lengths: 1.600, 1.060, 1.606, 1.066. Comparing the decimal components: 060 is the smallest, followed by 066, then 600, and finally 606. The correct order is 1.06, 1.066, 1.6, 1.606."
+    },
+    {
+      "question": "Arrange the following decimal numbers in order, starting from the largest to the smallest: 0.73, 0.703, 0.733, 0.073.",
+      "options": [
+        "0.073, 0.703, 0.73, 0.733",
+        "0.733, 0.73, 0.703, 0.073",
+        "0.73, 0.733, 0.703, 0.073",
+        "0.733, 0.703, 0.73, 0.073"
+      ],
+      "correct": 1,
+      "points": 3,
+      "time": 90,
+      "explanation": "Padding the decimals to three digits yields: 0.730, 0.703, 0.733, 0.073. Comparing values from highest to lowest: 733 thousandths is the largest, followed by 730 thousandths, then 703 thousandths, and 073 thousandths is the smallest. This gives the order 0.733, 0.73, 0.703, 0.073."
+    },
+    {
+      "question": "Calculate the sum of 24.58 and 7.6.",
+      "options": ["25.34", "31.64", "32.18", "32.38"],
+      "correct": 2,
+      "points": 2,
+      "time": 70,
+      "explanation": "Align the decimal points vertically before adding: 24.58 + 7.60. Adding the hundredths: 8 + 0 = 8. Adding the tenths: 5 + 6 = 11 (carry over 1). Adding the units: 4 + 7 + 1 = 12 (carry over 1). Adding the tens: 2 + 1 = 3. The final answer is 32.18."
+    },
+    {
+      "question": "Subtract 5.42 from 14.",
+      "options": ["8.58", "9.42", "9.68", "8.68"],
+      "correct": 0,
+      "points": 2,
+      "time": 70,
+      "explanation": "Write 14 as 14.00 to align placeholders properly: 14.00 - 5.42. Regrouping across the columns yields 13.910 - 5.42, which results in 8.58."
+    },
+    {
+      "question": "Multiply the decimal number 4.73 by 6.",
+      "options": ["24.38", "28.38", "28.28", "24.28"],
+      "correct": 1,
+      "points": 2,
+      "time": 80,
+      "explanation": "Perform the multiplication ignoring the decimal point first: 473 * 6 = 2838. Since the original number has two decimal places, place the decimal point two slots from the right side, giving 28.38."
+    },
+    {
+      "question": "Bala has a block of wood that is 3.45 meters long. He saws off a piece measuring 1.8 meters to build a toy shelf. Calculate the length of the remaining block of wood.",
+      "options": ["1.65 m", "2.37 m", "2.65 m", "5.25 m"],
+      "correct": 0,
+      "points": 3,
+      "time": 90,
+      "explanation": "Subtract the length of the removed piece from the initial length: 3.45 - 1.80 = 1.65 m."
+    },
+    {
+      "question": "Siti bought a school schoolbag for $28.50 and a pencil case for $6.95. If she handed the cashier a $50 note, how much change did she receive back?",
+      "options": ["$14.55", "$21.55", "$35.45", "$43.05"],
+      "correct": 0,
+      "points": 4,
+      "time": 110,
+      "explanation": "Step 1: Calculate the total cost of the items. Total cost = 28.50 + 6.95 = $35.45. Step 2: Subtract the total cost from the $50 cash note. Change = 50.00 - 35.45 = $14.55."
+    },
+    {
+      "question": "A bottle contains 1.45 litres of concentrated juice syrup. A chef purchases 4 of these bottles to prepare drinks for a school celebration. Find the total volume of syrup purchased.",
+      "options": ["4.60 litres", "5.60 litres", "5.80 litres", "6.20 litres"],
+      "correct": 2,
+      "points": 3,
+      "time": 90,
+      "explanation": "Multiply the volume of one single bottle by the total number of bottles bought: 1.45 * 4 = 5.80 litres."
+    },
+    {
+      "question": "Container A holds 4.2 litres of liquid water. Container B holds 1.35 litres more water than Container A. Calculate the combined total volume of water inside both containers.",
+      "options": ["5.55 litres", "6.90 litres", "7.05 litres", "9.75 litres"],
+      "correct": 3,
+      "points": 4,
+      "time": 100,
+      "explanation": "Step 1: Find the volume of water inside Container B. Volume of B = 4.20 + 1.35 = 5.55 litres. Step 2: Add the water contents of Container A and Container B together. Total volume = 4.20 + 5.55 = 9.75 litres."
+    },
+    {
+      "question": "What decimal value is exactly 0.45 less than the number 6.2?",
+      "options": ["5.75", "6.65", "5.65", "6.15"],
+      "correct": 0,
+      "points": 2,
+      "time": 60,
+      "explanation": "Subtract 0.45 directly from 6.2 by aligning the place values: 6.20 - 0.45 = 5.75."
+    },
+    {
+      "question": "A metal wire measuring 12 meters long is cut into 5 equal smaller segments. Find the length of each individual segment.",
+      "options": ["2.04 m", "2.4 m", "2.5 m", "3.4 m"],
+      "correct": 1,
+      "points": 3,
+      "time": 80,
+      "explanation": "Divide the total wire length allocation by the number of split paths: 12 / 5 = 2.4 m."
+    },
+    {
+      "question": "The combined mass of a storage box and 3 identical heavy textbooks is 5.45 kg. If the mass of the empty storage box container alone is 0.8 kg, find the mass of a single textbook.",
+      "options": ["1.55 kg", "1.75 kg", "2.15 kg", "4.65 kg"],
+      "correct": 0,
+      "points": 4,
+      "time": 120,
+      "explanation": "Step 1: Subtract the mass of the empty box from the total aggregate weight to isolate the books. Mass of 3 textbooks = 5.45 - 0.80 = 4.65 kg. Step 2: Divide this remaining value by 3 to find the weight of one book. Mass of 1 textbook = 4.65 / 3 = 1.55 kg."
+    }
+  ]
+}

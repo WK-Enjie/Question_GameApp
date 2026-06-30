@@ -1,0 +1,139 @@
+{
+  "title": "Primary 4 Mathematics Worksheet – Decimals Word Problems & Fraction Conversions",
+  "topic": "Decimal Word Problems, More Than or Less Than Scenarios, Working Backwards, and Fraction-Decimal Conversions",
+  "subject": "Mathematics",
+  "level": "Primary",
+  "grade": "Pri 4",
+  "chapter": 6,
+  "worksheet": 2,
+  "questions": [
+    {
+      "question": "Ken thinks of a fraction. He converts it to a decimal, then adds 2.35 to it. The final answer is 5.6. What was the original fraction Ken thought of?",
+      "options": ["3 1/2", "3 1/4", "3 1/5", "3 3/4"],
+      "correct": 1,
+      "points": 3,
+      "time": 100,
+      "explanation": "Work backwards from the final result. Step 1: Undo the addition by subtracting 2.35 from the final answer: 5.60 - 2.35 = 3.25. Step 2: Convert the decimal part 0.25 into a fraction: 25/100 = 1/4. Combining this with the 3 wholes gives 3 1/4."
+    },
+    {
+      "question": "Box A contains 4 wholes and 3/5 kg of salt. Box B contains 1.45 kg more salt than Box A. Find the total mass of salt in Box B, expressing your answer as a decimal.",
+      "options": ["5.05 kg", "5.45 kg", "6.05 kg", "6.15 kg"],
+      "correct": 2,
+      "points": 3,
+      "time": 90,
+      "explanation": "Step 1: Convert the fraction of Box A to a decimal by making the denominator 10: 3/5 = 6/10 = 0.6. So, Box A has a mass of 4.6 kg. Step 2: Add 1.45 kg to find Box B: 4.60 + 1.45 = 6.05 kg."
+    },
+    {
+      "question": "A container had some water. After 1.75 litres of water were poured away and another 2.4 litres were used to water plants, there were 4.15 litres of water left. How much water was in the container at first?",
+      "options": ["7.3 litres", "8.2 litres", "8.3 litres", "8.45 litres"],
+      "correct": 2,
+      "points": 3,
+      "time": 90,
+      "explanation": "Work backwards by adding the volumes of water that were removed back to the remaining volume. Step 1: Add the water used for plants: 4.15 + 2.40 = 6.55 litres. Step 2: Add the water that was poured away: 6.55 + 1.75 = 8.3 litres."
+    },
+    {
+      "question": "Siti saved $15.65. Priya saved $4.80 more than Siti. Janice saved $2.15 less than Priya. How much money did Janice save?",
+      "options": ["$18.30", "$18.50", "$22.60", "$23.00"],
+      "correct": 0,
+      "points": 4,
+      "time": 110,
+      "explanation": "Step 1: Calculate Priya's savings by adding $4.80 to Siti's savings: 15.65 + 4.80 = $20.45. Step 2: Calculate Janice's savings by subtracting $2.15 from Priya's total: 20.45 - 2.15 = $18.30."
+    },
+    {
+      "question": "A rope roll is 12 wholes and 7/8 meters long. A worker cuts off a piece that is 3.125 meters long. Find the remaining length of the rope roll as a decimal.",
+      "options": ["9.5 m", "9.75 m", "9.875 m", "9.625 m"],
+      "correct": 1,
+      "points": 4,
+      "time": 120,
+      "explanation": "Step 1: Convert 7/8 to a decimal by scaling the denominator to 1000: 7/8 = (7 * 125) / (8 * 125) = 875/1000 = 0.875. So, the initial length is 12.875 meters. Step 2: Subtract the cut piece from the total length: 12.875 - 3.125 = 9.75 meters."
+    },
+    {
+      "question": "Ali spent $5.40 on a book. He spent $3.75 less on the book than on a school bag. After buying both items, he had $16.85 left. How much money did Ali have at first?",
+      "options": ["$26.00", "$28.30", "$31.40", "$32.15"],
+      "correct": 2,
+      "points": 4,
+      "time": 120,
+      "explanation": "Step 1: Find out how much Ali spent on the bag. Since the book was $3.75 less than the bag, the bag cost $3.75 more: Bag = 5.40 + 3.75 = $9.15. Step 2: Find the total amount spent on both items: 5.40 + 9.15 = $14.55. Step 3: Work backwards to find the initial amount by adding the leftover money: 14.55 + 16.85 = $31.40."
+    },
+    {
+      "question": "Four students ran a race. Their times were recorded as follows: John took 12.42 seconds, Larry took 12 wholes and 11/25 seconds, Min took 12.04 seconds, and Nick took 12.402 seconds. Who came in second in the race?",
+      "options": ["John", "Larry", "Min", "Nick"],
+      "correct": 3,
+      "points": 4,
+      "time": 130,
+      "explanation": "Step 1: Convert Larry's time to a decimal by making the denominator 100: 11/25 = (11 * 4) / (25 * 4) = 44/100 = 0.44. So, Larry took 12.44 seconds. Step 2: Pad the decimals to compare clearly: Min = 12.040s, Nick = 12.402s, John = 12.420s, Larry = 12.440s. Sorting from fastest (shortest time) to slowest: Min (1st), Nick (2nd), John (3rd), Larry (4th). Nick came in second."
+    },
+    {
+      "question": "A bottle contains 0.35 litres of syrup. A chef uses 4 of these bottles to bake cakes. He then adds 2 wholes and 1/4 litres of water to the mixture. Find the total volume of the liquid mixture as a decimal.",
+      "options": ["3.45 litres", "3.60 litres", "3.65 litres", "3.85 litres"],
+      "correct": 2,
+      "points": 4,
+      "time": 110,
+      "explanation": "Step 1: Calculate the total syrup volume used: 0.35 * 4 = 1.40 litres. Step 2: Convert the water volume fraction to a decimal: 1/4 = 25/100 = 0.25, so water is 2.25 litres. Step 3: Add the syrup and water volumes together: 1.40 + 2.25 = 3.65 litres."
+    },
+    {
+      "question": "Ken thought of a decimal number. He subtracted 2.45 from it, then added 5.8 to the result. His final value was 12.15. What was the number Ken first thought of?",
+      "options": ["3.9", "6.35", "8.8", "9.1"],
+      "correct": 2,
+      "points": 3,
+      "time": 100,
+      "explanation": "Work backwards from the final output of 12.15 by reversing the operations. Step 1: Undo the addition by subtracting 5.8: 12.15 - 5.80 = 6.35. Step 2: Undo the subtraction by adding 2.45: 6.35 + 2.45 = 8.8."
+    },
+    {
+      "question": "Parcel X has a mass of 3.45 kg. Parcel Y has a mass of 3 wholes and 9/20 kg. Which parcel is heavier and by how much?",
+      "options": ["Parcel X is heavier by 0.05 kg", "Parcel Y is heavier by 0.05 kg", "Both parcels have the exact same mass", "Parcel X is heavier by 0.1 kg"],
+      "correct": 2,
+      "points": 3,
+      "time": 90,
+      "explanation": "Step 1: Convert the mass fraction of Parcel Y to a decimal by making the denominator 100: 9/20 = (9 * 5) / (20 * 5) = 45/100 = 0.45. So, Parcel Y has a mass of 3.45 kg. Comparing this with Parcel X (3.45 kg), both parcels have the exact same mass."
+    },
+    {
+      "question": "A tank contains 8.75 litres of water. 3 wholes and 7/50 litres of water are removed from the tank. Then, another 2.45 litres are added back. Find the final volume of water in the tank as a decimal.",
+      "options": ["7.96 litres", "8.06 litres", "8.14 litres", "8.25 litres"],
+      "correct": 1,
+      "points": 4,
+      "time": 120,
+      "explanation": "Step 1: Convert the removed fraction to a decimal: 7/50 = (7 * 2) / (50 * 2) = 14/100 = 0.14. So, 3.14 litres are removed. Step 2: Subtract the removed water from the tank: 8.75 - 3.14 = 5.61 litres. Step 3: Add the water that was put back: 5.61 + 2.45 = 8.06 litres."
+    },
+    {
+      "question": "Susan bought a dress for $34.90 and a hat. The hat cost $12.45 less than the dress. After paying for both items, she had $15.15 left in her purse. How much money did Susan have at first?",
+      "options": ["$62.50", "$69.80", "$72.50", "$75.00"],
+      "correct": 2,
+      "points": 4,
+      "time": 120,
+      "explanation": "Step 1: Calculate the cost of the hat: 34.90 - 12.45 = $22.45. Step 2: Find the total amount spent on both items: 34.90 + 22.45 = $57.35. Step 3: Work backwards to find the money she had at first by adding the remaining money: 57.35 + 15.15 = $72.50."
+    },
+    {
+      "question": "A rectangular card has a length of 5.6 cm and a width of 3 wholes and 3/4 cm. Calculate the perimeter of the rectangular card as a decimal.",
+      "options": ["9.35 cm", "18.7 cm", "18.4 cm", "19.1 cm"],
+      "correct": 1,
+      "points": 4,
+      "time": 110,
+      "explanation": "Step 1: Convert the width fraction to a decimal: 3/4 = 75/100 = 0.75, so the width is 3.75 cm. Step 2: Calculate the perimeter by adding all four sides of the rectangle together: 5.60 + 3.75 + 5.60 + 3.75 = 18.7 cm."
+    },
+    {
+      "question": "A baker pours out 1.65 litres of oil from a container. She then uses 0.85 litres of oil for baking cookies and has 2.45 litres left inside the container. How much oil was in the container at first?",
+      "options": ["3.30 litres", "4.10 litres", "4.95 litres", "5.05 litres"],
+      "correct": 2,
+      "points": 3,
+      "time": 100,
+      "explanation": "Work backwards by adding the volumes of oil that were taken out to the remaining volume. Step 1: Add the oil used for baking: 2.45 + 0.85 = 3.30 litres. Step 2: Add the oil that was initially poured out: 3.30 + 1.65 = 4.95 litres."
+    },
+    {
+      "question": "A container holds 2.85 kg of flour. A baker adds 1 whole and 3/250 kg of flour into the container. What is the total mass of the flour in the container, expressed as a decimal?",
+      "options": ["3.862 kg", "3.970 kg", "3.880 kg", "4.120 kg"],
+      "correct": 0,
+      "points": 4,
+      "time": 110,
+      "explanation": "Step 1: Convert the added fraction to a decimal by scaling the denominator to 1000: 3/250 = (3 * 4) / (250 * 4) = 12/1000 = 0.012. So, the mass added is 1.012 kg. Step 2: Add the new amount to the original mass: 2.850 + 1.012 = 3.862 kg."
+    },
+    {
+      "question": "Ribbon A is 4.35 meters long. Ribbon B is 1.6 meters shorter than Ribbon A. Ribbon C is 2.45 meters longer than Ribbon B. Find the length of Ribbon C.",
+      "options": ["5.2 m", "5.45 m", "3.5 m", "4.8 m"],
+      "correct": 0,
+      "points": 4,
+      "time": 110,
+      "explanation": "Step 1: Find the length of Ribbon B by subtracting 1.6 m from Ribbon A: 4.35 - 1.60 = 2.75 meters. Step 2: Find the length of Ribbon C by adding 2.45 m to Ribbon B's length: 2.75 + 2.45 = 5.20 meters (or 5.2 m)."
+    }
+  ]
+}
