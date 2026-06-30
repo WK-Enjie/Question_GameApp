@@ -1,0 +1,191 @@
+{
+  "title": "O-Level Combined Science Chemistry: Cracking and Biofuels - Worksheet 3",
+  "topic": "Catalytic Cracking Process, Fractional Distillation vs Cracking, Bioethanol, and Addition Polymers",
+  "subject": "Combined Science Chemistry",
+  "level": "Secondary 4",
+  "grade": "O-Level",
+  "chapter": 24,
+  "worksheet": 3,
+  "questions": [
+    {
+      "question": "What chemical change occurs during the catalytic cracking of long-chain alkane fractions?",
+      "options": [
+        "Large hydrocarbon molecules are broken down into smaller alkanes and alkenes",
+        "Smaller unsaturated molecules combine to form large macromolecular polymer chains",
+        "Hydrogen atoms are substituted by halogen atoms in the presence of strong sunlight",
+        "Hydrocarbons react with liquid water to form sweet smelling ester compounds"
+      ],
+      "correct": 0,
+      "points": 10,
+      "explanation": "Cracking is a chemical process where large, less useful long-chain alkane molecules are broken down into smaller, highly demanded short-chain alkanes and alkenes using high temperatures and a catalyst."
+    },
+    {
+      "question": "Which combination of environmental conditions is necessary to carry out the industrial cracking of petroleum fractions?",
+      "options": [
+        "Room temperature conditions and the presence of a live yeast catalyst",
+        "High temperatures and a solid catalyst such as aluminium oxide",
+        "High atmospheric pressures inside a complete vacuum with zero heating",
+        "Mixing the petroleum fraction with concentrated phosphoric acid in the dark"
+      ],
+      "correct": 1,
+      "points": 10,
+      "explanation": "Industrial cracking requires high temperatures (typically about five hundred to six hundred degrees Celsius) and a catalyst such as porous pieces of aluminium oxide or silicon dioxide."
+    },
+    {
+      "question": "Why is the process of chemical cracking structurally vital to a modern petroleum refinery?",
+      "options": [
+        "It converts expensive short-chain珍 alkanes into cheaper long-chain bitumen fractions",
+        "It produces toxic gases to help clean out heavy industrial chemical stacks safely",
+        "It matches the high market demand for short-chain fractions and produces useful hydrogen gas",
+        "It turns volatile alkenes into completely non-flammable solid blocks of plastic"
+      ],
+      "correct": 2,
+      "points": 10,
+      "explanation": "Cracking breaks down excess long-chain fractions into short-chain alkanes like petrol, produces alkenes for making plastics, and generates hydrogen gas which is used for other industrial operations."
+    },
+    {
+      "question": "Bioethanol is a renewable alternative fuel produced from plant material. What biochemical process is used to manufacture bioethanol?",
+      "options": [
+        "High pressure cracking of plant starches using phosphoric acid solutions",
+        "The addition of steam to ethene gas using an inorganic zinc catalyst",
+        "The substitution of methane gas with alcohol units in ultraviolet light",
+        "The fermentation of glucose solutions using yeast enzymes under anaerobic conditions"
+      ],
+      "correct": 3,
+      "points": 10,
+      "explanation": "Bioethanol is produced by fermenting sugar solutions (glucose) using yeast. The reaction must be anaerobic (without oxygen) and kept at an optimal temperature of about thirty-seven degrees Celsius."
+    },
+    {
+      "question": "Why are biofuels like bioethanol and biodiesel considered better for the environment regarding global warming compared to traditional fossil fuels?",
+      "options": [
+        "The carbon dioxide they release upon combustion was recently absorbed by the crops during photosynthesis",
+        "They release zero carbon dioxide or water vapor when they are burned in vehicle engines",
+        "They actively absorb carbon monoxide out of the surrounding atmosphere as vehicles drive",
+        "They chemically destroy the upper ozone layer to lower global temperatures effectively"
+      ],
+      "correct": 0,
+      "points": 10,
+      "explanation": "Biofuels are considered carbon-neutral because the carbon dioxide released when they burn is equal to the carbon dioxide that the plants absorbed from the air while growing via photosynthesis."
+    },
+    {
+      "question": "What is the primary raw material source used to manufacture commercial biodiesel?",
+      "options": [
+        "Heavy crude oil fractions extracted from deep underground lithospheric reserves",
+        "Vegetable oils and animal fats obtained from renewable biological sources",
+        "Simple molecular gases like methane collected from active volcanic outgassing",
+        "Synthetic addition polymers crushed and melted into liquid chemical fuels"
+      ],
+      "correct": 1,
+      "points": 10,
+      "explanation": "Biodiesel is produced by reacting vegetable oils (like palm oil or soybean oil) or animal fats with an alcohol, making it a renewable fuel source independent of crude oil deposits."
+    },
+    {
+      "question": "Which statement correctly describes the difference between fractional distillation and the cracking of petroleum?",
+      "options": [
+        "Fractional distillation destroys the chemical structure of molecules, while cracking gently mixes them together",
+        "Fractional distillation requires a nickel catalyst, while cracking is done at zero degrees",
+        "Fractional distillation is a physical separation method based on boiling points, while cracking is a chemical breakdown using heat and a catalyst",
+        "Fractional distillation produces only alkenes, while cracking produces only simple polyamides"
+      ],
+      "correct": 2,
+      "points": 10,
+      "explanation": "Fractional distillation simply separates the pre-existing hydrocarbons in crude oil based on their different boiling points without breaking bonds. Cracking uses chemical reactions to break larger molecules into completely new, smaller molecules."
+    },
+    {
+      "question": "A long-chain alkane with the molecular formula C₁₀H₂₂ undergoes cracking. One of the products formed is an alkane with the formula C₆H₁₄. What is the molecular formula of the other product, assuming only one other molecule is made?",
+      "options": [
+        "C₄H₁₀",
+        "C₄H₈",
+        "C₃H₆",
+        "C₂H₄"
+      ],
+      "correct": 1,
+      "points": 10,
+      "explanation": "The total number of carbon and hydrogen atoms must balance. Carbon count: 10 minus 6 equals 4. Hydrogen count: 22 minus 14 equals 8. The other product is C₄H₈, which is the alkene named butene."
+    },
+    {
+      "question": "A heavy petroleum molecule with the formula C₁₄H₃₀ undergoes cracking inside an industrial reactor. The reaction can be written as: C₁₄H₃₀ → C₈H₁₈ + 2X. If X is a single identical alkene molecule, deduce the molecular formula of X.",
+      "options": [
+        "C₃H₈",
+        "C₂H₆",
+        "C₃H₄",
+        "C₃H₆"
+      ],
+      "correct": 3,
+      "points": 10,
+      "explanation": "Balancing the carbon atoms: 14 minus 8 equals 6 carbons remaining for 2X, so each X has 3 carbon atoms. Balancing the hydrogen atoms: 30 minus 18 equals 12 hydrogens remaining for 2X, so each X has 6 hydrogen atoms. The formula for X is C₃H₆ (propene)."
+    },
+    {
+      "question": "What is a major socio-economic or environmental disadvantage of diverting massive areas of agricultural land to grow crops exclusively for biofuel production?",
+      "options": [
+        "It can reduce the amount of land available for food crops, leading to food shortages and higher food prices",
+        "It causes the agricultural soil to turn into solid glass blocks over time due to chemical crystallization",
+        "The growing biofuel crops actively release large volumes of toxic sulfur dioxide gas into the air",
+        "Bioethanol cannot be burned in vehicle engines because it is completely non-flammable"
+      ],
+      "correct": 0,
+      "points": 10,
+      "explanation": "Using fertile farmland to grow fuel crops instead of food crops can shrink the global food supply, driving up food prices and impacting global food security."
+    },
+    {
+      "question": "Bioethanol contains carbon, hydrogen, and oxygen atoms. Why is bioethanol NOT classified as a hydrocarbon compound?",
+      "options": [
+        "It does not release any usable heat energy when it undergoes combustion",
+        "It is a complex solid polymer that cannot form a true independent molecular structure",
+        "It can only be produced by artificial industrial methods and never by biological cells",
+        "Hydrocarbons must contain only carbon and hydrogen atoms, but bioethanol also contains oxygen"
+      ],
+      "correct": 3,
+      "points": 10,
+      "explanation": "By definition, a hydrocarbon is a chemical compound that consists entirely and exclusively of carbon and hydrogen atoms. Since bioethanol (C₂H₅OH) includes an oxygen atom in its structure, it cannot be classified as a hydrocarbon."
+    },
+    {
+      "question": "A heavy oil fraction undergoes industrial catalytic cracking, yielding two products. Product 1 decolourises bromine water immediately in the dark. Product 2 is an unreactive gas that requires ultraviolet light to react with chlorine. What can be deduced about these two products?",
+      "options": [
+        "Both products are alkanes",
+        "Both products are alkenes",
+        "Product 1 is an alkene, Product 2 is an alkane",
+        "Product 1 is an alkane, Product 2 is an alkene"
+      ],
+      "correct": 2,
+      "points": 10,
+      "explanation": "Product 1 decolourises bromine instantly, indicating it is an unsaturated alkene. Product 2 requires light for substitution, which shows it is a saturated alkane. Cracking typically breaks long alkanes into smaller alkanes and alkenes."
+    },
+    {
+      "question": "A segment of an addition polymer chain is represented as containing three repeating units derived entirely from propene monomers (C₃H₆). What is the total number of carbon atoms present in this specific polymer chain segment?",
+      "options": [
+        "Three",
+        "Nine",
+        "Six",
+        "Twelve"
+      ],
+      "correct": 1,
+      "points": 10,
+      "explanation": "Each propene monomer contains exactly 3 carbon atoms. When 3 monomers join together to form a segment of an addition polymer chain, the total number of carbon atoms is 3 multiplied by 3, which equals 9."
+    },
+    {
+      "question": "What is the systematic name of the giant macromolecule formed when thousands of ethene monomers link together through addition polymerisation?",
+      "options": [
+        "Poly(ethene)",
+        "Poly(ethane)",
+        "Polyamide",
+        "Polyester"
+      ],
+      "correct": 0,
+      "points": 10,
+      "explanation": "When ethene monomers undergo addition polymerisation, they link together to form the plastic polymer known systematically as poly(ethene)."
+    },
+    {
+      "question": "How do the viscosity and flammability properties of the short-chain hydrocarbon fractions produced by cracking compare to the original long-chain reactants?",
+      "options": [
+        "The short-chain fractions are more viscous and less flammable",
+        "The short-chain fractions are less viscous and more flammable",
+        "The short-chain fractions are less viscous and less flammable",
+        "Both fractions share identical viscosities and identical ignition temperatures"
+      ],
+      "correct": 1,
+      "points": 10,
+      "explanation": "Smaller hydrocarbon molecules have weaker intermolecular forces holding them together. As a result, they flow more easily (less viscous) and vaporize more easily, making them much more flammable."
+    }
+  ]
+}

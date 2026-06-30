@@ -1,0 +1,191 @@
+{
+  "title": "O-Level Combined Science Chemistry: Chemical Reactions and Identification - Worksheet 2",
+  "topic": "Combustion, Substitution, Addition Reactions, Bromination Tests, and Covalent Bond Calculations",
+  "subject": "Combined Science Chemistry",
+  "level": "Secondary 4",
+  "grade": "O-Level",
+  "chapter": 24,
+  "worksheet": 2,
+  "questions": [
+    {
+      "question": "When a sample of methane gas undergoes complete combustion in a plentiful supply of oxygen gas, what are the only chemical products formed?",
+      "options": [
+        "Carbon monoxide and hydrogen gas",
+        "Carbon soot and liquid water",
+        "Hydrogen gas and oxygen gas",
+        "Carbon dioxide and water vapor"
+      ],
+      "correct": 3,
+      "points": 10,
+      "explanation": "Complete combustion of any hydrocarbon compound always yields carbon dioxide (CO₂) and water vapor (H₂O) as the final products."
+    },
+    {
+      "question": "A vehicle engine burns a liquid alkane fuel under restricted ventilation conditions, resulting in incomplete combustion. What toxic product is associated with this reaction?",
+      "options": [
+        "Toxic carbon monoxide gas",
+        "Pure oxygen gas",
+        "Solid calcium carbonate",
+        "Pungent sulfur dioxide gas"
+      ],
+      "correct": 0,
+      "points": 10,
+      "explanation": "Incomplete combustion occurs when there is a limited supply of oxygen, producing highly toxic carbon monoxide gas (CO) instead of carbon dioxide."
+    },
+    {
+      "question": "What is the primary purpose of performing a bromination test using aqueous bromine on an unknown hydrocarbon sample?",
+      "options": [
+        "To determine the exact number of hydrogen atoms in the sample",
+        "To distinguish between a saturated hydrocarbon and an unsaturated hydrocarbon",
+        "To increase the boiling point of the hydrocarbon sample",
+        "To test if the compound can conduct electricity"
+      ],
+      "correct": 1,
+      "points": 10,
+      "explanation": "The bromination test is a standard diagnostic test used to distinguish between saturated compounds (alkanes) and unsaturated compounds (alkenes)."
+    },
+    {
+      "question": "A student adds reddish-brown bromine water to ethene gas at room temperature in a completely dark room. What is the expected visual observation?",
+      "options": [
+        "The solution remains reddish-brown indefinitely",
+        "The solution changes to a deep blue color",
+        "A dense black solid precipitate settles at the bottom",
+        "The reddish-brown solution decolourises immediately"
+      ],
+      "correct": 3,
+      "points": 10,
+      "explanation": "Alkenes possess a reactive double bond that undergoes rapid addition reactions with bromine water instantly, requiring no light energy to break the bond."
+    },
+    {
+      "question": "If a few drops of aqueous bromine are mixed with liquid ethane in a test tube kept completely away from light, what will be observed?",
+      "options": [
+        "The reddish-brown colour of bromine decolourises instantly",
+        "The mixture begins to boil violently",
+        "The reddish-brown colour of bromine remains unchanged",
+        "The liquid separates into two brightly colored layers"
+      ],
+      "correct": 2,
+      "points": 10,
+      "explanation": "Ethane is a saturated alkane. Alkanes do not undergo rapid addition reactions with bromine water and require ultraviolet light or sunlight to undergo substitution, so the reddish-brown color remains unchanged in the dark."
+    },
+    {
+      "question": "Under what specific condition can a saturated alkane like methane react with a halogen like chlorine or bromine?",
+      "options": [
+        "In the presence of ultraviolet light or strong sunlight",
+        "Mixed with a solid nickel catalyst at low temperatures",
+        "Dissolved in a large volume of an alkaline solution",
+        "Alkanes can never react with bromine under any condition"
+      ],
+      "correct": 0,
+      "points": 10,
+      "explanation": "Alkanes are generally unreactive because they are saturated. They can only undergo a slow substitution reaction with halogens if ultraviolet light is present to provide activation energy."
+    },
+    {
+      "question": "When propene gas is heated to one hundred and fifty degrees Celsius with hydrogen gas over a nickel catalyst, what compound is produced?",
+      "options": [
+        "Ethanol",
+        "Propene oxide",
+        "Propane",
+        "Butane"
+      ],
+      "correct": 2,
+      "points": 10,
+      "explanation": "This reaction is hydrogenation, an addition reaction where hydrogen atoms add across the double bond of the unsaturated alkene (propene), converting it into the corresponding saturated alkane (propane)."
+    },
+    {
+      "question": "What catalyst and temperature conditions are required to carry out the industrial hydrogenation of alkenes?",
+      "options": [
+        "A yeast catalyst at a room temperature of thirty-seven degrees",
+        "A nickel catalyst at a temperature of one hundred and fifty degrees",
+        "A concentrated acid catalyst at zero degrees",
+        "No catalyst is required because the reaction occurs spontaneously"
+      ],
+      "correct": 1,
+      "points": 10,
+      "explanation": "The addition of hydrogen to an alkene requires a finely divided nickel catalyst and an operating temperature of about one hundred and fifty degrees Celsius."
+    },
+    {
+      "question": "From a conceptual standpoint, what structural transformation occurs during the hydrogenation of an alkene?",
+      "options": [
+        "An unsaturated hydrocarbon is converted into a saturated hydrocarbon",
+        "An organic acid is neutralised to form a salt and water",
+        "A small polymer molecule is broken down into simple gas monomers",
+        "A single covalent bond is converted into a reactive double bond"
+      ],
+      "correct": 0,
+      "points": 10,
+      "explanation": "Hydrogenation adds hydrogen atoms across a carbon to carbon double bond. This opens up the double bond into single bonds, converting an unsaturated alkene into a saturated alkane."
+    },
+    {
+      "question": "What type of chemical reaction occurs when ethene reacts with bromine water to form dibromoethane?",
+      "options": [
+        "Substitution reaction",
+        "Combustion reaction",
+        "Decomposition reaction",
+        "Addition reaction"
+      ],
+      "correct": 3,
+      "points": 10,
+      "explanation": "Alkenes undergo addition reactions where the carbon to carbon double bond opens up, allowing atoms to add to the molecule without eliminating any other atoms."
+    },
+    {
+      "question": "What type of reaction takes place when methane gas reacts with chlorine gas in the presence of sunlight?",
+      "options": [
+        "Addition reaction",
+        "Substitution reaction",
+        "Neutralisation reaction",
+        "Thermal cracking"
+      ],
+      "correct": 1,
+      "points": 10,
+      "explanation": "Alkanes react via substitution reactions, where a hydrogen atom in the alkane molecule is replaced or substituted by a halogen atom."
+    },
+    {
+      "question": "Two fuel samples, propane (an alkane) and propene (an alkene), both contain exactly three carbon atoms per molecule. When burned completely in air, why does propene produce a noticeably sootier flame than propane?",
+      "options": [
+        "Propene has a higher percentage of carbon by mass, leading to more incomplete combustion",
+        "Propane contains more carbon atoms per molecule than propene",
+        "Propene chemically blocks oxygen from entering the flame zone",
+        "Propane undergoes an addition reaction with atmospheric nitrogen"
+      ],
+      "correct": 0,
+      "points": 10,
+      "explanation": "Propene (C₃H₆) has a lower hydrogen count than propane (C₃H₈), which gives it a higher percentage of carbon by mass. A higher carbon content leads to more incomplete combustion and a sootier flame."
+    },
+    {
+      "question": "A sample containing 20 cm³ of ethene gas undergoes complete hydrogenation to form ethane. What volume of hydrogen gas is completely consumed in this reaction?",
+      "options": [
+        "10 cm³",
+        "40 cm³",
+        "20 cm³",
+        "60 cm³"
+      ],
+      "correct": 2,
+      "points": 10,
+      "explanation": "Ethene reacts with hydrogen gas in a one to one mole ratio: C₂H₄ + H₂ → C₂H₆. According to Avogadro's Law, gas volume ratios are equal to mole ratios. Therefore, 20 cm³ of ethene will react with exactly 20 cm³ of hydrogen gas."
+    },
+    {
+      "question": "When a mixture of ethane gas and chlorine gas is exposed to ultraviolet light, a substitution reaction occurs. Alongside the chloroethane organic product, what other chemical product is formed, and what is its observation when tested with moist blue litmus paper?",
+      "options": [
+        "Water vapour which dries the paper",
+        "Hydrogen gas which pops with a splint",
+        "Oxygen gas which relights a splint",
+        "Hydrogen chloride gas which turns it red"
+      ],
+      "correct": 3,
+      "points": 10,
+      "explanation": "In an alkane substitution reaction, a halogen atom replaces a hydrogen atom, which then links with the remaining halogen atom to form a hydrogen halide gas (HCl). Hydrogen chloride is an acidic gas that dissolves in the moisture of blue litmus paper, turning it red."
+    },
+    {
+      "question": "An unbranched alkane molecule has a relative molecular mass that corresponds to a chain containing exactly 8 carbon atoms (octane). Calculate the total number of single covalent bonds present between all the atoms in this single molecule.",
+      "options": [
+        "Eighteen",
+        "Twenty-four",
+        "Twenty-five",
+        "Twenty-six"
+      ],
+      "correct": 2,
+      "points": 10,
+      "explanation": "Octane has the formula C₈H₁₈. It contains 7 carbon-to-carbon single bonds and 18 carbon-to-hydrogen single bonds. The total number of single covalent bonds is 7 plus 18, which equals 25."
+    }
+  ]
+}
