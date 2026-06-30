@@ -1,0 +1,299 @@
+{
+  "title": "O-Level Combined Science Physics: Advanced Energy Concepts",
+  "topic": "Energy Store Transitions, Center of Gravity Dynamics, Pathways, and Multi-Step Calculations",
+  "subject": "Physics",
+  "level": "Secondary 3",
+  "grade": "O-Level",
+  "chapter": 4,
+  "worksheet": 2,
+  "questions": [
+    {
+      "question": "A gymnast crouches down and then jumps vertically upwards into the air. Which of the following describes the primary sequence of energy store changes from the moment they push off the ground until they reach their absolute highest point?",
+      "options": [
+        "Chemical store → Kinetic store → Gravitational potential store",
+        "Gravitational potential store → Kinetic store → Thermal store",
+        "Elastic potential store → Chemical store → Kinetic store",
+        "Kinetic store → Gravitational potential store → Chemical store"
+      ],
+      "correct": 0,
+      "points": 10,
+      "explanation": "The gymnast uses energy from their body food bonds (chemical store) to move their muscles and accelerate upwards (kinetic store). As they ascend and slow down, this energy transfers into their gravitational potential store."
+    },
+    {
+      "question": "An athlete of mass 50 kg stands upright. When executing a vertical jump, their center of gravity rises by a vertical distance of 0.4 meters relative to their standing position. Calculate the minimum work done by the athlete's leg muscles to achieve this rise. [Take g = 10 m per s²]",
+      "options": [
+        "20 Joules",
+        "200 Joules",
+        "500 Joules",
+        "2000 Joules"
+      ],
+      "correct": 1,
+      "points": 10,
+      "explanation": "Work done against gravity equals the change in the gravitational potential energy store of the object. Using Work = mgh, we calculate 50 kg multiplied by 10 m per s² multiplied by 0.4 meters = 200 Joules."
+    },
+    {
+      "question": "A child bounces up and down on a trampoline. At the absolute lowest point of the bounce, when the trampoline fabric is stretched to its limit and the child is momentarily stationary, which energy store is at its maximum?",
+      "options": [
+        "The child's kinetic store",
+        "The child's gravitational potential store",
+        "The trampoline's elastic potential store",
+        "The surroundings' thermal store"
+      ],
+      "correct": 2,
+      "points": 10,
+      "explanation": "At the lowest point, the child has stopped moving down, so kinetic store is zero. Their height is lowest, so gravitational store is minimum. The energy has been fully transferred into the deformation of the trampoline springs, maximizing its elastic potential store."
+    },
+    {
+      "question": "A student of mass 60 kg sits on a low stool. When they stand up straight, their center of gravity is raised vertically by exactly 0.5 meters. What is the pathway of energy transfer and the minimum work done by the student?",
+      "options": [
+        "Transferred electrically with 30 Joules of work done",
+        "Transferred mechanically with 3000 Joules of work done",
+        "Transferred by heating with 30 Joules of work done",
+        "Transferred mechanically with 300 Joules of work done"
+      ],
+      "correct": 3,
+      "points": 10,
+      "explanation": "Standing up requires forces to move a mass over a distance, which represents a mechanical transfer pathway. The work done equals mgh = 60 kg multiplied by 10 m per s² multiplied by 0.5 meters = 300 Joules."
+    },
+    {
+      "question": "A trolley of mass 4 kg is released from rest at the top of a ramp. As it rolls down, it loses 80 Joules of gravitational potential energy. At the bottom of the ramp, its kinetic energy store is found to be only 72 Joules. Explain the missing energy.",
+      "options": [
+        "8 Joules of energy was transferred mechanically to the thermal store of the surroundings via friction",
+        "8 Joules of energy was destroyed completely by the downward acceleration of the trolley",
+        "152 Joules of energy was transferred electrically into the ramp structure",
+        "8 Joules of energy was stored as elastic potential energy inside the wheels"
+      ],
+      "correct": 0,
+      "points": 10,
+      "explanation": "According to the Principle of Conservation of Energy, energy cannot be destroyed. The missing 8 Joules (80 minus 72) was transferred mechanically as work done against friction, increasing the thermal store of the wheels, ramp, and surrounding air."
+    },
+    {
+      "question": "A heavy pendulum bob swings back and forth smoothly. At its lowest vertical point (the equilibrium position), which statement correctly describes the state of its mechanical energy stores?",
+      "options": [
+        "Its gravitational potential store is at its maximum value",
+        "Its kinetic store is at its maximum value and its gravitational potential store is at its minimum value",
+        "Both its kinetic store and gravitational potential store are exactly zero",
+        "Its elastic potential store is at its maximum value"
+      ],
+      "correct": 1,
+      "points": 10,
+      "explanation": "As the pendulum bob falls toward the center, its gravitational potential store decreases and converts into its kinetic store. At the lowest point, it is moving fastest (maximum kinetic store) and is at its lowest height (minimum gravitational potential store)."
+    },
+    {
+      "question": "A high jumper of mass 70 kg clears a horizontal bar. At the exact highest point of their path, their vertical velocity is zero, but they are moving horizontally at a speed of 2 m per s. If their center of gravity is 2.2 meters above the safety mat, calculate their total mechanical energy (Kinetic + Gravitational). [Take g = 10 m per s²]",
+      "options": [
+        "140 Joules",
+        "1540 Joules",
+        "1680 Joules",
+        "3080 Joules"
+      ],
+      "correct": 2,
+      "points": 10,
+      "explanation": "Gravitational potential store = mgh = 70 multiplied by 10 multiplied by 2.2 = 1540 Joules. Kinetic store = 0.5 multiplied by m multiplied by v² = 0.5 multiplied by 70 multiplied by (2 squared) = 35 multiplied by 4 = 140 Joules. Total mechanical energy = 1540 + 140 = 1680 Joules."
+    },
+    {
+      "question": "A heavy box is pulled along a rough horizontal floor by a rope. The tension force in the rope performs 500 Joules of mechanical work. If the kinetic energy store of the box increases by 350 Joules, how much work was done against the friction force opposing the motion?",
+      "options": [
+        "850 Joules",
+        "350 Joules",
+        "0 Joules",
+        "150 Joules"
+      ],
+      "correct": 3,
+      "points": 10,
+      "explanation": "The total work input (500 Joules) equals the useful energy gained by the box's kinetic store plus the wasted energy spent overcoming friction. Therefore, work done against friction = 500 minus 350 = 150 Joules."
+    },
+    {
+      "question": "A toy car containing a wind-up spring mechanism is released from rest on a flat floor. It speeds up across the room. Which pathway and energy transformation describes this scenario?",
+      "options": [
+        "Energy is transferred mechanically from the elastic potential store to the kinetic store",
+        "Energy is transferred electrically from the chemical store to the kinetic store",
+        "Energy is transferred by heating from the thermal store to the gravitational potential store",
+        "Energy is transferred by electromagnetic waves from the kinetic store to the elastic potential store"
+      ],
+      "correct": 0,
+      "points": 10,
+      "explanation": "The wound-up spring holds energy in its elastic potential store. When released, it exerts mechanical forces through the gears to turn the wheels, transferring energy into the car's moving kinetic store."
+    },
+    {
+      "question": "A small meteor falls through the Earth's atmosphere at a steady terminal velocity. Since its speed is constant, its kinetic energy store does not change, but its height is decreasing. What energy store change is occurring?",
+      "options": [
+        "Its gravitational potential store is increasing while its chemical store decreases",
+        "Its gravitational potential store is decreasing and energy is transferred via heating to the thermal stores of the meteor and surroundings",
+        "Its nuclear store is expanding to replace the lost kinetic energy",
+        "Its gravitational potential store is being converted directly into elastic potential energy"
+      ],
+      "correct": 1,
+      "points": 10,
+      "explanation": "As the height decreases, gravitational potential store decreases. Because it moves at a constant terminal speed, this energy cannot go into the kinetic store. Instead, work done against air resistance transfers it via heating to the thermal stores of the meteor and air."
+    },
+    {
+      "question": "A heavy crate of mass 10 kg is pushed up a rough incline. A worker performs 800 Joules of work. The crate ends up stationary on a platform 5 meters higher than its starting point. Calculate the energy transferred to the thermal store of the surroundings due to friction. [Take g = 10 m per s²]",
+      "options": [
+        "800 Joules",
+        "500 Joules",
+        "300 Joules",
+        "1300 Joules"
+      ],
+      "correct": 2,
+      "points": 10,
+      "explanation": "Useful energy gained in the gravitational potential store = mgh = 10 multiplied by 10 multiplied by 5 = 500 Joules. The total energy put in by the worker was 800 Joules. The remaining wasted energy = 800 minus 500 = 300 Joules, which enters the thermal store via friction."
+    },
+    {
+      "question": "A diver of mass 50 kg stands on a high diving board 10 meters above the water surface. They step off the board and fall vertically downwards. Neglecting air resistance, calculate the kinetic energy of the diver at the exact midpoint of their fall (5 meters above the water). [Take g = 10 m per s²]",
+      "options": [
+        "5000 Joules",
+        "500 Joules",
+        "1000 Joules",
+        "2500 Joules"
+      ],
+      "correct": 3,
+      "points": 10,
+      "explanation": "Maximum gravitational potential store at the top = mgh = 50 multiplied by 10 multiplied by 10 = 5000 Joules. At the midpoint (5 meters down), the diver has lost exactly half of their height, meaning half of their initial energy (2500 Joules) has transferred into the kinetic store."
+    },
+    {
+      "question": "A remote-controlled drone of mass 2 kg changes its altitude from an initial height of 15 meters to a new height of 35 meters above the ground. Calculate the increase in the drone's gravitational potential energy store. [Take g = 10 m per s²]",
+      "options": [
+        "400 Joules",
+        "700 Joules",
+        "300 Joules",
+        "1000 Joules"
+      ],
+      "correct": 0,
+      "points": 10,
+      "explanation": "The change in gravitational potential energy depends on the change in vertical height (delta h). Delta h = 35 minus 15 = 20 meters. Increase in store = mg(delta h) = 2 kg multiplied by 10 m per s² multiplied by 20 meters = 400 Joules."
+    },
+    {
+      "question": "A small electric motor uses a current to transfer energy into the kinetic store of a conveyor belt. If the motor transfers 1200 Joules of energy every minute, what is the rate of energy transfer per second?",
+      "options": [
+        "1200 Joules per second",
+        "20 Joules per second",
+        "72000 Joules per second",
+        "60 Joules per second"
+      ],
+      "correct": 1,
+      "points": 10,
+      "explanation": "One minute contains exactly 60 seconds. The rate of energy transfer per second is calculated by dividing the total energy by total time: 1200 Joules divided by 60 seconds = 20 Joules per second."
+    },
+    {
+      "question": "A heavy pendulum bob is released from rest at a certain height. As it passes through its lowest point, it has a speed of 6 m per s. Neglecting air resistance, what is the vertical height difference between its release point and its lowest point? [Take g = 10 m per s²]",
+      "options": [
+        "0.6 meters",
+        "3.6 meters",
+        "1.8 meters",
+        "7.2 meters"
+      ],
+      "correct": 2,
+      "points": 10,
+      "explanation": "Loss in gravitational store = Gain in kinetic store. Therefore, mgh = 0.5 multiplied by m multiplied by v². The mass cancels out from both sides: gh = 0.5v² → 10 multiplied by h = 0.5 multiplied by (6 squared) → 10h = 0.5 multiplied by 36 → 10h = 18 → h = 1.8 meters."
+    },
+    {
+      "question": "An archer pulls back a bowstring, transferring energy from their body into the bow. They hold the arrow completely steady before release. Describe the primary energy transfer method and store involved at this instant.",
+      "options": [
+        "Transferred by electromagnetic waves into the arrow's kinetic store",
+        "Transferred electrically into the bow's chemical store",
+        "Transferred by heating into the surroundings' thermal store",
+        "Transferred mechanically into the bow's elastic potential store"
+      ],
+      "correct": 3,
+      "points": 10,
+      "explanation": "The archer uses muscular force to pull the string over a distance, transferring energy mechanically. Since the bow changes shape and stays still, this energy is held in the bow's elastic potential store."
+    },
+    {
+      "question": "A student slides a heavy textbook across a flat table surface. The book travels a short distance, slows down, and comes to a complete stop. What best explains the final state of the energy that was initially in the book's kinetic store?",
+      "options": [
+        "It was transferred mechanically via friction to the thermal store of the book and the table surface",
+        "It was destroyed completely by the reaction forces of the table structure",
+        "It was transferred by electromagnetic waves into the chemical store of the air particles",
+        "It was stored as gravitational potential energy inside the table legs"
+      ],
+      "correct": 0,
+      "points": 10,
+      "explanation": "As the book slides, friction forces do mechanical work against the motion. This transfers energy out of the moving kinetic store and into the thermal stores of the contacting surfaces, making them slightly warmer."
+    },
+    {
+      "question": "A high jumper of mass 60 kg arches their body over a crossbar. If their center of gravity rises vertically by 1.2 meters during the peak phase of the jump, calculate the work done by the athlete against gravity. [Take g = 10 m per s²]",
+      "options": [
+        "72 Joules",
+        "720 Joules",
+        "600 Joules",
+        "1200 Joules"
+      ],
+      "correct": 1,
+      "points": 10,
+      "explanation": "The work done against gravity matches the increase in gravitational potential energy. Work = mgh = 60 kg multiplied by 10 m per s² multiplied by 1.2 meters = 720 Joules."
+    },
+    {
+      "question": "A compressed spring fires a small plastic ball of mass 0.1 kg vertically upwards. At the point of launch, the spring releases exactly 5 Joules of elastic potential energy. Neglecting air resistance, what is the maximum height the ball can reach? [Take g = 10 m per s²]",
+      "options": [
+        "0.5 meters",
+        "50.0 meters",
+        "5.0 meters",
+        "10.0 meters"
+      ],
+      "correct": 2,
+      "points": 10,
+      "explanation": "By conservation of energy, the initial elastic potential store is completely converted into the gravitational potential store at the highest point. 5 Joules = mgh → 5 = 0.1 multiplied by 10 multiplied by h → 5 = 1 multiplied by h → h = 5 meters."
+    },
+    {
+      "question": "A student jumps off a low wall onto the ground. To land safely without injury, the student bends their knees upon impact. How does this action affect the mechanics of the energy transfer?",
+      "options": [
+        "It increases the total kinetic energy store just before the feet touch the ground",
+        "It completely prevents any energy from entering the thermal store of the body tissues",
+        "It multiplies the gravitational potential energy store to pull the body down faster",
+        "It increases the distance over which the stopping force acts, reducing the average impact force while doing the same work"
+      ],
+      "correct": 3,
+      "points": 10,
+      "explanation": "The kinetic energy store to be dissipated is fixed based on the fall. Bending the knees increases the displacement distance during the landing impact. Since Work = Force multiplied by distance, increasing the distance allows a much smaller average force to do the same amount of work, protecting the joints."
+    },
+    {
+      "question": "An electric kettle transfers 3000 Joules of energy to the thermal store of the water inside it via heating. If the kettle is plugged into a wall socket, what pathway brings the energy into the heating element?",
+      "options": [
+        "Electrically by an electric current",
+        "Mechanically by structural forces",
+        "By sound waves through the air medium",
+        "By electromagnetic radiation pathways"
+      ],
+      "correct": 0,
+      "points": 10,
+      "explanation": "Energy is brought to the appliance via an electrical current pathway moving charges through wires from the mains power supply grid."
+    },
+    {
+      "question": "A bullet of mass 0.02 kg is fired into a thick wooden block. It enters the block at a speed of 200 m per s and comes to a stop inside the wood. Calculate the initial kinetic energy store of the bullet.",
+      "options": [
+        "800 Joules",
+        "400 Joules",
+        "40 Joules",
+        "4 Joules"
+      ],
+      "correct": 1,
+      "points": 10,
+      "explanation": "Using the kinetic energy formula: KE = 0.5 multiplied by m multiplied by v² = 0.5 multiplied by 0.02 kg multiplied by (200 squared) = 0.01 multiplied by 40000 = 400 Joules."
+    },
+    {
+      "question": "A mechanical crane lifts a steel beam of mass 500 kg vertically upwards at a constant speed of 2 m per s. Calculate the gain in the beam's gravitational potential energy store during a time interval of exactly 3 seconds. [Take g = 10 m per s²]",
+      "options": [
+        "3000 Joules",
+        "10000 Joules",
+        "30000 Joules",
+        "1000 Joules"
+      ],
+      "correct": 2,
+      "points": 10,
+      "explanation": "First, calculate the vertical height gained in 3 seconds: height = speed multiplied by time = 2 m per s multiplied by 3 seconds = 6 meters. Now, calculate the gain in GPE = mgh = 500 kg multiplied by 10 m per s² multiplied by 6 meters = 30000 Joules."
+    },
+    {
+      "question": "A loudspeaker converts electrical signals into sound waves. What pathway transfers energy from the vibrating cone of the speaker through the room to the ears of a listener standing nearby?",
+      "options": [
+        "Electrically by an electric current passing through the air gaps",
+        "By electromagnetic waves moving through a vacuum spatial zone",
+        "Mechanically by a tension force acting through a solid connecting cable",
+        "By sound waves creating particle vibrations through the air medium"
+      ],
+      "correct": 3,
+      "points": 10,
+      "explanation": "Energy travels from the speaker cone through the air by sound waves, which are mechanical longitudinal waves that transfer energy through the sequential compressions and rarefactions of air particles."
+    }
+  ]
+}

@@ -1,0 +1,299 @@
+{
+  "title": "O-Level Combined Science Physics: Energy Stores and Transfers",
+  "topic": "Energy Stores, Transfer Pathways, and Energy Calculations",
+  "subject": "Physics",
+  "level": "Secondary 3",
+  "grade": "O-Level",
+  "chapter": 4,
+  "worksheet": 1,
+  "questions": [
+    {
+      "question": "Which of the following energy stores increases when a student stretches a thick rubber band?",
+      "options": [
+        "Elastic potential store",
+        "Kinetic store",
+        "Chemical store",
+        "Thermal store"
+      ],
+      "correct": 0,
+      "points": 10,
+      "explanation": "Stretching or compressing an elastic object changes its shape and stores energy inside its elastic potential store."
+    },
+    {
+      "question": "What primary energy store is found inside a dry cell battery or a tank of petroleum fuel?",
+      "options": [
+        "Kinetic store",
+        "Chemical store",
+        "Gravitational store",
+        "Magnetic store"
+      ],
+      "correct": 1,
+      "points": 10,
+      "explanation": "Batteries, fuels, and food store energy chemically due to the arrangement of their internal atoms and chemical bonds."
+    },
+    {
+      "question": "A student pours boiling water into a ceramic mug. Which energy store of the water has increased significantly?",
+      "options": [
+        "Chemical store",
+        "Nuclear store",
+        "Thermal store",
+        "Electrostatic store"
+      ],
+      "correct": 2,
+      "points": 10,
+      "explanation": "Thermal store depends directly on the temperature of an object. As the water gets hotter, the kinetic energy of its particles increases, expanding its thermal store."
+    },
+    {
+      "question": "A sports car is driving at high speed along a straight horizontal track. Which energy store is largest due to its continuous movement?",
+      "options": [
+        "Gravitational store",
+        "Elastic store",
+        "Chemical store",
+        "Kinetic store"
+      ],
+      "correct": 3,
+      "points": 10,
+      "explanation": "Any moving object possesses energy in its kinetic store, which depends directly on both its mass and its speed."
+    },
+    {
+      "question": "A heavy storage crate is lifted vertically upwards by a forklift and held steady on a high warehouse shelf. What energy store has increased?",
+      "options": [
+        "Gravitational potential store",
+        "Thermal store",
+        "Magnetic store",
+        "Kinetic store"
+      ],
+      "correct": 0,
+      "points": 10,
+      "explanation": "When an object is raised to a higher position within a gravitational field, energy is transferred into its gravitational potential store."
+    },
+    {
+      "question": "Which of the following describes the energy store that is locked inside the center of uranium atoms used in power stations?",
+      "options": [
+        "Chemical store",
+        "Nuclear store",
+        "Electrostatic store",
+        "Thermal store"
+      ],
+      "correct": 1,
+      "points": 10,
+      "explanation": "Nuclear stores hold energy released during nuclear reactions, such as fission or fusion, occurring within the nucleus of an atom."
+    },
+    {
+      "question": "An electric current flows through a wire to illuminate a desk lamp. What is the pathway responsible for this energy transfer?",
+      "options": [
+        "Mechanically by forces",
+        "By heating from temperature difference",
+        "Electrically by a current",
+        "By electromagnetic waves"
+      ],
+      "correct": 2,
+      "points": 10,
+      "explanation": "Energy is transferred electrically when an electrical current moves charge through a potential difference inside a closed circuit."
+    },
+    {
+      "question": "A mechanical winch pulls a broken-down car up a steep ramp using a steel cable. How is the energy transferred from the winch to the car?",
+      "options": [
+        "By heating from temperature difference",
+        "Electrically by a current",
+        "By sound waves",
+        "Mechanically by forces"
+      ],
+      "correct": 3,
+      "points": 10,
+      "explanation": "Energy is transferred mechanically when a force moves an object over a distance via tension, pushes, or pulls."
+    },
+    {
+      "question": "Energy travels from the surface of the Sun through empty space to reach the Earth. Identify this method of energy transfer.",
+      "options": [
+        "By electromagnetic waves",
+        "Electrically by a current",
+        "Mechanically by forces",
+        "By sound waves"
+      ],
+      "correct": 0,
+      "points": 10,
+      "explanation": "Energy transfers through space via radiation using electromagnetic waves, such as visible light and infrared radiation, requiring no particles."
+    },
+    {
+      "question": "A cold metal spoon is placed inside a bowl of hot soup. Energy moves from the soup into the spoon. What is the pathway of this transfer?",
+      "options": [
+        "Mechanically by forces",
+        "By heating due to temperature difference",
+        "Electrically by a current",
+        "By sound waves"
+      ],
+      "correct": 1,
+      "points": 10,
+      "explanation": "Energy transfers by heating from a region of higher temperature to a region of lower temperature until thermal equilibrium is reached."
+    },
+    {
+      "question": "An alarm bell rings loudly inside a corridor, causing nearby windows to vibrate slightly. How is the energy moving through the air?",
+      "options": [
+        "Electrically by a current",
+        "By electromagnetic waves",
+        "By sound waves",
+        "Mechanically by forces"
+      ],
+      "correct": 2,
+      "points": 10,
+      "explanation": "Sound waves transfer energy through a medium as longitudinal mechanical waves via the vibrations of particles."
+    },
+    {
+      "question": "A footballer kicks a stationary ball, causing it to speed across the field. What pathway transfers energy from the player's foot to the ball?",
+      "options": [
+        "Electrically by a current",
+        "By heating due to temperature difference",
+        "By electromagnetic waves",
+        "Mechanically by forces"
+      ],
+      "correct": 3,
+      "points": 10,
+      "explanation": "The player's foot exerts a contact impact force on the ball over a short distance, transferring energy mechanically from the body to the ball's kinetic store."
+    },
+    {
+      "question": "A worker applies a constant horizontal force of 20 N to push a box 5 meters along a smooth corridor. Calculate the work done on the box.",
+      "options": [
+        "100 Joules",
+        "4 Joules",
+        "40 Joules",
+        "25 Joules"
+      ],
+      "correct": 0,
+      "points": 10,
+      "explanation": "Work done equals force multiplied by distance moved in the direction of the force: Work = 20 N multiplied by 5 meters = 100 Joules."
+    },
+    {
+      "question": "A student pushes with a horizontal force of 50 N against a solid brick wall, but the wall remains completely stationary. How much work is done?",
+      "options": [
+        "50 Joules",
+        "0 Joules",
+        "250 Joules",
+        "5 Joules"
+      ],
+      "correct": 1,
+      "points": 10,
+      "explanation": "Work is only done when a force causes displacement. Since the distance moved is zero meters, the work done on the wall is exactly 0 Joules."
+    },
+    {
+      "question": "An electric crane performs exactly 600 Joules of work to lift a heavy concrete block vertically through a distance of 3 meters. What pulling force was applied?",
+      "options": [
+        "1800 N",
+        "597 N",
+        "200 N",
+        "20 N"
+      ],
+      "correct": 2,
+      "points": 10,
+      "explanation": "Since Work = Force multiplied by distance, we rearrange to find Force = Work divided by distance = 600 Joules divided by 3 meters = 200 N."
+    },
+    {
+      "question": "A boy carries a heavy 10 N box while walking 4 meters horizontally across a flat floor. What is the work done on the box by the upward lifting force?",
+      "options": [
+        "40 Joules",
+        "14 Joules",
+        "2.5 Joules",
+        "0 Joules"
+      ],
+      "correct": 3,
+      "points": 10,
+      "explanation": "The upward lifting force is perpendicular to the horizontal movement. Because there is no distance moved in the direction of the lifting force, the work done by this force is zero."
+    },
+    {
+      "question": "A metal block of mass 2 kg is lifted vertically from the ground to a high platform 5 meters above. Calculate its gain in gravitational potential energy. [Take g = 10 m per s²]",
+      "options": [
+        "100 Joules",
+        "10 Joules",
+        "25 Joules",
+        "50 Joules"
+      ],
+      "correct": 0,
+      "points": 10,
+      "explanation": "Gravitational potential energy equals mass multiplied by gravitational field strength multiplied by height (GPE = mgh) = 2 kg multiplied by 10 m per s² multiplied by 5 meters = 100 Joules."
+    },
+    {
+      "question": "A bird of mass 0.5 kg flies steadily at a uniform height of 20 meters above a lake. What is the energy in its gravitational potential store? [Take g = 10 m per s²]",
+      "options": [
+        "10 Joules",
+        "100 Joules",
+        "200 Joules",
+        "5 Joules"
+      ],
+      "correct": 1,
+      "points": 10,
+      "explanation": "Using GPE = mgh, we calculate the energy as 0.5 kg multiplied by 10 m per s² multiplied by 20 meters = 100 Joules."
+    },
+    {
+      "question": "An unknown object gains exactly 300 Joules of gravitational potential energy when it is lifted vertically through a height of 6 meters. Find its mass. [Take g = 10 m per s²]",
+      "options": [
+        "50 kg",
+        "180 kg",
+        "5 kg",
+        "0.5 kg"
+      ],
+      "correct": 2,
+      "points": 10,
+      "explanation": "Rearranging GPE = mgh gives mass = GPE divided by the product of g and h = 300 divided by (10 multiplied by 6) = 300 divided by 60 = 5 kg."
+    },
+    {
+      "question": "A storage box of mass 4 kg rests flat on the floor of a classroom. What is its gravitational potential energy value relative to this floor surface?",
+      "options": [
+        "40 Joules",
+        "4 Joules",
+        "400 Joules",
+        "0 Joules"
+      ],
+      "correct": 3,
+      "points": 10,
+      "explanation": "Since the box is resting on the reference level, its height h is zero. According to GPE = mgh, if height is zero, the gravitational potential energy store is 0 Joules."
+    },
+    {
+      "question": "A sprinter of mass 60 kg sprints along a running track with a steady speed of 4 m per s. Calculate the kinetic energy store of the runner.",
+      "options": [
+        "480 Joules",
+        "120 Joules",
+        "240 Joules",
+        "960 Joules"
+      ],
+      "correct": 0,
+      "points": 10,
+      "explanation": "Kinetic energy equals half multiplied by mass multiplied by the square of speed (KE = 0.5 multiplied by m multiplied by v²) = 0.5 multiplied by 60 kg multiplied by (4 squared) = 30 multiplied by 16 = 480 Joules."
+    },
+    {
+      "question": "A remote-controlled toy vehicle of mass 2 kg travels across a playground at a speed of 3 m per s. Find its kinetic energy.",
+      "options": [
+        "6 Joules",
+        "9 Joules",
+        "18 Joules",
+        "3 Joules"
+      ],
+      "correct": 1,
+      "points": 10,
+      "explanation": "Using KE = 0.5 multiplied by m multiplied by v², we get 0.5 multiplied by 2 kg multiplied by (3 squared) = 1 multiplied by 9 = 9 Joules."
+    },
+    {
+      "question": "A rolling ball of mass 2 kg possesses exactly 100 Joules of energy in its kinetic store. Calculate the speed of the rolling ball.",
+      "options": [
+        "5 m per s",
+        "50 m per s",
+        "10 m per s",
+        "100 m per s"
+      ],
+      "correct": 2,
+      "points": 10,
+      "explanation": "Using KE = 0.5 multiplied by m multiplied by v², we substitute values: 100 = 0.5 multiplied by 2 multiplied by v², which simplifies to 100 = 1 multiplied by v². Taking the square root of 100 gives speed v = 10 m per s."
+    },
+    {
+      "question": "A passenger car cruising down an expressway decides to accelerate, doubling its speed. How does this affect its kinetic energy store?",
+      "options": [
+        "The kinetic energy store decreases by half",
+        "The kinetic energy store increases to double",
+        "The kinetic energy store remains completely unchanged",
+        "The kinetic energy store increases to four times its original value"
+      ],
+      "correct": 3,
+      "points": 10,
+      "explanation": "Kinetic energy is proportional to the square of the object's speed (v²). If the speed is doubled, the kinetic energy increases by a factor of 2 squared, which is 4 times."
+    }
+  ]
+}
