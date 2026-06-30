@@ -1,0 +1,299 @@
+{
+  "title": "O-Level Combined Science Physics: Radioactivity",
+  "topic": "Isotopes, Nature of Decay, Alpha, Beta, and Gamma Properties, and Nuclear Equations",
+  "subject": "Physics",
+  "level": "Secondary 4",
+  "grade": "O-Level",
+  "chapter": 17,
+  "worksheet": 2,
+  "questions": [
+    {
+      "question": "Which of the following statements best defines a pair of isotopes?",
+      "options": [
+        "Atoms with the same proton number but different neutron numbers",
+        "Atoms with the same mass number but different proton numbers",
+        "Atoms with identical numbers of neutrons but different electrons",
+        "Molecules that share the same chemical bonds but different masses"
+      ],
+      "correct": 0,
+      "points": 10,
+      "explanation": "Isotopes are atoms of the same element that contain the exact same number of protons but a different number of neutrons inside their nuclei."
+    },
+    {
+      "question": "In standard nuclide notation, where is the mass number of the nucleus positioned relative to the element symbol?",
+      "options": [
+        "As a subscript at the bottom left side",
+        "As a superscript at the top left side",
+        "As a subscript at the bottom right side",
+        "As a superscript at the top right side"
+      ],
+      "correct": 1,
+      "points": 10,
+      "explanation": "In standard nuclide notation, the mass number (total protons and neutrons) is written as a superscript at the top left of the element symbol."
+    },
+    {
+      "question": "A specific uranium nucleus is represented in nuclide notation with a top mass number of 235 and a bottom proton number of 92. Calculate the number of neutrons in this nucleus.",
+      "options": [
+        "Ninety-two neutrons",
+        "Two hundred and thirty-five neutrons",
+        "One hundred and forty-three neutrons",
+        "Three hundred and twenty-seven neutrons"
+      ],
+      "correct": 2,
+      "points": 10,
+      "explanation": "The number of neutrons is found by subtracting the proton number from the mass number: 235 minus 92 equals 143 neutrons."
+    },
+    {
+      "question": "Two different nuclei are confirmed to be isotopes of the same chemical element. Which property must be completely identical for both nuclei?",
+      "options": [
+        "Their total mass number",
+        "The number of neutrons inside the nucleus",
+        "Their rate of radioactive emission",
+        "Their chemical behavior and reactions"
+      ],
+      "correct": 3,
+      "points": 10,
+      "explanation": "Chemical properties are determined by the number of protons and electrons. Since isotopes have the same proton number, they share identical chemical behavior."
+    },
+    {
+      "question": "Which of the following best defines the process of radioactive decay?",
+      "options": [
+        "The unstable nucleus of an atom spontaneously emits radiation to become more stable",
+        "The outer valence electrons of an atom are shed to form a stable positive ion",
+        "Two light atomic nuclei combine under high temperatures to release massive energy",
+        "A giant molecular lattice collapses when heated beyond its boiling point threshold"
+      ],
+      "correct": 0,
+      "points": 10,
+      "explanation": "Radioactivity is the spontaneous and random emission of radiation from the unstable nucleus of an atom in order to achieve a more stable configuration."
+    },
+    {
+      "question": "The decay of a radioactive sample is described as a random process. What does the term random explicitly mean in this context?",
+      "options": [
+        "The type of radiation emitted changes constantly between particles",
+        "It is impossible to predict exactly which nucleus will decay at any given moment",
+        "The decay process occurs faster when the sample is exposed to bright light",
+        "The mass of the sample alternates unpredictably between heavy and light values"
+      ],
+      "correct": 1,
+      "points": 10,
+      "explanation": "A process is random because while we can predict the behavior of a large group of nuclei, we cannot identify the exact individual nucleus that will decay next."
+    },
+    {
+      "question": "Radioactive decay is also described as a spontaneous process. What does the term spontaneous signify?",
+      "options": [
+        "The decay only triggers when the sample is shaken violently",
+        "The emission occurs instantly when chemical catalysts are added",
+        "The rate of decay is completely unaffected by external physical conditions",
+        "The radiation requires an electric current pathway to begin emission"
+      ],
+      "correct": 2,
+      "points": 10,
+      "explanation": "Spontaneous means the decay process depends entirely on the internal instability of the nucleus and cannot be altered, accelerated, or stopped by changing temperature or pressure."
+    },
+    {
+      "question": "A sealed tube containing a radioactive isotope is heated from twenty degrees Celsius to two hundred degrees Celsius inside a laboratory oven. How does this temperature increase alter the rate of radioactive decay?",
+      "options": [
+        "The rate of decay doubles due to increased kinetic movement",
+        "The rate of decay drops to zero as the atoms expand",
+        "The radiation changes from alpha particles to gamma rays",
+        "The rate of decay remains completely unchanged"
+      ],
+      "correct": 3,
+      "points": 10,
+      "explanation": "Because nuclear decay is spontaneous, it is entirely independent of external conditions like temperature, pressure, or state of chemical combination."
+    },
+    {
+      "question": "A student places a radioactive source near a Geiger-Muller tube and monitors the count rate. Why does the recorded count rate fluctuate slightly from one second to the next?",
+      "options": [
+        "It provides direct experimental evidence of the random nature of radioactive decay",
+        "The sensor tube is experiencing electrical resistance drops inside its circuit",
+        "The radioactive source is changing its chemical bonding configuration",
+        "The air density between the source and the counter is changing constantly"
+      ],
+      "correct": 0,
+      "points": 10,
+      "explanation": "The continuous, minor fluctuations in count rate monitored by a counter over short intervals demonstrate that nuclear decay is fundamentally random."
+    },
+    {
+      "question": "What is the true physical composition and nature of an alpha particle?",
+      "options": [
+        "A single high speed electron ejected from the atomic cloud",
+        "A helium nucleus consisting of two protons and two neutrons",
+        "A high energy electromagnetic wave moving at the speed of light",
+        "A neutral subatomic particle located inside the central core"
+      ],
+      "correct": 1,
+      "points": 10,
+      "explanation": "An alpha particle is identical to a helium nucleus, consisting of a tightly bound cluster of two protons and two neutrons, giving it a net charge of positive two."
+    },
+    {
+      "question": "Which of the following correctly describes the ionizing power of alpha radiation compared to beta and gamma radiation?",
+      "options": [
+        "It is the weakest ionizing radiation because it has zero charge",
+        "It has a moderate ionizing power that matches high speed electrons",
+        "It is the strongest ionizing radiation due to its large mass and positive charge",
+        "Its ionizing power fluctuates depending on the temperature of the air medium"
+      ],
+      "correct": 2,
+      "points": 10,
+      "explanation": "Alpha particles are relatively massive and carry a positive two charge. This large size and high charge make them highly effective at knocking electrons off air molecules, giving them the strongest ionizing power."
+    },
+    {
+      "question": "An alpha particle is directed towards several barriers to test its penetrating ability. Which material is sufficient to absorb and stop alpha radiation completely?",
+      "options": [
+        "A thick block of dense lead solid material",
+        "A thin sheet of metallic aluminum foil",
+        "A deep pool of liquid water several meters wide",
+        "A single thin sheet of ordinary notebook paper"
+      ],
+      "correct": 3,
+      "points": 10,
+      "explanation": "Alpha radiation has very low penetrating power because it interacts strongly with matter due to its high ionizing nature. It can be stopped easily by a single thin sheet of paper or a few centimeters of air."
+    },
+    {
+      "question": "An unstable parent nucleus undergoes radioactive decay by emitting a single alpha particle. How do the mass number and proton number of the resulting daughter nucleus change?",
+      "options": [
+        "The mass number decreases by four and the proton number decreases by two",
+        "The mass number stays identical and the proton number increases by one",
+        "The mass number decreases by two and the proton number stays identical",
+        "Both numbers remain completely unchanged during the nuclear process"
+      ],
+      "correct": 0,
+      "points": 10,
+      "explanation": "An alpha particle carries away four units of mass and two protons. Therefore, the daughter nucleus loses four from its mass number and two from its proton number."
+    },
+    {
+      "question": "Alpha particles are directed horizontally into a uniform electric field where the top plate is positive and the bottom plate is negative. Describe the deflection path of the alpha particles.",
+      "options": [
+        "They pass straight through without experiencing any deflection forces",
+        "They deflect downwards in a gentle curve towards the negative plate",
+        "They turn back horizontally towards the source emitter device",
+        "They deflect upwards in a sharp curve towards the positive plate"
+      ],
+      "correct": 1,
+      "points": 10,
+      "explanation": "Alpha particles carry a positive two charge. Because opposite charges attract, they are deflected downward toward the negatively charged plate when passing through an electric field."
+    },
+    {
+      "question": "What is the true physical identity of a beta particle?",
+      "options": [
+        "A high energy electromagnetic wave photon unit",
+        "A massive cluster composed of two stable neutrons",
+        "A high speed electron ejected directly from an unstable nucleus",
+        "A positive subatomic packet located in the core matrix"
+      ],
+      "correct": 2,
+      "points": 10,
+      "explanation": "A beta particle is a high-speed electron that is generated and ejected from within an unstable nucleus during radioactive decay."
+    },
+    {
+      "question": "During beta decay, a beta particle is ejected from inside the nucleus. What structural change happens within the nucleus to generate this particle?",
+      "options": [
+        "A proton splits apart into two lighter neutral particles",
+        "An electron from the outer atomic shell collapses into the core",
+        "Two adjacent protons fuse together to create a heavy ion block",
+        "A neutron transforms into a proton and an ejected electron"
+      ],
+      "correct": 3,
+      "points": 10,
+      "explanation": "Beta decay occurs when a neutron inside an unstable nucleus transforms into a proton and an electron. The proton remains inside the nucleus, while the electron is ejected as a beta particle."
+    },
+    {
+      "question": "A beam of beta particles is directed towards an experimental shielding apparatus. Which of the following barriers is required to absorb and stop beta radiation completely?",
+      "options": [
+        "A sheet of aluminum foil a few millimeters thick",
+        "A thin piece of ordinary tissue paper tissue",
+        "A vacuum gap space spanning several kilometers",
+        "A thin layer of soft gas molecules at room pressure"
+      ],
+      "correct": 0,
+      "points": 10,
+      "explanation": "Beta particles have a moderate penetrating power that is greater than alpha but less than gamma. They can pass through paper but are stopped by a thin sheet of metal, such as a few millimeters of aluminum."
+    },
+    {
+      "question": "When an unstable nucleus decays by emitting a single beta particle, how are its mass number and proton number altered in the balanced nuclear equation?",
+      "options": [
+        "The mass number drops by one and the proton number stays the same",
+        "The mass number stays identical and the proton number increases by one",
+        "The mass number increases by one and the proton number drops by one",
+        "Both numbers drop by exactly two units simultaneously"
+      ],
+      "correct": 1,
+      "points": 10,
+      "explanation": "Because a neutron converts into a proton, the total number of nucleons (mass number) stays identical. However, the addition of a proton increases the atomic/proton number by one."
+    },
+    {
+      "question": "A beam containing both alpha particles and beta particles enters an electric field. How does the deflection of the beta particles compare to the deflection of the alpha particles?",
+      "options": [
+        "Beta particles deflect in the same direction but with a much smaller curve angle",
+        "Beta particles pass straight through while alpha particles deflect sharply",
+        "Beta particles deflect in the opposite direction and much more noticeably due to their tiny mass",
+        "Beta particles stop moving entirely while alpha particles speed up"
+      ],
+      "correct": 2,
+      "points": 10,
+      "explanation": "Beta particles are negatively charged, so they deflect in the opposite direction of positive alpha particles. Because an electron has a fraction of the mass of an alpha particle, it is deflected much more sharply by the same field strength."
+    },
+    {
+      "question": "What is the physical nature of gamma radiation?",
+      "options": [
+        "A stream of positive hydrogen ions traveling through space",
+        "A beam of fast moving neutrons ejected during fission splitting",
+        "A flow of negative charges traveling along a surface boundary",
+        "High energy electromagnetic radiation with short wavelengths"
+      ],
+      "correct": 3,
+      "points": 10,
+      "explanation": "Gamma rays are not particles; they are packets of high-energy electromagnetic radiation belonging to the short-wavelength end of the spectrum."
+    },
+    {
+      "question": "Which material configuration is required to significantly absorb and attenuate a beam of highly penetrating gamma rays?",
+      "options": [
+        "A few centimeters of dense lead blocks or thick structural concrete",
+        "A single layer of plastic wrap stretched across the source container",
+        "A wooden ruler positioned horizontally in front of the source beam",
+        "A sheet of drawing paper taped to the laboratory counter"
+      ],
+      "correct": 0,
+      "points": 10,
+      "explanation": "Gamma rays have exceptionally high penetrating power because they have no mass or charge. They can easily pass through paper and aluminum, requiring thick lead or dense concrete to be significantly absorbed."
+    },
+    {
+      "question": "How does the ionizing power of gamma rays compare to that of alpha and beta particles?",
+      "options": [
+        "It is the weakest ionizing radiation because gamma photons carry zero electric charge",
+        "It is identical to alpha radiation because both move at fast speeds",
+        "It is the strongest ionizing radiation because it carries infinite mass energy",
+        "It alters its ionizing power based on the volume of the sample container"
+      ],
+      "correct": 0,
+      "points": 10,
+      "explanation": "Gamma rays interact least with atoms because they are uncharged and massless. This makes them highly penetrating but gives them the weakest ionizing power of the three types of radiation."
+    },
+    {
+      "question": "Gamma radiation is directed horizontally through a pair of highly charged electrical plates. What is the observed trajectory of the gamma beam?",
+      "options": [
+        "It bends sharply upwards towards the positive terminal plate interface",
+        "It bends downwards towards the negative ground plate interface",
+        "It passes straight through without any deflection from its straight path",
+        "It reflects backwards along its original path toward the source"
+      ],
+      "correct": 2,
+      "points": 10,
+      "explanation": "Because gamma rays are electromagnetic waves with zero electric charge, they experience no electrical forces and pass through electric or magnetic fields without any deflection."
+    },
+    {
+      "question": "An excited nucleus releases excess energy by emitting a single gamma ray photon. What change occurs to its mass number and proton number within the balanced equation?",
+      "options": [
+        "The mass number drops by one and the proton number stays identical",
+        "The mass number stays identical and the proton number drops by one",
+        "Both the mass number and proton number drop by four units",
+        "Both the mass number and proton number remain completely unchanged"
+      ],
+      "correct": 3,
+      "points": 10,
+      "explanation": "Gamma emission involves the loss of excess energy from an unstable nucleus without changing the number of protons or neutrons. Therefore, both mass and proton numbers remain unchanged."
+    }
+  ]
+}
