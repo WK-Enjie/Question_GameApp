@@ -5,10 +5,10 @@
   "level": "Upper Secondary",
   "grade": "Sec 4",
   "chapter": 7,
-  "worksheet": 4,
+  "worksheet": 2,
   "questions": [
     {
-      "question": "A mixture containing 0.50 mol of magnesium metal and 0.80 mol of hydrochloric acid is allowed to react.\nReaction equation: Mg + 2HCl -> MgCl2 + H2\n\nIdentify the limiting reactant and calculate the quantity of the excess reactant remaining unreacted.",
+      "question": "A mixture containing 0.50 mol of magnesium metal and 0.80 mol of hydrochloric acid is allowed to react.\nReaction equation: Mg + 2HCl → MgCl₂ + H₂\n\nIdentify the limiting reactant and calculate the quantity of the excess reactant remaining unreacted.",
       "options": [
         "Limiting reactant: Mg; Excess remaining: 0.40 mol HCl",
         "Limiting reactant: HCl; Excess remaining: 0.10 mol Mg",
@@ -17,10 +17,10 @@
       ],
       "correct": 1,
       "points": 10,
-      "explanation": "According to the equation, 1 mole of Mg requires 2 moles of HCl. Thus, 0.50 mol of Mg would require 1.00 mol of HCl. Since we only have 0.80 mol of HCl, HCl is the limiting reactant. The 0.80 mol of HCl will react with 0.80 / 2 = 0.40 mol of Mg. Excess Mg remaining = 0.50 - 0.40 = 0.10 mol."
+      "explanation": "According to the equation, 1 mole of Mg requires 2 moles of HCl. Thus, 0.50 mol of Mg would require 1.00 mol of HCl. Since we only have 0.80 mol of HCl, HCl is the limiting reactant. The 0.80 mol of HCl will react with 0.80 divided by 2 = 0.40 mol of Mg. Excess Mg remaining = 0.50 minus 0.40 = 0.10 mol."
     },
     {
-      "question": "A 6.5 g sample of zinc powder is added to an aqueous solution containing 0.10 mol of silver nitrate.\nReaction equation: Zn + 2AgNO3 -> Zn(NO3)2 + 2Ag\n\nWhat is the maximum mass of solid silver metal that can be produced by this reaction?\n[Relative atomic masses: Zn = 65, Ag = 108]",
+      "question": "A 6.5 g sample of zinc powder is added to an aqueous solution containing 0.10 mol of silver nitrate.\nReaction equation: Zn + 2AgNO₃ → Zn(NO₃)₂ + 2Ag\n\nWhat is the maximum mass of solid silver metal that can be produced by this reaction?\n[Relative atomic masses: Zn = 65, Ag = 108]",
       "options": [
         "10.8 g",
         "21.6 g",
@@ -29,10 +29,10 @@
       ],
       "correct": 0,
       "points": 10,
-      "explanation": "Moles of Zn added = 6.5 g / 65 g/mol = 0.10 mol. According to the 1:2 stoichiometry, 0.10 mol of Zn requires 0.20 mol of AgNO3. Since we only have 0.10 mol of AgNO3, AgNO3 is the limiting reactant. The mole ratio of AgNO3 : Ag is 2 : 2 (or 1 : 1). Therefore, 0.10 mol of AgNO3 produces 0.10 mol of Ag metal. Mass of Ag = 0.10 mol x 108 g/mol = 10.8 g."
+      "explanation": "Moles of Zn added = 6.5 g divided by 65 g per mol = 0.10 mol. According to the 1 to 2 stoichiometry, 0.10 mol of Zn requires 0.20 mol of AgNO₃. Since we only have 0.10 mol of AgNO₃, AgNO₃ is the limiting reactant. The mole ratio of AgNO₃ to Ag is 2 to 2 (or 1 to 1). Therefore, 0.10 mol of AgNO₃ produces 0.10 mol of Ag metal. Mass of Ag = 0.10 mol multiplied by 108 g per mol = 10.8 g."
     },
     {
-      "question": "Nitrogen and hydrogen gases react to form ammonia in the Haber Process: N2 + 3H2 -> 2NH3. In a pilot study, a reaction setup using 2.0 moles of nitrogen gas and excess hydrogen has a theoretical maximum yield of 68 g of ammonia. If the plant actually isolates 51 g of ammonia, what is the percentage yield?\n[Relative atomic masses: H = 1, N = 14]",
+      "question": "Nitrogen and hydrogen gases react to form ammonia in the Haber Process: N₂ + 3H₂ → 2NH₃. In a pilot study, a reaction setup using 2.0 moles of nitrogen gas and excess hydrogen has a theoretical maximum yield of 68 g of ammonia. If the plant actually isolates 51 g of ammonia, what is the percentage yield?\n[Relative atomic masses: H = 1, N = 14]",
       "options": [
         "68%",
         "50%",
@@ -41,10 +41,10 @@
       ],
       "correct": 3,
       "points": 10,
-      "explanation": "Percentage Yield = (Actual Yield / Theoretical Yield) x 100%. Given that the actual yield is 51 g and the theoretical yield is 68 g, the calculation is (51 / 68) x 100% = 75%."
+      "explanation": "Percentage Yield = (Actual Yield divided by Theoretical Yield) multiplied by 100%. Given that the actual yield is 51 g and the theoretical yield is 68 g, the calculation is (51 divided by 68) multiplied by 100% = 75%."
     },
     {
-      "question": "A 10.0 g sample of impure limestone (chiefly calcium carbonate, CaCO3) is reacted with excess dilute hydrochloric acid. The reaction generates 1.92 dm3 of carbon dioxide gas measured at r.t.p.\nReaction equation: CaCO3 + 2HCl -> CaCl2 + H2O + CO2\n\nCalculate the percentage purity of the calcium carbonate sample.\n[Relative atomic masses: C = 12, O = 16, Ca = 40; Molar volume of gas = 24 dm3/mol at r.t.p.]",
+      "question": "A 10.0 g sample of impure limestone (chiefly calcium carbonate, CaCO₃) is reacted with excess dilute hydrochloric acid. The reaction generates 1.92 dm³ of carbon dioxide gas measured at r.t.p.\nReaction equation: CaCO₃ + 2HCl → CaCl₂ + H₂O + CO₂\n\nCalculate the percentage purity of the calcium carbonate sample.\n[Relative atomic masses: C = 12, O = 16, Ca = 40; Molar volume of gas = 24 dm³ per mol at r.t.p.]",
       "options": [
         "19.2%",
         "80.0%",
@@ -53,34 +53,34 @@
       ],
       "correct": 1,
       "points": 10,
-      "explanation": "Moles of CO2 produced = 1.92 dm3 / 24 dm3/mol = 0.080 mol. Because the mole ratio of CaCO3 : CO2 is 1 : 1, the mass of pure CaCO3 present = 0.080 mol x Mr of CaCO3 (100 g/mol) = 8.0 g. Percentage purity = (Mass of pure substance / Total mass of impure sample) x 100% = (8.0 g / 10.0 g) x 100% = 80.0%."
+      "explanation": "Moles of CO₂ produced = 1.92 dm³ divided by 24 dm³ per mol = 0.080 mol. Because the mole ratio of CaCO₃ to CO₂ is 1 to 1, the mass of pure CaCO₃ present = 0.080 mol multiplied by Mr of CaCO₃ (100 g per mol) = 8.0 g. Percentage purity = (Mass of pure substance divided by Total mass of impure sample) multiplied by 100% = (8.0 g divided by 10.0 g) multiplied by 100% = 80.0%."
     },
     {
       "question": "An oxide of iron extracted from an ore is found to contain 70.0% iron and 30.0% oxygen by mass. Deduce its empirical formula.\n[Relative atomic masses: O = 16, Fe = 56]",
       "options": [
         "FeO",
-        "Fe3O4",
-        "Fe2O3",
-        "FeO2"
+        "Fe₃O₄",
+        "Fe₂O₃",
+        "FeO₂"
       ],
       "correct": 2,
       "points": 10,
-      "explanation": "Mole calculation: Moles of Fe = 70.0 / 56 = 1.25 mol. Moles of O = 30.0 / 16 = 1.875 mol. To find the simplest whole-number ratio, divide both values by the smallest number of moles (1.25): Fe = 1.25 / 1.25 = 1, O = 1.875 / 1.25 = 1.5. Multiplying by 2 to eliminate the decimal gives a simple ratio of Fe : O = 2 : 3, giving the empirical formula Fe2O3."
+      "explanation": "Mole calculation: Moles of Fe = 70.0 divided by 56 = 1.25 mol. Moles of O = 30.0 divided by 16 = 1.875 mol. To find the simplest whole-number ratio, divide both values by the smallest number of moles (1.25): Fe = 1.25 divided by 1.25 = 1, O = 1.875 divided by 1.25 = 1.5. Multiplying by 2 to eliminate the decimal gives a simple ratio of Fe to O = 2 to 3, giving the empirical formula Fe₂O₃."
     },
     {
       "question": "The complete combustion of 3.0 g of an unknown organic hydrocarbon compound yields 8.8 g of carbon dioxide gas and 5.4 g of liquid water. Determine the empirical formula of the hydrocarbon.\n[Relative atomic masses: H = 1, C = 12, O = 16]",
       "options": [
-        "CH2",
-        "CH3",
-        "C2H5",
+        "CH₂",
+        "CH₃",
+        "C₂H₅",
         "CH"
       ],
       "correct": 1,
       "points": 10,
-      "explanation": "Moles of C atoms = Moles of CO2 produced = 8.8 g / 44 g/mol = 0.20 mol. Moles of H atoms = 2 x Moles of H2O produced = 2 x (5.4 g / 18 g/mol) = 2 x 0.30 mol = 0.60 mol. The atomic ratio of C : H is 0.20 : 0.60, which simplifies directly to 1 : 3. The empirical formula is therefore CH3."
+      "explanation": "Moles of C atoms = Moles of CO₂ produced = 8.8 g divided by 44 g per mol = 0.20 mol. Moles of H atoms = 2 multiplied by Moles of H₂O produced = 2 multiplied by (5.4 g divided by 18 g per mol) = 2 multiplied by 0.30 mol = 0.60 mol. The atomic ratio of C to H is 0.20 to 0.60, which simplifies directly to 1 to 3. The empirical formula is therefore CH₃."
     },
     {
-      "question": "A 5.00 g sample of hydrated copper(II) sulfate crystals (CuSO4 . xH2O) is heated strongly in a crucible until it changes completely into blue-white anhydrous copper(II) sulfate powder. The remaining dry mass is 3.20 g. Find the integer value of x.\n[Relative structural masses: H2O = 18, CuSO4 = 160]",
+      "question": "A 5.00 g sample of hydrated copper(II) sulfate crystals (CuSO₄ • xH₂O) is heated strongly in a crucible until it changes completely into blue-white anhydrous copper(II) sulfate powder. The remaining dry mass is 3.20 g. Find the integer value of x.\n[Relative structural masses: H₂O = 18, CuSO₄ = 160]",
       "options": [
         "2",
         "5",
@@ -89,10 +89,10 @@
       ],
       "correct": 1,
       "points": 10,
-      "explanation": "Mass of water lost upon heating = 5.00 g - 3.20 g = 1.80 g. Moles of anhydrous CuSO4 remaining = 3.20 g / 160 g/mol = 0.020 mol. Moles of H2O driven off = 1.80 g / 18 g/mol = 0.10 mol. Ratio of water to salt (x) = Moles of H2O / Moles of CuSO4 = 0.10 / 0.020 = 5. Thus, the formula is CuSO4 . 5H2O."
+      "explanation": "Mass of water lost upon heating = 5.00 g minus 3.20 g = 1.80 g. Moles of anhydrous CuSO₄ remaining = 3.20 g divided by 160 g per mol = 0.020 mol. Moles of H₂O driven off = 1.80 g divided by 18 g per mol = 0.10 mol. Ratio of water to salt (x) = Moles of H₂O divided by Moles of CuSO₄ = 0.10 divided by 0.020 = 5. Thus, the formula is CuSO₄ • 5H₂O."
     },
     {
-      "question": "When 25.0 cm3 of 0.20 mol/dm3 barium chloride (BaCl2) solution is mixed with 50.0 cm3 of 0.15 mol/dm3 sodium sulfate (Na2SO4) solution, a white precipitate forms.\nNet ionic equation: Ba2+(aq) + SO42-(aq) -> BaSO4(s)\n\nCalculate the mass of the dry barium sulfate precipitate formed.\n[Relative atomic masses: O = 16, S = 32, Ba = 137]",
+      "question": "When 25.0 cm³ of 0.20 mol per dm³ barium chloride (BaCl₂) solution is mixed with 50.0 cm³ of 0.15 mol per dm³ sodium sulfate (Na₂SO₄) solution, a white precipitate forms.\nNet ionic equation: Ba²⁺(aq) + SO₄²⁻(aq) → BaSO₄(s)\n\nCalculate the mass of the dry barium sulfate precipitate formed.\n[Relative atomic masses: O = 16, S = 32, Ba = 137]",
       "options": [
         "1.19 g",
         "1.75 g",
@@ -101,10 +101,10 @@
       ],
       "correct": 0,
       "points": 10,
-      "explanation": "Moles of Ba2+ ions introduced = 0.025 dm3 x 0.20 mol/dm3 = 0.0050 mol. Moles of SO42- ions introduced = 0.050 dm3 x 0.15 mol/dm3 = 0.0075 mol. The Ba2+ ion is the limiting reactant because it requires a 1:1 ratio. Moles of BaSO4 precipitate formed = 0.0050 mol. Molar mass (Mr) of BaSO4 = 137 + 32 + (16 x 4) = 237 g/mol. Mass = 0.0050 mol x 237 g/mol = 1.185 g, which rounds to 1.19 g."
+      "explanation": "Moles of Ba²⁺ ions introduced = 0.025 dm³ multiplied by 0.20 mol per dm³ = 0.0050 mol. Moles of SO₄²⁻ ions introduced = 0.050 dm³ multiplied by 0.15 mol per dm³ = 0.0075 mol. The Ba²⁺ ion is the limiting reactant because it requires a 1 to 1 ratio. Moles of BaSO₄ precipitate formed = 0.0050 mol. Molar mass (Mr) of BaSO₄ = 137 + 32 + (16 multiplied by 4) = 237 g per mol. Mass = 0.0050 mol multiplied by 237 g per mol = 1.185 g, which rounds to 1.19 g."
     },
     {
-      "question": "A sample of impure zinc metal weighing 5.00 g is treated with excess dilute sulfuric acid, yielding 1.20 dm3 of hydrogen gas at r.t.p. Zinc is the only active metal component in the sample.\nReaction equation: Zn + H2SO4 -> ZnSO4 + H2\n\nCalculate the percentage purity of the zinc sample.\n[Relative atomic mass: Zn = 65; Molar volume of gas = 24 dm3/mol at r.t.p.]",
+      "question": "A sample of impure zinc metal weighing 5.00 g is treated with excess dilute sulfuric acid, yielding 1.20 dm³ of hydrogen gas at r.t.p. Zinc is the only active metal component in the sample.\nReaction equation: Zn + H₂SO₄ → ZnSO₄ + H₂\n\nCalculate the percentage purity of the zinc sample.\n[Relative atomic mass: Zn = 65; Molar volume of gas = 24 dm³ per mol at r.t.p.]",
       "options": [
         "32.5%",
         "50.0%",
@@ -113,19 +113,19 @@
       ],
       "correct": 2,
       "points": 10,
-      "explanation": "Moles of H2 gas evolved = 1.20 dm3 / 24 dm3/mol = 0.050 mol. Based on the 1:1 reaction stoichiometry, the moles of pure zinc present = 0.050 mol. Mass of pure zinc = 0.050 mol x 65 g/mol = 3.25 g. Percentage purity = (3.25 g / 5.00 g) x 100% = 65.0%."
+      "explanation": "Moles of H₂ gas evolved = 1.20 dm³ divided by 24 dm³ per mol = 0.050 mol. Based on the 1 to 1 reaction stoichiometry, the moles of pure zinc present = 0.050 mol. Mass of pure zinc = 0.050 mol multiplied by 65 g per mol = 3.25 g. Percentage purity = (3.25 g divided by 5.00 g) multiplied by 100% = 65.0%."
     },
     {
-      "question": "What volume of 0.10 mol/dm3 silver nitrate solution (AgNO3) is exactly required to precipitate all the chloride ions present in 20.0 cm3 of an aqueous 0.15 mol/dm3 iron(III) chloride solution (FeCl3)?\nNet ionic equation: Ag+(aq) + Cl-(aq) -> AgCl(s)",
+      "question": "What volume of 0.10 mol per dm³ silver nitrate solution (AgNO₃) is exactly required to precipitate all the chloride ions present in 20.0 cm³ of an aqueous 0.15 mol per dm³ iron(III) chloride solution (FeCl₃)?\nNet ionic equation: Ag⁺(aq) + Cl⁻(aq) → AgCl(s)",
       "options": [
-        "30.0 cm3",
-        "60.0 cm3",
-        "90.0 cm3",
-        "20.0 cm3"
+        "30.0 cm³",
+        "60.0 cm³",
+        "90.0 cm³",
+        "20.0 cm³"
       ],
       "correct": 2,
       "points": 10,
-      "explanation": "Moles of FeCl3 solute = 0.0200 dm3 x 0.15 mol/dm3 = 0.0030 mol. Since each formula unit of FeCl3 releases three chloride ions, total moles of Cl- = 0.0030 mol x 3 = 0.0090 mol. Based on the 1:1 ionic ratio, 0.0090 mol of Ag+ ions is required. Volume of AgNO3 needed = Moles / Concentration = 0.0090 mol / 0.10 mol/dm3 = 0.0900 dm3 = 90.0 cm3."
+      "explanation": "Moles of FeCl₃ solute = 0.0200 dm³ multiplied by 0.15 mol per dm³ = 0.0030 mol. Since each formula unit of FeCl₃ releases three chloride ions, total moles of Cl⁻ = 0.0030 mol multiplied by 3 = 0.0090 mol. Based on the 1 to 1 ionic ratio, 0.0090 mol of Ag⁺ ions is required. Volume of AgNO₃ needed = Moles divided by Concentration = 0.0090 mol divided by 0.10 mol per dm³ = 0.0900 dm³ = 90.0 cm³."
     }
   ]
 }
