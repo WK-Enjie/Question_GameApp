@@ -1,0 +1,175 @@
+{
+  "title": "Sec 2 Mathematics Worksheet – Direct and Inverse Proportion",
+  "topic": "Direct and Inverse Proportion, Scaling Methods, Percentage Changes, and Identifying Proportional Relationships",
+  "subject": "Mathematics",
+  "level": "Secondary",
+  "grade": "Sec 2",
+  "chapter": 7,
+  "worksheet": 3,
+  "questions": [
+    {
+      "question": "Given that y is directly proportional to x, and y = 15 when x = 6, find the value of y when x = 14 without finding the constant of proportionality k.",
+      "options": ["28", "30", "35", "42"],
+      "correct": 2,
+      "points": 10,
+      "time": 90,
+      "explanation": "Since y is directly proportional to x, the ratio y/x remains constant. Therefore, y1/x1 = y2/x2. Substituting the values gives 15/6 = y/14. Solving for y: y = (15/6) * 14 = 2.5 * 14 = 35."
+    },
+    {
+      "question": "Given that p is inversely proportional to q, and p = 9 when q = 8, find the value of p when q = 6 without finding the constant of proportionality k.",
+      "options": ["6.75", "10.5", "12", "54"],
+      "correct": 2,
+      "points": 10,
+      "time": 90,
+      "explanation": "Since p is inversely proportional to q, the product p * q remains constant. Therefore, p1 * q1 = p2 * q2. Substituting the values gives 9 * 8 = p * 6. Solving for p: 72 = 6p => p = 12."
+    },
+    {
+      "question": "The variable A is directly proportional to the square of B. When B = 3, A = 18. Find the value of A when B = 5 without calculating the constant k.",
+      "options": ["30", "45", "50", "90"],
+      "correct": 2,
+      "points": 12,
+      "time": 100,
+      "explanation": "Since A is directly proportional to B^2, the ratio A / B^2 is constant. We set up the proportion: A1 / (B1^2) = A2 / (B2^2). Substituting the numbers gives 18 / (3^2) = A / (5^2) => 18 / 9 = A / 25 => 2 = A / 25 => A = 50."
+    },
+    {
+      "question": "The variable m is inversely proportional to the square root of n. When n = 16, m = 6. Without finding the constant k, calculate the value of m when n = 36.",
+      "options": ["2.67", "4", "9", "13.5"],
+      "correct": 1,
+      "points": 12,
+      "time": 110,
+      "explanation": "Since m is inversely proportional to sqrt(n), the product m * sqrt(n) is constant. Therefore, m1 * sqrt(n1) = m2 * sqrt(n2). Substituting the numbers gives 6 * sqrt(16) = m * sqrt(36) => 6 * 4 = m * 6 => 24 = 6m => m = 4."
+    },
+    {
+      "question": "The cost of printing customized flyers is directly proportional to the number of copies ordered. If printing 250 copies costs $35, find the cost of printing 600 copies using proportional scaling directly.",
+      "options": ["$60", "$70", "$84", "$96"],
+      "correct": 2,
+      "points": 10,
+      "time": 90,
+      "explanation": "Let C be the cost and N be the number of copies. Since C is directly proportional to N, C1/N1 = C2/N2. Substituting values: 35 / 250 = C / 600. Solving for C: C = (35 / 250) * 600 = 0.14 * 600 = $84."
+    },
+    {
+      "question": "The time taken to complete a paint job is inversely proportional to the number of painters assigned to the task. If 4 painters can complete the job in 6 hours, how many hours will it take 3 painters to complete the same job?",
+      "options": ["4.5 hours", "5 hours", "8 hours", "12 hours"],
+      "correct": 2,
+      "points": 10,
+      "time": 90,
+      "explanation": "Let T be the time and P be the number of painters. Since T is inversely proportional to P, P1 * T1 = P2 * T2. Substituting values gives 4 * 6 = 3 * T => 24 = 3T => T = 8 hours."
+    },
+    {
+      "question": "If y is directly proportional to x, and the value of x is increased by exactly 25%, calculate the corresponding percentage change in the value of y.",
+      "options": ["Decrease of 25%", "Increase of 20%", "Increase of 25%", "Increase of 56.25%"],
+      "correct": 2,
+      "points": 12,
+      "time": 100,
+      "explanation": "Since y is directly proportional to x, y = kx. When x increases by 25%, the new value of x becomes 1.25x. Substituting this gives New y = k * (1.25x) = 1.25 * (kx) = 1.25y. This represents a perfect 25% increase in y."
+    },
+    {
+      "question": "Given that p is inversely proportional to q, determine the percentage change that occurs in p if the value of q is increased by 25%.",
+      "options": ["Decrease of 20%", "Decrease of 25%", "Increase of 20%", "Increase of 25%"],
+      "correct": 0,
+      "points": 14,
+      "time": 120,
+      "explanation": "Since p is inversely proportional to q, p = k/q. When q increases by 25%, the new value of q is 1.25q. New p = k / (1.25q) = (1 / 1.25) * (k/q) = 0.8p. A drop from 1.0p to 0.8p means the value of p has experienced a decrease of 20%."
+    },
+    {
+      "question": "The area, A, of a circular reflective sheet is directly proportional to the square of its radius, r. If the radius increases by 10% under thermal expansion, calculate the percentage increase in its total surface area.",
+      "options": ["10%", "20%", "21%", "44%"],
+      "correct": 2,
+      "points": 14,
+      "time": 120,
+      "explanation": "The relationship is A = k * r^2. When r increases by 10%, new r = 1.1r. Substituting this gives New A = k * (1.1r)^2 = k * 1.21 * r^2 = 1.21A. The factor shifted from 1.00 to 1.21, which represents an increase of 21%."
+    },
+    {
+      "question": "The pulling force between two magnetic components is inversely proportional to the square of the distance, d, between them. If the distance is doubled, determine the percentage decrease in the magnetic pulling force.",
+      "options": ["25%", "50%", "75%", "100%"],
+      "correct": 2,
+      "points": 14,
+      "time": 130,
+      "explanation": "The relationship is F = k / d^2. When the distance is doubled, new d = 2d. Substituting this into the formula gives New F = k / (2d)^2 = k / (4d^2) = 0.25F. The force drops to 25% of its original value, which means it decreased by 100% - 25% = 75%."
+    },
+    {
+      "question": "The extension length of a structural spring is directly proportional to the mass hung on it. If the mass attached to the spring is reduced by 15%, find the percentage decrease in the extension length of the spring.",
+      "options": ["7.5%", "15%", "30%", "85%"],
+      "correct": 1,
+      "points": 12,
+      "time": 90,
+      "explanation": "In a direct proportion relationship (E = km), any percentage scaling factor applies identically to both variables. Reducing the independent mass variable by 15% causes an identical 15% reduction in the dependent extension length."
+    },
+    {
+      "question": "Variable z is directly proportional to the cube of w. If the value of w is decreased by 20%, calculate the net percentage decrease in the value of z.",
+      "options": ["20.0%", "48.8%", "51.2%", "60.0%"],
+      "correct": 1,
+      "points": 14,
+      "time": 130,
+      "explanation": "The relationship is z = k * w^3. When w is decreased by 20%, new w = 0.8w. Substituting this gives New z = k * (0.8w)^3 = k * 0.512 * w^3 = 0.512z. The new value is 51.2% of the original, meaning it decreased by 100% - 51.2% = 48.8%."
+    },
+    {
+      "question": "A research student records a set of data points for variables x and y:\nx: 2, 4, 6\ny: 12, 6, 4\nAnalyze the dataset to determine the structural relationship between x and y.",
+      "options": [
+        "y is directly proportional to x",
+        "y is inversely proportional to x",
+        "y is directly proportional to x^2",
+        "x and y are neither directly nor inversely proportional"
+      ],
+      "correct": 1,
+      "points": 12,
+      "time": 100,
+      "explanation": "Test the products and quotients of the data pairs. Checking the products: 2 * 12 = 24, 4 * 6 = 24, 6 * 4 = 24. Since the product x * y is a constant value (24), y is inversely proportional to x."
+    },
+    {
+      "question": "Which of the following algebraic equations represents a scenario where y is directly proportional to x?",
+      "options": ["y = 3/x", "y = 4x + 2", "y = 0.5x", "xy = 10"],
+      "correct": 2,
+      "points": 10,
+      "time": 80,
+      "explanation": "A direct proportion between x and y must strictly fit the form y = kx, where k is a non-zero constant. Looking at the options, y = 0.5x fits this template perfectly. y = 4x + 2 does not qualify due to the added constant (+2)."
+    },
+    {
+      "question": "A quality control specialist tracks two metrics, m and n, and compiles them into a table:\nm: 3, 5, 8\nn: 9, 15, 24\nDetermine the definitive relationship between m and n.",
+      "options": [
+        "n is directly proportional to m",
+        "n is inversely proportional to m",
+        "n is directly proportional to m^2",
+        "m and n are neither directly nor inversely proportional"
+      ],
+      "correct": 0,
+      "points": 12,
+      "time": 90,
+      "explanation": "Test the values by calculating the quotients n/m for each column: 9/3 = 3, 15/5 = 3, 24/8 = 3. Because the ratio n/m yields a constant value (3), n is directly proportional to m."
+    },
+    {
+      "question": "If variable y is inversely proportional to variable x, what happens to the absolute value of y if x is multiplied by a factor of 5?",
+      "options": [
+        "y is multiplied by 5",
+        "y is multiplied by 25",
+        "y is divided by 5",
+        "y remains completely unchanged"
+      ],
+      "correct": 2,
+      "points": 10,
+      "time": 80,
+      "explanation": "The inverse relation implies that multiplying one variable by a constant factor requires the other variable to be divided by that exact same factor to keep the product constant: (5x) * (y/5) = xy = k."
+    },
+    {
+      "question": "An analyst reviews a relationship between parameters a and b using a test chart:\na: 1, 2, 3\nb: 5, 6, 7\nDetermine the specific proportion classification of this data set.",
+      "options": [
+        "b is directly proportional to a",
+        "b is inversely proportional to a",
+        "a and b are neither directly nor inversely proportional",
+        "b is directly proportional to a^2"
+      ],
+      "correct": 2,
+      "points": 12,
+      "time": 100,
+      "explanation": "Check quotients: 5/1 = 5, 6/2 = 3 (not constant, so not direct). Check products: 1 * 5 = 5, 2 * 6 = 12 (not constant, so not inverse). The underlying rule is b = a + 4. While linear, it represents a relationship that is neither directly nor inversely proportional."
+    },
+    {
+      "question": "Identify which of the following expressions defines a relationship where y is inversely proportional to the square of x.",
+      "options": ["y = 5x^2", "y = 5/x", "y = 5/x^2", "x^2 = 5y"],
+      "correct": 2,
+      "points": 10,
+      "time": 80,
+      "explanation": "An inverse proportion with the square of x requires the algebraic structure y = k / x^2. The equation y = 5 / x^2 matches this requirement, where the constant k equals 5."
+    }
+  ]
+}
