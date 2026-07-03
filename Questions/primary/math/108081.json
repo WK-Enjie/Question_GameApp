@@ -1,0 +1,149 @@
+{
+  "title": "P5/6 Revision Worksheet 2 – Advanced Rate & Double-If Heuristics",
+  "questions": [
+    {
+      "question": "Worker A prints 60 pages in 3 minutes, while Worker B prints 60 pages in 4 minutes. If both workers print concurrently, how many minutes will they take to print a total of 350 pages?",
+      "options": ["8 minutes", "10 minutes", "12 minutes", "14 minutes"],
+      "correct": 1,
+      "points": 12,
+      "time": 270,
+      "explanation": "Step 1: Find individual printing rates. Worker A rate = 60 / 3 = 20 pages per minute. Worker B rate = 60 / 4 = 15 pages per minute. Step 2: Find the combined rate. Combined rate = 20 + 15 = 35 pages per minute. Step 3: Divide total pages by the combined rate. Time = 350 / 35 = 10 minutes."
+    },
+    {
+      "question": "Machine X seals 40 packaging boxes per minute. Machine Y seals 50 packaging boxes per minute. Machine X starts running at 09 00. Machine Y is turned on to assist at 09 10. Find the total number of boxes sealed by both machines by 09 20.",
+      "options": ["900", "1100", "1200", "1300"],
+      "correct": 3,
+      "points": 12,
+      "time": 270,
+      "explanation": "Step 1: Calculate the duration each machine operates. Machine X runs from 09 00 to 09 20 (20 minutes). Machine Y runs from 09 10 to 09 20 (10 minutes). Step 2: Find the number of boxes sealed by each machine. Machine X output = 20 * 40 = 800 boxes. Machine Y output = 10 * 50 = 500 boxes. Step 3: Sum the outputs together. Total output = 800 + 500 = 1300 boxes."
+    },
+    {
+      "question": "If a printing machine runs for 5 hours, it leaves 120 pages of a document run unprinted. If it runs for 8 hours instead, it overproduces the required document run target by exactly 60 pages. Find the constant hourly printing rate of the machine.",
+      "options": ["45 pages/h", "50 pages/h", "60 pages/h", "80 pages/h"],
+      "correct": 2,
+      "points": 14,
+      "time": 300,
+      "explanation": "Step 1: Identify the difference in time between the two scenarios. Time difference = 8 - 5 = 3 hours. Step 2: Analyze the difference in total output. Moving from a shortage of 120 pages to a surplus of 60 pages means a net change of 120 + 60 = 180 pages. Step 3: Divide the page difference by the time difference to find the hourly rate. Rate = 180 / 3 = 60 pages per hour."
+    },
+    {
+      "question": "A production line engine consumes 2.5 litres of fuel per hour for the first 4 hours of operation, and then consumes 3 litres of fuel per hour for any subsequent hours. Calculate the total fuel used if the machine runs continuously for 7 hours.",
+      "options": ["17.5 litres", "19.0 litres", "20.5 litres", "21.0 litres"],
+      "correct": 1,
+      "points": 12,
+      "time": 270,
+      "explanation": "Step 1: Calculate the fuel consumed during the first phase. First 4 hours = 4 * 2.5 = 10 litres. Step 2: Calculate the fuel consumed during the second phase. Remaining hours = 7 - 4 = 3 hours. Value used = 3 * 3 = 9 litres. Step 3: Sum both fuel consumption quantities. Total fuel = 10 + 9 = 19.0 litres."
+    },
+    {
+      "question": "A custom printing agency charges $0.15 per document page for the first 100 pages printed, and a discounted rate of $0.10 per page for any subsequent pages. Find the total printing cost for a report containing 350 pages.",
+      "options": ["$35.00", "$40.00", "$45.00", "$52.50"],
+      "correct": 1,
+      "points": 12,
+      "time": 240,
+      "explanation": "Step 1: Calculate the cost for the first tier of pages. First 100 pages = 100 * $0.15 = $15. Step 2: Determine the remaining pages and calculate their cost. Remaining pages = 350 - 100 = 250 pages. Cost for tier 2 = 250 * $0.10 = $25. Step 3: Combine both cost subtotals. Total cost = $15 + $25 = $40."
+    },
+    {
+      "question": "Three identical copier machines working together can print 180 pages in 2 minutes. All 3 machines start printing a massive 900-page document simultaneously. After 4 minutes, one of the machines breaks down. How many additional minutes will the remaining two machines take to finish the printing job?",
+      "options": ["6 minutes", "8 minutes", "9 minutes", "10 minutes"],
+      "correct": 2,
+      "points": 14,
+      "time": 330,
+      "explanation": "Step 1: Find the production rate. Combined rate of 3 machines = 180 / 2 = 90 pages per minute. Rate of 1 machine = 90 / 3 = 30 pages per minute. Step 2: Calculate pages printed in the first 4 minutes. Pages printed = 4 * 90 = 360 pages. Step 3: Find the remaining pages to print. Remaining pages = 900 - 360 = 540 pages. Step 4: Find the combined rate of the 2 remaining machines. New combined rate = 2 * 30 = 60 pages per minute. Step 5: Divide remaining pages by new rate. Additional time = 540 / 60 = 9 minutes."
+    },
+    {
+      "question": "If a baker works at a constant daily rate for 4 days, he remains 15 cakes short of completing a large wedding celebration order. If he works at the exact same daily rate for 7 days instead, he successfully produces 30 cakes more than the required order target. Find his daily cake baking rate.",
+      "options": ["10 cakes/day", "12 cakes/day", "15 cakes/day", "20 cakes/day"],
+      "correct": 2,
+      "points": 14,
+      "time": 300,
+      "explanation": "Step 1: Find the difference in days between the two working targets. Difference in time = 7 - 4 = 3 days. Step 2: Combine the shortage and surplus values to evaluate the output gap closed during those extra days. Output gap = 15 + 30 = 45 cakes. Step 3: Divide the output gap by the time difference to find the daily rate. Rate = 45 / 3 = 15 cakes per day."
+    },
+    {
+      "question": "A sports shop charges $6.00 for the first hour of bicycle rental, and $4.00 for every subsequent half hour (or part thereof). John rents a bicycle from 13 15 to 15 45 on the same day. Calculate the total cost of his bicycle rental.",
+      "options": ["$14.00", "$16.00", "$18.00", "$22.00"],
+      "correct": 2,
+      "points": 14,
+      "time": 300,
+      "explanation": "Step 1: Calculate the total rental duration. From 13 15 to 15 45 is 2 hours and 30 minutes. Step 2: Deduct the first hour and account for its cost. First hour cost = $6.00. Remaining duration = 1 hour and 30 minutes. Step 3: Split the remaining time into 30-minute blocks. 1 hour 30 minutes = 3 blocks of 30 minutes. Step 4: Calculate subsequent cost and add to the initial cost. Subsequent cost = 3 * $4.00 = $12.00. Total cost = $6.00 + $12.00 = $18.00."
+    },
+    {
+      "question": "Chef A can bake 45 cupcakes in an hour, while Chef B can bake 60 cupcakes in an hour. They are tasked to prepare a total of 300 cupcakes. If Chef A works alone for 2 hours and then Chef B joins him to work concurrently, what is the total number of hours Chef A spends baking?",
+      "options": ["3 hours", "4 hours", "5 hours", "6 hours"],
+      "correct": 1,
+      "points": 14,
+      "time": 315,
+      "explanation": "Step 1: Find cupcakes baked by Chef A during his solo shift. 2 hours * 45 cupcakes per hour = 90 cupcakes. Step 2: Find the remaining number of cupcakes left to bake. Remaining cupcakes = 300 - 90 = 210 cupcakes. Step 3: Find the combined baking rate. Combined rate = 45 + 60 = 105 cupcakes per hour. Step 4: Compute the time spent working together. Shared time = 210 / 105 = 2 hours. Step 5: Sum Chef A's solo time and shared time. Total time for Chef A = 2 + 2 = 4 hours."
+    },
+    {
+      "question": "An automated parcel packaging line wraps 120 parcels during the first 30 minutes of a shift, and then wraps another 150 parcels at a constant rate of 5 parcels per minute. What is the average rate of packaging for the entire session in parcels per minute?",
+      "options": ["4.0 parcels/min", "4.2 parcels/min", "4.5 parcels/min", "5.0 parcels/min"],
+      "correct": 2,
+      "points": 14,
+      "time": 285,
+      "explanation": "Step 1: Find the duration of the second phase. Time for second phase = 150 parcels / 5 parcels per minute = 30 minutes. Step 2: Find the total number of parcels wrapped. Total parcels = 120 + 150 = 270 parcels. Step 3: Find the total time elapsed. Total time = 30 minutes + 30 minutes = 60 minutes. Step 4: Divide total parcels by total time to find average rate. Average rate = 270 / 60 = 4.5 parcels per minute."
+    },
+    {
+      "question": "An inlet water pipe pours water into a storage tank at a constant rate. If the pipe runs for 20 minutes, it still needs another 45 litres of water to fill the tank completely. If it runs for 35 minutes instead, 15 litres of water overflow from the filled tank. Find the volumetric filling rate of the pipe per minute.",
+      "options": ["3 litres/min", "4 litres/min", "5 litres/min", "6 litres/min"],
+      "correct": 1,
+      "points": 14,
+      "time": 300,
+      "explanation": "Step 1: Find the time gap between the two separate conditions. Time gap = 35 - 20 = 15 minutes. Step 2: Evaluate the difference in water volume. Moving from needing 45 litres to spilling an extra 15 litres creates a total volume difference of 45 + 15 = 60 litres. Step 3: Divide the volume difference by the time gap to find the rate per minute. Filling rate = 60 / 15 = 4 litres per minute."
+    },
+    {
+      "question": "An empty industrial storage tank is filled by an inlet pipe at a rate of 12 litres per minute. After exactly 15 minutes of filling, a structural leak develops at the bottom, draining water out at a constant rate of 4 litres per minute. If the tank takes another 20 minutes to become completely full, calculate the maximum capacity of the tank.",
+      "options": ["300 litres", "320 litres", "340 litres", "360 litres"],
+      "correct": 2,
+      "points": 14,
+      "time": 300,
+      "explanation": "Step 1: Calculate water accumulated in the first 15 minutes. Volume = 15 * 12 = 180 litres. Step 2: Determine the net filling rate after the leak develops. Net rate = 12 - 4 = 8 litres per minute. Step 3: Calculate water accumulated during the final 20 minutes. Volume added = 20 * 8 = 160 litres. Step 4: Add both water volume blocks together. Total capacity = 180 + 160 = 340 litres."
+    },
+    {
+      "question": "A liquid container has a maximum storage capacity of 24 litres. It is being filled at a rate of 3 litres per minute, but a defect causes water to leak out at a constant rate of 0.5 litres per minute. How long will it take to fill the container to exactly 50% of its capacity if it starts completely empty?",
+      "options": ["4 minutes 00 seconds", "4 minutes 30 seconds", "4 minutes 48 seconds", "5 minutes 12 seconds"],
+      "correct": 2,
+      "points": 12,
+      "time": 255,
+      "explanation": "Step 1: Calculate the target volume. 50% of 24 litres = 12 litres. Step 2: Find the net filling rate. Net rate = 3 - 0.5 = 2.5 litres per minute. Step 3: Calculate the time in minutes. Time = 12 / 2.5 = 4.8 minutes. Step 4: Convert the decimal part into seconds. 0.8 minutes = 0.8 * 60 seconds = 48 seconds. Total time = 4 minutes 48 seconds."
+    },
+    {
+      "question": "Worker X takes 6 hours to assemble a batch of 24 identical office chairs. Worker Y takes 4 hours to assemble the exact same batch size. If both workers work together at their respective constant speeds, how many total chairs can they assemble in 5 hours?",
+      "options": ["40", "45", "50", "60"],
+      "correct": 2,
+      "points": 12,
+      "time": 240,
+      "explanation": "Step 1: Find the hourly assembly rate of each worker. Worker X rate = 24 / 6 = 4 chairs per hour. Worker Y rate = 24 / 4 = 6 chairs per hour. Step 2: Determine their combined hourly rate. Combined rate = 4 + 6 = 10 chairs per hour. Step 3: Multiply the combined rate by the target duration. Total chairs = 5 * 10 = 50 chairs."
+    },
+    {
+      "question": "A factory manufacturing line produces components at a constant speed of 80 pieces per hour. After running continuously for 3 hours, the operator tunes the machinery, instantly increasing the production rate by 25%. How many total components are produced if the line runs for another 4 hours at this new rate?",
+      "options": ["560", "600", "640", "680"],
+      "correct": 2,
+      "points": 12,
+      "time": 270,
+      "explanation": "Step 1: Find the components produced in the first phase. 3 hours * 80 pieces per hour = 240 components. Step 2: Calculate the new tuned production rate. New rate = 80 * 1.25 = 100 pieces per hour. Step 3: Find the components produced in the second phase. 4 hours * 100 pieces per hour = 400 components. Step 4: Sum the components from both phases. Total components = 240 + 400 = 640 components."
+    },
+    {
+      "question": "Supply Pipe A can fill a drainage pond at a rate of 40 litres per minute. Supply Pipe B can fill it at a rate of 60 litres per minute. Pipe A is turned on first to fill an empty 1400-litre pond. After exactly 20 minutes, Pipe B is turned on to assist. How many total minutes does it take to fill the pond completely from the start?",
+      "options": ["24 minutes", "26 minutes", "28 minutes", "32 minutes"],
+      "correct": 1,
+      "points": 14,
+      "time": 300,
+      "explanation": "Step 1: Calculate the volume filled by Pipe A during its solo operation. 20 minutes * 40 litres per minute = 800 litres. Step 2: Determine the remaining volume left to fill. Remaining volume = 1400 - 800 = 600 litres. Step 3: Calculate the combined filling rate. Combined rate = 40 + 60 = 100 litres per minute. Step 4: Compute the time needed to fill the remaining volume. Co-operational time = 600 / 100 = 6 minutes. Step 5: Add solo time and co-operational time. Total time = 20 + 6 = 26 minutes."
+    },
+    {
+      "question": "If an industrial mill runs at a uniform pace for 6 days, it remains exactly 18 sacks of grain short of meeting its monthly commercial supply quota. If the mill is operated for 10 days instead, it processes 22 sacks of grain more than the required quota. Find the daily processing rate of the mill.",
+      "options": ["8 sacks/day", "10 sacks/day", "12 sacks/day", "14 sacks/day"],
+      "correct": 1,
+      "points": 14,
+      "time": 300,
+      "explanation": "Step 1: Determine the variance in runtime. Runtime difference = 10 - 6 = 4 days. Step 2: Compute the absolute difference in processing volume across these two conditions. Net sack difference = 18 (shortage) + 22 (surplus) = 40 sacks. Step 3: Divide the processed sack difference by the runtime difference to find the daily pace. Daily processing rate = 40 / 4 = 10 sacks per day."
+    },
+    {
+      "question": "Machine A packs inventory boxes at a constant rate of 15 boxes per minute. Machine B packs boxes at a constant rate of 25 boxes per minute. Machine A runs for a certain duration to pack a batch of boxes. Machine B runs for 8 minutes fewer than Machine A but finishes packing the exact same number of boxes. How many boxes did Machine A pack?",
+      "options": ["150", "200", "240", "300"],
+      "correct": 3,
+      "points": 14,
+      "time": 315,
+      "explanation": "Step 1: Set up the algebraic relation using the duration Machine A operates, t minutes. Total boxes packed = 15 * t. Step 2: Model Machine B's operation time as (t - 8) minutes. Total boxes packed = 25 * (t - 8). Step 3: Equate the box totals since both machines pack the same amount. 15t = 25(t - 8) => 15t = 25t - 200 => 10t = 200 => t = 20 minutes. Step 4: Compute the boxes packed by multiplying Machine A's time by its rate. Boxes packed = 20 minutes * 15 boxes/minute = 300 boxes."
+    }
+  ]
+}
