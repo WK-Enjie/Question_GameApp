@@ -1,0 +1,219 @@
+{
+  "title": "Model of Cells Worksheet 2: Division of Labour and Biological Organisation",
+  "topic": "Division of Labour and Levels of Organisation",
+  "subject": "Science",
+  "level": "Secondary",
+  "grade": "Sec 1",
+  "chapter": 6,
+  "worksheet": 2,
+  "questions": [
+    {
+      "question": "What is meant by the phrase 'division of labour' at the cellular level?",
+      "options": [
+        "The splitting of a single cell into two separate cells.",
+        "The physical separation of plant cells from animal cells in a lab.",
+        "Different structures inside a cell performing specific jobs to keep the cell working properly.",
+        "The process of single cells joining together to fight off harmful viruses."
+      ],
+      "correct": 2,
+      "points": 5,
+      "time": 60,
+      "explanation": "Just like a factory has different sections handling separate tasks, a cell has different parts (like the nucleus and cell membrane) working together. Each has a specific job to keep the whole cell alive."
+    },
+    {
+      "question": "How does a multicellular organism carry out the division of labour differently compared to a single-celled organism?",
+      "options": [
+        "A single-celled organism relies on multiple organs, while a multicellular organism uses only a single part.",
+        "Single-celled organisms do not display any form of division of labour at all.",
+        "Multicellular organisms can only perform one life function at a time.",
+        "A single-celled organism performs all life functions within its one cell, while a multicellular organism assigns specific functions to different groups of cells."
+      ],
+      "correct": 3,
+      "points": 5,
+      "time": 60,
+      "explanation": "Single-celled organisms must complete every survival task within their one cell boundary. Multicellular organisms contain collections of modified cells, with each cell type specialized for a single dedicated job."
+    },
+    {
+      "question": "Which of the following correctly ranks the levels of organization in a multicellular organism from the simplest building block to the most complex?",
+      "options": [
+        "Tissue -> Cell -> Organ -> Organ System -> Organism",
+        "Cell -> Organ -> Tissue -> Organ System -> Organism",
+        "Cell -> Tissue -> Organ -> Organ System -> Organism",
+        "Organ System -> Organ -> Tissue -> Cell -> Organism"
+      ],
+      "correct": 2,
+      "points": 5,
+      "time": 50,
+      "explanation": "Cells group together to form tissues. Different tissues make up an organ. Organs work together within an organ system, and multiple organ systems form a complete organism."
+    },
+    {
+      "question": "A group of similar cells that work together to perform a specific, coordinated job is classified as a/an __________.",
+      "options": [
+        "organ",
+        "tissue",
+        "organ system",
+        "organism"
+      ],
+      "correct": 1,
+      "points": 5,
+      "time": 45,
+      "explanation": "By definition, a tissue is a cluster of similar cells that work together to perform a common function (such as muscle tissue)."
+    },
+    {
+      "question": "Which of the following biological structures is correctly classified as an 'organ'?",
+      "options": [
+        "A group of root hair cells taking in water",
+        "The entire nervous system including the brain and spinal cord together",
+        "A single red blood cell floating inside a blood vessel",
+        "The human stomach, which consists of different tissues working together"
+      ],
+      "correct": 3,
+      "points": 5,
+      "time": 60,
+      "explanation": "An organ is made up of several different types of tissues working together to perform a specific function. The stomach uses muscle tissue, lining tissue, and nerve tissue to digest food, matching this definition."
+    },
+    {
+      "question": "Why is a plant leaf correctly classified as an organ rather than a tissue?",
+      "options": [
+        "It consists of only one single type of cell that captures light.",
+        "It is independent of the rest of the plant's root structures.",
+        "It has a large central vacuole filled with sticky cell sap.",
+        "It is made of different types of tissues working together to make food and exchange gases."
+      ],
+      "correct": 3,
+      "points": 5,
+      "time": 60,
+      "explanation": "A leaf contains multiple distinct tissues: protective outer tissue, internal food-making tissue, and transport tissue. Because these different tissues work together, the leaf is classified as an organ."
+    },
+    {
+      "question": "What is the main advantage of having a highly organized division of labour in a complex organism like a human being?",
+      "options": [
+        "It allows the organism to survive without needing any food input.",
+        "It prevents any individual cell from ever breaking down or aging.",
+        "It forces all cells to take on the exact same size and structural shape.",
+        "It increases the efficiency of the organism, allowing it to grow large and carry out complex processes."
+      ],
+      "correct": 3,
+      "points": 5,
+      "time": 55,
+      "explanation": "Division of labour divides tasks among specialized parts. This focus keeps individual processes highly efficient, enabling the organism to support complex systems and reach larger sizes."
+    },
+    {
+      "question": "Which of the following examples best illustrates the concept of an 'organ system' in plants?",
+      "options": [
+        "A single tiny pore regulating gas exchange on a leaf surface",
+        "The shoot system, which includes stems, leaves, and flowers working together",
+        "The transport tubes made of xylem and phloem vessels alone",
+        "The protective layer of wax coating the top of a leaf"
+      ],
+      "correct": 1,
+      "points": 5,
+      "time": 60,
+      "explanation": "The shoot system is an organ system. It consists of different plant organs (leaves, stems, flowers) interacting to handle complex functions like support, transport, and reproduction."
+    },
+    {
+      "question": "Human blood contains red blood cells, white blood cells, and liquid plasma. Into which level of biological organization should blood be classified?",
+      "options": [
+        "Cell level",
+        "Tissue level",
+        "Organ level",
+        "System level"
+      ],
+      "correct": 1,
+      "points": 5,
+      "time": 60,
+      "explanation": "Blood is classified as a tissue because it is a collection of specialized cells working together to perform transport and defense roles for the body."
+    },
+    {
+      "question": "What would happen if the coordination between the circulatory system and the respiratory system failed during a fast run?",
+      "options": [
+        "The muscles would immediately make their own oxygen cells.",
+        "The body would change into a single-celled state to save energy.",
+        "The lung cells would expand to take over the pumping action of the heart.",
+        "Muscles would quickly run out of oxygen because transport and gas exchange are no longer working together."
+      ],
+      "correct": 3,
+      "points": 5,
+      "time": 65,
+      "explanation": "Organ systems must act together. If the respiratory system (takes in oxygen) fails to coordinate with the circulatory system (transports oxygen), the working muscles will quickly experience oxygen starvation."
+    },
+    {
+      "question": "A root hair cell has a long, narrow extension that increases its surface area to absorb water rapidly from soil. How does this cell fit the model of division of labour?",
+      "options": [
+        "It can transform into a leaf cell if the plant is turned upside down.",
+        "It performs all life functions independently for the entire plant system.",
+        "It lacks a cell membrane to make water entry absolute.",
+        "It is a specialized cell with a structure modified to do one specific job for the whole plant."
+      ],
+      "correct": 3,
+      "points": 5,
+      "time": 60,
+      "explanation": "Specialized cells are structural examples of the division of labour. By dedicating its structure to water absorption, the root hair cell supports the plant while relying on other cells for food."
+    },
+    {
+      "question": "Which of the following charts a correct path of an animal cell progressing through all levels of organization up to the system level?",
+      "options": [
+        "Nerve cell -> Brain tissue -> Spinal cord -> Digestive system",
+        "Red blood cell -> Bone tissue -> Rib cage -> Skeletal system",
+        "Muscle cell -> Muscle tissue -> Heart -> Circulatory system",
+        "Skin cell -> Lining tissue -> Liver -> Urinary system"
+      ],
+      "correct": 2,
+      "points": 5,
+      "time": 60,
+      "explanation": "Similar muscle cells form muscle tissue. Muscle tissue helps build the heart (an organ), and the heart works with blood vessels to form the circulatory system."
+    },
+    {
+      "question": "Why can an amoeba (a single-celled organism) survive perfectly well without having a heart, lungs, or kidney organs?",
+      "options": [
+        "It absorbs all its necessary organs from the surrounding pond water.",
+        "It can freeze its life requirements indefinitely to avoid needing organ systems.",
+        "It does not carry out basic processes like respiration or removing wastes.",
+        "Its single cell has a tiny volume and enough surface area to handle all gas exchange, waste removal, and nutrition directly."
+      ],
+      "correct": 3,
+      "points": 5,
+      "time": 65,
+      "explanation": "Single-celled organisms are microscopic. Because their physical size is tiny, simple diffusion across their cell membrane is fast enough to swap gases and clear wastes without needing complex organ systems."
+    },
+    {
+      "question": "If cells are the basic structural building blocks of life, what happens when cells of different types cannot coordinate with one another?",
+      "options": [
+        "They will automatically function as single-celled colonies.",
+        "They will expand to double their size to solve the confusion.",
+        "The cell walls will merge together to create a single giant cell.",
+        "Working tissues and organs cannot form, and the organism will not function properly."
+      ],
+      "correct": 3,
+      "points": 5,
+      "time": 60,
+      "explanation": "Multi-tiered organization relies on structural order. If specialized cells fail to gather into tissues or work together, higher organs cannot form, causing the body to fail to work properly."
+    },
+    {
+      "question": "The human biceps structure is wrapped in protective tissue coverings and contracts to move the arm bones. What level of biological organization is a single biceps unit?",
+      "options": [
+        "Cell",
+        "Tissue",
+        "Organ",
+        "System"
+      ],
+      "correct": 2,
+      "points": 5,
+      "time": 50,
+      "explanation": "An individual muscle unit, like the biceps, contains muscle tissue, nervous tissue, and blood vessels working together as a single functional structure. This makes it an organ."
+    },
+    {
+      "question": "Identify which statement represents the highest and most complex level of division of labour among the choices provided.",
+      "options": [
+        "A cell membrane selecting which nutrient molecules can cross its barrier.",
+        "A group of identical muscle cells contracting together inside a test tube.",
+        "The storage of chemical energy inside a plant cell part.",
+        "The teamwork between the digestive, circulatory, and muscular systems to break down, absorb, and transport energy from food throughout the body."
+      ],
+      "correct": 3,
+      "points": 5,
+      "time": 65,
+      "explanation": "The interaction of multiple complete organ systems working together to accomplish a major goal represents the largest and most complex scale of division of labour in an organism."
+    }
+  ]
+}

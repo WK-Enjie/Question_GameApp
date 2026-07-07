@@ -1,0 +1,219 @@
+{
+  "title": "Model of Cells Worksheet 1: Structures, Functions, and the Microscope",
+  "topic": "Cell Structures, Functions, and Microscopy",
+  "subject": "Science",
+  "level": "Secondary",
+  "grade": "Sec 1",
+  "chapter": 6,
+  "worksheet": 1,
+  "questions": [
+    {
+      "question": "Which of the following correctly pairs a cell structure with its main function?",
+      "options": [
+        "Cell wall – Controls the movement of substances into and out of the cell",
+        "Chloroplast – Controls all chemical activities and cell division",
+        "Nucleus – Contains genetic material (DNA) passed to the next generation",
+        "Cytoplasm – Provides a rigid shape and mechanical support to the cell"
+      ],
+      "correct": 2,
+      "points": 5,
+      "time": 60,
+      "explanation": "The nucleus serves as the control center of the cell and houses genetic information in the form of DNA, which is responsible for inheritance."
+    },
+    {
+      "question": "How does the property of a cell wall differ from the property of a cell membrane?",
+      "options": [
+        "The cell wall is partially permeable, while the cell membrane lets all substances through.",
+        "The cell wall controls what enters the cell, while the cell membrane gives the cell its shape.",
+        "The cell wall is found in all living cells, while the cell membrane is only found in plant cells.",
+        "The cell wall is rigid and lets all substances pass through, while the cell membrane is thin and partially permeable."
+      ],
+      "correct": 3,
+      "points": 5,
+      "time": 60,
+      "explanation": "A plant cell wall is a rigid layer made of cellulose that is fully permeable (lets all dissolved substances through). The cell membrane is partially permeable, allowing only certain substances to pass through."
+    },
+    {
+      "question": "A small forest contains soil, rocks, earthworms, ferns, oak trees, and a family of owls. Which of these combinations represents the 'community' of this forest?",
+      "options": [
+        "Soil, rocks, and water only.",
+        "The family of owls only.",
+        "Earthworms, ferns, oak trees, and owls only.",
+        "Soil, rocks, earthworms, ferns, oak trees, and owls altogether."
+      ],
+      "correct": 2,
+      "points": 5,
+      "time": 60,
+      "explanation": "A community consists of all the living populations (plants, animals, microbes) interacting with each other in a habitat. It excludes non-living factors like soil and rocks."
+    },
+    {
+      "question": "What is the primary role of the cytoplasm in a living cell?",
+      "options": [
+        "It acts as a jelly-like fluid where most chemical reactions take place.",
+        "It forms a tough protective cover around the nucleus.",
+        "It actively traps light energy to make food.",
+        "It stores large volumes of water and mineral salts."
+      ],
+      "correct": 0,
+      "points": 5,
+      "time": 45,
+      "explanation": "The cytoplasm is a jelly-like substance consisting mostly of water. It fills the cell and serves as the space where most cell chemical reactions happen."
+    },
+    {
+      "question": "Which statement about vacuoles is correct when comparing a typical animal cell to a typical plant cell?",
+      "options": [
+        "Animal cells lack vacuoles entirely, while plant cells have many small ones.",
+        "Plant vacuoles contain green pigments, while animal vacuoles contain digestive chemicals.",
+        "Both cells contain a single large central vacuole that keeps the cell stiff.",
+        "Plant cells have a single, large central vacuole containing cell sap, while animal cells have numerous small, temporary vacuoles."
+      ],
+      "correct": 3,
+      "points": 5,
+      "time": 60,
+      "explanation": "A typical plant cell has one large, permanent central vacuole filled with cell sap. Animal cells have multiple small, temporary vacuoles scattered through the cytoplasm."
+    },
+    {
+      "question": "If the chloroplasts of a plant cell are severely damaged, which process will be directly blocked?",
+      "options": [
+        "The absorption of oxygen gas for respiration",
+        "The division of the nucleus during plant reproduction",
+        "The entry of mineral salts through the cell wall",
+        "The production of food molecules through photosynthesis"
+      ],
+      "correct": 3,
+      "points": 5,
+      "time": 60,
+      "explanation": "Chloroplasts contain chlorophyll, which traps light energy for photosynthesis. If they are damaged, the plant cell cannot make its own food."
+    },
+    {
+      "question": "Why do textbook diagrams of 'typical' plant and animal cells often look slightly different from real cells seen under a microscope?",
+      "options": [
+        "Real cells do not actually contain nuclei or cell membranes.",
+        "Microscopes distort the shapes of cells, making real structures disappear.",
+        "Textbook diagrams are simplified models used to show general features rather than exact variations.",
+        "Real cells change their structural parts entirely every few hours."
+      ],
+      "correct": 2,
+      "points": 5,
+      "time": 55,
+      "explanation": "Typical cell diagrams are generalized scientific models. In reality, cells specialize into various forms and shapes to perform specific roles, so they might not look exactly like the baseline textbook model."
+    },
+    {
+      "question": "A student wants to find the total magnification of the specimen he is viewing. The eyepiece lens has a magnification of 10x and the objective lens has a magnification of 40x. What is the total magnification?",
+      "options": [
+        "30x",
+        "50x",
+        "400x",
+        "4000x"
+      ],
+      "correct": 2,
+      "points": 5,
+      "time": 45,
+      "explanation": "Total magnification is determined by multiplying the magnification of the eyepiece lens by the magnification of the objective lens: 10 × 40 = 400x."
+    },
+    {
+      "question": "Which part of the microscope should a student adjust to quickly bring a specimen into a sharp, clear focus under high power?",
+      "options": [
+        "The coarse adjustment knob",
+        "The stage clips",
+        "The revolving nosepiece",
+        "The fine adjustment knob"
+      ],
+      "correct": 3,
+      "points": 5,
+      "time": 50,
+      "explanation": "The fine adjustment knob shifts the stage by very small amounts. It is used to sharpen the focus and bring out fine details clearly, especially under high power."
+    },
+    {
+      "question": "What is the function of the iris diaphragm on a light microscope?",
+      "options": [
+        "It securely holds the glass slide in place on the stage.",
+        "It regulates the amount of light that passes up through the specimen.",
+        "It switches between different objective lenses.",
+        "It adjusts the distance between the observer's eyes."
+      ],
+      "correct": 1,
+      "points": 5,
+      "time": 55,
+      "explanation": "The iris diaphragm is located beneath the stage. Opening or closing it alters the amount of light hitting the specimen to change the contrast and visibility."
+    },
+    {
+      "question": "When moving a microscope from the storage cabinet to your laboratory bench, what is the correct and safe way to carry it?",
+      "options": [
+        "Hold it firmly by the eyepiece tube using your dominant hand.",
+        "Carry it using both hands on the flat base while walking quickly.",
+        "Hold the arm of the microscope with one hand and support the flat base with your other hand.",
+        "Drag it gently across the bench surface by its power cord."
+      ],
+      "correct": 2,
+      "points": 5,
+      "time": 50,
+      "explanation": "To prevent accidental drops or damage, always hold the sturdy arm of the microscope with one hand and place your other hand underneath the base to support its weight."
+    },
+    {
+      "question": "While looking at a cell, a student notices that the image in the eyepiece is too dark. Which parts should she adjust to make the view brighter?",
+      "options": [
+        "The coarse adjustment knob and the stage clips",
+        "The light source and the iris diaphragm",
+        "The eyepiece lens and the objective lens casing",
+        "The revolving nosepiece and the stage arm"
+      ],
+      "correct": 1,
+      "points": 5,
+      "time": 55,
+      "explanation": "Brightness is controlled by the light output. Increasing the brightness of the built-in lamp (light source) or opening the iris diaphragm allows more light to pass through the specimen."
+    },
+    {
+      "question": "Why should you avoid using the coarse adjustment knob when focusing a specimen under the high-power objective lens?",
+      "options": [
+        "It alters the magnification values unpredictably.",
+        "It completely shuts down the light source underneath the stage.",
+        "The stage moves too much and can cause the long lens to smash into and break the glass slide.",
+        "It changes the cell wall structure of the specimens permanently."
+      ],
+      "correct": 2,
+      "points": 5,
+      "time": 60,
+      "explanation": "The coarse adjustment knob moves the stage rapidly over large distances. Because the high-power objective lens is long, using the coarse adjustment knob can easily cause the lens to collide with the slide, cracking it and scratching the lens."
+    },
+    {
+      "question": "A scientist removes the nucleus from an animal cell using a tiny needle. What is the most likely result for this cell over time?",
+      "options": [
+        "The cell wall will fall apart immediately.",
+        "The cell will lose control of its activities, fail to divide, and eventually die.",
+        "The cell will continue to perform photosynthesis at a faster rate.",
+        "The cytoplasm will expand to fill the empty space and form a new vacuole."
+      ],
+      "correct": 1,
+      "points": 5,
+      "time": 60,
+      "explanation": "Because the nucleus directs all life processes and functions of the cell, removing it leaves the cell without its control center, leading to an inability to function and cell death."
+    },
+    {
+      "question": "How did historical developments in microscope lenses directly help our scientific understanding of living things?",
+      "options": [
+        "They proved that non-living things are also made of cells.",
+        "They showed that cells can be seen clearly with the naked human eye.",
+        "They eliminated the need for models in science classrooms.",
+        "They allowed scientists to see tiny parts inside cells, linking structures directly to their functions."
+      ],
+      "correct": 3,
+      "points": 5,
+      "time": 60,
+      "explanation": "Developments in lenses and illumination allowed early scientists to discover cells and map out their internal parts. This directly helped connect structures to their specific jobs."
+    },
+    {
+      "question": "Which of the following cell structures can be found in a plant cell taken from an onion root but NOT in a typical animal cell?",
+      "options": [
+        "Cell wall",
+        "Chloroplast",
+        "Cell membrane",
+        "Nucleus"
+      ],
+      "correct": 0,
+      "points": 5,
+      "time": 60,
+      "explanation": "An onion root cell is a plant cell, so it possesses a rigid cell wall, which animal cells do not have. Note that onion root cells do not have chloroplasts because they grow underground in the dark, but they still have a cell wall."
+    }
+  ]
+}
