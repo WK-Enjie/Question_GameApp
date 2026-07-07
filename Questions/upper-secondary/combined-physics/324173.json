@@ -1,0 +1,299 @@
+{
+  "title": "O-Level Combined Science Physics: Half-Life and Background Radiation",
+  "topic": "Nature of Background Radiation, Corrected Count Rates, and Half-Life Calculations",
+  "subject": "Combined Physics",
+  "level": "Secondary",
+  "grade": "Sec 4",
+  "chapter": 17,
+  "worksheet": 3,
+  "questions": [
+    {
+      "question": "Which of the following statements best defines background radiation?",
+      "options": [
+        "Radiation present in the environment all the time",
+        "Radiation only found inside nuclear reactors",
+        "Radiation produced exclusively by medical equipment",
+        "Cosmic rays that only strike Earth during solar flares"
+      ],
+      "correct": 0,
+      "points": 10,
+      "explanation": "Background radiation is the low-level ionizing radiation that is continuously present in the surrounding environment from both natural and artificial sources."
+    },
+    {
+      "question": "Which of the following is a major natural source of background radiation found trapped in rocks and soil?",
+      "options": [
+        "Nuclear weapons fallout",
+        "Radioactive radon gas",
+        "Industrial waste liquids",
+        "X-ray imaging equipment"
+      ],
+      "correct": 1,
+      "points": 10,
+      "explanation": "Radon gas is a naturally occurring radioactive gas produced by the decay of trace amounts of uranium found embedded within rocks and soil."
+    },
+    {
+      "question": "Which of the following is classified as an artificial or man-made source of background radiation?",
+      "options": [
+        "Cosmic rays from deep space",
+        "Radioactive gases from granite building blocks",
+        "Medical diagnostic imaging procedures",
+        "Potassium isotopes found naturally inside food crops"
+      ],
+      "correct": 2,
+      "points": 10,
+      "explanation": "Medical procedures, such as diagnostic X-rays and radiation therapies, represent artificial sources of background radiation introduced into the environment by human technology."
+    },
+    {
+      "question": "A student measures the radiation in a room when no experimental radioactive sources are present. What is the detector recording?",
+      "options": [
+        "Zero absolute radiation levels",
+        "Alpha particle contamination",
+        "A faulty circuit sensor error",
+        "Environmental background radiation"
+      ],
+      "correct": 3,
+      "points": 10,
+      "explanation": "Even in the complete absence of a test source, a radiation detector will always record a non-zero value due to ambient background radiation existing in the room."
+    },
+    {
+      "question": "Why must background radiation be measured and subtracted during a laboratory radioactivity experiment?",
+      "options": [
+        "To find the true count rate of the source",
+        "To increase the half-life of the sample",
+        "To prevent the sensor tube from overheating",
+        "To change alpha emissions into safe gamma rays"
+      ],
+      "correct": 0,
+      "points": 10,
+      "explanation": "Subtracting the background count rate from the total measured count rate yields the corrected count rate, which isolates the true radiation output of the source."
+    },
+    {
+      "question": "Which device is commonly connected to a digital counter to measure background radiation count rates?",
+      "options": [
+        "A liquid thermometer",
+        "A Geiger-Muller tube",
+        "A digital weighing balance",
+        "A magnetic compass needle"
+      ],
+      "correct": 1,
+      "points": 10,
+      "explanation": "A Geiger-Muller (GM) tube is the standard laboratory instrument used to detect ionizing radiation particles and pulses, which are then logged by a counter."
+    },
+    {
+      "question": "What unit is typically used to describe the frequency of radiation pulses detected over a specific interval?",
+      "options": [
+        "Total Joules",
+        "Pascals per area",
+        "Counts per minute",
+        "Newtons per second"
+      ],
+      "correct": 2,
+      "points": 10,
+      "explanation": "Radiation count rates are expressed as the number of ionization events or pulses recorded per unit time, most commonly as counts per minute or counts per second."
+    },
+    {
+      "question": "The background count rate is 30 counts per minute. A detector reads a total of 150 counts per minute near a radioactive source. Find the corrected count rate.",
+      "options": [
+        "180 counts per minute",
+        "5 counts per minute",
+        "4500 counts per minute",
+        "120 counts per minute"
+      ],
+      "correct": 3,
+      "points": 10,
+      "explanation": "Corrected count rate equals total measured count rate minus the background count rate. Calculation: 150 minus 30 equals 120 counts per minute."
+    },
+    {
+      "question": "Which statement best defines the half-life of a radioactive isotope?",
+      "options": [
+        "The time taken for half the unstable nuclei to decay",
+        "Half the total lifespan of a chemical element sample",
+        "The time required for an isotope to double its protons",
+        "The total seconds a particle takes to move one meter"
+      ],
+      "correct": 0,
+      "points": 10,
+      "explanation": "Half-life is strictly defined as the time taken for half the unstable radioactive nuclei present in a sample to undergo decay."
+    },
+    {
+      "question": "After exactly one half-life has passed, what fraction of the original unstable radioactive nuclei remains undecayed?",
+      "options": [
+        "One-quarter",
+        "One-half",
+        "Three-quarters",
+        "Zero"
+      ],
+      "correct": 1,
+      "points": 10,
+      "explanation": "By definition, one half-life represents the time duration required for the number of radioactive nuclei to be halved, leaving exactly one-half of the starting sample undecayed."
+    },
+    {
+      "question": "A sample of a radioactive isotope contains 800 unstable nuclei. How many unstable nuclei will remain after exactly two half-lives have elapsed?",
+      "options": [
+        "400 nuclei",
+        "100 nuclei",
+        "200 nuclei",
+        "50 nuclei"
+      ],
+      "correct": 2,
+      "points": 10,
+      "explanation": "After the first half-life, the count drops from 800 to 400. After the second half-life, the remaining 400 is halved again, which leaves 200 unstable nuclei."
+    },
+    {
+      "question": "What fraction of a radioactive isotope sample remains undecayed after a total of three half-lives have passed?",
+      "options": [
+        "One-half",
+        "One-quarter",
+        "One-sixteenth",
+        "One-eighth"
+      ],
+      "correct": 3,
+      "points": 10,
+      "explanation": "The fraction remaining decreases exponentially: after 1 half-life it is one-half, after 2 half-lives it is one-quarter, and after 3 half-lives it is one-eighth."
+    },
+    {
+      "question": "A source has an initial corrected count rate of 400 counts per minute. If its half-life is 10 minutes, what will its corrected count rate be after 30 minutes?",
+      "options": [
+        "50 counts per minute",
+        "100 counts per minute",
+        "200 counts per minute",
+        "25 counts per minute"
+      ],
+      "correct": 0,
+      "points": 10,
+      "explanation": "A time span of 30 minutes represents exactly 3 half-lives (30 divided by 10). Halving the activity three times sequentially: 400 to 200, then to 100, and finally to 50 counts per minute."
+    },
+    {
+      "question": "A pure sample of a radioactive isotope has an initial mass of 24 g. If it undergoes decay for four half-lives, what mass of the isotope remains unreacted?",
+      "options": [
+        "6.0 g",
+        "1.5 g",
+        "3.0 g",
+        "0.75 g"
+      ],
+      "correct": 1,
+      "points": 10,
+      "explanation": "After four half-lives, the remaining mass is one-sixteenth of the starting mass. Calculation: 24 g divided by 16 equals 1.5 g."
+    },
+    {
+      "question": "An isotope sample has decayed until only one-sixteenth of its original activity remains. How many half-lives have passed during this period?",
+      "options": [
+        "Two half-lives",
+        "Three half-lives",
+        "Four half-lives",
+        "Five half-lives"
+      ],
+      "correct": 2,
+      "points": 10,
+      "explanation": "Since one-half multiplied by one-half multiplied by one-half multiplied by one-half equals one-sixteenth, a reduction to one-sixteenth means exactly four half-lives have occurred."
+    },
+    {
+      "question": "The corrected count rate of a sample drops from 800 counts per second to 100 counts per second over a span of 12 hours. Calculate the half-life.",
+      "options": [
+        "3 hours",
+        "6 hours",
+        "2 hours",
+        "4 hours"
+      ],
+      "correct": 3,
+      "points": 10,
+      "explanation": "Dropping from 800 to 100 requires a division factor of 8, which corresponds to 3 half-lives (2 multiplied by 2 multiplied by 2). If 3 half-lives equal 12 hours, then 1 half-life equals 12 divided by 3, which is 4 hours."
+    },
+    {
+      "question": "A radioactive tracer has a half-life of 6 hours. If the remaining undecayed mass after 24 hours is 5 g, what was the initial mass of the tracer?",
+      "options": [
+        "80 g",
+        "40 g",
+        "20 g",
+        "120 g"
+      ],
+      "correct": 0,
+      "points": 10,
+      "explanation": "A duration of 24 hours corresponds to 4 half-lives (24 divided by 6). Working backward, double the final mass 4 times: 5 to 10, then 20, then 40, and finally 80 g."
+    },
+    {
+      "question": "If a radioactive substance has a very short half-life of 2 seconds, what does this indicate about its behavior compared to an isotope with a long half-life?",
+      "options": [
+        "It decays at a much slower rate",
+        "It decays at a much faster rate",
+        "It emits zero ionizing particles",
+        "It changes its protons every second"
+      ],
+      "correct": 1,
+      "points": 10,
+      "explanation": "A shorter half-life means that the unstable nuclei decay much more rapidly over time, resulting in a highly intense but short-lived burst of activity."
+    },
+    {
+      "question": "A sample of a radioactive element takes 24 days for its activity to fall to one-eighth of its starting value. What is the half-life of this element?",
+      "options": [
+        "12 days",
+        "3 days",
+        "8 days",
+        "6 days"
+      ],
+      "correct": 2,
+      "points": 10,
+      "explanation": "A reduction to one-eighth represents exactly 3 half-lives. If 3 half-lives take 24 days, then the duration of a single half-life is 24 divided by 3, which equals 8 days."
+    },
+    {
+      "question": "Which of the following natural background radiation components originates directly from cosmic rays?",
+      "options": [
+        "Radiation from underground clay piping lines",
+        "Radon gas leaking from concrete paths",
+        "Chemical isotopes within specialized medical kits",
+        "High-energy radiation originating from the Sun"
+      ],
+      "correct": 3,
+      "points": 10,
+      "explanation": "Cosmic rays are a form of natural background radiation consisting of high-energy particles entering Earth's atmosphere from outer space and the Sun."
+    },
+    {
+      "question": "The background count rate is 25 counts per minute. A total rate of 125 counts per minute is recorded near a sample. What is the corrected count rate?",
+      "options": [
+        "100 counts per minute",
+        "200 counts per minute",
+        "75 counts per minute",
+        "50 counts per minute"
+      ],
+      "correct": 0,
+      "points": 10,
+      "explanation": "The true activity of the source is isolated by removing the environmental background: 125 total counts minus 25 background counts equals 100 counts per minute."
+    },
+    {
+      "question": "A material has a half-life of 5 days. If a laboratory stores 64 g of this material, what mass will have DECAYED away after a period of 15 days?",
+      "options": [
+        "8 g",
+        "56 g",
+        "16 g",
+        "48 g"
+      ],
+      "correct": 1,
+      "points": 10,
+      "explanation": "A period of 15 days equals 3 half-lives. The remaining mass equals 64 divided by 8, which is 8 g. Therefore, the mass that has decayed away equals 64 minus 8, which is 56 g."
+    },
+    {
+      "question": "A counter records a total of 180 counts per minute near a source. If the true corrected activity of the source is 155 counts per minute, find the background rate.",
+      "options": [
+        "335 counts per minute",
+        "180 counts per minute",
+        "25 counts per minute",
+        "155 counts per minute"
+      ],
+      "correct": 2,
+      "points": 10,
+      "explanation": "Since Total Count equals Source Count plus Background, the background rate is found by subtraction: 180 total minus 155 source equals 25 counts per minute."
+    },
+    {
+      "question": "If a radioactive isotope has an extremely long half-life of several billion years, what can be deduced about its stability?",
+      "options": [
+        "It converts into a gas within seconds",
+        "It presents an instant explosion hazard",
+        "It decays fully within one single week",
+        "It decays very slowly over generations"
+      ],
+      "correct": 3,
+      "points": 10,
+      "explanation": "An extremely long half-life means that the isotope is relatively stable and its nuclei decay at an incredibly slow rate, posing a long-term low-level radiation profile."
+    }
+  ]
+}
