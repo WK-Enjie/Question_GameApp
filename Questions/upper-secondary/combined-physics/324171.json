@@ -1,7 +1,7 @@
 {
-  "title": "Nuclear Physics: Radioactivity Quiz (O-Level Combined Science)",
+  "title": "Nuclear Physics: Radioactivity Quiz",
   "topic": "Radioactivity, Isotopes, Characteristics of Radiation, and Nuclear Equations",
-  "subject": "Physics",
+  "subject": "Combined Physics",
   "level": "Secondary",
   "grade": "Sec 4",
   "chapter": 17,
@@ -10,10 +10,10 @@
     {
       "question": "Which of the following statements best describes the spontaneous nature of radioactive decay?",
       "options": [
-        "The decay occurs at a completely unpredictable time for any single nucleus",
-        "The rate of decay is completely unaffected by external physical or chemical conditions",
-        "The decay always happens instantly the moment a nucleus becomes unstable",
-        "The number of nuclei decaying per second remains perfectly constant for all elements"
+        "The decay occurs at an unpredictable time for a single nucleus",
+        "The rate of decay is unaffected by external physical or chemical conditions",
+        "The decay happens instantly the moment a nucleus becomes unstable",
+        "The number of nuclei decaying per second remains perfectly constant"
       ],
       "correct": 1,
       "points": 10,
@@ -22,9 +22,9 @@
     {
       "question": "What change occurs to an unstable nucleus during the process of radioactive decay?",
       "options": [
-        "It absorbs thermal energy from the surroundings to stabilize its core",
+        "It absorbs thermal energy from the surroundings to stabilize",
         "It reacts chemically with neighboring valence electrons to share mass",
-        "It instantly splits into two completely identical lighter nuclei pieces",
+        "It splits into two completely identical lighter nuclei pieces",
         "It spontaneously emits radiation to form a more stable nucleus"
       ],
       "correct": 3,
@@ -32,12 +32,12 @@
       "explanation": "Radioactive decay is the process by which an unstable atomic nucleus loses energy by spontaneously emitting radiation in the form of alpha particles, beta particles, or gamma rays to reach a more stable state."
     },
     {
-      "question": "Two nuclei are classified as isotopes of the same element. Which of the following statements must be correct regarding their subatomic composition?",
+      "question": "Two nuclei are classified as isotopes of the same element. Which statement must be correct regarding their composition?",
       "options": [
-        "They have the same number of neutrons but different numbers of protons",
-        "They have the same number of protons but different numbers of neutrons",
+        "They have the same number of neutrons but different proton numbers",
+        "They have the same number of protons but different neutron numbers",
         "They have the same mass number but different proton numbers",
-        "They have the same total number of nucleons but different chemical properties"
+        "They have the same total number of nucleons but different properties"
       ],
       "correct": 1,
       "points": 10,
@@ -53,13 +53,13 @@
       ],
       "correct": 0,
       "points": 10,
-      "explanation": "The proton number is 84, so there are 84 protons and 84 electrons in a neutral atom. The nucleon number is 210. The number of neutrons is found by subtracting the proton number from the nucleon number: 210 minus 84 equals 126."
+      "explanation": "The proton number is 84, so there are 84 protons and 84 electrons in a neutral atom. The nucleon number is 210. The number of neutrons is found by subtracting protons from nucleons: 210 minus 84 equals 126."
     },
     {
       "question": "Why is radioactive decay considered a random process?",
       "options": [
         "It is impossible to predict which specific nucleus will decay next or exactly when",
-        "The type of radiation emitted changes constantly between alpha and beta paths",
+        "The type of radiation emitted changes constantly between different paths",
         "External changes in environmental pressure cause sudden shifts in decay rates",
         "The total mass of the sample fluctuates up and down unpredictably over time"
       ],
@@ -140,12 +140,12 @@
       "explanation": "Penetrating power is inversely related to ionizing power. Alpha loses energy very quickly and is the least penetrating, beta is moderately penetrating, and gamma is the most penetrating, requiring dense materials to be stopped."
     },
     {
-      "question": "Alpha particles, beta particles, and gamma rays are passed through an electric field between two oppositely charged parallel plates. Which path will each type of radiation take?",
+      "question": "Alpha particles, beta particles, and gamma rays are passed through an electric field. Which path will each type of radiation take?",
       "options": [
-        "Alpha deflects toward the positive plate, beta to the negative plate, gamma straight",
-        "Both alpha and beta deflect toward the positive plate, while gamma stays centered",
-        "Alpha deflects toward the negative plate, beta strongly toward positive, gamma straight",
-        "Alpha passes straight through, while beta and gamma deflect in opposite directions"
+        "Alpha curves to positive plate, beta to negative plate, gamma straight",
+        "Both alpha and beta deflect toward the positive plate, gamma stays straight",
+        "Alpha curves to negative plate, beta strongly to positive plate, gamma straight",
+        "Alpha passes straight through, beta and gamma deflect in opposite paths"
       ],
       "correct": 2,
       "points": 10,
@@ -154,17 +154,17 @@
     {
       "question": "A radioactive beam containing alpha, beta, and gamma emissions enters a magnetic field. How will these emissions behave?",
       "options": [
-        "Alpha and beta deflect in the same direction, while gamma moves in the opposite path",
-        "Alpha deflects in one direction, beta in the opposite direction, gamma straight",
-        "Gamma deflects sharply, while alpha and beta are completely unaffected by fields",
-        "Alpha slows down uniformly, beta speeds up, and gamma bends into a tight circle"
+        "Alpha and beta deflect together, gamma moves in the opposite path",
+        "Alpha deflects one way, beta in the opposite way, gamma goes straight",
+        "Gamma deflects sharply, alpha and beta are unaffected by magnetic fields",
+        "Alpha slows down uniformly, beta speeds up, gamma bends into a circle"
       ],
       "correct": 1,
       "points": 10,
       "explanation": "Moving charges experience a magnetic force. Because alpha (positive) and beta (negative) carry opposite charges, they deflect in opposite directions. Beta exhibits a sharper curve due to its tiny mass. Gamma carries no charge and moves in a straight line."
     },
     {
-      "question": "An experimenter places a single sheet of standard writing paper between a radioactive source and a detector. The recorded radiation count rate drops significantly. Which type of radiation was predominantly blocked by the paper?",
+      "question": "An experimenter places a single sheet of standard writing paper between a radioactive source and a detector. Which radiation is blocked by the paper?",
       "options": [
         "Beta radiation",
         "Gamma radiation",
@@ -176,7 +176,7 @@
       "explanation": "Alpha particles have very low penetrating power due to their large size and high ionization rate. They are completely stopped by a thin sheet of paper or a few centimeters of air."
     },
     {
-      "question": "To completely block a beam of beta particles from reaching a sensor, which of the following shielding setups would be the most appropriate choice?",
+      "question": "To completely block a beam of beta particles from reaching a sensor, which of the following shielding setups is the most appropriate choice?",
       "options": [
         "A thin sheet of paper",
         "An aluminum sheet a few millimeters thick",
@@ -188,19 +188,19 @@
       "explanation": "Beta particles can easily penetrate paper and thin plastic, but they are fully absorbed and stopped by a few millimeters of a light metal such as aluminum."
     },
     {
-      "question": "Why is gamma radiation considered highly hazardous to living organisms even when they are located a few meters away from the source?",
+      "question": "Why is gamma radiation considered highly hazardous to living organisms even from a distance?",
       "options": [
         "It is highly ionizing and destroys skin surfaces instantly on contact",
-        "It converts the surrounding air molecules into toxic chemical compounds",
-        "It possesses a large atomic mass that physically breaks down cellular walls",
-        "It has an extremely high penetrating power, passing easily through air and deep into tissue"
+        "It converts surrounding air molecules into toxic compounds",
+        "It possesses a large atomic mass that physically crushes cell walls",
+        "It has an extremely high penetrating power, passing easily into tissue"
       ],
       "correct": 3,
       "points": 10,
       "explanation": "Because gamma radiation has exceptional penetrating power, it travels long distances through air and passes deeply into the human body, posing a severe internal hazard by damaging or mutating cells."
     },
     {
-      "question": "A Uranium-238 nucleus (proton number 92, nucleon number 238) undergoes alpha decay to form Thorium. Given that an alpha particle has a nucleon number of 4 and a proton number of 2, what are the nucleon number (A) and proton number (Z) of the Thorium nucleus produced?",
+      "question": "A Uranium-238 nucleus (proton number 92) undergoes alpha decay to form Thorium. What are the nucleon number (A) and proton number (Z) of the Thorium nucleus produced?",
       "options": [
         "A = 234, Z = 90",
         "A = 242, Z = 94",
@@ -212,7 +212,7 @@
       "explanation": "To balance the equation, the total nucleon number on both sides must be equal: 238 = A + 4, which gives A = 234. The total proton number must also balance: 92 = Z + 2, which gives Z = 90."
     },
     {
-      "question": "A Carbon-14 nucleus (proton number 6, nucleon number 14) decays into Nitrogen by emitting a single beta particle (proton number -1, nucleon number 0). What are the nucleon number (A) and proton number (Z) of the Nitrogen nucleus?",
+      "question": "A Carbon-14 nucleus (proton number 6) decays into Nitrogen by emitting a single beta particle (proton number -1). What are the nucleon number (A) and proton number (Z) of the Nitrogen nucleus?",
       "options": [
         "A = 14, Z = 5",
         "A = 14, Z = 7",
@@ -224,7 +224,7 @@
       "explanation": "Balancing the nucleon numbers: 14 = A + 0, so A = 14. Balancing the proton numbers: 6 = Z + (-1), which means Z = 6 + 1 = 7. In beta decay, the proton number increases by 1 while the nucleon number remains unchanged."
     },
     {
-      "question": "An excited Cobalt-60 nucleus (proton number 27, nucleon number 60) releases excess energy via gamma emission (proton number 0, nucleon number 0). What effect does this decay have on the composition of the Cobalt nucleus?",
+      "question": "An excited Cobalt-60 nucleus (proton number 27) releases excess energy via gamma emission. What effect does this decay have on the composition of the nucleus?",
       "options": [
         "The proton number increases by 1, turning it into Nickel",
         "The nucleon number decreases by 4, creating a lighter isotope",
@@ -236,7 +236,7 @@
       "explanation": "Gamma emission involves a nucleus releasing excess energy in the form of an electromagnetic wave. Because a gamma photon has 0 mass and 0 charge, the nucleon number and proton number of the element remain unchanged."
     },
     {
-      "question": "A Radium nucleus (nucleon number 226, proton number 88) decays into a Radon nucleus (nucleon number 222, proton number 86) and emits a single particle X. Identify the identity of particle X.",
+      "question": "A Radium nucleus (nucleon number 226, proton number 88) decays into a Radon nucleus (nucleon number 222, proton number 86) and emits a single particle X. Identify particle X.",
       "options": [
         "A beta particle",
         "A gamma photon",
@@ -260,7 +260,7 @@
       "explanation": "Only alpha decay reduces the nucleon and proton number of a nucleus, because an alpha particle carries away 4 nucleons (2 protons and 2 neutrons) from the parent atom."
     },
     {
-      "question": "A daughter nucleus, Lead-206 (proton number 82, nucleon number 206), was formed directly following the alpha decay (proton number 2, nucleon number 4) of an unstable parent nucleus. What was the composition of the original parent nucleus?",
+      "question": "A Lead-206 daughter nucleus (proton number 82) was formed directly following the alpha decay of an unstable parent nucleus. What was the composition of the original parent nucleus?",
       "options": [
         "Nucleon number 210, Proton number 84",
         "Nucleon number 202, Proton number 80",
@@ -272,7 +272,7 @@
       "explanation": "Working backward, add the values of the alpha particle to the daughter nucleus. Parent nucleon number = 206 + 4 = 210. Parent proton number = 82 + 2 = 84. This matches Polonium-210."
     },
     {
-      "question": "A Bismuth-210 nucleus (proton number 83, nucleon number 210) undergoes beta decay to form an isotope of Polonium (Po). Given that a beta particle has a proton number of -1 and a nucleon number of 0, what is the correct configuration of the Polonium nucleus produced?",
+      "question": "A Bismuth-210 nucleus (proton number 83) undergoes beta decay to form an isotope of Polonium (Po). What is the correct configuration of the Polonium nucleus produced?",
       "options": [
         "Nucleon number 210, Proton number 82",
         "Nucleon number 206, Proton number 81",
