@@ -1,0 +1,200 @@
+{
+  "title": "Primary 4 Science Topical Revision – Light and Shadows (Set 2)",
+  "questions": [
+    {
+      "question": "A boy is able to see a red toy car sitting on his bedroom floor when the ceiling lamp is turned on. Which of the following correctly describes the path that light travels for him to see the car?",
+      "options": [
+        "Light travels directly from his eyes to the lamp and then bounces onto the toy car.",
+        "Light travels from his eyes to the toy car and then reflects back into the lamp.",
+        "Light travels from the lamp to the toy car and then reflects into his eyes.",
+        "Light travels from the lamp directly into his eyes and then moves to the toy car."
+      ],
+      "correct": 2,
+      "points": 2,
+      "time": 65,
+      "explanation": "We can see non-luminous objects because light from a light source (the lamp) strikes the object (the toy car) and bounces (reflects) into our eyes."
+    },
+    {
+      "question": "Why can you see your reflection clearly when looking at a smooth, shiny metal tray, but you cannot see your face clearly when looking at a crumpled sheet of aluminum foil?",
+      "options": [
+        "The smooth tray reflects light in an orderly way, while the uneven foil scatters light in many directions.",
+        "The smooth tray acts as a source of light, while the crumpled foil absorbs all light hitting it.",
+        "The crumpled foil allows light to pass right through it, while the smooth tray blocks all light paths.",
+        "The crumpled foil reflects significantly more light rays into your eyes than the smooth surface does."
+      ],
+      "correct": 0,
+      "points": 2,
+      "time": 75,
+      "explanation": "Smooth, flat surfaces reflect light uniformly in a regular direction to produce a sharp image. Rough or crumpled surfaces bounce light rays in many different directions, which scatters the light and distorts the image."
+    },
+    {
+      "question": "Gopal wants to buy a plastic cover for his school textbook. He wants to ensure that the book cover protects the paper but still allows him to read the title on the book clearly. Which type of material is best for his cover?",
+      "options": [
+        "An opaque material that blocks all light from reaching the book.",
+        "A transparent material that allows most light to pass through it.",
+        "A translucent material that allows only some light to pass through it.",
+        "A highly reflective material that bounces all light away from the book."
+      ],
+      "correct": 1,
+      "points": 2,
+      "time": 55,
+      "explanation": "Transparent materials allow almost all light to pass through them. This allows objects behind them to be seen clearly, making it perfect for a book cover."
+    },
+    {
+      "question": "A student builds a periscope toy using a long tube and two small mirrors to see over a high wall. Which statement explains how the periscope works?",
+      "options": [
+        "Light travels in a curved line around the corners of the periscope tube.",
+        "Light travels in straight lines and changes direction when reflected by the mirrors.",
+        "The dark inside walls of the periscope tube create an extra source of light.",
+        "Light slows down and bends completely when it hits the surface of each mirror."
+      ],
+      "correct": 1,
+      "points": 2,
+      "time": 70,
+      "explanation": "Light always travels in straight lines. In a periscope, the mirrors are placed at angles to reflect the straight light rays down the tube and into the viewer's eyes, allowing them to see over obstacles."
+    },
+    {
+      "question": "Which of the following items in the night sky is NOT a source of light?",
+      "options": [
+        "A bright flash of lightning during a thunderstorm",
+        "A shooting star burning up in the atmosphere",
+        "The full moon glowing brightly in the dark sky",
+        "A small firefly flashing its tail in the garden"
+      ],
+      "correct": 2,
+      "points": 2,
+      "time": 50,
+      "explanation": "The Moon does not produce its own light; it is non-luminous. It appears bright to us only because its surface reflects sunlight toward Earth."
+    },
+    {
+      "question": "Sarah shines a torch directly at a standing rectangular tissue box. How can she change the SHAPE of the shadow cast on the wall behind the box without moving her torch?",
+      "options": [
+        "By switching to a much brighter torch with a stronger beam of light.",
+        "By moving the tissue box closer to the screen without turning it.",
+        "By turning the tissue box to a different position facing the torch.",
+        "By making the room completely dark before turning on the torch again."
+      ],
+      "correct": 2,
+      "points": 2,
+      "time": 65,
+      "explanation": "The shape of a shadow depends on which side or angle of the object is blocking the light. Turning the tissue box changes its outline facing the torch, altering the shadow's shape."
+    },
+    {
+      "question": "A toy dinosaur is placed on a table between a fixed torch and a screen. If the torch is moved closer to the toy dinosaur, what will happen to the shadow on the screen?",
+      "options": [
+        "The shadow becomes smaller because less light is blocked by the toy.",
+        "The shadow becomes larger because a wider angle of light is blocked.",
+        "The shadow remains the same size because the dinosaur did not move.",
+        "The shadow disappears completely because light passes through the toy."
+      ],
+      "correct": 1,
+      "points": 2,
+      "time": 75,
+      "explanation": "When the light source moves closer to an object, the object blocks more of the light rays spreading out from the source. This casts a larger shadow on the screen."
+    },
+    {
+      "question": "An object casts a shadow on a white wall. If the wall is moved further away from the object while the torch stays in the same position, what will happen to the size of the shadow?",
+      "options": [
+        "The shadow will become larger on the wall.",
+        "The shadow will become smaller on the wall.",
+        "The shadow will remain the exact same size.",
+        "The shadow will blur out and vanish instantly."
+      ],
+      "correct": 0,
+      "points": 2,
+      "time": 70,
+      "explanation": "As the screen (the wall) is moved further away from the object, the shadow path continues to spread outward over a longer distance, making the shadow larger."
+    },
+    {
+      "question": "A student tests a mystery material by placing it between a torch and a light sensor. The data-logger shows that the light reading drops from 900 units to 450 units. This tells us that the material is ____________.",
+      "options": [
+        "transparent because it allows all light rays to pass through easily",
+        "translucent because it allows only some light rays to pass through",
+        "opaque because it blocks all the light rays coming from the torch",
+        "reflective because it creates its own bright source of light rays"
+      ],
+      "correct": 1,
+      "points": 2,
+      "time": 80,
+      "explanation": "Since the light was reduced but did not drop to zero, the material allows only a portion of the light to pass through. This is the definition of a translucent material."
+    },
+    {
+      "question": "John stands outside in an open field in Singapore and measures the shadow of a vertical stick at three different times: 10:00 AM, 12:00 PM, and 4:00 PM. Which sequence lists the times from the SHORTEST shadow to the LONGEST shadow?",
+      "options": [
+        "10:00 AM, 12:00 PM, 4:00 PM",
+        "4:00 PM, 10:00 AM, 12:00 PM",
+        "12:00 PM, 10:00 AM, 4:00 PM",
+        "12:00 PM, 4:00 PM, 10:00 AM"
+      ],
+      "correct": 2,
+      "points": 2,
+      "time": 80,
+      "explanation": "At 12:00 PM (noon), the Sun is directly overhead, casting the shortest shadow. In the morning (10:00 AM), the Sun is higher than in the late afternoon (4:00 PM). Therefore, shadows are shortest at noon, longer at 10:00 AM, and longest at 4:00 PM."
+    },
+    {
+      "question": "Why is frosted glass preferred over clear glass for making a window panel for a bathroom door?",
+      "options": [
+        "It blocks all incoming light completely to make the room dark.",
+        "It allows all light rays to pass through so you can see outside clearly.",
+        "It allows only some light to pass through to give privacy while keeping the room lit.",
+        "It reflects light backwards to act as a mirror for the person inside."
+      ],
+      "correct": 2,
+      "points": 2,
+      "time": 60,
+      "explanation": "Bathroom windows need to provide privacy while letting daylight in. Translucent frosted glass achieves this by scattering the light so shapes inside cannot be clearly seen from the outside."
+    },
+    {
+      "question": "An actor stands on a theatre stage with two separate spotlights shining on him from two different corners. How many distinct shadows will be cast on the stage floor?",
+      "options": [
+        "One shadow because a person can only form one outline at a time.",
+        "Two shadows because light from each spotlight is blocked by his body.",
+        "No shadows because the bright lights cancel out all dark areas completely.",
+        "Four shadows because light reflects off his clothes in multiple directions."
+      ],
+      "correct": 1,
+      "points": 2,
+      "time": 70,
+      "explanation": "Each spotlight represents an independent path of light. Since the actor's body blocks the light from both spotlights at different angles, two separate shadows will form on the floor."
+    },
+    {
+      "question": "A girl stands near a lamp post at night. If her shadow is cast directly on the ground in front of her, where is the lamp post located relative to her position?",
+      "options": [
+        "Directly in front of her face",
+        "Directly behind her back",
+        "Directly above her head",
+        "Underneath her feet"
+      ],
+      "correct": 1,
+      "points": 2,
+      "time": 65,
+      "explanation": "Light travels in straight lines and forms a shadow on the opposite side of the object blocking it. If the shadow is in front of her, the light source must be behind her."
+    },
+    {
+      "question": "A hollow plastic cylinder is held between a torch and a wall. If the torch shines directly through the open circular end of the cylinder, what shape will the shadow on the wall be?",
+      "options": [
+        "A solid rectangle outline with no gaps",
+        "A completely solid dark circle shape",
+        "A ring-like circular outline with a bright center",
+        "A solid square outline with sharp corners"
+      ],
+      "correct": 2,
+      "points": 2,
+      "time": 75,
+      "explanation": "The plastic rim of the cylinder blocks the light, but the open center allows light to pass straight through to the wall. This creates a circular ring shadow with a lit center."
+    },
+    {
+      "question": "If you replace a solid wooden block with a piece of frosted glass of the exact same size, what change will you observe in the shadow cast on the screen?",
+      "options": [
+        "The shadow will become darker and much sharper than before.",
+        "The shadow will become lighter and less distinct than before.",
+        "The shadow will disappear completely from the white screen.",
+        "The shadow will turn into a bright patch of colorful light."
+      ],
+      "correct": 1,
+      "points": 2,
+      "time": 70,
+      "explanation": "Wood is opaque and blocks 100% of the light, creating a dark, distinct shadow. Frosted glass is translucent and allows some light to pass through, which makes the resulting shadow lighter and less defined."
+    }
+  ]
+}
