@@ -1,0 +1,251 @@
+{
+  "title": "Human Digestion: Terms & Processes",
+  "topic": "Digestive Tract Organs, Diabetes, and Conditions",
+  "subject": "Science",
+  "level": "Secondary",
+  "grade": "Sec 2",
+  "chapter": 4,
+  "worksheet": 3,
+  "questions": [
+    {
+      "question": "What physical property must large, complex food substances acquire through digestion before they can pass through the walls of the digestive tract into the bloodstream?",
+      "options": [
+        "They must become completely gaseous.",
+        "They must be converted into solid crystals.",
+        "They must become small and soluble.",
+        "They must be large and insoluble."
+      ],
+      "correct": 2,
+      "points": 5,
+      "explanation": "Food substances must be broken down into small and soluble molecules so they can dissolve and easily absorb through the living membranes of the digestive walls."
+    },
+    {
+      "question": "Which of the following processes is classified as a form of physical digestion?",
+      "options": [
+        "Salivary amylase breaking down starch molecules in the mouth.",
+        "Teeth grinding and chewing large food chunks into smaller pieces.",
+        "Protease breaking down protein chains inside the stomach.",
+        "Lipase converting oil droplets into fatty acids and glycerol."
+      ],
+      "correct": 1,
+      "points": 5,
+      "explanation": "Chewing and grinding with teeth reduces the physical size of food particles to increase their surface area, without changing the chemical nature of the molecules."
+    },
+    {
+      "question": "Which statement correctly describes what happens during chemical digestion?",
+      "options": [
+        "Food is moved through the esophagus by wave-like muscle actions.",
+        "Water is absorbed from undigested waste matter in the large intestine.",
+        "Large, complex food molecules are broken down into new, simpler substances by enzymes.",
+        "Food is cut and crushed mechanically into smaller fragments by the teeth."
+      ],
+      "correct": 2,
+      "points": 5,
+      "explanation": "Chemical digestion involves a chemical change where large, complex food molecules are broken down into entirely new, simpler, and soluble molecules with the help of enzymes."
+    },
+    {
+      "question": "A student eats a meal containing a high amount of rice, bread, and potatoes. Which primary class of nutrients do these foods provide?",
+      "options": [
+        "Carbohydrates",
+        "Vitamins",
+        "Proteins",
+        "Lipids"
+      ],
+      "correct": 0,
+      "points": 5,
+      "explanation": "Starchy foods like rice, bread, and potatoes are excellent sources of carbohydrates, which provide the body with its primary source of energy."
+    },
+    {
+      "question": "Why does a growing teenager require a sufficient daily intake of foods like chicken breast, fish, eggs, and tofu?",
+      "options": [
+        "They provide the quickest source of instant energy for daily running.",
+        "They turn directly into a thick layer of fat to insulate internal organs.",
+        "They dissolve essential vitamins so they can be exhaled easily.",
+        "They provide proteins necessary for cell growth and tissue repair."
+      ],
+      "correct": 3,
+      "points": 5,
+      "explanation": "Chicken, fish, eggs, and tofu are rich in proteins, which supply the essential materials needed to build new cells and repair worn-out tissues."
+    },
+    {
+      "question": "During chemical digestion, protease enzymes break down complex protein chains into which final, soluble end-products?",
+      "options": [
+        "Simple sugars",
+        "Amino acids",
+        "Fatty acids",
+        "Glycerol units"
+      ],
+      "correct": 1,
+      "points": 5,
+      "explanation": "When proteases fully digest protein molecules, the chemical chains are completely broken apart into individual, small, and soluble units called amino acids."
+    },
+    {
+      "question": "What are the final, soluble end-products produced when lipase enzymes fully digest a lipid (fat) molecule?",
+      "options": [
+        "Simple sugars and starch molecules",
+        "Amino acids and mineral salts",
+        "Fatty acids and glycerol",
+        "Proteins and simple sugars"
+      ],
+      "correct": 2,
+      "points": 5,
+      "explanation": "The chemical digestion of a lipid molecule yields two distinct types of smaller, soluble end-products: fatty acids and glycerol."
+    },
+    {
+      "question": "What is the final, soluble simple sugar produced from the full digestion of complex carbohydrates that is directly absorbed into the blood?",
+      "options": [
+        "Glucose",
+        "Starch",
+        "Protein",
+        "Cellulose"
+      ],
+      "correct": 0,
+      "points": 5,
+      "explanation": "Large carbohydrates (like starch) are chemically digested by carbohydrases down into their smallest, simplest unit, which is glucose."
+    },
+    {
+      "question": "Which enzyme is produced by the salivary glands in the mouth to begin the chemical breakdown of starch?",
+      "options": [
+        "Protease",
+        "Lipase",
+        "Amylase",
+        "Insulin"
+      ],
+      "correct": 2,
+      "points": 5,
+      "explanation": "Chemical digestion of carbohydrates starts in the mouth, where salivary amylase begins breaking down complex starch into maltose."
+    },
+    {
+      "question": "What is the biological term for the wave-like muscular contractions that push food smoothly down the esophagus and along the digestive tract?",
+      "options": [
+        "Emulsification",
+        "Absorption",
+        "Peristalsis",
+        "Neutralization"
+      ],
+      "correct": 2,
+      "points": 5,
+      "explanation": "Peristalsis refers to the rhythmic, wave-like contractions of muscles in the walls of the digestive tract that force food forward."
+    },
+    {
+      "question": "What kind of environment do protease enzymes in the stomach require to function at their best?",
+      "options": [
+        "A strongly alkaline environment provided by bile secretion",
+        "A strongly acidic environment provided by hydrochloric acid",
+        "A completely neutral environment provided by pure water",
+        "A highly dehydrated environment provided by mucus absorption"
+      ],
+      "correct": 1,
+      "points": 5,
+      "explanation": "Hydrochloric acid inside gastric juice creates a strongly acidic environment, which is the optimal pH level required for stomach proteases to function."
+    },
+    {
+      "question": "In which organ does the final completion of chemical digestion and the bulk absorption of nutrients into the bloodstream take place?",
+      "options": [
+        "Stomach",
+        "Large Intestine",
+        "Small Intestine",
+        "Esophagus"
+      ],
+      "correct": 2,
+      "points": 5,
+      "explanation": "The small intestine is highly adapted to complete the chemical breakdown of all nutrient classes and absorb the resulting soluble molecules into the blood."
+    },
+    {
+      "question": "How do the millions of microscopic, finger-like projections (villi) on the inner walls of the small intestine assist in nutrition?",
+      "options": [
+        "They increase the internal surface area for the absorption of nutrients.",
+        "They churn and mix food mechanically to assist physical digestion.",
+        "They secrete strong hydrochloric acid to kill harmful bacteria.",
+        "They act as temporary pouches to store undigested solid feces."
+      ],
+      "correct": 0,
+      "points": 5,
+      "explanation": "Villi vastly increase the internal surface area of the small intestine, allowing soluble nutrients to be absorbed into the bloodstream much faster."
+    },
+    {
+      "question": "What is the primary function of the large intestine when handling undigested food matter?",
+      "options": [
+        "To digest remaining proteins into soluble amino acids",
+        "To absorb water and mineral salts from the undigested food material",
+        "To secrete lipase enzymes for the final chemical breakdown of fats",
+        "To produce bile to emulsify remaining lipid droplets"
+      ],
+      "correct": 1,
+      "points": 5,
+      "explanation": "The large intestine does not digest food chemically. Instead, it reabsorbs water and mineral salts from the undigested waste material, turning it into solid feces."
+    },
+    {
+      "question": "Which section of the large intestine acts as a temporary storage area for solid waste (feces) before it is eliminated from the body?",
+      "options": [
+        "Rectum",
+        "Esophagus",
+        "Stomach",
+        "Duodenum"
+      ],
+      "correct": 0,
+      "points": 5,
+      "explanation": "The rectum is the final section of the large intestine where solid feces are stored temporarily before being passed out through the anus."
+    },
+    {
+      "question": "Which organ manufactures bile to assist in the mechanical breakdown of large fat globules into smaller droplets?",
+      "options": [
+        "Pancreas",
+        "Stomach",
+        "Liver",
+        "Gallbladder"
+      ],
+      "correct": 2,
+      "points": 5,
+      "explanation": "Bile is produced by the liver cells and released into the small intestine to emulsify fats, which increases their surface area for lipase action."
+    },
+    {
+      "question": "What is the function of the gallbladder in the human digestive system?",
+      "options": [
+        "To produce strong hydrochloric acid for the stomach",
+        "To store and concentrate bile before releasing it into the small intestine",
+        "To absorb digested simple sugars into the bloodstream",
+        "To synthesize insulin to regulate blood glucose levels"
+      ],
+      "correct": 1,
+      "points": 5,
+      "explanation": "The gallbladder does not produce bile; it acts as a storage pouch that holds and concentrates the bile produced by the liver until it is needed."
+    },
+    {
+      "question": "Which organ functions as an accessory gland that delivers a juice containing carbohydrase, protease, and lipase enzymes into the small intestine?",
+      "options": [
+        "Pancreas",
+        "Gallbladder",
+        "Liver",
+        "Stomach"
+      ],
+      "correct": 0,
+      "points": 5,
+      "explanation": "The pancreas secretes pancreatic juice, which contains a complete mix of enzymes designed to chemically break down carbohydrates, proteins, and fats inside the small intestine."
+    },
+    {
+      "question": "Why is dietary fibre highly important for human digestive health, even though our body cells cannot digest or absorb it?",
+      "options": [
+        "It provides the brain with an immediate source of glucose energy.",
+        "It adds bulk to food matter to stimulate peristalsis and prevent constipation.",
+        "It is neutralized by stomach acid to form essential mineral salts.",
+        "It is converted into proteins by helpful bacteria in the esophagus."
+      ],
+      "correct": 1,
+      "points": 5,
+      "explanation": "Dietary fibre adds bulk to undigested materials, which stimulates the muscular walls of the intestines to contract (peristalsis), moving waste smoothly and preventing constipation."
+    },
+    {
+      "question": "Type 2 Diabetes develops when the body cells fail to respond properly to which critical pancreatic hormone?",
+      "options": [
+        "Amylase",
+        "Bile",
+        "Mucus",
+        "Insulin"
+      ],
+      "correct": 3,
+      "points": 5,
+      "explanation": "Insulin is the hormone responsible for signaling body cells to absorb glucose from the blood. In Type 2 Diabetes, cells become resistant to insulin, causing blood sugar levels to rise dangerously."
+    }
+  ]
+}
