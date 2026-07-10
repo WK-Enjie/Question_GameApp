@@ -1,6 +1,6 @@
 {
-  "title": "Human Digestion: Terms & Processes",
-  "topic": "Digestive Tract Organs, Diabetes, and Conditions",
+  "title": "Human Digestion: Terms, Processes & Enzymes",
+  "topic": "Digestive Tract Organs, Enzymes, and Conditions",
   "subject": "Science",
   "level": "Secondary",
   "grade": "Sec 2",
@@ -16,19 +16,19 @@
         "They must be large and insoluble."
       ],
       "correct": 2,
-      "points": 5,
+      "points": 10,
       "explanation": "Food substances must be broken down into small and soluble molecules so they can dissolve and easily absorb through the living membranes of the digestive walls."
     },
     {
-      "question": "Which of the following processes is classified as a form of physical digestion?",
+      "question": "Which of the following processes is classified as physical digestion?",
       "options": [
-        "Salivary amylase breaking down starch molecules in the mouth.",
+        "Enzymes breaking down starch molecules in the mouth.",
         "Teeth grinding and chewing large food chunks into smaller pieces.",
-        "Protease breaking down protein chains inside the stomach.",
-        "Lipase converting oil droplets into fatty acids and glycerol."
+        "Enzymes breaking down protein chains inside the stomach.",
+        "Enzymes converting oil droplets into fatty acids and glycerol."
       ],
       "correct": 1,
-      "points": 5,
+      "points": 10,
       "explanation": "Chewing and grinding with teeth reduces the physical size of food particles to increase their surface area, without changing the chemical nature of the molecules."
     },
     {
@@ -40,7 +40,7 @@
         "Food is cut and crushed mechanically into smaller fragments by the teeth."
       ],
       "correct": 2,
-      "points": 5,
+      "points": 10,
       "explanation": "Chemical digestion involves a chemical change where large, complex food molecules are broken down into entirely new, simpler, and soluble molecules with the help of enzymes."
     },
     {
@@ -49,10 +49,10 @@
         "Carbohydrates",
         "Vitamins",
         "Proteins",
-        "Lipids"
+        "Lipids (fats)"
       ],
       "correct": 0,
-      "points": 5,
+      "points": 10,
       "explanation": "Starchy foods like rice, bread, and potatoes are excellent sources of carbohydrates, which provide the body with its primary source of energy."
     },
     {
@@ -64,7 +64,7 @@
         "They provide proteins necessary for cell growth and tissue repair."
       ],
       "correct": 3,
-      "points": 5,
+      "points": 10,
       "explanation": "Chicken, fish, eggs, and tofu are rich in proteins, which supply the essential materials needed to build new cells and repair worn-out tissues."
     },
     {
@@ -76,7 +76,7 @@
         "Glycerol units"
       ],
       "correct": 1,
-      "points": 5,
+      "points": 10,
       "explanation": "When proteases fully digest protein molecules, the chemical chains are completely broken apart into individual, small, and soluble units called amino acids."
     },
     {
@@ -88,7 +88,7 @@
         "Proteins and simple sugars"
       ],
       "correct": 2,
-      "points": 5,
+      "points": 10,
       "explanation": "The chemical digestion of a lipid molecule yields two distinct types of smaller, soluble end-products: fatty acids and glycerol."
     },
     {
@@ -100,7 +100,7 @@
         "Cellulose"
       ],
       "correct": 0,
-      "points": 5,
+      "points": 10,
       "explanation": "Large carbohydrates (like starch) are chemically digested by carbohydrases down into their smallest, simplest unit, which is glucose."
     },
     {
@@ -112,7 +112,7 @@
         "Insulin"
       ],
       "correct": 2,
-      "points": 5,
+      "points": 10,
       "explanation": "Chemical digestion of carbohydrates starts in the mouth, where salivary amylase begins breaking down complex starch into maltose."
     },
     {
@@ -124,20 +124,20 @@
         "Neutralization"
       ],
       "correct": 2,
-      "points": 5,
+      "points": 10,
       "explanation": "Peristalsis refers to the rhythmic, wave-like contractions of muscles in the walls of the digestive tract that force food forward."
     },
     {
       "question": "What kind of environment do protease enzymes in the stomach require to function at their best?",
       "options": [
-        "A strongly alkaline environment provided by bile secretion",
+        "A strongly alkaline environment",
         "A strongly acidic environment provided by hydrochloric acid",
-        "A completely neutral environment provided by pure water",
-        "A highly dehydrated environment provided by mucus absorption"
+        "A completely neutral environment",
+        "A highly dehydrated environment"
       ],
       "correct": 1,
-      "points": 5,
-      "explanation": "Hydrochloric acid inside gastric juice creates a strongly acidic environment, which is the optimal pH level required for stomach proteases to function."
+      "points": 10,
+      "explanation": "Hydrochloric acid inside gastric juice creates a strongly acidic environment, which is the optimal pH level required for stomach proteases to work."
     },
     {
       "question": "In which organ does the final completion of chemical digestion and the bulk absorption of nutrients into the bloodstream take place?",
@@ -148,7 +148,7 @@
         "Esophagus"
       ],
       "correct": 2,
-      "points": 5,
+      "points": 10,
       "explanation": "The small intestine is highly adapted to complete the chemical breakdown of all nutrient classes and absorb the resulting soluble molecules into the blood."
     },
     {
@@ -160,7 +160,7 @@
         "They act as temporary pouches to store undigested solid feces."
       ],
       "correct": 0,
-      "points": 5,
+      "points": 10,
       "explanation": "Villi vastly increase the internal surface area of the small intestine, allowing soluble nutrients to be absorbed into the bloodstream much faster."
     },
     {
@@ -169,10 +169,10 @@
         "To digest remaining proteins into soluble amino acids",
         "To absorb water and mineral salts from the undigested food material",
         "To secrete lipase enzymes for the final chemical breakdown of fats",
-        "To produce bile to emulsify remaining lipid droplets"
+        "To produce bile to break down remaining fat droplets"
       ],
       "correct": 1,
-      "points": 5,
+      "points": 10,
       "explanation": "The large intestine does not digest food chemically. Instead, it reabsorbs water and mineral salts from the undigested waste material, turning it into solid feces."
     },
     {
@@ -184,7 +184,7 @@
         "Duodenum"
       ],
       "correct": 0,
-      "points": 5,
+      "points": 10,
       "explanation": "The rectum is the final section of the large intestine where solid feces are stored temporarily before being passed out through the anus."
     },
     {
@@ -196,7 +196,7 @@
         "Gallbladder"
       ],
       "correct": 2,
-      "points": 5,
+      "points": 10,
       "explanation": "Bile is produced by the liver cells and released into the small intestine to emulsify fats, which increases their surface area for lipase action."
     },
     {
@@ -208,7 +208,7 @@
         "To synthesize insulin to regulate blood glucose levels"
       ],
       "correct": 1,
-      "points": 5,
+      "points": 10,
       "explanation": "The gallbladder does not produce bile; it acts as a storage pouch that holds and concentrates the bile produced by the liver until it is needed."
     },
     {
@@ -220,7 +220,7 @@
         "Stomach"
       ],
       "correct": 0,
-      "points": 5,
+      "points": 10,
       "explanation": "The pancreas secretes pancreatic juice, which contains a complete mix of enzymes designed to chemically break down carbohydrates, proteins, and fats inside the small intestine."
     },
     {
@@ -232,7 +232,7 @@
         "It is converted into proteins by helpful bacteria in the esophagus."
       ],
       "correct": 1,
-      "points": 5,
+      "points": 10,
       "explanation": "Dietary fibre adds bulk to undigested materials, which stimulates the muscular walls of the intestines to contract (peristalsis), moving waste smoothly and preventing constipation."
     },
     {
@@ -244,8 +244,116 @@
         "Insulin"
       ],
       "correct": 3,
-      "points": 5,
+      "points": 10,
       "explanation": "Insulin is the hormone responsible for signaling body cells to absorb glucose from the blood. In Type 2 Diabetes, cells become resistant to insulin, causing blood sugar levels to rise dangerously."
+    },
+    {
+      "question": "A person has their gallbladder removed. Why might their doctor recommend eating smaller, lower-fat meals?",
+      "options": [
+        "Because they can no longer produce bile at all",
+        "Because without the gallbladder, bile is released continuously in small amounts, making large fatty meals harder to digest",
+        "Because fats are no longer useful to the body",
+        "Because fat digestion now happens in the stomach instead"
+      ],
+      "correct": 1,
+      "points": 10,
+      "explanation": "The gallbladder stores and concentrates bile. Without it, bile is released continuously but in smaller amounts, making it difficult to digest large amounts of fat at one time."
+    },
+    {
+      "question": "A student notices that after eating a meal, food moves from his mouth to his stomach even when he is standing on his head. What explains this?",
+      "options": [
+        "Gravity pulls the food down",
+        "Peristalsis pushes the food along regardless of gravity",
+        "The esophagus has a pump that forces food forward",
+        "Food dissolves immediately and flows like water"
+      ],
+      "correct": 1,
+      "points": 10,
+      "explanation": "Peristalsis is the wave-like muscle contraction that pushes food through the esophagus and digestive tract, and it works regardless of body position."
+    },
+    {
+      "question": "Which of the following best describes the function of the pancreas in digestion?",
+      "options": [
+        "It produces bile to emulsify fats",
+        "It stores undigested food",
+        "It produces digestive enzymes and releases them into the small intestine",
+        "It absorbs water from waste material"
+      ],
+      "correct": 2,
+      "points": 10,
+      "explanation": "The pancreas produces a range of digestive enzymes (for carbohydrates, proteins, and fats) and secretes them into the small intestine to complete chemical digestion."
+    },
+    {
+      "question": "Which of the following is a symptom of uncontrolled diabetes?",
+      "options": [
+        "Frequent urination and increased thirst",
+        "Excessive muscle growth",
+        "A constant need to eat more fiber",
+        "Loss of all body fat"
+      ],
+      "correct": 0,
+      "points": 10,
+      "explanation": "High blood sugar levels cause the kidneys to work harder to remove excess glucose, leading to frequent urination and increased thirst."
+    },
+    {
+      "question": "Why do we chew our food before swallowing?",
+      "options": [
+        "To make it taste better",
+        "To increase the surface area of food for enzymes to work on",
+        "To remove all nutrients",
+        "To turn food into liquid immediately"
+      ],
+      "correct": 1,
+      "points": 10,
+      "explanation": "Chewing breaks food into smaller pieces, increasing the surface area so digestive enzymes can work more efficiently."
+    },
+    {
+      "question": "Which of the following is an example of an application of understanding the digestive system?",
+      "options": [
+        "Knowing that eating fiber prevents constipation",
+        "Knowing the chemical formula for glucose",
+        "Knowing the number of bones in the body",
+        "Knowing the boiling point of water"
+      ],
+      "correct": 0,
+      "points": 10,
+      "explanation": "Understanding that fiber helps prevent constipation is a practical application of digestive system knowledge."
+    },
+    {
+      "question": "What is the role of the liver in digestion?",
+      "options": [
+        "To produce bile for fat digestion",
+        "To store undigested food",
+        "To absorb water from waste",
+        "To produce insulin"
+      ],
+      "correct": 0,
+      "points": 10,
+      "explanation": "The liver produces bile, which is stored in the gallbladder and released to help emulsify fats."
+    },
+    {
+      "question": "A student has a diet low in fiber and often feels bloated and uncomfortable. Which condition is she most likely experiencing?",
+      "options": [
+        "Constipation",
+        "Diabetes",
+        "Gastric reflux",
+        "Stomach ulcer"
+      ],
+      "correct": 0,
+      "points": 10,
+      "explanation": "A low-fiber diet often leads to constipation, which can cause bloating and discomfort."
+    },
+    {
+      "question": "What is the main reason that the small intestine has a very large internal surface area?",
+      "options": [
+        "To allow more food to be stored",
+        "To increase the rate of absorption of nutrients",
+        "To slow down the movement of food",
+        "To produce more digestive juices"
+      ],
+      "correct": 1,
+      "points": 10,
+      "explanation": "The large surface area (created by villi and microvilli) maximizes the absorption of nutrients into the bloodstream."
     }
   ]
 }
