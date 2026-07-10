@@ -6,7 +6,7 @@
   "grade": "Sec 2",
   "chapter": 6,
   "worksheet": 2,
-  "questions": [
+  "problems": [
     {
       "question": "In which organ does the chemical digestion of food first begin?",
       "options": [
@@ -130,7 +130,7 @@
     {
       "question": "What is the primary cause of Type 2 Diabetes?",
       "options": [
-        "Eating too much fiber",
+        "Eating too much fibre",
         "The body cannot properly use or produce enough insulin",
         "The stomach produces too much acid",
         "A lack of water in the diet"
@@ -154,17 +154,17 @@
     {
       "question": "What is a common long-term effect of uncontrolled diabetes?",
       "options": [
-        "Excessive weight gain",
         "Damage to blood vessels, eyes, and kidneys",
+        "Excessive weight gain",
         "Loss of appetite",
         "Stronger bones"
       ],
-      "correct": 1,
+      "correct": 0,
       "points": 10,
       "explanation": "High blood sugar over time damages blood vessels, leading to complications in eyes, kidneys, and nerves."
     },
     {
-      "question": "Why is fiber important for digestive health, even though humans cannot digest it?",
+      "question": "Why is fibre important for digestive health, even though humans cannot digest it?",
       "options": [
         "It provides energy for the brain",
         "It helps prevent constipation by adding bulk to food",
@@ -173,7 +173,7 @@
       ],
       "correct": 1,
       "points": 10,
-      "explanation": "Fiber adds bulk to food, which helps push waste through the digestive system and prevents constipation."
+      "explanation": "Fibre adds bulk to food, which helps push waste through the digestive system and prevents constipation."
     },
     {
       "question": "What is constipation?",
@@ -185,7 +185,7 @@
       ],
       "correct": 2,
       "points": 10,
-      "explanation": "Constipation occurs when bowel movements become infrequent or difficult, often due to lack of fiber or water."
+      "explanation": "Constipation occurs when bowel movements become infrequent or difficult, often due to lack of fibre or water."
     },
     {
       "question": "What is diarrhea?",
@@ -241,14 +241,14 @@
         "Eating a diet rich in vegetables",
         "Being physically inactive and overweight",
         "Drinking plenty of water",
-        "Eating plenty of fiber"
+        "Eating plenty of fibre"
       ],
       "correct": 1,
       "points": 10,
       "explanation": "Physical inactivity and being overweight make it harder for the body to use insulin effectively, increasing the risk of Type 2 Diabetes."
     },
     {
-      "question": "If someone has a diet consistently too low in fiber, what condition are they most likely to develop?",
+      "question": "If someone has a diet consistently too low in fibre, what condition are they most likely to develop?",
       "options": [
         "Diabetes",
         "Constipation",
@@ -257,7 +257,7 @@
       ],
       "correct": 1,
       "points": 10,
-      "explanation": "A low-fiber diet often leads to constipation because fiber adds bulk to waste and helps it move through the digestive system."
+      "explanation": "A low-fibre diet often leads to constipation because fibre adds bulk to waste and helps it move through the digestive system."
     },
     {
       "question": "Where does most of the absorption of nutrients occur?",
@@ -298,7 +298,7 @@
     {
       "question": "Why does the stomach contain strong hydrochloric acid?",
       "options": [
-        "To digest fiber",
+        "To digest fibre",
         "To kill bacteria and provide the right conditions for protein-digesting enzymes",
         "To absorb vitamins",
         "To neutralize bile"
