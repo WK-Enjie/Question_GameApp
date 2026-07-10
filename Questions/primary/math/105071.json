@@ -1,0 +1,152 @@
+{
+  "title": "Simple & Multi‑Step Rates",
+  "topic": "Rate, Cost, and Everyday Applications",
+  "subject": "Mathematics",
+  "level": "Primary",
+  "grade": "Primary 5",
+  "chapter": 7,
+  "worksheet": 1,
+  "description": "This worksheet focuses on multi‑step rate problems.",
+  "questions": [
+    {
+      "question": "A tank already has 15 litres of water. A tap fills it at a rate of 3 litres per minute. How much water is in the tank after 20 minutes?",
+      "options": ["75 litres", "60 litres", "90 litres", "80 litres"],
+      "correct": 0,
+      "points": 5,
+      "explanation": "Water added = 3 × 20 = 60 L. Total = 15 + 60 = 75 L."
+    },
+    {
+      "question": "A car travels 180 km in 3 hours. How far does it travel in 4.5 hours?",
+      "options": ["240 km", "300 km", "270 km", "280 km"],
+      "correct": 2,
+      "points": 5,
+      "explanation": "Speed = 180 ÷ 3 = 60 km/h. Distance = 60 × 4.5 = 270 km."
+    },
+    {
+      "question": "A school bus picks up 8 children per stop. After 9 stops, 5 children get off. How many children are left on the bus?",
+      "options": ["62 children", "72 children", "77 children", "67 children"],
+      "correct": 3,
+      "points": 5,
+      "explanation": "Picked up = 8 × 9 = 72. Left on bus = 72 − 5 = 67 children."
+    },
+    {
+      "question": "A worker earns $144 for 9 hours of work. How much does he earn for 15 hours?",
+      "options": ["$225", "$240", "$210", "$255"],
+      "correct": 1,
+      "points": 5,
+      "explanation": "Rate = $144 ÷ 9 = $16/hour. For 15 hours: $16 × 15 = $240."
+    },
+    {
+      "question": "A shop sells 5 pens for $6. How much do 8 pens cost?",
+      "options": ["$10.00", "$8.80", "$9.60", "$9.20"],
+      "correct": 2,
+      "points": 5,
+      "explanation": "Cost per pen = $6 ÷ 5 = $1.20. For 8 pens: $1.20 × 8 = $9.60."
+    },
+    {
+      "question": "A train travels 350 km in 5 hours. How long does it take to travel 490 km at the same speed?",
+      "options": ["8 hours", "7 hours", "6 hours", "7.5 hours"],
+      "correct": 1,
+      "points": 5,
+      "explanation": "Speed = 350 ÷ 5 = 70 km/h. Time = 490 ÷ 70 = 7 hours."
+    },
+    {
+      "question": "A printer prints 24 pages per minute. It printed for 4 minutes, stopped, then printed for another 3 minutes. How many pages did it print in total?",
+      "options": ["168 pages", "144 pages", "192 pages", "150 pages"],
+      "correct": 0,
+      "points": 5,
+      "explanation": "First batch = 24 × 4 = 96. Second batch = 24 × 3 = 72. Total = 96 + 72 = 168 pages."
+    },
+    {
+      "question": "A tank had 50 litres of water. A tap was turned on and after 8 minutes, the tank had 90 litres. What is the rate of water flow per minute?",
+      "options": ["6 litres/min", "4 litres/min", "5 litres/min", "7 litres/min"],
+      "correct": 2,
+      "points": 5,
+      "explanation": "Water added = 90 − 50 = 40 L. Rate = 40 ÷ 8 = 5 litres/min."
+    },
+    {
+      "question": "A cyclist rides at a speed of 15 km/h for 2 hours, then at 10 km/h for 3 hours. How far does he travel in total?",
+      "options": ["50 km", "60 km", "45 km", "55 km"],
+      "correct": 1,
+      "points": 5,
+      "explanation": "First leg = 15 × 2 = 30 km. Second leg = 10 × 3 = 30 km. Total = 30 + 30 = 60 km."
+    },
+    {
+      "question": "A worker packs 8 boxes per hour for the first 4 hours, then 6 boxes per hour for the next 3 hours. How many boxes does he pack in total?",
+      "options": ["48 boxes", "50 boxes", "42 boxes", "54 boxes"],
+      "correct": 1,
+      "points": 5,
+      "explanation": "First shift = 8 × 4 = 32. Second shift = 6 × 3 = 18. Total = 32 + 18 = 50 boxes."
+    },
+    {
+      "question": "A swimming pool has 120 litres of water. It is filled at 25 litres per minute for 4 minutes. How much water is in the pool now?",
+      "options": ["200 litres", "220 litres", "240 litres", "260 litres"],
+      "correct": 1,
+      "points": 5,
+      "explanation": "Water added = 25 × 4 = 100 L. Total = 120 + 100 = 220 L."
+    },
+    {
+      "question": "A bus travels 250 km in 4 hours. How far does it travel in 7.2 hours?",
+      "options": ["400 km", "430 km", "450 km", "480 km"],
+      "correct": 2,
+      "points": 5,
+      "explanation": "Speed = 250 ÷ 4 = 62.5 km/h. Distance = 62.5 × 7.2 = 450 km."
+    },
+    {
+      "question": "A machine produces 360 toys in 6 hours. How many hours does it take to produce 480 toys?",
+      "options": ["8 hours", "7 hours", "9 hours", "10 hours"],
+      "correct": 0,
+      "points": 5,
+      "explanation": "Rate = 360 ÷ 6 = 60 toys/hour. Time = 480 ÷ 60 = 8 hours."
+    },
+    {
+      "question": "A tap fills a tank at 4 litres per minute. The tank had 10 litres and after some time it had 58 litres. How long did the tap run?",
+      "options": ["10 minutes", "12 minutes", "14 minutes", "16 minutes"],
+      "correct": 1,
+      "points": 5,
+      "explanation": "Water added = 58 − 10 = 48 L. Time = 48 ÷ 4 = 12 minutes."
+    },
+    {
+      "question": "A student reads 12 pages per hour for 3 hours, then 8 pages per hour for 4 hours. How many pages does he read in total?",
+      "options": ["60 pages", "64 pages", "68 pages", "72 pages"],
+      "correct": 2,
+      "points": 5,
+      "explanation": "First = 12 × 3 = 36. Second = 8 × 4 = 32. Total = 36 + 32 = 68 pages."
+    },
+    {
+      "question": "A car travels 320 km in 4 hours. How long does it take to travel 560 km?",
+      "options": ["6 hours", "6.5 hours", "7 hours", "7.5 hours"],
+      "correct": 2,
+      "points": 5,
+      "explanation": "Speed = 320 ÷ 4 = 80 km/h. Time = 560 ÷ 80 = 7 hours."
+    },
+    {
+      "question": "A typist types 30 words per minute for 5 minutes, then 40 words per minute for 4 minutes. How many words does she type in total?",
+      "options": ["270 words", "290 words", "310 words", "330 words"],
+      "correct": 2,
+      "points": 5,
+      "explanation": "First = 30 × 5 = 150. Second = 40 × 4 = 160. Total = 150 + 160 = 310 words."
+    },
+    {
+      "question": "A school canteen sells 25 bowls of noodles per hour. How many bowls will they sell in 4 hours and 30 minutes?",
+      "options": ["100 bowls", "105 bowls", "110 bowls", "112.5 bowls"],
+      "correct": 3,
+      "points": 5,
+      "explanation": "4.5 hours × 25 = 112.5 bowls."
+    },
+    {
+      "question": "A worker earns $120 for 8 hours. How much does he earn for 13 hours?",
+      "options": ["$175", "$180", "$185", "$195"],
+      "correct": 3,
+      "points": 5,
+      "explanation": "Rate = $120 ÷ 8 = $15/hour. For 13 hours: $15 × 13 = $195."
+    },
+    {
+      "question": "A pool loses 2 litres of water per hour through evaporation. It initially had 100 litres. How much water is left after 14 hours?",
+      "options": ["70 litres", "72 litres", "74 litres", "76 litres"],
+      "correct": 1,
+      "points": 5,
+      "explanation": "Water lost = 2 × 14 = 28 L. Remaining = 100 − 28 = 72 L."
+    }
+  ]
+}

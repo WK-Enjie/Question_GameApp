@@ -1,0 +1,152 @@
+{
+  "title": "Harder Rates – Tiered Pricing, Backward Thinking & Combined Rates",
+  "topic": "Rate, Cost, Multi‑Step & Tiered Applications",
+  "subject": "Mathematics",
+  "level": "Primary",
+  "grade": "Primary 5",
+  "chapter": 7,
+  "worksheet": 2,
+  "description": "This worksheet features complex tiered pricing (different rates for different quantities), backward thinking (finding time or weight from total cost), combined rates, and 'part thereof' rounding. Take it step by step.",
+  "questions": [
+    {
+      "question": "A candle was 20 cm long. After 6 hours of burning, it was 8 cm long. What is the rate of burning per hour?",
+      "options": ["1.5 cm/h", "2 cm/h", "2.5 cm/h", "3 cm/h"],
+      "correct": 1,
+      "points": 5,
+      "explanation": "Length burned = 20 − 8 = 12 cm. Rate = 12 ÷ 6 = 2 cm/h."
+    },
+    {
+      "question": "A taxi charges $4 for the first 1 km, then $0.80 for each additional 500 m. What is the fare for a 3.5 km trip?",
+      "options": ["$7.20", "$8.00", "$8.80", "$9.60"],
+      "correct": 1,
+      "points": 10,
+      "explanation": "First 1 km = $4. Remaining = 2.5 km = 5 lots of 500 m. Additional = 5 × $0.80 = $4. Total = $4 + $4 = $8.00."
+    },
+    {
+      "question": "A postage fee costs $0.50 for the first 20 g, then $0.30 for each additional 10 g. What is the cost to mail a 50 g letter?",
+      "options": ["$1.10", "$1.20", "$1.30", "$1.40"],
+      "correct": 3,
+      "points": 10,
+      "explanation": "First 20 g = $0.50. Remaining = 30 g = 3 lots of 10 g. Additional = 3 × $0.30 = $0.90. Total = $0.50 + $0.90 = $1.40."
+    },
+    {
+      "question": "A water bill charges $2 for the first 1,000 litres, then $0.50 for each additional 100 litres. How much is the bill for 1,800 litres?",
+      "options": ["$4.50", "$5.00", "$5.50", "$6.00"],
+      "correct": 3,
+      "points": 10,
+      "explanation": "First 1,000 L = $2. Remaining = 800 L = 8 lots of 100 L. Additional = 8 × $0.50 = $4. Total = $2 + $4 = $6.00."
+    },
+    {
+      "question": "A tank had 50 litres. A tap was turned on and after 12 minutes, the tank had 26 litres. At what rate was water flowing out per minute?",
+      "options": ["1 L/min", "1.5 L/min", "2 L/min", "2.5 L/min"],
+      "correct": 2,
+      "points": 5,
+      "explanation": "Water lost = 50 − 26 = 24 L. Rate = 24 ÷ 12 = 2 L/min."
+    },
+    {
+      "question": "A worker earns $12 per hour for the first 8 hours, then $18 per hour for overtime. How much does he earn if he works 11 hours?",
+      "options": ["$138", "$144", "$150", "$156"],
+      "correct": 2,
+      "points": 10,
+      "explanation": "First 8 h = 8 × $12 = $96. Overtime = 3 h × $18 = $54. Total = $96 + $54 = $150."
+    },
+    {
+      "question": "A parking lot charges $3 for the first hour, then $2 for every additional hour (or part thereof). How much does a 4.5‑hour parking cost?",
+      "options": ["$9", "$10", "$11", "$12"],
+      "correct": 2,
+      "points": 10,
+      "explanation": "First hour = $3. Additional time = 3.5 h → rounded up to 4 h. Additional = 4 × $2 = $8. Total = $3 + $8 = $11."
+    },
+    {
+      "question": "A delivery service charges $5 for the first 2 kg, then $0.80 for each additional 100 g. How much does it cost to send a 3.5 kg parcel?",
+      "options": ["$14", "$15", "$16", "$17"],
+      "correct": 3,
+      "points": 10,
+      "explanation": "First 2 kg = $5. Remaining = 1.5 kg = 1,500 g = 15 lots of 100 g. Additional = 15 × $0.80 = $12. Total = $5 + $12 = $17."
+    },
+    {
+      "question": "A taxi charges $3.50 for the first 1 km, then $0.50 for each additional 200 m. How much does a 2.6 km trip cost?",
+      "options": ["$6.50", "$7.00", "$7.50", "$8.00"],
+      "correct": 2,
+      "points": 10,
+      "explanation": "First 1 km = $3.50. Remaining = 1.6 km = 8 lots of 200 m. Additional = 8 × $0.50 = $4. Total = $3.50 + $4 = $7.50."
+    },
+    {
+      "question": "A post office charges $1.00 for the first 50 g, then $0.20 for each additional 10 g. What is the cost to mail a 120 g package?",
+      "options": ["$2.20", "$2.40", "$2.60", "$2.80"],
+      "correct": 1,
+      "points": 10,
+      "explanation": "First 50 g = $1. Remaining = 70 g = 7 lots of 10 g. Additional = 7 × $0.20 = $1.40. Total = $1 + $1.40 = $2.40."
+    },
+    {
+      "question": "A worker is paid $8 per hour for the first 40 hours, then $12 per hour for overtime. If he earns $440 in a week, how many hours of overtime did he work?",
+      "options": ["5 h", "8 h", "10 h", "12 h"],
+      "correct": 2,
+      "points": 10,
+      "explanation": "Normal pay = 40 × $8 = $320. Overtime pay = $440 − $320 = $120. Overtime hours = $120 ÷ $12 = 10 h."
+    },
+    {
+      "question": "A taxi charges $4 for the first 1 km, then $0.60 for each additional 300 m. How much does a 2.8 km trip cost?",
+      "options": ["$6.40", "$6.80", "$7.20", "$7.60"],
+      "correct": 3,
+      "points": 10,
+      "explanation": "First 1 km = $4. Remaining = 1.8 km = 1,800 m = 6 lots of 300 m. Additional = 6 × $0.60 = $3.60. Total = $4 + $3.60 = $7.60."
+    },
+    {
+      "question": "A parcel costs $0.80 for the first 100 g, then $0.30 for each additional 50 g. How much does a 350 g parcel cost?",
+      "options": ["$1.70", "$1.90", "$2.10", "$2.30"],
+      "correct": 3,
+      "points": 10,
+      "explanation": "First 100 g = $0.80. Remaining = 250 g = 5 lots of 50 g. Additional = 5 × $0.30 = $1.50. Total = $0.80 + $1.50 = $2.30."
+    },
+    {
+      "question": "A candle burns at 1.5 cm per hour. If it was 18 cm long, how long does it take to burn down to 6 cm?",
+      "options": ["6 h", "7 h", "8 h", "9 h"],
+      "correct": 2,
+      "points": 5,
+      "explanation": "Length to burn = 18 − 6 = 12 cm. Time = 12 ÷ 1.5 = 8 h."
+    },
+    {
+      "question": "A train travels at 120 km/h for the first 2 hours, then at 80 km/h for the next 3 hours. What is the total distance travelled?",
+      "options": ["400 km", "440 km", "480 km", "520 km"],
+      "correct": 2,
+      "points": 5,
+      "explanation": "First = 120 × 2 = 240 km. Second = 80 × 3 = 240 km. Total = 240 + 240 = 480 km."
+    },
+    {
+      "question": "A parking lot charges $2 for the first hour, then $1.50 for every additional 30 minutes (or part thereof). How much does a 3‑hour 20‑minute parking cost?",
+      "options": ["$8.00", "$8.50", "$9.00", "$9.50"],
+      "correct": 3,
+      "points": 10,
+      "explanation": "First hour = $2. Remaining time = 2 h 20 min = 140 min = 5 lots of 30 min (rounded up). Additional = 5 × $1.50 = $7.50. Total = $2 + $7.50 = $9.50."
+    },
+    {
+      "question": "A post office charges $1.20 for the first 30 g, then $0.40 for each additional 10 g. What is the cost of a 110 g letter?",
+      "options": ["$3.20", "$3.60", "$4.00", "$4.40"],
+      "correct": 3,
+      "points": 10,
+      "explanation": "First 30 g = $1.20. Remaining = 80 g = 8 lots of 10 g. Additional = 8 × $0.40 = $3.20. Total = $1.20 + $3.20 = $4.40."
+    },
+    {
+      "question": "A delivery service charges $6 for the first 1.5 kg, then $1.20 for each additional 200 g. What is the cost for a 3.3 kg parcel?",
+      "options": ["$14.40", "$15.00", "$15.60", "$16.80"],
+      "correct": 3,
+      "points": 10,
+      "explanation": "First 1.5 kg = $6. Remaining = 1.8 kg = 1,800 g = 9 lots of 200 g. Additional = 9 × $1.20 = $10.80. Total = $6 + $10.80 = $16.80."
+    },
+    {
+      "question": "A water bill charges $2.50 for the first 500 litres, then $0.30 for each additional 50 litres. How much is the bill for 800 litres?",
+      "options": ["$3.70", "$4.00", "$4.30", "$4.60"],
+      "correct": 2,
+      "points": 10,
+      "explanation": "First 500 L = $2.50. Remaining = 300 L = 6 lots of 50 L. Additional = 6 × $0.30 = $1.80. Total = $2.50 + $1.80 = $4.30."
+    },
+    {
+      "question": "A post office charges $0.80 for the first 40 g, then $0.15 for each additional 10 g. What is the cost for a 100 g letter?",
+      "options": ["$1.50", "$1.60", "$1.70", "$1.80"],
+      "correct": 2,
+      "points": 10,
+      "explanation": "First 40 g = $0.80. Remaining = 60 g = 6 lots of 10 g. Additional = 6 × $0.15 = $0.90. Total = $0.80 + $0.90 = $1.70."
+    }
+  ]
+}
