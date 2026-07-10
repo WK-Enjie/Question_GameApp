@@ -1,0 +1,242 @@
+```json
+{
+  "title": "P6 Revision Worksheet 2 – Advanced Volume, Rate & Value Heuristics",
+  "questions": [
+    {
+      "question": "A rectangular tank measuring 40 cm by 20 cm by 30 cm is 1/3 filled with water. A tap is turned on to pour water into the tank at a constant rate of 2 litres per minute. How many minutes will it take to fill the tank completely?",
+      "options": [
+        "6 minutes",
+        "8 minutes",
+        "10 minutes",
+        "12 minutes"
+      ],
+      "correct": 1,
+      "points": 12,
+      "time": 270,
+      "explanation": "Step 1: Find the total capacity of the tank. Volume = 40 × 20 × 30 = 24000 cubic centimeters = 24 litres. Step 2: Find the remaining volume to be filled. Since 1/3 is already filled, 2/3 is empty. Empty volume = 2/3 × 24 = 16 litres. Step 3: Divide the remaining volume by the tap rate. Time = 16 / 2 = 8 minutes."
+    },
+    {
+      "question": "A badminton court is booked for 3 hours. A group of 6 players share the court and play equally. At any one time, there are exactly 4 players playing on the court. On average, how many minutes does each player get to play?",
+      "options": [
+        "90 minutes",
+        "100 minutes",
+        "120 minutes",
+        "150 minutes"
+      ],
+      "correct": 2,
+      "points": 12,
+      "time": 270,
+      "explanation": "Step 1: Find the total booking duration in minutes. 3 hours = 3 × 60 = 180 minutes. Step 2: Calculate the total playing time available on the court. Since 4 players are always playing, total court playing time = 180 × 4 = 720 player-minutes. Step 3: Divide the total playing time equally among the 6 players. Time per player = 720 / 6 = 120 minutes."
+    },
+    {
+      "question": "A baker has a collection of flour and sugar containers with a combined mass of 50 kg. After he removes 1/3 of the flour and 1/2 of the sugar, the total remaining mass of the ingredients becomes 29 kg. Find the original mass of the flour.",
+      "options": [
+        "20 kg",
+        "24 kg",
+        "26 kg",
+        "30 kg"
+      ],
+      "correct": 1,
+      "points": 14,
+      "time": 300,
+      "explanation": "Step 1: Express the total original mass: Flour + Sugar = 50 kg. Step 2: Express the mass removed: 1/3 of Flour + 1/2 of Sugar = 50 - 29 = 21 kg. Step 3: Double the second statement to match whole values of sugar: 2/3 of Flour + Sugar = 42 kg. Step 4: Compare this with the first statement. The difference of 1/3 of the Flour equals 50 - 42 = 8 kg. Step 5: Find the total original mass of the flour: 8 × 3 = 24 kg."
+    },
+    {
+      "question": "A merchant bought a batch of identical calculators. He sold 40% of them at a profit of $5 each and the remaining calculators at a loss of $2 each. If his total net profit from selling all the calculators was $120, how many calculators did he buy in total?",
+      "options": [
+        "100",
+        "120",
+        "150",
+        "200"
+      ],
+      "correct": 2,
+      "points": 14,
+      "time": 300,
+      "explanation": "Step 1: Model the total quantity using parts. Let the total number of calculators be 5 units. Step 2: Calculate profit units. 40% of 5 units = 2 units sold at a $5 profit (+10 units of value). Remaining 60% = 3 units sold at a $2 loss (-6 units of value). Step 3: Find the net value of profit. 10 units - 6 units = 4 units of value. Step 4: Relate value units to actual money. 4 units = $120, so 1 unit = $30. Total calculators = 5 units = 5 × 30 = 150 calculators."
+    },
+    {
+      "question": "Tap A pumps water into a container at a constant rate of 4.5 litres per minute. At the same time, a leak at the bottom of the container drains water out at a constant rate of 1.5 litres per minute. If the container holds a maximum capacity of 18 litres and starts empty, how many minutes will it take to fill completely?",
+      "options": [
+        "4 minutes",
+        "5 minutes",
+        "6 minutes",
+        "8 minutes"
+      ],
+      "correct": 2,
+      "points": 12,
+      "time": 240,
+      "explanation": "Step 1: Calculate the net filling rate per minute. Net rate = 4.5 - 1.5 = 3 litres per minute. Step 2: Divide the total capacity of the container by the net filling rate. Time = 18 / 3 = 6 minutes."
+    },
+    {
+      "question": "Mr Tan books a basketball court for 6 hours. He invites 20 students to play, and they all get an equal amount of playing time. If there are always exactly 3 players playing on the court at any one time, calculate the total playing duration for each student.",
+      "options": [
+        "45 minutes",
+        "54 minutes",
+        "60 minutes",
+        "72 minutes"
+      ],
+      "correct": 1,
+      "points": 14,
+      "time": 330,
+      "explanation": "Step 1: Convert the total booking time into minutes. 6 hours = 6 × 60 = 360 minutes. Step 2: Compute total player-minutes available on the court. 360 minutes × 3 slots = 1080 player-minutes. Step 3: Divide the total player-minutes equally among the 20 students. Time per student = 1080 / 20 = 54 minutes."
+    },
+    {
+      "question": "A collector counts his collection of model vehicles, consisting only of bicycles (2 wheels) and tricycles (3 wheels). There are 30 vehicles and 74 wheels altogether. How many tricycles does the collector own?",
+      "options": [
+        "12",
+        "14",
+        "16",
+        "18"
+      ],
+      "correct": 1,
+      "points": 14,
+      "time": 300,
+      "explanation": "Step 1: Assume all vehicles are bicycles. Total wheels if all were bicycles = 30 × 2 = 60 wheels. Step 2: Find the difference between the actual wheel count and this assumed total. Extra wheels = 74 - 60 = 14 wheels. Step 3: Since each tricycle has 1 more wheel than a bicycle, replacing a bicycle with a tricycle adds 1 wheel. Number of tricycles = 14 / 1 = 14 tricycles."
+    },
+    {
+      "question": "The ratio of the number of cookies to cupcakes bought for a school party was 5:2. A cupcake costs $3 more than a cookie. If the total amount spent on these items was $62, find the cost of a single cupcake.",
+      "options": [
+        "$8",
+        "$11",
+        "$14",
+        "$16"
+      ],
+      "correct": 1,
+      "points": 14,
+      "time": 300,
+      "explanation": "Step 1: Assign units to the quantities. Let cookies be 5 units and cupcakes be 2 units. Step 2: Express the cost in terms of value parts. Let the cost of 1 cookie be 1 part. The cost of 1 cupcake is 1 part + $3. Step 3: Set up the total cost structure. Total cost = 5 units × 1 part + 2 units × (1 part + $3) = 5 parts + 2 parts + $6 = 7 parts + $6. Step 4: Formulate the equation. 7 parts + $6 = $62 => 7 parts = $56 => 1 part = $8. Step 5: Find cupcake cost. Cupcake = $8 + $3 = $11."
+    },
+    {
+      "question": "Tank A has a base area of 100 cm^2 and is filled with water to a height of 30 cm. Tank B has a base area of 50 cm^2 and is completely empty. Water is poured from Tank A into Tank B until the water level height in both tanks becomes identical. Find this final water height.",
+      "options": [
+        "10 cm",
+        "15 cm",
+        "20 cm",
+        "25 cm"
+      ],
+      "correct": 2,
+      "points": 14,
+      "time": 315,
+      "explanation": "Step 1: Find the total volume of water available. Volume = 100 × 30 = 3000 cubic centimeters. Step 2: Find the combined base area of both tanks since the water levels will equalize across them. Combined base area = 100 + 50 = 150 cm^2. Step 3: Divide the total volume by the combined base area to evaluate the final uniform height. Height = 3000 / 150 = 20 cm."
+    },
+    {
+      "question": "Meiling can wrap a batch of 120 gift hampers in 2 hours, while John takes 3 hours to wrap the exact same batch size. If Meiling and John work together concurrently, how many hours will they take to wrap a large order of 500 gift hampers?",
+      "options": [
+        "3 hours",
+        "4 hours",
+        "5 hours",
+        "6 hours"
+      ],
+      "correct": 2,
+      "points": 14,
+      "time": 285,
+      "explanation": "Step 1: Determine the hourly wrapping rate of each person. Meiling's rate = 120 / 2 = 60 hampers per hour. John's rate = 120 / 3 = 40 hampers per hour. Step 2: Calculate their combined hourly rate. Combined rate = 60 + 40 = 100 hampers per hour. Step 3: Divide the large order target by their combined rate. Time = 500 / 100 = 5 hours."
+    },
+    {
+      "question": "A gaming cafe has 3 identical game controllers available for a specific multiplayer setup. A group of 5 children take turns to play a game for a total session duration of 2 hours, sharing the controllers equally. How many minutes of playing time does each child receive?",
+      "options": [
+        "48 minutes",
+        "60 minutes",
+        "72 minutes",
+        "90 minutes"
+      ],
+      "correct": 2,
+      "points": 14,
+      "time": 300,
+      "explanation": "Step 1: Convert the total session time into minutes. 2 hours = 2 × 60 = 120 minutes. Step 2: Compute total controller-minutes available. 120 minutes × 3 controllers = 360 controller-minutes. Step 3: Divide the total controller-minutes equally among the 5 children. Time per child = 360 / 5 = 72 minutes."
+    },
+    {
+      "question": "Mrs Wee bought a supply of red pens and blue pens for a total price of $72. After she removed 1/4 of the red pens and 1/3 of the blue pens, the total cost value of the remaining pens became $51. Find the original total cost of the red pens.",
+      "options": [
+        "$24",
+        "$30",
+        "$36",
+        "$40"
+      ],
+      "correct": 2,
+      "points": 14,
+      "time": 300,
+      "explanation": "Step 1: Express total cost: Red + Blue = $72. Step 2: Calculate value removed: 1/4 of Red + 1/3 of Blue = 72 - 51 = $21. Step 3: Multiply the removal statement by 3 to match whole blue sets: 3/4 of Red + Blue = $63. Step 4: Find the difference between total cost and this value block: 1/4 of Red = 72 - 63 = $9. Step 5: Solve for original Red cost: 9 × 4 = $36."
+    },
+    {
+      "question": "A souvenir vendor bought 80 keychains for a total cost price of $160. He sold 3/5 of them at $3.50 each, and liquidated the remaining keychains at a clearance price of $1.50 each. Calculate the total net profit made by the vendor from selling all the keychains.",
+      "options": [
+        "$40",
+        "$48",
+        "$56",
+        "$64"
+      ],
+      "correct": 2,
+      "points": 12,
+      "time": 255,
+      "explanation": "Step 1: Calculate quantities in both sales phases. Phase 1 sales = 3/5 × 80 = 48 keychains. Phase 2 sales = 80 - 48 = 32 keychains. Step 2: Compute total sales revenue. Phase 1 revenue = 48 × $3.50 = $168. Phase 2 revenue = 32 × $1.50 = $48. Total revenue = $168 + $48 = $216. Step 3: Subtract initial cost price from total revenue. Net profit = $216 - $160 = $56."
+    },
+    {
+      "question": "Water flows into an empty rectangular fish tank at a constant rate of 1200 cubic centimeters per minute. The base of the fish tank has a fixed area of 300 cm^2. Find the rate at which the water level height rises inside the tank in centimeters per minute.",
+      "options": [
+        "2 cm/min",
+        "3 cm/min",
+        "4 cm/min",
+        "5 cm/min"
+      ],
+      "correct": 2,
+      "points": 12,
+      "time": 240,
+      "explanation": "Step 1: Recall that Volume = Base Area × Height. Therefore, the change in height per minute can be evaluated by dividing the volumetric flow rate by the base area. Step 2: Compute value. Rise rate = 1200 / 300 = 4 cm/min."
+    },
+    {
+      "question": "A warehouse compound requires exactly 2 security guards on active duty patrol at any given hour of a shift. A team of 6 guards are assigned to share a 12-hour shift equally. How many hours does each security guard spend on active duty patrol?",
+      "options": [
+        "3 hours",
+        "4 hours",
+        "6 hours",
+        "8 hours"
+      ],
+      "correct": 1,
+      "points": 12,
+      "time": 270,
+      "explanation": "Step 1: Compute total guard-hours needed for the entire shift. 12 hours × 2 active slots = 24 guard-hours. Step 2: Divide the total guard-hours equally among the available team members. Time per guard = 24 / 6 = 4 hours."
+    },
+    {
+      "question": "Box A and Box B contain a combined total of 120 game tokens. After 1/5 of the tokens in Box A and 1/4 of the tokens in Box B are removed, the total number of remaining tokens left across both boxes becomes 93. Find the original number of tokens inside Box A.",
+      "options": [
+        "45 tokens",
+        "50 tokens",
+        "60 tokens",
+        "75 tokens"
+      ],
+      "correct": 2,
+      "points": 14,
+      "time": 300,
+      "explanation": "Step 1: Express total tokens: A + B = 120. Step 2: Find total tokens removed: 1/5 of A + 1/4 of B = 120 - 93 = 27 tokens. Step 3: Multiply the removal statement by 4 to create whole matching blocks for B: 4/5 of A + B = 27 × 4 = 108 tokens. Step 4: Compare this back with the total token expression: 1/5 of A = 120 - 108 = 12 tokens. Step 5: Solve for original tokens in Box A: 12 × 5 = 60 tokens."
+    },
+    {
+      "question": "A shopkeeper bought 100 fragile ceramic plates for a total cost price of $500. Unfortunately, 20 plates were smashed during transport. He wants to make a total net profit of $140 on his entire initial investment. At what price must he sell each of the remaining intact plates?",
+      "options": [
+        "$6",
+        "$7",
+        "$8",
+        "$9"
+      ],
+      "correct": 2,
+      "points": 12,
+      "time": 270,
+      "explanation": "Step 1: Determine the total required target sales revenue. Revenue = Cost Price + Desired Profit = $500 + $140 = $640. Step 2: Find the number of remaining sellable plates. Remaining plates = 100 - 20 = 80 plates. Step 3: Divide total target revenue by the number of intact plates. Selling price = 640 / 80 = $8."
+    },
+    {
+      "question": "An industrial liquid container with a maximum capacity of 3000 litres is fitted with an upper inlet pipe and a base drainage valve. The inlet pipe pumps fluid in at a rate of 150 litres per hour, while the drainage valve releases fluid at a rate of 50 litres per hour. If both are left open simultaneously, how many hours will it take to fill the container completely from empty?",
+      "options": [
+        "15 hours",
+        "20 hours",
+        "25 hours",
+        "30 hours"
+      ],
+      "correct": 3,
+      "points": 14,
+      "time": 300,
+      "explanation": "Step 1: Calculate the net fluid accumulation rate per hour. Net rate = 150 - 50 = 100 litres per hour. Step 2: Divide the total storage capacity by this net accumulation rate. Time = 3000 / 100 = 30 hours."
+    }
+  ]
+}
+
+```
