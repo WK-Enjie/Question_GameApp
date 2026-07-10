@@ -1,0 +1,252 @@
+{
+  "title": "Alcohols and Carboxylic Acids – Homologous Series and Properties",
+  "topic": "Alcohols (C1–C4) and Carboxylic Acids (C1–C4), Oxidation, and Acid Reactions",
+  "subject": "Combined Science Chemistry",
+  "level": "Secondary 4",
+  "grade": "O-Level",
+  "chapter": 17,
+  "worksheet": 1,
+  "description": "This worksheet covers the first four members of the alcohol and carboxylic acid homologous series. You will need to identify structures and formulas, understand oxidation of alcohols using acidified KMnO₄, and predict reactions of carboxylic acids with metals, carbonates, and bases.",
+  "questions": [
+    {
+      "question": "What is the molecular formula of the third member of the alcohol homologous series?",
+      "options": [
+        "C₂H₅OH",
+        "C₃H₇OH",
+        "C₃H₆O",
+        "C₄H₉OH"
+      ],
+      "correct": 1,
+      "points": 10,
+      "explanation": "The third member of the alcohol series is propanol (C₃H₇OH). The first is methanol (CH₃OH), the second is ethanol (C₂H₅OH)."
+    },
+    {
+      "question": "Which of the following is the correct general formula for the homologous series of alcohols with a single hydroxyl group?",
+      "options": [
+        "CₙH₂ₙ₊₁OH",
+        "CₙH₂ₙ₊₂O",
+        "CₙH₂ₙO",
+        "CₙH₂ₙ₊₁O₂"
+      ],
+      "correct": 0,
+      "points": 10,
+      "explanation": "The general formula for saturated alcohols is CₙH₂ₙ₊₁OH, where n = 1, 2, 3, ..."
+    },
+    {
+      "question": "What is the name of the carboxylic acid with the molecular formula C₃H₇COOH?",
+      "options": [
+        "Propanoic acid",
+        "Butanoic acid",
+        "Methanoic acid",
+        "Ethanoic acid"
+      ],
+      "correct": 1,
+      "points": 10,
+      "explanation": "The general formula for carboxylic acids is CₙH₂ₙ₊₁COOH. For C₃H₇COOH, n = 4, which corresponds to butanoic acid."
+    },
+    {
+      "question": "A compound has the structure CH₃CH₂CH₂OH. Which homologous series does it belong to, and what is its name?",
+      "options": [
+        "Alcohol – ethanol",
+        "Alcohol – propanol",
+        "Carboxylic acid – propanoic acid",
+        "Alcohol – butanol"
+      ],
+      "correct": 1,
+      "points": 10,
+      "explanation": "CH₃CH₂CH₂OH is the structure for propanol. It has three carbon atoms in the chain with the OH group at the end."
+    },
+    {
+      "question": "What is the functional group present in all carboxylic acids?",
+      "options": [
+        "–OH (hydroxyl)",
+        "–COOH (carboxyl)",
+        "–CHO (aldehyde)",
+        "–COO– (ester)"
+      ],
+      "correct": 1,
+      "points": 10,
+      "explanation": "All carboxylic acids contain the carboxyl functional group, which is written as –COOH."
+    },
+    {
+      "question": "Which reagent is used to oxidise a primary alcohol to a carboxylic acid in the laboratory?",
+      "options": [
+        "Concentrated sulphuric acid",
+        "Acidified potassium manganate(VII) (KMnO₄)",
+        "Hydrochloric acid",
+        "Sodium hydroxide solution"
+      ],
+      "correct": 1,
+      "points": 10,
+      "explanation": "Acidified potassium manganate(VII) (KMnO₄) is a strong oxidising agent that oxidises primary alcohols to carboxylic acids. The purple solution turns colourless."
+    },
+    {
+      "question": "A primary alcohol with the formula C₂H₅OH is oxidised using acidified KMnO₄. What is the name of the organic product formed?",
+      "options": [
+        "Methanoic acid",
+        "Ethanoic acid",
+        "Propanol",
+        "Butanoic acid"
+      ],
+      "correct": 1,
+      "points": 10,
+      "explanation": "Ethanol (C₂H₅OH) is oxidised to ethanoic acid (CH₃COOH) when reacted with acidified KMnO₄."
+    },
+    {
+      "question": "Which of the following alcohols can be oxidised to a carboxylic acid using acidified KMnO₄?",
+      "options": [
+        "Propanol",
+        "Propan-2-ol",
+        "Butanol",
+        "Butan-2-ol"
+      ],
+      "correct": 0,
+      "points": 10,
+      "explanation": "Primary alcohols (where the –OH is on a terminal carbon) can be oxidised to carboxylic acids. Propanol is a primary alcohol; secondary alcohols do not oxidise to carboxylic acids."
+    },
+    {
+      "question": "Ethanoic acid reacts with magnesium metal. Which of the following is a product of this reaction?",
+      "options": [
+        "Hydrogen gas",
+        "Oxygen gas",
+        "Carbon dioxide gas",
+        "Water"
+      ],
+      "correct": 0,
+      "points": 10,
+      "explanation": "Carboxylic acids react with reactive metals like magnesium to produce a salt and hydrogen gas. 2CH₃COOH + Mg → (CH₃COO)₂Mg + H₂."
+    },
+    {
+      "question": "Propanoic acid is added to sodium carbonate solution. What gas is produced?",
+      "options": [
+        "Hydrogen",
+        "Oxygen",
+        "Carbon dioxide",
+        "Ammonia"
+      ],
+      "correct": 2,
+      "points": 10,
+      "explanation": "Carboxylic acids react with carbonates to produce a salt, water, and carbon dioxide gas. 2C₂H₅COOH + Na₂CO₃ → 2C₂H₅COONa + H₂O + CO₂."
+    },
+    {
+      "question": "Methanoic acid is neutralised by sodium hydroxide solution. What is the name of the salt produced?",
+      "options": [
+        "Sodium methanoate",
+        "Sodium methoxide",
+        "Sodium ethanoate",
+        "Sodium formate"
+      ],
+      "correct": 0,
+      "points": 10,
+      "explanation": "When methanoic acid (HCOOH) reacts with sodium hydroxide (NaOH), the salt formed is sodium methanoate (HCOONa)."
+    },
+    {
+      "question": "Ethanoic acid is a weak acid. Which statement about ethanoic acid is correct?",
+      "options": [
+        "It is fully ionised in aqueous solution",
+        "It reacts with sodium carbonate to produce hydrogen gas",
+        "It is a strong acid with a pH of 1",
+        "It only partially ionises in aqueous solution"
+      ],
+      "correct": 3,
+      "points": 10,
+      "explanation": "Ethanoic acid is a weak acid, meaning it only partially ionises in water to produce hydrogen ions."
+    },
+    {
+      "question": "What is the molecular formula of butanoic acid?",
+      "options": [
+        "C₃H₇COOH",
+        "C₄H₉COOH",
+        "C₂H₅COOH",
+        "CH₃COOH"
+      ],
+      "correct": 0,
+      "points": 10,
+      "explanation": "Butanoic acid has four carbon atoms in the chain, so its molecular formula is C₃H₇COOH (or C₄H₈O₂)."
+    },
+    {
+      "question": "A student adds a few drops of acidified KMnO₄ to a sample of propanol and warms the mixture. The purple colour disappears. What product is formed?",
+      "options": [
+        "Propanol remains unchanged",
+        "Propanal",
+        "Propanoic acid",
+        "Propan-2-ol"
+      ],
+      "correct": 2,
+      "points": 10,
+      "explanation": "Propanol is a primary alcohol. Acidified KMnO₄ oxidises it to propanoic acid."
+    },
+    {
+      "question": "A compound has the molecular formula C₃H₇OH. What is the name of this alcohol?",
+      "options": [
+        "Methanol",
+        "Ethanol",
+        "Propanol",
+        "Butanol"
+      ],
+      "correct": 2,
+      "points": 10,
+      "explanation": "C₃H₇OH corresponds to propanol, the third member of the alcohol homologous series."
+    },
+    {
+      "question": "When butanoic acid reacts with sodium carbonate, the products are sodium butanoate, water, and one other substance. What is this other substance?",
+      "options": [
+        "Hydrogen gas",
+        "Oxygen gas",
+        "Carbon dioxide gas",
+        "Sodium hydroxide"
+      ],
+      "correct": 2,
+      "points": 10,
+      "explanation": "Carboxylic acids react with carbonates to produce a salt, water, and carbon dioxide gas."
+    },
+    {
+      "question": "A compound has the functional group –COOH. It reacts with magnesium to produce hydrogen gas. Which homologous series does it belong to?",
+      "options": [
+        "Alcohols",
+        "Alkenes",
+        "Alkanes",
+        "Carboxylic acids"
+      ],
+      "correct": 3,
+      "points": 10,
+      "explanation": "The –COOH group is the carboxyl group found in carboxylic acids. They react with reactive metals to produce hydrogen gas."
+    },
+    {
+      "question": "Which of the following alcohols will NOT undergo oxidation to a carboxylic acid when treated with acidified KMnO₄?",
+      "options": [
+        "Methanol",
+        "Ethanol",
+        "Propan-2-ol",
+        "Butanol"
+      ],
+      "correct": 2,
+      "points": 10,
+      "explanation": "Propan-2-ol is a secondary alcohol (the –OH is on the middle carbon). Oxidation of secondary alcohols produces ketones, not carboxylic acids. Primary alcohols oxidise to carboxylic acids."
+    },
+    {
+      "question": "A student tests a colourless liquid with litmus paper. The paper turns red. A small piece of magnesium is added, and bubbles of gas are observed. The gas burns with a squeaky pop. What is the liquid most likely to be?",
+      "options": [
+        "Ethanol",
+        "Ethanoic acid",
+        "Propanol",
+        "Pure water"
+      ],
+      "correct": 1,
+      "points": 10,
+      "explanation": "Ethanoic acid turns litmus red (acidic) and reacts with magnesium to produce hydrogen gas (squeaky pop). Ethanol is neutral and does not react with magnesium."
+    },
+    {
+      "question": "What is the name of the salt formed when propanoic acid reacts with sodium hydroxide?",
+      "options": [
+        "Sodium propanoate",
+        "Sodium propanate",
+        "Sodium propanol",
+        "Propyl sodium"
+      ],
+      "correct": 0,
+      "points": 10,
+      "explanation": "The salt formed from propanoic acid (C₂H₅COOH) and sodium hydroxide is sodium propanoate (C₂H₅COONa)."
+    }
+  ]
+}

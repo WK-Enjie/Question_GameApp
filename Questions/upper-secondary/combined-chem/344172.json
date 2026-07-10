@@ -1,0 +1,252 @@
+{
+  "title": "Alcohols and Carboxylic Acids – Identification and Reactions",
+  "topic": "Identifying Alcohols vs Carboxylic Acids, Fermentation, and Chemical Tests",
+  "subject": "Combined Science Chemistry",
+  "level": "Secondary 4",
+  "grade": "O-Level",
+  "chapter": 17,
+  "worksheet": 2,
+  "description": "This worksheet tests your ability to identify alcohols and carboxylic acids using chemical reactions and observations. It also covers fermentation to produce ethanol and related applications. Read each scenario carefully.",
+  "questions": [
+    {
+      "question": "A colourless liquid turns blue litmus paper red. When sodium carbonate is added, effervescence occurs and a gas that forms a white precipitate with limewater is produced. What is the liquid?",
+      "options": [
+        "Ethanol",
+        "Ethanoic acid",
+        "Propanol",
+        "Pure water"
+      ],
+      "correct": 1,
+      "points": 10,
+      "explanation": "Turning litmus red shows the liquid is acidic. Reacting with sodium carbonate to produce CO₂ (which forms a white precipitate with limewater) confirms it is a carboxylic acid, such as ethanoic acid."
+    },
+    {
+      "question": "Which chemical test can be used to distinguish between ethanol and ethanoic acid?",
+      "options": [
+        "Add bromine water – ethanol decolourises, ethanoic acid does not",
+        "Add sodium carbonate solution – ethanol gives effervescence, ethanoic acid does not",
+        "Add acidified KMnO₄ – ethanol decolourises, ethanoic acid does not",
+        "Add sodium carbonate solution – ethanoic acid gives effervescence, ethanol does not"
+      ],
+      "correct": 3,
+      "points": 10,
+      "explanation": "Ethanoic acid reacts with sodium carbonate to produce CO₂ gas (effervescence). Ethanol does not react with carbonates. This is a simple test to distinguish them."
+    },
+    {
+      "question": "A student adds a few drops of acidified KMnO₄ to two separate samples. Sample A turns from purple to colourless. Sample B remains purple. What can be concluded?",
+      "options": [
+        "Sample A is an alkene; Sample B is an alkane",
+        "Sample A is a primary alcohol; Sample B is a carboxylic acid",
+        "Sample A is a carboxylic acid; Sample B is a primary alcohol",
+        "Sample A is an alkane; Sample B is an alkene"
+      ],
+      "correct": 1,
+      "points": 10,
+      "explanation": "Acidified KMnO₄ is decolourised by primary alcohols (oxidised to carboxylic acids) and by alkenes. Carboxylic acids do not decolourise KMnO₄ because they are already fully oxidised."
+    },
+    {
+      "question": "Which of the following observations indicates that a liquid is a carboxylic acid rather than an alcohol?",
+      "options": [
+        "It has a sweet, pleasant smell",
+        "It turns blue litmus paper red",
+        "It reacts with sodium to produce hydrogen gas",
+        "It burns with a clean, blue flame"
+      ],
+      "correct": 1,
+      "points": 10,
+      "explanation": "Carboxylic acids are acidic and turn blue litmus paper red. Alcohols are neutral and do not affect litmus paper. Both alcohols and carboxylic acids can burn, and both can react with sodium to produce hydrogen."
+    },
+    {
+      "question": "A colourless liquid has the formula C₂H₅OH. It is oxidised by acidified KMnO₄ to form a compound that turns blue litmus red. What is the name of the product?",
+      "options": [
+        "Methanoic acid",
+        "Ethanoic acid",
+        "Propanol",
+        "Ethanal"
+      ],
+      "correct": 1,
+      "points": 10,
+      "explanation": "C₂H₅OH is ethanol. Oxidation of ethanol using acidified KMnO₄ produces ethanoic acid (CH₃COOH), which is acidic and turns litmus red."
+    },
+    {
+      "question": "A liquid is added to sodium carbonate solution. No effervescence is observed. The liquid also turns acidified KMnO₄ from purple to colourless. What is the liquid likely to be?",
+      "options": [
+        "Ethanoic acid",
+        "Propanol",
+        "Butanoic acid",
+        "Propanoic acid"
+      ],
+      "correct": 1,
+      "points": 10,
+      "explanation": "No reaction with sodium carbonate means the liquid is not a carboxylic acid. Decolourising acidified KMnO₄ indicates it is a primary alcohol (like propanol) which is oxidised by KMnO₄."
+    },
+    {
+      "question": "What is the industrial importance of the fermentation of glucose to produce ethanol?",
+      "options": [
+        "It is used to produce alcoholic drinks and as a biofuel",
+        "It is used to produce plastics directly",
+        "It is used to make soap",
+        "It is used to purify water"
+      ],
+      "correct": 0,
+      "points": 10,
+      "explanation": "Fermentation of glucose (using yeast) produces ethanol, which is used in alcoholic beverages and as a renewable biofuel."
+    },
+    {
+      "question": "Which of the following conditions is required for the fermentation of glucose to ethanol?",
+      "options": [
+        "Presence of oxygen and a temperature of 100°C",
+        "Absence of oxygen and a temperature of about 37°C",
+        "Presence of a strong acid catalyst and high pressure",
+        "Absence of water and a temperature below 0°C"
+      ],
+      "correct": 1,
+      "points": 10,
+      "explanation": "Fermentation requires anaerobic conditions (absence of oxygen) and a warm temperature around 37°C, with yeast as the catalyst."
+    },
+    {
+      "question": "A student wants to distinguish between propanol and propanoic acid. Which single reagent would allow them to do this?",
+      "options": [
+        "Sodium metal",
+        "Bromine water",
+        "Sodium carbonate solution",
+        "Litmus paper"
+      ],
+      "correct": 2,
+      "points": 10,
+      "explanation": "Sodium carbonate reacts with propanoic acid to produce CO₂ (effervescence). Propanol does not react. Sodium metal reacts with both (hydrogen gas)."
+    },
+    {
+      "question": "Ethanoic acid is a weak acid. Which of the following is a correct statement about its reaction with sodium carbonate?",
+      "options": [
+        "It produces hydrogen gas",
+        "It produces carbon dioxide gas and water",
+        "It produces oxygen gas",
+        "It produces sodium ethanoate and hydrogen"
+      ],
+      "correct": 1,
+      "points": 10,
+      "explanation": "The reaction between ethanoic acid and sodium carbonate produces sodium ethanoate, water, and carbon dioxide gas."
+    },
+    {
+      "question": "A compound has the molecular formula C₄H₉OH. It is oxidised by acidified KMnO₄ to form a carboxylic acid with the formula C₃H₇COOH. What is the name of the original compound?",
+      "options": [
+        "Butanol",
+        "Butan-2-ol",
+        "Propanol",
+        "Butanoic acid"
+      ],
+      "correct": 0,
+      "points": 10,
+      "explanation": "Butanol (primary alcohol) is oxidised to butanoic acid (C₃H₇COOH). Secondary alcohols do not oxidise to carboxylic acids."
+    },
+    {
+      "question": "Which of the following would NOT be produced when ethanoic acid reacts with magnesium?",
+      "options": [
+        "Magnesium ethanoate",
+        "Hydrogen gas",
+        "Carbon dioxide gas",
+        "Water"
+      ],
+      "correct": 2,
+      "points": 10,
+      "explanation": "Ethanoic acid reacts with magnesium to produce magnesium ethanoate and hydrogen gas. Carbon dioxide is not produced in this reaction – it is produced with carbonates, not metals."
+    },
+    {
+      "question": "A colourless liquid is added to sodium carbonate. Effervescence occurs, and the gas forms a white precipitate with limewater. A sample of the same liquid is added to magnesium – bubbles form and the gas burns with a squeaky pop. What is the liquid?",
+      "options": [
+        "Ethanol",
+        "Ethanoic acid",
+        "Propanol",
+        "Pure water"
+      ],
+      "correct": 1,
+      "points": 10,
+      "explanation": "Ethanoic acid reacts with sodium carbonate to produce CO₂ (white precipitate with limewater). It also reacts with magnesium to produce hydrogen (squeaky pop)."
+    },
+    {
+      "question": "The fermentation of glucose can be represented by the equation: C₆H₁₂O₆ → 2C₂H₅OH + 2CO₂. What is the name of the gas produced alongside ethanol?",
+      "options": [
+        "Oxygen",
+        "Carbon dioxide",
+        "Hydrogen",
+        "Nitrogen"
+      ],
+      "correct": 1,
+      "points": 10,
+      "explanation": "The fermentation equation shows that glucose is converted into ethanol and carbon dioxide gas."
+    },
+    {
+      "question": "Which of the following tests would give a positive result for both ethanol and ethanoic acid?",
+      "options": [
+        "Add sodium carbonate solution",
+        "Add blue litmus paper",
+        "Add sodium metal",
+        "Add bromine water"
+      ],
+      "correct": 2,
+      "points": 10,
+      "explanation": "Both ethanol and ethanoic acid react with sodium metal to produce hydrogen gas and a salt. This test cannot distinguish them."
+    },
+    {
+      "question": "A student adds a few drops of acidified KMnO₄ to a sample of butanol. The purple colour disappears. What can be concluded about the reaction?",
+      "options": [
+        "Butanol has been oxidised to butanoic acid",
+        "Butanol has been reduced to butane",
+        "Butanol remains unchanged",
+        "Butanol has been oxidised to butan-2-ol"
+      ],
+      "correct": 0,
+      "points": 10,
+      "explanation": "Butanol is a primary alcohol. Acidified KMnO₄ oxidises it to butanoic acid. The colour change from purple to colourless indicates the oxidation reaction has occurred."
+    },
+    {
+      "question": "A compound is known to be either ethanol or ethanoic acid. When a piece of magnesium is added, bubbles form. When the gas is collected and tested, it burns with a squeaky pop. What does this tell you about the compound?",
+      "options": [
+        "It must be ethanol",
+        "It must be ethanoic acid",
+        "It could be either ethanol or ethanoic acid",
+        "It is neither ethanol nor ethanoic acid"
+      ],
+      "correct": 2,
+      "points": 10,
+      "explanation": "Both ethanol and ethanoic acid react with sodium or magnesium to produce hydrogen gas. The pop test confirms hydrogen, but it does not distinguish between them."
+    },
+    {
+      "question": "What is the main disadvantage of using fermentation to produce ethanol on an industrial scale compared to cracking of petroleum?",
+      "options": [
+        "Fermentation produces lower purity ethanol",
+        "Fermentation is much faster than cracking",
+        "Fermentation uses non-renewable resources",
+        "Fermentation does not produce any useful by-products"
+      ],
+      "correct": 0,
+      "points": 10,
+      "explanation": "Fermentation produces a dilute solution of ethanol (about 10-15%) that requires further processing (distillation) to obtain pure ethanol, making it more energy-intensive and less efficient than some industrial methods."
+    },
+    {
+      "question": "A liquid turns blue litmus paper red. When a small piece of magnesium is added, gas bubbles form. When sodium carbonate is added, effervescence occurs and a gas that forms a white precipitate with limewater is produced. What is the liquid?",
+      "options": [
+        "Ethanol",
+        "Propanol",
+        "Ethanoic acid",
+        "Butanol"
+      ],
+      "correct": 2,
+      "points": 10,
+      "explanation": "Turning litmus red shows acidity. Reacting with magnesium to produce hydrogen and with sodium carbonate to produce CO₂ (white precipitate with limewater) confirms it is a carboxylic acid, in this case ethanoic acid."
+    },
+    {
+      "question": "A student tests two liquids, X and Y. Liquid X turns blue litmus red and reacts with sodium carbonate to produce effervescence. Liquid Y does not affect litmus and does not react with sodium carbonate. Which statement is correct?",
+      "options": [
+        "X is an alcohol, Y is a carboxylic acid",
+        "X is a carboxylic acid, Y is an alcohol",
+        "Both X and Y are carboxylic acids",
+        "Both X and Y are alcohols"
+      ],
+      "correct": 1,
+      "points": 10,
+      "explanation": "Carboxylic acids turn litmus red and react with carbonates (effervescence). Alcohols are neutral and do not react with carbonates."
+    }
+  ]
+}
