@@ -1,12 +1,12 @@
 {
   "title": "Human Digestion: Terms, Processes & Enzymes",
-  "themeEmoji": "😋",
   "topic": "Digestive Tract Organs, Enzymes, and Conditions",
   "subject": "Science",
   "level": "Secondary",
   "grade": "Sec 2",
-  "chapter": 6,
+  "chapter": 4,
   "worksheet": 3,
+  "totalPoints": 290,
   "questions": [
     {
       "question": "What physical property must large, complex food substances acquire through digestion before they can pass through the walls of the digestive tract into the bloodstream?",
@@ -182,7 +182,7 @@
         "Rectum",
         "Esophagus",
         "Stomach",
-        "Duodenum"
+        "Small intestine"
       ],
       "correct": 0,
       "points": 10,
@@ -289,7 +289,7 @@
       "options": [
         "Frequent urination and increased thirst",
         "Excessive muscle growth",
-        "A constant need to eat more fibre",
+        "A constant need to eat more fiber",
         "Loss of all body fat"
       ],
       "correct": 0,
@@ -311,14 +311,14 @@
     {
       "question": "Which of the following is an example of an application of understanding the digestive system?",
       "options": [
-        "Knowing that eating fibre prevents constipation",
+        "Knowing that eating fiber prevents constipation",
         "Knowing the chemical formula for glucose",
         "Knowing the number of bones in the body",
         "Knowing the boiling point of water"
       ],
       "correct": 0,
       "points": 10,
-      "explanation": "Understanding that fibre helps prevent constipation is a practical application of digestive system knowledge."
+      "explanation": "Understanding that fiber helps prevent constipation is a practical application of digestive system knowledge."
     },
     {
       "question": "What is the role of the liver in digestion?",
@@ -333,7 +333,7 @@
       "explanation": "The liver produces bile, which is stored in the gallbladder and released to help emulsify fats."
     },
     {
-      "question": "A student has a diet low in fibre and often feels bloated and uncomfortable. Which condition is she most likely experiencing?",
+      "question": "A student has a diet low in fiber and often feels bloated and uncomfortable. Which condition is she most likely experiencing?",
       "options": [
         "Constipation",
         "Diabetes",
@@ -342,7 +342,7 @@
       ],
       "correct": 0,
       "points": 10,
-      "explanation": "A low-fibre diet often leads to constipation, which can cause bloating and discomfort."
+      "explanation": "A low-fiber diet often leads to constipation, which can cause bloating and discomfort."
     },
     {
       "question": "What is the main reason that the small intestine has a very large internal surface area?",
