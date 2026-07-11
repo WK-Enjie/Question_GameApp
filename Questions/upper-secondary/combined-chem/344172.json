@@ -36,13 +36,13 @@
       "question": "A student adds a few drops of acidified KMnO₄ to two separate samples. Sample A turns from purple to colourless. Sample B remains purple. What can be concluded?",
       "options": [
         "Sample A is an alkene; Sample B is an alkane",
-        "Sample A is a primary alcohol; Sample B is a carboxylic acid",
-        "Sample A is a carboxylic acid; Sample B is a primary alcohol",
+        "Sample A is an alcohol; Sample B is a carboxylic acid",
+        "Sample A is a carboxylic acid; Sample B is an alcohol",
         "Sample A is an alkane; Sample B is an alkene"
       ],
       "correct": 1,
       "points": 10,
-      "explanation": "Acidified KMnO₄ is decolourised by primary alcohols (oxidised to carboxylic acids) and by alkenes. Carboxylic acids do not decolourise KMnO₄ because they are already fully oxidised."
+      "explanation": "Acidified KMnO₄ is decolourised by alcohols (which are oxidised to carboxylic acids). Carboxylic acids do not decolourise KMnO₄."
     },
     {
       "question": "Which of the following observations indicates that a liquid is a carboxylic acid rather than an alcohol?",
@@ -78,7 +78,7 @@
       ],
       "correct": 1,
       "points": 10,
-      "explanation": "No reaction with sodium carbonate means the liquid is not a carboxylic acid. Decolourising acidified KMnO₄ indicates it is a primary alcohol (like propanol) which is oxidised by KMnO₄."
+      "explanation": "No reaction with sodium carbonate means the liquid is not a carboxylic acid. Decolourising acidified KMnO₄ indicates it is an alcohol (like propanol) which is oxidised by KMnO₄."
     },
     {
       "question": "What is the industrial importance of the fermentation of glucose to produce ethanol?",
@@ -110,11 +110,11 @@
         "Sodium metal",
         "Bromine water",
         "Sodium carbonate solution",
-        "Litmus paper"
+        "Sodium chloride solution"
       ],
       "correct": 2,
       "points": 10,
-      "explanation": "Sodium carbonate reacts with propanoic acid to produce CO₂ (effervescence). Propanol does not react. Sodium metal reacts with both (hydrogen gas)."
+      "explanation": "Sodium carbonate reacts with propanoic acid to produce CO₂ (effervescence). Propanol does not react. Sodium metal reacts with both (hydrogen gas), and bromine water reacts with neither."
     },
     {
       "question": "Ethanoic acid is a weak acid. Which of the following is a correct statement about its reaction with sodium carbonate?",
@@ -132,13 +132,13 @@
       "question": "A compound has the molecular formula C₄H₉OH. It is oxidised by acidified KMnO₄ to form a carboxylic acid with the formula C₃H₇COOH. What is the name of the original compound?",
       "options": [
         "Butanol",
-        "Butan-2-ol",
         "Propanol",
+        "Butanal",
         "Butanoic acid"
       ],
       "correct": 0,
       "points": 10,
-      "explanation": "Butanol (primary alcohol) is oxidised to butanoic acid (C₃H₇COOH). Secondary alcohols do not oxidise to carboxylic acids."
+      "explanation": "Butanol (C₄H₉OH) is oxidised to butanoic acid (C₃H₇COOH) by acidified KMnO₄."
     },
     {
       "question": "Which of the following would NOT be produced when ethanoic acid reacts with magnesium?",
@@ -198,7 +198,7 @@
       ],
       "correct": 0,
       "points": 10,
-      "explanation": "Butanol is a primary alcohol. Acidified KMnO₄ oxidises it to butanoic acid. The colour change from purple to colourless indicates the oxidation reaction has occurred."
+      "explanation": "Butanol is oxidised to butanoic acid by acidified KMnO₄. The colour change from purple to colourless indicates the oxidation reaction has occurred."
     },
     {
       "question": "A compound is known to be either ethanol or ethanoic acid. When a piece of magnesium is added, bubbles form. When the gas is collected and tested, it burns with a squeaky pop. What does this tell you about the compound?",
@@ -213,16 +213,16 @@
       "explanation": "Both ethanol and ethanoic acid react with sodium or magnesium to produce hydrogen gas. The pop test confirms hydrogen, but it does not distinguish between them."
     },
     {
-      "question": "What is the main disadvantage of using fermentation to produce ethanol on an industrial scale compared to cracking of petroleum?",
+      "question": "What is the main disadvantage of using fermentation to produce ethanol on an industrial scale compared to hydration of ethene?",
       "options": [
         "Fermentation produces lower purity ethanol",
-        "Fermentation is much faster than cracking",
+        "Fermentation is much faster than hydration",
         "Fermentation uses non-renewable resources",
         "Fermentation does not produce any useful by-products"
       ],
       "correct": 0,
       "points": 10,
-      "explanation": "Fermentation produces a dilute solution of ethanol (about 10-15%) that requires further processing (distillation) to obtain pure ethanol, making it more energy-intensive and less efficient than some industrial methods."
+      "explanation": "Fermentation produces a dilute solution of ethanol (about 10-15%) that requires further processing (distillation) to obtain pure ethanol, making it more energy-intensive and less efficient than the direct hydration of ethene."
     },
     {
       "question": "A liquid turns blue litmus paper red. When a small piece of magnesium is added, gas bubbles form. When sodium carbonate is added, effervescence occurs and a gas that forms a white precipitate with limewater is produced. What is the liquid?",
