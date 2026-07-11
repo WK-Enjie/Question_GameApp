@@ -69,7 +69,7 @@
       "explanation": "All carboxylic acids contain the carboxyl functional group, which is written as –COOH."
     },
     {
-      "question": "Which reagent is used to oxidise a primary alcohol to a carboxylic acid in the laboratory?",
+      "question": "Which reagent is used to oxidise an alcohol to a carboxylic acid in the laboratory?",
       "options": [
         "Concentrated sulphuric acid",
         "Acidified potassium manganate(VII) (KMnO₄)",
@@ -78,10 +78,10 @@
       ],
       "correct": 1,
       "points": 10,
-      "explanation": "Acidified potassium manganate(VII) (KMnO₄) is a strong oxidising agent that oxidises primary alcohols to carboxylic acids. The purple solution turns colourless."
+      "explanation": "Acidified potassium manganate(VII) (KMnO₄) is a strong oxidising agent that oxidises alcohols to carboxylic acids. The purple solution turns colourless."
     },
     {
-      "question": "A primary alcohol with the formula C₂H₅OH is oxidised using acidified KMnO₄. What is the name of the organic product formed?",
+      "question": "Ethanol (C₂H₅OH) is oxidised using acidified KMnO₄. What is the name of the organic product formed?",
       "options": [
         "Methanoic acid",
         "Ethanoic acid",
@@ -90,19 +90,19 @@
       ],
       "correct": 1,
       "points": 10,
-      "explanation": "Ethanol (C₂H₅OH) is oxidised to ethanoic acid (CH₃COOH) when reacted with acidified KMnO₄."
+      "explanation": "Ethanol is oxidised to ethanoic acid (CH₃COOH) when reacted with acidified KMnO₄."
     },
     {
-      "question": "Which of the following alcohols can be oxidised to a carboxylic acid using acidified KMnO₄?",
+      "question": "Propanol is oxidised using acidified KMnO₄. What is the organic product formed?",
       "options": [
-        "Propanol",
-        "Propan-2-ol",
-        "Butanol",
-        "Butan-2-ol"
+        "Propanoic acid",
+        "Butanoic acid",
+        "Ethanoic acid",
+        "Methanoic acid"
       ],
       "correct": 0,
       "points": 10,
-      "explanation": "Primary alcohols (where the –OH is on a terminal carbon) can be oxidised to carboxylic acids. Propanol is a primary alcohol; secondary alcohols do not oxidise to carboxylic acids."
+      "explanation": "Propanol (C₃H₇OH) is oxidised to propanoic acid (C₂H₅COOH) by acidified KMnO₄."
     },
     {
       "question": "Ethanoic acid reacts with magnesium metal. Which of the following is a product of this reaction?",
@@ -134,7 +134,7 @@
         "Sodium methanoate",
         "Sodium methoxide",
         "Sodium ethanoate",
-        "Sodium formate"
+        "Sodium propanoate"
       ],
       "correct": 0,
       "points": 10,
@@ -174,7 +174,7 @@
       ],
       "correct": 2,
       "points": 10,
-      "explanation": "Propanol is a primary alcohol. Acidified KMnO₄ oxidises it to propanoic acid."
+      "explanation": "Propanol is oxidised to propanoic acid by acidified KMnO₄. The colour change from purple to colourless confirms the oxidation."
     },
     {
       "question": "A compound has the molecular formula C₃H₇OH. What is the name of this alcohol?",
@@ -213,16 +213,16 @@
       "explanation": "The –COOH group is the carboxyl group found in carboxylic acids. They react with reactive metals to produce hydrogen gas."
     },
     {
-      "question": "Which of the following alcohols will NOT undergo oxidation to a carboxylic acid when treated with acidified KMnO₄?",
+      "question": "What is the functional group present in all alcohols?",
       "options": [
-        "Methanol",
-        "Ethanol",
-        "Propan-2-ol",
-        "Butanol"
+        "–OH (hydroxyl)",
+        "–COOH (carboxyl)",
+        "–CHO (aldehyde)",
+        "–COO– (ester)"
       ],
-      "correct": 2,
+      "correct": 0,
       "points": 10,
-      "explanation": "Propan-2-ol is a secondary alcohol (the –OH is on the middle carbon). Oxidation of secondary alcohols produces ketones, not carboxylic acids. Primary alcohols oxidise to carboxylic acids."
+      "explanation": "All alcohols contain the hydroxyl functional group, –OH."
     },
     {
       "question": "A student tests a colourless liquid with litmus paper. The paper turns red. A small piece of magnesium is added, and bubbles of gas are observed. The gas burns with a squeaky pop. What is the liquid most likely to be?",
