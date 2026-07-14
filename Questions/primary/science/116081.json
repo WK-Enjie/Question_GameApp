@@ -1,0 +1,300 @@
+{
+  "title": "The Cycle of Water and States of Matter",
+  "topic": "Water Cycle, Changes of State, and Factors of Evaporation",
+  "subject": "Science",
+  "level": "Primary",
+  "grade": "P6",
+  "chapter": "Water",
+  "worksheet": 1,
+  "themeEmoji": "💧",
+  "questions": [
+    {
+      "question": "Which of the following correctly describes the process of evaporation of water?",
+      "options": [
+        "Liquid water loses heat to the surroundings and turns into solid ice at a fixed temperature.",
+        "Liquid water gains heat from a heat source and turns into water vapour at any temperature below its boiling point.",
+        "Water vapour loses heat to a cooler surface and turns into tiny liquid water droplets.",
+        "Liquid water gains heat rapidly and turns into invisible steam only at its boiling point."
+      ],
+      "correct": 1,
+      "points": 10,
+      "explanation": "Evaporation is a process where liquid water gains heat from its surroundings and changes into water vapour. This process occurs at any temperature below the boiling point and only takes place at the surface of the liquid."
+    },
+    {
+      "question": "How does the process of boiling differ from the process of evaporation for pure water?",
+      "options": [
+        "Boiling happens only at the surface of the liquid, whereas evaporation happens throughout the liquid.",
+        "Boiling requires a loss of heat to the surroundings, whereas evaporation requires a gain of heat.",
+        "Boiling happens only at a fixed temperature of 100°C, whereas evaporation happens at any temperature below 100°C.",
+        "Boiling produces a visible white mist inside the liquid, whereas evaporation produces invisible gases."
+      ],
+      "correct": 2,
+      "points": 10,
+      "explanation": "For pure water, boiling is a rapid process that occurs throughout the liquid only at a fixed temperature of 100°C (its boiling point). Evaporation is a slower process that happens only at the surface at any temperature below 100°C."
+    },
+    {
+      "question": "A beaker of pure ice is heated continuously until it turns into water vapour. At what temperature does the ice maintain a constant reading while it is completely melting into liquid water?",
+      "options": [
+        "The temperature remains constant at 100°C during the melting process.",
+        "The temperature remains constant at 0°C during the melting process.",
+        "The temperature rises steadily from -5°C to 10°C without stopping.",
+        "The temperature drops below 0°C because ice absorbs coldness from the air."
+      ],
+      "correct": 1,
+      "points": 10,
+      "explanation": "The melting point of pure ice is 0°C. During the melting process, the temperature remains constant at 0°C until all the ice has completely gained heat and turned into liquid water."
+    },
+    {
+      "question": "A student wants to investigate how the exposed surface area affects the rate of evaporation. She sets up three containers with different openings. Which variables must be kept the same to ensure a fair test?",
+      "options": [
+        "The exposed surface area of the containers and the location where they are placed.",
+        "The initial volume of water, the material of the containers, and the surrounding temperature.",
+        "The shape of the containers, the duration of the test, and the wind speed only.",
+        "The mass of the containers, the thickness of the glass, and the amount of light."
+      ],
+      "correct": 1,
+      "points": 10,
+      "explanation": "In a fair test, only the independent variable (exposed surface area) should be changed. All other variables, such as the initial volume of water, container material, and surrounding environmental conditions, must be kept the same."
+    },
+    {
+      "question": "Two identical shirts, Shirt X and Shirt Y, contain the same amount of water. Shirt X is hung spread out on a clothesline under the sun, while Shirt Y is folded tightly into a bundle and placed next to it. What will the data show after two hours?",
+      "options": [
+        "Shirt Y will dry faster because folding traps the heat inside the fabric bundle.",
+        "Both shirts will dry at the exact same rate because they are under the same sun.",
+        "Shirt X will dry faster because its larger exposed surface area increases the rate of evaporation.",
+        "Neither shirt will dry because evaporation requires water to reach its boiling point."
+      ],
+      "correct": 2,
+      "points": 10,
+      "explanation": "Shirt X is spread out, meaning it has a larger exposed surface area than Shirt Y. A larger exposed surface area allows water to evaporate more quickly into the surrounding air."
+    },
+    {
+      "question": "An experiment is conducted where three identical dishes with equal amounts of water are placed in different rooms. Dish A is in a room with a fan turned on, Dish B is in a room with no wind, and Dish C is in a closed cupboard. Which dish will have the LEAST amount of water left after one hour?",
+      "options": [
+        "Dish C, because the dark cupboard prevents light from slowing down evaporation.",
+        "Dish B, because still air allows water vapour to rise upwards more steadily.",
+        "Dish A, because the presence of wind increases the rate of water evaporation.",
+        "They will all have the same amount of water left because the dishes are identical."
+      ],
+      "correct": 2,
+      "points": 10,
+      "explanation": "The presence of wind increases the rate of evaporation by moving water vapour away from the liquid surface quickly. Dish A experiences the highest wind speed, so its water evaporates fastest, leaving the least water behind."
+    },
+    {
+      "question": "Why do clothes dry much slower on a highly humid, rainy day compared to a dry, sunny day?",
+      "options": [
+        "The surrounding air already contains a lot of water vapour, which decreases the rate of evaporation.",
+        "The rain clouds block all the gravitational forces needed to pull water out of the clothes.",
+        "The high humidity causes the water on the clothes to undergo condensation instead of melting.",
+        "The cold temperature on rainy days causes the water to freeze inside the fabric layers."
+      ],
+      "correct": 0,
+      "points": 10,
+      "explanation": "Humidity refers to the amount of water vapour in the air. On a highly humid day, the air holds a large amount of water vapour, leaving less space for more water to evaporate, which slows down the drying process."
+    },
+    {
+      "question": "A student pours hot soup into a plastic container and seals it with a clear plastic lid. After five minutes, she notices tiny water droplets forming on the underside (inside surface) of the lid. Explain how these droplets are formed.",
+      "options": [
+        "The hot soup splashes upwards and sticks to the clear plastic lid when moved.",
+        "Water vapour from the hot soup rises, touches the cooler underside of the lid, loses heat, and condenses.",
+        "The cold air outside the container passes through the plastic lid and turns into water liquid.",
+        "The plastic lid gains heat from the surroundings and melts into a liquid form."
+      ],
+      "correct": 1,
+      "points": 10,
+      "explanation": "The hot soup releases warm water vapour, which rises to the top of the container. When the warm water vapour touches the cooler inner surface of the lid, it loses heat and condenses into liquid water droplets."
+    },
+    {
+      "question": "On a warm afternoon, a student places several ice cubes into a glass cup. Shortly after, he observes water droplets forming on the outer surface of the glass. Where did this water come from?",
+      "options": [
+        "The ice cubes melted and leaked through microscopic holes in the glass cup walls.",
+        "Water vapour from the surrounding air touched the cooler outer surface of the glass, lost heat, and condensed.",
+        "The coldness from the ice cubes pushed existing liquid water out of the glass material.",
+        "The glass cup absorbed moisture from the table surface through capillary action."
+      ],
+      "correct": 1,
+      "points": 10,
+      "explanation": "The ice cubes make the glass cup cold. Water vapour present in the surrounding air touches the cooler outer surface of the glass, loses heat to the cold glass, and condenses into visible water droplets."
+    },
+    {
+      "question": "Which of the following changes of state involves a loss of heat from the substance to its surroundings?",
+      "options": [
+        "Solid ice turning into liquid water during a hot afternoon.",
+        "Liquid water turning into water vapour when hung out to dry.",
+        "Water vapour turning into tiny water droplets high up in the sky.",
+        "Liquid water turning into water vapour at 100°C on a lit stove."
+      ],
+      "correct": 2,
+      "points": 10,
+      "explanation": "Water vapour turning into water droplets is condensation (gas to liquid), which requires the water vapour to lose heat to the cooler surrounding air. The other options describe melting and evaporation/boiling, which require a gain of heat."
+    },
+    {
+      "question": "What is the primary role of the Sun in the continuous water cycle on Earth?",
+      "options": [
+        "The Sun provides the gravitational force required to make rain fall downwards.",
+        "The Sun provides the heat energy needed for liquid water to evaporate into water vapour.",
+        "The Sun cools down the upper atmosphere to allow cloud formation to take place.",
+        "The Sun directly creates new water molecules out of light energy in the oceans."
+      ],
+      "correct": 1,
+      "points": 10,
+      "explanation": "The Sun is the primary source of heat energy for the water cycle. It heats up water bodies (oceans, lakes, rivers), causing liquid water to change into water vapour through evaporation."
+    },
+    {
+      "question": "Which of the following statements explains why the total amount of water on Earth remains relatively constant over time?",
+      "options": [
+        "Water is constantly being created by plants during the process of respiration.",
+        "Water moves continuously through the water cycle via repeated evaporation and condensation.",
+        "The core of the Earth melts rock into pure liquid water to replace lost rivers.",
+        "Rainwater travels into outer space and is replaced by cosmic ice blocks."
+      ],
+      "correct": 1,
+      "points": 10,
+      "explanation": "Water on Earth is a renewable resource because it is continuously recycled through the water cycle via evaporation, condensation, and precipitation. No water is permanently lost from the planet."
+    },
+    {
+      "question": "How do plants contribute to the amount of water vapour in the surrounding atmosphere?",
+      "options": [
+        "Plants absorb water vapour directly from clouds using their broad green leaves.",
+        "Plants release water vapour into the air through pores in their leaves during transpiration.",
+        "Plants convert solid minerals from the soil into water liquid using their roots.",
+        "Plants block wind to prevent water vapour from moving away from the forest floor."
+      ],
+      "correct": 1,
+      "points": 10,
+      "explanation": "Plants take in water through their roots and release excess water in the form of water vapour into the atmosphere through small openings in their leaves. This process is called transpiration."
+    },
+    {
+      "question": "A pot of pure water is boiling vigorously on a hot stove. A thermometer shows a reading of 100°C. If the stove flame is turned up higher, what will happen to the temperature of the boiling water?",
+      "options": [
+        "The temperature will instantly rise to 120°C due to the larger flame.",
+        "The temperature will drop below 100°C because boiling causes cooling.",
+        "The temperature will remain constant at 100°C until all the water has boiled away.",
+        "The temperature will fluctuate wildly between 90°C and 110°C."
+      ],
+      "correct": 2,
+      "points": 10,
+      "explanation": "The boiling point of pure water is a fixed temperature of 100°C. Increasing the heat source strength will cause the water to boil faster, but its temperature will remain constant at 100°C during the state change from liquid to gas."
+    },
+    {
+      "question": "When water boils, a white mist can be seen rising above the spout of the kettle. Which statement accurately describes this white mist?",
+      "options": [
+        "The white mist is invisible water vapour gas that has expanded in size.",
+        "The white mist consists of tiny liquid water droplets formed when invisible steam condenses in the cooler air.",
+        "The white mist is solid ice crystals created by the rapid cooling of boiling bubbles.",
+        "The white mist is a completely new chemical compound produced by the metal kettle spout."
+      ],
+      "correct": 1,
+      "points": 10,
+      "explanation": "Steam or water vapour is an invisible gas. The white mist we see is actually liquid water. It forms when hot, invisible water vapour escapes the kettle, encounters the cooler air outside, loses heat, and condenses into tiny liquid droplets."
+    },
+    {
+      "question": "A student wears glasses and steps out from a heavily air-conditioned shopping mall into a hot, humid outdoor street. Her lenses immediately become fogged up. Explain why this happens.",
+      "options": [
+        "The cold lenses absorb the heat from the street and melt into a liquid film.",
+        "The warm water vapour in the outdoor air touches the cooler lenses, loses heat, and condenses.",
+        "The air-conditioned air inside the mall leaks out of her eyes and covers the frame.",
+        "The lenses undergo evaporation due to the sudden increase in light intensity."
+      ],
+      "correct": 1,
+      "points": 10,
+      "explanation": "The air-conditioned mall makes her glasses lenses cold. When she steps outside, the warm water vapour in the humid air comes into contact with the cold surface of the lenses, loses heat, and condenses into tiny liquid droplets that fog up her view."
+    },
+    {
+      "question": "Describe the formation of clouds in the natural water cycle based on changes of state.",
+      "options": [
+        "Water vapour rises, enters a warmer zone, gains heat, and evaporates into clouds.",
+        "Liquid water evaporates from the sea and freezes instantly into solid cloud blocks.",
+        "Water vapour rises, encounters cooler air high up, loses heat, and condenses into tiny water droplets.",
+        "Clouds are formed when oxygen gas reacts with hydrogen gas due to solar radiation."
+      ],
+      "correct": 2,
+      "points": 10,
+      "explanation": "As water vapour rises into the upper atmosphere, it encounters cooler air. The warm water vapour loses heat to the cooler surroundings and condenses into tiny liquid water droplets, which cluster together to form clouds."
+    },
+    {
+      "question": "An experiment measures the rate of evaporation of water from four identical cloths hung under different conditions:\nCloth 1: Sunny and windy\nCloth 2: Sunny and no wind\nCloth 3: Shady and windy\nCloth 4: Shady and no wind\nWhich cloth will take the LONGEST time to dry completely?",
+      "options": [
+        "Cloth 1",
+        "Cloth 2",
+        "Cloth 3",
+        "Cloth 4"
+      ],
+      "correct": 3,
+      "points": 10,
+      "explanation": "Evaporation is fastest when it is hot (sunny) and windy, and slowest when it is cold (shady) and still (no wind). Cloth 4 has the worst conditions for evaporation, meaning it will take the longest time to lose its water."
+    },
+    {
+      "question": "What happens to liquid water when it reaches its freezing point of 0°C?",
+      "options": [
+        "It gains heat from the surroundings and turns into solid ice at 0°C.",
+        "It loses heat to the surroundings and changes state into solid ice at a constant temperature.",
+        "Its temperature continues to drop steadily below 0°C while it remains a liquid.",
+        "It evaporates rapidly into invisible ice vapour without any heat transfer."
+      ],
+      "correct": 1,
+      "points": 10,
+      "explanation": "At the freezing point (0°C), liquid water loses heat to its cooler surroundings and changes its state into solid ice. The temperature remains constant at 0°C until all the liquid water has solidified."
+    },
+    {
+      "question": "Why is the water cycle considered essential for maintaining fresh water supplies on Earth?",
+      "options": [
+        "When salt water from the ocean evaporates, only the fresh water turns into vapour, leaving the salt behind.",
+        "The water cycle actively breaks down toxic pollutants into harmless water molecules using sunlight.",
+        "Condensation adds minerals and salts to clouds to make rainwater healthier for land animals.",
+        "Evaporation carries ocean fish into freshwater lakes to restock food supplies."
+      ],
+      "correct": 0,
+      "points": 10,
+      "explanation": "During evaporation, only pure water changes state into water vapour; dissolved salts and impurities are left behind in the ocean. When this water vapour condenses and falls as precipitation, it provides clean, fresh water to land surfaces."
+    },
+    {
+      "question": "A student sets up two beakers with 100 ml of water each. Beaker A has a lid on it, while Beaker B is left open. Both are left on the same table for three days. What will the data most likely show?",
+      "options": [
+        "Beaker A will have less water left because the lid traps heat to speed up boiling.",
+        "Beaker B will have less water left because its water vapour can escape into the surrounding air.",
+        "Both beakers will have 100 ml of water left because evaporation cannot occur indoors.",
+        "Beaker B's water will turn into solid ice due to unrestricted air flow."
+      ],
+      "correct": 1,
+      "points": 10,
+      "explanation": "In open Beaker B, water evaporates from the surface and escapes into the surrounding room. In sealed Beaker A, the water evaporates but condenses on the underside of the lid and falls back down, so its water level changes very little."
+    },
+    {
+      "question": "Which of the following environmental changes would directly cause a DECREASE in the rate of evaporation of water from an open reservoir?",
+      "options": [
+        "An increase in wind speed across the water surface.",
+        "A sudden drop in the humidity of the surrounding air.",
+        "An increase in the temperature of the reservoir water.",
+        "A drop in the temperature of the surrounding atmosphere."
+      ],
+      "correct": 3,
+      "points": 10,
+      "explanation": "A lower surrounding temperature means less heat energy is available for the water to gain, which decreases the rate of evaporation. Higher wind, higher water temperature, and lower humidity would all increase the rate of evaporation."
+    },
+    {
+      "question": "A piece of glass is held above a beaker of hot water. What structural condition must the glass have to collect the GREATEST amount of condensed water droplets on its surface?",
+      "options": [
+        "The glass should be heated to a temperature higher than the water vapour.",
+        "The glass surface should be kept as cold as possible.",
+        "The glass should be made thicker to absorb more light energy.",
+        "The glass should be tilted so that wind can dry its surface instantly."
+      ],
+      "correct": 1,
+      "points": 10,
+      "explanation": "Condensation happens when warm water vapour loses heat to a cooler surface. The colder the glass surface, the faster the water vapour will transfer its heat energy to it, resulting in a higher rate of condensation."
+    },
+    {
+      "question": "How does cutting down massive areas of a tropical rainforest impact the local water cycle data?",
+      "options": [
+        "It increases cloud formation because more open ground allows heat to rise faster.",
+        "It decreases the rate of evaporation from the soil because tree roots are gone.",
+        "It reduces the amount of water vapour released into the air, leading to less rainfall over time.",
+        "It has zero impact because water only evaporates from deep ocean bodies."
+      ],
+      "correct": 2,
+      "points": 10,
+      "explanation": "Trees release large amounts of water vapour into the atmosphere through transpiration, which contributes to local cloud formation and rain. Deforestation removes these plants, reducing water vapour levels and leading to drier climates."
+    }
+  ]
+}
