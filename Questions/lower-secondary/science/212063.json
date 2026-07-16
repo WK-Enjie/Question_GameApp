@@ -6,7 +6,7 @@
   "grade": "Sec 2",
   "chapter": 4,
   "worksheet": 3,
-  "totalPoints": 290,
+  "totalPoints": 280,
   "questions": [
     {
       "question": "What physical property must large, complex food substances acquire through digestion before they can pass through the walls of the digestive tract into the bloodstream?",
@@ -117,16 +117,16 @@
       "explanation": "Chemical digestion of carbohydrates starts in the mouth, where salivary amylase begins breaking down complex starch into maltose."
     },
     {
-      "question": "What is the biological term for the wave-like muscular contractions that push food smoothly down the esophagus and along the digestive tract?",
+      "question": "What is the role of the esophagus in the digestive system?",
       "options": [
-        "Emulsification",
-        "Absorption",
-        "Peristalsis",
-        "Neutralization"
+        "To absorb nutrients",
+        "To transport food from the mouth to the stomach",
+        "To produce digestive enzymes",
+        "To store waste"
       ],
-      "correct": 2,
+      "correct": 1,
       "points": 10,
-      "explanation": "Peristalsis refers to the rhythmic, wave-like contractions of muscles in the walls of the digestive tract that force food forward."
+      "explanation": "The esophagus is a muscular tube that carries food from the mouth to the stomach."
     },
     {
       "question": "What kind of environment do protease enzymes in the stomach require to function at their best?",
@@ -177,40 +177,28 @@
       "explanation": "The large intestine does not digest food chemically. Instead, it reabsorbs water and mineral salts from the undigested waste material, turning it into solid feces."
     },
     {
-      "question": "Which section of the large intestine acts as a temporary storage area for solid waste (feces) before it is eliminated from the body?",
+      "question": "What is the role of the rectum in the digestive system?",
       "options": [
-        "Rectum",
-        "Esophagus",
-        "Stomach",
-        "Small intestine"
-      ],
-      "correct": 0,
-      "points": 10,
-      "explanation": "The rectum is the final section of the large intestine where solid feces are stored temporarily before being passed out through the anus."
-    },
-    {
-      "question": "Which organ manufactures bile to assist in the mechanical breakdown of large fat globules into smaller droplets?",
-      "options": [
-        "Pancreas",
-        "Stomach",
-        "Liver",
-        "Gallbladder"
-      ],
-      "correct": 2,
-      "points": 10,
-      "explanation": "Bile is produced by the liver cells and released into the small intestine to emulsify fats, which increases their surface area for lipase action."
-    },
-    {
-      "question": "What is the function of the gallbladder in the human digestive system?",
-      "options": [
-        "To produce strong hydrochloric acid for the stomach",
-        "To store and concentrate bile before releasing it into the small intestine",
-        "To absorb digested simple sugars into the bloodstream",
-        "To synthesize insulin to regulate blood glucose levels"
+        "To absorb water",
+        "To store feces before elimination",
+        "To produce digestive enzymes",
+        "To digest fats"
       ],
       "correct": 1,
       "points": 10,
-      "explanation": "The gallbladder does not produce bile; it acts as a storage pouch that holds and concentrates the bile produced by the liver until it is needed."
+      "explanation": "The rectum is the final section of the large intestine where solid feces are stored temporarily before being passed out."
+    },
+    {
+      "question": "What is the main function of the anus?",
+      "options": [
+        "To absorb nutrients",
+        "To control the release of feces from the body",
+        "To produce digestive juices",
+        "To store waste"
+      ],
+      "correct": 1,
+      "points": 10,
+      "explanation": "The anus is a ring of muscle (sphincter) that controls the elimination of feces from the body."
     },
     {
       "question": "Which organ functions as an accessory gland that delivers a juice containing carbohydrase, protease, and lipase enzymes into the small intestine?",
@@ -234,7 +222,7 @@
       ],
       "correct": 1,
       "points": 10,
-      "explanation": "Dietary fibre adds bulk to undigested materials, which stimulates the muscular walls of the intestines to contract (peristalsis), moving waste smoothly and preventing constipation."
+      "explanation": "Dietary fibre adds bulk to undigested materials, which stimulates the muscular walls of the intestines to contract, moving waste smoothly and preventing constipation."
     },
     {
       "question": "Type 2 Diabetes develops when the body cells fail to respond properly to which critical pancreatic hormone?",
@@ -261,16 +249,16 @@
       "explanation": "The gallbladder stores and concentrates bile. Without it, bile is released continuously but in smaller amounts, making it difficult to digest large amounts of fat at one time."
     },
     {
-      "question": "A student notices that after eating a meal, food moves from his mouth to his stomach even when he is standing on his head. What explains this?",
+      "question": "How does the stomach protect its own lining from being damaged by acid?",
       "options": [
-        "Gravity pulls the food down",
-        "Peristalsis pushes the food along regardless of gravity",
-        "The esophagus has a pump that forces food forward",
-        "Food dissolves immediately and flows like water"
+        "By producing a thick layer of mucus",
+        "By staying empty at all times",
+        "By absorbing the acid into the blood",
+        "By producing enzymes that destroy acid"
       ],
-      "correct": 1,
+      "correct": 0,
       "points": 10,
-      "explanation": "Peristalsis is the wave-like muscle contraction that pushes food through the esophagus and digestive tract, and it works regardless of body position."
+      "explanation": "The stomach secretes a layer of mucus that protects its lining from the acidic gastric juices."
     },
     {
       "question": "Which of the following best describes the function of the pancreas in digestion?",
@@ -321,16 +309,16 @@
       "explanation": "Understanding that fiber helps prevent constipation is a practical application of digestive system knowledge."
     },
     {
-      "question": "What is the role of the liver in digestion?",
+      "question": "What is the main function of the mouth in digestion?",
       "options": [
-        "To produce bile for fat digestion",
-        "To store undigested food",
-        "To absorb water from waste",
-        "To produce insulin"
+        "To chemically digest starch only",
+        "To physically break down food and mix it with saliva",
+        "To absorb nutrients into the bloodstream",
+        "To store undigested food temporarily"
       ],
-      "correct": 0,
+      "correct": 1,
       "points": 10,
-      "explanation": "The liver produces bile, which is stored in the gallbladder and released to help emulsify fats."
+      "explanation": "The mouth physically breaks down food by chewing and mixes it with saliva to begin the digestive process."
     },
     {
       "question": "A student has a diet low in fiber and often feels bloated and uncomfortable. Which condition is she most likely experiencing?",
