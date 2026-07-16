@@ -1,0 +1,198 @@
+{
+  "title": "Acids – Properties, Definitions, Reactions, Strong vs Weak",
+  "topic": "Properties of Acids, Definitions, Reactions with Metals, Carbonates, Bases, Strong vs Weak Acids",
+  "subject": "Pure Chemistry",
+  "level": "Upper Secondary",
+  "grade": "Sec 3",
+  "chapter": 7,
+  "worksheet": 1,
+  "description": "This worksheet covers the basic properties of acids, definitions, reactions with metals, carbonates, and bases, and the difference between strong and weak acids using the term 'ionise'.",
+  "questions": [
+    {
+      "question": "Which of the following is the correct definition of an acid?",
+      "options": [
+        "A substance that releases hydroxide ions (OH⁻) in water",
+        "A substance that releases hydrogen ions (H⁺) in water",
+        "A substance that accepts hydrogen ions (H⁺) from water",
+        "A substance that is always corrosive"
+      ],
+      "correct": 1,
+      "points": 10,
+      "explanation": "An acid is defined as a substance that releases hydrogen ions (H⁺) when dissolved in water."
+    },
+    {
+      "question": "Which of the following is a property of acids?",
+      "options": [
+        "They have a pH greater than 7",
+        "They turn blue litmus paper red",
+        "They feel soapy to the touch",
+        "They turn red litmus paper blue"
+      ],
+      "correct": 1,
+      "points": 10,
+      "explanation": "Acids turn blue litmus paper red. They have a pH below 7 and do not feel soapy."
+    },
+    {
+      "question": "What is the pH range of a strong acid like hydrochloric acid?",
+      "options": ["0–1", "4–5", "7", "8–9"],
+      "correct": 0,
+      "points": 10,
+      "explanation": "Strong acids have very low pH values, typically between 0 and 1 for concentrated solutions."
+    },
+    {
+      "question": "A strong acid is one that:",
+      "options": [
+        "Has a high pH",
+        "Ionises completely in water",
+        "Ionises partially in water",
+        "Does not ionise in water"
+      ],
+      "correct": 1,
+      "points": 10,
+      "explanation": "A strong acid ionises completely in water, meaning nearly all molecules release H⁺ ions."
+    },
+    {
+      "question": "A weak acid is one that:",
+      "options": [
+        "Has a low pH",
+        "Ionises completely in water",
+        "Ionises partially in water",
+        "Does not react with metals"
+      ],
+      "correct": 2,
+      "points": 10,
+      "explanation": "A weak acid ionises only partially in water, so only a small fraction of molecules release H⁺ ions."
+    },
+    {
+      "question": "Which of the following is an example of a strong acid?",
+      "options": ["Ethanoic acid", "Citric acid", "Hydrochloric acid", "Carbonic acid"],
+      "correct": 2,
+      "points": 10,
+      "explanation": "Hydrochloric acid (HCl) is a strong acid as it ionises completely in water. Ethanoic, citric, and carbonic acids are weak acids."
+    },
+    {
+      "question": "Which of the following is an example of a weak acid?",
+      "options": ["Sulfuric acid", "Nitric acid", "Ethanoic acid", "Hydrochloric acid"],
+      "correct": 2,
+      "points": 10,
+      "explanation": "Ethanoic acid (CH₃COOH) is a weak acid because it only partially ionises in water."
+    },
+    {
+      "question": "When a metal reacts with an acid, what gas is produced?",
+      "options": ["Oxygen", "Carbon dioxide", "Hydrogen", "Nitrogen"],
+      "correct": 2,
+      "points": 10,
+      "explanation": "Metals react with acids to produce a salt and hydrogen gas."
+    },
+    {
+      "question": "Which of the following is the correct word equation for the reaction between zinc and hydrochloric acid?",
+      "options": [
+        "Zinc + Hydrochloric acid → Zinc chloride + Oxygen",
+        "Zinc + Hydrochloric acid → Zinc chloride + Hydrogen",
+        "Zinc + Hydrochloric acid → Zinc chloride + Carbon dioxide",
+        "Zinc + Hydrochloric acid → Zinc chlorate + Hydrogen"
+      ],
+      "correct": 1,
+      "points": 10,
+      "explanation": "Zinc + Hydrochloric acid → Zinc chloride + Hydrogen is the correct word equation for this reaction."
+    },
+    {
+      "question": "When an acid reacts with a carbonate, what gas is produced?",
+      "options": ["Hydrogen", "Oxygen", "Carbon dioxide", "Nitrogen"],
+      "correct": 2,
+      "points": 10,
+      "explanation": "Acids react with carbonates to produce a salt, water, and carbon dioxide gas."
+    },
+    {
+      "question": "What is the correct word equation for the reaction between calcium carbonate and hydrochloric acid?",
+      "options": [
+        "Calcium carbonate + Hydrochloric acid → Calcium chloride + Water",
+        "Calcium carbonate + Hydrochloric acid → Calcium chloride + Carbon dioxide",
+        "Calcium carbonate + Hydrochloric acid → Calcium chloride + Water + Carbon dioxide",
+        "Calcium carbonate + Hydrochloric acid → Calcium hydroxide + Carbon dioxide"
+      ],
+      "correct": 2,
+      "points": 10,
+      "explanation": "Calcium carbonate + Hydrochloric acid → Calcium chloride + Water + Carbon dioxide is the correct word equation."
+    },
+    {
+      "question": "Which of the following is a property of a weak acid solution compared to a strong acid solution of the same concentration?",
+      "options": [
+        "It has a higher pH",
+        "It has a lower pH",
+        "It has the same pH",
+        "It is more corrosive"
+      ],
+      "correct": 0,
+      "points": 10,
+      "explanation": "A weak acid releases fewer H⁺ ions than a strong acid of the same concentration, so its pH is higher (less acidic)."
+    },
+    {
+      "question": "An acid is neutralised by a base. Which of the following is always produced in this reaction?",
+      "options": ["Hydrogen", "Carbon dioxide", "Water", "Oxygen"],
+      "correct": 2,
+      "points": 10,
+      "explanation": "Neutralisation between an acid and a base always produces water and a salt."
+    },
+    {
+      "question": "Which of the following is the correct equation for the neutralisation of sulfuric acid by sodium hydroxide?",
+      "options": [
+        "H₂SO₄ + NaOH → Na₂SO₄ + H₂O",
+        "H₂SO₄ + 2NaOH → Na₂SO₄ + 2H₂O",
+        "H₂SO₄ + NaOH → Na₂SO₄ + H₂O + O₂",
+        "H₂SO₄ + 2NaOH → Na₂SO₄ + H₂O + H₂"
+      ],
+      "correct": 1,
+      "points": 10,
+      "explanation": "H₂SO₄ + 2NaOH → Na₂SO₄ + 2H₂O is balanced and shows the correct products of neutralisation."
+    },
+    {
+      "question": "Which statement about strong and weak acids is correct?",
+      "options": [
+        "A strong acid has a lower concentration than a weak acid",
+        "A strong acid ionises completely; a weak acid ionises partially",
+        "A weak acid has a higher pH than a strong acid of the same concentration",
+        "Both B and C are correct"
+      ],
+      "correct": 3,
+      "points": 10,
+      "explanation": "Strong acids ionise completely; weak acids ionise partially. At the same concentration, a weak acid has a higher pH (less acidic)."
+    },
+    {
+      "question": "When magnesium reacts with hydrochloric acid, the rate of reaction is faster with a stronger acid. Why?",
+      "options": [
+        "Stronger acids have more H⁺ ions available to react",
+        "Stronger acids have fewer H⁺ ions available",
+        "Stronger acids are more concentrated",
+        "Stronger acids produce oxygen gas"
+      ],
+      "correct": 0,
+      "points": 10,
+      "explanation": "A stronger acid has a higher concentration of H⁺ ions, which increases the rate of reaction with magnesium."
+    },
+    {
+      "question": "Which of the following correctly lists acids in order of increasing strength (weakest to strongest)?",
+      "options": [
+        "Ethanoic acid, Carbonic acid, Hydrochloric acid",
+        "Hydrochloric acid, Ethanoic acid, Carbonic acid",
+        "Carbonic acid, Ethanoic acid, Hydrochloric acid",
+        "Ethanoic acid, Carbonic acid, Sulfuric acid"
+      ],
+      "correct": 2,
+      "points": 10,
+      "explanation": "Carbonic acid and ethanoic acid are weak acids; hydrochloric acid is a strong acid. Correct order weakest to strongest: Carbonic acid, Ethanoic acid, Hydrochloric acid."
+    },
+    {
+      "question": "When an acid reacts with a metal oxide, what are the products?",
+      "options": [
+        "A salt and water",
+        "A salt and hydrogen gas",
+        "A salt and carbon dioxide",
+        "A salt and oxygen"
+      ],
+      "correct": 0,
+      "points": 10,
+      "explanation": "Acids react with metal oxides (bases) to produce a salt and water. This is a neutralisation reaction."
+    }
+  ]
+}
