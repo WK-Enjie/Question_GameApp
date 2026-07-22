@@ -1,0 +1,139 @@
+{
+  "title": "Primary 4 Mathematics Worksheet 4 – Decimal Operations, Comparison Models & Word Problems",
+  "topic": "Multiplication and Division of Decimals by 1-Digit Numbers, More Than / Less Than Decimal Models, and Multi-Step Word Problems",
+  "subject": "Mathematics",
+  "level": "Primary",
+  "grade": "Pri 4",
+  "chapter": 6,
+  "worksheet": 4,
+  "questions": [
+    {
+      "question": "A packet containing 14.8 kg of rice is divided equally into 4 smaller bags. What is the mass of rice in each bag?",
+      "options": ["3.2 kg", "3.7 kg", "3.9 kg", "4.2 kg"],
+      "correct": 1,
+      "points": 3,
+      "time": 90,
+      "explanation": "To find the mass of rice in each bag, divide the total mass by 4: 14.8 kg ÷ 4 = 3.7 kg."
+    },
+    {
+      "question": "A piece of wire measuring 25.2 cm long is bent to form a square. Find the length of one side of the square.",
+      "options": ["5.8 cm", "6.1 cm", "6.3 cm", "6.8 cm"],
+      "correct": 2,
+      "points": 3,
+      "time": 90,
+      "explanation": "A square has 4 equal sides. Divide the total perimeter by 4 to find one side length: 25.2 cm ÷ 4 = 6.3 cm."
+    },
+    {
+      "question": "Container A contains 4.2 L of water. Container B contains 1.85 L more water than Container A. How much water do both containers have altogether?",
+      "options": ["10.25 L", "6.05 L", "10.10 L", "8.40 L"],
+      "correct": 0,
+      "points": 4,
+      "time": 110,
+      "explanation": "Step 1: Find the volume of water in Container B: 4.2 L + 1.85 L = 6.05 L. Step 2: Add both containers together: 4.2 L + 6.05 L = 10.25 L."
+    },
+    {
+      "question": "Jim and Ken have $48.60 altogether. Jim has $12.40 less than Ken. How much money does Ken have?",
+      "options": ["$18.10", "$30.50", "$36.20", "$24.30"],
+      "correct": 1,
+      "points": 4,
+      "time": 120,
+      "explanation": "Step 1: Draw a model showing Ken with 1 unit + $12.40 and Jim with 1 unit. Total = 2 units + $12.40 = $48.60. Step 2: Find 2 units: $48.60 - $12.40 = $36.20. Step 3: Find 1 unit (Jim's amount): $36.20 ÷ 2 = $18.10. Step 4: Find Ken's amount: $18.10 + $12.40 = $30.50."
+    },
+    {
+      "question": "A ribbon measuring 27 m long is cut into 6 equal smaller pieces. What is the exact length of each piece of ribbon?",
+      "options": ["4.2 m", "4.5 m", "4.6 m", "5.2 m"],
+      "correct": 1,
+      "points": 3,
+      "time": 100,
+      "explanation": "Divide the total length by 6: 27 m ÷ 6 = 4.5 m."
+    },
+    {
+      "question": "A notebook costs $3.40. A storybook costs $2.15 more than a notebook. How much do 3 storybooks cost altogether?",
+      "options": ["$10.20", "$16.65", "$12.80", "$15.65"],
+      "correct": 1,
+      "points": 4,
+      "time": 110,
+      "explanation": "Step 1: Find the cost of 1 storybook: $3.40 + $2.15 = $5.55. Step 2: Multiply by 3 to find the total cost of 3 storybooks: $5.55 × 3 = $16.65."
+    },
+    {
+      "question": "Box A, Box B, and Box C have a combined mass of 28.4 kg. Box A weighs 5.2 kg. Box B weighs 2.6 kg less than Box C. Find the mass of Box C.",
+      "options": ["10.3 kg", "11.6 kg", "12.9 kg", "15.5 kg"],
+      "correct": 2,
+      "points": 4,
+      "time": 130,
+      "explanation": "Step 1: Find the combined mass of Box B and Box C: 28.4 kg - 5.2 kg = 23.2 kg. Step 2: Since Box B is 2.6 kg lighter than Box C, Box C has 1 unit and Box B has 1 unit - 2.6 kg. So 2 units of Box C - 2.6 kg = 23.2 kg. Step 3: 2 units of Box C = 23.2 kg + 2.6 kg = 25.8 kg. Step 4: Find Box C: 25.8 kg ÷ 2 = 12.9 kg."
+    },
+    {
+      "question": "Mandy has 4 times as much ribbon as Sally. Sally has 1.85 m of ribbon. How much more ribbon does Mandy have than Sally?",
+      "options": ["5.55 m", "7.40 m", "3.70 m", "4.85 m"],
+      "correct": 0,
+      "points": 4,
+      "time": 110,
+      "explanation": "Step 1: Sally has 1 unit = 1.85 m. Mandy has 4 units. Step 2: The difference between Mandy and Sally is 3 units (4 units - 1 unit = 3 units). Step 3: Multiply to find the difference: 1.85 m × 3 = 5.55 m."
+    },
+    {
+      "question": "5 identical pens and 1 pencil cost $14.80 in total. The pencil costs $1.30. Find the cost of 1 pen.",
+      "options": ["$2.50", "$2.70", "$2.96", "$3.10"],
+      "correct": 1,
+      "points": 3,
+      "time": 100,
+      "explanation": "Step 1: Subtract the cost of the pencil to find the total cost of 5 pens: $14.80 - $1.30 = $13.50. Step 2: Divide by 5 to find the cost of 1 pen: $13.50 ÷ 5 = $2.70."
+    },
+    {
+      "question": "A wooden plank measuring 15.6 m long is cut into 2 pieces. One piece is 3.2 m shorter than the other. Find the length of the longer piece.",
+      "options": ["6.2 m", "7.8 m", "9.4 m", "12.4 m"],
+      "correct": 2,
+      "points": 4,
+      "time": 120,
+      "explanation": "Step 1: Draw a comparison model. 2 units + 3.2 m = 15.6 m. Step 2: Find 2 units: 15.6 m - 3.2 m = 12.4 m. Step 3: Find 1 unit (shorter piece): 12.4 m ÷ 2 = 6.2 m. Step 4: Find the longer piece: 6.2 m + 3.2 m = 9.4 m."
+    },
+    {
+      "question": "A bottle holds 1.45 L of fruit juice. A jug holds 3 times as much juice as a bottle. A bucket holds 2.1 L more juice than a jug. How much juice does the bucket hold?",
+      "options": ["4.35 L", "5.80 L", "6.45 L", "7.35 L"],
+      "correct": 2,
+      "points": 4,
+      "time": 110,
+      "explanation": "Step 1: Find the capacity of the jug: 1.45 L × 3 = 4.35 L. Step 2: Add 2.1 L to find the capacity of the bucket: 4.35 L + 2.1 L = 6.45 L."
+    },
+    {
+      "question": "Mr. Tan bought 3 identical chairs and 1 table. The table cost $84.50 more than 1 chair. He spent $268.50 altogether. What was the cost of 1 chair?",
+      "options": ["$46.00", "$61.60", "$67.10", "$130.50"],
+      "correct": 0,
+      "points": 4,
+      "time": 120,
+      "explanation": "Step 1: Model the problem: 1 table = 1 chair + $84.50. Total spent = 3 chairs + 1 table = 4 chairs + $84.50 = $268.50. Step 2: Subtract the excess: $268.50 - $84.50 = $184.00 (value of 4 chairs). Step 3: Divide by 4 to find the cost of 1 chair: $184.00 ÷ 4 = $46.00."
+    },
+    {
+      "question": "4 identical notebooks cost $18.80 in total. 3 identical pens cost $16.50 in total. How much cheaper is 1 notebook than 1 pen?",
+      "options": ["$0.80", "$1.20", "$2.30", "$0.50"],
+      "correct": 0,
+      "points": 4,
+      "time": 120,
+      "explanation": "Step 1: Find the cost of 1 notebook: $18.80 ÷ 4 = $4.70. Step 2: Find the cost of 1 pen: $16.50 ÷ 3 = $5.50. Step 3: Find the difference: $5.50 - $4.70 = $0.80."
+    },
+    {
+      "question": "A package of sugar weighs 8.4 kg and a package of flour weighs 5.2 kg. How much sugar must be removed from the sugar package so that it weighs 1.5 kg less than the flour package?",
+      "options": ["1.7 kg", "3.2 kg", "4.7 kg", "6.9 kg"],
+      "correct": 2,
+      "points": 4,
+      "time": 120,
+      "explanation": "Step 1: Find the target weight of the sugar package: 5.2 kg - 1.5 kg = 3.7 kg. Step 2: Calculate how much sugar must be removed from the original 8.4 kg: 8.4 kg - 3.7 kg = 4.7 kg."
+    },
+    {
+      "question": "Siti, Amy, and Ben saved $96.60 altogether. Siti saved $14.20. Ben saved 3 times as much money as Amy. How much money did Ben save?",
+      "options": ["$20.60", "$41.20", "$61.80", "$82.40"],
+      "correct": 2,
+      "points": 4,
+      "time": 130,
+      "explanation": "Step 1: Find the combined savings of Amy and Ben: $96.60 - $14.20 = $82.40. Step 2: Amy has 1 unit and Ben has 3 units, making 4 units in total. Step 3: Find 1 unit (Amy's savings): $82.40 ÷ 4 = $20.60. Step 4: Multiply by 3 to find Ben's savings: $20.60 × 3 = $61.80."
+    },
+    {
+      "question": "4 identical bowls and 3 identical plates weigh 14.3 kg in total. Each bowl weighs 0.8 kg less than each plate. Find the mass of 1 plate.",
+      "options": ["1.7 kg", "2.1 kg", "2.5 kg", "3.2 kg"],
+      "correct": 2,
+      "points": 4,
+      "time": 130,
+      "explanation": "Step 1: Replace 1 bowl with (1 plate - 0.8 kg). 4 bowls weigh the same as 4 plates - (4 × 0.8 kg) = 4 plates - 3.2 kg. Step 2: The total mass of 7 plates - 3.2 kg = 14.3 kg. Step 3: Find the total mass of 7 plates: 14.3 kg + 3.2 kg = 17.5 kg. Step 4: Find the mass of 1 plate: 17.5 kg ÷ 7 = 2.5 kg."
+    }
+  ]
+}
