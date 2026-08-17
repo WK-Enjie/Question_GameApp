@@ -1,0 +1,297 @@
+{
+  "title": "P6 Science Prelim Exam Revision",
+  "questions": [
+    {
+      "question": "Which of the following correctly describes blood flowing in the human circulatory system after running a 100-metre race?",
+      "options": [
+        "Blood leaving the leg muscles has more oxygen and less carbon dioxide than blood entering them.",
+        "Blood leaving the lungs has more oxygen and less carbon dioxide than blood entering them.",
+        "Blood leaving the small intestine has less digested food than blood entering it.",
+        "Blood pumped from the right side of the heart is rich in oxygen."
+      ],
+      "correct": 1,
+      "points": 10,
+      "time": 50,
+      "explanation": "In the lungs, blood absorbs oxygen and releases carbon dioxide; thus, blood leaving the lungs is rich in oxygen and low in carbon dioxide."[cite: 4]
+    },
+    {
+      "question": "Which of the following is a common structural adaptation shared by fish gill filaments, human air sacs (alveoli), and plant leaves for efficient gas exchange?",
+      "options": [
+        "All have thick muscular coverings for physical protection.",
+        "All provide a large surface area to speed up the exchange of gases.",
+        "All contain chlorophyll to absorb light during daytime.",
+        "All actively pump liquid across their surfaces using valves."
+      ],
+      "correct": 1,
+      "points": 10,
+      "time": 45,
+      "explanation": "A large surface area in gill filaments, alveoli, and spongy mesophyll/stomata allows gases to diffuse more rapidly."[cite: 4]
+    },
+    {
+      "question": "A complete outer ring of bark (including food-carrying tubes) was removed from a tree stem while water-carrying tubes remained intact. What will happen after two weeks?",
+      "options": [
+        "The leaves above the cut will wilt and die within one day.",
+        "The stem directly above the cut will swell because food transported down from the leaves accumulates.",
+        "The roots will absorb more water than before.",
+        "The stem directly below the cut will swell with excess water."
+      ],
+      "correct": 1,
+      "points": 10,
+      "time": 50,
+      "explanation": "Removing phloem stops food from traveling down to the roots. Sugar manufactured by leaves accumulates above the cut, causing swelling."
+    },
+    {
+      "question": "A submerged hydrilla plant is placed under a lamp. As the lamp is moved closer from 50 cm to 10 cm, the number of bubbles produced per minute increases. What are these bubbles?",
+      "options": [
+        "Carbon dioxide bubbles produced during respiration.",
+        "Oxygen bubbles produced during photosynthesis.",
+        "Water vapour bubbles formed by boiling.",
+        "Nitrogen bubbles released from the pond water."
+      ],
+      "correct": 1,
+      "points": 10,
+      "time": 45,
+      "explanation": "Higher light intensity increases the rate of photosynthesis, resulting in more oxygen gas bubbles being released per minute."
+    },
+    {
+      "question": "Which of the following statements about plant gas exchange during bright daylight is TRUE?",
+      "options": [
+        "Plants only carry out photosynthesis and completely stop respiration.",
+        "The rate of photosynthesis is faster than respiration, resulting in a net intake of carbon dioxide and net release of oxygen.",
+        "Plants take in oxygen and give out carbon dioxide through their roots only.",
+        "Plants produce carbon dioxide during photosynthesis and oxygen during respiration."
+      ],
+      "correct": 1,
+      "points": 10,
+      "time": 50,
+      "explanation": "Respiration occurs continuously day and night. In bright sunlight, photosynthesis occurs at a faster rate than respiration, resulting in net oxygen release and net carbon dioxide absorption."[cite: 4]
+    },
+    {
+      "question": "Plant Cell P and Animal Cell Q are both placed in beakers of pure distilled water. What will happen to the cells after two hours?",
+      "options": [
+        "Both Cell P and Cell Q will burst.",
+        "Cell P will swell without bursting due to its rigid cell wall, while Cell Q will swell and burst.",
+        "Cell Q will remain unchanged while Cell P will shrink.",
+        "Both Cell P and Cell Q will shrink as water leaves the cells."
+      ],
+      "correct": 1,
+      "points": 10,
+      "time": 50,
+      "explanation": "Both cells absorb water, but the plant cell's cellulose cell wall prevents it from bursting. The animal cell lacks a cell wall and bursts."[cite: 4]
+    },
+    {
+      "question": "Which of the following correctly pairs a process in human sexual reproduction with its counterpart in flowering plant reproduction?",
+      "options": [
+        "Fertilisation in humans corresponds to seed dispersal in plants.",
+        "Sperm fusing with an egg cell corresponds to the pollen nucleus fusing with the ovule egg cell.",
+        "Puberty in humans corresponds to seed germination in plants.",
+        "Development of a fetus in the womb corresponds to pollination by wind."
+      ],
+      "correct": 1,
+      "points": 10,
+      "time": 50,
+      "explanation": "Fertilisation in both humans and flowering plants involves the fusion of male and female reproductive cells to produce offspring."[cite: 4]
+    },
+    {
+      "question": "Fruit Y is light, has a fibrous husk with air spaces, and is waterproof. What is its method of seed dispersal?",
+      "options": ["Dispersal by wind", "Dispersal by animals", "Dispersal by water", "Dispersal by explosive action"],
+      "correct": 2,
+      "points": 10,
+      "time": 40,
+      "explanation": "A fibrous husk with trapped air provides buoyancy, allowing fruits (like coconuts or pong pong) to float and disperse by water."[cite: 4]
+    },
+    {
+      "question": "In a forest community: Grass -> Grasshopper -> Bird -> Hawk. If a disease wipes out most of the bird population, what will likely happen to the grass and grasshopper populations?",
+      "options": [
+        "Grasshoppers decrease; Grass increases.",
+        "Grasshoppers increase; Grass decreases due to overfeeding.",
+        "Both grasshoppers and grass increase.",
+        "Both grasshoppers and grass decrease immediately."
+      ],
+      "correct": 1,
+      "points": 10,
+      "time": 50,
+      "explanation": "With fewer predatory birds, the grasshopper population increases. More grasshoppers consume more grass, causing the grass population to decrease."[cite: 4]
+    },
+    {
+      "question": "The fennec fox lives in hot deserts. It has very large ears filled with blood capillaries and nocturnal habits. How do these adaptations help it survive?",
+      "options": [
+        "Large ears lose heat more readily to keep cool, while nocturnal habits avoid daytime heat.",
+        "Large ears trap more heat during the hot afternoon sun.",
+        "Large ears store water for the fox during dry seasons.",
+        "Nocturnal habits prevent predators from seeing its white fur."
+      ],
+      "correct": 0,
+      "points": 10,
+      "time": 50,
+      "explanation": "Large ears increase the surface area for heat loss from blood vessels, and hunting at night avoids extreme desert temperatures."
+    },
+    {
+      "question": "Which of the following represents a single population?",
+      "options": [
+        "All the animals living in a mangrove swamp.",
+        "All the water hyacinth plants growing in a pond.",
+        "All the freshwater fish, crabs, and plants in a stream.",
+        "The soil, water, sunlight, and air in a garden."
+      ],
+      "correct": 1,
+      "points": 10,
+      "time": 45,
+      "explanation": "A population consists of all organisms of the same species living together in a specific habitat at the same time."[cite: 4]
+    },
+    {
+      "question": "Why does widespread deforestation contribute to global climate change?",
+      "options": [
+        "Fewer trees mean less carbon dioxide is absorbed from the air during photosynthesis.",
+        "Fewer trees mean more oxygen is produced, warming the oceans.",
+        "Clearing trees causes the soil to produce toxic nitrogen gas.",
+        "Tree roots cool the Earth's core directly."
+      ],
+      "correct": 0,
+      "points": 10,
+      "time": 45,
+      "explanation": "Trees act as carbon sinks. Removing forests reduces carbon dioxide uptake, enhancing the greenhouse effect and raising global temperatures."[cite: 4]
+    },
+    {
+      "question": "Circuit A has two identical bulbs in series. Circuit B has two identical bulbs in parallel with an identical battery. Which statement is correct?",
+      "options": [
+        "Bulbs in Circuit A are brighter than bulbs in Circuit B.",
+        "If one bulb fuses in Circuit A, the other stays lit.",
+        "Bulbs in Circuit B are brighter because each bulb receives the full voltage of the battery.",
+        "Circuit B uses less electric current from the battery than Circuit A."
+      ],
+      "correct": 2,
+      "points": 10,
+      "time": 55,
+      "explanation": "In parallel, each bulb receives the full battery voltage and shines with normal brightness. In series, voltage is shared and bulbs are dimmer."[cite: 4]
+    },
+    {
+      "question": "An electrical circuit is set up with three switches (S1, S2, S3) and three bulbs (B1, B2, B3). S1 is in the main branch, S2 is in series with B2, and S3 is in series with B3. What happens if S1 and S2 are closed while S3 remains open?",
+      "options": [
+        "Only B2 lights up.",
+        "All bulbs light up.",
+        "Only B3 lights up.",
+        "No bulbs light up."
+      ],
+      "correct": 0,
+      "points": 10,
+      "time": 55,
+      "explanation": "Closing S1 allows current from the battery; closing S2 completes the branch for B2. S3 being open leaves the B3 branch incomplete."[cite: 4]
+    },
+    {
+      "question": "A student winds 20 turns of wire around an iron nail to make an electromagnet. Which change will allow it to attract more steel paperclips?",
+      "options": [
+        "Increasing the number of wire coils to 40 turns and adding another battery in series.",
+        "Replacing the iron nail with a wooden rod.",
+        "Using plastic-coated paperclips instead of steel ones.",
+        "Reversing the direction of the battery."
+      ],
+      "correct": 0,
+      "points": 10,
+      "time": 50,
+      "explanation": "Increasing the number of turns of wire and increasing the electric current (more batteries) strengthens the electromagnet."
+    },
+    {
+      "question": "A tennis ball is thrown vertically upwards into the air. What is the direction of the gravitational force acting on the ball as it moves upwards?",
+      "options": [
+        "Upwards in the direction of motion",
+        "Downwards towards the centre of the Earth at all times",
+        "Zero, because it is moving upwards against gravity",
+        "Horizontal towards the direction of the wind"
+      ],
+      "correct": 1,
+      "points": 10,
+      "time": 45,
+      "explanation": "Gravitational force always pulls downward towards the centre of the Earth, regardless of the object's direction of motion."[cite: 4]
+    },
+    {
+      "question": "A wooden block is pulled across Sandpaper, Glass, and Cardboard with a spring balance. The pulling forces recorded are 8 N, 2 N, and 5 N respectively. Which material produces the greatest friction?",
+      "options": ["Glass", "Cardboard", "Sandpaper", "All produce equal friction"],
+      "correct": 2,
+      "points": 10,
+      "time": 45,
+      "explanation": "A greater pulling force (8 N) indicates a rougher surface that produces the greatest frictional force opposing motion."[cite: 4]
+    },
+    {
+      "question": "A 10-cm spring extends to 14 cm when a 50-g mass is hung on it. What will be the total length of the spring when a 100-g mass is hung, assuming elastic limits are not exceeded?",
+      "options": ["16 cm", "18 cm", "20 cm", "28 cm"],
+      "correct": 1,
+      "points": 10,
+      "time": 50,
+      "explanation": "Extension for 50 g = 14 - 10 = 4 cm. Extension for 100 g = 4 * 2 = 8 cm. Total length = Original length (10 cm) + Extension (8 cm) = 18 cm."[cite: 4]
+    },
+    {
+      "question": "A toy car is pushed backward against a spring mechanism and released. It travels across the floor, slowing down until it stops. What energy conversions occur?",
+      "options": [
+        "Elastic potential energy -> Kinetic energy -> Heat and sound energy",
+        "Gravitational potential energy -> Electrical energy -> Kinetic energy",
+        "Chemical potential energy -> Light energy -> Heat energy",
+        "Kinetic energy -> Elastic potential energy -> Chemical potential energy"
+      ],
+      "correct": 0,
+      "points": 10,
+      "time": 50,
+      "explanation": "The compressed spring stores elastic potential energy, which converts to kinetic energy as the car moves, and gradually into heat and sound due to friction."[cite: 4]
+    },
+    {
+      "question": "A torch shines on an opaque wooden ball placed between the torch and a white screen. How can the shadow on the screen be made LARGER?",
+      "options": [
+        "Move the wooden ball closer to the torch.",
+        "Move the wooden ball closer to the screen.",
+        "Move the torch further away from the ball.",
+        "Use a dimmer torch."
+      ],
+      "correct": 0,
+      "points": 10,
+      "time": 45,
+      "explanation": "Moving the object closer to the light source blocks more light rays, casting a larger shadow on the screen."[cite: 4]
+    },
+    {
+      "question": "A metal spoon and a plastic spoon of the same temperature are placed into a bowl of hot soup at 85°C. Why does the handle of the metal spoon become hot much faster?",
+      "options": [
+        "Metal is a better conductor of heat than plastic and conducts heat from the soup more readily.",
+        "Plastic attracts coldness from the surrounding air.",
+        "Metal produces its own heat when placed in liquids.",
+        "Plastic reflects heat back into the soup."
+      ],
+      "correct": 0,
+      "points": 10,
+      "time": 45,
+      "explanation": "Metals are good conductors of heat that transfer thermal energy from the hot soup to the handle more readily than plastic insulators."[cite: 4]
+    },
+    {
+      "question": "Four identical wet towels (W, X, Y, Z) with 100 ml of water each are hung to dry. W is folded under the sun, X is spread out under the sun, Y is spread out in the shade, and Z is folded in the shade. Which towel will dry first?",
+      "options": ["Towel W", "Towel X", "Towel Y", "Towel Z"],
+      "correct": 1,
+      "points": 10,
+      "time": 45,
+      "explanation": "Evaporation is fastest when the exposed surface area is large (spread out) and the temperature is high (under the sun)."[cite: 4]
+    },
+    {
+      "question": "Why does a bathroom mirror become misty after someone takes a hot shower?",
+      "options": [
+        "Warm water droplets splash directly onto the mirror from the showerhead.",
+        "Warm water vapour from the hot shower touches the cooler mirror surface, loses heat, and condenses into tiny liquid water droplets.",
+        "The glass mirror melts slightly due to high room temperature.",
+        "Cold air from the mirror evaporates into water on the glass surface."
+      ],
+      "correct": 1,
+      "points": 10,
+      "time": 45,
+      "explanation": "Hot shower water produces warm water vapour that contacts the cooler mirror glass, loses heat, and condenses into mist."[cite: 4]
+    },
+    {
+      "question": "In an experiment to test whether carbon dioxide is needed for photosynthesis, Setup A contains a chemical that absorbs carbon dioxide, while Setup B contains plain water. What is the purpose of Setup B?",
+      "options": [
+        "To act as a control setup to confirm that any difference in starch production is solely due to carbon dioxide.",
+        "To provide extra oxygen for the plant to respire.",
+        "To ensure that both plants lose equal amounts of water through transpiration.",
+        "To show that plants can grow without light."
+      ],
+      "correct": 0,
+      "points": 10,
+      "time": 50,
+      "explanation": "A control setup provides a baseline for comparison to show that the observed results are solely due to the variable being investigated."[cite: 4]
+    }
+  ]
+}
