@@ -1,0 +1,317 @@
+{
+  "title": "Lower Secondary Science - Kinetic Particle Theory",
+  "questions": [
+    {
+      "question": "What is the main idea behind the particulate nature of matter?",
+      "options": [
+        "Matter is continuous and smooth with no empty spaces.",
+        "Matter is made up of tiny, discrete particles in constant, random motion.",
+        "Particles only move when an external force is applied.",
+        "Particles in all substances are fixed in rigid rows."
+      ],
+      "correct": 1,
+      "points": 10,
+      "time": 45,
+      "explanation": "The particulate model states that all matter consists of tiny discrete particles (atoms, molecules, or ions) that are in continuous, random motion."
+    },
+    {
+      "question": "When smoke particles in air are viewed under a microscope, they move irregularly in random zig-zags. What explains this movement?",
+      "options": [
+        "Tiny, fast-moving air particles collide randomly and unevenly with the smoke particles.",
+        "Smoke particles expand and push air particles away.",
+        "Air currents blow the smoke particles in fixed circles.",
+        "Smoke particles repel each other due to magnetic forces."
+      ],
+      "correct": 0,
+      "points": 10,
+      "time": 50,
+      "explanation": "Brownian motion happens because invisible, fast-moving air particles in continuous random motion collide unevenly against the larger smoke particles from all directions."
+    },
+    {
+      "question": "What happens to the particles of a substance when its temperature increases?",
+      "options": [
+        "The particles become larger in size.",
+        "The particles move or vibrate faster at higher speeds.",
+        "The total number of particles increases.",
+        "The particles stop moving and lock together."
+      ],
+      "correct": 1,
+      "points": 10,
+      "time": 45,
+      "explanation": "As a substance gets hotter, its particles move or vibrate faster and with greater speed."
+    },
+    {
+      "question": "How does a gas trapped in a closed container exert pressure on the container walls?",
+      "options": [
+        "Gas particles expand and squeeze against the walls.",
+        "Gas particles constantly move and collide with the inner walls, exerting a push per unit area.",
+        "The weight of stationary gas particles presses against the walls.",
+        "Gas particles attract the wall particles strongly."
+      ],
+      "correct": 1,
+      "points": 10,
+      "time": 45,
+      "explanation": "Gas particles move randomly at high speeds and continuously hit the inside surfaces of the container, creating an outward push per unit area."
+    },
+    {
+      "question": "Which statement correctly describes the arrangement and movement of particles in a solid?",
+      "options": [
+        "Closely packed in an orderly arrangement, vibrating about fixed positions.",
+        "Closely packed in a disorderly arrangement, sliding past one another.",
+        "Far apart in a random arrangement, moving rapidly in all directions.",
+        "Spaced far apart with no movement."
+      ],
+      "correct": 0,
+      "points": 10,
+      "time": 45,
+      "explanation": "In a solid, strong attractive forces keep particles closely packed in an orderly structure where they can only vibrate about their fixed positions."
+    },
+    {
+      "question": "Which statement correctly describes the arrangement and movement of particles in a liquid?",
+      "options": [
+        "Arranged in a regular pattern, vibrating about fixed positions.",
+        "Closely packed in a disorderly arrangement, sliding past one another.",
+        "Very far apart, moving in straight lines at high speeds.",
+        "Completely locked in place with large gaps between them."
+      ],
+      "correct": 1,
+      "points": 10,
+      "time": 45,
+      "explanation": "In a liquid, particles are closely packed but without regular order, allowing them to slide over and past one another while remaining in contact."
+    },
+    {
+      "question": "Which statement correctly describes the particles in a gas?",
+      "options": [
+        "Closely packed in regular layers with very strong attractive forces.",
+        "Closely packed in random arrangements, sliding over each other.",
+        "Very far apart in a random arrangement, moving rapidly in all directions.",
+        "Stationary with strong bonds holding them together."
+      ],
+      "correct": 2,
+      "points": 10,
+      "time": 45,
+      "explanation": "Gas particles have large spaces between them and very weak attractive forces, moving independently and quickly in all directions."
+    },
+    {
+      "question": "Why can a gas be compressed easily, whereas a solid or a liquid cannot?",
+      "options": [
+        "Gas particles are softer than solid particles.",
+        "There are large empty spaces between gas particles, while solid and liquid particles are closely packed.",
+        "Gas particles shrink when pushed.",
+        "Solid particles disappear under pressure."
+      ],
+      "correct": 1,
+      "points": 10,
+      "time": 50,
+      "explanation": "Gas particles are spaced very far apart, so applying pressure pushes them closer together. Particles in solids and liquids are already tightly packed."
+    },
+    {
+      "question": "Why does a solid maintain a fixed shape, whereas a liquid takes the shape of its container?",
+      "options": [
+        "Strong attractive forces hold solid particles in fixed positions, while liquid particles can slide past one another.",
+        "Liquid particles have no mass and can flow anywhere.",
+        "Solid particles do not move at all.",
+        "Liquid particles stick together permanently."
+      ],
+      "correct": 0,
+      "points": 10,
+      "time": 45,
+      "explanation": "Solid particles cannot move freely because strong attractive forces lock them into place. Liquid particles can slide around each other, allowing liquids to flow and fill container shapes."
+    },
+    {
+      "question": "What is diffusion?",
+      "options": [
+        "The settling of solid particles to the bottom of a container.",
+        "The net movement of particles from a region of higher concentration to a region of lower concentration.",
+        "The increase in particle size when a substance is heated.",
+        "The flow of liquid through a pipe under gravity."
+      ],
+      "correct": 1,
+      "points": 10,
+      "time": 45,
+      "explanation": "Diffusion is the overall net movement of particles from an area with more solute particles per unit volume to an area with fewer solute particles per unit volume."
+    },
+    {
+      "question": "Why do gases diffuse more readily than liquids, while diffusion does not occur readily in solids?",
+      "options": [
+        "Gas particles move faster and have larger spaces between them, whereas solid particles are held tightly in fixed positions.",
+        "Liquid particles repel each other and cannot mix.",
+        "Solid particles are too large to move.",
+        "Gas particles are pulled by gravity more strongly."
+      ],
+      "correct": 0,
+      "points": 10,
+      "time": 50,
+      "explanation": "Gas particles move at very high speeds through large spaces between particles. In solids, particles can only vibrate in place and cannot travel across the material."
+    },
+    {
+      "question": "A drop of food colouring is placed into hot water and cold water without stirring. Why does the colour spread more readily in hot water?",
+      "options": [
+        "Water particles move faster at higher temperatures, causing more frequent collisions and faster mixing.",
+        "Hot water dissolves the food colouring into separate chemical elements.",
+        "The food colouring particles become lighter in hot water.",
+        "Cold water particles push the food colouring down to the bottom."
+      ],
+      "correct": 0,
+      "points": 10,
+      "time": 50,
+      "explanation": "Higher temperatures make the water and colouring particles move faster, leading to quicker mixing and a faster rate of diffusion."
+    },
+    {
+      "question": "In a sealed glass tube, cotton wool soaked in ammonia gas (lighter) and hydrochloric acid (heavier) are placed at opposite ends. Where does the white ring of ammonium chloride form?",
+      "options": [
+        "Exactly in the center of the tube.",
+        "Closer to the hydrochloric acid end because the lighter ammonia particles move faster and diffuse more readily.",
+        "Closer to the ammonia end because heavier particles travel faster.",
+        "At both ends of the tube without meeting."
+      ],
+      "correct": 1,
+      "points": 10,
+      "time": 60,
+      "explanation": "Lighter gas particles travel at higher speeds than heavier gas particles, so ammonia travels farther along the tube before reacting with hydrogen chloride."
+    },
+    {
+      "question": "When two gases in a closed jar become completely and uniformly mixed, what happens to the movement of the individual particles?",
+      "options": [
+        "The particles stop moving completely.",
+        "The particles continue moving randomly in all directions at their normal speeds.",
+        "The particles slow down and settle at the bottom.",
+        "The particles form permanent bonds and lock in place."
+      ],
+      "correct": 1,
+      "points": 10,
+      "time": 50,
+      "explanation": "Even after mixing is complete and net diffusion becomes zero, individual particles never stop and continue moving randomly in all directions."
+    },
+    {
+      "question": "A crystal of purple potassium manganate(VII) is placed at the bottom of a beaker of water. Over time, the purple colour spreads throughout the water without stirring. Why does this happen?",
+      "options": [
+        "The crystal reacts with water to produce air bubbles that carry the colour up.",
+        "Particles from the crystal dissolve and move randomly into the spaces between water particles from higher to lower concentration.",
+        "Water particles pull the crystal upward in one large clump.",
+        "Gravity forces the purple particles to float on top of the water."
+      ],
+      "correct": 1,
+      "points": 10,
+      "time": 50,
+      "explanation": "As the crystal dissolves, individual purple particles move randomly through the gaps between water particles, spreading from where they are concentrated to where there are fewer."
+    },
+    {
+      "question": "When an iron rod is heated, it expands. What happens to its particles during expansion?",
+      "options": [
+        "The individual particles become larger in size.",
+        "The particles vibrate faster and push each other slightly further apart.",
+        "New iron particles are created inside the rod.",
+        "The attractive forces between particles disappear completely."
+      ],
+      "correct": 1,
+      "points": 10,
+      "time": 50,
+      "explanation": "Heating causes the particles to vibrate faster and more vigorously, increasing the average distance between neighboring particles."
+    },
+    {
+      "question": "When a metal ball undergoes thermal expansion, what happens to the size and mass of each individual particle?",
+      "options": [
+        "Particle size increases, but mass remains unchanged.",
+        "Both particle size and mass increase.",
+        "Both particle size and mass remain unchanged.",
+        "Particle mass increases, but size remains unchanged."
+      ],
+      "correct": 2,
+      "points": 10,
+      "time": 45,
+      "explanation": "Individual particles themselves do not grow, shrink, gain mass, or lose mass. Expansion is caused solely by an increase in the space between the particles."
+    },
+    {
+      "question": "A sample of gas is sealed inside a rigid metal tank and cooled from 80°C to 20°C. What happens to its mass?",
+      "options": [
+        "Mass decreases because the particles move more slowly.",
+        "Mass remains constant because the number of particles does not change.",
+        "Mass increases because the gas particles become more dense.",
+        "Mass decreases because particles escape through the metal walls."
+      ],
+      "correct": 1,
+      "points": 10,
+      "time": 50,
+      "explanation": "Mass is conserved because no particles enter or leave the sealed tank. Cooling only makes the particles move more slowly."
+    },
+    {
+      "question": "When a liquid in a beaker is heated, its volume expands while its mass is conserved. How does its density change?",
+      "options": [
+        "Density increases because particles become heavier.",
+        "Density decreases because the same mass of particles occupies a larger volume.",
+        "Density remains unchanged because mass and volume change equally.",
+        "Density increases because particles are pushed closer together."
+      ],
+      "correct": 1,
+      "points": 10,
+      "time": 50,
+      "explanation": "Density equals mass divided by volume. Since the number of particles (mass) stays the same while the space between them increases (volume increases), density decreases."
+    },
+    {
+      "question": "When a heated copper block cools down and contracts, what happens at the particulate level?",
+      "options": [
+        "The particles vibrate more slowly and move closer together, while total mass is conserved.",
+        "The particles shrink in individual size, reducing the total mass.",
+        "Particles leave the copper block, causing it to lose weight.",
+        "The particles stop vibrating and fuse together."
+      ],
+      "correct": 0,
+      "points": 10,
+      "time": 50,
+      "explanation": "During cooling, particles vibrate more slowly and the spaces between them decrease, causing the total volume to shrink while total mass remains unchanged."
+    },
+    {
+      "question": "What happens to the arrangement and movement of particles when ice melts into water?",
+      "options": [
+        "Particles vibrate fast enough to break out of their fixed positions and begin sliding past one another.",
+        "Particles move farther apart and become completely stationary.",
+        "Particles split into individual hydrogen and oxygen atoms.",
+        "Particles form a more orderly lattice with smaller spaces."
+      ],
+      "correct": 0,
+      "points": 10,
+      "time": 50,
+      "explanation": "During melting, particles vibrate fast enough to overcome the fixed positions of the solid structure, breaking down into a disorderly arrangement where they slide over each other."
+    },
+    {
+      "question": "Why does the temperature of a pure solid remain constant while it is melting, even though heating continues?",
+      "options": [
+        "The heat supplied is used to overcome the attractive forces holding particles in fixed positions rather than increasing their speed.",
+        "The substance stops absorbing heat from the burner.",
+        "The particles lose their motion completely during the state change.",
+        "Heat is lost instantly to the surroundings as soon as melting begins."
+      ],
+      "correct": 0,
+      "points": 10,
+      "time": 55,
+      "explanation": "During a change of state, the heat supplied is used to overcome the forces of attraction between particles to change their arrangement, so particle speed and temperature remain constant."
+    },
+    {
+      "question": "What is the difference between boiling and evaporation in terms of where the state change occurs?",
+      "options": [
+        "Evaporation occurs throughout the entire liquid, while boiling occurs only at the surface.",
+        "Evaporation occurs only at the liquid surface below the boiling point, while boiling occurs throughout the liquid at a fixed temperature.",
+        "Evaporation involves chemical reactions, while boiling is purely physical.",
+        "Evaporation occurs at a fixed temperature, while boiling occurs at any temperature."
+      ],
+      "correct": 1,
+      "points": 10,
+      "time": 55,
+      "explanation": "Evaporation is a surface process that can happen at temperatures below the boiling point, whereas boiling takes place throughout the entire bulk of the liquid at its fixed boiling temperature."
+    },
+    {
+      "question": "What happens to particles during boiling when a liquid changes into a gas?",
+      "options": [
+        "Particles move fast enough to completely overcome the attractive forces between them and spread far apart.",
+        "Particles expand in size until they burst into vapor.",
+        "Particles slow down and pack into rigid layers.",
+        "Particles lose their mass and float away."
+      ],
+      "correct": 0,
+      "points": 10,
+      "time": 50,
+      "explanation": "During boiling, particles move rapidly and completely overcome the attractive forces holding them in the liquid state, moving far apart as gas particles."
+    }
+  ]
+}
