@@ -1,0 +1,197 @@
+{
+  "title": "P6 Mathematics Prelim Exam Revision",
+  "questions": [
+    {
+      "question": "Express 70 km 45 m in kilometres.",
+      "options": ["70.45 km", "70.045 km", "70.450 km", "7.045 km"],
+      "correct": 1,
+      "points": 10,
+      "time": 45,
+      "explanation": "1 km = 1000 m, so 45 m = 45/1000 km = 0.045 km. 70 km + 0.045 km = 70.045 km."
+    },
+    {
+      "question": "Simplify the algebraic expression: 8w + 14 - 3w - 9.",
+      "options": ["5w + 5", "5w + 23", "11w + 5", "11w - 5"],
+      "correct": 0,
+      "points": 10,
+      "time": 45,
+      "explanation": "Group like terms: (8w - 3w) + (14 - 9) = 5w + 5."
+    },
+    {
+      "question": "A baker had 240 eggs. He used 3/8 of them in the morning and 2/5 of the remainder in the afternoon. How many eggs were left?",
+      "options": ["60", "90", "120", "150"],
+      "correct": 1,
+      "points": 10,
+      "time": 60,
+      "explanation": "Morning used = 3/8 * 240 = 90 eggs. Remainder = 240 - 90 = 150 eggs. Afternoon used = 2/5 * 150 = 60 eggs. Eggs left = 150 - 60 = 90 eggs."
+    },
+    {
+      "question": "The ratio of the number of stickers David had to Evelyn had was 3 : 5. After Evelyn gave 18 stickers to David, they had an equal number of stickers. How many stickers did they have altogether?",
+      "options": ["72", "108", "144", "180"],
+      "correct": 2,
+      "points": 10,
+      "time": 60,
+      "explanation": "Total units = 3 + 5 = 8 units. When equal, each has 4 units. Evelyn gave 5 - 4 = 1 unit = 18 stickers. Total stickers = 8 units = 8 * 18 = 144 stickers."
+    },
+    {
+      "question": "The usual price of a laptop is $1200. During a sale, it was sold at a discount of 15%. A 9% GST was then charged on the discounted price. What was the total price of the laptop including GST?",
+      "options": ["$1020.00", "$1111.80", "$1128.00", "$1211.80"],
+      "correct": 1,
+      "points": 10,
+      "time": 65,
+      "explanation": "Discounted price = 85% of $1200 = $1020. GST amount = 9% of $1020 = $91.80. Total price = $1020 + $91.80 = $1111.80."
+    },
+    {
+      "question": "Car A and Car B started travelling towards each other at 09 00 from Town X and Town Y, which are 360 km apart. Car A travelled at an average speed of 70 km/h and Car B travelled at 50 km/h. At what time did they pass each other?",
+      "options": ["11 00", "11 30", "12 00", "12 30"],
+      "correct": 2,
+      "points": 10,
+      "time": 60,
+      "explanation": "Combined speed = 70 + 50 = 120 km/h. Time taken to meet = 360 / 120 = 3 hours. 09 00 + 3 hours = 12 00."
+    },
+    {
+      "question": "In the figure, ABCD is a rhombus and CDE is an equilateral triangle outside the rhombus. If ∠ADC = 110°, find ∠CBE.",
+      "options": ["20°", "25°", "30°", "35°"],
+      "correct": 1,
+      "points": 10,
+      "time": 75,
+      "explanation": "In rhombus ABCD, BC = CD and ∠BCD = 180° - 110° = 70°. In equilateral triangle CDE, CD = CE and ∠DCE = 60°. Thus BC = CE, forming isosceles triangle BCE with ∠BCE = 70° + 60° = 130°. ∠CBE = (180° - 130°) / 2 = 25°."
+    },
+    {
+      "question": "A square metal sheet of side 20 cm has a circle of diameter 20 cm cut out from it. Find the area of the remaining metal sheet. (Take π = 3.14)",
+      "options": ["68 cm^2", "86 cm^2", "114 cm^2", "314 cm^2"],
+      "correct": 1,
+      "points": 10,
+      "time": 55,
+      "explanation": "Area of square = 20 * 20 = 400 cm^2. Radius = 10 cm. Area of circle = 3.14 * 10 * 10 = 314 cm^2. Remaining area = 400 - 314 = 86 cm^2."
+    },
+    {
+      "question": "A rectangular tank measuring 50 cm by 30 cm by 40 cm was 1/4 filled with water. Tap A was turned on to fill the tank at a rate of 4 litres per minute. How long did it take to fill the tank completely?",
+      "options": ["11.25 minutes", "12.50 minutes", "15.00 minutes", "18.75 minutes"],
+      "correct": 0,
+      "points": 10,
+      "time": 65,
+      "explanation": "Total capacity = 50 * 30 * 40 = 60 000 cm^3 = 60 litres. Water inside = 1/4 * 60 = 15 litres. Volume needed = 60 - 15 = 45 litres. Time taken = 45 / 4 = 11.25 minutes."
+    },
+    {
+      "question": "The average score of 4 tests was 76. After taking a 5th test, the average score became 80. What was the score on the 5th test?",
+      "options": ["84", "88", "92", "96"],
+      "correct": 3,
+      "points": 10,
+      "time": 50,
+      "explanation": "Total score for 4 tests = 4 * 76 = 304. Total score for 5 tests = 5 * 80 = 400. Score on 5th test = 400 - 304 = 96."
+    },
+    {
+      "question": "A farmer has a total of 30 chickens and cows. The animals have 84 legs altogether. How many cows does the farmer have?",
+      "options": ["10", "12", "14", "18"],
+      "correct": 1,
+      "points": 10,
+      "time": 60,
+      "explanation": "Assume all 30 are chickens: 30 * 2 = 60 legs. Shortfall = 84 - 60 = 24 legs. Difference per cow = 4 - 2 = 2 legs. Number of cows = 24 / 2 = 12 cows."
+    },
+    {
+      "question": "Ken and Leo had money in the ratio 3 : 5. After Ken spent $30 and Leo received $10, the ratio of Ken's money to Leo's money became 1 : 3. How much money did Ken have at first?",
+      "options": ["$60", "$75", "$90", "$125"],
+      "correct": 1,
+      "points": 10,
+      "time": 75,
+      "explanation": "Let Ken have 3u and Leo have 5u. (3u - 30) / (5u + 10) = 1/3 -> 3(3u - 30) = 5u + 10 -> 9u - 90 = 5u + 10 -> 4u = 100 -> u = 25. Ken at first = 3 * 25 = $75."
+    },
+    {
+      "question": "Study the dot pattern: Figure 1 has 4 dots, Figure 2 has 7 dots, and Figure 3 has 10 dots. How many dots are in Figure 25?",
+      "options": ["72", "75", "76", "79"],
+      "correct": 2,
+      "points": 10,
+      "time": 50,
+      "explanation": "The number of dots follows the rule: Total = 3n + 1. For Figure 25: 3(25) + 1 = 76 dots."
+    },
+    {
+      "question": "In a group of 200 pupils, 1/4 chose Robotics, 35% chose Sports, and the remaining pupils chose Art and Music equally. How many pupils chose Art?",
+      "options": ["30", "40", "50", "80"],
+      "correct": 1,
+      "points": 10,
+      "time": 55,
+      "explanation": "Robotics = 25%, Sports = 35%. Total = 60%. Remaining for Art and Music = 40%. Since they are equal, Art = 20%. 20% of 200 = 40 pupils."
+    },
+    {
+      "question": "A rectangular strip of paper is folded along line EF. If the original interior angle ∠BEF = 58°, find the remaining unfold angle ∠AEF'.",
+      "options": ["58°", "64°", "116°", "122°"],
+      "correct": 1,
+      "points": 10,
+      "time": 60,
+      "explanation": "The straight angle is 180°. When folded, two overlapping angles of 58° are formed along the edge. Remaining angle = 180° - (2 * 58°) = 180° - 116° = 64°."
+    },
+    {
+      "question": "Ben cycled from Home to the Library at 12 km/h and took 30 minutes. On his return trip, he cycled at 15 km/h along the same route. How many minutes did the return trip take?",
+      "options": ["20 minutes", "24 minutes", "25 minutes", "28 minutes"],
+      "correct": 1,
+      "points": 10,
+      "time": 55,
+      "explanation": "Distance = 12 km/h * 0.5 h = 6 km. Return time = 6 km / 15 km/h = 0.4 h = 0.4 * 60 = 24 minutes."
+    },
+    {
+      "question": "Mrs Tan had $600. She spent 30% of it on groceries and 40% of the remainder on a dress. How much money did she have left?",
+      "options": ["$168", "$210", "$252", "$378"],
+      "correct": 2,
+      "points": 10,
+      "time": 60,
+      "explanation": "Groceries = 30% of $600 = $180. Remainder = $600 - $180 = $420. Spent on dress = 40% of $420 = $168. Money left = $420 - $168 = $252."
+    },
+    {
+      "question": "A running track consists of a rectangle measuring 100 m by 70 m and two semicircular ends of diameter 70 m. What is the total perimeter of the track? (Take π = 22/7)",
+      "options": ["340 m", "420 m", "490 m", "560 m"],
+      "correct": 1,
+      "points": 10,
+      "time": 60,
+      "explanation": "Perimeter = 2 straight sides + 1 complete circle circumference = (2 * 100) + (22/7 * 70) = 200 + 220 = 420 m."
+    },
+    {
+      "question": "5 identical machines can print 450 posters in 30 minutes. How many posters can 8 such machines print in 20 minutes at the same rate?",
+      "options": ["360", "400", "480", "540"],
+      "correct": 2,
+      "points": 10,
+      "time": 60,
+      "explanation": "1 machine in 30 min = 450 / 5 = 90 posters -> 1 machine in 1 min = 90 / 30 = 3 posters. 8 machines in 20 min = 8 * 20 * 3 = 480 posters."
+    },
+    {
+      "question": "Three years ago, the ratio of Ethan's age to his mother's age was 1 : 5. In 5 years' time, the sum of their ages will be 58 years. How old is Ethan now?",
+      "options": ["7 years old", "10 years old", "12 years old", "15 years old"],
+      "correct": 1,
+      "points": 10,
+      "time": 75,
+      "explanation": "Current sum of ages = 58 - (2 * 5) = 48 years. Sum of ages 3 years ago = 48 - (2 * 3) = 42 years. 6 units = 42 -> 1 unit = 7 years. Ethan was 7 years old 3 years ago, so he is 7 + 3 = 10 years old now."
+    },
+    {
+      "question": "A solid cube of side 3 cm is formed using 1-cm small cubes. The outer surface of the entire solid is painted red. How many small cubes have EXACTLY 2 faces painted red?",
+      "options": ["8", "12", "16", "24"],
+      "correct": 1,
+      "points": 10,
+      "time": 55,
+      "explanation": "Cubes with 2 painted faces are located along the edges, excluding the 8 corners. Number of edges = 12. Each edge has 3 - 2 = 1 middle cube. 12 * 1 = 12 cubes."
+    },
+    {
+      "question": "A storage box weighs m kg. A sack of grain weighs (2m + 3) kg. What is the total mass of 4 such boxes and 3 sacks of grain in terms of m?",
+      "options": ["(8m + 9) kg", "(10m + 3) kg", "(10m + 9) kg", "(14m + 9) kg"],
+      "correct": 2,
+      "points": 10,
+      "time": 50,
+      "explanation": "Total mass = 4(m) + 3(2m + 3) = 4m + 6m + 9 = (10m + 9) kg."
+    },
+    {
+      "question": "2/3 of Alicia's savings is equal to 3/5 of Brenda's savings. Brenda has $30 more than Alicia. How much money do they have altogether?",
+      "options": ["$270", "$300", "$540", "$570"],
+      "correct": 3,
+      "points": 10,
+      "time": 70,
+      "explanation": "Equalise numerators: 6/9 of Alicia = 6/10 of Brenda. Alicia has 9 units and Brenda has 10 units. Difference = 1 unit = $30. Total = (9 + 10) * $30 = 19 * $30 = $570."
+    },
+    {
+      "question": "The average mass of a group of children was 42 kg. When 2 adults with an average mass of 66 kg joined the group, the new overall average became 46 kg. How many children were in the group at first?",
+      "options": ["8", "10", "12", "14"],
+      "correct": 1,
+      "points": 10,
+      "time": 75,
+      "explanation": "Let n be the number of children. Total mass = 42n + (2 * 66) = 42n + 132. New total mass = 46(n + 2) = 46n + 92. 46n - 42n = 132 - 92 -> 4n = 40 -> n = 10 children."
+    }
+  ]
+}
